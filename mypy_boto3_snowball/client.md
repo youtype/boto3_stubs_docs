@@ -1,6 +1,6 @@
 # SnowballClient for boto3 Snowball module
 
-> [Index](../index.md) > [Snowball](./index.md) > SnowballClient
+> [Index](../README.md) > [Snowball](./README.md) > SnowballClient
 
 Auto-generated documentation for [Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
 type annotations stubs module [mypy_boto3_snowball](https://pypi.org/project/mypy-boto3-snowball/).

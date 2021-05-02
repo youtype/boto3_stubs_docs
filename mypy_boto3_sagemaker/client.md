@@ -1,6 +1,6 @@
 # SageMakerClient for boto3 SageMaker module
 
-> [Index](../index.md) > [SageMaker](./index.md) > SageMakerClient
+> [Index](../README.md) > [SageMaker](./README.md) > SageMakerClient
 
 Auto-generated documentation for [SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
 type annotations stubs module [mypy_boto3_sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).

@@ -1,6 +1,6 @@
 # CloudHSMClient for boto3 CloudHSM module
 
-> [Index](../index.md) > [CloudHSM](./index.md) > CloudHSMClient
+> [Index](../README.md) > [CloudHSM](./README.md) > CloudHSMClient
 
 Auto-generated documentation for [CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
 type annotations stubs module [mypy_boto3_cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).

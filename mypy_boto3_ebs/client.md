@@ -1,6 +1,6 @@
 # EBSClient for boto3 EBS module
 
-> [Index](../index.md) > [EBS](./index.md) > EBSClient
+> [Index](../README.md) > [EBS](./README.md) > EBSClient
 
 Auto-generated documentation for [EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
 type annotations stubs module [mypy_boto3_ebs](https://pypi.org/project/mypy-boto3-ebs/).

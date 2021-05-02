@@ -1,6 +1,6 @@
 # Paginators for boto3 LexModelBuildingService module
 
-> [Index](../index.md) > [LexModelBuildingService](./index.md) > Paginators
+> [Index](../README.md) > [LexModelBuildingService](./README.md) > Paginators
 
 Auto-generated documentation for [LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
 type annotations stubs module [mypy_boto3_lex_models](https://pypi.org/project/mypy-boto3-lex-models/).

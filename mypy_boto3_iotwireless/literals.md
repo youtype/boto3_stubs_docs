@@ -1,6 +1,6 @@
 # Literals for boto3 IoTWireless module
 
-> [Index](../index.md) > [IoTWireless](./index.md) > Literals
+> [Index](../README.md) > [IoTWireless](./README.md) > Literals
 
 Auto-generated documentation for [IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
 type annotations stubs module [mypy_boto3_iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).

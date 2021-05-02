@@ -1,6 +1,6 @@
 # Structures for boto3 TranscribeService module
 
-> [Index](../index.md) > [TranscribeService](./index.md) > Structures
+> [Index](../README.md) > [TranscribeService](./README.md) > Structures
 
 Auto-generated documentation for [TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
 type annotations stubs module [mypy_boto3_transcribe](https://pypi.org/project/mypy-boto3-transcribe/).

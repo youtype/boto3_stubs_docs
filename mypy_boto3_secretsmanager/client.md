@@ -1,6 +1,6 @@
 # SecretsManagerClient for boto3 SecretsManager module
 
-> [Index](../index.md) > [SecretsManager](./index.md) > SecretsManagerClient
+> [Index](../README.md) > [SecretsManager](./README.md) > SecretsManagerClient
 
 Auto-generated documentation for [SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
 type annotations stubs module [mypy_boto3_secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).

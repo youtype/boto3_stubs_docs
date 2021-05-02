@@ -1,6 +1,6 @@
 # ImagebuilderClient for boto3 Imagebuilder module
 
-> [Index](../index.md) > [Imagebuilder](./index.md) > ImagebuilderClient
+> [Index](../README.md) > [Imagebuilder](./README.md) > ImagebuilderClient
 
 Auto-generated documentation for [Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder)
 type annotations stubs module [mypy_boto3_imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).

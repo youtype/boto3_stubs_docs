@@ -1,6 +1,6 @@
 # GuardDutyClient for boto3 GuardDuty module
 
-> [Index](../index.md) > [GuardDuty](./index.md) > GuardDutyClient
+> [Index](../README.md) > [GuardDuty](./README.md) > GuardDutyClient
 
 Auto-generated documentation for [GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
 type annotations stubs module [mypy_boto3_guardduty](https://pypi.org/project/mypy-boto3-guardduty/).

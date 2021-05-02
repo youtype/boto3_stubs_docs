@@ -1,6 +1,6 @@
 # Structures for boto3 LookoutEquipment module
 
-> [Index](../index.md) > [LookoutEquipment](./index.md) > Structures
+> [Index](../README.md) > [LookoutEquipment](./README.md) > Structures
 
 Auto-generated documentation for [LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
 type annotations stubs module [mypy_boto3_lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).

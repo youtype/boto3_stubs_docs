@@ -1,6 +1,6 @@
 # Structures for boto3 Inspector module
 
-> [Index](../index.md) > [Inspector](./index.md) > Structures
+> [Index](../README.md) > [Inspector](./README.md) > Structures
 
 Auto-generated documentation for [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
 type annotations stubs module [mypy_boto3_inspector](https://pypi.org/project/mypy-boto3-inspector/).

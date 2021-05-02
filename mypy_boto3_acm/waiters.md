@@ -1,6 +1,6 @@
 # Waiters for boto3 ACM module
 
-> [Index](../index.md) > [ACM](./index.md) > Waiters
+> [Index](../README.md) > [ACM](./README.md) > Waiters
 
 Auto-generated documentation for [ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
 type annotations stubs module [mypy_boto3_acm](https://pypi.org/project/mypy-boto3-acm/).

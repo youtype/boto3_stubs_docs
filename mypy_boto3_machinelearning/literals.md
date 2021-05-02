@@ -1,6 +1,6 @@
 # Literals for boto3 MachineLearning module
 
-> [Index](../index.md) > [MachineLearning](./index.md) > Literals
+> [Index](../README.md) > [MachineLearning](./README.md) > Literals
 
 Auto-generated documentation for [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
 type annotations stubs module [mypy_boto3_machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).

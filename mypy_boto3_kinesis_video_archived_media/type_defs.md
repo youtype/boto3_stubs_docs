@@ -1,6 +1,6 @@
 # Structures for boto3 KinesisVideoArchivedMedia module
 
-> [Index](../index.md) > [KinesisVideoArchivedMedia](./index.md) > Structures
+> [Index](../README.md) > [KinesisVideoArchivedMedia](./README.md) > Structures
 
 Auto-generated documentation for [KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
 type annotations stubs module [mypy_boto3_kinesis_video_archived_media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).

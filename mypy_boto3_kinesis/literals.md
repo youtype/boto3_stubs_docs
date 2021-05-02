@@ -1,6 +1,6 @@
 # Literals for boto3 Kinesis module
 
-> [Index](../index.md) > [Kinesis](./index.md) > Literals
+> [Index](../README.md) > [Kinesis](./README.md) > Literals
 
 Auto-generated documentation for [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
 type annotations stubs module [mypy_boto3_kinesis](https://pypi.org/project/mypy-boto3-kinesis/).

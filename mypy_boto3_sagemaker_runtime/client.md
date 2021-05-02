@@ -1,6 +1,6 @@
 # SageMakerRuntimeClient for boto3 SageMakerRuntime module
 
-> [Index](../index.md) > [SageMakerRuntime](./index.md) > SageMakerRuntimeClient
+> [Index](../README.md) > [SageMakerRuntime](./README.md) > SageMakerRuntimeClient
 
 Auto-generated documentation for [SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime)
 type annotations stubs module [mypy_boto3_sagemaker_runtime](https://pypi.org/project/mypy-boto3-sagemaker-runtime/).

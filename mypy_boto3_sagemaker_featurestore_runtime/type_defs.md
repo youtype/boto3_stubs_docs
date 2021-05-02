@@ -1,6 +1,6 @@
 # Structures for boto3 SagemakerFeatureStoreRuntime module
 
-> [Index](../index.md) > [SagemakerFeatureStoreRuntime](./index.md) > Structures
+> [Index](../README.md) > [SagemakerFeatureStoreRuntime](./README.md) > Structures
 
 Auto-generated documentation for [SagemakerFeatureStoreRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime)
 type annotations stubs module [mypy_boto3_sagemaker_featurestore_runtime](https://pypi.org/project/mypy-boto3-sagemaker-featurestore-runtime/).

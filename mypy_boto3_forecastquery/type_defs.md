@@ -1,6 +1,6 @@
 # Structures for boto3 ForecastQueryService module
 
-> [Index](../index.md) > [ForecastQueryService](./index.md) > Structures
+> [Index](../README.md) > [ForecastQueryService](./README.md) > Structures
 
 Auto-generated documentation for [ForecastQueryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService)
 type annotations stubs module [mypy_boto3_forecastquery](https://pypi.org/project/mypy-boto3-forecastquery/).

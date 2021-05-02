@@ -1,6 +1,6 @@
 # Paginators for boto3 DeviceFarm module
 
-> [Index](../index.md) > [DeviceFarm](./index.md) > Paginators
+> [Index](../README.md) > [DeviceFarm](./README.md) > Paginators
 
 Auto-generated documentation for [DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
 type annotations stubs module [mypy_boto3_devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).

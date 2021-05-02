@@ -1,6 +1,6 @@
 # Literals for boto3 AugmentedAIRuntime module
 
-> [Index](../index.md) > [AugmentedAIRuntime](./index.md) > Literals
+> [Index](../README.md) > [AugmentedAIRuntime](./README.md) > Literals
 
 Auto-generated documentation for [AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
 type annotations stubs module [mypy_boto3_sagemaker_a2i_runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).

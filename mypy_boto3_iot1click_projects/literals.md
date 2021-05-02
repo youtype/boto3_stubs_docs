@@ -1,6 +1,6 @@
 # Literals for boto3 IoT1ClickProjects module
 
-> [Index](../index.md) > [IoT1ClickProjects](./index.md) > Literals
+> [Index](../README.md) > [IoT1ClickProjects](./README.md) > Literals
 
 Auto-generated documentation for [IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
 type annotations stubs module [mypy_boto3_iot1click_projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).

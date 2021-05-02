@@ -1,6 +1,6 @@
 # XRayClient for boto3 XRay module
 
-> [Index](../index.md) > [XRay](./index.md) > XRayClient
+> [Index](../README.md) > [XRay](./README.md) > XRayClient
 
 Auto-generated documentation for [XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
 type annotations stubs module [mypy_boto3_xray](https://pypi.org/project/mypy-boto3-xray/).

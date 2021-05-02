@@ -1,6 +1,6 @@
 # Literals for boto3 LexModelsV2 module
 
-> [Index](../index.md) > [LexModelsV2](./index.md) > Literals
+> [Index](../README.md) > [LexModelsV2](./README.md) > Literals
 
 Auto-generated documentation for [LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
 type annotations stubs module [mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).

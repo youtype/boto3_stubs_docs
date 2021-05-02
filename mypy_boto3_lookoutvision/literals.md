@@ -1,6 +1,6 @@
 # Literals for boto3 LookoutforVision module
 
-> [Index](../index.md) > [LookoutforVision](./index.md) > Literals
+> [Index](../README.md) > [LookoutforVision](./README.md) > Literals
 
 Auto-generated documentation for [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
 type annotations stubs module [mypy_boto3_lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).

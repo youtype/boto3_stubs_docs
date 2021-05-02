@@ -1,6 +1,6 @@
 # Paginators for boto3 APIGateway module
 
-> [Index](../index.md) > [APIGateway](./index.md) > Paginators
+> [Index](../README.md) > [APIGateway](./README.md) > Paginators
 
 Auto-generated documentation for [APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
 type annotations stubs module [mypy_boto3_apigateway](https://pypi.org/project/mypy-boto3-apigateway/).

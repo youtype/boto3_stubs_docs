@@ -1,6 +1,6 @@
 # Paginators for boto3 ACMPCA module
 
-> [Index](../index.md) > [ACMPCA](./index.md) > Paginators
+> [Index](../README.md) > [ACMPCA](./README.md) > Paginators
 
 Auto-generated documentation for [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
 type annotations stubs module [mypy_boto3_acm_pca](https://pypi.org/project/mypy-boto3-acm-pca/).

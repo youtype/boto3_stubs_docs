@@ -1,6 +1,6 @@
 # Literals for boto3 ApplicationInsights module
 
-> [Index](../index.md) > [ApplicationInsights](./index.md) > Literals
+> [Index](../README.md) > [ApplicationInsights](./README.md) > Literals
 
 Auto-generated documentation for [ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)
 type annotations stubs module [mypy_boto3_application_insights](https://pypi.org/project/mypy-boto3-application-insights/).

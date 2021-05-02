@@ -1,6 +1,6 @@
 # Structures for boto3 IoTJobsDataPlane module
 
-> [Index](../index.md) > [IoTJobsDataPlane](./index.md) > Structures
+> [Index](../README.md) > [IoTJobsDataPlane](./README.md) > Structures
 
 Auto-generated documentation for [IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
 type annotations stubs module [mypy_boto3_iot_jobs_data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).

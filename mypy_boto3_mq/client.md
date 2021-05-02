@@ -1,6 +1,6 @@
 # MQClient for boto3 MQ module
 
-> [Index](../index.md) > [MQ](./index.md) > MQClient
+> [Index](../README.md) > [MQ](./README.md) > MQClient
 
 Auto-generated documentation for [MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
 type annotations stubs module [mypy_boto3_mq](https://pypi.org/project/mypy-boto3-mq/).

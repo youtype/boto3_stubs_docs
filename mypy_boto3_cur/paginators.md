@@ -1,6 +1,6 @@
 # Paginators for boto3 CostandUsageReportService module
 
-> [Index](../index.md) > [CostandUsageReportService](./index.md) > Paginators
+> [Index](../README.md) > [CostandUsageReportService](./README.md) > Paginators
 
 Auto-generated documentation for [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
 type annotations stubs module [mypy_boto3_cur](https://pypi.org/project/mypy-boto3-cur/).

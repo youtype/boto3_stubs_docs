@@ -1,6 +1,6 @@
 # GlueClient for boto3 Glue module
 
-> [Index](../index.md) > [Glue](./index.md) > GlueClient
+> [Index](../README.md) > [Glue](./README.md) > GlueClient
 
 Auto-generated documentation for [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
 type annotations stubs module [mypy_boto3_glue](https://pypi.org/project/mypy-boto3-glue/).

@@ -1,6 +1,6 @@
 # Structures for boto3 IoTAnalytics module
 
-> [Index](../index.md) > [IoTAnalytics](./index.md) > Structures
+> [Index](../README.md) > [IoTAnalytics](./README.md) > Structures
 
 Auto-generated documentation for [IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
 type annotations stubs module [mypy_boto3_iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).

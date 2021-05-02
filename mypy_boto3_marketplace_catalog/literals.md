@@ -1,6 +1,6 @@
 # Literals for boto3 MarketplaceCatalog module
 
-> [Index](../index.md) > [MarketplaceCatalog](./index.md) > Literals
+> [Index](../README.md) > [MarketplaceCatalog](./README.md) > Literals
 
 Auto-generated documentation for [MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)
 type annotations stubs module [mypy_boto3_marketplace_catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).

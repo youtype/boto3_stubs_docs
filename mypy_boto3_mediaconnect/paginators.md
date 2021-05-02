@@ -1,6 +1,6 @@
 # Paginators for boto3 MediaConnect module
 
-> [Index](../index.md) > [MediaConnect](./index.md) > Paginators
+> [Index](../README.md) > [MediaConnect](./README.md) > Paginators
 
 Auto-generated documentation for [MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
 type annotations stubs module [mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).

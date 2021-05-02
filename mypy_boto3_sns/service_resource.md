@@ -1,6 +1,6 @@
 # SNSServiceResource for boto3 SNS module
 
-> [Index](../index.md) > [SNS](./index.md) > SNSServiceResource
+> [Index](../README.md) > [SNS](./README.md) > SNSServiceResource
 
 Auto-generated documentation for [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
 type annotations stubs module [mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).

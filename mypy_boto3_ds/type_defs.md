@@ -1,6 +1,6 @@
 # Structures for boto3 DirectoryService module
 
-> [Index](../index.md) > [DirectoryService](./index.md) > Structures
+> [Index](../README.md) > [DirectoryService](./README.md) > Structures
 
 Auto-generated documentation for [DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
 type annotations stubs module [mypy_boto3_ds](https://pypi.org/project/mypy-boto3-ds/).

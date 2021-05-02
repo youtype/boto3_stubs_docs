@@ -1,6 +1,6 @@
 # Structures for boto3 Redshift module
 
-> [Index](../index.md) > [Redshift](./index.md) > Structures
+> [Index](../README.md) > [Redshift](./README.md) > Structures
 
 Auto-generated documentation for [Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
 type annotations stubs module [mypy_boto3_redshift](https://pypi.org/project/mypy-boto3-redshift/).

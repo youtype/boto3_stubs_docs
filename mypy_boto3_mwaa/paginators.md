@@ -1,6 +1,6 @@
 # Paginators for boto3 MWAA module
 
-> [Index](../index.md) > [MWAA](./index.md) > Paginators
+> [Index](../README.md) > [MWAA](./README.md) > Paginators
 
 Auto-generated documentation for [MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
 type annotations stubs module [mypy_boto3_mwaa](https://pypi.org/project/mypy-boto3-mwaa/).

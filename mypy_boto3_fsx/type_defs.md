@@ -1,6 +1,6 @@
 # Structures for boto3 FSx module
 
-> [Index](../index.md) > [FSx](./index.md) > Structures
+> [Index](../README.md) > [FSx](./README.md) > Structures
 
 Auto-generated documentation for [FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
 type annotations stubs module [mypy_boto3_fsx](https://pypi.org/project/mypy-boto3-fsx/).

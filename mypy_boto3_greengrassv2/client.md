@@ -1,6 +1,6 @@
 # GreengrassV2Client for boto3 GreengrassV2 module
 
-> [Index](../index.md) > [GreengrassV2](./index.md) > GreengrassV2Client
+> [Index](../README.md) > [GreengrassV2](./README.md) > GreengrassV2Client
 
 Auto-generated documentation for [GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
 type annotations stubs module [mypy_boto3_greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).

@@ -1,6 +1,6 @@
 # Literals for boto3 EFS module
 
-> [Index](../index.md) > [EFS](./index.md) > Literals
+> [Index](../README.md) > [EFS](./README.md) > Literals
 
 Auto-generated documentation for [EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)
 type annotations stubs module [mypy_boto3_efs](https://pypi.org/project/mypy-boto3-efs/).

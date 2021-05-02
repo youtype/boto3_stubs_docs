@@ -1,6 +1,6 @@
 # Structures for boto3 MarketplaceMetering module
 
-> [Index](../index.md) > [MarketplaceMetering](./index.md) > Structures
+> [Index](../README.md) > [MarketplaceMetering](./README.md) > Structures
 
 Auto-generated documentation for [MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering)
 type annotations stubs module [mypy_boto3_meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).

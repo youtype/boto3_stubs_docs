@@ -1,6 +1,6 @@
 # LookoutMetricsClient for boto3 LookoutMetrics module
 
-> [Index](../index.md) > [LookoutMetrics](./index.md) > LookoutMetricsClient
+> [Index](../README.md) > [LookoutMetrics](./README.md) > LookoutMetricsClient
 
 Auto-generated documentation for [LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
 type annotations stubs module [mypy_boto3_lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).

@@ -1,6 +1,6 @@
 # Literals for boto3 CloudTrail module
 
-> [Index](../index.md) > [CloudTrail](./index.md) > Literals
+> [Index](../README.md) > [CloudTrail](./README.md) > Literals
 
 Auto-generated documentation for [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
 type annotations stubs module [mypy_boto3_cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).

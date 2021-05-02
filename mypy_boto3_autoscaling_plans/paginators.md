@@ -1,6 +1,6 @@
 # Paginators for boto3 AutoScalingPlans module
 
-> [Index](../index.md) > [AutoScalingPlans](./index.md) > Paginators
+> [Index](../README.md) > [AutoScalingPlans](./README.md) > Paginators
 
 Auto-generated documentation for [AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
 type annotations stubs module [mypy_boto3_autoscaling_plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).

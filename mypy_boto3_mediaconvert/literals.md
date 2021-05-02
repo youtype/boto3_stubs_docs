@@ -1,6 +1,6 @@
 # Literals for boto3 MediaConvert module
 
-> [Index](../index.md) > [MediaConvert](./index.md) > Literals
+> [Index](../README.md) > [MediaConvert](./README.md) > Literals
 
 Auto-generated documentation for [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
 type annotations stubs module [mypy_boto3_mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).

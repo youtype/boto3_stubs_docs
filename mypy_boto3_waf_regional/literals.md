@@ -1,6 +1,6 @@
 # Literals for boto3 WAFRegional module
 
-> [Index](../index.md) > [WAFRegional](./index.md) > Literals
+> [Index](../README.md) > [WAFRegional](./README.md) > Literals
 
 Auto-generated documentation for [WAFRegional](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional)
 type annotations stubs module [mypy_boto3_waf_regional](https://pypi.org/project/mypy-boto3-waf-regional/).

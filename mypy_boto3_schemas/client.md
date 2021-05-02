@@ -1,6 +1,6 @@
 # SchemasClient for boto3 Schemas module
 
-> [Index](../index.md) > [Schemas](./index.md) > SchemasClient
+> [Index](../README.md) > [Schemas](./README.md) > SchemasClient
 
 Auto-generated documentation for [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
 type annotations stubs module [mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).

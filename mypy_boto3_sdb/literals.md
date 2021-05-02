@@ -1,6 +1,6 @@
 # Literals for boto3 SimpleDB module
 
-> [Index](../index.md) > [SimpleDB](./index.md) > Literals
+> [Index](../README.md) > [SimpleDB](./README.md) > Literals
 
 Auto-generated documentation for [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
 type annotations stubs module [mypy_boto3_sdb](https://pypi.org/project/mypy-boto3-sdb/).

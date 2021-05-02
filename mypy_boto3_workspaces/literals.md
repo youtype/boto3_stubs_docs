@@ -1,6 +1,6 @@
 # Literals for boto3 WorkSpaces module
 
-> [Index](../index.md) > [WorkSpaces](./index.md) > Literals
+> [Index](../README.md) > [WorkSpaces](./README.md) > Literals
 
 Auto-generated documentation for [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
 type annotations stubs module [mypy_boto3_workspaces](https://pypi.org/project/mypy-boto3-workspaces/).

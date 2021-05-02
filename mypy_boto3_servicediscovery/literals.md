@@ -1,6 +1,6 @@
 # Literals for boto3 ServiceDiscovery module
 
-> [Index](../index.md) > [ServiceDiscovery](./index.md) > Literals
+> [Index](../README.md) > [ServiceDiscovery](./README.md) > Literals
 
 Auto-generated documentation for [ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
 type annotations stubs module [mypy_boto3_servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).

@@ -1,6 +1,6 @@
 # Literals for boto3 ElasticBeanstalk module
 
-> [Index](../index.md) > [ElasticBeanstalk](./index.md) > Literals
+> [Index](../README.md) > [ElasticBeanstalk](./README.md) > Literals
 
 Auto-generated documentation for [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
 type annotations stubs module [mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).

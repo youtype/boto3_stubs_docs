@@ -1,6 +1,6 @@
 # Structures for boto3 IdentityStore module
 
-> [Index](../index.md) > [IdentityStore](./index.md) > Structures
+> [Index](../README.md) > [IdentityStore](./README.md) > Structures
 
 Auto-generated documentation for [IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore)
 type annotations stubs module [mypy_boto3_identitystore](https://pypi.org/project/mypy-boto3-identitystore/).

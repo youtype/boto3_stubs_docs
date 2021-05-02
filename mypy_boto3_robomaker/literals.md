@@ -1,6 +1,6 @@
 # Literals for boto3 RoboMaker module
 
-> [Index](../index.md) > [RoboMaker](./index.md) > Literals
+> [Index](../README.md) > [RoboMaker](./README.md) > Literals
 
 Auto-generated documentation for [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
 type annotations stubs module [mypy_boto3_robomaker](https://pypi.org/project/mypy-boto3-robomaker/).

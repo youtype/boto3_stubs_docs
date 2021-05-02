@@ -1,6 +1,6 @@
 # Structures for boto3 IVS module
 
-> [Index](../index.md) > [IVS](./index.md) > Structures
+> [Index](../README.md) > [IVS](./README.md) > Structures
 
 Auto-generated documentation for [IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
 type annotations stubs module [mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).

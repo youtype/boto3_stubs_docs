@@ -1,6 +1,6 @@
 # Structures for boto3 WAFV2 module
 
-> [Index](../index.md) > [WAFV2](./index.md) > Structures
+> [Index](../README.md) > [WAFV2](./README.md) > Structures
 
 Auto-generated documentation for [WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
 type annotations stubs module [mypy_boto3_wafv2](https://pypi.org/project/mypy-boto3-wafv2/).

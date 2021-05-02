@@ -1,6 +1,6 @@
 # Structures for boto3 Athena module
 
-> [Index](../index.md) > [Athena](./index.md) > Structures
+> [Index](../README.md) > [Athena](./README.md) > Structures
 
 Auto-generated documentation for [Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
 type annotations stubs module [mypy_boto3_athena](https://pypi.org/project/mypy-boto3-athena/).

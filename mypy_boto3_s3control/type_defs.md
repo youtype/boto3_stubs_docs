@@ -1,6 +1,6 @@
 # Structures for boto3 S3Control module
 
-> [Index](../index.md) > [S3Control](./index.md) > Structures
+> [Index](../README.md) > [S3Control](./README.md) > Structures
 
 Auto-generated documentation for [S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
 type annotations stubs module [mypy_boto3_s3control](https://pypi.org/project/mypy-boto3-s3control/).

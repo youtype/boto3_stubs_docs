@@ -1,6 +1,6 @@
 # Structures for boto3 OpsWorksCM module
 
-> [Index](../index.md) > [OpsWorksCM](./index.md) > Structures
+> [Index](../README.md) > [OpsWorksCM](./README.md) > Structures
 
 Auto-generated documentation for [OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
 type annotations stubs module [mypy_boto3_opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).

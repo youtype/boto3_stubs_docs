@@ -1,6 +1,6 @@
 # SignerClient for boto3 Signer module
 
-> [Index](../index.md) > [Signer](./index.md) > SignerClient
+> [Index](../README.md) > [Signer](./README.md) > SignerClient
 
 Auto-generated documentation for [Signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer)
 type annotations stubs module [mypy_boto3_signer](https://pypi.org/project/mypy-boto3-signer/).

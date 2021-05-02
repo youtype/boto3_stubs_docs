@@ -1,6 +1,6 @@
 # WorkMailMessageFlowClient for boto3 WorkMailMessageFlow module
 
-> [Index](../index.md) > [WorkMailMessageFlow](./index.md) > WorkMailMessageFlowClient
+> [Index](../README.md) > [WorkMailMessageFlow](./README.md) > WorkMailMessageFlowClient
 
 Auto-generated documentation for [WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
 type annotations stubs module [mypy_boto3_workmailmessageflow](https://pypi.org/project/mypy-boto3-workmailmessageflow/).

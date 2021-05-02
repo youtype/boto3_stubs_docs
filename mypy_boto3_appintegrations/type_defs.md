@@ -1,6 +1,6 @@
 # Structures for boto3 AppIntegrationsService module
 
-> [Index](../index.md) > [AppIntegrationsService](./index.md) > Structures
+> [Index](../README.md) > [AppIntegrationsService](./README.md) > Structures
 
 Auto-generated documentation for [AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)
 type annotations stubs module [mypy_boto3_appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).

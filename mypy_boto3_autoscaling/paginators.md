@@ -1,6 +1,6 @@
 # Paginators for boto3 AutoScaling module
 
-> [Index](../index.md) > [AutoScaling](./index.md) > Paginators
+> [Index](../README.md) > [AutoScaling](./README.md) > Paginators
 
 Auto-generated documentation for [AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
 type annotations stubs module [mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).

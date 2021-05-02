@@ -1,6 +1,6 @@
 # Structures for boto3 FraudDetector module
 
-> [Index](../index.md) > [FraudDetector](./index.md) > Structures
+> [Index](../README.md) > [FraudDetector](./README.md) > Structures
 
 Auto-generated documentation for [FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)
 type annotations stubs module [mypy_boto3_frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).

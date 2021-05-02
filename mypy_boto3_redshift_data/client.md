@@ -1,6 +1,6 @@
 # RedshiftDataAPIServiceClient for boto3 RedshiftDataAPIService module
 
-> [Index](../index.md) > [RedshiftDataAPIService](./index.md) > RedshiftDataAPIServiceClient
+> [Index](../README.md) > [RedshiftDataAPIService](./README.md) > RedshiftDataAPIServiceClient
 
 Auto-generated documentation for [RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
 type annotations stubs module [mypy_boto3_redshift_data](https://pypi.org/project/mypy-boto3-redshift-data/).

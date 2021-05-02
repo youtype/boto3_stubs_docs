@@ -1,6 +1,6 @@
 # Paginators for boto3 Route53Resolver module
 
-> [Index](../index.md) > [Route53Resolver](./index.md) > Paginators
+> [Index](../README.md) > [Route53Resolver](./README.md) > Paginators
 
 Auto-generated documentation for [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
 type annotations stubs module [mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).

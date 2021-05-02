@@ -1,6 +1,6 @@
 # Paginators for boto3 ElastiCache module
 
-> [Index](../index.md) > [ElastiCache](./index.md) > Paginators
+> [Index](../README.md) > [ElastiCache](./README.md) > Paginators
 
 Auto-generated documentation for [ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
 type annotations stubs module [mypy_boto3_elasticache](https://pypi.org/project/mypy-boto3-elasticache/).

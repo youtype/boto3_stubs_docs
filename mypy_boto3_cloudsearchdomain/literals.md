@@ -1,6 +1,6 @@
 # Literals for boto3 CloudSearchDomain module
 
-> [Index](../index.md) > [CloudSearchDomain](./index.md) > Literals
+> [Index](../README.md) > [CloudSearchDomain](./README.md) > Literals
 
 Auto-generated documentation for [CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain)
 type annotations stubs module [mypy_boto3_cloudsearchdomain](https://pypi.org/project/mypy-boto3-cloudsearchdomain/).

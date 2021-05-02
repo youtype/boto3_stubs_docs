@@ -1,6 +1,6 @@
 # Paginators for boto3 IoTSiteWise module
 
-> [Index](../index.md) > [IoTSiteWise](./index.md) > Paginators
+> [Index](../README.md) > [IoTSiteWise](./README.md) > Paginators
 
 Auto-generated documentation for [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
 type annotations stubs module [mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).

@@ -1,6 +1,6 @@
 # Literals for boto3 Lambda module
 
-> [Index](../index.md) > [Lambda](./index.md) > Literals
+> [Index](../README.md) > [Lambda](./README.md) > Literals
 
 Auto-generated documentation for [Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
 type annotations stubs module [mypy_boto3_lambda](https://pypi.org/project/mypy-boto3-lambda/).

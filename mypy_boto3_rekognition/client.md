@@ -1,6 +1,6 @@
 # RekognitionClient for boto3 Rekognition module
 
-> [Index](../index.md) > [Rekognition](./index.md) > RekognitionClient
+> [Index](../README.md) > [Rekognition](./README.md) > RekognitionClient
 
 Auto-generated documentation for [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
 type annotations stubs module [mypy_boto3_rekognition](https://pypi.org/project/mypy-boto3-rekognition/).

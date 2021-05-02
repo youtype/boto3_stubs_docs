@@ -1,6 +1,6 @@
 # MigrationHubClient for boto3 MigrationHub module
 
-> [Index](../index.md) > [MigrationHub](./index.md) > MigrationHubClient
+> [Index](../README.md) > [MigrationHub](./README.md) > MigrationHubClient
 
 Auto-generated documentation for [MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
 type annotations stubs module [mypy_boto3_mgh](https://pypi.org/project/mypy-boto3-mgh/).

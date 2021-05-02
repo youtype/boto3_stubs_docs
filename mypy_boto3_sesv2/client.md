@@ -1,6 +1,6 @@
 # SESV2Client for boto3 SESV2 module
 
-> [Index](../index.md) > [SESV2](./index.md) > SESV2Client
+> [Index](../README.md) > [SESV2](./README.md) > SESV2Client
 
 Auto-generated documentation for [SESV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2)
 type annotations stubs module [mypy_boto3_sesv2](https://pypi.org/project/mypy-boto3-sesv2/).

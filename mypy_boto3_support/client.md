@@ -1,6 +1,6 @@
 # SupportClient for boto3 Support module
 
-> [Index](../index.md) > [Support](./index.md) > SupportClient
+> [Index](../README.md) > [Support](./README.md) > SupportClient
 
 Auto-generated documentation for [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
 type annotations stubs module [mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).

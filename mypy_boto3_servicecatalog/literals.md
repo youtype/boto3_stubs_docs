@@ -1,6 +1,6 @@
 # Literals for boto3 ServiceCatalog module
 
-> [Index](../index.md) > [ServiceCatalog](./index.md) > Literals
+> [Index](../README.md) > [ServiceCatalog](./README.md) > Literals
 
 Auto-generated documentation for [ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
 type annotations stubs module [mypy_boto3_servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).

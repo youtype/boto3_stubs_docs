@@ -1,6 +1,6 @@
 # SMSClient for boto3 SMS module
 
-> [Index](../index.md) > [SMS](./index.md) > SMSClient
+> [Index](../README.md) > [SMS](./README.md) > SMSClient
 
 Auto-generated documentation for [SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
 type annotations stubs module [mypy_boto3_sms](https://pypi.org/project/mypy-boto3-sms/).

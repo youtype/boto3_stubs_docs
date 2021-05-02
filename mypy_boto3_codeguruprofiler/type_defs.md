@@ -1,6 +1,6 @@
 # Structures for boto3 CodeGuruProfiler module
 
-> [Index](../index.md) > [CodeGuruProfiler](./index.md) > Structures
+> [Index](../README.md) > [CodeGuruProfiler](./README.md) > Structures
 
 Auto-generated documentation for [CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
 type annotations stubs module [mypy_boto3_codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).

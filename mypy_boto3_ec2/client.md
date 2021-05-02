@@ -1,6 +1,6 @@
 # EC2Client for boto3 EC2 module
 
-> [Index](../index.md) > [EC2](./index.md) > EC2Client
+> [Index](../README.md) > [EC2](./README.md) > EC2Client
 
 Auto-generated documentation for [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
 type annotations stubs module [mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).

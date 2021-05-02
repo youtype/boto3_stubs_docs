@@ -1,6 +1,6 @@
 # SSOOIDCClient for boto3 SSOOIDC module
 
-> [Index](../index.md) > [SSOOIDC](./index.md) > SSOOIDCClient
+> [Index](../README.md) > [SSOOIDC](./README.md) > SSOOIDCClient
 
 Auto-generated documentation for [SSOOIDC](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC)
 type annotations stubs module [mypy_boto3_sso_oidc](https://pypi.org/project/mypy-boto3-sso-oidc/).

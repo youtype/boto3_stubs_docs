@@ -1,6 +1,6 @@
 # Paginators for boto3 MediaTailor module
 
-> [Index](../index.md) > [MediaTailor](./index.md) > Paginators
+> [Index](../README.md) > [MediaTailor](./README.md) > Paginators
 
 Auto-generated documentation for [MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
 type annotations stubs module [mypy_boto3_mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).

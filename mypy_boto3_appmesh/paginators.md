@@ -1,6 +1,6 @@
 # Paginators for boto3 AppMesh module
 
-> [Index](../index.md) > [AppMesh](./index.md) > Paginators
+> [Index](../README.md) > [AppMesh](./README.md) > Paginators
 
 Auto-generated documentation for [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
 type annotations stubs module [mypy_boto3_appmesh](https://pypi.org/project/mypy-boto3-appmesh/).

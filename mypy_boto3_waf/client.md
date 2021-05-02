@@ -1,6 +1,6 @@
 # WAFClient for boto3 WAF module
 
-> [Index](../index.md) > [WAF](./index.md) > WAFClient
+> [Index](../README.md) > [WAF](./README.md) > WAFClient
 
 Auto-generated documentation for [WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)
 type annotations stubs module [mypy_boto3_waf](https://pypi.org/project/mypy-boto3-waf/).

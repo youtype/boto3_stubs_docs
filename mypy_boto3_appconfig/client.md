@@ -1,6 +1,6 @@
 # AppConfigClient for boto3 AppConfig module
 
-> [Index](../index.md) > [AppConfig](./index.md) > AppConfigClient
+> [Index](../README.md) > [AppConfig](./README.md) > AppConfigClient
 
 Auto-generated documentation for [AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
 type annotations stubs module [mypy_boto3_appconfig](https://pypi.org/project/mypy-boto3-appconfig/).

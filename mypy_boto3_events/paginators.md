@@ -1,6 +1,6 @@
 # Paginators for boto3 EventBridge module
 
-> [Index](../index.md) > [EventBridge](./index.md) > Paginators
+> [Index](../README.md) > [EventBridge](./README.md) > Paginators
 
 Auto-generated documentation for [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
 type annotations stubs module [mypy_boto3_events](https://pypi.org/project/mypy-boto3-events/).

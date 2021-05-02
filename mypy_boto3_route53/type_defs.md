@@ -1,6 +1,6 @@
 # Structures for boto3 Route53 module
 
-> [Index](../index.md) > [Route53](./index.md) > Structures
+> [Index](../README.md) > [Route53](./README.md) > Structures
 
 Auto-generated documentation for [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
 type annotations stubs module [mypy_boto3_route53](https://pypi.org/project/mypy-boto3-route53/).

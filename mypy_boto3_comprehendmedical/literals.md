@@ -1,6 +1,6 @@
 # Literals for boto3 ComprehendMedical module
 
-> [Index](../index.md) > [ComprehendMedical](./index.md) > Literals
+> [Index](../README.md) > [ComprehendMedical](./README.md) > Literals
 
 Auto-generated documentation for [ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical)
 type annotations stubs module [mypy_boto3_comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).

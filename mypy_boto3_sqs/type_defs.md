@@ -1,6 +1,6 @@
 # Structures for boto3 SQS module
 
-> [Index](../index.md) > [SQS](./index.md) > Structures
+> [Index](../README.md) > [SQS](./README.md) > Structures
 
 Auto-generated documentation for [SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
 type annotations stubs module [mypy_boto3_sqs](https://pypi.org/project/mypy-boto3-sqs/).

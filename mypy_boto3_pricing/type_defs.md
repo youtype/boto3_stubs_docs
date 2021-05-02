@@ -1,6 +1,6 @@
 # Structures for boto3 Pricing module
 
-> [Index](../index.md) > [Pricing](./index.md) > Structures
+> [Index](../README.md) > [Pricing](./README.md) > Structures
 
 Auto-generated documentation for [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
 type annotations stubs module [mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).

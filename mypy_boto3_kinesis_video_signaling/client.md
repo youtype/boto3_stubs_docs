@@ -1,6 +1,6 @@
 # KinesisVideoSignalingChannelsClient for boto3 KinesisVideoSignalingChannels module
 
-> [Index](../index.md) > [KinesisVideoSignalingChannels](./index.md) > KinesisVideoSignalingChannelsClient
+> [Index](../README.md) > [KinesisVideoSignalingChannels](./README.md) > KinesisVideoSignalingChannelsClient
 
 Auto-generated documentation for [KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)
 type annotations stubs module [mypy_boto3_kinesis_video_signaling](https://pypi.org/project/mypy-boto3-kinesis-video-signaling/).

@@ -1,6 +1,6 @@
 # ApplicationAutoScalingClient for boto3 ApplicationAutoScaling module
 
-> [Index](../index.md) > [ApplicationAutoScaling](./index.md) > ApplicationAutoScalingClient
+> [Index](../README.md) > [ApplicationAutoScaling](./README.md) > ApplicationAutoScalingClient
 
 Auto-generated documentation for [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
 type annotations stubs module [mypy_boto3_application_autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).

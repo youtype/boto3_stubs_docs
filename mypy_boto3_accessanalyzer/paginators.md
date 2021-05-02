@@ -1,6 +1,6 @@
 # Paginators for boto3 AccessAnalyzer module
 
-> [Index](../index.md) > [AccessAnalyzer](./index.md) > Paginators
+> [Index](../README.md) > [AccessAnalyzer](./README.md) > Paginators
 
 Auto-generated documentation for [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
 type annotations stubs module [mypy_boto3_accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).

@@ -1,6 +1,6 @@
 # Paginators for boto3 Macie module
 
-> [Index](../index.md) > [Macie](./index.md) > Paginators
+> [Index](../README.md) > [Macie](./README.md) > Paginators
 
 Auto-generated documentation for [Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
 type annotations stubs module [mypy_boto3_macie](https://pypi.org/project/mypy-boto3-macie/).

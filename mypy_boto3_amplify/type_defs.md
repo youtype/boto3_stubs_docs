@@ -1,6 +1,6 @@
 # Structures for boto3 Amplify module
 
-> [Index](../index.md) > [Amplify](./index.md) > Structures
+> [Index](../README.md) > [Amplify](./README.md) > Structures
 
 Auto-generated documentation for [Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
 type annotations stubs module [mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).

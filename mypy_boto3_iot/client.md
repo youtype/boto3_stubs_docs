@@ -1,6 +1,6 @@
 # IoTClient for boto3 IoT module
 
-> [Index](../index.md) > [IoT](./index.md) > IoTClient
+> [Index](../README.md) > [IoT](./README.md) > IoTClient
 
 Auto-generated documentation for [IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
 type annotations stubs module [mypy_boto3_iot](https://pypi.org/project/mypy-boto3-iot/).

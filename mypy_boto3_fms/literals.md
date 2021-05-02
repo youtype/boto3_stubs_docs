@@ -1,6 +1,6 @@
 # Literals for boto3 FMS module
 
-> [Index](../index.md) > [FMS](./index.md) > Literals
+> [Index](../README.md) > [FMS](./README.md) > Literals
 
 Auto-generated documentation for [FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
 type annotations stubs module [mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).

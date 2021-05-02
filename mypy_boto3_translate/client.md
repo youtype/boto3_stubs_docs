@@ -1,6 +1,6 @@
 # TranslateClient for boto3 Translate module
 
-> [Index](../index.md) > [Translate](./index.md) > TranslateClient
+> [Index](../README.md) > [Translate](./README.md) > TranslateClient
 
 Auto-generated documentation for [Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
 type annotations stubs module [mypy_boto3_translate](https://pypi.org/project/mypy-boto3-translate/).

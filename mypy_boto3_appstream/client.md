@@ -1,6 +1,6 @@
 # AppStreamClient for boto3 AppStream module
 
-> [Index](../index.md) > [AppStream](./index.md) > AppStreamClient
+> [Index](../README.md) > [AppStream](./README.md) > AppStreamClient
 
 Auto-generated documentation for [AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
 type annotations stubs module [mypy_boto3_appstream](https://pypi.org/project/mypy-boto3-appstream/).

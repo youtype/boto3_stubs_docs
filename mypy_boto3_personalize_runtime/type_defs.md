@@ -1,6 +1,6 @@
 # Structures for boto3 PersonalizeRuntime module
 
-> [Index](../index.md) > [PersonalizeRuntime](./index.md) > Structures
+> [Index](../README.md) > [PersonalizeRuntime](./README.md) > Structures
 
 Auto-generated documentation for [PersonalizeRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime)
 type annotations stubs module [mypy_boto3_personalize_runtime](https://pypi.org/project/mypy-boto3-personalize-runtime/).

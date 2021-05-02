@@ -1,6 +1,6 @@
 # Structures for boto3 SecurityHub module
 
-> [Index](../index.md) > [SecurityHub](./index.md) > Structures
+> [Index](../README.md) > [SecurityHub](./README.md) > Structures
 
 Auto-generated documentation for [SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
 type annotations stubs module [mypy_boto3_securityhub](https://pypi.org/project/mypy-boto3-securityhub/).

@@ -1,6 +1,6 @@
 # IAMServiceResource for boto3 IAM module
 
-> [Index](../index.md) > [IAM](./index.md) > IAMServiceResource
+> [Index](../README.md) > [IAM](./README.md) > IAMServiceResource
 
 Auto-generated documentation for [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
 type annotations stubs module [mypy_boto3_iam](https://pypi.org/project/mypy-boto3-iam/).

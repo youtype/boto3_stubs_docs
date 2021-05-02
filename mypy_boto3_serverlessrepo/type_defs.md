@@ -1,6 +1,6 @@
 # Structures for boto3 ServerlessApplicationRepository module
 
-> [Index](../index.md) > [ServerlessApplicationRepository](./index.md) > Structures
+> [Index](../README.md) > [ServerlessApplicationRepository](./README.md) > Structures
 
 Auto-generated documentation for [ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
 type annotations stubs module [mypy_boto3_serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).

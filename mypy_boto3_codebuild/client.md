@@ -1,6 +1,6 @@
 # CodeBuildClient for boto3 CodeBuild module
 
-> [Index](../index.md) > [CodeBuild](./index.md) > CodeBuildClient
+> [Index](../README.md) > [CodeBuild](./README.md) > CodeBuildClient
 
 Auto-generated documentation for [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
 type annotations stubs module [mypy_boto3_codebuild](https://pypi.org/project/mypy-boto3-codebuild/).

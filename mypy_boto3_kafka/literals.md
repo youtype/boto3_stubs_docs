@@ -1,6 +1,6 @@
 # Literals for boto3 Kafka module
 
-> [Index](../index.md) > [Kafka](./index.md) > Literals
+> [Index](../README.md) > [Kafka](./README.md) > Literals
 
 Auto-generated documentation for [Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
 type annotations stubs module [mypy_boto3_kafka](https://pypi.org/project/mypy-boto3-kafka/).

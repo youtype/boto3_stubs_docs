@@ -1,6 +1,6 @@
 # Paginators for boto3 DataExchange module
 
-> [Index](../index.md) > [DataExchange](./index.md) > Paginators
+> [Index](../README.md) > [DataExchange](./README.md) > Paginators
 
 Auto-generated documentation for [DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
 type annotations stubs module [mypy_boto3_dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).

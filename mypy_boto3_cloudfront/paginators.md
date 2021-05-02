@@ -1,6 +1,6 @@
 # Paginators for boto3 CloudFront module
 
-> [Index](../index.md) > [CloudFront](./index.md) > Paginators
+> [Index](../README.md) > [CloudFront](./README.md) > Paginators
 
 Auto-generated documentation for [CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
 type annotations stubs module [mypy_boto3_cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).

@@ -1,6 +1,6 @@
 # Literals for boto3 CodePipeline module
 
-> [Index](../index.md) > [CodePipeline](./index.md) > Literals
+> [Index](../README.md) > [CodePipeline](./README.md) > Literals
 
 Auto-generated documentation for [CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
 type annotations stubs module [mypy_boto3_codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).

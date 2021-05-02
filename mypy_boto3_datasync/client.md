@@ -1,6 +1,6 @@
 # DataSyncClient for boto3 DataSync module
 
-> [Index](../index.md) > [DataSync](./index.md) > DataSyncClient
+> [Index](../README.md) > [DataSync](./README.md) > DataSyncClient
 
 Auto-generated documentation for [DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
 type annotations stubs module [mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).

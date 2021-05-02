@@ -1,6 +1,6 @@
 # Structures for boto3 ConfigService module
 
-> [Index](../index.md) > [ConfigService](./index.md) > Structures
+> [Index](../README.md) > [ConfigService](./README.md) > Structures
 
 Auto-generated documentation for [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
 type annotations stubs module [mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).

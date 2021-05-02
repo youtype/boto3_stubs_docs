@@ -1,6 +1,6 @@
 # Literals for boto3 AppSync module
 
-> [Index](../index.md) > [AppSync](./index.md) > Literals
+> [Index](../README.md) > [AppSync](./README.md) > Literals
 
 Auto-generated documentation for [AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
 type annotations stubs module [mypy_boto3_appsync](https://pypi.org/project/mypy-boto3-appsync/).

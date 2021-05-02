@@ -1,6 +1,6 @@
 # Structures for boto3 Health module
 
-> [Index](../index.md) > [Health](./index.md) > Structures
+> [Index](../README.md) > [Health](./README.md) > Structures
 
 Auto-generated documentation for [Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
 type annotations stubs module [mypy_boto3_health](https://pypi.org/project/mypy-boto3-health/).

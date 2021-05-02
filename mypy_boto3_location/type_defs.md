@@ -1,6 +1,6 @@
 # Structures for boto3 LocationService module
 
-> [Index](../index.md) > [LocationService](./index.md) > Structures
+> [Index](../README.md) > [LocationService](./README.md) > Structures
 
 Auto-generated documentation for [LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
 type annotations stubs module [mypy_boto3_location](https://pypi.org/project/mypy-boto3-location/).

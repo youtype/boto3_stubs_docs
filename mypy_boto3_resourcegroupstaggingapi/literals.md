@@ -1,6 +1,6 @@
 # Literals for boto3 ResourceGroupsTaggingAPI module
 
-> [Index](../index.md) > [ResourceGroupsTaggingAPI](./index.md) > Literals
+> [Index](../README.md) > [ResourceGroupsTaggingAPI](./README.md) > Literals
 
 Auto-generated documentation for [ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
 type annotations stubs module [mypy_boto3_resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).

@@ -1,6 +1,6 @@
 # Literals for boto3 LexRuntimeV2 module
 
-> [Index](../index.md) > [LexRuntimeV2](./index.md) > Literals
+> [Index](../README.md) > [LexRuntimeV2](./README.md) > Literals
 
 Auto-generated documentation for [LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2)
 type annotations stubs module [mypy_boto3_lexv2_runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).

@@ -1,6 +1,6 @@
 # Structures for boto3 IoTDeviceAdvisor module
 
-> [Index](../index.md) > [IoTDeviceAdvisor](./index.md) > Structures
+> [Index](../README.md) > [IoTDeviceAdvisor](./README.md) > Structures
 
 Auto-generated documentation for [IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
 type annotations stubs module [mypy_boto3_iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).

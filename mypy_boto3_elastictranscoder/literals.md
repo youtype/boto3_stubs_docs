@@ -1,6 +1,6 @@
 # Literals for boto3 ElasticTranscoder module
 
-> [Index](../index.md) > [ElasticTranscoder](./index.md) > Literals
+> [Index](../README.md) > [ElasticTranscoder](./README.md) > Literals
 
 Auto-generated documentation for [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
 type annotations stubs module [mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).

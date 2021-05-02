@@ -1,6 +1,6 @@
 # Waiters for boto3 AppStream module
 
-> [Index](../index.md) > [AppStream](./index.md) > Waiters
+> [Index](../README.md) > [AppStream](./README.md) > Waiters
 
 Auto-generated documentation for [AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
 type annotations stubs module [mypy_boto3_appstream](https://pypi.org/project/mypy-boto3-appstream/).

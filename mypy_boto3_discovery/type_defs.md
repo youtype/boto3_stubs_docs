@@ -1,6 +1,6 @@
 # Structures for boto3 ApplicationDiscoveryService module
 
-> [Index](../index.md) > [ApplicationDiscoveryService](./index.md) > Structures
+> [Index](../README.md) > [ApplicationDiscoveryService](./README.md) > Structures
 
 Auto-generated documentation for [ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)
 type annotations stubs module [mypy_boto3_discovery](https://pypi.org/project/mypy-boto3-discovery/).

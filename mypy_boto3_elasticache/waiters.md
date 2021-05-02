@@ -1,6 +1,6 @@
 # Waiters for boto3 ElastiCache module
 
-> [Index](../index.md) > [ElastiCache](./index.md) > Waiters
+> [Index](../README.md) > [ElastiCache](./README.md) > Waiters
 
 Auto-generated documentation for [ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
 type annotations stubs module [mypy_boto3_elasticache](https://pypi.org/project/mypy-boto3-elasticache/).

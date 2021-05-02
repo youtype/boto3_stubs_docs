@@ -1,6 +1,6 @@
 # Literals for boto3 mgn module
 
-> [Index](../index.md) > [mgn](./index.md) > Literals
+> [Index](../README.md) > [mgn](./README.md) > Literals
 
 Auto-generated documentation for [mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
 type annotations stubs module [mypy_boto3_mgn](https://pypi.org/project/mypy-boto3-mgn/).

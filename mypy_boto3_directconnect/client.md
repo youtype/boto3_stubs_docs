@@ -1,6 +1,6 @@
 # DirectConnectClient for boto3 DirectConnect module
 
-> [Index](../index.md) > [DirectConnect](./index.md) > DirectConnectClient
+> [Index](../README.md) > [DirectConnect](./README.md) > DirectConnectClient
 
 Auto-generated documentation for [DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
 type annotations stubs module [mypy_boto3_directconnect](https://pypi.org/project/mypy-boto3-directconnect/).

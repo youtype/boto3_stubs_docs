@@ -1,6 +1,6 @@
 # Structures for boto3 LakeFormation module
 
-> [Index](../index.md) > [LakeFormation](./index.md) > Structures
+> [Index](../README.md) > [LakeFormation](./README.md) > Structures
 
 Auto-generated documentation for [LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
 type annotations stubs module [mypy_boto3_lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).

@@ -1,6 +1,6 @@
 # Literals for boto3 ElasticsearchService module
 
-> [Index](../index.md) > [ElasticsearchService](./index.md) > Literals
+> [Index](../README.md) > [ElasticsearchService](./README.md) > Literals
 
 Auto-generated documentation for [ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
 type annotations stubs module [mypy_boto3_es](https://pypi.org/project/mypy-boto3-es/).

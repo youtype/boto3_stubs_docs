@@ -1,6 +1,6 @@
 # AppflowClient for boto3 Appflow module
 
-> [Index](../index.md) > [Appflow](./index.md) > AppflowClient
+> [Index](../README.md) > [Appflow](./README.md) > AppflowClient
 
 Auto-generated documentation for [Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
 type annotations stubs module [mypy_boto3_appflow](https://pypi.org/project/mypy-boto3-appflow/).

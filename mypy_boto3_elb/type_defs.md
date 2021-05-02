@@ -1,6 +1,6 @@
 # Structures for boto3 ElasticLoadBalancing module
 
-> [Index](../index.md) > [ElasticLoadBalancing](./index.md) > Structures
+> [Index](../README.md) > [ElasticLoadBalancing](./README.md) > Structures
 
 Auto-generated documentation for [ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
 type annotations stubs module [mypy_boto3_elb](https://pypi.org/project/mypy-boto3-elb/).

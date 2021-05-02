@@ -1,6 +1,6 @@
 # TransferClient for boto3 Transfer module
 
-> [Index](../index.md) > [Transfer](./index.md) > TransferClient
+> [Index](../README.md) > [Transfer](./README.md) > TransferClient
 
 Auto-generated documentation for [Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
 type annotations stubs module [mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).

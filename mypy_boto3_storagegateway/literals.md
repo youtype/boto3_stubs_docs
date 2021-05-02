@@ -1,6 +1,6 @@
 # Literals for boto3 StorageGateway module
 
-> [Index](../index.md) > [StorageGateway](./index.md) > Literals
+> [Index](../README.md) > [StorageGateway](./README.md) > Literals
 
 Auto-generated documentation for [StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
 type annotations stubs module [mypy_boto3_storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).

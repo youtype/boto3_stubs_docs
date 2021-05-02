@@ -1,6 +1,6 @@
 # Literals for boto3 WorkMail module
 
-> [Index](../index.md) > [WorkMail](./index.md) > Literals
+> [Index](../README.md) > [WorkMail](./README.md) > Literals
 
 Auto-generated documentation for [WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
 type annotations stubs module [mypy_boto3_workmail](https://pypi.org/project/mypy-boto3-workmail/).

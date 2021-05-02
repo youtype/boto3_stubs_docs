@@ -1,6 +1,6 @@
 # ShieldClient for boto3 Shield module
 
-> [Index](../index.md) > [Shield](./index.md) > ShieldClient
+> [Index](../README.md) > [Shield](./README.md) > ShieldClient
 
 Auto-generated documentation for [Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
 type annotations stubs module [mypy_boto3_shield](https://pypi.org/project/mypy-boto3-shield/).

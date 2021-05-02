@@ -1,6 +1,6 @@
 # Paginators for boto3 Honeycode module
 
-> [Index](../index.md) > [Honeycode](./index.md) > Paginators
+> [Index](../README.md) > [Honeycode](./README.md) > Paginators
 
 Auto-generated documentation for [Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
 type annotations stubs module [mypy_boto3_honeycode](https://pypi.org/project/mypy-boto3-honeycode/).

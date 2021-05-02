@@ -1,6 +1,6 @@
 # Literals for boto3 IoTEvents module
 
-> [Index](../index.md) > [IoTEvents](./index.md) > Literals
+> [Index](../README.md) > [IoTEvents](./README.md) > Literals
 
 Auto-generated documentation for [IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents)
 type annotations stubs module [mypy_boto3_iotevents](https://pypi.org/project/mypy-boto3-iotevents/).

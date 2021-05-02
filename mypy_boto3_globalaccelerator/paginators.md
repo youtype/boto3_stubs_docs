@@ -1,6 +1,6 @@
 # Paginators for boto3 GlobalAccelerator module
 
-> [Index](../index.md) > [GlobalAccelerator](./index.md) > Paginators
+> [Index](../README.md) > [GlobalAccelerator](./README.md) > Paginators
 
 Auto-generated documentation for [GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
 type annotations stubs module [mypy_boto3_globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).

@@ -1,6 +1,6 @@
 # Paginators for boto3 SWF module
 
-> [Index](../index.md) > [SWF](./index.md) > Paginators
+> [Index](../README.md) > [SWF](./README.md) > Paginators
 
 Auto-generated documentation for [SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF)
 type annotations stubs module [mypy_boto3_swf](https://pypi.org/project/mypy-boto3-swf/).

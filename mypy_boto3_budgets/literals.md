@@ -1,6 +1,6 @@
 # Literals for boto3 Budgets module
 
-> [Index](../index.md) > [Budgets](./index.md) > Literals
+> [Index](../README.md) > [Budgets](./README.md) > Literals
 
 Auto-generated documentation for [Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
 type annotations stubs module [mypy_boto3_budgets](https://pypi.org/project/mypy-boto3-budgets/).

@@ -1,6 +1,6 @@
 # AlexaForBusinessClient for boto3 AlexaForBusiness module
 
-> [Index](../index.md) > [AlexaForBusiness](./index.md) > AlexaForBusinessClient
+> [Index](../README.md) > [AlexaForBusiness](./README.md) > AlexaForBusinessClient
 
 Auto-generated documentation for [AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
 type annotations stubs module [mypy_boto3_alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).

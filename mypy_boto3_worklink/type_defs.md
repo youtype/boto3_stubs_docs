@@ -1,6 +1,6 @@
 # Structures for boto3 WorkLink module
 
-> [Index](../index.md) > [WorkLink](./index.md) > Structures
+> [Index](../README.md) > [WorkLink](./README.md) > Structures
 
 Auto-generated documentation for [WorkLink](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink)
 type annotations stubs module [mypy_boto3_worklink](https://pypi.org/project/mypy-boto3-worklink/).

@@ -1,6 +1,6 @@
 # Structures for boto3 KinesisAnalytics module
 
-> [Index](../index.md) > [KinesisAnalytics](./index.md) > Structures
+> [Index](../README.md) > [KinesisAnalytics](./README.md) > Structures
 
 Auto-generated documentation for [KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics)
 type annotations stubs module [mypy_boto3_kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).

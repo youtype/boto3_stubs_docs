@@ -1,6 +1,6 @@
 # Structures for boto3 GameLift module
 
-> [Index](../index.md) > [GameLift](./index.md) > Structures
+> [Index](../README.md) > [GameLift](./README.md) > Structures
 
 Auto-generated documentation for [GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
 type annotations stubs module [mypy_boto3_gamelift](https://pypi.org/project/mypy-boto3-gamelift/).

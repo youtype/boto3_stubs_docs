@@ -1,6 +1,6 @@
 # Structures for boto3 Neptune module
 
-> [Index](../index.md) > [Neptune](./index.md) > Structures
+> [Index](../README.md) > [Neptune](./README.md) > Structures
 
 Auto-generated documentation for [Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)
 type annotations stubs module [mypy_boto3_neptune](https://pypi.org/project/mypy-boto3-neptune/).

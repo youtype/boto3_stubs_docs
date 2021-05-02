@@ -1,6 +1,6 @@
 # Structures for boto3 ServiceQuotas module
 
-> [Index](../index.md) > [ServiceQuotas](./index.md) > Structures
+> [Index](../README.md) > [ServiceQuotas](./README.md) > Structures
 
 Auto-generated documentation for [ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas)
 type annotations stubs module [mypy_boto3_service_quotas](https://pypi.org/project/mypy-boto3-service-quotas/).

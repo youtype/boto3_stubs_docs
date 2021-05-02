@@ -1,6 +1,6 @@
 # MarketplaceCommerceAnalyticsClient for boto3 MarketplaceCommerceAnalytics module
 
-> [Index](../index.md) > [MarketplaceCommerceAnalytics](./index.md) > MarketplaceCommerceAnalyticsClient
+> [Index](../README.md) > [MarketplaceCommerceAnalytics](./README.md) > MarketplaceCommerceAnalyticsClient
 
 Auto-generated documentation for [MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
 type annotations stubs module [mypy_boto3_marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).

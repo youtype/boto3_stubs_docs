@@ -1,6 +1,6 @@
 # Literals for boto3 CloudWatch module
 
-> [Index](../index.md) > [CloudWatch](./index.md) > Literals
+> [Index](../README.md) > [CloudWatch](./README.md) > Literals
 
 Auto-generated documentation for [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
 type annotations stubs module [mypy_boto3_cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).

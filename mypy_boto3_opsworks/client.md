@@ -1,6 +1,6 @@
 # OpsWorksClient for boto3 OpsWorks module
 
-> [Index](../index.md) > [OpsWorks](./index.md) > OpsWorksClient
+> [Index](../README.md) > [OpsWorks](./README.md) > OpsWorksClient
 
 Auto-generated documentation for [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
 type annotations stubs module [mypy_boto3_opsworks](https://pypi.org/project/mypy-boto3-opsworks/).

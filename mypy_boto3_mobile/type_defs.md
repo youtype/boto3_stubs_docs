@@ -1,6 +1,6 @@
 # Structures for boto3 Mobile module
 
-> [Index](../index.md) > [Mobile](./index.md) > Structures
+> [Index](../README.md) > [Mobile](./README.md) > Structures
 
 Auto-generated documentation for [Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
 type annotations stubs module [mypy_boto3_mobile](https://pypi.org/project/mypy-boto3-mobile/).

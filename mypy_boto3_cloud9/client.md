@@ -1,6 +1,6 @@
 # Cloud9Client for boto3 Cloud9 module
 
-> [Index](../index.md) > [Cloud9](./index.md) > Cloud9Client
+> [Index](../README.md) > [Cloud9](./README.md) > Cloud9Client
 
 Auto-generated documentation for [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
 type annotations stubs module [mypy_boto3_cloud9](https://pypi.org/project/mypy-boto3-cloud9/).

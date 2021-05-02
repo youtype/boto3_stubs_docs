@@ -1,6 +1,6 @@
 # OutpostsClient for boto3 Outposts module
 
-> [Index](../index.md) > [Outposts](./index.md) > OutpostsClient
+> [Index](../README.md) > [Outposts](./README.md) > OutpostsClient
 
 Auto-generated documentation for [Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
 type annotations stubs module [mypy_boto3_outposts](https://pypi.org/project/mypy-boto3-outposts/).

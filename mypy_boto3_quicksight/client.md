@@ -1,6 +1,6 @@
 # QuickSightClient for boto3 QuickSight module
 
-> [Index](../index.md) > [QuickSight](./index.md) > QuickSightClient
+> [Index](../README.md) > [QuickSight](./README.md) > QuickSightClient
 
 Auto-generated documentation for [QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
 type annotations stubs module [mypy_boto3_quicksight](https://pypi.org/project/mypy-boto3-quicksight/).

@@ -1,6 +1,6 @@
 # Literals for boto3 WellArchitected module
 
-> [Index](../index.md) > [WellArchitected](./index.md) > Literals
+> [Index](../README.md) > [WellArchitected](./README.md) > Literals
 
 Auto-generated documentation for [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
 type annotations stubs module [mypy_boto3_wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).

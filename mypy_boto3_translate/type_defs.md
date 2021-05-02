@@ -1,6 +1,6 @@
 # Structures for boto3 Translate module
 
-> [Index](../index.md) > [Translate](./index.md) > Structures
+> [Index](../README.md) > [Translate](./README.md) > Structures
 
 Auto-generated documentation for [Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
 type annotations stubs module [mypy_boto3_translate](https://pypi.org/project/mypy-boto3-translate/).

@@ -1,6 +1,6 @@
 # Literals for boto3 Braket module
 
-> [Index](../index.md) > [Braket](./index.md) > Literals
+> [Index](../README.md) > [Braket](./README.md) > Literals
 
 Auto-generated documentation for [Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
 type annotations stubs module [mypy_boto3_braket](https://pypi.org/project/mypy-boto3-braket/).

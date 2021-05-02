@@ -1,6 +1,6 @@
 # DevopsGuruClient for boto3 DevopsGuru module
 
-> [Index](../index.md) > [DevopsGuru](./index.md) > DevopsGuruClient
+> [Index](../README.md) > [DevopsGuru](./README.md) > DevopsGuruClient
 
 Auto-generated documentation for [DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru)
 type annotations stubs module [mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).

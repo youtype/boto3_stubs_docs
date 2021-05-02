@@ -1,6 +1,6 @@
 # Macie2Client for boto3 Macie2 module
 
-> [Index](../index.md) > [Macie2](./index.md) > Macie2Client
+> [Index](../README.md) > [Macie2](./README.md) > Macie2Client
 
 Auto-generated documentation for [Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
 type annotations stubs module [mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).

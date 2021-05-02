@@ -1,6 +1,6 @@
 # Literals for boto3 DataPipeline module
 
-> [Index](../index.md) > [DataPipeline](./index.md) > Literals
+> [Index](../README.md) > [DataPipeline](./README.md) > Literals
 
 Auto-generated documentation for [DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
 type annotations stubs module [mypy_boto3_datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).

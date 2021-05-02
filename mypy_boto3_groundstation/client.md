@@ -1,6 +1,6 @@
 # GroundStationClient for boto3 GroundStation module
 
-> [Index](../index.md) > [GroundStation](./index.md) > GroundStationClient
+> [Index](../README.md) > [GroundStation](./README.md) > GroundStationClient
 
 Auto-generated documentation for [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
 type annotations stubs module [mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).

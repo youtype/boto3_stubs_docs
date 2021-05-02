@@ -1,6 +1,6 @@
 # ECSClient for boto3 ECS module
 
-> [Index](../index.md) > [ECS](./index.md) > ECSClient
+> [Index](../README.md) > [ECS](./README.md) > ECSClient
 
 Auto-generated documentation for [ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
 type annotations stubs module [mypy_boto3_ecs](https://pypi.org/project/mypy-boto3-ecs/).

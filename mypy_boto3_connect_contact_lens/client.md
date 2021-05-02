@@ -1,6 +1,6 @@
 # ConnectContactLensClient for boto3 ConnectContactLens module
 
-> [Index](../index.md) > [ConnectContactLens](./index.md) > ConnectContactLensClient
+> [Index](../README.md) > [ConnectContactLens](./README.md) > ConnectContactLensClient
 
 Auto-generated documentation for [ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens)
 type annotations stubs module [mypy_boto3_connect_contact_lens](https://pypi.org/project/mypy-boto3-connect-contact-lens/).

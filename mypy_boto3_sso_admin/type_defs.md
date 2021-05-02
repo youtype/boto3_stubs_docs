@@ -1,6 +1,6 @@
 # Structures for boto3 SSOAdmin module
 
-> [Index](../index.md) > [SSOAdmin](./index.md) > Structures
+> [Index](../README.md) > [SSOAdmin](./README.md) > Structures
 
 Auto-generated documentation for [SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
 type annotations stubs module [mypy_boto3_sso_admin](https://pypi.org/project/mypy-boto3-sso-admin/).

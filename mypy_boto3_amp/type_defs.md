@@ -1,6 +1,6 @@
 # Structures for boto3 PrometheusService module
 
-> [Index](../index.md) > [PrometheusService](./index.md) > Structures
+> [Index](../README.md) > [PrometheusService](./README.md) > Structures
 
 Auto-generated documentation for [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
 type annotations stubs module [mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).

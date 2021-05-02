@@ -1,6 +1,6 @@
 # Paginators for boto3 MediaLive module
 
-> [Index](../index.md) > [MediaLive](./index.md) > Paginators
+> [Index](../README.md) > [MediaLive](./README.md) > Paginators
 
 Auto-generated documentation for [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
 type annotations stubs module [mypy_boto3_medialive](https://pypi.org/project/mypy-boto3-medialive/).

@@ -1,6 +1,6 @@
 # Paginators for boto3 MediaStore module
 
-> [Index](../index.md) > [MediaStore](./index.md) > Paginators
+> [Index](../README.md) > [MediaStore](./README.md) > Paginators
 
 Auto-generated documentation for [MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
 type annotations stubs module [mypy_boto3_mediastore](https://pypi.org/project/mypy-boto3-mediastore/).

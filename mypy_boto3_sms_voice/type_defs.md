@@ -1,6 +1,6 @@
 # Structures for boto3 SMSVoice module
 
-> [Index](../index.md) > [SMSVoice](./index.md) > Structures
+> [Index](../README.md) > [SMSVoice](./README.md) > Structures
 
 Auto-generated documentation for [SMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice)
 type annotations stubs module [mypy_boto3_sms_voice](https://pypi.org/project/mypy-boto3-sms-voice/).

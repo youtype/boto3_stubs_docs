@@ -1,6 +1,6 @@
 # PersonalizeClient for boto3 Personalize module
 
-> [Index](../index.md) > [Personalize](./index.md) > PersonalizeClient
+> [Index](../README.md) > [Personalize](./README.md) > PersonalizeClient
 
 Auto-generated documentation for [Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
 type annotations stubs module [mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).

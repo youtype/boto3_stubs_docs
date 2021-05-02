@@ -1,6 +1,6 @@
 # Paginators for boto3 MTurk module
 
-> [Index](../index.md) > [MTurk](./index.md) > Paginators
+> [Index](../README.md) > [MTurk](./README.md) > Paginators
 
 Auto-generated documentation for [MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
 type annotations stubs module [mypy_boto3_mturk](https://pypi.org/project/mypy-boto3-mturk/).

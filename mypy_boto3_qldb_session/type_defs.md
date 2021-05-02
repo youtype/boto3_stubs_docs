@@ -1,6 +1,6 @@
 # Structures for boto3 QLDBSession module
 
-> [Index](../index.md) > [QLDBSession](./index.md) > Structures
+> [Index](../README.md) > [QLDBSession](./README.md) > Structures
 
 Auto-generated documentation for [QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
 type annotations stubs module [mypy_boto3_qldb_session](https://pypi.org/project/mypy-boto3-qldb-session/).

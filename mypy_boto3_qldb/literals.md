@@ -1,6 +1,6 @@
 # Literals for boto3 QLDB module
 
-> [Index](../index.md) > [QLDB](./index.md) > Literals
+> [Index](../README.md) > [QLDB](./README.md) > Literals
 
 Auto-generated documentation for [QLDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB)
 type annotations stubs module [mypy_boto3_qldb](https://pypi.org/project/mypy-boto3-qldb/).

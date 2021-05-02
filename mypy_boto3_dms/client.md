@@ -1,6 +1,6 @@
 # DatabaseMigrationServiceClient for boto3 DatabaseMigrationService module
 
-> [Index](../index.md) > [DatabaseMigrationService](./index.md) > DatabaseMigrationServiceClient
+> [Index](../README.md) > [DatabaseMigrationService](./README.md) > DatabaseMigrationServiceClient
 
 Auto-generated documentation for [DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
 type annotations stubs module [mypy_boto3_dms](https://pypi.org/project/mypy-boto3-dms/).

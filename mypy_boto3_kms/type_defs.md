@@ -1,6 +1,6 @@
 # Structures for boto3 KMS module
 
-> [Index](../index.md) > [KMS](./index.md) > Structures
+> [Index](../README.md) > [KMS](./README.md) > Structures
 
 Auto-generated documentation for [KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
 type annotations stubs module [mypy_boto3_kms](https://pypi.org/project/mypy-boto3-kms/).

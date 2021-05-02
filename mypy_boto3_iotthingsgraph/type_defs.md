@@ -1,6 +1,6 @@
 # Structures for boto3 IoTThingsGraph module
 
-> [Index](../index.md) > [IoTThingsGraph](./index.md) > Structures
+> [Index](../README.md) > [IoTThingsGraph](./README.md) > Structures
 
 Auto-generated documentation for [IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
 type annotations stubs module [mypy_boto3_iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).

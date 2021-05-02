@@ -1,6 +1,6 @@
 # STSClient for boto3 STS module
 
-> [Index](../index.md) > [STS](./index.md) > STSClient
+> [Index](../README.md) > [STS](./README.md) > STSClient
 
 Auto-generated documentation for [STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
 type annotations stubs module [mypy_boto3_sts](https://pypi.org/project/mypy-boto3-sts/).

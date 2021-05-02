@@ -1,6 +1,6 @@
 # SyntheticsClient for boto3 Synthetics module
 
-> [Index](../index.md) > [Synthetics](./index.md) > SyntheticsClient
+> [Index](../README.md) > [Synthetics](./README.md) > SyntheticsClient
 
 Auto-generated documentation for [Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
 type annotations stubs module [mypy_boto3_synthetics](https://pypi.org/project/mypy-boto3-synthetics/).

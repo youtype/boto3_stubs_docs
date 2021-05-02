@@ -1,6 +1,6 @@
 # Structures for boto3 CustomerProfiles module
 
-> [Index](../index.md) > [CustomerProfiles](./index.md) > Structures
+> [Index](../README.md) > [CustomerProfiles](./README.md) > Structures
 
 Auto-generated documentation for [CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
 type annotations stubs module [mypy_boto3_customer_profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).

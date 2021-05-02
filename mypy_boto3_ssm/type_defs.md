@@ -1,6 +1,6 @@
 # Structures for boto3 SSM module
 
-> [Index](../index.md) > [SSM](./index.md) > Structures
+> [Index](../README.md) > [SSM](./README.md) > Structures
 
 Auto-generated documentation for [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
 type annotations stubs module [mypy_boto3_ssm](https://pypi.org/project/mypy-boto3-ssm/).

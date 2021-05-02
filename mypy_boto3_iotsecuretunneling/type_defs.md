@@ -1,6 +1,6 @@
 # Structures for boto3 IoTSecureTunneling module
 
-> [Index](../index.md) > [IoTSecureTunneling](./index.md) > Structures
+> [Index](../README.md) > [IoTSecureTunneling](./README.md) > Structures
 
 Auto-generated documentation for [IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
 type annotations stubs module [mypy_boto3_iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).

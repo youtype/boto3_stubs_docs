@@ -1,6 +1,6 @@
 # Literals for boto3 ConnectParticipant module
 
-> [Index](../index.md) > [ConnectParticipant](./index.md) > Literals
+> [Index](../README.md) > [ConnectParticipant](./README.md) > Literals
 
 Auto-generated documentation for [ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
 type annotations stubs module [mypy_boto3_connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).

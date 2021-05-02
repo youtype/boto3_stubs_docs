@@ -1,6 +1,6 @@
 # CloudWatchLogsClient for boto3 CloudWatchLogs module
 
-> [Index](../index.md) > [CloudWatchLogs](./index.md) > CloudWatchLogsClient
+> [Index](../README.md) > [CloudWatchLogs](./README.md) > CloudWatchLogsClient
 
 Auto-generated documentation for [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
 type annotations stubs module [mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).

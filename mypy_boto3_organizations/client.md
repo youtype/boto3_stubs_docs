@@ -1,6 +1,6 @@
 # OrganizationsClient for boto3 Organizations module
 
-> [Index](../index.md) > [Organizations](./index.md) > OrganizationsClient
+> [Index](../README.md) > [Organizations](./README.md) > OrganizationsClient
 
 Auto-generated documentation for [Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
 type annotations stubs module [mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).

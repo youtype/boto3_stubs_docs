@@ -1,6 +1,6 @@
 # Literals for boto3 Backup module
 
-> [Index](../index.md) > [Backup](./index.md) > Literals
+> [Index](../README.md) > [Backup](./README.md) > Literals
 
 Auto-generated documentation for [Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
 type annotations stubs module [mypy_boto3_backup](https://pypi.org/project/mypy-boto3-backup/).
