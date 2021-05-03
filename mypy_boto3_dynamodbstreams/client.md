@@ -29,7 +29,7 @@ def get_dynamodbstreams_client() -> DynamoDBStreamsClient:
     return boto3.client("dynamodbstreams")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client)
 
 ## Exceptions
 
@@ -61,7 +61,7 @@ Exceptions:
 
 Type annotations for `boto3.client("dynamodbstreams").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -75,7 +75,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("dynamodbstreams").describe_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.describe_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.describe_stream]
 
 ```python
 def describe_stream(
@@ -91,7 +91,7 @@ def describe_stream(
 
 Type annotations for `boto3.client("dynamodbstreams").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -108,7 +108,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("dynamodbstreams").get_records` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.get_records]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.get_records]
 
 ```python
 def get_records(
@@ -123,7 +123,7 @@ def get_records(
 
 Type annotations for `boto3.client("dynamodbstreams").get_shard_iterator` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.get_shard_iterator]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.get_shard_iterator]
 
 ```python
 def get_shard_iterator(
@@ -140,7 +140,7 @@ def get_shard_iterator(
 
 Type annotations for `boto3.client("dynamodbstreams").list_streams` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.list_streams]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.list_streams]
 
 ```python
 def list_streams(

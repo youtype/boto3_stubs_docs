@@ -39,7 +39,7 @@ def get_opsworks_resource() -> OpsWorksServiceResource:
     return boto3.resource("opsworks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource)
 
 
 ## Methods
@@ -48,7 +48,7 @@ def get_opsworks_resource() -> OpsWorksServiceResource:
 
 Type annotations for `boto3.resource("opsworks").Layer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.OpsWorksServiceResource.Layer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.OpsWorksServiceResource.Layer]
 
 Definition:
 
@@ -64,7 +64,7 @@ def Layer(
 
 Type annotations for `boto3.resource("opsworks").Stack` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.OpsWorksServiceResource.Stack]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.OpsWorksServiceResource.Stack]
 
 Definition:
 
@@ -80,7 +80,7 @@ def Stack(
 
 Type annotations for `boto3.resource("opsworks").StackSummary` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.OpsWorksServiceResource.StackSummary]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.OpsWorksServiceResource.StackSummary]
 
 Definition:
 
@@ -96,7 +96,7 @@ def StackSummary(
 
 Type annotations for `boto3.resource("opsworks").create_stack` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.OpsWorksServiceResource.create_stack]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.OpsWorksServiceResource.create_stack]
 
 Definition:
 
@@ -130,7 +130,7 @@ def create_stack(
 
 Type annotations for `boto3.resource("opsworks").get_available_subresources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.OpsWorksServiceResource.get_available_subresources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.OpsWorksServiceResource.get_available_subresources]
 
 Definition:
 
@@ -161,7 +161,7 @@ def get_collection() -> ServiceResourceStacksCollection:
     )
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.ServiceResourceStacksCollection)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.ServiceResourceStacksCollection)
 
 Definition:
 
@@ -217,7 +217,7 @@ def get_resource() -> Layer:
     return boto3.resource("opsworks").Layer(...)
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.Layer)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.Layer)
 
 
 ### Layer attributes
@@ -283,7 +283,7 @@ def get_resource() -> Layer:
 
 Type annotations for `boto3.resource("opsworks").delete` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.delete]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.delete]
 
 ```python
 def delete(
@@ -296,7 +296,7 @@ def delete(
 
 Type annotations for `boto3.resource("opsworks").get_available_subresources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.get_available_subresources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -309,7 +309,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("opsworks").load` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.load]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.load]
 
 ```python
 def load(
@@ -322,7 +322,7 @@ def load(
 
 Type annotations for `boto3.resource("opsworks").reload` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.reload]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.reload]
 
 ```python
 def reload(
@@ -349,7 +349,7 @@ def get_resource() -> Stack:
     return boto3.resource("opsworks").Stack(...)
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.Stack)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.Stack)
 
 
 ### Stack attributes
@@ -413,7 +413,7 @@ def get_resource() -> Stack:
 
 Type annotations for `boto3.resource("opsworks").Summary` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.Summary]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.Summary]
 
 ```python
 def Summary(
@@ -426,7 +426,7 @@ def Summary(
 
 Type annotations for `boto3.resource("opsworks").create_layer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.create_layer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.create_layer]
 
 ```python
 def create_layer(
@@ -456,7 +456,7 @@ def create_layer(
 
 Type annotations for `boto3.resource("opsworks").delete` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.delete]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.delete]
 
 ```python
 def delete(
@@ -469,7 +469,7 @@ def delete(
 
 Type annotations for `boto3.resource("opsworks").get_available_subresources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.get_available_subresources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -482,7 +482,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("opsworks").load` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.load]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.load]
 
 ```python
 def load(
@@ -495,7 +495,7 @@ def load(
 
 Type annotations for `boto3.resource("opsworks").reload` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.reload]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.reload]
 
 ```python
 def reload(
@@ -524,7 +524,7 @@ def get_collection() -> StackLayersCollection:
     return resource.layers
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.StackLayersCollection)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.StackLayersCollection)
 
 ```python
 class StackLayersCollection(ResourceCollection):
@@ -579,7 +579,7 @@ def get_resource() -> StackSummary:
     return boto3.resource("opsworks").StackSummary(...)
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.StackSummary)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.StackSummary)
 
 
 ### StackSummary attributes
@@ -607,7 +607,7 @@ def get_resource() -> StackSummary:
 
 Type annotations for `boto3.resource("opsworks").Stack` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.Stack]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.Stack]
 
 ```python
 def Stack(
@@ -620,7 +620,7 @@ def Stack(
 
 Type annotations for `boto3.resource("opsworks").get_available_subresources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.get_available_subresources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -633,7 +633,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("opsworks").load` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.load]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.load]
 
 ```python
 def load(
@@ -646,7 +646,7 @@ def load(
 
 Type annotations for `boto3.resource("opsworks").reload` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.reload]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.reload]
 
 ```python
 def reload(

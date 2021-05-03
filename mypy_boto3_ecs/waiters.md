@@ -24,19 +24,15 @@ def get_services_inactive_waiter() -> ServicesInactiveWaiter:
     return boto3.client("ecs").get_waiter("services_inactive")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Waiter.services_inactive)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Waiter.services_inactive)
 
-```python
-class ServicesInactiveWaiter(Boto3Waiter):
-    def wait(
-        self,
-        services: List[str],
-        cluster: str = None,
-        include: List[Literal['TAGS']] = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `ServicesInactiveWaiter.wait` method:
+
+- `services`: `List[str]` *(required)*
+- `cluster`: `str`
+- `include`: `List[Literal['TAGS']]`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#waiterconfigtypedef)
+
 ## ServicesStableWaiter
 
 Type annotations for `boto3.client("ecs").get_waiter("services_stable")`.
@@ -50,19 +46,15 @@ def get_services_stable_waiter() -> ServicesStableWaiter:
     return boto3.client("ecs").get_waiter("services_stable")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Waiter.services_stable)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Waiter.services_stable)
 
-```python
-class ServicesStableWaiter(Boto3Waiter):
-    def wait(
-        self,
-        services: List[str],
-        cluster: str = None,
-        include: List[Literal['TAGS']] = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `ServicesStableWaiter.wait` method:
+
+- `services`: `List[str]` *(required)*
+- `cluster`: `str`
+- `include`: `List[Literal['TAGS']]`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#waiterconfigtypedef)
+
 ## TasksRunningWaiter
 
 Type annotations for `boto3.client("ecs").get_waiter("tasks_running")`.
@@ -76,19 +68,15 @@ def get_tasks_running_waiter() -> TasksRunningWaiter:
     return boto3.client("ecs").get_waiter("tasks_running")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Waiter.tasks_running)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Waiter.tasks_running)
 
-```python
-class TasksRunningWaiter(Boto3Waiter):
-    def wait(
-        self,
-        tasks: List[str],
-        cluster: str = None,
-        include: List[Literal['TAGS']] = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `TasksRunningWaiter.wait` method:
+
+- `tasks`: `List[str]` *(required)*
+- `cluster`: `str`
+- `include`: `List[Literal['TAGS']]`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#waiterconfigtypedef)
+
 ## TasksStoppedWaiter
 
 Type annotations for `boto3.client("ecs").get_waiter("tasks_stopped")`.
@@ -102,16 +90,11 @@ def get_tasks_stopped_waiter() -> TasksStoppedWaiter:
     return boto3.client("ecs").get_waiter("tasks_stopped")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Waiter.tasks_stopped)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Waiter.tasks_stopped)
 
-```python
-class TasksStoppedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        tasks: List[str],
-        cluster: str = None,
-        include: List[Literal['TAGS']] = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `TasksStoppedWaiter.wait` method:
+
+- `tasks`: `List[str]` *(required)*
+- `cluster`: `str`
+- `include`: `List[Literal['TAGS']]`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#waiterconfigtypedef)

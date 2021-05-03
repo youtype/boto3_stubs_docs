@@ -57,7 +57,7 @@ def get_mediatailor_client() -> MediaTailorClient:
     return boto3.client("mediatailor")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client)
 
 ## Exceptions
 
@@ -85,7 +85,7 @@ Exceptions:
 
 Type annotations for `boto3.client("mediatailor").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -99,7 +99,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("mediatailor").create_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_channel]
 
 ```python
 def create_channel(
@@ -116,7 +116,7 @@ def create_channel(
 
 Type annotations for `boto3.client("mediatailor").create_program` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_program]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_program]
 
 ```python
 def create_program(
@@ -135,7 +135,7 @@ def create_program(
 
 Type annotations for `boto3.client("mediatailor").create_source_location` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_source_location]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_source_location]
 
 ```python
 def create_source_location(
@@ -153,7 +153,7 @@ def create_source_location(
 
 Type annotations for `boto3.client("mediatailor").create_vod_source` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_vod_source]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_vod_source]
 
 ```python
 def create_vod_source(
@@ -170,7 +170,7 @@ def create_vod_source(
 
 Type annotations for `boto3.client("mediatailor").delete_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_channel]
 
 ```python
 def delete_channel(
@@ -184,7 +184,7 @@ def delete_channel(
 
 Type annotations for `boto3.client("mediatailor").delete_channel_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_channel_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_channel_policy]
 
 ```python
 def delete_channel_policy(
@@ -198,7 +198,7 @@ def delete_channel_policy(
 
 Type annotations for `boto3.client("mediatailor").delete_playback_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_playback_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_playback_configuration]
 
 ```python
 def delete_playback_configuration(
@@ -212,7 +212,7 @@ def delete_playback_configuration(
 
 Type annotations for `boto3.client("mediatailor").delete_program` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_program]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_program]
 
 ```python
 def delete_program(
@@ -227,7 +227,7 @@ def delete_program(
 
 Type annotations for `boto3.client("mediatailor").delete_source_location` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_source_location]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_source_location]
 
 ```python
 def delete_source_location(
@@ -241,7 +241,7 @@ def delete_source_location(
 
 Type annotations for `boto3.client("mediatailor").delete_vod_source` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_vod_source]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_vod_source]
 
 ```python
 def delete_vod_source(
@@ -256,7 +256,7 @@ def delete_vod_source(
 
 Type annotations for `boto3.client("mediatailor").describe_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_channel]
 
 ```python
 def describe_channel(
@@ -270,7 +270,7 @@ def describe_channel(
 
 Type annotations for `boto3.client("mediatailor").describe_program` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_program]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_program]
 
 ```python
 def describe_program(
@@ -285,7 +285,7 @@ def describe_program(
 
 Type annotations for `boto3.client("mediatailor").describe_source_location` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_source_location]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_source_location]
 
 ```python
 def describe_source_location(
@@ -299,7 +299,7 @@ def describe_source_location(
 
 Type annotations for `boto3.client("mediatailor").describe_vod_source` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_vod_source]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_vod_source]
 
 ```python
 def describe_vod_source(
@@ -314,7 +314,7 @@ def describe_vod_source(
 
 Type annotations for `boto3.client("mediatailor").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -331,7 +331,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("mediatailor").get_channel_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_channel_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_channel_policy]
 
 ```python
 def get_channel_policy(
@@ -345,7 +345,7 @@ def get_channel_policy(
 
 Type annotations for `boto3.client("mediatailor").get_channel_schedule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_channel_schedule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_channel_schedule]
 
 ```python
 def get_channel_schedule(
@@ -362,7 +362,7 @@ def get_channel_schedule(
 
 Type annotations for `boto3.client("mediatailor").get_playback_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_playback_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_playback_configuration]
 
 ```python
 def get_playback_configuration(
@@ -376,7 +376,7 @@ def get_playback_configuration(
 
 Type annotations for `boto3.client("mediatailor").list_channels` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_channels]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_channels]
 
 ```python
 def list_channels(
@@ -391,7 +391,7 @@ def list_channels(
 
 Type annotations for `boto3.client("mediatailor").list_playback_configurations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_playback_configurations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_playback_configurations]
 
 ```python
 def list_playback_configurations(
@@ -406,7 +406,7 @@ def list_playback_configurations(
 
 Type annotations for `boto3.client("mediatailor").list_source_locations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_source_locations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_source_locations]
 
 ```python
 def list_source_locations(
@@ -421,7 +421,7 @@ def list_source_locations(
 
 Type annotations for `boto3.client("mediatailor").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -435,7 +435,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("mediatailor").list_vod_sources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_vod_sources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_vod_sources]
 
 ```python
 def list_vod_sources(
@@ -451,7 +451,7 @@ def list_vod_sources(
 
 Type annotations for `boto3.client("mediatailor").put_channel_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.put_channel_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.put_channel_policy]
 
 ```python
 def put_channel_policy(
@@ -466,7 +466,7 @@ def put_channel_policy(
 
 Type annotations for `boto3.client("mediatailor").put_playback_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.put_playback_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.put_playback_configuration]
 
 ```python
 def put_playback_configuration(
@@ -493,7 +493,7 @@ def put_playback_configuration(
 
 Type annotations for `boto3.client("mediatailor").start_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.start_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.start_channel]
 
 ```python
 def start_channel(
@@ -507,7 +507,7 @@ def start_channel(
 
 Type annotations for `boto3.client("mediatailor").stop_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.stop_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.stop_channel]
 
 ```python
 def stop_channel(
@@ -521,7 +521,7 @@ def stop_channel(
 
 Type annotations for `boto3.client("mediatailor").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -536,7 +536,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("mediatailor").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -551,7 +551,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("mediatailor").update_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_channel]
 
 ```python
 def update_channel(
@@ -566,7 +566,7 @@ def update_channel(
 
 Type annotations for `boto3.client("mediatailor").update_source_location` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_source_location]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_source_location]
 
 ```python
 def update_source_location(
@@ -583,7 +583,7 @@ def update_source_location(
 
 Type annotations for `boto3.client("mediatailor").update_vod_source` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_vod_source]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_vod_source]
 
 ```python
 def update_vod_source(

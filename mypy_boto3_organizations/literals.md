@@ -14,6 +14,7 @@ type annotations stubs module [mypy_boto3_organizations](https://pypi.org/projec
   - [CreateAccountState](#createaccountstate)
   - [EffectivePolicyType](#effectivepolicytype)
   - [HandshakePartyType](#handshakepartytype)
+  - [HandshakeResourceType](#handshakeresourcetype)
   - [HandshakeState](#handshakestate)
   - [IAMUserAccessToBilling](#iamuseraccesstobilling)
   - [ListAWSServiceAccessForOrganizationPaginatorName](#listawsserviceaccessfororganizationpaginatorname)
@@ -141,6 +142,23 @@ Values:
 - `ACCOUNT`
 - `EMAIL`
 - `ORGANIZATION`
+
+## HandshakeResourceType
+
+```python
+from mypy_boto3_organizations.literals import HandshakeResourceType
+```
+
+Values:
+
+- `ACCOUNT`
+- `EMAIL`
+- `MASTER_EMAIL`
+- `MASTER_NAME`
+- `NOTES`
+- `ORGANIZATION`
+- `ORGANIZATION_FEATURE_SET`
+- `PARENT_HANDSHAKE`
 
 ## HandshakeState
 

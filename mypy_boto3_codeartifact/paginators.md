@@ -26,7 +26,7 @@ def get_list_domains_paginator() -> ListDomainsPaginator:
     return boto3.client("codeartifact").get_paginator("list_domains")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListDomains)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListDomains)
 
 ```python
 class ListDomainsPaginator(Boto3Paginator):
@@ -49,7 +49,7 @@ def get_list_package_version_assets_paginator() -> ListPackageVersionAssetsPagin
     return boto3.client("codeartifact").get_paginator("list_package_version_assets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListPackageVersionAssets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListPackageVersionAssets)
 
 ```python
 class ListPackageVersionAssetsPaginator(Boto3Paginator):
@@ -79,7 +79,7 @@ def get_list_package_versions_paginator() -> ListPackageVersionsPaginator:
     return boto3.client("codeartifact").get_paginator("list_package_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListPackageVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListPackageVersions)
 
 ```python
 class ListPackageVersionsPaginator(Boto3Paginator):
@@ -110,7 +110,7 @@ def get_list_packages_paginator() -> ListPackagesPaginator:
     return boto3.client("codeartifact").get_paginator("list_packages")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListPackages)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListPackages)
 
 ```python
 class ListPackagesPaginator(Boto3Paginator):
@@ -139,7 +139,7 @@ def get_list_repositories_paginator() -> ListRepositoriesPaginator:
     return boto3.client("codeartifact").get_paginator("list_repositories")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListRepositories)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListRepositories)
 
 ```python
 class ListRepositoriesPaginator(Boto3Paginator):
@@ -163,7 +163,7 @@ def get_list_repositories_in_domain_paginator() -> ListRepositoriesInDomainPagin
     return boto3.client("codeartifact").get_paginator("list_repositories_in_domain")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListRepositoriesInDomain)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListRepositoriesInDomain)
 
 ```python
 class ListRepositoriesInDomainPaginator(Boto3Paginator):

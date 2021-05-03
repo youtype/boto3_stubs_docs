@@ -22,7 +22,7 @@ def get_list_application_snapshots_paginator() -> ListApplicationSnapshotsPagina
     return boto3.client("kinesisanalyticsv2").get_paginator("list_application_snapshots")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Paginator.ListApplicationSnapshots)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Paginator.ListApplicationSnapshots)
 
 ```python
 class ListApplicationSnapshotsPaginator(Boto3Paginator):
@@ -46,7 +46,7 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
     return boto3.client("kinesisanalyticsv2").get_paginator("list_applications")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Paginator.ListApplications)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Paginator.ListApplications)
 
 ```python
 class ListApplicationsPaginator(Boto3Paginator):

@@ -22,7 +22,7 @@ def get_list_placements_paginator() -> ListPlacementsPaginator:
     return boto3.client("iot1click-projects").get_paginator("list_placements")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Paginator.ListPlacements)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Paginator.ListPlacements)
 
 ```python
 class ListPlacementsPaginator(Boto3Paginator):
@@ -46,7 +46,7 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("iot1click-projects").get_paginator("list_projects")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Paginator.ListProjects)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Paginator.ListProjects)
 
 ```python
 class ListProjectsPaginator(Boto3Paginator):

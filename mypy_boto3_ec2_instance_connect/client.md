@@ -27,7 +27,7 @@ def get_ec2-instance-connect_client() -> EC2InstanceConnectClient:
     return boto3.client("ec2-instance-connect")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client)
 
 ## Exceptions
 
@@ -63,7 +63,7 @@ Exceptions:
 
 Type annotations for `boto3.client("ec2-instance-connect").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -77,7 +77,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("ec2-instance-connect").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -94,7 +94,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("ec2-instance-connect").send_serial_console_ssh_public_key` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.send_serial_console_ssh_public_key]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.send_serial_console_ssh_public_key]
 
 ```python
 def send_serial_console_ssh_public_key(
@@ -110,7 +110,7 @@ def send_serial_console_ssh_public_key(
 
 Type annotations for `boto3.client("ec2-instance-connect").send_ssh_public_key` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.send_ssh_public_key]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.send_ssh_public_key]
 
 ```python
 def send_ssh_public_key(

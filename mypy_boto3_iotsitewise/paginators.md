@@ -33,7 +33,7 @@ def get_get_asset_property_aggregates_paginator() -> GetAssetPropertyAggregatesP
     return boto3.client("iotsitewise").get_paginator("get_asset_property_aggregates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetAssetPropertyAggregates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetAssetPropertyAggregates)
 
 ```python
 class GetAssetPropertyAggregatesPaginator(Boto3Paginator):
@@ -65,7 +65,7 @@ def get_get_asset_property_value_history_paginator() -> GetAssetPropertyValueHis
     return boto3.client("iotsitewise").get_paginator("get_asset_property_value_history")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetAssetPropertyValueHistory)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetAssetPropertyValueHistory)
 
 ```python
 class GetAssetPropertyValueHistoryPaginator(Boto3Paginator):
@@ -95,7 +95,7 @@ def get_get_interpolated_asset_property_values_paginator() -> GetInterpolatedAss
     return boto3.client("iotsitewise").get_paginator("get_interpolated_asset_property_values")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetInterpolatedAssetPropertyValues)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetInterpolatedAssetPropertyValues)
 
 ```python
 class GetInterpolatedAssetPropertyValuesPaginator(Boto3Paginator):
@@ -128,7 +128,7 @@ def get_list_access_policies_paginator() -> ListAccessPoliciesPaginator:
     return boto3.client("iotsitewise").get_paginator("list_access_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAccessPolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAccessPolicies)
 
 ```python
 class ListAccessPoliciesPaginator(Boto3Paginator):
@@ -156,7 +156,7 @@ def get_list_asset_models_paginator() -> ListAssetModelsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_asset_models")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssetModels)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssetModels)
 
 ```python
 class ListAssetModelsPaginator(Boto3Paginator):
@@ -179,7 +179,7 @@ def get_list_asset_relationships_paginator() -> ListAssetRelationshipsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_asset_relationships")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssetRelationships)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssetRelationships)
 
 ```python
 class ListAssetRelationshipsPaginator(Boto3Paginator):
@@ -204,7 +204,7 @@ def get_list_assets_paginator() -> ListAssetsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_assets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssets)
 
 ```python
 class ListAssetsPaginator(Boto3Paginator):
@@ -229,7 +229,7 @@ def get_list_associated_assets_paginator() -> ListAssociatedAssetsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_associated_assets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssociatedAssets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssociatedAssets)
 
 ```python
 class ListAssociatedAssetsPaginator(Boto3Paginator):
@@ -255,7 +255,7 @@ def get_list_dashboards_paginator() -> ListDashboardsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_dashboards")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListDashboards)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListDashboards)
 
 ```python
 class ListDashboardsPaginator(Boto3Paginator):
@@ -279,7 +279,7 @@ def get_list_gateways_paginator() -> ListGatewaysPaginator:
     return boto3.client("iotsitewise").get_paginator("list_gateways")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListGateways)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListGateways)
 
 ```python
 class ListGatewaysPaginator(Boto3Paginator):
@@ -302,7 +302,7 @@ def get_list_portals_paginator() -> ListPortalsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_portals")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListPortals)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListPortals)
 
 ```python
 class ListPortalsPaginator(Boto3Paginator):
@@ -325,7 +325,7 @@ def get_list_project_assets_paginator() -> ListProjectAssetsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_project_assets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListProjectAssets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListProjectAssets)
 
 ```python
 class ListProjectAssetsPaginator(Boto3Paginator):
@@ -349,7 +349,7 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_projects")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListProjects)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListProjects)
 
 ```python
 class ListProjectsPaginator(Boto3Paginator):

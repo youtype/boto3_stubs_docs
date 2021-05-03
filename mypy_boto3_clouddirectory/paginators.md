@@ -39,7 +39,7 @@ def get_list_applied_schema_arns_paginator() -> ListAppliedSchemaArnsPaginator:
     return boto3.client("clouddirectory").get_paginator("list_applied_schema_arns")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListAppliedSchemaArns)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListAppliedSchemaArns)
 
 ```python
 class ListAppliedSchemaArnsPaginator(Boto3Paginator):
@@ -64,7 +64,7 @@ def get_list_attached_indices_paginator() -> ListAttachedIndicesPaginator:
     return boto3.client("clouddirectory").get_paginator("list_attached_indices")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListAttachedIndices)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListAttachedIndices)
 
 ```python
 class ListAttachedIndicesPaginator(Boto3Paginator):
@@ -90,7 +90,7 @@ def get_list_development_schema_arns_paginator() -> ListDevelopmentSchemaArnsPag
     return boto3.client("clouddirectory").get_paginator("list_development_schema_arns")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListDevelopmentSchemaArns)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListDevelopmentSchemaArns)
 
 ```python
 class ListDevelopmentSchemaArnsPaginator(Boto3Paginator):
@@ -113,7 +113,7 @@ def get_list_directories_paginator() -> ListDirectoriesPaginator:
     return boto3.client("clouddirectory").get_paginator("list_directories")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListDirectories)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListDirectories)
 
 ```python
 class ListDirectoriesPaginator(Boto3Paginator):
@@ -137,7 +137,7 @@ def get_list_facet_attributes_paginator() -> ListFacetAttributesPaginator:
     return boto3.client("clouddirectory").get_paginator("list_facet_attributes")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListFacetAttributes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListFacetAttributes)
 
 ```python
 class ListFacetAttributesPaginator(Boto3Paginator):
@@ -162,7 +162,7 @@ def get_list_facet_names_paginator() -> ListFacetNamesPaginator:
     return boto3.client("clouddirectory").get_paginator("list_facet_names")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListFacetNames)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListFacetNames)
 
 ```python
 class ListFacetNamesPaginator(Boto3Paginator):
@@ -186,7 +186,7 @@ def get_list_incoming_typed_links_paginator() -> ListIncomingTypedLinksPaginator
     return boto3.client("clouddirectory").get_paginator("list_incoming_typed_links")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListIncomingTypedLinks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListIncomingTypedLinks)
 
 ```python
 class ListIncomingTypedLinksPaginator(Boto3Paginator):
@@ -214,7 +214,7 @@ def get_list_index_paginator() -> ListIndexPaginator:
     return boto3.client("clouddirectory").get_paginator("list_index")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListIndex)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListIndex)
 
 ```python
 class ListIndexPaginator(Boto3Paginator):
@@ -241,7 +241,7 @@ def get_list_managed_schema_arns_paginator() -> ListManagedSchemaArnsPaginator:
     return boto3.client("clouddirectory").get_paginator("list_managed_schema_arns")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListManagedSchemaArns)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListManagedSchemaArns)
 
 ```python
 class ListManagedSchemaArnsPaginator(Boto3Paginator):
@@ -265,7 +265,7 @@ def get_list_object_attributes_paginator() -> ListObjectAttributesPaginator:
     return boto3.client("clouddirectory").get_paginator("list_object_attributes")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListObjectAttributes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListObjectAttributes)
 
 ```python
 class ListObjectAttributesPaginator(Boto3Paginator):
@@ -292,7 +292,7 @@ def get_list_object_parent_paths_paginator() -> ListObjectParentPathsPaginator:
     return boto3.client("clouddirectory").get_paginator("list_object_parent_paths")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListObjectParentPaths)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListObjectParentPaths)
 
 ```python
 class ListObjectParentPathsPaginator(Boto3Paginator):
@@ -317,7 +317,7 @@ def get_list_object_policies_paginator() -> ListObjectPoliciesPaginator:
     return boto3.client("clouddirectory").get_paginator("list_object_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListObjectPolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListObjectPolicies)
 
 ```python
 class ListObjectPoliciesPaginator(Boto3Paginator):
@@ -343,7 +343,7 @@ def get_list_outgoing_typed_links_paginator() -> ListOutgoingTypedLinksPaginator
     return boto3.client("clouddirectory").get_paginator("list_outgoing_typed_links")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListOutgoingTypedLinks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListOutgoingTypedLinks)
 
 ```python
 class ListOutgoingTypedLinksPaginator(Boto3Paginator):
@@ -371,7 +371,7 @@ def get_list_policy_attachments_paginator() -> ListPolicyAttachmentsPaginator:
     return boto3.client("clouddirectory").get_paginator("list_policy_attachments")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListPolicyAttachments)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListPolicyAttachments)
 
 ```python
 class ListPolicyAttachmentsPaginator(Boto3Paginator):
@@ -397,7 +397,7 @@ def get_list_published_schema_arns_paginator() -> ListPublishedSchemaArnsPaginat
     return boto3.client("clouddirectory").get_paginator("list_published_schema_arns")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListPublishedSchemaArns)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListPublishedSchemaArns)
 
 ```python
 class ListPublishedSchemaArnsPaginator(Boto3Paginator):
@@ -421,7 +421,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("clouddirectory").get_paginator("list_tags_for_resource")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListTagsForResource)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):
@@ -445,7 +445,7 @@ def get_list_typed_link_facet_attributes_paginator() -> ListTypedLinkFacetAttrib
     return boto3.client("clouddirectory").get_paginator("list_typed_link_facet_attributes")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListTypedLinkFacetAttributes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListTypedLinkFacetAttributes)
 
 ```python
 class ListTypedLinkFacetAttributesPaginator(Boto3Paginator):
@@ -470,7 +470,7 @@ def get_list_typed_link_facet_names_paginator() -> ListTypedLinkFacetNamesPagina
     return boto3.client("clouddirectory").get_paginator("list_typed_link_facet_names")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListTypedLinkFacetNames)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.ListTypedLinkFacetNames)
 
 ```python
 class ListTypedLinkFacetNamesPaginator(Boto3Paginator):
@@ -494,7 +494,7 @@ def get_lookup_policy_paginator() -> LookupPolicyPaginator:
     return boto3.client("clouddirectory").get_paginator("lookup_policy")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.LookupPolicy)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Paginator.LookupPolicy)
 
 ```python
 class LookupPolicyPaginator(Boto3Paginator):

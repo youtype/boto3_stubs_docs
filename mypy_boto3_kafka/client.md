@@ -56,7 +56,7 @@ def get_kafka_client() -> KafkaClient:
     return boto3.client("kafka")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client)
 
 ## Exceptions
 
@@ -91,7 +91,7 @@ Exceptions:
 
 Type annotations for `boto3.client("kafka").batch_associate_scram_secret` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.batch_associate_scram_secret]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.batch_associate_scram_secret]
 
 ```python
 def batch_associate_scram_secret(
@@ -106,7 +106,7 @@ def batch_associate_scram_secret(
 
 Type annotations for `boto3.client("kafka").batch_disassociate_scram_secret` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.batch_disassociate_scram_secret]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.batch_disassociate_scram_secret]
 
 ```python
 def batch_disassociate_scram_secret(
@@ -121,7 +121,7 @@ def batch_disassociate_scram_secret(
 
 Type annotations for `boto3.client("kafka").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -135,7 +135,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("kafka").create_cluster` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.create_cluster]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.create_cluster]
 
 ```python
 def create_cluster(
@@ -159,7 +159,7 @@ def create_cluster(
 
 Type annotations for `boto3.client("kafka").create_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.create_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.create_configuration]
 
 ```python
 def create_configuration(
@@ -176,7 +176,7 @@ def create_configuration(
 
 Type annotations for `boto3.client("kafka").delete_cluster` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.delete_cluster]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.delete_cluster]
 
 ```python
 def delete_cluster(
@@ -191,7 +191,7 @@ def delete_cluster(
 
 Type annotations for `boto3.client("kafka").delete_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.delete_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.delete_configuration]
 
 ```python
 def delete_configuration(
@@ -205,7 +205,7 @@ def delete_configuration(
 
 Type annotations for `boto3.client("kafka").describe_cluster` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_cluster]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_cluster]
 
 ```python
 def describe_cluster(
@@ -219,7 +219,7 @@ def describe_cluster(
 
 Type annotations for `boto3.client("kafka").describe_cluster_operation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_cluster_operation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_cluster_operation]
 
 ```python
 def describe_cluster_operation(
@@ -233,7 +233,7 @@ def describe_cluster_operation(
 
 Type annotations for `boto3.client("kafka").describe_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_configuration]
 
 ```python
 def describe_configuration(
@@ -247,7 +247,7 @@ def describe_configuration(
 
 Type annotations for `boto3.client("kafka").describe_configuration_revision` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_configuration_revision]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_configuration_revision]
 
 ```python
 def describe_configuration_revision(
@@ -262,7 +262,7 @@ def describe_configuration_revision(
 
 Type annotations for `boto3.client("kafka").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -279,7 +279,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("kafka").get_bootstrap_brokers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.get_bootstrap_brokers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.get_bootstrap_brokers]
 
 ```python
 def get_bootstrap_brokers(
@@ -293,7 +293,7 @@ def get_bootstrap_brokers(
 
 Type annotations for `boto3.client("kafka").get_compatible_kafka_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.get_compatible_kafka_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.get_compatible_kafka_versions]
 
 ```python
 def get_compatible_kafka_versions(
@@ -307,7 +307,7 @@ def get_compatible_kafka_versions(
 
 Type annotations for `boto3.client("kafka").list_cluster_operations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_cluster_operations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_cluster_operations]
 
 ```python
 def list_cluster_operations(
@@ -323,7 +323,7 @@ def list_cluster_operations(
 
 Type annotations for `boto3.client("kafka").list_clusters` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_clusters]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_clusters]
 
 ```python
 def list_clusters(
@@ -339,7 +339,7 @@ def list_clusters(
 
 Type annotations for `boto3.client("kafka").list_configuration_revisions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_configuration_revisions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_configuration_revisions]
 
 ```python
 def list_configuration_revisions(
@@ -355,7 +355,7 @@ def list_configuration_revisions(
 
 Type annotations for `boto3.client("kafka").list_configurations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_configurations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_configurations]
 
 ```python
 def list_configurations(
@@ -370,7 +370,7 @@ def list_configurations(
 
 Type annotations for `boto3.client("kafka").list_kafka_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_kafka_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_kafka_versions]
 
 ```python
 def list_kafka_versions(
@@ -385,7 +385,7 @@ def list_kafka_versions(
 
 Type annotations for `boto3.client("kafka").list_nodes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_nodes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_nodes]
 
 ```python
 def list_nodes(
@@ -401,7 +401,7 @@ def list_nodes(
 
 Type annotations for `boto3.client("kafka").list_scram_secrets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_scram_secrets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_scram_secrets]
 
 ```python
 def list_scram_secrets(
@@ -417,7 +417,7 @@ def list_scram_secrets(
 
 Type annotations for `boto3.client("kafka").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -431,7 +431,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("kafka").reboot_broker` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.reboot_broker]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.reboot_broker]
 
 ```python
 def reboot_broker(
@@ -446,7 +446,7 @@ def reboot_broker(
 
 Type annotations for `boto3.client("kafka").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -461,7 +461,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("kafka").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -476,7 +476,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("kafka").update_broker_count` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_broker_count]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_broker_count]
 
 ```python
 def update_broker_count(
@@ -492,7 +492,7 @@ def update_broker_count(
 
 Type annotations for `boto3.client("kafka").update_broker_storage` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_broker_storage]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_broker_storage]
 
 ```python
 def update_broker_storage(
@@ -508,7 +508,7 @@ def update_broker_storage(
 
 Type annotations for `boto3.client("kafka").update_broker_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_broker_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_broker_type]
 
 ```python
 def update_broker_type(
@@ -524,7 +524,7 @@ def update_broker_type(
 
 Type annotations for `boto3.client("kafka").update_cluster_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_cluster_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_cluster_configuration]
 
 ```python
 def update_cluster_configuration(
@@ -540,7 +540,7 @@ def update_cluster_configuration(
 
 Type annotations for `boto3.client("kafka").update_cluster_kafka_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_cluster_kafka_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_cluster_kafka_version]
 
 ```python
 def update_cluster_kafka_version(
@@ -557,7 +557,7 @@ def update_cluster_kafka_version(
 
 Type annotations for `boto3.client("kafka").update_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_configuration]
 
 ```python
 def update_configuration(
@@ -573,7 +573,7 @@ def update_configuration(
 
 Type annotations for `boto3.client("kafka").update_monitoring` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_monitoring]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_monitoring]
 
 ```python
 def update_monitoring(

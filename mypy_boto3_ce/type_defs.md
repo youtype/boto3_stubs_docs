@@ -143,7 +143,7 @@ Optional fields:
 - `LastUpdatedDate`: `str`
 - `LastEvaluatedDate`: `str`
 - `MonitorDimension`: `Literal['SERVICE']`
-- `MonitorSpecification`: `Dict[str, Any]`
+- `MonitorSpecification`: `"ExpressionTypeDef"`
 - `DimensionalValueCount`: `int`
 
 
@@ -264,7 +264,7 @@ from mypy_boto3_ce.type_defs import CostCategoryRuleTypeDef
 
 Optional fields:
 - `Value`: `str`
-- `Rule`: `Dict[str, Any]`
+- `Rule`: `"ExpressionTypeDef"`
 - `InheritedValue`: `"CostCategoryInheritedValueDimensionTypeDef"`
 - `Type`: `CostCategoryRuleType`
 
@@ -645,9 +645,9 @@ from mypy_boto3_ce.type_defs import ExpressionTypeDef
 
 
 Optional fields:
-- `Or`: `List[Dict[str, Any]]`
-- `And`: `List[Dict[str, Any]]`
-- `Not`: `Dict[str, Any]`
+- `Or`: `List["ExpressionTypeDef"]`
+- `And`: `List["ExpressionTypeDef"]`
+- `Not`: `"ExpressionTypeDef"`
 - `Dimensions`: `"DimensionValuesTypeDef"`
 - `Tags`: `"TagValuesTypeDef"`
 - `CostCategories`: `"CostCategoryValuesTypeDef"`

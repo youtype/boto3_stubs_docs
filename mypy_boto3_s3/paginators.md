@@ -25,7 +25,7 @@ def get_list_multipart_uploads_paginator() -> ListMultipartUploadsPaginator:
     return boto3.client("s3").get_paginator("list_multipart_uploads")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListMultipartUploads)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListMultipartUploads)
 
 ```python
 class ListMultipartUploadsPaginator(Boto3Paginator):
@@ -53,7 +53,7 @@ def get_list_object_versions_paginator() -> ListObjectVersionsPaginator:
     return boto3.client("s3").get_paginator("list_object_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListObjectVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListObjectVersions)
 
 ```python
 class ListObjectVersionsPaginator(Boto3Paginator):
@@ -81,7 +81,7 @@ def get_list_objects_paginator() -> ListObjectsPaginator:
     return boto3.client("s3").get_paginator("list_objects")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListObjects)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListObjects)
 
 ```python
 class ListObjectsPaginator(Boto3Paginator):
@@ -110,7 +110,7 @@ def get_list_objects_v2_paginator() -> ListObjectsV2Paginator:
     return boto3.client("s3").get_paginator("list_objects_v2")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListObjectsV2)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListObjectsV2)
 
 ```python
 class ListObjectsV2Paginator(Boto3Paginator):
@@ -141,7 +141,7 @@ def get_list_parts_paginator() -> ListPartsPaginator:
     return boto3.client("s3").get_paginator("list_parts")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListParts)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Paginator.ListParts)
 
 ```python
 class ListPartsPaginator(Boto3Paginator):

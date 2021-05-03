@@ -7627,7 +7627,7 @@ from mypy_boto3_sagemaker.type_defs import SearchExpressionTypeDef
 Optional fields:
 - `Filters`: `List["FilterTypeDef"]`
 - `NestedFilters`: `List["NestedFiltersTypeDef"]`
-- `SubExpressions`: `List[Dict[str, Any]]`
+- `SubExpressions`: `List["SearchExpressionTypeDef"]`
 - `Operator`: `BooleanOperator`
 
 

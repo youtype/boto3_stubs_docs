@@ -22,7 +22,7 @@ def get_describe_scaling_plan_resources_paginator() -> DescribeScalingPlanResour
     return boto3.client("autoscaling-plans").get_paginator("describe_scaling_plan_resources")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Paginator.DescribeScalingPlanResources)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Paginator.DescribeScalingPlanResources)
 
 ```python
 class DescribeScalingPlanResourcesPaginator(Boto3Paginator):
@@ -47,7 +47,7 @@ def get_describe_scaling_plans_paginator() -> DescribeScalingPlansPaginator:
     return boto3.client("autoscaling-plans").get_paginator("describe_scaling_plans")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Paginator.DescribeScalingPlans)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Paginator.DescribeScalingPlans)
 
 ```python
 class DescribeScalingPlansPaginator(Boto3Paginator):

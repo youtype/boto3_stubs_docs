@@ -22,7 +22,7 @@ def get_list_accounts_paginator() -> ListAccountsPaginator:
     return boto3.client("chime").get_paginator("list_accounts")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Paginator.ListAccounts)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Paginator.ListAccounts)
 
 ```python
 class ListAccountsPaginator(Boto3Paginator):
@@ -47,7 +47,7 @@ def get_list_users_paginator() -> ListUsersPaginator:
     return boto3.client("chime").get_paginator("list_users")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Paginator.ListUsers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Paginator.ListUsers)
 
 ```python
 class ListUsersPaginator(Boto3Paginator):

@@ -31,7 +31,7 @@ def get_marketplace-catalog_client() -> MarketplaceCatalogClient:
     return boto3.client("marketplace-catalog")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client)
 
 ## Exceptions
 
@@ -66,7 +66,7 @@ Exceptions:
 
 Type annotations for `boto3.client("marketplace-catalog").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -80,7 +80,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("marketplace-catalog").cancel_change_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.cancel_change_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.cancel_change_set]
 
 ```python
 def cancel_change_set(
@@ -95,7 +95,7 @@ def cancel_change_set(
 
 Type annotations for `boto3.client("marketplace-catalog").describe_change_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.describe_change_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.describe_change_set]
 
 ```python
 def describe_change_set(
@@ -110,7 +110,7 @@ def describe_change_set(
 
 Type annotations for `boto3.client("marketplace-catalog").describe_entity` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.describe_entity]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.describe_entity]
 
 ```python
 def describe_entity(
@@ -125,7 +125,7 @@ def describe_entity(
 
 Type annotations for `boto3.client("marketplace-catalog").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -142,7 +142,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("marketplace-catalog").list_change_sets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.list_change_sets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.list_change_sets]
 
 ```python
 def list_change_sets(
@@ -160,7 +160,7 @@ def list_change_sets(
 
 Type annotations for `boto3.client("marketplace-catalog").list_entities` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.list_entities]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.list_entities]
 
 ```python
 def list_entities(
@@ -179,7 +179,7 @@ def list_entities(
 
 Type annotations for `boto3.client("marketplace-catalog").start_change_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.start_change_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.start_change_set]
 
 ```python
 def start_change_set(

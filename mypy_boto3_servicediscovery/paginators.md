@@ -24,7 +24,7 @@ def get_list_instances_paginator() -> ListInstancesPaginator:
     return boto3.client("servicediscovery").get_paginator("list_instances")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListInstances)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListInstances)
 
 ```python
 class ListInstancesPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_list_namespaces_paginator() -> ListNamespacesPaginator:
     return boto3.client("servicediscovery").get_paginator("list_namespaces")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListNamespaces)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListNamespaces)
 
 ```python
 class ListNamespacesPaginator(Boto3Paginator):
@@ -72,7 +72,7 @@ def get_list_operations_paginator() -> ListOperationsPaginator:
     return boto3.client("servicediscovery").get_paginator("list_operations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListOperations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListOperations)
 
 ```python
 class ListOperationsPaginator(Boto3Paginator):
@@ -96,7 +96,7 @@ def get_list_services_paginator() -> ListServicesPaginator:
     return boto3.client("servicediscovery").get_paginator("list_services")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListServices)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListServices)
 
 ```python
 class ListServicesPaginator(Boto3Paginator):

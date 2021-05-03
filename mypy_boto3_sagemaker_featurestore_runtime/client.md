@@ -28,7 +28,7 @@ def get_sagemaker-featurestore-runtime_client() -> SagemakerFeatureStoreRuntimeC
     return boto3.client("sagemaker-featurestore-runtime")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client)
 
 ## Exceptions
 
@@ -60,7 +60,7 @@ Exceptions:
 
 Type annotations for `boto3.client("sagemaker-featurestore-runtime").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -74,7 +74,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("sagemaker-featurestore-runtime").delete_record` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.delete_record]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.delete_record]
 
 ```python
 def delete_record(
@@ -90,7 +90,7 @@ def delete_record(
 
 Type annotations for `boto3.client("sagemaker-featurestore-runtime").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -107,7 +107,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("sagemaker-featurestore-runtime").get_record` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.get_record]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.get_record]
 
 ```python
 def get_record(
@@ -123,7 +123,7 @@ def get_record(
 
 Type annotations for `boto3.client("sagemaker-featurestore-runtime").put_record` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.put_record]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime.Client.put_record]
 
 ```python
 def put_record(

@@ -21,7 +21,7 @@ def get_list_containers_paginator() -> ListContainersPaginator:
     return boto3.client("mediastore").get_paginator("list_containers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Paginator.ListContainers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Paginator.ListContainers)
 
 ```python
 class ListContainersPaginator(Boto3Paginator):

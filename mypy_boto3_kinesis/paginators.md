@@ -24,7 +24,7 @@ def get_describe_stream_paginator() -> DescribeStreamPaginator:
     return boto3.client("kinesis").get_paginator("describe_stream")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.DescribeStream)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.DescribeStream)
 
 ```python
 class DescribeStreamPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_list_shards_paginator() -> ListShardsPaginator:
     return boto3.client("kinesis").get_paginator("list_shards")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListShards)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListShards)
 
 ```python
 class ListShardsPaginator(Boto3Paginator):
@@ -75,7 +75,7 @@ def get_list_stream_consumers_paginator() -> ListStreamConsumersPaginator:
     return boto3.client("kinesis").get_paginator("list_stream_consumers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListStreamConsumers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListStreamConsumers)
 
 ```python
 class ListStreamConsumersPaginator(Boto3Paginator):
@@ -100,7 +100,7 @@ def get_list_streams_paginator() -> ListStreamsPaginator:
     return boto3.client("kinesis").get_paginator("list_streams")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListStreams)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListStreams)
 
 ```python
 class ListStreamsPaginator(Boto3Paginator):

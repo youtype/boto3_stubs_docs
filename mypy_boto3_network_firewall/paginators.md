@@ -24,7 +24,7 @@ def get_list_firewall_policies_paginator() -> ListFirewallPoliciesPaginator:
     return boto3.client("network-firewall").get_paginator("list_firewall_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewallPolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewallPolicies)
 
 ```python
 class ListFirewallPoliciesPaginator(Boto3Paginator):
@@ -47,7 +47,7 @@ def get_list_firewalls_paginator() -> ListFirewallsPaginator:
     return boto3.client("network-firewall").get_paginator("list_firewalls")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewalls)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewalls)
 
 ```python
 class ListFirewallsPaginator(Boto3Paginator):
@@ -71,7 +71,7 @@ def get_list_rule_groups_paginator() -> ListRuleGroupsPaginator:
     return boto3.client("network-firewall").get_paginator("list_rule_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListRuleGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListRuleGroups)
 
 ```python
 class ListRuleGroupsPaginator(Boto3Paginator):
@@ -94,7 +94,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("network-firewall").get_paginator("list_tags_for_resource")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListTagsForResource)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):

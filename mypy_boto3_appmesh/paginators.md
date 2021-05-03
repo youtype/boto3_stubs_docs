@@ -28,7 +28,7 @@ def get_list_gateway_routes_paginator() -> ListGatewayRoutesPaginator:
     return boto3.client("appmesh").get_paginator("list_gateway_routes")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListGatewayRoutes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListGatewayRoutes)
 
 ```python
 class ListGatewayRoutesPaginator(Boto3Paginator):
@@ -54,7 +54,7 @@ def get_list_meshes_paginator() -> ListMeshesPaginator:
     return boto3.client("appmesh").get_paginator("list_meshes")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListMeshes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListMeshes)
 
 ```python
 class ListMeshesPaginator(Boto3Paginator):
@@ -77,7 +77,7 @@ def get_list_routes_paginator() -> ListRoutesPaginator:
     return boto3.client("appmesh").get_paginator("list_routes")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListRoutes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListRoutes)
 
 ```python
 class ListRoutesPaginator(Boto3Paginator):
@@ -103,7 +103,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("appmesh").get_paginator("list_tags_for_resource")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListTagsForResource)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):
@@ -127,7 +127,7 @@ def get_list_virtual_gateways_paginator() -> ListVirtualGatewaysPaginator:
     return boto3.client("appmesh").get_paginator("list_virtual_gateways")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualGateways)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualGateways)
 
 ```python
 class ListVirtualGatewaysPaginator(Boto3Paginator):
@@ -152,7 +152,7 @@ def get_list_virtual_nodes_paginator() -> ListVirtualNodesPaginator:
     return boto3.client("appmesh").get_paginator("list_virtual_nodes")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualNodes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualNodes)
 
 ```python
 class ListVirtualNodesPaginator(Boto3Paginator):
@@ -177,7 +177,7 @@ def get_list_virtual_routers_paginator() -> ListVirtualRoutersPaginator:
     return boto3.client("appmesh").get_paginator("list_virtual_routers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualRouters)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualRouters)
 
 ```python
 class ListVirtualRoutersPaginator(Boto3Paginator):
@@ -202,7 +202,7 @@ def get_list_virtual_services_paginator() -> ListVirtualServicesPaginator:
     return boto3.client("appmesh").get_paginator("list_virtual_services")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualServices)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualServices)
 
 ```python
 class ListVirtualServicesPaginator(Boto3Paginator):

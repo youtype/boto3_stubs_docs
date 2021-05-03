@@ -23,7 +23,7 @@ def get_list_job_runs_paginator() -> ListJobRunsPaginator:
     return boto3.client("emr-containers").get_paginator("list_job_runs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Paginator.ListJobRuns)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Paginator.ListJobRuns)
 
 ```python
 class ListJobRunsPaginator(Boto3Paginator):
@@ -51,7 +51,7 @@ def get_list_managed_endpoints_paginator() -> ListManagedEndpointsPaginator:
     return boto3.client("emr-containers").get_paginator("list_managed_endpoints")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Paginator.ListManagedEndpoints)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Paginator.ListManagedEndpoints)
 
 ```python
 class ListManagedEndpointsPaginator(Boto3Paginator):
@@ -79,7 +79,7 @@ def get_list_virtual_clusters_paginator() -> ListVirtualClustersPaginator:
     return boto3.client("emr-containers").get_paginator("list_virtual_clusters")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Paginator.ListVirtualClusters)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Paginator.ListVirtualClusters)
 
 ```python
 class ListVirtualClustersPaginator(Boto3Paginator):

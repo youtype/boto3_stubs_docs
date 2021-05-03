@@ -72,7 +72,7 @@ def get_kms_client() -> KMSClient:
     return boto3.client("kms")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client)
 
 ## Exceptions
 
@@ -132,7 +132,7 @@ Exceptions:
 
 Type annotations for `boto3.client("kms").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -146,7 +146,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("kms").cancel_key_deletion` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.cancel_key_deletion]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.cancel_key_deletion]
 
 ```python
 def cancel_key_deletion(
@@ -160,7 +160,7 @@ def cancel_key_deletion(
 
 Type annotations for `boto3.client("kms").connect_custom_key_store` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.connect_custom_key_store]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.connect_custom_key_store]
 
 ```python
 def connect_custom_key_store(
@@ -174,7 +174,7 @@ def connect_custom_key_store(
 
 Type annotations for `boto3.client("kms").create_alias` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_alias]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_alias]
 
 ```python
 def create_alias(
@@ -189,7 +189,7 @@ def create_alias(
 
 Type annotations for `boto3.client("kms").create_custom_key_store` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_custom_key_store]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_custom_key_store]
 
 ```python
 def create_custom_key_store(
@@ -206,7 +206,7 @@ def create_custom_key_store(
 
 Type annotations for `boto3.client("kms").create_grant` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_grant]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_grant]
 
 ```python
 def create_grant(
@@ -226,7 +226,7 @@ def create_grant(
 
 Type annotations for `boto3.client("kms").create_key` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_key]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_key]
 
 ```python
 def create_key(
@@ -247,7 +247,7 @@ def create_key(
 
 Type annotations for `boto3.client("kms").decrypt` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.decrypt]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.decrypt]
 
 ```python
 def decrypt(
@@ -265,7 +265,7 @@ def decrypt(
 
 Type annotations for `boto3.client("kms").delete_alias` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_alias]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_alias]
 
 ```python
 def delete_alias(
@@ -279,7 +279,7 @@ def delete_alias(
 
 Type annotations for `boto3.client("kms").delete_custom_key_store` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_custom_key_store]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_custom_key_store]
 
 ```python
 def delete_custom_key_store(
@@ -293,7 +293,7 @@ def delete_custom_key_store(
 
 Type annotations for `boto3.client("kms").delete_imported_key_material` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_imported_key_material]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_imported_key_material]
 
 ```python
 def delete_imported_key_material(
@@ -307,7 +307,7 @@ def delete_imported_key_material(
 
 Type annotations for `boto3.client("kms").describe_custom_key_stores` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.describe_custom_key_stores]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.describe_custom_key_stores]
 
 ```python
 def describe_custom_key_stores(
@@ -324,7 +324,7 @@ def describe_custom_key_stores(
 
 Type annotations for `boto3.client("kms").describe_key` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.describe_key]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.describe_key]
 
 ```python
 def describe_key(
@@ -339,7 +339,7 @@ def describe_key(
 
 Type annotations for `boto3.client("kms").disable_key` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disable_key]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disable_key]
 
 ```python
 def disable_key(
@@ -353,7 +353,7 @@ def disable_key(
 
 Type annotations for `boto3.client("kms").disable_key_rotation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disable_key_rotation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disable_key_rotation]
 
 ```python
 def disable_key_rotation(
@@ -367,7 +367,7 @@ def disable_key_rotation(
 
 Type annotations for `boto3.client("kms").disconnect_custom_key_store` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disconnect_custom_key_store]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disconnect_custom_key_store]
 
 ```python
 def disconnect_custom_key_store(
@@ -381,7 +381,7 @@ def disconnect_custom_key_store(
 
 Type annotations for `boto3.client("kms").enable_key` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.enable_key]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.enable_key]
 
 ```python
 def enable_key(
@@ -395,7 +395,7 @@ def enable_key(
 
 Type annotations for `boto3.client("kms").enable_key_rotation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.enable_key_rotation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.enable_key_rotation]
 
 ```python
 def enable_key_rotation(
@@ -409,7 +409,7 @@ def enable_key_rotation(
 
 Type annotations for `boto3.client("kms").encrypt` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.encrypt]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.encrypt]
 
 ```python
 def encrypt(
@@ -427,7 +427,7 @@ def encrypt(
 
 Type annotations for `boto3.client("kms").generate_data_key` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key]
 
 ```python
 def generate_data_key(
@@ -445,7 +445,7 @@ def generate_data_key(
 
 Type annotations for `boto3.client("kms").generate_data_key_pair` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key_pair]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key_pair]
 
 ```python
 def generate_data_key_pair(
@@ -462,7 +462,7 @@ def generate_data_key_pair(
 
 Type annotations for `boto3.client("kms").generate_data_key_pair_without_plaintext` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key_pair_without_plaintext]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key_pair_without_plaintext]
 
 ```python
 def generate_data_key_pair_without_plaintext(
@@ -479,7 +479,7 @@ def generate_data_key_pair_without_plaintext(
 
 Type annotations for `boto3.client("kms").generate_data_key_without_plaintext` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key_without_plaintext]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key_without_plaintext]
 
 ```python
 def generate_data_key_without_plaintext(
@@ -497,7 +497,7 @@ def generate_data_key_without_plaintext(
 
 Type annotations for `boto3.client("kms").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -514,7 +514,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("kms").generate_random` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_random]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_random]
 
 ```python
 def generate_random(
@@ -529,7 +529,7 @@ def generate_random(
 
 Type annotations for `boto3.client("kms").get_key_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_key_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_key_policy]
 
 ```python
 def get_key_policy(
@@ -544,7 +544,7 @@ def get_key_policy(
 
 Type annotations for `boto3.client("kms").get_key_rotation_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_key_rotation_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_key_rotation_status]
 
 ```python
 def get_key_rotation_status(
@@ -558,7 +558,7 @@ def get_key_rotation_status(
 
 Type annotations for `boto3.client("kms").get_parameters_for_import` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_parameters_for_import]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_parameters_for_import]
 
 ```python
 def get_parameters_for_import(
@@ -574,7 +574,7 @@ def get_parameters_for_import(
 
 Type annotations for `boto3.client("kms").get_public_key` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_public_key]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_public_key]
 
 ```python
 def get_public_key(
@@ -589,7 +589,7 @@ def get_public_key(
 
 Type annotations for `boto3.client("kms").import_key_material` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.import_key_material]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.import_key_material]
 
 ```python
 def import_key_material(
@@ -607,7 +607,7 @@ def import_key_material(
 
 Type annotations for `boto3.client("kms").list_aliases` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_aliases]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_aliases]
 
 ```python
 def list_aliases(
@@ -623,7 +623,7 @@ def list_aliases(
 
 Type annotations for `boto3.client("kms").list_grants` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_grants]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_grants]
 
 ```python
 def list_grants(
@@ -641,7 +641,7 @@ def list_grants(
 
 Type annotations for `boto3.client("kms").list_key_policies` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_key_policies]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_key_policies]
 
 ```python
 def list_key_policies(
@@ -657,7 +657,7 @@ def list_key_policies(
 
 Type annotations for `boto3.client("kms").list_keys` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_keys]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_keys]
 
 ```python
 def list_keys(
@@ -672,7 +672,7 @@ def list_keys(
 
 Type annotations for `boto3.client("kms").list_resource_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_resource_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_resource_tags]
 
 ```python
 def list_resource_tags(
@@ -688,7 +688,7 @@ def list_resource_tags(
 
 Type annotations for `boto3.client("kms").list_retirable_grants` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_retirable_grants]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_retirable_grants]
 
 ```python
 def list_retirable_grants(
@@ -704,7 +704,7 @@ def list_retirable_grants(
 
 Type annotations for `boto3.client("kms").put_key_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.put_key_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.put_key_policy]
 
 ```python
 def put_key_policy(
@@ -721,7 +721,7 @@ def put_key_policy(
 
 Type annotations for `boto3.client("kms").re_encrypt` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.re_encrypt]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.re_encrypt]
 
 ```python
 def re_encrypt(
@@ -742,7 +742,7 @@ def re_encrypt(
 
 Type annotations for `boto3.client("kms").retire_grant` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.retire_grant]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.retire_grant]
 
 ```python
 def retire_grant(
@@ -758,7 +758,7 @@ def retire_grant(
 
 Type annotations for `boto3.client("kms").revoke_grant` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.revoke_grant]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.revoke_grant]
 
 ```python
 def revoke_grant(
@@ -773,7 +773,7 @@ def revoke_grant(
 
 Type annotations for `boto3.client("kms").schedule_key_deletion` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.schedule_key_deletion]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.schedule_key_deletion]
 
 ```python
 def schedule_key_deletion(
@@ -788,7 +788,7 @@ def schedule_key_deletion(
 
 Type annotations for `boto3.client("kms").sign` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.sign]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.sign]
 
 ```python
 def sign(
@@ -806,7 +806,7 @@ def sign(
 
 Type annotations for `boto3.client("kms").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -821,7 +821,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("kms").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -836,7 +836,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("kms").update_alias` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_alias]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_alias]
 
 ```python
 def update_alias(
@@ -851,7 +851,7 @@ def update_alias(
 
 Type annotations for `boto3.client("kms").update_custom_key_store` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_custom_key_store]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_custom_key_store]
 
 ```python
 def update_custom_key_store(
@@ -868,7 +868,7 @@ def update_custom_key_store(
 
 Type annotations for `boto3.client("kms").update_key_description` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_key_description]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_key_description]
 
 ```python
 def update_key_description(
@@ -883,7 +883,7 @@ def update_key_description(
 
 Type annotations for `boto3.client("kms").verify` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.verify]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.verify]
 
 ```python
 def verify(

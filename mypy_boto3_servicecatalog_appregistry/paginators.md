@@ -24,7 +24,7 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
     return boto3.client("servicecatalog-appregistry").get_paginator("list_applications")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListApplications)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListApplications)
 
 ```python
 class ListApplicationsPaginator(Boto3Paginator):
@@ -47,7 +47,7 @@ def get_list_associated_attribute_groups_paginator() -> ListAssociatedAttributeG
     return boto3.client("servicecatalog-appregistry").get_paginator("list_associated_attribute_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAssociatedAttributeGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAssociatedAttributeGroups)
 
 ```python
 class ListAssociatedAttributeGroupsPaginator(Boto3Paginator):
@@ -71,7 +71,7 @@ def get_list_associated_resources_paginator() -> ListAssociatedResourcesPaginato
     return boto3.client("servicecatalog-appregistry").get_paginator("list_associated_resources")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAssociatedResources)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAssociatedResources)
 
 ```python
 class ListAssociatedResourcesPaginator(Boto3Paginator):
@@ -95,7 +95,7 @@ def get_list_attribute_groups_paginator() -> ListAttributeGroupsPaginator:
     return boto3.client("servicecatalog-appregistry").get_paginator("list_attribute_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAttributeGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAttributeGroups)
 
 ```python
 class ListAttributeGroupsPaginator(Boto3Paginator):

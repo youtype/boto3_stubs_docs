@@ -47,7 +47,7 @@ def get_describe_cluster_db_revisions_paginator() -> DescribeClusterDbRevisionsP
     return boto3.client("redshift").get_paginator("describe_cluster_db_revisions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterDbRevisions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterDbRevisions)
 
 ```python
 class DescribeClusterDbRevisionsPaginator(Boto3Paginator):
@@ -71,7 +71,7 @@ def get_describe_cluster_parameter_groups_paginator() -> DescribeClusterParamete
     return boto3.client("redshift").get_paginator("describe_cluster_parameter_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameterGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameterGroups)
 
 ```python
 class DescribeClusterParameterGroupsPaginator(Boto3Paginator):
@@ -97,7 +97,7 @@ def get_describe_cluster_parameters_paginator() -> DescribeClusterParametersPagi
     return boto3.client("redshift").get_paginator("describe_cluster_parameters")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameters)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameters)
 
 ```python
 class DescribeClusterParametersPaginator(Boto3Paginator):
@@ -122,7 +122,7 @@ def get_describe_cluster_security_groups_paginator() -> DescribeClusterSecurityG
     return boto3.client("redshift").get_paginator("describe_cluster_security_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSecurityGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSecurityGroups)
 
 ```python
 class DescribeClusterSecurityGroupsPaginator(Boto3Paginator):
@@ -148,7 +148,7 @@ def get_describe_cluster_snapshots_paginator() -> DescribeClusterSnapshotsPagina
     return boto3.client("redshift").get_paginator("describe_cluster_snapshots")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSnapshots)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSnapshots)
 
 ```python
 class DescribeClusterSnapshotsPaginator(Boto3Paginator):
@@ -181,7 +181,7 @@ def get_describe_cluster_subnet_groups_paginator() -> DescribeClusterSubnetGroup
     return boto3.client("redshift").get_paginator("describe_cluster_subnet_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSubnetGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSubnetGroups)
 
 ```python
 class DescribeClusterSubnetGroupsPaginator(Boto3Paginator):
@@ -207,7 +207,7 @@ def get_describe_cluster_tracks_paginator() -> DescribeClusterTracksPaginator:
     return boto3.client("redshift").get_paginator("describe_cluster_tracks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterTracks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterTracks)
 
 ```python
 class DescribeClusterTracksPaginator(Boto3Paginator):
@@ -231,7 +231,7 @@ def get_describe_cluster_versions_paginator() -> DescribeClusterVersionsPaginato
     return boto3.client("redshift").get_paginator("describe_cluster_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterVersions)
 
 ```python
 class DescribeClusterVersionsPaginator(Boto3Paginator):
@@ -256,7 +256,7 @@ def get_describe_clusters_paginator() -> DescribeClustersPaginator:
     return boto3.client("redshift").get_paginator("describe_clusters")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusters)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusters)
 
 ```python
 class DescribeClustersPaginator(Boto3Paginator):
@@ -282,7 +282,7 @@ def get_describe_default_cluster_parameters_paginator() -> DescribeDefaultCluste
     return boto3.client("redshift").get_paginator("describe_default_cluster_parameters")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeDefaultClusterParameters)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeDefaultClusterParameters)
 
 ```python
 class DescribeDefaultClusterParametersPaginator(Boto3Paginator):
@@ -306,7 +306,7 @@ def get_describe_endpoint_access_paginator() -> DescribeEndpointAccessPaginator:
     return boto3.client("redshift").get_paginator("describe_endpoint_access")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAccess)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAccess)
 
 ```python
 class DescribeEndpointAccessPaginator(Boto3Paginator):
@@ -333,7 +333,7 @@ def get_describe_endpoint_authorization_paginator() -> DescribeEndpointAuthoriza
     return boto3.client("redshift").get_paginator("describe_endpoint_authorization")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAuthorization)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAuthorization)
 
 ```python
 class DescribeEndpointAuthorizationPaginator(Boto3Paginator):
@@ -359,7 +359,7 @@ def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPa
     return boto3.client("redshift").get_paginator("describe_event_subscriptions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEventSubscriptions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEventSubscriptions)
 
 ```python
 class DescribeEventSubscriptionsPaginator(Boto3Paginator):
@@ -385,7 +385,7 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return boto3.client("redshift").get_paginator("describe_events")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEvents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEvents)
 
 ```python
 class DescribeEventsPaginator(Boto3Paginator):
@@ -413,7 +413,7 @@ def get_describe_hsm_client_certificates_paginator() -> DescribeHsmClientCertifi
     return boto3.client("redshift").get_paginator("describe_hsm_client_certificates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeHsmClientCertificates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeHsmClientCertificates)
 
 ```python
 class DescribeHsmClientCertificatesPaginator(Boto3Paginator):
@@ -439,7 +439,7 @@ def get_describe_hsm_configurations_paginator() -> DescribeHsmConfigurationsPagi
     return boto3.client("redshift").get_paginator("describe_hsm_configurations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeHsmConfigurations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeHsmConfigurations)
 
 ```python
 class DescribeHsmConfigurationsPaginator(Boto3Paginator):
@@ -465,7 +465,7 @@ def get_describe_node_configuration_options_paginator() -> DescribeNodeConfigura
     return boto3.client("redshift").get_paginator("describe_node_configuration_options")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeNodeConfigurationOptions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeNodeConfigurationOptions)
 
 ```python
 class DescribeNodeConfigurationOptionsPaginator(Boto3Paginator):
@@ -493,7 +493,7 @@ def get_describe_orderable_cluster_options_paginator() -> DescribeOrderableClust
     return boto3.client("redshift").get_paginator("describe_orderable_cluster_options")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeOrderableClusterOptions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeOrderableClusterOptions)
 
 ```python
 class DescribeOrderableClusterOptionsPaginator(Boto3Paginator):
@@ -518,7 +518,7 @@ def get_describe_reserved_node_offerings_paginator() -> DescribeReservedNodeOffe
     return boto3.client("redshift").get_paginator("describe_reserved_node_offerings")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodeOfferings)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodeOfferings)
 
 ```python
 class DescribeReservedNodeOfferingsPaginator(Boto3Paginator):
@@ -542,7 +542,7 @@ def get_describe_reserved_nodes_paginator() -> DescribeReservedNodesPaginator:
     return boto3.client("redshift").get_paginator("describe_reserved_nodes")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodes)
 
 ```python
 class DescribeReservedNodesPaginator(Boto3Paginator):
@@ -566,7 +566,7 @@ def get_describe_scheduled_actions_paginator() -> DescribeScheduledActionsPagina
     return boto3.client("redshift").get_paginator("describe_scheduled_actions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeScheduledActions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeScheduledActions)
 
 ```python
 class DescribeScheduledActionsPaginator(Boto3Paginator):
@@ -595,7 +595,7 @@ def get_describe_snapshot_copy_grants_paginator() -> DescribeSnapshotCopyGrantsP
     return boto3.client("redshift").get_paginator("describe_snapshot_copy_grants")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotCopyGrants)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotCopyGrants)
 
 ```python
 class DescribeSnapshotCopyGrantsPaginator(Boto3Paginator):
@@ -621,7 +621,7 @@ def get_describe_snapshot_schedules_paginator() -> DescribeSnapshotSchedulesPagi
     return boto3.client("redshift").get_paginator("describe_snapshot_schedules")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotSchedules)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotSchedules)
 
 ```python
 class DescribeSnapshotSchedulesPaginator(Boto3Paginator):
@@ -648,7 +648,7 @@ def get_describe_table_restore_status_paginator() -> DescribeTableRestoreStatusP
     return boto3.client("redshift").get_paginator("describe_table_restore_status")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeTableRestoreStatus)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeTableRestoreStatus)
 
 ```python
 class DescribeTableRestoreStatusPaginator(Boto3Paginator):
@@ -673,7 +673,7 @@ def get_describe_tags_paginator() -> DescribeTagsPaginator:
     return boto3.client("redshift").get_paginator("describe_tags")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeTags)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeTags)
 
 ```python
 class DescribeTagsPaginator(Boto3Paginator):
@@ -700,7 +700,7 @@ def get_describe_usage_limits_paginator() -> DescribeUsageLimitsPaginator:
     return boto3.client("redshift").get_paginator("describe_usage_limits")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeUsageLimits)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeUsageLimits)
 
 ```python
 class DescribeUsageLimitsPaginator(Boto3Paginator):
@@ -728,7 +728,7 @@ def get_get_reserved_node_exchange_offerings_paginator() -> GetReservedNodeExcha
     return boto3.client("redshift").get_paginator("get_reserved_node_exchange_offerings")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.GetReservedNodeExchangeOfferings)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.GetReservedNodeExchangeOfferings)
 
 ```python
 class GetReservedNodeExchangeOfferingsPaginator(Boto3Paginator):

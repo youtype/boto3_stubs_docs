@@ -54,7 +54,7 @@ def get_kendra_client() -> KendraClient:
     return boto3.client("kendra")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client)
 
 ## Exceptions
 
@@ -91,7 +91,7 @@ Exceptions:
 
 Type annotations for `boto3.client("kendra").batch_delete_document` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.batch_delete_document]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.batch_delete_document]
 
 ```python
 def batch_delete_document(
@@ -107,7 +107,7 @@ def batch_delete_document(
 
 Type annotations for `boto3.client("kendra").batch_put_document` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.batch_put_document]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.batch_put_document]
 
 ```python
 def batch_put_document(
@@ -123,7 +123,7 @@ def batch_put_document(
 
 Type annotations for `boto3.client("kendra").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -137,7 +137,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("kendra").create_data_source` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.create_data_source]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.create_data_source]
 
 ```python
 def create_data_source(
@@ -159,7 +159,7 @@ def create_data_source(
 
 Type annotations for `boto3.client("kendra").create_faq` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.create_faq]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.create_faq]
 
 ```python
 def create_faq(
@@ -180,7 +180,7 @@ def create_faq(
 
 Type annotations for `boto3.client("kendra").create_index` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.create_index]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.create_index]
 
 ```python
 def create_index(
@@ -202,7 +202,7 @@ def create_index(
 
 Type annotations for `boto3.client("kendra").create_thesaurus` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.create_thesaurus]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.create_thesaurus]
 
 ```python
 def create_thesaurus(
@@ -222,7 +222,7 @@ def create_thesaurus(
 
 Type annotations for `boto3.client("kendra").delete_data_source` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.delete_data_source]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.delete_data_source]
 
 ```python
 def delete_data_source(
@@ -237,7 +237,7 @@ def delete_data_source(
 
 Type annotations for `boto3.client("kendra").delete_faq` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.delete_faq]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.delete_faq]
 
 ```python
 def delete_faq(
@@ -252,7 +252,7 @@ def delete_faq(
 
 Type annotations for `boto3.client("kendra").delete_index` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.delete_index]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.delete_index]
 
 ```python
 def delete_index(
@@ -266,7 +266,7 @@ def delete_index(
 
 Type annotations for `boto3.client("kendra").delete_thesaurus` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.delete_thesaurus]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.delete_thesaurus]
 
 ```python
 def delete_thesaurus(
@@ -281,7 +281,7 @@ def delete_thesaurus(
 
 Type annotations for `boto3.client("kendra").describe_data_source` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.describe_data_source]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.describe_data_source]
 
 ```python
 def describe_data_source(
@@ -296,7 +296,7 @@ def describe_data_source(
 
 Type annotations for `boto3.client("kendra").describe_faq` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.describe_faq]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.describe_faq]
 
 ```python
 def describe_faq(
@@ -311,7 +311,7 @@ def describe_faq(
 
 Type annotations for `boto3.client("kendra").describe_index` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.describe_index]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.describe_index]
 
 ```python
 def describe_index(
@@ -325,7 +325,7 @@ def describe_index(
 
 Type annotations for `boto3.client("kendra").describe_thesaurus` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.describe_thesaurus]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.describe_thesaurus]
 
 ```python
 def describe_thesaurus(
@@ -340,7 +340,7 @@ def describe_thesaurus(
 
 Type annotations for `boto3.client("kendra").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -357,7 +357,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("kendra").list_data_source_sync_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_data_source_sync_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_data_source_sync_jobs]
 
 ```python
 def list_data_source_sync_jobs(
@@ -376,7 +376,7 @@ def list_data_source_sync_jobs(
 
 Type annotations for `boto3.client("kendra").list_data_sources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_data_sources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_data_sources]
 
 ```python
 def list_data_sources(
@@ -392,7 +392,7 @@ def list_data_sources(
 
 Type annotations for `boto3.client("kendra").list_faqs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_faqs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_faqs]
 
 ```python
 def list_faqs(
@@ -408,7 +408,7 @@ def list_faqs(
 
 Type annotations for `boto3.client("kendra").list_indices` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_indices]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_indices]
 
 ```python
 def list_indices(
@@ -423,7 +423,7 @@ def list_indices(
 
 Type annotations for `boto3.client("kendra").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -437,7 +437,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("kendra").list_thesauri` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_thesauri]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.list_thesauri]
 
 ```python
 def list_thesauri(
@@ -453,14 +453,14 @@ def list_thesauri(
 
 Type annotations for `boto3.client("kendra").query` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.query]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.query]
 
 ```python
 def query(
     self,
     IndexId: str,
     QueryText: str,
-    AttributeFilter: Dict[str, Any] = None,
+    AttributeFilter: "AttributeFilterTypeDef" = None,
     Facets: List[FacetTypeDef] = None,
     RequestedDocumentAttributes: List[str] = None,
     QueryResultTypeFilter: QueryResultType = None,
@@ -478,7 +478,7 @@ def query(
 
 Type annotations for `boto3.client("kendra").start_data_source_sync_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.start_data_source_sync_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.start_data_source_sync_job]
 
 ```python
 def start_data_source_sync_job(
@@ -493,7 +493,7 @@ def start_data_source_sync_job(
 
 Type annotations for `boto3.client("kendra").stop_data_source_sync_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.stop_data_source_sync_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.stop_data_source_sync_job]
 
 ```python
 def stop_data_source_sync_job(
@@ -508,7 +508,7 @@ def stop_data_source_sync_job(
 
 Type annotations for `boto3.client("kendra").submit_feedback` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.submit_feedback]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.submit_feedback]
 
 ```python
 def submit_feedback(
@@ -525,7 +525,7 @@ def submit_feedback(
 
 Type annotations for `boto3.client("kendra").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -540,7 +540,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("kendra").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -555,7 +555,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("kendra").update_data_source` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.update_data_source]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.update_data_source]
 
 ```python
 def update_data_source(
@@ -575,7 +575,7 @@ def update_data_source(
 
 Type annotations for `boto3.client("kendra").update_index` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.update_index]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.update_index]
 
 ```python
 def update_index(
@@ -596,7 +596,7 @@ def update_index(
 
 Type annotations for `boto3.client("kendra").update_thesaurus` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.update_thesaurus]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra.Client.update_thesaurus]
 
 ```python
 def update_thesaurus(

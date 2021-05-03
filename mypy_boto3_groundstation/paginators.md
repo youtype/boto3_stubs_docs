@@ -26,7 +26,7 @@ def get_list_configs_paginator() -> ListConfigsPaginator:
     return boto3.client("groundstation").get_paginator("list_configs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListConfigs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListConfigs)
 
 ```python
 class ListConfigsPaginator(Boto3Paginator):
@@ -49,7 +49,7 @@ def get_list_contacts_paginator() -> ListContactsPaginator:
     return boto3.client("groundstation").get_paginator("list_contacts")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListContacts)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListContacts)
 
 ```python
 class ListContactsPaginator(Boto3Paginator):
@@ -78,7 +78,7 @@ def get_list_dataflow_endpoint_groups_paginator() -> ListDataflowEndpointGroupsP
     return boto3.client("groundstation").get_paginator("list_dataflow_endpoint_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListDataflowEndpointGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListDataflowEndpointGroups)
 
 ```python
 class ListDataflowEndpointGroupsPaginator(Boto3Paginator):
@@ -101,7 +101,7 @@ def get_list_ground_stations_paginator() -> ListGroundStationsPaginator:
     return boto3.client("groundstation").get_paginator("list_ground_stations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListGroundStations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListGroundStations)
 
 ```python
 class ListGroundStationsPaginator(Boto3Paginator):
@@ -125,7 +125,7 @@ def get_list_mission_profiles_paginator() -> ListMissionProfilesPaginator:
     return boto3.client("groundstation").get_paginator("list_mission_profiles")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListMissionProfiles)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListMissionProfiles)
 
 ```python
 class ListMissionProfilesPaginator(Boto3Paginator):
@@ -148,7 +148,7 @@ def get_list_satellites_paginator() -> ListSatellitesPaginator:
     return boto3.client("groundstation").get_paginator("list_satellites")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListSatellites)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListSatellites)
 
 ```python
 class ListSatellitesPaginator(Boto3Paginator):

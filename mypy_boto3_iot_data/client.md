@@ -30,7 +30,7 @@ def get_iot-data_client() -> IoTDataPlaneClient:
     return boto3.client("iot-data")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client)
 
 ## Exceptions
 
@@ -67,7 +67,7 @@ Exceptions:
 
 Type annotations for `boto3.client("iot-data").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -81,7 +81,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("iot-data").delete_thing_shadow` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.delete_thing_shadow]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.delete_thing_shadow]
 
 ```python
 def delete_thing_shadow(
@@ -96,7 +96,7 @@ def delete_thing_shadow(
 
 Type annotations for `boto3.client("iot-data").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -113,7 +113,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("iot-data").get_thing_shadow` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.get_thing_shadow]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.get_thing_shadow]
 
 ```python
 def get_thing_shadow(
@@ -128,7 +128,7 @@ def get_thing_shadow(
 
 Type annotations for `boto3.client("iot-data").list_named_shadows_for_thing` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.list_named_shadows_for_thing]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.list_named_shadows_for_thing]
 
 ```python
 def list_named_shadows_for_thing(
@@ -144,7 +144,7 @@ def list_named_shadows_for_thing(
 
 Type annotations for `boto3.client("iot-data").publish` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.publish]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.publish]
 
 ```python
 def publish(
@@ -160,7 +160,7 @@ def publish(
 
 Type annotations for `boto3.client("iot-data").update_thing_shadow` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.update_thing_shadow]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.update_thing_shadow]
 
 ```python
 def update_thing_shadow(

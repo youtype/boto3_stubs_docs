@@ -47,7 +47,7 @@ def get_lookoutequipment_client() -> LookoutEquipmentClient:
     return boto3.client("lookoutequipment")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client)
 
 ## Exceptions
 
@@ -81,7 +81,7 @@ Exceptions:
 
 Type annotations for `boto3.client("lookoutequipment").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -95,7 +95,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("lookoutequipment").create_dataset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_dataset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_dataset]
 
 ```python
 def create_dataset(
@@ -113,7 +113,7 @@ def create_dataset(
 
 Type annotations for `boto3.client("lookoutequipment").create_inference_scheduler` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_inference_scheduler]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_inference_scheduler]
 
 ```python
 def create_inference_scheduler(
@@ -136,7 +136,7 @@ def create_inference_scheduler(
 
 Type annotations for `boto3.client("lookoutequipment").create_model` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_model]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_model]
 
 ```python
 def create_model(
@@ -162,7 +162,7 @@ def create_model(
 
 Type annotations for `boto3.client("lookoutequipment").delete_dataset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_dataset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_dataset]
 
 ```python
 def delete_dataset(
@@ -176,7 +176,7 @@ def delete_dataset(
 
 Type annotations for `boto3.client("lookoutequipment").delete_inference_scheduler` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_inference_scheduler]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_inference_scheduler]
 
 ```python
 def delete_inference_scheduler(
@@ -190,7 +190,7 @@ def delete_inference_scheduler(
 
 Type annotations for `boto3.client("lookoutequipment").delete_model` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_model]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_model]
 
 ```python
 def delete_model(
@@ -204,7 +204,7 @@ def delete_model(
 
 Type annotations for `boto3.client("lookoutequipment").describe_data_ingestion_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_data_ingestion_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_data_ingestion_job]
 
 ```python
 def describe_data_ingestion_job(
@@ -218,7 +218,7 @@ def describe_data_ingestion_job(
 
 Type annotations for `boto3.client("lookoutequipment").describe_dataset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_dataset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_dataset]
 
 ```python
 def describe_dataset(
@@ -232,7 +232,7 @@ def describe_dataset(
 
 Type annotations for `boto3.client("lookoutequipment").describe_inference_scheduler` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_inference_scheduler]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_inference_scheduler]
 
 ```python
 def describe_inference_scheduler(
@@ -246,7 +246,7 @@ def describe_inference_scheduler(
 
 Type annotations for `boto3.client("lookoutequipment").describe_model` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_model]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_model]
 
 ```python
 def describe_model(
@@ -260,7 +260,7 @@ def describe_model(
 
 Type annotations for `boto3.client("lookoutequipment").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -277,7 +277,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("lookoutequipment").list_data_ingestion_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_data_ingestion_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_data_ingestion_jobs]
 
 ```python
 def list_data_ingestion_jobs(
@@ -294,7 +294,7 @@ def list_data_ingestion_jobs(
 
 Type annotations for `boto3.client("lookoutequipment").list_datasets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_datasets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_datasets]
 
 ```python
 def list_datasets(
@@ -310,7 +310,7 @@ def list_datasets(
 
 Type annotations for `boto3.client("lookoutequipment").list_inference_executions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_inference_executions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_inference_executions]
 
 ```python
 def list_inference_executions(
@@ -329,7 +329,7 @@ def list_inference_executions(
 
 Type annotations for `boto3.client("lookoutequipment").list_inference_schedulers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_inference_schedulers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_inference_schedulers]
 
 ```python
 def list_inference_schedulers(
@@ -346,7 +346,7 @@ def list_inference_schedulers(
 
 Type annotations for `boto3.client("lookoutequipment").list_models` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_models]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_models]
 
 ```python
 def list_models(
@@ -364,7 +364,7 @@ def list_models(
 
 Type annotations for `boto3.client("lookoutequipment").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -378,7 +378,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("lookoutequipment").start_data_ingestion_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.start_data_ingestion_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.start_data_ingestion_job]
 
 ```python
 def start_data_ingestion_job(
@@ -395,7 +395,7 @@ def start_data_ingestion_job(
 
 Type annotations for `boto3.client("lookoutequipment").start_inference_scheduler` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.start_inference_scheduler]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.start_inference_scheduler]
 
 ```python
 def start_inference_scheduler(
@@ -409,7 +409,7 @@ def start_inference_scheduler(
 
 Type annotations for `boto3.client("lookoutequipment").stop_inference_scheduler` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.stop_inference_scheduler]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.stop_inference_scheduler]
 
 ```python
 def stop_inference_scheduler(
@@ -423,7 +423,7 @@ def stop_inference_scheduler(
 
 Type annotations for `boto3.client("lookoutequipment").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -438,7 +438,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("lookoutequipment").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -453,7 +453,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("lookoutequipment").update_inference_scheduler` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.update_inference_scheduler]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.update_inference_scheduler]
 
 ```python
 def update_inference_scheduler(

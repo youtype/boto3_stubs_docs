@@ -24,7 +24,7 @@ def get_list_entitlements_paginator() -> ListEntitlementsPaginator:
     return boto3.client("mediaconnect").get_paginator("list_entitlements")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Paginator.ListEntitlements)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Paginator.ListEntitlements)
 
 ```python
 class ListEntitlementsPaginator(Boto3Paginator):
@@ -47,7 +47,7 @@ def get_list_flows_paginator() -> ListFlowsPaginator:
     return boto3.client("mediaconnect").get_paginator("list_flows")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Paginator.ListFlows)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Paginator.ListFlows)
 
 ```python
 class ListFlowsPaginator(Boto3Paginator):
@@ -70,7 +70,7 @@ def get_list_offerings_paginator() -> ListOfferingsPaginator:
     return boto3.client("mediaconnect").get_paginator("list_offerings")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Paginator.ListOfferings)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Paginator.ListOfferings)
 
 ```python
 class ListOfferingsPaginator(Boto3Paginator):
@@ -93,7 +93,7 @@ def get_list_reservations_paginator() -> ListReservationsPaginator:
     return boto3.client("mediaconnect").get_paginator("list_reservations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Paginator.ListReservations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Paginator.ListReservations)
 
 ```python
 class ListReservationsPaginator(Boto3Paginator):

@@ -30,7 +30,7 @@ def get_list_bootstrap_actions_paginator() -> ListBootstrapActionsPaginator:
     return boto3.client("emr").get_paginator("list_bootstrap_actions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListBootstrapActions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListBootstrapActions)
 
 ```python
 class ListBootstrapActionsPaginator(Boto3Paginator):
@@ -54,7 +54,7 @@ def get_list_clusters_paginator() -> ListClustersPaginator:
     return boto3.client("emr").get_paginator("list_clusters")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListClusters)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListClusters)
 
 ```python
 class ListClustersPaginator(Boto3Paginator):
@@ -80,7 +80,7 @@ def get_list_instance_fleets_paginator() -> ListInstanceFleetsPaginator:
     return boto3.client("emr").get_paginator("list_instance_fleets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListInstanceFleets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListInstanceFleets)
 
 ```python
 class ListInstanceFleetsPaginator(Boto3Paginator):
@@ -104,7 +104,7 @@ def get_list_instance_groups_paginator() -> ListInstanceGroupsPaginator:
     return boto3.client("emr").get_paginator("list_instance_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListInstanceGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListInstanceGroups)
 
 ```python
 class ListInstanceGroupsPaginator(Boto3Paginator):
@@ -128,7 +128,7 @@ def get_list_instances_paginator() -> ListInstancesPaginator:
     return boto3.client("emr").get_paginator("list_instances")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListInstances)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListInstances)
 
 ```python
 class ListInstancesPaginator(Boto3Paginator):
@@ -157,7 +157,7 @@ def get_list_notebook_executions_paginator() -> ListNotebookExecutionsPaginator:
     return boto3.client("emr").get_paginator("list_notebook_executions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListNotebookExecutions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListNotebookExecutions)
 
 ```python
 class ListNotebookExecutionsPaginator(Boto3Paginator):
@@ -184,7 +184,7 @@ def get_list_security_configurations_paginator() -> ListSecurityConfigurationsPa
     return boto3.client("emr").get_paginator("list_security_configurations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListSecurityConfigurations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListSecurityConfigurations)
 
 ```python
 class ListSecurityConfigurationsPaginator(Boto3Paginator):
@@ -207,7 +207,7 @@ def get_list_steps_paginator() -> ListStepsPaginator:
     return boto3.client("emr").get_paginator("list_steps")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListSteps)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListSteps)
 
 ```python
 class ListStepsPaginator(Boto3Paginator):
@@ -233,7 +233,7 @@ def get_list_studio_session_mappings_paginator() -> ListStudioSessionMappingsPag
     return boto3.client("emr").get_paginator("list_studio_session_mappings")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListStudioSessionMappings)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListStudioSessionMappings)
 
 ```python
 class ListStudioSessionMappingsPaginator(Boto3Paginator):
@@ -258,7 +258,7 @@ def get_list_studios_paginator() -> ListStudiosPaginator:
     return boto3.client("emr").get_paginator("list_studios")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListStudios)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListStudios)
 
 ```python
 class ListStudiosPaginator(Boto3Paginator):

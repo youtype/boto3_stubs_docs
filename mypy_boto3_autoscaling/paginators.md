@@ -30,7 +30,7 @@ def get_describe_auto_scaling_groups_paginator() -> DescribeAutoScalingGroupsPag
     return boto3.client("autoscaling").get_paginator("describe_auto_scaling_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeAutoScalingGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeAutoScalingGroups)
 
 ```python
 class DescribeAutoScalingGroupsPaginator(Boto3Paginator):
@@ -54,7 +54,7 @@ def get_describe_auto_scaling_instances_paginator() -> DescribeAutoScalingInstan
     return boto3.client("autoscaling").get_paginator("describe_auto_scaling_instances")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeAutoScalingInstances)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeAutoScalingInstances)
 
 ```python
 class DescribeAutoScalingInstancesPaginator(Boto3Paginator):
@@ -78,7 +78,7 @@ def get_describe_launch_configurations_paginator() -> DescribeLaunchConfiguratio
     return boto3.client("autoscaling").get_paginator("describe_launch_configurations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeLaunchConfigurations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeLaunchConfigurations)
 
 ```python
 class DescribeLaunchConfigurationsPaginator(Boto3Paginator):
@@ -102,7 +102,7 @@ def get_describe_load_balancer_target_groups_paginator() -> DescribeLoadBalancer
     return boto3.client("autoscaling").get_paginator("describe_load_balancer_target_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeLoadBalancerTargetGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeLoadBalancerTargetGroups)
 
 ```python
 class DescribeLoadBalancerTargetGroupsPaginator(Boto3Paginator):
@@ -126,7 +126,7 @@ def get_describe_load_balancers_paginator() -> DescribeLoadBalancersPaginator:
     return boto3.client("autoscaling").get_paginator("describe_load_balancers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeLoadBalancers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeLoadBalancers)
 
 ```python
 class DescribeLoadBalancersPaginator(Boto3Paginator):
@@ -150,7 +150,7 @@ def get_describe_notification_configurations_paginator() -> DescribeNotification
     return boto3.client("autoscaling").get_paginator("describe_notification_configurations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeNotificationConfigurations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeNotificationConfigurations)
 
 ```python
 class DescribeNotificationConfigurationsPaginator(Boto3Paginator):
@@ -174,7 +174,7 @@ def get_describe_policies_paginator() -> DescribePoliciesPaginator:
     return boto3.client("autoscaling").get_paginator("describe_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribePolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribePolicies)
 
 ```python
 class DescribePoliciesPaginator(Boto3Paginator):
@@ -200,7 +200,7 @@ def get_describe_scaling_activities_paginator() -> DescribeScalingActivitiesPagi
     return boto3.client("autoscaling").get_paginator("describe_scaling_activities")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeScalingActivities)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeScalingActivities)
 
 ```python
 class DescribeScalingActivitiesPaginator(Boto3Paginator):
@@ -226,7 +226,7 @@ def get_describe_scheduled_actions_paginator() -> DescribeScheduledActionsPagina
     return boto3.client("autoscaling").get_paginator("describe_scheduled_actions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeScheduledActions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeScheduledActions)
 
 ```python
 class DescribeScheduledActionsPaginator(Boto3Paginator):
@@ -253,7 +253,7 @@ def get_describe_tags_paginator() -> DescribeTagsPaginator:
     return boto3.client("autoscaling").get_paginator("describe_tags")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeTags)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeTags)
 
 ```python
 class DescribeTagsPaginator(Boto3Paginator):

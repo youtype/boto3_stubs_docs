@@ -35,7 +35,7 @@ from mypy_boto3_rds_data.type_defs import ArrayValueTypeDef
 
 
 Optional fields:
-- `arrayValues`: `List[Dict[str, Any]]`
+- `arrayValues`: `List["ArrayValueTypeDef"]`
 - `booleanValues`: `List[bool]`
 - `doubleValues`: `List[float]`
 - `longValues`: `List[int]`
@@ -146,7 +146,7 @@ from mypy_boto3_rds_data.type_defs import FieldTypeDef
 
 
 Optional fields:
-- `arrayValue`: `Dict[str, Any]`
+- `arrayValue`: `"ArrayValueTypeDef"`
 - `blobValue`: `Union[bytes, IO[bytes]]`
 - `booleanValue`: `bool`
 - `doubleValue`: `float`
@@ -165,7 +165,7 @@ from mypy_boto3_rds_data.type_defs import RecordTypeDef
 
 
 Optional fields:
-- `values`: `List[Dict[str, Any]]`
+- `values`: `List["ValueTypeDef"]`
 
 
 ## ResultFrameTypeDef
@@ -261,7 +261,7 @@ from mypy_boto3_rds_data.type_defs import StructValueTypeDef
 
 
 Optional fields:
-- `attributes`: `List[Dict[str, Any]]`
+- `attributes`: `List["ValueTypeDef"]`
 
 
 ## UpdateResultTypeDef
@@ -287,7 +287,7 @@ from mypy_boto3_rds_data.type_defs import ValueTypeDef
 
 
 Optional fields:
-- `arrayValues`: `List[Dict[str, Any]]`
+- `arrayValues`: `List["ValueTypeDef"]`
 - `bigIntValue`: `int`
 - `bitValue`: `bool`
 - `blobValue`: `Union[bytes, IO[bytes]]`

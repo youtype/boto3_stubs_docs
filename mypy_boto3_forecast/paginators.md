@@ -27,7 +27,7 @@ def get_list_dataset_groups_paginator() -> ListDatasetGroupsPaginator:
     return boto3.client("forecast").get_paginator("list_dataset_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListDatasetGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListDatasetGroups)
 
 ```python
 class ListDatasetGroupsPaginator(Boto3Paginator):
@@ -50,7 +50,7 @@ def get_list_dataset_import_jobs_paginator() -> ListDatasetImportJobsPaginator:
     return boto3.client("forecast").get_paginator("list_dataset_import_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListDatasetImportJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListDatasetImportJobs)
 
 ```python
 class ListDatasetImportJobsPaginator(Boto3Paginator):
@@ -74,7 +74,7 @@ def get_list_datasets_paginator() -> ListDatasetsPaginator:
     return boto3.client("forecast").get_paginator("list_datasets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListDatasets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListDatasets)
 
 ```python
 class ListDatasetsPaginator(Boto3Paginator):
@@ -97,7 +97,7 @@ def get_list_forecast_export_jobs_paginator() -> ListForecastExportJobsPaginator
     return boto3.client("forecast").get_paginator("list_forecast_export_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListForecastExportJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListForecastExportJobs)
 
 ```python
 class ListForecastExportJobsPaginator(Boto3Paginator):
@@ -121,7 +121,7 @@ def get_list_forecasts_paginator() -> ListForecastsPaginator:
     return boto3.client("forecast").get_paginator("list_forecasts")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListForecasts)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListForecasts)
 
 ```python
 class ListForecastsPaginator(Boto3Paginator):
@@ -145,7 +145,7 @@ def get_list_predictor_backtest_export_jobs_paginator() -> ListPredictorBacktest
     return boto3.client("forecast").get_paginator("list_predictor_backtest_export_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListPredictorBacktestExportJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListPredictorBacktestExportJobs)
 
 ```python
 class ListPredictorBacktestExportJobsPaginator(Boto3Paginator):
@@ -169,7 +169,7 @@ def get_list_predictors_paginator() -> ListPredictorsPaginator:
     return boto3.client("forecast").get_paginator("list_predictors")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListPredictors)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListPredictors)
 
 ```python
 class ListPredictorsPaginator(Boto3Paginator):

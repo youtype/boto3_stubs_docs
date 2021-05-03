@@ -40,7 +40,7 @@ def get_get_active_names_paginator() -> GetActiveNamesPaginator:
     return boto3.client("lightsail").get_paginator("get_active_names")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetActiveNames)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetActiveNames)
 
 ```python
 class GetActiveNamesPaginator(Boto3Paginator):
@@ -63,7 +63,7 @@ def get_get_blueprints_paginator() -> GetBlueprintsPaginator:
     return boto3.client("lightsail").get_paginator("get_blueprints")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetBlueprints)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetBlueprints)
 
 ```python
 class GetBlueprintsPaginator(Boto3Paginator):
@@ -87,7 +87,7 @@ def get_get_bundles_paginator() -> GetBundlesPaginator:
     return boto3.client("lightsail").get_paginator("get_bundles")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetBundles)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetBundles)
 
 ```python
 class GetBundlesPaginator(Boto3Paginator):
@@ -111,7 +111,7 @@ def get_get_cloud_formation_stack_records_paginator() -> GetCloudFormationStackR
     return boto3.client("lightsail").get_paginator("get_cloud_formation_stack_records")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetCloudFormationStackRecords)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetCloudFormationStackRecords)
 
 ```python
 class GetCloudFormationStackRecordsPaginator(Boto3Paginator):
@@ -134,7 +134,7 @@ def get_get_disk_snapshots_paginator() -> GetDiskSnapshotsPaginator:
     return boto3.client("lightsail").get_paginator("get_disk_snapshots")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetDiskSnapshots)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetDiskSnapshots)
 
 ```python
 class GetDiskSnapshotsPaginator(Boto3Paginator):
@@ -157,7 +157,7 @@ def get_get_disks_paginator() -> GetDisksPaginator:
     return boto3.client("lightsail").get_paginator("get_disks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetDisks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetDisks)
 
 ```python
 class GetDisksPaginator(Boto3Paginator):
@@ -180,7 +180,7 @@ def get_get_domains_paginator() -> GetDomainsPaginator:
     return boto3.client("lightsail").get_paginator("get_domains")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetDomains)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetDomains)
 
 ```python
 class GetDomainsPaginator(Boto3Paginator):
@@ -203,7 +203,7 @@ def get_get_export_snapshot_records_paginator() -> GetExportSnapshotRecordsPagin
     return boto3.client("lightsail").get_paginator("get_export_snapshot_records")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetExportSnapshotRecords)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetExportSnapshotRecords)
 
 ```python
 class GetExportSnapshotRecordsPaginator(Boto3Paginator):
@@ -226,7 +226,7 @@ def get_get_instance_snapshots_paginator() -> GetInstanceSnapshotsPaginator:
     return boto3.client("lightsail").get_paginator("get_instance_snapshots")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetInstanceSnapshots)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetInstanceSnapshots)
 
 ```python
 class GetInstanceSnapshotsPaginator(Boto3Paginator):
@@ -249,7 +249,7 @@ def get_get_instances_paginator() -> GetInstancesPaginator:
     return boto3.client("lightsail").get_paginator("get_instances")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetInstances)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetInstances)
 
 ```python
 class GetInstancesPaginator(Boto3Paginator):
@@ -272,7 +272,7 @@ def get_get_key_pairs_paginator() -> GetKeyPairsPaginator:
     return boto3.client("lightsail").get_paginator("get_key_pairs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetKeyPairs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetKeyPairs)
 
 ```python
 class GetKeyPairsPaginator(Boto3Paginator):
@@ -295,7 +295,7 @@ def get_get_load_balancers_paginator() -> GetLoadBalancersPaginator:
     return boto3.client("lightsail").get_paginator("get_load_balancers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetLoadBalancers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetLoadBalancers)
 
 ```python
 class GetLoadBalancersPaginator(Boto3Paginator):
@@ -318,7 +318,7 @@ def get_get_operations_paginator() -> GetOperationsPaginator:
     return boto3.client("lightsail").get_paginator("get_operations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetOperations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetOperations)
 
 ```python
 class GetOperationsPaginator(Boto3Paginator):
@@ -341,7 +341,7 @@ def get_get_relational_database_blueprints_paginator() -> GetRelationalDatabaseB
     return boto3.client("lightsail").get_paginator("get_relational_database_blueprints")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseBlueprints)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseBlueprints)
 
 ```python
 class GetRelationalDatabaseBlueprintsPaginator(Boto3Paginator):
@@ -364,7 +364,7 @@ def get_get_relational_database_bundles_paginator() -> GetRelationalDatabaseBund
     return boto3.client("lightsail").get_paginator("get_relational_database_bundles")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseBundles)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseBundles)
 
 ```python
 class GetRelationalDatabaseBundlesPaginator(Boto3Paginator):
@@ -387,7 +387,7 @@ def get_get_relational_database_events_paginator() -> GetRelationalDatabaseEvent
     return boto3.client("lightsail").get_paginator("get_relational_database_events")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseEvents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseEvents)
 
 ```python
 class GetRelationalDatabaseEventsPaginator(Boto3Paginator):
@@ -412,7 +412,7 @@ def get_get_relational_database_parameters_paginator() -> GetRelationalDatabaseP
     return boto3.client("lightsail").get_paginator("get_relational_database_parameters")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseParameters)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseParameters)
 
 ```python
 class GetRelationalDatabaseParametersPaginator(Boto3Paginator):
@@ -436,7 +436,7 @@ def get_get_relational_database_snapshots_paginator() -> GetRelationalDatabaseSn
     return boto3.client("lightsail").get_paginator("get_relational_database_snapshots")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseSnapshots)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseSnapshots)
 
 ```python
 class GetRelationalDatabaseSnapshotsPaginator(Boto3Paginator):
@@ -459,7 +459,7 @@ def get_get_relational_databases_paginator() -> GetRelationalDatabasesPaginator:
     return boto3.client("lightsail").get_paginator("get_relational_databases")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabases)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabases)
 
 ```python
 class GetRelationalDatabasesPaginator(Boto3Paginator):
@@ -482,7 +482,7 @@ def get_get_static_ips_paginator() -> GetStaticIpsPaginator:
     return boto3.client("lightsail").get_paginator("get_static_ips")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetStaticIps)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetStaticIps)
 
 ```python
 class GetStaticIpsPaginator(Boto3Paginator):

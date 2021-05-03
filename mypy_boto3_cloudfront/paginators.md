@@ -24,7 +24,7 @@ def get_list_cloud_front_origin_access_identities_paginator() -> ListCloudFrontO
     return boto3.client("cloudfront").get_paginator("list_cloud_front_origin_access_identities")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Paginator.ListCloudFrontOriginAccessIdentities)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Paginator.ListCloudFrontOriginAccessIdentities)
 
 ```python
 class ListCloudFrontOriginAccessIdentitiesPaginator(Boto3Paginator):
@@ -47,7 +47,7 @@ def get_list_distributions_paginator() -> ListDistributionsPaginator:
     return boto3.client("cloudfront").get_paginator("list_distributions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Paginator.ListDistributions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Paginator.ListDistributions)
 
 ```python
 class ListDistributionsPaginator(Boto3Paginator):
@@ -70,7 +70,7 @@ def get_list_invalidations_paginator() -> ListInvalidationsPaginator:
     return boto3.client("cloudfront").get_paginator("list_invalidations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Paginator.ListInvalidations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Paginator.ListInvalidations)
 
 ```python
 class ListInvalidationsPaginator(Boto3Paginator):
@@ -94,7 +94,7 @@ def get_list_streaming_distributions_paginator() -> ListStreamingDistributionsPa
     return boto3.client("cloudfront").get_paginator("list_streaming_distributions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Paginator.ListStreamingDistributions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Paginator.ListStreamingDistributions)
 
 ```python
 class ListStreamingDistributionsPaginator(Boto3Paginator):

@@ -25,7 +25,7 @@ def get_describe_image_scan_findings_paginator() -> DescribeImageScanFindingsPag
     return boto3.client("ecr").get_paginator("describe_image_scan_findings")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.DescribeImageScanFindings)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.DescribeImageScanFindings)
 
 ```python
 class DescribeImageScanFindingsPaginator(Boto3Paginator):
@@ -51,7 +51,7 @@ def get_describe_images_paginator() -> DescribeImagesPaginator:
     return boto3.client("ecr").get_paginator("describe_images")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.DescribeImages)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.DescribeImages)
 
 ```python
 class DescribeImagesPaginator(Boto3Paginator):
@@ -78,7 +78,7 @@ def get_describe_repositories_paginator() -> DescribeRepositoriesPaginator:
     return boto3.client("ecr").get_paginator("describe_repositories")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.DescribeRepositories)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.DescribeRepositories)
 
 ```python
 class DescribeRepositoriesPaginator(Boto3Paginator):
@@ -103,7 +103,7 @@ def get_get_lifecycle_policy_preview_paginator() -> GetLifecyclePolicyPreviewPag
     return boto3.client("ecr").get_paginator("get_lifecycle_policy_preview")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.GetLifecyclePolicyPreview)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.GetLifecyclePolicyPreview)
 
 ```python
 class GetLifecyclePolicyPreviewPaginator(Boto3Paginator):
@@ -130,7 +130,7 @@ def get_list_images_paginator() -> ListImagesPaginator:
     return boto3.client("ecr").get_paginator("list_images")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.ListImages)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.ListImages)
 
 ```python
 class ListImagesPaginator(Boto3Paginator):

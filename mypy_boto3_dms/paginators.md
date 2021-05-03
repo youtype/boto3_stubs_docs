@@ -33,7 +33,7 @@ def get_describe_certificates_paginator() -> DescribeCertificatesPaginator:
     return boto3.client("dms").get_paginator("describe_certificates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeCertificates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeCertificates)
 
 ```python
 class DescribeCertificatesPaginator(Boto3Paginator):
@@ -57,7 +57,7 @@ def get_describe_connections_paginator() -> DescribeConnectionsPaginator:
     return boto3.client("dms").get_paginator("describe_connections")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeConnections)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeConnections)
 
 ```python
 class DescribeConnectionsPaginator(Boto3Paginator):
@@ -81,7 +81,7 @@ def get_describe_endpoint_types_paginator() -> DescribeEndpointTypesPaginator:
     return boto3.client("dms").get_paginator("describe_endpoint_types")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEndpointTypes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEndpointTypes)
 
 ```python
 class DescribeEndpointTypesPaginator(Boto3Paginator):
@@ -105,7 +105,7 @@ def get_describe_endpoints_paginator() -> DescribeEndpointsPaginator:
     return boto3.client("dms").get_paginator("describe_endpoints")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEndpoints)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEndpoints)
 
 ```python
 class DescribeEndpointsPaginator(Boto3Paginator):
@@ -129,7 +129,7 @@ def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPa
     return boto3.client("dms").get_paginator("describe_event_subscriptions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEventSubscriptions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEventSubscriptions)
 
 ```python
 class DescribeEventSubscriptionsPaginator(Boto3Paginator):
@@ -154,7 +154,7 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return boto3.client("dms").get_paginator("describe_events")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEvents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEvents)
 
 ```python
 class DescribeEventsPaginator(Boto3Paginator):
@@ -184,7 +184,7 @@ def get_describe_orderable_replication_instances_paginator() -> DescribeOrderabl
     return boto3.client("dms").get_paginator("describe_orderable_replication_instances")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeOrderableReplicationInstances)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeOrderableReplicationInstances)
 
 ```python
 class DescribeOrderableReplicationInstancesPaginator(Boto3Paginator):
@@ -207,7 +207,7 @@ def get_describe_replication_instances_paginator() -> DescribeReplicationInstanc
     return boto3.client("dms").get_paginator("describe_replication_instances")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationInstances)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationInstances)
 
 ```python
 class DescribeReplicationInstancesPaginator(Boto3Paginator):
@@ -231,7 +231,7 @@ def get_describe_replication_subnet_groups_paginator() -> DescribeReplicationSub
     return boto3.client("dms").get_paginator("describe_replication_subnet_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationSubnetGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationSubnetGroups)
 
 ```python
 class DescribeReplicationSubnetGroupsPaginator(Boto3Paginator):
@@ -255,7 +255,7 @@ def get_describe_replication_task_assessment_results_paginator() -> DescribeRepl
     return boto3.client("dms").get_paginator("describe_replication_task_assessment_results")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationTaskAssessmentResults)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationTaskAssessmentResults)
 
 ```python
 class DescribeReplicationTaskAssessmentResultsPaginator(Boto3Paginator):
@@ -279,7 +279,7 @@ def get_describe_replication_tasks_paginator() -> DescribeReplicationTasksPagina
     return boto3.client("dms").get_paginator("describe_replication_tasks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationTasks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationTasks)
 
 ```python
 class DescribeReplicationTasksPaginator(Boto3Paginator):
@@ -304,7 +304,7 @@ def get_describe_schemas_paginator() -> DescribeSchemasPaginator:
     return boto3.client("dms").get_paginator("describe_schemas")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeSchemas)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeSchemas)
 
 ```python
 class DescribeSchemasPaginator(Boto3Paginator):
@@ -328,7 +328,7 @@ def get_describe_table_statistics_paginator() -> DescribeTableStatisticsPaginato
     return boto3.client("dms").get_paginator("describe_table_statistics")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeTableStatistics)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeTableStatistics)
 
 ```python
 class DescribeTableStatisticsPaginator(Boto3Paginator):

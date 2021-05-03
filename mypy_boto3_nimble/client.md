@@ -71,7 +71,7 @@ def get_nimble_client() -> NimbleStudioClient:
     return boto3.client("nimble")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client)
 
 ## Exceptions
 
@@ -105,7 +105,7 @@ Exceptions:
 
 Type annotations for `boto3.client("nimble").accept_eulas` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.accept_eulas]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.accept_eulas]
 
 ```python
 def accept_eulas(
@@ -121,7 +121,7 @@ def accept_eulas(
 
 Type annotations for `boto3.client("nimble").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -135,7 +135,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("nimble").create_launch_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_launch_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_launch_profile]
 
 ```python
 def create_launch_profile(
@@ -157,7 +157,7 @@ def create_launch_profile(
 
 Type annotations for `boto3.client("nimble").create_streaming_image` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_image]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_image]
 
 ```python
 def create_streaming_image(
@@ -176,7 +176,7 @@ def create_streaming_image(
 
 Type annotations for `boto3.client("nimble").create_streaming_session` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session]
 
 ```python
 def create_streaming_session(
@@ -195,7 +195,7 @@ def create_streaming_session(
 
 Type annotations for `boto3.client("nimble").create_streaming_session_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session_stream]
 
 ```python
 def create_streaming_session_stream(
@@ -212,7 +212,7 @@ def create_streaming_session_stream(
 
 Type annotations for `boto3.client("nimble").create_studio` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio]
 
 ```python
 def create_studio(
@@ -232,7 +232,7 @@ def create_studio(
 
 Type annotations for `boto3.client("nimble").create_studio_component` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio_component]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio_component]
 
 ```python
 def create_studio_component(
@@ -256,7 +256,7 @@ def create_studio_component(
 
 Type annotations for `boto3.client("nimble").delete_launch_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile]
 
 ```python
 def delete_launch_profile(
@@ -272,7 +272,7 @@ def delete_launch_profile(
 
 Type annotations for `boto3.client("nimble").delete_launch_profile_member` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile_member]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile_member]
 
 ```python
 def delete_launch_profile_member(
@@ -289,7 +289,7 @@ def delete_launch_profile_member(
 
 Type annotations for `boto3.client("nimble").delete_streaming_image` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_image]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_image]
 
 ```python
 def delete_streaming_image(
@@ -305,7 +305,7 @@ def delete_streaming_image(
 
 Type annotations for `boto3.client("nimble").delete_streaming_session` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_session]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_session]
 
 ```python
 def delete_streaming_session(
@@ -321,7 +321,7 @@ def delete_streaming_session(
 
 Type annotations for `boto3.client("nimble").delete_studio` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio]
 
 ```python
 def delete_studio(
@@ -336,7 +336,7 @@ def delete_studio(
 
 Type annotations for `boto3.client("nimble").delete_studio_component` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_component]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_component]
 
 ```python
 def delete_studio_component(
@@ -352,7 +352,7 @@ def delete_studio_component(
 
 Type annotations for `boto3.client("nimble").delete_studio_member` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_member]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_member]
 
 ```python
 def delete_studio_member(
@@ -368,7 +368,7 @@ def delete_studio_member(
 
 Type annotations for `boto3.client("nimble").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -385,7 +385,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("nimble").get_eula` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_eula]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_eula]
 
 ```python
 def get_eula(
@@ -399,7 +399,7 @@ def get_eula(
 
 Type annotations for `boto3.client("nimble").get_launch_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile]
 
 ```python
 def get_launch_profile(
@@ -414,7 +414,7 @@ def get_launch_profile(
 
 Type annotations for `boto3.client("nimble").get_launch_profile_details` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_details]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_details]
 
 ```python
 def get_launch_profile_details(
@@ -429,7 +429,7 @@ def get_launch_profile_details(
 
 Type annotations for `boto3.client("nimble").get_launch_profile_initialization` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_initialization]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_initialization]
 
 ```python
 def get_launch_profile_initialization(
@@ -447,7 +447,7 @@ def get_launch_profile_initialization(
 
 Type annotations for `boto3.client("nimble").get_launch_profile_member` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_member]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_member]
 
 ```python
 def get_launch_profile_member(
@@ -463,7 +463,7 @@ def get_launch_profile_member(
 
 Type annotations for `boto3.client("nimble").get_streaming_image` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_image]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_image]
 
 ```python
 def get_streaming_image(
@@ -478,7 +478,7 @@ def get_streaming_image(
 
 Type annotations for `boto3.client("nimble").get_streaming_session` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session]
 
 ```python
 def get_streaming_session(
@@ -493,7 +493,7 @@ def get_streaming_session(
 
 Type annotations for `boto3.client("nimble").get_streaming_session_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session_stream]
 
 ```python
 def get_streaming_session_stream(
@@ -509,7 +509,7 @@ def get_streaming_session_stream(
 
 Type annotations for `boto3.client("nimble").get_studio` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio]
 
 ```python
 def get_studio(
@@ -523,7 +523,7 @@ def get_studio(
 
 Type annotations for `boto3.client("nimble").get_studio_component` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_component]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_component]
 
 ```python
 def get_studio_component(
@@ -538,7 +538,7 @@ def get_studio_component(
 
 Type annotations for `boto3.client("nimble").get_studio_member` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_member]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_member]
 
 ```python
 def get_studio_member(
@@ -553,7 +553,7 @@ def get_studio_member(
 
 Type annotations for `boto3.client("nimble").list_eula_acceptances` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eula_acceptances]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eula_acceptances]
 
 ```python
 def list_eula_acceptances(
@@ -569,7 +569,7 @@ def list_eula_acceptances(
 
 Type annotations for `boto3.client("nimble").list_eulas` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eulas]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eulas]
 
 ```python
 def list_eulas(
@@ -584,7 +584,7 @@ def list_eulas(
 
 Type annotations for `boto3.client("nimble").list_launch_profile_members` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profile_members]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profile_members]
 
 ```python
 def list_launch_profile_members(
@@ -601,7 +601,7 @@ def list_launch_profile_members(
 
 Type annotations for `boto3.client("nimble").list_launch_profiles` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profiles]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profiles]
 
 ```python
 def list_launch_profiles(
@@ -619,7 +619,7 @@ def list_launch_profiles(
 
 Type annotations for `boto3.client("nimble").list_streaming_images` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_images]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_images]
 
 ```python
 def list_streaming_images(
@@ -635,7 +635,7 @@ def list_streaming_images(
 
 Type annotations for `boto3.client("nimble").list_streaming_sessions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_sessions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_sessions]
 
 ```python
 def list_streaming_sessions(
@@ -652,7 +652,7 @@ def list_streaming_sessions(
 
 Type annotations for `boto3.client("nimble").list_studio_components` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_components]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_components]
 
 ```python
 def list_studio_components(
@@ -670,7 +670,7 @@ def list_studio_components(
 
 Type annotations for `boto3.client("nimble").list_studio_members` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_members]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_members]
 
 ```python
 def list_studio_members(
@@ -686,7 +686,7 @@ def list_studio_members(
 
 Type annotations for `boto3.client("nimble").list_studios` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studios]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studios]
 
 ```python
 def list_studios(
@@ -700,7 +700,7 @@ def list_studios(
 
 Type annotations for `boto3.client("nimble").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -714,7 +714,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("nimble").put_launch_profile_members` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_launch_profile_members]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_launch_profile_members]
 
 ```python
 def put_launch_profile_members(
@@ -732,7 +732,7 @@ def put_launch_profile_members(
 
 Type annotations for `boto3.client("nimble").put_studio_members` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_studio_members]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_studio_members]
 
 ```python
 def put_studio_members(
@@ -749,7 +749,7 @@ def put_studio_members(
 
 Type annotations for `boto3.client("nimble").start_studio_sso_configuration_repair` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.start_studio_sso_configuration_repair]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.start_studio_sso_configuration_repair]
 
 ```python
 def start_studio_sso_configuration_repair(
@@ -764,7 +764,7 @@ def start_studio_sso_configuration_repair(
 
 Type annotations for `boto3.client("nimble").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -779,7 +779,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("nimble").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -794,7 +794,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("nimble").update_launch_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile]
 
 ```python
 def update_launch_profile(
@@ -815,7 +815,7 @@ def update_launch_profile(
 
 Type annotations for `boto3.client("nimble").update_launch_profile_member` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile_member]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile_member]
 
 ```python
 def update_launch_profile_member(
@@ -833,7 +833,7 @@ def update_launch_profile_member(
 
 Type annotations for `boto3.client("nimble").update_streaming_image` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_streaming_image]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_streaming_image]
 
 ```python
 def update_streaming_image(
@@ -851,7 +851,7 @@ def update_streaming_image(
 
 Type annotations for `boto3.client("nimble").update_studio` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio]
 
 ```python
 def update_studio(
@@ -869,7 +869,7 @@ def update_studio(
 
 Type annotations for `boto3.client("nimble").update_studio_component` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio_component]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio_component]
 
 ```python
 def update_studio_component(

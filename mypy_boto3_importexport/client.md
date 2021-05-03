@@ -32,7 +32,7 @@ def get_importexport_client() -> ImportExportClient:
     return boto3.client("importexport")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client)
 
 ## Exceptions
 
@@ -79,7 +79,7 @@ Exceptions:
 
 Type annotations for `boto3.client("importexport").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -93,7 +93,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("importexport").cancel_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.cancel_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.cancel_job]
 
 ```python
 def cancel_job(
@@ -108,7 +108,7 @@ def cancel_job(
 
 Type annotations for `boto3.client("importexport").create_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.create_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.create_job]
 
 ```python
 def create_job(
@@ -126,7 +126,7 @@ def create_job(
 
 Type annotations for `boto3.client("importexport").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -143,7 +143,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("importexport").get_shipping_label` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.get_shipping_label]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.get_shipping_label]
 
 ```python
 def get_shipping_label(
@@ -168,7 +168,7 @@ def get_shipping_label(
 
 Type annotations for `boto3.client("importexport").get_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.get_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.get_status]
 
 ```python
 def get_status(
@@ -183,7 +183,7 @@ def get_status(
 
 Type annotations for `boto3.client("importexport").list_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.list_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.list_jobs]
 
 ```python
 def list_jobs(
@@ -199,7 +199,7 @@ def list_jobs(
 
 Type annotations for `boto3.client("importexport").update_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.update_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.update_job]
 
 ```python
 def update_job(

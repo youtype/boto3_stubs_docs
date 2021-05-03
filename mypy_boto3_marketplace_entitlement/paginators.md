@@ -21,7 +21,7 @@ def get_get_entitlements_paginator() -> GetEntitlementsPaginator:
     return boto3.client("marketplace-entitlement").get_paginator("get_entitlements")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Paginator.GetEntitlements)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Paginator.GetEntitlements)
 
 ```python
 class GetEntitlementsPaginator(Boto3Paginator):

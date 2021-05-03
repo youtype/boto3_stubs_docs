@@ -25,7 +25,7 @@ def get_list_application_states_paginator() -> ListApplicationStatesPaginator:
     return boto3.client("mgh").get_paginator("list_application_states")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListApplicationStates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListApplicationStates)
 
 ```python
 class ListApplicationStatesPaginator(Boto3Paginator):
@@ -49,7 +49,7 @@ def get_list_created_artifacts_paginator() -> ListCreatedArtifactsPaginator:
     return boto3.client("mgh").get_paginator("list_created_artifacts")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListCreatedArtifacts)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListCreatedArtifacts)
 
 ```python
 class ListCreatedArtifactsPaginator(Boto3Paginator):
@@ -74,7 +74,7 @@ def get_list_discovered_resources_paginator() -> ListDiscoveredResourcesPaginato
     return boto3.client("mgh").get_paginator("list_discovered_resources")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListDiscoveredResources)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListDiscoveredResources)
 
 ```python
 class ListDiscoveredResourcesPaginator(Boto3Paginator):
@@ -99,7 +99,7 @@ def get_list_migration_tasks_paginator() -> ListMigrationTasksPaginator:
     return boto3.client("mgh").get_paginator("list_migration_tasks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListMigrationTasks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListMigrationTasks)
 
 ```python
 class ListMigrationTasksPaginator(Boto3Paginator):
@@ -123,7 +123,7 @@ def get_list_progress_update_streams_paginator() -> ListProgressUpdateStreamsPag
     return boto3.client("mgh").get_paginator("list_progress_update_streams")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListProgressUpdateStreams)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListProgressUpdateStreams)
 
 ```python
 class ListProgressUpdateStreamsPaginator(Boto3Paginator):

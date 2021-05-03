@@ -81,7 +81,7 @@ def get_macie2_client() -> Macie2Client:
     return boto3.client("macie2")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client)
 
 ## Exceptions
 
@@ -115,7 +115,7 @@ Exceptions:
 
 Type annotations for `boto3.client("macie2").accept_invitation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.accept_invitation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.accept_invitation]
 
 ```python
 def accept_invitation(
@@ -131,7 +131,7 @@ def accept_invitation(
 
 Type annotations for `boto3.client("macie2").batch_get_custom_data_identifiers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.batch_get_custom_data_identifiers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.batch_get_custom_data_identifiers]
 
 ```python
 def batch_get_custom_data_identifiers(
@@ -145,7 +145,7 @@ def batch_get_custom_data_identifiers(
 
 Type annotations for `boto3.client("macie2").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -159,7 +159,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("macie2").create_classification_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_classification_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_classification_job]
 
 ```python
 def create_classification_job(
@@ -182,7 +182,7 @@ def create_classification_job(
 
 Type annotations for `boto3.client("macie2").create_custom_data_identifier` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_custom_data_identifier]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_custom_data_identifier]
 
 ```python
 def create_custom_data_identifier(
@@ -203,7 +203,7 @@ def create_custom_data_identifier(
 
 Type annotations for `boto3.client("macie2").create_findings_filter` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_findings_filter]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_findings_filter]
 
 ```python
 def create_findings_filter(
@@ -223,7 +223,7 @@ def create_findings_filter(
 
 Type annotations for `boto3.client("macie2").create_invitations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_invitations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_invitations]
 
 ```python
 def create_invitations(
@@ -239,7 +239,7 @@ def create_invitations(
 
 Type annotations for `boto3.client("macie2").create_member` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_member]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_member]
 
 ```python
 def create_member(
@@ -254,7 +254,7 @@ def create_member(
 
 Type annotations for `boto3.client("macie2").create_sample_findings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_sample_findings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_sample_findings]
 
 ```python
 def create_sample_findings(
@@ -268,7 +268,7 @@ def create_sample_findings(
 
 Type annotations for `boto3.client("macie2").decline_invitations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.decline_invitations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.decline_invitations]
 
 ```python
 def decline_invitations(
@@ -282,7 +282,7 @@ def decline_invitations(
 
 Type annotations for `boto3.client("macie2").delete_custom_data_identifier` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_custom_data_identifier]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_custom_data_identifier]
 
 ```python
 def delete_custom_data_identifier(
@@ -296,7 +296,7 @@ def delete_custom_data_identifier(
 
 Type annotations for `boto3.client("macie2").delete_findings_filter` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_findings_filter]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_findings_filter]
 
 ```python
 def delete_findings_filter(
@@ -310,7 +310,7 @@ def delete_findings_filter(
 
 Type annotations for `boto3.client("macie2").delete_invitations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_invitations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_invitations]
 
 ```python
 def delete_invitations(
@@ -324,7 +324,7 @@ def delete_invitations(
 
 Type annotations for `boto3.client("macie2").delete_member` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_member]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_member]
 
 ```python
 def delete_member(
@@ -338,7 +338,7 @@ def delete_member(
 
 Type annotations for `boto3.client("macie2").describe_buckets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_buckets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_buckets]
 
 ```python
 def describe_buckets(
@@ -355,7 +355,7 @@ def describe_buckets(
 
 Type annotations for `boto3.client("macie2").describe_classification_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_classification_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_classification_job]
 
 ```python
 def describe_classification_job(
@@ -369,7 +369,7 @@ def describe_classification_job(
 
 Type annotations for `boto3.client("macie2").describe_organization_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_organization_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_organization_configuration]
 
 ```python
 def describe_organization_configuration(
@@ -382,7 +382,7 @@ def describe_organization_configuration(
 
 Type annotations for `boto3.client("macie2").disable_macie` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disable_macie]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disable_macie]
 
 ```python
 def disable_macie(
@@ -395,7 +395,7 @@ def disable_macie(
 
 Type annotations for `boto3.client("macie2").disable_organization_admin_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disable_organization_admin_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disable_organization_admin_account]
 
 ```python
 def disable_organization_admin_account(
@@ -409,7 +409,7 @@ def disable_organization_admin_account(
 
 Type annotations for `boto3.client("macie2").disassociate_from_administrator_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disassociate_from_administrator_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disassociate_from_administrator_account]
 
 ```python
 def disassociate_from_administrator_account(
@@ -422,7 +422,7 @@ def disassociate_from_administrator_account(
 
 Type annotations for `boto3.client("macie2").disassociate_from_master_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disassociate_from_master_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disassociate_from_master_account]
 
 ```python
 def disassociate_from_master_account(
@@ -435,7 +435,7 @@ def disassociate_from_master_account(
 
 Type annotations for `boto3.client("macie2").disassociate_member` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disassociate_member]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disassociate_member]
 
 ```python
 def disassociate_member(
@@ -449,7 +449,7 @@ def disassociate_member(
 
 Type annotations for `boto3.client("macie2").enable_macie` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.enable_macie]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.enable_macie]
 
 ```python
 def enable_macie(
@@ -465,7 +465,7 @@ def enable_macie(
 
 Type annotations for `boto3.client("macie2").enable_organization_admin_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.enable_organization_admin_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.enable_organization_admin_account]
 
 ```python
 def enable_organization_admin_account(
@@ -480,7 +480,7 @@ def enable_organization_admin_account(
 
 Type annotations for `boto3.client("macie2").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -497,7 +497,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("macie2").get_administrator_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_administrator_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_administrator_account]
 
 ```python
 def get_administrator_account(
@@ -510,7 +510,7 @@ def get_administrator_account(
 
 Type annotations for `boto3.client("macie2").get_bucket_statistics` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_bucket_statistics]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_bucket_statistics]
 
 ```python
 def get_bucket_statistics(
@@ -524,7 +524,7 @@ def get_bucket_statistics(
 
 Type annotations for `boto3.client("macie2").get_classification_export_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_classification_export_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_classification_export_configuration]
 
 ```python
 def get_classification_export_configuration(
@@ -537,7 +537,7 @@ def get_classification_export_configuration(
 
 Type annotations for `boto3.client("macie2").get_custom_data_identifier` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_custom_data_identifier]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_custom_data_identifier]
 
 ```python
 def get_custom_data_identifier(
@@ -551,7 +551,7 @@ def get_custom_data_identifier(
 
 Type annotations for `boto3.client("macie2").get_finding_statistics` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_finding_statistics]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_finding_statistics]
 
 ```python
 def get_finding_statistics(
@@ -568,7 +568,7 @@ def get_finding_statistics(
 
 Type annotations for `boto3.client("macie2").get_findings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_findings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_findings]
 
 ```python
 def get_findings(
@@ -583,7 +583,7 @@ def get_findings(
 
 Type annotations for `boto3.client("macie2").get_findings_filter` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_findings_filter]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_findings_filter]
 
 ```python
 def get_findings_filter(
@@ -597,7 +597,7 @@ def get_findings_filter(
 
 Type annotations for `boto3.client("macie2").get_findings_publication_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_findings_publication_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_findings_publication_configuration]
 
 ```python
 def get_findings_publication_configuration(
@@ -610,7 +610,7 @@ def get_findings_publication_configuration(
 
 Type annotations for `boto3.client("macie2").get_invitations_count` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_invitations_count]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_invitations_count]
 
 ```python
 def get_invitations_count(
@@ -623,7 +623,7 @@ def get_invitations_count(
 
 Type annotations for `boto3.client("macie2").get_macie_session` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_macie_session]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_macie_session]
 
 ```python
 def get_macie_session(
@@ -636,7 +636,7 @@ def get_macie_session(
 
 Type annotations for `boto3.client("macie2").get_master_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_master_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_master_account]
 
 ```python
 def get_master_account(
@@ -649,7 +649,7 @@ def get_master_account(
 
 Type annotations for `boto3.client("macie2").get_member` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_member]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_member]
 
 ```python
 def get_member(
@@ -663,7 +663,7 @@ def get_member(
 
 Type annotations for `boto3.client("macie2").get_usage_statistics` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_usage_statistics]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_usage_statistics]
 
 ```python
 def get_usage_statistics(
@@ -681,7 +681,7 @@ def get_usage_statistics(
 
 Type annotations for `boto3.client("macie2").get_usage_totals` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_usage_totals]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_usage_totals]
 
 ```python
 def get_usage_totals(
@@ -695,7 +695,7 @@ def get_usage_totals(
 
 Type annotations for `boto3.client("macie2").list_classification_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_classification_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_classification_jobs]
 
 ```python
 def list_classification_jobs(
@@ -712,7 +712,7 @@ def list_classification_jobs(
 
 Type annotations for `boto3.client("macie2").list_custom_data_identifiers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_custom_data_identifiers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_custom_data_identifiers]
 
 ```python
 def list_custom_data_identifiers(
@@ -727,7 +727,7 @@ def list_custom_data_identifiers(
 
 Type annotations for `boto3.client("macie2").list_findings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_findings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_findings]
 
 ```python
 def list_findings(
@@ -744,7 +744,7 @@ def list_findings(
 
 Type annotations for `boto3.client("macie2").list_findings_filters` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_findings_filters]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_findings_filters]
 
 ```python
 def list_findings_filters(
@@ -759,7 +759,7 @@ def list_findings_filters(
 
 Type annotations for `boto3.client("macie2").list_invitations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_invitations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_invitations]
 
 ```python
 def list_invitations(
@@ -774,7 +774,7 @@ def list_invitations(
 
 Type annotations for `boto3.client("macie2").list_members` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_members]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_members]
 
 ```python
 def list_members(
@@ -790,7 +790,7 @@ def list_members(
 
 Type annotations for `boto3.client("macie2").list_organization_admin_accounts` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_organization_admin_accounts]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_organization_admin_accounts]
 
 ```python
 def list_organization_admin_accounts(
@@ -805,7 +805,7 @@ def list_organization_admin_accounts(
 
 Type annotations for `boto3.client("macie2").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -819,7 +819,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("macie2").put_classification_export_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.put_classification_export_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.put_classification_export_configuration]
 
 ```python
 def put_classification_export_configuration(
@@ -833,7 +833,7 @@ def put_classification_export_configuration(
 
 Type annotations for `boto3.client("macie2").put_findings_publication_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.put_findings_publication_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.put_findings_publication_configuration]
 
 ```python
 def put_findings_publication_configuration(
@@ -848,7 +848,7 @@ def put_findings_publication_configuration(
 
 Type annotations for `boto3.client("macie2").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -863,7 +863,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("macie2").test_custom_data_identifier` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.test_custom_data_identifier]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.test_custom_data_identifier]
 
 ```python
 def test_custom_data_identifier(
@@ -881,7 +881,7 @@ def test_custom_data_identifier(
 
 Type annotations for `boto3.client("macie2").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -896,7 +896,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("macie2").update_classification_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_classification_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_classification_job]
 
 ```python
 def update_classification_job(
@@ -911,7 +911,7 @@ def update_classification_job(
 
 Type annotations for `boto3.client("macie2").update_findings_filter` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_findings_filter]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_findings_filter]
 
 ```python
 def update_findings_filter(
@@ -930,7 +930,7 @@ def update_findings_filter(
 
 Type annotations for `boto3.client("macie2").update_macie_session` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_macie_session]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_macie_session]
 
 ```python
 def update_macie_session(
@@ -945,7 +945,7 @@ def update_macie_session(
 
 Type annotations for `boto3.client("macie2").update_member_session` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_member_session]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_member_session]
 
 ```python
 def update_member_session(
@@ -960,7 +960,7 @@ def update_member_session(
 
 Type annotations for `boto3.client("macie2").update_organization_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_organization_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_organization_configuration]
 
 ```python
 def update_organization_configuration(

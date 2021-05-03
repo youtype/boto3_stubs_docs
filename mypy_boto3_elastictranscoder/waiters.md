@@ -21,14 +21,9 @@ def get_job_complete_waiter() -> JobCompleteWaiter:
     return boto3.client("elastictranscoder").get_waiter("job_complete")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Waiter.job_complete)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Waiter.job_complete)
 
-```python
-class JobCompleteWaiter(Boto3Waiter):
-    def wait(
-        self,
-        Id: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `JobCompleteWaiter.wait` method:
+
+- `Id`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#waiterconfigtypedef)

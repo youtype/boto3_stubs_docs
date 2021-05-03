@@ -22,7 +22,7 @@ def get_list_domains_paginator() -> ListDomainsPaginator:
     return boto3.client("sdb").get_paginator("list_domains")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Paginator.ListDomains)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Paginator.ListDomains)
 
 ```python
 class ListDomainsPaginator(Boto3Paginator):
@@ -45,7 +45,7 @@ def get_select_paginator() -> SelectPaginator:
     return boto3.client("sdb").get_paginator("select")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Paginator.Select)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Paginator.Select)
 
 ```python
 class SelectPaginator(Boto3Paginator):

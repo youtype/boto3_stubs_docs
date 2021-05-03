@@ -26,7 +26,7 @@ def get_get_resource_policies_paginator() -> GetResourcePoliciesPaginator:
     return boto3.client("ram").get_paginator("get_resource_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourcePolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourcePolicies)
 
 ```python
 class GetResourcePoliciesPaginator(Boto3Paginator):
@@ -51,7 +51,7 @@ def get_get_resource_share_associations_paginator() -> GetResourceShareAssociati
     return boto3.client("ram").get_paginator("get_resource_share_associations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourceShareAssociations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourceShareAssociations)
 
 ```python
 class GetResourceShareAssociationsPaginator(Boto3Paginator):
@@ -79,7 +79,7 @@ def get_get_resource_share_invitations_paginator() -> GetResourceShareInvitation
     return boto3.client("ram").get_paginator("get_resource_share_invitations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourceShareInvitations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourceShareInvitations)
 
 ```python
 class GetResourceShareInvitationsPaginator(Boto3Paginator):
@@ -104,7 +104,7 @@ def get_get_resource_shares_paginator() -> GetResourceSharesPaginator:
     return boto3.client("ram").get_paginator("get_resource_shares")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourceShares)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourceShares)
 
 ```python
 class GetResourceSharesPaginator(Boto3Paginator):
@@ -132,7 +132,7 @@ def get_list_principals_paginator() -> ListPrincipalsPaginator:
     return boto3.client("ram").get_paginator("list_principals")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.ListPrincipals)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.ListPrincipals)
 
 ```python
 class ListPrincipalsPaginator(Boto3Paginator):
@@ -160,7 +160,7 @@ def get_list_resources_paginator() -> ListResourcesPaginator:
     return boto3.client("ram").get_paginator("list_resources")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.ListResources)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.ListResources)
 
 ```python
 class ListResourcesPaginator(Boto3Paginator):

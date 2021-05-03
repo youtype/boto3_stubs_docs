@@ -21,15 +21,10 @@ def get_node_associated_waiter() -> NodeAssociatedWaiter:
     return boto3.client("opsworkscm").get_waiter("node_associated")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Waiter.node_associated)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Waiter.node_associated)
 
-```python
-class NodeAssociatedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        NodeAssociationStatusToken: str,
-        ServerName: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `NodeAssociatedWaiter.wait` method:
+
+- `NodeAssociationStatusToken`: `str` *(required)*
+- `ServerName`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#waiterconfigtypedef)

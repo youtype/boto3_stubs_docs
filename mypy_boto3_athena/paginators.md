@@ -27,7 +27,7 @@ def get_get_query_results_paginator() -> GetQueryResultsPaginator:
     return boto3.client("athena").get_paginator("get_query_results")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.GetQueryResults)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.GetQueryResults)
 
 ```python
 class GetQueryResultsPaginator(Boto3Paginator):
@@ -51,7 +51,7 @@ def get_list_data_catalogs_paginator() -> ListDataCatalogsPaginator:
     return boto3.client("athena").get_paginator("list_data_catalogs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListDataCatalogs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListDataCatalogs)
 
 ```python
 class ListDataCatalogsPaginator(Boto3Paginator):
@@ -74,7 +74,7 @@ def get_list_databases_paginator() -> ListDatabasesPaginator:
     return boto3.client("athena").get_paginator("list_databases")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListDatabases)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListDatabases)
 
 ```python
 class ListDatabasesPaginator(Boto3Paginator):
@@ -98,7 +98,7 @@ def get_list_named_queries_paginator() -> ListNamedQueriesPaginator:
     return boto3.client("athena").get_paginator("list_named_queries")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListNamedQueries)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListNamedQueries)
 
 ```python
 class ListNamedQueriesPaginator(Boto3Paginator):
@@ -122,7 +122,7 @@ def get_list_query_executions_paginator() -> ListQueryExecutionsPaginator:
     return boto3.client("athena").get_paginator("list_query_executions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListQueryExecutions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListQueryExecutions)
 
 ```python
 class ListQueryExecutionsPaginator(Boto3Paginator):
@@ -146,7 +146,7 @@ def get_list_table_metadata_paginator() -> ListTableMetadataPaginator:
     return boto3.client("athena").get_paginator("list_table_metadata")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListTableMetadata)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListTableMetadata)
 
 ```python
 class ListTableMetadataPaginator(Boto3Paginator):
@@ -172,7 +172,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("athena").get_paginator("list_tags_for_resource")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListTagsForResource)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):

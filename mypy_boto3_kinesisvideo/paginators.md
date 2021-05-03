@@ -22,7 +22,7 @@ def get_list_signaling_channels_paginator() -> ListSignalingChannelsPaginator:
     return boto3.client("kinesisvideo").get_paginator("list_signaling_channels")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Paginator.ListSignalingChannels)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Paginator.ListSignalingChannels)
 
 ```python
 class ListSignalingChannelsPaginator(Boto3Paginator):
@@ -46,7 +46,7 @@ def get_list_streams_paginator() -> ListStreamsPaginator:
     return boto3.client("kinesisvideo").get_paginator("list_streams")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Paginator.ListStreams)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Paginator.ListStreams)
 
 ```python
 class ListStreamsPaginator(Boto3Paginator):

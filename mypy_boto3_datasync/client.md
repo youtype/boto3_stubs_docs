@@ -61,7 +61,7 @@ def get_datasync_client() -> DataSyncClient:
     return boto3.client("datasync")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client)
 
 ## Exceptions
 
@@ -90,7 +90,7 @@ Exceptions:
 
 Type annotations for `boto3.client("datasync").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -104,7 +104,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("datasync").cancel_task_execution` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.cancel_task_execution]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.cancel_task_execution]
 
 ```python
 def cancel_task_execution(
@@ -118,7 +118,7 @@ def cancel_task_execution(
 
 Type annotations for `boto3.client("datasync").create_agent` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_agent]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_agent]
 
 ```python
 def create_agent(
@@ -137,7 +137,7 @@ def create_agent(
 
 Type annotations for `boto3.client("datasync").create_location_efs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_efs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_efs]
 
 ```python
 def create_location_efs(
@@ -154,7 +154,7 @@ def create_location_efs(
 
 Type annotations for `boto3.client("datasync").create_location_fsx_windows` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_fsx_windows]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_fsx_windows]
 
 ```python
 def create_location_fsx_windows(
@@ -174,7 +174,7 @@ def create_location_fsx_windows(
 
 Type annotations for `boto3.client("datasync").create_location_nfs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_nfs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_nfs]
 
 ```python
 def create_location_nfs(
@@ -192,7 +192,7 @@ def create_location_nfs(
 
 Type annotations for `boto3.client("datasync").create_location_object_storage` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_object_storage]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_object_storage]
 
 ```python
 def create_location_object_storage(
@@ -214,7 +214,7 @@ def create_location_object_storage(
 
 Type annotations for `boto3.client("datasync").create_location_s3` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_s3]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_s3]
 
 ```python
 def create_location_s3(
@@ -233,7 +233,7 @@ def create_location_s3(
 
 Type annotations for `boto3.client("datasync").create_location_smb` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_smb]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_smb]
 
 ```python
 def create_location_smb(
@@ -254,7 +254,7 @@ def create_location_smb(
 
 Type annotations for `boto3.client("datasync").create_task` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_task]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_task]
 
 ```python
 def create_task(
@@ -275,7 +275,7 @@ def create_task(
 
 Type annotations for `boto3.client("datasync").delete_agent` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_agent]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_agent]
 
 ```python
 def delete_agent(
@@ -289,7 +289,7 @@ def delete_agent(
 
 Type annotations for `boto3.client("datasync").delete_location` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_location]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_location]
 
 ```python
 def delete_location(
@@ -303,7 +303,7 @@ def delete_location(
 
 Type annotations for `boto3.client("datasync").delete_task` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_task]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_task]
 
 ```python
 def delete_task(
@@ -317,7 +317,7 @@ def delete_task(
 
 Type annotations for `boto3.client("datasync").describe_agent` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_agent]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_agent]
 
 ```python
 def describe_agent(
@@ -331,7 +331,7 @@ def describe_agent(
 
 Type annotations for `boto3.client("datasync").describe_location_efs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_efs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_efs]
 
 ```python
 def describe_location_efs(
@@ -345,7 +345,7 @@ def describe_location_efs(
 
 Type annotations for `boto3.client("datasync").describe_location_fsx_windows` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_fsx_windows]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_fsx_windows]
 
 ```python
 def describe_location_fsx_windows(
@@ -359,7 +359,7 @@ def describe_location_fsx_windows(
 
 Type annotations for `boto3.client("datasync").describe_location_nfs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_nfs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_nfs]
 
 ```python
 def describe_location_nfs(
@@ -373,7 +373,7 @@ def describe_location_nfs(
 
 Type annotations for `boto3.client("datasync").describe_location_object_storage` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_object_storage]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_object_storage]
 
 ```python
 def describe_location_object_storage(
@@ -387,7 +387,7 @@ def describe_location_object_storage(
 
 Type annotations for `boto3.client("datasync").describe_location_s3` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_s3]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_s3]
 
 ```python
 def describe_location_s3(
@@ -401,7 +401,7 @@ def describe_location_s3(
 
 Type annotations for `boto3.client("datasync").describe_location_smb` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_smb]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_smb]
 
 ```python
 def describe_location_smb(
@@ -415,7 +415,7 @@ def describe_location_smb(
 
 Type annotations for `boto3.client("datasync").describe_task` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_task]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_task]
 
 ```python
 def describe_task(
@@ -429,7 +429,7 @@ def describe_task(
 
 Type annotations for `boto3.client("datasync").describe_task_execution` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_task_execution]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_task_execution]
 
 ```python
 def describe_task_execution(
@@ -443,7 +443,7 @@ def describe_task_execution(
 
 Type annotations for `boto3.client("datasync").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -460,7 +460,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("datasync").list_agents` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_agents]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_agents]
 
 ```python
 def list_agents(
@@ -475,7 +475,7 @@ def list_agents(
 
 Type annotations for `boto3.client("datasync").list_locations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_locations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_locations]
 
 ```python
 def list_locations(
@@ -491,7 +491,7 @@ def list_locations(
 
 Type annotations for `boto3.client("datasync").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -507,7 +507,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("datasync").list_task_executions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_task_executions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_task_executions]
 
 ```python
 def list_task_executions(
@@ -523,7 +523,7 @@ def list_task_executions(
 
 Type annotations for `boto3.client("datasync").list_tasks` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tasks]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tasks]
 
 ```python
 def list_tasks(
@@ -539,7 +539,7 @@ def list_tasks(
 
 Type annotations for `boto3.client("datasync").start_task_execution` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.start_task_execution]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.start_task_execution]
 
 ```python
 def start_task_execution(
@@ -555,7 +555,7 @@ def start_task_execution(
 
 Type annotations for `boto3.client("datasync").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -570,7 +570,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("datasync").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -585,7 +585,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("datasync").update_agent` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_agent]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_agent]
 
 ```python
 def update_agent(
@@ -600,7 +600,7 @@ def update_agent(
 
 Type annotations for `boto3.client("datasync").update_location_nfs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_nfs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_nfs]
 
 ```python
 def update_location_nfs(
@@ -617,7 +617,7 @@ def update_location_nfs(
 
 Type annotations for `boto3.client("datasync").update_location_object_storage` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_object_storage]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_object_storage]
 
 ```python
 def update_location_object_storage(
@@ -637,7 +637,7 @@ def update_location_object_storage(
 
 Type annotations for `boto3.client("datasync").update_location_smb` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_smb]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_smb]
 
 ```python
 def update_location_smb(
@@ -657,7 +657,7 @@ def update_location_smb(
 
 Type annotations for `boto3.client("datasync").update_task` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_task]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_task]
 
 ```python
 def update_task(
@@ -676,7 +676,7 @@ def update_task(
 
 Type annotations for `boto3.client("datasync").update_task_execution` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_task_execution]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_task_execution]
 
 ```python
 def update_task_execution(

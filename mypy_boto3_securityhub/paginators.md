@@ -26,7 +26,7 @@ def get_get_enabled_standards_paginator() -> GetEnabledStandardsPaginator:
     return boto3.client("securityhub").get_paginator("get_enabled_standards")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.GetEnabledStandards)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.GetEnabledStandards)
 
 ```python
 class GetEnabledStandardsPaginator(Boto3Paginator):
@@ -50,7 +50,7 @@ def get_get_findings_paginator() -> GetFindingsPaginator:
     return boto3.client("securityhub").get_paginator("get_findings")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.GetFindings)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.GetFindings)
 
 ```python
 class GetFindingsPaginator(Boto3Paginator):
@@ -75,7 +75,7 @@ def get_get_insights_paginator() -> GetInsightsPaginator:
     return boto3.client("securityhub").get_paginator("get_insights")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.GetInsights)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.GetInsights)
 
 ```python
 class GetInsightsPaginator(Boto3Paginator):
@@ -99,7 +99,7 @@ def get_list_enabled_products_for_import_paginator() -> ListEnabledProductsForIm
     return boto3.client("securityhub").get_paginator("list_enabled_products_for_import")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListEnabledProductsForImport)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListEnabledProductsForImport)
 
 ```python
 class ListEnabledProductsForImportPaginator(Boto3Paginator):
@@ -122,7 +122,7 @@ def get_list_invitations_paginator() -> ListInvitationsPaginator:
     return boto3.client("securityhub").get_paginator("list_invitations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListInvitations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListInvitations)
 
 ```python
 class ListInvitationsPaginator(Boto3Paginator):
@@ -145,7 +145,7 @@ def get_list_members_paginator() -> ListMembersPaginator:
     return boto3.client("securityhub").get_paginator("list_members")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListMembers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListMembers)
 
 ```python
 class ListMembersPaginator(Boto3Paginator):

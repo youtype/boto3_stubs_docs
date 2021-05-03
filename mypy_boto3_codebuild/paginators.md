@@ -32,7 +32,7 @@ def get_describe_code_coverages_paginator() -> DescribeCodeCoveragesPaginator:
     return boto3.client("codebuild").get_paginator("describe_code_coverages")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.DescribeCodeCoverages)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.DescribeCodeCoverages)
 
 ```python
 class DescribeCodeCoveragesPaginator(Boto3Paginator):
@@ -60,7 +60,7 @@ def get_describe_test_cases_paginator() -> DescribeTestCasesPaginator:
     return boto3.client("codebuild").get_paginator("describe_test_cases")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.DescribeTestCases)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.DescribeTestCases)
 
 ```python
 class DescribeTestCasesPaginator(Boto3Paginator):
@@ -85,7 +85,7 @@ def get_list_build_batches_paginator() -> ListBuildBatchesPaginator:
     return boto3.client("codebuild").get_paginator("list_build_batches")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildBatches)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildBatches)
 
 ```python
 class ListBuildBatchesPaginator(Boto3Paginator):
@@ -110,7 +110,7 @@ def get_list_build_batches_for_project_paginator() -> ListBuildBatchesForProject
     return boto3.client("codebuild").get_paginator("list_build_batches_for_project")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildBatchesForProject)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildBatchesForProject)
 
 ```python
 class ListBuildBatchesForProjectPaginator(Boto3Paginator):
@@ -136,7 +136,7 @@ def get_list_builds_paginator() -> ListBuildsPaginator:
     return boto3.client("codebuild").get_paginator("list_builds")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuilds)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuilds)
 
 ```python
 class ListBuildsPaginator(Boto3Paginator):
@@ -160,7 +160,7 @@ def get_list_builds_for_project_paginator() -> ListBuildsForProjectPaginator:
     return boto3.client("codebuild").get_paginator("list_builds_for_project")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildsForProject)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildsForProject)
 
 ```python
 class ListBuildsForProjectPaginator(Boto3Paginator):
@@ -185,7 +185,7 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("codebuild").get_paginator("list_projects")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListProjects)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListProjects)
 
 ```python
 class ListProjectsPaginator(Boto3Paginator):
@@ -210,7 +210,7 @@ def get_list_report_groups_paginator() -> ListReportGroupsPaginator:
     return boto3.client("codebuild").get_paginator("list_report_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReportGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReportGroups)
 
 ```python
 class ListReportGroupsPaginator(Boto3Paginator):
@@ -235,7 +235,7 @@ def get_list_reports_paginator() -> ListReportsPaginator:
     return boto3.client("codebuild").get_paginator("list_reports")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReports)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReports)
 
 ```python
 class ListReportsPaginator(Boto3Paginator):
@@ -260,7 +260,7 @@ def get_list_reports_for_report_group_paginator() -> ListReportsForReportGroupPa
     return boto3.client("codebuild").get_paginator("list_reports_for_report_group")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReportsForReportGroup)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReportsForReportGroup)
 
 ```python
 class ListReportsForReportGroupPaginator(Boto3Paginator):
@@ -286,7 +286,7 @@ def get_list_shared_projects_paginator() -> ListSharedProjectsPaginator:
     return boto3.client("codebuild").get_paginator("list_shared_projects")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListSharedProjects)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListSharedProjects)
 
 ```python
 class ListSharedProjectsPaginator(Boto3Paginator):
@@ -311,7 +311,7 @@ def get_list_shared_report_groups_paginator() -> ListSharedReportGroupsPaginator
     return boto3.client("codebuild").get_paginator("list_shared_report_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListSharedReportGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListSharedReportGroups)
 
 ```python
 class ListSharedReportGroupsPaginator(Boto3Paginator):

@@ -54,7 +54,7 @@ def get_accessanalyzer_client() -> AccessAnalyzerClient:
     return boto3.client("accessanalyzer")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client)
 
 ## Exceptions
 
@@ -88,7 +88,7 @@ Exceptions:
 
 Type annotations for `boto3.client("accessanalyzer").apply_archive_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.apply_archive_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.apply_archive_rule]
 
 ```python
 def apply_archive_rule(
@@ -104,7 +104,7 @@ def apply_archive_rule(
 
 Type annotations for `boto3.client("accessanalyzer").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -118,7 +118,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("accessanalyzer").cancel_policy_generation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.cancel_policy_generation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.cancel_policy_generation]
 
 ```python
 def cancel_policy_generation(
@@ -132,7 +132,7 @@ def cancel_policy_generation(
 
 Type annotations for `boto3.client("accessanalyzer").create_access_preview` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_access_preview]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_access_preview]
 
 ```python
 def create_access_preview(
@@ -148,7 +148,7 @@ def create_access_preview(
 
 Type annotations for `boto3.client("accessanalyzer").create_analyzer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_analyzer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_analyzer]
 
 ```python
 def create_analyzer(
@@ -166,7 +166,7 @@ def create_analyzer(
 
 Type annotations for `boto3.client("accessanalyzer").create_archive_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_archive_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_archive_rule]
 
 ```python
 def create_archive_rule(
@@ -183,7 +183,7 @@ def create_archive_rule(
 
 Type annotations for `boto3.client("accessanalyzer").delete_analyzer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.delete_analyzer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.delete_analyzer]
 
 ```python
 def delete_analyzer(
@@ -198,7 +198,7 @@ def delete_analyzer(
 
 Type annotations for `boto3.client("accessanalyzer").delete_archive_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.delete_archive_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.delete_archive_rule]
 
 ```python
 def delete_archive_rule(
@@ -214,7 +214,7 @@ def delete_archive_rule(
 
 Type annotations for `boto3.client("accessanalyzer").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -231,7 +231,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("accessanalyzer").get_access_preview` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_access_preview]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_access_preview]
 
 ```python
 def get_access_preview(
@@ -246,7 +246,7 @@ def get_access_preview(
 
 Type annotations for `boto3.client("accessanalyzer").get_analyzed_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_analyzed_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_analyzed_resource]
 
 ```python
 def get_analyzed_resource(
@@ -261,7 +261,7 @@ def get_analyzed_resource(
 
 Type annotations for `boto3.client("accessanalyzer").get_analyzer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_analyzer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_analyzer]
 
 ```python
 def get_analyzer(
@@ -275,7 +275,7 @@ def get_analyzer(
 
 Type annotations for `boto3.client("accessanalyzer").get_archive_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_archive_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_archive_rule]
 
 ```python
 def get_archive_rule(
@@ -290,7 +290,7 @@ def get_archive_rule(
 
 Type annotations for `boto3.client("accessanalyzer").get_finding` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_finding]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_finding]
 
 ```python
 def get_finding(
@@ -305,7 +305,7 @@ def get_finding(
 
 Type annotations for `boto3.client("accessanalyzer").get_generated_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_generated_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_generated_policy]
 
 ```python
 def get_generated_policy(
@@ -321,7 +321,7 @@ def get_generated_policy(
 
 Type annotations for `boto3.client("accessanalyzer").list_access_preview_findings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_access_preview_findings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_access_preview_findings]
 
 ```python
 def list_access_preview_findings(
@@ -339,7 +339,7 @@ def list_access_preview_findings(
 
 Type annotations for `boto3.client("accessanalyzer").list_access_previews` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_access_previews]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_access_previews]
 
 ```python
 def list_access_previews(
@@ -355,7 +355,7 @@ def list_access_previews(
 
 Type annotations for `boto3.client("accessanalyzer").list_analyzed_resources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_analyzed_resources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_analyzed_resources]
 
 ```python
 def list_analyzed_resources(
@@ -372,7 +372,7 @@ def list_analyzed_resources(
 
 Type annotations for `boto3.client("accessanalyzer").list_analyzers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_analyzers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_analyzers]
 
 ```python
 def list_analyzers(
@@ -388,7 +388,7 @@ def list_analyzers(
 
 Type annotations for `boto3.client("accessanalyzer").list_archive_rules` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_archive_rules]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_archive_rules]
 
 ```python
 def list_archive_rules(
@@ -404,7 +404,7 @@ def list_archive_rules(
 
 Type annotations for `boto3.client("accessanalyzer").list_findings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_findings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_findings]
 
 ```python
 def list_findings(
@@ -422,7 +422,7 @@ def list_findings(
 
 Type annotations for `boto3.client("accessanalyzer").list_policy_generations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_policy_generations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_policy_generations]
 
 ```python
 def list_policy_generations(
@@ -438,7 +438,7 @@ def list_policy_generations(
 
 Type annotations for `boto3.client("accessanalyzer").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -452,7 +452,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("accessanalyzer").start_policy_generation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.start_policy_generation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.start_policy_generation]
 
 ```python
 def start_policy_generation(
@@ -468,7 +468,7 @@ def start_policy_generation(
 
 Type annotations for `boto3.client("accessanalyzer").start_resource_scan` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.start_resource_scan]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.start_resource_scan]
 
 ```python
 def start_resource_scan(
@@ -483,7 +483,7 @@ def start_resource_scan(
 
 Type annotations for `boto3.client("accessanalyzer").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -498,7 +498,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("accessanalyzer").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -513,7 +513,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("accessanalyzer").update_archive_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.update_archive_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.update_archive_rule]
 
 ```python
 def update_archive_rule(
@@ -530,7 +530,7 @@ def update_archive_rule(
 
 Type annotations for `boto3.client("accessanalyzer").update_findings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.update_findings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.update_findings]
 
 ```python
 def update_findings(
@@ -548,7 +548,7 @@ def update_findings(
 
 Type annotations for `boto3.client("accessanalyzer").validate_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.validate_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.validate_policy]
 
 ```python
 def validate_policy(

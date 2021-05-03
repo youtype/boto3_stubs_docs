@@ -29,7 +29,7 @@ def get_list_eula_acceptances_paginator() -> ListEulaAcceptancesPaginator:
     return boto3.client("nimble").get_paginator("list_eula_acceptances")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListEulaAcceptances)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListEulaAcceptances)
 
 ```python
 class ListEulaAcceptancesPaginator(Boto3Paginator):
@@ -54,7 +54,7 @@ def get_list_eulas_paginator() -> ListEulasPaginator:
     return boto3.client("nimble").get_paginator("list_eulas")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListEulas)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListEulas)
 
 ```python
 class ListEulasPaginator(Boto3Paginator):
@@ -78,7 +78,7 @@ def get_list_launch_profile_members_paginator() -> ListLaunchProfileMembersPagin
     return boto3.client("nimble").get_paginator("list_launch_profile_members")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListLaunchProfileMembers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListLaunchProfileMembers)
 
 ```python
 class ListLaunchProfileMembersPaginator(Boto3Paginator):
@@ -103,7 +103,7 @@ def get_list_launch_profiles_paginator() -> ListLaunchProfilesPaginator:
     return boto3.client("nimble").get_paginator("list_launch_profiles")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListLaunchProfiles)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListLaunchProfiles)
 
 ```python
 class ListLaunchProfilesPaginator(Boto3Paginator):
@@ -129,7 +129,7 @@ def get_list_streaming_images_paginator() -> ListStreamingImagesPaginator:
     return boto3.client("nimble").get_paginator("list_streaming_images")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStreamingImages)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStreamingImages)
 
 ```python
 class ListStreamingImagesPaginator(Boto3Paginator):
@@ -154,7 +154,7 @@ def get_list_streaming_sessions_paginator() -> ListStreamingSessionsPaginator:
     return boto3.client("nimble").get_paginator("list_streaming_sessions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStreamingSessions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStreamingSessions)
 
 ```python
 class ListStreamingSessionsPaginator(Boto3Paginator):
@@ -180,7 +180,7 @@ def get_list_studio_components_paginator() -> ListStudioComponentsPaginator:
     return boto3.client("nimble").get_paginator("list_studio_components")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStudioComponents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStudioComponents)
 
 ```python
 class ListStudioComponentsPaginator(Boto3Paginator):
@@ -206,7 +206,7 @@ def get_list_studio_members_paginator() -> ListStudioMembersPaginator:
     return boto3.client("nimble").get_paginator("list_studio_members")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStudioMembers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStudioMembers)
 
 ```python
 class ListStudioMembersPaginator(Boto3Paginator):
@@ -230,7 +230,7 @@ def get_list_studios_paginator() -> ListStudiosPaginator:
     return boto3.client("nimble").get_paginator("list_studios")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStudios)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStudios)
 
 ```python
 class ListStudiosPaginator(Boto3Paginator):

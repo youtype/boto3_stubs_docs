@@ -46,7 +46,7 @@ def get_cloudhsm_client() -> CloudHSMClient:
     return boto3.client("cloudhsm")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client)
 
 ## Exceptions
 
@@ -76,7 +76,7 @@ Exceptions:
 
 Type annotations for `boto3.client("cloudhsm").add_tags_to_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.add_tags_to_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.add_tags_to_resource]
 
 ```python
 def add_tags_to_resource(
@@ -91,7 +91,7 @@ def add_tags_to_resource(
 
 Type annotations for `boto3.client("cloudhsm").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -105,7 +105,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("cloudhsm").create_hapg` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hapg]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hapg]
 
 ```python
 def create_hapg(
@@ -119,7 +119,7 @@ def create_hapg(
 
 Type annotations for `boto3.client("cloudhsm").create_hsm` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hsm]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hsm]
 
 ```python
 def create_hsm(
@@ -140,7 +140,7 @@ def create_hsm(
 
 Type annotations for `boto3.client("cloudhsm").create_luna_client` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_luna_client]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_luna_client]
 
 ```python
 def create_luna_client(
@@ -155,7 +155,7 @@ def create_luna_client(
 
 Type annotations for `boto3.client("cloudhsm").delete_hapg` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hapg]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hapg]
 
 ```python
 def delete_hapg(
@@ -169,7 +169,7 @@ def delete_hapg(
 
 Type annotations for `boto3.client("cloudhsm").delete_hsm` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hsm]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hsm]
 
 ```python
 def delete_hsm(
@@ -183,7 +183,7 @@ def delete_hsm(
 
 Type annotations for `boto3.client("cloudhsm").delete_luna_client` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_luna_client]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_luna_client]
 
 ```python
 def delete_luna_client(
@@ -197,7 +197,7 @@ def delete_luna_client(
 
 Type annotations for `boto3.client("cloudhsm").describe_hapg` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hapg]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hapg]
 
 ```python
 def describe_hapg(
@@ -211,7 +211,7 @@ def describe_hapg(
 
 Type annotations for `boto3.client("cloudhsm").describe_hsm` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hsm]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hsm]
 
 ```python
 def describe_hsm(
@@ -226,7 +226,7 @@ def describe_hsm(
 
 Type annotations for `boto3.client("cloudhsm").describe_luna_client` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_luna_client]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_luna_client]
 
 ```python
 def describe_luna_client(
@@ -241,7 +241,7 @@ def describe_luna_client(
 
 Type annotations for `boto3.client("cloudhsm").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -258,7 +258,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("cloudhsm").get_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.get_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.get_config]
 
 ```python
 def get_config(
@@ -274,7 +274,7 @@ def get_config(
 
 Type annotations for `boto3.client("cloudhsm").list_available_zones` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_available_zones]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_available_zones]
 
 ```python
 def list_available_zones(
@@ -287,7 +287,7 @@ def list_available_zones(
 
 Type annotations for `boto3.client("cloudhsm").list_hapgs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hapgs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hapgs]
 
 ```python
 def list_hapgs(
@@ -301,7 +301,7 @@ def list_hapgs(
 
 Type annotations for `boto3.client("cloudhsm").list_hsms` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hsms]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hsms]
 
 ```python
 def list_hsms(
@@ -315,7 +315,7 @@ def list_hsms(
 
 Type annotations for `boto3.client("cloudhsm").list_luna_clients` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_luna_clients]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_luna_clients]
 
 ```python
 def list_luna_clients(
@@ -329,7 +329,7 @@ def list_luna_clients(
 
 Type annotations for `boto3.client("cloudhsm").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -343,7 +343,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("cloudhsm").modify_hapg` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hapg]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hapg]
 
 ```python
 def modify_hapg(
@@ -359,7 +359,7 @@ def modify_hapg(
 
 Type annotations for `boto3.client("cloudhsm").modify_hsm` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hsm]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hsm]
 
 ```python
 def modify_hsm(
@@ -378,7 +378,7 @@ def modify_hsm(
 
 Type annotations for `boto3.client("cloudhsm").modify_luna_client` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_luna_client]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_luna_client]
 
 ```python
 def modify_luna_client(
@@ -393,7 +393,7 @@ def modify_luna_client(
 
 Type annotations for `boto3.client("cloudhsm").remove_tags_from_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.remove_tags_from_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.remove_tags_from_resource]
 
 ```python
 def remove_tags_from_resource(

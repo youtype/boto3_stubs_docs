@@ -26,7 +26,7 @@ def get_describe_agents_paginator() -> DescribeAgentsPaginator:
     return boto3.client("discovery").get_paginator("describe_agents")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeAgents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeAgents)
 
 ```python
 class DescribeAgentsPaginator(Boto3Paginator):
@@ -51,7 +51,7 @@ def get_describe_continuous_exports_paginator() -> DescribeContinuousExportsPagi
     return boto3.client("discovery").get_paginator("describe_continuous_exports")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeContinuousExports)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeContinuousExports)
 
 ```python
 class DescribeContinuousExportsPaginator(Boto3Paginator):
@@ -75,7 +75,7 @@ def get_describe_export_configurations_paginator() -> DescribeExportConfiguratio
     return boto3.client("discovery").get_paginator("describe_export_configurations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeExportConfigurations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeExportConfigurations)
 
 ```python
 class DescribeExportConfigurationsPaginator(Boto3Paginator):
@@ -99,7 +99,7 @@ def get_describe_export_tasks_paginator() -> DescribeExportTasksPaginator:
     return boto3.client("discovery").get_paginator("describe_export_tasks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeExportTasks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeExportTasks)
 
 ```python
 class DescribeExportTasksPaginator(Boto3Paginator):
@@ -124,7 +124,7 @@ def get_describe_tags_paginator() -> DescribeTagsPaginator:
     return boto3.client("discovery").get_paginator("describe_tags")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeTags)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeTags)
 
 ```python
 class DescribeTagsPaginator(Boto3Paginator):
@@ -148,7 +148,7 @@ def get_list_configurations_paginator() -> ListConfigurationsPaginator:
     return boto3.client("discovery").get_paginator("list_configurations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.ListConfigurations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.ListConfigurations)
 
 ```python
 class ListConfigurationsPaginator(Boto3Paginator):

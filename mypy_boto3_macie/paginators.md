@@ -22,7 +22,7 @@ def get_list_member_accounts_paginator() -> ListMemberAccountsPaginator:
     return boto3.client("macie").get_paginator("list_member_accounts")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Paginator.ListMemberAccounts)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Paginator.ListMemberAccounts)
 
 ```python
 class ListMemberAccountsPaginator(Boto3Paginator):
@@ -45,7 +45,7 @@ def get_list_s3_resources_paginator() -> ListS3ResourcesPaginator:
     return boto3.client("macie").get_paginator("list_s3_resources")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Paginator.ListS3Resources)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Paginator.ListS3Resources)
 
 ```python
 class ListS3ResourcesPaginator(Boto3Paginator):

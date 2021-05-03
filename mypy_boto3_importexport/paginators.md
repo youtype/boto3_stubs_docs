@@ -21,7 +21,7 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("importexport").get_paginator("list_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Paginator.ListJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Paginator.ListJobs)
 
 ```python
 class ListJobsPaginator(Boto3Paginator):

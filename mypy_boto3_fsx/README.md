@@ -119,13 +119,15 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_fsx.literals import AliasLifecycle, ...
+from mypy_boto3_fsx.literals import AdministrativeActionType, ...
 ```
 
+- [AdministrativeActionType](./literals.md#administrativeactiontype)
 - [AliasLifecycle](./literals.md#aliaslifecycle)
 - [AutoImportPolicyType](./literals.md#autoimportpolicytype)
 - [BackupLifecycle](./literals.md#backuplifecycle)
 - [BackupType](./literals.md#backuptype)
+- [DataRepositoryLifecycle](./literals.md#datarepositorylifecycle)
 - [DataRepositoryTaskFilterName](./literals.md#datarepositorytaskfiltername)
 - [DataRepositoryTaskLifecycle](./literals.md#datarepositorytasklifecycle)
 - [DataRepositoryTaskType](./literals.md#datarepositorytasktype)
@@ -133,12 +135,14 @@ from mypy_boto3_fsx.literals import AliasLifecycle, ...
 - [DescribeFileSystemsPaginatorName](./literals.md#describefilesystemspaginatorname)
 - [DriveCacheType](./literals.md#drivecachetype)
 - [FileSystemLifecycle](./literals.md#filesystemlifecycle)
+- [FileSystemMaintenanceOperation](./literals.md#filesystemmaintenanceoperation)
 - [FileSystemType](./literals.md#filesystemtype)
 - [FilterName](./literals.md#filtername)
 - [ListTagsForResourcePaginatorName](./literals.md#listtagsforresourcepaginatorname)
 - [LustreDeploymentType](./literals.md#lustredeploymenttype)
 - [ReportFormat](./literals.md#reportformat)
 - [ReportScope](./literals.md#reportscope)
+- [Status](./literals.md#status)
 - [StorageType](./literals.md#storagetype)
 - [WindowsDeploymentType](./literals.md#windowsdeploymenttype)
 

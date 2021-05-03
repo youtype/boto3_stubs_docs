@@ -34,7 +34,7 @@ def get_list_analyses_paginator() -> ListAnalysesPaginator:
     return boto3.client("quicksight").get_paginator("list_analyses")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListAnalyses)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListAnalyses)
 
 ```python
 class ListAnalysesPaginator(Boto3Paginator):
@@ -58,7 +58,7 @@ def get_list_dashboard_versions_paginator() -> ListDashboardVersionsPaginator:
     return boto3.client("quicksight").get_paginator("list_dashboard_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListDashboardVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListDashboardVersions)
 
 ```python
 class ListDashboardVersionsPaginator(Boto3Paginator):
@@ -83,7 +83,7 @@ def get_list_dashboards_paginator() -> ListDashboardsPaginator:
     return boto3.client("quicksight").get_paginator("list_dashboards")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListDashboards)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListDashboards)
 
 ```python
 class ListDashboardsPaginator(Boto3Paginator):
@@ -107,7 +107,7 @@ def get_list_data_sets_paginator() -> ListDataSetsPaginator:
     return boto3.client("quicksight").get_paginator("list_data_sets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListDataSets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListDataSets)
 
 ```python
 class ListDataSetsPaginator(Boto3Paginator):
@@ -131,7 +131,7 @@ def get_list_data_sources_paginator() -> ListDataSourcesPaginator:
     return boto3.client("quicksight").get_paginator("list_data_sources")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListDataSources)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListDataSources)
 
 ```python
 class ListDataSourcesPaginator(Boto3Paginator):
@@ -155,7 +155,7 @@ def get_list_ingestions_paginator() -> ListIngestionsPaginator:
     return boto3.client("quicksight").get_paginator("list_ingestions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListIngestions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListIngestions)
 
 ```python
 class ListIngestionsPaginator(Boto3Paginator):
@@ -180,7 +180,7 @@ def get_list_namespaces_paginator() -> ListNamespacesPaginator:
     return boto3.client("quicksight").get_paginator("list_namespaces")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListNamespaces)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListNamespaces)
 
 ```python
 class ListNamespacesPaginator(Boto3Paginator):
@@ -204,7 +204,7 @@ def get_list_template_aliases_paginator() -> ListTemplateAliasesPaginator:
     return boto3.client("quicksight").get_paginator("list_template_aliases")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListTemplateAliases)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListTemplateAliases)
 
 ```python
 class ListTemplateAliasesPaginator(Boto3Paginator):
@@ -229,7 +229,7 @@ def get_list_template_versions_paginator() -> ListTemplateVersionsPaginator:
     return boto3.client("quicksight").get_paginator("list_template_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListTemplateVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListTemplateVersions)
 
 ```python
 class ListTemplateVersionsPaginator(Boto3Paginator):
@@ -254,7 +254,7 @@ def get_list_templates_paginator() -> ListTemplatesPaginator:
     return boto3.client("quicksight").get_paginator("list_templates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListTemplates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListTemplates)
 
 ```python
 class ListTemplatesPaginator(Boto3Paginator):
@@ -278,7 +278,7 @@ def get_list_theme_versions_paginator() -> ListThemeVersionsPaginator:
     return boto3.client("quicksight").get_paginator("list_theme_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListThemeVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListThemeVersions)
 
 ```python
 class ListThemeVersionsPaginator(Boto3Paginator):
@@ -303,7 +303,7 @@ def get_list_themes_paginator() -> ListThemesPaginator:
     return boto3.client("quicksight").get_paginator("list_themes")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListThemes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListThemes)
 
 ```python
 class ListThemesPaginator(Boto3Paginator):
@@ -328,7 +328,7 @@ def get_search_analyses_paginator() -> SearchAnalysesPaginator:
     return boto3.client("quicksight").get_paginator("search_analyses")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.SearchAnalyses)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.SearchAnalyses)
 
 ```python
 class SearchAnalysesPaginator(Boto3Paginator):
@@ -353,7 +353,7 @@ def get_search_dashboards_paginator() -> SearchDashboardsPaginator:
     return boto3.client("quicksight").get_paginator("search_dashboards")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.SearchDashboards)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.SearchDashboards)
 
 ```python
 class SearchDashboardsPaginator(Boto3Paginator):

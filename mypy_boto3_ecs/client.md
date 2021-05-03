@@ -79,7 +79,7 @@ def get_ecs_client() -> ECSClient:
     return boto3.client("ecs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client)
 
 ## Exceptions
 
@@ -130,7 +130,7 @@ Exceptions:
 
 Type annotations for `boto3.client("ecs").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -144,7 +144,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("ecs").create_capacity_provider` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_capacity_provider]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_capacity_provider]
 
 ```python
 def create_capacity_provider(
@@ -160,7 +160,7 @@ def create_capacity_provider(
 
 Type annotations for `boto3.client("ecs").create_cluster` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_cluster]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_cluster]
 
 ```python
 def create_cluster(
@@ -179,7 +179,7 @@ def create_cluster(
 
 Type annotations for `boto3.client("ecs").create_service` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_service]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_service]
 
 ```python
 def create_service(
@@ -214,7 +214,7 @@ def create_service(
 
 Type annotations for `boto3.client("ecs").create_task_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_task_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_task_set]
 
 ```python
 def create_task_set(
@@ -240,7 +240,7 @@ def create_task_set(
 
 Type annotations for `boto3.client("ecs").delete_account_setting` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_account_setting]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_account_setting]
 
 ```python
 def delete_account_setting(
@@ -255,7 +255,7 @@ def delete_account_setting(
 
 Type annotations for `boto3.client("ecs").delete_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_attributes]
 
 ```python
 def delete_attributes(
@@ -270,7 +270,7 @@ def delete_attributes(
 
 Type annotations for `boto3.client("ecs").delete_capacity_provider` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_capacity_provider]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_capacity_provider]
 
 ```python
 def delete_capacity_provider(
@@ -284,7 +284,7 @@ def delete_capacity_provider(
 
 Type annotations for `boto3.client("ecs").delete_cluster` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_cluster]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_cluster]
 
 ```python
 def delete_cluster(
@@ -298,7 +298,7 @@ def delete_cluster(
 
 Type annotations for `boto3.client("ecs").delete_service` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_service]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_service]
 
 ```python
 def delete_service(
@@ -314,7 +314,7 @@ def delete_service(
 
 Type annotations for `boto3.client("ecs").delete_task_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_task_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_task_set]
 
 ```python
 def delete_task_set(
@@ -331,7 +331,7 @@ def delete_task_set(
 
 Type annotations for `boto3.client("ecs").deregister_container_instance` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.deregister_container_instance]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.deregister_container_instance]
 
 ```python
 def deregister_container_instance(
@@ -347,7 +347,7 @@ def deregister_container_instance(
 
 Type annotations for `boto3.client("ecs").deregister_task_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.deregister_task_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.deregister_task_definition]
 
 ```python
 def deregister_task_definition(
@@ -361,7 +361,7 @@ def deregister_task_definition(
 
 Type annotations for `boto3.client("ecs").describe_capacity_providers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_capacity_providers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_capacity_providers]
 
 ```python
 def describe_capacity_providers(
@@ -378,7 +378,7 @@ def describe_capacity_providers(
 
 Type annotations for `boto3.client("ecs").describe_clusters` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_clusters]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_clusters]
 
 ```python
 def describe_clusters(
@@ -393,7 +393,7 @@ def describe_clusters(
 
 Type annotations for `boto3.client("ecs").describe_container_instances` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_container_instances]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_container_instances]
 
 ```python
 def describe_container_instances(
@@ -409,7 +409,7 @@ def describe_container_instances(
 
 Type annotations for `boto3.client("ecs").describe_services` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_services]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_services]
 
 ```python
 def describe_services(
@@ -425,7 +425,7 @@ def describe_services(
 
 Type annotations for `boto3.client("ecs").describe_task_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_definition]
 
 ```python
 def describe_task_definition(
@@ -440,7 +440,7 @@ def describe_task_definition(
 
 Type annotations for `boto3.client("ecs").describe_task_sets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_sets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_sets]
 
 ```python
 def describe_task_sets(
@@ -457,7 +457,7 @@ def describe_task_sets(
 
 Type annotations for `boto3.client("ecs").describe_tasks` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_tasks]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_tasks]
 
 ```python
 def describe_tasks(
@@ -473,7 +473,7 @@ def describe_tasks(
 
 Type annotations for `boto3.client("ecs").discover_poll_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.discover_poll_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.discover_poll_endpoint]
 
 ```python
 def discover_poll_endpoint(
@@ -488,7 +488,7 @@ def discover_poll_endpoint(
 
 Type annotations for `boto3.client("ecs").execute_command` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.execute_command]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.execute_command]
 
 ```python
 def execute_command(
@@ -506,7 +506,7 @@ def execute_command(
 
 Type annotations for `boto3.client("ecs").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -523,7 +523,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("ecs").list_account_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_account_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_account_settings]
 
 ```python
 def list_account_settings(
@@ -542,7 +542,7 @@ def list_account_settings(
 
 Type annotations for `boto3.client("ecs").list_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_attributes]
 
 ```python
 def list_attributes(
@@ -561,7 +561,7 @@ def list_attributes(
 
 Type annotations for `boto3.client("ecs").list_clusters` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_clusters]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_clusters]
 
 ```python
 def list_clusters(
@@ -576,7 +576,7 @@ def list_clusters(
 
 Type annotations for `boto3.client("ecs").list_container_instances` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_container_instances]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_container_instances]
 
 ```python
 def list_container_instances(
@@ -594,7 +594,7 @@ def list_container_instances(
 
 Type annotations for `boto3.client("ecs").list_services` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_services]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_services]
 
 ```python
 def list_services(
@@ -612,7 +612,7 @@ def list_services(
 
 Type annotations for `boto3.client("ecs").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -626,7 +626,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("ecs").list_task_definition_families` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_task_definition_families]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_task_definition_families]
 
 ```python
 def list_task_definition_families(
@@ -643,7 +643,7 @@ def list_task_definition_families(
 
 Type annotations for `boto3.client("ecs").list_task_definitions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_task_definitions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_task_definitions]
 
 ```python
 def list_task_definitions(
@@ -661,7 +661,7 @@ def list_task_definitions(
 
 Type annotations for `boto3.client("ecs").list_tasks` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_tasks]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_tasks]
 
 ```python
 def list_tasks(
@@ -683,7 +683,7 @@ def list_tasks(
 
 Type annotations for `boto3.client("ecs").put_account_setting` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting]
 
 ```python
 def put_account_setting(
@@ -699,7 +699,7 @@ def put_account_setting(
 
 Type annotations for `boto3.client("ecs").put_account_setting_default` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting_default]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting_default]
 
 ```python
 def put_account_setting_default(
@@ -714,7 +714,7 @@ def put_account_setting_default(
 
 Type annotations for `boto3.client("ecs").put_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_attributes]
 
 ```python
 def put_attributes(
@@ -729,7 +729,7 @@ def put_attributes(
 
 Type annotations for `boto3.client("ecs").put_cluster_capacity_providers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_cluster_capacity_providers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_cluster_capacity_providers]
 
 ```python
 def put_cluster_capacity_providers(
@@ -745,7 +745,7 @@ def put_cluster_capacity_providers(
 
 Type annotations for `boto3.client("ecs").register_container_instance` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.register_container_instance]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.register_container_instance]
 
 ```python
 def register_container_instance(
@@ -767,7 +767,7 @@ def register_container_instance(
 
 Type annotations for `boto3.client("ecs").register_task_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.register_task_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.register_task_definition]
 
 ```python
 def register_task_definition(
@@ -796,7 +796,7 @@ def register_task_definition(
 
 Type annotations for `boto3.client("ecs").run_task` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.run_task]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.run_task]
 
 ```python
 def run_task(
@@ -826,7 +826,7 @@ def run_task(
 
 Type annotations for `boto3.client("ecs").start_task` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.start_task]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.start_task]
 
 ```python
 def start_task(
@@ -851,7 +851,7 @@ def start_task(
 
 Type annotations for `boto3.client("ecs").stop_task` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.stop_task]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.stop_task]
 
 ```python
 def stop_task(
@@ -867,7 +867,7 @@ def stop_task(
 
 Type annotations for `boto3.client("ecs").submit_attachment_state_changes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_attachment_state_changes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_attachment_state_changes]
 
 ```python
 def submit_attachment_state_changes(
@@ -882,7 +882,7 @@ def submit_attachment_state_changes(
 
 Type annotations for `boto3.client("ecs").submit_container_state_change` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_container_state_change]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_container_state_change]
 
 ```python
 def submit_container_state_change(
@@ -903,7 +903,7 @@ def submit_container_state_change(
 
 Type annotations for `boto3.client("ecs").submit_task_state_change` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_task_state_change]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_task_state_change]
 
 ```python
 def submit_task_state_change(
@@ -926,7 +926,7 @@ def submit_task_state_change(
 
 Type annotations for `boto3.client("ecs").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -941,7 +941,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("ecs").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -956,7 +956,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("ecs").update_capacity_provider` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_capacity_provider]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_capacity_provider]
 
 ```python
 def update_capacity_provider(
@@ -971,7 +971,7 @@ def update_capacity_provider(
 
 Type annotations for `boto3.client("ecs").update_cluster` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_cluster]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_cluster]
 
 ```python
 def update_cluster(
@@ -987,7 +987,7 @@ def update_cluster(
 
 Type annotations for `boto3.client("ecs").update_cluster_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_cluster_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_cluster_settings]
 
 ```python
 def update_cluster_settings(
@@ -1002,7 +1002,7 @@ def update_cluster_settings(
 
 Type annotations for `boto3.client("ecs").update_container_agent` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_container_agent]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_container_agent]
 
 ```python
 def update_container_agent(
@@ -1017,7 +1017,7 @@ def update_container_agent(
 
 Type annotations for `boto3.client("ecs").update_container_instances_state` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_container_instances_state]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_container_instances_state]
 
 ```python
 def update_container_instances_state(
@@ -1033,7 +1033,7 @@ def update_container_instances_state(
 
 Type annotations for `boto3.client("ecs").update_service` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service]
 
 ```python
 def update_service(
@@ -1059,7 +1059,7 @@ def update_service(
 
 Type annotations for `boto3.client("ecs").update_service_primary_task_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service_primary_task_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service_primary_task_set]
 
 ```python
 def update_service_primary_task_set(
@@ -1075,7 +1075,7 @@ def update_service_primary_task_set(
 
 Type annotations for `boto3.client("ecs").update_task_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_task_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_task_set]
 
 ```python
 def update_task_set(

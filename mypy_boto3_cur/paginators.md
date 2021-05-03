@@ -21,7 +21,7 @@ def get_describe_report_definitions_paginator() -> DescribeReportDefinitionsPagi
     return boto3.client("cur").get_paginator("describe_report_definitions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Paginator.DescribeReportDefinitions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Paginator.DescribeReportDefinitions)
 
 ```python
 class DescribeReportDefinitionsPaginator(Boto3Paginator):

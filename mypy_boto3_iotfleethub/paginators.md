@@ -21,7 +21,7 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
     return boto3.client("iotfleethub").get_paginator("list_applications")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Paginator.ListApplications)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Paginator.ListApplications)
 
 ```python
 class ListApplicationsPaginator(Boto3Paginator):

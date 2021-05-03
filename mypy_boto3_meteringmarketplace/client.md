@@ -29,7 +29,7 @@ def get_meteringmarketplace_client() -> MarketplaceMeteringClient:
     return boto3.client("meteringmarketplace")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client)
 
 ## Exceptions
 
@@ -73,7 +73,7 @@ Exceptions:
 
 Type annotations for `boto3.client("meteringmarketplace").batch_meter_usage` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.batch_meter_usage]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.batch_meter_usage]
 
 ```python
 def batch_meter_usage(
@@ -88,7 +88,7 @@ def batch_meter_usage(
 
 Type annotations for `boto3.client("meteringmarketplace").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -102,7 +102,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("meteringmarketplace").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -119,7 +119,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("meteringmarketplace").meter_usage` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.meter_usage]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.meter_usage]
 
 ```python
 def meter_usage(
@@ -138,7 +138,7 @@ def meter_usage(
 
 Type annotations for `boto3.client("meteringmarketplace").register_usage` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.register_usage]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.register_usage]
 
 ```python
 def register_usage(
@@ -154,7 +154,7 @@ def register_usage(
 
 Type annotations for `boto3.client("meteringmarketplace").resolve_customer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.resolve_customer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.resolve_customer]
 
 ```python
 def resolve_customer(

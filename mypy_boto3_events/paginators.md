@@ -23,7 +23,7 @@ def get_list_rule_names_by_target_paginator() -> ListRuleNamesByTargetPaginator:
     return boto3.client("events").get_paginator("list_rule_names_by_target")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Paginator.ListRuleNamesByTarget)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Paginator.ListRuleNamesByTarget)
 
 ```python
 class ListRuleNamesByTargetPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_list_rules_paginator() -> ListRulesPaginator:
     return boto3.client("events").get_paginator("list_rules")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Paginator.ListRules)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Paginator.ListRules)
 
 ```python
 class ListRulesPaginator(Boto3Paginator):
@@ -73,7 +73,7 @@ def get_list_targets_by_rule_paginator() -> ListTargetsByRulePaginator:
     return boto3.client("events").get_paginator("list_targets_by_rule")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Paginator.ListTargetsByRule)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Paginator.ListTargetsByRule)
 
 ```python
 class ListTargetsByRulePaginator(Boto3Paginator):

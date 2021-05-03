@@ -66,7 +66,7 @@ def get_es_client() -> ElasticsearchServiceClient:
     return boto3.client("es")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client)
 
 ## Exceptions
 
@@ -104,7 +104,7 @@ Exceptions:
 
 Type annotations for `boto3.client("es").accept_inbound_cross_cluster_search_connection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.accept_inbound_cross_cluster_search_connection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.accept_inbound_cross_cluster_search_connection]
 
 ```python
 def accept_inbound_cross_cluster_search_connection(
@@ -118,7 +118,7 @@ def accept_inbound_cross_cluster_search_connection(
 
 Type annotations for `boto3.client("es").add_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.add_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.add_tags]
 
 ```python
 def add_tags(
@@ -133,7 +133,7 @@ def add_tags(
 
 Type annotations for `boto3.client("es").associate_package` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.associate_package]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.associate_package]
 
 ```python
 def associate_package(
@@ -148,7 +148,7 @@ def associate_package(
 
 Type annotations for `boto3.client("es").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -162,7 +162,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("es").cancel_elasticsearch_service_software_update` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.cancel_elasticsearch_service_software_update]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.cancel_elasticsearch_service_software_update]
 
 ```python
 def cancel_elasticsearch_service_software_update(
@@ -176,7 +176,7 @@ def cancel_elasticsearch_service_software_update(
 
 Type annotations for `boto3.client("es").create_elasticsearch_domain` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.create_elasticsearch_domain]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.create_elasticsearch_domain]
 
 ```python
 def create_elasticsearch_domain(
@@ -205,7 +205,7 @@ def create_elasticsearch_domain(
 
 Type annotations for `boto3.client("es").create_outbound_cross_cluster_search_connection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.create_outbound_cross_cluster_search_connection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.create_outbound_cross_cluster_search_connection]
 
 ```python
 def create_outbound_cross_cluster_search_connection(
@@ -221,7 +221,7 @@ def create_outbound_cross_cluster_search_connection(
 
 Type annotations for `boto3.client("es").create_package` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.create_package]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.create_package]
 
 ```python
 def create_package(
@@ -238,7 +238,7 @@ def create_package(
 
 Type annotations for `boto3.client("es").delete_elasticsearch_domain` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_elasticsearch_domain]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_elasticsearch_domain]
 
 ```python
 def delete_elasticsearch_domain(
@@ -252,7 +252,7 @@ def delete_elasticsearch_domain(
 
 Type annotations for `boto3.client("es").delete_elasticsearch_service_role` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_elasticsearch_service_role]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_elasticsearch_service_role]
 
 ```python
 def delete_elasticsearch_service_role(
@@ -265,7 +265,7 @@ def delete_elasticsearch_service_role(
 
 Type annotations for `boto3.client("es").delete_inbound_cross_cluster_search_connection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_inbound_cross_cluster_search_connection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_inbound_cross_cluster_search_connection]
 
 ```python
 def delete_inbound_cross_cluster_search_connection(
@@ -279,7 +279,7 @@ def delete_inbound_cross_cluster_search_connection(
 
 Type annotations for `boto3.client("es").delete_outbound_cross_cluster_search_connection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_outbound_cross_cluster_search_connection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_outbound_cross_cluster_search_connection]
 
 ```python
 def delete_outbound_cross_cluster_search_connection(
@@ -293,7 +293,7 @@ def delete_outbound_cross_cluster_search_connection(
 
 Type annotations for `boto3.client("es").delete_package` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_package]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_package]
 
 ```python
 def delete_package(
@@ -307,7 +307,7 @@ def delete_package(
 
 Type annotations for `boto3.client("es").describe_domain_auto_tunes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_domain_auto_tunes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_domain_auto_tunes]
 
 ```python
 def describe_domain_auto_tunes(
@@ -323,7 +323,7 @@ def describe_domain_auto_tunes(
 
 Type annotations for `boto3.client("es").describe_elasticsearch_domain` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domain]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domain]
 
 ```python
 def describe_elasticsearch_domain(
@@ -337,7 +337,7 @@ def describe_elasticsearch_domain(
 
 Type annotations for `boto3.client("es").describe_elasticsearch_domain_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domain_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domain_config]
 
 ```python
 def describe_elasticsearch_domain_config(
@@ -351,7 +351,7 @@ def describe_elasticsearch_domain_config(
 
 Type annotations for `boto3.client("es").describe_elasticsearch_domains` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domains]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domains]
 
 ```python
 def describe_elasticsearch_domains(
@@ -365,7 +365,7 @@ def describe_elasticsearch_domains(
 
 Type annotations for `boto3.client("es").describe_elasticsearch_instance_type_limits` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_instance_type_limits]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_instance_type_limits]
 
 ```python
 def describe_elasticsearch_instance_type_limits(
@@ -381,7 +381,7 @@ def describe_elasticsearch_instance_type_limits(
 
 Type annotations for `boto3.client("es").describe_inbound_cross_cluster_search_connections` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_inbound_cross_cluster_search_connections]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_inbound_cross_cluster_search_connections]
 
 ```python
 def describe_inbound_cross_cluster_search_connections(
@@ -397,7 +397,7 @@ def describe_inbound_cross_cluster_search_connections(
 
 Type annotations for `boto3.client("es").describe_outbound_cross_cluster_search_connections` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_outbound_cross_cluster_search_connections]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_outbound_cross_cluster_search_connections]
 
 ```python
 def describe_outbound_cross_cluster_search_connections(
@@ -413,7 +413,7 @@ def describe_outbound_cross_cluster_search_connections(
 
 Type annotations for `boto3.client("es").describe_packages` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_packages]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_packages]
 
 ```python
 def describe_packages(
@@ -429,7 +429,7 @@ def describe_packages(
 
 Type annotations for `boto3.client("es").describe_reserved_elasticsearch_instance_offerings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_reserved_elasticsearch_instance_offerings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_reserved_elasticsearch_instance_offerings]
 
 ```python
 def describe_reserved_elasticsearch_instance_offerings(
@@ -445,7 +445,7 @@ def describe_reserved_elasticsearch_instance_offerings(
 
 Type annotations for `boto3.client("es").describe_reserved_elasticsearch_instances` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_reserved_elasticsearch_instances]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_reserved_elasticsearch_instances]
 
 ```python
 def describe_reserved_elasticsearch_instances(
@@ -461,7 +461,7 @@ def describe_reserved_elasticsearch_instances(
 
 Type annotations for `boto3.client("es").dissociate_package` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.dissociate_package]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.dissociate_package]
 
 ```python
 def dissociate_package(
@@ -476,7 +476,7 @@ def dissociate_package(
 
 Type annotations for `boto3.client("es").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -493,7 +493,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("es").get_compatible_elasticsearch_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_compatible_elasticsearch_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_compatible_elasticsearch_versions]
 
 ```python
 def get_compatible_elasticsearch_versions(
@@ -507,7 +507,7 @@ def get_compatible_elasticsearch_versions(
 
 Type annotations for `boto3.client("es").get_package_version_history` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_package_version_history]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_package_version_history]
 
 ```python
 def get_package_version_history(
@@ -523,7 +523,7 @@ def get_package_version_history(
 
 Type annotations for `boto3.client("es").get_upgrade_history` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_upgrade_history]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_upgrade_history]
 
 ```python
 def get_upgrade_history(
@@ -539,7 +539,7 @@ def get_upgrade_history(
 
 Type annotations for `boto3.client("es").get_upgrade_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_upgrade_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_upgrade_status]
 
 ```python
 def get_upgrade_status(
@@ -553,7 +553,7 @@ def get_upgrade_status(
 
 Type annotations for `boto3.client("es").list_domain_names` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_domain_names]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_domain_names]
 
 ```python
 def list_domain_names(
@@ -566,7 +566,7 @@ def list_domain_names(
 
 Type annotations for `boto3.client("es").list_domains_for_package` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_domains_for_package]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_domains_for_package]
 
 ```python
 def list_domains_for_package(
@@ -582,7 +582,7 @@ def list_domains_for_package(
 
 Type annotations for `boto3.client("es").list_elasticsearch_instance_types` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_elasticsearch_instance_types]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_elasticsearch_instance_types]
 
 ```python
 def list_elasticsearch_instance_types(
@@ -599,7 +599,7 @@ def list_elasticsearch_instance_types(
 
 Type annotations for `boto3.client("es").list_elasticsearch_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_elasticsearch_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_elasticsearch_versions]
 
 ```python
 def list_elasticsearch_versions(
@@ -614,7 +614,7 @@ def list_elasticsearch_versions(
 
 Type annotations for `boto3.client("es").list_packages_for_domain` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_packages_for_domain]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_packages_for_domain]
 
 ```python
 def list_packages_for_domain(
@@ -630,7 +630,7 @@ def list_packages_for_domain(
 
 Type annotations for `boto3.client("es").list_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_tags]
 
 ```python
 def list_tags(
@@ -644,7 +644,7 @@ def list_tags(
 
 Type annotations for `boto3.client("es").purchase_reserved_elasticsearch_instance_offering` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.purchase_reserved_elasticsearch_instance_offering]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.purchase_reserved_elasticsearch_instance_offering]
 
 ```python
 def purchase_reserved_elasticsearch_instance_offering(
@@ -660,7 +660,7 @@ def purchase_reserved_elasticsearch_instance_offering(
 
 Type annotations for `boto3.client("es").reject_inbound_cross_cluster_search_connection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.reject_inbound_cross_cluster_search_connection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.reject_inbound_cross_cluster_search_connection]
 
 ```python
 def reject_inbound_cross_cluster_search_connection(
@@ -674,7 +674,7 @@ def reject_inbound_cross_cluster_search_connection(
 
 Type annotations for `boto3.client("es").remove_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.remove_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.remove_tags]
 
 ```python
 def remove_tags(
@@ -689,7 +689,7 @@ def remove_tags(
 
 Type annotations for `boto3.client("es").start_elasticsearch_service_software_update` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.start_elasticsearch_service_software_update]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.start_elasticsearch_service_software_update]
 
 ```python
 def start_elasticsearch_service_software_update(
@@ -703,7 +703,7 @@ def start_elasticsearch_service_software_update(
 
 Type annotations for `boto3.client("es").update_elasticsearch_domain_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.update_elasticsearch_domain_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.update_elasticsearch_domain_config]
 
 ```python
 def update_elasticsearch_domain_config(
@@ -730,7 +730,7 @@ def update_elasticsearch_domain_config(
 
 Type annotations for `boto3.client("es").update_package` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.update_package]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.update_package]
 
 ```python
 def update_package(
@@ -747,7 +747,7 @@ def update_package(
 
 Type annotations for `boto3.client("es").upgrade_elasticsearch_domain` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.upgrade_elasticsearch_domain]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.upgrade_elasticsearch_domain]
 
 ```python
 def upgrade_elasticsearch_domain(

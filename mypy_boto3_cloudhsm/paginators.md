@@ -23,7 +23,7 @@ def get_list_hapgs_paginator() -> ListHapgsPaginator:
     return boto3.client("cloudhsm").get_paginator("list_hapgs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Paginator.ListHapgs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Paginator.ListHapgs)
 
 ```python
 class ListHapgsPaginator(Boto3Paginator):
@@ -46,7 +46,7 @@ def get_list_hsms_paginator() -> ListHsmsPaginator:
     return boto3.client("cloudhsm").get_paginator("list_hsms")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Paginator.ListHsms)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Paginator.ListHsms)
 
 ```python
 class ListHsmsPaginator(Boto3Paginator):
@@ -69,7 +69,7 @@ def get_list_luna_clients_paginator() -> ListLunaClientsPaginator:
     return boto3.client("cloudhsm").get_paginator("list_luna_clients")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Paginator.ListLunaClients)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Paginator.ListLunaClients)
 
 ```python
 class ListLunaClientsPaginator(Boto3Paginator):

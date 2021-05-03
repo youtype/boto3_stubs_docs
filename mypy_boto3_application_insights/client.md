@@ -52,7 +52,7 @@ def get_application-insights_client() -> ApplicationInsightsClient:
     return boto3.client("application-insights")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client)
 
 ## Exceptions
 
@@ -87,7 +87,7 @@ Exceptions:
 
 Type annotations for `boto3.client("application-insights").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -101,7 +101,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("application-insights").create_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_application]
 
 ```python
 def create_application(
@@ -119,7 +119,7 @@ def create_application(
 
 Type annotations for `boto3.client("application-insights").create_component` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_component]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_component]
 
 ```python
 def create_component(
@@ -135,7 +135,7 @@ def create_component(
 
 Type annotations for `boto3.client("application-insights").create_log_pattern` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_log_pattern]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_log_pattern]
 
 ```python
 def create_log_pattern(
@@ -153,7 +153,7 @@ def create_log_pattern(
 
 Type annotations for `boto3.client("application-insights").delete_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_application]
 
 ```python
 def delete_application(
@@ -167,7 +167,7 @@ def delete_application(
 
 Type annotations for `boto3.client("application-insights").delete_component` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_component]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_component]
 
 ```python
 def delete_component(
@@ -182,7 +182,7 @@ def delete_component(
 
 Type annotations for `boto3.client("application-insights").delete_log_pattern` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_log_pattern]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_log_pattern]
 
 ```python
 def delete_log_pattern(
@@ -198,7 +198,7 @@ def delete_log_pattern(
 
 Type annotations for `boto3.client("application-insights").describe_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_application]
 
 ```python
 def describe_application(
@@ -212,7 +212,7 @@ def describe_application(
 
 Type annotations for `boto3.client("application-insights").describe_component` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component]
 
 ```python
 def describe_component(
@@ -227,7 +227,7 @@ def describe_component(
 
 Type annotations for `boto3.client("application-insights").describe_component_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration]
 
 ```python
 def describe_component_configuration(
@@ -242,7 +242,7 @@ def describe_component_configuration(
 
 Type annotations for `boto3.client("application-insights").describe_component_configuration_recommendation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration_recommendation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration_recommendation]
 
 ```python
 def describe_component_configuration_recommendation(
@@ -258,7 +258,7 @@ def describe_component_configuration_recommendation(
 
 Type annotations for `boto3.client("application-insights").describe_log_pattern` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_log_pattern]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_log_pattern]
 
 ```python
 def describe_log_pattern(
@@ -274,7 +274,7 @@ def describe_log_pattern(
 
 Type annotations for `boto3.client("application-insights").describe_observation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_observation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_observation]
 
 ```python
 def describe_observation(
@@ -288,7 +288,7 @@ def describe_observation(
 
 Type annotations for `boto3.client("application-insights").describe_problem` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem]
 
 ```python
 def describe_problem(
@@ -302,7 +302,7 @@ def describe_problem(
 
 Type annotations for `boto3.client("application-insights").describe_problem_observations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem_observations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem_observations]
 
 ```python
 def describe_problem_observations(
@@ -316,7 +316,7 @@ def describe_problem_observations(
 
 Type annotations for `boto3.client("application-insights").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -333,7 +333,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("application-insights").list_applications` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_applications]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_applications]
 
 ```python
 def list_applications(
@@ -348,7 +348,7 @@ def list_applications(
 
 Type annotations for `boto3.client("application-insights").list_components` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_components]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_components]
 
 ```python
 def list_components(
@@ -364,7 +364,7 @@ def list_components(
 
 Type annotations for `boto3.client("application-insights").list_configuration_history` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_configuration_history]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_configuration_history]
 
 ```python
 def list_configuration_history(
@@ -383,7 +383,7 @@ def list_configuration_history(
 
 Type annotations for `boto3.client("application-insights").list_log_pattern_sets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_log_pattern_sets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_log_pattern_sets]
 
 ```python
 def list_log_pattern_sets(
@@ -399,7 +399,7 @@ def list_log_pattern_sets(
 
 Type annotations for `boto3.client("application-insights").list_log_patterns` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_log_patterns]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_log_patterns]
 
 ```python
 def list_log_patterns(
@@ -416,7 +416,7 @@ def list_log_patterns(
 
 Type annotations for `boto3.client("application-insights").list_problems` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_problems]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_problems]
 
 ```python
 def list_problems(
@@ -434,7 +434,7 @@ def list_problems(
 
 Type annotations for `boto3.client("application-insights").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -448,7 +448,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("application-insights").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -463,7 +463,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("application-insights").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -478,7 +478,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("application-insights").update_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_application]
 
 ```python
 def update_application(
@@ -496,7 +496,7 @@ def update_application(
 
 Type annotations for `boto3.client("application-insights").update_component` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_component]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_component]
 
 ```python
 def update_component(
@@ -513,7 +513,7 @@ def update_component(
 
 Type annotations for `boto3.client("application-insights").update_component_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_component_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_component_configuration]
 
 ```python
 def update_component_configuration(
@@ -531,7 +531,7 @@ def update_component_configuration(
 
 Type annotations for `boto3.client("application-insights").update_log_pattern` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_log_pattern]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_log_pattern]
 
 ```python
 def update_log_pattern(

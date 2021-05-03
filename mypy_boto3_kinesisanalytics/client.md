@@ -45,7 +45,7 @@ def get_kinesisanalytics_client() -> KinesisAnalyticsClient:
     return boto3.client("kinesisanalytics")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client)
 
 ## Exceptions
 
@@ -84,7 +84,7 @@ Exceptions:
 
 Type annotations for `boto3.client("kinesisanalytics").add_application_cloud_watch_logging_option` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_cloud_watch_logging_option]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_cloud_watch_logging_option]
 
 ```python
 def add_application_cloud_watch_logging_option(
@@ -100,7 +100,7 @@ def add_application_cloud_watch_logging_option(
 
 Type annotations for `boto3.client("kinesisanalytics").add_application_input` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_input]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_input]
 
 ```python
 def add_application_input(
@@ -116,7 +116,7 @@ def add_application_input(
 
 Type annotations for `boto3.client("kinesisanalytics").add_application_input_processing_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_input_processing_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_input_processing_configuration]
 
 ```python
 def add_application_input_processing_configuration(
@@ -133,7 +133,7 @@ def add_application_input_processing_configuration(
 
 Type annotations for `boto3.client("kinesisanalytics").add_application_output` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_output]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_output]
 
 ```python
 def add_application_output(
@@ -149,7 +149,7 @@ def add_application_output(
 
 Type annotations for `boto3.client("kinesisanalytics").add_application_reference_data_source` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_reference_data_source]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_reference_data_source]
 
 ```python
 def add_application_reference_data_source(
@@ -165,7 +165,7 @@ def add_application_reference_data_source(
 
 Type annotations for `boto3.client("kinesisanalytics").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -179,7 +179,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("kinesisanalytics").create_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.create_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.create_application]
 
 ```python
 def create_application(
@@ -199,7 +199,7 @@ def create_application(
 
 Type annotations for `boto3.client("kinesisanalytics").delete_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application]
 
 ```python
 def delete_application(
@@ -214,7 +214,7 @@ def delete_application(
 
 Type annotations for `boto3.client("kinesisanalytics").delete_application_cloud_watch_logging_option` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_cloud_watch_logging_option]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_cloud_watch_logging_option]
 
 ```python
 def delete_application_cloud_watch_logging_option(
@@ -230,7 +230,7 @@ def delete_application_cloud_watch_logging_option(
 
 Type annotations for `boto3.client("kinesisanalytics").delete_application_input_processing_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_input_processing_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_input_processing_configuration]
 
 ```python
 def delete_application_input_processing_configuration(
@@ -246,7 +246,7 @@ def delete_application_input_processing_configuration(
 
 Type annotations for `boto3.client("kinesisanalytics").delete_application_output` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_output]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_output]
 
 ```python
 def delete_application_output(
@@ -262,7 +262,7 @@ def delete_application_output(
 
 Type annotations for `boto3.client("kinesisanalytics").delete_application_reference_data_source` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_reference_data_source]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_reference_data_source]
 
 ```python
 def delete_application_reference_data_source(
@@ -278,7 +278,7 @@ def delete_application_reference_data_source(
 
 Type annotations for `boto3.client("kinesisanalytics").describe_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.describe_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.describe_application]
 
 ```python
 def describe_application(
@@ -292,7 +292,7 @@ def describe_application(
 
 Type annotations for `boto3.client("kinesisanalytics").discover_input_schema` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.discover_input_schema]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.discover_input_schema]
 
 ```python
 def discover_input_schema(
@@ -310,7 +310,7 @@ def discover_input_schema(
 
 Type annotations for `boto3.client("kinesisanalytics").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -327,7 +327,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("kinesisanalytics").list_applications` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.list_applications]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.list_applications]
 
 ```python
 def list_applications(
@@ -342,7 +342,7 @@ def list_applications(
 
 Type annotations for `boto3.client("kinesisanalytics").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -356,7 +356,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("kinesisanalytics").start_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.start_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.start_application]
 
 ```python
 def start_application(
@@ -371,7 +371,7 @@ def start_application(
 
 Type annotations for `boto3.client("kinesisanalytics").stop_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.stop_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.stop_application]
 
 ```python
 def stop_application(
@@ -385,7 +385,7 @@ def stop_application(
 
 Type annotations for `boto3.client("kinesisanalytics").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -400,7 +400,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("kinesisanalytics").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -415,7 +415,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("kinesisanalytics").update_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.update_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.update_application]
 
 ```python
 def update_application(

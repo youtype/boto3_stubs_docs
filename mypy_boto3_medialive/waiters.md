@@ -31,17 +31,13 @@ def get_channel_created_waiter() -> ChannelCreatedWaiter:
     return boto3.client("medialive").get_waiter("channel_created")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.channel_created)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.channel_created)
 
-```python
-class ChannelCreatedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        ChannelId: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `ChannelCreatedWaiter.wait` method:
+
+- `ChannelId`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+
 ## ChannelDeletedWaiter
 
 Type annotations for `boto3.client("medialive").get_waiter("channel_deleted")`.
@@ -55,17 +51,13 @@ def get_channel_deleted_waiter() -> ChannelDeletedWaiter:
     return boto3.client("medialive").get_waiter("channel_deleted")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.channel_deleted)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.channel_deleted)
 
-```python
-class ChannelDeletedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        ChannelId: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `ChannelDeletedWaiter.wait` method:
+
+- `ChannelId`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+
 ## ChannelRunningWaiter
 
 Type annotations for `boto3.client("medialive").get_waiter("channel_running")`.
@@ -79,17 +71,13 @@ def get_channel_running_waiter() -> ChannelRunningWaiter:
     return boto3.client("medialive").get_waiter("channel_running")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.channel_running)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.channel_running)
 
-```python
-class ChannelRunningWaiter(Boto3Waiter):
-    def wait(
-        self,
-        ChannelId: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `ChannelRunningWaiter.wait` method:
+
+- `ChannelId`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+
 ## ChannelStoppedWaiter
 
 Type annotations for `boto3.client("medialive").get_waiter("channel_stopped")`.
@@ -103,17 +91,13 @@ def get_channel_stopped_waiter() -> ChannelStoppedWaiter:
     return boto3.client("medialive").get_waiter("channel_stopped")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.channel_stopped)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.channel_stopped)
 
-```python
-class ChannelStoppedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        ChannelId: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `ChannelStoppedWaiter.wait` method:
+
+- `ChannelId`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+
 ## InputAttachedWaiter
 
 Type annotations for `boto3.client("medialive").get_waiter("input_attached")`.
@@ -127,17 +111,13 @@ def get_input_attached_waiter() -> InputAttachedWaiter:
     return boto3.client("medialive").get_waiter("input_attached")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.input_attached)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.input_attached)
 
-```python
-class InputAttachedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        InputId: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `InputAttachedWaiter.wait` method:
+
+- `InputId`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+
 ## InputDeletedWaiter
 
 Type annotations for `boto3.client("medialive").get_waiter("input_deleted")`.
@@ -151,17 +131,13 @@ def get_input_deleted_waiter() -> InputDeletedWaiter:
     return boto3.client("medialive").get_waiter("input_deleted")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.input_deleted)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.input_deleted)
 
-```python
-class InputDeletedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        InputId: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `InputDeletedWaiter.wait` method:
+
+- `InputId`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+
 ## InputDetachedWaiter
 
 Type annotations for `boto3.client("medialive").get_waiter("input_detached")`.
@@ -175,17 +151,13 @@ def get_input_detached_waiter() -> InputDetachedWaiter:
     return boto3.client("medialive").get_waiter("input_detached")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.input_detached)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.input_detached)
 
-```python
-class InputDetachedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        InputId: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `InputDetachedWaiter.wait` method:
+
+- `InputId`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+
 ## MultiplexCreatedWaiter
 
 Type annotations for `boto3.client("medialive").get_waiter("multiplex_created")`.
@@ -199,17 +171,13 @@ def get_multiplex_created_waiter() -> MultiplexCreatedWaiter:
     return boto3.client("medialive").get_waiter("multiplex_created")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.multiplex_created)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.multiplex_created)
 
-```python
-class MultiplexCreatedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        MultiplexId: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `MultiplexCreatedWaiter.wait` method:
+
+- `MultiplexId`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+
 ## MultiplexDeletedWaiter
 
 Type annotations for `boto3.client("medialive").get_waiter("multiplex_deleted")`.
@@ -223,17 +191,13 @@ def get_multiplex_deleted_waiter() -> MultiplexDeletedWaiter:
     return boto3.client("medialive").get_waiter("multiplex_deleted")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.multiplex_deleted)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.multiplex_deleted)
 
-```python
-class MultiplexDeletedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        MultiplexId: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `MultiplexDeletedWaiter.wait` method:
+
+- `MultiplexId`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+
 ## MultiplexRunningWaiter
 
 Type annotations for `boto3.client("medialive").get_waiter("multiplex_running")`.
@@ -247,17 +211,13 @@ def get_multiplex_running_waiter() -> MultiplexRunningWaiter:
     return boto3.client("medialive").get_waiter("multiplex_running")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.multiplex_running)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.multiplex_running)
 
-```python
-class MultiplexRunningWaiter(Boto3Waiter):
-    def wait(
-        self,
-        MultiplexId: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `MultiplexRunningWaiter.wait` method:
+
+- `MultiplexId`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+
 ## MultiplexStoppedWaiter
 
 Type annotations for `boto3.client("medialive").get_waiter("multiplex_stopped")`.
@@ -271,14 +231,9 @@ def get_multiplex_stopped_waiter() -> MultiplexStoppedWaiter:
     return boto3.client("medialive").get_waiter("multiplex_stopped")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.multiplex_stopped)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.multiplex_stopped)
 
-```python
-class MultiplexStoppedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        MultiplexId: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `MultiplexStoppedWaiter.wait` method:
+
+- `MultiplexId`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)

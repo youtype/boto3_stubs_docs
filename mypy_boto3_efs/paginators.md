@@ -23,7 +23,7 @@ def get_describe_file_systems_paginator() -> DescribeFileSystemsPaginator:
     return boto3.client("efs").get_paginator("describe_file_systems")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Paginator.DescribeFileSystems)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Paginator.DescribeFileSystems)
 
 ```python
 class DescribeFileSystemsPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_describe_mount_targets_paginator() -> DescribeMountTargetsPaginator:
     return boto3.client("efs").get_paginator("describe_mount_targets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Paginator.DescribeMountTargets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Paginator.DescribeMountTargets)
 
 ```python
 class DescribeMountTargetsPaginator(Boto3Paginator):
@@ -74,7 +74,7 @@ def get_describe_tags_paginator() -> DescribeTagsPaginator:
     return boto3.client("efs").get_paginator("describe_tags")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Paginator.DescribeTags)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Paginator.DescribeTags)
 
 ```python
 class DescribeTagsPaginator(Boto3Paginator):

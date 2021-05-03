@@ -44,7 +44,7 @@ def get_signer_client() -> SignerClient:
     return boto3.client("signer")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client)
 
 ## Exceptions
 
@@ -81,7 +81,7 @@ Exceptions:
 
 Type annotations for `boto3.client("signer").add_profile_permission` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.add_profile_permission]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.add_profile_permission]
 
 ```python
 def add_profile_permission(
@@ -100,7 +100,7 @@ def add_profile_permission(
 
 Type annotations for `boto3.client("signer").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -114,7 +114,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("signer").cancel_signing_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.cancel_signing_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.cancel_signing_profile]
 
 ```python
 def cancel_signing_profile(
@@ -128,7 +128,7 @@ def cancel_signing_profile(
 
 Type annotations for `boto3.client("signer").describe_signing_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.describe_signing_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.describe_signing_job]
 
 ```python
 def describe_signing_job(
@@ -142,7 +142,7 @@ def describe_signing_job(
 
 Type annotations for `boto3.client("signer").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -159,7 +159,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("signer").get_signing_platform` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.get_signing_platform]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.get_signing_platform]
 
 ```python
 def get_signing_platform(
@@ -173,7 +173,7 @@ def get_signing_platform(
 
 Type annotations for `boto3.client("signer").get_signing_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.get_signing_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.get_signing_profile]
 
 ```python
 def get_signing_profile(
@@ -188,7 +188,7 @@ def get_signing_profile(
 
 Type annotations for `boto3.client("signer").list_profile_permissions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.list_profile_permissions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.list_profile_permissions]
 
 ```python
 def list_profile_permissions(
@@ -203,7 +203,7 @@ def list_profile_permissions(
 
 Type annotations for `boto3.client("signer").list_signing_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.list_signing_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.list_signing_jobs]
 
 ```python
 def list_signing_jobs(
@@ -225,7 +225,7 @@ def list_signing_jobs(
 
 Type annotations for `boto3.client("signer").list_signing_platforms` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.list_signing_platforms]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.list_signing_platforms]
 
 ```python
 def list_signing_platforms(
@@ -243,7 +243,7 @@ def list_signing_platforms(
 
 Type annotations for `boto3.client("signer").list_signing_profiles` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.list_signing_profiles]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.list_signing_profiles]
 
 ```python
 def list_signing_profiles(
@@ -261,7 +261,7 @@ def list_signing_profiles(
 
 Type annotations for `boto3.client("signer").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -275,7 +275,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("signer").put_signing_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.put_signing_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.put_signing_profile]
 
 ```python
 def put_signing_profile(
@@ -295,7 +295,7 @@ def put_signing_profile(
 
 Type annotations for `boto3.client("signer").remove_profile_permission` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.remove_profile_permission]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.remove_profile_permission]
 
 ```python
 def remove_profile_permission(
@@ -311,7 +311,7 @@ def remove_profile_permission(
 
 Type annotations for `boto3.client("signer").revoke_signature` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.revoke_signature]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.revoke_signature]
 
 ```python
 def revoke_signature(
@@ -327,7 +327,7 @@ def revoke_signature(
 
 Type annotations for `boto3.client("signer").revoke_signing_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.revoke_signing_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.revoke_signing_profile]
 
 ```python
 def revoke_signing_profile(
@@ -344,7 +344,7 @@ def revoke_signing_profile(
 
 Type annotations for `boto3.client("signer").start_signing_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.start_signing_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.start_signing_job]
 
 ```python
 def start_signing_job(
@@ -362,7 +362,7 @@ def start_signing_job(
 
 Type annotations for `boto3.client("signer").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -377,7 +377,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("signer").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Client.untag_resource]
 
 ```python
 def untag_resource(

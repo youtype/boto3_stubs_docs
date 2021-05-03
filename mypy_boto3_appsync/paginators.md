@@ -27,7 +27,7 @@ def get_list_api_keys_paginator() -> ListApiKeysPaginator:
     return boto3.client("appsync").get_paginator("list_api_keys")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListApiKeys)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListApiKeys)
 
 ```python
 class ListApiKeysPaginator(Boto3Paginator):
@@ -51,7 +51,7 @@ def get_list_data_sources_paginator() -> ListDataSourcesPaginator:
     return boto3.client("appsync").get_paginator("list_data_sources")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListDataSources)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListDataSources)
 
 ```python
 class ListDataSourcesPaginator(Boto3Paginator):
@@ -75,7 +75,7 @@ def get_list_functions_paginator() -> ListFunctionsPaginator:
     return boto3.client("appsync").get_paginator("list_functions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListFunctions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListFunctions)
 
 ```python
 class ListFunctionsPaginator(Boto3Paginator):
@@ -99,7 +99,7 @@ def get_list_graphql_apis_paginator() -> ListGraphqlApisPaginator:
     return boto3.client("appsync").get_paginator("list_graphql_apis")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListGraphqlApis)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListGraphqlApis)
 
 ```python
 class ListGraphqlApisPaginator(Boto3Paginator):
@@ -122,7 +122,7 @@ def get_list_resolvers_paginator() -> ListResolversPaginator:
     return boto3.client("appsync").get_paginator("list_resolvers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListResolvers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListResolvers)
 
 ```python
 class ListResolversPaginator(Boto3Paginator):
@@ -147,7 +147,7 @@ def get_list_resolvers_by_function_paginator() -> ListResolversByFunctionPaginat
     return boto3.client("appsync").get_paginator("list_resolvers_by_function")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListResolversByFunction)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListResolversByFunction)
 
 ```python
 class ListResolversByFunctionPaginator(Boto3Paginator):
@@ -172,7 +172,7 @@ def get_list_types_paginator() -> ListTypesPaginator:
     return boto3.client("appsync").get_paginator("list_types")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListTypes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListTypes)
 
 ```python
 class ListTypesPaginator(Boto3Paginator):

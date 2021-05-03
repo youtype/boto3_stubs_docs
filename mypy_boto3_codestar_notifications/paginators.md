@@ -23,7 +23,7 @@ def get_list_event_types_paginator() -> ListEventTypesPaginator:
     return boto3.client("codestar-notifications").get_paginator("list_event_types")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Paginator.ListEventTypes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Paginator.ListEventTypes)
 
 ```python
 class ListEventTypesPaginator(Boto3Paginator):
@@ -47,7 +47,7 @@ def get_list_notification_rules_paginator() -> ListNotificationRulesPaginator:
     return boto3.client("codestar-notifications").get_paginator("list_notification_rules")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Paginator.ListNotificationRules)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Paginator.ListNotificationRules)
 
 ```python
 class ListNotificationRulesPaginator(Boto3Paginator):
@@ -71,7 +71,7 @@ def get_list_targets_paginator() -> ListTargetsPaginator:
     return boto3.client("codestar-notifications").get_paginator("list_targets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Paginator.ListTargets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Paginator.ListTargets)
 
 ```python
 class ListTargetsPaginator(Boto3Paginator):

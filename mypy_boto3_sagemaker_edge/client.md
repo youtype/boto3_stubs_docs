@@ -27,7 +27,7 @@ def get_sagemaker-edge_client() -> SagemakerEdgeManagerClient:
     return boto3.client("sagemaker-edge")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client)
 
 ## Exceptions
 
@@ -55,7 +55,7 @@ Exceptions:
 
 Type annotations for `boto3.client("sagemaker-edge").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -69,7 +69,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("sagemaker-edge").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -86,7 +86,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("sagemaker-edge").get_device_registration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.get_device_registration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.get_device_registration]
 
 ```python
 def get_device_registration(
@@ -101,7 +101,7 @@ def get_device_registration(
 
 Type annotations for `boto3.client("sagemaker-edge").send_heartbeat` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.send_heartbeat]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.send_heartbeat]
 
 ```python
 def send_heartbeat(

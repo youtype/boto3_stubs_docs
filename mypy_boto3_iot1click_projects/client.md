@@ -42,7 +42,7 @@ def get_iot1click-projects_client() -> IoT1ClickProjectsClient:
     return boto3.client("iot1click-projects")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client)
 
 ## Exceptions
 
@@ -74,7 +74,7 @@ Exceptions:
 
 Type annotations for `boto3.client("iot1click-projects").associate_device_with_placement` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.associate_device_with_placement]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.associate_device_with_placement]
 
 ```python
 def associate_device_with_placement(
@@ -91,7 +91,7 @@ def associate_device_with_placement(
 
 Type annotations for `boto3.client("iot1click-projects").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -105,7 +105,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("iot1click-projects").create_placement` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.create_placement]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.create_placement]
 
 ```python
 def create_placement(
@@ -121,7 +121,7 @@ def create_placement(
 
 Type annotations for `boto3.client("iot1click-projects").create_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.create_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.create_project]
 
 ```python
 def create_project(
@@ -138,7 +138,7 @@ def create_project(
 
 Type annotations for `boto3.client("iot1click-projects").delete_placement` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.delete_placement]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.delete_placement]
 
 ```python
 def delete_placement(
@@ -153,7 +153,7 @@ def delete_placement(
 
 Type annotations for `boto3.client("iot1click-projects").delete_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.delete_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.delete_project]
 
 ```python
 def delete_project(
@@ -167,7 +167,7 @@ def delete_project(
 
 Type annotations for `boto3.client("iot1click-projects").describe_placement` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.describe_placement]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.describe_placement]
 
 ```python
 def describe_placement(
@@ -182,7 +182,7 @@ def describe_placement(
 
 Type annotations for `boto3.client("iot1click-projects").describe_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.describe_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.describe_project]
 
 ```python
 def describe_project(
@@ -196,7 +196,7 @@ def describe_project(
 
 Type annotations for `boto3.client("iot1click-projects").disassociate_device_from_placement` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.disassociate_device_from_placement]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.disassociate_device_from_placement]
 
 ```python
 def disassociate_device_from_placement(
@@ -212,7 +212,7 @@ def disassociate_device_from_placement(
 
 Type annotations for `boto3.client("iot1click-projects").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -229,7 +229,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("iot1click-projects").get_devices_in_placement` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.get_devices_in_placement]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.get_devices_in_placement]
 
 ```python
 def get_devices_in_placement(
@@ -244,7 +244,7 @@ def get_devices_in_placement(
 
 Type annotations for `boto3.client("iot1click-projects").list_placements` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_placements]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_placements]
 
 ```python
 def list_placements(
@@ -260,7 +260,7 @@ def list_placements(
 
 Type annotations for `boto3.client("iot1click-projects").list_projects` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_projects]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_projects]
 
 ```python
 def list_projects(
@@ -275,7 +275,7 @@ def list_projects(
 
 Type annotations for `boto3.client("iot1click-projects").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -289,7 +289,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("iot1click-projects").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -304,7 +304,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("iot1click-projects").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -319,7 +319,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("iot1click-projects").update_placement` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.update_placement]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.update_placement]
 
 ```python
 def update_placement(
@@ -335,7 +335,7 @@ def update_placement(
 
 Type annotations for `boto3.client("iot1click-projects").update_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.update_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.update_project]
 
 ```python
 def update_project(

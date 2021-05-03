@@ -28,7 +28,7 @@ def get_list_accelerators_paginator() -> ListAcceleratorsPaginator:
     return boto3.client("globalaccelerator").get_paginator("list_accelerators")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListAccelerators)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListAccelerators)
 
 ```python
 class ListAcceleratorsPaginator(Boto3Paginator):
@@ -51,7 +51,7 @@ def get_list_byoip_cidrs_paginator() -> ListByoipCidrsPaginator:
     return boto3.client("globalaccelerator").get_paginator("list_byoip_cidrs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListByoipCidrs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListByoipCidrs)
 
 ```python
 class ListByoipCidrsPaginator(Boto3Paginator):
@@ -74,7 +74,7 @@ def get_list_custom_routing_accelerators_paginator() -> ListCustomRoutingAcceler
     return boto3.client("globalaccelerator").get_paginator("list_custom_routing_accelerators")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingAccelerators)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingAccelerators)
 
 ```python
 class ListCustomRoutingAcceleratorsPaginator(Boto3Paginator):
@@ -97,7 +97,7 @@ def get_list_custom_routing_listeners_paginator() -> ListCustomRoutingListenersP
     return boto3.client("globalaccelerator").get_paginator("list_custom_routing_listeners")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingListeners)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingListeners)
 
 ```python
 class ListCustomRoutingListenersPaginator(Boto3Paginator):
@@ -121,7 +121,7 @@ def get_list_custom_routing_port_mappings_paginator() -> ListCustomRoutingPortMa
     return boto3.client("globalaccelerator").get_paginator("list_custom_routing_port_mappings")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingPortMappings)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingPortMappings)
 
 ```python
 class ListCustomRoutingPortMappingsPaginator(Boto3Paginator):
@@ -146,7 +146,7 @@ def get_list_custom_routing_port_mappings_by_destination_paginator() -> ListCust
     return boto3.client("globalaccelerator").get_paginator("list_custom_routing_port_mappings_by_destination")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingPortMappingsByDestination)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingPortMappingsByDestination)
 
 ```python
 class ListCustomRoutingPortMappingsByDestinationPaginator(Boto3Paginator):
@@ -171,7 +171,7 @@ def get_list_endpoint_groups_paginator() -> ListEndpointGroupsPaginator:
     return boto3.client("globalaccelerator").get_paginator("list_endpoint_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListEndpointGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListEndpointGroups)
 
 ```python
 class ListEndpointGroupsPaginator(Boto3Paginator):
@@ -195,7 +195,7 @@ def get_list_listeners_paginator() -> ListListenersPaginator:
     return boto3.client("globalaccelerator").get_paginator("list_listeners")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListListeners)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListListeners)
 
 ```python
 class ListListenersPaginator(Boto3Paginator):

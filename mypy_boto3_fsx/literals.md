@@ -6,10 +6,12 @@ Auto-generated documentation for [FSx](https://boto3.amazonaws.com/v1/documentat
 type annotations stubs module [mypy_boto3_fsx](https://pypi.org/project/mypy-boto3-fsx/).
 
 - [Literals for boto3 FSx module](#literals-for-boto3-fsx-module)
+  - [AdministrativeActionType](#administrativeactiontype)
   - [AliasLifecycle](#aliaslifecycle)
   - [AutoImportPolicyType](#autoimportpolicytype)
   - [BackupLifecycle](#backuplifecycle)
   - [BackupType](#backuptype)
+  - [DataRepositoryLifecycle](#datarepositorylifecycle)
   - [DataRepositoryTaskFilterName](#datarepositorytaskfiltername)
   - [DataRepositoryTaskLifecycle](#datarepositorytasklifecycle)
   - [DataRepositoryTaskType](#datarepositorytasktype)
@@ -17,14 +19,29 @@ type annotations stubs module [mypy_boto3_fsx](https://pypi.org/project/mypy-bot
   - [DescribeFileSystemsPaginatorName](#describefilesystemspaginatorname)
   - [DriveCacheType](#drivecachetype)
   - [FileSystemLifecycle](#filesystemlifecycle)
+  - [FileSystemMaintenanceOperation](#filesystemmaintenanceoperation)
   - [FileSystemType](#filesystemtype)
   - [FilterName](#filtername)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
   - [LustreDeploymentType](#lustredeploymenttype)
   - [ReportFormat](#reportformat)
   - [ReportScope](#reportscope)
+  - [Status](#status)
   - [StorageType](#storagetype)
   - [WindowsDeploymentType](#windowsdeploymenttype)
+
+## AdministrativeActionType
+
+```python
+from mypy_boto3_fsx.literals import AdministrativeActionType
+```
+
+Values:
+
+- `FILE_SYSTEM_ALIAS_ASSOCIATION`
+- `FILE_SYSTEM_ALIAS_DISASSOCIATION`
+- `FILE_SYSTEM_UPDATE`
+- `STORAGE_OPTIMIZATION`
 
 ## AliasLifecycle
 
@@ -79,6 +96,20 @@ Values:
 - `AUTOMATIC`
 - `AWS_BACKUP`
 - `USER_INITIATED`
+
+## DataRepositoryLifecycle
+
+```python
+from mypy_boto3_fsx.literals import DataRepositoryLifecycle
+```
+
+Values:
+
+- `AVAILABLE`
+- `CREATING`
+- `DELETING`
+- `MISCONFIGURED`
+- `UPDATING`
 
 ## DataRepositoryTaskFilterName
 
@@ -162,6 +193,17 @@ Values:
 - `MISCONFIGURED`
 - `UPDATING`
 
+## FileSystemMaintenanceOperation
+
+```python
+from mypy_boto3_fsx.literals import FileSystemMaintenanceOperation
+```
+
+Values:
+
+- `BACKING_UP`
+- `PATCHING`
+
 ## FileSystemType
 
 ```python
@@ -226,6 +268,20 @@ from mypy_boto3_fsx.literals import ReportScope
 Values:
 
 - `FAILED_FILES_ONLY`
+
+## Status
+
+```python
+from mypy_boto3_fsx.literals import Status
+```
+
+Values:
+
+- `COMPLETED`
+- `FAILED`
+- `IN_PROGRESS`
+- `PENDING`
+- `UPDATED_OPTIMIZING`
 
 ## StorageType
 

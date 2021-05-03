@@ -25,7 +25,7 @@ def get_describe_addresses_paginator() -> DescribeAddressesPaginator:
     return boto3.client("snowball").get_paginator("describe_addresses")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.DescribeAddresses)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.DescribeAddresses)
 
 ```python
 class DescribeAddressesPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_list_cluster_jobs_paginator() -> ListClusterJobsPaginator:
     return boto3.client("snowball").get_paginator("list_cluster_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListClusterJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListClusterJobs)
 
 ```python
 class ListClusterJobsPaginator(Boto3Paginator):
@@ -72,7 +72,7 @@ def get_list_clusters_paginator() -> ListClustersPaginator:
     return boto3.client("snowball").get_paginator("list_clusters")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListClusters)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListClusters)
 
 ```python
 class ListClustersPaginator(Boto3Paginator):
@@ -95,7 +95,7 @@ def get_list_compatible_images_paginator() -> ListCompatibleImagesPaginator:
     return boto3.client("snowball").get_paginator("list_compatible_images")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListCompatibleImages)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListCompatibleImages)
 
 ```python
 class ListCompatibleImagesPaginator(Boto3Paginator):
@@ -118,7 +118,7 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("snowball").get_paginator("list_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListJobs)
 
 ```python
 class ListJobsPaginator(Boto3Paginator):

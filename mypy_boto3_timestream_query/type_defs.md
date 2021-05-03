@@ -59,8 +59,8 @@ from mypy_boto3_timestream_query.type_defs import DatumTypeDef
 Optional fields:
 - `ScalarValue`: `str`
 - `TimeSeriesValue`: `List["TimeSeriesDataPointTypeDef"]`
-- `ArrayValue`: `List[Dict[str, Any]]`
-- `RowValue`: `Dict[str, Any]`
+- `ArrayValue`: `List["DatumTypeDef"]`
+- `RowValue`: `"RowTypeDef"`
 - `NullValue`: `bool`
 
 
@@ -115,8 +115,8 @@ from mypy_boto3_timestream_query.type_defs import QueryResponseTypeDef
 
 Required fields:
 - `QueryId`: `str`
-- `Rows`: `List[Dict[str, Any]]`
-- `ColumnInfo`: `List[Dict[str, Any]]`
+- `Rows`: `List["RowTypeDef"]`
+- `ColumnInfo`: `List["ColumnInfoTypeDef"]`
 
 
 
@@ -148,7 +148,7 @@ from mypy_boto3_timestream_query.type_defs import RowTypeDef
 
 
 Required fields:
-- `Data`: `List[Dict[str, Any]]`
+- `Data`: `List["DatumTypeDef"]`
 
 
 
@@ -162,7 +162,7 @@ from mypy_boto3_timestream_query.type_defs import TimeSeriesDataPointTypeDef
 
 Required fields:
 - `Time`: `str`
-- `Value`: `Dict[str, Any]`
+- `Value`: `"DatumTypeDef"`
 
 
 
@@ -178,7 +178,7 @@ from mypy_boto3_timestream_query.type_defs import TypeTypeDef
 
 Optional fields:
 - `ScalarType`: `ScalarType`
-- `ArrayColumnInfo`: `Dict[str, Any]`
-- `TimeSeriesMeasureValueColumnInfo`: `Dict[str, Any]`
-- `RowColumnInfo`: `List[Dict[str, Any]]`
+- `ArrayColumnInfo`: `"ColumnInfoTypeDef"`
+- `TimeSeriesMeasureValueColumnInfo`: `"ColumnInfoTypeDef"`
+- `RowColumnInfo`: `List["ColumnInfoTypeDef"]`
 

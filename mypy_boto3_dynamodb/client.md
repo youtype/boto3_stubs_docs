@@ -77,7 +77,7 @@ def get_dynamodb_client() -> DynamoDBClient:
     return boto3.client("dynamodb")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client)
 
 ## Exceptions
 
@@ -133,7 +133,7 @@ Exceptions:
 
 Type annotations for `boto3.client("dynamodb").batch_execute_statement` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_execute_statement]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_execute_statement]
 
 ```python
 def batch_execute_statement(
@@ -147,7 +147,7 @@ def batch_execute_statement(
 
 Type annotations for `boto3.client("dynamodb").batch_get_item` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_get_item]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_get_item]
 
 ```python
 def batch_get_item(
@@ -162,7 +162,7 @@ def batch_get_item(
 
 Type annotations for `boto3.client("dynamodb").batch_write_item` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_write_item]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_write_item]
 
 ```python
 def batch_write_item(
@@ -178,7 +178,7 @@ def batch_write_item(
 
 Type annotations for `boto3.client("dynamodb").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -192,7 +192,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("dynamodb").create_backup` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_backup]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_backup]
 
 ```python
 def create_backup(
@@ -207,7 +207,7 @@ def create_backup(
 
 Type annotations for `boto3.client("dynamodb").create_global_table` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_global_table]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_global_table]
 
 ```python
 def create_global_table(
@@ -222,7 +222,7 @@ def create_global_table(
 
 Type annotations for `boto3.client("dynamodb").create_table` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_table]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_table]
 
 ```python
 def create_table(
@@ -245,7 +245,7 @@ def create_table(
 
 Type annotations for `boto3.client("dynamodb").delete_backup` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_backup]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_backup]
 
 ```python
 def delete_backup(
@@ -259,7 +259,7 @@ def delete_backup(
 
 Type annotations for `boto3.client("dynamodb").delete_item` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_item]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_item]
 
 ```python
 def delete_item(
@@ -282,7 +282,7 @@ def delete_item(
 
 Type annotations for `boto3.client("dynamodb").delete_table` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_table]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_table]
 
 ```python
 def delete_table(
@@ -296,7 +296,7 @@ def delete_table(
 
 Type annotations for `boto3.client("dynamodb").describe_backup` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_backup]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_backup]
 
 ```python
 def describe_backup(
@@ -310,7 +310,7 @@ def describe_backup(
 
 Type annotations for `boto3.client("dynamodb").describe_continuous_backups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_continuous_backups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_continuous_backups]
 
 ```python
 def describe_continuous_backups(
@@ -324,7 +324,7 @@ def describe_continuous_backups(
 
 Type annotations for `boto3.client("dynamodb").describe_contributor_insights` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_contributor_insights]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_contributor_insights]
 
 ```python
 def describe_contributor_insights(
@@ -339,7 +339,7 @@ def describe_contributor_insights(
 
 Type annotations for `boto3.client("dynamodb").describe_endpoints` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_endpoints]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_endpoints]
 
 ```python
 def describe_endpoints(
@@ -352,7 +352,7 @@ def describe_endpoints(
 
 Type annotations for `boto3.client("dynamodb").describe_export` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_export]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_export]
 
 ```python
 def describe_export(
@@ -366,7 +366,7 @@ def describe_export(
 
 Type annotations for `boto3.client("dynamodb").describe_global_table` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_global_table]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_global_table]
 
 ```python
 def describe_global_table(
@@ -380,7 +380,7 @@ def describe_global_table(
 
 Type annotations for `boto3.client("dynamodb").describe_global_table_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_global_table_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_global_table_settings]
 
 ```python
 def describe_global_table_settings(
@@ -394,7 +394,7 @@ def describe_global_table_settings(
 
 Type annotations for `boto3.client("dynamodb").describe_kinesis_streaming_destination` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_kinesis_streaming_destination]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_kinesis_streaming_destination]
 
 ```python
 def describe_kinesis_streaming_destination(
@@ -408,7 +408,7 @@ def describe_kinesis_streaming_destination(
 
 Type annotations for `boto3.client("dynamodb").describe_limits` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_limits]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_limits]
 
 ```python
 def describe_limits(
@@ -421,7 +421,7 @@ def describe_limits(
 
 Type annotations for `boto3.client("dynamodb").describe_table` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_table]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_table]
 
 ```python
 def describe_table(
@@ -435,7 +435,7 @@ def describe_table(
 
 Type annotations for `boto3.client("dynamodb").describe_table_replica_auto_scaling` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_table_replica_auto_scaling]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_table_replica_auto_scaling]
 
 ```python
 def describe_table_replica_auto_scaling(
@@ -449,7 +449,7 @@ def describe_table_replica_auto_scaling(
 
 Type annotations for `boto3.client("dynamodb").describe_time_to_live` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_time_to_live]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_time_to_live]
 
 ```python
 def describe_time_to_live(
@@ -463,7 +463,7 @@ def describe_time_to_live(
 
 Type annotations for `boto3.client("dynamodb").disable_kinesis_streaming_destination` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.disable_kinesis_streaming_destination]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.disable_kinesis_streaming_destination]
 
 ```python
 def disable_kinesis_streaming_destination(
@@ -478,7 +478,7 @@ def disable_kinesis_streaming_destination(
 
 Type annotations for `boto3.client("dynamodb").enable_kinesis_streaming_destination` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.enable_kinesis_streaming_destination]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.enable_kinesis_streaming_destination]
 
 ```python
 def enable_kinesis_streaming_destination(
@@ -493,7 +493,7 @@ def enable_kinesis_streaming_destination(
 
 Type annotations for `boto3.client("dynamodb").execute_statement` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.execute_statement]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.execute_statement]
 
 ```python
 def execute_statement(
@@ -510,7 +510,7 @@ def execute_statement(
 
 Type annotations for `boto3.client("dynamodb").execute_transaction` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.execute_transaction]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.execute_transaction]
 
 ```python
 def execute_transaction(
@@ -525,7 +525,7 @@ def execute_transaction(
 
 Type annotations for `boto3.client("dynamodb").export_table_to_point_in_time` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.export_table_to_point_in_time]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.export_table_to_point_in_time]
 
 ```python
 def export_table_to_point_in_time(
@@ -547,7 +547,7 @@ def export_table_to_point_in_time(
 
 Type annotations for `boto3.client("dynamodb").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -564,7 +564,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("dynamodb").get_item` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.get_item]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.get_item]
 
 ```python
 def get_item(
@@ -584,7 +584,7 @@ def get_item(
 
 Type annotations for `boto3.client("dynamodb").list_backups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_backups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_backups]
 
 ```python
 def list_backups(
@@ -603,7 +603,7 @@ def list_backups(
 
 Type annotations for `boto3.client("dynamodb").list_contributor_insights` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_contributor_insights]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_contributor_insights]
 
 ```python
 def list_contributor_insights(
@@ -619,7 +619,7 @@ def list_contributor_insights(
 
 Type annotations for `boto3.client("dynamodb").list_exports` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_exports]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_exports]
 
 ```python
 def list_exports(
@@ -635,7 +635,7 @@ def list_exports(
 
 Type annotations for `boto3.client("dynamodb").list_global_tables` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_global_tables]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_global_tables]
 
 ```python
 def list_global_tables(
@@ -651,7 +651,7 @@ def list_global_tables(
 
 Type annotations for `boto3.client("dynamodb").list_tables` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_tables]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_tables]
 
 ```python
 def list_tables(
@@ -666,7 +666,7 @@ def list_tables(
 
 Type annotations for `boto3.client("dynamodb").list_tags_of_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_tags_of_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_tags_of_resource]
 
 ```python
 def list_tags_of_resource(
@@ -681,7 +681,7 @@ def list_tags_of_resource(
 
 Type annotations for `boto3.client("dynamodb").put_item` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.put_item]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.put_item]
 
 ```python
 def put_item(
@@ -704,7 +704,7 @@ def put_item(
 
 Type annotations for `boto3.client("dynamodb").query` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.query]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.query]
 
 ```python
 def query(
@@ -734,7 +734,7 @@ def query(
 
 Type annotations for `boto3.client("dynamodb").restore_table_from_backup` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.restore_table_from_backup]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.restore_table_from_backup]
 
 ```python
 def restore_table_from_backup(
@@ -754,7 +754,7 @@ def restore_table_from_backup(
 
 Type annotations for `boto3.client("dynamodb").restore_table_to_point_in_time` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.restore_table_to_point_in_time]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.restore_table_to_point_in_time]
 
 ```python
 def restore_table_to_point_in_time(
@@ -777,7 +777,7 @@ def restore_table_to_point_in_time(
 
 Type annotations for `boto3.client("dynamodb").scan` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.scan]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.scan]
 
 ```python
 def scan(
@@ -806,7 +806,7 @@ def scan(
 
 Type annotations for `boto3.client("dynamodb").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -821,7 +821,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("dynamodb").transact_get_items` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.transact_get_items]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.transact_get_items]
 
 ```python
 def transact_get_items(
@@ -836,7 +836,7 @@ def transact_get_items(
 
 Type annotations for `boto3.client("dynamodb").transact_write_items` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.transact_write_items]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.transact_write_items]
 
 ```python
 def transact_write_items(
@@ -853,7 +853,7 @@ def transact_write_items(
 
 Type annotations for `boto3.client("dynamodb").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -868,7 +868,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("dynamodb").update_continuous_backups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_continuous_backups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_continuous_backups]
 
 ```python
 def update_continuous_backups(
@@ -883,7 +883,7 @@ def update_continuous_backups(
 
 Type annotations for `boto3.client("dynamodb").update_contributor_insights` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_contributor_insights]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_contributor_insights]
 
 ```python
 def update_contributor_insights(
@@ -899,7 +899,7 @@ def update_contributor_insights(
 
 Type annotations for `boto3.client("dynamodb").update_global_table` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_global_table]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_global_table]
 
 ```python
 def update_global_table(
@@ -914,7 +914,7 @@ def update_global_table(
 
 Type annotations for `boto3.client("dynamodb").update_global_table_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_global_table_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_global_table_settings]
 
 ```python
 def update_global_table_settings(
@@ -933,7 +933,7 @@ def update_global_table_settings(
 
 Type annotations for `boto3.client("dynamodb").update_item` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_item]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_item]
 
 ```python
 def update_item(
@@ -958,7 +958,7 @@ def update_item(
 
 Type annotations for `boto3.client("dynamodb").update_table` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_table]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_table]
 
 ```python
 def update_table(
@@ -979,7 +979,7 @@ def update_table(
 
 Type annotations for `boto3.client("dynamodb").update_table_replica_auto_scaling` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_table_replica_auto_scaling]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_table_replica_auto_scaling]
 
 ```python
 def update_table_replica_auto_scaling(
@@ -996,7 +996,7 @@ def update_table_replica_auto_scaling(
 
 Type annotations for `boto3.client("dynamodb").update_time_to_live` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_time_to_live]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_time_to_live]
 
 ```python
 def update_time_to_live(

@@ -24,7 +24,7 @@ def get_list_public_keys_paginator() -> ListPublicKeysPaginator:
     return boto3.client("cloudtrail").get_paginator("list_public_keys")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Paginator.ListPublicKeys)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Paginator.ListPublicKeys)
 
 ```python
 class ListPublicKeysPaginator(Boto3Paginator):
@@ -49,7 +49,7 @@ def get_list_tags_paginator() -> ListTagsPaginator:
     return boto3.client("cloudtrail").get_paginator("list_tags")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Paginator.ListTags)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Paginator.ListTags)
 
 ```python
 class ListTagsPaginator(Boto3Paginator):
@@ -73,7 +73,7 @@ def get_list_trails_paginator() -> ListTrailsPaginator:
     return boto3.client("cloudtrail").get_paginator("list_trails")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Paginator.ListTrails)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Paginator.ListTrails)
 
 ```python
 class ListTrailsPaginator(Boto3Paginator):
@@ -96,7 +96,7 @@ def get_lookup_events_paginator() -> LookupEventsPaginator:
     return boto3.client("cloudtrail").get_paginator("lookup_events")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Paginator.LookupEvents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Paginator.LookupEvents)
 
 ```python
 class LookupEventsPaginator(Boto3Paginator):

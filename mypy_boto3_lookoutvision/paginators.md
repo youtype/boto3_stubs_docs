@@ -23,7 +23,7 @@ def get_list_dataset_entries_paginator() -> ListDatasetEntriesPaginator:
     return boto3.client("lookoutvision").get_paginator("list_dataset_entries")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListDatasetEntries)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListDatasetEntries)
 
 ```python
 class ListDatasetEntriesPaginator(Boto3Paginator):
@@ -53,7 +53,7 @@ def get_list_models_paginator() -> ListModelsPaginator:
     return boto3.client("lookoutvision").get_paginator("list_models")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListModels)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListModels)
 
 ```python
 class ListModelsPaginator(Boto3Paginator):
@@ -77,7 +77,7 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("lookoutvision").get_paginator("list_projects")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListProjects)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListProjects)
 
 ```python
 class ListProjectsPaginator(Boto3Paginator):

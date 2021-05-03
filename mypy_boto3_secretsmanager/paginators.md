@@ -21,7 +21,7 @@ def get_list_secrets_paginator() -> ListSecretsPaginator:
     return boto3.client("secretsmanager").get_paginator("list_secrets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Paginator.ListSecrets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Paginator.ListSecrets)
 
 ```python
 class ListSecretsPaginator(Boto3Paginator):

@@ -65,7 +65,7 @@ def get_lex-models_client() -> LexModelBuildingServiceClient:
     return boto3.client("lex-models")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client)
 
 ## Exceptions
 
@@ -99,7 +99,7 @@ Exceptions:
 
 Type annotations for `boto3.client("lex-models").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -113,7 +113,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("lex-models").create_bot_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_bot_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_bot_version]
 
 ```python
 def create_bot_version(
@@ -128,7 +128,7 @@ def create_bot_version(
 
 Type annotations for `boto3.client("lex-models").create_intent_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_intent_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_intent_version]
 
 ```python
 def create_intent_version(
@@ -143,7 +143,7 @@ def create_intent_version(
 
 Type annotations for `boto3.client("lex-models").create_slot_type_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_slot_type_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_slot_type_version]
 
 ```python
 def create_slot_type_version(
@@ -158,7 +158,7 @@ def create_slot_type_version(
 
 Type annotations for `boto3.client("lex-models").delete_bot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot]
 
 ```python
 def delete_bot(
@@ -172,7 +172,7 @@ def delete_bot(
 
 Type annotations for `boto3.client("lex-models").delete_bot_alias` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_alias]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_alias]
 
 ```python
 def delete_bot_alias(
@@ -187,7 +187,7 @@ def delete_bot_alias(
 
 Type annotations for `boto3.client("lex-models").delete_bot_channel_association` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_channel_association]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_channel_association]
 
 ```python
 def delete_bot_channel_association(
@@ -203,7 +203,7 @@ def delete_bot_channel_association(
 
 Type annotations for `boto3.client("lex-models").delete_bot_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_version]
 
 ```python
 def delete_bot_version(
@@ -218,7 +218,7 @@ def delete_bot_version(
 
 Type annotations for `boto3.client("lex-models").delete_intent` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_intent]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_intent]
 
 ```python
 def delete_intent(
@@ -232,7 +232,7 @@ def delete_intent(
 
 Type annotations for `boto3.client("lex-models").delete_intent_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_intent_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_intent_version]
 
 ```python
 def delete_intent_version(
@@ -247,7 +247,7 @@ def delete_intent_version(
 
 Type annotations for `boto3.client("lex-models").delete_slot_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_slot_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_slot_type]
 
 ```python
 def delete_slot_type(
@@ -261,7 +261,7 @@ def delete_slot_type(
 
 Type annotations for `boto3.client("lex-models").delete_slot_type_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_slot_type_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_slot_type_version]
 
 ```python
 def delete_slot_type_version(
@@ -276,7 +276,7 @@ def delete_slot_type_version(
 
 Type annotations for `boto3.client("lex-models").delete_utterances` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_utterances]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_utterances]
 
 ```python
 def delete_utterances(
@@ -291,7 +291,7 @@ def delete_utterances(
 
 Type annotations for `boto3.client("lex-models").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -308,7 +308,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("lex-models").get_bot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot]
 
 ```python
 def get_bot(
@@ -323,7 +323,7 @@ def get_bot(
 
 Type annotations for `boto3.client("lex-models").get_bot_alias` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_alias]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_alias]
 
 ```python
 def get_bot_alias(
@@ -338,7 +338,7 @@ def get_bot_alias(
 
 Type annotations for `boto3.client("lex-models").get_bot_aliases` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_aliases]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_aliases]
 
 ```python
 def get_bot_aliases(
@@ -355,7 +355,7 @@ def get_bot_aliases(
 
 Type annotations for `boto3.client("lex-models").get_bot_channel_association` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_channel_association]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_channel_association]
 
 ```python
 def get_bot_channel_association(
@@ -371,7 +371,7 @@ def get_bot_channel_association(
 
 Type annotations for `boto3.client("lex-models").get_bot_channel_associations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_channel_associations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_channel_associations]
 
 ```python
 def get_bot_channel_associations(
@@ -389,7 +389,7 @@ def get_bot_channel_associations(
 
 Type annotations for `boto3.client("lex-models").get_bot_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_versions]
 
 ```python
 def get_bot_versions(
@@ -405,7 +405,7 @@ def get_bot_versions(
 
 Type annotations for `boto3.client("lex-models").get_bots` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bots]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bots]
 
 ```python
 def get_bots(
@@ -421,7 +421,7 @@ def get_bots(
 
 Type annotations for `boto3.client("lex-models").get_builtin_intent` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_intent]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_intent]
 
 ```python
 def get_builtin_intent(
@@ -435,7 +435,7 @@ def get_builtin_intent(
 
 Type annotations for `boto3.client("lex-models").get_builtin_intents` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_intents]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_intents]
 
 ```python
 def get_builtin_intents(
@@ -452,7 +452,7 @@ def get_builtin_intents(
 
 Type annotations for `boto3.client("lex-models").get_builtin_slot_types` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_slot_types]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_slot_types]
 
 ```python
 def get_builtin_slot_types(
@@ -469,7 +469,7 @@ def get_builtin_slot_types(
 
 Type annotations for `boto3.client("lex-models").get_export` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_export]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_export]
 
 ```python
 def get_export(
@@ -486,7 +486,7 @@ def get_export(
 
 Type annotations for `boto3.client("lex-models").get_import` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_import]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_import]
 
 ```python
 def get_import(
@@ -500,7 +500,7 @@ def get_import(
 
 Type annotations for `boto3.client("lex-models").get_intent` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intent]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intent]
 
 ```python
 def get_intent(
@@ -515,7 +515,7 @@ def get_intent(
 
 Type annotations for `boto3.client("lex-models").get_intent_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intent_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intent_versions]
 
 ```python
 def get_intent_versions(
@@ -531,7 +531,7 @@ def get_intent_versions(
 
 Type annotations for `boto3.client("lex-models").get_intents` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intents]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intents]
 
 ```python
 def get_intents(
@@ -547,7 +547,7 @@ def get_intents(
 
 Type annotations for `boto3.client("lex-models").get_slot_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_type]
 
 ```python
 def get_slot_type(
@@ -562,7 +562,7 @@ def get_slot_type(
 
 Type annotations for `boto3.client("lex-models").get_slot_type_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_type_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_type_versions]
 
 ```python
 def get_slot_type_versions(
@@ -578,7 +578,7 @@ def get_slot_type_versions(
 
 Type annotations for `boto3.client("lex-models").get_slot_types` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_types]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_types]
 
 ```python
 def get_slot_types(
@@ -594,7 +594,7 @@ def get_slot_types(
 
 Type annotations for `boto3.client("lex-models").get_utterances_view` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_utterances_view]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_utterances_view]
 
 ```python
 def get_utterances_view(
@@ -610,7 +610,7 @@ def get_utterances_view(
 
 Type annotations for `boto3.client("lex-models").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -624,7 +624,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("lex-models").put_bot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_bot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_bot]
 
 ```python
 def put_bot(
@@ -653,7 +653,7 @@ def put_bot(
 
 Type annotations for `boto3.client("lex-models").put_bot_alias` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_bot_alias]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_bot_alias]
 
 ```python
 def put_bot_alias(
@@ -673,7 +673,7 @@ def put_bot_alias(
 
 Type annotations for `boto3.client("lex-models").put_intent` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_intent]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_intent]
 
 ```python
 def put_intent(
@@ -702,7 +702,7 @@ def put_intent(
 
 Type annotations for `boto3.client("lex-models").put_slot_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_slot_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_slot_type]
 
 ```python
 def put_slot_type(
@@ -723,7 +723,7 @@ def put_slot_type(
 
 Type annotations for `boto3.client("lex-models").start_import` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.start_import]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.start_import]
 
 ```python
 def start_import(
@@ -740,7 +740,7 @@ def start_import(
 
 Type annotations for `boto3.client("lex-models").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -755,7 +755,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("lex-models").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.untag_resource]
 
 ```python
 def untag_resource(

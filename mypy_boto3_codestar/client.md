@@ -44,7 +44,7 @@ def get_codestar_client() -> CodeStarClient:
     return boto3.client("codestar")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client)
 
 ## Exceptions
 
@@ -84,7 +84,7 @@ Exceptions:
 
 Type annotations for `boto3.client("codestar").associate_team_member` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.associate_team_member]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.associate_team_member]
 
 ```python
 def associate_team_member(
@@ -102,7 +102,7 @@ def associate_team_member(
 
 Type annotations for `boto3.client("codestar").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -116,7 +116,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("codestar").create_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.create_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.create_project]
 
 ```python
 def create_project(
@@ -136,7 +136,7 @@ def create_project(
 
 Type annotations for `boto3.client("codestar").create_user_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.create_user_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.create_user_profile]
 
 ```python
 def create_user_profile(
@@ -153,7 +153,7 @@ def create_user_profile(
 
 Type annotations for `boto3.client("codestar").delete_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.delete_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.delete_project]
 
 ```python
 def delete_project(
@@ -169,7 +169,7 @@ def delete_project(
 
 Type annotations for `boto3.client("codestar").delete_user_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.delete_user_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.delete_user_profile]
 
 ```python
 def delete_user_profile(
@@ -183,7 +183,7 @@ def delete_user_profile(
 
 Type annotations for `boto3.client("codestar").describe_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.describe_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.describe_project]
 
 ```python
 def describe_project(
@@ -197,7 +197,7 @@ def describe_project(
 
 Type annotations for `boto3.client("codestar").describe_user_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.describe_user_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.describe_user_profile]
 
 ```python
 def describe_user_profile(
@@ -211,7 +211,7 @@ def describe_user_profile(
 
 Type annotations for `boto3.client("codestar").disassociate_team_member` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.disassociate_team_member]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.disassociate_team_member]
 
 ```python
 def disassociate_team_member(
@@ -226,7 +226,7 @@ def disassociate_team_member(
 
 Type annotations for `boto3.client("codestar").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -243,7 +243,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("codestar").list_projects` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_projects]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_projects]
 
 ```python
 def list_projects(
@@ -258,7 +258,7 @@ def list_projects(
 
 Type annotations for `boto3.client("codestar").list_resources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_resources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_resources]
 
 ```python
 def list_resources(
@@ -274,7 +274,7 @@ def list_resources(
 
 Type annotations for `boto3.client("codestar").list_tags_for_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_tags_for_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_tags_for_project]
 
 ```python
 def list_tags_for_project(
@@ -290,7 +290,7 @@ def list_tags_for_project(
 
 Type annotations for `boto3.client("codestar").list_team_members` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_team_members]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_team_members]
 
 ```python
 def list_team_members(
@@ -306,7 +306,7 @@ def list_team_members(
 
 Type annotations for `boto3.client("codestar").list_user_profiles` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_user_profiles]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_user_profiles]
 
 ```python
 def list_user_profiles(
@@ -321,7 +321,7 @@ def list_user_profiles(
 
 Type annotations for `boto3.client("codestar").tag_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.tag_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.tag_project]
 
 ```python
 def tag_project(
@@ -336,7 +336,7 @@ def tag_project(
 
 Type annotations for `boto3.client("codestar").untag_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.untag_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.untag_project]
 
 ```python
 def untag_project(
@@ -351,7 +351,7 @@ def untag_project(
 
 Type annotations for `boto3.client("codestar").update_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_project]
 
 ```python
 def update_project(
@@ -367,7 +367,7 @@ def update_project(
 
 Type annotations for `boto3.client("codestar").update_team_member` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_team_member]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_team_member]
 
 ```python
 def update_team_member(
@@ -384,7 +384,7 @@ def update_team_member(
 
 Type annotations for `boto3.client("codestar").update_user_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_user_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_user_profile]
 
 ```python
 def update_user_profile(

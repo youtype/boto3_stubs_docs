@@ -75,7 +75,7 @@ def get_s3control_client() -> S3ControlClient:
     return boto3.client("s3control")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client)
 
 ## Exceptions
 
@@ -114,7 +114,7 @@ Exceptions:
 
 Type annotations for `boto3.client("s3control").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -128,7 +128,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("s3control").create_access_point` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_access_point]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_access_point]
 
 ```python
 def create_access_point(
@@ -146,7 +146,7 @@ def create_access_point(
 
 Type annotations for `boto3.client("s3control").create_access_point_for_object_lambda` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_access_point_for_object_lambda]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_access_point_for_object_lambda]
 
 ```python
 def create_access_point_for_object_lambda(
@@ -162,7 +162,7 @@ def create_access_point_for_object_lambda(
 
 Type annotations for `boto3.client("s3control").create_bucket` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_bucket]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_bucket]
 
 ```python
 def create_bucket(
@@ -185,7 +185,7 @@ def create_bucket(
 
 Type annotations for `boto3.client("s3control").create_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_job]
 
 ```python
 def create_job(
@@ -208,7 +208,7 @@ def create_job(
 
 Type annotations for `boto3.client("s3control").delete_access_point` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point]
 
 ```python
 def delete_access_point(
@@ -223,7 +223,7 @@ def delete_access_point(
 
 Type annotations for `boto3.client("s3control").delete_access_point_for_object_lambda` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_for_object_lambda]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_for_object_lambda]
 
 ```python
 def delete_access_point_for_object_lambda(
@@ -238,7 +238,7 @@ def delete_access_point_for_object_lambda(
 
 Type annotations for `boto3.client("s3control").delete_access_point_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_policy]
 
 ```python
 def delete_access_point_policy(
@@ -253,7 +253,7 @@ def delete_access_point_policy(
 
 Type annotations for `boto3.client("s3control").delete_access_point_policy_for_object_lambda` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_policy_for_object_lambda]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_policy_for_object_lambda]
 
 ```python
 def delete_access_point_policy_for_object_lambda(
@@ -268,7 +268,7 @@ def delete_access_point_policy_for_object_lambda(
 
 Type annotations for `boto3.client("s3control").delete_bucket` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket]
 
 ```python
 def delete_bucket(
@@ -283,7 +283,7 @@ def delete_bucket(
 
 Type annotations for `boto3.client("s3control").delete_bucket_lifecycle_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_lifecycle_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_lifecycle_configuration]
 
 ```python
 def delete_bucket_lifecycle_configuration(
@@ -298,7 +298,7 @@ def delete_bucket_lifecycle_configuration(
 
 Type annotations for `boto3.client("s3control").delete_bucket_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_policy]
 
 ```python
 def delete_bucket_policy(
@@ -313,7 +313,7 @@ def delete_bucket_policy(
 
 Type annotations for `boto3.client("s3control").delete_bucket_tagging` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_tagging]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_tagging]
 
 ```python
 def delete_bucket_tagging(
@@ -328,7 +328,7 @@ def delete_bucket_tagging(
 
 Type annotations for `boto3.client("s3control").delete_job_tagging` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_job_tagging]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_job_tagging]
 
 ```python
 def delete_job_tagging(
@@ -343,7 +343,7 @@ def delete_job_tagging(
 
 Type annotations for `boto3.client("s3control").delete_public_access_block` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_public_access_block]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_public_access_block]
 
 ```python
 def delete_public_access_block(
@@ -357,7 +357,7 @@ def delete_public_access_block(
 
 Type annotations for `boto3.client("s3control").delete_storage_lens_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration]
 
 ```python
 def delete_storage_lens_configuration(
@@ -372,7 +372,7 @@ def delete_storage_lens_configuration(
 
 Type annotations for `boto3.client("s3control").delete_storage_lens_configuration_tagging` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration_tagging]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration_tagging]
 
 ```python
 def delete_storage_lens_configuration_tagging(
@@ -387,7 +387,7 @@ def delete_storage_lens_configuration_tagging(
 
 Type annotations for `boto3.client("s3control").describe_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.describe_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.describe_job]
 
 ```python
 def describe_job(
@@ -402,7 +402,7 @@ def describe_job(
 
 Type annotations for `boto3.client("s3control").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -419,7 +419,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("s3control").get_access_point` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point]
 
 ```python
 def get_access_point(
@@ -434,7 +434,7 @@ def get_access_point(
 
 Type annotations for `boto3.client("s3control").get_access_point_configuration_for_object_lambda` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_configuration_for_object_lambda]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_configuration_for_object_lambda]
 
 ```python
 def get_access_point_configuration_for_object_lambda(
@@ -449,7 +449,7 @@ def get_access_point_configuration_for_object_lambda(
 
 Type annotations for `boto3.client("s3control").get_access_point_for_object_lambda` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_for_object_lambda]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_for_object_lambda]
 
 ```python
 def get_access_point_for_object_lambda(
@@ -464,7 +464,7 @@ def get_access_point_for_object_lambda(
 
 Type annotations for `boto3.client("s3control").get_access_point_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy]
 
 ```python
 def get_access_point_policy(
@@ -479,7 +479,7 @@ def get_access_point_policy(
 
 Type annotations for `boto3.client("s3control").get_access_point_policy_for_object_lambda` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_for_object_lambda]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_for_object_lambda]
 
 ```python
 def get_access_point_policy_for_object_lambda(
@@ -494,7 +494,7 @@ def get_access_point_policy_for_object_lambda(
 
 Type annotations for `boto3.client("s3control").get_access_point_policy_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status]
 
 ```python
 def get_access_point_policy_status(
@@ -509,7 +509,7 @@ def get_access_point_policy_status(
 
 Type annotations for `boto3.client("s3control").get_access_point_policy_status_for_object_lambda` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status_for_object_lambda]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status_for_object_lambda]
 
 ```python
 def get_access_point_policy_status_for_object_lambda(
@@ -524,7 +524,7 @@ def get_access_point_policy_status_for_object_lambda(
 
 Type annotations for `boto3.client("s3control").get_bucket` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket]
 
 ```python
 def get_bucket(
@@ -539,7 +539,7 @@ def get_bucket(
 
 Type annotations for `boto3.client("s3control").get_bucket_lifecycle_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_lifecycle_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_lifecycle_configuration]
 
 ```python
 def get_bucket_lifecycle_configuration(
@@ -554,7 +554,7 @@ def get_bucket_lifecycle_configuration(
 
 Type annotations for `boto3.client("s3control").get_bucket_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_policy]
 
 ```python
 def get_bucket_policy(
@@ -569,7 +569,7 @@ def get_bucket_policy(
 
 Type annotations for `boto3.client("s3control").get_bucket_tagging` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_tagging]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_tagging]
 
 ```python
 def get_bucket_tagging(
@@ -584,7 +584,7 @@ def get_bucket_tagging(
 
 Type annotations for `boto3.client("s3control").get_job_tagging` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_job_tagging]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_job_tagging]
 
 ```python
 def get_job_tagging(
@@ -599,7 +599,7 @@ def get_job_tagging(
 
 Type annotations for `boto3.client("s3control").get_public_access_block` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_public_access_block]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_public_access_block]
 
 ```python
 def get_public_access_block(
@@ -613,7 +613,7 @@ def get_public_access_block(
 
 Type annotations for `boto3.client("s3control").get_storage_lens_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration]
 
 ```python
 def get_storage_lens_configuration(
@@ -628,7 +628,7 @@ def get_storage_lens_configuration(
 
 Type annotations for `boto3.client("s3control").get_storage_lens_configuration_tagging` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration_tagging]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration_tagging]
 
 ```python
 def get_storage_lens_configuration_tagging(
@@ -643,7 +643,7 @@ def get_storage_lens_configuration_tagging(
 
 Type annotations for `boto3.client("s3control").list_access_points` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_access_points]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_access_points]
 
 ```python
 def list_access_points(
@@ -660,7 +660,7 @@ def list_access_points(
 
 Type annotations for `boto3.client("s3control").list_access_points_for_object_lambda` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_access_points_for_object_lambda]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_access_points_for_object_lambda]
 
 ```python
 def list_access_points_for_object_lambda(
@@ -676,7 +676,7 @@ def list_access_points_for_object_lambda(
 
 Type annotations for `boto3.client("s3control").list_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_jobs]
 
 ```python
 def list_jobs(
@@ -693,7 +693,7 @@ def list_jobs(
 
 Type annotations for `boto3.client("s3control").list_regional_buckets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_regional_buckets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_regional_buckets]
 
 ```python
 def list_regional_buckets(
@@ -710,7 +710,7 @@ def list_regional_buckets(
 
 Type annotations for `boto3.client("s3control").list_storage_lens_configurations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_storage_lens_configurations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_storage_lens_configurations]
 
 ```python
 def list_storage_lens_configurations(
@@ -725,7 +725,7 @@ def list_storage_lens_configurations(
 
 Type annotations for `boto3.client("s3control").put_access_point_configuration_for_object_lambda` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_configuration_for_object_lambda]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_configuration_for_object_lambda]
 
 ```python
 def put_access_point_configuration_for_object_lambda(
@@ -741,7 +741,7 @@ def put_access_point_configuration_for_object_lambda(
 
 Type annotations for `boto3.client("s3control").put_access_point_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_policy]
 
 ```python
 def put_access_point_policy(
@@ -757,7 +757,7 @@ def put_access_point_policy(
 
 Type annotations for `boto3.client("s3control").put_access_point_policy_for_object_lambda` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_policy_for_object_lambda]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_policy_for_object_lambda]
 
 ```python
 def put_access_point_policy_for_object_lambda(
@@ -773,7 +773,7 @@ def put_access_point_policy_for_object_lambda(
 
 Type annotations for `boto3.client("s3control").put_bucket_lifecycle_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_lifecycle_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_lifecycle_configuration]
 
 ```python
 def put_bucket_lifecycle_configuration(
@@ -789,7 +789,7 @@ def put_bucket_lifecycle_configuration(
 
 Type annotations for `boto3.client("s3control").put_bucket_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_policy]
 
 ```python
 def put_bucket_policy(
@@ -806,7 +806,7 @@ def put_bucket_policy(
 
 Type annotations for `boto3.client("s3control").put_bucket_tagging` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_tagging]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_tagging]
 
 ```python
 def put_bucket_tagging(
@@ -822,7 +822,7 @@ def put_bucket_tagging(
 
 Type annotations for `boto3.client("s3control").put_job_tagging` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_job_tagging]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_job_tagging]
 
 ```python
 def put_job_tagging(
@@ -838,7 +838,7 @@ def put_job_tagging(
 
 Type annotations for `boto3.client("s3control").put_public_access_block` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_public_access_block]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_public_access_block]
 
 ```python
 def put_public_access_block(
@@ -853,7 +853,7 @@ def put_public_access_block(
 
 Type annotations for `boto3.client("s3control").put_storage_lens_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_storage_lens_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_storage_lens_configuration]
 
 ```python
 def put_storage_lens_configuration(
@@ -870,7 +870,7 @@ def put_storage_lens_configuration(
 
 Type annotations for `boto3.client("s3control").put_storage_lens_configuration_tagging` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_storage_lens_configuration_tagging]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_storage_lens_configuration_tagging]
 
 ```python
 def put_storage_lens_configuration_tagging(
@@ -886,7 +886,7 @@ def put_storage_lens_configuration_tagging(
 
 Type annotations for `boto3.client("s3control").update_job_priority` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.update_job_priority]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.update_job_priority]
 
 ```python
 def update_job_priority(
@@ -902,7 +902,7 @@ def update_job_priority(
 
 Type annotations for `boto3.client("s3control").update_job_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.update_job_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.update_job_status]
 
 ```python
 def update_job_status(

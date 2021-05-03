@@ -23,7 +23,7 @@ def get_describe_backups_paginator() -> DescribeBackupsPaginator:
     return boto3.client("cloudhsmv2").get_paginator("describe_backups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.DescribeBackups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.DescribeBackups)
 
 ```python
 class DescribeBackupsPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_describe_clusters_paginator() -> DescribeClustersPaginator:
     return boto3.client("cloudhsmv2").get_paginator("describe_clusters")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.DescribeClusters)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.DescribeClusters)
 
 ```python
 class DescribeClustersPaginator(Boto3Paginator):
@@ -72,7 +72,7 @@ def get_list_tags_paginator() -> ListTagsPaginator:
     return boto3.client("cloudhsmv2").get_paginator("list_tags")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.ListTags)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.ListTags)
 
 ```python
 class ListTagsPaginator(Boto3Paginator):

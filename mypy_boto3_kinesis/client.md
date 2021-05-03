@@ -55,7 +55,7 @@ def get_kinesis_client() -> KinesisClient:
     return boto3.client("kinesis")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client)
 
 ## Exceptions
 
@@ -96,7 +96,7 @@ Exceptions:
 
 Type annotations for `boto3.client("kinesis").add_tags_to_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.add_tags_to_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.add_tags_to_stream]
 
 ```python
 def add_tags_to_stream(
@@ -111,7 +111,7 @@ def add_tags_to_stream(
 
 Type annotations for `boto3.client("kinesis").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -125,7 +125,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("kinesis").create_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.create_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.create_stream]
 
 ```python
 def create_stream(
@@ -140,7 +140,7 @@ def create_stream(
 
 Type annotations for `boto3.client("kinesis").decrease_stream_retention_period` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.decrease_stream_retention_period]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.decrease_stream_retention_period]
 
 ```python
 def decrease_stream_retention_period(
@@ -155,7 +155,7 @@ def decrease_stream_retention_period(
 
 Type annotations for `boto3.client("kinesis").delete_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.delete_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.delete_stream]
 
 ```python
 def delete_stream(
@@ -170,7 +170,7 @@ def delete_stream(
 
 Type annotations for `boto3.client("kinesis").deregister_stream_consumer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.deregister_stream_consumer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.deregister_stream_consumer]
 
 ```python
 def deregister_stream_consumer(
@@ -186,7 +186,7 @@ def deregister_stream_consumer(
 
 Type annotations for `boto3.client("kinesis").describe_limits` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_limits]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_limits]
 
 ```python
 def describe_limits(
@@ -199,7 +199,7 @@ def describe_limits(
 
 Type annotations for `boto3.client("kinesis").describe_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_stream]
 
 ```python
 def describe_stream(
@@ -215,7 +215,7 @@ def describe_stream(
 
 Type annotations for `boto3.client("kinesis").describe_stream_consumer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_stream_consumer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_stream_consumer]
 
 ```python
 def describe_stream_consumer(
@@ -231,7 +231,7 @@ def describe_stream_consumer(
 
 Type annotations for `boto3.client("kinesis").describe_stream_summary` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_stream_summary]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_stream_summary]
 
 ```python
 def describe_stream_summary(
@@ -245,7 +245,7 @@ def describe_stream_summary(
 
 Type annotations for `boto3.client("kinesis").disable_enhanced_monitoring` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.disable_enhanced_monitoring]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.disable_enhanced_monitoring]
 
 ```python
 def disable_enhanced_monitoring(
@@ -260,7 +260,7 @@ def disable_enhanced_monitoring(
 
 Type annotations for `boto3.client("kinesis").enable_enhanced_monitoring` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.enable_enhanced_monitoring]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.enable_enhanced_monitoring]
 
 ```python
 def enable_enhanced_monitoring(
@@ -275,7 +275,7 @@ def enable_enhanced_monitoring(
 
 Type annotations for `boto3.client("kinesis").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -292,7 +292,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("kinesis").get_records` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.get_records]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.get_records]
 
 ```python
 def get_records(
@@ -307,7 +307,7 @@ def get_records(
 
 Type annotations for `boto3.client("kinesis").get_shard_iterator` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.get_shard_iterator]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.get_shard_iterator]
 
 ```python
 def get_shard_iterator(
@@ -325,7 +325,7 @@ def get_shard_iterator(
 
 Type annotations for `boto3.client("kinesis").increase_stream_retention_period` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.increase_stream_retention_period]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.increase_stream_retention_period]
 
 ```python
 def increase_stream_retention_period(
@@ -340,7 +340,7 @@ def increase_stream_retention_period(
 
 Type annotations for `boto3.client("kinesis").list_shards` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_shards]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_shards]
 
 ```python
 def list_shards(
@@ -359,7 +359,7 @@ def list_shards(
 
 Type annotations for `boto3.client("kinesis").list_stream_consumers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_stream_consumers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_stream_consumers]
 
 ```python
 def list_stream_consumers(
@@ -376,7 +376,7 @@ def list_stream_consumers(
 
 Type annotations for `boto3.client("kinesis").list_streams` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_streams]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_streams]
 
 ```python
 def list_streams(
@@ -391,7 +391,7 @@ def list_streams(
 
 Type annotations for `boto3.client("kinesis").list_tags_for_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_tags_for_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_tags_for_stream]
 
 ```python
 def list_tags_for_stream(
@@ -407,7 +407,7 @@ def list_tags_for_stream(
 
 Type annotations for `boto3.client("kinesis").merge_shards` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.merge_shards]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.merge_shards]
 
 ```python
 def merge_shards(
@@ -423,7 +423,7 @@ def merge_shards(
 
 Type annotations for `boto3.client("kinesis").put_record` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.put_record]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.put_record]
 
 ```python
 def put_record(
@@ -441,7 +441,7 @@ def put_record(
 
 Type annotations for `boto3.client("kinesis").put_records` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.put_records]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.put_records]
 
 ```python
 def put_records(
@@ -456,7 +456,7 @@ def put_records(
 
 Type annotations for `boto3.client("kinesis").register_stream_consumer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.register_stream_consumer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.register_stream_consumer]
 
 ```python
 def register_stream_consumer(
@@ -471,7 +471,7 @@ def register_stream_consumer(
 
 Type annotations for `boto3.client("kinesis").remove_tags_from_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.remove_tags_from_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.remove_tags_from_stream]
 
 ```python
 def remove_tags_from_stream(
@@ -486,7 +486,7 @@ def remove_tags_from_stream(
 
 Type annotations for `boto3.client("kinesis").split_shard` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.split_shard]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.split_shard]
 
 ```python
 def split_shard(
@@ -502,7 +502,7 @@ def split_shard(
 
 Type annotations for `boto3.client("kinesis").start_stream_encryption` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.start_stream_encryption]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.start_stream_encryption]
 
 ```python
 def start_stream_encryption(
@@ -518,7 +518,7 @@ def start_stream_encryption(
 
 Type annotations for `boto3.client("kinesis").stop_stream_encryption` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.stop_stream_encryption]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.stop_stream_encryption]
 
 ```python
 def stop_stream_encryption(
@@ -534,7 +534,7 @@ def stop_stream_encryption(
 
 Type annotations for `boto3.client("kinesis").subscribe_to_shard` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.subscribe_to_shard]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.subscribe_to_shard]
 
 ```python
 def subscribe_to_shard(
@@ -550,7 +550,7 @@ def subscribe_to_shard(
 
 Type annotations for `boto3.client("kinesis").update_shard_count` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.update_shard_count]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.update_shard_count]
 
 ```python
 def update_shard_count(

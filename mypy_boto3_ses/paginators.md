@@ -25,7 +25,7 @@ def get_list_configuration_sets_paginator() -> ListConfigurationSetsPaginator:
     return boto3.client("ses").get_paginator("list_configuration_sets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListConfigurationSets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListConfigurationSets)
 
 ```python
 class ListConfigurationSetsPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_list_custom_verification_email_templates_paginator() -> ListCustomVerifi
     return boto3.client("ses").get_paginator("list_custom_verification_email_templates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListCustomVerificationEmailTemplates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListCustomVerificationEmailTemplates)
 
 ```python
 class ListCustomVerificationEmailTemplatesPaginator(Boto3Paginator):
@@ -71,7 +71,7 @@ def get_list_identities_paginator() -> ListIdentitiesPaginator:
     return boto3.client("ses").get_paginator("list_identities")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListIdentities)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListIdentities)
 
 ```python
 class ListIdentitiesPaginator(Boto3Paginator):
@@ -95,7 +95,7 @@ def get_list_receipt_rule_sets_paginator() -> ListReceiptRuleSetsPaginator:
     return boto3.client("ses").get_paginator("list_receipt_rule_sets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListReceiptRuleSets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListReceiptRuleSets)
 
 ```python
 class ListReceiptRuleSetsPaginator(Boto3Paginator):
@@ -118,7 +118,7 @@ def get_list_templates_paginator() -> ListTemplatesPaginator:
     return boto3.client("ses").get_paginator("list_templates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListTemplates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListTemplates)
 
 ```python
 class ListTemplatesPaginator(Boto3Paginator):

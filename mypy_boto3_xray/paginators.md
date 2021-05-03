@@ -28,7 +28,7 @@ def get_batch_get_traces_paginator() -> BatchGetTracesPaginator:
     return boto3.client("xray").get_paginator("batch_get_traces")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.BatchGetTraces)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.BatchGetTraces)
 
 ```python
 class BatchGetTracesPaginator(Boto3Paginator):
@@ -52,7 +52,7 @@ def get_get_groups_paginator() -> GetGroupsPaginator:
     return boto3.client("xray").get_paginator("get_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetGroups)
 
 ```python
 class GetGroupsPaginator(Boto3Paginator):
@@ -75,7 +75,7 @@ def get_get_sampling_rules_paginator() -> GetSamplingRulesPaginator:
     return boto3.client("xray").get_paginator("get_sampling_rules")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetSamplingRules)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetSamplingRules)
 
 ```python
 class GetSamplingRulesPaginator(Boto3Paginator):
@@ -98,7 +98,7 @@ def get_get_sampling_statistic_summaries_paginator() -> GetSamplingStatisticSumm
     return boto3.client("xray").get_paginator("get_sampling_statistic_summaries")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetSamplingStatisticSummaries)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetSamplingStatisticSummaries)
 
 ```python
 class GetSamplingStatisticSummariesPaginator(Boto3Paginator):
@@ -121,7 +121,7 @@ def get_get_service_graph_paginator() -> GetServiceGraphPaginator:
     return boto3.client("xray").get_paginator("get_service_graph")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetServiceGraph)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetServiceGraph)
 
 ```python
 class GetServiceGraphPaginator(Boto3Paginator):
@@ -148,7 +148,7 @@ def get_get_time_series_service_statistics_paginator() -> GetTimeSeriesServiceSt
     return boto3.client("xray").get_paginator("get_time_series_service_statistics")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetTimeSeriesServiceStatistics)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetTimeSeriesServiceStatistics)
 
 ```python
 class GetTimeSeriesServiceStatisticsPaginator(Boto3Paginator):
@@ -178,7 +178,7 @@ def get_get_trace_graph_paginator() -> GetTraceGraphPaginator:
     return boto3.client("xray").get_paginator("get_trace_graph")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetTraceGraph)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetTraceGraph)
 
 ```python
 class GetTraceGraphPaginator(Boto3Paginator):
@@ -202,7 +202,7 @@ def get_get_trace_summaries_paginator() -> GetTraceSummariesPaginator:
     return boto3.client("xray").get_paginator("get_trace_summaries")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetTraceSummaries)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetTraceSummaries)
 
 ```python
 class GetTraceSummariesPaginator(Boto3Paginator):

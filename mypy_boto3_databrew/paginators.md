@@ -27,7 +27,7 @@ def get_list_datasets_paginator() -> ListDatasetsPaginator:
     return boto3.client("databrew").get_paginator("list_datasets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListDatasets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListDatasets)
 
 ```python
 class ListDatasetsPaginator(Boto3Paginator):
@@ -50,7 +50,7 @@ def get_list_job_runs_paginator() -> ListJobRunsPaginator:
     return boto3.client("databrew").get_paginator("list_job_runs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListJobRuns)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListJobRuns)
 
 ```python
 class ListJobRunsPaginator(Boto3Paginator):
@@ -74,7 +74,7 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("databrew").get_paginator("list_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListJobs)
 
 ```python
 class ListJobsPaginator(Boto3Paginator):
@@ -99,7 +99,7 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("databrew").get_paginator("list_projects")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListProjects)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListProjects)
 
 ```python
 class ListProjectsPaginator(Boto3Paginator):
@@ -122,7 +122,7 @@ def get_list_recipe_versions_paginator() -> ListRecipeVersionsPaginator:
     return boto3.client("databrew").get_paginator("list_recipe_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListRecipeVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListRecipeVersions)
 
 ```python
 class ListRecipeVersionsPaginator(Boto3Paginator):
@@ -146,7 +146,7 @@ def get_list_recipes_paginator() -> ListRecipesPaginator:
     return boto3.client("databrew").get_paginator("list_recipes")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListRecipes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListRecipes)
 
 ```python
 class ListRecipesPaginator(Boto3Paginator):
@@ -170,7 +170,7 @@ def get_list_schedules_paginator() -> ListSchedulesPaginator:
     return boto3.client("databrew").get_paginator("list_schedules")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListSchedules)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListSchedules)
 
 ```python
 class ListSchedulesPaginator(Boto3Paginator):

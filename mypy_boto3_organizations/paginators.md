@@ -36,7 +36,7 @@ def get_list_aws_service_access_for_organization_paginator() -> ListAWSServiceAc
     return boto3.client("organizations").get_paginator("list_aws_service_access_for_organization")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListAWSServiceAccessForOrganization)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListAWSServiceAccessForOrganization)
 
 ```python
 class ListAWSServiceAccessForOrganizationPaginator(Boto3Paginator):
@@ -59,7 +59,7 @@ def get_list_accounts_paginator() -> ListAccountsPaginator:
     return boto3.client("organizations").get_paginator("list_accounts")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListAccounts)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListAccounts)
 
 ```python
 class ListAccountsPaginator(Boto3Paginator):
@@ -82,7 +82,7 @@ def get_list_accounts_for_parent_paginator() -> ListAccountsForParentPaginator:
     return boto3.client("organizations").get_paginator("list_accounts_for_parent")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListAccountsForParent)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListAccountsForParent)
 
 ```python
 class ListAccountsForParentPaginator(Boto3Paginator):
@@ -106,7 +106,7 @@ def get_list_children_paginator() -> ListChildrenPaginator:
     return boto3.client("organizations").get_paginator("list_children")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListChildren)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListChildren)
 
 ```python
 class ListChildrenPaginator(Boto3Paginator):
@@ -131,7 +131,7 @@ def get_list_create_account_status_paginator() -> ListCreateAccountStatusPaginat
     return boto3.client("organizations").get_paginator("list_create_account_status")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListCreateAccountStatus)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListCreateAccountStatus)
 
 ```python
 class ListCreateAccountStatusPaginator(Boto3Paginator):
@@ -155,7 +155,7 @@ def get_list_delegated_administrators_paginator() -> ListDelegatedAdministrators
     return boto3.client("organizations").get_paginator("list_delegated_administrators")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListDelegatedAdministrators)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListDelegatedAdministrators)
 
 ```python
 class ListDelegatedAdministratorsPaginator(Boto3Paginator):
@@ -179,7 +179,7 @@ def get_list_delegated_services_for_account_paginator() -> ListDelegatedServices
     return boto3.client("organizations").get_paginator("list_delegated_services_for_account")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListDelegatedServicesForAccount)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListDelegatedServicesForAccount)
 
 ```python
 class ListDelegatedServicesForAccountPaginator(Boto3Paginator):
@@ -203,7 +203,7 @@ def get_list_handshakes_for_account_paginator() -> ListHandshakesForAccountPagin
     return boto3.client("organizations").get_paginator("list_handshakes_for_account")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListHandshakesForAccount)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListHandshakesForAccount)
 
 ```python
 class ListHandshakesForAccountPaginator(Boto3Paginator):
@@ -227,7 +227,7 @@ def get_list_handshakes_for_organization_paginator() -> ListHandshakesForOrganiz
     return boto3.client("organizations").get_paginator("list_handshakes_for_organization")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListHandshakesForOrganization)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListHandshakesForOrganization)
 
 ```python
 class ListHandshakesForOrganizationPaginator(Boto3Paginator):
@@ -251,7 +251,7 @@ def get_list_organizational_units_for_parent_paginator() -> ListOrganizationalUn
     return boto3.client("organizations").get_paginator("list_organizational_units_for_parent")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListOrganizationalUnitsForParent)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListOrganizationalUnitsForParent)
 
 ```python
 class ListOrganizationalUnitsForParentPaginator(Boto3Paginator):
@@ -275,7 +275,7 @@ def get_list_parents_paginator() -> ListParentsPaginator:
     return boto3.client("organizations").get_paginator("list_parents")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListParents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListParents)
 
 ```python
 class ListParentsPaginator(Boto3Paginator):
@@ -299,7 +299,7 @@ def get_list_policies_paginator() -> ListPoliciesPaginator:
     return boto3.client("organizations").get_paginator("list_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListPolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListPolicies)
 
 ```python
 class ListPoliciesPaginator(Boto3Paginator):
@@ -323,7 +323,7 @@ def get_list_policies_for_target_paginator() -> ListPoliciesForTargetPaginator:
     return boto3.client("organizations").get_paginator("list_policies_for_target")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListPoliciesForTarget)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListPoliciesForTarget)
 
 ```python
 class ListPoliciesForTargetPaginator(Boto3Paginator):
@@ -348,7 +348,7 @@ def get_list_roots_paginator() -> ListRootsPaginator:
     return boto3.client("organizations").get_paginator("list_roots")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListRoots)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListRoots)
 
 ```python
 class ListRootsPaginator(Boto3Paginator):
@@ -371,7 +371,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("organizations").get_paginator("list_tags_for_resource")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListTagsForResource)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):
@@ -395,7 +395,7 @@ def get_list_targets_for_policy_paginator() -> ListTargetsForPolicyPaginator:
     return boto3.client("organizations").get_paginator("list_targets_for_policy")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListTargetsForPolicy)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListTargetsForPolicy)
 
 ```python
 class ListTargetsForPolicyPaginator(Boto3Paginator):

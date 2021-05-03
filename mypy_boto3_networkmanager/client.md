@@ -61,7 +61,7 @@ def get_networkmanager_client() -> NetworkManagerClient:
     return boto3.client("networkmanager")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client)
 
 ## Exceptions
 
@@ -95,7 +95,7 @@ Exceptions:
 
 Type annotations for `boto3.client("networkmanager").associate_customer_gateway` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_customer_gateway]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_customer_gateway]
 
 ```python
 def associate_customer_gateway(
@@ -112,7 +112,7 @@ def associate_customer_gateway(
 
 Type annotations for `boto3.client("networkmanager").associate_link` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_link]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_link]
 
 ```python
 def associate_link(
@@ -128,7 +128,7 @@ def associate_link(
 
 Type annotations for `boto3.client("networkmanager").associate_transit_gateway_connect_peer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_transit_gateway_connect_peer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_transit_gateway_connect_peer]
 
 ```python
 def associate_transit_gateway_connect_peer(
@@ -145,7 +145,7 @@ def associate_transit_gateway_connect_peer(
 
 Type annotations for `boto3.client("networkmanager").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -159,7 +159,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("networkmanager").create_connection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_connection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_connection]
 
 ```python
 def create_connection(
@@ -179,7 +179,7 @@ def create_connection(
 
 Type annotations for `boto3.client("networkmanager").create_device` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_device]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_device]
 
 ```python
 def create_device(
@@ -202,7 +202,7 @@ def create_device(
 
 Type annotations for `boto3.client("networkmanager").create_global_network` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_global_network]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_global_network]
 
 ```python
 def create_global_network(
@@ -217,7 +217,7 @@ def create_global_network(
 
 Type annotations for `boto3.client("networkmanager").create_link` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_link]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_link]
 
 ```python
 def create_link(
@@ -237,7 +237,7 @@ def create_link(
 
 Type annotations for `boto3.client("networkmanager").create_site` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_site]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_site]
 
 ```python
 def create_site(
@@ -254,7 +254,7 @@ def create_site(
 
 Type annotations for `boto3.client("networkmanager").delete_connection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_connection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_connection]
 
 ```python
 def delete_connection(
@@ -269,7 +269,7 @@ def delete_connection(
 
 Type annotations for `boto3.client("networkmanager").delete_device` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_device]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_device]
 
 ```python
 def delete_device(
@@ -284,7 +284,7 @@ def delete_device(
 
 Type annotations for `boto3.client("networkmanager").delete_global_network` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_global_network]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_global_network]
 
 ```python
 def delete_global_network(
@@ -298,7 +298,7 @@ def delete_global_network(
 
 Type annotations for `boto3.client("networkmanager").delete_link` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_link]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_link]
 
 ```python
 def delete_link(
@@ -313,7 +313,7 @@ def delete_link(
 
 Type annotations for `boto3.client("networkmanager").delete_site` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_site]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_site]
 
 ```python
 def delete_site(
@@ -328,7 +328,7 @@ def delete_site(
 
 Type annotations for `boto3.client("networkmanager").deregister_transit_gateway` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.deregister_transit_gateway]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.deregister_transit_gateway]
 
 ```python
 def deregister_transit_gateway(
@@ -343,7 +343,7 @@ def deregister_transit_gateway(
 
 Type annotations for `boto3.client("networkmanager").describe_global_networks` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.describe_global_networks]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.describe_global_networks]
 
 ```python
 def describe_global_networks(
@@ -359,7 +359,7 @@ def describe_global_networks(
 
 Type annotations for `boto3.client("networkmanager").disassociate_customer_gateway` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_customer_gateway]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_customer_gateway]
 
 ```python
 def disassociate_customer_gateway(
@@ -374,7 +374,7 @@ def disassociate_customer_gateway(
 
 Type annotations for `boto3.client("networkmanager").disassociate_link` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_link]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_link]
 
 ```python
 def disassociate_link(
@@ -390,7 +390,7 @@ def disassociate_link(
 
 Type annotations for `boto3.client("networkmanager").disassociate_transit_gateway_connect_peer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_transit_gateway_connect_peer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_transit_gateway_connect_peer]
 
 ```python
 def disassociate_transit_gateway_connect_peer(
@@ -405,7 +405,7 @@ def disassociate_transit_gateway_connect_peer(
 
 Type annotations for `boto3.client("networkmanager").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -422,7 +422,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("networkmanager").get_connections` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_connections]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_connections]
 
 ```python
 def get_connections(
@@ -440,7 +440,7 @@ def get_connections(
 
 Type annotations for `boto3.client("networkmanager").get_customer_gateway_associations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_customer_gateway_associations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_customer_gateway_associations]
 
 ```python
 def get_customer_gateway_associations(
@@ -457,7 +457,7 @@ def get_customer_gateway_associations(
 
 Type annotations for `boto3.client("networkmanager").get_devices` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_devices]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_devices]
 
 ```python
 def get_devices(
@@ -475,7 +475,7 @@ def get_devices(
 
 Type annotations for `boto3.client("networkmanager").get_link_associations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_link_associations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_link_associations]
 
 ```python
 def get_link_associations(
@@ -493,7 +493,7 @@ def get_link_associations(
 
 Type annotations for `boto3.client("networkmanager").get_links` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_links]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_links]
 
 ```python
 def get_links(
@@ -513,7 +513,7 @@ def get_links(
 
 Type annotations for `boto3.client("networkmanager").get_sites` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_sites]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_sites]
 
 ```python
 def get_sites(
@@ -530,7 +530,7 @@ def get_sites(
 
 Type annotations for `boto3.client("networkmanager").get_transit_gateway_connect_peer_associations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_connect_peer_associations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_connect_peer_associations]
 
 ```python
 def get_transit_gateway_connect_peer_associations(
@@ -547,7 +547,7 @@ def get_transit_gateway_connect_peer_associations(
 
 Type annotations for `boto3.client("networkmanager").get_transit_gateway_registrations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_registrations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_registrations]
 
 ```python
 def get_transit_gateway_registrations(
@@ -564,7 +564,7 @@ def get_transit_gateway_registrations(
 
 Type annotations for `boto3.client("networkmanager").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -578,7 +578,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("networkmanager").register_transit_gateway` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.register_transit_gateway]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.register_transit_gateway]
 
 ```python
 def register_transit_gateway(
@@ -593,7 +593,7 @@ def register_transit_gateway(
 
 Type annotations for `boto3.client("networkmanager").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -608,7 +608,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("networkmanager").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -623,7 +623,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("networkmanager").update_connection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_connection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_connection]
 
 ```python
 def update_connection(
@@ -641,7 +641,7 @@ def update_connection(
 
 Type annotations for `boto3.client("networkmanager").update_device` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_device]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_device]
 
 ```python
 def update_device(
@@ -664,7 +664,7 @@ def update_device(
 
 Type annotations for `boto3.client("networkmanager").update_global_network` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_global_network]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_global_network]
 
 ```python
 def update_global_network(
@@ -679,7 +679,7 @@ def update_global_network(
 
 Type annotations for `boto3.client("networkmanager").update_link` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_link]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_link]
 
 ```python
 def update_link(
@@ -698,7 +698,7 @@ def update_link(
 
 Type annotations for `boto3.client("networkmanager").update_site` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_site]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_site]
 
 ```python
 def update_site(

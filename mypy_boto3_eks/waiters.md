@@ -26,18 +26,14 @@ def get_addon_active_waiter() -> AddonActiveWaiter:
     return boto3.client("eks").get_waiter("addon_active")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.addon_active)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.addon_active)
 
-```python
-class AddonActiveWaiter(Boto3Waiter):
-    def wait(
-        self,
-        clusterName: str,
-        addonName: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `AddonActiveWaiter.wait` method:
+
+- `clusterName`: `str` *(required)*
+- `addonName`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#waiterconfigtypedef)
+
 ## AddonDeletedWaiter
 
 Type annotations for `boto3.client("eks").get_waiter("addon_deleted")`.
@@ -51,18 +47,14 @@ def get_addon_deleted_waiter() -> AddonDeletedWaiter:
     return boto3.client("eks").get_waiter("addon_deleted")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.addon_deleted)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.addon_deleted)
 
-```python
-class AddonDeletedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        clusterName: str,
-        addonName: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `AddonDeletedWaiter.wait` method:
+
+- `clusterName`: `str` *(required)*
+- `addonName`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#waiterconfigtypedef)
+
 ## ClusterActiveWaiter
 
 Type annotations for `boto3.client("eks").get_waiter("cluster_active")`.
@@ -76,17 +68,13 @@ def get_cluster_active_waiter() -> ClusterActiveWaiter:
     return boto3.client("eks").get_waiter("cluster_active")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.cluster_active)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.cluster_active)
 
-```python
-class ClusterActiveWaiter(Boto3Waiter):
-    def wait(
-        self,
-        name: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `ClusterActiveWaiter.wait` method:
+
+- `name`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#waiterconfigtypedef)
+
 ## ClusterDeletedWaiter
 
 Type annotations for `boto3.client("eks").get_waiter("cluster_deleted")`.
@@ -100,17 +88,13 @@ def get_cluster_deleted_waiter() -> ClusterDeletedWaiter:
     return boto3.client("eks").get_waiter("cluster_deleted")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.cluster_deleted)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.cluster_deleted)
 
-```python
-class ClusterDeletedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        name: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `ClusterDeletedWaiter.wait` method:
+
+- `name`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#waiterconfigtypedef)
+
 ## NodegroupActiveWaiter
 
 Type annotations for `boto3.client("eks").get_waiter("nodegroup_active")`.
@@ -124,18 +108,14 @@ def get_nodegroup_active_waiter() -> NodegroupActiveWaiter:
     return boto3.client("eks").get_waiter("nodegroup_active")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.nodegroup_active)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.nodegroup_active)
 
-```python
-class NodegroupActiveWaiter(Boto3Waiter):
-    def wait(
-        self,
-        clusterName: str,
-        nodegroupName: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `NodegroupActiveWaiter.wait` method:
+
+- `clusterName`: `str` *(required)*
+- `nodegroupName`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#waiterconfigtypedef)
+
 ## NodegroupDeletedWaiter
 
 Type annotations for `boto3.client("eks").get_waiter("nodegroup_deleted")`.
@@ -149,15 +129,10 @@ def get_nodegroup_deleted_waiter() -> NodegroupDeletedWaiter:
     return boto3.client("eks").get_waiter("nodegroup_deleted")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.nodegroup_deleted)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.nodegroup_deleted)
 
-```python
-class NodegroupDeletedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        clusterName: str,
-        nodegroupName: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `NodegroupDeletedWaiter.wait` method:
+
+- `clusterName`: `str` *(required)*
+- `nodegroupName`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#waiterconfigtypedef)

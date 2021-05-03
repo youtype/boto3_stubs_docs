@@ -30,7 +30,7 @@ def get_lex-runtime_client() -> LexRuntimeServiceClient:
     return boto3.client("lex-runtime")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client)
 
 ## Exceptions
 
@@ -68,7 +68,7 @@ Exceptions:
 
 Type annotations for `boto3.client("lex-runtime").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -82,7 +82,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("lex-runtime").delete_session` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.delete_session]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.delete_session]
 
 ```python
 def delete_session(
@@ -98,7 +98,7 @@ def delete_session(
 
 Type annotations for `boto3.client("lex-runtime").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -115,7 +115,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("lex-runtime").get_session` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.get_session]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.get_session]
 
 ```python
 def get_session(
@@ -132,7 +132,7 @@ def get_session(
 
 Type annotations for `boto3.client("lex-runtime").post_content` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.post_content]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.post_content]
 
 ```python
 def post_content(
@@ -154,7 +154,7 @@ def post_content(
 
 Type annotations for `boto3.client("lex-runtime").post_text` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.post_text]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.post_text]
 
 ```python
 def post_text(
@@ -174,7 +174,7 @@ def post_text(
 
 Type annotations for `boto3.client("lex-runtime").put_session` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.put_session]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.put_session]
 
 ```python
 def put_session(

@@ -37,7 +37,7 @@ def get_firehose_client() -> FirehoseClient:
     return boto3.client("firehose")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client)
 
 ## Exceptions
 
@@ -71,7 +71,7 @@ Exceptions:
 
 Type annotations for `boto3.client("firehose").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -85,7 +85,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("firehose").create_delivery_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.create_delivery_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.create_delivery_stream]
 
 ```python
 def create_delivery_stream(
@@ -109,7 +109,7 @@ def create_delivery_stream(
 
 Type annotations for `boto3.client("firehose").delete_delivery_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.delete_delivery_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.delete_delivery_stream]
 
 ```python
 def delete_delivery_stream(
@@ -124,7 +124,7 @@ def delete_delivery_stream(
 
 Type annotations for `boto3.client("firehose").describe_delivery_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.describe_delivery_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.describe_delivery_stream]
 
 ```python
 def describe_delivery_stream(
@@ -140,7 +140,7 @@ def describe_delivery_stream(
 
 Type annotations for `boto3.client("firehose").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -157,7 +157,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("firehose").list_delivery_streams` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.list_delivery_streams]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.list_delivery_streams]
 
 ```python
 def list_delivery_streams(
@@ -173,7 +173,7 @@ def list_delivery_streams(
 
 Type annotations for `boto3.client("firehose").list_tags_for_delivery_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.list_tags_for_delivery_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.list_tags_for_delivery_stream]
 
 ```python
 def list_tags_for_delivery_stream(
@@ -189,7 +189,7 @@ def list_tags_for_delivery_stream(
 
 Type annotations for `boto3.client("firehose").put_record` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.put_record]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.put_record]
 
 ```python
 def put_record(
@@ -204,7 +204,7 @@ def put_record(
 
 Type annotations for `boto3.client("firehose").put_record_batch` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.put_record_batch]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.put_record_batch]
 
 ```python
 def put_record_batch(
@@ -219,7 +219,7 @@ def put_record_batch(
 
 Type annotations for `boto3.client("firehose").start_delivery_stream_encryption` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.start_delivery_stream_encryption]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.start_delivery_stream_encryption]
 
 ```python
 def start_delivery_stream_encryption(
@@ -234,7 +234,7 @@ def start_delivery_stream_encryption(
 
 Type annotations for `boto3.client("firehose").stop_delivery_stream_encryption` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.stop_delivery_stream_encryption]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.stop_delivery_stream_encryption]
 
 ```python
 def stop_delivery_stream_encryption(
@@ -248,7 +248,7 @@ def stop_delivery_stream_encryption(
 
 Type annotations for `boto3.client("firehose").tag_delivery_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.tag_delivery_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.tag_delivery_stream]
 
 ```python
 def tag_delivery_stream(
@@ -263,7 +263,7 @@ def tag_delivery_stream(
 
 Type annotations for `boto3.client("firehose").untag_delivery_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.untag_delivery_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.untag_delivery_stream]
 
 ```python
 def untag_delivery_stream(
@@ -278,7 +278,7 @@ def untag_delivery_stream(
 
 Type annotations for `boto3.client("firehose").update_destination` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.update_destination]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.update_destination]
 
 ```python
 def update_destination(

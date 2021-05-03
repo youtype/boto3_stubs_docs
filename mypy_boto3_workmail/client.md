@@ -80,7 +80,7 @@ def get_workmail_client() -> WorkMailClient:
     return boto3.client("workmail")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client)
 
 ## Exceptions
 
@@ -127,7 +127,7 @@ Exceptions:
 
 Type annotations for `boto3.client("workmail").associate_delegate_to_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.associate_delegate_to_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.associate_delegate_to_resource]
 
 ```python
 def associate_delegate_to_resource(
@@ -143,7 +143,7 @@ def associate_delegate_to_resource(
 
 Type annotations for `boto3.client("workmail").associate_member_to_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.associate_member_to_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.associate_member_to_group]
 
 ```python
 def associate_member_to_group(
@@ -159,7 +159,7 @@ def associate_member_to_group(
 
 Type annotations for `boto3.client("workmail").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -173,7 +173,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("workmail").cancel_mailbox_export_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.cancel_mailbox_export_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.cancel_mailbox_export_job]
 
 ```python
 def cancel_mailbox_export_job(
@@ -189,7 +189,7 @@ def cancel_mailbox_export_job(
 
 Type annotations for `boto3.client("workmail").create_alias` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_alias]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_alias]
 
 ```python
 def create_alias(
@@ -205,7 +205,7 @@ def create_alias(
 
 Type annotations for `boto3.client("workmail").create_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_group]
 
 ```python
 def create_group(
@@ -220,7 +220,7 @@ def create_group(
 
 Type annotations for `boto3.client("workmail").create_mobile_device_access_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_mobile_device_access_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_mobile_device_access_rule]
 
 ```python
 def create_mobile_device_access_rule(
@@ -246,7 +246,7 @@ def create_mobile_device_access_rule(
 
 Type annotations for `boto3.client("workmail").create_organization` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_organization]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_organization]
 
 ```python
 def create_organization(
@@ -265,7 +265,7 @@ def create_organization(
 
 Type annotations for `boto3.client("workmail").create_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_resource]
 
 ```python
 def create_resource(
@@ -281,7 +281,7 @@ def create_resource(
 
 Type annotations for `boto3.client("workmail").create_user` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_user]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_user]
 
 ```python
 def create_user(
@@ -298,7 +298,7 @@ def create_user(
 
 Type annotations for `boto3.client("workmail").delete_access_control_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_access_control_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_access_control_rule]
 
 ```python
 def delete_access_control_rule(
@@ -313,7 +313,7 @@ def delete_access_control_rule(
 
 Type annotations for `boto3.client("workmail").delete_alias` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_alias]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_alias]
 
 ```python
 def delete_alias(
@@ -329,7 +329,7 @@ def delete_alias(
 
 Type annotations for `boto3.client("workmail").delete_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_group]
 
 ```python
 def delete_group(
@@ -344,7 +344,7 @@ def delete_group(
 
 Type annotations for `boto3.client("workmail").delete_mailbox_permissions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mailbox_permissions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mailbox_permissions]
 
 ```python
 def delete_mailbox_permissions(
@@ -360,7 +360,7 @@ def delete_mailbox_permissions(
 
 Type annotations for `boto3.client("workmail").delete_mobile_device_access_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mobile_device_access_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mobile_device_access_rule]
 
 ```python
 def delete_mobile_device_access_rule(
@@ -375,7 +375,7 @@ def delete_mobile_device_access_rule(
 
 Type annotations for `boto3.client("workmail").delete_organization` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_organization]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_organization]
 
 ```python
 def delete_organization(
@@ -391,7 +391,7 @@ def delete_organization(
 
 Type annotations for `boto3.client("workmail").delete_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_resource]
 
 ```python
 def delete_resource(
@@ -406,7 +406,7 @@ def delete_resource(
 
 Type annotations for `boto3.client("workmail").delete_retention_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_retention_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_retention_policy]
 
 ```python
 def delete_retention_policy(
@@ -421,7 +421,7 @@ def delete_retention_policy(
 
 Type annotations for `boto3.client("workmail").delete_user` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_user]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_user]
 
 ```python
 def delete_user(
@@ -436,7 +436,7 @@ def delete_user(
 
 Type annotations for `boto3.client("workmail").deregister_from_work_mail` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.deregister_from_work_mail]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.deregister_from_work_mail]
 
 ```python
 def deregister_from_work_mail(
@@ -451,7 +451,7 @@ def deregister_from_work_mail(
 
 Type annotations for `boto3.client("workmail").describe_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_group]
 
 ```python
 def describe_group(
@@ -466,7 +466,7 @@ def describe_group(
 
 Type annotations for `boto3.client("workmail").describe_mailbox_export_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_mailbox_export_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_mailbox_export_job]
 
 ```python
 def describe_mailbox_export_job(
@@ -481,7 +481,7 @@ def describe_mailbox_export_job(
 
 Type annotations for `boto3.client("workmail").describe_organization` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_organization]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_organization]
 
 ```python
 def describe_organization(
@@ -495,7 +495,7 @@ def describe_organization(
 
 Type annotations for `boto3.client("workmail").describe_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_resource]
 
 ```python
 def describe_resource(
@@ -510,7 +510,7 @@ def describe_resource(
 
 Type annotations for `boto3.client("workmail").describe_user` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_user]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_user]
 
 ```python
 def describe_user(
@@ -525,7 +525,7 @@ def describe_user(
 
 Type annotations for `boto3.client("workmail").disassociate_delegate_from_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.disassociate_delegate_from_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.disassociate_delegate_from_resource]
 
 ```python
 def disassociate_delegate_from_resource(
@@ -541,7 +541,7 @@ def disassociate_delegate_from_resource(
 
 Type annotations for `boto3.client("workmail").disassociate_member_from_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.disassociate_member_from_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.disassociate_member_from_group]
 
 ```python
 def disassociate_member_from_group(
@@ -557,7 +557,7 @@ def disassociate_member_from_group(
 
 Type annotations for `boto3.client("workmail").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -574,7 +574,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("workmail").get_access_control_effect` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_access_control_effect]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_access_control_effect]
 
 ```python
 def get_access_control_effect(
@@ -591,7 +591,7 @@ def get_access_control_effect(
 
 Type annotations for `boto3.client("workmail").get_default_retention_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_default_retention_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_default_retention_policy]
 
 ```python
 def get_default_retention_policy(
@@ -605,7 +605,7 @@ def get_default_retention_policy(
 
 Type annotations for `boto3.client("workmail").get_mailbox_details` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mailbox_details]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mailbox_details]
 
 ```python
 def get_mailbox_details(
@@ -620,7 +620,7 @@ def get_mailbox_details(
 
 Type annotations for `boto3.client("workmail").get_mobile_device_access_effect` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mobile_device_access_effect]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mobile_device_access_effect]
 
 ```python
 def get_mobile_device_access_effect(
@@ -638,7 +638,7 @@ def get_mobile_device_access_effect(
 
 Type annotations for `boto3.client("workmail").list_access_control_rules` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_access_control_rules]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_access_control_rules]
 
 ```python
 def list_access_control_rules(
@@ -652,7 +652,7 @@ def list_access_control_rules(
 
 Type annotations for `boto3.client("workmail").list_aliases` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_aliases]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_aliases]
 
 ```python
 def list_aliases(
@@ -669,7 +669,7 @@ def list_aliases(
 
 Type annotations for `boto3.client("workmail").list_group_members` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_group_members]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_group_members]
 
 ```python
 def list_group_members(
@@ -686,7 +686,7 @@ def list_group_members(
 
 Type annotations for `boto3.client("workmail").list_groups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_groups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_groups]
 
 ```python
 def list_groups(
@@ -702,7 +702,7 @@ def list_groups(
 
 Type annotations for `boto3.client("workmail").list_mailbox_export_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mailbox_export_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mailbox_export_jobs]
 
 ```python
 def list_mailbox_export_jobs(
@@ -718,7 +718,7 @@ def list_mailbox_export_jobs(
 
 Type annotations for `boto3.client("workmail").list_mailbox_permissions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mailbox_permissions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mailbox_permissions]
 
 ```python
 def list_mailbox_permissions(
@@ -735,7 +735,7 @@ def list_mailbox_permissions(
 
 Type annotations for `boto3.client("workmail").list_mobile_device_access_rules` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mobile_device_access_rules]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mobile_device_access_rules]
 
 ```python
 def list_mobile_device_access_rules(
@@ -749,7 +749,7 @@ def list_mobile_device_access_rules(
 
 Type annotations for `boto3.client("workmail").list_organizations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_organizations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_organizations]
 
 ```python
 def list_organizations(
@@ -764,7 +764,7 @@ def list_organizations(
 
 Type annotations for `boto3.client("workmail").list_resource_delegates` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_resource_delegates]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_resource_delegates]
 
 ```python
 def list_resource_delegates(
@@ -781,7 +781,7 @@ def list_resource_delegates(
 
 Type annotations for `boto3.client("workmail").list_resources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_resources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_resources]
 
 ```python
 def list_resources(
@@ -797,7 +797,7 @@ def list_resources(
 
 Type annotations for `boto3.client("workmail").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -811,7 +811,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("workmail").list_users` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_users]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_users]
 
 ```python
 def list_users(
@@ -827,7 +827,7 @@ def list_users(
 
 Type annotations for `boto3.client("workmail").put_access_control_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_access_control_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_access_control_rule]
 
 ```python
 def put_access_control_rule(
@@ -850,7 +850,7 @@ def put_access_control_rule(
 
 Type annotations for `boto3.client("workmail").put_mailbox_permissions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_mailbox_permissions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_mailbox_permissions]
 
 ```python
 def put_mailbox_permissions(
@@ -867,7 +867,7 @@ def put_mailbox_permissions(
 
 Type annotations for `boto3.client("workmail").put_retention_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_retention_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_retention_policy]
 
 ```python
 def put_retention_policy(
@@ -885,7 +885,7 @@ def put_retention_policy(
 
 Type annotations for `boto3.client("workmail").register_to_work_mail` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.register_to_work_mail]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.register_to_work_mail]
 
 ```python
 def register_to_work_mail(
@@ -901,7 +901,7 @@ def register_to_work_mail(
 
 Type annotations for `boto3.client("workmail").reset_password` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.reset_password]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.reset_password]
 
 ```python
 def reset_password(
@@ -917,7 +917,7 @@ def reset_password(
 
 Type annotations for `boto3.client("workmail").start_mailbox_export_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.start_mailbox_export_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.start_mailbox_export_job]
 
 ```python
 def start_mailbox_export_job(
@@ -938,7 +938,7 @@ def start_mailbox_export_job(
 
 Type annotations for `boto3.client("workmail").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -953,7 +953,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("workmail").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -968,7 +968,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("workmail").update_mailbox_quota` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_mailbox_quota]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_mailbox_quota]
 
 ```python
 def update_mailbox_quota(
@@ -984,7 +984,7 @@ def update_mailbox_quota(
 
 Type annotations for `boto3.client("workmail").update_mobile_device_access_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_mobile_device_access_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_mobile_device_access_rule]
 
 ```python
 def update_mobile_device_access_rule(
@@ -1010,7 +1010,7 @@ def update_mobile_device_access_rule(
 
 Type annotations for `boto3.client("workmail").update_primary_email_address` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_primary_email_address]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_primary_email_address]
 
 ```python
 def update_primary_email_address(
@@ -1026,7 +1026,7 @@ def update_primary_email_address(
 
 Type annotations for `boto3.client("workmail").update_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_resource]
 
 ```python
 def update_resource(

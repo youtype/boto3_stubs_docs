@@ -24,7 +24,7 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("codestar").get_paginator("list_projects")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListProjects)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListProjects)
 
 ```python
 class ListProjectsPaginator(Boto3Paginator):
@@ -47,7 +47,7 @@ def get_list_resources_paginator() -> ListResourcesPaginator:
     return boto3.client("codestar").get_paginator("list_resources")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListResources)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListResources)
 
 ```python
 class ListResourcesPaginator(Boto3Paginator):
@@ -71,7 +71,7 @@ def get_list_team_members_paginator() -> ListTeamMembersPaginator:
     return boto3.client("codestar").get_paginator("list_team_members")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListTeamMembers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListTeamMembers)
 
 ```python
 class ListTeamMembersPaginator(Boto3Paginator):
@@ -95,7 +95,7 @@ def get_list_user_profiles_paginator() -> ListUserProfilesPaginator:
     return boto3.client("codestar").get_paginator("list_user_profiles")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListUserProfiles)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListUserProfiles)
 
 ```python
 class ListUserProfilesPaginator(Boto3Paginator):

@@ -92,7 +92,7 @@ def get_clouddirectory_client() -> CloudDirectoryClient:
     return boto3.client("clouddirectory")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client)
 
 ## Exceptions
 
@@ -154,7 +154,7 @@ Exceptions:
 
 Type annotations for `boto3.client("clouddirectory").add_facet_to_object` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.add_facet_to_object]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.add_facet_to_object]
 
 ```python
 def add_facet_to_object(
@@ -171,7 +171,7 @@ def add_facet_to_object(
 
 Type annotations for `boto3.client("clouddirectory").apply_schema` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.apply_schema]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.apply_schema]
 
 ```python
 def apply_schema(
@@ -186,7 +186,7 @@ def apply_schema(
 
 Type annotations for `boto3.client("clouddirectory").attach_object` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_object]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_object]
 
 ```python
 def attach_object(
@@ -203,7 +203,7 @@ def attach_object(
 
 Type annotations for `boto3.client("clouddirectory").attach_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_policy]
 
 ```python
 def attach_policy(
@@ -219,7 +219,7 @@ def attach_policy(
 
 Type annotations for `boto3.client("clouddirectory").attach_to_index` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_to_index]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_to_index]
 
 ```python
 def attach_to_index(
@@ -235,7 +235,7 @@ def attach_to_index(
 
 Type annotations for `boto3.client("clouddirectory").attach_typed_link` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_typed_link]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_typed_link]
 
 ```python
 def attach_typed_link(
@@ -253,7 +253,7 @@ def attach_typed_link(
 
 Type annotations for `boto3.client("clouddirectory").batch_read` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.batch_read]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.batch_read]
 
 ```python
 def batch_read(
@@ -269,7 +269,7 @@ def batch_read(
 
 Type annotations for `boto3.client("clouddirectory").batch_write` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.batch_write]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.batch_write]
 
 ```python
 def batch_write(
@@ -284,7 +284,7 @@ def batch_write(
 
 Type annotations for `boto3.client("clouddirectory").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -298,7 +298,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("clouddirectory").create_directory` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_directory]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_directory]
 
 ```python
 def create_directory(
@@ -313,7 +313,7 @@ def create_directory(
 
 Type annotations for `boto3.client("clouddirectory").create_facet` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_facet]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_facet]
 
 ```python
 def create_facet(
@@ -331,7 +331,7 @@ def create_facet(
 
 Type annotations for `boto3.client("clouddirectory").create_index` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_index]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_index]
 
 ```python
 def create_index(
@@ -349,7 +349,7 @@ def create_index(
 
 Type annotations for `boto3.client("clouddirectory").create_object` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_object]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_object]
 
 ```python
 def create_object(
@@ -367,7 +367,7 @@ def create_object(
 
 Type annotations for `boto3.client("clouddirectory").create_schema` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_schema]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_schema]
 
 ```python
 def create_schema(
@@ -381,7 +381,7 @@ def create_schema(
 
 Type annotations for `boto3.client("clouddirectory").create_typed_link_facet` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_typed_link_facet]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_typed_link_facet]
 
 ```python
 def create_typed_link_facet(
@@ -396,7 +396,7 @@ def create_typed_link_facet(
 
 Type annotations for `boto3.client("clouddirectory").delete_directory` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_directory]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_directory]
 
 ```python
 def delete_directory(
@@ -410,7 +410,7 @@ def delete_directory(
 
 Type annotations for `boto3.client("clouddirectory").delete_facet` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_facet]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_facet]
 
 ```python
 def delete_facet(
@@ -425,7 +425,7 @@ def delete_facet(
 
 Type annotations for `boto3.client("clouddirectory").delete_object` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_object]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_object]
 
 ```python
 def delete_object(
@@ -440,7 +440,7 @@ def delete_object(
 
 Type annotations for `boto3.client("clouddirectory").delete_schema` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_schema]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_schema]
 
 ```python
 def delete_schema(
@@ -454,7 +454,7 @@ def delete_schema(
 
 Type annotations for `boto3.client("clouddirectory").delete_typed_link_facet` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_typed_link_facet]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_typed_link_facet]
 
 ```python
 def delete_typed_link_facet(
@@ -469,7 +469,7 @@ def delete_typed_link_facet(
 
 Type annotations for `boto3.client("clouddirectory").detach_from_index` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_from_index]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_from_index]
 
 ```python
 def detach_from_index(
@@ -485,7 +485,7 @@ def detach_from_index(
 
 Type annotations for `boto3.client("clouddirectory").detach_object` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_object]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_object]
 
 ```python
 def detach_object(
@@ -501,7 +501,7 @@ def detach_object(
 
 Type annotations for `boto3.client("clouddirectory").detach_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_policy]
 
 ```python
 def detach_policy(
@@ -517,7 +517,7 @@ def detach_policy(
 
 Type annotations for `boto3.client("clouddirectory").detach_typed_link` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_typed_link]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_typed_link]
 
 ```python
 def detach_typed_link(
@@ -532,7 +532,7 @@ def detach_typed_link(
 
 Type annotations for `boto3.client("clouddirectory").disable_directory` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.disable_directory]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.disable_directory]
 
 ```python
 def disable_directory(
@@ -546,7 +546,7 @@ def disable_directory(
 
 Type annotations for `boto3.client("clouddirectory").enable_directory` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.enable_directory]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.enable_directory]
 
 ```python
 def enable_directory(
@@ -560,7 +560,7 @@ def enable_directory(
 
 Type annotations for `boto3.client("clouddirectory").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -577,7 +577,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("clouddirectory").get_applied_schema_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_applied_schema_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_applied_schema_version]
 
 ```python
 def get_applied_schema_version(
@@ -591,7 +591,7 @@ def get_applied_schema_version(
 
 Type annotations for `boto3.client("clouddirectory").get_directory` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_directory]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_directory]
 
 ```python
 def get_directory(
@@ -605,7 +605,7 @@ def get_directory(
 
 Type annotations for `boto3.client("clouddirectory").get_facet` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_facet]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_facet]
 
 ```python
 def get_facet(
@@ -620,7 +620,7 @@ def get_facet(
 
 Type annotations for `boto3.client("clouddirectory").get_link_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_link_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_link_attributes]
 
 ```python
 def get_link_attributes(
@@ -637,7 +637,7 @@ def get_link_attributes(
 
 Type annotations for `boto3.client("clouddirectory").get_object_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_object_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_object_attributes]
 
 ```python
 def get_object_attributes(
@@ -655,7 +655,7 @@ def get_object_attributes(
 
 Type annotations for `boto3.client("clouddirectory").get_object_information` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_object_information]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_object_information]
 
 ```python
 def get_object_information(
@@ -671,7 +671,7 @@ def get_object_information(
 
 Type annotations for `boto3.client("clouddirectory").get_schema_as_json` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_schema_as_json]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_schema_as_json]
 
 ```python
 def get_schema_as_json(
@@ -685,7 +685,7 @@ def get_schema_as_json(
 
 Type annotations for `boto3.client("clouddirectory").get_typed_link_facet_information` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_typed_link_facet_information]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_typed_link_facet_information]
 
 ```python
 def get_typed_link_facet_information(
@@ -700,7 +700,7 @@ def get_typed_link_facet_information(
 
 Type annotations for `boto3.client("clouddirectory").list_applied_schema_arns` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_applied_schema_arns]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_applied_schema_arns]
 
 ```python
 def list_applied_schema_arns(
@@ -717,7 +717,7 @@ def list_applied_schema_arns(
 
 Type annotations for `boto3.client("clouddirectory").list_attached_indices` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_attached_indices]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_attached_indices]
 
 ```python
 def list_attached_indices(
@@ -735,7 +735,7 @@ def list_attached_indices(
 
 Type annotations for `boto3.client("clouddirectory").list_development_schema_arns` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_development_schema_arns]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_development_schema_arns]
 
 ```python
 def list_development_schema_arns(
@@ -750,7 +750,7 @@ def list_development_schema_arns(
 
 Type annotations for `boto3.client("clouddirectory").list_directories` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_directories]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_directories]
 
 ```python
 def list_directories(
@@ -766,7 +766,7 @@ def list_directories(
 
 Type annotations for `boto3.client("clouddirectory").list_facet_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_facet_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_facet_attributes]
 
 ```python
 def list_facet_attributes(
@@ -783,7 +783,7 @@ def list_facet_attributes(
 
 Type annotations for `boto3.client("clouddirectory").list_facet_names` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_facet_names]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_facet_names]
 
 ```python
 def list_facet_names(
@@ -799,7 +799,7 @@ def list_facet_names(
 
 Type annotations for `boto3.client("clouddirectory").list_incoming_typed_links` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_incoming_typed_links]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_incoming_typed_links]
 
 ```python
 def list_incoming_typed_links(
@@ -819,7 +819,7 @@ def list_incoming_typed_links(
 
 Type annotations for `boto3.client("clouddirectory").list_index` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_index]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_index]
 
 ```python
 def list_index(
@@ -838,7 +838,7 @@ def list_index(
 
 Type annotations for `boto3.client("clouddirectory").list_managed_schema_arns` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_managed_schema_arns]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_managed_schema_arns]
 
 ```python
 def list_managed_schema_arns(
@@ -854,7 +854,7 @@ def list_managed_schema_arns(
 
 Type annotations for `boto3.client("clouddirectory").list_object_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_attributes]
 
 ```python
 def list_object_attributes(
@@ -873,7 +873,7 @@ def list_object_attributes(
 
 Type annotations for `boto3.client("clouddirectory").list_object_children` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_children]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_children]
 
 ```python
 def list_object_children(
@@ -891,7 +891,7 @@ def list_object_children(
 
 Type annotations for `boto3.client("clouddirectory").list_object_parent_paths` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_parent_paths]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_parent_paths]
 
 ```python
 def list_object_parent_paths(
@@ -908,7 +908,7 @@ def list_object_parent_paths(
 
 Type annotations for `boto3.client("clouddirectory").list_object_parents` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_parents]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_parents]
 
 ```python
 def list_object_parents(
@@ -927,7 +927,7 @@ def list_object_parents(
 
 Type annotations for `boto3.client("clouddirectory").list_object_policies` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_policies]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_policies]
 
 ```python
 def list_object_policies(
@@ -945,7 +945,7 @@ def list_object_policies(
 
 Type annotations for `boto3.client("clouddirectory").list_outgoing_typed_links` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_outgoing_typed_links]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_outgoing_typed_links]
 
 ```python
 def list_outgoing_typed_links(
@@ -965,7 +965,7 @@ def list_outgoing_typed_links(
 
 Type annotations for `boto3.client("clouddirectory").list_policy_attachments` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_policy_attachments]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_policy_attachments]
 
 ```python
 def list_policy_attachments(
@@ -983,7 +983,7 @@ def list_policy_attachments(
 
 Type annotations for `boto3.client("clouddirectory").list_published_schema_arns` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_published_schema_arns]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_published_schema_arns]
 
 ```python
 def list_published_schema_arns(
@@ -999,7 +999,7 @@ def list_published_schema_arns(
 
 Type annotations for `boto3.client("clouddirectory").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -1015,7 +1015,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("clouddirectory").list_typed_link_facet_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_typed_link_facet_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_typed_link_facet_attributes]
 
 ```python
 def list_typed_link_facet_attributes(
@@ -1032,7 +1032,7 @@ def list_typed_link_facet_attributes(
 
 Type annotations for `boto3.client("clouddirectory").list_typed_link_facet_names` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_typed_link_facet_names]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_typed_link_facet_names]
 
 ```python
 def list_typed_link_facet_names(
@@ -1048,7 +1048,7 @@ def list_typed_link_facet_names(
 
 Type annotations for `boto3.client("clouddirectory").lookup_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.lookup_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.lookup_policy]
 
 ```python
 def lookup_policy(
@@ -1065,7 +1065,7 @@ def lookup_policy(
 
 Type annotations for `boto3.client("clouddirectory").publish_schema` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.publish_schema]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.publish_schema]
 
 ```python
 def publish_schema(
@@ -1082,7 +1082,7 @@ def publish_schema(
 
 Type annotations for `boto3.client("clouddirectory").put_schema_from_json` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.put_schema_from_json]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.put_schema_from_json]
 
 ```python
 def put_schema_from_json(
@@ -1097,7 +1097,7 @@ def put_schema_from_json(
 
 Type annotations for `boto3.client("clouddirectory").remove_facet_from_object` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.remove_facet_from_object]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.remove_facet_from_object]
 
 ```python
 def remove_facet_from_object(
@@ -1113,7 +1113,7 @@ def remove_facet_from_object(
 
 Type annotations for `boto3.client("clouddirectory").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -1128,7 +1128,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("clouddirectory").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -1143,7 +1143,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("clouddirectory").update_facet` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_facet]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_facet]
 
 ```python
 def update_facet(
@@ -1160,7 +1160,7 @@ def update_facet(
 
 Type annotations for `boto3.client("clouddirectory").update_link_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_link_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_link_attributes]
 
 ```python
 def update_link_attributes(
@@ -1176,7 +1176,7 @@ def update_link_attributes(
 
 Type annotations for `boto3.client("clouddirectory").update_object_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_object_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_object_attributes]
 
 ```python
 def update_object_attributes(
@@ -1192,7 +1192,7 @@ def update_object_attributes(
 
 Type annotations for `boto3.client("clouddirectory").update_schema` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_schema]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_schema]
 
 ```python
 def update_schema(
@@ -1207,7 +1207,7 @@ def update_schema(
 
 Type annotations for `boto3.client("clouddirectory").update_typed_link_facet` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_typed_link_facet]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_typed_link_facet]
 
 ```python
 def update_typed_link_facet(
@@ -1224,7 +1224,7 @@ def update_typed_link_facet(
 
 Type annotations for `boto3.client("clouddirectory").upgrade_applied_schema` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.upgrade_applied_schema]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.upgrade_applied_schema]
 
 ```python
 def upgrade_applied_schema(
@@ -1240,7 +1240,7 @@ def upgrade_applied_schema(
 
 Type annotations for `boto3.client("clouddirectory").upgrade_published_schema` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.upgrade_published_schema]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.upgrade_published_schema]
 
 ```python
 def upgrade_published_schema(

@@ -28,17 +28,13 @@ def get_endpoint_deleted_waiter() -> EndpointDeletedWaiter:
     return boto3.client("sagemaker").get_waiter("endpoint_deleted")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.endpoint_deleted)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.endpoint_deleted)
 
-```python
-class EndpointDeletedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        EndpointName: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `EndpointDeletedWaiter.wait` method:
+
+- `EndpointName`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#waiterconfigtypedef)
+
 ## EndpointInServiceWaiter
 
 Type annotations for `boto3.client("sagemaker").get_waiter("endpoint_in_service")`.
@@ -52,17 +48,13 @@ def get_endpoint_in_service_waiter() -> EndpointInServiceWaiter:
     return boto3.client("sagemaker").get_waiter("endpoint_in_service")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.endpoint_in_service)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.endpoint_in_service)
 
-```python
-class EndpointInServiceWaiter(Boto3Waiter):
-    def wait(
-        self,
-        EndpointName: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `EndpointInServiceWaiter.wait` method:
+
+- `EndpointName`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#waiterconfigtypedef)
+
 ## NotebookInstanceDeletedWaiter
 
 Type annotations for `boto3.client("sagemaker").get_waiter("notebook_instance_deleted")`.
@@ -76,17 +68,13 @@ def get_notebook_instance_deleted_waiter() -> NotebookInstanceDeletedWaiter:
     return boto3.client("sagemaker").get_waiter("notebook_instance_deleted")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.notebook_instance_deleted)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.notebook_instance_deleted)
 
-```python
-class NotebookInstanceDeletedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        NotebookInstanceName: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `NotebookInstanceDeletedWaiter.wait` method:
+
+- `NotebookInstanceName`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#waiterconfigtypedef)
+
 ## NotebookInstanceInServiceWaiter
 
 Type annotations for `boto3.client("sagemaker").get_waiter("notebook_instance_in_service")`.
@@ -100,17 +88,13 @@ def get_notebook_instance_in_service_waiter() -> NotebookInstanceInServiceWaiter
     return boto3.client("sagemaker").get_waiter("notebook_instance_in_service")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.notebook_instance_in_service)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.notebook_instance_in_service)
 
-```python
-class NotebookInstanceInServiceWaiter(Boto3Waiter):
-    def wait(
-        self,
-        NotebookInstanceName: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `NotebookInstanceInServiceWaiter.wait` method:
+
+- `NotebookInstanceName`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#waiterconfigtypedef)
+
 ## NotebookInstanceStoppedWaiter
 
 Type annotations for `boto3.client("sagemaker").get_waiter("notebook_instance_stopped")`.
@@ -124,17 +108,13 @@ def get_notebook_instance_stopped_waiter() -> NotebookInstanceStoppedWaiter:
     return boto3.client("sagemaker").get_waiter("notebook_instance_stopped")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.notebook_instance_stopped)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.notebook_instance_stopped)
 
-```python
-class NotebookInstanceStoppedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        NotebookInstanceName: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `NotebookInstanceStoppedWaiter.wait` method:
+
+- `NotebookInstanceName`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#waiterconfigtypedef)
+
 ## ProcessingJobCompletedOrStoppedWaiter
 
 Type annotations for `boto3.client("sagemaker").get_waiter("processing_job_completed_or_stopped")`.
@@ -148,17 +128,13 @@ def get_processing_job_completed_or_stopped_waiter() -> ProcessingJobCompletedOr
     return boto3.client("sagemaker").get_waiter("processing_job_completed_or_stopped")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.processing_job_completed_or_stopped)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.processing_job_completed_or_stopped)
 
-```python
-class ProcessingJobCompletedOrStoppedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        ProcessingJobName: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `ProcessingJobCompletedOrStoppedWaiter.wait` method:
+
+- `ProcessingJobName`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#waiterconfigtypedef)
+
 ## TrainingJobCompletedOrStoppedWaiter
 
 Type annotations for `boto3.client("sagemaker").get_waiter("training_job_completed_or_stopped")`.
@@ -172,17 +148,13 @@ def get_training_job_completed_or_stopped_waiter() -> TrainingJobCompletedOrStop
     return boto3.client("sagemaker").get_waiter("training_job_completed_or_stopped")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.training_job_completed_or_stopped)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.training_job_completed_or_stopped)
 
-```python
-class TrainingJobCompletedOrStoppedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        TrainingJobName: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `TrainingJobCompletedOrStoppedWaiter.wait` method:
+
+- `TrainingJobName`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#waiterconfigtypedef)
+
 ## TransformJobCompletedOrStoppedWaiter
 
 Type annotations for `boto3.client("sagemaker").get_waiter("transform_job_completed_or_stopped")`.
@@ -196,14 +168,9 @@ def get_transform_job_completed_or_stopped_waiter() -> TransformJobCompletedOrSt
     return boto3.client("sagemaker").get_waiter("transform_job_completed_or_stopped")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.transform_job_completed_or_stopped)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.transform_job_completed_or_stopped)
 
-```python
-class TransformJobCompletedOrStoppedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        TransformJobName: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `TransformJobCompletedOrStoppedWaiter.wait` method:
+
+- `TransformJobName`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#waiterconfigtypedef)

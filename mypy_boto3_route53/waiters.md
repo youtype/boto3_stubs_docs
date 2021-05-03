@@ -21,14 +21,9 @@ def get_resource_record_sets_changed_waiter() -> ResourceRecordSetsChangedWaiter
     return boto3.client("route53").get_waiter("resource_record_sets_changed")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Waiter.resource_record_sets_changed)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Waiter.resource_record_sets_changed)
 
-```python
-class ResourceRecordSetsChangedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        Id: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `ResourceRecordSetsChangedWaiter.wait` method:
+
+- `Id`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#waiterconfigtypedef)

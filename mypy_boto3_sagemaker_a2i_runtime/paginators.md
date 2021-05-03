@@ -21,7 +21,7 @@ def get_list_human_loops_paginator() -> ListHumanLoopsPaginator:
     return boto3.client("sagemaker-a2i-runtime").get_paginator("list_human_loops")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Paginator.ListHumanLoops)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Paginator.ListHumanLoops)
 
 ```python
 class ListHumanLoopsPaginator(Boto3Paginator):

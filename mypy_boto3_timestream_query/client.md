@@ -29,7 +29,7 @@ def get_timestream-query_client() -> TimestreamQueryClient:
     return boto3.client("timestream-query")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client)
 
 ## Exceptions
 
@@ -63,7 +63,7 @@ Exceptions:
 
 Type annotations for `boto3.client("timestream-query").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -77,7 +77,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("timestream-query").cancel_query` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.cancel_query]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.cancel_query]
 
 ```python
 def cancel_query(
@@ -91,7 +91,7 @@ def cancel_query(
 
 Type annotations for `boto3.client("timestream-query").describe_endpoints` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.describe_endpoints]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.describe_endpoints]
 
 ```python
 def describe_endpoints(
@@ -104,7 +104,7 @@ def describe_endpoints(
 
 Type annotations for `boto3.client("timestream-query").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -121,7 +121,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("timestream-query").query` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.query]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.query]
 
 ```python
 def query(

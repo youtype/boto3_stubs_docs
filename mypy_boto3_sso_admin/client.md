@@ -57,7 +57,7 @@ def get_sso-admin_client() -> SSOAdminClient:
     return boto3.client("sso-admin")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client)
 
 ## Exceptions
 
@@ -91,7 +91,7 @@ Exceptions:
 
 Type annotations for `boto3.client("sso-admin").attach_managed_policy_to_permission_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.attach_managed_policy_to_permission_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.attach_managed_policy_to_permission_set]
 
 ```python
 def attach_managed_policy_to_permission_set(
@@ -107,7 +107,7 @@ def attach_managed_policy_to_permission_set(
 
 Type annotations for `boto3.client("sso-admin").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -121,7 +121,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("sso-admin").create_account_assignment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_account_assignment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_account_assignment]
 
 ```python
 def create_account_assignment(
@@ -140,7 +140,7 @@ def create_account_assignment(
 
 Type annotations for `boto3.client("sso-admin").create_instance_access_control_attribute_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_instance_access_control_attribute_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_instance_access_control_attribute_configuration]
 
 ```python
 def create_instance_access_control_attribute_configuration(
@@ -155,7 +155,7 @@ def create_instance_access_control_attribute_configuration(
 
 Type annotations for `boto3.client("sso-admin").create_permission_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_permission_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_permission_set]
 
 ```python
 def create_permission_set(
@@ -174,7 +174,7 @@ def create_permission_set(
 
 Type annotations for `boto3.client("sso-admin").delete_account_assignment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_account_assignment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_account_assignment]
 
 ```python
 def delete_account_assignment(
@@ -193,7 +193,7 @@ def delete_account_assignment(
 
 Type annotations for `boto3.client("sso-admin").delete_inline_policy_from_permission_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_inline_policy_from_permission_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_inline_policy_from_permission_set]
 
 ```python
 def delete_inline_policy_from_permission_set(
@@ -208,7 +208,7 @@ def delete_inline_policy_from_permission_set(
 
 Type annotations for `boto3.client("sso-admin").delete_instance_access_control_attribute_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_instance_access_control_attribute_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_instance_access_control_attribute_configuration]
 
 ```python
 def delete_instance_access_control_attribute_configuration(
@@ -222,7 +222,7 @@ def delete_instance_access_control_attribute_configuration(
 
 Type annotations for `boto3.client("sso-admin").delete_permission_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_permission_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_permission_set]
 
 ```python
 def delete_permission_set(
@@ -237,7 +237,7 @@ def delete_permission_set(
 
 Type annotations for `boto3.client("sso-admin").describe_account_assignment_creation_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_creation_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_creation_status]
 
 ```python
 def describe_account_assignment_creation_status(
@@ -252,7 +252,7 @@ def describe_account_assignment_creation_status(
 
 Type annotations for `boto3.client("sso-admin").describe_account_assignment_deletion_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_deletion_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_deletion_status]
 
 ```python
 def describe_account_assignment_deletion_status(
@@ -267,7 +267,7 @@ def describe_account_assignment_deletion_status(
 
 Type annotations for `boto3.client("sso-admin").describe_instance_access_control_attribute_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_instance_access_control_attribute_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_instance_access_control_attribute_configuration]
 
 ```python
 def describe_instance_access_control_attribute_configuration(
@@ -281,7 +281,7 @@ def describe_instance_access_control_attribute_configuration(
 
 Type annotations for `boto3.client("sso-admin").describe_permission_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set]
 
 ```python
 def describe_permission_set(
@@ -296,7 +296,7 @@ def describe_permission_set(
 
 Type annotations for `boto3.client("sso-admin").describe_permission_set_provisioning_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set_provisioning_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set_provisioning_status]
 
 ```python
 def describe_permission_set_provisioning_status(
@@ -311,7 +311,7 @@ def describe_permission_set_provisioning_status(
 
 Type annotations for `boto3.client("sso-admin").detach_managed_policy_from_permission_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.detach_managed_policy_from_permission_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.detach_managed_policy_from_permission_set]
 
 ```python
 def detach_managed_policy_from_permission_set(
@@ -327,7 +327,7 @@ def detach_managed_policy_from_permission_set(
 
 Type annotations for `boto3.client("sso-admin").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -344,7 +344,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("sso-admin").get_inline_policy_for_permission_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.get_inline_policy_for_permission_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.get_inline_policy_for_permission_set]
 
 ```python
 def get_inline_policy_for_permission_set(
@@ -359,7 +359,7 @@ def get_inline_policy_for_permission_set(
 
 Type annotations for `boto3.client("sso-admin").list_account_assignment_creation_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_creation_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_creation_status]
 
 ```python
 def list_account_assignment_creation_status(
@@ -376,7 +376,7 @@ def list_account_assignment_creation_status(
 
 Type annotations for `boto3.client("sso-admin").list_account_assignment_deletion_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_deletion_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_deletion_status]
 
 ```python
 def list_account_assignment_deletion_status(
@@ -393,7 +393,7 @@ def list_account_assignment_deletion_status(
 
 Type annotations for `boto3.client("sso-admin").list_account_assignments` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignments]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignments]
 
 ```python
 def list_account_assignments(
@@ -411,7 +411,7 @@ def list_account_assignments(
 
 Type annotations for `boto3.client("sso-admin").list_accounts_for_provisioned_permission_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_accounts_for_provisioned_permission_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_accounts_for_provisioned_permission_set]
 
 ```python
 def list_accounts_for_provisioned_permission_set(
@@ -429,7 +429,7 @@ def list_accounts_for_provisioned_permission_set(
 
 Type annotations for `boto3.client("sso-admin").list_instances` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_instances]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_instances]
 
 ```python
 def list_instances(
@@ -444,7 +444,7 @@ def list_instances(
 
 Type annotations for `boto3.client("sso-admin").list_managed_policies_in_permission_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_managed_policies_in_permission_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_managed_policies_in_permission_set]
 
 ```python
 def list_managed_policies_in_permission_set(
@@ -461,7 +461,7 @@ def list_managed_policies_in_permission_set(
 
 Type annotations for `boto3.client("sso-admin").list_permission_set_provisioning_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_set_provisioning_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_set_provisioning_status]
 
 ```python
 def list_permission_set_provisioning_status(
@@ -478,7 +478,7 @@ def list_permission_set_provisioning_status(
 
 Type annotations for `boto3.client("sso-admin").list_permission_sets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets]
 
 ```python
 def list_permission_sets(
@@ -494,7 +494,7 @@ def list_permission_sets(
 
 Type annotations for `boto3.client("sso-admin").list_permission_sets_provisioned_to_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets_provisioned_to_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets_provisioned_to_account]
 
 ```python
 def list_permission_sets_provisioned_to_account(
@@ -512,7 +512,7 @@ def list_permission_sets_provisioned_to_account(
 
 Type annotations for `boto3.client("sso-admin").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -528,7 +528,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("sso-admin").provision_permission_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.provision_permission_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.provision_permission_set]
 
 ```python
 def provision_permission_set(
@@ -545,7 +545,7 @@ def provision_permission_set(
 
 Type annotations for `boto3.client("sso-admin").put_inline_policy_to_permission_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.put_inline_policy_to_permission_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.put_inline_policy_to_permission_set]
 
 ```python
 def put_inline_policy_to_permission_set(
@@ -561,7 +561,7 @@ def put_inline_policy_to_permission_set(
 
 Type annotations for `boto3.client("sso-admin").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -577,7 +577,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("sso-admin").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -593,7 +593,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("sso-admin").update_instance_access_control_attribute_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.update_instance_access_control_attribute_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.update_instance_access_control_attribute_configuration]
 
 ```python
 def update_instance_access_control_attribute_configuration(
@@ -608,7 +608,7 @@ def update_instance_access_control_attribute_configuration(
 
 Type annotations for `boto3.client("sso-admin").update_permission_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.update_permission_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.update_permission_set]
 
 ```python
 def update_permission_set(

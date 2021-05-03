@@ -51,7 +51,7 @@ def get_cloudsearch_client() -> CloudSearchClient:
     return boto3.client("cloudsearch")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client)
 
 ## Exceptions
 
@@ -85,7 +85,7 @@ Exceptions:
 
 Type annotations for `boto3.client("cloudsearch").build_suggesters` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.build_suggesters]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.build_suggesters]
 
 ```python
 def build_suggesters(
@@ -99,7 +99,7 @@ def build_suggesters(
 
 Type annotations for `boto3.client("cloudsearch").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -113,7 +113,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("cloudsearch").create_domain` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.create_domain]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.create_domain]
 
 ```python
 def create_domain(
@@ -127,7 +127,7 @@ def create_domain(
 
 Type annotations for `boto3.client("cloudsearch").define_analysis_scheme` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_analysis_scheme]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_analysis_scheme]
 
 ```python
 def define_analysis_scheme(
@@ -142,7 +142,7 @@ def define_analysis_scheme(
 
 Type annotations for `boto3.client("cloudsearch").define_expression` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_expression]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_expression]
 
 ```python
 def define_expression(
@@ -157,7 +157,7 @@ def define_expression(
 
 Type annotations for `boto3.client("cloudsearch").define_index_field` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_index_field]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_index_field]
 
 ```python
 def define_index_field(
@@ -172,7 +172,7 @@ def define_index_field(
 
 Type annotations for `boto3.client("cloudsearch").define_suggester` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_suggester]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_suggester]
 
 ```python
 def define_suggester(
@@ -187,7 +187,7 @@ def define_suggester(
 
 Type annotations for `boto3.client("cloudsearch").delete_analysis_scheme` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_analysis_scheme]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_analysis_scheme]
 
 ```python
 def delete_analysis_scheme(
@@ -202,7 +202,7 @@ def delete_analysis_scheme(
 
 Type annotations for `boto3.client("cloudsearch").delete_domain` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_domain]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_domain]
 
 ```python
 def delete_domain(
@@ -216,7 +216,7 @@ def delete_domain(
 
 Type annotations for `boto3.client("cloudsearch").delete_expression` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_expression]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_expression]
 
 ```python
 def delete_expression(
@@ -231,7 +231,7 @@ def delete_expression(
 
 Type annotations for `boto3.client("cloudsearch").delete_index_field` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_index_field]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_index_field]
 
 ```python
 def delete_index_field(
@@ -246,7 +246,7 @@ def delete_index_field(
 
 Type annotations for `boto3.client("cloudsearch").delete_suggester` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_suggester]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_suggester]
 
 ```python
 def delete_suggester(
@@ -261,7 +261,7 @@ def delete_suggester(
 
 Type annotations for `boto3.client("cloudsearch").describe_analysis_schemes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_analysis_schemes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_analysis_schemes]
 
 ```python
 def describe_analysis_schemes(
@@ -277,7 +277,7 @@ def describe_analysis_schemes(
 
 Type annotations for `boto3.client("cloudsearch").describe_availability_options` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_availability_options]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_availability_options]
 
 ```python
 def describe_availability_options(
@@ -292,7 +292,7 @@ def describe_availability_options(
 
 Type annotations for `boto3.client("cloudsearch").describe_domain_endpoint_options` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_domain_endpoint_options]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_domain_endpoint_options]
 
 ```python
 def describe_domain_endpoint_options(
@@ -307,7 +307,7 @@ def describe_domain_endpoint_options(
 
 Type annotations for `boto3.client("cloudsearch").describe_domains` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_domains]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_domains]
 
 ```python
 def describe_domains(
@@ -321,7 +321,7 @@ def describe_domains(
 
 Type annotations for `boto3.client("cloudsearch").describe_expressions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_expressions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_expressions]
 
 ```python
 def describe_expressions(
@@ -337,7 +337,7 @@ def describe_expressions(
 
 Type annotations for `boto3.client("cloudsearch").describe_index_fields` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_index_fields]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_index_fields]
 
 ```python
 def describe_index_fields(
@@ -353,7 +353,7 @@ def describe_index_fields(
 
 Type annotations for `boto3.client("cloudsearch").describe_scaling_parameters` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_scaling_parameters]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_scaling_parameters]
 
 ```python
 def describe_scaling_parameters(
@@ -367,7 +367,7 @@ def describe_scaling_parameters(
 
 Type annotations for `boto3.client("cloudsearch").describe_service_access_policies` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_service_access_policies]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_service_access_policies]
 
 ```python
 def describe_service_access_policies(
@@ -382,7 +382,7 @@ def describe_service_access_policies(
 
 Type annotations for `boto3.client("cloudsearch").describe_suggesters` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_suggesters]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_suggesters]
 
 ```python
 def describe_suggesters(
@@ -398,7 +398,7 @@ def describe_suggesters(
 
 Type annotations for `boto3.client("cloudsearch").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -415,7 +415,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("cloudsearch").index_documents` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.index_documents]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.index_documents]
 
 ```python
 def index_documents(
@@ -429,7 +429,7 @@ def index_documents(
 
 Type annotations for `boto3.client("cloudsearch").list_domain_names` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.list_domain_names]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.list_domain_names]
 
 ```python
 def list_domain_names(
@@ -442,7 +442,7 @@ def list_domain_names(
 
 Type annotations for `boto3.client("cloudsearch").update_availability_options` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_availability_options]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_availability_options]
 
 ```python
 def update_availability_options(
@@ -457,7 +457,7 @@ def update_availability_options(
 
 Type annotations for `boto3.client("cloudsearch").update_domain_endpoint_options` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_domain_endpoint_options]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_domain_endpoint_options]
 
 ```python
 def update_domain_endpoint_options(
@@ -472,7 +472,7 @@ def update_domain_endpoint_options(
 
 Type annotations for `boto3.client("cloudsearch").update_scaling_parameters` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_scaling_parameters]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_scaling_parameters]
 
 ```python
 def update_scaling_parameters(
@@ -487,7 +487,7 @@ def update_scaling_parameters(
 
 Type annotations for `boto3.client("cloudsearch").update_service_access_policies` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_service_access_policies]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_service_access_policies]
 
 ```python
 def update_service_access_policies(

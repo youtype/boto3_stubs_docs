@@ -70,7 +70,7 @@ def get_codebuild_client() -> CodeBuildClient:
     return boto3.client("codebuild")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client)
 
 ## Exceptions
 
@@ -102,7 +102,7 @@ Exceptions:
 
 Type annotations for `boto3.client("codebuild").batch_delete_builds` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_delete_builds]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_delete_builds]
 
 ```python
 def batch_delete_builds(
@@ -116,7 +116,7 @@ def batch_delete_builds(
 
 Type annotations for `boto3.client("codebuild").batch_get_build_batches` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_build_batches]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_build_batches]
 
 ```python
 def batch_get_build_batches(
@@ -130,7 +130,7 @@ def batch_get_build_batches(
 
 Type annotations for `boto3.client("codebuild").batch_get_builds` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_builds]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_builds]
 
 ```python
 def batch_get_builds(
@@ -144,7 +144,7 @@ def batch_get_builds(
 
 Type annotations for `boto3.client("codebuild").batch_get_projects` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_projects]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_projects]
 
 ```python
 def batch_get_projects(
@@ -158,7 +158,7 @@ def batch_get_projects(
 
 Type annotations for `boto3.client("codebuild").batch_get_report_groups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_report_groups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_report_groups]
 
 ```python
 def batch_get_report_groups(
@@ -172,7 +172,7 @@ def batch_get_report_groups(
 
 Type annotations for `boto3.client("codebuild").batch_get_reports` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_reports]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_reports]
 
 ```python
 def batch_get_reports(
@@ -186,7 +186,7 @@ def batch_get_reports(
 
 Type annotations for `boto3.client("codebuild").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -200,7 +200,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("codebuild").create_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.create_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.create_project]
 
 ```python
 def create_project(
@@ -234,7 +234,7 @@ def create_project(
 
 Type annotations for `boto3.client("codebuild").create_report_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.create_report_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.create_report_group]
 
 ```python
 def create_report_group(
@@ -251,7 +251,7 @@ def create_report_group(
 
 Type annotations for `boto3.client("codebuild").create_webhook` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.create_webhook]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.create_webhook]
 
 ```python
 def create_webhook(
@@ -268,7 +268,7 @@ def create_webhook(
 
 Type annotations for `boto3.client("codebuild").delete_build_batch` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_build_batch]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_build_batch]
 
 ```python
 def delete_build_batch(
@@ -282,7 +282,7 @@ def delete_build_batch(
 
 Type annotations for `boto3.client("codebuild").delete_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_project]
 
 ```python
 def delete_project(
@@ -296,7 +296,7 @@ def delete_project(
 
 Type annotations for `boto3.client("codebuild").delete_report` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_report]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_report]
 
 ```python
 def delete_report(
@@ -310,7 +310,7 @@ def delete_report(
 
 Type annotations for `boto3.client("codebuild").delete_report_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_report_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_report_group]
 
 ```python
 def delete_report_group(
@@ -325,7 +325,7 @@ def delete_report_group(
 
 Type annotations for `boto3.client("codebuild").delete_resource_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_resource_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_resource_policy]
 
 ```python
 def delete_resource_policy(
@@ -339,7 +339,7 @@ def delete_resource_policy(
 
 Type annotations for `boto3.client("codebuild").delete_source_credentials` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_source_credentials]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_source_credentials]
 
 ```python
 def delete_source_credentials(
@@ -353,7 +353,7 @@ def delete_source_credentials(
 
 Type annotations for `boto3.client("codebuild").delete_webhook` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_webhook]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_webhook]
 
 ```python
 def delete_webhook(
@@ -367,7 +367,7 @@ def delete_webhook(
 
 Type annotations for `boto3.client("codebuild").describe_code_coverages` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.describe_code_coverages]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.describe_code_coverages]
 
 ```python
 def describe_code_coverages(
@@ -387,7 +387,7 @@ def describe_code_coverages(
 
 Type annotations for `boto3.client("codebuild").describe_test_cases` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.describe_test_cases]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.describe_test_cases]
 
 ```python
 def describe_test_cases(
@@ -404,7 +404,7 @@ def describe_test_cases(
 
 Type annotations for `boto3.client("codebuild").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -421,7 +421,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("codebuild").get_report_group_trend` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.get_report_group_trend]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.get_report_group_trend]
 
 ```python
 def get_report_group_trend(
@@ -437,7 +437,7 @@ def get_report_group_trend(
 
 Type annotations for `boto3.client("codebuild").get_resource_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.get_resource_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.get_resource_policy]
 
 ```python
 def get_resource_policy(
@@ -451,7 +451,7 @@ def get_resource_policy(
 
 Type annotations for `boto3.client("codebuild").import_source_credentials` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.import_source_credentials]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.import_source_credentials]
 
 ```python
 def import_source_credentials(
@@ -469,7 +469,7 @@ def import_source_credentials(
 
 Type annotations for `boto3.client("codebuild").invalidate_project_cache` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.invalidate_project_cache]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.invalidate_project_cache]
 
 ```python
 def invalidate_project_cache(
@@ -483,7 +483,7 @@ def invalidate_project_cache(
 
 Type annotations for `boto3.client("codebuild").list_build_batches` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_build_batches]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_build_batches]
 
 ```python
 def list_build_batches(
@@ -500,7 +500,7 @@ def list_build_batches(
 
 Type annotations for `boto3.client("codebuild").list_build_batches_for_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_build_batches_for_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_build_batches_for_project]
 
 ```python
 def list_build_batches_for_project(
@@ -518,7 +518,7 @@ def list_build_batches_for_project(
 
 Type annotations for `boto3.client("codebuild").list_builds` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_builds]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_builds]
 
 ```python
 def list_builds(
@@ -533,7 +533,7 @@ def list_builds(
 
 Type annotations for `boto3.client("codebuild").list_builds_for_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_builds_for_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_builds_for_project]
 
 ```python
 def list_builds_for_project(
@@ -549,7 +549,7 @@ def list_builds_for_project(
 
 Type annotations for `boto3.client("codebuild").list_curated_environment_images` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_curated_environment_images]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_curated_environment_images]
 
 ```python
 def list_curated_environment_images(
@@ -562,7 +562,7 @@ def list_curated_environment_images(
 
 Type annotations for `boto3.client("codebuild").list_projects` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_projects]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_projects]
 
 ```python
 def list_projects(
@@ -578,7 +578,7 @@ def list_projects(
 
 Type annotations for `boto3.client("codebuild").list_report_groups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_report_groups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_report_groups]
 
 ```python
 def list_report_groups(
@@ -595,7 +595,7 @@ def list_report_groups(
 
 Type annotations for `boto3.client("codebuild").list_reports` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_reports]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_reports]
 
 ```python
 def list_reports(
@@ -612,7 +612,7 @@ def list_reports(
 
 Type annotations for `boto3.client("codebuild").list_reports_for_report_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_reports_for_report_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_reports_for_report_group]
 
 ```python
 def list_reports_for_report_group(
@@ -630,7 +630,7 @@ def list_reports_for_report_group(
 
 Type annotations for `boto3.client("codebuild").list_shared_projects` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_shared_projects]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_shared_projects]
 
 ```python
 def list_shared_projects(
@@ -647,7 +647,7 @@ def list_shared_projects(
 
 Type annotations for `boto3.client("codebuild").list_shared_report_groups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_shared_report_groups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_shared_report_groups]
 
 ```python
 def list_shared_report_groups(
@@ -664,7 +664,7 @@ def list_shared_report_groups(
 
 Type annotations for `boto3.client("codebuild").list_source_credentials` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_source_credentials]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_source_credentials]
 
 ```python
 def list_source_credentials(
@@ -677,7 +677,7 @@ def list_source_credentials(
 
 Type annotations for `boto3.client("codebuild").put_resource_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.put_resource_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.put_resource_policy]
 
 ```python
 def put_resource_policy(
@@ -692,7 +692,7 @@ def put_resource_policy(
 
 Type annotations for `boto3.client("codebuild").retry_build` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.retry_build]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.retry_build]
 
 ```python
 def retry_build(
@@ -707,7 +707,7 @@ def retry_build(
 
 Type annotations for `boto3.client("codebuild").retry_build_batch` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.retry_build_batch]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.retry_build_batch]
 
 ```python
 def retry_build_batch(
@@ -723,7 +723,7 @@ def retry_build_batch(
 
 Type annotations for `boto3.client("codebuild").start_build` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.start_build]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.start_build]
 
 ```python
 def start_build(
@@ -767,7 +767,7 @@ def start_build(
 
 Type annotations for `boto3.client("codebuild").start_build_batch` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.start_build_batch]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.start_build_batch]
 
 ```python
 def start_build_batch(
@@ -811,7 +811,7 @@ def start_build_batch(
 
 Type annotations for `boto3.client("codebuild").stop_build` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.stop_build]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.stop_build]
 
 ```python
 def stop_build(
@@ -825,7 +825,7 @@ def stop_build(
 
 Type annotations for `boto3.client("codebuild").stop_build_batch` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.stop_build_batch]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.stop_build_batch]
 
 ```python
 def stop_build_batch(
@@ -839,7 +839,7 @@ def stop_build_batch(
 
 Type annotations for `boto3.client("codebuild").update_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.update_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.update_project]
 
 ```python
 def update_project(
@@ -873,7 +873,7 @@ def update_project(
 
 Type annotations for `boto3.client("codebuild").update_report_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.update_report_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.update_report_group]
 
 ```python
 def update_report_group(
@@ -889,7 +889,7 @@ def update_report_group(
 
 Type annotations for `boto3.client("codebuild").update_webhook` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.update_webhook]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.update_webhook]
 
 ```python
 def update_webhook(

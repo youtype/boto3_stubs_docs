@@ -26,7 +26,7 @@ def get_sagemaker-runtime_client() -> SageMakerRuntimeClient:
     return boto3.client("sagemaker-runtime")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client)
 
 ## Exceptions
 
@@ -57,7 +57,7 @@ Exceptions:
 
 Type annotations for `boto3.client("sagemaker-runtime").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -71,7 +71,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("sagemaker-runtime").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -88,7 +88,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("sagemaker-runtime").invoke_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.invoke_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.invoke_endpoint]
 
 ```python
 def invoke_endpoint(

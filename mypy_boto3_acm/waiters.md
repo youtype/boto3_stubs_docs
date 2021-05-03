@@ -21,14 +21,9 @@ def get_certificate_validated_waiter() -> CertificateValidatedWaiter:
     return boto3.client("acm").get_waiter("certificate_validated")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Waiter.certificate_validated)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Waiter.certificate_validated)
 
-```python
-class CertificateValidatedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        CertificateArn: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `CertificateValidatedWaiter.wait` method:
+
+- `CertificateArn`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#waiterconfigtypedef)

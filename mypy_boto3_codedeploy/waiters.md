@@ -21,14 +21,9 @@ def get_deployment_successful_waiter() -> DeploymentSuccessfulWaiter:
     return boto3.client("codedeploy").get_waiter("deployment_successful")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Waiter.deployment_successful)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Waiter.deployment_successful)
 
-```python
-class DeploymentSuccessfulWaiter(Boto3Waiter):
-    def wait(
-        self,
-        deploymentId: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `DeploymentSuccessfulWaiter.wait` method:
+
+- `deploymentId`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#waiterconfigtypedef)

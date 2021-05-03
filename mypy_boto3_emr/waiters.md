@@ -23,17 +23,13 @@ def get_cluster_running_waiter() -> ClusterRunningWaiter:
     return boto3.client("emr").get_waiter("cluster_running")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Waiter.cluster_running)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Waiter.cluster_running)
 
-```python
-class ClusterRunningWaiter(Boto3Waiter):
-    def wait(
-        self,
-        ClusterId: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `ClusterRunningWaiter.wait` method:
+
+- `ClusterId`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#waiterconfigtypedef)
+
 ## ClusterTerminatedWaiter
 
 Type annotations for `boto3.client("emr").get_waiter("cluster_terminated")`.
@@ -47,17 +43,13 @@ def get_cluster_terminated_waiter() -> ClusterTerminatedWaiter:
     return boto3.client("emr").get_waiter("cluster_terminated")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Waiter.cluster_terminated)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Waiter.cluster_terminated)
 
-```python
-class ClusterTerminatedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        ClusterId: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `ClusterTerminatedWaiter.wait` method:
+
+- `ClusterId`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#waiterconfigtypedef)
+
 ## StepCompleteWaiter
 
 Type annotations for `boto3.client("emr").get_waiter("step_complete")`.
@@ -71,15 +63,10 @@ def get_step_complete_waiter() -> StepCompleteWaiter:
     return boto3.client("emr").get_waiter("step_complete")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Waiter.step_complete)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Waiter.step_complete)
 
-```python
-class StepCompleteWaiter(Boto3Waiter):
-    def wait(
-        self,
-        ClusterId: str,
-        StepId: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `StepCompleteWaiter.wait` method:
+
+- `ClusterId`: `str` *(required)*
+- `StepId`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#waiterconfigtypedef)

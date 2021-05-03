@@ -2489,7 +2489,7 @@ from mypy_boto3_ssm.type_defs import InventoryAggregatorTypeDef
 
 Optional fields:
 - `Expression`: `str`
-- `Aggregators`: `List[Dict[str, Any]]`
+- `Aggregators`: `List["InventoryAggregatorTypeDef"]`
 - `Groups`: `List["InventoryGroupTypeDef"]`
 
 
@@ -3215,7 +3215,7 @@ Optional fields:
 - `AttributeName`: `str`
 - `Values`: `Dict[str, str]`
 - `Filters`: `List["OpsFilterTypeDef"]`
-- `Aggregators`: `List[Dict[str, Any]]`
+- `Aggregators`: `List["OpsAggregatorTypeDef"]`
 
 
 ## OpsEntityItemTypeDef

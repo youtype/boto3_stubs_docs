@@ -24,7 +24,7 @@ def get_list_apps_paginator() -> ListAppsPaginator:
     return boto3.client("amplify").get_paginator("list_apps")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListApps)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListApps)
 
 ```python
 class ListAppsPaginator(Boto3Paginator):
@@ -47,7 +47,7 @@ def get_list_branches_paginator() -> ListBranchesPaginator:
     return boto3.client("amplify").get_paginator("list_branches")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListBranches)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListBranches)
 
 ```python
 class ListBranchesPaginator(Boto3Paginator):
@@ -71,7 +71,7 @@ def get_list_domain_associations_paginator() -> ListDomainAssociationsPaginator:
     return boto3.client("amplify").get_paginator("list_domain_associations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListDomainAssociations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListDomainAssociations)
 
 ```python
 class ListDomainAssociationsPaginator(Boto3Paginator):
@@ -95,7 +95,7 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("amplify").get_paginator("list_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListJobs)
 
 ```python
 class ListJobsPaginator(Boto3Paginator):

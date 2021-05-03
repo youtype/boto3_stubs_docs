@@ -25,7 +25,7 @@ def get_describe_project_versions_paginator() -> DescribeProjectVersionsPaginato
     return boto3.client("rekognition").get_paginator("describe_project_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.DescribeProjectVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.DescribeProjectVersions)
 
 ```python
 class DescribeProjectVersionsPaginator(Boto3Paginator):
@@ -50,7 +50,7 @@ def get_describe_projects_paginator() -> DescribeProjectsPaginator:
     return boto3.client("rekognition").get_paginator("describe_projects")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.DescribeProjects)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.DescribeProjects)
 
 ```python
 class DescribeProjectsPaginator(Boto3Paginator):
@@ -73,7 +73,7 @@ def get_list_collections_paginator() -> ListCollectionsPaginator:
     return boto3.client("rekognition").get_paginator("list_collections")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListCollections)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListCollections)
 
 ```python
 class ListCollectionsPaginator(Boto3Paginator):
@@ -96,7 +96,7 @@ def get_list_faces_paginator() -> ListFacesPaginator:
     return boto3.client("rekognition").get_paginator("list_faces")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListFaces)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListFaces)
 
 ```python
 class ListFacesPaginator(Boto3Paginator):
@@ -120,7 +120,7 @@ def get_list_stream_processors_paginator() -> ListStreamProcessorsPaginator:
     return boto3.client("rekognition").get_paginator("list_stream_processors")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListStreamProcessors)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListStreamProcessors)
 
 ```python
 class ListStreamProcessorsPaginator(Boto3Paginator):

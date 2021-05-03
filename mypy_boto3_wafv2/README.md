@@ -117,13 +117,21 @@ from mypy_boto3_wafv2.literals import ActionValue, ...
 
 - [ActionValue](./literals.md#actionvalue)
 - [BodyParsingFallbackBehavior](./literals.md#bodyparsingfallbackbehavior)
+- [ComparisonOperator](./literals.md#comparisonoperator)
+- [CountryCode](./literals.md#countrycode)
+- [FallbackBehavior](./literals.md#fallbackbehavior)
 - [FilterBehavior](./literals.md#filterbehavior)
 - [FilterRequirement](./literals.md#filterrequirement)
+- [ForwardedIPPosition](./literals.md#forwardedipposition)
 - [IPAddressVersion](./literals.md#ipaddressversion)
 - [JsonMatchScope](./literals.md#jsonmatchscope)
+- [LabelMatchScope](./literals.md#labelmatchscope)
+- [PositionalConstraint](./literals.md#positionalconstraint)
+- [RateBasedStatementAggregateKeyType](./literals.md#ratebasedstatementaggregatekeytype)
 - [ResourceType](./literals.md#resourcetype)
 - [ResponseContentType](./literals.md#responsecontenttype)
 - [Scope](./literals.md#scope)
+- [TextTransformationType](./literals.md#texttransformationtype)
 
 
 

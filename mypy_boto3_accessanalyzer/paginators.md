@@ -28,7 +28,7 @@ def get_list_access_preview_findings_paginator() -> ListAccessPreviewFindingsPag
     return boto3.client("accessanalyzer").get_paginator("list_access_preview_findings")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAccessPreviewFindings)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAccessPreviewFindings)
 
 ```python
 class ListAccessPreviewFindingsPaginator(Boto3Paginator):
@@ -54,7 +54,7 @@ def get_list_access_previews_paginator() -> ListAccessPreviewsPaginator:
     return boto3.client("accessanalyzer").get_paginator("list_access_previews")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAccessPreviews)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAccessPreviews)
 
 ```python
 class ListAccessPreviewsPaginator(Boto3Paginator):
@@ -78,7 +78,7 @@ def get_list_analyzed_resources_paginator() -> ListAnalyzedResourcesPaginator:
     return boto3.client("accessanalyzer").get_paginator("list_analyzed_resources")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAnalyzedResources)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAnalyzedResources)
 
 ```python
 class ListAnalyzedResourcesPaginator(Boto3Paginator):
@@ -103,7 +103,7 @@ def get_list_analyzers_paginator() -> ListAnalyzersPaginator:
     return boto3.client("accessanalyzer").get_paginator("list_analyzers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAnalyzers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAnalyzers)
 
 ```python
 class ListAnalyzersPaginator(Boto3Paginator):
@@ -127,7 +127,7 @@ def get_list_archive_rules_paginator() -> ListArchiveRulesPaginator:
     return boto3.client("accessanalyzer").get_paginator("list_archive_rules")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListArchiveRules)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListArchiveRules)
 
 ```python
 class ListArchiveRulesPaginator(Boto3Paginator):
@@ -151,7 +151,7 @@ def get_list_findings_paginator() -> ListFindingsPaginator:
     return boto3.client("accessanalyzer").get_paginator("list_findings")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListFindings)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListFindings)
 
 ```python
 class ListFindingsPaginator(Boto3Paginator):
@@ -177,7 +177,7 @@ def get_list_policy_generations_paginator() -> ListPolicyGenerationsPaginator:
     return boto3.client("accessanalyzer").get_paginator("list_policy_generations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListPolicyGenerations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListPolicyGenerations)
 
 ```python
 class ListPolicyGenerationsPaginator(Boto3Paginator):
@@ -201,7 +201,7 @@ def get_validate_policy_paginator() -> ValidatePolicyPaginator:
     return boto3.client("accessanalyzer").get_paginator("validate_policy")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ValidatePolicy)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ValidatePolicy)
 
 ```python
 class ValidatePolicyPaginator(Boto3Paginator):

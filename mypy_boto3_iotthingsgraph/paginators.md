@@ -30,7 +30,7 @@ def get_get_flow_template_revisions_paginator() -> GetFlowTemplateRevisionsPagin
     return boto3.client("iotthingsgraph").get_paginator("get_flow_template_revisions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.GetFlowTemplateRevisions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.GetFlowTemplateRevisions)
 
 ```python
 class GetFlowTemplateRevisionsPaginator(Boto3Paginator):
@@ -54,7 +54,7 @@ def get_get_system_template_revisions_paginator() -> GetSystemTemplateRevisionsP
     return boto3.client("iotthingsgraph").get_paginator("get_system_template_revisions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.GetSystemTemplateRevisions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.GetSystemTemplateRevisions)
 
 ```python
 class GetSystemTemplateRevisionsPaginator(Boto3Paginator):
@@ -78,7 +78,7 @@ def get_list_flow_execution_messages_paginator() -> ListFlowExecutionMessagesPag
     return boto3.client("iotthingsgraph").get_paginator("list_flow_execution_messages")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.ListFlowExecutionMessages)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.ListFlowExecutionMessages)
 
 ```python
 class ListFlowExecutionMessagesPaginator(Boto3Paginator):
@@ -102,7 +102,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("iotthingsgraph").get_paginator("list_tags_for_resource")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.ListTagsForResource)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):
@@ -126,7 +126,7 @@ def get_search_entities_paginator() -> SearchEntitiesPaginator:
     return boto3.client("iotthingsgraph").get_paginator("search_entities")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchEntities)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchEntities)
 
 ```python
 class SearchEntitiesPaginator(Boto3Paginator):
@@ -152,7 +152,7 @@ def get_search_flow_executions_paginator() -> SearchFlowExecutionsPaginator:
     return boto3.client("iotthingsgraph").get_paginator("search_flow_executions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchFlowExecutions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchFlowExecutions)
 
 ```python
 class SearchFlowExecutionsPaginator(Boto3Paginator):
@@ -179,7 +179,7 @@ def get_search_flow_templates_paginator() -> SearchFlowTemplatesPaginator:
     return boto3.client("iotthingsgraph").get_paginator("search_flow_templates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchFlowTemplates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchFlowTemplates)
 
 ```python
 class SearchFlowTemplatesPaginator(Boto3Paginator):
@@ -203,7 +203,7 @@ def get_search_system_instances_paginator() -> SearchSystemInstancesPaginator:
     return boto3.client("iotthingsgraph").get_paginator("search_system_instances")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchSystemInstances)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchSystemInstances)
 
 ```python
 class SearchSystemInstancesPaginator(Boto3Paginator):
@@ -227,7 +227,7 @@ def get_search_system_templates_paginator() -> SearchSystemTemplatesPaginator:
     return boto3.client("iotthingsgraph").get_paginator("search_system_templates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchSystemTemplates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchSystemTemplates)
 
 ```python
 class SearchSystemTemplatesPaginator(Boto3Paginator):
@@ -251,7 +251,7 @@ def get_search_things_paginator() -> SearchThingsPaginator:
     return boto3.client("iotthingsgraph").get_paginator("search_things")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchThings)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchThings)
 
 ```python
 class SearchThingsPaginator(Boto3Paginator):

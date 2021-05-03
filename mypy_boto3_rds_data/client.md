@@ -31,7 +31,7 @@ def get_rds-data_client() -> RDSDataServiceClient:
     return boto3.client("rds-data")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client)
 
 ## Exceptions
 
@@ -64,7 +64,7 @@ Exceptions:
 
 Type annotations for `boto3.client("rds-data").batch_execute_statement` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.batch_execute_statement]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.batch_execute_statement]
 
 ```python
 def batch_execute_statement(
@@ -84,7 +84,7 @@ def batch_execute_statement(
 
 Type annotations for `boto3.client("rds-data").begin_transaction` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.begin_transaction]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.begin_transaction]
 
 ```python
 def begin_transaction(
@@ -101,7 +101,7 @@ def begin_transaction(
 
 Type annotations for `boto3.client("rds-data").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -115,7 +115,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("rds-data").commit_transaction` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.commit_transaction]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.commit_transaction]
 
 ```python
 def commit_transaction(
@@ -131,7 +131,7 @@ def commit_transaction(
 
 Type annotations for `boto3.client("rds-data").execute_sql` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.execute_sql]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.execute_sql]
 
 ```python
 def execute_sql(
@@ -149,7 +149,7 @@ def execute_sql(
 
 Type annotations for `boto3.client("rds-data").execute_statement` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.execute_statement]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.execute_statement]
 
 ```python
 def execute_statement(
@@ -172,7 +172,7 @@ def execute_statement(
 
 Type annotations for `boto3.client("rds-data").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -189,7 +189,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("rds-data").rollback_transaction` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.rollback_transaction]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.rollback_transaction]
 
 ```python
 def rollback_transaction(

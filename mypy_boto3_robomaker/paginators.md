@@ -31,7 +31,7 @@ def get_list_deployment_jobs_paginator() -> ListDeploymentJobsPaginator:
     return boto3.client("robomaker").get_paginator("list_deployment_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListDeploymentJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListDeploymentJobs)
 
 ```python
 class ListDeploymentJobsPaginator(Boto3Paginator):
@@ -55,7 +55,7 @@ def get_list_fleets_paginator() -> ListFleetsPaginator:
     return boto3.client("robomaker").get_paginator("list_fleets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListFleets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListFleets)
 
 ```python
 class ListFleetsPaginator(Boto3Paginator):
@@ -79,7 +79,7 @@ def get_list_robot_applications_paginator() -> ListRobotApplicationsPaginator:
     return boto3.client("robomaker").get_paginator("list_robot_applications")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListRobotApplications)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListRobotApplications)
 
 ```python
 class ListRobotApplicationsPaginator(Boto3Paginator):
@@ -104,7 +104,7 @@ def get_list_robots_paginator() -> ListRobotsPaginator:
     return boto3.client("robomaker").get_paginator("list_robots")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListRobots)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListRobots)
 
 ```python
 class ListRobotsPaginator(Boto3Paginator):
@@ -128,7 +128,7 @@ def get_list_simulation_applications_paginator() -> ListSimulationApplicationsPa
     return boto3.client("robomaker").get_paginator("list_simulation_applications")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListSimulationApplications)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListSimulationApplications)
 
 ```python
 class ListSimulationApplicationsPaginator(Boto3Paginator):
@@ -153,7 +153,7 @@ def get_list_simulation_job_batches_paginator() -> ListSimulationJobBatchesPagin
     return boto3.client("robomaker").get_paginator("list_simulation_job_batches")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListSimulationJobBatches)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListSimulationJobBatches)
 
 ```python
 class ListSimulationJobBatchesPaginator(Boto3Paginator):
@@ -177,7 +177,7 @@ def get_list_simulation_jobs_paginator() -> ListSimulationJobsPaginator:
     return boto3.client("robomaker").get_paginator("list_simulation_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListSimulationJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListSimulationJobs)
 
 ```python
 class ListSimulationJobsPaginator(Boto3Paginator):
@@ -201,7 +201,7 @@ def get_list_world_export_jobs_paginator() -> ListWorldExportJobsPaginator:
     return boto3.client("robomaker").get_paginator("list_world_export_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListWorldExportJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListWorldExportJobs)
 
 ```python
 class ListWorldExportJobsPaginator(Boto3Paginator):
@@ -225,7 +225,7 @@ def get_list_world_generation_jobs_paginator() -> ListWorldGenerationJobsPaginat
     return boto3.client("robomaker").get_paginator("list_world_generation_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListWorldGenerationJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListWorldGenerationJobs)
 
 ```python
 class ListWorldGenerationJobsPaginator(Boto3Paginator):
@@ -249,7 +249,7 @@ def get_list_world_templates_paginator() -> ListWorldTemplatesPaginator:
     return boto3.client("robomaker").get_paginator("list_world_templates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListWorldTemplates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListWorldTemplates)
 
 ```python
 class ListWorldTemplatesPaginator(Boto3Paginator):
@@ -272,7 +272,7 @@ def get_list_worlds_paginator() -> ListWorldsPaginator:
     return boto3.client("robomaker").get_paginator("list_worlds")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListWorlds)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListWorlds)
 
 ```python
 class ListWorldsPaginator(Boto3Paginator):

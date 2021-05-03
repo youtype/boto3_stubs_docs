@@ -61,7 +61,7 @@ def get_elbv2_client() -> ElasticLoadBalancingv2Client:
     return boto3.client("elbv2")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client)
 
 ## Exceptions
 
@@ -125,7 +125,7 @@ Exceptions:
 
 Type annotations for `boto3.client("elbv2").add_listener_certificates` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.add_listener_certificates]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.add_listener_certificates]
 
 ```python
 def add_listener_certificates(
@@ -140,7 +140,7 @@ def add_listener_certificates(
 
 Type annotations for `boto3.client("elbv2").add_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.add_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.add_tags]
 
 ```python
 def add_tags(
@@ -155,7 +155,7 @@ def add_tags(
 
 Type annotations for `boto3.client("elbv2").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -169,7 +169,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("elbv2").create_listener` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_listener]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_listener]
 
 ```python
 def create_listener(
@@ -190,7 +190,7 @@ def create_listener(
 
 Type annotations for `boto3.client("elbv2").create_load_balancer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_load_balancer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_load_balancer]
 
 ```python
 def create_load_balancer(
@@ -212,7 +212,7 @@ def create_load_balancer(
 
 Type annotations for `boto3.client("elbv2").create_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_rule]
 
 ```python
 def create_rule(
@@ -230,7 +230,7 @@ def create_rule(
 
 Type annotations for `boto3.client("elbv2").create_target_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_target_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_target_group]
 
 ```python
 def create_target_group(
@@ -259,7 +259,7 @@ def create_target_group(
 
 Type annotations for `boto3.client("elbv2").delete_listener` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_listener]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_listener]
 
 ```python
 def delete_listener(
@@ -273,7 +273,7 @@ def delete_listener(
 
 Type annotations for `boto3.client("elbv2").delete_load_balancer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_load_balancer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_load_balancer]
 
 ```python
 def delete_load_balancer(
@@ -287,7 +287,7 @@ def delete_load_balancer(
 
 Type annotations for `boto3.client("elbv2").delete_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_rule]
 
 ```python
 def delete_rule(
@@ -301,7 +301,7 @@ def delete_rule(
 
 Type annotations for `boto3.client("elbv2").delete_target_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_target_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_target_group]
 
 ```python
 def delete_target_group(
@@ -315,7 +315,7 @@ def delete_target_group(
 
 Type annotations for `boto3.client("elbv2").deregister_targets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.deregister_targets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.deregister_targets]
 
 ```python
 def deregister_targets(
@@ -330,7 +330,7 @@ def deregister_targets(
 
 Type annotations for `boto3.client("elbv2").describe_account_limits` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_account_limits]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_account_limits]
 
 ```python
 def describe_account_limits(
@@ -345,7 +345,7 @@ def describe_account_limits(
 
 Type annotations for `boto3.client("elbv2").describe_listener_certificates` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_listener_certificates]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_listener_certificates]
 
 ```python
 def describe_listener_certificates(
@@ -361,7 +361,7 @@ def describe_listener_certificates(
 
 Type annotations for `boto3.client("elbv2").describe_listeners` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_listeners]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_listeners]
 
 ```python
 def describe_listeners(
@@ -378,7 +378,7 @@ def describe_listeners(
 
 Type annotations for `boto3.client("elbv2").describe_load_balancer_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_load_balancer_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_load_balancer_attributes]
 
 ```python
 def describe_load_balancer_attributes(
@@ -392,7 +392,7 @@ def describe_load_balancer_attributes(
 
 Type annotations for `boto3.client("elbv2").describe_load_balancers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_load_balancers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_load_balancers]
 
 ```python
 def describe_load_balancers(
@@ -409,7 +409,7 @@ def describe_load_balancers(
 
 Type annotations for `boto3.client("elbv2").describe_rules` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_rules]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_rules]
 
 ```python
 def describe_rules(
@@ -426,7 +426,7 @@ def describe_rules(
 
 Type annotations for `boto3.client("elbv2").describe_ssl_policies` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_ssl_policies]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_ssl_policies]
 
 ```python
 def describe_ssl_policies(
@@ -442,7 +442,7 @@ def describe_ssl_policies(
 
 Type annotations for `boto3.client("elbv2").describe_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_tags]
 
 ```python
 def describe_tags(
@@ -456,7 +456,7 @@ def describe_tags(
 
 Type annotations for `boto3.client("elbv2").describe_target_group_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_group_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_group_attributes]
 
 ```python
 def describe_target_group_attributes(
@@ -470,7 +470,7 @@ def describe_target_group_attributes(
 
 Type annotations for `boto3.client("elbv2").describe_target_groups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_groups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_groups]
 
 ```python
 def describe_target_groups(
@@ -488,7 +488,7 @@ def describe_target_groups(
 
 Type annotations for `boto3.client("elbv2").describe_target_health` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_health]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_health]
 
 ```python
 def describe_target_health(
@@ -503,7 +503,7 @@ def describe_target_health(
 
 Type annotations for `boto3.client("elbv2").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -520,7 +520,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("elbv2").modify_listener` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_listener]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_listener]
 
 ```python
 def modify_listener(
@@ -540,7 +540,7 @@ def modify_listener(
 
 Type annotations for `boto3.client("elbv2").modify_load_balancer_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_load_balancer_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_load_balancer_attributes]
 
 ```python
 def modify_load_balancer_attributes(
@@ -555,7 +555,7 @@ def modify_load_balancer_attributes(
 
 Type annotations for `boto3.client("elbv2").modify_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_rule]
 
 ```python
 def modify_rule(
@@ -571,7 +571,7 @@ def modify_rule(
 
 Type annotations for `boto3.client("elbv2").modify_target_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_target_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_target_group]
 
 ```python
 def modify_target_group(
@@ -594,7 +594,7 @@ def modify_target_group(
 
 Type annotations for `boto3.client("elbv2").modify_target_group_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_target_group_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_target_group_attributes]
 
 ```python
 def modify_target_group_attributes(
@@ -609,7 +609,7 @@ def modify_target_group_attributes(
 
 Type annotations for `boto3.client("elbv2").register_targets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.register_targets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.register_targets]
 
 ```python
 def register_targets(
@@ -624,7 +624,7 @@ def register_targets(
 
 Type annotations for `boto3.client("elbv2").remove_listener_certificates` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.remove_listener_certificates]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.remove_listener_certificates]
 
 ```python
 def remove_listener_certificates(
@@ -639,7 +639,7 @@ def remove_listener_certificates(
 
 Type annotations for `boto3.client("elbv2").remove_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.remove_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.remove_tags]
 
 ```python
 def remove_tags(
@@ -654,7 +654,7 @@ def remove_tags(
 
 Type annotations for `boto3.client("elbv2").set_ip_address_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_ip_address_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_ip_address_type]
 
 ```python
 def set_ip_address_type(
@@ -669,7 +669,7 @@ def set_ip_address_type(
 
 Type annotations for `boto3.client("elbv2").set_rule_priorities` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_rule_priorities]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_rule_priorities]
 
 ```python
 def set_rule_priorities(
@@ -683,7 +683,7 @@ def set_rule_priorities(
 
 Type annotations for `boto3.client("elbv2").set_security_groups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_security_groups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_security_groups]
 
 ```python
 def set_security_groups(
@@ -698,7 +698,7 @@ def set_security_groups(
 
 Type annotations for `boto3.client("elbv2").set_subnets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_subnets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_subnets]
 
 ```python
 def set_subnets(

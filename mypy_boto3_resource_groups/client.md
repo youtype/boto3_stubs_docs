@@ -42,7 +42,7 @@ def get_resource-groups_client() -> ResourceGroupsClient:
     return boto3.client("resource-groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client)
 
 ## Exceptions
 
@@ -76,7 +76,7 @@ Exceptions:
 
 Type annotations for `boto3.client("resource-groups").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -90,7 +90,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("resource-groups").create_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.create_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.create_group]
 
 ```python
 def create_group(
@@ -108,7 +108,7 @@ def create_group(
 
 Type annotations for `boto3.client("resource-groups").delete_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.delete_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.delete_group]
 
 ```python
 def delete_group(
@@ -123,7 +123,7 @@ def delete_group(
 
 Type annotations for `boto3.client("resource-groups").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -140,7 +140,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("resource-groups").get_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.get_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.get_group]
 
 ```python
 def get_group(
@@ -155,7 +155,7 @@ def get_group(
 
 Type annotations for `boto3.client("resource-groups").get_group_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.get_group_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.get_group_configuration]
 
 ```python
 def get_group_configuration(
@@ -169,7 +169,7 @@ def get_group_configuration(
 
 Type annotations for `boto3.client("resource-groups").get_group_query` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.get_group_query]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.get_group_query]
 
 ```python
 def get_group_query(
@@ -184,7 +184,7 @@ def get_group_query(
 
 Type annotations for `boto3.client("resource-groups").get_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.get_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.get_tags]
 
 ```python
 def get_tags(
@@ -198,7 +198,7 @@ def get_tags(
 
 Type annotations for `boto3.client("resource-groups").group_resources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.group_resources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.group_resources]
 
 ```python
 def group_resources(
@@ -213,7 +213,7 @@ def group_resources(
 
 Type annotations for `boto3.client("resource-groups").list_group_resources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.list_group_resources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.list_group_resources]
 
 ```python
 def list_group_resources(
@@ -231,7 +231,7 @@ def list_group_resources(
 
 Type annotations for `boto3.client("resource-groups").list_groups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.list_groups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.list_groups]
 
 ```python
 def list_groups(
@@ -247,7 +247,7 @@ def list_groups(
 
 Type annotations for `boto3.client("resource-groups").put_group_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.put_group_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.put_group_configuration]
 
 ```python
 def put_group_configuration(
@@ -262,7 +262,7 @@ def put_group_configuration(
 
 Type annotations for `boto3.client("resource-groups").search_resources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.search_resources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.search_resources]
 
 ```python
 def search_resources(
@@ -278,7 +278,7 @@ def search_resources(
 
 Type annotations for `boto3.client("resource-groups").tag` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.tag]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.tag]
 
 ```python
 def tag(
@@ -293,7 +293,7 @@ def tag(
 
 Type annotations for `boto3.client("resource-groups").ungroup_resources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.ungroup_resources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.ungroup_resources]
 
 ```python
 def ungroup_resources(
@@ -308,7 +308,7 @@ def ungroup_resources(
 
 Type annotations for `boto3.client("resource-groups").untag` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.untag]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.untag]
 
 ```python
 def untag(
@@ -323,7 +323,7 @@ def untag(
 
 Type annotations for `boto3.client("resource-groups").update_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.update_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.update_group]
 
 ```python
 def update_group(
@@ -339,7 +339,7 @@ def update_group(
 
 Type annotations for `boto3.client("resource-groups").update_group_query` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.update_group_query]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.update_group_query]
 
 ```python
 def update_group_query(

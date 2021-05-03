@@ -23,7 +23,7 @@ def get_describe_objects_paginator() -> DescribeObjectsPaginator:
     return boto3.client("datapipeline").get_paginator("describe_objects")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Paginator.DescribeObjects)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Paginator.DescribeObjects)
 
 ```python
 class DescribeObjectsPaginator(Boto3Paginator):
@@ -49,7 +49,7 @@ def get_list_pipelines_paginator() -> ListPipelinesPaginator:
     return boto3.client("datapipeline").get_paginator("list_pipelines")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Paginator.ListPipelines)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Paginator.ListPipelines)
 
 ```python
 class ListPipelinesPaginator(Boto3Paginator):
@@ -72,7 +72,7 @@ def get_query_objects_paginator() -> QueryObjectsPaginator:
     return boto3.client("datapipeline").get_paginator("query_objects")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Paginator.QueryObjects)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Paginator.QueryObjects)
 
 ```python
 class QueryObjectsPaginator(Boto3Paginator):

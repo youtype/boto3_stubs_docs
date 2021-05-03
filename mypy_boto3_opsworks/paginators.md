@@ -21,7 +21,7 @@ def get_describe_ecs_clusters_paginator() -> DescribeEcsClustersPaginator:
     return boto3.client("opsworks").get_paginator("describe_ecs_clusters")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Paginator.DescribeEcsClusters)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Paginator.DescribeEcsClusters)
 
 ```python
 class DescribeEcsClustersPaginator(Boto3Paginator):

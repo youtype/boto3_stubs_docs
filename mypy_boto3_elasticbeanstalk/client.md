@@ -74,7 +74,7 @@ def get_elasticbeanstalk_client() -> ElasticBeanstalkClient:
     return boto3.client("elasticbeanstalk")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client)
 
 ## Exceptions
 
@@ -120,7 +120,7 @@ Exceptions:
 
 Type annotations for `boto3.client("elasticbeanstalk").abort_environment_update` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.abort_environment_update]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.abort_environment_update]
 
 ```python
 def abort_environment_update(
@@ -135,7 +135,7 @@ def abort_environment_update(
 
 Type annotations for `boto3.client("elasticbeanstalk").apply_environment_managed_action` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.apply_environment_managed_action]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.apply_environment_managed_action]
 
 ```python
 def apply_environment_managed_action(
@@ -151,7 +151,7 @@ def apply_environment_managed_action(
 
 Type annotations for `boto3.client("elasticbeanstalk").associate_environment_operations_role` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.associate_environment_operations_role]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.associate_environment_operations_role]
 
 ```python
 def associate_environment_operations_role(
@@ -166,7 +166,7 @@ def associate_environment_operations_role(
 
 Type annotations for `boto3.client("elasticbeanstalk").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -180,7 +180,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("elasticbeanstalk").check_dns_availability` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.check_dns_availability]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.check_dns_availability]
 
 ```python
 def check_dns_availability(
@@ -194,7 +194,7 @@ def check_dns_availability(
 
 Type annotations for `boto3.client("elasticbeanstalk").compose_environments` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.compose_environments]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.compose_environments]
 
 ```python
 def compose_environments(
@@ -210,7 +210,7 @@ def compose_environments(
 
 Type annotations for `boto3.client("elasticbeanstalk").create_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application]
 
 ```python
 def create_application(
@@ -227,7 +227,7 @@ def create_application(
 
 Type annotations for `boto3.client("elasticbeanstalk").create_application_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application_version]
 
 ```python
 def create_application_version(
@@ -249,7 +249,7 @@ def create_application_version(
 
 Type annotations for `boto3.client("elasticbeanstalk").create_configuration_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_configuration_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_configuration_template]
 
 ```python
 def create_configuration_template(
@@ -271,7 +271,7 @@ def create_configuration_template(
 
 Type annotations for `boto3.client("elasticbeanstalk").create_environment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_environment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_environment]
 
 ```python
 def create_environment(
@@ -298,7 +298,7 @@ def create_environment(
 
 Type annotations for `boto3.client("elasticbeanstalk").create_platform_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_platform_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_platform_version]
 
 ```python
 def create_platform_version(
@@ -317,7 +317,7 @@ def create_platform_version(
 
 Type annotations for `boto3.client("elasticbeanstalk").create_storage_location` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_storage_location]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_storage_location]
 
 ```python
 def create_storage_location(
@@ -330,7 +330,7 @@ def create_storage_location(
 
 Type annotations for `boto3.client("elasticbeanstalk").delete_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_application]
 
 ```python
 def delete_application(
@@ -345,7 +345,7 @@ def delete_application(
 
 Type annotations for `boto3.client("elasticbeanstalk").delete_application_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_application_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_application_version]
 
 ```python
 def delete_application_version(
@@ -361,7 +361,7 @@ def delete_application_version(
 
 Type annotations for `boto3.client("elasticbeanstalk").delete_configuration_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_configuration_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_configuration_template]
 
 ```python
 def delete_configuration_template(
@@ -376,7 +376,7 @@ def delete_configuration_template(
 
 Type annotations for `boto3.client("elasticbeanstalk").delete_environment_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_environment_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_environment_configuration]
 
 ```python
 def delete_environment_configuration(
@@ -391,7 +391,7 @@ def delete_environment_configuration(
 
 Type annotations for `boto3.client("elasticbeanstalk").delete_platform_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_platform_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_platform_version]
 
 ```python
 def delete_platform_version(
@@ -405,7 +405,7 @@ def delete_platform_version(
 
 Type annotations for `boto3.client("elasticbeanstalk").describe_account_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_account_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_account_attributes]
 
 ```python
 def describe_account_attributes(
@@ -418,7 +418,7 @@ def describe_account_attributes(
 
 Type annotations for `boto3.client("elasticbeanstalk").describe_application_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_application_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_application_versions]
 
 ```python
 def describe_application_versions(
@@ -435,7 +435,7 @@ def describe_application_versions(
 
 Type annotations for `boto3.client("elasticbeanstalk").describe_applications` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_applications]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_applications]
 
 ```python
 def describe_applications(
@@ -449,7 +449,7 @@ def describe_applications(
 
 Type annotations for `boto3.client("elasticbeanstalk").describe_configuration_options` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_options]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_options]
 
 ```python
 def describe_configuration_options(
@@ -468,7 +468,7 @@ def describe_configuration_options(
 
 Type annotations for `boto3.client("elasticbeanstalk").describe_configuration_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_settings]
 
 ```python
 def describe_configuration_settings(
@@ -484,7 +484,7 @@ def describe_configuration_settings(
 
 Type annotations for `boto3.client("elasticbeanstalk").describe_environment_health` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_health]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_health]
 
 ```python
 def describe_environment_health(
@@ -500,7 +500,7 @@ def describe_environment_health(
 
 Type annotations for `boto3.client("elasticbeanstalk").describe_environment_managed_action_history` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_action_history]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_action_history]
 
 ```python
 def describe_environment_managed_action_history(
@@ -517,7 +517,7 @@ def describe_environment_managed_action_history(
 
 Type annotations for `boto3.client("elasticbeanstalk").describe_environment_managed_actions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_actions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_actions]
 
 ```python
 def describe_environment_managed_actions(
@@ -533,7 +533,7 @@ def describe_environment_managed_actions(
 
 Type annotations for `boto3.client("elasticbeanstalk").describe_environment_resources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_resources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_resources]
 
 ```python
 def describe_environment_resources(
@@ -548,7 +548,7 @@ def describe_environment_resources(
 
 Type annotations for `boto3.client("elasticbeanstalk").describe_environments` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environments]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environments]
 
 ```python
 def describe_environments(
@@ -569,7 +569,7 @@ def describe_environments(
 
 Type annotations for `boto3.client("elasticbeanstalk").describe_events` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_events]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_events]
 
 ```python
 def describe_events(
@@ -594,7 +594,7 @@ def describe_events(
 
 Type annotations for `boto3.client("elasticbeanstalk").describe_instances_health` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_instances_health]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_instances_health]
 
 ```python
 def describe_instances_health(
@@ -611,7 +611,7 @@ def describe_instances_health(
 
 Type annotations for `boto3.client("elasticbeanstalk").describe_platform_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_platform_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_platform_version]
 
 ```python
 def describe_platform_version(
@@ -625,7 +625,7 @@ def describe_platform_version(
 
 Type annotations for `boto3.client("elasticbeanstalk").disassociate_environment_operations_role` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.disassociate_environment_operations_role]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.disassociate_environment_operations_role]
 
 ```python
 def disassociate_environment_operations_role(
@@ -639,7 +639,7 @@ def disassociate_environment_operations_role(
 
 Type annotations for `boto3.client("elasticbeanstalk").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -656,7 +656,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("elasticbeanstalk").list_available_solution_stacks` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_available_solution_stacks]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_available_solution_stacks]
 
 ```python
 def list_available_solution_stacks(
@@ -669,7 +669,7 @@ def list_available_solution_stacks(
 
 Type annotations for `boto3.client("elasticbeanstalk").list_platform_branches` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_branches]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_branches]
 
 ```python
 def list_platform_branches(
@@ -685,7 +685,7 @@ def list_platform_branches(
 
 Type annotations for `boto3.client("elasticbeanstalk").list_platform_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_versions]
 
 ```python
 def list_platform_versions(
@@ -701,7 +701,7 @@ def list_platform_versions(
 
 Type annotations for `boto3.client("elasticbeanstalk").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -715,7 +715,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("elasticbeanstalk").rebuild_environment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.rebuild_environment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.rebuild_environment]
 
 ```python
 def rebuild_environment(
@@ -730,7 +730,7 @@ def rebuild_environment(
 
 Type annotations for `boto3.client("elasticbeanstalk").request_environment_info` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.request_environment_info]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.request_environment_info]
 
 ```python
 def request_environment_info(
@@ -746,7 +746,7 @@ def request_environment_info(
 
 Type annotations for `boto3.client("elasticbeanstalk").restart_app_server` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.restart_app_server]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.restart_app_server]
 
 ```python
 def restart_app_server(
@@ -761,7 +761,7 @@ def restart_app_server(
 
 Type annotations for `boto3.client("elasticbeanstalk").retrieve_environment_info` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.retrieve_environment_info]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.retrieve_environment_info]
 
 ```python
 def retrieve_environment_info(
@@ -777,7 +777,7 @@ def retrieve_environment_info(
 
 Type annotations for `boto3.client("elasticbeanstalk").swap_environment_cnames` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.swap_environment_cnames]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.swap_environment_cnames]
 
 ```python
 def swap_environment_cnames(
@@ -794,7 +794,7 @@ def swap_environment_cnames(
 
 Type annotations for `boto3.client("elasticbeanstalk").terminate_environment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.terminate_environment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.terminate_environment]
 
 ```python
 def terminate_environment(
@@ -811,7 +811,7 @@ def terminate_environment(
 
 Type annotations for `boto3.client("elasticbeanstalk").update_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application]
 
 ```python
 def update_application(
@@ -826,7 +826,7 @@ def update_application(
 
 Type annotations for `boto3.client("elasticbeanstalk").update_application_resource_lifecycle` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application_resource_lifecycle]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application_resource_lifecycle]
 
 ```python
 def update_application_resource_lifecycle(
@@ -841,7 +841,7 @@ def update_application_resource_lifecycle(
 
 Type annotations for `boto3.client("elasticbeanstalk").update_application_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application_version]
 
 ```python
 def update_application_version(
@@ -857,7 +857,7 @@ def update_application_version(
 
 Type annotations for `boto3.client("elasticbeanstalk").update_configuration_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_configuration_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_configuration_template]
 
 ```python
 def update_configuration_template(
@@ -875,7 +875,7 @@ def update_configuration_template(
 
 Type annotations for `boto3.client("elasticbeanstalk").update_environment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_environment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_environment]
 
 ```python
 def update_environment(
@@ -900,7 +900,7 @@ def update_environment(
 
 Type annotations for `boto3.client("elasticbeanstalk").update_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_tags_for_resource]
 
 ```python
 def update_tags_for_resource(
@@ -916,7 +916,7 @@ def update_tags_for_resource(
 
 Type annotations for `boto3.client("elasticbeanstalk").validate_configuration_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.validate_configuration_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.validate_configuration_settings]
 
 ```python
 def validate_configuration_settings(

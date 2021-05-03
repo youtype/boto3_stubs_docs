@@ -37,7 +37,7 @@ def get_describe_aggregate_compliance_by_config_rules_paginator() -> DescribeAgg
     return boto3.client("config").get_paginator("describe_aggregate_compliance_by_config_rules")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeAggregateComplianceByConfigRules)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeAggregateComplianceByConfigRules)
 
 ```python
 class DescribeAggregateComplianceByConfigRulesPaginator(Boto3Paginator):
@@ -62,7 +62,7 @@ def get_describe_aggregation_authorizations_paginator() -> DescribeAggregationAu
     return boto3.client("config").get_paginator("describe_aggregation_authorizations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeAggregationAuthorizations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeAggregationAuthorizations)
 
 ```python
 class DescribeAggregationAuthorizationsPaginator(Boto3Paginator):
@@ -85,7 +85,7 @@ def get_describe_compliance_by_config_rule_paginator() -> DescribeComplianceByCo
     return boto3.client("config").get_paginator("describe_compliance_by_config_rule")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeComplianceByConfigRule)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeComplianceByConfigRule)
 
 ```python
 class DescribeComplianceByConfigRulePaginator(Boto3Paginator):
@@ -110,7 +110,7 @@ def get_describe_compliance_by_resource_paginator() -> DescribeComplianceByResou
     return boto3.client("config").get_paginator("describe_compliance_by_resource")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeComplianceByResource)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeComplianceByResource)
 
 ```python
 class DescribeComplianceByResourcePaginator(Boto3Paginator):
@@ -137,7 +137,7 @@ def get_describe_config_rule_evaluation_status_paginator() -> DescribeConfigRule
     return boto3.client("config").get_paginator("describe_config_rule_evaluation_status")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigRuleEvaluationStatus)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigRuleEvaluationStatus)
 
 ```python
 class DescribeConfigRuleEvaluationStatusPaginator(Boto3Paginator):
@@ -161,7 +161,7 @@ def get_describe_config_rules_paginator() -> DescribeConfigRulesPaginator:
     return boto3.client("config").get_paginator("describe_config_rules")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigRules)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigRules)
 
 ```python
 class DescribeConfigRulesPaginator(Boto3Paginator):
@@ -185,7 +185,7 @@ def get_describe_configuration_aggregator_sources_status_paginator() -> Describe
     return boto3.client("config").get_paginator("describe_configuration_aggregator_sources_status")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigurationAggregatorSourcesStatus)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigurationAggregatorSourcesStatus)
 
 ```python
 class DescribeConfigurationAggregatorSourcesStatusPaginator(Boto3Paginator):
@@ -210,7 +210,7 @@ def get_describe_configuration_aggregators_paginator() -> DescribeConfigurationA
     return boto3.client("config").get_paginator("describe_configuration_aggregators")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigurationAggregators)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigurationAggregators)
 
 ```python
 class DescribeConfigurationAggregatorsPaginator(Boto3Paginator):
@@ -234,7 +234,7 @@ def get_describe_pending_aggregation_requests_paginator() -> DescribePendingAggr
     return boto3.client("config").get_paginator("describe_pending_aggregation_requests")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribePendingAggregationRequests)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribePendingAggregationRequests)
 
 ```python
 class DescribePendingAggregationRequestsPaginator(Boto3Paginator):
@@ -257,7 +257,7 @@ def get_describe_remediation_execution_status_paginator() -> DescribeRemediation
     return boto3.client("config").get_paginator("describe_remediation_execution_status")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeRemediationExecutionStatus)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeRemediationExecutionStatus)
 
 ```python
 class DescribeRemediationExecutionStatusPaginator(Boto3Paginator):
@@ -282,7 +282,7 @@ def get_describe_retention_configurations_paginator() -> DescribeRetentionConfig
     return boto3.client("config").get_paginator("describe_retention_configurations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeRetentionConfigurations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeRetentionConfigurations)
 
 ```python
 class DescribeRetentionConfigurationsPaginator(Boto3Paginator):
@@ -306,7 +306,7 @@ def get_get_aggregate_compliance_details_by_config_rule_paginator() -> GetAggreg
     return boto3.client("config").get_paginator("get_aggregate_compliance_details_by_config_rule")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetAggregateComplianceDetailsByConfigRule)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetAggregateComplianceDetailsByConfigRule)
 
 ```python
 class GetAggregateComplianceDetailsByConfigRulePaginator(Boto3Paginator):
@@ -334,7 +334,7 @@ def get_get_compliance_details_by_config_rule_paginator() -> GetComplianceDetail
     return boto3.client("config").get_paginator("get_compliance_details_by_config_rule")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetComplianceDetailsByConfigRule)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetComplianceDetailsByConfigRule)
 
 ```python
 class GetComplianceDetailsByConfigRulePaginator(Boto3Paginator):
@@ -360,7 +360,7 @@ def get_get_compliance_details_by_resource_paginator() -> GetComplianceDetailsBy
     return boto3.client("config").get_paginator("get_compliance_details_by_resource")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetComplianceDetailsByResource)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetComplianceDetailsByResource)
 
 ```python
 class GetComplianceDetailsByResourcePaginator(Boto3Paginator):
@@ -386,7 +386,7 @@ def get_get_resource_config_history_paginator() -> GetResourceConfigHistoryPagin
     return boto3.client("config").get_paginator("get_resource_config_history")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetResourceConfigHistory)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetResourceConfigHistory)
 
 ```python
 class GetResourceConfigHistoryPaginator(Boto3Paginator):
@@ -414,7 +414,7 @@ def get_list_aggregate_discovered_resources_paginator() -> ListAggregateDiscover
     return boto3.client("config").get_paginator("list_aggregate_discovered_resources")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.ListAggregateDiscoveredResources)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.ListAggregateDiscoveredResources)
 
 ```python
 class ListAggregateDiscoveredResourcesPaginator(Boto3Paginator):
@@ -440,7 +440,7 @@ def get_list_discovered_resources_paginator() -> ListDiscoveredResourcesPaginato
     return boto3.client("config").get_paginator("list_discovered_resources")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.ListDiscoveredResources)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.ListDiscoveredResources)
 
 ```python
 class ListDiscoveredResourcesPaginator(Boto3Paginator):

@@ -28,7 +28,7 @@ def get_sso-oidc_client() -> SSOOIDCClient:
     return boto3.client("sso-oidc")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client)
 
 ## Exceptions
 
@@ -67,7 +67,7 @@ Exceptions:
 
 Type annotations for `boto3.client("sso-oidc").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -81,7 +81,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("sso-oidc").create_token` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.create_token]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.create_token]
 
 ```python
 def create_token(
@@ -102,7 +102,7 @@ def create_token(
 
 Type annotations for `boto3.client("sso-oidc").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -119,7 +119,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("sso-oidc").register_client` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.register_client]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.register_client]
 
 ```python
 def register_client(
@@ -135,7 +135,7 @@ def register_client(
 
 Type annotations for `boto3.client("sso-oidc").start_device_authorization` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.start_device_authorization]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.start_device_authorization]
 
 ```python
 def start_device_authorization(

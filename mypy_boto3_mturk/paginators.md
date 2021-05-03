@@ -29,7 +29,7 @@ def get_list_assignments_for_hit_paginator() -> ListAssignmentsForHITPaginator:
     return boto3.client("mturk").get_paginator("list_assignments_for_hit")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListAssignmentsForHIT)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListAssignmentsForHIT)
 
 ```python
 class ListAssignmentsForHITPaginator(Boto3Paginator):
@@ -54,7 +54,7 @@ def get_list_bonus_payments_paginator() -> ListBonusPaymentsPaginator:
     return boto3.client("mturk").get_paginator("list_bonus_payments")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListBonusPayments)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListBonusPayments)
 
 ```python
 class ListBonusPaymentsPaginator(Boto3Paginator):
@@ -79,7 +79,7 @@ def get_list_hits_paginator() -> ListHITsPaginator:
     return boto3.client("mturk").get_paginator("list_hits")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListHITs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListHITs)
 
 ```python
 class ListHITsPaginator(Boto3Paginator):
@@ -102,7 +102,7 @@ def get_list_hits_for_qualification_type_paginator() -> ListHITsForQualification
     return boto3.client("mturk").get_paginator("list_hits_for_qualification_type")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListHITsForQualificationType)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListHITsForQualificationType)
 
 ```python
 class ListHITsForQualificationTypePaginator(Boto3Paginator):
@@ -126,7 +126,7 @@ def get_list_qualification_requests_paginator() -> ListQualificationRequestsPagi
     return boto3.client("mturk").get_paginator("list_qualification_requests")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListQualificationRequests)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListQualificationRequests)
 
 ```python
 class ListQualificationRequestsPaginator(Boto3Paginator):
@@ -150,7 +150,7 @@ def get_list_qualification_types_paginator() -> ListQualificationTypesPaginator:
     return boto3.client("mturk").get_paginator("list_qualification_types")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListQualificationTypes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListQualificationTypes)
 
 ```python
 class ListQualificationTypesPaginator(Boto3Paginator):
@@ -176,7 +176,7 @@ def get_list_reviewable_hits_paginator() -> ListReviewableHITsPaginator:
     return boto3.client("mturk").get_paginator("list_reviewable_hits")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListReviewableHITs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListReviewableHITs)
 
 ```python
 class ListReviewableHITsPaginator(Boto3Paginator):
@@ -201,7 +201,7 @@ def get_list_worker_blocks_paginator() -> ListWorkerBlocksPaginator:
     return boto3.client("mturk").get_paginator("list_worker_blocks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListWorkerBlocks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListWorkerBlocks)
 
 ```python
 class ListWorkerBlocksPaginator(Boto3Paginator):
@@ -224,7 +224,7 @@ def get_list_workers_with_qualification_type_paginator() -> ListWorkersWithQuali
     return boto3.client("mturk").get_paginator("list_workers_with_qualification_type")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListWorkersWithQualificationType)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListWorkersWithQualificationType)
 
 ```python
 class ListWorkersWithQualificationTypePaginator(Boto3Paginator):

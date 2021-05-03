@@ -32,7 +32,7 @@ def get_describe_certificates_paginator() -> DescribeCertificatesPaginator:
     return boto3.client("docdb").get_paginator("describe_certificates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeCertificates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeCertificates)
 
 ```python
 class DescribeCertificatesPaginator(Boto3Paginator):
@@ -57,7 +57,7 @@ def get_describe_db_cluster_parameter_groups_paginator() -> DescribeDBClusterPar
     return boto3.client("docdb").get_paginator("describe_db_cluster_parameter_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusterParameterGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusterParameterGroups)
 
 ```python
 class DescribeDBClusterParameterGroupsPaginator(Boto3Paginator):
@@ -82,7 +82,7 @@ def get_describe_db_cluster_parameters_paginator() -> DescribeDBClusterParameter
     return boto3.client("docdb").get_paginator("describe_db_cluster_parameters")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusterParameters)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusterParameters)
 
 ```python
 class DescribeDBClusterParametersPaginator(Boto3Paginator):
@@ -108,7 +108,7 @@ def get_describe_db_cluster_snapshots_paginator() -> DescribeDBClusterSnapshotsP
     return boto3.client("docdb").get_paginator("describe_db_cluster_snapshots")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusterSnapshots)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusterSnapshots)
 
 ```python
 class DescribeDBClusterSnapshotsPaginator(Boto3Paginator):
@@ -137,7 +137,7 @@ def get_describe_db_clusters_paginator() -> DescribeDBClustersPaginator:
     return boto3.client("docdb").get_paginator("describe_db_clusters")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusters)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusters)
 
 ```python
 class DescribeDBClustersPaginator(Boto3Paginator):
@@ -162,7 +162,7 @@ def get_describe_db_engine_versions_paginator() -> DescribeDBEngineVersionsPagin
     return boto3.client("docdb").get_paginator("describe_db_engine_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBEngineVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBEngineVersions)
 
 ```python
 class DescribeDBEngineVersionsPaginator(Boto3Paginator):
@@ -192,7 +192,7 @@ def get_describe_db_instances_paginator() -> DescribeDBInstancesPaginator:
     return boto3.client("docdb").get_paginator("describe_db_instances")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBInstances)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBInstances)
 
 ```python
 class DescribeDBInstancesPaginator(Boto3Paginator):
@@ -217,7 +217,7 @@ def get_describe_db_subnet_groups_paginator() -> DescribeDBSubnetGroupsPaginator
     return boto3.client("docdb").get_paginator("describe_db_subnet_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBSubnetGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBSubnetGroups)
 
 ```python
 class DescribeDBSubnetGroupsPaginator(Boto3Paginator):
@@ -242,7 +242,7 @@ def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPa
     return boto3.client("docdb").get_paginator("describe_event_subscriptions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeEventSubscriptions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeEventSubscriptions)
 
 ```python
 class DescribeEventSubscriptionsPaginator(Boto3Paginator):
@@ -267,7 +267,7 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return boto3.client("docdb").get_paginator("describe_events")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeEvents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeEvents)
 
 ```python
 class DescribeEventsPaginator(Boto3Paginator):
@@ -297,7 +297,7 @@ def get_describe_orderable_db_instance_options_paginator() -> DescribeOrderableD
     return boto3.client("docdb").get_paginator("describe_orderable_db_instance_options")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeOrderableDBInstanceOptions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeOrderableDBInstanceOptions)
 
 ```python
 class DescribeOrderableDBInstanceOptionsPaginator(Boto3Paginator):
@@ -326,7 +326,7 @@ def get_describe_pending_maintenance_actions_paginator() -> DescribePendingMaint
     return boto3.client("docdb").get_paginator("describe_pending_maintenance_actions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribePendingMaintenanceActions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribePendingMaintenanceActions)
 
 ```python
 class DescribePendingMaintenanceActionsPaginator(Boto3Paginator):

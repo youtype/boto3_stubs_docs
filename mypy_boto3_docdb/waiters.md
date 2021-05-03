@@ -22,20 +22,16 @@ def get_db_instance_available_waiter() -> DBInstanceAvailableWaiter:
     return boto3.client("docdb").get_waiter("db_instance_available")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Waiter.db_instance_available)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Waiter.db_instance_available)
 
-```python
-class DBInstanceAvailableWaiter(Boto3Waiter):
-    def wait(
-        self,
-        DBInstanceIdentifier: str = None,
-        Filters: List[FilterTypeDef] = None,
-        MaxRecords: int = None,
-        Marker: str = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `DBInstanceAvailableWaiter.wait` method:
+
+- `DBInstanceIdentifier`: `str`
+- `Filters`: `List[FilterTypeDef]`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#waiterconfigtypedef)
+
 ## DBInstanceDeletedWaiter
 
 Type annotations for `boto3.client("docdb").get_waiter("db_instance_deleted")`.
@@ -49,17 +45,12 @@ def get_db_instance_deleted_waiter() -> DBInstanceDeletedWaiter:
     return boto3.client("docdb").get_waiter("db_instance_deleted")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Waiter.db_instance_deleted)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Waiter.db_instance_deleted)
 
-```python
-class DBInstanceDeletedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        DBInstanceIdentifier: str = None,
-        Filters: List[FilterTypeDef] = None,
-        MaxRecords: int = None,
-        Marker: str = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `DBInstanceDeletedWaiter.wait` method:
+
+- `DBInstanceIdentifier`: `str`
+- `Filters`: `List[FilterTypeDef]`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_docdb/type_defs.html#waiterconfigtypedef)

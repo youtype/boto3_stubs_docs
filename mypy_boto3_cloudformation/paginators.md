@@ -33,7 +33,7 @@ def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
     return boto3.client("cloudformation").get_paginator("describe_account_limits")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeAccountLimits)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeAccountLimits)
 
 ```python
 class DescribeAccountLimitsPaginator(Boto3Paginator):
@@ -56,7 +56,7 @@ def get_describe_change_set_paginator() -> DescribeChangeSetPaginator:
     return boto3.client("cloudformation").get_paginator("describe_change_set")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeChangeSet)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeChangeSet)
 
 ```python
 class DescribeChangeSetPaginator(Boto3Paginator):
@@ -81,7 +81,7 @@ def get_describe_stack_events_paginator() -> DescribeStackEventsPaginator:
     return boto3.client("cloudformation").get_paginator("describe_stack_events")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeStackEvents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeStackEvents)
 
 ```python
 class DescribeStackEventsPaginator(Boto3Paginator):
@@ -105,7 +105,7 @@ def get_describe_stacks_paginator() -> DescribeStacksPaginator:
     return boto3.client("cloudformation").get_paginator("describe_stacks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeStacks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeStacks)
 
 ```python
 class DescribeStacksPaginator(Boto3Paginator):
@@ -129,7 +129,7 @@ def get_list_change_sets_paginator() -> ListChangeSetsPaginator:
     return boto3.client("cloudformation").get_paginator("list_change_sets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListChangeSets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListChangeSets)
 
 ```python
 class ListChangeSetsPaginator(Boto3Paginator):
@@ -153,7 +153,7 @@ def get_list_exports_paginator() -> ListExportsPaginator:
     return boto3.client("cloudformation").get_paginator("list_exports")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListExports)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListExports)
 
 ```python
 class ListExportsPaginator(Boto3Paginator):
@@ -176,7 +176,7 @@ def get_list_imports_paginator() -> ListImportsPaginator:
     return boto3.client("cloudformation").get_paginator("list_imports")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListImports)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListImports)
 
 ```python
 class ListImportsPaginator(Boto3Paginator):
@@ -200,7 +200,7 @@ def get_list_stack_instances_paginator() -> ListStackInstancesPaginator:
     return boto3.client("cloudformation").get_paginator("list_stack_instances")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackInstances)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackInstances)
 
 ```python
 class ListStackInstancesPaginator(Boto3Paginator):
@@ -228,7 +228,7 @@ def get_list_stack_resources_paginator() -> ListStackResourcesPaginator:
     return boto3.client("cloudformation").get_paginator("list_stack_resources")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackResources)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackResources)
 
 ```python
 class ListStackResourcesPaginator(Boto3Paginator):
@@ -252,7 +252,7 @@ def get_list_stack_set_operation_results_paginator() -> ListStackSetOperationRes
     return boto3.client("cloudformation").get_paginator("list_stack_set_operation_results")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSetOperationResults)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSetOperationResults)
 
 ```python
 class ListStackSetOperationResultsPaginator(Boto3Paginator):
@@ -278,7 +278,7 @@ def get_list_stack_set_operations_paginator() -> ListStackSetOperationsPaginator
     return boto3.client("cloudformation").get_paginator("list_stack_set_operations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSetOperations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSetOperations)
 
 ```python
 class ListStackSetOperationsPaginator(Boto3Paginator):
@@ -303,7 +303,7 @@ def get_list_stack_sets_paginator() -> ListStackSetsPaginator:
     return boto3.client("cloudformation").get_paginator("list_stack_sets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSets)
 
 ```python
 class ListStackSetsPaginator(Boto3Paginator):
@@ -328,7 +328,7 @@ def get_list_stacks_paginator() -> ListStacksPaginator:
     return boto3.client("cloudformation").get_paginator("list_stacks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStacks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStacks)
 
 ```python
 class ListStacksPaginator(Boto3Paginator):

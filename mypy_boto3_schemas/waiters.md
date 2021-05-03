@@ -21,17 +21,12 @@ def get_code_binding_exists_waiter() -> CodeBindingExistsWaiter:
     return boto3.client("schemas").get_waiter("code_binding_exists")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Waiter.code_binding_exists)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Waiter.code_binding_exists)
 
-```python
-class CodeBindingExistsWaiter(Boto3Waiter):
-    def wait(
-        self,
-        Language: str,
-        RegistryName: str,
-        SchemaName: str,
-        SchemaVersion: str = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `CodeBindingExistsWaiter.wait` method:
+
+- `Language`: `str` *(required)*
+- `RegistryName`: `str` *(required)*
+- `SchemaName`: `str` *(required)*
+- `SchemaVersion`: `str`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#waiterconfigtypedef)

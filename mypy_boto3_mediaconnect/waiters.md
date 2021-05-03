@@ -23,17 +23,13 @@ def get_flow_active_waiter() -> FlowActiveWaiter:
     return boto3.client("mediaconnect").get_waiter("flow_active")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Waiter.flow_active)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Waiter.flow_active)
 
-```python
-class FlowActiveWaiter(Boto3Waiter):
-    def wait(
-        self,
-        FlowArn: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `FlowActiveWaiter.wait` method:
+
+- `FlowArn`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#waiterconfigtypedef)
+
 ## FlowDeletedWaiter
 
 Type annotations for `boto3.client("mediaconnect").get_waiter("flow_deleted")`.
@@ -47,17 +43,13 @@ def get_flow_deleted_waiter() -> FlowDeletedWaiter:
     return boto3.client("mediaconnect").get_waiter("flow_deleted")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Waiter.flow_deleted)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Waiter.flow_deleted)
 
-```python
-class FlowDeletedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        FlowArn: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `FlowDeletedWaiter.wait` method:
+
+- `FlowArn`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#waiterconfigtypedef)
+
 ## FlowStandbyWaiter
 
 Type annotations for `boto3.client("mediaconnect").get_waiter("flow_standby")`.
@@ -71,14 +63,9 @@ def get_flow_standby_waiter() -> FlowStandbyWaiter:
     return boto3.client("mediaconnect").get_waiter("flow_standby")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Waiter.flow_standby)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Waiter.flow_standby)
 
-```python
-class FlowStandbyWaiter(Boto3Waiter):
-    def wait(
-        self,
-        FlowArn: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `FlowStandbyWaiter.wait` method:
+
+- `FlowArn`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#waiterconfigtypedef)

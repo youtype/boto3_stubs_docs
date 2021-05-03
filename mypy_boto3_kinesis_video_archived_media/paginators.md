@@ -21,7 +21,7 @@ def get_list_fragments_paginator() -> ListFragmentsPaginator:
     return boto3.client("kinesis-video-archived-media").get_paginator("list_fragments")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Paginator.ListFragments)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Paginator.ListFragments)
 
 ```python
 class ListFragmentsPaginator(Boto3Paginator):

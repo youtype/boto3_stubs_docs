@@ -44,7 +44,7 @@ def get_cloudtrail_client() -> CloudTrailClient:
     return boto3.client("cloudtrail")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client)
 
 ## Exceptions
 
@@ -115,7 +115,7 @@ Exceptions:
 
 Type annotations for `boto3.client("cloudtrail").add_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.add_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.add_tags]
 
 ```python
 def add_tags(
@@ -130,7 +130,7 @@ def add_tags(
 
 Type annotations for `boto3.client("cloudtrail").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -144,7 +144,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("cloudtrail").create_trail` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.create_trail]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.create_trail]
 
 ```python
 def create_trail(
@@ -169,7 +169,7 @@ def create_trail(
 
 Type annotations for `boto3.client("cloudtrail").delete_trail` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.delete_trail]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.delete_trail]
 
 ```python
 def delete_trail(
@@ -183,7 +183,7 @@ def delete_trail(
 
 Type annotations for `boto3.client("cloudtrail").describe_trails` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.describe_trails]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.describe_trails]
 
 ```python
 def describe_trails(
@@ -198,7 +198,7 @@ def describe_trails(
 
 Type annotations for `boto3.client("cloudtrail").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -215,7 +215,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("cloudtrail").get_event_selectors` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_event_selectors]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_event_selectors]
 
 ```python
 def get_event_selectors(
@@ -229,7 +229,7 @@ def get_event_selectors(
 
 Type annotations for `boto3.client("cloudtrail").get_insight_selectors` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_insight_selectors]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_insight_selectors]
 
 ```python
 def get_insight_selectors(
@@ -243,7 +243,7 @@ def get_insight_selectors(
 
 Type annotations for `boto3.client("cloudtrail").get_trail` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_trail]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_trail]
 
 ```python
 def get_trail(
@@ -257,7 +257,7 @@ def get_trail(
 
 Type annotations for `boto3.client("cloudtrail").get_trail_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_trail_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_trail_status]
 
 ```python
 def get_trail_status(
@@ -271,7 +271,7 @@ def get_trail_status(
 
 Type annotations for `boto3.client("cloudtrail").list_public_keys` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_public_keys]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_public_keys]
 
 ```python
 def list_public_keys(
@@ -287,7 +287,7 @@ def list_public_keys(
 
 Type annotations for `boto3.client("cloudtrail").list_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_tags]
 
 ```python
 def list_tags(
@@ -302,7 +302,7 @@ def list_tags(
 
 Type annotations for `boto3.client("cloudtrail").list_trails` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_trails]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_trails]
 
 ```python
 def list_trails(
@@ -316,7 +316,7 @@ def list_trails(
 
 Type annotations for `boto3.client("cloudtrail").lookup_events` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.lookup_events]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.lookup_events]
 
 ```python
 def lookup_events(
@@ -335,7 +335,7 @@ def lookup_events(
 
 Type annotations for `boto3.client("cloudtrail").put_event_selectors` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_event_selectors]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_event_selectors]
 
 ```python
 def put_event_selectors(
@@ -351,7 +351,7 @@ def put_event_selectors(
 
 Type annotations for `boto3.client("cloudtrail").put_insight_selectors` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_insight_selectors]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_insight_selectors]
 
 ```python
 def put_insight_selectors(
@@ -366,7 +366,7 @@ def put_insight_selectors(
 
 Type annotations for `boto3.client("cloudtrail").remove_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.remove_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.remove_tags]
 
 ```python
 def remove_tags(
@@ -381,7 +381,7 @@ def remove_tags(
 
 Type annotations for `boto3.client("cloudtrail").start_logging` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.start_logging]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.start_logging]
 
 ```python
 def start_logging(
@@ -395,7 +395,7 @@ def start_logging(
 
 Type annotations for `boto3.client("cloudtrail").stop_logging` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.stop_logging]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.stop_logging]
 
 ```python
 def stop_logging(
@@ -409,7 +409,7 @@ def stop_logging(
 
 Type annotations for `boto3.client("cloudtrail").update_trail` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.update_trail]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.update_trail]
 
 ```python
 def update_trail(

@@ -21,7 +21,7 @@ def get_list_access_points_for_object_lambda_paginator() -> ListAccessPointsForO
     return boto3.client("s3control").get_paginator("list_access_points_for_object_lambda")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Paginator.ListAccessPointsForObjectLambda)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Paginator.ListAccessPointsForObjectLambda)
 
 ```python
 class ListAccessPointsForObjectLambdaPaginator(Boto3Paginator):

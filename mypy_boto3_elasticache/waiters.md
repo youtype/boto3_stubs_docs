@@ -24,21 +24,17 @@ def get_cache_cluster_available_waiter() -> CacheClusterAvailableWaiter:
     return boto3.client("elasticache").get_waiter("cache_cluster_available")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.cache_cluster_available)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.cache_cluster_available)
 
-```python
-class CacheClusterAvailableWaiter(Boto3Waiter):
-    def wait(
-        self,
-        CacheClusterId: str = None,
-        MaxRecords: int = None,
-        Marker: str = None,
-        ShowCacheNodeInfo: bool = None,
-        ShowCacheClustersNotInReplicationGroups: bool = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `CacheClusterAvailableWaiter.wait` method:
+
+- `CacheClusterId`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `ShowCacheNodeInfo`: `bool`
+- `ShowCacheClustersNotInReplicationGroups`: `bool`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#waiterconfigtypedef)
+
 ## CacheClusterDeletedWaiter
 
 Type annotations for `boto3.client("elasticache").get_waiter("cache_cluster_deleted")`.
@@ -52,21 +48,17 @@ def get_cache_cluster_deleted_waiter() -> CacheClusterDeletedWaiter:
     return boto3.client("elasticache").get_waiter("cache_cluster_deleted")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.cache_cluster_deleted)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.cache_cluster_deleted)
 
-```python
-class CacheClusterDeletedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        CacheClusterId: str = None,
-        MaxRecords: int = None,
-        Marker: str = None,
-        ShowCacheNodeInfo: bool = None,
-        ShowCacheClustersNotInReplicationGroups: bool = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `CacheClusterDeletedWaiter.wait` method:
+
+- `CacheClusterId`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `ShowCacheNodeInfo`: `bool`
+- `ShowCacheClustersNotInReplicationGroups`: `bool`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#waiterconfigtypedef)
+
 ## ReplicationGroupAvailableWaiter
 
 Type annotations for `boto3.client("elasticache").get_waiter("replication_group_available")`.
@@ -80,19 +72,15 @@ def get_replication_group_available_waiter() -> ReplicationGroupAvailableWaiter:
     return boto3.client("elasticache").get_waiter("replication_group_available")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.replication_group_available)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.replication_group_available)
 
-```python
-class ReplicationGroupAvailableWaiter(Boto3Waiter):
-    def wait(
-        self,
-        ReplicationGroupId: str = None,
-        MaxRecords: int = None,
-        Marker: str = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `ReplicationGroupAvailableWaiter.wait` method:
+
+- `ReplicationGroupId`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#waiterconfigtypedef)
+
 ## ReplicationGroupDeletedWaiter
 
 Type annotations for `boto3.client("elasticache").get_waiter("replication_group_deleted")`.
@@ -106,16 +94,11 @@ def get_replication_group_deleted_waiter() -> ReplicationGroupDeletedWaiter:
     return boto3.client("elasticache").get_waiter("replication_group_deleted")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.replication_group_deleted)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.replication_group_deleted)
 
-```python
-class ReplicationGroupDeletedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        ReplicationGroupId: str = None,
-        MaxRecords: int = None,
-        Marker: str = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `ReplicationGroupDeletedWaiter.wait` method:
+
+- `ReplicationGroupId`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#waiterconfigtypedef)

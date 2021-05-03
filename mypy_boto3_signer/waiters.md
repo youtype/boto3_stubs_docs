@@ -21,14 +21,9 @@ def get_successful_signing_job_waiter() -> SuccessfulSigningJobWaiter:
     return boto3.client("signer").get_waiter("successful_signing_job")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Waiter.successful_signing_job)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Waiter.successful_signing_job)
 
-```python
-class SuccessfulSigningJobWaiter(Boto3Waiter):
-    def wait(
-        self,
-        jobId: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `SuccessfulSigningJobWaiter.wait` method:
+
+- `jobId`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#waiterconfigtypedef)

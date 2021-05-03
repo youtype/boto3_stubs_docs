@@ -24,7 +24,7 @@ def get_list_aliases_paginator() -> ListAliasesPaginator:
     return boto3.client("kms").get_paginator("list_aliases")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListAliases)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListAliases)
 
 ```python
 class ListAliasesPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_list_grants_paginator() -> ListGrantsPaginator:
     return boto3.client("kms").get_paginator("list_grants")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListGrants)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListGrants)
 
 ```python
 class ListGrantsPaginator(Boto3Paginator):
@@ -74,7 +74,7 @@ def get_list_key_policies_paginator() -> ListKeyPoliciesPaginator:
     return boto3.client("kms").get_paginator("list_key_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListKeyPolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListKeyPolicies)
 
 ```python
 class ListKeyPoliciesPaginator(Boto3Paginator):
@@ -98,7 +98,7 @@ def get_list_keys_paginator() -> ListKeysPaginator:
     return boto3.client("kms").get_paginator("list_keys")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListKeys)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListKeys)
 
 ```python
 class ListKeysPaginator(Boto3Paginator):

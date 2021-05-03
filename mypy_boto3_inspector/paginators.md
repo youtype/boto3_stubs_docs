@@ -29,7 +29,7 @@ def get_list_assessment_run_agents_paginator() -> ListAssessmentRunAgentsPaginat
     return boto3.client("inspector").get_paginator("list_assessment_run_agents")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListAssessmentRunAgents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListAssessmentRunAgents)
 
 ```python
 class ListAssessmentRunAgentsPaginator(Boto3Paginator):
@@ -54,7 +54,7 @@ def get_list_assessment_runs_paginator() -> ListAssessmentRunsPaginator:
     return boto3.client("inspector").get_paginator("list_assessment_runs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListAssessmentRuns)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListAssessmentRuns)
 
 ```python
 class ListAssessmentRunsPaginator(Boto3Paginator):
@@ -79,7 +79,7 @@ def get_list_assessment_targets_paginator() -> ListAssessmentTargetsPaginator:
     return boto3.client("inspector").get_paginator("list_assessment_targets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListAssessmentTargets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListAssessmentTargets)
 
 ```python
 class ListAssessmentTargetsPaginator(Boto3Paginator):
@@ -103,7 +103,7 @@ def get_list_assessment_templates_paginator() -> ListAssessmentTemplatesPaginato
     return boto3.client("inspector").get_paginator("list_assessment_templates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListAssessmentTemplates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListAssessmentTemplates)
 
 ```python
 class ListAssessmentTemplatesPaginator(Boto3Paginator):
@@ -128,7 +128,7 @@ def get_list_event_subscriptions_paginator() -> ListEventSubscriptionsPaginator:
     return boto3.client("inspector").get_paginator("list_event_subscriptions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListEventSubscriptions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListEventSubscriptions)
 
 ```python
 class ListEventSubscriptionsPaginator(Boto3Paginator):
@@ -152,7 +152,7 @@ def get_list_exclusions_paginator() -> ListExclusionsPaginator:
     return boto3.client("inspector").get_paginator("list_exclusions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListExclusions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListExclusions)
 
 ```python
 class ListExclusionsPaginator(Boto3Paginator):
@@ -176,7 +176,7 @@ def get_list_findings_paginator() -> ListFindingsPaginator:
     return boto3.client("inspector").get_paginator("list_findings")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListFindings)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListFindings)
 
 ```python
 class ListFindingsPaginator(Boto3Paginator):
@@ -201,7 +201,7 @@ def get_list_rules_packages_paginator() -> ListRulesPackagesPaginator:
     return boto3.client("inspector").get_paginator("list_rules_packages")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListRulesPackages)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListRulesPackages)
 
 ```python
 class ListRulesPackagesPaginator(Boto3Paginator):
@@ -224,7 +224,7 @@ def get_preview_agents_paginator() -> PreviewAgentsPaginator:
     return boto3.client("inspector").get_paginator("preview_agents")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.PreviewAgents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.PreviewAgents)
 
 ```python
 class PreviewAgentsPaginator(Boto3Paginator):

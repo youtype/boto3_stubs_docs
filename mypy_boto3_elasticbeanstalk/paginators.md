@@ -25,7 +25,7 @@ def get_describe_application_versions_paginator() -> DescribeApplicationVersions
     return boto3.client("elasticbeanstalk").get_paginator("describe_application_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Paginator.DescribeApplicationVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Paginator.DescribeApplicationVersions)
 
 ```python
 class DescribeApplicationVersionsPaginator(Boto3Paginator):
@@ -50,7 +50,7 @@ def get_describe_environment_managed_action_history_paginator() -> DescribeEnvir
     return boto3.client("elasticbeanstalk").get_paginator("describe_environment_managed_action_history")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Paginator.DescribeEnvironmentManagedActionHistory)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Paginator.DescribeEnvironmentManagedActionHistory)
 
 ```python
 class DescribeEnvironmentManagedActionHistoryPaginator(Boto3Paginator):
@@ -75,7 +75,7 @@ def get_describe_environments_paginator() -> DescribeEnvironmentsPaginator:
     return boto3.client("elasticbeanstalk").get_paginator("describe_environments")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Paginator.DescribeEnvironments)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Paginator.DescribeEnvironments)
 
 ```python
 class DescribeEnvironmentsPaginator(Boto3Paginator):
@@ -104,7 +104,7 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return boto3.client("elasticbeanstalk").get_paginator("describe_events")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Paginator.DescribeEvents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Paginator.DescribeEvents)
 
 ```python
 class DescribeEventsPaginator(Boto3Paginator):
@@ -137,7 +137,7 @@ def get_list_platform_versions_paginator() -> ListPlatformVersionsPaginator:
     return boto3.client("elasticbeanstalk").get_paginator("list_platform_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Paginator.ListPlatformVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Paginator.ListPlatformVersions)
 
 ```python
 class ListPlatformVersionsPaginator(Boto3Paginator):

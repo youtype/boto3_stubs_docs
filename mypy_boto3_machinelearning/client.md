@@ -55,7 +55,7 @@ def get_machinelearning_client() -> MachineLearningClient:
     return boto3.client("machinelearning")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client)
 
 ## Exceptions
 
@@ -90,7 +90,7 @@ Exceptions:
 
 Type annotations for `boto3.client("machinelearning").add_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.add_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.add_tags]
 
 ```python
 def add_tags(
@@ -106,7 +106,7 @@ def add_tags(
 
 Type annotations for `boto3.client("machinelearning").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -120,7 +120,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("machinelearning").create_batch_prediction` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_batch_prediction]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_batch_prediction]
 
 ```python
 def create_batch_prediction(
@@ -138,7 +138,7 @@ def create_batch_prediction(
 
 Type annotations for `boto3.client("machinelearning").create_data_source_from_rds` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_rds]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_rds]
 
 ```python
 def create_data_source_from_rds(
@@ -156,7 +156,7 @@ def create_data_source_from_rds(
 
 Type annotations for `boto3.client("machinelearning").create_data_source_from_redshift` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_redshift]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_redshift]
 
 ```python
 def create_data_source_from_redshift(
@@ -174,7 +174,7 @@ def create_data_source_from_redshift(
 
 Type annotations for `boto3.client("machinelearning").create_data_source_from_s3` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_s3]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_s3]
 
 ```python
 def create_data_source_from_s3(
@@ -191,7 +191,7 @@ def create_data_source_from_s3(
 
 Type annotations for `boto3.client("machinelearning").create_evaluation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_evaluation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_evaluation]
 
 ```python
 def create_evaluation(
@@ -208,7 +208,7 @@ def create_evaluation(
 
 Type annotations for `boto3.client("machinelearning").create_ml_model` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_ml_model]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_ml_model]
 
 ```python
 def create_ml_model(
@@ -228,7 +228,7 @@ def create_ml_model(
 
 Type annotations for `boto3.client("machinelearning").create_realtime_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_realtime_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_realtime_endpoint]
 
 ```python
 def create_realtime_endpoint(
@@ -242,7 +242,7 @@ def create_realtime_endpoint(
 
 Type annotations for `boto3.client("machinelearning").delete_batch_prediction` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_batch_prediction]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_batch_prediction]
 
 ```python
 def delete_batch_prediction(
@@ -256,7 +256,7 @@ def delete_batch_prediction(
 
 Type annotations for `boto3.client("machinelearning").delete_data_source` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_data_source]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_data_source]
 
 ```python
 def delete_data_source(
@@ -270,7 +270,7 @@ def delete_data_source(
 
 Type annotations for `boto3.client("machinelearning").delete_evaluation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_evaluation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_evaluation]
 
 ```python
 def delete_evaluation(
@@ -284,7 +284,7 @@ def delete_evaluation(
 
 Type annotations for `boto3.client("machinelearning").delete_ml_model` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_ml_model]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_ml_model]
 
 ```python
 def delete_ml_model(
@@ -298,7 +298,7 @@ def delete_ml_model(
 
 Type annotations for `boto3.client("machinelearning").delete_realtime_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_realtime_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_realtime_endpoint]
 
 ```python
 def delete_realtime_endpoint(
@@ -312,7 +312,7 @@ def delete_realtime_endpoint(
 
 Type annotations for `boto3.client("machinelearning").delete_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_tags]
 
 ```python
 def delete_tags(
@@ -328,7 +328,7 @@ def delete_tags(
 
 Type annotations for `boto3.client("machinelearning").describe_batch_predictions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_batch_predictions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_batch_predictions]
 
 ```python
 def describe_batch_predictions(
@@ -352,7 +352,7 @@ def describe_batch_predictions(
 
 Type annotations for `boto3.client("machinelearning").describe_data_sources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_data_sources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_data_sources]
 
 ```python
 def describe_data_sources(
@@ -376,7 +376,7 @@ def describe_data_sources(
 
 Type annotations for `boto3.client("machinelearning").describe_evaluations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_evaluations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_evaluations]
 
 ```python
 def describe_evaluations(
@@ -400,7 +400,7 @@ def describe_evaluations(
 
 Type annotations for `boto3.client("machinelearning").describe_ml_models` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_ml_models]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_ml_models]
 
 ```python
 def describe_ml_models(
@@ -424,7 +424,7 @@ def describe_ml_models(
 
 Type annotations for `boto3.client("machinelearning").describe_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_tags]
 
 ```python
 def describe_tags(
@@ -439,7 +439,7 @@ def describe_tags(
 
 Type annotations for `boto3.client("machinelearning").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -456,7 +456,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("machinelearning").get_batch_prediction` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_batch_prediction]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_batch_prediction]
 
 ```python
 def get_batch_prediction(
@@ -470,7 +470,7 @@ def get_batch_prediction(
 
 Type annotations for `boto3.client("machinelearning").get_data_source` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_data_source]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_data_source]
 
 ```python
 def get_data_source(
@@ -485,7 +485,7 @@ def get_data_source(
 
 Type annotations for `boto3.client("machinelearning").get_evaluation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_evaluation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_evaluation]
 
 ```python
 def get_evaluation(
@@ -499,7 +499,7 @@ def get_evaluation(
 
 Type annotations for `boto3.client("machinelearning").get_ml_model` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_ml_model]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_ml_model]
 
 ```python
 def get_ml_model(
@@ -514,7 +514,7 @@ def get_ml_model(
 
 Type annotations for `boto3.client("machinelearning").predict` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.predict]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.predict]
 
 ```python
 def predict(
@@ -530,7 +530,7 @@ def predict(
 
 Type annotations for `boto3.client("machinelearning").update_batch_prediction` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_batch_prediction]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_batch_prediction]
 
 ```python
 def update_batch_prediction(
@@ -545,7 +545,7 @@ def update_batch_prediction(
 
 Type annotations for `boto3.client("machinelearning").update_data_source` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_data_source]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_data_source]
 
 ```python
 def update_data_source(
@@ -560,7 +560,7 @@ def update_data_source(
 
 Type annotations for `boto3.client("machinelearning").update_evaluation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_evaluation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_evaluation]
 
 ```python
 def update_evaluation(
@@ -575,7 +575,7 @@ def update_evaluation(
 
 Type annotations for `boto3.client("machinelearning").update_ml_model` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_ml_model]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_ml_model]
 
 ```python
 def update_ml_model(

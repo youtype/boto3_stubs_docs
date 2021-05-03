@@ -36,7 +36,7 @@ def get_list_accepted_portfolio_shares_paginator() -> ListAcceptedPortfolioShare
     return boto3.client("servicecatalog").get_paginator("list_accepted_portfolio_shares")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListAcceptedPortfolioShares)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListAcceptedPortfolioShares)
 
 ```python
 class ListAcceptedPortfolioSharesPaginator(Boto3Paginator):
@@ -61,7 +61,7 @@ def get_list_constraints_for_portfolio_paginator() -> ListConstraintsForPortfoli
     return boto3.client("servicecatalog").get_paginator("list_constraints_for_portfolio")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListConstraintsForPortfolio)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListConstraintsForPortfolio)
 
 ```python
 class ListConstraintsForPortfolioPaginator(Boto3Paginator):
@@ -87,7 +87,7 @@ def get_list_launch_paths_paginator() -> ListLaunchPathsPaginator:
     return boto3.client("servicecatalog").get_paginator("list_launch_paths")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListLaunchPaths)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListLaunchPaths)
 
 ```python
 class ListLaunchPathsPaginator(Boto3Paginator):
@@ -112,7 +112,7 @@ def get_list_organization_portfolio_access_paginator() -> ListOrganizationPortfo
     return boto3.client("servicecatalog").get_paginator("list_organization_portfolio_access")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListOrganizationPortfolioAccess)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListOrganizationPortfolioAccess)
 
 ```python
 class ListOrganizationPortfolioAccessPaginator(Boto3Paginator):
@@ -138,7 +138,7 @@ def get_list_portfolios_paginator() -> ListPortfoliosPaginator:
     return boto3.client("servicecatalog").get_paginator("list_portfolios")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListPortfolios)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListPortfolios)
 
 ```python
 class ListPortfoliosPaginator(Boto3Paginator):
@@ -162,7 +162,7 @@ def get_list_portfolios_for_product_paginator() -> ListPortfoliosForProductPagin
     return boto3.client("servicecatalog").get_paginator("list_portfolios_for_product")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListPortfoliosForProduct)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListPortfoliosForProduct)
 
 ```python
 class ListPortfoliosForProductPaginator(Boto3Paginator):
@@ -187,7 +187,7 @@ def get_list_principals_for_portfolio_paginator() -> ListPrincipalsForPortfolioP
     return boto3.client("servicecatalog").get_paginator("list_principals_for_portfolio")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListPrincipalsForPortfolio)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListPrincipalsForPortfolio)
 
 ```python
 class ListPrincipalsForPortfolioPaginator(Boto3Paginator):
@@ -212,7 +212,7 @@ def get_list_provisioned_product_plans_paginator() -> ListProvisionedProductPlan
     return boto3.client("servicecatalog").get_paginator("list_provisioned_product_plans")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListProvisionedProductPlans)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListProvisionedProductPlans)
 
 ```python
 class ListProvisionedProductPlansPaginator(Boto3Paginator):
@@ -238,7 +238,7 @@ def get_list_provisioning_artifacts_for_service_action_paginator() -> ListProvis
     return boto3.client("servicecatalog").get_paginator("list_provisioning_artifacts_for_service_action")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListProvisioningArtifactsForServiceAction)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListProvisioningArtifactsForServiceAction)
 
 ```python
 class ListProvisioningArtifactsForServiceActionPaginator(Boto3Paginator):
@@ -263,7 +263,7 @@ def get_list_record_history_paginator() -> ListRecordHistoryPaginator:
     return boto3.client("servicecatalog").get_paginator("list_record_history")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListRecordHistory)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListRecordHistory)
 
 ```python
 class ListRecordHistoryPaginator(Boto3Paginator):
@@ -289,7 +289,7 @@ def get_list_resources_for_tag_option_paginator() -> ListResourcesForTagOptionPa
     return boto3.client("servicecatalog").get_paginator("list_resources_for_tag_option")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListResourcesForTagOption)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListResourcesForTagOption)
 
 ```python
 class ListResourcesForTagOptionPaginator(Boto3Paginator):
@@ -314,7 +314,7 @@ def get_list_service_actions_paginator() -> ListServiceActionsPaginator:
     return boto3.client("servicecatalog").get_paginator("list_service_actions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListServiceActions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListServiceActions)
 
 ```python
 class ListServiceActionsPaginator(Boto3Paginator):
@@ -338,7 +338,7 @@ def get_list_service_actions_for_provisioning_artifact_paginator() -> ListServic
     return boto3.client("servicecatalog").get_paginator("list_service_actions_for_provisioning_artifact")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListServiceActionsForProvisioningArtifact)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListServiceActionsForProvisioningArtifact)
 
 ```python
 class ListServiceActionsForProvisioningArtifactPaginator(Boto3Paginator):
@@ -364,7 +364,7 @@ def get_list_tag_options_paginator() -> ListTagOptionsPaginator:
     return boto3.client("servicecatalog").get_paginator("list_tag_options")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListTagOptions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ListTagOptions)
 
 ```python
 class ListTagOptionsPaginator(Boto3Paginator):
@@ -388,7 +388,7 @@ def get_scan_provisioned_products_paginator() -> ScanProvisionedProductsPaginato
     return boto3.client("servicecatalog").get_paginator("scan_provisioned_products")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ScanProvisionedProducts)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.ScanProvisionedProducts)
 
 ```python
 class ScanProvisionedProductsPaginator(Boto3Paginator):
@@ -413,7 +413,7 @@ def get_search_products_as_admin_paginator() -> SearchProductsAsAdminPaginator:
     return boto3.client("servicecatalog").get_paginator("search_products_as_admin")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.SearchProductsAsAdmin)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Paginator.SearchProductsAsAdmin)
 
 ```python
 class SearchProductsAsAdminPaginator(Boto3Paginator):

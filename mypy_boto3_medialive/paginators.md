@@ -30,7 +30,7 @@ def get_describe_schedule_paginator() -> DescribeSchedulePaginator:
     return boto3.client("medialive").get_paginator("describe_schedule")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.DescribeSchedule)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.DescribeSchedule)
 
 ```python
 class DescribeSchedulePaginator(Boto3Paginator):
@@ -54,7 +54,7 @@ def get_list_channels_paginator() -> ListChannelsPaginator:
     return boto3.client("medialive").get_paginator("list_channels")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListChannels)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListChannels)
 
 ```python
 class ListChannelsPaginator(Boto3Paginator):
@@ -77,7 +77,7 @@ def get_list_input_device_transfers_paginator() -> ListInputDeviceTransfersPagin
     return boto3.client("medialive").get_paginator("list_input_device_transfers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputDeviceTransfers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputDeviceTransfers)
 
 ```python
 class ListInputDeviceTransfersPaginator(Boto3Paginator):
@@ -101,7 +101,7 @@ def get_list_input_devices_paginator() -> ListInputDevicesPaginator:
     return boto3.client("medialive").get_paginator("list_input_devices")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputDevices)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputDevices)
 
 ```python
 class ListInputDevicesPaginator(Boto3Paginator):
@@ -124,7 +124,7 @@ def get_list_input_security_groups_paginator() -> ListInputSecurityGroupsPaginat
     return boto3.client("medialive").get_paginator("list_input_security_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputSecurityGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputSecurityGroups)
 
 ```python
 class ListInputSecurityGroupsPaginator(Boto3Paginator):
@@ -147,7 +147,7 @@ def get_list_inputs_paginator() -> ListInputsPaginator:
     return boto3.client("medialive").get_paginator("list_inputs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputs)
 
 ```python
 class ListInputsPaginator(Boto3Paginator):
@@ -170,7 +170,7 @@ def get_list_multiplex_programs_paginator() -> ListMultiplexProgramsPaginator:
     return boto3.client("medialive").get_paginator("list_multiplex_programs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListMultiplexPrograms)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListMultiplexPrograms)
 
 ```python
 class ListMultiplexProgramsPaginator(Boto3Paginator):
@@ -194,7 +194,7 @@ def get_list_multiplexes_paginator() -> ListMultiplexesPaginator:
     return boto3.client("medialive").get_paginator("list_multiplexes")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListMultiplexes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListMultiplexes)
 
 ```python
 class ListMultiplexesPaginator(Boto3Paginator):
@@ -217,7 +217,7 @@ def get_list_offerings_paginator() -> ListOfferingsPaginator:
     return boto3.client("medialive").get_paginator("list_offerings")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListOfferings)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListOfferings)
 
 ```python
 class ListOfferingsPaginator(Boto3Paginator):
@@ -250,7 +250,7 @@ def get_list_reservations_paginator() -> ListReservationsPaginator:
     return boto3.client("medialive").get_paginator("list_reservations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListReservations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListReservations)
 
 ```python
 class ListReservationsPaginator(Boto3Paginator):

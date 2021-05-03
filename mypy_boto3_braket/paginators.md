@@ -22,7 +22,7 @@ def get_search_devices_paginator() -> SearchDevicesPaginator:
     return boto3.client("braket").get_paginator("search_devices")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Paginator.SearchDevices)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Paginator.SearchDevices)
 
 ```python
 class SearchDevicesPaginator(Boto3Paginator):
@@ -46,7 +46,7 @@ def get_search_quantum_tasks_paginator() -> SearchQuantumTasksPaginator:
     return boto3.client("braket").get_paginator("search_quantum_tasks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Paginator.SearchQuantumTasks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Paginator.SearchQuantumTasks)
 
 ```python
 class SearchQuantumTasksPaginator(Boto3Paginator):

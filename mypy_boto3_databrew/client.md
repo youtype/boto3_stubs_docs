@@ -65,7 +65,7 @@ def get_databrew_client() -> GlueDataBrewClient:
     return boto3.client("databrew")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client)
 
 ## Exceptions
 
@@ -98,7 +98,7 @@ Exceptions:
 
 Type annotations for `boto3.client("databrew").batch_delete_recipe_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.batch_delete_recipe_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.batch_delete_recipe_version]
 
 ```python
 def batch_delete_recipe_version(
@@ -113,7 +113,7 @@ def batch_delete_recipe_version(
 
 Type annotations for `boto3.client("databrew").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -127,7 +127,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("databrew").create_dataset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_dataset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_dataset]
 
 ```python
 def create_dataset(
@@ -146,7 +146,7 @@ def create_dataset(
 
 Type annotations for `boto3.client("databrew").create_profile_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_profile_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_profile_job]
 
 ```python
 def create_profile_job(
@@ -171,7 +171,7 @@ def create_profile_job(
 
 Type annotations for `boto3.client("databrew").create_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_project]
 
 ```python
 def create_project(
@@ -190,7 +190,7 @@ def create_project(
 
 Type annotations for `boto3.client("databrew").create_recipe` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_recipe]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_recipe]
 
 ```python
 def create_recipe(
@@ -207,7 +207,7 @@ def create_recipe(
 
 Type annotations for `boto3.client("databrew").create_recipe_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_recipe_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_recipe_job]
 
 ```python
 def create_recipe_job(
@@ -233,7 +233,7 @@ def create_recipe_job(
 
 Type annotations for `boto3.client("databrew").create_schedule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_schedule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_schedule]
 
 ```python
 def create_schedule(
@@ -250,7 +250,7 @@ def create_schedule(
 
 Type annotations for `boto3.client("databrew").delete_dataset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_dataset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_dataset]
 
 ```python
 def delete_dataset(
@@ -264,7 +264,7 @@ def delete_dataset(
 
 Type annotations for `boto3.client("databrew").delete_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_job]
 
 ```python
 def delete_job(
@@ -278,7 +278,7 @@ def delete_job(
 
 Type annotations for `boto3.client("databrew").delete_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_project]
 
 ```python
 def delete_project(
@@ -292,7 +292,7 @@ def delete_project(
 
 Type annotations for `boto3.client("databrew").delete_recipe_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_recipe_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_recipe_version]
 
 ```python
 def delete_recipe_version(
@@ -307,7 +307,7 @@ def delete_recipe_version(
 
 Type annotations for `boto3.client("databrew").delete_schedule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_schedule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_schedule]
 
 ```python
 def delete_schedule(
@@ -321,7 +321,7 @@ def delete_schedule(
 
 Type annotations for `boto3.client("databrew").describe_dataset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_dataset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_dataset]
 
 ```python
 def describe_dataset(
@@ -335,7 +335,7 @@ def describe_dataset(
 
 Type annotations for `boto3.client("databrew").describe_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_job]
 
 ```python
 def describe_job(
@@ -349,7 +349,7 @@ def describe_job(
 
 Type annotations for `boto3.client("databrew").describe_job_run` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_job_run]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_job_run]
 
 ```python
 def describe_job_run(
@@ -364,7 +364,7 @@ def describe_job_run(
 
 Type annotations for `boto3.client("databrew").describe_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_project]
 
 ```python
 def describe_project(
@@ -378,7 +378,7 @@ def describe_project(
 
 Type annotations for `boto3.client("databrew").describe_recipe` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_recipe]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_recipe]
 
 ```python
 def describe_recipe(
@@ -393,7 +393,7 @@ def describe_recipe(
 
 Type annotations for `boto3.client("databrew").describe_schedule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_schedule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_schedule]
 
 ```python
 def describe_schedule(
@@ -407,7 +407,7 @@ def describe_schedule(
 
 Type annotations for `boto3.client("databrew").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -424,7 +424,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("databrew").list_datasets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_datasets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_datasets]
 
 ```python
 def list_datasets(
@@ -439,7 +439,7 @@ def list_datasets(
 
 Type annotations for `boto3.client("databrew").list_job_runs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_job_runs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_job_runs]
 
 ```python
 def list_job_runs(
@@ -455,7 +455,7 @@ def list_job_runs(
 
 Type annotations for `boto3.client("databrew").list_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_jobs]
 
 ```python
 def list_jobs(
@@ -472,7 +472,7 @@ def list_jobs(
 
 Type annotations for `boto3.client("databrew").list_projects` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_projects]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_projects]
 
 ```python
 def list_projects(
@@ -487,7 +487,7 @@ def list_projects(
 
 Type annotations for `boto3.client("databrew").list_recipe_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_recipe_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_recipe_versions]
 
 ```python
 def list_recipe_versions(
@@ -503,7 +503,7 @@ def list_recipe_versions(
 
 Type annotations for `boto3.client("databrew").list_recipes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_recipes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_recipes]
 
 ```python
 def list_recipes(
@@ -519,7 +519,7 @@ def list_recipes(
 
 Type annotations for `boto3.client("databrew").list_schedules` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_schedules]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_schedules]
 
 ```python
 def list_schedules(
@@ -535,7 +535,7 @@ def list_schedules(
 
 Type annotations for `boto3.client("databrew").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -549,7 +549,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("databrew").publish_recipe` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.publish_recipe]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.publish_recipe]
 
 ```python
 def publish_recipe(
@@ -564,7 +564,7 @@ def publish_recipe(
 
 Type annotations for `boto3.client("databrew").send_project_session_action` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.send_project_session_action]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.send_project_session_action]
 
 ```python
 def send_project_session_action(
@@ -583,7 +583,7 @@ def send_project_session_action(
 
 Type annotations for `boto3.client("databrew").start_job_run` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.start_job_run]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.start_job_run]
 
 ```python
 def start_job_run(
@@ -597,7 +597,7 @@ def start_job_run(
 
 Type annotations for `boto3.client("databrew").start_project_session` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.start_project_session]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.start_project_session]
 
 ```python
 def start_project_session(
@@ -612,7 +612,7 @@ def start_project_session(
 
 Type annotations for `boto3.client("databrew").stop_job_run` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.stop_job_run]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.stop_job_run]
 
 ```python
 def stop_job_run(
@@ -627,7 +627,7 @@ def stop_job_run(
 
 Type annotations for `boto3.client("databrew").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -642,7 +642,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("databrew").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -657,7 +657,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("databrew").update_dataset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_dataset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_dataset]
 
 ```python
 def update_dataset(
@@ -675,7 +675,7 @@ def update_dataset(
 
 Type annotations for `boto3.client("databrew").update_profile_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_profile_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_profile_job]
 
 ```python
 def update_profile_job(
@@ -698,7 +698,7 @@ def update_profile_job(
 
 Type annotations for `boto3.client("databrew").update_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_project]
 
 ```python
 def update_project(
@@ -714,7 +714,7 @@ def update_project(
 
 Type annotations for `boto3.client("databrew").update_recipe` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_recipe]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_recipe]
 
 ```python
 def update_recipe(
@@ -730,7 +730,7 @@ def update_recipe(
 
 Type annotations for `boto3.client("databrew").update_recipe_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_recipe_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_recipe_job]
 
 ```python
 def update_recipe_job(
@@ -752,7 +752,7 @@ def update_recipe_job(
 
 Type annotations for `boto3.client("databrew").update_schedule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_schedule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_schedule]
 
 ```python
 def update_schedule(

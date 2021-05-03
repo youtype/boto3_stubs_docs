@@ -21,7 +21,7 @@ def get_describe_accelerators_paginator() -> DescribeAcceleratorsPaginator:
     return boto3.client("elastic-inference").get_paginator("describe_accelerators")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Paginator.DescribeAccelerators)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Paginator.DescribeAccelerators)
 
 ```python
 class DescribeAcceleratorsPaginator(Boto3Paginator):

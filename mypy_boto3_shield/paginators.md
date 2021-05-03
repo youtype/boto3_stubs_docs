@@ -22,7 +22,7 @@ def get_list_attacks_paginator() -> ListAttacksPaginator:
     return boto3.client("shield").get_paginator("list_attacks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Paginator.ListAttacks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Paginator.ListAttacks)
 
 ```python
 class ListAttacksPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_list_protections_paginator() -> ListProtectionsPaginator:
     return boto3.client("shield").get_paginator("list_protections")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Paginator.ListProtections)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Paginator.ListProtections)
 
 ```python
 class ListProtectionsPaginator(Boto3Paginator):

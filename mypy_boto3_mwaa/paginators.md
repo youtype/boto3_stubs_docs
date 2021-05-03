@@ -21,7 +21,7 @@ def get_list_environments_paginator() -> ListEnvironmentsPaginator:
     return boto3.client("mwaa").get_paginator("list_environments")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Paginator.ListEnvironments)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Paginator.ListEnvironments)
 
 ```python
 class ListEnvironmentsPaginator(Boto3Paginator):

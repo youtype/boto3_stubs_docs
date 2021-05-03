@@ -39,7 +39,7 @@ def get_list_bulk_deployment_detailed_reports_paginator() -> ListBulkDeploymentD
     return boto3.client("greengrass").get_paginator("list_bulk_deployment_detailed_reports")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListBulkDeploymentDetailedReports)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListBulkDeploymentDetailedReports)
 
 ```python
 class ListBulkDeploymentDetailedReportsPaginator(Boto3Paginator):
@@ -63,7 +63,7 @@ def get_list_bulk_deployments_paginator() -> ListBulkDeploymentsPaginator:
     return boto3.client("greengrass").get_paginator("list_bulk_deployments")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListBulkDeployments)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListBulkDeployments)
 
 ```python
 class ListBulkDeploymentsPaginator(Boto3Paginator):
@@ -86,7 +86,7 @@ def get_list_connector_definition_versions_paginator() -> ListConnectorDefinitio
     return boto3.client("greengrass").get_paginator("list_connector_definition_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListConnectorDefinitionVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListConnectorDefinitionVersions)
 
 ```python
 class ListConnectorDefinitionVersionsPaginator(Boto3Paginator):
@@ -110,7 +110,7 @@ def get_list_connector_definitions_paginator() -> ListConnectorDefinitionsPagina
     return boto3.client("greengrass").get_paginator("list_connector_definitions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListConnectorDefinitions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListConnectorDefinitions)
 
 ```python
 class ListConnectorDefinitionsPaginator(Boto3Paginator):
@@ -133,7 +133,7 @@ def get_list_core_definition_versions_paginator() -> ListCoreDefinitionVersionsP
     return boto3.client("greengrass").get_paginator("list_core_definition_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListCoreDefinitionVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListCoreDefinitionVersions)
 
 ```python
 class ListCoreDefinitionVersionsPaginator(Boto3Paginator):
@@ -157,7 +157,7 @@ def get_list_core_definitions_paginator() -> ListCoreDefinitionsPaginator:
     return boto3.client("greengrass").get_paginator("list_core_definitions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListCoreDefinitions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListCoreDefinitions)
 
 ```python
 class ListCoreDefinitionsPaginator(Boto3Paginator):
@@ -180,7 +180,7 @@ def get_list_deployments_paginator() -> ListDeploymentsPaginator:
     return boto3.client("greengrass").get_paginator("list_deployments")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListDeployments)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListDeployments)
 
 ```python
 class ListDeploymentsPaginator(Boto3Paginator):
@@ -204,7 +204,7 @@ def get_list_device_definition_versions_paginator() -> ListDeviceDefinitionVersi
     return boto3.client("greengrass").get_paginator("list_device_definition_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListDeviceDefinitionVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListDeviceDefinitionVersions)
 
 ```python
 class ListDeviceDefinitionVersionsPaginator(Boto3Paginator):
@@ -228,7 +228,7 @@ def get_list_device_definitions_paginator() -> ListDeviceDefinitionsPaginator:
     return boto3.client("greengrass").get_paginator("list_device_definitions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListDeviceDefinitions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListDeviceDefinitions)
 
 ```python
 class ListDeviceDefinitionsPaginator(Boto3Paginator):
@@ -251,7 +251,7 @@ def get_list_function_definition_versions_paginator() -> ListFunctionDefinitionV
     return boto3.client("greengrass").get_paginator("list_function_definition_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListFunctionDefinitionVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListFunctionDefinitionVersions)
 
 ```python
 class ListFunctionDefinitionVersionsPaginator(Boto3Paginator):
@@ -275,7 +275,7 @@ def get_list_function_definitions_paginator() -> ListFunctionDefinitionsPaginato
     return boto3.client("greengrass").get_paginator("list_function_definitions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListFunctionDefinitions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListFunctionDefinitions)
 
 ```python
 class ListFunctionDefinitionsPaginator(Boto3Paginator):
@@ -298,7 +298,7 @@ def get_list_group_versions_paginator() -> ListGroupVersionsPaginator:
     return boto3.client("greengrass").get_paginator("list_group_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListGroupVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListGroupVersions)
 
 ```python
 class ListGroupVersionsPaginator(Boto3Paginator):
@@ -322,7 +322,7 @@ def get_list_groups_paginator() -> ListGroupsPaginator:
     return boto3.client("greengrass").get_paginator("list_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListGroups)
 
 ```python
 class ListGroupsPaginator(Boto3Paginator):
@@ -345,7 +345,7 @@ def get_list_logger_definition_versions_paginator() -> ListLoggerDefinitionVersi
     return boto3.client("greengrass").get_paginator("list_logger_definition_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListLoggerDefinitionVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListLoggerDefinitionVersions)
 
 ```python
 class ListLoggerDefinitionVersionsPaginator(Boto3Paginator):
@@ -369,7 +369,7 @@ def get_list_logger_definitions_paginator() -> ListLoggerDefinitionsPaginator:
     return boto3.client("greengrass").get_paginator("list_logger_definitions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListLoggerDefinitions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListLoggerDefinitions)
 
 ```python
 class ListLoggerDefinitionsPaginator(Boto3Paginator):
@@ -392,7 +392,7 @@ def get_list_resource_definition_versions_paginator() -> ListResourceDefinitionV
     return boto3.client("greengrass").get_paginator("list_resource_definition_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListResourceDefinitionVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListResourceDefinitionVersions)
 
 ```python
 class ListResourceDefinitionVersionsPaginator(Boto3Paginator):
@@ -416,7 +416,7 @@ def get_list_resource_definitions_paginator() -> ListResourceDefinitionsPaginato
     return boto3.client("greengrass").get_paginator("list_resource_definitions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListResourceDefinitions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListResourceDefinitions)
 
 ```python
 class ListResourceDefinitionsPaginator(Boto3Paginator):
@@ -439,7 +439,7 @@ def get_list_subscription_definition_versions_paginator() -> ListSubscriptionDef
     return boto3.client("greengrass").get_paginator("list_subscription_definition_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListSubscriptionDefinitionVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListSubscriptionDefinitionVersions)
 
 ```python
 class ListSubscriptionDefinitionVersionsPaginator(Boto3Paginator):
@@ -463,7 +463,7 @@ def get_list_subscription_definitions_paginator() -> ListSubscriptionDefinitions
     return boto3.client("greengrass").get_paginator("list_subscription_definitions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListSubscriptionDefinitions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListSubscriptionDefinitions)
 
 ```python
 class ListSubscriptionDefinitionsPaginator(Boto3Paginator):

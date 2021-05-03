@@ -24,7 +24,7 @@ def get_describe_compute_environments_paginator() -> DescribeComputeEnvironments
     return boto3.client("batch").get_paginator("describe_compute_environments")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Paginator.DescribeComputeEnvironments)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Paginator.DescribeComputeEnvironments)
 
 ```python
 class DescribeComputeEnvironmentsPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_describe_job_definitions_paginator() -> DescribeJobDefinitionsPaginator:
     return boto3.client("batch").get_paginator("describe_job_definitions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Paginator.DescribeJobDefinitions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Paginator.DescribeJobDefinitions)
 
 ```python
 class DescribeJobDefinitionsPaginator(Boto3Paginator):
@@ -74,7 +74,7 @@ def get_describe_job_queues_paginator() -> DescribeJobQueuesPaginator:
     return boto3.client("batch").get_paginator("describe_job_queues")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Paginator.DescribeJobQueues)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Paginator.DescribeJobQueues)
 
 ```python
 class DescribeJobQueuesPaginator(Boto3Paginator):
@@ -98,7 +98,7 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("batch").get_paginator("list_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Paginator.ListJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Paginator.ListJobs)
 
 ```python
 class ListJobsPaginator(Boto3Paginator):

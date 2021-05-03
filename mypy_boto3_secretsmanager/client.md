@@ -48,7 +48,7 @@ def get_secretsmanager_client() -> SecretsManagerClient:
     return boto3.client("secretsmanager")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client)
 
 ## Exceptions
 
@@ -87,7 +87,7 @@ Exceptions:
 
 Type annotations for `boto3.client("secretsmanager").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -101,7 +101,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("secretsmanager").cancel_rotate_secret` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.cancel_rotate_secret]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.cancel_rotate_secret]
 
 ```python
 def cancel_rotate_secret(
@@ -115,7 +115,7 @@ def cancel_rotate_secret(
 
 Type annotations for `boto3.client("secretsmanager").create_secret` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.create_secret]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.create_secret]
 
 ```python
 def create_secret(
@@ -137,7 +137,7 @@ def create_secret(
 
 Type annotations for `boto3.client("secretsmanager").delete_resource_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.delete_resource_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.delete_resource_policy]
 
 ```python
 def delete_resource_policy(
@@ -151,7 +151,7 @@ def delete_resource_policy(
 
 Type annotations for `boto3.client("secretsmanager").delete_secret` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.delete_secret]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.delete_secret]
 
 ```python
 def delete_secret(
@@ -167,7 +167,7 @@ def delete_secret(
 
 Type annotations for `boto3.client("secretsmanager").describe_secret` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.describe_secret]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.describe_secret]
 
 ```python
 def describe_secret(
@@ -181,7 +181,7 @@ def describe_secret(
 
 Type annotations for `boto3.client("secretsmanager").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -198,7 +198,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("secretsmanager").get_random_password` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_random_password]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_random_password]
 
 ```python
 def get_random_password(
@@ -219,7 +219,7 @@ def get_random_password(
 
 Type annotations for `boto3.client("secretsmanager").get_resource_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_resource_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_resource_policy]
 
 ```python
 def get_resource_policy(
@@ -233,7 +233,7 @@ def get_resource_policy(
 
 Type annotations for `boto3.client("secretsmanager").get_secret_value` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_secret_value]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_secret_value]
 
 ```python
 def get_secret_value(
@@ -249,7 +249,7 @@ def get_secret_value(
 
 Type annotations for `boto3.client("secretsmanager").list_secret_version_ids` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.list_secret_version_ids]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.list_secret_version_ids]
 
 ```python
 def list_secret_version_ids(
@@ -266,7 +266,7 @@ def list_secret_version_ids(
 
 Type annotations for `boto3.client("secretsmanager").list_secrets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.list_secrets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.list_secrets]
 
 ```python
 def list_secrets(
@@ -283,7 +283,7 @@ def list_secrets(
 
 Type annotations for `boto3.client("secretsmanager").put_resource_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.put_resource_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.put_resource_policy]
 
 ```python
 def put_resource_policy(
@@ -299,7 +299,7 @@ def put_resource_policy(
 
 Type annotations for `boto3.client("secretsmanager").put_secret_value` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.put_secret_value]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.put_secret_value]
 
 ```python
 def put_secret_value(
@@ -317,7 +317,7 @@ def put_secret_value(
 
 Type annotations for `boto3.client("secretsmanager").remove_regions_from_replication` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.remove_regions_from_replication]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.remove_regions_from_replication]
 
 ```python
 def remove_regions_from_replication(
@@ -332,7 +332,7 @@ def remove_regions_from_replication(
 
 Type annotations for `boto3.client("secretsmanager").replicate_secret_to_regions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.replicate_secret_to_regions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.replicate_secret_to_regions]
 
 ```python
 def replicate_secret_to_regions(
@@ -348,7 +348,7 @@ def replicate_secret_to_regions(
 
 Type annotations for `boto3.client("secretsmanager").restore_secret` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.restore_secret]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.restore_secret]
 
 ```python
 def restore_secret(
@@ -362,7 +362,7 @@ def restore_secret(
 
 Type annotations for `boto3.client("secretsmanager").rotate_secret` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.rotate_secret]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.rotate_secret]
 
 ```python
 def rotate_secret(
@@ -379,7 +379,7 @@ def rotate_secret(
 
 Type annotations for `boto3.client("secretsmanager").stop_replication_to_replica` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.stop_replication_to_replica]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.stop_replication_to_replica]
 
 ```python
 def stop_replication_to_replica(
@@ -393,7 +393,7 @@ def stop_replication_to_replica(
 
 Type annotations for `boto3.client("secretsmanager").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -408,7 +408,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("secretsmanager").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -423,7 +423,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("secretsmanager").update_secret` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.update_secret]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.update_secret]
 
 ```python
 def update_secret(
@@ -442,7 +442,7 @@ def update_secret(
 
 Type annotations for `boto3.client("secretsmanager").update_secret_version_stage` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.update_secret_version_stage]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.update_secret_version_stage]
 
 ```python
 def update_secret_version_stage(
@@ -459,7 +459,7 @@ def update_secret_version_stage(
 
 Type annotations for `boto3.client("secretsmanager").validate_resource_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.validate_resource_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.validate_resource_policy]
 
 ```python
 def validate_resource_policy(

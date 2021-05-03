@@ -76,7 +76,7 @@ def get_iotwireless_client() -> IoTWirelessClient:
     return boto3.client("iotwireless")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client)
 
 ## Exceptions
 
@@ -110,7 +110,7 @@ Exceptions:
 
 Type annotations for `boto3.client("iotwireless").associate_aws_account_with_partner_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_aws_account_with_partner_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_aws_account_with_partner_account]
 
 ```python
 def associate_aws_account_with_partner_account(
@@ -126,7 +126,7 @@ def associate_aws_account_with_partner_account(
 
 Type annotations for `boto3.client("iotwireless").associate_wireless_device_with_thing` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_wireless_device_with_thing]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_wireless_device_with_thing]
 
 ```python
 def associate_wireless_device_with_thing(
@@ -141,7 +141,7 @@ def associate_wireless_device_with_thing(
 
 Type annotations for `boto3.client("iotwireless").associate_wireless_gateway_with_certificate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_wireless_gateway_with_certificate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_wireless_gateway_with_certificate]
 
 ```python
 def associate_wireless_gateway_with_certificate(
@@ -156,7 +156,7 @@ def associate_wireless_gateway_with_certificate(
 
 Type annotations for `boto3.client("iotwireless").associate_wireless_gateway_with_thing` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_wireless_gateway_with_thing]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_wireless_gateway_with_thing]
 
 ```python
 def associate_wireless_gateway_with_thing(
@@ -171,7 +171,7 @@ def associate_wireless_gateway_with_thing(
 
 Type annotations for `boto3.client("iotwireless").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -185,7 +185,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("iotwireless").create_destination` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_destination]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_destination]
 
 ```python
 def create_destination(
@@ -205,7 +205,7 @@ def create_destination(
 
 Type annotations for `boto3.client("iotwireless").create_device_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_device_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_device_profile]
 
 ```python
 def create_device_profile(
@@ -222,7 +222,7 @@ def create_device_profile(
 
 Type annotations for `boto3.client("iotwireless").create_service_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_service_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_service_profile]
 
 ```python
 def create_service_profile(
@@ -239,7 +239,7 @@ def create_service_profile(
 
 Type annotations for `boto3.client("iotwireless").create_wireless_device` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_device]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_device]
 
 ```python
 def create_wireless_device(
@@ -259,7 +259,7 @@ def create_wireless_device(
 
 Type annotations for `boto3.client("iotwireless").create_wireless_gateway` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_gateway]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_gateway]
 
 ```python
 def create_wireless_gateway(
@@ -277,7 +277,7 @@ def create_wireless_gateway(
 
 Type annotations for `boto3.client("iotwireless").create_wireless_gateway_task` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_gateway_task]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_gateway_task]
 
 ```python
 def create_wireless_gateway_task(
@@ -292,7 +292,7 @@ def create_wireless_gateway_task(
 
 Type annotations for `boto3.client("iotwireless").create_wireless_gateway_task_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_gateway_task_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_gateway_task_definition]
 
 ```python
 def create_wireless_gateway_task_definition(
@@ -310,7 +310,7 @@ def create_wireless_gateway_task_definition(
 
 Type annotations for `boto3.client("iotwireless").delete_destination` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_destination]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_destination]
 
 ```python
 def delete_destination(
@@ -324,7 +324,7 @@ def delete_destination(
 
 Type annotations for `boto3.client("iotwireless").delete_device_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_device_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_device_profile]
 
 ```python
 def delete_device_profile(
@@ -338,7 +338,7 @@ def delete_device_profile(
 
 Type annotations for `boto3.client("iotwireless").delete_service_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_service_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_service_profile]
 
 ```python
 def delete_service_profile(
@@ -352,7 +352,7 @@ def delete_service_profile(
 
 Type annotations for `boto3.client("iotwireless").delete_wireless_device` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_device]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_device]
 
 ```python
 def delete_wireless_device(
@@ -366,7 +366,7 @@ def delete_wireless_device(
 
 Type annotations for `boto3.client("iotwireless").delete_wireless_gateway` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_gateway]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_gateway]
 
 ```python
 def delete_wireless_gateway(
@@ -380,7 +380,7 @@ def delete_wireless_gateway(
 
 Type annotations for `boto3.client("iotwireless").delete_wireless_gateway_task` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_gateway_task]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_gateway_task]
 
 ```python
 def delete_wireless_gateway_task(
@@ -394,7 +394,7 @@ def delete_wireless_gateway_task(
 
 Type annotations for `boto3.client("iotwireless").delete_wireless_gateway_task_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_gateway_task_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_gateway_task_definition]
 
 ```python
 def delete_wireless_gateway_task_definition(
@@ -408,7 +408,7 @@ def delete_wireless_gateway_task_definition(
 
 Type annotations for `boto3.client("iotwireless").disassociate_aws_account_from_partner_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_aws_account_from_partner_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_aws_account_from_partner_account]
 
 ```python
 def disassociate_aws_account_from_partner_account(
@@ -423,7 +423,7 @@ def disassociate_aws_account_from_partner_account(
 
 Type annotations for `boto3.client("iotwireless").disassociate_wireless_device_from_thing` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_wireless_device_from_thing]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_wireless_device_from_thing]
 
 ```python
 def disassociate_wireless_device_from_thing(
@@ -437,7 +437,7 @@ def disassociate_wireless_device_from_thing(
 
 Type annotations for `boto3.client("iotwireless").disassociate_wireless_gateway_from_certificate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_wireless_gateway_from_certificate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_wireless_gateway_from_certificate]
 
 ```python
 def disassociate_wireless_gateway_from_certificate(
@@ -451,7 +451,7 @@ def disassociate_wireless_gateway_from_certificate(
 
 Type annotations for `boto3.client("iotwireless").disassociate_wireless_gateway_from_thing` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_wireless_gateway_from_thing]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_wireless_gateway_from_thing]
 
 ```python
 def disassociate_wireless_gateway_from_thing(
@@ -465,7 +465,7 @@ def disassociate_wireless_gateway_from_thing(
 
 Type annotations for `boto3.client("iotwireless").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -482,7 +482,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("iotwireless").get_destination` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_destination]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_destination]
 
 ```python
 def get_destination(
@@ -496,7 +496,7 @@ def get_destination(
 
 Type annotations for `boto3.client("iotwireless").get_device_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_device_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_device_profile]
 
 ```python
 def get_device_profile(
@@ -510,7 +510,7 @@ def get_device_profile(
 
 Type annotations for `boto3.client("iotwireless").get_partner_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_partner_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_partner_account]
 
 ```python
 def get_partner_account(
@@ -525,7 +525,7 @@ def get_partner_account(
 
 Type annotations for `boto3.client("iotwireless").get_service_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_service_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_service_endpoint]
 
 ```python
 def get_service_endpoint(
@@ -539,7 +539,7 @@ def get_service_endpoint(
 
 Type annotations for `boto3.client("iotwireless").get_service_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_service_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_service_profile]
 
 ```python
 def get_service_profile(
@@ -553,7 +553,7 @@ def get_service_profile(
 
 Type annotations for `boto3.client("iotwireless").get_wireless_device` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_device]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_device]
 
 ```python
 def get_wireless_device(
@@ -568,7 +568,7 @@ def get_wireless_device(
 
 Type annotations for `boto3.client("iotwireless").get_wireless_device_statistics` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_device_statistics]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_device_statistics]
 
 ```python
 def get_wireless_device_statistics(
@@ -582,7 +582,7 @@ def get_wireless_device_statistics(
 
 Type annotations for `boto3.client("iotwireless").get_wireless_gateway` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway]
 
 ```python
 def get_wireless_gateway(
@@ -597,7 +597,7 @@ def get_wireless_gateway(
 
 Type annotations for `boto3.client("iotwireless").get_wireless_gateway_certificate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_certificate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_certificate]
 
 ```python
 def get_wireless_gateway_certificate(
@@ -611,7 +611,7 @@ def get_wireless_gateway_certificate(
 
 Type annotations for `boto3.client("iotwireless").get_wireless_gateway_firmware_information` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_firmware_information]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_firmware_information]
 
 ```python
 def get_wireless_gateway_firmware_information(
@@ -625,7 +625,7 @@ def get_wireless_gateway_firmware_information(
 
 Type annotations for `boto3.client("iotwireless").get_wireless_gateway_statistics` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_statistics]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_statistics]
 
 ```python
 def get_wireless_gateway_statistics(
@@ -639,7 +639,7 @@ def get_wireless_gateway_statistics(
 
 Type annotations for `boto3.client("iotwireless").get_wireless_gateway_task` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_task]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_task]
 
 ```python
 def get_wireless_gateway_task(
@@ -653,7 +653,7 @@ def get_wireless_gateway_task(
 
 Type annotations for `boto3.client("iotwireless").get_wireless_gateway_task_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_task_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_task_definition]
 
 ```python
 def get_wireless_gateway_task_definition(
@@ -667,7 +667,7 @@ def get_wireless_gateway_task_definition(
 
 Type annotations for `boto3.client("iotwireless").list_destinations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_destinations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_destinations]
 
 ```python
 def list_destinations(
@@ -682,7 +682,7 @@ def list_destinations(
 
 Type annotations for `boto3.client("iotwireless").list_device_profiles` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_device_profiles]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_device_profiles]
 
 ```python
 def list_device_profiles(
@@ -697,7 +697,7 @@ def list_device_profiles(
 
 Type annotations for `boto3.client("iotwireless").list_partner_accounts` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_partner_accounts]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_partner_accounts]
 
 ```python
 def list_partner_accounts(
@@ -712,7 +712,7 @@ def list_partner_accounts(
 
 Type annotations for `boto3.client("iotwireless").list_service_profiles` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_service_profiles]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_service_profiles]
 
 ```python
 def list_service_profiles(
@@ -727,7 +727,7 @@ def list_service_profiles(
 
 Type annotations for `boto3.client("iotwireless").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -741,7 +741,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("iotwireless").list_wireless_devices` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_wireless_devices]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_wireless_devices]
 
 ```python
 def list_wireless_devices(
@@ -760,7 +760,7 @@ def list_wireless_devices(
 
 Type annotations for `boto3.client("iotwireless").list_wireless_gateway_task_definitions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_wireless_gateway_task_definitions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_wireless_gateway_task_definitions]
 
 ```python
 def list_wireless_gateway_task_definitions(
@@ -776,7 +776,7 @@ def list_wireless_gateway_task_definitions(
 
 Type annotations for `boto3.client("iotwireless").list_wireless_gateways` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_wireless_gateways]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_wireless_gateways]
 
 ```python
 def list_wireless_gateways(
@@ -791,7 +791,7 @@ def list_wireless_gateways(
 
 Type annotations for `boto3.client("iotwireless").send_data_to_wireless_device` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.send_data_to_wireless_device]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.send_data_to_wireless_device]
 
 ```python
 def send_data_to_wireless_device(
@@ -808,7 +808,7 @@ def send_data_to_wireless_device(
 
 Type annotations for `boto3.client("iotwireless").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -823,7 +823,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("iotwireless").test_wireless_device` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.test_wireless_device]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.test_wireless_device]
 
 ```python
 def test_wireless_device(
@@ -837,7 +837,7 @@ def test_wireless_device(
 
 Type annotations for `boto3.client("iotwireless").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -852,7 +852,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("iotwireless").update_destination` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_destination]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_destination]
 
 ```python
 def update_destination(
@@ -870,7 +870,7 @@ def update_destination(
 
 Type annotations for `boto3.client("iotwireless").update_partner_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_partner_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_partner_account]
 
 ```python
 def update_partner_account(
@@ -886,7 +886,7 @@ def update_partner_account(
 
 Type annotations for `boto3.client("iotwireless").update_wireless_device` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_wireless_device]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_wireless_device]
 
 ```python
 def update_wireless_device(
@@ -904,7 +904,7 @@ def update_wireless_device(
 
 Type annotations for `boto3.client("iotwireless").update_wireless_gateway` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_wireless_gateway]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_wireless_gateway]
 
 ```python
 def update_wireless_gateway(

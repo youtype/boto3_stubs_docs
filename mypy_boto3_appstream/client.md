@@ -75,7 +75,7 @@ def get_appstream_client() -> AppStreamClient:
     return boto3.client("appstream")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client)
 
 ## Exceptions
 
@@ -114,7 +114,7 @@ Exceptions:
 
 Type annotations for `boto3.client("appstream").associate_fleet` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.associate_fleet]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.associate_fleet]
 
 ```python
 def associate_fleet(
@@ -129,7 +129,7 @@ def associate_fleet(
 
 Type annotations for `boto3.client("appstream").batch_associate_user_stack` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.batch_associate_user_stack]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.batch_associate_user_stack]
 
 ```python
 def batch_associate_user_stack(
@@ -143,7 +143,7 @@ def batch_associate_user_stack(
 
 Type annotations for `boto3.client("appstream").batch_disassociate_user_stack` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.batch_disassociate_user_stack]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.batch_disassociate_user_stack]
 
 ```python
 def batch_disassociate_user_stack(
@@ -157,7 +157,7 @@ def batch_disassociate_user_stack(
 
 Type annotations for `boto3.client("appstream").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -171,7 +171,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("appstream").copy_image` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.copy_image]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.copy_image]
 
 ```python
 def copy_image(
@@ -188,7 +188,7 @@ def copy_image(
 
 Type annotations for `boto3.client("appstream").create_directory_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_directory_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_directory_config]
 
 ```python
 def create_directory_config(
@@ -204,7 +204,7 @@ def create_directory_config(
 
 Type annotations for `boto3.client("appstream").create_fleet` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_fleet]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_fleet]
 
 ```python
 def create_fleet(
@@ -234,7 +234,7 @@ def create_fleet(
 
 Type annotations for `boto3.client("appstream").create_image_builder` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_image_builder]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_image_builder]
 
 ```python
 def create_image_builder(
@@ -260,7 +260,7 @@ def create_image_builder(
 
 Type annotations for `boto3.client("appstream").create_image_builder_streaming_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_image_builder_streaming_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_image_builder_streaming_url]
 
 ```python
 def create_image_builder_streaming_url(
@@ -275,7 +275,7 @@ def create_image_builder_streaming_url(
 
 Type annotations for `boto3.client("appstream").create_stack` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_stack]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_stack]
 
 ```python
 def create_stack(
@@ -299,7 +299,7 @@ def create_stack(
 
 Type annotations for `boto3.client("appstream").create_streaming_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_streaming_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_streaming_url]
 
 ```python
 def create_streaming_url(
@@ -318,7 +318,7 @@ def create_streaming_url(
 
 Type annotations for `boto3.client("appstream").create_updated_image` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_updated_image]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_updated_image]
 
 ```python
 def create_updated_image(
@@ -337,7 +337,7 @@ def create_updated_image(
 
 Type annotations for `boto3.client("appstream").create_usage_report_subscription` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_usage_report_subscription]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_usage_report_subscription]
 
 ```python
 def create_usage_report_subscription(
@@ -350,7 +350,7 @@ def create_usage_report_subscription(
 
 Type annotations for `boto3.client("appstream").create_user` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_user]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_user]
 
 ```python
 def create_user(
@@ -368,7 +368,7 @@ def create_user(
 
 Type annotations for `boto3.client("appstream").delete_directory_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_directory_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_directory_config]
 
 ```python
 def delete_directory_config(
@@ -382,7 +382,7 @@ def delete_directory_config(
 
 Type annotations for `boto3.client("appstream").delete_fleet` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_fleet]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_fleet]
 
 ```python
 def delete_fleet(
@@ -396,7 +396,7 @@ def delete_fleet(
 
 Type annotations for `boto3.client("appstream").delete_image` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_image]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_image]
 
 ```python
 def delete_image(
@@ -410,7 +410,7 @@ def delete_image(
 
 Type annotations for `boto3.client("appstream").delete_image_builder` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_image_builder]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_image_builder]
 
 ```python
 def delete_image_builder(
@@ -424,7 +424,7 @@ def delete_image_builder(
 
 Type annotations for `boto3.client("appstream").delete_image_permissions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_image_permissions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_image_permissions]
 
 ```python
 def delete_image_permissions(
@@ -439,7 +439,7 @@ def delete_image_permissions(
 
 Type annotations for `boto3.client("appstream").delete_stack` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_stack]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_stack]
 
 ```python
 def delete_stack(
@@ -453,7 +453,7 @@ def delete_stack(
 
 Type annotations for `boto3.client("appstream").delete_usage_report_subscription` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_usage_report_subscription]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_usage_report_subscription]
 
 ```python
 def delete_usage_report_subscription(
@@ -466,7 +466,7 @@ def delete_usage_report_subscription(
 
 Type annotations for `boto3.client("appstream").delete_user` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_user]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_user]
 
 ```python
 def delete_user(
@@ -481,7 +481,7 @@ def delete_user(
 
 Type annotations for `boto3.client("appstream").describe_directory_configs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_directory_configs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_directory_configs]
 
 ```python
 def describe_directory_configs(
@@ -497,7 +497,7 @@ def describe_directory_configs(
 
 Type annotations for `boto3.client("appstream").describe_fleets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_fleets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_fleets]
 
 ```python
 def describe_fleets(
@@ -512,7 +512,7 @@ def describe_fleets(
 
 Type annotations for `boto3.client("appstream").describe_image_builders` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_image_builders]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_image_builders]
 
 ```python
 def describe_image_builders(
@@ -528,7 +528,7 @@ def describe_image_builders(
 
 Type annotations for `boto3.client("appstream").describe_image_permissions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_image_permissions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_image_permissions]
 
 ```python
 def describe_image_permissions(
@@ -545,7 +545,7 @@ def describe_image_permissions(
 
 Type annotations for `boto3.client("appstream").describe_images` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_images]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_images]
 
 ```python
 def describe_images(
@@ -563,7 +563,7 @@ def describe_images(
 
 Type annotations for `boto3.client("appstream").describe_sessions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_sessions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_sessions]
 
 ```python
 def describe_sessions(
@@ -582,7 +582,7 @@ def describe_sessions(
 
 Type annotations for `boto3.client("appstream").describe_stacks` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_stacks]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_stacks]
 
 ```python
 def describe_stacks(
@@ -597,7 +597,7 @@ def describe_stacks(
 
 Type annotations for `boto3.client("appstream").describe_usage_report_subscriptions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_usage_report_subscriptions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_usage_report_subscriptions]
 
 ```python
 def describe_usage_report_subscriptions(
@@ -612,7 +612,7 @@ def describe_usage_report_subscriptions(
 
 Type annotations for `boto3.client("appstream").describe_user_stack_associations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_user_stack_associations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_user_stack_associations]
 
 ```python
 def describe_user_stack_associations(
@@ -630,7 +630,7 @@ def describe_user_stack_associations(
 
 Type annotations for `boto3.client("appstream").describe_users` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_users]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_users]
 
 ```python
 def describe_users(
@@ -646,7 +646,7 @@ def describe_users(
 
 Type annotations for `boto3.client("appstream").disable_user` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.disable_user]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.disable_user]
 
 ```python
 def disable_user(
@@ -661,7 +661,7 @@ def disable_user(
 
 Type annotations for `boto3.client("appstream").disassociate_fleet` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.disassociate_fleet]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.disassociate_fleet]
 
 ```python
 def disassociate_fleet(
@@ -676,7 +676,7 @@ def disassociate_fleet(
 
 Type annotations for `boto3.client("appstream").enable_user` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.enable_user]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.enable_user]
 
 ```python
 def enable_user(
@@ -691,7 +691,7 @@ def enable_user(
 
 Type annotations for `boto3.client("appstream").expire_session` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.expire_session]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.expire_session]
 
 ```python
 def expire_session(
@@ -705,7 +705,7 @@ def expire_session(
 
 Type annotations for `boto3.client("appstream").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -722,7 +722,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("appstream").list_associated_fleets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_associated_fleets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_associated_fleets]
 
 ```python
 def list_associated_fleets(
@@ -737,7 +737,7 @@ def list_associated_fleets(
 
 Type annotations for `boto3.client("appstream").list_associated_stacks` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_associated_stacks]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_associated_stacks]
 
 ```python
 def list_associated_stacks(
@@ -752,7 +752,7 @@ def list_associated_stacks(
 
 Type annotations for `boto3.client("appstream").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -766,7 +766,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("appstream").start_fleet` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.start_fleet]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.start_fleet]
 
 ```python
 def start_fleet(
@@ -780,7 +780,7 @@ def start_fleet(
 
 Type annotations for `boto3.client("appstream").start_image_builder` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.start_image_builder]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.start_image_builder]
 
 ```python
 def start_image_builder(
@@ -795,7 +795,7 @@ def start_image_builder(
 
 Type annotations for `boto3.client("appstream").stop_fleet` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.stop_fleet]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.stop_fleet]
 
 ```python
 def stop_fleet(
@@ -809,7 +809,7 @@ def stop_fleet(
 
 Type annotations for `boto3.client("appstream").stop_image_builder` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.stop_image_builder]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.stop_image_builder]
 
 ```python
 def stop_image_builder(
@@ -823,7 +823,7 @@ def stop_image_builder(
 
 Type annotations for `boto3.client("appstream").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -838,7 +838,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("appstream").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -853,7 +853,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("appstream").update_directory_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_directory_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_directory_config]
 
 ```python
 def update_directory_config(
@@ -869,7 +869,7 @@ def update_directory_config(
 
 Type annotations for `boto3.client("appstream").update_fleet` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_fleet]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_fleet]
 
 ```python
 def update_fleet(
@@ -899,7 +899,7 @@ def update_fleet(
 
 Type annotations for `boto3.client("appstream").update_image_permissions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_image_permissions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_image_permissions]
 
 ```python
 def update_image_permissions(
@@ -915,7 +915,7 @@ def update_image_permissions(
 
 Type annotations for `boto3.client("appstream").update_stack` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_stack]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_stack]
 
 ```python
 def update_stack(

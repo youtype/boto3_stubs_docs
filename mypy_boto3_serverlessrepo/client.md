@@ -40,7 +40,7 @@ def get_serverlessrepo_client() -> ServerlessApplicationRepositoryClient:
     return boto3.client("serverlessrepo")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client)
 
 ## Exceptions
 
@@ -73,7 +73,7 @@ Exceptions:
 
 Type annotations for `boto3.client("serverlessrepo").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -87,7 +87,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("serverlessrepo").create_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application]
 
 ```python
 def create_application(
@@ -115,7 +115,7 @@ def create_application(
 
 Type annotations for `boto3.client("serverlessrepo").create_application_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application_version]
 
 ```python
 def create_application_version(
@@ -134,7 +134,7 @@ def create_application_version(
 
 Type annotations for `boto3.client("serverlessrepo").create_cloud_formation_change_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_cloud_formation_change_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_cloud_formation_change_set]
 
 ```python
 def create_cloud_formation_change_set(
@@ -160,7 +160,7 @@ def create_cloud_formation_change_set(
 
 Type annotations for `boto3.client("serverlessrepo").create_cloud_formation_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_cloud_formation_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_cloud_formation_template]
 
 ```python
 def create_cloud_formation_template(
@@ -175,7 +175,7 @@ def create_cloud_formation_template(
 
 Type annotations for `boto3.client("serverlessrepo").delete_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.delete_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.delete_application]
 
 ```python
 def delete_application(
@@ -189,7 +189,7 @@ def delete_application(
 
 Type annotations for `boto3.client("serverlessrepo").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -206,7 +206,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("serverlessrepo").get_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_application]
 
 ```python
 def get_application(
@@ -221,7 +221,7 @@ def get_application(
 
 Type annotations for `boto3.client("serverlessrepo").get_application_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_application_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_application_policy]
 
 ```python
 def get_application_policy(
@@ -235,7 +235,7 @@ def get_application_policy(
 
 Type annotations for `boto3.client("serverlessrepo").get_cloud_formation_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_cloud_formation_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_cloud_formation_template]
 
 ```python
 def get_cloud_formation_template(
@@ -250,7 +250,7 @@ def get_cloud_formation_template(
 
 Type annotations for `boto3.client("serverlessrepo").list_application_dependencies` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_dependencies]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_dependencies]
 
 ```python
 def list_application_dependencies(
@@ -267,7 +267,7 @@ def list_application_dependencies(
 
 Type annotations for `boto3.client("serverlessrepo").list_application_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_versions]
 
 ```python
 def list_application_versions(
@@ -283,7 +283,7 @@ def list_application_versions(
 
 Type annotations for `boto3.client("serverlessrepo").list_applications` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_applications]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_applications]
 
 ```python
 def list_applications(
@@ -298,7 +298,7 @@ def list_applications(
 
 Type annotations for `boto3.client("serverlessrepo").put_application_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.put_application_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.put_application_policy]
 
 ```python
 def put_application_policy(
@@ -313,7 +313,7 @@ def put_application_policy(
 
 Type annotations for `boto3.client("serverlessrepo").unshare_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.unshare_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.unshare_application]
 
 ```python
 def unshare_application(
@@ -328,7 +328,7 @@ def unshare_application(
 
 Type annotations for `boto3.client("serverlessrepo").update_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.update_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.update_application]
 
 ```python
 def update_application(

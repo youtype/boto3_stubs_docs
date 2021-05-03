@@ -74,7 +74,7 @@ def get_imagebuilder_client() -> ImagebuilderClient:
     return boto3.client("imagebuilder")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client)
 
 ## Exceptions
 
@@ -118,7 +118,7 @@ Exceptions:
 
 Type annotations for `boto3.client("imagebuilder").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -132,7 +132,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("imagebuilder").cancel_image_creation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.cancel_image_creation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.cancel_image_creation]
 
 ```python
 def cancel_image_creation(
@@ -147,7 +147,7 @@ def cancel_image_creation(
 
 Type annotations for `boto3.client("imagebuilder").create_component` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_component]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_component]
 
 ```python
 def create_component(
@@ -171,7 +171,7 @@ def create_component(
 
 Type annotations for `boto3.client("imagebuilder").create_container_recipe` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_container_recipe]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_container_recipe]
 
 ```python
 def create_container_recipe(
@@ -200,7 +200,7 @@ def create_container_recipe(
 
 Type annotations for `boto3.client("imagebuilder").create_distribution_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_distribution_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_distribution_configuration]
 
 ```python
 def create_distribution_configuration(
@@ -218,7 +218,7 @@ def create_distribution_configuration(
 
 Type annotations for `boto3.client("imagebuilder").create_image` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_image]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_image]
 
 ```python
 def create_image(
@@ -239,7 +239,7 @@ def create_image(
 
 Type annotations for `boto3.client("imagebuilder").create_image_pipeline` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_image_pipeline]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_image_pipeline]
 
 ```python
 def create_image_pipeline(
@@ -264,7 +264,7 @@ def create_image_pipeline(
 
 Type annotations for `boto3.client("imagebuilder").create_image_recipe` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_image_recipe]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_image_recipe]
 
 ```python
 def create_image_recipe(
@@ -286,7 +286,7 @@ def create_image_recipe(
 
 Type annotations for `boto3.client("imagebuilder").create_infrastructure_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_infrastructure_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.create_infrastructure_configuration]
 
 ```python
 def create_infrastructure_configuration(
@@ -312,7 +312,7 @@ def create_infrastructure_configuration(
 
 Type annotations for `boto3.client("imagebuilder").delete_component` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_component]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_component]
 
 ```python
 def delete_component(
@@ -326,7 +326,7 @@ def delete_component(
 
 Type annotations for `boto3.client("imagebuilder").delete_container_recipe` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_container_recipe]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_container_recipe]
 
 ```python
 def delete_container_recipe(
@@ -340,7 +340,7 @@ def delete_container_recipe(
 
 Type annotations for `boto3.client("imagebuilder").delete_distribution_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_distribution_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_distribution_configuration]
 
 ```python
 def delete_distribution_configuration(
@@ -354,7 +354,7 @@ def delete_distribution_configuration(
 
 Type annotations for `boto3.client("imagebuilder").delete_image` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_image]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_image]
 
 ```python
 def delete_image(
@@ -368,7 +368,7 @@ def delete_image(
 
 Type annotations for `boto3.client("imagebuilder").delete_image_pipeline` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_image_pipeline]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_image_pipeline]
 
 ```python
 def delete_image_pipeline(
@@ -382,7 +382,7 @@ def delete_image_pipeline(
 
 Type annotations for `boto3.client("imagebuilder").delete_image_recipe` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_image_recipe]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_image_recipe]
 
 ```python
 def delete_image_recipe(
@@ -396,7 +396,7 @@ def delete_image_recipe(
 
 Type annotations for `boto3.client("imagebuilder").delete_infrastructure_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_infrastructure_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.delete_infrastructure_configuration]
 
 ```python
 def delete_infrastructure_configuration(
@@ -410,7 +410,7 @@ def delete_infrastructure_configuration(
 
 Type annotations for `boto3.client("imagebuilder").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -427,7 +427,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("imagebuilder").get_component` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_component]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_component]
 
 ```python
 def get_component(
@@ -441,7 +441,7 @@ def get_component(
 
 Type annotations for `boto3.client("imagebuilder").get_component_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_component_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_component_policy]
 
 ```python
 def get_component_policy(
@@ -455,7 +455,7 @@ def get_component_policy(
 
 Type annotations for `boto3.client("imagebuilder").get_container_recipe` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_container_recipe]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_container_recipe]
 
 ```python
 def get_container_recipe(
@@ -469,7 +469,7 @@ def get_container_recipe(
 
 Type annotations for `boto3.client("imagebuilder").get_container_recipe_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_container_recipe_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_container_recipe_policy]
 
 ```python
 def get_container_recipe_policy(
@@ -483,7 +483,7 @@ def get_container_recipe_policy(
 
 Type annotations for `boto3.client("imagebuilder").get_distribution_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_distribution_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_distribution_configuration]
 
 ```python
 def get_distribution_configuration(
@@ -497,7 +497,7 @@ def get_distribution_configuration(
 
 Type annotations for `boto3.client("imagebuilder").get_image` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image]
 
 ```python
 def get_image(
@@ -511,7 +511,7 @@ def get_image(
 
 Type annotations for `boto3.client("imagebuilder").get_image_pipeline` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_pipeline]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_pipeline]
 
 ```python
 def get_image_pipeline(
@@ -525,7 +525,7 @@ def get_image_pipeline(
 
 Type annotations for `boto3.client("imagebuilder").get_image_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_policy]
 
 ```python
 def get_image_policy(
@@ -539,7 +539,7 @@ def get_image_policy(
 
 Type annotations for `boto3.client("imagebuilder").get_image_recipe` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_recipe]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_recipe]
 
 ```python
 def get_image_recipe(
@@ -553,7 +553,7 @@ def get_image_recipe(
 
 Type annotations for `boto3.client("imagebuilder").get_image_recipe_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_recipe_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_recipe_policy]
 
 ```python
 def get_image_recipe_policy(
@@ -567,7 +567,7 @@ def get_image_recipe_policy(
 
 Type annotations for `boto3.client("imagebuilder").get_infrastructure_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_infrastructure_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.get_infrastructure_configuration]
 
 ```python
 def get_infrastructure_configuration(
@@ -581,7 +581,7 @@ def get_infrastructure_configuration(
 
 Type annotations for `boto3.client("imagebuilder").import_component` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.import_component]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.import_component]
 
 ```python
 def import_component(
@@ -606,7 +606,7 @@ def import_component(
 
 Type annotations for `boto3.client("imagebuilder").list_component_build_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_component_build_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_component_build_versions]
 
 ```python
 def list_component_build_versions(
@@ -622,7 +622,7 @@ def list_component_build_versions(
 
 Type annotations for `boto3.client("imagebuilder").list_components` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_components]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_components]
 
 ```python
 def list_components(
@@ -640,7 +640,7 @@ def list_components(
 
 Type annotations for `boto3.client("imagebuilder").list_container_recipes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_container_recipes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_container_recipes]
 
 ```python
 def list_container_recipes(
@@ -657,7 +657,7 @@ def list_container_recipes(
 
 Type annotations for `boto3.client("imagebuilder").list_distribution_configurations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_distribution_configurations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_distribution_configurations]
 
 ```python
 def list_distribution_configurations(
@@ -673,7 +673,7 @@ def list_distribution_configurations(
 
 Type annotations for `boto3.client("imagebuilder").list_image_build_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_build_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_build_versions]
 
 ```python
 def list_image_build_versions(
@@ -690,7 +690,7 @@ def list_image_build_versions(
 
 Type annotations for `boto3.client("imagebuilder").list_image_packages` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_packages]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_packages]
 
 ```python
 def list_image_packages(
@@ -706,7 +706,7 @@ def list_image_packages(
 
 Type annotations for `boto3.client("imagebuilder").list_image_pipeline_images` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_pipeline_images]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_pipeline_images]
 
 ```python
 def list_image_pipeline_images(
@@ -723,7 +723,7 @@ def list_image_pipeline_images(
 
 Type annotations for `boto3.client("imagebuilder").list_image_pipelines` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_pipelines]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_pipelines]
 
 ```python
 def list_image_pipelines(
@@ -739,7 +739,7 @@ def list_image_pipelines(
 
 Type annotations for `boto3.client("imagebuilder").list_image_recipes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_recipes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_recipes]
 
 ```python
 def list_image_recipes(
@@ -756,7 +756,7 @@ def list_image_recipes(
 
 Type annotations for `boto3.client("imagebuilder").list_images` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_images]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_images]
 
 ```python
 def list_images(
@@ -775,7 +775,7 @@ def list_images(
 
 Type annotations for `boto3.client("imagebuilder").list_infrastructure_configurations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_infrastructure_configurations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_infrastructure_configurations]
 
 ```python
 def list_infrastructure_configurations(
@@ -791,7 +791,7 @@ def list_infrastructure_configurations(
 
 Type annotations for `boto3.client("imagebuilder").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -805,7 +805,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("imagebuilder").put_component_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.put_component_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.put_component_policy]
 
 ```python
 def put_component_policy(
@@ -820,7 +820,7 @@ def put_component_policy(
 
 Type annotations for `boto3.client("imagebuilder").put_container_recipe_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.put_container_recipe_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.put_container_recipe_policy]
 
 ```python
 def put_container_recipe_policy(
@@ -835,7 +835,7 @@ def put_container_recipe_policy(
 
 Type annotations for `boto3.client("imagebuilder").put_image_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.put_image_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.put_image_policy]
 
 ```python
 def put_image_policy(
@@ -850,7 +850,7 @@ def put_image_policy(
 
 Type annotations for `boto3.client("imagebuilder").put_image_recipe_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.put_image_recipe_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.put_image_recipe_policy]
 
 ```python
 def put_image_recipe_policy(
@@ -865,7 +865,7 @@ def put_image_recipe_policy(
 
 Type annotations for `boto3.client("imagebuilder").start_image_pipeline_execution` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.start_image_pipeline_execution]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.start_image_pipeline_execution]
 
 ```python
 def start_image_pipeline_execution(
@@ -880,7 +880,7 @@ def start_image_pipeline_execution(
 
 Type annotations for `boto3.client("imagebuilder").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -895,7 +895,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("imagebuilder").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -910,7 +910,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("imagebuilder").update_distribution_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.update_distribution_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.update_distribution_configuration]
 
 ```python
 def update_distribution_configuration(
@@ -927,7 +927,7 @@ def update_distribution_configuration(
 
 Type annotations for `boto3.client("imagebuilder").update_image_pipeline` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.update_image_pipeline]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.update_image_pipeline]
 
 ```python
 def update_image_pipeline(
@@ -951,7 +951,7 @@ def update_image_pipeline(
 
 Type annotations for `boto3.client("imagebuilder").update_infrastructure_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.update_infrastructure_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder.Client.update_infrastructure_configuration]
 
 ```python
 def update_infrastructure_configuration(

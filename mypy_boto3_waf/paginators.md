@@ -36,7 +36,7 @@ def get_get_rate_based_rule_managed_keys_paginator() -> GetRateBasedRuleManagedK
     return boto3.client("waf").get_paginator("get_rate_based_rule_managed_keys")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.GetRateBasedRuleManagedKeys)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.GetRateBasedRuleManagedKeys)
 
 ```python
 class GetRateBasedRuleManagedKeysPaginator(Boto3Paginator):
@@ -60,7 +60,7 @@ def get_list_activated_rules_in_rule_group_paginator() -> ListActivatedRulesInRu
     return boto3.client("waf").get_paginator("list_activated_rules_in_rule_group")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListActivatedRulesInRuleGroup)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListActivatedRulesInRuleGroup)
 
 ```python
 class ListActivatedRulesInRuleGroupPaginator(Boto3Paginator):
@@ -84,7 +84,7 @@ def get_list_byte_match_sets_paginator() -> ListByteMatchSetsPaginator:
     return boto3.client("waf").get_paginator("list_byte_match_sets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListByteMatchSets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListByteMatchSets)
 
 ```python
 class ListByteMatchSetsPaginator(Boto3Paginator):
@@ -107,7 +107,7 @@ def get_list_geo_match_sets_paginator() -> ListGeoMatchSetsPaginator:
     return boto3.client("waf").get_paginator("list_geo_match_sets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListGeoMatchSets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListGeoMatchSets)
 
 ```python
 class ListGeoMatchSetsPaginator(Boto3Paginator):
@@ -130,7 +130,7 @@ def get_list_ip_sets_paginator() -> ListIPSetsPaginator:
     return boto3.client("waf").get_paginator("list_ip_sets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListIPSets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListIPSets)
 
 ```python
 class ListIPSetsPaginator(Boto3Paginator):
@@ -153,7 +153,7 @@ def get_list_logging_configurations_paginator() -> ListLoggingConfigurationsPagi
     return boto3.client("waf").get_paginator("list_logging_configurations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListLoggingConfigurations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListLoggingConfigurations)
 
 ```python
 class ListLoggingConfigurationsPaginator(Boto3Paginator):
@@ -176,7 +176,7 @@ def get_list_rate_based_rules_paginator() -> ListRateBasedRulesPaginator:
     return boto3.client("waf").get_paginator("list_rate_based_rules")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRateBasedRules)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRateBasedRules)
 
 ```python
 class ListRateBasedRulesPaginator(Boto3Paginator):
@@ -199,7 +199,7 @@ def get_list_regex_match_sets_paginator() -> ListRegexMatchSetsPaginator:
     return boto3.client("waf").get_paginator("list_regex_match_sets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRegexMatchSets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRegexMatchSets)
 
 ```python
 class ListRegexMatchSetsPaginator(Boto3Paginator):
@@ -222,7 +222,7 @@ def get_list_regex_pattern_sets_paginator() -> ListRegexPatternSetsPaginator:
     return boto3.client("waf").get_paginator("list_regex_pattern_sets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRegexPatternSets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRegexPatternSets)
 
 ```python
 class ListRegexPatternSetsPaginator(Boto3Paginator):
@@ -245,7 +245,7 @@ def get_list_rule_groups_paginator() -> ListRuleGroupsPaginator:
     return boto3.client("waf").get_paginator("list_rule_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRuleGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRuleGroups)
 
 ```python
 class ListRuleGroupsPaginator(Boto3Paginator):
@@ -268,7 +268,7 @@ def get_list_rules_paginator() -> ListRulesPaginator:
     return boto3.client("waf").get_paginator("list_rules")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRules)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRules)
 
 ```python
 class ListRulesPaginator(Boto3Paginator):
@@ -291,7 +291,7 @@ def get_list_size_constraint_sets_paginator() -> ListSizeConstraintSetsPaginator
     return boto3.client("waf").get_paginator("list_size_constraint_sets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListSizeConstraintSets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListSizeConstraintSets)
 
 ```python
 class ListSizeConstraintSetsPaginator(Boto3Paginator):
@@ -314,7 +314,7 @@ def get_list_sql_injection_match_sets_paginator() -> ListSqlInjectionMatchSetsPa
     return boto3.client("waf").get_paginator("list_sql_injection_match_sets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListSqlInjectionMatchSets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListSqlInjectionMatchSets)
 
 ```python
 class ListSqlInjectionMatchSetsPaginator(Boto3Paginator):
@@ -337,7 +337,7 @@ def get_list_subscribed_rule_groups_paginator() -> ListSubscribedRuleGroupsPagin
     return boto3.client("waf").get_paginator("list_subscribed_rule_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListSubscribedRuleGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListSubscribedRuleGroups)
 
 ```python
 class ListSubscribedRuleGroupsPaginator(Boto3Paginator):
@@ -360,7 +360,7 @@ def get_list_web_acls_paginator() -> ListWebACLsPaginator:
     return boto3.client("waf").get_paginator("list_web_acls")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListWebACLs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListWebACLs)
 
 ```python
 class ListWebACLsPaginator(Boto3Paginator):
@@ -383,7 +383,7 @@ def get_list_xss_match_sets_paginator() -> ListXssMatchSetsPaginator:
     return boto3.client("waf").get_paginator("list_xss_match_sets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListXssMatchSets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListXssMatchSets)
 
 ```python
 class ListXssMatchSetsPaginator(Boto3Paginator):

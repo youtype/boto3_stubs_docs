@@ -86,7 +86,7 @@ def get_route53resolver_client() -> Route53ResolverClient:
     return boto3.client("route53resolver")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client)
 
 ## Exceptions
 
@@ -129,7 +129,7 @@ Exceptions:
 
 Type annotations for `boto3.client("route53resolver").associate_firewall_rule_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_firewall_rule_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_firewall_rule_group]
 
 ```python
 def associate_firewall_rule_group(
@@ -149,7 +149,7 @@ def associate_firewall_rule_group(
 
 Type annotations for `boto3.client("route53resolver").associate_resolver_endpoint_ip_address` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_endpoint_ip_address]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_endpoint_ip_address]
 
 ```python
 def associate_resolver_endpoint_ip_address(
@@ -164,7 +164,7 @@ def associate_resolver_endpoint_ip_address(
 
 Type annotations for `boto3.client("route53resolver").associate_resolver_query_log_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_query_log_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_query_log_config]
 
 ```python
 def associate_resolver_query_log_config(
@@ -179,7 +179,7 @@ def associate_resolver_query_log_config(
 
 Type annotations for `boto3.client("route53resolver").associate_resolver_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_rule]
 
 ```python
 def associate_resolver_rule(
@@ -195,7 +195,7 @@ def associate_resolver_rule(
 
 Type annotations for `boto3.client("route53resolver").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -209,7 +209,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("route53resolver").create_firewall_domain_list` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_domain_list]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_domain_list]
 
 ```python
 def create_firewall_domain_list(
@@ -225,7 +225,7 @@ def create_firewall_domain_list(
 
 Type annotations for `boto3.client("route53resolver").create_firewall_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_rule]
 
 ```python
 def create_firewall_rule(
@@ -248,7 +248,7 @@ def create_firewall_rule(
 
 Type annotations for `boto3.client("route53resolver").create_firewall_rule_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_rule_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_rule_group]
 
 ```python
 def create_firewall_rule_group(
@@ -264,7 +264,7 @@ def create_firewall_rule_group(
 
 Type annotations for `boto3.client("route53resolver").create_resolver_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_endpoint]
 
 ```python
 def create_resolver_endpoint(
@@ -283,7 +283,7 @@ def create_resolver_endpoint(
 
 Type annotations for `boto3.client("route53resolver").create_resolver_query_log_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_query_log_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_query_log_config]
 
 ```python
 def create_resolver_query_log_config(
@@ -300,7 +300,7 @@ def create_resolver_query_log_config(
 
 Type annotations for `boto3.client("route53resolver").create_resolver_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_rule]
 
 ```python
 def create_resolver_rule(
@@ -320,7 +320,7 @@ def create_resolver_rule(
 
 Type annotations for `boto3.client("route53resolver").delete_firewall_domain_list` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_domain_list]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_domain_list]
 
 ```python
 def delete_firewall_domain_list(
@@ -334,7 +334,7 @@ def delete_firewall_domain_list(
 
 Type annotations for `boto3.client("route53resolver").delete_firewall_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_rule]
 
 ```python
 def delete_firewall_rule(
@@ -349,7 +349,7 @@ def delete_firewall_rule(
 
 Type annotations for `boto3.client("route53resolver").delete_firewall_rule_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_rule_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_rule_group]
 
 ```python
 def delete_firewall_rule_group(
@@ -363,7 +363,7 @@ def delete_firewall_rule_group(
 
 Type annotations for `boto3.client("route53resolver").delete_resolver_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_endpoint]
 
 ```python
 def delete_resolver_endpoint(
@@ -377,7 +377,7 @@ def delete_resolver_endpoint(
 
 Type annotations for `boto3.client("route53resolver").delete_resolver_query_log_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_query_log_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_query_log_config]
 
 ```python
 def delete_resolver_query_log_config(
@@ -391,7 +391,7 @@ def delete_resolver_query_log_config(
 
 Type annotations for `boto3.client("route53resolver").delete_resolver_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_rule]
 
 ```python
 def delete_resolver_rule(
@@ -405,7 +405,7 @@ def delete_resolver_rule(
 
 Type annotations for `boto3.client("route53resolver").disassociate_firewall_rule_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_firewall_rule_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_firewall_rule_group]
 
 ```python
 def disassociate_firewall_rule_group(
@@ -419,7 +419,7 @@ def disassociate_firewall_rule_group(
 
 Type annotations for `boto3.client("route53resolver").disassociate_resolver_endpoint_ip_address` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_endpoint_ip_address]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_endpoint_ip_address]
 
 ```python
 def disassociate_resolver_endpoint_ip_address(
@@ -434,7 +434,7 @@ def disassociate_resolver_endpoint_ip_address(
 
 Type annotations for `boto3.client("route53resolver").disassociate_resolver_query_log_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_query_log_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_query_log_config]
 
 ```python
 def disassociate_resolver_query_log_config(
@@ -449,7 +449,7 @@ def disassociate_resolver_query_log_config(
 
 Type annotations for `boto3.client("route53resolver").disassociate_resolver_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_rule]
 
 ```python
 def disassociate_resolver_rule(
@@ -464,7 +464,7 @@ def disassociate_resolver_rule(
 
 Type annotations for `boto3.client("route53resolver").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -481,7 +481,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("route53resolver").get_firewall_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_config]
 
 ```python
 def get_firewall_config(
@@ -495,7 +495,7 @@ def get_firewall_config(
 
 Type annotations for `boto3.client("route53resolver").get_firewall_domain_list` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_domain_list]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_domain_list]
 
 ```python
 def get_firewall_domain_list(
@@ -509,7 +509,7 @@ def get_firewall_domain_list(
 
 Type annotations for `boto3.client("route53resolver").get_firewall_rule_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group]
 
 ```python
 def get_firewall_rule_group(
@@ -523,7 +523,7 @@ def get_firewall_rule_group(
 
 Type annotations for `boto3.client("route53resolver").get_firewall_rule_group_association` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group_association]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group_association]
 
 ```python
 def get_firewall_rule_group_association(
@@ -537,7 +537,7 @@ def get_firewall_rule_group_association(
 
 Type annotations for `boto3.client("route53resolver").get_firewall_rule_group_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group_policy]
 
 ```python
 def get_firewall_rule_group_policy(
@@ -551,7 +551,7 @@ def get_firewall_rule_group_policy(
 
 Type annotations for `boto3.client("route53resolver").get_resolver_dnssec_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_dnssec_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_dnssec_config]
 
 ```python
 def get_resolver_dnssec_config(
@@ -565,7 +565,7 @@ def get_resolver_dnssec_config(
 
 Type annotations for `boto3.client("route53resolver").get_resolver_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_endpoint]
 
 ```python
 def get_resolver_endpoint(
@@ -579,7 +579,7 @@ def get_resolver_endpoint(
 
 Type annotations for `boto3.client("route53resolver").get_resolver_query_log_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config]
 
 ```python
 def get_resolver_query_log_config(
@@ -593,7 +593,7 @@ def get_resolver_query_log_config(
 
 Type annotations for `boto3.client("route53resolver").get_resolver_query_log_config_association` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config_association]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config_association]
 
 ```python
 def get_resolver_query_log_config_association(
@@ -607,7 +607,7 @@ def get_resolver_query_log_config_association(
 
 Type annotations for `boto3.client("route53resolver").get_resolver_query_log_config_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config_policy]
 
 ```python
 def get_resolver_query_log_config_policy(
@@ -621,7 +621,7 @@ def get_resolver_query_log_config_policy(
 
 Type annotations for `boto3.client("route53resolver").get_resolver_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule]
 
 ```python
 def get_resolver_rule(
@@ -635,7 +635,7 @@ def get_resolver_rule(
 
 Type annotations for `boto3.client("route53resolver").get_resolver_rule_association` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule_association]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule_association]
 
 ```python
 def get_resolver_rule_association(
@@ -649,7 +649,7 @@ def get_resolver_rule_association(
 
 Type annotations for `boto3.client("route53resolver").get_resolver_rule_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule_policy]
 
 ```python
 def get_resolver_rule_policy(
@@ -663,7 +663,7 @@ def get_resolver_rule_policy(
 
 Type annotations for `boto3.client("route53resolver").import_firewall_domains` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.import_firewall_domains]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.import_firewall_domains]
 
 ```python
 def import_firewall_domains(
@@ -679,7 +679,7 @@ def import_firewall_domains(
 
 Type annotations for `boto3.client("route53resolver").list_firewall_configs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_configs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_configs]
 
 ```python
 def list_firewall_configs(
@@ -694,7 +694,7 @@ def list_firewall_configs(
 
 Type annotations for `boto3.client("route53resolver").list_firewall_domain_lists` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_domain_lists]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_domain_lists]
 
 ```python
 def list_firewall_domain_lists(
@@ -709,7 +709,7 @@ def list_firewall_domain_lists(
 
 Type annotations for `boto3.client("route53resolver").list_firewall_domains` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_domains]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_domains]
 
 ```python
 def list_firewall_domains(
@@ -725,7 +725,7 @@ def list_firewall_domains(
 
 Type annotations for `boto3.client("route53resolver").list_firewall_rule_group_associations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rule_group_associations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rule_group_associations]
 
 ```python
 def list_firewall_rule_group_associations(
@@ -744,7 +744,7 @@ def list_firewall_rule_group_associations(
 
 Type annotations for `boto3.client("route53resolver").list_firewall_rule_groups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rule_groups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rule_groups]
 
 ```python
 def list_firewall_rule_groups(
@@ -759,7 +759,7 @@ def list_firewall_rule_groups(
 
 Type annotations for `boto3.client("route53resolver").list_firewall_rules` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rules]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rules]
 
 ```python
 def list_firewall_rules(
@@ -777,7 +777,7 @@ def list_firewall_rules(
 
 Type annotations for `boto3.client("route53resolver").list_resolver_dnssec_configs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_dnssec_configs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_dnssec_configs]
 
 ```python
 def list_resolver_dnssec_configs(
@@ -793,7 +793,7 @@ def list_resolver_dnssec_configs(
 
 Type annotations for `boto3.client("route53resolver").list_resolver_endpoint_ip_addresses` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_endpoint_ip_addresses]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_endpoint_ip_addresses]
 
 ```python
 def list_resolver_endpoint_ip_addresses(
@@ -809,7 +809,7 @@ def list_resolver_endpoint_ip_addresses(
 
 Type annotations for `boto3.client("route53resolver").list_resolver_endpoints` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_endpoints]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_endpoints]
 
 ```python
 def list_resolver_endpoints(
@@ -825,7 +825,7 @@ def list_resolver_endpoints(
 
 Type annotations for `boto3.client("route53resolver").list_resolver_query_log_config_associations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_query_log_config_associations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_query_log_config_associations]
 
 ```python
 def list_resolver_query_log_config_associations(
@@ -843,7 +843,7 @@ def list_resolver_query_log_config_associations(
 
 Type annotations for `boto3.client("route53resolver").list_resolver_query_log_configs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_query_log_configs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_query_log_configs]
 
 ```python
 def list_resolver_query_log_configs(
@@ -861,7 +861,7 @@ def list_resolver_query_log_configs(
 
 Type annotations for `boto3.client("route53resolver").list_resolver_rule_associations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_rule_associations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_rule_associations]
 
 ```python
 def list_resolver_rule_associations(
@@ -877,7 +877,7 @@ def list_resolver_rule_associations(
 
 Type annotations for `boto3.client("route53resolver").list_resolver_rules` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_rules]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_rules]
 
 ```python
 def list_resolver_rules(
@@ -893,7 +893,7 @@ def list_resolver_rules(
 
 Type annotations for `boto3.client("route53resolver").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -909,7 +909,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("route53resolver").put_firewall_rule_group_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_firewall_rule_group_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_firewall_rule_group_policy]
 
 ```python
 def put_firewall_rule_group_policy(
@@ -924,7 +924,7 @@ def put_firewall_rule_group_policy(
 
 Type annotations for `boto3.client("route53resolver").put_resolver_query_log_config_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_resolver_query_log_config_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_resolver_query_log_config_policy]
 
 ```python
 def put_resolver_query_log_config_policy(
@@ -939,7 +939,7 @@ def put_resolver_query_log_config_policy(
 
 Type annotations for `boto3.client("route53resolver").put_resolver_rule_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_resolver_rule_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_resolver_rule_policy]
 
 ```python
 def put_resolver_rule_policy(
@@ -954,7 +954,7 @@ def put_resolver_rule_policy(
 
 Type annotations for `boto3.client("route53resolver").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -969,7 +969,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("route53resolver").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -984,7 +984,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("route53resolver").update_firewall_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_config]
 
 ```python
 def update_firewall_config(
@@ -999,7 +999,7 @@ def update_firewall_config(
 
 Type annotations for `boto3.client("route53resolver").update_firewall_domains` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_domains]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_domains]
 
 ```python
 def update_firewall_domains(
@@ -1015,7 +1015,7 @@ def update_firewall_domains(
 
 Type annotations for `boto3.client("route53resolver").update_firewall_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_rule]
 
 ```python
 def update_firewall_rule(
@@ -1037,7 +1037,7 @@ def update_firewall_rule(
 
 Type annotations for `boto3.client("route53resolver").update_firewall_rule_group_association` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_rule_group_association]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_rule_group_association]
 
 ```python
 def update_firewall_rule_group_association(
@@ -1054,7 +1054,7 @@ def update_firewall_rule_group_association(
 
 Type annotations for `boto3.client("route53resolver").update_resolver_dnssec_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_dnssec_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_dnssec_config]
 
 ```python
 def update_resolver_dnssec_config(
@@ -1069,7 +1069,7 @@ def update_resolver_dnssec_config(
 
 Type annotations for `boto3.client("route53resolver").update_resolver_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_endpoint]
 
 ```python
 def update_resolver_endpoint(
@@ -1084,7 +1084,7 @@ def update_resolver_endpoint(
 
 Type annotations for `boto3.client("route53resolver").update_resolver_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_rule]
 
 ```python
 def update_resolver_rule(

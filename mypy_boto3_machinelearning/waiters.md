@@ -24,27 +24,23 @@ def get_batch_prediction_available_waiter() -> BatchPredictionAvailableWaiter:
     return boto3.client("machinelearning").get_waiter("batch_prediction_available")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.batch_prediction_available)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.batch_prediction_available)
 
-```python
-class BatchPredictionAvailableWaiter(Boto3Waiter):
-    def wait(
-        self,
-        FilterVariable: BatchPredictionFilterVariable = None,
-        EQ: str = None,
-        GT: str = None,
-        LT: str = None,
-        GE: str = None,
-        LE: str = None,
-        NE: str = None,
-        Prefix: str = None,
-        SortOrder: SortOrder = None,
-        NextToken: str = None,
-        Limit: int = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `BatchPredictionAvailableWaiter.wait` method:
+
+- `FilterVariable`: [BatchPredictionFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#batchpredictionfiltervariable)
+- `EQ`: `str`
+- `GT`: `str`
+- `LT`: `str`
+- `GE`: `str`
+- `LE`: `str`
+- `NE`: `str`
+- `Prefix`: `str`
+- `SortOrder`: [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `NextToken`: `str`
+- `Limit`: `int`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#waiterconfigtypedef)
+
 ## DataSourceAvailableWaiter
 
 Type annotations for `boto3.client("machinelearning").get_waiter("data_source_available")`.
@@ -58,27 +54,23 @@ def get_data_source_available_waiter() -> DataSourceAvailableWaiter:
     return boto3.client("machinelearning").get_waiter("data_source_available")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.data_source_available)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.data_source_available)
 
-```python
-class DataSourceAvailableWaiter(Boto3Waiter):
-    def wait(
-        self,
-        FilterVariable: DataSourceFilterVariable = None,
-        EQ: str = None,
-        GT: str = None,
-        LT: str = None,
-        GE: str = None,
-        LE: str = None,
-        NE: str = None,
-        Prefix: str = None,
-        SortOrder: SortOrder = None,
-        NextToken: str = None,
-        Limit: int = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `DataSourceAvailableWaiter.wait` method:
+
+- `FilterVariable`: [DataSourceFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#datasourcefiltervariable)
+- `EQ`: `str`
+- `GT`: `str`
+- `LT`: `str`
+- `GE`: `str`
+- `LE`: `str`
+- `NE`: `str`
+- `Prefix`: `str`
+- `SortOrder`: [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `NextToken`: `str`
+- `Limit`: `int`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#waiterconfigtypedef)
+
 ## EvaluationAvailableWaiter
 
 Type annotations for `boto3.client("machinelearning").get_waiter("evaluation_available")`.
@@ -92,27 +84,23 @@ def get_evaluation_available_waiter() -> EvaluationAvailableWaiter:
     return boto3.client("machinelearning").get_waiter("evaluation_available")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.evaluation_available)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.evaluation_available)
 
-```python
-class EvaluationAvailableWaiter(Boto3Waiter):
-    def wait(
-        self,
-        FilterVariable: EvaluationFilterVariable = None,
-        EQ: str = None,
-        GT: str = None,
-        LT: str = None,
-        GE: str = None,
-        LE: str = None,
-        NE: str = None,
-        Prefix: str = None,
-        SortOrder: SortOrder = None,
-        NextToken: str = None,
-        Limit: int = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `EvaluationAvailableWaiter.wait` method:
+
+- `FilterVariable`: [EvaluationFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#evaluationfiltervariable)
+- `EQ`: `str`
+- `GT`: `str`
+- `LT`: `str`
+- `GE`: `str`
+- `LE`: `str`
+- `NE`: `str`
+- `Prefix`: `str`
+- `SortOrder`: [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `NextToken`: `str`
+- `Limit`: `int`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#waiterconfigtypedef)
+
 ## MLModelAvailableWaiter
 
 Type annotations for `boto3.client("machinelearning").get_waiter("ml_model_available")`.
@@ -126,24 +114,19 @@ def get_ml_model_available_waiter() -> MLModelAvailableWaiter:
     return boto3.client("machinelearning").get_waiter("ml_model_available")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.ml_model_available)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.ml_model_available)
 
-```python
-class MLModelAvailableWaiter(Boto3Waiter):
-    def wait(
-        self,
-        FilterVariable: MLModelFilterVariable = None,
-        EQ: str = None,
-        GT: str = None,
-        LT: str = None,
-        GE: str = None,
-        LE: str = None,
-        NE: str = None,
-        Prefix: str = None,
-        SortOrder: SortOrder = None,
-        NextToken: str = None,
-        Limit: int = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `MLModelAvailableWaiter.wait` method:
+
+- `FilterVariable`: [MLModelFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#mlmodelfiltervariable)
+- `EQ`: `str`
+- `GT`: `str`
+- `LT`: `str`
+- `GE`: `str`
+- `LE`: `str`
+- `NE`: `str`
+- `Prefix`: `str`
+- `SortOrder`: [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `NextToken`: `str`
+- `Limit`: `int`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#waiterconfigtypedef)

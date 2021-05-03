@@ -31,7 +31,7 @@ def get_ebs_client() -> EBSClient:
     return boto3.client("ebs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client)
 
 ## Exceptions
 
@@ -66,7 +66,7 @@ Exceptions:
 
 Type annotations for `boto3.client("ebs").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -80,7 +80,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("ebs").complete_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.complete_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.complete_snapshot]
 
 ```python
 def complete_snapshot(
@@ -98,7 +98,7 @@ def complete_snapshot(
 
 Type annotations for `boto3.client("ebs").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -115,7 +115,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("ebs").get_snapshot_block` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.get_snapshot_block]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.get_snapshot_block]
 
 ```python
 def get_snapshot_block(
@@ -131,7 +131,7 @@ def get_snapshot_block(
 
 Type annotations for `boto3.client("ebs").list_changed_blocks` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.list_changed_blocks]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.list_changed_blocks]
 
 ```python
 def list_changed_blocks(
@@ -149,7 +149,7 @@ def list_changed_blocks(
 
 Type annotations for `boto3.client("ebs").list_snapshot_blocks` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.list_snapshot_blocks]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.list_snapshot_blocks]
 
 ```python
 def list_snapshot_blocks(
@@ -166,7 +166,7 @@ def list_snapshot_blocks(
 
 Type annotations for `boto3.client("ebs").put_snapshot_block` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.put_snapshot_block]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.put_snapshot_block]
 
 ```python
 def put_snapshot_block(
@@ -186,7 +186,7 @@ def put_snapshot_block(
 
 Type annotations for `boto3.client("ebs").start_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.start_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.start_snapshot]
 
 ```python
 def start_snapshot(

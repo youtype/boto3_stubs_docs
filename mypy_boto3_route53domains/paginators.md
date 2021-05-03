@@ -23,7 +23,7 @@ def get_list_domains_paginator() -> ListDomainsPaginator:
     return boto3.client("route53domains").get_paginator("list_domains")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ListDomains)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ListDomains)
 
 ```python
 class ListDomainsPaginator(Boto3Paginator):
@@ -46,7 +46,7 @@ def get_list_operations_paginator() -> ListOperationsPaginator:
     return boto3.client("route53domains").get_paginator("list_operations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ListOperations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ListOperations)
 
 ```python
 class ListOperationsPaginator(Boto3Paginator):
@@ -70,7 +70,7 @@ def get_view_billing_paginator() -> ViewBillingPaginator:
     return boto3.client("route53domains").get_paginator("view_billing")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ViewBilling)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ViewBilling)
 
 ```python
 class ViewBillingPaginator(Boto3Paginator):

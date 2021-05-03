@@ -31,7 +31,7 @@ def get_describe_tape_archives_paginator() -> DescribeTapeArchivesPaginator:
     return boto3.client("storagegateway").get_paginator("describe_tape_archives")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeArchives)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeArchives)
 
 ```python
 class DescribeTapeArchivesPaginator(Boto3Paginator):
@@ -55,7 +55,7 @@ def get_describe_tape_recovery_points_paginator() -> DescribeTapeRecoveryPointsP
     return boto3.client("storagegateway").get_paginator("describe_tape_recovery_points")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeRecoveryPoints)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeRecoveryPoints)
 
 ```python
 class DescribeTapeRecoveryPointsPaginator(Boto3Paginator):
@@ -79,7 +79,7 @@ def get_describe_tapes_paginator() -> DescribeTapesPaginator:
     return boto3.client("storagegateway").get_paginator("describe_tapes")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapes)
 
 ```python
 class DescribeTapesPaginator(Boto3Paginator):
@@ -104,7 +104,7 @@ def get_describe_vtl_devices_paginator() -> DescribeVTLDevicesPaginator:
     return boto3.client("storagegateway").get_paginator("describe_vtl_devices")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeVTLDevices)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeVTLDevices)
 
 ```python
 class DescribeVTLDevicesPaginator(Boto3Paginator):
@@ -129,7 +129,7 @@ def get_list_file_shares_paginator() -> ListFileSharesPaginator:
     return boto3.client("storagegateway").get_paginator("list_file_shares")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileShares)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileShares)
 
 ```python
 class ListFileSharesPaginator(Boto3Paginator):
@@ -153,7 +153,7 @@ def get_list_file_system_associations_paginator() -> ListFileSystemAssociationsP
     return boto3.client("storagegateway").get_paginator("list_file_system_associations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileSystemAssociations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileSystemAssociations)
 
 ```python
 class ListFileSystemAssociationsPaginator(Boto3Paginator):
@@ -177,7 +177,7 @@ def get_list_gateways_paginator() -> ListGatewaysPaginator:
     return boto3.client("storagegateway").get_paginator("list_gateways")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListGateways)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListGateways)
 
 ```python
 class ListGatewaysPaginator(Boto3Paginator):
@@ -200,7 +200,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("storagegateway").get_paginator("list_tags_for_resource")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTagsForResource)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):
@@ -224,7 +224,7 @@ def get_list_tape_pools_paginator() -> ListTapePoolsPaginator:
     return boto3.client("storagegateway").get_paginator("list_tape_pools")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapePools)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapePools)
 
 ```python
 class ListTapePoolsPaginator(Boto3Paginator):
@@ -248,7 +248,7 @@ def get_list_tapes_paginator() -> ListTapesPaginator:
     return boto3.client("storagegateway").get_paginator("list_tapes")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapes)
 
 ```python
 class ListTapesPaginator(Boto3Paginator):
@@ -272,7 +272,7 @@ def get_list_volumes_paginator() -> ListVolumesPaginator:
     return boto3.client("storagegateway").get_paginator("list_volumes")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListVolumes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListVolumes)
 
 ```python
 class ListVolumesPaginator(Boto3Paginator):

@@ -91,7 +91,7 @@ def get_route53_client() -> Route53Client:
     return boto3.client("route53")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client)
 
 ## Exceptions
 
@@ -181,7 +181,7 @@ Exceptions:
 
 Type annotations for `boto3.client("route53").activate_key_signing_key` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.activate_key_signing_key]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.activate_key_signing_key]
 
 ```python
 def activate_key_signing_key(
@@ -196,7 +196,7 @@ def activate_key_signing_key(
 
 Type annotations for `boto3.client("route53").associate_vpc_with_hosted_zone` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.associate_vpc_with_hosted_zone]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.associate_vpc_with_hosted_zone]
 
 ```python
 def associate_vpc_with_hosted_zone(
@@ -212,7 +212,7 @@ def associate_vpc_with_hosted_zone(
 
 Type annotations for `boto3.client("route53").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -226,7 +226,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("route53").change_resource_record_sets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.change_resource_record_sets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.change_resource_record_sets]
 
 ```python
 def change_resource_record_sets(
@@ -241,7 +241,7 @@ def change_resource_record_sets(
 
 Type annotations for `boto3.client("route53").change_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.change_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.change_tags_for_resource]
 
 ```python
 def change_tags_for_resource(
@@ -258,7 +258,7 @@ def change_tags_for_resource(
 
 Type annotations for `boto3.client("route53").create_health_check` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_health_check]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_health_check]
 
 ```python
 def create_health_check(
@@ -273,7 +273,7 @@ def create_health_check(
 
 Type annotations for `boto3.client("route53").create_hosted_zone` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_hosted_zone]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_hosted_zone]
 
 ```python
 def create_hosted_zone(
@@ -291,7 +291,7 @@ def create_hosted_zone(
 
 Type annotations for `boto3.client("route53").create_key_signing_key` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_key_signing_key]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_key_signing_key]
 
 ```python
 def create_key_signing_key(
@@ -309,7 +309,7 @@ def create_key_signing_key(
 
 Type annotations for `boto3.client("route53").create_query_logging_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_query_logging_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_query_logging_config]
 
 ```python
 def create_query_logging_config(
@@ -324,7 +324,7 @@ def create_query_logging_config(
 
 Type annotations for `boto3.client("route53").create_reusable_delegation_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_reusable_delegation_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_reusable_delegation_set]
 
 ```python
 def create_reusable_delegation_set(
@@ -339,7 +339,7 @@ def create_reusable_delegation_set(
 
 Type annotations for `boto3.client("route53").create_traffic_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy]
 
 ```python
 def create_traffic_policy(
@@ -355,7 +355,7 @@ def create_traffic_policy(
 
 Type annotations for `boto3.client("route53").create_traffic_policy_instance` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy_instance]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy_instance]
 
 ```python
 def create_traffic_policy_instance(
@@ -373,7 +373,7 @@ def create_traffic_policy_instance(
 
 Type annotations for `boto3.client("route53").create_traffic_policy_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy_version]
 
 ```python
 def create_traffic_policy_version(
@@ -389,7 +389,7 @@ def create_traffic_policy_version(
 
 Type annotations for `boto3.client("route53").create_vpc_association_authorization` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_vpc_association_authorization]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_vpc_association_authorization]
 
 ```python
 def create_vpc_association_authorization(
@@ -404,7 +404,7 @@ def create_vpc_association_authorization(
 
 Type annotations for `boto3.client("route53").deactivate_key_signing_key` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.deactivate_key_signing_key]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.deactivate_key_signing_key]
 
 ```python
 def deactivate_key_signing_key(
@@ -419,7 +419,7 @@ def deactivate_key_signing_key(
 
 Type annotations for `boto3.client("route53").delete_health_check` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_health_check]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_health_check]
 
 ```python
 def delete_health_check(
@@ -433,7 +433,7 @@ def delete_health_check(
 
 Type annotations for `boto3.client("route53").delete_hosted_zone` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_hosted_zone]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_hosted_zone]
 
 ```python
 def delete_hosted_zone(
@@ -447,7 +447,7 @@ def delete_hosted_zone(
 
 Type annotations for `boto3.client("route53").delete_key_signing_key` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_key_signing_key]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_key_signing_key]
 
 ```python
 def delete_key_signing_key(
@@ -462,7 +462,7 @@ def delete_key_signing_key(
 
 Type annotations for `boto3.client("route53").delete_query_logging_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_query_logging_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_query_logging_config]
 
 ```python
 def delete_query_logging_config(
@@ -476,7 +476,7 @@ def delete_query_logging_config(
 
 Type annotations for `boto3.client("route53").delete_reusable_delegation_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_reusable_delegation_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_reusable_delegation_set]
 
 ```python
 def delete_reusable_delegation_set(
@@ -490,7 +490,7 @@ def delete_reusable_delegation_set(
 
 Type annotations for `boto3.client("route53").delete_traffic_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_traffic_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_traffic_policy]
 
 ```python
 def delete_traffic_policy(
@@ -505,7 +505,7 @@ def delete_traffic_policy(
 
 Type annotations for `boto3.client("route53").delete_traffic_policy_instance` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_traffic_policy_instance]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_traffic_policy_instance]
 
 ```python
 def delete_traffic_policy_instance(
@@ -519,7 +519,7 @@ def delete_traffic_policy_instance(
 
 Type annotations for `boto3.client("route53").delete_vpc_association_authorization` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_vpc_association_authorization]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_vpc_association_authorization]
 
 ```python
 def delete_vpc_association_authorization(
@@ -534,7 +534,7 @@ def delete_vpc_association_authorization(
 
 Type annotations for `boto3.client("route53").disable_hosted_zone_dnssec` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.disable_hosted_zone_dnssec]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.disable_hosted_zone_dnssec]
 
 ```python
 def disable_hosted_zone_dnssec(
@@ -548,7 +548,7 @@ def disable_hosted_zone_dnssec(
 
 Type annotations for `boto3.client("route53").disassociate_vpc_from_hosted_zone` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.disassociate_vpc_from_hosted_zone]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.disassociate_vpc_from_hosted_zone]
 
 ```python
 def disassociate_vpc_from_hosted_zone(
@@ -564,7 +564,7 @@ def disassociate_vpc_from_hosted_zone(
 
 Type annotations for `boto3.client("route53").enable_hosted_zone_dnssec` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.enable_hosted_zone_dnssec]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.enable_hosted_zone_dnssec]
 
 ```python
 def enable_hosted_zone_dnssec(
@@ -578,7 +578,7 @@ def enable_hosted_zone_dnssec(
 
 Type annotations for `boto3.client("route53").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -595,7 +595,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("route53").get_account_limit` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_account_limit]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_account_limit]
 
 ```python
 def get_account_limit(
@@ -609,7 +609,7 @@ def get_account_limit(
 
 Type annotations for `boto3.client("route53").get_change` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_change]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_change]
 
 ```python
 def get_change(
@@ -623,7 +623,7 @@ def get_change(
 
 Type annotations for `boto3.client("route53").get_checker_ip_ranges` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_checker_ip_ranges]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_checker_ip_ranges]
 
 ```python
 def get_checker_ip_ranges(
@@ -636,7 +636,7 @@ def get_checker_ip_ranges(
 
 Type annotations for `boto3.client("route53").get_dnssec` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_dnssec]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_dnssec]
 
 ```python
 def get_dnssec(
@@ -650,7 +650,7 @@ def get_dnssec(
 
 Type annotations for `boto3.client("route53").get_geo_location` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_geo_location]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_geo_location]
 
 ```python
 def get_geo_location(
@@ -666,7 +666,7 @@ def get_geo_location(
 
 Type annotations for `boto3.client("route53").get_health_check` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check]
 
 ```python
 def get_health_check(
@@ -680,7 +680,7 @@ def get_health_check(
 
 Type annotations for `boto3.client("route53").get_health_check_count` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_count]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_count]
 
 ```python
 def get_health_check_count(
@@ -693,7 +693,7 @@ def get_health_check_count(
 
 Type annotations for `boto3.client("route53").get_health_check_last_failure_reason` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_last_failure_reason]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_last_failure_reason]
 
 ```python
 def get_health_check_last_failure_reason(
@@ -707,7 +707,7 @@ def get_health_check_last_failure_reason(
 
 Type annotations for `boto3.client("route53").get_health_check_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_status]
 
 ```python
 def get_health_check_status(
@@ -721,7 +721,7 @@ def get_health_check_status(
 
 Type annotations for `boto3.client("route53").get_hosted_zone` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone]
 
 ```python
 def get_hosted_zone(
@@ -735,7 +735,7 @@ def get_hosted_zone(
 
 Type annotations for `boto3.client("route53").get_hosted_zone_count` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone_count]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone_count]
 
 ```python
 def get_hosted_zone_count(
@@ -748,7 +748,7 @@ def get_hosted_zone_count(
 
 Type annotations for `boto3.client("route53").get_hosted_zone_limit` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone_limit]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone_limit]
 
 ```python
 def get_hosted_zone_limit(
@@ -763,7 +763,7 @@ def get_hosted_zone_limit(
 
 Type annotations for `boto3.client("route53").get_query_logging_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_query_logging_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_query_logging_config]
 
 ```python
 def get_query_logging_config(
@@ -777,7 +777,7 @@ def get_query_logging_config(
 
 Type annotations for `boto3.client("route53").get_reusable_delegation_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_reusable_delegation_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_reusable_delegation_set]
 
 ```python
 def get_reusable_delegation_set(
@@ -791,7 +791,7 @@ def get_reusable_delegation_set(
 
 Type annotations for `boto3.client("route53").get_reusable_delegation_set_limit` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_reusable_delegation_set_limit]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_reusable_delegation_set_limit]
 
 ```python
 def get_reusable_delegation_set_limit(
@@ -806,7 +806,7 @@ def get_reusable_delegation_set_limit(
 
 Type annotations for `boto3.client("route53").get_traffic_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy]
 
 ```python
 def get_traffic_policy(
@@ -821,7 +821,7 @@ def get_traffic_policy(
 
 Type annotations for `boto3.client("route53").get_traffic_policy_instance` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy_instance]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy_instance]
 
 ```python
 def get_traffic_policy_instance(
@@ -835,7 +835,7 @@ def get_traffic_policy_instance(
 
 Type annotations for `boto3.client("route53").get_traffic_policy_instance_count` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy_instance_count]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy_instance_count]
 
 ```python
 def get_traffic_policy_instance_count(
@@ -848,7 +848,7 @@ def get_traffic_policy_instance_count(
 
 Type annotations for `boto3.client("route53").list_geo_locations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_geo_locations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_geo_locations]
 
 ```python
 def list_geo_locations(
@@ -865,7 +865,7 @@ def list_geo_locations(
 
 Type annotations for `boto3.client("route53").list_health_checks` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_health_checks]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_health_checks]
 
 ```python
 def list_health_checks(
@@ -880,7 +880,7 @@ def list_health_checks(
 
 Type annotations for `boto3.client("route53").list_hosted_zones` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones]
 
 ```python
 def list_hosted_zones(
@@ -896,7 +896,7 @@ def list_hosted_zones(
 
 Type annotations for `boto3.client("route53").list_hosted_zones_by_name` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones_by_name]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones_by_name]
 
 ```python
 def list_hosted_zones_by_name(
@@ -912,7 +912,7 @@ def list_hosted_zones_by_name(
 
 Type annotations for `boto3.client("route53").list_hosted_zones_by_vpc` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones_by_vpc]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones_by_vpc]
 
 ```python
 def list_hosted_zones_by_vpc(
@@ -929,7 +929,7 @@ def list_hosted_zones_by_vpc(
 
 Type annotations for `boto3.client("route53").list_query_logging_configs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_query_logging_configs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_query_logging_configs]
 
 ```python
 def list_query_logging_configs(
@@ -945,7 +945,7 @@ def list_query_logging_configs(
 
 Type annotations for `boto3.client("route53").list_resource_record_sets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_resource_record_sets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_resource_record_sets]
 
 ```python
 def list_resource_record_sets(
@@ -963,7 +963,7 @@ def list_resource_record_sets(
 
 Type annotations for `boto3.client("route53").list_reusable_delegation_sets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_reusable_delegation_sets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_reusable_delegation_sets]
 
 ```python
 def list_reusable_delegation_sets(
@@ -978,7 +978,7 @@ def list_reusable_delegation_sets(
 
 Type annotations for `boto3.client("route53").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -993,7 +993,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("route53").list_tags_for_resources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_tags_for_resources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_tags_for_resources]
 
 ```python
 def list_tags_for_resources(
@@ -1008,7 +1008,7 @@ def list_tags_for_resources(
 
 Type annotations for `boto3.client("route53").list_traffic_policies` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policies]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policies]
 
 ```python
 def list_traffic_policies(
@@ -1023,7 +1023,7 @@ def list_traffic_policies(
 
 Type annotations for `boto3.client("route53").list_traffic_policy_instances` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances]
 
 ```python
 def list_traffic_policy_instances(
@@ -1040,7 +1040,7 @@ def list_traffic_policy_instances(
 
 Type annotations for `boto3.client("route53").list_traffic_policy_instances_by_hosted_zone` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances_by_hosted_zone]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances_by_hosted_zone]
 
 ```python
 def list_traffic_policy_instances_by_hosted_zone(
@@ -1057,7 +1057,7 @@ def list_traffic_policy_instances_by_hosted_zone(
 
 Type annotations for `boto3.client("route53").list_traffic_policy_instances_by_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances_by_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances_by_policy]
 
 ```python
 def list_traffic_policy_instances_by_policy(
@@ -1076,7 +1076,7 @@ def list_traffic_policy_instances_by_policy(
 
 Type annotations for `boto3.client("route53").list_traffic_policy_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_versions]
 
 ```python
 def list_traffic_policy_versions(
@@ -1092,7 +1092,7 @@ def list_traffic_policy_versions(
 
 Type annotations for `boto3.client("route53").list_vpc_association_authorizations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_vpc_association_authorizations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_vpc_association_authorizations]
 
 ```python
 def list_vpc_association_authorizations(
@@ -1108,7 +1108,7 @@ def list_vpc_association_authorizations(
 
 Type annotations for `boto3.client("route53").test_dns_answer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.test_dns_answer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.test_dns_answer]
 
 ```python
 def test_dns_answer(
@@ -1127,7 +1127,7 @@ def test_dns_answer(
 
 Type annotations for `boto3.client("route53").update_health_check` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_health_check]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_health_check]
 
 ```python
 def update_health_check(
@@ -1157,7 +1157,7 @@ def update_health_check(
 
 Type annotations for `boto3.client("route53").update_hosted_zone_comment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_hosted_zone_comment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_hosted_zone_comment]
 
 ```python
 def update_hosted_zone_comment(
@@ -1172,7 +1172,7 @@ def update_hosted_zone_comment(
 
 Type annotations for `boto3.client("route53").update_traffic_policy_comment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_traffic_policy_comment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_traffic_policy_comment]
 
 ```python
 def update_traffic_policy_comment(
@@ -1188,7 +1188,7 @@ def update_traffic_policy_comment(
 
 Type annotations for `boto3.client("route53").update_traffic_policy_instance` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_traffic_policy_instance]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_traffic_policy_instance]
 
 ```python
 def update_traffic_policy_instance(

@@ -22,7 +22,7 @@ def get_list_device_events_paginator() -> ListDeviceEventsPaginator:
     return boto3.client("iot1click-devices").get_paginator("list_device_events")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Paginator.ListDeviceEvents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Paginator.ListDeviceEvents)
 
 ```python
 class ListDeviceEventsPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_list_devices_paginator() -> ListDevicesPaginator:
     return boto3.client("iot1click-devices").get_paginator("list_devices")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Paginator.ListDevices)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Paginator.ListDevices)
 
 ```python
 class ListDevicesPaginator(Boto3Paginator):

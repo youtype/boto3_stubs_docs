@@ -40,7 +40,7 @@ def get_timestream-write_client() -> TimestreamWriteClient:
     return boto3.client("timestream-write")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client)
 
 ## Exceptions
 
@@ -76,7 +76,7 @@ Exceptions:
 
 Type annotations for `boto3.client("timestream-write").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -90,7 +90,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("timestream-write").create_database` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_database]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_database]
 
 ```python
 def create_database(
@@ -106,7 +106,7 @@ def create_database(
 
 Type annotations for `boto3.client("timestream-write").create_table` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_table]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_table]
 
 ```python
 def create_table(
@@ -123,7 +123,7 @@ def create_table(
 
 Type annotations for `boto3.client("timestream-write").delete_database` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.delete_database]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.delete_database]
 
 ```python
 def delete_database(
@@ -137,7 +137,7 @@ def delete_database(
 
 Type annotations for `boto3.client("timestream-write").delete_table` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.delete_table]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.delete_table]
 
 ```python
 def delete_table(
@@ -152,7 +152,7 @@ def delete_table(
 
 Type annotations for `boto3.client("timestream-write").describe_database` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_database]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_database]
 
 ```python
 def describe_database(
@@ -166,7 +166,7 @@ def describe_database(
 
 Type annotations for `boto3.client("timestream-write").describe_endpoints` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_endpoints]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_endpoints]
 
 ```python
 def describe_endpoints(
@@ -179,7 +179,7 @@ def describe_endpoints(
 
 Type annotations for `boto3.client("timestream-write").describe_table` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_table]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_table]
 
 ```python
 def describe_table(
@@ -194,7 +194,7 @@ def describe_table(
 
 Type annotations for `boto3.client("timestream-write").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -211,7 +211,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("timestream-write").list_databases` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_databases]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_databases]
 
 ```python
 def list_databases(
@@ -226,7 +226,7 @@ def list_databases(
 
 Type annotations for `boto3.client("timestream-write").list_tables` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tables]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tables]
 
 ```python
 def list_tables(
@@ -242,7 +242,7 @@ def list_tables(
 
 Type annotations for `boto3.client("timestream-write").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -256,7 +256,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("timestream-write").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -271,7 +271,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("timestream-write").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -286,7 +286,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("timestream-write").update_database` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.update_database]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.update_database]
 
 ```python
 def update_database(
@@ -301,7 +301,7 @@ def update_database(
 
 Type annotations for `boto3.client("timestream-write").update_table` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.update_table]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.update_table]
 
 ```python
 def update_table(
@@ -317,7 +317,7 @@ def update_table(
 
 Type annotations for `boto3.client("timestream-write").write_records` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.write_records]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.write_records]
 
 ```python
 def write_records(

@@ -40,7 +40,7 @@ def get_get_offering_status_paginator() -> GetOfferingStatusPaginator:
     return boto3.client("devicefarm").get_paginator("get_offering_status")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.GetOfferingStatus)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.GetOfferingStatus)
 
 ```python
 class GetOfferingStatusPaginator(Boto3Paginator):
@@ -63,7 +63,7 @@ def get_list_artifacts_paginator() -> ListArtifactsPaginator:
     return boto3.client("devicefarm").get_paginator("list_artifacts")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListArtifacts)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListArtifacts)
 
 ```python
 class ListArtifactsPaginator(Boto3Paginator):
@@ -88,7 +88,7 @@ def get_list_device_instances_paginator() -> ListDeviceInstancesPaginator:
     return boto3.client("devicefarm").get_paginator("list_device_instances")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDeviceInstances)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDeviceInstances)
 
 ```python
 class ListDeviceInstancesPaginator(Boto3Paginator):
@@ -111,7 +111,7 @@ def get_list_device_pools_paginator() -> ListDevicePoolsPaginator:
     return boto3.client("devicefarm").get_paginator("list_device_pools")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDevicePools)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDevicePools)
 
 ```python
 class ListDevicePoolsPaginator(Boto3Paginator):
@@ -136,7 +136,7 @@ def get_list_devices_paginator() -> ListDevicesPaginator:
     return boto3.client("devicefarm").get_paginator("list_devices")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDevices)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDevices)
 
 ```python
 class ListDevicesPaginator(Boto3Paginator):
@@ -161,7 +161,7 @@ def get_list_instance_profiles_paginator() -> ListInstanceProfilesPaginator:
     return boto3.client("devicefarm").get_paginator("list_instance_profiles")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListInstanceProfiles)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListInstanceProfiles)
 
 ```python
 class ListInstanceProfilesPaginator(Boto3Paginator):
@@ -184,7 +184,7 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("devicefarm").get_paginator("list_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListJobs)
 
 ```python
 class ListJobsPaginator(Boto3Paginator):
@@ -208,7 +208,7 @@ def get_list_network_profiles_paginator() -> ListNetworkProfilesPaginator:
     return boto3.client("devicefarm").get_paginator("list_network_profiles")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListNetworkProfiles)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListNetworkProfiles)
 
 ```python
 class ListNetworkProfilesPaginator(Boto3Paginator):
@@ -233,7 +233,7 @@ def get_list_offering_promotions_paginator() -> ListOfferingPromotionsPaginator:
     return boto3.client("devicefarm").get_paginator("list_offering_promotions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferingPromotions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferingPromotions)
 
 ```python
 class ListOfferingPromotionsPaginator(Boto3Paginator):
@@ -256,7 +256,7 @@ def get_list_offering_transactions_paginator() -> ListOfferingTransactionsPagina
     return boto3.client("devicefarm").get_paginator("list_offering_transactions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferingTransactions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferingTransactions)
 
 ```python
 class ListOfferingTransactionsPaginator(Boto3Paginator):
@@ -279,7 +279,7 @@ def get_list_offerings_paginator() -> ListOfferingsPaginator:
     return boto3.client("devicefarm").get_paginator("list_offerings")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferings)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferings)
 
 ```python
 class ListOfferingsPaginator(Boto3Paginator):
@@ -302,7 +302,7 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("devicefarm").get_paginator("list_projects")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListProjects)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListProjects)
 
 ```python
 class ListProjectsPaginator(Boto3Paginator):
@@ -326,7 +326,7 @@ def get_list_remote_access_sessions_paginator() -> ListRemoteAccessSessionsPagin
     return boto3.client("devicefarm").get_paginator("list_remote_access_sessions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListRemoteAccessSessions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListRemoteAccessSessions)
 
 ```python
 class ListRemoteAccessSessionsPaginator(Boto3Paginator):
@@ -350,7 +350,7 @@ def get_list_runs_paginator() -> ListRunsPaginator:
     return boto3.client("devicefarm").get_paginator("list_runs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListRuns)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListRuns)
 
 ```python
 class ListRunsPaginator(Boto3Paginator):
@@ -374,7 +374,7 @@ def get_list_samples_paginator() -> ListSamplesPaginator:
     return boto3.client("devicefarm").get_paginator("list_samples")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListSamples)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListSamples)
 
 ```python
 class ListSamplesPaginator(Boto3Paginator):
@@ -398,7 +398,7 @@ def get_list_suites_paginator() -> ListSuitesPaginator:
     return boto3.client("devicefarm").get_paginator("list_suites")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListSuites)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListSuites)
 
 ```python
 class ListSuitesPaginator(Boto3Paginator):
@@ -422,7 +422,7 @@ def get_list_tests_paginator() -> ListTestsPaginator:
     return boto3.client("devicefarm").get_paginator("list_tests")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListTests)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListTests)
 
 ```python
 class ListTestsPaginator(Boto3Paginator):
@@ -446,7 +446,7 @@ def get_list_unique_problems_paginator() -> ListUniqueProblemsPaginator:
     return boto3.client("devicefarm").get_paginator("list_unique_problems")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListUniqueProblems)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListUniqueProblems)
 
 ```python
 class ListUniqueProblemsPaginator(Boto3Paginator):
@@ -470,7 +470,7 @@ def get_list_uploads_paginator() -> ListUploadsPaginator:
     return boto3.client("devicefarm").get_paginator("list_uploads")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListUploads)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListUploads)
 
 ```python
 class ListUploadsPaginator(Boto3Paginator):
@@ -495,7 +495,7 @@ def get_list_vpce_configurations_paginator() -> ListVPCEConfigurationsPaginator:
     return boto3.client("devicefarm").get_paginator("list_vpce_configurations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListVPCEConfigurations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListVPCEConfigurations)
 
 ```python
 class ListVPCEConfigurationsPaginator(Boto3Paginator):

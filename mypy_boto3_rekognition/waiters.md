@@ -22,20 +22,16 @@ def get_project_version_running_waiter() -> ProjectVersionRunningWaiter:
     return boto3.client("rekognition").get_waiter("project_version_running")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Waiter.project_version_running)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Waiter.project_version_running)
 
-```python
-class ProjectVersionRunningWaiter(Boto3Waiter):
-    def wait(
-        self,
-        ProjectArn: str,
-        VersionNames: List[str] = None,
-        NextToken: str = None,
-        MaxResults: int = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `ProjectVersionRunningWaiter.wait` method:
+
+- `ProjectArn`: `str` *(required)*
+- `VersionNames`: `List[str]`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#waiterconfigtypedef)
+
 ## ProjectVersionTrainingCompletedWaiter
 
 Type annotations for `boto3.client("rekognition").get_waiter("project_version_training_completed")`.
@@ -49,17 +45,12 @@ def get_project_version_training_completed_waiter() -> ProjectVersionTrainingCom
     return boto3.client("rekognition").get_waiter("project_version_training_completed")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Waiter.project_version_training_completed)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Waiter.project_version_training_completed)
 
-```python
-class ProjectVersionTrainingCompletedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        ProjectArn: str,
-        VersionNames: List[str] = None,
-        NextToken: str = None,
-        MaxResults: int = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `ProjectVersionTrainingCompletedWaiter.wait` method:
+
+- `ProjectArn`: `str` *(required)*
+- `VersionNames`: `List[str]`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#waiterconfigtypedef)

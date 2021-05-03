@@ -25,20 +25,16 @@ def get_load_balancer_available_waiter() -> LoadBalancerAvailableWaiter:
     return boto3.client("elbv2").get_waiter("load_balancer_available")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.load_balancer_available)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.load_balancer_available)
 
-```python
-class LoadBalancerAvailableWaiter(Boto3Waiter):
-    def wait(
-        self,
-        LoadBalancerArns: List[str] = None,
-        Names: List[str] = None,
-        Marker: str = None,
-        PageSize: int = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `LoadBalancerAvailableWaiter.wait` method:
+
+- `LoadBalancerArns`: `List[str]`
+- `Names`: `List[str]`
+- `Marker`: `str`
+- `PageSize`: `int`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#waiterconfigtypedef)
+
 ## LoadBalancerExistsWaiter
 
 Type annotations for `boto3.client("elbv2").get_waiter("load_balancer_exists")`.
@@ -52,20 +48,16 @@ def get_load_balancer_exists_waiter() -> LoadBalancerExistsWaiter:
     return boto3.client("elbv2").get_waiter("load_balancer_exists")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.load_balancer_exists)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.load_balancer_exists)
 
-```python
-class LoadBalancerExistsWaiter(Boto3Waiter):
-    def wait(
-        self,
-        LoadBalancerArns: List[str] = None,
-        Names: List[str] = None,
-        Marker: str = None,
-        PageSize: int = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `LoadBalancerExistsWaiter.wait` method:
+
+- `LoadBalancerArns`: `List[str]`
+- `Names`: `List[str]`
+- `Marker`: `str`
+- `PageSize`: `int`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#waiterconfigtypedef)
+
 ## LoadBalancersDeletedWaiter
 
 Type annotations for `boto3.client("elbv2").get_waiter("load_balancers_deleted")`.
@@ -79,20 +71,16 @@ def get_load_balancers_deleted_waiter() -> LoadBalancersDeletedWaiter:
     return boto3.client("elbv2").get_waiter("load_balancers_deleted")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.load_balancers_deleted)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.load_balancers_deleted)
 
-```python
-class LoadBalancersDeletedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        LoadBalancerArns: List[str] = None,
-        Names: List[str] = None,
-        Marker: str = None,
-        PageSize: int = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `LoadBalancersDeletedWaiter.wait` method:
+
+- `LoadBalancerArns`: `List[str]`
+- `Names`: `List[str]`
+- `Marker`: `str`
+- `PageSize`: `int`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#waiterconfigtypedef)
+
 ## TargetDeregisteredWaiter
 
 Type annotations for `boto3.client("elbv2").get_waiter("target_deregistered")`.
@@ -106,18 +94,14 @@ def get_target_deregistered_waiter() -> TargetDeregisteredWaiter:
     return boto3.client("elbv2").get_waiter("target_deregistered")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.target_deregistered)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.target_deregistered)
 
-```python
-class TargetDeregisteredWaiter(Boto3Waiter):
-    def wait(
-        self,
-        TargetGroupArn: str,
-        Targets: List["TargetDescriptionTypeDef"] = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `TargetDeregisteredWaiter.wait` method:
+
+- `TargetGroupArn`: `str` *(required)*
+- `Targets`: `List["TargetDescriptionTypeDef"]`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#waiterconfigtypedef)
+
 ## TargetInServiceWaiter
 
 Type annotations for `boto3.client("elbv2").get_waiter("target_in_service")`.
@@ -131,15 +115,10 @@ def get_target_in_service_waiter() -> TargetInServiceWaiter:
     return boto3.client("elbv2").get_waiter("target_in_service")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.target_in_service)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.target_in_service)
 
-```python
-class TargetInServiceWaiter(Boto3Waiter):
-    def wait(
-        self,
-        TargetGroupArn: str,
-        Targets: List["TargetDescriptionTypeDef"] = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `TargetInServiceWaiter.wait` method:
+
+- `TargetGroupArn`: `str` *(required)*
+- `Targets`: `List["TargetDescriptionTypeDef"]`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#waiterconfigtypedef)

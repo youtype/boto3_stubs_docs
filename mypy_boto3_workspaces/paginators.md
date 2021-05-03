@@ -28,7 +28,7 @@ def get_describe_account_modifications_paginator() -> DescribeAccountModificatio
     return boto3.client("workspaces").get_paginator("describe_account_modifications")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeAccountModifications)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeAccountModifications)
 
 ```python
 class DescribeAccountModificationsPaginator(Boto3Paginator):
@@ -51,7 +51,7 @@ def get_describe_ip_groups_paginator() -> DescribeIpGroupsPaginator:
     return boto3.client("workspaces").get_paginator("describe_ip_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeIpGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeIpGroups)
 
 ```python
 class DescribeIpGroupsPaginator(Boto3Paginator):
@@ -75,7 +75,7 @@ def get_describe_workspace_bundles_paginator() -> DescribeWorkspaceBundlesPagina
     return boto3.client("workspaces").get_paginator("describe_workspace_bundles")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaceBundles)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaceBundles)
 
 ```python
 class DescribeWorkspaceBundlesPaginator(Boto3Paginator):
@@ -100,7 +100,7 @@ def get_describe_workspace_directories_paginator() -> DescribeWorkspaceDirectori
     return boto3.client("workspaces").get_paginator("describe_workspace_directories")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaceDirectories)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaceDirectories)
 
 ```python
 class DescribeWorkspaceDirectoriesPaginator(Boto3Paginator):
@@ -125,7 +125,7 @@ def get_describe_workspace_images_paginator() -> DescribeWorkspaceImagesPaginato
     return boto3.client("workspaces").get_paginator("describe_workspace_images")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaceImages)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaceImages)
 
 ```python
 class DescribeWorkspaceImagesPaginator(Boto3Paginator):
@@ -150,7 +150,7 @@ def get_describe_workspaces_paginator() -> DescribeWorkspacesPaginator:
     return boto3.client("workspaces").get_paginator("describe_workspaces")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaces)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaces)
 
 ```python
 class DescribeWorkspacesPaginator(Boto3Paginator):
@@ -177,7 +177,7 @@ def get_describe_workspaces_connection_status_paginator() -> DescribeWorkspacesC
     return boto3.client("workspaces").get_paginator("describe_workspaces_connection_status")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspacesConnectionStatus)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspacesConnectionStatus)
 
 ```python
 class DescribeWorkspacesConnectionStatusPaginator(Boto3Paginator):
@@ -201,7 +201,7 @@ def get_list_available_management_cidr_ranges_paginator() -> ListAvailableManage
     return boto3.client("workspaces").get_paginator("list_available_management_cidr_ranges")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.ListAvailableManagementCidrRanges)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.ListAvailableManagementCidrRanges)
 
 ```python
 class ListAvailableManagementCidrRangesPaginator(Boto3Paginator):

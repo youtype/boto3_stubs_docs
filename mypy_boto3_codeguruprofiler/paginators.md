@@ -21,7 +21,7 @@ def get_list_profile_times_paginator() -> ListProfileTimesPaginator:
     return boto3.client("codeguruprofiler").get_paginator("list_profile_times")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Paginator.ListProfileTimes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Paginator.ListProfileTimes)
 
 ```python
 class ListProfileTimesPaginator(Boto3Paginator):

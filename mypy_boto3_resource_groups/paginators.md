@@ -23,7 +23,7 @@ def get_list_group_resources_paginator() -> ListGroupResourcesPaginator:
     return boto3.client("resource-groups").get_paginator("list_group_resources")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Paginator.ListGroupResources)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Paginator.ListGroupResources)
 
 ```python
 class ListGroupResourcesPaginator(Boto3Paginator):
@@ -49,7 +49,7 @@ def get_list_groups_paginator() -> ListGroupsPaginator:
     return boto3.client("resource-groups").get_paginator("list_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Paginator.ListGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Paginator.ListGroups)
 
 ```python
 class ListGroupsPaginator(Boto3Paginator):
@@ -73,7 +73,7 @@ def get_search_resources_paginator() -> SearchResourcesPaginator:
     return boto3.client("resource-groups").get_paginator("search_resources")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Paginator.SearchResources)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Paginator.SearchResources)
 
 ```python
 class SearchResourcesPaginator(Boto3Paginator):

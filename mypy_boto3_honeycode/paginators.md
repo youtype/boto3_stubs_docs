@@ -24,7 +24,7 @@ def get_list_table_columns_paginator() -> ListTableColumnsPaginator:
     return boto3.client("honeycode").get_paginator("list_table_columns")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTableColumns)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTableColumns)
 
 ```python
 class ListTableColumnsPaginator(Boto3Paginator):
@@ -49,7 +49,7 @@ def get_list_table_rows_paginator() -> ListTableRowsPaginator:
     return boto3.client("honeycode").get_paginator("list_table_rows")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTableRows)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTableRows)
 
 ```python
 class ListTableRowsPaginator(Boto3Paginator):
@@ -75,7 +75,7 @@ def get_list_tables_paginator() -> ListTablesPaginator:
     return boto3.client("honeycode").get_paginator("list_tables")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTables)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTables)
 
 ```python
 class ListTablesPaginator(Boto3Paginator):
@@ -99,7 +99,7 @@ def get_query_table_rows_paginator() -> QueryTableRowsPaginator:
     return boto3.client("honeycode").get_paginator("query_table_rows")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.QueryTableRows)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.QueryTableRows)
 
 ```python
 class QueryTableRowsPaginator(Boto3Paginator):

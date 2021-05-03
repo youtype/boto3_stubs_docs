@@ -24,7 +24,7 @@ def get_describe_batch_predictions_paginator() -> DescribeBatchPredictionsPagina
     return boto3.client("machinelearning").get_paginator("describe_batch_predictions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeBatchPredictions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeBatchPredictions)
 
 ```python
 class DescribeBatchPredictionsPaginator(Boto3Paginator):
@@ -56,7 +56,7 @@ def get_describe_data_sources_paginator() -> DescribeDataSourcesPaginator:
     return boto3.client("machinelearning").get_paginator("describe_data_sources")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeDataSources)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeDataSources)
 
 ```python
 class DescribeDataSourcesPaginator(Boto3Paginator):
@@ -88,7 +88,7 @@ def get_describe_evaluations_paginator() -> DescribeEvaluationsPaginator:
     return boto3.client("machinelearning").get_paginator("describe_evaluations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeEvaluations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeEvaluations)
 
 ```python
 class DescribeEvaluationsPaginator(Boto3Paginator):
@@ -120,7 +120,7 @@ def get_describe_ml_models_paginator() -> DescribeMLModelsPaginator:
     return boto3.client("machinelearning").get_paginator("describe_ml_models")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeMLModels)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeMLModels)
 
 ```python
 class DescribeMLModelsPaginator(Boto3Paginator):

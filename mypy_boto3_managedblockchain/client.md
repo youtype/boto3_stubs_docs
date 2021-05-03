@@ -48,7 +48,7 @@ def get_managedblockchain_client() -> ManagedBlockchainClient:
     return boto3.client("managedblockchain")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client)
 
 ## Exceptions
 
@@ -85,7 +85,7 @@ Exceptions:
 
 Type annotations for `boto3.client("managedblockchain").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -99,7 +99,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("managedblockchain").create_member` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_member]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_member]
 
 ```python
 def create_member(
@@ -116,7 +116,7 @@ def create_member(
 
 Type annotations for `boto3.client("managedblockchain").create_network` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_network]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_network]
 
 ```python
 def create_network(
@@ -138,7 +138,7 @@ def create_network(
 
 Type annotations for `boto3.client("managedblockchain").create_node` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_node]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_node]
 
 ```python
 def create_node(
@@ -156,7 +156,7 @@ def create_node(
 
 Type annotations for `boto3.client("managedblockchain").create_proposal` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_proposal]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_proposal]
 
 ```python
 def create_proposal(
@@ -175,7 +175,7 @@ def create_proposal(
 
 Type annotations for `boto3.client("managedblockchain").delete_member` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.delete_member]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.delete_member]
 
 ```python
 def delete_member(
@@ -190,7 +190,7 @@ def delete_member(
 
 Type annotations for `boto3.client("managedblockchain").delete_node` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.delete_node]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.delete_node]
 
 ```python
 def delete_node(
@@ -206,7 +206,7 @@ def delete_node(
 
 Type annotations for `boto3.client("managedblockchain").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -223,7 +223,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("managedblockchain").get_member` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_member]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_member]
 
 ```python
 def get_member(
@@ -238,7 +238,7 @@ def get_member(
 
 Type annotations for `boto3.client("managedblockchain").get_network` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_network]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_network]
 
 ```python
 def get_network(
@@ -252,7 +252,7 @@ def get_network(
 
 Type annotations for `boto3.client("managedblockchain").get_node` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_node]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_node]
 
 ```python
 def get_node(
@@ -268,7 +268,7 @@ def get_node(
 
 Type annotations for `boto3.client("managedblockchain").get_proposal` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_proposal]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_proposal]
 
 ```python
 def get_proposal(
@@ -283,7 +283,7 @@ def get_proposal(
 
 Type annotations for `boto3.client("managedblockchain").list_invitations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_invitations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_invitations]
 
 ```python
 def list_invitations(
@@ -298,7 +298,7 @@ def list_invitations(
 
 Type annotations for `boto3.client("managedblockchain").list_members` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_members]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_members]
 
 ```python
 def list_members(
@@ -317,7 +317,7 @@ def list_members(
 
 Type annotations for `boto3.client("managedblockchain").list_networks` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_networks]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_networks]
 
 ```python
 def list_networks(
@@ -335,7 +335,7 @@ def list_networks(
 
 Type annotations for `boto3.client("managedblockchain").list_nodes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_nodes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_nodes]
 
 ```python
 def list_nodes(
@@ -353,7 +353,7 @@ def list_nodes(
 
 Type annotations for `boto3.client("managedblockchain").list_proposal_votes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_proposal_votes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_proposal_votes]
 
 ```python
 def list_proposal_votes(
@@ -370,7 +370,7 @@ def list_proposal_votes(
 
 Type annotations for `boto3.client("managedblockchain").list_proposals` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_proposals]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_proposals]
 
 ```python
 def list_proposals(
@@ -386,7 +386,7 @@ def list_proposals(
 
 Type annotations for `boto3.client("managedblockchain").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -400,7 +400,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("managedblockchain").reject_invitation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.reject_invitation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.reject_invitation]
 
 ```python
 def reject_invitation(
@@ -414,7 +414,7 @@ def reject_invitation(
 
 Type annotations for `boto3.client("managedblockchain").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -429,7 +429,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("managedblockchain").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -444,7 +444,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("managedblockchain").update_member` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.update_member]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.update_member]
 
 ```python
 def update_member(
@@ -460,7 +460,7 @@ def update_member(
 
 Type annotations for `boto3.client("managedblockchain").update_node` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.update_node]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.update_node]
 
 ```python
 def update_node(
@@ -477,7 +477,7 @@ def update_node(
 
 Type annotations for `boto3.client("managedblockchain").vote_on_proposal` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.vote_on_proposal]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.vote_on_proposal]
 
 ```python
 def vote_on_proposal(

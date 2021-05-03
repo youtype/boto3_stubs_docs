@@ -165,9 +165,9 @@ from mypy_boto3_kendra.type_defs import AttributeFilterTypeDef
 
 
 Optional fields:
-- `AndAllFilters`: `List[Dict[str, Any]]`
-- `OrAllFilters`: `List[Dict[str, Any]]`
-- `NotFilter`: `Dict[str, Any]`
+- `AndAllFilters`: `List["AttributeFilterTypeDef"]`
+- `OrAllFilters`: `List["AttributeFilterTypeDef"]`
+- `NotFilter`: `"AttributeFilterTypeDef"`
 - `EqualsTo`: `"DocumentAttributeTypeDef"`
 - `ContainsAll`: `"DocumentAttributeTypeDef"`
 - `ContainsAny`: `"DocumentAttributeTypeDef"`

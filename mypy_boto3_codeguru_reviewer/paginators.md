@@ -21,7 +21,7 @@ def get_list_repository_associations_paginator() -> ListRepositoryAssociationsPa
     return boto3.client("codeguru-reviewer").get_paginator("list_repository_associations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Paginator.ListRepositoryAssociations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Paginator.ListRepositoryAssociations)
 
 ```python
 class ListRepositoryAssociationsPaginator(Boto3Paginator):

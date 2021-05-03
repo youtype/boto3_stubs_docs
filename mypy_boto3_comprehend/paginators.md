@@ -28,7 +28,7 @@ def get_list_document_classification_jobs_paginator() -> ListDocumentClassificat
     return boto3.client("comprehend").get_paginator("list_document_classification_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListDocumentClassificationJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListDocumentClassificationJobs)
 
 ```python
 class ListDocumentClassificationJobsPaginator(Boto3Paginator):
@@ -52,7 +52,7 @@ def get_list_document_classifiers_paginator() -> ListDocumentClassifiersPaginato
     return boto3.client("comprehend").get_paginator("list_document_classifiers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListDocumentClassifiers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListDocumentClassifiers)
 
 ```python
 class ListDocumentClassifiersPaginator(Boto3Paginator):
@@ -76,7 +76,7 @@ def get_list_dominant_language_detection_jobs_paginator() -> ListDominantLanguag
     return boto3.client("comprehend").get_paginator("list_dominant_language_detection_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListDominantLanguageDetectionJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListDominantLanguageDetectionJobs)
 
 ```python
 class ListDominantLanguageDetectionJobsPaginator(Boto3Paginator):
@@ -100,7 +100,7 @@ def get_list_entities_detection_jobs_paginator() -> ListEntitiesDetectionJobsPag
     return boto3.client("comprehend").get_paginator("list_entities_detection_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListEntitiesDetectionJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListEntitiesDetectionJobs)
 
 ```python
 class ListEntitiesDetectionJobsPaginator(Boto3Paginator):
@@ -124,7 +124,7 @@ def get_list_entity_recognizers_paginator() -> ListEntityRecognizersPaginator:
     return boto3.client("comprehend").get_paginator("list_entity_recognizers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListEntityRecognizers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListEntityRecognizers)
 
 ```python
 class ListEntityRecognizersPaginator(Boto3Paginator):
@@ -148,7 +148,7 @@ def get_list_key_phrases_detection_jobs_paginator() -> ListKeyPhrasesDetectionJo
     return boto3.client("comprehend").get_paginator("list_key_phrases_detection_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListKeyPhrasesDetectionJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListKeyPhrasesDetectionJobs)
 
 ```python
 class ListKeyPhrasesDetectionJobsPaginator(Boto3Paginator):
@@ -172,7 +172,7 @@ def get_list_sentiment_detection_jobs_paginator() -> ListSentimentDetectionJobsP
     return boto3.client("comprehend").get_paginator("list_sentiment_detection_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListSentimentDetectionJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListSentimentDetectionJobs)
 
 ```python
 class ListSentimentDetectionJobsPaginator(Boto3Paginator):
@@ -196,7 +196,7 @@ def get_list_topics_detection_jobs_paginator() -> ListTopicsDetectionJobsPaginat
     return boto3.client("comprehend").get_paginator("list_topics_detection_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListTopicsDetectionJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListTopicsDetectionJobs)
 
 ```python
 class ListTopicsDetectionJobsPaginator(Boto3Paginator):

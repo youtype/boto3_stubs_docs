@@ -7,6 +7,7 @@ type annotations stubs module [mypy_boto3_timestream_query](https://pypi.org/pro
 
 - [Literals for boto3 TimestreamQuery module](#literals-for-boto3-timestreamquery-module)
   - [QueryPaginatorName](#querypaginatorname)
+  - [ScalarType](#scalartype)
 
 ## QueryPaginatorName
 
@@ -17,3 +18,23 @@ from mypy_boto3_timestream_query.literals import QueryPaginatorName
 Values:
 
 - `query`
+
+## ScalarType
+
+```python
+from mypy_boto3_timestream_query.literals import ScalarType
+```
+
+Values:
+
+- `BIGINT`
+- `BOOLEAN`
+- `DATE`
+- `DOUBLE`
+- `INTEGER`
+- `INTERVAL_DAY_TO_SECOND`
+- `INTERVAL_YEAR_TO_MONTH`
+- `TIME`
+- `TIMESTAMP`
+- `UNKNOWN`
+- `VARCHAR`

@@ -39,7 +39,7 @@ def get_health_client() -> HealthClient:
     return boto3.client("health")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client)
 
 ## Exceptions
 
@@ -69,7 +69,7 @@ Exceptions:
 
 Type annotations for `boto3.client("health").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -83,7 +83,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("health").describe_affected_accounts_for_organization` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_accounts_for_organization]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_accounts_for_organization]
 
 ```python
 def describe_affected_accounts_for_organization(
@@ -99,7 +99,7 @@ def describe_affected_accounts_for_organization(
 
 Type annotations for `boto3.client("health").describe_affected_entities` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_entities]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_entities]
 
 ```python
 def describe_affected_entities(
@@ -116,7 +116,7 @@ def describe_affected_entities(
 
 Type annotations for `boto3.client("health").describe_affected_entities_for_organization` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_entities_for_organization]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_entities_for_organization]
 
 ```python
 def describe_affected_entities_for_organization(
@@ -133,7 +133,7 @@ def describe_affected_entities_for_organization(
 
 Type annotations for `boto3.client("health").describe_entity_aggregates` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_entity_aggregates]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_entity_aggregates]
 
 ```python
 def describe_entity_aggregates(
@@ -147,7 +147,7 @@ def describe_entity_aggregates(
 
 Type annotations for `boto3.client("health").describe_event_aggregates` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_aggregates]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_aggregates]
 
 ```python
 def describe_event_aggregates(
@@ -164,7 +164,7 @@ def describe_event_aggregates(
 
 Type annotations for `boto3.client("health").describe_event_details` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_details]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_details]
 
 ```python
 def describe_event_details(
@@ -179,7 +179,7 @@ def describe_event_details(
 
 Type annotations for `boto3.client("health").describe_event_details_for_organization` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_details_for_organization]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_details_for_organization]
 
 ```python
 def describe_event_details_for_organization(
@@ -194,7 +194,7 @@ def describe_event_details_for_organization(
 
 Type annotations for `boto3.client("health").describe_event_types` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_types]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_types]
 
 ```python
 def describe_event_types(
@@ -211,7 +211,7 @@ def describe_event_types(
 
 Type annotations for `boto3.client("health").describe_events` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_events]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_events]
 
 ```python
 def describe_events(
@@ -228,7 +228,7 @@ def describe_events(
 
 Type annotations for `boto3.client("health").describe_events_for_organization` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_events_for_organization]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_events_for_organization]
 
 ```python
 def describe_events_for_organization(
@@ -245,7 +245,7 @@ def describe_events_for_organization(
 
 Type annotations for `boto3.client("health").describe_health_service_status_for_organization` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_health_service_status_for_organization]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_health_service_status_for_organization]
 
 ```python
 def describe_health_service_status_for_organization(
@@ -258,7 +258,7 @@ def describe_health_service_status_for_organization(
 
 Type annotations for `boto3.client("health").disable_health_service_access_for_organization` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.disable_health_service_access_for_organization]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.disable_health_service_access_for_organization]
 
 ```python
 def disable_health_service_access_for_organization(
@@ -271,7 +271,7 @@ def disable_health_service_access_for_organization(
 
 Type annotations for `boto3.client("health").enable_health_service_access_for_organization` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.enable_health_service_access_for_organization]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.enable_health_service_access_for_organization]
 
 ```python
 def enable_health_service_access_for_organization(
@@ -284,7 +284,7 @@ def enable_health_service_access_for_organization(
 
 Type annotations for `boto3.client("health").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(

@@ -46,7 +46,7 @@ def get_get_account_authorization_details_paginator() -> GetAccountAuthorization
     return boto3.client("iam").get_paginator("get_account_authorization_details")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.GetAccountAuthorizationDetails)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.GetAccountAuthorizationDetails)
 
 ```python
 class GetAccountAuthorizationDetailsPaginator(Boto3Paginator):
@@ -70,7 +70,7 @@ def get_get_group_paginator() -> GetGroupPaginator:
     return boto3.client("iam").get_paginator("get_group")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.GetGroup)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.GetGroup)
 
 ```python
 class GetGroupPaginator(Boto3Paginator):
@@ -94,7 +94,7 @@ def get_list_access_keys_paginator() -> ListAccessKeysPaginator:
     return boto3.client("iam").get_paginator("list_access_keys")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAccessKeys)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAccessKeys)
 
 ```python
 class ListAccessKeysPaginator(Boto3Paginator):
@@ -118,7 +118,7 @@ def get_list_account_aliases_paginator() -> ListAccountAliasesPaginator:
     return boto3.client("iam").get_paginator("list_account_aliases")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAccountAliases)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAccountAliases)
 
 ```python
 class ListAccountAliasesPaginator(Boto3Paginator):
@@ -141,7 +141,7 @@ def get_list_attached_group_policies_paginator() -> ListAttachedGroupPoliciesPag
     return boto3.client("iam").get_paginator("list_attached_group_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAttachedGroupPolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAttachedGroupPolicies)
 
 ```python
 class ListAttachedGroupPoliciesPaginator(Boto3Paginator):
@@ -166,7 +166,7 @@ def get_list_attached_role_policies_paginator() -> ListAttachedRolePoliciesPagin
     return boto3.client("iam").get_paginator("list_attached_role_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAttachedRolePolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAttachedRolePolicies)
 
 ```python
 class ListAttachedRolePoliciesPaginator(Boto3Paginator):
@@ -191,7 +191,7 @@ def get_list_attached_user_policies_paginator() -> ListAttachedUserPoliciesPagin
     return boto3.client("iam").get_paginator("list_attached_user_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAttachedUserPolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAttachedUserPolicies)
 
 ```python
 class ListAttachedUserPoliciesPaginator(Boto3Paginator):
@@ -216,7 +216,7 @@ def get_list_entities_for_policy_paginator() -> ListEntitiesForPolicyPaginator:
     return boto3.client("iam").get_paginator("list_entities_for_policy")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListEntitiesForPolicy)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListEntitiesForPolicy)
 
 ```python
 class ListEntitiesForPolicyPaginator(Boto3Paginator):
@@ -243,7 +243,7 @@ def get_list_group_policies_paginator() -> ListGroupPoliciesPaginator:
     return boto3.client("iam").get_paginator("list_group_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListGroupPolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListGroupPolicies)
 
 ```python
 class ListGroupPoliciesPaginator(Boto3Paginator):
@@ -267,7 +267,7 @@ def get_list_groups_paginator() -> ListGroupsPaginator:
     return boto3.client("iam").get_paginator("list_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListGroups)
 
 ```python
 class ListGroupsPaginator(Boto3Paginator):
@@ -291,7 +291,7 @@ def get_list_groups_for_user_paginator() -> ListGroupsForUserPaginator:
     return boto3.client("iam").get_paginator("list_groups_for_user")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListGroupsForUser)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListGroupsForUser)
 
 ```python
 class ListGroupsForUserPaginator(Boto3Paginator):
@@ -315,7 +315,7 @@ def get_list_instance_profiles_paginator() -> ListInstanceProfilesPaginator:
     return boto3.client("iam").get_paginator("list_instance_profiles")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListInstanceProfiles)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListInstanceProfiles)
 
 ```python
 class ListInstanceProfilesPaginator(Boto3Paginator):
@@ -339,7 +339,7 @@ def get_list_instance_profiles_for_role_paginator() -> ListInstanceProfilesForRo
     return boto3.client("iam").get_paginator("list_instance_profiles_for_role")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListInstanceProfilesForRole)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListInstanceProfilesForRole)
 
 ```python
 class ListInstanceProfilesForRolePaginator(Boto3Paginator):
@@ -363,7 +363,7 @@ def get_list_mfa_devices_paginator() -> ListMFADevicesPaginator:
     return boto3.client("iam").get_paginator("list_mfa_devices")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListMFADevices)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListMFADevices)
 
 ```python
 class ListMFADevicesPaginator(Boto3Paginator):
@@ -387,7 +387,7 @@ def get_list_policies_paginator() -> ListPoliciesPaginator:
     return boto3.client("iam").get_paginator("list_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListPolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListPolicies)
 
 ```python
 class ListPoliciesPaginator(Boto3Paginator):
@@ -414,7 +414,7 @@ def get_list_policy_versions_paginator() -> ListPolicyVersionsPaginator:
     return boto3.client("iam").get_paginator("list_policy_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListPolicyVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListPolicyVersions)
 
 ```python
 class ListPolicyVersionsPaginator(Boto3Paginator):
@@ -438,7 +438,7 @@ def get_list_role_policies_paginator() -> ListRolePoliciesPaginator:
     return boto3.client("iam").get_paginator("list_role_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListRolePolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListRolePolicies)
 
 ```python
 class ListRolePoliciesPaginator(Boto3Paginator):
@@ -462,7 +462,7 @@ def get_list_roles_paginator() -> ListRolesPaginator:
     return boto3.client("iam").get_paginator("list_roles")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListRoles)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListRoles)
 
 ```python
 class ListRolesPaginator(Boto3Paginator):
@@ -486,7 +486,7 @@ def get_list_ssh_public_keys_paginator() -> ListSSHPublicKeysPaginator:
     return boto3.client("iam").get_paginator("list_ssh_public_keys")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListSSHPublicKeys)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListSSHPublicKeys)
 
 ```python
 class ListSSHPublicKeysPaginator(Boto3Paginator):
@@ -510,7 +510,7 @@ def get_list_server_certificates_paginator() -> ListServerCertificatesPaginator:
     return boto3.client("iam").get_paginator("list_server_certificates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListServerCertificates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListServerCertificates)
 
 ```python
 class ListServerCertificatesPaginator(Boto3Paginator):
@@ -534,7 +534,7 @@ def get_list_signing_certificates_paginator() -> ListSigningCertificatesPaginato
     return boto3.client("iam").get_paginator("list_signing_certificates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListSigningCertificates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListSigningCertificates)
 
 ```python
 class ListSigningCertificatesPaginator(Boto3Paginator):
@@ -558,7 +558,7 @@ def get_list_user_policies_paginator() -> ListUserPoliciesPaginator:
     return boto3.client("iam").get_paginator("list_user_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListUserPolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListUserPolicies)
 
 ```python
 class ListUserPoliciesPaginator(Boto3Paginator):
@@ -582,7 +582,7 @@ def get_list_users_paginator() -> ListUsersPaginator:
     return boto3.client("iam").get_paginator("list_users")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListUsers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListUsers)
 
 ```python
 class ListUsersPaginator(Boto3Paginator):
@@ -606,7 +606,7 @@ def get_list_virtual_mfa_devices_paginator() -> ListVirtualMFADevicesPaginator:
     return boto3.client("iam").get_paginator("list_virtual_mfa_devices")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListVirtualMFADevices)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListVirtualMFADevices)
 
 ```python
 class ListVirtualMFADevicesPaginator(Boto3Paginator):
@@ -630,7 +630,7 @@ def get_simulate_custom_policy_paginator() -> SimulateCustomPolicyPaginator:
     return boto3.client("iam").get_paginator("simulate_custom_policy")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.SimulateCustomPolicy)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.SimulateCustomPolicy)
 
 ```python
 class SimulateCustomPolicyPaginator(Boto3Paginator):
@@ -662,7 +662,7 @@ def get_simulate_principal_policy_paginator() -> SimulatePrincipalPolicyPaginato
     return boto3.client("iam").get_paginator("simulate_principal_policy")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.SimulatePrincipalPolicy)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.SimulatePrincipalPolicy)
 
 ```python
 class SimulatePrincipalPolicyPaginator(Boto3Paginator):

@@ -78,7 +78,7 @@ def get_rekognition_client() -> RekognitionClient:
     return boto3.client("rekognition")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client)
 
 ## Exceptions
 
@@ -123,7 +123,7 @@ Exceptions:
 
 Type annotations for `boto3.client("rekognition").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -137,7 +137,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("rekognition").compare_faces` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.compare_faces]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.compare_faces]
 
 ```python
 def compare_faces(
@@ -154,7 +154,7 @@ def compare_faces(
 
 Type annotations for `boto3.client("rekognition").create_collection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_collection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_collection]
 
 ```python
 def create_collection(
@@ -169,7 +169,7 @@ def create_collection(
 
 Type annotations for `boto3.client("rekognition").create_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_project]
 
 ```python
 def create_project(
@@ -183,7 +183,7 @@ def create_project(
 
 Type annotations for `boto3.client("rekognition").create_project_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_project_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_project_version]
 
 ```python
 def create_project_version(
@@ -202,7 +202,7 @@ def create_project_version(
 
 Type annotations for `boto3.client("rekognition").create_stream_processor` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_stream_processor]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_stream_processor]
 
 ```python
 def create_stream_processor(
@@ -221,7 +221,7 @@ def create_stream_processor(
 
 Type annotations for `boto3.client("rekognition").delete_collection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_collection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_collection]
 
 ```python
 def delete_collection(
@@ -235,7 +235,7 @@ def delete_collection(
 
 Type annotations for `boto3.client("rekognition").delete_faces` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_faces]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_faces]
 
 ```python
 def delete_faces(
@@ -250,7 +250,7 @@ def delete_faces(
 
 Type annotations for `boto3.client("rekognition").delete_project` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_project]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_project]
 
 ```python
 def delete_project(
@@ -264,7 +264,7 @@ def delete_project(
 
 Type annotations for `boto3.client("rekognition").delete_project_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_project_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_project_version]
 
 ```python
 def delete_project_version(
@@ -278,7 +278,7 @@ def delete_project_version(
 
 Type annotations for `boto3.client("rekognition").delete_stream_processor` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_stream_processor]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_stream_processor]
 
 ```python
 def delete_stream_processor(
@@ -292,7 +292,7 @@ def delete_stream_processor(
 
 Type annotations for `boto3.client("rekognition").describe_collection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_collection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_collection]
 
 ```python
 def describe_collection(
@@ -306,7 +306,7 @@ def describe_collection(
 
 Type annotations for `boto3.client("rekognition").describe_project_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_project_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_project_versions]
 
 ```python
 def describe_project_versions(
@@ -323,7 +323,7 @@ def describe_project_versions(
 
 Type annotations for `boto3.client("rekognition").describe_projects` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_projects]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_projects]
 
 ```python
 def describe_projects(
@@ -338,7 +338,7 @@ def describe_projects(
 
 Type annotations for `boto3.client("rekognition").describe_stream_processor` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_stream_processor]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_stream_processor]
 
 ```python
 def describe_stream_processor(
@@ -352,7 +352,7 @@ def describe_stream_processor(
 
 Type annotations for `boto3.client("rekognition").detect_custom_labels` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_custom_labels]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_custom_labels]
 
 ```python
 def detect_custom_labels(
@@ -369,7 +369,7 @@ def detect_custom_labels(
 
 Type annotations for `boto3.client("rekognition").detect_faces` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_faces]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_faces]
 
 ```python
 def detect_faces(
@@ -384,7 +384,7 @@ def detect_faces(
 
 Type annotations for `boto3.client("rekognition").detect_labels` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_labels]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_labels]
 
 ```python
 def detect_labels(
@@ -400,7 +400,7 @@ def detect_labels(
 
 Type annotations for `boto3.client("rekognition").detect_moderation_labels` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_moderation_labels]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_moderation_labels]
 
 ```python
 def detect_moderation_labels(
@@ -416,7 +416,7 @@ def detect_moderation_labels(
 
 Type annotations for `boto3.client("rekognition").detect_protective_equipment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_protective_equipment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_protective_equipment]
 
 ```python
 def detect_protective_equipment(
@@ -431,7 +431,7 @@ def detect_protective_equipment(
 
 Type annotations for `boto3.client("rekognition").detect_text` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_text]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_text]
 
 ```python
 def detect_text(
@@ -446,7 +446,7 @@ def detect_text(
 
 Type annotations for `boto3.client("rekognition").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -463,7 +463,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("rekognition").get_celebrity_info` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_celebrity_info]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_celebrity_info]
 
 ```python
 def get_celebrity_info(
@@ -477,7 +477,7 @@ def get_celebrity_info(
 
 Type annotations for `boto3.client("rekognition").get_celebrity_recognition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_celebrity_recognition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_celebrity_recognition]
 
 ```python
 def get_celebrity_recognition(
@@ -494,7 +494,7 @@ def get_celebrity_recognition(
 
 Type annotations for `boto3.client("rekognition").get_content_moderation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_content_moderation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_content_moderation]
 
 ```python
 def get_content_moderation(
@@ -511,7 +511,7 @@ def get_content_moderation(
 
 Type annotations for `boto3.client("rekognition").get_face_detection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_face_detection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_face_detection]
 
 ```python
 def get_face_detection(
@@ -527,7 +527,7 @@ def get_face_detection(
 
 Type annotations for `boto3.client("rekognition").get_face_search` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_face_search]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_face_search]
 
 ```python
 def get_face_search(
@@ -544,7 +544,7 @@ def get_face_search(
 
 Type annotations for `boto3.client("rekognition").get_label_detection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_label_detection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_label_detection]
 
 ```python
 def get_label_detection(
@@ -561,7 +561,7 @@ def get_label_detection(
 
 Type annotations for `boto3.client("rekognition").get_person_tracking` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_person_tracking]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_person_tracking]
 
 ```python
 def get_person_tracking(
@@ -578,7 +578,7 @@ def get_person_tracking(
 
 Type annotations for `boto3.client("rekognition").get_segment_detection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_segment_detection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_segment_detection]
 
 ```python
 def get_segment_detection(
@@ -594,7 +594,7 @@ def get_segment_detection(
 
 Type annotations for `boto3.client("rekognition").get_text_detection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_text_detection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_text_detection]
 
 ```python
 def get_text_detection(
@@ -610,7 +610,7 @@ def get_text_detection(
 
 Type annotations for `boto3.client("rekognition").index_faces` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.index_faces]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.index_faces]
 
 ```python
 def index_faces(
@@ -629,7 +629,7 @@ def index_faces(
 
 Type annotations for `boto3.client("rekognition").list_collections` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_collections]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_collections]
 
 ```python
 def list_collections(
@@ -644,7 +644,7 @@ def list_collections(
 
 Type annotations for `boto3.client("rekognition").list_faces` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_faces]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_faces]
 
 ```python
 def list_faces(
@@ -660,7 +660,7 @@ def list_faces(
 
 Type annotations for `boto3.client("rekognition").list_stream_processors` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_stream_processors]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_stream_processors]
 
 ```python
 def list_stream_processors(
@@ -675,7 +675,7 @@ def list_stream_processors(
 
 Type annotations for `boto3.client("rekognition").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -689,7 +689,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("rekognition").recognize_celebrities` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.recognize_celebrities]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.recognize_celebrities]
 
 ```python
 def recognize_celebrities(
@@ -703,7 +703,7 @@ def recognize_celebrities(
 
 Type annotations for `boto3.client("rekognition").search_faces` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.search_faces]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.search_faces]
 
 ```python
 def search_faces(
@@ -720,7 +720,7 @@ def search_faces(
 
 Type annotations for `boto3.client("rekognition").search_faces_by_image` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.search_faces_by_image]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.search_faces_by_image]
 
 ```python
 def search_faces_by_image(
@@ -738,7 +738,7 @@ def search_faces_by_image(
 
 Type annotations for `boto3.client("rekognition").start_celebrity_recognition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_celebrity_recognition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_celebrity_recognition]
 
 ```python
 def start_celebrity_recognition(
@@ -755,7 +755,7 @@ def start_celebrity_recognition(
 
 Type annotations for `boto3.client("rekognition").start_content_moderation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_content_moderation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_content_moderation]
 
 ```python
 def start_content_moderation(
@@ -773,7 +773,7 @@ def start_content_moderation(
 
 Type annotations for `boto3.client("rekognition").start_face_detection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_face_detection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_face_detection]
 
 ```python
 def start_face_detection(
@@ -791,7 +791,7 @@ def start_face_detection(
 
 Type annotations for `boto3.client("rekognition").start_face_search` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_face_search]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_face_search]
 
 ```python
 def start_face_search(
@@ -810,7 +810,7 @@ def start_face_search(
 
 Type annotations for `boto3.client("rekognition").start_label_detection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_label_detection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_label_detection]
 
 ```python
 def start_label_detection(
@@ -828,7 +828,7 @@ def start_label_detection(
 
 Type annotations for `boto3.client("rekognition").start_person_tracking` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_person_tracking]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_person_tracking]
 
 ```python
 def start_person_tracking(
@@ -845,7 +845,7 @@ def start_person_tracking(
 
 Type annotations for `boto3.client("rekognition").start_project_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_project_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_project_version]
 
 ```python
 def start_project_version(
@@ -860,7 +860,7 @@ def start_project_version(
 
 Type annotations for `boto3.client("rekognition").start_segment_detection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_segment_detection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_segment_detection]
 
 ```python
 def start_segment_detection(
@@ -879,7 +879,7 @@ def start_segment_detection(
 
 Type annotations for `boto3.client("rekognition").start_stream_processor` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_stream_processor]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_stream_processor]
 
 ```python
 def start_stream_processor(
@@ -893,7 +893,7 @@ def start_stream_processor(
 
 Type annotations for `boto3.client("rekognition").start_text_detection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_text_detection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_text_detection]
 
 ```python
 def start_text_detection(
@@ -911,7 +911,7 @@ def start_text_detection(
 
 Type annotations for `boto3.client("rekognition").stop_project_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.stop_project_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.stop_project_version]
 
 ```python
 def stop_project_version(
@@ -925,7 +925,7 @@ def stop_project_version(
 
 Type annotations for `boto3.client("rekognition").stop_stream_processor` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.stop_stream_processor]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.stop_stream_processor]
 
 ```python
 def stop_stream_processor(
@@ -939,7 +939,7 @@ def stop_stream_processor(
 
 Type annotations for `boto3.client("rekognition").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -954,7 +954,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("rekognition").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.untag_resource]
 
 ```python
 def untag_resource(

@@ -25,7 +25,7 @@ def get_list_backups_paginator() -> ListBackupsPaginator:
     return boto3.client("dynamodb").get_paginator("list_backups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListBackups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListBackups)
 
 ```python
 class ListBackupsPaginator(Boto3Paginator):
@@ -52,7 +52,7 @@ def get_list_tables_paginator() -> ListTablesPaginator:
     return boto3.client("dynamodb").get_paginator("list_tables")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListTables)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListTables)
 
 ```python
 class ListTablesPaginator(Boto3Paginator):
@@ -75,7 +75,7 @@ def get_list_tags_of_resource_paginator() -> ListTagsOfResourcePaginator:
     return boto3.client("dynamodb").get_paginator("list_tags_of_resource")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListTagsOfResource)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListTagsOfResource)
 
 ```python
 class ListTagsOfResourcePaginator(Boto3Paginator):
@@ -99,7 +99,7 @@ def get_query_paginator() -> QueryPaginator:
     return boto3.client("dynamodb").get_paginator("query")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.Query)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.Query)
 
 ```python
 class QueryPaginator(Boto3Paginator):
@@ -137,7 +137,7 @@ def get_scan_paginator() -> ScanPaginator:
     return boto3.client("dynamodb").get_paginator("scan")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.Scan)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.Scan)
 
 ```python
 class ScanPaginator(Boto3Paginator):

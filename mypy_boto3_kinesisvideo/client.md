@@ -45,7 +45,7 @@ def get_kinesisvideo_client() -> KinesisVideoClient:
     return boto3.client("kinesisvideo")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client)
 
 ## Exceptions
 
@@ -85,7 +85,7 @@ Exceptions:
 
 Type annotations for `boto3.client("kinesisvideo").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -99,7 +99,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("kinesisvideo").create_signaling_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.create_signaling_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.create_signaling_channel]
 
 ```python
 def create_signaling_channel(
@@ -116,7 +116,7 @@ def create_signaling_channel(
 
 Type annotations for `boto3.client("kinesisvideo").create_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.create_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.create_stream]
 
 ```python
 def create_stream(
@@ -135,7 +135,7 @@ def create_stream(
 
 Type annotations for `boto3.client("kinesisvideo").delete_signaling_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.delete_signaling_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.delete_signaling_channel]
 
 ```python
 def delete_signaling_channel(
@@ -150,7 +150,7 @@ def delete_signaling_channel(
 
 Type annotations for `boto3.client("kinesisvideo").delete_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.delete_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.delete_stream]
 
 ```python
 def delete_stream(
@@ -165,7 +165,7 @@ def delete_stream(
 
 Type annotations for `boto3.client("kinesisvideo").describe_signaling_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_signaling_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_signaling_channel]
 
 ```python
 def describe_signaling_channel(
@@ -180,7 +180,7 @@ def describe_signaling_channel(
 
 Type annotations for `boto3.client("kinesisvideo").describe_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_stream]
 
 ```python
 def describe_stream(
@@ -195,7 +195,7 @@ def describe_stream(
 
 Type annotations for `boto3.client("kinesisvideo").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -212,7 +212,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("kinesisvideo").get_data_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.get_data_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.get_data_endpoint]
 
 ```python
 def get_data_endpoint(
@@ -228,7 +228,7 @@ def get_data_endpoint(
 
 Type annotations for `boto3.client("kinesisvideo").get_signaling_channel_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.get_signaling_channel_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.get_signaling_channel_endpoint]
 
 ```python
 def get_signaling_channel_endpoint(
@@ -243,7 +243,7 @@ def get_signaling_channel_endpoint(
 
 Type annotations for `boto3.client("kinesisvideo").list_signaling_channels` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_signaling_channels]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_signaling_channels]
 
 ```python
 def list_signaling_channels(
@@ -259,7 +259,7 @@ def list_signaling_channels(
 
 Type annotations for `boto3.client("kinesisvideo").list_streams` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_streams]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_streams]
 
 ```python
 def list_streams(
@@ -275,7 +275,7 @@ def list_streams(
 
 Type annotations for `boto3.client("kinesisvideo").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -290,7 +290,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("kinesisvideo").list_tags_for_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_tags_for_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_tags_for_stream]
 
 ```python
 def list_tags_for_stream(
@@ -306,7 +306,7 @@ def list_tags_for_stream(
 
 Type annotations for `boto3.client("kinesisvideo").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -321,7 +321,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("kinesisvideo").tag_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.tag_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.tag_stream]
 
 ```python
 def tag_stream(
@@ -337,7 +337,7 @@ def tag_stream(
 
 Type annotations for `boto3.client("kinesisvideo").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -352,7 +352,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("kinesisvideo").untag_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.untag_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.untag_stream]
 
 ```python
 def untag_stream(
@@ -368,7 +368,7 @@ def untag_stream(
 
 Type annotations for `boto3.client("kinesisvideo").update_data_retention` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_data_retention]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_data_retention]
 
 ```python
 def update_data_retention(
@@ -386,7 +386,7 @@ def update_data_retention(
 
 Type annotations for `boto3.client("kinesisvideo").update_signaling_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_signaling_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_signaling_channel]
 
 ```python
 def update_signaling_channel(
@@ -402,7 +402,7 @@ def update_signaling_channel(
 
 Type annotations for `boto3.client("kinesisvideo").update_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_stream]
 
 ```python
 def update_stream(

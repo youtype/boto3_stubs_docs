@@ -22,7 +22,7 @@ def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
     return boto3.client("elb").get_paginator("describe_account_limits")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Paginator.DescribeAccountLimits)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Paginator.DescribeAccountLimits)
 
 ```python
 class DescribeAccountLimitsPaginator(Boto3Paginator):
@@ -45,7 +45,7 @@ def get_describe_load_balancers_paginator() -> DescribeLoadBalancersPaginator:
     return boto3.client("elb").get_paginator("describe_load_balancers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Paginator.DescribeLoadBalancers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Paginator.DescribeLoadBalancers)
 
 ```python
 class DescribeLoadBalancersPaginator(Boto3Paginator):

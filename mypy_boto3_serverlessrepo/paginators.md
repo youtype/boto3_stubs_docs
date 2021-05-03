@@ -23,7 +23,7 @@ def get_list_application_dependencies_paginator() -> ListApplicationDependencies
     return boto3.client("serverlessrepo").get_paginator("list_application_dependencies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplicationDependencies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplicationDependencies)
 
 ```python
 class ListApplicationDependenciesPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_list_application_versions_paginator() -> ListApplicationVersionsPaginato
     return boto3.client("serverlessrepo").get_paginator("list_application_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplicationVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplicationVersions)
 
 ```python
 class ListApplicationVersionsPaginator(Boto3Paginator):
@@ -72,7 +72,7 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
     return boto3.client("serverlessrepo").get_paginator("list_applications")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplications)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplications)
 
 ```python
 class ListApplicationsPaginator(Boto3Paginator):

@@ -24,7 +24,7 @@ def get_list_data_set_revisions_paginator() -> ListDataSetRevisionsPaginator:
     return boto3.client("dataexchange").get_paginator("list_data_set_revisions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListDataSetRevisions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListDataSetRevisions)
 
 ```python
 class ListDataSetRevisionsPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_list_data_sets_paginator() -> ListDataSetsPaginator:
     return boto3.client("dataexchange").get_paginator("list_data_sets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListDataSets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListDataSets)
 
 ```python
 class ListDataSetsPaginator(Boto3Paginator):
@@ -72,7 +72,7 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("dataexchange").get_paginator("list_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListJobs)
 
 ```python
 class ListJobsPaginator(Boto3Paginator):
@@ -97,7 +97,7 @@ def get_list_revision_assets_paginator() -> ListRevisionAssetsPaginator:
     return boto3.client("dataexchange").get_paginator("list_revision_assets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListRevisionAssets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListRevisionAssets)
 
 ```python
 class ListRevisionAssetsPaginator(Boto3Paginator):

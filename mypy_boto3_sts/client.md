@@ -33,7 +33,7 @@ def get_sts_client() -> STSClient:
     return boto3.client("sts")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client)
 
 ## Exceptions
 
@@ -68,7 +68,7 @@ Exceptions:
 
 Type annotations for `boto3.client("sts").assume_role` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role]
 
 ```python
 def assume_role(
@@ -92,7 +92,7 @@ def assume_role(
 
 Type annotations for `boto3.client("sts").assume_role_with_saml` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_saml]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_saml]
 
 ```python
 def assume_role_with_saml(
@@ -111,7 +111,7 @@ def assume_role_with_saml(
 
 Type annotations for `boto3.client("sts").assume_role_with_web_identity` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_web_identity]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_web_identity]
 
 ```python
 def assume_role_with_web_identity(
@@ -131,7 +131,7 @@ def assume_role_with_web_identity(
 
 Type annotations for `boto3.client("sts").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -145,7 +145,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("sts").decode_authorization_message` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.decode_authorization_message]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.decode_authorization_message]
 
 ```python
 def decode_authorization_message(
@@ -159,7 +159,7 @@ def decode_authorization_message(
 
 Type annotations for `boto3.client("sts").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -176,7 +176,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("sts").get_access_key_info` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_access_key_info]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_access_key_info]
 
 ```python
 def get_access_key_info(
@@ -190,7 +190,7 @@ def get_access_key_info(
 
 Type annotations for `boto3.client("sts").get_caller_identity` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_caller_identity]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_caller_identity]
 
 ```python
 def get_caller_identity(
@@ -203,7 +203,7 @@ def get_caller_identity(
 
 Type annotations for `boto3.client("sts").get_federation_token` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_federation_token]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_federation_token]
 
 ```python
 def get_federation_token(
@@ -221,7 +221,7 @@ def get_federation_token(
 
 Type annotations for `boto3.client("sts").get_session_token` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_session_token]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_session_token]
 
 ```python
 def get_session_token(

@@ -50,7 +50,7 @@ def get_acm-pca_client() -> ACMPCAClient:
     return boto3.client("acm-pca")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client)
 
 ## Exceptions
 
@@ -96,7 +96,7 @@ Exceptions:
 
 Type annotations for `boto3.client("acm-pca").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -110,7 +110,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("acm-pca").create_certificate_authority` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority]
 
 ```python
 def create_certificate_authority(
@@ -128,7 +128,7 @@ def create_certificate_authority(
 
 Type annotations for `boto3.client("acm-pca").create_certificate_authority_audit_report` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority_audit_report]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority_audit_report]
 
 ```python
 def create_certificate_authority_audit_report(
@@ -144,7 +144,7 @@ def create_certificate_authority_audit_report(
 
 Type annotations for `boto3.client("acm-pca").create_permission` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_permission]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_permission]
 
 ```python
 def create_permission(
@@ -161,7 +161,7 @@ def create_permission(
 
 Type annotations for `boto3.client("acm-pca").delete_certificate_authority` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_certificate_authority]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_certificate_authority]
 
 ```python
 def delete_certificate_authority(
@@ -176,7 +176,7 @@ def delete_certificate_authority(
 
 Type annotations for `boto3.client("acm-pca").delete_permission` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_permission]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_permission]
 
 ```python
 def delete_permission(
@@ -192,7 +192,7 @@ def delete_permission(
 
 Type annotations for `boto3.client("acm-pca").delete_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_policy]
 
 ```python
 def delete_policy(
@@ -206,7 +206,7 @@ def delete_policy(
 
 Type annotations for `boto3.client("acm-pca").describe_certificate_authority` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority]
 
 ```python
 def describe_certificate_authority(
@@ -220,7 +220,7 @@ def describe_certificate_authority(
 
 Type annotations for `boto3.client("acm-pca").describe_certificate_authority_audit_report` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority_audit_report]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority_audit_report]
 
 ```python
 def describe_certificate_authority_audit_report(
@@ -235,7 +235,7 @@ def describe_certificate_authority_audit_report(
 
 Type annotations for `boto3.client("acm-pca").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -252,7 +252,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("acm-pca").get_certificate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate]
 
 ```python
 def get_certificate(
@@ -267,7 +267,7 @@ def get_certificate(
 
 Type annotations for `boto3.client("acm-pca").get_certificate_authority_certificate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_certificate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_certificate]
 
 ```python
 def get_certificate_authority_certificate(
@@ -281,7 +281,7 @@ def get_certificate_authority_certificate(
 
 Type annotations for `boto3.client("acm-pca").get_certificate_authority_csr` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_csr]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_csr]
 
 ```python
 def get_certificate_authority_csr(
@@ -295,7 +295,7 @@ def get_certificate_authority_csr(
 
 Type annotations for `boto3.client("acm-pca").get_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_policy]
 
 ```python
 def get_policy(
@@ -309,7 +309,7 @@ def get_policy(
 
 Type annotations for `boto3.client("acm-pca").import_certificate_authority_certificate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.import_certificate_authority_certificate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.import_certificate_authority_certificate]
 
 ```python
 def import_certificate_authority_certificate(
@@ -325,7 +325,7 @@ def import_certificate_authority_certificate(
 
 Type annotations for `boto3.client("acm-pca").issue_certificate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.issue_certificate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.issue_certificate]
 
 ```python
 def issue_certificate(
@@ -346,7 +346,7 @@ def issue_certificate(
 
 Type annotations for `boto3.client("acm-pca").list_certificate_authorities` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_certificate_authorities]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_certificate_authorities]
 
 ```python
 def list_certificate_authorities(
@@ -362,7 +362,7 @@ def list_certificate_authorities(
 
 Type annotations for `boto3.client("acm-pca").list_permissions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_permissions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_permissions]
 
 ```python
 def list_permissions(
@@ -378,7 +378,7 @@ def list_permissions(
 
 Type annotations for `boto3.client("acm-pca").list_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_tags]
 
 ```python
 def list_tags(
@@ -394,7 +394,7 @@ def list_tags(
 
 Type annotations for `boto3.client("acm-pca").put_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.put_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.put_policy]
 
 ```python
 def put_policy(
@@ -409,7 +409,7 @@ def put_policy(
 
 Type annotations for `boto3.client("acm-pca").restore_certificate_authority` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.restore_certificate_authority]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.restore_certificate_authority]
 
 ```python
 def restore_certificate_authority(
@@ -423,7 +423,7 @@ def restore_certificate_authority(
 
 Type annotations for `boto3.client("acm-pca").revoke_certificate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.revoke_certificate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.revoke_certificate]
 
 ```python
 def revoke_certificate(
@@ -439,7 +439,7 @@ def revoke_certificate(
 
 Type annotations for `boto3.client("acm-pca").tag_certificate_authority` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.tag_certificate_authority]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.tag_certificate_authority]
 
 ```python
 def tag_certificate_authority(
@@ -454,7 +454,7 @@ def tag_certificate_authority(
 
 Type annotations for `boto3.client("acm-pca").untag_certificate_authority` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.untag_certificate_authority]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.untag_certificate_authority]
 
 ```python
 def untag_certificate_authority(
@@ -469,7 +469,7 @@ def untag_certificate_authority(
 
 Type annotations for `boto3.client("acm-pca").update_certificate_authority` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.update_certificate_authority]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.update_certificate_authority]
 
 ```python
 def update_certificate_authority(

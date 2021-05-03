@@ -21,7 +21,7 @@ def get_list_servers_paginator() -> ListServersPaginator:
     return boto3.client("transfer").get_paginator("list_servers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Paginator.ListServers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Paginator.ListServers)
 
 ```python
 class ListServersPaginator(Boto3Paginator):

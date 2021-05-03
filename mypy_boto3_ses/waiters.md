@@ -21,14 +21,9 @@ def get_identity_exists_waiter() -> IdentityExistsWaiter:
     return boto3.client("ses").get_waiter("identity_exists")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Waiter.identity_exists)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Waiter.identity_exists)
 
-```python
-class IdentityExistsWaiter(Boto3Waiter):
-    def wait(
-        self,
-        Identities: List[str],
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `IdentityExistsWaiter.wait` method:
+
+- `Identities`: `List[str]` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#waiterconfigtypedef)

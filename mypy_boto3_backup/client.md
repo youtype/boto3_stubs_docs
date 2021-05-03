@@ -76,7 +76,7 @@ def get_backup_client() -> BackupClient:
     return boto3.client("backup")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client)
 
 ## Exceptions
 
@@ -112,7 +112,7 @@ Exceptions:
 
 Type annotations for `boto3.client("backup").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -126,7 +126,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("backup").create_backup_plan` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_plan]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_plan]
 
 ```python
 def create_backup_plan(
@@ -142,7 +142,7 @@ def create_backup_plan(
 
 Type annotations for `boto3.client("backup").create_backup_selection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_selection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_selection]
 
 ```python
 def create_backup_selection(
@@ -158,7 +158,7 @@ def create_backup_selection(
 
 Type annotations for `boto3.client("backup").create_backup_vault` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_vault]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_vault]
 
 ```python
 def create_backup_vault(
@@ -175,7 +175,7 @@ def create_backup_vault(
 
 Type annotations for `boto3.client("backup").delete_backup_plan` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_plan]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_plan]
 
 ```python
 def delete_backup_plan(
@@ -189,7 +189,7 @@ def delete_backup_plan(
 
 Type annotations for `boto3.client("backup").delete_backup_selection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_selection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_selection]
 
 ```python
 def delete_backup_selection(
@@ -204,7 +204,7 @@ def delete_backup_selection(
 
 Type annotations for `boto3.client("backup").delete_backup_vault` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault]
 
 ```python
 def delete_backup_vault(
@@ -218,7 +218,7 @@ def delete_backup_vault(
 
 Type annotations for `boto3.client("backup").delete_backup_vault_access_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_access_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_access_policy]
 
 ```python
 def delete_backup_vault_access_policy(
@@ -232,7 +232,7 @@ def delete_backup_vault_access_policy(
 
 Type annotations for `boto3.client("backup").delete_backup_vault_notifications` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_notifications]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_notifications]
 
 ```python
 def delete_backup_vault_notifications(
@@ -246,7 +246,7 @@ def delete_backup_vault_notifications(
 
 Type annotations for `boto3.client("backup").delete_recovery_point` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_recovery_point]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_recovery_point]
 
 ```python
 def delete_recovery_point(
@@ -261,7 +261,7 @@ def delete_recovery_point(
 
 Type annotations for `boto3.client("backup").describe_backup_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_backup_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_backup_job]
 
 ```python
 def describe_backup_job(
@@ -275,7 +275,7 @@ def describe_backup_job(
 
 Type annotations for `boto3.client("backup").describe_backup_vault` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_backup_vault]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_backup_vault]
 
 ```python
 def describe_backup_vault(
@@ -289,7 +289,7 @@ def describe_backup_vault(
 
 Type annotations for `boto3.client("backup").describe_copy_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_copy_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_copy_job]
 
 ```python
 def describe_copy_job(
@@ -303,7 +303,7 @@ def describe_copy_job(
 
 Type annotations for `boto3.client("backup").describe_global_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_global_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_global_settings]
 
 ```python
 def describe_global_settings(
@@ -316,7 +316,7 @@ def describe_global_settings(
 
 Type annotations for `boto3.client("backup").describe_protected_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_protected_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_protected_resource]
 
 ```python
 def describe_protected_resource(
@@ -330,7 +330,7 @@ def describe_protected_resource(
 
 Type annotations for `boto3.client("backup").describe_recovery_point` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_recovery_point]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_recovery_point]
 
 ```python
 def describe_recovery_point(
@@ -345,7 +345,7 @@ def describe_recovery_point(
 
 Type annotations for `boto3.client("backup").describe_region_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_region_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_region_settings]
 
 ```python
 def describe_region_settings(
@@ -358,7 +358,7 @@ def describe_region_settings(
 
 Type annotations for `boto3.client("backup").describe_restore_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_restore_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_restore_job]
 
 ```python
 def describe_restore_job(
@@ -372,7 +372,7 @@ def describe_restore_job(
 
 Type annotations for `boto3.client("backup").disassociate_recovery_point` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.disassociate_recovery_point]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.disassociate_recovery_point]
 
 ```python
 def disassociate_recovery_point(
@@ -387,7 +387,7 @@ def disassociate_recovery_point(
 
 Type annotations for `boto3.client("backup").export_backup_plan_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.export_backup_plan_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.export_backup_plan_template]
 
 ```python
 def export_backup_plan_template(
@@ -401,7 +401,7 @@ def export_backup_plan_template(
 
 Type annotations for `boto3.client("backup").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -418,7 +418,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("backup").get_backup_plan` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan]
 
 ```python
 def get_backup_plan(
@@ -433,7 +433,7 @@ def get_backup_plan(
 
 Type annotations for `boto3.client("backup").get_backup_plan_from_json` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan_from_json]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan_from_json]
 
 ```python
 def get_backup_plan_from_json(
@@ -447,7 +447,7 @@ def get_backup_plan_from_json(
 
 Type annotations for `boto3.client("backup").get_backup_plan_from_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan_from_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan_from_template]
 
 ```python
 def get_backup_plan_from_template(
@@ -461,7 +461,7 @@ def get_backup_plan_from_template(
 
 Type annotations for `boto3.client("backup").get_backup_selection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_selection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_selection]
 
 ```python
 def get_backup_selection(
@@ -476,7 +476,7 @@ def get_backup_selection(
 
 Type annotations for `boto3.client("backup").get_backup_vault_access_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_vault_access_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_vault_access_policy]
 
 ```python
 def get_backup_vault_access_policy(
@@ -490,7 +490,7 @@ def get_backup_vault_access_policy(
 
 Type annotations for `boto3.client("backup").get_backup_vault_notifications` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_vault_notifications]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_vault_notifications]
 
 ```python
 def get_backup_vault_notifications(
@@ -504,7 +504,7 @@ def get_backup_vault_notifications(
 
 Type annotations for `boto3.client("backup").get_recovery_point_restore_metadata` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_recovery_point_restore_metadata]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_recovery_point_restore_metadata]
 
 ```python
 def get_recovery_point_restore_metadata(
@@ -519,7 +519,7 @@ def get_recovery_point_restore_metadata(
 
 Type annotations for `boto3.client("backup").get_supported_resource_types` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_supported_resource_types]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_supported_resource_types]
 
 ```python
 def get_supported_resource_types(
@@ -532,7 +532,7 @@ def get_supported_resource_types(
 
 Type annotations for `boto3.client("backup").list_backup_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_jobs]
 
 ```python
 def list_backup_jobs(
@@ -554,7 +554,7 @@ def list_backup_jobs(
 
 Type annotations for `boto3.client("backup").list_backup_plan_templates` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plan_templates]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plan_templates]
 
 ```python
 def list_backup_plan_templates(
@@ -569,7 +569,7 @@ def list_backup_plan_templates(
 
 Type annotations for `boto3.client("backup").list_backup_plan_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plan_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plan_versions]
 
 ```python
 def list_backup_plan_versions(
@@ -585,7 +585,7 @@ def list_backup_plan_versions(
 
 Type annotations for `boto3.client("backup").list_backup_plans` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plans]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plans]
 
 ```python
 def list_backup_plans(
@@ -601,7 +601,7 @@ def list_backup_plans(
 
 Type annotations for `boto3.client("backup").list_backup_selections` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_selections]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_selections]
 
 ```python
 def list_backup_selections(
@@ -617,7 +617,7 @@ def list_backup_selections(
 
 Type annotations for `boto3.client("backup").list_backup_vaults` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_vaults]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_vaults]
 
 ```python
 def list_backup_vaults(
@@ -632,7 +632,7 @@ def list_backup_vaults(
 
 Type annotations for `boto3.client("backup").list_copy_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_copy_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_copy_jobs]
 
 ```python
 def list_copy_jobs(
@@ -654,7 +654,7 @@ def list_copy_jobs(
 
 Type annotations for `boto3.client("backup").list_protected_resources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_protected_resources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_protected_resources]
 
 ```python
 def list_protected_resources(
@@ -669,7 +669,7 @@ def list_protected_resources(
 
 Type annotations for `boto3.client("backup").list_recovery_points_by_backup_vault` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_recovery_points_by_backup_vault]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_recovery_points_by_backup_vault]
 
 ```python
 def list_recovery_points_by_backup_vault(
@@ -690,7 +690,7 @@ def list_recovery_points_by_backup_vault(
 
 Type annotations for `boto3.client("backup").list_recovery_points_by_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_recovery_points_by_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_recovery_points_by_resource]
 
 ```python
 def list_recovery_points_by_resource(
@@ -706,7 +706,7 @@ def list_recovery_points_by_resource(
 
 Type annotations for `boto3.client("backup").list_restore_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_restore_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_restore_jobs]
 
 ```python
 def list_restore_jobs(
@@ -725,7 +725,7 @@ def list_restore_jobs(
 
 Type annotations for `boto3.client("backup").list_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_tags]
 
 ```python
 def list_tags(
@@ -741,7 +741,7 @@ def list_tags(
 
 Type annotations for `boto3.client("backup").put_backup_vault_access_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_access_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_access_policy]
 
 ```python
 def put_backup_vault_access_policy(
@@ -756,7 +756,7 @@ def put_backup_vault_access_policy(
 
 Type annotations for `boto3.client("backup").put_backup_vault_notifications` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_notifications]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_notifications]
 
 ```python
 def put_backup_vault_notifications(
@@ -772,7 +772,7 @@ def put_backup_vault_notifications(
 
 Type annotations for `boto3.client("backup").start_backup_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_backup_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_backup_job]
 
 ```python
 def start_backup_job(
@@ -794,7 +794,7 @@ def start_backup_job(
 
 Type annotations for `boto3.client("backup").start_copy_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_copy_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_copy_job]
 
 ```python
 def start_copy_job(
@@ -813,7 +813,7 @@ def start_copy_job(
 
 Type annotations for `boto3.client("backup").start_restore_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_restore_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_restore_job]
 
 ```python
 def start_restore_job(
@@ -831,7 +831,7 @@ def start_restore_job(
 
 Type annotations for `boto3.client("backup").stop_backup_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.stop_backup_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.stop_backup_job]
 
 ```python
 def stop_backup_job(
@@ -845,7 +845,7 @@ def stop_backup_job(
 
 Type annotations for `boto3.client("backup").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -860,7 +860,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("backup").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -875,7 +875,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("backup").update_backup_plan` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_backup_plan]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_backup_plan]
 
 ```python
 def update_backup_plan(
@@ -890,7 +890,7 @@ def update_backup_plan(
 
 Type annotations for `boto3.client("backup").update_global_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_global_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_global_settings]
 
 ```python
 def update_global_settings(
@@ -904,7 +904,7 @@ def update_global_settings(
 
 Type annotations for `boto3.client("backup").update_recovery_point_lifecycle` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_recovery_point_lifecycle]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_recovery_point_lifecycle]
 
 ```python
 def update_recovery_point_lifecycle(
@@ -920,7 +920,7 @@ def update_recovery_point_lifecycle(
 
 Type annotations for `boto3.client("backup").update_region_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_region_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_region_settings]
 
 ```python
 def update_region_settings(

@@ -183,7 +183,7 @@ def get_glue_client() -> GlueClient:
     return boto3.client("glue")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client)
 
 ## Exceptions
 
@@ -234,7 +234,7 @@ Exceptions:
 
 Type annotations for `boto3.client("glue").batch_create_partition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_create_partition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_create_partition]
 
 ```python
 def batch_create_partition(
@@ -251,7 +251,7 @@ def batch_create_partition(
 
 Type annotations for `boto3.client("glue").batch_delete_connection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_connection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_connection]
 
 ```python
 def batch_delete_connection(
@@ -266,7 +266,7 @@ def batch_delete_connection(
 
 Type annotations for `boto3.client("glue").batch_delete_partition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_partition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_partition]
 
 ```python
 def batch_delete_partition(
@@ -283,7 +283,7 @@ def batch_delete_partition(
 
 Type annotations for `boto3.client("glue").batch_delete_table` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_table]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_table]
 
 ```python
 def batch_delete_table(
@@ -299,7 +299,7 @@ def batch_delete_table(
 
 Type annotations for `boto3.client("glue").batch_delete_table_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_table_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_table_version]
 
 ```python
 def batch_delete_table_version(
@@ -316,7 +316,7 @@ def batch_delete_table_version(
 
 Type annotations for `boto3.client("glue").batch_get_crawlers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_crawlers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_crawlers]
 
 ```python
 def batch_get_crawlers(
@@ -330,7 +330,7 @@ def batch_get_crawlers(
 
 Type annotations for `boto3.client("glue").batch_get_dev_endpoints` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_dev_endpoints]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_dev_endpoints]
 
 ```python
 def batch_get_dev_endpoints(
@@ -344,7 +344,7 @@ def batch_get_dev_endpoints(
 
 Type annotations for `boto3.client("glue").batch_get_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_jobs]
 
 ```python
 def batch_get_jobs(
@@ -358,7 +358,7 @@ def batch_get_jobs(
 
 Type annotations for `boto3.client("glue").batch_get_partition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_partition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_partition]
 
 ```python
 def batch_get_partition(
@@ -375,7 +375,7 @@ def batch_get_partition(
 
 Type annotations for `boto3.client("glue").batch_get_triggers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_triggers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_triggers]
 
 ```python
 def batch_get_triggers(
@@ -389,7 +389,7 @@ def batch_get_triggers(
 
 Type annotations for `boto3.client("glue").batch_get_workflows` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_workflows]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_workflows]
 
 ```python
 def batch_get_workflows(
@@ -404,7 +404,7 @@ def batch_get_workflows(
 
 Type annotations for `boto3.client("glue").batch_stop_job_run` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_stop_job_run]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_stop_job_run]
 
 ```python
 def batch_stop_job_run(
@@ -419,7 +419,7 @@ def batch_stop_job_run(
 
 Type annotations for `boto3.client("glue").batch_update_partition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_update_partition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_update_partition]
 
 ```python
 def batch_update_partition(
@@ -436,7 +436,7 @@ def batch_update_partition(
 
 Type annotations for `boto3.client("glue").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -450,7 +450,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("glue").cancel_ml_task_run` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.cancel_ml_task_run]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.cancel_ml_task_run]
 
 ```python
 def cancel_ml_task_run(
@@ -465,7 +465,7 @@ def cancel_ml_task_run(
 
 Type annotations for `boto3.client("glue").check_schema_version_validity` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.check_schema_version_validity]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.check_schema_version_validity]
 
 ```python
 def check_schema_version_validity(
@@ -480,7 +480,7 @@ def check_schema_version_validity(
 
 Type annotations for `boto3.client("glue").create_classifier` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_classifier]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_classifier]
 
 ```python
 def create_classifier(
@@ -497,7 +497,7 @@ def create_classifier(
 
 Type annotations for `boto3.client("glue").create_connection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_connection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_connection]
 
 ```python
 def create_connection(
@@ -512,7 +512,7 @@ def create_connection(
 
 Type annotations for `boto3.client("glue").create_crawler` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_crawler]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_crawler]
 
 ```python
 def create_crawler(
@@ -539,7 +539,7 @@ def create_crawler(
 
 Type annotations for `boto3.client("glue").create_database` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_database]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_database]
 
 ```python
 def create_database(
@@ -554,7 +554,7 @@ def create_database(
 
 Type annotations for `boto3.client("glue").create_dev_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_dev_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_dev_endpoint]
 
 ```python
 def create_dev_endpoint(
@@ -582,7 +582,7 @@ def create_dev_endpoint(
 
 Type annotations for `boto3.client("glue").create_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_job]
 
 ```python
 def create_job(
@@ -614,7 +614,7 @@ def create_job(
 
 Type annotations for `boto3.client("glue").create_ml_transform` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_ml_transform]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_ml_transform]
 
 ```python
 def create_ml_transform(
@@ -640,7 +640,7 @@ def create_ml_transform(
 
 Type annotations for `boto3.client("glue").create_partition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_partition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_partition]
 
 ```python
 def create_partition(
@@ -657,7 +657,7 @@ def create_partition(
 
 Type annotations for `boto3.client("glue").create_partition_index` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_partition_index]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_partition_index]
 
 ```python
 def create_partition_index(
@@ -674,7 +674,7 @@ def create_partition_index(
 
 Type annotations for `boto3.client("glue").create_registry` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_registry]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_registry]
 
 ```python
 def create_registry(
@@ -690,7 +690,7 @@ def create_registry(
 
 Type annotations for `boto3.client("glue").create_schema` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_schema]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_schema]
 
 ```python
 def create_schema(
@@ -710,7 +710,7 @@ def create_schema(
 
 Type annotations for `boto3.client("glue").create_script` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_script]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_script]
 
 ```python
 def create_script(
@@ -726,7 +726,7 @@ def create_script(
 
 Type annotations for `boto3.client("glue").create_security_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_security_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_security_configuration]
 
 ```python
 def create_security_configuration(
@@ -741,7 +741,7 @@ def create_security_configuration(
 
 Type annotations for `boto3.client("glue").create_table` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_table]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_table]
 
 ```python
 def create_table(
@@ -758,7 +758,7 @@ def create_table(
 
 Type annotations for `boto3.client("glue").create_trigger` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_trigger]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_trigger]
 
 ```python
 def create_trigger(
@@ -780,7 +780,7 @@ def create_trigger(
 
 Type annotations for `boto3.client("glue").create_user_defined_function` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_user_defined_function]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_user_defined_function]
 
 ```python
 def create_user_defined_function(
@@ -796,7 +796,7 @@ def create_user_defined_function(
 
 Type annotations for `boto3.client("glue").create_workflow` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_workflow]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_workflow]
 
 ```python
 def create_workflow(
@@ -814,7 +814,7 @@ def create_workflow(
 
 Type annotations for `boto3.client("glue").delete_classifier` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_classifier]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_classifier]
 
 ```python
 def delete_classifier(
@@ -828,7 +828,7 @@ def delete_classifier(
 
 Type annotations for `boto3.client("glue").delete_column_statistics_for_partition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_column_statistics_for_partition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_column_statistics_for_partition]
 
 ```python
 def delete_column_statistics_for_partition(
@@ -846,7 +846,7 @@ def delete_column_statistics_for_partition(
 
 Type annotations for `boto3.client("glue").delete_column_statistics_for_table` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_column_statistics_for_table]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_column_statistics_for_table]
 
 ```python
 def delete_column_statistics_for_table(
@@ -863,7 +863,7 @@ def delete_column_statistics_for_table(
 
 Type annotations for `boto3.client("glue").delete_connection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_connection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_connection]
 
 ```python
 def delete_connection(
@@ -878,7 +878,7 @@ def delete_connection(
 
 Type annotations for `boto3.client("glue").delete_crawler` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_crawler]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_crawler]
 
 ```python
 def delete_crawler(
@@ -892,7 +892,7 @@ def delete_crawler(
 
 Type annotations for `boto3.client("glue").delete_database` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_database]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_database]
 
 ```python
 def delete_database(
@@ -907,7 +907,7 @@ def delete_database(
 
 Type annotations for `boto3.client("glue").delete_dev_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_dev_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_dev_endpoint]
 
 ```python
 def delete_dev_endpoint(
@@ -921,7 +921,7 @@ def delete_dev_endpoint(
 
 Type annotations for `boto3.client("glue").delete_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_job]
 
 ```python
 def delete_job(
@@ -935,7 +935,7 @@ def delete_job(
 
 Type annotations for `boto3.client("glue").delete_ml_transform` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_ml_transform]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_ml_transform]
 
 ```python
 def delete_ml_transform(
@@ -949,7 +949,7 @@ def delete_ml_transform(
 
 Type annotations for `boto3.client("glue").delete_partition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_partition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_partition]
 
 ```python
 def delete_partition(
@@ -966,7 +966,7 @@ def delete_partition(
 
 Type annotations for `boto3.client("glue").delete_partition_index` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_partition_index]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_partition_index]
 
 ```python
 def delete_partition_index(
@@ -983,7 +983,7 @@ def delete_partition_index(
 
 Type annotations for `boto3.client("glue").delete_registry` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_registry]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_registry]
 
 ```python
 def delete_registry(
@@ -997,7 +997,7 @@ def delete_registry(
 
 Type annotations for `boto3.client("glue").delete_resource_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_resource_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_resource_policy]
 
 ```python
 def delete_resource_policy(
@@ -1012,7 +1012,7 @@ def delete_resource_policy(
 
 Type annotations for `boto3.client("glue").delete_schema` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_schema]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_schema]
 
 ```python
 def delete_schema(
@@ -1026,7 +1026,7 @@ def delete_schema(
 
 Type annotations for `boto3.client("glue").delete_schema_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_schema_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_schema_versions]
 
 ```python
 def delete_schema_versions(
@@ -1041,7 +1041,7 @@ def delete_schema_versions(
 
 Type annotations for `boto3.client("glue").delete_security_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_security_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_security_configuration]
 
 ```python
 def delete_security_configuration(
@@ -1055,7 +1055,7 @@ def delete_security_configuration(
 
 Type annotations for `boto3.client("glue").delete_table` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_table]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_table]
 
 ```python
 def delete_table(
@@ -1071,7 +1071,7 @@ def delete_table(
 
 Type annotations for `boto3.client("glue").delete_table_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_table_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_table_version]
 
 ```python
 def delete_table_version(
@@ -1088,7 +1088,7 @@ def delete_table_version(
 
 Type annotations for `boto3.client("glue").delete_trigger` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_trigger]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_trigger]
 
 ```python
 def delete_trigger(
@@ -1102,7 +1102,7 @@ def delete_trigger(
 
 Type annotations for `boto3.client("glue").delete_user_defined_function` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_user_defined_function]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_user_defined_function]
 
 ```python
 def delete_user_defined_function(
@@ -1118,7 +1118,7 @@ def delete_user_defined_function(
 
 Type annotations for `boto3.client("glue").delete_workflow` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_workflow]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_workflow]
 
 ```python
 def delete_workflow(
@@ -1132,7 +1132,7 @@ def delete_workflow(
 
 Type annotations for `boto3.client("glue").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -1149,7 +1149,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("glue").get_catalog_import_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_catalog_import_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_catalog_import_status]
 
 ```python
 def get_catalog_import_status(
@@ -1163,7 +1163,7 @@ def get_catalog_import_status(
 
 Type annotations for `boto3.client("glue").get_classifier` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_classifier]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_classifier]
 
 ```python
 def get_classifier(
@@ -1177,7 +1177,7 @@ def get_classifier(
 
 Type annotations for `boto3.client("glue").get_classifiers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_classifiers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_classifiers]
 
 ```python
 def get_classifiers(
@@ -1192,7 +1192,7 @@ def get_classifiers(
 
 Type annotations for `boto3.client("glue").get_column_statistics_for_partition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_column_statistics_for_partition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_column_statistics_for_partition]
 
 ```python
 def get_column_statistics_for_partition(
@@ -1210,7 +1210,7 @@ def get_column_statistics_for_partition(
 
 Type annotations for `boto3.client("glue").get_column_statistics_for_table` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_column_statistics_for_table]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_column_statistics_for_table]
 
 ```python
 def get_column_statistics_for_table(
@@ -1227,7 +1227,7 @@ def get_column_statistics_for_table(
 
 Type annotations for `boto3.client("glue").get_connection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_connection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_connection]
 
 ```python
 def get_connection(
@@ -1243,7 +1243,7 @@ def get_connection(
 
 Type annotations for `boto3.client("glue").get_connections` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_connections]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_connections]
 
 ```python
 def get_connections(
@@ -1261,7 +1261,7 @@ def get_connections(
 
 Type annotations for `boto3.client("glue").get_crawler` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawler]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawler]
 
 ```python
 def get_crawler(
@@ -1275,7 +1275,7 @@ def get_crawler(
 
 Type annotations for `boto3.client("glue").get_crawler_metrics` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawler_metrics]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawler_metrics]
 
 ```python
 def get_crawler_metrics(
@@ -1291,7 +1291,7 @@ def get_crawler_metrics(
 
 Type annotations for `boto3.client("glue").get_crawlers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawlers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawlers]
 
 ```python
 def get_crawlers(
@@ -1306,7 +1306,7 @@ def get_crawlers(
 
 Type annotations for `boto3.client("glue").get_data_catalog_encryption_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_data_catalog_encryption_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_data_catalog_encryption_settings]
 
 ```python
 def get_data_catalog_encryption_settings(
@@ -1320,7 +1320,7 @@ def get_data_catalog_encryption_settings(
 
 Type annotations for `boto3.client("glue").get_database` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_database]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_database]
 
 ```python
 def get_database(
@@ -1335,7 +1335,7 @@ def get_database(
 
 Type annotations for `boto3.client("glue").get_databases` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_databases]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_databases]
 
 ```python
 def get_databases(
@@ -1352,7 +1352,7 @@ def get_databases(
 
 Type annotations for `boto3.client("glue").get_dataflow_graph` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dataflow_graph]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dataflow_graph]
 
 ```python
 def get_dataflow_graph(
@@ -1366,7 +1366,7 @@ def get_dataflow_graph(
 
 Type annotations for `boto3.client("glue").get_dev_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dev_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dev_endpoint]
 
 ```python
 def get_dev_endpoint(
@@ -1380,7 +1380,7 @@ def get_dev_endpoint(
 
 Type annotations for `boto3.client("glue").get_dev_endpoints` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dev_endpoints]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dev_endpoints]
 
 ```python
 def get_dev_endpoints(
@@ -1395,7 +1395,7 @@ def get_dev_endpoints(
 
 Type annotations for `boto3.client("glue").get_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job]
 
 ```python
 def get_job(
@@ -1409,7 +1409,7 @@ def get_job(
 
 Type annotations for `boto3.client("glue").get_job_bookmark` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_bookmark]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_bookmark]
 
 ```python
 def get_job_bookmark(
@@ -1424,7 +1424,7 @@ def get_job_bookmark(
 
 Type annotations for `boto3.client("glue").get_job_run` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_run]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_run]
 
 ```python
 def get_job_run(
@@ -1440,7 +1440,7 @@ def get_job_run(
 
 Type annotations for `boto3.client("glue").get_job_runs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_runs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_runs]
 
 ```python
 def get_job_runs(
@@ -1456,7 +1456,7 @@ def get_job_runs(
 
 Type annotations for `boto3.client("glue").get_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_jobs]
 
 ```python
 def get_jobs(
@@ -1471,7 +1471,7 @@ def get_jobs(
 
 Type annotations for `boto3.client("glue").get_mapping` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_mapping]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_mapping]
 
 ```python
 def get_mapping(
@@ -1487,7 +1487,7 @@ def get_mapping(
 
 Type annotations for `boto3.client("glue").get_ml_task_run` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_task_run]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_task_run]
 
 ```python
 def get_ml_task_run(
@@ -1502,7 +1502,7 @@ def get_ml_task_run(
 
 Type annotations for `boto3.client("glue").get_ml_task_runs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_task_runs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_task_runs]
 
 ```python
 def get_ml_task_runs(
@@ -1520,7 +1520,7 @@ def get_ml_task_runs(
 
 Type annotations for `boto3.client("glue").get_ml_transform` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_transform]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_transform]
 
 ```python
 def get_ml_transform(
@@ -1534,7 +1534,7 @@ def get_ml_transform(
 
 Type annotations for `boto3.client("glue").get_ml_transforms` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_transforms]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_transforms]
 
 ```python
 def get_ml_transforms(
@@ -1551,7 +1551,7 @@ def get_ml_transforms(
 
 Type annotations for `boto3.client("glue").get_partition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partition]
 
 ```python
 def get_partition(
@@ -1568,7 +1568,7 @@ def get_partition(
 
 Type annotations for `boto3.client("glue").get_partition_indexes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partition_indexes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partition_indexes]
 
 ```python
 def get_partition_indexes(
@@ -1585,7 +1585,7 @@ def get_partition_indexes(
 
 Type annotations for `boto3.client("glue").get_partitions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partitions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partitions]
 
 ```python
 def get_partitions(
@@ -1606,7 +1606,7 @@ def get_partitions(
 
 Type annotations for `boto3.client("glue").get_plan` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_plan]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_plan]
 
 ```python
 def get_plan(
@@ -1625,7 +1625,7 @@ def get_plan(
 
 Type annotations for `boto3.client("glue").get_registry` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_registry]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_registry]
 
 ```python
 def get_registry(
@@ -1639,7 +1639,7 @@ def get_registry(
 
 Type annotations for `boto3.client("glue").get_resource_policies` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_resource_policies]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_resource_policies]
 
 ```python
 def get_resource_policies(
@@ -1654,7 +1654,7 @@ def get_resource_policies(
 
 Type annotations for `boto3.client("glue").get_resource_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_resource_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_resource_policy]
 
 ```python
 def get_resource_policy(
@@ -1668,7 +1668,7 @@ def get_resource_policy(
 
 Type annotations for `boto3.client("glue").get_schema` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema]
 
 ```python
 def get_schema(
@@ -1682,7 +1682,7 @@ def get_schema(
 
 Type annotations for `boto3.client("glue").get_schema_by_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_by_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_by_definition]
 
 ```python
 def get_schema_by_definition(
@@ -1697,7 +1697,7 @@ def get_schema_by_definition(
 
 Type annotations for `boto3.client("glue").get_schema_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_version]
 
 ```python
 def get_schema_version(
@@ -1713,7 +1713,7 @@ def get_schema_version(
 
 Type annotations for `boto3.client("glue").get_schema_versions_diff` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_versions_diff]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_versions_diff]
 
 ```python
 def get_schema_versions_diff(
@@ -1730,7 +1730,7 @@ def get_schema_versions_diff(
 
 Type annotations for `boto3.client("glue").get_security_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_security_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_security_configuration]
 
 ```python
 def get_security_configuration(
@@ -1744,7 +1744,7 @@ def get_security_configuration(
 
 Type annotations for `boto3.client("glue").get_security_configurations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_security_configurations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_security_configurations]
 
 ```python
 def get_security_configurations(
@@ -1759,7 +1759,7 @@ def get_security_configurations(
 
 Type annotations for `boto3.client("glue").get_table` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table]
 
 ```python
 def get_table(
@@ -1775,7 +1775,7 @@ def get_table(
 
 Type annotations for `boto3.client("glue").get_table_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table_version]
 
 ```python
 def get_table_version(
@@ -1792,7 +1792,7 @@ def get_table_version(
 
 Type annotations for `boto3.client("glue").get_table_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table_versions]
 
 ```python
 def get_table_versions(
@@ -1810,7 +1810,7 @@ def get_table_versions(
 
 Type annotations for `boto3.client("glue").get_tables` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_tables]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_tables]
 
 ```python
 def get_tables(
@@ -1828,7 +1828,7 @@ def get_tables(
 
 Type annotations for `boto3.client("glue").get_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_tags]
 
 ```python
 def get_tags(
@@ -1842,7 +1842,7 @@ def get_tags(
 
 Type annotations for `boto3.client("glue").get_trigger` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_trigger]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_trigger]
 
 ```python
 def get_trigger(
@@ -1856,7 +1856,7 @@ def get_trigger(
 
 Type annotations for `boto3.client("glue").get_triggers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_triggers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_triggers]
 
 ```python
 def get_triggers(
@@ -1872,7 +1872,7 @@ def get_triggers(
 
 Type annotations for `boto3.client("glue").get_user_defined_function` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_user_defined_function]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_user_defined_function]
 
 ```python
 def get_user_defined_function(
@@ -1888,7 +1888,7 @@ def get_user_defined_function(
 
 Type annotations for `boto3.client("glue").get_user_defined_functions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_user_defined_functions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_user_defined_functions]
 
 ```python
 def get_user_defined_functions(
@@ -1906,7 +1906,7 @@ def get_user_defined_functions(
 
 Type annotations for `boto3.client("glue").get_workflow` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow]
 
 ```python
 def get_workflow(
@@ -1921,7 +1921,7 @@ def get_workflow(
 
 Type annotations for `boto3.client("glue").get_workflow_run` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_run]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_run]
 
 ```python
 def get_workflow_run(
@@ -1937,7 +1937,7 @@ def get_workflow_run(
 
 Type annotations for `boto3.client("glue").get_workflow_run_properties` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_run_properties]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_run_properties]
 
 ```python
 def get_workflow_run_properties(
@@ -1952,7 +1952,7 @@ def get_workflow_run_properties(
 
 Type annotations for `boto3.client("glue").get_workflow_runs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_runs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_runs]
 
 ```python
 def get_workflow_runs(
@@ -1969,7 +1969,7 @@ def get_workflow_runs(
 
 Type annotations for `boto3.client("glue").import_catalog_to_glue` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.import_catalog_to_glue]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.import_catalog_to_glue]
 
 ```python
 def import_catalog_to_glue(
@@ -1983,7 +1983,7 @@ def import_catalog_to_glue(
 
 Type annotations for `boto3.client("glue").list_crawlers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_crawlers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_crawlers]
 
 ```python
 def list_crawlers(
@@ -1999,7 +1999,7 @@ def list_crawlers(
 
 Type annotations for `boto3.client("glue").list_dev_endpoints` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_dev_endpoints]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_dev_endpoints]
 
 ```python
 def list_dev_endpoints(
@@ -2015,7 +2015,7 @@ def list_dev_endpoints(
 
 Type annotations for `boto3.client("glue").list_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_jobs]
 
 ```python
 def list_jobs(
@@ -2031,7 +2031,7 @@ def list_jobs(
 
 Type annotations for `boto3.client("glue").list_ml_transforms` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_ml_transforms]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_ml_transforms]
 
 ```python
 def list_ml_transforms(
@@ -2049,7 +2049,7 @@ def list_ml_transforms(
 
 Type annotations for `boto3.client("glue").list_registries` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_registries]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_registries]
 
 ```python
 def list_registries(
@@ -2064,7 +2064,7 @@ def list_registries(
 
 Type annotations for `boto3.client("glue").list_schema_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_schema_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_schema_versions]
 
 ```python
 def list_schema_versions(
@@ -2080,7 +2080,7 @@ def list_schema_versions(
 
 Type annotations for `boto3.client("glue").list_schemas` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_schemas]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_schemas]
 
 ```python
 def list_schemas(
@@ -2096,7 +2096,7 @@ def list_schemas(
 
 Type annotations for `boto3.client("glue").list_triggers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_triggers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_triggers]
 
 ```python
 def list_triggers(
@@ -2113,7 +2113,7 @@ def list_triggers(
 
 Type annotations for `boto3.client("glue").list_workflows` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_workflows]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_workflows]
 
 ```python
 def list_workflows(
@@ -2128,7 +2128,7 @@ def list_workflows(
 
 Type annotations for `boto3.client("glue").put_data_catalog_encryption_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_data_catalog_encryption_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_data_catalog_encryption_settings]
 
 ```python
 def put_data_catalog_encryption_settings(
@@ -2143,7 +2143,7 @@ def put_data_catalog_encryption_settings(
 
 Type annotations for `boto3.client("glue").put_resource_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_resource_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_resource_policy]
 
 ```python
 def put_resource_policy(
@@ -2161,7 +2161,7 @@ def put_resource_policy(
 
 Type annotations for `boto3.client("glue").put_schema_version_metadata` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_schema_version_metadata]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_schema_version_metadata]
 
 ```python
 def put_schema_version_metadata(
@@ -2178,7 +2178,7 @@ def put_schema_version_metadata(
 
 Type annotations for `boto3.client("glue").put_workflow_run_properties` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_workflow_run_properties]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_workflow_run_properties]
 
 ```python
 def put_workflow_run_properties(
@@ -2194,7 +2194,7 @@ def put_workflow_run_properties(
 
 Type annotations for `boto3.client("glue").query_schema_version_metadata` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.query_schema_version_metadata]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.query_schema_version_metadata]
 
 ```python
 def query_schema_version_metadata(
@@ -2213,7 +2213,7 @@ def query_schema_version_metadata(
 
 Type annotations for `boto3.client("glue").register_schema_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.register_schema_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.register_schema_version]
 
 ```python
 def register_schema_version(
@@ -2228,7 +2228,7 @@ def register_schema_version(
 
 Type annotations for `boto3.client("glue").remove_schema_version_metadata` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.remove_schema_version_metadata]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.remove_schema_version_metadata]
 
 ```python
 def remove_schema_version_metadata(
@@ -2245,7 +2245,7 @@ def remove_schema_version_metadata(
 
 Type annotations for `boto3.client("glue").reset_job_bookmark` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.reset_job_bookmark]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.reset_job_bookmark]
 
 ```python
 def reset_job_bookmark(
@@ -2260,7 +2260,7 @@ def reset_job_bookmark(
 
 Type annotations for `boto3.client("glue").resume_workflow_run` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.resume_workflow_run]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.resume_workflow_run]
 
 ```python
 def resume_workflow_run(
@@ -2276,7 +2276,7 @@ def resume_workflow_run(
 
 Type annotations for `boto3.client("glue").search_tables` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.search_tables]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.search_tables]
 
 ```python
 def search_tables(
@@ -2296,7 +2296,7 @@ def search_tables(
 
 Type annotations for `boto3.client("glue").start_crawler` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_crawler]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_crawler]
 
 ```python
 def start_crawler(
@@ -2310,7 +2310,7 @@ def start_crawler(
 
 Type annotations for `boto3.client("glue").start_crawler_schedule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_crawler_schedule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_crawler_schedule]
 
 ```python
 def start_crawler_schedule(
@@ -2324,7 +2324,7 @@ def start_crawler_schedule(
 
 Type annotations for `boto3.client("glue").start_export_labels_task_run` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_export_labels_task_run]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_export_labels_task_run]
 
 ```python
 def start_export_labels_task_run(
@@ -2339,7 +2339,7 @@ def start_export_labels_task_run(
 
 Type annotations for `boto3.client("glue").start_import_labels_task_run` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_import_labels_task_run]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_import_labels_task_run]
 
 ```python
 def start_import_labels_task_run(
@@ -2355,7 +2355,7 @@ def start_import_labels_task_run(
 
 Type annotations for `boto3.client("glue").start_job_run` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_job_run]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_job_run]
 
 ```python
 def start_job_run(
@@ -2378,7 +2378,7 @@ def start_job_run(
 
 Type annotations for `boto3.client("glue").start_ml_evaluation_task_run` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_ml_evaluation_task_run]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_ml_evaluation_task_run]
 
 ```python
 def start_ml_evaluation_task_run(
@@ -2392,7 +2392,7 @@ def start_ml_evaluation_task_run(
 
 Type annotations for `boto3.client("glue").start_ml_labeling_set_generation_task_run` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_ml_labeling_set_generation_task_run]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_ml_labeling_set_generation_task_run]
 
 ```python
 def start_ml_labeling_set_generation_task_run(
@@ -2407,7 +2407,7 @@ def start_ml_labeling_set_generation_task_run(
 
 Type annotations for `boto3.client("glue").start_trigger` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_trigger]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_trigger]
 
 ```python
 def start_trigger(
@@ -2421,7 +2421,7 @@ def start_trigger(
 
 Type annotations for `boto3.client("glue").start_workflow_run` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_workflow_run]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_workflow_run]
 
 ```python
 def start_workflow_run(
@@ -2435,7 +2435,7 @@ def start_workflow_run(
 
 Type annotations for `boto3.client("glue").stop_crawler` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_crawler]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_crawler]
 
 ```python
 def stop_crawler(
@@ -2449,7 +2449,7 @@ def stop_crawler(
 
 Type annotations for `boto3.client("glue").stop_crawler_schedule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_crawler_schedule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_crawler_schedule]
 
 ```python
 def stop_crawler_schedule(
@@ -2463,7 +2463,7 @@ def stop_crawler_schedule(
 
 Type annotations for `boto3.client("glue").stop_trigger` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_trigger]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_trigger]
 
 ```python
 def stop_trigger(
@@ -2477,7 +2477,7 @@ def stop_trigger(
 
 Type annotations for `boto3.client("glue").stop_workflow_run` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_workflow_run]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_workflow_run]
 
 ```python
 def stop_workflow_run(
@@ -2492,7 +2492,7 @@ def stop_workflow_run(
 
 Type annotations for `boto3.client("glue").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -2507,7 +2507,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("glue").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -2522,7 +2522,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("glue").update_classifier` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_classifier]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_classifier]
 
 ```python
 def update_classifier(
@@ -2539,7 +2539,7 @@ def update_classifier(
 
 Type annotations for `boto3.client("glue").update_column_statistics_for_partition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_column_statistics_for_partition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_column_statistics_for_partition]
 
 ```python
 def update_column_statistics_for_partition(
@@ -2557,7 +2557,7 @@ def update_column_statistics_for_partition(
 
 Type annotations for `boto3.client("glue").update_column_statistics_for_table` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_column_statistics_for_table]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_column_statistics_for_table]
 
 ```python
 def update_column_statistics_for_table(
@@ -2574,7 +2574,7 @@ def update_column_statistics_for_table(
 
 Type annotations for `boto3.client("glue").update_connection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_connection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_connection]
 
 ```python
 def update_connection(
@@ -2590,7 +2590,7 @@ def update_connection(
 
 Type annotations for `boto3.client("glue").update_crawler` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_crawler]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_crawler]
 
 ```python
 def update_crawler(
@@ -2616,7 +2616,7 @@ def update_crawler(
 
 Type annotations for `boto3.client("glue").update_crawler_schedule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_crawler_schedule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_crawler_schedule]
 
 ```python
 def update_crawler_schedule(
@@ -2631,7 +2631,7 @@ def update_crawler_schedule(
 
 Type annotations for `boto3.client("glue").update_database` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_database]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_database]
 
 ```python
 def update_database(
@@ -2647,7 +2647,7 @@ def update_database(
 
 Type annotations for `boto3.client("glue").update_dev_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_dev_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_dev_endpoint]
 
 ```python
 def update_dev_endpoint(
@@ -2668,7 +2668,7 @@ def update_dev_endpoint(
 
 Type annotations for `boto3.client("glue").update_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_job]
 
 ```python
 def update_job(
@@ -2683,7 +2683,7 @@ def update_job(
 
 Type annotations for `boto3.client("glue").update_ml_transform` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_ml_transform]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_ml_transform]
 
 ```python
 def update_ml_transform(
@@ -2707,7 +2707,7 @@ def update_ml_transform(
 
 Type annotations for `boto3.client("glue").update_partition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_partition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_partition]
 
 ```python
 def update_partition(
@@ -2725,7 +2725,7 @@ def update_partition(
 
 Type annotations for `boto3.client("glue").update_registry` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_registry]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_registry]
 
 ```python
 def update_registry(
@@ -2740,7 +2740,7 @@ def update_registry(
 
 Type annotations for `boto3.client("glue").update_schema` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_schema]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_schema]
 
 ```python
 def update_schema(
@@ -2757,7 +2757,7 @@ def update_schema(
 
 Type annotations for `boto3.client("glue").update_table` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_table]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_table]
 
 ```python
 def update_table(
@@ -2774,7 +2774,7 @@ def update_table(
 
 Type annotations for `boto3.client("glue").update_trigger` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_trigger]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_trigger]
 
 ```python
 def update_trigger(
@@ -2789,7 +2789,7 @@ def update_trigger(
 
 Type annotations for `boto3.client("glue").update_user_defined_function` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_user_defined_function]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_user_defined_function]
 
 ```python
 def update_user_defined_function(
@@ -2806,7 +2806,7 @@ def update_user_defined_function(
 
 Type annotations for `boto3.client("glue").update_workflow` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_workflow]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_workflow]
 
 ```python
 def update_workflow(

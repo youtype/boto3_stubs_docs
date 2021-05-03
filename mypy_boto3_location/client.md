@@ -61,7 +61,7 @@ def get_location_client() -> LocationServiceClient:
     return boto3.client("location")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client)
 
 ## Exceptions
 
@@ -94,7 +94,7 @@ Exceptions:
 
 Type annotations for `boto3.client("location").associate_tracker_consumer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.associate_tracker_consumer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.associate_tracker_consumer]
 
 ```python
 def associate_tracker_consumer(
@@ -109,7 +109,7 @@ def associate_tracker_consumer(
 
 Type annotations for `boto3.client("location").batch_delete_geofence` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_delete_geofence]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_delete_geofence]
 
 ```python
 def batch_delete_geofence(
@@ -124,7 +124,7 @@ def batch_delete_geofence(
 
 Type annotations for `boto3.client("location").batch_evaluate_geofences` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_evaluate_geofences]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_evaluate_geofences]
 
 ```python
 def batch_evaluate_geofences(
@@ -139,7 +139,7 @@ def batch_evaluate_geofences(
 
 Type annotations for `boto3.client("location").batch_get_device_position` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_get_device_position]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_get_device_position]
 
 ```python
 def batch_get_device_position(
@@ -154,7 +154,7 @@ def batch_get_device_position(
 
 Type annotations for `boto3.client("location").batch_put_geofence` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_put_geofence]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_put_geofence]
 
 ```python
 def batch_put_geofence(
@@ -169,7 +169,7 @@ def batch_put_geofence(
 
 Type annotations for `boto3.client("location").batch_update_device_position` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_update_device_position]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_update_device_position]
 
 ```python
 def batch_update_device_position(
@@ -184,7 +184,7 @@ def batch_update_device_position(
 
 Type annotations for `boto3.client("location").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -198,7 +198,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("location").create_geofence_collection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_geofence_collection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_geofence_collection]
 
 ```python
 def create_geofence_collection(
@@ -215,7 +215,7 @@ def create_geofence_collection(
 
 Type annotations for `boto3.client("location").create_map` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_map]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_map]
 
 ```python
 def create_map(
@@ -232,7 +232,7 @@ def create_map(
 
 Type annotations for `boto3.client("location").create_place_index` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_place_index]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_place_index]
 
 ```python
 def create_place_index(
@@ -250,7 +250,7 @@ def create_place_index(
 
 Type annotations for `boto3.client("location").create_tracker` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_tracker]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_tracker]
 
 ```python
 def create_tracker(
@@ -267,7 +267,7 @@ def create_tracker(
 
 Type annotations for `boto3.client("location").delete_geofence_collection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_geofence_collection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_geofence_collection]
 
 ```python
 def delete_geofence_collection(
@@ -281,7 +281,7 @@ def delete_geofence_collection(
 
 Type annotations for `boto3.client("location").delete_map` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_map]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_map]
 
 ```python
 def delete_map(
@@ -295,7 +295,7 @@ def delete_map(
 
 Type annotations for `boto3.client("location").delete_place_index` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_place_index]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_place_index]
 
 ```python
 def delete_place_index(
@@ -309,7 +309,7 @@ def delete_place_index(
 
 Type annotations for `boto3.client("location").delete_tracker` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_tracker]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_tracker]
 
 ```python
 def delete_tracker(
@@ -323,7 +323,7 @@ def delete_tracker(
 
 Type annotations for `boto3.client("location").describe_geofence_collection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_geofence_collection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_geofence_collection]
 
 ```python
 def describe_geofence_collection(
@@ -337,7 +337,7 @@ def describe_geofence_collection(
 
 Type annotations for `boto3.client("location").describe_map` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_map]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_map]
 
 ```python
 def describe_map(
@@ -351,7 +351,7 @@ def describe_map(
 
 Type annotations for `boto3.client("location").describe_place_index` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_place_index]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_place_index]
 
 ```python
 def describe_place_index(
@@ -365,7 +365,7 @@ def describe_place_index(
 
 Type annotations for `boto3.client("location").describe_tracker` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_tracker]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_tracker]
 
 ```python
 def describe_tracker(
@@ -379,7 +379,7 @@ def describe_tracker(
 
 Type annotations for `boto3.client("location").disassociate_tracker_consumer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.disassociate_tracker_consumer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.disassociate_tracker_consumer]
 
 ```python
 def disassociate_tracker_consumer(
@@ -394,7 +394,7 @@ def disassociate_tracker_consumer(
 
 Type annotations for `boto3.client("location").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -411,7 +411,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("location").get_device_position` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_device_position]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_device_position]
 
 ```python
 def get_device_position(
@@ -426,7 +426,7 @@ def get_device_position(
 
 Type annotations for `boto3.client("location").get_device_position_history` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_device_position_history]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_device_position_history]
 
 ```python
 def get_device_position_history(
@@ -444,7 +444,7 @@ def get_device_position_history(
 
 Type annotations for `boto3.client("location").get_geofence` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_geofence]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_geofence]
 
 ```python
 def get_geofence(
@@ -459,7 +459,7 @@ def get_geofence(
 
 Type annotations for `boto3.client("location").get_map_glyphs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_glyphs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_glyphs]
 
 ```python
 def get_map_glyphs(
@@ -475,7 +475,7 @@ def get_map_glyphs(
 
 Type annotations for `boto3.client("location").get_map_sprites` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_sprites]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_sprites]
 
 ```python
 def get_map_sprites(
@@ -490,7 +490,7 @@ def get_map_sprites(
 
 Type annotations for `boto3.client("location").get_map_style_descriptor` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_style_descriptor]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_style_descriptor]
 
 ```python
 def get_map_style_descriptor(
@@ -504,7 +504,7 @@ def get_map_style_descriptor(
 
 Type annotations for `boto3.client("location").get_map_tile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_tile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_tile]
 
 ```python
 def get_map_tile(
@@ -521,7 +521,7 @@ def get_map_tile(
 
 Type annotations for `boto3.client("location").list_geofence_collections` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_geofence_collections]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_geofence_collections]
 
 ```python
 def list_geofence_collections(
@@ -536,7 +536,7 @@ def list_geofence_collections(
 
 Type annotations for `boto3.client("location").list_geofences` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_geofences]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_geofences]
 
 ```python
 def list_geofences(
@@ -551,7 +551,7 @@ def list_geofences(
 
 Type annotations for `boto3.client("location").list_maps` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_maps]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_maps]
 
 ```python
 def list_maps(
@@ -566,7 +566,7 @@ def list_maps(
 
 Type annotations for `boto3.client("location").list_place_indexes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_place_indexes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_place_indexes]
 
 ```python
 def list_place_indexes(
@@ -581,7 +581,7 @@ def list_place_indexes(
 
 Type annotations for `boto3.client("location").list_tracker_consumers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_tracker_consumers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_tracker_consumers]
 
 ```python
 def list_tracker_consumers(
@@ -597,7 +597,7 @@ def list_tracker_consumers(
 
 Type annotations for `boto3.client("location").list_trackers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_trackers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_trackers]
 
 ```python
 def list_trackers(
@@ -612,7 +612,7 @@ def list_trackers(
 
 Type annotations for `boto3.client("location").put_geofence` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.put_geofence]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.put_geofence]
 
 ```python
 def put_geofence(
@@ -628,7 +628,7 @@ def put_geofence(
 
 Type annotations for `boto3.client("location").search_place_index_for_position` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.search_place_index_for_position]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.search_place_index_for_position]
 
 ```python
 def search_place_index_for_position(
@@ -644,7 +644,7 @@ def search_place_index_for_position(
 
 Type annotations for `boto3.client("location").search_place_index_for_text` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.search_place_index_for_text]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.search_place_index_for_text]
 
 ```python
 def search_place_index_for_text(

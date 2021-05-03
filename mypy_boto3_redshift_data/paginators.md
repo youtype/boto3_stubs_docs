@@ -26,7 +26,7 @@ def get_describe_table_paginator() -> DescribeTablePaginator:
     return boto3.client("redshift-data").get_paginator("describe_table")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.DescribeTable)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.DescribeTable)
 
 ```python
 class DescribeTablePaginator(Boto3Paginator):
@@ -56,7 +56,7 @@ def get_get_statement_result_paginator() -> GetStatementResultPaginator:
     return boto3.client("redshift-data").get_paginator("get_statement_result")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.GetStatementResult)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.GetStatementResult)
 
 ```python
 class GetStatementResultPaginator(Boto3Paginator):
@@ -80,7 +80,7 @@ def get_list_databases_paginator() -> ListDatabasesPaginator:
     return boto3.client("redshift-data").get_paginator("list_databases")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListDatabases)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListDatabases)
 
 ```python
 class ListDatabasesPaginator(Boto3Paginator):
@@ -107,7 +107,7 @@ def get_list_schemas_paginator() -> ListSchemasPaginator:
     return boto3.client("redshift-data").get_paginator("list_schemas")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListSchemas)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListSchemas)
 
 ```python
 class ListSchemasPaginator(Boto3Paginator):
@@ -136,7 +136,7 @@ def get_list_statements_paginator() -> ListStatementsPaginator:
     return boto3.client("redshift-data").get_paginator("list_statements")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListStatements)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListStatements)
 
 ```python
 class ListStatementsPaginator(Boto3Paginator):
@@ -162,7 +162,7 @@ def get_list_tables_paginator() -> ListTablesPaginator:
     return boto3.client("redshift-data").get_paginator("list_tables")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListTables)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListTables)
 
 ```python
 class ListTablesPaginator(Boto3Paginator):

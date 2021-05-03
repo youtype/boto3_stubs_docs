@@ -25,7 +25,7 @@ def get_describe_endpoints_paginator() -> DescribeEndpointsPaginator:
     return boto3.client("mediaconvert").get_paginator("describe_endpoints")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.DescribeEndpoints)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.DescribeEndpoints)
 
 ```python
 class DescribeEndpointsPaginator(Boto3Paginator):
@@ -49,7 +49,7 @@ def get_list_job_templates_paginator() -> ListJobTemplatesPaginator:
     return boto3.client("mediaconvert").get_paginator("list_job_templates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobTemplates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobTemplates)
 
 ```python
 class ListJobTemplatesPaginator(Boto3Paginator):
@@ -75,7 +75,7 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("mediaconvert").get_paginator("list_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobs)
 
 ```python
 class ListJobsPaginator(Boto3Paginator):
@@ -101,7 +101,7 @@ def get_list_presets_paginator() -> ListPresetsPaginator:
     return boto3.client("mediaconvert").get_paginator("list_presets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListPresets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListPresets)
 
 ```python
 class ListPresetsPaginator(Boto3Paginator):
@@ -127,7 +127,7 @@ def get_list_queues_paginator() -> ListQueuesPaginator:
     return boto3.client("mediaconvert").get_paginator("list_queues")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListQueues)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListQueues)
 
 ```python
 class ListQueuesPaginator(Boto3Paginator):

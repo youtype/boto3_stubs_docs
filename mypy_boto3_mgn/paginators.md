@@ -24,7 +24,7 @@ def get_describe_job_log_items_paginator() -> DescribeJobLogItemsPaginator:
     return boto3.client("mgn").get_paginator("describe_job_log_items")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.DescribeJobLogItems)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.DescribeJobLogItems)
 
 ```python
 class DescribeJobLogItemsPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_describe_jobs_paginator() -> DescribeJobsPaginator:
     return boto3.client("mgn").get_paginator("describe_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.DescribeJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.DescribeJobs)
 
 ```python
 class DescribeJobsPaginator(Boto3Paginator):
@@ -72,7 +72,7 @@ def get_describe_replication_configuration_templates_paginator() -> DescribeRepl
     return boto3.client("mgn").get_paginator("describe_replication_configuration_templates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.DescribeReplicationConfigurationTemplates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.DescribeReplicationConfigurationTemplates)
 
 ```python
 class DescribeReplicationConfigurationTemplatesPaginator(Boto3Paginator):
@@ -96,7 +96,7 @@ def get_describe_source_servers_paginator() -> DescribeSourceServersPaginator:
     return boto3.client("mgn").get_paginator("describe_source_servers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.DescribeSourceServers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.DescribeSourceServers)
 
 ```python
 class DescribeSourceServersPaginator(Boto3Paginator):

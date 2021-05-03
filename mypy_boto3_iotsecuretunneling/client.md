@@ -32,7 +32,7 @@ def get_iotsecuretunneling_client() -> IoTSecureTunnelingClient:
     return boto3.client("iotsecuretunneling")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client)
 
 ## Exceptions
 
@@ -61,7 +61,7 @@ Exceptions:
 
 Type annotations for `boto3.client("iotsecuretunneling").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -75,7 +75,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("iotsecuretunneling").close_tunnel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.close_tunnel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.close_tunnel]
 
 ```python
 def close_tunnel(
@@ -90,7 +90,7 @@ def close_tunnel(
 
 Type annotations for `boto3.client("iotsecuretunneling").describe_tunnel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.describe_tunnel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.describe_tunnel]
 
 ```python
 def describe_tunnel(
@@ -104,7 +104,7 @@ def describe_tunnel(
 
 Type annotations for `boto3.client("iotsecuretunneling").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -121,7 +121,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("iotsecuretunneling").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -135,7 +135,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("iotsecuretunneling").list_tunnels` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.list_tunnels]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.list_tunnels]
 
 ```python
 def list_tunnels(
@@ -151,7 +151,7 @@ def list_tunnels(
 
 Type annotations for `boto3.client("iotsecuretunneling").open_tunnel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.open_tunnel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.open_tunnel]
 
 ```python
 def open_tunnel(
@@ -168,7 +168,7 @@ def open_tunnel(
 
 Type annotations for `boto3.client("iotsecuretunneling").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -183,7 +183,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("iotsecuretunneling").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.untag_resource]
 
 ```python
 def untag_resource(

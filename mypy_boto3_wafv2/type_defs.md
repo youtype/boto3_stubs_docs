@@ -134,7 +134,7 @@ from mypy_boto3_wafv2.type_defs import AndStatementTypeDef
 
 
 Required fields:
-- `Statements`: `List[Dict[str, Any]]`
+- `Statements`: `List["StatementTypeDef"]`
 
 
 
@@ -936,7 +936,7 @@ Required fields:
 
 Optional fields:
 - `ExcludedRules`: `List["ExcludedRuleTypeDef"]`
-- `ScopeDownStatement`: `Dict[str, Any]`
+- `ScopeDownStatement`: `"StatementTypeDef"`
 
 
 ## ManagedRuleGroupSummaryTypeDef
@@ -962,7 +962,7 @@ from mypy_boto3_wafv2.type_defs import NotStatementTypeDef
 
 
 Required fields:
-- `Statement`: `Dict[str, Any]`
+- `Statement`: `"StatementTypeDef"`
 
 
 
@@ -975,7 +975,7 @@ from mypy_boto3_wafv2.type_defs import OrStatementTypeDef
 
 
 Required fields:
-- `Statements`: `List[Dict[str, Any]]`
+- `Statements`: `List["StatementTypeDef"]`
 
 
 
@@ -1035,7 +1035,7 @@ Required fields:
 
 
 Optional fields:
-- `ScopeDownStatement`: `Dict[str, Any]`
+- `ScopeDownStatement`: `"StatementTypeDef"`
 - `ForwardedIPConfig`: `"ForwardedIPConfigTypeDef"`
 
 
@@ -1198,7 +1198,7 @@ from mypy_boto3_wafv2.type_defs import RuleTypeDef
 Required fields:
 - `Name`: `str`
 - `Priority`: `int`
-- `Statement`: `Dict[str, Any]`
+- `Statement`: `"StatementTypeDef"`
 - `VisibilityConfig`: `"VisibilityConfigTypeDef"`
 
 

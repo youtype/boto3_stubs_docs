@@ -25,7 +25,7 @@ def get_list_channels_paginator() -> ListChannelsPaginator:
     return boto3.client("ivs").get_paginator("list_channels")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Paginator.ListChannels)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Paginator.ListChannels)
 
 ```python
 class ListChannelsPaginator(Boto3Paginator):
@@ -50,7 +50,7 @@ def get_list_playback_key_pairs_paginator() -> ListPlaybackKeyPairsPaginator:
     return boto3.client("ivs").get_paginator("list_playback_key_pairs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Paginator.ListPlaybackKeyPairs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Paginator.ListPlaybackKeyPairs)
 
 ```python
 class ListPlaybackKeyPairsPaginator(Boto3Paginator):
@@ -73,7 +73,7 @@ def get_list_recording_configurations_paginator() -> ListRecordingConfigurations
     return boto3.client("ivs").get_paginator("list_recording_configurations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Paginator.ListRecordingConfigurations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Paginator.ListRecordingConfigurations)
 
 ```python
 class ListRecordingConfigurationsPaginator(Boto3Paginator):
@@ -96,7 +96,7 @@ def get_list_stream_keys_paginator() -> ListStreamKeysPaginator:
     return boto3.client("ivs").get_paginator("list_stream_keys")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Paginator.ListStreamKeys)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Paginator.ListStreamKeys)
 
 ```python
 class ListStreamKeysPaginator(Boto3Paginator):
@@ -120,7 +120,7 @@ def get_list_streams_paginator() -> ListStreamsPaginator:
     return boto3.client("ivs").get_paginator("list_streams")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Paginator.ListStreams)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Paginator.ListStreams)
 
 ```python
 class ListStreamsPaginator(Boto3Paginator):

@@ -22,7 +22,7 @@ def get_list_account_roles_paginator() -> ListAccountRolesPaginator:
     return boto3.client("sso").get_paginator("list_account_roles")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Paginator.ListAccountRoles)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Paginator.ListAccountRoles)
 
 ```python
 class ListAccountRolesPaginator(Boto3Paginator):
@@ -47,7 +47,7 @@ def get_list_accounts_paginator() -> ListAccountsPaginator:
     return boto3.client("sso").get_paginator("list_accounts")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Paginator.ListAccounts)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Paginator.ListAccounts)
 
 ```python
 class ListAccountsPaginator(Boto3Paginator):

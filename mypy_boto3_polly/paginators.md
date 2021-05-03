@@ -23,7 +23,7 @@ def get_describe_voices_paginator() -> DescribeVoicesPaginator:
     return boto3.client("polly").get_paginator("describe_voices")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Paginator.DescribeVoices)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Paginator.DescribeVoices)
 
 ```python
 class DescribeVoicesPaginator(Boto3Paginator):
@@ -49,7 +49,7 @@ def get_list_lexicons_paginator() -> ListLexiconsPaginator:
     return boto3.client("polly").get_paginator("list_lexicons")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Paginator.ListLexicons)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Paginator.ListLexicons)
 
 ```python
 class ListLexiconsPaginator(Boto3Paginator):
@@ -72,7 +72,7 @@ def get_list_speech_synthesis_tasks_paginator() -> ListSpeechSynthesisTasksPagin
     return boto3.client("polly").get_paginator("list_speech_synthesis_tasks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Paginator.ListSpeechSynthesisTasks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Paginator.ListSpeechSynthesisTasks)
 
 ```python
 class ListSpeechSynthesisTasksPaginator(Boto3Paginator):

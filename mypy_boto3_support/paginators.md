@@ -22,7 +22,7 @@ def get_describe_cases_paginator() -> DescribeCasesPaginator:
     return boto3.client("support").get_paginator("describe_cases")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Paginator.DescribeCases)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Paginator.DescribeCases)
 
 ```python
 class DescribeCasesPaginator(Boto3Paginator):
@@ -52,7 +52,7 @@ def get_describe_communications_paginator() -> DescribeCommunicationsPaginator:
     return boto3.client("support").get_paginator("describe_communications")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Paginator.DescribeCommunications)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Paginator.DescribeCommunications)
 
 ```python
 class DescribeCommunicationsPaginator(Boto3Paginator):

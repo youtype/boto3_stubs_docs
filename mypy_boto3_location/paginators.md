@@ -27,7 +27,7 @@ def get_get_device_position_history_paginator() -> GetDevicePositionHistoryPagin
     return boto3.client("location").get_paginator("get_device_position_history")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.GetDevicePositionHistory)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.GetDevicePositionHistory)
 
 ```python
 class GetDevicePositionHistoryPaginator(Boto3Paginator):
@@ -54,7 +54,7 @@ def get_list_geofence_collections_paginator() -> ListGeofenceCollectionsPaginato
     return boto3.client("location").get_paginator("list_geofence_collections")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListGeofenceCollections)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListGeofenceCollections)
 
 ```python
 class ListGeofenceCollectionsPaginator(Boto3Paginator):
@@ -77,7 +77,7 @@ def get_list_geofences_paginator() -> ListGeofencesPaginator:
     return boto3.client("location").get_paginator("list_geofences")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListGeofences)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListGeofences)
 
 ```python
 class ListGeofencesPaginator(Boto3Paginator):
@@ -101,7 +101,7 @@ def get_list_maps_paginator() -> ListMapsPaginator:
     return boto3.client("location").get_paginator("list_maps")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListMaps)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListMaps)
 
 ```python
 class ListMapsPaginator(Boto3Paginator):
@@ -124,7 +124,7 @@ def get_list_place_indexes_paginator() -> ListPlaceIndexesPaginator:
     return boto3.client("location").get_paginator("list_place_indexes")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListPlaceIndexes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListPlaceIndexes)
 
 ```python
 class ListPlaceIndexesPaginator(Boto3Paginator):
@@ -147,7 +147,7 @@ def get_list_tracker_consumers_paginator() -> ListTrackerConsumersPaginator:
     return boto3.client("location").get_paginator("list_tracker_consumers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListTrackerConsumers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListTrackerConsumers)
 
 ```python
 class ListTrackerConsumersPaginator(Boto3Paginator):
@@ -171,7 +171,7 @@ def get_list_trackers_paginator() -> ListTrackersPaginator:
     return boto3.client("location").get_paginator("list_trackers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListTrackers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListTrackers)
 
 ```python
 class ListTrackersPaginator(Boto3Paginator):

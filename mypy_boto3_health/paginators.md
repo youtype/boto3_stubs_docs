@@ -27,7 +27,7 @@ def get_describe_affected_accounts_for_organization_paginator() -> DescribeAffec
     return boto3.client("health").get_paginator("describe_affected_accounts_for_organization")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedAccountsForOrganization)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedAccountsForOrganization)
 
 ```python
 class DescribeAffectedAccountsForOrganizationPaginator(Boto3Paginator):
@@ -51,7 +51,7 @@ def get_describe_affected_entities_paginator() -> DescribeAffectedEntitiesPagina
     return boto3.client("health").get_paginator("describe_affected_entities")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedEntities)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedEntities)
 
 ```python
 class DescribeAffectedEntitiesPaginator(Boto3Paginator):
@@ -76,7 +76,7 @@ def get_describe_affected_entities_for_organization_paginator() -> DescribeAffec
     return boto3.client("health").get_paginator("describe_affected_entities_for_organization")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedEntitiesForOrganization)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedEntitiesForOrganization)
 
 ```python
 class DescribeAffectedEntitiesForOrganizationPaginator(Boto3Paginator):
@@ -101,7 +101,7 @@ def get_describe_event_aggregates_paginator() -> DescribeEventAggregatesPaginato
     return boto3.client("health").get_paginator("describe_event_aggregates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventAggregates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventAggregates)
 
 ```python
 class DescribeEventAggregatesPaginator(Boto3Paginator):
@@ -126,7 +126,7 @@ def get_describe_event_types_paginator() -> DescribeEventTypesPaginator:
     return boto3.client("health").get_paginator("describe_event_types")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventTypes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventTypes)
 
 ```python
 class DescribeEventTypesPaginator(Boto3Paginator):
@@ -151,7 +151,7 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return boto3.client("health").get_paginator("describe_events")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEvents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEvents)
 
 ```python
 class DescribeEventsPaginator(Boto3Paginator):
@@ -176,7 +176,7 @@ def get_describe_events_for_organization_paginator() -> DescribeEventsForOrganiz
     return boto3.client("health").get_paginator("describe_events_for_organization")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventsForOrganization)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventsForOrganization)
 
 ```python
 class DescribeEventsForOrganizationPaginator(Boto3Paginator):

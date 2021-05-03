@@ -38,7 +38,7 @@ def get_iotdeviceadvisor_client() -> IoTDeviceAdvisorClient:
     return boto3.client("iotdeviceadvisor")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client)
 
 ## Exceptions
 
@@ -69,7 +69,7 @@ Exceptions:
 
 Type annotations for `boto3.client("iotdeviceadvisor").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -83,7 +83,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("iotdeviceadvisor").create_suite_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.create_suite_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.create_suite_definition]
 
 ```python
 def create_suite_definition(
@@ -98,7 +98,7 @@ def create_suite_definition(
 
 Type annotations for `boto3.client("iotdeviceadvisor").delete_suite_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.delete_suite_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.delete_suite_definition]
 
 ```python
 def delete_suite_definition(
@@ -112,7 +112,7 @@ def delete_suite_definition(
 
 Type annotations for `boto3.client("iotdeviceadvisor").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -129,7 +129,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("iotdeviceadvisor").get_suite_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_definition]
 
 ```python
 def get_suite_definition(
@@ -144,7 +144,7 @@ def get_suite_definition(
 
 Type annotations for `boto3.client("iotdeviceadvisor").get_suite_run` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_run]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_run]
 
 ```python
 def get_suite_run(
@@ -159,7 +159,7 @@ def get_suite_run(
 
 Type annotations for `boto3.client("iotdeviceadvisor").get_suite_run_report` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_run_report]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_run_report]
 
 ```python
 def get_suite_run_report(
@@ -174,7 +174,7 @@ def get_suite_run_report(
 
 Type annotations for `boto3.client("iotdeviceadvisor").list_suite_definitions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_suite_definitions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_suite_definitions]
 
 ```python
 def list_suite_definitions(
@@ -189,7 +189,7 @@ def list_suite_definitions(
 
 Type annotations for `boto3.client("iotdeviceadvisor").list_suite_runs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_suite_runs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_suite_runs]
 
 ```python
 def list_suite_runs(
@@ -206,7 +206,7 @@ def list_suite_runs(
 
 Type annotations for `boto3.client("iotdeviceadvisor").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -220,7 +220,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("iotdeviceadvisor").list_test_cases` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_test_cases]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_test_cases]
 
 ```python
 def list_test_cases(
@@ -236,7 +236,7 @@ def list_test_cases(
 
 Type annotations for `boto3.client("iotdeviceadvisor").start_suite_run` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.start_suite_run]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.start_suite_run]
 
 ```python
 def start_suite_run(
@@ -253,7 +253,7 @@ def start_suite_run(
 
 Type annotations for `boto3.client("iotdeviceadvisor").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -268,7 +268,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("iotdeviceadvisor").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -283,7 +283,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("iotdeviceadvisor").update_suite_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.update_suite_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.update_suite_definition]
 
 ```python
 def update_suite_definition(

@@ -27,7 +27,7 @@ def get_pi_client() -> PIClient:
     return boto3.client("pi")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client)
 
 ## Exceptions
 
@@ -57,7 +57,7 @@ Exceptions:
 
 Type annotations for `boto3.client("pi").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -71,7 +71,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("pi").describe_dimension_keys` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.describe_dimension_keys]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.describe_dimension_keys]
 
 ```python
 def describe_dimension_keys(
@@ -95,7 +95,7 @@ def describe_dimension_keys(
 
 Type annotations for `boto3.client("pi").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -112,7 +112,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("pi").get_resource_metrics` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_resource_metrics]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_resource_metrics]
 
 ```python
 def get_resource_metrics(

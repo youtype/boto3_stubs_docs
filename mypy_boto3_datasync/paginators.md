@@ -25,7 +25,7 @@ def get_list_agents_paginator() -> ListAgentsPaginator:
     return boto3.client("datasync").get_paginator("list_agents")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListAgents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListAgents)
 
 ```python
 class ListAgentsPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_list_locations_paginator() -> ListLocationsPaginator:
     return boto3.client("datasync").get_paginator("list_locations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListLocations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListLocations)
 
 ```python
 class ListLocationsPaginator(Boto3Paginator):
@@ -72,7 +72,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("datasync").get_paginator("list_tags_for_resource")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTagsForResource)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):
@@ -96,7 +96,7 @@ def get_list_task_executions_paginator() -> ListTaskExecutionsPaginator:
     return boto3.client("datasync").get_paginator("list_task_executions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTaskExecutions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTaskExecutions)
 
 ```python
 class ListTaskExecutionsPaginator(Boto3Paginator):
@@ -120,7 +120,7 @@ def get_list_tasks_paginator() -> ListTasksPaginator:
     return boto3.client("datasync").get_paginator("list_tasks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTasks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTasks)
 
 ```python
 class ListTasksPaginator(Boto3Paginator):

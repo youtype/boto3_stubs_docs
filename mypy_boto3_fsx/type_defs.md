@@ -96,7 +96,7 @@ Optional fields:
 - `ProgressPercent`: `int`
 - `RequestTime`: `datetime`
 - `Status`: `Status`
-- `TargetFileSystemValues`: `Dict[str, Any]`
+- `TargetFileSystemValues`: `"FileSystemTypeDef"`
 - `FailureDetails`: `"AdministrativeActionFailureDetailsTypeDef"`
 
 
@@ -152,7 +152,7 @@ Required fields:
 - `Lifecycle`: `BackupLifecycle`
 - `Type`: `BackupType`
 - `CreationTime`: `datetime`
-- `FileSystem`: `Dict[str, Any]`
+- `FileSystem`: `"FileSystemTypeDef"`
 
 
 
@@ -249,7 +249,7 @@ from mypy_boto3_fsx.type_defs import CreateFileSystemFromBackupResponseTypeDef
 
 
 Optional fields:
-- `FileSystem`: `Dict[str, Any]`
+- `FileSystem`: `"FileSystemTypeDef"`
 
 
 ## CreateFileSystemLustreConfigurationTypeDef
@@ -285,7 +285,7 @@ from mypy_boto3_fsx.type_defs import CreateFileSystemResponseTypeDef
 
 
 Optional fields:
-- `FileSystem`: `Dict[str, Any]`
+- `FileSystem`: `"FileSystemTypeDef"`
 
 
 ## CreateFileSystemWindowsConfigurationTypeDef
@@ -551,7 +551,7 @@ from mypy_boto3_fsx.type_defs import DescribeFileSystemsResponseTypeDef
 
 
 Optional fields:
-- `FileSystems`: `List[Dict[str, Any]]`
+- `FileSystems`: `List["FileSystemTypeDef"]`
 - `NextToken`: `str`
 
 
@@ -767,7 +767,7 @@ from mypy_boto3_fsx.type_defs import UpdateFileSystemResponseTypeDef
 
 
 Optional fields:
-- `FileSystem`: `Dict[str, Any]`
+- `FileSystem`: `"FileSystemTypeDef"`
 
 
 ## UpdateFileSystemWindowsConfigurationTypeDef

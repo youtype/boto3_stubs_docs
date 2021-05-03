@@ -34,7 +34,7 @@ def get_savingsplans_client() -> SavingsPlansClient:
     return boto3.client("savingsplans")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client)
 
 ## Exceptions
 
@@ -65,7 +65,7 @@ Exceptions:
 
 Type annotations for `boto3.client("savingsplans").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -79,7 +79,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("savingsplans").create_savings_plan` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.create_savings_plan]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.create_savings_plan]
 
 ```python
 def create_savings_plan(
@@ -98,7 +98,7 @@ def create_savings_plan(
 
 Type annotations for `boto3.client("savingsplans").delete_queued_savings_plan` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.delete_queued_savings_plan]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.delete_queued_savings_plan]
 
 ```python
 def delete_queued_savings_plan(
@@ -112,7 +112,7 @@ def delete_queued_savings_plan(
 
 Type annotations for `boto3.client("savingsplans").describe_savings_plan_rates` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plan_rates]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plan_rates]
 
 ```python
 def describe_savings_plan_rates(
@@ -129,7 +129,7 @@ def describe_savings_plan_rates(
 
 Type annotations for `boto3.client("savingsplans").describe_savings_plans` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans]
 
 ```python
 def describe_savings_plans(
@@ -148,7 +148,7 @@ def describe_savings_plans(
 
 Type annotations for `boto3.client("savingsplans").describe_savings_plans_offering_rates` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offering_rates]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offering_rates]
 
 ```python
 def describe_savings_plans_offering_rates(
@@ -171,7 +171,7 @@ def describe_savings_plans_offering_rates(
 
 Type annotations for `boto3.client("savingsplans").describe_savings_plans_offerings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offerings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offerings]
 
 ```python
 def describe_savings_plans_offerings(
@@ -197,7 +197,7 @@ def describe_savings_plans_offerings(
 
 Type annotations for `boto3.client("savingsplans").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -214,7 +214,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("savingsplans").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -228,7 +228,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("savingsplans").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -243,7 +243,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("savingsplans").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.untag_resource]
 
 ```python
 def untag_resource(

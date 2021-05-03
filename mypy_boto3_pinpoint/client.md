@@ -137,7 +137,7 @@ def get_pinpoint_client() -> PinpointClient:
     return boto3.client("pinpoint")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client)
 
 ## Exceptions
 
@@ -172,7 +172,7 @@ Exceptions:
 
 Type annotations for `boto3.client("pinpoint").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -186,7 +186,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("pinpoint").create_app` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_app]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_app]
 
 ```python
 def create_app(
@@ -200,7 +200,7 @@ def create_app(
 
 Type annotations for `boto3.client("pinpoint").create_campaign` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_campaign]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_campaign]
 
 ```python
 def create_campaign(
@@ -215,7 +215,7 @@ def create_campaign(
 
 Type annotations for `boto3.client("pinpoint").create_email_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_email_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_email_template]
 
 ```python
 def create_email_template(
@@ -230,7 +230,7 @@ def create_email_template(
 
 Type annotations for `boto3.client("pinpoint").create_export_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_export_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_export_job]
 
 ```python
 def create_export_job(
@@ -245,7 +245,7 @@ def create_export_job(
 
 Type annotations for `boto3.client("pinpoint").create_import_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_import_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_import_job]
 
 ```python
 def create_import_job(
@@ -260,7 +260,7 @@ def create_import_job(
 
 Type annotations for `boto3.client("pinpoint").create_journey` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_journey]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_journey]
 
 ```python
 def create_journey(
@@ -275,7 +275,7 @@ def create_journey(
 
 Type annotations for `boto3.client("pinpoint").create_push_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_push_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_push_template]
 
 ```python
 def create_push_template(
@@ -290,7 +290,7 @@ def create_push_template(
 
 Type annotations for `boto3.client("pinpoint").create_recommender_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_recommender_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_recommender_configuration]
 
 ```python
 def create_recommender_configuration(
@@ -304,7 +304,7 @@ def create_recommender_configuration(
 
 Type annotations for `boto3.client("pinpoint").create_segment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_segment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_segment]
 
 ```python
 def create_segment(
@@ -319,7 +319,7 @@ def create_segment(
 
 Type annotations for `boto3.client("pinpoint").create_sms_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_sms_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_sms_template]
 
 ```python
 def create_sms_template(
@@ -334,7 +334,7 @@ def create_sms_template(
 
 Type annotations for `boto3.client("pinpoint").create_voice_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_voice_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_voice_template]
 
 ```python
 def create_voice_template(
@@ -349,7 +349,7 @@ def create_voice_template(
 
 Type annotations for `boto3.client("pinpoint").delete_adm_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_adm_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_adm_channel]
 
 ```python
 def delete_adm_channel(
@@ -363,7 +363,7 @@ def delete_adm_channel(
 
 Type annotations for `boto3.client("pinpoint").delete_apns_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_channel]
 
 ```python
 def delete_apns_channel(
@@ -377,7 +377,7 @@ def delete_apns_channel(
 
 Type annotations for `boto3.client("pinpoint").delete_apns_sandbox_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_sandbox_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_sandbox_channel]
 
 ```python
 def delete_apns_sandbox_channel(
@@ -391,7 +391,7 @@ def delete_apns_sandbox_channel(
 
 Type annotations for `boto3.client("pinpoint").delete_apns_voip_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_channel]
 
 ```python
 def delete_apns_voip_channel(
@@ -405,7 +405,7 @@ def delete_apns_voip_channel(
 
 Type annotations for `boto3.client("pinpoint").delete_apns_voip_sandbox_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_sandbox_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_sandbox_channel]
 
 ```python
 def delete_apns_voip_sandbox_channel(
@@ -419,7 +419,7 @@ def delete_apns_voip_sandbox_channel(
 
 Type annotations for `boto3.client("pinpoint").delete_app` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_app]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_app]
 
 ```python
 def delete_app(
@@ -433,7 +433,7 @@ def delete_app(
 
 Type annotations for `boto3.client("pinpoint").delete_baidu_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_baidu_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_baidu_channel]
 
 ```python
 def delete_baidu_channel(
@@ -447,7 +447,7 @@ def delete_baidu_channel(
 
 Type annotations for `boto3.client("pinpoint").delete_campaign` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_campaign]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_campaign]
 
 ```python
 def delete_campaign(
@@ -462,7 +462,7 @@ def delete_campaign(
 
 Type annotations for `boto3.client("pinpoint").delete_email_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_email_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_email_channel]
 
 ```python
 def delete_email_channel(
@@ -476,7 +476,7 @@ def delete_email_channel(
 
 Type annotations for `boto3.client("pinpoint").delete_email_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_email_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_email_template]
 
 ```python
 def delete_email_template(
@@ -491,7 +491,7 @@ def delete_email_template(
 
 Type annotations for `boto3.client("pinpoint").delete_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_endpoint]
 
 ```python
 def delete_endpoint(
@@ -506,7 +506,7 @@ def delete_endpoint(
 
 Type annotations for `boto3.client("pinpoint").delete_event_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_event_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_event_stream]
 
 ```python
 def delete_event_stream(
@@ -520,7 +520,7 @@ def delete_event_stream(
 
 Type annotations for `boto3.client("pinpoint").delete_gcm_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_gcm_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_gcm_channel]
 
 ```python
 def delete_gcm_channel(
@@ -534,7 +534,7 @@ def delete_gcm_channel(
 
 Type annotations for `boto3.client("pinpoint").delete_journey` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_journey]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_journey]
 
 ```python
 def delete_journey(
@@ -549,7 +549,7 @@ def delete_journey(
 
 Type annotations for `boto3.client("pinpoint").delete_push_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_push_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_push_template]
 
 ```python
 def delete_push_template(
@@ -564,7 +564,7 @@ def delete_push_template(
 
 Type annotations for `boto3.client("pinpoint").delete_recommender_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_recommender_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_recommender_configuration]
 
 ```python
 def delete_recommender_configuration(
@@ -578,7 +578,7 @@ def delete_recommender_configuration(
 
 Type annotations for `boto3.client("pinpoint").delete_segment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_segment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_segment]
 
 ```python
 def delete_segment(
@@ -593,7 +593,7 @@ def delete_segment(
 
 Type annotations for `boto3.client("pinpoint").delete_sms_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_channel]
 
 ```python
 def delete_sms_channel(
@@ -607,7 +607,7 @@ def delete_sms_channel(
 
 Type annotations for `boto3.client("pinpoint").delete_sms_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_template]
 
 ```python
 def delete_sms_template(
@@ -622,7 +622,7 @@ def delete_sms_template(
 
 Type annotations for `boto3.client("pinpoint").delete_user_endpoints` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_user_endpoints]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_user_endpoints]
 
 ```python
 def delete_user_endpoints(
@@ -637,7 +637,7 @@ def delete_user_endpoints(
 
 Type annotations for `boto3.client("pinpoint").delete_voice_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_channel]
 
 ```python
 def delete_voice_channel(
@@ -651,7 +651,7 @@ def delete_voice_channel(
 
 Type annotations for `boto3.client("pinpoint").delete_voice_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_template]
 
 ```python
 def delete_voice_template(
@@ -666,7 +666,7 @@ def delete_voice_template(
 
 Type annotations for `boto3.client("pinpoint").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -683,7 +683,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("pinpoint").get_adm_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_adm_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_adm_channel]
 
 ```python
 def get_adm_channel(
@@ -697,7 +697,7 @@ def get_adm_channel(
 
 Type annotations for `boto3.client("pinpoint").get_apns_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_channel]
 
 ```python
 def get_apns_channel(
@@ -711,7 +711,7 @@ def get_apns_channel(
 
 Type annotations for `boto3.client("pinpoint").get_apns_sandbox_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_sandbox_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_sandbox_channel]
 
 ```python
 def get_apns_sandbox_channel(
@@ -725,7 +725,7 @@ def get_apns_sandbox_channel(
 
 Type annotations for `boto3.client("pinpoint").get_apns_voip_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_channel]
 
 ```python
 def get_apns_voip_channel(
@@ -739,7 +739,7 @@ def get_apns_voip_channel(
 
 Type annotations for `boto3.client("pinpoint").get_apns_voip_sandbox_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_sandbox_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_sandbox_channel]
 
 ```python
 def get_apns_voip_sandbox_channel(
@@ -753,7 +753,7 @@ def get_apns_voip_sandbox_channel(
 
 Type annotations for `boto3.client("pinpoint").get_app` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_app]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_app]
 
 ```python
 def get_app(
@@ -767,7 +767,7 @@ def get_app(
 
 Type annotations for `boto3.client("pinpoint").get_application_date_range_kpi` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_application_date_range_kpi]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_application_date_range_kpi]
 
 ```python
 def get_application_date_range_kpi(
@@ -786,7 +786,7 @@ def get_application_date_range_kpi(
 
 Type annotations for `boto3.client("pinpoint").get_application_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_application_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_application_settings]
 
 ```python
 def get_application_settings(
@@ -800,7 +800,7 @@ def get_application_settings(
 
 Type annotations for `boto3.client("pinpoint").get_apps` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apps]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apps]
 
 ```python
 def get_apps(
@@ -815,7 +815,7 @@ def get_apps(
 
 Type annotations for `boto3.client("pinpoint").get_baidu_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_baidu_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_baidu_channel]
 
 ```python
 def get_baidu_channel(
@@ -829,7 +829,7 @@ def get_baidu_channel(
 
 Type annotations for `boto3.client("pinpoint").get_campaign` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign]
 
 ```python
 def get_campaign(
@@ -844,7 +844,7 @@ def get_campaign(
 
 Type annotations for `boto3.client("pinpoint").get_campaign_activities` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_activities]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_activities]
 
 ```python
 def get_campaign_activities(
@@ -861,7 +861,7 @@ def get_campaign_activities(
 
 Type annotations for `boto3.client("pinpoint").get_campaign_date_range_kpi` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_date_range_kpi]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_date_range_kpi]
 
 ```python
 def get_campaign_date_range_kpi(
@@ -881,7 +881,7 @@ def get_campaign_date_range_kpi(
 
 Type annotations for `boto3.client("pinpoint").get_campaign_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_version]
 
 ```python
 def get_campaign_version(
@@ -897,7 +897,7 @@ def get_campaign_version(
 
 Type annotations for `boto3.client("pinpoint").get_campaign_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_versions]
 
 ```python
 def get_campaign_versions(
@@ -914,7 +914,7 @@ def get_campaign_versions(
 
 Type annotations for `boto3.client("pinpoint").get_campaigns` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaigns]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaigns]
 
 ```python
 def get_campaigns(
@@ -930,7 +930,7 @@ def get_campaigns(
 
 Type annotations for `boto3.client("pinpoint").get_channels` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_channels]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_channels]
 
 ```python
 def get_channels(
@@ -944,7 +944,7 @@ def get_channels(
 
 Type annotations for `boto3.client("pinpoint").get_email_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_email_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_email_channel]
 
 ```python
 def get_email_channel(
@@ -958,7 +958,7 @@ def get_email_channel(
 
 Type annotations for `boto3.client("pinpoint").get_email_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_email_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_email_template]
 
 ```python
 def get_email_template(
@@ -973,7 +973,7 @@ def get_email_template(
 
 Type annotations for `boto3.client("pinpoint").get_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_endpoint]
 
 ```python
 def get_endpoint(
@@ -988,7 +988,7 @@ def get_endpoint(
 
 Type annotations for `boto3.client("pinpoint").get_event_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_event_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_event_stream]
 
 ```python
 def get_event_stream(
@@ -1002,7 +1002,7 @@ def get_event_stream(
 
 Type annotations for `boto3.client("pinpoint").get_export_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_export_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_export_job]
 
 ```python
 def get_export_job(
@@ -1017,7 +1017,7 @@ def get_export_job(
 
 Type annotations for `boto3.client("pinpoint").get_export_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_export_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_export_jobs]
 
 ```python
 def get_export_jobs(
@@ -1033,7 +1033,7 @@ def get_export_jobs(
 
 Type annotations for `boto3.client("pinpoint").get_gcm_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_gcm_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_gcm_channel]
 
 ```python
 def get_gcm_channel(
@@ -1047,7 +1047,7 @@ def get_gcm_channel(
 
 Type annotations for `boto3.client("pinpoint").get_import_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_import_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_import_job]
 
 ```python
 def get_import_job(
@@ -1062,7 +1062,7 @@ def get_import_job(
 
 Type annotations for `boto3.client("pinpoint").get_import_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_import_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_import_jobs]
 
 ```python
 def get_import_jobs(
@@ -1078,7 +1078,7 @@ def get_import_jobs(
 
 Type annotations for `boto3.client("pinpoint").get_journey` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey]
 
 ```python
 def get_journey(
@@ -1093,7 +1093,7 @@ def get_journey(
 
 Type annotations for `boto3.client("pinpoint").get_journey_date_range_kpi` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_date_range_kpi]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_date_range_kpi]
 
 ```python
 def get_journey_date_range_kpi(
@@ -1113,7 +1113,7 @@ def get_journey_date_range_kpi(
 
 Type annotations for `boto3.client("pinpoint").get_journey_execution_activity_metrics` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_activity_metrics]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_activity_metrics]
 
 ```python
 def get_journey_execution_activity_metrics(
@@ -1131,7 +1131,7 @@ def get_journey_execution_activity_metrics(
 
 Type annotations for `boto3.client("pinpoint").get_journey_execution_metrics` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_metrics]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_metrics]
 
 ```python
 def get_journey_execution_metrics(
@@ -1148,7 +1148,7 @@ def get_journey_execution_metrics(
 
 Type annotations for `boto3.client("pinpoint").get_push_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_push_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_push_template]
 
 ```python
 def get_push_template(
@@ -1163,7 +1163,7 @@ def get_push_template(
 
 Type annotations for `boto3.client("pinpoint").get_recommender_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configuration]
 
 ```python
 def get_recommender_configuration(
@@ -1177,7 +1177,7 @@ def get_recommender_configuration(
 
 Type annotations for `boto3.client("pinpoint").get_recommender_configurations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configurations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configurations]
 
 ```python
 def get_recommender_configurations(
@@ -1192,7 +1192,7 @@ def get_recommender_configurations(
 
 Type annotations for `boto3.client("pinpoint").get_segment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment]
 
 ```python
 def get_segment(
@@ -1207,7 +1207,7 @@ def get_segment(
 
 Type annotations for `boto3.client("pinpoint").get_segment_export_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_export_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_export_jobs]
 
 ```python
 def get_segment_export_jobs(
@@ -1224,7 +1224,7 @@ def get_segment_export_jobs(
 
 Type annotations for `boto3.client("pinpoint").get_segment_import_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_import_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_import_jobs]
 
 ```python
 def get_segment_import_jobs(
@@ -1241,7 +1241,7 @@ def get_segment_import_jobs(
 
 Type annotations for `boto3.client("pinpoint").get_segment_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_version]
 
 ```python
 def get_segment_version(
@@ -1257,7 +1257,7 @@ def get_segment_version(
 
 Type annotations for `boto3.client("pinpoint").get_segment_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_versions]
 
 ```python
 def get_segment_versions(
@@ -1274,7 +1274,7 @@ def get_segment_versions(
 
 Type annotations for `boto3.client("pinpoint").get_segments` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segments]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segments]
 
 ```python
 def get_segments(
@@ -1290,7 +1290,7 @@ def get_segments(
 
 Type annotations for `boto3.client("pinpoint").get_sms_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_sms_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_sms_channel]
 
 ```python
 def get_sms_channel(
@@ -1304,7 +1304,7 @@ def get_sms_channel(
 
 Type annotations for `boto3.client("pinpoint").get_sms_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_sms_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_sms_template]
 
 ```python
 def get_sms_template(
@@ -1319,7 +1319,7 @@ def get_sms_template(
 
 Type annotations for `boto3.client("pinpoint").get_user_endpoints` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_user_endpoints]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_user_endpoints]
 
 ```python
 def get_user_endpoints(
@@ -1334,7 +1334,7 @@ def get_user_endpoints(
 
 Type annotations for `boto3.client("pinpoint").get_voice_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_voice_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_voice_channel]
 
 ```python
 def get_voice_channel(
@@ -1348,7 +1348,7 @@ def get_voice_channel(
 
 Type annotations for `boto3.client("pinpoint").get_voice_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_voice_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_voice_template]
 
 ```python
 def get_voice_template(
@@ -1363,7 +1363,7 @@ def get_voice_template(
 
 Type annotations for `boto3.client("pinpoint").list_journeys` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_journeys]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_journeys]
 
 ```python
 def list_journeys(
@@ -1379,7 +1379,7 @@ def list_journeys(
 
 Type annotations for `boto3.client("pinpoint").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -1393,7 +1393,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("pinpoint").list_template_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_template_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_template_versions]
 
 ```python
 def list_template_versions(
@@ -1410,7 +1410,7 @@ def list_template_versions(
 
 Type annotations for `boto3.client("pinpoint").list_templates` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_templates]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_templates]
 
 ```python
 def list_templates(
@@ -1427,7 +1427,7 @@ def list_templates(
 
 Type annotations for `boto3.client("pinpoint").phone_number_validate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.phone_number_validate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.phone_number_validate]
 
 ```python
 def phone_number_validate(
@@ -1441,7 +1441,7 @@ def phone_number_validate(
 
 Type annotations for `boto3.client("pinpoint").put_event_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.put_event_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.put_event_stream]
 
 ```python
 def put_event_stream(
@@ -1456,7 +1456,7 @@ def put_event_stream(
 
 Type annotations for `boto3.client("pinpoint").put_events` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.put_events]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.put_events]
 
 ```python
 def put_events(
@@ -1471,7 +1471,7 @@ def put_events(
 
 Type annotations for `boto3.client("pinpoint").remove_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.remove_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.remove_attributes]
 
 ```python
 def remove_attributes(
@@ -1487,7 +1487,7 @@ def remove_attributes(
 
 Type annotations for `boto3.client("pinpoint").send_messages` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.send_messages]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.send_messages]
 
 ```python
 def send_messages(
@@ -1502,7 +1502,7 @@ def send_messages(
 
 Type annotations for `boto3.client("pinpoint").send_users_messages` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.send_users_messages]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.send_users_messages]
 
 ```python
 def send_users_messages(
@@ -1517,7 +1517,7 @@ def send_users_messages(
 
 Type annotations for `boto3.client("pinpoint").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -1532,7 +1532,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("pinpoint").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -1547,7 +1547,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("pinpoint").update_adm_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_adm_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_adm_channel]
 
 ```python
 def update_adm_channel(
@@ -1562,7 +1562,7 @@ def update_adm_channel(
 
 Type annotations for `boto3.client("pinpoint").update_apns_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_channel]
 
 ```python
 def update_apns_channel(
@@ -1577,7 +1577,7 @@ def update_apns_channel(
 
 Type annotations for `boto3.client("pinpoint").update_apns_sandbox_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_sandbox_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_sandbox_channel]
 
 ```python
 def update_apns_sandbox_channel(
@@ -1592,7 +1592,7 @@ def update_apns_sandbox_channel(
 
 Type annotations for `boto3.client("pinpoint").update_apns_voip_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_channel]
 
 ```python
 def update_apns_voip_channel(
@@ -1607,7 +1607,7 @@ def update_apns_voip_channel(
 
 Type annotations for `boto3.client("pinpoint").update_apns_voip_sandbox_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_sandbox_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_sandbox_channel]
 
 ```python
 def update_apns_voip_sandbox_channel(
@@ -1622,7 +1622,7 @@ def update_apns_voip_sandbox_channel(
 
 Type annotations for `boto3.client("pinpoint").update_application_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_application_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_application_settings]
 
 ```python
 def update_application_settings(
@@ -1637,7 +1637,7 @@ def update_application_settings(
 
 Type annotations for `boto3.client("pinpoint").update_baidu_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_baidu_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_baidu_channel]
 
 ```python
 def update_baidu_channel(
@@ -1652,7 +1652,7 @@ def update_baidu_channel(
 
 Type annotations for `boto3.client("pinpoint").update_campaign` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_campaign]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_campaign]
 
 ```python
 def update_campaign(
@@ -1668,7 +1668,7 @@ def update_campaign(
 
 Type annotations for `boto3.client("pinpoint").update_email_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_email_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_email_channel]
 
 ```python
 def update_email_channel(
@@ -1683,7 +1683,7 @@ def update_email_channel(
 
 Type annotations for `boto3.client("pinpoint").update_email_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_email_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_email_template]
 
 ```python
 def update_email_template(
@@ -1700,7 +1700,7 @@ def update_email_template(
 
 Type annotations for `boto3.client("pinpoint").update_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_endpoint]
 
 ```python
 def update_endpoint(
@@ -1716,7 +1716,7 @@ def update_endpoint(
 
 Type annotations for `boto3.client("pinpoint").update_endpoints_batch` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_endpoints_batch]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_endpoints_batch]
 
 ```python
 def update_endpoints_batch(
@@ -1731,7 +1731,7 @@ def update_endpoints_batch(
 
 Type annotations for `boto3.client("pinpoint").update_gcm_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_gcm_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_gcm_channel]
 
 ```python
 def update_gcm_channel(
@@ -1746,7 +1746,7 @@ def update_gcm_channel(
 
 Type annotations for `boto3.client("pinpoint").update_journey` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_journey]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_journey]
 
 ```python
 def update_journey(
@@ -1762,7 +1762,7 @@ def update_journey(
 
 Type annotations for `boto3.client("pinpoint").update_journey_state` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_journey_state]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_journey_state]
 
 ```python
 def update_journey_state(
@@ -1778,7 +1778,7 @@ def update_journey_state(
 
 Type annotations for `boto3.client("pinpoint").update_push_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_push_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_push_template]
 
 ```python
 def update_push_template(
@@ -1795,7 +1795,7 @@ def update_push_template(
 
 Type annotations for `boto3.client("pinpoint").update_recommender_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_recommender_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_recommender_configuration]
 
 ```python
 def update_recommender_configuration(
@@ -1810,7 +1810,7 @@ def update_recommender_configuration(
 
 Type annotations for `boto3.client("pinpoint").update_segment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_segment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_segment]
 
 ```python
 def update_segment(
@@ -1826,7 +1826,7 @@ def update_segment(
 
 Type annotations for `boto3.client("pinpoint").update_sms_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_sms_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_sms_channel]
 
 ```python
 def update_sms_channel(
@@ -1841,7 +1841,7 @@ def update_sms_channel(
 
 Type annotations for `boto3.client("pinpoint").update_sms_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_sms_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_sms_template]
 
 ```python
 def update_sms_template(
@@ -1858,7 +1858,7 @@ def update_sms_template(
 
 Type annotations for `boto3.client("pinpoint").update_template_active_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_template_active_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_template_active_version]
 
 ```python
 def update_template_active_version(
@@ -1874,7 +1874,7 @@ def update_template_active_version(
 
 Type annotations for `boto3.client("pinpoint").update_voice_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_voice_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_voice_channel]
 
 ```python
 def update_voice_channel(
@@ -1889,7 +1889,7 @@ def update_voice_channel(
 
 Type annotations for `boto3.client("pinpoint").update_voice_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_voice_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_voice_template]
 
 ```python
 def update_voice_template(

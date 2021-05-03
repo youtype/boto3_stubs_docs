@@ -445,7 +445,7 @@ Optional fields:
 - `ServiceRole`: `str`
 - `NormalizedInstanceHours`: `int`
 - `MasterPublicDnsName`: `str`
-- `Configurations`: `List[Dict[str, Any]]`
+- `Configurations`: `List["ConfigurationTypeDef"]`
 - `SecurityConfiguration`: `str`
 - `AutoScalingRole`: `str`
 - `ScaleDownBehavior`: `ScaleDownBehavior`
@@ -504,7 +504,7 @@ from mypy_boto3_emr.type_defs import ConfigurationTypeDef
 
 Optional fields:
 - `Classification`: `str`
-- `Configurations`: `List[Dict[str, Any]]`
+- `Configurations`: `List["ConfigurationTypeDef"]`
 - `Properties`: `Dict[str, str]`
 
 
@@ -949,7 +949,7 @@ Optional fields:
 - `Name`: `str`
 - `Market`: `MarketType`
 - `BidPrice`: `str`
-- `Configurations`: `List[Dict[str, Any]]`
+- `Configurations`: `List["ConfigurationTypeDef"]`
 - `EbsConfiguration`: `"EbsConfigurationTypeDef"`
 - `AutoScalingPolicy`: `"AutoScalingPolicyTypeDef"`
 
@@ -998,7 +998,7 @@ Optional fields:
 - `InstanceCount`: `int`
 - `EC2InstanceIdsToTerminate`: `List[str]`
 - `ShrinkPolicy`: `"ShrinkPolicyTypeDef"`
-- `Configurations`: `List[Dict[str, Any]]`
+- `Configurations`: `List["ConfigurationTypeDef"]`
 
 
 ## InstanceGroupStateChangeReasonTypeDef
@@ -1064,9 +1064,9 @@ Optional fields:
 - `RequestedInstanceCount`: `int`
 - `RunningInstanceCount`: `int`
 - `Status`: `"InstanceGroupStatusTypeDef"`
-- `Configurations`: `List[Dict[str, Any]]`
+- `Configurations`: `List["ConfigurationTypeDef"]`
 - `ConfigurationsVersion`: `int`
-- `LastSuccessfullyAppliedConfigurations`: `List[Dict[str, Any]]`
+- `LastSuccessfullyAppliedConfigurations`: `List["ConfigurationTypeDef"]`
 - `LastSuccessfullyAppliedConfigurationsVersion`: `int`
 - `EbsBlockDevices`: `List["EbsBlockDeviceTypeDef"]`
 - `EbsOptimized`: `bool`
@@ -1150,7 +1150,7 @@ Optional fields:
 - `BidPrice`: `str`
 - `BidPriceAsPercentageOfOnDemandPrice`: `float`
 - `EbsConfiguration`: `"EbsConfigurationTypeDef"`
-- `Configurations`: `List[Dict[str, Any]]`
+- `Configurations`: `List["ConfigurationTypeDef"]`
 
 
 ## InstanceTypeDef
@@ -1191,7 +1191,7 @@ Optional fields:
 - `WeightedCapacity`: `int`
 - `BidPrice`: `str`
 - `BidPriceAsPercentageOfOnDemandPrice`: `float`
-- `Configurations`: `List[Dict[str, Any]]`
+- `Configurations`: `List["ConfigurationTypeDef"]`
 - `EbsBlockDevices`: `List["EbsBlockDeviceTypeDef"]`
 - `EbsOptimized`: `bool`
 

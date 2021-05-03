@@ -25,7 +25,7 @@ def get_list_health_checks_paginator() -> ListHealthChecksPaginator:
     return boto3.client("route53").get_paginator("list_health_checks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListHealthChecks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListHealthChecks)
 
 ```python
 class ListHealthChecksPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_list_hosted_zones_paginator() -> ListHostedZonesPaginator:
     return boto3.client("route53").get_paginator("list_hosted_zones")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListHostedZones)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListHostedZones)
 
 ```python
 class ListHostedZonesPaginator(Boto3Paginator):
@@ -72,7 +72,7 @@ def get_list_query_logging_configs_paginator() -> ListQueryLoggingConfigsPaginat
     return boto3.client("route53").get_paginator("list_query_logging_configs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListQueryLoggingConfigs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListQueryLoggingConfigs)
 
 ```python
 class ListQueryLoggingConfigsPaginator(Boto3Paginator):
@@ -96,7 +96,7 @@ def get_list_resource_record_sets_paginator() -> ListResourceRecordSetsPaginator
     return boto3.client("route53").get_paginator("list_resource_record_sets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListResourceRecordSets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListResourceRecordSets)
 
 ```python
 class ListResourceRecordSetsPaginator(Boto3Paginator):
@@ -120,7 +120,7 @@ def get_list_vpc_association_authorizations_paginator() -> ListVPCAssociationAut
     return boto3.client("route53").get_paginator("list_vpc_association_authorizations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListVPCAssociationAuthorizations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListVPCAssociationAuthorizations)
 
 ```python
 class ListVPCAssociationAuthorizationsPaginator(Boto3Paginator):

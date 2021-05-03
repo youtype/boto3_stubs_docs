@@ -26,7 +26,7 @@ def get_list_action_executions_paginator() -> ListActionExecutionsPaginator:
     return boto3.client("codepipeline").get_paginator("list_action_executions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Paginator.ListActionExecutions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Paginator.ListActionExecutions)
 
 ```python
 class ListActionExecutionsPaginator(Boto3Paginator):
@@ -51,7 +51,7 @@ def get_list_action_types_paginator() -> ListActionTypesPaginator:
     return boto3.client("codepipeline").get_paginator("list_action_types")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Paginator.ListActionTypes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Paginator.ListActionTypes)
 
 ```python
 class ListActionTypesPaginator(Boto3Paginator):
@@ -76,7 +76,7 @@ def get_list_pipeline_executions_paginator() -> ListPipelineExecutionsPaginator:
     return boto3.client("codepipeline").get_paginator("list_pipeline_executions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Paginator.ListPipelineExecutions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Paginator.ListPipelineExecutions)
 
 ```python
 class ListPipelineExecutionsPaginator(Boto3Paginator):
@@ -100,7 +100,7 @@ def get_list_pipelines_paginator() -> ListPipelinesPaginator:
     return boto3.client("codepipeline").get_paginator("list_pipelines")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Paginator.ListPipelines)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Paginator.ListPipelines)
 
 ```python
 class ListPipelinesPaginator(Boto3Paginator):
@@ -123,7 +123,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("codepipeline").get_paginator("list_tags_for_resource")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Paginator.ListTagsForResource)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):
@@ -147,7 +147,7 @@ def get_list_webhooks_paginator() -> ListWebhooksPaginator:
     return boto3.client("codepipeline").get_paginator("list_webhooks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Paginator.ListWebhooks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Paginator.ListWebhooks)
 
 ```python
 class ListWebhooksPaginator(Boto3Paginator):

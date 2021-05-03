@@ -65,7 +65,7 @@ def get_lexv2-models_client() -> LexModelsV2Client:
     return boto3.client("lexv2-models")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client)
 
 ## Exceptions
 
@@ -99,7 +99,7 @@ Exceptions:
 
 Type annotations for `boto3.client("lexv2-models").build_bot_locale` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.build_bot_locale]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.build_bot_locale]
 
 ```python
 def build_bot_locale(
@@ -115,7 +115,7 @@ def build_bot_locale(
 
 Type annotations for `boto3.client("lexv2-models").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -129,7 +129,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("lexv2-models").create_bot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot]
 
 ```python
 def create_bot(
@@ -149,7 +149,7 @@ def create_bot(
 
 Type annotations for `boto3.client("lexv2-models").create_bot_alias` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_alias]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_alias]
 
 ```python
 def create_bot_alias(
@@ -170,7 +170,7 @@ def create_bot_alias(
 
 Type annotations for `boto3.client("lexv2-models").create_bot_locale` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_locale]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_locale]
 
 ```python
 def create_bot_locale(
@@ -189,7 +189,7 @@ def create_bot_locale(
 
 Type annotations for `boto3.client("lexv2-models").create_bot_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_version]
 
 ```python
 def create_bot_version(
@@ -205,7 +205,7 @@ def create_bot_version(
 
 Type annotations for `boto3.client("lexv2-models").create_intent` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_intent]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_intent]
 
 ```python
 def create_intent(
@@ -232,7 +232,7 @@ def create_intent(
 
 Type annotations for `boto3.client("lexv2-models").create_slot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_slot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_slot]
 
 ```python
 def create_slot(
@@ -254,7 +254,7 @@ def create_slot(
 
 Type annotations for `boto3.client("lexv2-models").create_slot_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_slot_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_slot_type]
 
 ```python
 def create_slot_type(
@@ -275,7 +275,7 @@ def create_slot_type(
 
 Type annotations for `boto3.client("lexv2-models").delete_bot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot]
 
 ```python
 def delete_bot(
@@ -290,7 +290,7 @@ def delete_bot(
 
 Type annotations for `boto3.client("lexv2-models").delete_bot_alias` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_alias]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_alias]
 
 ```python
 def delete_bot_alias(
@@ -306,7 +306,7 @@ def delete_bot_alias(
 
 Type annotations for `boto3.client("lexv2-models").delete_bot_locale` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_locale]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_locale]
 
 ```python
 def delete_bot_locale(
@@ -322,7 +322,7 @@ def delete_bot_locale(
 
 Type annotations for `boto3.client("lexv2-models").delete_bot_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_version]
 
 ```python
 def delete_bot_version(
@@ -338,7 +338,7 @@ def delete_bot_version(
 
 Type annotations for `boto3.client("lexv2-models").delete_intent` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_intent]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_intent]
 
 ```python
 def delete_intent(
@@ -355,7 +355,7 @@ def delete_intent(
 
 Type annotations for `boto3.client("lexv2-models").delete_slot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_slot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_slot]
 
 ```python
 def delete_slot(
@@ -373,7 +373,7 @@ def delete_slot(
 
 Type annotations for `boto3.client("lexv2-models").delete_slot_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_slot_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_slot_type]
 
 ```python
 def delete_slot_type(
@@ -391,7 +391,7 @@ def delete_slot_type(
 
 Type annotations for `boto3.client("lexv2-models").describe_bot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot]
 
 ```python
 def describe_bot(
@@ -405,7 +405,7 @@ def describe_bot(
 
 Type annotations for `boto3.client("lexv2-models").describe_bot_alias` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_alias]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_alias]
 
 ```python
 def describe_bot_alias(
@@ -420,7 +420,7 @@ def describe_bot_alias(
 
 Type annotations for `boto3.client("lexv2-models").describe_bot_locale` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_locale]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_locale]
 
 ```python
 def describe_bot_locale(
@@ -436,7 +436,7 @@ def describe_bot_locale(
 
 Type annotations for `boto3.client("lexv2-models").describe_bot_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_version]
 
 ```python
 def describe_bot_version(
@@ -451,7 +451,7 @@ def describe_bot_version(
 
 Type annotations for `boto3.client("lexv2-models").describe_intent` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_intent]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_intent]
 
 ```python
 def describe_intent(
@@ -468,7 +468,7 @@ def describe_intent(
 
 Type annotations for `boto3.client("lexv2-models").describe_slot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_slot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_slot]
 
 ```python
 def describe_slot(
@@ -486,7 +486,7 @@ def describe_slot(
 
 Type annotations for `boto3.client("lexv2-models").describe_slot_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_slot_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_slot_type]
 
 ```python
 def describe_slot_type(
@@ -503,7 +503,7 @@ def describe_slot_type(
 
 Type annotations for `boto3.client("lexv2-models").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -520,7 +520,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("lexv2-models").list_bot_aliases` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_aliases]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_aliases]
 
 ```python
 def list_bot_aliases(
@@ -536,7 +536,7 @@ def list_bot_aliases(
 
 Type annotations for `boto3.client("lexv2-models").list_bot_locales` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_locales]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_locales]
 
 ```python
 def list_bot_locales(
@@ -555,7 +555,7 @@ def list_bot_locales(
 
 Type annotations for `boto3.client("lexv2-models").list_bot_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_versions]
 
 ```python
 def list_bot_versions(
@@ -572,7 +572,7 @@ def list_bot_versions(
 
 Type annotations for `boto3.client("lexv2-models").list_bots` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bots]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bots]
 
 ```python
 def list_bots(
@@ -589,7 +589,7 @@ def list_bots(
 
 Type annotations for `boto3.client("lexv2-models").list_built_in_intents` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_built_in_intents]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_built_in_intents]
 
 ```python
 def list_built_in_intents(
@@ -606,7 +606,7 @@ def list_built_in_intents(
 
 Type annotations for `boto3.client("lexv2-models").list_built_in_slot_types` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_built_in_slot_types]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_built_in_slot_types]
 
 ```python
 def list_built_in_slot_types(
@@ -623,7 +623,7 @@ def list_built_in_slot_types(
 
 Type annotations for `boto3.client("lexv2-models").list_intents` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_intents]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_intents]
 
 ```python
 def list_intents(
@@ -643,7 +643,7 @@ def list_intents(
 
 Type annotations for `boto3.client("lexv2-models").list_slot_types` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_slot_types]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_slot_types]
 
 ```python
 def list_slot_types(
@@ -663,7 +663,7 @@ def list_slot_types(
 
 Type annotations for `boto3.client("lexv2-models").list_slots` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_slots]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_slots]
 
 ```python
 def list_slots(
@@ -684,7 +684,7 @@ def list_slots(
 
 Type annotations for `boto3.client("lexv2-models").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -698,7 +698,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("lexv2-models").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -713,7 +713,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("lexv2-models").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -728,7 +728,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("lexv2-models").update_bot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot]
 
 ```python
 def update_bot(
@@ -747,7 +747,7 @@ def update_bot(
 
 Type annotations for `boto3.client("lexv2-models").update_bot_alias` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_alias]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_alias]
 
 ```python
 def update_bot_alias(
@@ -768,7 +768,7 @@ def update_bot_alias(
 
 Type annotations for `boto3.client("lexv2-models").update_bot_locale` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_locale]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_locale]
 
 ```python
 def update_bot_locale(
@@ -787,7 +787,7 @@ def update_bot_locale(
 
 Type annotations for `boto3.client("lexv2-models").update_intent` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_intent]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_intent]
 
 ```python
 def update_intent(
@@ -816,7 +816,7 @@ def update_intent(
 
 Type annotations for `boto3.client("lexv2-models").update_slot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_slot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_slot]
 
 ```python
 def update_slot(
@@ -839,7 +839,7 @@ def update_slot(
 
 Type annotations for `boto3.client("lexv2-models").update_slot_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_slot_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_slot_type]
 
 ```python
 def update_slot_type(

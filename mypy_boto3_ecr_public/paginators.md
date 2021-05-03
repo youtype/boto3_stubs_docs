@@ -24,7 +24,7 @@ def get_describe_image_tags_paginator() -> DescribeImageTagsPaginator:
     return boto3.client("ecr-public").get_paginator("describe_image_tags")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeImageTags)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeImageTags)
 
 ```python
 class DescribeImageTagsPaginator(Boto3Paginator):
@@ -49,7 +49,7 @@ def get_describe_images_paginator() -> DescribeImagesPaginator:
     return boto3.client("ecr-public").get_paginator("describe_images")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeImages)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeImages)
 
 ```python
 class DescribeImagesPaginator(Boto3Paginator):
@@ -75,7 +75,7 @@ def get_describe_registries_paginator() -> DescribeRegistriesPaginator:
     return boto3.client("ecr-public").get_paginator("describe_registries")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeRegistries)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeRegistries)
 
 ```python
 class DescribeRegistriesPaginator(Boto3Paginator):
@@ -98,7 +98,7 @@ def get_describe_repositories_paginator() -> DescribeRepositoriesPaginator:
     return boto3.client("ecr-public").get_paginator("describe_repositories")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeRepositories)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeRepositories)
 
 ```python
 class DescribeRepositoriesPaginator(Boto3Paginator):

@@ -68,7 +68,7 @@ def get_logs_client() -> CloudWatchLogsClient:
     return boto3.client("logs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client)
 
 ## Exceptions
 
@@ -106,7 +106,7 @@ Exceptions:
 
 Type annotations for `boto3.client("logs").associate_kms_key` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.associate_kms_key]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.associate_kms_key]
 
 ```python
 def associate_kms_key(
@@ -121,7 +121,7 @@ def associate_kms_key(
 
 Type annotations for `boto3.client("logs").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -135,7 +135,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("logs").cancel_export_task` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.cancel_export_task]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.cancel_export_task]
 
 ```python
 def cancel_export_task(
@@ -149,7 +149,7 @@ def cancel_export_task(
 
 Type annotations for `boto3.client("logs").create_export_task` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_export_task]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_export_task]
 
 ```python
 def create_export_task(
@@ -169,7 +169,7 @@ def create_export_task(
 
 Type annotations for `boto3.client("logs").create_log_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_log_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_log_group]
 
 ```python
 def create_log_group(
@@ -185,7 +185,7 @@ def create_log_group(
 
 Type annotations for `boto3.client("logs").create_log_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_log_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_log_stream]
 
 ```python
 def create_log_stream(
@@ -200,7 +200,7 @@ def create_log_stream(
 
 Type annotations for `boto3.client("logs").delete_destination` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_destination]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_destination]
 
 ```python
 def delete_destination(
@@ -214,7 +214,7 @@ def delete_destination(
 
 Type annotations for `boto3.client("logs").delete_log_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_log_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_log_group]
 
 ```python
 def delete_log_group(
@@ -228,7 +228,7 @@ def delete_log_group(
 
 Type annotations for `boto3.client("logs").delete_log_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_log_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_log_stream]
 
 ```python
 def delete_log_stream(
@@ -243,7 +243,7 @@ def delete_log_stream(
 
 Type annotations for `boto3.client("logs").delete_metric_filter` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_metric_filter]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_metric_filter]
 
 ```python
 def delete_metric_filter(
@@ -258,7 +258,7 @@ def delete_metric_filter(
 
 Type annotations for `boto3.client("logs").delete_query_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_query_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_query_definition]
 
 ```python
 def delete_query_definition(
@@ -272,7 +272,7 @@ def delete_query_definition(
 
 Type annotations for `boto3.client("logs").delete_resource_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_resource_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_resource_policy]
 
 ```python
 def delete_resource_policy(
@@ -286,7 +286,7 @@ def delete_resource_policy(
 
 Type annotations for `boto3.client("logs").delete_retention_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_retention_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_retention_policy]
 
 ```python
 def delete_retention_policy(
@@ -300,7 +300,7 @@ def delete_retention_policy(
 
 Type annotations for `boto3.client("logs").delete_subscription_filter` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_subscription_filter]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_subscription_filter]
 
 ```python
 def delete_subscription_filter(
@@ -315,7 +315,7 @@ def delete_subscription_filter(
 
 Type annotations for `boto3.client("logs").describe_destinations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_destinations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_destinations]
 
 ```python
 def describe_destinations(
@@ -331,7 +331,7 @@ def describe_destinations(
 
 Type annotations for `boto3.client("logs").describe_export_tasks` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_export_tasks]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_export_tasks]
 
 ```python
 def describe_export_tasks(
@@ -348,7 +348,7 @@ def describe_export_tasks(
 
 Type annotations for `boto3.client("logs").describe_log_groups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_log_groups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_log_groups]
 
 ```python
 def describe_log_groups(
@@ -364,7 +364,7 @@ def describe_log_groups(
 
 Type annotations for `boto3.client("logs").describe_log_streams` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_log_streams]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_log_streams]
 
 ```python
 def describe_log_streams(
@@ -383,7 +383,7 @@ def describe_log_streams(
 
 Type annotations for `boto3.client("logs").describe_metric_filters` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_metric_filters]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_metric_filters]
 
 ```python
 def describe_metric_filters(
@@ -402,7 +402,7 @@ def describe_metric_filters(
 
 Type annotations for `boto3.client("logs").describe_queries` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_queries]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_queries]
 
 ```python
 def describe_queries(
@@ -419,7 +419,7 @@ def describe_queries(
 
 Type annotations for `boto3.client("logs").describe_query_definitions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_query_definitions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_query_definitions]
 
 ```python
 def describe_query_definitions(
@@ -435,7 +435,7 @@ def describe_query_definitions(
 
 Type annotations for `boto3.client("logs").describe_resource_policies` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_resource_policies]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_resource_policies]
 
 ```python
 def describe_resource_policies(
@@ -450,7 +450,7 @@ def describe_resource_policies(
 
 Type annotations for `boto3.client("logs").describe_subscription_filters` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_subscription_filters]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_subscription_filters]
 
 ```python
 def describe_subscription_filters(
@@ -467,7 +467,7 @@ def describe_subscription_filters(
 
 Type annotations for `boto3.client("logs").disassociate_kms_key` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.disassociate_kms_key]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.disassociate_kms_key]
 
 ```python
 def disassociate_kms_key(
@@ -481,7 +481,7 @@ def disassociate_kms_key(
 
 Type annotations for `boto3.client("logs").filter_log_events` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.filter_log_events]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.filter_log_events]
 
 ```python
 def filter_log_events(
@@ -503,7 +503,7 @@ def filter_log_events(
 
 Type annotations for `boto3.client("logs").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -520,7 +520,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("logs").get_log_events` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_events]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_events]
 
 ```python
 def get_log_events(
@@ -540,7 +540,7 @@ def get_log_events(
 
 Type annotations for `boto3.client("logs").get_log_group_fields` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_group_fields]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_group_fields]
 
 ```python
 def get_log_group_fields(
@@ -555,7 +555,7 @@ def get_log_group_fields(
 
 Type annotations for `boto3.client("logs").get_log_record` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_record]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_record]
 
 ```python
 def get_log_record(
@@ -569,7 +569,7 @@ def get_log_record(
 
 Type annotations for `boto3.client("logs").get_query_results` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_query_results]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_query_results]
 
 ```python
 def get_query_results(
@@ -583,7 +583,7 @@ def get_query_results(
 
 Type annotations for `boto3.client("logs").list_tags_log_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.list_tags_log_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.list_tags_log_group]
 
 ```python
 def list_tags_log_group(
@@ -597,7 +597,7 @@ def list_tags_log_group(
 
 Type annotations for `boto3.client("logs").put_destination` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_destination]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_destination]
 
 ```python
 def put_destination(
@@ -613,7 +613,7 @@ def put_destination(
 
 Type annotations for `boto3.client("logs").put_destination_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_destination_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_destination_policy]
 
 ```python
 def put_destination_policy(
@@ -628,7 +628,7 @@ def put_destination_policy(
 
 Type annotations for `boto3.client("logs").put_log_events` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_log_events]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_log_events]
 
 ```python
 def put_log_events(
@@ -645,7 +645,7 @@ def put_log_events(
 
 Type annotations for `boto3.client("logs").put_metric_filter` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_metric_filter]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_metric_filter]
 
 ```python
 def put_metric_filter(
@@ -662,7 +662,7 @@ def put_metric_filter(
 
 Type annotations for `boto3.client("logs").put_query_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_query_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_query_definition]
 
 ```python
 def put_query_definition(
@@ -679,7 +679,7 @@ def put_query_definition(
 
 Type annotations for `boto3.client("logs").put_resource_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_resource_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_resource_policy]
 
 ```python
 def put_resource_policy(
@@ -694,7 +694,7 @@ def put_resource_policy(
 
 Type annotations for `boto3.client("logs").put_retention_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_retention_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_retention_policy]
 
 ```python
 def put_retention_policy(
@@ -709,7 +709,7 @@ def put_retention_policy(
 
 Type annotations for `boto3.client("logs").put_subscription_filter` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_subscription_filter]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_subscription_filter]
 
 ```python
 def put_subscription_filter(
@@ -728,7 +728,7 @@ def put_subscription_filter(
 
 Type annotations for `boto3.client("logs").start_query` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.start_query]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.start_query]
 
 ```python
 def start_query(
@@ -747,7 +747,7 @@ def start_query(
 
 Type annotations for `boto3.client("logs").stop_query` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.stop_query]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.stop_query]
 
 ```python
 def stop_query(
@@ -761,7 +761,7 @@ def stop_query(
 
 Type annotations for `boto3.client("logs").tag_log_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.tag_log_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.tag_log_group]
 
 ```python
 def tag_log_group(
@@ -776,7 +776,7 @@ def tag_log_group(
 
 Type annotations for `boto3.client("logs").test_metric_filter` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.test_metric_filter]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.test_metric_filter]
 
 ```python
 def test_metric_filter(
@@ -791,7 +791,7 @@ def test_metric_filter(
 
 Type annotations for `boto3.client("logs").untag_log_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.untag_log_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.untag_log_group]
 
 ```python
 def untag_log_group(

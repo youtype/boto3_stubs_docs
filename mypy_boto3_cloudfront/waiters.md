@@ -23,17 +23,13 @@ def get_distribution_deployed_waiter() -> DistributionDeployedWaiter:
     return boto3.client("cloudfront").get_waiter("distribution_deployed")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.distribution_deployed)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.distribution_deployed)
 
-```python
-class DistributionDeployedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        Id: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `DistributionDeployedWaiter.wait` method:
+
+- `Id`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#waiterconfigtypedef)
+
 ## InvalidationCompletedWaiter
 
 Type annotations for `boto3.client("cloudfront").get_waiter("invalidation_completed")`.
@@ -47,18 +43,14 @@ def get_invalidation_completed_waiter() -> InvalidationCompletedWaiter:
     return boto3.client("cloudfront").get_waiter("invalidation_completed")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.invalidation_completed)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.invalidation_completed)
 
-```python
-class InvalidationCompletedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        DistributionId: str,
-        Id: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `InvalidationCompletedWaiter.wait` method:
+
+- `DistributionId`: `str` *(required)*
+- `Id`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#waiterconfigtypedef)
+
 ## StreamingDistributionDeployedWaiter
 
 Type annotations for `boto3.client("cloudfront").get_waiter("streaming_distribution_deployed")`.
@@ -72,14 +64,9 @@ def get_streaming_distribution_deployed_waiter() -> StreamingDistributionDeploye
     return boto3.client("cloudfront").get_waiter("streaming_distribution_deployed")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.streaming_distribution_deployed)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.streaming_distribution_deployed)
 
-```python
-class StreamingDistributionDeployedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        Id: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `StreamingDistributionDeployedWaiter.wait` method:
+
+- `Id`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#waiterconfigtypedef)

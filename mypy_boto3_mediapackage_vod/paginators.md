@@ -23,7 +23,7 @@ def get_list_assets_paginator() -> ListAssetsPaginator:
     return boto3.client("mediapackage-vod").get_paginator("list_assets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListAssets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListAssets)
 
 ```python
 class ListAssetsPaginator(Boto3Paginator):
@@ -47,7 +47,7 @@ def get_list_packaging_configurations_paginator() -> ListPackagingConfigurations
     return boto3.client("mediapackage-vod").get_paginator("list_packaging_configurations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListPackagingConfigurations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListPackagingConfigurations)
 
 ```python
 class ListPackagingConfigurationsPaginator(Boto3Paginator):
@@ -71,7 +71,7 @@ def get_list_packaging_groups_paginator() -> ListPackagingGroupsPaginator:
     return boto3.client("mediapackage-vod").get_paginator("list_packaging_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListPackagingGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListPackagingGroups)
 
 ```python
 class ListPackagingGroupsPaginator(Boto3Paginator):

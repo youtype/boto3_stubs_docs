@@ -37,8 +37,8 @@ Optional fields:
 - `SS`: `List[str]`
 - `NS`: `List[str]`
 - `BS`: `List[Union[bytes, IO[bytes]]]`
-- `M`: `Dict[str, Dict[str, Any]]`
-- `L`: `List[Dict[str, Any]]`
+- `M`: `Dict[str, "AttributeValueTypeDef"]`
+- `L`: `List["AttributeValueTypeDef"]`
 - `NULL`: `bool`
 - `BOOL`: `bool`
 
@@ -226,9 +226,9 @@ from mypy_boto3_dynamodbstreams.type_defs import StreamRecordTypeDef
 
 Optional fields:
 - `ApproximateCreationDateTime`: `datetime`
-- `Keys`: `Dict[str, Dict[str, Any]]`
-- `NewImage`: `Dict[str, Dict[str, Any]]`
-- `OldImage`: `Dict[str, Dict[str, Any]]`
+- `Keys`: `Dict[str, "AttributeValueTypeDef"]`
+- `NewImage`: `Dict[str, "AttributeValueTypeDef"]`
+- `OldImage`: `Dict[str, "AttributeValueTypeDef"]`
 - `SequenceNumber`: `str`
 - `SizeBytes`: `int`
 - `StreamViewType`: `StreamViewType`

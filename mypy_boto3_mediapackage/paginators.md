@@ -23,7 +23,7 @@ def get_list_channels_paginator() -> ListChannelsPaginator:
     return boto3.client("mediapackage").get_paginator("list_channels")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Paginator.ListChannels)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Paginator.ListChannels)
 
 ```python
 class ListChannelsPaginator(Boto3Paginator):
@@ -46,7 +46,7 @@ def get_list_harvest_jobs_paginator() -> ListHarvestJobsPaginator:
     return boto3.client("mediapackage").get_paginator("list_harvest_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Paginator.ListHarvestJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Paginator.ListHarvestJobs)
 
 ```python
 class ListHarvestJobsPaginator(Boto3Paginator):
@@ -71,7 +71,7 @@ def get_list_origin_endpoints_paginator() -> ListOriginEndpointsPaginator:
     return boto3.client("mediapackage").get_paginator("list_origin_endpoints")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Paginator.ListOriginEndpoints)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Paginator.ListOriginEndpoints)
 
 ```python
 class ListOriginEndpointsPaginator(Boto3Paginator):

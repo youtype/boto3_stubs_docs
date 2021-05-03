@@ -30,6 +30,7 @@ type annotations stubs module [mypy_boto3_sagemaker](https://pypi.org/project/my
   - [AutoMLSortOrder](#automlsortorder)
   - [AwsManagedHumanLoopRequestSource](#awsmanagedhumanlooprequestsource)
   - [BatchStrategy](#batchstrategy)
+  - [BooleanOperator](#booleanoperator)
   - [CandidateSortBy](#candidatesortby)
   - [CandidateStatus](#candidatestatus)
   - [CandidateStepType](#candidatesteptype)
@@ -164,6 +165,7 @@ type annotations stubs module [mypy_boto3_sagemaker](https://pypi.org/project/my
   - [NotebookOutputOption](#notebookoutputoption)
   - [ObjectiveStatus](#objectivestatus)
   - [OfflineStoreStatusValue](#offlinestorestatusvalue)
+  - [Operator](#operator)
   - [OrderKey](#orderkey)
   - [ParameterType](#parametertype)
   - [PipelineExecutionStatus](#pipelineexecutionstatus)
@@ -560,6 +562,17 @@ Values:
 
 - `MultiRecord`
 - `SingleRecord`
+
+## BooleanOperator
+
+```python
+from mypy_boto3_sagemaker.literals import BooleanOperator
+```
+
+Values:
+
+- `And`
+- `Or`
 
 ## CandidateSortBy
 
@@ -2114,6 +2127,25 @@ Values:
 - `Active`
 - `Blocked`
 - `Disabled`
+
+## Operator
+
+```python
+from mypy_boto3_sagemaker.literals import Operator
+```
+
+Values:
+
+- `Contains`
+- `Equals`
+- `Exists`
+- `GreaterThan`
+- `GreaterThanOrEqualTo`
+- `In`
+- `LessThan`
+- `LessThanOrEqualTo`
+- `NotEquals`
+- `NotExists`
 
 ## OrderKey
 

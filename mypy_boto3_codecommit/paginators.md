@@ -27,7 +27,7 @@ def get_describe_pull_request_events_paginator() -> DescribePullRequestEventsPag
     return boto3.client("codecommit").get_paginator("describe_pull_request_events")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.DescribePullRequestEvents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.DescribePullRequestEvents)
 
 ```python
 class DescribePullRequestEventsPaginator(Boto3Paginator):
@@ -53,7 +53,7 @@ def get_get_comments_for_compared_commit_paginator() -> GetCommentsForComparedCo
     return boto3.client("codecommit").get_paginator("get_comments_for_compared_commit")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.GetCommentsForComparedCommit)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.GetCommentsForComparedCommit)
 
 ```python
 class GetCommentsForComparedCommitPaginator(Boto3Paginator):
@@ -79,7 +79,7 @@ def get_get_comments_for_pull_request_paginator() -> GetCommentsForPullRequestPa
     return boto3.client("codecommit").get_paginator("get_comments_for_pull_request")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.GetCommentsForPullRequest)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.GetCommentsForPullRequest)
 
 ```python
 class GetCommentsForPullRequestPaginator(Boto3Paginator):
@@ -106,7 +106,7 @@ def get_get_differences_paginator() -> GetDifferencesPaginator:
     return boto3.client("codecommit").get_paginator("get_differences")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.GetDifferences)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.GetDifferences)
 
 ```python
 class GetDifferencesPaginator(Boto3Paginator):
@@ -134,7 +134,7 @@ def get_list_branches_paginator() -> ListBranchesPaginator:
     return boto3.client("codecommit").get_paginator("list_branches")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.ListBranches)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.ListBranches)
 
 ```python
 class ListBranchesPaginator(Boto3Paginator):
@@ -158,7 +158,7 @@ def get_list_pull_requests_paginator() -> ListPullRequestsPaginator:
     return boto3.client("codecommit").get_paginator("list_pull_requests")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.ListPullRequests)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.ListPullRequests)
 
 ```python
 class ListPullRequestsPaginator(Boto3Paginator):
@@ -184,7 +184,7 @@ def get_list_repositories_paginator() -> ListRepositoriesPaginator:
     return boto3.client("codecommit").get_paginator("list_repositories")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.ListRepositories)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Paginator.ListRepositories)
 
 ```python
 class ListRepositoriesPaginator(Boto3Paginator):

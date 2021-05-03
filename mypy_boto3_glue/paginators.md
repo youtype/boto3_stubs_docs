@@ -39,7 +39,7 @@ def get_get_classifiers_paginator() -> GetClassifiersPaginator:
     return boto3.client("glue").get_paginator("get_classifiers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetClassifiers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetClassifiers)
 
 ```python
 class GetClassifiersPaginator(Boto3Paginator):
@@ -62,7 +62,7 @@ def get_get_connections_paginator() -> GetConnectionsPaginator:
     return boto3.client("glue").get_paginator("get_connections")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetConnections)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetConnections)
 
 ```python
 class GetConnectionsPaginator(Boto3Paginator):
@@ -88,7 +88,7 @@ def get_get_crawler_metrics_paginator() -> GetCrawlerMetricsPaginator:
     return boto3.client("glue").get_paginator("get_crawler_metrics")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetCrawlerMetrics)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetCrawlerMetrics)
 
 ```python
 class GetCrawlerMetricsPaginator(Boto3Paginator):
@@ -112,7 +112,7 @@ def get_get_crawlers_paginator() -> GetCrawlersPaginator:
     return boto3.client("glue").get_paginator("get_crawlers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetCrawlers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetCrawlers)
 
 ```python
 class GetCrawlersPaginator(Boto3Paginator):
@@ -135,7 +135,7 @@ def get_get_databases_paginator() -> GetDatabasesPaginator:
     return boto3.client("glue").get_paginator("get_databases")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetDatabases)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetDatabases)
 
 ```python
 class GetDatabasesPaginator(Boto3Paginator):
@@ -160,7 +160,7 @@ def get_get_dev_endpoints_paginator() -> GetDevEndpointsPaginator:
     return boto3.client("glue").get_paginator("get_dev_endpoints")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetDevEndpoints)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetDevEndpoints)
 
 ```python
 class GetDevEndpointsPaginator(Boto3Paginator):
@@ -183,7 +183,7 @@ def get_get_job_runs_paginator() -> GetJobRunsPaginator:
     return boto3.client("glue").get_paginator("get_job_runs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetJobRuns)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetJobRuns)
 
 ```python
 class GetJobRunsPaginator(Boto3Paginator):
@@ -207,7 +207,7 @@ def get_get_jobs_paginator() -> GetJobsPaginator:
     return boto3.client("glue").get_paginator("get_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetJobs)
 
 ```python
 class GetJobsPaginator(Boto3Paginator):
@@ -230,7 +230,7 @@ def get_get_partition_indexes_paginator() -> GetPartitionIndexesPaginator:
     return boto3.client("glue").get_paginator("get_partition_indexes")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetPartitionIndexes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetPartitionIndexes)
 
 ```python
 class GetPartitionIndexesPaginator(Boto3Paginator):
@@ -256,7 +256,7 @@ def get_get_partitions_paginator() -> GetPartitionsPaginator:
     return boto3.client("glue").get_paginator("get_partitions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetPartitions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetPartitions)
 
 ```python
 class GetPartitionsPaginator(Boto3Paginator):
@@ -285,7 +285,7 @@ def get_get_resource_policies_paginator() -> GetResourcePoliciesPaginator:
     return boto3.client("glue").get_paginator("get_resource_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetResourcePolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetResourcePolicies)
 
 ```python
 class GetResourcePoliciesPaginator(Boto3Paginator):
@@ -308,7 +308,7 @@ def get_get_security_configurations_paginator() -> GetSecurityConfigurationsPagi
     return boto3.client("glue").get_paginator("get_security_configurations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetSecurityConfigurations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetSecurityConfigurations)
 
 ```python
 class GetSecurityConfigurationsPaginator(Boto3Paginator):
@@ -331,7 +331,7 @@ def get_get_table_versions_paginator() -> GetTableVersionsPaginator:
     return boto3.client("glue").get_paginator("get_table_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetTableVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetTableVersions)
 
 ```python
 class GetTableVersionsPaginator(Boto3Paginator):
@@ -357,7 +357,7 @@ def get_get_tables_paginator() -> GetTablesPaginator:
     return boto3.client("glue").get_paginator("get_tables")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetTables)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetTables)
 
 ```python
 class GetTablesPaginator(Boto3Paginator):
@@ -383,7 +383,7 @@ def get_get_triggers_paginator() -> GetTriggersPaginator:
     return boto3.client("glue").get_paginator("get_triggers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetTriggers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetTriggers)
 
 ```python
 class GetTriggersPaginator(Boto3Paginator):
@@ -407,7 +407,7 @@ def get_get_user_defined_functions_paginator() -> GetUserDefinedFunctionsPaginat
     return boto3.client("glue").get_paginator("get_user_defined_functions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetUserDefinedFunctions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetUserDefinedFunctions)
 
 ```python
 class GetUserDefinedFunctionsPaginator(Boto3Paginator):
@@ -433,7 +433,7 @@ def get_list_registries_paginator() -> ListRegistriesPaginator:
     return boto3.client("glue").get_paginator("list_registries")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.ListRegistries)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.ListRegistries)
 
 ```python
 class ListRegistriesPaginator(Boto3Paginator):
@@ -456,7 +456,7 @@ def get_list_schema_versions_paginator() -> ListSchemaVersionsPaginator:
     return boto3.client("glue").get_paginator("list_schema_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.ListSchemaVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.ListSchemaVersions)
 
 ```python
 class ListSchemaVersionsPaginator(Boto3Paginator):
@@ -480,7 +480,7 @@ def get_list_schemas_paginator() -> ListSchemasPaginator:
     return boto3.client("glue").get_paginator("list_schemas")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.ListSchemas)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.ListSchemas)
 
 ```python
 class ListSchemasPaginator(Boto3Paginator):

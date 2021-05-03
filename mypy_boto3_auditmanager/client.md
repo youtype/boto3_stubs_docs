@@ -76,7 +76,7 @@ def get_auditmanager_client() -> AuditManagerClient:
     return boto3.client("auditmanager")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client)
 
 ## Exceptions
 
@@ -107,7 +107,7 @@ Exceptions:
 
 Type annotations for `boto3.client("auditmanager").associate_assessment_report_evidence_folder` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.associate_assessment_report_evidence_folder]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.associate_assessment_report_evidence_folder]
 
 ```python
 def associate_assessment_report_evidence_folder(
@@ -122,7 +122,7 @@ def associate_assessment_report_evidence_folder(
 
 Type annotations for `boto3.client("auditmanager").batch_associate_assessment_report_evidence` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_associate_assessment_report_evidence]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_associate_assessment_report_evidence]
 
 ```python
 def batch_associate_assessment_report_evidence(
@@ -138,7 +138,7 @@ def batch_associate_assessment_report_evidence(
 
 Type annotations for `boto3.client("auditmanager").batch_create_delegation_by_assessment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_create_delegation_by_assessment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_create_delegation_by_assessment]
 
 ```python
 def batch_create_delegation_by_assessment(
@@ -153,7 +153,7 @@ def batch_create_delegation_by_assessment(
 
 Type annotations for `boto3.client("auditmanager").batch_delete_delegation_by_assessment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_delete_delegation_by_assessment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_delete_delegation_by_assessment]
 
 ```python
 def batch_delete_delegation_by_assessment(
@@ -168,7 +168,7 @@ def batch_delete_delegation_by_assessment(
 
 Type annotations for `boto3.client("auditmanager").batch_disassociate_assessment_report_evidence` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_disassociate_assessment_report_evidence]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_disassociate_assessment_report_evidence]
 
 ```python
 def batch_disassociate_assessment_report_evidence(
@@ -184,7 +184,7 @@ def batch_disassociate_assessment_report_evidence(
 
 Type annotations for `boto3.client("auditmanager").batch_import_evidence_to_assessment_control` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_import_evidence_to_assessment_control]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_import_evidence_to_assessment_control]
 
 ```python
 def batch_import_evidence_to_assessment_control(
@@ -201,7 +201,7 @@ def batch_import_evidence_to_assessment_control(
 
 Type annotations for `boto3.client("auditmanager").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -215,7 +215,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("auditmanager").create_assessment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment]
 
 ```python
 def create_assessment(
@@ -235,7 +235,7 @@ def create_assessment(
 
 Type annotations for `boto3.client("auditmanager").create_assessment_framework` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment_framework]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment_framework]
 
 ```python
 def create_assessment_framework(
@@ -253,7 +253,7 @@ def create_assessment_framework(
 
 Type annotations for `boto3.client("auditmanager").create_assessment_report` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment_report]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment_report]
 
 ```python
 def create_assessment_report(
@@ -269,7 +269,7 @@ def create_assessment_report(
 
 Type annotations for `boto3.client("auditmanager").create_control` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_control]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_control]
 
 ```python
 def create_control(
@@ -289,7 +289,7 @@ def create_control(
 
 Type annotations for `boto3.client("auditmanager").delete_assessment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment]
 
 ```python
 def delete_assessment(
@@ -303,7 +303,7 @@ def delete_assessment(
 
 Type annotations for `boto3.client("auditmanager").delete_assessment_framework` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_framework]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_framework]
 
 ```python
 def delete_assessment_framework(
@@ -317,7 +317,7 @@ def delete_assessment_framework(
 
 Type annotations for `boto3.client("auditmanager").delete_assessment_report` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_report]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_report]
 
 ```python
 def delete_assessment_report(
@@ -332,7 +332,7 @@ def delete_assessment_report(
 
 Type annotations for `boto3.client("auditmanager").delete_control` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_control]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_control]
 
 ```python
 def delete_control(
@@ -346,7 +346,7 @@ def delete_control(
 
 Type annotations for `boto3.client("auditmanager").deregister_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.deregister_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.deregister_account]
 
 ```python
 def deregister_account(
@@ -359,7 +359,7 @@ def deregister_account(
 
 Type annotations for `boto3.client("auditmanager").deregister_organization_admin_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.deregister_organization_admin_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.deregister_organization_admin_account]
 
 ```python
 def deregister_organization_admin_account(
@@ -373,7 +373,7 @@ def deregister_organization_admin_account(
 
 Type annotations for `boto3.client("auditmanager").disassociate_assessment_report_evidence_folder` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.disassociate_assessment_report_evidence_folder]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.disassociate_assessment_report_evidence_folder]
 
 ```python
 def disassociate_assessment_report_evidence_folder(
@@ -388,7 +388,7 @@ def disassociate_assessment_report_evidence_folder(
 
 Type annotations for `boto3.client("auditmanager").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -405,7 +405,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("auditmanager").get_account_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_account_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_account_status]
 
 ```python
 def get_account_status(
@@ -418,7 +418,7 @@ def get_account_status(
 
 Type annotations for `boto3.client("auditmanager").get_assessment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment]
 
 ```python
 def get_assessment(
@@ -432,7 +432,7 @@ def get_assessment(
 
 Type annotations for `boto3.client("auditmanager").get_assessment_framework` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment_framework]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment_framework]
 
 ```python
 def get_assessment_framework(
@@ -446,7 +446,7 @@ def get_assessment_framework(
 
 Type annotations for `boto3.client("auditmanager").get_assessment_report_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment_report_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment_report_url]
 
 ```python
 def get_assessment_report_url(
@@ -461,7 +461,7 @@ def get_assessment_report_url(
 
 Type annotations for `boto3.client("auditmanager").get_change_logs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_change_logs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_change_logs]
 
 ```python
 def get_change_logs(
@@ -479,7 +479,7 @@ def get_change_logs(
 
 Type annotations for `boto3.client("auditmanager").get_control` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_control]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_control]
 
 ```python
 def get_control(
@@ -493,7 +493,7 @@ def get_control(
 
 Type annotations for `boto3.client("auditmanager").get_delegations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_delegations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_delegations]
 
 ```python
 def get_delegations(
@@ -508,7 +508,7 @@ def get_delegations(
 
 Type annotations for `boto3.client("auditmanager").get_evidence` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence]
 
 ```python
 def get_evidence(
@@ -525,7 +525,7 @@ def get_evidence(
 
 Type annotations for `boto3.client("auditmanager").get_evidence_by_evidence_folder` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_by_evidence_folder]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_by_evidence_folder]
 
 ```python
 def get_evidence_by_evidence_folder(
@@ -543,7 +543,7 @@ def get_evidence_by_evidence_folder(
 
 Type annotations for `boto3.client("auditmanager").get_evidence_folder` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folder]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folder]
 
 ```python
 def get_evidence_folder(
@@ -559,7 +559,7 @@ def get_evidence_folder(
 
 Type annotations for `boto3.client("auditmanager").get_evidence_folders_by_assessment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment]
 
 ```python
 def get_evidence_folders_by_assessment(
@@ -575,7 +575,7 @@ def get_evidence_folders_by_assessment(
 
 Type annotations for `boto3.client("auditmanager").get_evidence_folders_by_assessment_control` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment_control]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment_control]
 
 ```python
 def get_evidence_folders_by_assessment_control(
@@ -593,7 +593,7 @@ def get_evidence_folders_by_assessment_control(
 
 Type annotations for `boto3.client("auditmanager").get_organization_admin_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_organization_admin_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_organization_admin_account]
 
 ```python
 def get_organization_admin_account(
@@ -606,7 +606,7 @@ def get_organization_admin_account(
 
 Type annotations for `boto3.client("auditmanager").get_services_in_scope` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_services_in_scope]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_services_in_scope]
 
 ```python
 def get_services_in_scope(
@@ -619,7 +619,7 @@ def get_services_in_scope(
 
 Type annotations for `boto3.client("auditmanager").get_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_settings]
 
 ```python
 def get_settings(
@@ -633,7 +633,7 @@ def get_settings(
 
 Type annotations for `boto3.client("auditmanager").list_assessment_frameworks` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_frameworks]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_frameworks]
 
 ```python
 def list_assessment_frameworks(
@@ -649,7 +649,7 @@ def list_assessment_frameworks(
 
 Type annotations for `boto3.client("auditmanager").list_assessment_reports` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_reports]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_reports]
 
 ```python
 def list_assessment_reports(
@@ -664,7 +664,7 @@ def list_assessment_reports(
 
 Type annotations for `boto3.client("auditmanager").list_assessments` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessments]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessments]
 
 ```python
 def list_assessments(
@@ -679,7 +679,7 @@ def list_assessments(
 
 Type annotations for `boto3.client("auditmanager").list_controls` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_controls]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_controls]
 
 ```python
 def list_controls(
@@ -695,7 +695,7 @@ def list_controls(
 
 Type annotations for `boto3.client("auditmanager").list_keywords_for_data_source` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_keywords_for_data_source]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_keywords_for_data_source]
 
 ```python
 def list_keywords_for_data_source(
@@ -711,7 +711,7 @@ def list_keywords_for_data_source(
 
 Type annotations for `boto3.client("auditmanager").list_notifications` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_notifications]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_notifications]
 
 ```python
 def list_notifications(
@@ -726,7 +726,7 @@ def list_notifications(
 
 Type annotations for `boto3.client("auditmanager").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -740,7 +740,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("auditmanager").register_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.register_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.register_account]
 
 ```python
 def register_account(
@@ -755,7 +755,7 @@ def register_account(
 
 Type annotations for `boto3.client("auditmanager").register_organization_admin_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.register_organization_admin_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.register_organization_admin_account]
 
 ```python
 def register_organization_admin_account(
@@ -769,7 +769,7 @@ def register_organization_admin_account(
 
 Type annotations for `boto3.client("auditmanager").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -784,7 +784,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("auditmanager").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -799,7 +799,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("auditmanager").update_assessment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment]
 
 ```python
 def update_assessment(
@@ -818,7 +818,7 @@ def update_assessment(
 
 Type annotations for `boto3.client("auditmanager").update_assessment_control` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control]
 
 ```python
 def update_assessment_control(
@@ -836,7 +836,7 @@ def update_assessment_control(
 
 Type annotations for `boto3.client("auditmanager").update_assessment_control_set_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control_set_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control_set_status]
 
 ```python
 def update_assessment_control_set_status(
@@ -853,7 +853,7 @@ def update_assessment_control_set_status(
 
 Type annotations for `boto3.client("auditmanager").update_assessment_framework` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_framework]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_framework]
 
 ```python
 def update_assessment_framework(
@@ -871,7 +871,7 @@ def update_assessment_framework(
 
 Type annotations for `boto3.client("auditmanager").update_assessment_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_status]
 
 ```python
 def update_assessment_status(
@@ -886,7 +886,7 @@ def update_assessment_status(
 
 Type annotations for `boto3.client("auditmanager").update_control` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_control]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_control]
 
 ```python
 def update_control(
@@ -906,7 +906,7 @@ def update_control(
 
 Type annotations for `boto3.client("auditmanager").update_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_settings]
 
 ```python
 def update_settings(
@@ -923,7 +923,7 @@ def update_settings(
 
 Type annotations for `boto3.client("auditmanager").validate_assessment_report_integrity` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.validate_assessment_report_integrity]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.validate_assessment_report_integrity]
 
 ```python
 def validate_assessment_report_integrity(

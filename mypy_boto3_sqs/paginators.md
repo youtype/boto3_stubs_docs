@@ -22,7 +22,7 @@ def get_list_dead_letter_source_queues_paginator() -> ListDeadLetterSourceQueues
     return boto3.client("sqs").get_paginator("list_dead_letter_source_queues")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Paginator.ListDeadLetterSourceQueues)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Paginator.ListDeadLetterSourceQueues)
 
 ```python
 class ListDeadLetterSourceQueuesPaginator(Boto3Paginator):
@@ -46,7 +46,7 @@ def get_list_queues_paginator() -> ListQueuesPaginator:
     return boto3.client("sqs").get_paginator("list_queues")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Paginator.ListQueues)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Paginator.ListQueues)
 
 ```python
 class ListQueuesPaginator(Boto3Paginator):

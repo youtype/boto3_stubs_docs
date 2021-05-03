@@ -44,7 +44,7 @@ def get_elastictranscoder_client() -> ElasticTranscoderClient:
     return boto3.client("elastictranscoder")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client)
 
 ## Exceptions
 
@@ -78,7 +78,7 @@ Exceptions:
 
 Type annotations for `boto3.client("elastictranscoder").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -92,7 +92,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("elastictranscoder").cancel_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.cancel_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.cancel_job]
 
 ```python
 def cancel_job(
@@ -106,7 +106,7 @@ def cancel_job(
 
 Type annotations for `boto3.client("elastictranscoder").create_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_job]
 
 ```python
 def create_job(
@@ -127,7 +127,7 @@ def create_job(
 
 Type annotations for `boto3.client("elastictranscoder").create_pipeline` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_pipeline]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_pipeline]
 
 ```python
 def create_pipeline(
@@ -148,7 +148,7 @@ def create_pipeline(
 
 Type annotations for `boto3.client("elastictranscoder").create_preset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_preset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_preset]
 
 ```python
 def create_preset(
@@ -167,7 +167,7 @@ def create_preset(
 
 Type annotations for `boto3.client("elastictranscoder").delete_pipeline` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_pipeline]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_pipeline]
 
 ```python
 def delete_pipeline(
@@ -181,7 +181,7 @@ def delete_pipeline(
 
 Type annotations for `boto3.client("elastictranscoder").delete_preset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_preset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_preset]
 
 ```python
 def delete_preset(
@@ -195,7 +195,7 @@ def delete_preset(
 
 Type annotations for `boto3.client("elastictranscoder").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -212,7 +212,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("elastictranscoder").list_jobs_by_pipeline` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_pipeline]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_pipeline]
 
 ```python
 def list_jobs_by_pipeline(
@@ -228,7 +228,7 @@ def list_jobs_by_pipeline(
 
 Type annotations for `boto3.client("elastictranscoder").list_jobs_by_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_status]
 
 ```python
 def list_jobs_by_status(
@@ -244,7 +244,7 @@ def list_jobs_by_status(
 
 Type annotations for `boto3.client("elastictranscoder").list_pipelines` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_pipelines]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_pipelines]
 
 ```python
 def list_pipelines(
@@ -259,7 +259,7 @@ def list_pipelines(
 
 Type annotations for `boto3.client("elastictranscoder").list_presets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_presets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_presets]
 
 ```python
 def list_presets(
@@ -274,7 +274,7 @@ def list_presets(
 
 Type annotations for `boto3.client("elastictranscoder").read_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_job]
 
 ```python
 def read_job(
@@ -288,7 +288,7 @@ def read_job(
 
 Type annotations for `boto3.client("elastictranscoder").read_pipeline` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_pipeline]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_pipeline]
 
 ```python
 def read_pipeline(
@@ -302,7 +302,7 @@ def read_pipeline(
 
 Type annotations for `boto3.client("elastictranscoder").read_preset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_preset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_preset]
 
 ```python
 def read_preset(
@@ -316,7 +316,7 @@ def read_preset(
 
 Type annotations for `boto3.client("elastictranscoder").test_role` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.test_role]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.test_role]
 
 ```python
 def test_role(
@@ -333,7 +333,7 @@ def test_role(
 
 Type annotations for `boto3.client("elastictranscoder").update_pipeline` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline]
 
 ```python
 def update_pipeline(
@@ -354,7 +354,7 @@ def update_pipeline(
 
 Type annotations for `boto3.client("elastictranscoder").update_pipeline_notifications` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_notifications]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_notifications]
 
 ```python
 def update_pipeline_notifications(
@@ -369,7 +369,7 @@ def update_pipeline_notifications(
 
 Type annotations for `boto3.client("elastictranscoder").update_pipeline_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_status]
 
 ```python
 def update_pipeline_status(

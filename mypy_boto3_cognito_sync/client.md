@@ -42,7 +42,7 @@ def get_cognito-sync_client() -> CognitoSyncClient:
     return boto3.client("cognito-sync")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client)
 
 ## Exceptions
 
@@ -82,7 +82,7 @@ Exceptions:
 
 Type annotations for `boto3.client("cognito-sync").bulk_publish` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.bulk_publish]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.bulk_publish]
 
 ```python
 def bulk_publish(
@@ -96,7 +96,7 @@ def bulk_publish(
 
 Type annotations for `boto3.client("cognito-sync").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -110,7 +110,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("cognito-sync").delete_dataset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.delete_dataset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.delete_dataset]
 
 ```python
 def delete_dataset(
@@ -126,7 +126,7 @@ def delete_dataset(
 
 Type annotations for `boto3.client("cognito-sync").describe_dataset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.describe_dataset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.describe_dataset]
 
 ```python
 def describe_dataset(
@@ -142,7 +142,7 @@ def describe_dataset(
 
 Type annotations for `boto3.client("cognito-sync").describe_identity_pool_usage` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.describe_identity_pool_usage]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.describe_identity_pool_usage]
 
 ```python
 def describe_identity_pool_usage(
@@ -156,7 +156,7 @@ def describe_identity_pool_usage(
 
 Type annotations for `boto3.client("cognito-sync").describe_identity_usage` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.describe_identity_usage]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.describe_identity_usage]
 
 ```python
 def describe_identity_usage(
@@ -171,7 +171,7 @@ def describe_identity_usage(
 
 Type annotations for `boto3.client("cognito-sync").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -188,7 +188,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("cognito-sync").get_bulk_publish_details` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.get_bulk_publish_details]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.get_bulk_publish_details]
 
 ```python
 def get_bulk_publish_details(
@@ -202,7 +202,7 @@ def get_bulk_publish_details(
 
 Type annotations for `boto3.client("cognito-sync").get_cognito_events` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.get_cognito_events]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.get_cognito_events]
 
 ```python
 def get_cognito_events(
@@ -216,7 +216,7 @@ def get_cognito_events(
 
 Type annotations for `boto3.client("cognito-sync").get_identity_pool_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.get_identity_pool_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.get_identity_pool_configuration]
 
 ```python
 def get_identity_pool_configuration(
@@ -230,7 +230,7 @@ def get_identity_pool_configuration(
 
 Type annotations for `boto3.client("cognito-sync").list_datasets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.list_datasets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.list_datasets]
 
 ```python
 def list_datasets(
@@ -247,7 +247,7 @@ def list_datasets(
 
 Type annotations for `boto3.client("cognito-sync").list_identity_pool_usage` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.list_identity_pool_usage]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.list_identity_pool_usage]
 
 ```python
 def list_identity_pool_usage(
@@ -262,7 +262,7 @@ def list_identity_pool_usage(
 
 Type annotations for `boto3.client("cognito-sync").list_records` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.list_records]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.list_records]
 
 ```python
 def list_records(
@@ -282,7 +282,7 @@ def list_records(
 
 Type annotations for `boto3.client("cognito-sync").register_device` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.register_device]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.register_device]
 
 ```python
 def register_device(
@@ -299,7 +299,7 @@ def register_device(
 
 Type annotations for `boto3.client("cognito-sync").set_cognito_events` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.set_cognito_events]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.set_cognito_events]
 
 ```python
 def set_cognito_events(
@@ -314,7 +314,7 @@ def set_cognito_events(
 
 Type annotations for `boto3.client("cognito-sync").set_identity_pool_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.set_identity_pool_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.set_identity_pool_configuration]
 
 ```python
 def set_identity_pool_configuration(
@@ -330,7 +330,7 @@ def set_identity_pool_configuration(
 
 Type annotations for `boto3.client("cognito-sync").subscribe_to_dataset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.subscribe_to_dataset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.subscribe_to_dataset]
 
 ```python
 def subscribe_to_dataset(
@@ -347,7 +347,7 @@ def subscribe_to_dataset(
 
 Type annotations for `boto3.client("cognito-sync").unsubscribe_from_dataset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.unsubscribe_from_dataset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.unsubscribe_from_dataset]
 
 ```python
 def unsubscribe_from_dataset(
@@ -364,7 +364,7 @@ def unsubscribe_from_dataset(
 
 Type annotations for `boto3.client("cognito-sync").update_records` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.update_records]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.update_records]
 
 ```python
 def update_records(

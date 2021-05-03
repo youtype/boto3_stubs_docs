@@ -46,7 +46,7 @@ def get_opsworkscm_client() -> OpsWorksCMClient:
     return boto3.client("opsworkscm")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client)
 
 ## Exceptions
 
@@ -79,7 +79,7 @@ Exceptions:
 
 Type annotations for `boto3.client("opsworkscm").associate_node` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.associate_node]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.associate_node]
 
 ```python
 def associate_node(
@@ -95,7 +95,7 @@ def associate_node(
 
 Type annotations for `boto3.client("opsworkscm").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -109,7 +109,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("opsworkscm").create_backup` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.create_backup]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.create_backup]
 
 ```python
 def create_backup(
@@ -125,7 +125,7 @@ def create_backup(
 
 Type annotations for `boto3.client("opsworkscm").create_server` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.create_server]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.create_server]
 
 ```python
 def create_server(
@@ -159,7 +159,7 @@ def create_server(
 
 Type annotations for `boto3.client("opsworkscm").delete_backup` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.delete_backup]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.delete_backup]
 
 ```python
 def delete_backup(
@@ -173,7 +173,7 @@ def delete_backup(
 
 Type annotations for `boto3.client("opsworkscm").delete_server` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.delete_server]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.delete_server]
 
 ```python
 def delete_server(
@@ -187,7 +187,7 @@ def delete_server(
 
 Type annotations for `boto3.client("opsworkscm").describe_account_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_account_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_account_attributes]
 
 ```python
 def describe_account_attributes(
@@ -200,7 +200,7 @@ def describe_account_attributes(
 
 Type annotations for `boto3.client("opsworkscm").describe_backups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_backups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_backups]
 
 ```python
 def describe_backups(
@@ -217,7 +217,7 @@ def describe_backups(
 
 Type annotations for `boto3.client("opsworkscm").describe_events` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_events]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_events]
 
 ```python
 def describe_events(
@@ -233,7 +233,7 @@ def describe_events(
 
 Type annotations for `boto3.client("opsworkscm").describe_node_association_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_node_association_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_node_association_status]
 
 ```python
 def describe_node_association_status(
@@ -248,7 +248,7 @@ def describe_node_association_status(
 
 Type annotations for `boto3.client("opsworkscm").describe_servers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_servers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_servers]
 
 ```python
 def describe_servers(
@@ -264,7 +264,7 @@ def describe_servers(
 
 Type annotations for `boto3.client("opsworkscm").disassociate_node` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.disassociate_node]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.disassociate_node]
 
 ```python
 def disassociate_node(
@@ -280,7 +280,7 @@ def disassociate_node(
 
 Type annotations for `boto3.client("opsworkscm").export_server_engine_attribute` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.export_server_engine_attribute]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.export_server_engine_attribute]
 
 ```python
 def export_server_engine_attribute(
@@ -296,7 +296,7 @@ def export_server_engine_attribute(
 
 Type annotations for `boto3.client("opsworkscm").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -313,7 +313,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("opsworkscm").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -329,7 +329,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("opsworkscm").restore_server` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.restore_server]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.restore_server]
 
 ```python
 def restore_server(
@@ -346,7 +346,7 @@ def restore_server(
 
 Type annotations for `boto3.client("opsworkscm").start_maintenance` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.start_maintenance]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.start_maintenance]
 
 ```python
 def start_maintenance(
@@ -361,7 +361,7 @@ def start_maintenance(
 
 Type annotations for `boto3.client("opsworkscm").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -376,7 +376,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("opsworkscm").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -391,7 +391,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("opsworkscm").update_server` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.update_server]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.update_server]
 
 ```python
 def update_server(
@@ -409,7 +409,7 @@ def update_server(
 
 Type annotations for `boto3.client("opsworkscm").update_server_engine_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.update_server_engine_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.update_server_engine_attributes]
 
 ```python
 def update_server_engine_attributes(

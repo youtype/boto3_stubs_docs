@@ -23,7 +23,7 @@ def get_list_signing_jobs_paginator() -> ListSigningJobsPaginator:
     return boto3.client("signer").get_paginator("list_signing_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Paginator.ListSigningJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Paginator.ListSigningJobs)
 
 ```python
 class ListSigningJobsPaginator(Boto3Paginator):
@@ -53,7 +53,7 @@ def get_list_signing_platforms_paginator() -> ListSigningPlatformsPaginator:
     return boto3.client("signer").get_paginator("list_signing_platforms")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Paginator.ListSigningPlatforms)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Paginator.ListSigningPlatforms)
 
 ```python
 class ListSigningPlatformsPaginator(Boto3Paginator):
@@ -79,7 +79,7 @@ def get_list_signing_profiles_paginator() -> ListSigningProfilesPaginator:
     return boto3.client("signer").get_paginator("list_signing_profiles")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Paginator.ListSigningProfiles)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Paginator.ListSigningProfiles)
 
 ```python
 class ListSigningProfilesPaginator(Boto3Paginator):

@@ -38,7 +38,7 @@ def get_lakeformation_client() -> LakeFormationClient:
     return boto3.client("lakeformation")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client)
 
 ## Exceptions
 
@@ -71,7 +71,7 @@ Exceptions:
 
 Type annotations for `boto3.client("lakeformation").batch_grant_permissions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.batch_grant_permissions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.batch_grant_permissions]
 
 ```python
 def batch_grant_permissions(
@@ -86,7 +86,7 @@ def batch_grant_permissions(
 
 Type annotations for `boto3.client("lakeformation").batch_revoke_permissions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.batch_revoke_permissions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.batch_revoke_permissions]
 
 ```python
 def batch_revoke_permissions(
@@ -101,7 +101,7 @@ def batch_revoke_permissions(
 
 Type annotations for `boto3.client("lakeformation").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -115,7 +115,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("lakeformation").deregister_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.deregister_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.deregister_resource]
 
 ```python
 def deregister_resource(
@@ -129,7 +129,7 @@ def deregister_resource(
 
 Type annotations for `boto3.client("lakeformation").describe_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.describe_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.describe_resource]
 
 ```python
 def describe_resource(
@@ -143,7 +143,7 @@ def describe_resource(
 
 Type annotations for `boto3.client("lakeformation").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -160,7 +160,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("lakeformation").get_data_lake_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_data_lake_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_data_lake_settings]
 
 ```python
 def get_data_lake_settings(
@@ -174,7 +174,7 @@ def get_data_lake_settings(
 
 Type annotations for `boto3.client("lakeformation").get_effective_permissions_for_path` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_effective_permissions_for_path]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_effective_permissions_for_path]
 
 ```python
 def get_effective_permissions_for_path(
@@ -191,7 +191,7 @@ def get_effective_permissions_for_path(
 
 Type annotations for `boto3.client("lakeformation").grant_permissions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.grant_permissions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.grant_permissions]
 
 ```python
 def grant_permissions(
@@ -209,7 +209,7 @@ def grant_permissions(
 
 Type annotations for `boto3.client("lakeformation").list_permissions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_permissions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_permissions]
 
 ```python
 def list_permissions(
@@ -228,7 +228,7 @@ def list_permissions(
 
 Type annotations for `boto3.client("lakeformation").list_resources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_resources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_resources]
 
 ```python
 def list_resources(
@@ -244,7 +244,7 @@ def list_resources(
 
 Type annotations for `boto3.client("lakeformation").put_data_lake_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.put_data_lake_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.put_data_lake_settings]
 
 ```python
 def put_data_lake_settings(
@@ -259,7 +259,7 @@ def put_data_lake_settings(
 
 Type annotations for `boto3.client("lakeformation").register_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.register_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.register_resource]
 
 ```python
 def register_resource(
@@ -275,7 +275,7 @@ def register_resource(
 
 Type annotations for `boto3.client("lakeformation").revoke_permissions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.revoke_permissions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.revoke_permissions]
 
 ```python
 def revoke_permissions(
@@ -293,7 +293,7 @@ def revoke_permissions(
 
 Type annotations for `boto3.client("lakeformation").update_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_resource]
 
 ```python
 def update_resource(

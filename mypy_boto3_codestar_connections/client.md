@@ -37,7 +37,7 @@ def get_codestar-connections_client() -> CodeStarconnectionsClient:
     return boto3.client("codestar-connections")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client)
 
 ## Exceptions
 
@@ -69,7 +69,7 @@ Exceptions:
 
 Type annotations for `boto3.client("codestar-connections").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -83,7 +83,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("codestar-connections").create_connection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_connection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_connection]
 
 ```python
 def create_connection(
@@ -100,7 +100,7 @@ def create_connection(
 
 Type annotations for `boto3.client("codestar-connections").create_host` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_host]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_host]
 
 ```python
 def create_host(
@@ -118,7 +118,7 @@ def create_host(
 
 Type annotations for `boto3.client("codestar-connections").delete_connection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_connection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_connection]
 
 ```python
 def delete_connection(
@@ -132,7 +132,7 @@ def delete_connection(
 
 Type annotations for `boto3.client("codestar-connections").delete_host` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_host]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_host]
 
 ```python
 def delete_host(
@@ -146,7 +146,7 @@ def delete_host(
 
 Type annotations for `boto3.client("codestar-connections").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -163,7 +163,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("codestar-connections").get_connection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_connection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_connection]
 
 ```python
 def get_connection(
@@ -177,7 +177,7 @@ def get_connection(
 
 Type annotations for `boto3.client("codestar-connections").get_host` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_host]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_host]
 
 ```python
 def get_host(
@@ -191,7 +191,7 @@ def get_host(
 
 Type annotations for `boto3.client("codestar-connections").list_connections` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_connections]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_connections]
 
 ```python
 def list_connections(
@@ -208,7 +208,7 @@ def list_connections(
 
 Type annotations for `boto3.client("codestar-connections").list_hosts` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_hosts]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_hosts]
 
 ```python
 def list_hosts(
@@ -223,7 +223,7 @@ def list_hosts(
 
 Type annotations for `boto3.client("codestar-connections").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -237,7 +237,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("codestar-connections").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -252,7 +252,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("codestar-connections").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -267,7 +267,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("codestar-connections").update_host` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.update_host]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.update_host]
 
 ```python
 def update_host(

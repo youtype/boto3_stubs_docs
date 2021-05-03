@@ -63,7 +63,7 @@ def get_cloudwatch_client() -> CloudWatchClient:
     return boto3.client("cloudwatch")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client)
 
 ## Exceptions
 
@@ -103,7 +103,7 @@ Exceptions:
 
 Type annotations for `boto3.client("cloudwatch").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -117,7 +117,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("cloudwatch").delete_alarms` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_alarms]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_alarms]
 
 ```python
 def delete_alarms(
@@ -131,7 +131,7 @@ def delete_alarms(
 
 Type annotations for `boto3.client("cloudwatch").delete_anomaly_detector` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_anomaly_detector]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_anomaly_detector]
 
 ```python
 def delete_anomaly_detector(
@@ -148,7 +148,7 @@ def delete_anomaly_detector(
 
 Type annotations for `boto3.client("cloudwatch").delete_dashboards` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_dashboards]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_dashboards]
 
 ```python
 def delete_dashboards(
@@ -162,7 +162,7 @@ def delete_dashboards(
 
 Type annotations for `boto3.client("cloudwatch").delete_insight_rules` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_insight_rules]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_insight_rules]
 
 ```python
 def delete_insight_rules(
@@ -176,7 +176,7 @@ def delete_insight_rules(
 
 Type annotations for `boto3.client("cloudwatch").delete_metric_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_metric_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_metric_stream]
 
 ```python
 def delete_metric_stream(
@@ -190,7 +190,7 @@ def delete_metric_stream(
 
 Type annotations for `boto3.client("cloudwatch").describe_alarm_history` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_alarm_history]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_alarm_history]
 
 ```python
 def describe_alarm_history(
@@ -211,7 +211,7 @@ def describe_alarm_history(
 
 Type annotations for `boto3.client("cloudwatch").describe_alarms` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_alarms]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_alarms]
 
 ```python
 def describe_alarms(
@@ -233,7 +233,7 @@ def describe_alarms(
 
 Type annotations for `boto3.client("cloudwatch").describe_alarms_for_metric` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_alarms_for_metric]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_alarms_for_metric]
 
 ```python
 def describe_alarms_for_metric(
@@ -253,7 +253,7 @@ def describe_alarms_for_metric(
 
 Type annotations for `boto3.client("cloudwatch").describe_anomaly_detectors` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_anomaly_detectors]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_anomaly_detectors]
 
 ```python
 def describe_anomaly_detectors(
@@ -271,7 +271,7 @@ def describe_anomaly_detectors(
 
 Type annotations for `boto3.client("cloudwatch").describe_insight_rules` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_insight_rules]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_insight_rules]
 
 ```python
 def describe_insight_rules(
@@ -286,7 +286,7 @@ def describe_insight_rules(
 
 Type annotations for `boto3.client("cloudwatch").disable_alarm_actions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.disable_alarm_actions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.disable_alarm_actions]
 
 ```python
 def disable_alarm_actions(
@@ -300,7 +300,7 @@ def disable_alarm_actions(
 
 Type annotations for `boto3.client("cloudwatch").disable_insight_rules` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.disable_insight_rules]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.disable_insight_rules]
 
 ```python
 def disable_insight_rules(
@@ -314,7 +314,7 @@ def disable_insight_rules(
 
 Type annotations for `boto3.client("cloudwatch").enable_alarm_actions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.enable_alarm_actions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.enable_alarm_actions]
 
 ```python
 def enable_alarm_actions(
@@ -328,7 +328,7 @@ def enable_alarm_actions(
 
 Type annotations for `boto3.client("cloudwatch").enable_insight_rules` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.enable_insight_rules]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.enable_insight_rules]
 
 ```python
 def enable_insight_rules(
@@ -342,7 +342,7 @@ def enable_insight_rules(
 
 Type annotations for `boto3.client("cloudwatch").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -359,7 +359,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("cloudwatch").get_dashboard` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_dashboard]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_dashboard]
 
 ```python
 def get_dashboard(
@@ -373,7 +373,7 @@ def get_dashboard(
 
 Type annotations for `boto3.client("cloudwatch").get_insight_rule_report` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_insight_rule_report]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_insight_rule_report]
 
 ```python
 def get_insight_rule_report(
@@ -393,7 +393,7 @@ def get_insight_rule_report(
 
 Type annotations for `boto3.client("cloudwatch").get_metric_data` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_data]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_data]
 
 ```python
 def get_metric_data(
@@ -413,7 +413,7 @@ def get_metric_data(
 
 Type annotations for `boto3.client("cloudwatch").get_metric_statistics` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_statistics]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_statistics]
 
 ```python
 def get_metric_statistics(
@@ -435,7 +435,7 @@ def get_metric_statistics(
 
 Type annotations for `boto3.client("cloudwatch").get_metric_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_stream]
 
 ```python
 def get_metric_stream(
@@ -449,7 +449,7 @@ def get_metric_stream(
 
 Type annotations for `boto3.client("cloudwatch").get_metric_widget_image` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_widget_image]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_widget_image]
 
 ```python
 def get_metric_widget_image(
@@ -464,7 +464,7 @@ def get_metric_widget_image(
 
 Type annotations for `boto3.client("cloudwatch").list_dashboards` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_dashboards]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_dashboards]
 
 ```python
 def list_dashboards(
@@ -479,7 +479,7 @@ def list_dashboards(
 
 Type annotations for `boto3.client("cloudwatch").list_metric_streams` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_metric_streams]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_metric_streams]
 
 ```python
 def list_metric_streams(
@@ -494,7 +494,7 @@ def list_metric_streams(
 
 Type annotations for `boto3.client("cloudwatch").list_metrics` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_metrics]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_metrics]
 
 ```python
 def list_metrics(
@@ -512,7 +512,7 @@ def list_metrics(
 
 Type annotations for `boto3.client("cloudwatch").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -526,7 +526,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("cloudwatch").put_anomaly_detector` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_anomaly_detector]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_anomaly_detector]
 
 ```python
 def put_anomaly_detector(
@@ -544,7 +544,7 @@ def put_anomaly_detector(
 
 Type annotations for `boto3.client("cloudwatch").put_composite_alarm` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_composite_alarm]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_composite_alarm]
 
 ```python
 def put_composite_alarm(
@@ -565,7 +565,7 @@ def put_composite_alarm(
 
 Type annotations for `boto3.client("cloudwatch").put_dashboard` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_dashboard]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_dashboard]
 
 ```python
 def put_dashboard(
@@ -580,7 +580,7 @@ def put_dashboard(
 
 Type annotations for `boto3.client("cloudwatch").put_insight_rule` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_insight_rule]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_insight_rule]
 
 ```python
 def put_insight_rule(
@@ -597,7 +597,7 @@ def put_insight_rule(
 
 Type annotations for `boto3.client("cloudwatch").put_metric_alarm` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_metric_alarm]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_metric_alarm]
 
 ```python
 def put_metric_alarm(
@@ -632,7 +632,7 @@ def put_metric_alarm(
 
 Type annotations for `boto3.client("cloudwatch").put_metric_data` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_metric_data]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_metric_data]
 
 ```python
 def put_metric_data(
@@ -647,7 +647,7 @@ def put_metric_data(
 
 Type annotations for `boto3.client("cloudwatch").put_metric_stream` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_metric_stream]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_metric_stream]
 
 ```python
 def put_metric_stream(
@@ -667,7 +667,7 @@ def put_metric_stream(
 
 Type annotations for `boto3.client("cloudwatch").set_alarm_state` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.set_alarm_state]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.set_alarm_state]
 
 ```python
 def set_alarm_state(
@@ -684,7 +684,7 @@ def set_alarm_state(
 
 Type annotations for `boto3.client("cloudwatch").start_metric_streams` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.start_metric_streams]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.start_metric_streams]
 
 ```python
 def start_metric_streams(
@@ -698,7 +698,7 @@ def start_metric_streams(
 
 Type annotations for `boto3.client("cloudwatch").stop_metric_streams` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.stop_metric_streams]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.stop_metric_streams]
 
 ```python
 def stop_metric_streams(
@@ -712,7 +712,7 @@ def stop_metric_streams(
 
 Type annotations for `boto3.client("cloudwatch").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -727,7 +727,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("cloudwatch").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.untag_resource]
 
 ```python
 def untag_resource(

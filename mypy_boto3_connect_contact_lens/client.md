@@ -26,7 +26,7 @@ def get_connect-contact-lens_client() -> ConnectContactLensClient:
     return boto3.client("connect-contact-lens")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client)
 
 ## Exceptions
 
@@ -58,7 +58,7 @@ Exceptions:
 
 Type annotations for `boto3.client("connect-contact-lens").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -72,7 +72,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("connect-contact-lens").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -89,7 +89,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("connect-contact-lens").list_realtime_contact_analysis_segments` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.list_realtime_contact_analysis_segments]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.list_realtime_contact_analysis_segments]
 
 ```python
 def list_realtime_contact_analysis_segments(

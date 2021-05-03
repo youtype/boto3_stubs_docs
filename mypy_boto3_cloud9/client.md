@@ -39,7 +39,7 @@ def get_cloud9_client() -> Cloud9Client:
     return boto3.client("cloud9")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client)
 
 ## Exceptions
 
@@ -74,7 +74,7 @@ Exceptions:
 
 Type annotations for `boto3.client("cloud9").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -88,7 +88,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("cloud9").create_environment_ec2` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.create_environment_ec2]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.create_environment_ec2]
 
 ```python
 def create_environment_ec2(
@@ -111,7 +111,7 @@ def create_environment_ec2(
 
 Type annotations for `boto3.client("cloud9").create_environment_membership` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.create_environment_membership]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.create_environment_membership]
 
 ```python
 def create_environment_membership(
@@ -127,7 +127,7 @@ def create_environment_membership(
 
 Type annotations for `boto3.client("cloud9").delete_environment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.delete_environment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.delete_environment]
 
 ```python
 def delete_environment(
@@ -141,7 +141,7 @@ def delete_environment(
 
 Type annotations for `boto3.client("cloud9").delete_environment_membership` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.delete_environment_membership]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.delete_environment_membership]
 
 ```python
 def delete_environment_membership(
@@ -156,7 +156,7 @@ def delete_environment_membership(
 
 Type annotations for `boto3.client("cloud9").describe_environment_memberships` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environment_memberships]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environment_memberships]
 
 ```python
 def describe_environment_memberships(
@@ -174,7 +174,7 @@ def describe_environment_memberships(
 
 Type annotations for `boto3.client("cloud9").describe_environment_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environment_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environment_status]
 
 ```python
 def describe_environment_status(
@@ -188,7 +188,7 @@ def describe_environment_status(
 
 Type annotations for `boto3.client("cloud9").describe_environments` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environments]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environments]
 
 ```python
 def describe_environments(
@@ -202,7 +202,7 @@ def describe_environments(
 
 Type annotations for `boto3.client("cloud9").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -219,7 +219,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("cloud9").list_environments` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.list_environments]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.list_environments]
 
 ```python
 def list_environments(
@@ -234,7 +234,7 @@ def list_environments(
 
 Type annotations for `boto3.client("cloud9").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -248,7 +248,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("cloud9").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -263,7 +263,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("cloud9").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -278,7 +278,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("cloud9").update_environment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.update_environment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.update_environment]
 
 ```python
 def update_environment(
@@ -294,7 +294,7 @@ def update_environment(
 
 Type annotations for `boto3.client("cloud9").update_environment_membership` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.update_environment_membership]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.update_environment_membership]
 
 ```python
 def update_environment_membership(

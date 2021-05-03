@@ -23,18 +23,14 @@ def get_audit_report_created_waiter() -> AuditReportCreatedWaiter:
     return boto3.client("acm-pca").get_waiter("audit_report_created")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Waiter.audit_report_created)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Waiter.audit_report_created)
 
-```python
-class AuditReportCreatedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        CertificateAuthorityArn: str,
-        AuditReportId: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `AuditReportCreatedWaiter.wait` method:
+
+- `CertificateAuthorityArn`: `str` *(required)*
+- `AuditReportId`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#waiterconfigtypedef)
+
 ## CertificateAuthorityCSRCreatedWaiter
 
 Type annotations for `boto3.client("acm-pca").get_waiter("certificate_authority_csr_created")`.
@@ -48,17 +44,13 @@ def get_certificate_authority_csr_created_waiter() -> CertificateAuthorityCSRCre
     return boto3.client("acm-pca").get_waiter("certificate_authority_csr_created")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Waiter.certificate_authority_csr_created)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Waiter.certificate_authority_csr_created)
 
-```python
-class CertificateAuthorityCSRCreatedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        CertificateAuthorityArn: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `CertificateAuthorityCSRCreatedWaiter.wait` method:
+
+- `CertificateAuthorityArn`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#waiterconfigtypedef)
+
 ## CertificateIssuedWaiter
 
 Type annotations for `boto3.client("acm-pca").get_waiter("certificate_issued")`.
@@ -72,15 +64,10 @@ def get_certificate_issued_waiter() -> CertificateIssuedWaiter:
     return boto3.client("acm-pca").get_waiter("certificate_issued")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Waiter.certificate_issued)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Waiter.certificate_issued)
 
-```python
-class CertificateIssuedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        CertificateAuthorityArn: str,
-        CertificateArn: str,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `CertificateIssuedWaiter.wait` method:
+
+- `CertificateAuthorityArn`: `str` *(required)*
+- `CertificateArn`: `str` *(required)*
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#waiterconfigtypedef)

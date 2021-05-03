@@ -29,7 +29,7 @@ def get_list_application_revisions_paginator() -> ListApplicationRevisionsPagina
     return boto3.client("codedeploy").get_paginator("list_application_revisions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListApplicationRevisions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListApplicationRevisions)
 
 ```python
 class ListApplicationRevisionsPaginator(Boto3Paginator):
@@ -58,7 +58,7 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
     return boto3.client("codedeploy").get_paginator("list_applications")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListApplications)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListApplications)
 
 ```python
 class ListApplicationsPaginator(Boto3Paginator):
@@ -81,7 +81,7 @@ def get_list_deployment_configs_paginator() -> ListDeploymentConfigsPaginator:
     return boto3.client("codedeploy").get_paginator("list_deployment_configs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentConfigs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentConfigs)
 
 ```python
 class ListDeploymentConfigsPaginator(Boto3Paginator):
@@ -104,7 +104,7 @@ def get_list_deployment_groups_paginator() -> ListDeploymentGroupsPaginator:
     return boto3.client("codedeploy").get_paginator("list_deployment_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentGroups)
 
 ```python
 class ListDeploymentGroupsPaginator(Boto3Paginator):
@@ -128,7 +128,7 @@ def get_list_deployment_instances_paginator() -> ListDeploymentInstancesPaginato
     return boto3.client("codedeploy").get_paginator("list_deployment_instances")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentInstances)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentInstances)
 
 ```python
 class ListDeploymentInstancesPaginator(Boto3Paginator):
@@ -154,7 +154,7 @@ def get_list_deployment_targets_paginator() -> ListDeploymentTargetsPaginator:
     return boto3.client("codedeploy").get_paginator("list_deployment_targets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentTargets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentTargets)
 
 ```python
 class ListDeploymentTargetsPaginator(Boto3Paginator):
@@ -179,7 +179,7 @@ def get_list_deployments_paginator() -> ListDeploymentsPaginator:
     return boto3.client("codedeploy").get_paginator("list_deployments")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeployments)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeployments)
 
 ```python
 class ListDeploymentsPaginator(Boto3Paginator):
@@ -207,7 +207,7 @@ def get_list_git_hub_account_token_names_paginator() -> ListGitHubAccountTokenNa
     return boto3.client("codedeploy").get_paginator("list_git_hub_account_token_names")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListGitHubAccountTokenNames)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListGitHubAccountTokenNames)
 
 ```python
 class ListGitHubAccountTokenNamesPaginator(Boto3Paginator):
@@ -230,7 +230,7 @@ def get_list_on_premises_instances_paginator() -> ListOnPremisesInstancesPaginat
     return boto3.client("codedeploy").get_paginator("list_on_premises_instances")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListOnPremisesInstances)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListOnPremisesInstances)
 
 ```python
 class ListOnPremisesInstancesPaginator(Boto3Paginator):

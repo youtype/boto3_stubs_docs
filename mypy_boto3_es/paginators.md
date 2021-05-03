@@ -25,7 +25,7 @@ def get_describe_reserved_elasticsearch_instance_offerings_paginator() -> Descri
     return boto3.client("es").get_paginator("describe_reserved_elasticsearch_instance_offerings")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.DescribeReservedElasticsearchInstanceOfferings)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.DescribeReservedElasticsearchInstanceOfferings)
 
 ```python
 class DescribeReservedElasticsearchInstanceOfferingsPaginator(Boto3Paginator):
@@ -49,7 +49,7 @@ def get_describe_reserved_elasticsearch_instances_paginator() -> DescribeReserve
     return boto3.client("es").get_paginator("describe_reserved_elasticsearch_instances")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.DescribeReservedElasticsearchInstances)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.DescribeReservedElasticsearchInstances)
 
 ```python
 class DescribeReservedElasticsearchInstancesPaginator(Boto3Paginator):
@@ -73,7 +73,7 @@ def get_get_upgrade_history_paginator() -> GetUpgradeHistoryPaginator:
     return boto3.client("es").get_paginator("get_upgrade_history")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.GetUpgradeHistory)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.GetUpgradeHistory)
 
 ```python
 class GetUpgradeHistoryPaginator(Boto3Paginator):
@@ -97,7 +97,7 @@ def get_list_elasticsearch_instance_types_paginator() -> ListElasticsearchInstan
     return boto3.client("es").get_paginator("list_elasticsearch_instance_types")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.ListElasticsearchInstanceTypes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.ListElasticsearchInstanceTypes)
 
 ```python
 class ListElasticsearchInstanceTypesPaginator(Boto3Paginator):
@@ -122,7 +122,7 @@ def get_list_elasticsearch_versions_paginator() -> ListElasticsearchVersionsPagi
     return boto3.client("es").get_paginator("list_elasticsearch_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.ListElasticsearchVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.ListElasticsearchVersions)
 
 ```python
 class ListElasticsearchVersionsPaginator(Boto3Paginator):

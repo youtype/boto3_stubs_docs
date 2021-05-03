@@ -87,7 +87,7 @@ def get_comprehend_client() -> ComprehendClient:
     return boto3.client("comprehend")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client)
 
 ## Exceptions
 
@@ -130,7 +130,7 @@ Exceptions:
 
 Type annotations for `boto3.client("comprehend").batch_detect_dominant_language` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_dominant_language]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_dominant_language]
 
 ```python
 def batch_detect_dominant_language(
@@ -144,7 +144,7 @@ def batch_detect_dominant_language(
 
 Type annotations for `boto3.client("comprehend").batch_detect_entities` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_entities]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_entities]
 
 ```python
 def batch_detect_entities(
@@ -159,7 +159,7 @@ def batch_detect_entities(
 
 Type annotations for `boto3.client("comprehend").batch_detect_key_phrases` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_key_phrases]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_key_phrases]
 
 ```python
 def batch_detect_key_phrases(
@@ -174,7 +174,7 @@ def batch_detect_key_phrases(
 
 Type annotations for `boto3.client("comprehend").batch_detect_sentiment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_sentiment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_sentiment]
 
 ```python
 def batch_detect_sentiment(
@@ -189,7 +189,7 @@ def batch_detect_sentiment(
 
 Type annotations for `boto3.client("comprehend").batch_detect_syntax` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_syntax]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_syntax]
 
 ```python
 def batch_detect_syntax(
@@ -204,7 +204,7 @@ def batch_detect_syntax(
 
 Type annotations for `boto3.client("comprehend").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -218,7 +218,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("comprehend").classify_document` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.classify_document]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.classify_document]
 
 ```python
 def classify_document(
@@ -233,7 +233,7 @@ def classify_document(
 
 Type annotations for `boto3.client("comprehend").contains_pii_entities` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.contains_pii_entities]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.contains_pii_entities]
 
 ```python
 def contains_pii_entities(
@@ -248,7 +248,7 @@ def contains_pii_entities(
 
 Type annotations for `boto3.client("comprehend").create_document_classifier` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_document_classifier]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_document_classifier]
 
 ```python
 def create_document_classifier(
@@ -272,7 +272,7 @@ def create_document_classifier(
 
 Type annotations for `boto3.client("comprehend").create_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_endpoint]
 
 ```python
 def create_endpoint(
@@ -291,7 +291,7 @@ def create_endpoint(
 
 Type annotations for `boto3.client("comprehend").create_entity_recognizer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_entity_recognizer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_entity_recognizer]
 
 ```python
 def create_entity_recognizer(
@@ -313,7 +313,7 @@ def create_entity_recognizer(
 
 Type annotations for `boto3.client("comprehend").delete_document_classifier` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_document_classifier]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_document_classifier]
 
 ```python
 def delete_document_classifier(
@@ -327,7 +327,7 @@ def delete_document_classifier(
 
 Type annotations for `boto3.client("comprehend").delete_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_endpoint]
 
 ```python
 def delete_endpoint(
@@ -341,7 +341,7 @@ def delete_endpoint(
 
 Type annotations for `boto3.client("comprehend").delete_entity_recognizer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_entity_recognizer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_entity_recognizer]
 
 ```python
 def delete_entity_recognizer(
@@ -355,7 +355,7 @@ def delete_entity_recognizer(
 
 Type annotations for `boto3.client("comprehend").describe_document_classification_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_document_classification_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_document_classification_job]
 
 ```python
 def describe_document_classification_job(
@@ -369,7 +369,7 @@ def describe_document_classification_job(
 
 Type annotations for `boto3.client("comprehend").describe_document_classifier` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_document_classifier]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_document_classifier]
 
 ```python
 def describe_document_classifier(
@@ -383,7 +383,7 @@ def describe_document_classifier(
 
 Type annotations for `boto3.client("comprehend").describe_dominant_language_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_dominant_language_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_dominant_language_detection_job]
 
 ```python
 def describe_dominant_language_detection_job(
@@ -397,7 +397,7 @@ def describe_dominant_language_detection_job(
 
 Type annotations for `boto3.client("comprehend").describe_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_endpoint]
 
 ```python
 def describe_endpoint(
@@ -411,7 +411,7 @@ def describe_endpoint(
 
 Type annotations for `boto3.client("comprehend").describe_entities_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_entities_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_entities_detection_job]
 
 ```python
 def describe_entities_detection_job(
@@ -425,7 +425,7 @@ def describe_entities_detection_job(
 
 Type annotations for `boto3.client("comprehend").describe_entity_recognizer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_entity_recognizer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_entity_recognizer]
 
 ```python
 def describe_entity_recognizer(
@@ -439,7 +439,7 @@ def describe_entity_recognizer(
 
 Type annotations for `boto3.client("comprehend").describe_events_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_events_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_events_detection_job]
 
 ```python
 def describe_events_detection_job(
@@ -453,7 +453,7 @@ def describe_events_detection_job(
 
 Type annotations for `boto3.client("comprehend").describe_key_phrases_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_key_phrases_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_key_phrases_detection_job]
 
 ```python
 def describe_key_phrases_detection_job(
@@ -467,7 +467,7 @@ def describe_key_phrases_detection_job(
 
 Type annotations for `boto3.client("comprehend").describe_pii_entities_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_pii_entities_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_pii_entities_detection_job]
 
 ```python
 def describe_pii_entities_detection_job(
@@ -481,7 +481,7 @@ def describe_pii_entities_detection_job(
 
 Type annotations for `boto3.client("comprehend").describe_sentiment_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_sentiment_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_sentiment_detection_job]
 
 ```python
 def describe_sentiment_detection_job(
@@ -495,7 +495,7 @@ def describe_sentiment_detection_job(
 
 Type annotations for `boto3.client("comprehend").describe_topics_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_topics_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_topics_detection_job]
 
 ```python
 def describe_topics_detection_job(
@@ -509,7 +509,7 @@ def describe_topics_detection_job(
 
 Type annotations for `boto3.client("comprehend").detect_dominant_language` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_dominant_language]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_dominant_language]
 
 ```python
 def detect_dominant_language(
@@ -523,7 +523,7 @@ def detect_dominant_language(
 
 Type annotations for `boto3.client("comprehend").detect_entities` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_entities]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_entities]
 
 ```python
 def detect_entities(
@@ -539,7 +539,7 @@ def detect_entities(
 
 Type annotations for `boto3.client("comprehend").detect_key_phrases` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_key_phrases]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_key_phrases]
 
 ```python
 def detect_key_phrases(
@@ -554,7 +554,7 @@ def detect_key_phrases(
 
 Type annotations for `boto3.client("comprehend").detect_pii_entities` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_pii_entities]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_pii_entities]
 
 ```python
 def detect_pii_entities(
@@ -569,7 +569,7 @@ def detect_pii_entities(
 
 Type annotations for `boto3.client("comprehend").detect_sentiment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_sentiment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_sentiment]
 
 ```python
 def detect_sentiment(
@@ -584,7 +584,7 @@ def detect_sentiment(
 
 Type annotations for `boto3.client("comprehend").detect_syntax` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_syntax]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_syntax]
 
 ```python
 def detect_syntax(
@@ -599,7 +599,7 @@ def detect_syntax(
 
 Type annotations for `boto3.client("comprehend").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -616,7 +616,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("comprehend").list_document_classification_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_document_classification_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_document_classification_jobs]
 
 ```python
 def list_document_classification_jobs(
@@ -632,7 +632,7 @@ def list_document_classification_jobs(
 
 Type annotations for `boto3.client("comprehend").list_document_classifiers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_document_classifiers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_document_classifiers]
 
 ```python
 def list_document_classifiers(
@@ -648,7 +648,7 @@ def list_document_classifiers(
 
 Type annotations for `boto3.client("comprehend").list_dominant_language_detection_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_dominant_language_detection_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_dominant_language_detection_jobs]
 
 ```python
 def list_dominant_language_detection_jobs(
@@ -664,7 +664,7 @@ def list_dominant_language_detection_jobs(
 
 Type annotations for `boto3.client("comprehend").list_endpoints` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_endpoints]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_endpoints]
 
 ```python
 def list_endpoints(
@@ -680,7 +680,7 @@ def list_endpoints(
 
 Type annotations for `boto3.client("comprehend").list_entities_detection_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_entities_detection_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_entities_detection_jobs]
 
 ```python
 def list_entities_detection_jobs(
@@ -696,7 +696,7 @@ def list_entities_detection_jobs(
 
 Type annotations for `boto3.client("comprehend").list_entity_recognizers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_entity_recognizers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_entity_recognizers]
 
 ```python
 def list_entity_recognizers(
@@ -712,7 +712,7 @@ def list_entity_recognizers(
 
 Type annotations for `boto3.client("comprehend").list_events_detection_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_events_detection_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_events_detection_jobs]
 
 ```python
 def list_events_detection_jobs(
@@ -728,7 +728,7 @@ def list_events_detection_jobs(
 
 Type annotations for `boto3.client("comprehend").list_key_phrases_detection_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_key_phrases_detection_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_key_phrases_detection_jobs]
 
 ```python
 def list_key_phrases_detection_jobs(
@@ -744,7 +744,7 @@ def list_key_phrases_detection_jobs(
 
 Type annotations for `boto3.client("comprehend").list_pii_entities_detection_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_pii_entities_detection_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_pii_entities_detection_jobs]
 
 ```python
 def list_pii_entities_detection_jobs(
@@ -760,7 +760,7 @@ def list_pii_entities_detection_jobs(
 
 Type annotations for `boto3.client("comprehend").list_sentiment_detection_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_sentiment_detection_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_sentiment_detection_jobs]
 
 ```python
 def list_sentiment_detection_jobs(
@@ -776,7 +776,7 @@ def list_sentiment_detection_jobs(
 
 Type annotations for `boto3.client("comprehend").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -790,7 +790,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("comprehend").list_topics_detection_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_topics_detection_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_topics_detection_jobs]
 
 ```python
 def list_topics_detection_jobs(
@@ -806,7 +806,7 @@ def list_topics_detection_jobs(
 
 Type annotations for `boto3.client("comprehend").start_document_classification_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_document_classification_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_document_classification_job]
 
 ```python
 def start_document_classification_job(
@@ -827,7 +827,7 @@ def start_document_classification_job(
 
 Type annotations for `boto3.client("comprehend").start_dominant_language_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_dominant_language_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_dominant_language_detection_job]
 
 ```python
 def start_dominant_language_detection_job(
@@ -847,7 +847,7 @@ def start_dominant_language_detection_job(
 
 Type annotations for `boto3.client("comprehend").start_entities_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_entities_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_entities_detection_job]
 
 ```python
 def start_entities_detection_job(
@@ -869,7 +869,7 @@ def start_entities_detection_job(
 
 Type annotations for `boto3.client("comprehend").start_events_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_events_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_events_detection_job]
 
 ```python
 def start_events_detection_job(
@@ -889,7 +889,7 @@ def start_events_detection_job(
 
 Type annotations for `boto3.client("comprehend").start_key_phrases_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_key_phrases_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_key_phrases_detection_job]
 
 ```python
 def start_key_phrases_detection_job(
@@ -910,7 +910,7 @@ def start_key_phrases_detection_job(
 
 Type annotations for `boto3.client("comprehend").start_pii_entities_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_pii_entities_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_pii_entities_detection_job]
 
 ```python
 def start_pii_entities_detection_job(
@@ -931,7 +931,7 @@ def start_pii_entities_detection_job(
 
 Type annotations for `boto3.client("comprehend").start_sentiment_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_sentiment_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_sentiment_detection_job]
 
 ```python
 def start_sentiment_detection_job(
@@ -952,7 +952,7 @@ def start_sentiment_detection_job(
 
 Type annotations for `boto3.client("comprehend").start_topics_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_topics_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_topics_detection_job]
 
 ```python
 def start_topics_detection_job(
@@ -973,7 +973,7 @@ def start_topics_detection_job(
 
 Type annotations for `boto3.client("comprehend").stop_dominant_language_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_dominant_language_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_dominant_language_detection_job]
 
 ```python
 def stop_dominant_language_detection_job(
@@ -987,7 +987,7 @@ def stop_dominant_language_detection_job(
 
 Type annotations for `boto3.client("comprehend").stop_entities_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_entities_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_entities_detection_job]
 
 ```python
 def stop_entities_detection_job(
@@ -1001,7 +1001,7 @@ def stop_entities_detection_job(
 
 Type annotations for `boto3.client("comprehend").stop_events_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_events_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_events_detection_job]
 
 ```python
 def stop_events_detection_job(
@@ -1015,7 +1015,7 @@ def stop_events_detection_job(
 
 Type annotations for `boto3.client("comprehend").stop_key_phrases_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_key_phrases_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_key_phrases_detection_job]
 
 ```python
 def stop_key_phrases_detection_job(
@@ -1029,7 +1029,7 @@ def stop_key_phrases_detection_job(
 
 Type annotations for `boto3.client("comprehend").stop_pii_entities_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_pii_entities_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_pii_entities_detection_job]
 
 ```python
 def stop_pii_entities_detection_job(
@@ -1043,7 +1043,7 @@ def stop_pii_entities_detection_job(
 
 Type annotations for `boto3.client("comprehend").stop_sentiment_detection_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_sentiment_detection_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_sentiment_detection_job]
 
 ```python
 def stop_sentiment_detection_job(
@@ -1057,7 +1057,7 @@ def stop_sentiment_detection_job(
 
 Type annotations for `boto3.client("comprehend").stop_training_document_classifier` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_training_document_classifier]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_training_document_classifier]
 
 ```python
 def stop_training_document_classifier(
@@ -1071,7 +1071,7 @@ def stop_training_document_classifier(
 
 Type annotations for `boto3.client("comprehend").stop_training_entity_recognizer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_training_entity_recognizer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_training_entity_recognizer]
 
 ```python
 def stop_training_entity_recognizer(
@@ -1085,7 +1085,7 @@ def stop_training_entity_recognizer(
 
 Type annotations for `boto3.client("comprehend").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -1100,7 +1100,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("comprehend").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -1115,7 +1115,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("comprehend").update_endpoint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.update_endpoint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.update_endpoint]
 
 ```python
 def update_endpoint(

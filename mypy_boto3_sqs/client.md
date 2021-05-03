@@ -46,7 +46,7 @@ def get_sqs_client() -> SQSClient:
     return boto3.client("sqs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client)
 
 ## Exceptions
 
@@ -89,7 +89,7 @@ Exceptions:
 
 Type annotations for `boto3.client("sqs").add_permission` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.add_permission]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.add_permission]
 
 ```python
 def add_permission(
@@ -106,7 +106,7 @@ def add_permission(
 
 Type annotations for `boto3.client("sqs").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -120,7 +120,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("sqs").change_message_visibility` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.change_message_visibility]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.change_message_visibility]
 
 ```python
 def change_message_visibility(
@@ -136,7 +136,7 @@ def change_message_visibility(
 
 Type annotations for `boto3.client("sqs").change_message_visibility_batch` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.change_message_visibility_batch]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.change_message_visibility_batch]
 
 ```python
 def change_message_visibility_batch(
@@ -151,7 +151,7 @@ def change_message_visibility_batch(
 
 Type annotations for `boto3.client("sqs").create_queue` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.create_queue]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.create_queue]
 
 ```python
 def create_queue(
@@ -167,7 +167,7 @@ def create_queue(
 
 Type annotations for `boto3.client("sqs").delete_message` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.delete_message]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.delete_message]
 
 ```python
 def delete_message(
@@ -182,7 +182,7 @@ def delete_message(
 
 Type annotations for `boto3.client("sqs").delete_message_batch` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.delete_message_batch]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.delete_message_batch]
 
 ```python
 def delete_message_batch(
@@ -197,7 +197,7 @@ def delete_message_batch(
 
 Type annotations for `boto3.client("sqs").delete_queue` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.delete_queue]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.delete_queue]
 
 ```python
 def delete_queue(
@@ -211,7 +211,7 @@ def delete_queue(
 
 Type annotations for `boto3.client("sqs").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -228,7 +228,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("sqs").get_queue_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.get_queue_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.get_queue_attributes]
 
 ```python
 def get_queue_attributes(
@@ -243,7 +243,7 @@ def get_queue_attributes(
 
 Type annotations for `boto3.client("sqs").get_queue_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.get_queue_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.get_queue_url]
 
 ```python
 def get_queue_url(
@@ -258,7 +258,7 @@ def get_queue_url(
 
 Type annotations for `boto3.client("sqs").list_dead_letter_source_queues` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.list_dead_letter_source_queues]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.list_dead_letter_source_queues]
 
 ```python
 def list_dead_letter_source_queues(
@@ -274,7 +274,7 @@ def list_dead_letter_source_queues(
 
 Type annotations for `boto3.client("sqs").list_queue_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.list_queue_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.list_queue_tags]
 
 ```python
 def list_queue_tags(
@@ -288,7 +288,7 @@ def list_queue_tags(
 
 Type annotations for `boto3.client("sqs").list_queues` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.list_queues]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.list_queues]
 
 ```python
 def list_queues(
@@ -304,7 +304,7 @@ def list_queues(
 
 Type annotations for `boto3.client("sqs").purge_queue` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.purge_queue]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.purge_queue]
 
 ```python
 def purge_queue(
@@ -318,7 +318,7 @@ def purge_queue(
 
 Type annotations for `boto3.client("sqs").receive_message` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.receive_message]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.receive_message]
 
 ```python
 def receive_message(
@@ -338,7 +338,7 @@ def receive_message(
 
 Type annotations for `boto3.client("sqs").remove_permission` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.remove_permission]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.remove_permission]
 
 ```python
 def remove_permission(
@@ -353,7 +353,7 @@ def remove_permission(
 
 Type annotations for `boto3.client("sqs").send_message` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.send_message]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.send_message]
 
 ```python
 def send_message(
@@ -373,7 +373,7 @@ def send_message(
 
 Type annotations for `boto3.client("sqs").send_message_batch` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.send_message_batch]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.send_message_batch]
 
 ```python
 def send_message_batch(
@@ -388,7 +388,7 @@ def send_message_batch(
 
 Type annotations for `boto3.client("sqs").set_queue_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.set_queue_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.set_queue_attributes]
 
 ```python
 def set_queue_attributes(
@@ -403,7 +403,7 @@ def set_queue_attributes(
 
 Type annotations for `boto3.client("sqs").tag_queue` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.tag_queue]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.tag_queue]
 
 ```python
 def tag_queue(
@@ -418,7 +418,7 @@ def tag_queue(
 
 Type annotations for `boto3.client("sqs").untag_queue` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.untag_queue]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.untag_queue]
 
 ```python
 def untag_queue(

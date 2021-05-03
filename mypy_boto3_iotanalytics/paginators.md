@@ -25,7 +25,7 @@ def get_list_channels_paginator() -> ListChannelsPaginator:
     return boto3.client("iotanalytics").get_paginator("list_channels")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListChannels)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListChannels)
 
 ```python
 class ListChannelsPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_list_dataset_contents_paginator() -> ListDatasetContentsPaginator:
     return boto3.client("iotanalytics").get_paginator("list_dataset_contents")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatasetContents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatasetContents)
 
 ```python
 class ListDatasetContentsPaginator(Boto3Paginator):
@@ -74,7 +74,7 @@ def get_list_datasets_paginator() -> ListDatasetsPaginator:
     return boto3.client("iotanalytics").get_paginator("list_datasets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatasets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatasets)
 
 ```python
 class ListDatasetsPaginator(Boto3Paginator):
@@ -97,7 +97,7 @@ def get_list_datastores_paginator() -> ListDatastoresPaginator:
     return boto3.client("iotanalytics").get_paginator("list_datastores")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatastores)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatastores)
 
 ```python
 class ListDatastoresPaginator(Boto3Paginator):
@@ -120,7 +120,7 @@ def get_list_pipelines_paginator() -> ListPipelinesPaginator:
     return boto3.client("iotanalytics").get_paginator("list_pipelines")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListPipelines)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListPipelines)
 
 ```python
 class ListPipelinesPaginator(Boto3Paginator):

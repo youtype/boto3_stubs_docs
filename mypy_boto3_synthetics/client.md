@@ -38,7 +38,7 @@ def get_synthetics_client() -> SyntheticsClient:
     return boto3.client("synthetics")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client)
 
 ## Exceptions
 
@@ -69,7 +69,7 @@ Exceptions:
 
 Type annotations for `boto3.client("synthetics").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -83,7 +83,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("synthetics").create_canary` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.create_canary]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.create_canary]
 
 ```python
 def create_canary(
@@ -107,7 +107,7 @@ def create_canary(
 
 Type annotations for `boto3.client("synthetics").delete_canary` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.delete_canary]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.delete_canary]
 
 ```python
 def delete_canary(
@@ -121,7 +121,7 @@ def delete_canary(
 
 Type annotations for `boto3.client("synthetics").describe_canaries` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.describe_canaries]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.describe_canaries]
 
 ```python
 def describe_canaries(
@@ -136,7 +136,7 @@ def describe_canaries(
 
 Type annotations for `boto3.client("synthetics").describe_canaries_last_run` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.describe_canaries_last_run]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.describe_canaries_last_run]
 
 ```python
 def describe_canaries_last_run(
@@ -151,7 +151,7 @@ def describe_canaries_last_run(
 
 Type annotations for `boto3.client("synthetics").describe_runtime_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.describe_runtime_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.describe_runtime_versions]
 
 ```python
 def describe_runtime_versions(
@@ -166,7 +166,7 @@ def describe_runtime_versions(
 
 Type annotations for `boto3.client("synthetics").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -183,7 +183,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("synthetics").get_canary` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.get_canary]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.get_canary]
 
 ```python
 def get_canary(
@@ -197,7 +197,7 @@ def get_canary(
 
 Type annotations for `boto3.client("synthetics").get_canary_runs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.get_canary_runs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.get_canary_runs]
 
 ```python
 def get_canary_runs(
@@ -213,7 +213,7 @@ def get_canary_runs(
 
 Type annotations for `boto3.client("synthetics").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -227,7 +227,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("synthetics").start_canary` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.start_canary]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.start_canary]
 
 ```python
 def start_canary(
@@ -241,7 +241,7 @@ def start_canary(
 
 Type annotations for `boto3.client("synthetics").stop_canary` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.stop_canary]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.stop_canary]
 
 ```python
 def stop_canary(
@@ -255,7 +255,7 @@ def stop_canary(
 
 Type annotations for `boto3.client("synthetics").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -270,7 +270,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("synthetics").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -285,7 +285,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("synthetics").update_canary` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.update_canary]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.update_canary]
 
 ```python
 def update_canary(

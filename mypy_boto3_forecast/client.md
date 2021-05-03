@@ -61,7 +61,7 @@ def get_forecast_client() -> ForecastServiceClient:
     return boto3.client("forecast")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client)
 
 ## Exceptions
 
@@ -94,7 +94,7 @@ Exceptions:
 
 Type annotations for `boto3.client("forecast").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -108,7 +108,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("forecast").create_dataset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_dataset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_dataset]
 
 ```python
 def create_dataset(
@@ -128,7 +128,7 @@ def create_dataset(
 
 Type annotations for `boto3.client("forecast").create_dataset_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_dataset_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_dataset_group]
 
 ```python
 def create_dataset_group(
@@ -145,7 +145,7 @@ def create_dataset_group(
 
 Type annotations for `boto3.client("forecast").create_dataset_import_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_dataset_import_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_dataset_import_job]
 
 ```python
 def create_dataset_import_job(
@@ -166,7 +166,7 @@ def create_dataset_import_job(
 
 Type annotations for `boto3.client("forecast").create_forecast` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_forecast]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_forecast]
 
 ```python
 def create_forecast(
@@ -183,7 +183,7 @@ def create_forecast(
 
 Type annotations for `boto3.client("forecast").create_forecast_export_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_forecast_export_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_forecast_export_job]
 
 ```python
 def create_forecast_export_job(
@@ -200,7 +200,7 @@ def create_forecast_export_job(
 
 Type annotations for `boto3.client("forecast").create_predictor` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_predictor]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_predictor]
 
 ```python
 def create_predictor(
@@ -226,7 +226,7 @@ def create_predictor(
 
 Type annotations for `boto3.client("forecast").create_predictor_backtest_export_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_predictor_backtest_export_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_predictor_backtest_export_job]
 
 ```python
 def create_predictor_backtest_export_job(
@@ -243,7 +243,7 @@ def create_predictor_backtest_export_job(
 
 Type annotations for `boto3.client("forecast").delete_dataset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_dataset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_dataset]
 
 ```python
 def delete_dataset(
@@ -257,7 +257,7 @@ def delete_dataset(
 
 Type annotations for `boto3.client("forecast").delete_dataset_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_dataset_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_dataset_group]
 
 ```python
 def delete_dataset_group(
@@ -271,7 +271,7 @@ def delete_dataset_group(
 
 Type annotations for `boto3.client("forecast").delete_dataset_import_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_dataset_import_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_dataset_import_job]
 
 ```python
 def delete_dataset_import_job(
@@ -285,7 +285,7 @@ def delete_dataset_import_job(
 
 Type annotations for `boto3.client("forecast").delete_forecast` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_forecast]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_forecast]
 
 ```python
 def delete_forecast(
@@ -299,7 +299,7 @@ def delete_forecast(
 
 Type annotations for `boto3.client("forecast").delete_forecast_export_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_forecast_export_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_forecast_export_job]
 
 ```python
 def delete_forecast_export_job(
@@ -313,7 +313,7 @@ def delete_forecast_export_job(
 
 Type annotations for `boto3.client("forecast").delete_predictor` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_predictor]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_predictor]
 
 ```python
 def delete_predictor(
@@ -327,7 +327,7 @@ def delete_predictor(
 
 Type annotations for `boto3.client("forecast").delete_predictor_backtest_export_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_predictor_backtest_export_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_predictor_backtest_export_job]
 
 ```python
 def delete_predictor_backtest_export_job(
@@ -341,7 +341,7 @@ def delete_predictor_backtest_export_job(
 
 Type annotations for `boto3.client("forecast").delete_resource_tree` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_resource_tree]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_resource_tree]
 
 ```python
 def delete_resource_tree(
@@ -355,7 +355,7 @@ def delete_resource_tree(
 
 Type annotations for `boto3.client("forecast").describe_dataset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_dataset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_dataset]
 
 ```python
 def describe_dataset(
@@ -369,7 +369,7 @@ def describe_dataset(
 
 Type annotations for `boto3.client("forecast").describe_dataset_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_dataset_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_dataset_group]
 
 ```python
 def describe_dataset_group(
@@ -383,7 +383,7 @@ def describe_dataset_group(
 
 Type annotations for `boto3.client("forecast").describe_dataset_import_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_dataset_import_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_dataset_import_job]
 
 ```python
 def describe_dataset_import_job(
@@ -397,7 +397,7 @@ def describe_dataset_import_job(
 
 Type annotations for `boto3.client("forecast").describe_forecast` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_forecast]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_forecast]
 
 ```python
 def describe_forecast(
@@ -411,7 +411,7 @@ def describe_forecast(
 
 Type annotations for `boto3.client("forecast").describe_forecast_export_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_forecast_export_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_forecast_export_job]
 
 ```python
 def describe_forecast_export_job(
@@ -425,7 +425,7 @@ def describe_forecast_export_job(
 
 Type annotations for `boto3.client("forecast").describe_predictor` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_predictor]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_predictor]
 
 ```python
 def describe_predictor(
@@ -439,7 +439,7 @@ def describe_predictor(
 
 Type annotations for `boto3.client("forecast").describe_predictor_backtest_export_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_predictor_backtest_export_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_predictor_backtest_export_job]
 
 ```python
 def describe_predictor_backtest_export_job(
@@ -453,7 +453,7 @@ def describe_predictor_backtest_export_job(
 
 Type annotations for `boto3.client("forecast").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -470,7 +470,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("forecast").get_accuracy_metrics` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.get_accuracy_metrics]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.get_accuracy_metrics]
 
 ```python
 def get_accuracy_metrics(
@@ -484,7 +484,7 @@ def get_accuracy_metrics(
 
 Type annotations for `boto3.client("forecast").list_dataset_groups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_dataset_groups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_dataset_groups]
 
 ```python
 def list_dataset_groups(
@@ -499,7 +499,7 @@ def list_dataset_groups(
 
 Type annotations for `boto3.client("forecast").list_dataset_import_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_dataset_import_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_dataset_import_jobs]
 
 ```python
 def list_dataset_import_jobs(
@@ -515,7 +515,7 @@ def list_dataset_import_jobs(
 
 Type annotations for `boto3.client("forecast").list_datasets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_datasets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_datasets]
 
 ```python
 def list_datasets(
@@ -530,7 +530,7 @@ def list_datasets(
 
 Type annotations for `boto3.client("forecast").list_forecast_export_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_forecast_export_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_forecast_export_jobs]
 
 ```python
 def list_forecast_export_jobs(
@@ -546,7 +546,7 @@ def list_forecast_export_jobs(
 
 Type annotations for `boto3.client("forecast").list_forecasts` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_forecasts]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_forecasts]
 
 ```python
 def list_forecasts(
@@ -562,7 +562,7 @@ def list_forecasts(
 
 Type annotations for `boto3.client("forecast").list_predictor_backtest_export_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_predictor_backtest_export_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_predictor_backtest_export_jobs]
 
 ```python
 def list_predictor_backtest_export_jobs(
@@ -578,7 +578,7 @@ def list_predictor_backtest_export_jobs(
 
 Type annotations for `boto3.client("forecast").list_predictors` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_predictors]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_predictors]
 
 ```python
 def list_predictors(
@@ -594,7 +594,7 @@ def list_predictors(
 
 Type annotations for `boto3.client("forecast").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -608,7 +608,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("forecast").stop_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.stop_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.stop_resource]
 
 ```python
 def stop_resource(
@@ -622,7 +622,7 @@ def stop_resource(
 
 Type annotations for `boto3.client("forecast").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -637,7 +637,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("forecast").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -652,7 +652,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("forecast").update_dataset_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.update_dataset_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.update_dataset_group]
 
 ```python
 def update_dataset_group(

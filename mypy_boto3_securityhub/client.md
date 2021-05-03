@@ -77,7 +77,7 @@ def get_securityhub_client() -> SecurityHubClient:
     return boto3.client("securityhub")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client)
 
 ## Exceptions
 
@@ -111,7 +111,7 @@ Exceptions:
 
 Type annotations for `boto3.client("securityhub").accept_administrator_invitation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.accept_administrator_invitation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.accept_administrator_invitation]
 
 ```python
 def accept_administrator_invitation(
@@ -126,7 +126,7 @@ def accept_administrator_invitation(
 
 Type annotations for `boto3.client("securityhub").accept_invitation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.accept_invitation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.accept_invitation]
 
 ```python
 def accept_invitation(
@@ -141,7 +141,7 @@ def accept_invitation(
 
 Type annotations for `boto3.client("securityhub").batch_disable_standards` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_disable_standards]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_disable_standards]
 
 ```python
 def batch_disable_standards(
@@ -155,7 +155,7 @@ def batch_disable_standards(
 
 Type annotations for `boto3.client("securityhub").batch_enable_standards` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_enable_standards]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_enable_standards]
 
 ```python
 def batch_enable_standards(
@@ -169,7 +169,7 @@ def batch_enable_standards(
 
 Type annotations for `boto3.client("securityhub").batch_import_findings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_import_findings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_import_findings]
 
 ```python
 def batch_import_findings(
@@ -183,7 +183,7 @@ def batch_import_findings(
 
 Type annotations for `boto3.client("securityhub").batch_update_findings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_update_findings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_update_findings]
 
 ```python
 def batch_update_findings(
@@ -206,7 +206,7 @@ def batch_update_findings(
 
 Type annotations for `boto3.client("securityhub").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -220,7 +220,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("securityhub").create_action_target` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_action_target]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_action_target]
 
 ```python
 def create_action_target(
@@ -236,7 +236,7 @@ def create_action_target(
 
 Type annotations for `boto3.client("securityhub").create_insight` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_insight]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_insight]
 
 ```python
 def create_insight(
@@ -252,7 +252,7 @@ def create_insight(
 
 Type annotations for `boto3.client("securityhub").create_members` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_members]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_members]
 
 ```python
 def create_members(
@@ -266,7 +266,7 @@ def create_members(
 
 Type annotations for `boto3.client("securityhub").decline_invitations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.decline_invitations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.decline_invitations]
 
 ```python
 def decline_invitations(
@@ -280,7 +280,7 @@ def decline_invitations(
 
 Type annotations for `boto3.client("securityhub").delete_action_target` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_action_target]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_action_target]
 
 ```python
 def delete_action_target(
@@ -294,7 +294,7 @@ def delete_action_target(
 
 Type annotations for `boto3.client("securityhub").delete_insight` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_insight]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_insight]
 
 ```python
 def delete_insight(
@@ -308,7 +308,7 @@ def delete_insight(
 
 Type annotations for `boto3.client("securityhub").delete_invitations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_invitations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_invitations]
 
 ```python
 def delete_invitations(
@@ -322,7 +322,7 @@ def delete_invitations(
 
 Type annotations for `boto3.client("securityhub").delete_members` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_members]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_members]
 
 ```python
 def delete_members(
@@ -336,7 +336,7 @@ def delete_members(
 
 Type annotations for `boto3.client("securityhub").describe_action_targets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_action_targets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_action_targets]
 
 ```python
 def describe_action_targets(
@@ -352,7 +352,7 @@ def describe_action_targets(
 
 Type annotations for `boto3.client("securityhub").describe_hub` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_hub]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_hub]
 
 ```python
 def describe_hub(
@@ -366,7 +366,7 @@ def describe_hub(
 
 Type annotations for `boto3.client("securityhub").describe_organization_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_organization_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_organization_configuration]
 
 ```python
 def describe_organization_configuration(
@@ -379,7 +379,7 @@ def describe_organization_configuration(
 
 Type annotations for `boto3.client("securityhub").describe_products` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_products]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_products]
 
 ```python
 def describe_products(
@@ -395,7 +395,7 @@ def describe_products(
 
 Type annotations for `boto3.client("securityhub").describe_standards` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_standards]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_standards]
 
 ```python
 def describe_standards(
@@ -410,7 +410,7 @@ def describe_standards(
 
 Type annotations for `boto3.client("securityhub").describe_standards_controls` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_standards_controls]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_standards_controls]
 
 ```python
 def describe_standards_controls(
@@ -426,7 +426,7 @@ def describe_standards_controls(
 
 Type annotations for `boto3.client("securityhub").disable_import_findings_for_product` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_import_findings_for_product]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_import_findings_for_product]
 
 ```python
 def disable_import_findings_for_product(
@@ -440,7 +440,7 @@ def disable_import_findings_for_product(
 
 Type annotations for `boto3.client("securityhub").disable_organization_admin_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_organization_admin_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_organization_admin_account]
 
 ```python
 def disable_organization_admin_account(
@@ -454,7 +454,7 @@ def disable_organization_admin_account(
 
 Type annotations for `boto3.client("securityhub").disable_security_hub` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_security_hub]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_security_hub]
 
 ```python
 def disable_security_hub(
@@ -467,7 +467,7 @@ def disable_security_hub(
 
 Type annotations for `boto3.client("securityhub").disassociate_from_administrator_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_from_administrator_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_from_administrator_account]
 
 ```python
 def disassociate_from_administrator_account(
@@ -480,7 +480,7 @@ def disassociate_from_administrator_account(
 
 Type annotations for `boto3.client("securityhub").disassociate_from_master_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_from_master_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_from_master_account]
 
 ```python
 def disassociate_from_master_account(
@@ -493,7 +493,7 @@ def disassociate_from_master_account(
 
 Type annotations for `boto3.client("securityhub").disassociate_members` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_members]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_members]
 
 ```python
 def disassociate_members(
@@ -507,7 +507,7 @@ def disassociate_members(
 
 Type annotations for `boto3.client("securityhub").enable_import_findings_for_product` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_import_findings_for_product]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_import_findings_for_product]
 
 ```python
 def enable_import_findings_for_product(
@@ -521,7 +521,7 @@ def enable_import_findings_for_product(
 
 Type annotations for `boto3.client("securityhub").enable_organization_admin_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_organization_admin_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_organization_admin_account]
 
 ```python
 def enable_organization_admin_account(
@@ -535,7 +535,7 @@ def enable_organization_admin_account(
 
 Type annotations for `boto3.client("securityhub").enable_security_hub` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_security_hub]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_security_hub]
 
 ```python
 def enable_security_hub(
@@ -550,7 +550,7 @@ def enable_security_hub(
 
 Type annotations for `boto3.client("securityhub").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -567,7 +567,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("securityhub").get_administrator_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_administrator_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_administrator_account]
 
 ```python
 def get_administrator_account(
@@ -580,7 +580,7 @@ def get_administrator_account(
 
 Type annotations for `boto3.client("securityhub").get_enabled_standards` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_enabled_standards]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_enabled_standards]
 
 ```python
 def get_enabled_standards(
@@ -596,7 +596,7 @@ def get_enabled_standards(
 
 Type annotations for `boto3.client("securityhub").get_findings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_findings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_findings]
 
 ```python
 def get_findings(
@@ -613,7 +613,7 @@ def get_findings(
 
 Type annotations for `boto3.client("securityhub").get_insight_results` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_insight_results]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_insight_results]
 
 ```python
 def get_insight_results(
@@ -627,7 +627,7 @@ def get_insight_results(
 
 Type annotations for `boto3.client("securityhub").get_insights` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_insights]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_insights]
 
 ```python
 def get_insights(
@@ -643,7 +643,7 @@ def get_insights(
 
 Type annotations for `boto3.client("securityhub").get_invitations_count` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_invitations_count]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_invitations_count]
 
 ```python
 def get_invitations_count(
@@ -656,7 +656,7 @@ def get_invitations_count(
 
 Type annotations for `boto3.client("securityhub").get_master_account` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_master_account]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_master_account]
 
 ```python
 def get_master_account(
@@ -669,7 +669,7 @@ def get_master_account(
 
 Type annotations for `boto3.client("securityhub").get_members` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_members]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_members]
 
 ```python
 def get_members(
@@ -683,7 +683,7 @@ def get_members(
 
 Type annotations for `boto3.client("securityhub").invite_members` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.invite_members]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.invite_members]
 
 ```python
 def invite_members(
@@ -697,7 +697,7 @@ def invite_members(
 
 Type annotations for `boto3.client("securityhub").list_enabled_products_for_import` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_enabled_products_for_import]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_enabled_products_for_import]
 
 ```python
 def list_enabled_products_for_import(
@@ -712,7 +712,7 @@ def list_enabled_products_for_import(
 
 Type annotations for `boto3.client("securityhub").list_invitations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_invitations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_invitations]
 
 ```python
 def list_invitations(
@@ -727,7 +727,7 @@ def list_invitations(
 
 Type annotations for `boto3.client("securityhub").list_members` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_members]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_members]
 
 ```python
 def list_members(
@@ -743,7 +743,7 @@ def list_members(
 
 Type annotations for `boto3.client("securityhub").list_organization_admin_accounts` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_organization_admin_accounts]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_organization_admin_accounts]
 
 ```python
 def list_organization_admin_accounts(
@@ -758,7 +758,7 @@ def list_organization_admin_accounts(
 
 Type annotations for `boto3.client("securityhub").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -772,7 +772,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("securityhub").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -787,7 +787,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("securityhub").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -802,7 +802,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("securityhub").update_action_target` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_action_target]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_action_target]
 
 ```python
 def update_action_target(
@@ -818,7 +818,7 @@ def update_action_target(
 
 Type annotations for `boto3.client("securityhub").update_findings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_findings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_findings]
 
 ```python
 def update_findings(
@@ -834,7 +834,7 @@ def update_findings(
 
 Type annotations for `boto3.client("securityhub").update_insight` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_insight]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_insight]
 
 ```python
 def update_insight(
@@ -851,7 +851,7 @@ def update_insight(
 
 Type annotations for `boto3.client("securityhub").update_organization_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_organization_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_organization_configuration]
 
 ```python
 def update_organization_configuration(
@@ -865,7 +865,7 @@ def update_organization_configuration(
 
 Type annotations for `boto3.client("securityhub").update_security_hub_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_security_hub_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_security_hub_configuration]
 
 ```python
 def update_security_hub_configuration(
@@ -879,7 +879,7 @@ def update_security_hub_configuration(
 
 Type annotations for `boto3.client("securityhub").update_standards_control` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_standards_control]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_standards_control]
 
 ```python
 def update_standards_control(

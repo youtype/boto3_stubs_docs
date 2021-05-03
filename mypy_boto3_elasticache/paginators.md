@@ -37,7 +37,7 @@ def get_describe_cache_clusters_paginator() -> DescribeCacheClustersPaginator:
     return boto3.client("elasticache").get_paginator("describe_cache_clusters")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheClusters)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheClusters)
 
 ```python
 class DescribeCacheClustersPaginator(Boto3Paginator):
@@ -63,7 +63,7 @@ def get_describe_cache_engine_versions_paginator() -> DescribeCacheEngineVersion
     return boto3.client("elasticache").get_paginator("describe_cache_engine_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheEngineVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheEngineVersions)
 
 ```python
 class DescribeCacheEngineVersionsPaginator(Boto3Paginator):
@@ -90,7 +90,7 @@ def get_describe_cache_parameter_groups_paginator() -> DescribeCacheParameterGro
     return boto3.client("elasticache").get_paginator("describe_cache_parameter_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheParameterGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheParameterGroups)
 
 ```python
 class DescribeCacheParameterGroupsPaginator(Boto3Paginator):
@@ -114,7 +114,7 @@ def get_describe_cache_parameters_paginator() -> DescribeCacheParametersPaginato
     return boto3.client("elasticache").get_paginator("describe_cache_parameters")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheParameters)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheParameters)
 
 ```python
 class DescribeCacheParametersPaginator(Boto3Paginator):
@@ -139,7 +139,7 @@ def get_describe_cache_security_groups_paginator() -> DescribeCacheSecurityGroup
     return boto3.client("elasticache").get_paginator("describe_cache_security_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheSecurityGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheSecurityGroups)
 
 ```python
 class DescribeCacheSecurityGroupsPaginator(Boto3Paginator):
@@ -163,7 +163,7 @@ def get_describe_cache_subnet_groups_paginator() -> DescribeCacheSubnetGroupsPag
     return boto3.client("elasticache").get_paginator("describe_cache_subnet_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheSubnetGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheSubnetGroups)
 
 ```python
 class DescribeCacheSubnetGroupsPaginator(Boto3Paginator):
@@ -187,7 +187,7 @@ def get_describe_engine_default_parameters_paginator() -> DescribeEngineDefaultP
     return boto3.client("elasticache").get_paginator("describe_engine_default_parameters")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeEngineDefaultParameters)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeEngineDefaultParameters)
 
 ```python
 class DescribeEngineDefaultParametersPaginator(Boto3Paginator):
@@ -211,7 +211,7 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return boto3.client("elasticache").get_paginator("describe_events")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeEvents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeEvents)
 
 ```python
 class DescribeEventsPaginator(Boto3Paginator):
@@ -239,7 +239,7 @@ def get_describe_global_replication_groups_paginator() -> DescribeGlobalReplicat
     return boto3.client("elasticache").get_paginator("describe_global_replication_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeGlobalReplicationGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeGlobalReplicationGroups)
 
 ```python
 class DescribeGlobalReplicationGroupsPaginator(Boto3Paginator):
@@ -264,7 +264,7 @@ def get_describe_replication_groups_paginator() -> DescribeReplicationGroupsPagi
     return boto3.client("elasticache").get_paginator("describe_replication_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReplicationGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReplicationGroups)
 
 ```python
 class DescribeReplicationGroupsPaginator(Boto3Paginator):
@@ -288,7 +288,7 @@ def get_describe_reserved_cache_nodes_paginator() -> DescribeReservedCacheNodesP
     return boto3.client("elasticache").get_paginator("describe_reserved_cache_nodes")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReservedCacheNodes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReservedCacheNodes)
 
 ```python
 class DescribeReservedCacheNodesPaginator(Boto3Paginator):
@@ -317,7 +317,7 @@ def get_describe_reserved_cache_nodes_offerings_paginator() -> DescribeReservedC
     return boto3.client("elasticache").get_paginator("describe_reserved_cache_nodes_offerings")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReservedCacheNodesOfferings)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReservedCacheNodesOfferings)
 
 ```python
 class DescribeReservedCacheNodesOfferingsPaginator(Boto3Paginator):
@@ -345,7 +345,7 @@ def get_describe_service_updates_paginator() -> DescribeServiceUpdatesPaginator:
     return boto3.client("elasticache").get_paginator("describe_service_updates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeServiceUpdates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeServiceUpdates)
 
 ```python
 class DescribeServiceUpdatesPaginator(Boto3Paginator):
@@ -370,7 +370,7 @@ def get_describe_snapshots_paginator() -> DescribeSnapshotsPaginator:
     return boto3.client("elasticache").get_paginator("describe_snapshots")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeSnapshots)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeSnapshots)
 
 ```python
 class DescribeSnapshotsPaginator(Boto3Paginator):
@@ -398,7 +398,7 @@ def get_describe_update_actions_paginator() -> DescribeUpdateActionsPaginator:
     return boto3.client("elasticache").get_paginator("describe_update_actions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUpdateActions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUpdateActions)
 
 ```python
 class DescribeUpdateActionsPaginator(Boto3Paginator):
@@ -429,7 +429,7 @@ def get_describe_user_groups_paginator() -> DescribeUserGroupsPaginator:
     return boto3.client("elasticache").get_paginator("describe_user_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUserGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUserGroups)
 
 ```python
 class DescribeUserGroupsPaginator(Boto3Paginator):
@@ -453,7 +453,7 @@ def get_describe_users_paginator() -> DescribeUsersPaginator:
     return boto3.client("elasticache").get_paginator("describe_users")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUsers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUsers)
 
 ```python
 class DescribeUsersPaginator(Boto3Paginator):

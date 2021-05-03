@@ -193,6 +193,7 @@ from mypy_boto3_organizations.literals import AccountJoinedMethod, ...
 - [CreateAccountState](./literals.md#createaccountstate)
 - [EffectivePolicyType](./literals.md#effectivepolicytype)
 - [HandshakePartyType](./literals.md#handshakepartytype)
+- [HandshakeResourceType](./literals.md#handshakeresourcetype)
 - [HandshakeState](./literals.md#handshakestate)
 - [IAMUserAccessToBilling](./literals.md#iamuseraccesstobilling)
 - [ListAWSServiceAccessForOrganizationPaginatorName](./literals.md#listawsserviceaccessfororganizationpaginatorname)

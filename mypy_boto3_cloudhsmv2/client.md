@@ -41,7 +41,7 @@ def get_cloudhsmv2_client() -> CloudHSMV2Client:
     return boto3.client("cloudhsmv2")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client)
 
 ## Exceptions
 
@@ -74,7 +74,7 @@ Exceptions:
 
 Type annotations for `boto3.client("cloudhsmv2").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -88,7 +88,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("cloudhsmv2").copy_backup_to_region` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.copy_backup_to_region]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.copy_backup_to_region]
 
 ```python
 def copy_backup_to_region(
@@ -104,7 +104,7 @@ def copy_backup_to_region(
 
 Type annotations for `boto3.client("cloudhsmv2").create_cluster` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.create_cluster]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.create_cluster]
 
 ```python
 def create_cluster(
@@ -122,7 +122,7 @@ def create_cluster(
 
 Type annotations for `boto3.client("cloudhsmv2").create_hsm` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.create_hsm]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.create_hsm]
 
 ```python
 def create_hsm(
@@ -138,7 +138,7 @@ def create_hsm(
 
 Type annotations for `boto3.client("cloudhsmv2").delete_backup` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_backup]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_backup]
 
 ```python
 def delete_backup(
@@ -152,7 +152,7 @@ def delete_backup(
 
 Type annotations for `boto3.client("cloudhsmv2").delete_cluster` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_cluster]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_cluster]
 
 ```python
 def delete_cluster(
@@ -166,7 +166,7 @@ def delete_cluster(
 
 Type annotations for `boto3.client("cloudhsmv2").delete_hsm` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_hsm]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_hsm]
 
 ```python
 def delete_hsm(
@@ -183,7 +183,7 @@ def delete_hsm(
 
 Type annotations for `boto3.client("cloudhsmv2").describe_backups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.describe_backups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.describe_backups]
 
 ```python
 def describe_backups(
@@ -200,7 +200,7 @@ def describe_backups(
 
 Type annotations for `boto3.client("cloudhsmv2").describe_clusters` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.describe_clusters]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.describe_clusters]
 
 ```python
 def describe_clusters(
@@ -216,7 +216,7 @@ def describe_clusters(
 
 Type annotations for `boto3.client("cloudhsmv2").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -233,7 +233,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("cloudhsmv2").initialize_cluster` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.initialize_cluster]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.initialize_cluster]
 
 ```python
 def initialize_cluster(
@@ -249,7 +249,7 @@ def initialize_cluster(
 
 Type annotations for `boto3.client("cloudhsmv2").list_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.list_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.list_tags]
 
 ```python
 def list_tags(
@@ -265,7 +265,7 @@ def list_tags(
 
 Type annotations for `boto3.client("cloudhsmv2").modify_backup_attributes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.modify_backup_attributes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.modify_backup_attributes]
 
 ```python
 def modify_backup_attributes(
@@ -280,7 +280,7 @@ def modify_backup_attributes(
 
 Type annotations for `boto3.client("cloudhsmv2").modify_cluster` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.modify_cluster]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.modify_cluster]
 
 ```python
 def modify_cluster(
@@ -295,7 +295,7 @@ def modify_cluster(
 
 Type annotations for `boto3.client("cloudhsmv2").restore_backup` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.restore_backup]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.restore_backup]
 
 ```python
 def restore_backup(
@@ -309,7 +309,7 @@ def restore_backup(
 
 Type annotations for `boto3.client("cloudhsmv2").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -324,7 +324,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("cloudhsmv2").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.untag_resource]
 
 ```python
 def untag_resource(

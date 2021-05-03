@@ -30,7 +30,7 @@ def get_cur_client() -> CostandUsageReportServiceClient:
     return boto3.client("cur")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client)
 
 ## Exceptions
 
@@ -61,7 +61,7 @@ Exceptions:
 
 Type annotations for `boto3.client("cur").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -75,7 +75,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("cur").delete_report_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.delete_report_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.delete_report_definition]
 
 ```python
 def delete_report_definition(
@@ -89,7 +89,7 @@ def delete_report_definition(
 
 Type annotations for `boto3.client("cur").describe_report_definitions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.describe_report_definitions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.describe_report_definitions]
 
 ```python
 def describe_report_definitions(
@@ -104,7 +104,7 @@ def describe_report_definitions(
 
 Type annotations for `boto3.client("cur").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -121,7 +121,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("cur").modify_report_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.modify_report_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.modify_report_definition]
 
 ```python
 def modify_report_definition(
@@ -136,7 +136,7 @@ def modify_report_definition(
 
 Type annotations for `boto3.client("cur").put_report_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.put_report_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.put_report_definition]
 
 ```python
 def put_report_definition(

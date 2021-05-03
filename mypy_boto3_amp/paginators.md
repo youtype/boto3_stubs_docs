@@ -21,7 +21,7 @@ def get_list_workspaces_paginator() -> ListWorkspacesPaginator:
     return boto3.client("amp").get_paginator("list_workspaces")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Paginator.ListWorkspaces)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Paginator.ListWorkspaces)
 
 ```python
 class ListWorkspacesPaginator(Boto3Paginator):

@@ -28,7 +28,7 @@ def get_list_detectors_paginator() -> ListDetectorsPaginator:
     return boto3.client("guardduty").get_paginator("list_detectors")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Paginator.ListDetectors)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Paginator.ListDetectors)
 
 ```python
 class ListDetectorsPaginator(Boto3Paginator):
@@ -51,7 +51,7 @@ def get_list_filters_paginator() -> ListFiltersPaginator:
     return boto3.client("guardduty").get_paginator("list_filters")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Paginator.ListFilters)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Paginator.ListFilters)
 
 ```python
 class ListFiltersPaginator(Boto3Paginator):
@@ -75,7 +75,7 @@ def get_list_findings_paginator() -> ListFindingsPaginator:
     return boto3.client("guardduty").get_paginator("list_findings")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Paginator.ListFindings)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Paginator.ListFindings)
 
 ```python
 class ListFindingsPaginator(Boto3Paginator):
@@ -101,7 +101,7 @@ def get_list_ip_sets_paginator() -> ListIPSetsPaginator:
     return boto3.client("guardduty").get_paginator("list_ip_sets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Paginator.ListIPSets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Paginator.ListIPSets)
 
 ```python
 class ListIPSetsPaginator(Boto3Paginator):
@@ -125,7 +125,7 @@ def get_list_invitations_paginator() -> ListInvitationsPaginator:
     return boto3.client("guardduty").get_paginator("list_invitations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Paginator.ListInvitations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Paginator.ListInvitations)
 
 ```python
 class ListInvitationsPaginator(Boto3Paginator):
@@ -148,7 +148,7 @@ def get_list_members_paginator() -> ListMembersPaginator:
     return boto3.client("guardduty").get_paginator("list_members")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Paginator.ListMembers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Paginator.ListMembers)
 
 ```python
 class ListMembersPaginator(Boto3Paginator):
@@ -173,7 +173,7 @@ def get_list_organization_admin_accounts_paginator() -> ListOrganizationAdminAcc
     return boto3.client("guardduty").get_paginator("list_organization_admin_accounts")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Paginator.ListOrganizationAdminAccounts)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Paginator.ListOrganizationAdminAccounts)
 
 ```python
 class ListOrganizationAdminAccountsPaginator(Boto3Paginator):
@@ -196,7 +196,7 @@ def get_list_threat_intel_sets_paginator() -> ListThreatIntelSetsPaginator:
     return boto3.client("guardduty").get_paginator("list_threat_intel_sets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Paginator.ListThreatIntelSets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Paginator.ListThreatIntelSets)
 
 ```python
 class ListThreatIntelSetsPaginator(Boto3Paginator):

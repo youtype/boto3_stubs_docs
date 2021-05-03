@@ -21,7 +21,7 @@ def get_query_paginator() -> QueryPaginator:
     return boto3.client("timestream-query").get_paginator("query")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Paginator.Query)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Paginator.Query)
 
 ```python
 class QueryPaginator(Boto3Paginator):

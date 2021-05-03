@@ -168,7 +168,7 @@ def get_lightsail_client() -> LightsailClient:
     return boto3.client("lightsail")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client)
 
 ## Exceptions
 
@@ -202,7 +202,7 @@ Exceptions:
 
 Type annotations for `boto3.client("lightsail").allocate_static_ip` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.allocate_static_ip]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.allocate_static_ip]
 
 ```python
 def allocate_static_ip(
@@ -216,7 +216,7 @@ def allocate_static_ip(
 
 Type annotations for `boto3.client("lightsail").attach_certificate_to_distribution` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_certificate_to_distribution]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_certificate_to_distribution]
 
 ```python
 def attach_certificate_to_distribution(
@@ -231,7 +231,7 @@ def attach_certificate_to_distribution(
 
 Type annotations for `boto3.client("lightsail").attach_disk` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_disk]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_disk]
 
 ```python
 def attach_disk(
@@ -247,7 +247,7 @@ def attach_disk(
 
 Type annotations for `boto3.client("lightsail").attach_instances_to_load_balancer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_instances_to_load_balancer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_instances_to_load_balancer]
 
 ```python
 def attach_instances_to_load_balancer(
@@ -262,7 +262,7 @@ def attach_instances_to_load_balancer(
 
 Type annotations for `boto3.client("lightsail").attach_load_balancer_tls_certificate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_load_balancer_tls_certificate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_load_balancer_tls_certificate]
 
 ```python
 def attach_load_balancer_tls_certificate(
@@ -277,7 +277,7 @@ def attach_load_balancer_tls_certificate(
 
 Type annotations for `boto3.client("lightsail").attach_static_ip` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_static_ip]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_static_ip]
 
 ```python
 def attach_static_ip(
@@ -292,7 +292,7 @@ def attach_static_ip(
 
 Type annotations for `boto3.client("lightsail").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -306,7 +306,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("lightsail").close_instance_public_ports` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.close_instance_public_ports]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.close_instance_public_ports]
 
 ```python
 def close_instance_public_ports(
@@ -321,7 +321,7 @@ def close_instance_public_ports(
 
 Type annotations for `boto3.client("lightsail").copy_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.copy_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.copy_snapshot]
 
 ```python
 def copy_snapshot(
@@ -340,7 +340,7 @@ def copy_snapshot(
 
 Type annotations for `boto3.client("lightsail").create_certificate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_certificate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_certificate]
 
 ```python
 def create_certificate(
@@ -357,7 +357,7 @@ def create_certificate(
 
 Type annotations for `boto3.client("lightsail").create_cloud_formation_stack` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_cloud_formation_stack]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_cloud_formation_stack]
 
 ```python
 def create_cloud_formation_stack(
@@ -371,7 +371,7 @@ def create_cloud_formation_stack(
 
 Type annotations for `boto3.client("lightsail").create_contact_method` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_contact_method]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_contact_method]
 
 ```python
 def create_contact_method(
@@ -386,7 +386,7 @@ def create_contact_method(
 
 Type annotations for `boto3.client("lightsail").create_container_service` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service]
 
 ```python
 def create_container_service(
@@ -405,7 +405,7 @@ def create_container_service(
 
 Type annotations for `boto3.client("lightsail").create_container_service_deployment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service_deployment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service_deployment]
 
 ```python
 def create_container_service_deployment(
@@ -421,7 +421,7 @@ def create_container_service_deployment(
 
 Type annotations for `boto3.client("lightsail").create_container_service_registry_login` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service_registry_login]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service_registry_login]
 
 ```python
 def create_container_service_registry_login(
@@ -434,7 +434,7 @@ def create_container_service_registry_login(
 
 Type annotations for `boto3.client("lightsail").create_disk` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk]
 
 ```python
 def create_disk(
@@ -452,7 +452,7 @@ def create_disk(
 
 Type annotations for `boto3.client("lightsail").create_disk_from_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk_from_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk_from_snapshot]
 
 ```python
 def create_disk_from_snapshot(
@@ -474,7 +474,7 @@ def create_disk_from_snapshot(
 
 Type annotations for `boto3.client("lightsail").create_disk_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk_snapshot]
 
 ```python
 def create_disk_snapshot(
@@ -491,7 +491,7 @@ def create_disk_snapshot(
 
 Type annotations for `boto3.client("lightsail").create_distribution` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_distribution]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_distribution]
 
 ```python
 def create_distribution(
@@ -512,7 +512,7 @@ def create_distribution(
 
 Type annotations for `boto3.client("lightsail").create_domain` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_domain]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_domain]
 
 ```python
 def create_domain(
@@ -527,7 +527,7 @@ def create_domain(
 
 Type annotations for `boto3.client("lightsail").create_domain_entry` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_domain_entry]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_domain_entry]
 
 ```python
 def create_domain_entry(
@@ -542,7 +542,7 @@ def create_domain_entry(
 
 Type annotations for `boto3.client("lightsail").create_instance_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instance_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instance_snapshot]
 
 ```python
 def create_instance_snapshot(
@@ -558,7 +558,7 @@ def create_instance_snapshot(
 
 Type annotations for `boto3.client("lightsail").create_instances` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instances]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instances]
 
 ```python
 def create_instances(
@@ -581,7 +581,7 @@ def create_instances(
 
 Type annotations for `boto3.client("lightsail").create_instances_from_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instances_from_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instances_from_snapshot]
 
 ```python
 def create_instances_from_snapshot(
@@ -607,7 +607,7 @@ def create_instances_from_snapshot(
 
 Type annotations for `boto3.client("lightsail").create_key_pair` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_key_pair]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_key_pair]
 
 ```python
 def create_key_pair(
@@ -622,7 +622,7 @@ def create_key_pair(
 
 Type annotations for `boto3.client("lightsail").create_load_balancer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_load_balancer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_load_balancer]
 
 ```python
 def create_load_balancer(
@@ -643,7 +643,7 @@ def create_load_balancer(
 
 Type annotations for `boto3.client("lightsail").create_load_balancer_tls_certificate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_load_balancer_tls_certificate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_load_balancer_tls_certificate]
 
 ```python
 def create_load_balancer_tls_certificate(
@@ -661,7 +661,7 @@ def create_load_balancer_tls_certificate(
 
 Type annotations for `boto3.client("lightsail").create_relational_database` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database]
 
 ```python
 def create_relational_database(
@@ -685,7 +685,7 @@ def create_relational_database(
 
 Type annotations for `boto3.client("lightsail").create_relational_database_from_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database_from_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database_from_snapshot]
 
 ```python
 def create_relational_database_from_snapshot(
@@ -707,7 +707,7 @@ def create_relational_database_from_snapshot(
 
 Type annotations for `boto3.client("lightsail").create_relational_database_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database_snapshot]
 
 ```python
 def create_relational_database_snapshot(
@@ -723,7 +723,7 @@ def create_relational_database_snapshot(
 
 Type annotations for `boto3.client("lightsail").delete_alarm` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_alarm]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_alarm]
 
 ```python
 def delete_alarm(
@@ -737,7 +737,7 @@ def delete_alarm(
 
 Type annotations for `boto3.client("lightsail").delete_auto_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_auto_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_auto_snapshot]
 
 ```python
 def delete_auto_snapshot(
@@ -752,7 +752,7 @@ def delete_auto_snapshot(
 
 Type annotations for `boto3.client("lightsail").delete_certificate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_certificate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_certificate]
 
 ```python
 def delete_certificate(
@@ -766,7 +766,7 @@ def delete_certificate(
 
 Type annotations for `boto3.client("lightsail").delete_contact_method` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_contact_method]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_contact_method]
 
 ```python
 def delete_contact_method(
@@ -780,7 +780,7 @@ def delete_contact_method(
 
 Type annotations for `boto3.client("lightsail").delete_container_image` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_container_image]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_container_image]
 
 ```python
 def delete_container_image(
@@ -795,7 +795,7 @@ def delete_container_image(
 
 Type annotations for `boto3.client("lightsail").delete_container_service` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_container_service]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_container_service]
 
 ```python
 def delete_container_service(
@@ -809,7 +809,7 @@ def delete_container_service(
 
 Type annotations for `boto3.client("lightsail").delete_disk` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_disk]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_disk]
 
 ```python
 def delete_disk(
@@ -824,7 +824,7 @@ def delete_disk(
 
 Type annotations for `boto3.client("lightsail").delete_disk_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_disk_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_disk_snapshot]
 
 ```python
 def delete_disk_snapshot(
@@ -838,7 +838,7 @@ def delete_disk_snapshot(
 
 Type annotations for `boto3.client("lightsail").delete_distribution` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_distribution]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_distribution]
 
 ```python
 def delete_distribution(
@@ -852,7 +852,7 @@ def delete_distribution(
 
 Type annotations for `boto3.client("lightsail").delete_domain` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_domain]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_domain]
 
 ```python
 def delete_domain(
@@ -866,7 +866,7 @@ def delete_domain(
 
 Type annotations for `boto3.client("lightsail").delete_domain_entry` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_domain_entry]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_domain_entry]
 
 ```python
 def delete_domain_entry(
@@ -881,7 +881,7 @@ def delete_domain_entry(
 
 Type annotations for `boto3.client("lightsail").delete_instance` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_instance]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_instance]
 
 ```python
 def delete_instance(
@@ -896,7 +896,7 @@ def delete_instance(
 
 Type annotations for `boto3.client("lightsail").delete_instance_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_instance_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_instance_snapshot]
 
 ```python
 def delete_instance_snapshot(
@@ -910,7 +910,7 @@ def delete_instance_snapshot(
 
 Type annotations for `boto3.client("lightsail").delete_key_pair` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_key_pair]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_key_pair]
 
 ```python
 def delete_key_pair(
@@ -924,7 +924,7 @@ def delete_key_pair(
 
 Type annotations for `boto3.client("lightsail").delete_known_host_keys` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_known_host_keys]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_known_host_keys]
 
 ```python
 def delete_known_host_keys(
@@ -938,7 +938,7 @@ def delete_known_host_keys(
 
 Type annotations for `boto3.client("lightsail").delete_load_balancer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_load_balancer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_load_balancer]
 
 ```python
 def delete_load_balancer(
@@ -952,7 +952,7 @@ def delete_load_balancer(
 
 Type annotations for `boto3.client("lightsail").delete_load_balancer_tls_certificate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_load_balancer_tls_certificate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_load_balancer_tls_certificate]
 
 ```python
 def delete_load_balancer_tls_certificate(
@@ -968,7 +968,7 @@ def delete_load_balancer_tls_certificate(
 
 Type annotations for `boto3.client("lightsail").delete_relational_database` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_relational_database]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_relational_database]
 
 ```python
 def delete_relational_database(
@@ -984,7 +984,7 @@ def delete_relational_database(
 
 Type annotations for `boto3.client("lightsail").delete_relational_database_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_relational_database_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_relational_database_snapshot]
 
 ```python
 def delete_relational_database_snapshot(
@@ -998,7 +998,7 @@ def delete_relational_database_snapshot(
 
 Type annotations for `boto3.client("lightsail").detach_certificate_from_distribution` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_certificate_from_distribution]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_certificate_from_distribution]
 
 ```python
 def detach_certificate_from_distribution(
@@ -1012,7 +1012,7 @@ def detach_certificate_from_distribution(
 
 Type annotations for `boto3.client("lightsail").detach_disk` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_disk]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_disk]
 
 ```python
 def detach_disk(
@@ -1026,7 +1026,7 @@ def detach_disk(
 
 Type annotations for `boto3.client("lightsail").detach_instances_from_load_balancer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_instances_from_load_balancer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_instances_from_load_balancer]
 
 ```python
 def detach_instances_from_load_balancer(
@@ -1041,7 +1041,7 @@ def detach_instances_from_load_balancer(
 
 Type annotations for `boto3.client("lightsail").detach_static_ip` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_static_ip]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_static_ip]
 
 ```python
 def detach_static_ip(
@@ -1055,7 +1055,7 @@ def detach_static_ip(
 
 Type annotations for `boto3.client("lightsail").disable_add_on` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.disable_add_on]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.disable_add_on]
 
 ```python
 def disable_add_on(
@@ -1070,7 +1070,7 @@ def disable_add_on(
 
 Type annotations for `boto3.client("lightsail").download_default_key_pair` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.download_default_key_pair]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.download_default_key_pair]
 
 ```python
 def download_default_key_pair(
@@ -1083,7 +1083,7 @@ def download_default_key_pair(
 
 Type annotations for `boto3.client("lightsail").enable_add_on` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.enable_add_on]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.enable_add_on]
 
 ```python
 def enable_add_on(
@@ -1098,7 +1098,7 @@ def enable_add_on(
 
 Type annotations for `boto3.client("lightsail").export_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.export_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.export_snapshot]
 
 ```python
 def export_snapshot(
@@ -1112,7 +1112,7 @@ def export_snapshot(
 
 Type annotations for `boto3.client("lightsail").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -1129,7 +1129,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("lightsail").get_active_names` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_active_names]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_active_names]
 
 ```python
 def get_active_names(
@@ -1143,7 +1143,7 @@ def get_active_names(
 
 Type annotations for `boto3.client("lightsail").get_alarms` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_alarms]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_alarms]
 
 ```python
 def get_alarms(
@@ -1159,7 +1159,7 @@ def get_alarms(
 
 Type annotations for `boto3.client("lightsail").get_auto_snapshots` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_auto_snapshots]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_auto_snapshots]
 
 ```python
 def get_auto_snapshots(
@@ -1173,7 +1173,7 @@ def get_auto_snapshots(
 
 Type annotations for `boto3.client("lightsail").get_blueprints` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_blueprints]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_blueprints]
 
 ```python
 def get_blueprints(
@@ -1188,7 +1188,7 @@ def get_blueprints(
 
 Type annotations for `boto3.client("lightsail").get_bundles` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_bundles]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_bundles]
 
 ```python
 def get_bundles(
@@ -1203,7 +1203,7 @@ def get_bundles(
 
 Type annotations for `boto3.client("lightsail").get_certificates` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_certificates]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_certificates]
 
 ```python
 def get_certificates(
@@ -1219,7 +1219,7 @@ def get_certificates(
 
 Type annotations for `boto3.client("lightsail").get_cloud_formation_stack_records` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_cloud_formation_stack_records]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_cloud_formation_stack_records]
 
 ```python
 def get_cloud_formation_stack_records(
@@ -1233,7 +1233,7 @@ def get_cloud_formation_stack_records(
 
 Type annotations for `boto3.client("lightsail").get_contact_methods` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_contact_methods]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_contact_methods]
 
 ```python
 def get_contact_methods(
@@ -1247,7 +1247,7 @@ def get_contact_methods(
 
 Type annotations for `boto3.client("lightsail").get_container_api_metadata` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_api_metadata]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_api_metadata]
 
 ```python
 def get_container_api_metadata(
@@ -1260,7 +1260,7 @@ def get_container_api_metadata(
 
 Type annotations for `boto3.client("lightsail").get_container_images` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_images]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_images]
 
 ```python
 def get_container_images(
@@ -1274,7 +1274,7 @@ def get_container_images(
 
 Type annotations for `boto3.client("lightsail").get_container_log` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_log]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_log]
 
 ```python
 def get_container_log(
@@ -1293,7 +1293,7 @@ def get_container_log(
 
 Type annotations for `boto3.client("lightsail").get_container_service_deployments` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_deployments]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_deployments]
 
 ```python
 def get_container_service_deployments(
@@ -1307,7 +1307,7 @@ def get_container_service_deployments(
 
 Type annotations for `boto3.client("lightsail").get_container_service_metric_data` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_metric_data]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_metric_data]
 
 ```python
 def get_container_service_metric_data(
@@ -1326,7 +1326,7 @@ def get_container_service_metric_data(
 
 Type annotations for `boto3.client("lightsail").get_container_service_powers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_powers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_powers]
 
 ```python
 def get_container_service_powers(
@@ -1339,7 +1339,7 @@ def get_container_service_powers(
 
 Type annotations for `boto3.client("lightsail").get_container_services` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_services]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_services]
 
 ```python
 def get_container_services(
@@ -1353,7 +1353,7 @@ def get_container_services(
 
 Type annotations for `boto3.client("lightsail").get_disk` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disk]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disk]
 
 ```python
 def get_disk(
@@ -1367,7 +1367,7 @@ def get_disk(
 
 Type annotations for `boto3.client("lightsail").get_disk_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disk_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disk_snapshot]
 
 ```python
 def get_disk_snapshot(
@@ -1381,7 +1381,7 @@ def get_disk_snapshot(
 
 Type annotations for `boto3.client("lightsail").get_disk_snapshots` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disk_snapshots]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disk_snapshots]
 
 ```python
 def get_disk_snapshots(
@@ -1395,7 +1395,7 @@ def get_disk_snapshots(
 
 Type annotations for `boto3.client("lightsail").get_disks` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disks]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disks]
 
 ```python
 def get_disks(
@@ -1409,7 +1409,7 @@ def get_disks(
 
 Type annotations for `boto3.client("lightsail").get_distribution_bundles` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_bundles]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_bundles]
 
 ```python
 def get_distribution_bundles(
@@ -1422,7 +1422,7 @@ def get_distribution_bundles(
 
 Type annotations for `boto3.client("lightsail").get_distribution_latest_cache_reset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_latest_cache_reset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_latest_cache_reset]
 
 ```python
 def get_distribution_latest_cache_reset(
@@ -1436,7 +1436,7 @@ def get_distribution_latest_cache_reset(
 
 Type annotations for `boto3.client("lightsail").get_distribution_metric_data` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_metric_data]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_metric_data]
 
 ```python
 def get_distribution_metric_data(
@@ -1456,7 +1456,7 @@ def get_distribution_metric_data(
 
 Type annotations for `boto3.client("lightsail").get_distributions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distributions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distributions]
 
 ```python
 def get_distributions(
@@ -1471,7 +1471,7 @@ def get_distributions(
 
 Type annotations for `boto3.client("lightsail").get_domain` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_domain]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_domain]
 
 ```python
 def get_domain(
@@ -1485,7 +1485,7 @@ def get_domain(
 
 Type annotations for `boto3.client("lightsail").get_domains` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_domains]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_domains]
 
 ```python
 def get_domains(
@@ -1499,7 +1499,7 @@ def get_domains(
 
 Type annotations for `boto3.client("lightsail").get_export_snapshot_records` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_export_snapshot_records]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_export_snapshot_records]
 
 ```python
 def get_export_snapshot_records(
@@ -1513,7 +1513,7 @@ def get_export_snapshot_records(
 
 Type annotations for `boto3.client("lightsail").get_instance` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance]
 
 ```python
 def get_instance(
@@ -1527,7 +1527,7 @@ def get_instance(
 
 Type annotations for `boto3.client("lightsail").get_instance_access_details` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_access_details]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_access_details]
 
 ```python
 def get_instance_access_details(
@@ -1542,7 +1542,7 @@ def get_instance_access_details(
 
 Type annotations for `boto3.client("lightsail").get_instance_metric_data` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_metric_data]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_metric_data]
 
 ```python
 def get_instance_metric_data(
@@ -1562,7 +1562,7 @@ def get_instance_metric_data(
 
 Type annotations for `boto3.client("lightsail").get_instance_port_states` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_port_states]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_port_states]
 
 ```python
 def get_instance_port_states(
@@ -1576,7 +1576,7 @@ def get_instance_port_states(
 
 Type annotations for `boto3.client("lightsail").get_instance_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_snapshot]
 
 ```python
 def get_instance_snapshot(
@@ -1590,7 +1590,7 @@ def get_instance_snapshot(
 
 Type annotations for `boto3.client("lightsail").get_instance_snapshots` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_snapshots]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_snapshots]
 
 ```python
 def get_instance_snapshots(
@@ -1604,7 +1604,7 @@ def get_instance_snapshots(
 
 Type annotations for `boto3.client("lightsail").get_instance_state` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_state]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_state]
 
 ```python
 def get_instance_state(
@@ -1618,7 +1618,7 @@ def get_instance_state(
 
 Type annotations for `boto3.client("lightsail").get_instances` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instances]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instances]
 
 ```python
 def get_instances(
@@ -1632,7 +1632,7 @@ def get_instances(
 
 Type annotations for `boto3.client("lightsail").get_key_pair` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_key_pair]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_key_pair]
 
 ```python
 def get_key_pair(
@@ -1646,7 +1646,7 @@ def get_key_pair(
 
 Type annotations for `boto3.client("lightsail").get_key_pairs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_key_pairs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_key_pairs]
 
 ```python
 def get_key_pairs(
@@ -1660,7 +1660,7 @@ def get_key_pairs(
 
 Type annotations for `boto3.client("lightsail").get_load_balancer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer]
 
 ```python
 def get_load_balancer(
@@ -1674,7 +1674,7 @@ def get_load_balancer(
 
 Type annotations for `boto3.client("lightsail").get_load_balancer_metric_data` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer_metric_data]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer_metric_data]
 
 ```python
 def get_load_balancer_metric_data(
@@ -1694,7 +1694,7 @@ def get_load_balancer_metric_data(
 
 Type annotations for `boto3.client("lightsail").get_load_balancer_tls_certificates` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer_tls_certificates]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer_tls_certificates]
 
 ```python
 def get_load_balancer_tls_certificates(
@@ -1708,7 +1708,7 @@ def get_load_balancer_tls_certificates(
 
 Type annotations for `boto3.client("lightsail").get_load_balancers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancers]
 
 ```python
 def get_load_balancers(
@@ -1722,7 +1722,7 @@ def get_load_balancers(
 
 Type annotations for `boto3.client("lightsail").get_operation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_operation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_operation]
 
 ```python
 def get_operation(
@@ -1736,7 +1736,7 @@ def get_operation(
 
 Type annotations for `boto3.client("lightsail").get_operations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_operations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_operations]
 
 ```python
 def get_operations(
@@ -1750,7 +1750,7 @@ def get_operations(
 
 Type annotations for `boto3.client("lightsail").get_operations_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_operations_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_operations_for_resource]
 
 ```python
 def get_operations_for_resource(
@@ -1765,7 +1765,7 @@ def get_operations_for_resource(
 
 Type annotations for `boto3.client("lightsail").get_regions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_regions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_regions]
 
 ```python
 def get_regions(
@@ -1780,7 +1780,7 @@ def get_regions(
 
 Type annotations for `boto3.client("lightsail").get_relational_database` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database]
 
 ```python
 def get_relational_database(
@@ -1794,7 +1794,7 @@ def get_relational_database(
 
 Type annotations for `boto3.client("lightsail").get_relational_database_blueprints` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_blueprints]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_blueprints]
 
 ```python
 def get_relational_database_blueprints(
@@ -1808,7 +1808,7 @@ def get_relational_database_blueprints(
 
 Type annotations for `boto3.client("lightsail").get_relational_database_bundles` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_bundles]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_bundles]
 
 ```python
 def get_relational_database_bundles(
@@ -1822,7 +1822,7 @@ def get_relational_database_bundles(
 
 Type annotations for `boto3.client("lightsail").get_relational_database_events` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_events]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_events]
 
 ```python
 def get_relational_database_events(
@@ -1838,7 +1838,7 @@ def get_relational_database_events(
 
 Type annotations for `boto3.client("lightsail").get_relational_database_log_events` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_log_events]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_log_events]
 
 ```python
 def get_relational_database_log_events(
@@ -1857,7 +1857,7 @@ def get_relational_database_log_events(
 
 Type annotations for `boto3.client("lightsail").get_relational_database_log_streams` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_log_streams]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_log_streams]
 
 ```python
 def get_relational_database_log_streams(
@@ -1871,7 +1871,7 @@ def get_relational_database_log_streams(
 
 Type annotations for `boto3.client("lightsail").get_relational_database_master_user_password` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_master_user_password]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_master_user_password]
 
 ```python
 def get_relational_database_master_user_password(
@@ -1886,7 +1886,7 @@ def get_relational_database_master_user_password(
 
 Type annotations for `boto3.client("lightsail").get_relational_database_metric_data` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_metric_data]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_metric_data]
 
 ```python
 def get_relational_database_metric_data(
@@ -1906,7 +1906,7 @@ def get_relational_database_metric_data(
 
 Type annotations for `boto3.client("lightsail").get_relational_database_parameters` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_parameters]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_parameters]
 
 ```python
 def get_relational_database_parameters(
@@ -1921,7 +1921,7 @@ def get_relational_database_parameters(
 
 Type annotations for `boto3.client("lightsail").get_relational_database_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_snapshot]
 
 ```python
 def get_relational_database_snapshot(
@@ -1935,7 +1935,7 @@ def get_relational_database_snapshot(
 
 Type annotations for `boto3.client("lightsail").get_relational_database_snapshots` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_snapshots]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_snapshots]
 
 ```python
 def get_relational_database_snapshots(
@@ -1949,7 +1949,7 @@ def get_relational_database_snapshots(
 
 Type annotations for `boto3.client("lightsail").get_relational_databases` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_databases]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_databases]
 
 ```python
 def get_relational_databases(
@@ -1963,7 +1963,7 @@ def get_relational_databases(
 
 Type annotations for `boto3.client("lightsail").get_static_ip` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_static_ip]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_static_ip]
 
 ```python
 def get_static_ip(
@@ -1977,7 +1977,7 @@ def get_static_ip(
 
 Type annotations for `boto3.client("lightsail").get_static_ips` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_static_ips]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_static_ips]
 
 ```python
 def get_static_ips(
@@ -1991,7 +1991,7 @@ def get_static_ips(
 
 Type annotations for `boto3.client("lightsail").import_key_pair` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.import_key_pair]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.import_key_pair]
 
 ```python
 def import_key_pair(
@@ -2006,7 +2006,7 @@ def import_key_pair(
 
 Type annotations for `boto3.client("lightsail").is_vpc_peered` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.is_vpc_peered]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.is_vpc_peered]
 
 ```python
 def is_vpc_peered(
@@ -2019,7 +2019,7 @@ def is_vpc_peered(
 
 Type annotations for `boto3.client("lightsail").open_instance_public_ports` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.open_instance_public_ports]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.open_instance_public_ports]
 
 ```python
 def open_instance_public_ports(
@@ -2034,7 +2034,7 @@ def open_instance_public_ports(
 
 Type annotations for `boto3.client("lightsail").peer_vpc` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.peer_vpc]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.peer_vpc]
 
 ```python
 def peer_vpc(
@@ -2047,7 +2047,7 @@ def peer_vpc(
 
 Type annotations for `boto3.client("lightsail").put_alarm` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.put_alarm]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.put_alarm]
 
 ```python
 def put_alarm(
@@ -2071,7 +2071,7 @@ def put_alarm(
 
 Type annotations for `boto3.client("lightsail").put_instance_public_ports` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.put_instance_public_ports]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.put_instance_public_ports]
 
 ```python
 def put_instance_public_ports(
@@ -2086,7 +2086,7 @@ def put_instance_public_ports(
 
 Type annotations for `boto3.client("lightsail").reboot_instance` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.reboot_instance]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.reboot_instance]
 
 ```python
 def reboot_instance(
@@ -2100,7 +2100,7 @@ def reboot_instance(
 
 Type annotations for `boto3.client("lightsail").reboot_relational_database` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.reboot_relational_database]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.reboot_relational_database]
 
 ```python
 def reboot_relational_database(
@@ -2114,7 +2114,7 @@ def reboot_relational_database(
 
 Type annotations for `boto3.client("lightsail").register_container_image` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.register_container_image]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.register_container_image]
 
 ```python
 def register_container_image(
@@ -2130,7 +2130,7 @@ def register_container_image(
 
 Type annotations for `boto3.client("lightsail").release_static_ip` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.release_static_ip]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.release_static_ip]
 
 ```python
 def release_static_ip(
@@ -2144,7 +2144,7 @@ def release_static_ip(
 
 Type annotations for `boto3.client("lightsail").reset_distribution_cache` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.reset_distribution_cache]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.reset_distribution_cache]
 
 ```python
 def reset_distribution_cache(
@@ -2158,7 +2158,7 @@ def reset_distribution_cache(
 
 Type annotations for `boto3.client("lightsail").send_contact_method_verification` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.send_contact_method_verification]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.send_contact_method_verification]
 
 ```python
 def send_contact_method_verification(
@@ -2172,7 +2172,7 @@ def send_contact_method_verification(
 
 Type annotations for `boto3.client("lightsail").set_ip_address_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.set_ip_address_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.set_ip_address_type]
 
 ```python
 def set_ip_address_type(
@@ -2188,7 +2188,7 @@ def set_ip_address_type(
 
 Type annotations for `boto3.client("lightsail").start_instance` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.start_instance]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.start_instance]
 
 ```python
 def start_instance(
@@ -2202,7 +2202,7 @@ def start_instance(
 
 Type annotations for `boto3.client("lightsail").start_relational_database` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.start_relational_database]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.start_relational_database]
 
 ```python
 def start_relational_database(
@@ -2216,7 +2216,7 @@ def start_relational_database(
 
 Type annotations for `boto3.client("lightsail").stop_instance` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.stop_instance]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.stop_instance]
 
 ```python
 def stop_instance(
@@ -2231,7 +2231,7 @@ def stop_instance(
 
 Type annotations for `boto3.client("lightsail").stop_relational_database` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.stop_relational_database]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.stop_relational_database]
 
 ```python
 def stop_relational_database(
@@ -2246,7 +2246,7 @@ def stop_relational_database(
 
 Type annotations for `boto3.client("lightsail").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -2262,7 +2262,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("lightsail").test_alarm` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.test_alarm]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.test_alarm]
 
 ```python
 def test_alarm(
@@ -2277,7 +2277,7 @@ def test_alarm(
 
 Type annotations for `boto3.client("lightsail").unpeer_vpc` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.unpeer_vpc]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.unpeer_vpc]
 
 ```python
 def unpeer_vpc(
@@ -2290,7 +2290,7 @@ def unpeer_vpc(
 
 Type annotations for `boto3.client("lightsail").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -2306,7 +2306,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("lightsail").update_container_service` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_container_service]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_container_service]
 
 ```python
 def update_container_service(
@@ -2324,7 +2324,7 @@ def update_container_service(
 
 Type annotations for `boto3.client("lightsail").update_distribution` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_distribution]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_distribution]
 
 ```python
 def update_distribution(
@@ -2343,7 +2343,7 @@ def update_distribution(
 
 Type annotations for `boto3.client("lightsail").update_distribution_bundle` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_distribution_bundle]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_distribution_bundle]
 
 ```python
 def update_distribution_bundle(
@@ -2358,7 +2358,7 @@ def update_distribution_bundle(
 
 Type annotations for `boto3.client("lightsail").update_domain_entry` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_domain_entry]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_domain_entry]
 
 ```python
 def update_domain_entry(
@@ -2373,7 +2373,7 @@ def update_domain_entry(
 
 Type annotations for `boto3.client("lightsail").update_load_balancer_attribute` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_load_balancer_attribute]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_load_balancer_attribute]
 
 ```python
 def update_load_balancer_attribute(
@@ -2389,7 +2389,7 @@ def update_load_balancer_attribute(
 
 Type annotations for `boto3.client("lightsail").update_relational_database` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_relational_database]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_relational_database]
 
 ```python
 def update_relational_database(
@@ -2412,7 +2412,7 @@ def update_relational_database(
 
 Type annotations for `boto3.client("lightsail").update_relational_database_parameters` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_relational_database_parameters]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_relational_database_parameters]
 
 ```python
 def update_relational_database_parameters(

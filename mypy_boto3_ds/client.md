@@ -88,7 +88,7 @@ def get_ds_client() -> DirectoryServiceClient:
     return boto3.client("ds")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client)
 
 ## Exceptions
 
@@ -149,7 +149,7 @@ Exceptions:
 
 Type annotations for `boto3.client("ds").accept_shared_directory` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.accept_shared_directory]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.accept_shared_directory]
 
 ```python
 def accept_shared_directory(
@@ -163,7 +163,7 @@ def accept_shared_directory(
 
 Type annotations for `boto3.client("ds").add_ip_routes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_ip_routes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_ip_routes]
 
 ```python
 def add_ip_routes(
@@ -179,7 +179,7 @@ def add_ip_routes(
 
 Type annotations for `boto3.client("ds").add_region` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_region]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_region]
 
 ```python
 def add_region(
@@ -195,7 +195,7 @@ def add_region(
 
 Type annotations for `boto3.client("ds").add_tags_to_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_tags_to_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_tags_to_resource]
 
 ```python
 def add_tags_to_resource(
@@ -210,7 +210,7 @@ def add_tags_to_resource(
 
 Type annotations for `boto3.client("ds").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -224,7 +224,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("ds").cancel_schema_extension` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.cancel_schema_extension]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.cancel_schema_extension]
 
 ```python
 def cancel_schema_extension(
@@ -239,7 +239,7 @@ def cancel_schema_extension(
 
 Type annotations for `boto3.client("ds").connect_directory` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.connect_directory]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.connect_directory]
 
 ```python
 def connect_directory(
@@ -259,7 +259,7 @@ def connect_directory(
 
 Type annotations for `boto3.client("ds").create_alias` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_alias]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_alias]
 
 ```python
 def create_alias(
@@ -274,7 +274,7 @@ def create_alias(
 
 Type annotations for `boto3.client("ds").create_computer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_computer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_computer]
 
 ```python
 def create_computer(
@@ -292,7 +292,7 @@ def create_computer(
 
 Type annotations for `boto3.client("ds").create_conditional_forwarder` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_conditional_forwarder]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_conditional_forwarder]
 
 ```python
 def create_conditional_forwarder(
@@ -308,7 +308,7 @@ def create_conditional_forwarder(
 
 Type annotations for `boto3.client("ds").create_directory` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_directory]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_directory]
 
 ```python
 def create_directory(
@@ -328,7 +328,7 @@ def create_directory(
 
 Type annotations for `boto3.client("ds").create_log_subscription` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_log_subscription]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_log_subscription]
 
 ```python
 def create_log_subscription(
@@ -343,7 +343,7 @@ def create_log_subscription(
 
 Type annotations for `boto3.client("ds").create_microsoft_ad` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_microsoft_ad]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_microsoft_ad]
 
 ```python
 def create_microsoft_ad(
@@ -363,7 +363,7 @@ def create_microsoft_ad(
 
 Type annotations for `boto3.client("ds").create_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_snapshot]
 
 ```python
 def create_snapshot(
@@ -378,7 +378,7 @@ def create_snapshot(
 
 Type annotations for `boto3.client("ds").create_trust` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_trust]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_trust]
 
 ```python
 def create_trust(
@@ -398,7 +398,7 @@ def create_trust(
 
 Type annotations for `boto3.client("ds").delete_conditional_forwarder` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_conditional_forwarder]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_conditional_forwarder]
 
 ```python
 def delete_conditional_forwarder(
@@ -413,7 +413,7 @@ def delete_conditional_forwarder(
 
 Type annotations for `boto3.client("ds").delete_directory` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_directory]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_directory]
 
 ```python
 def delete_directory(
@@ -427,7 +427,7 @@ def delete_directory(
 
 Type annotations for `boto3.client("ds").delete_log_subscription` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_log_subscription]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_log_subscription]
 
 ```python
 def delete_log_subscription(
@@ -441,7 +441,7 @@ def delete_log_subscription(
 
 Type annotations for `boto3.client("ds").delete_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_snapshot]
 
 ```python
 def delete_snapshot(
@@ -455,7 +455,7 @@ def delete_snapshot(
 
 Type annotations for `boto3.client("ds").delete_trust` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_trust]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_trust]
 
 ```python
 def delete_trust(
@@ -470,7 +470,7 @@ def delete_trust(
 
 Type annotations for `boto3.client("ds").deregister_certificate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.deregister_certificate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.deregister_certificate]
 
 ```python
 def deregister_certificate(
@@ -485,7 +485,7 @@ def deregister_certificate(
 
 Type annotations for `boto3.client("ds").deregister_event_topic` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.deregister_event_topic]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.deregister_event_topic]
 
 ```python
 def deregister_event_topic(
@@ -500,7 +500,7 @@ def deregister_event_topic(
 
 Type annotations for `boto3.client("ds").describe_certificate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_certificate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_certificate]
 
 ```python
 def describe_certificate(
@@ -515,7 +515,7 @@ def describe_certificate(
 
 Type annotations for `boto3.client("ds").describe_conditional_forwarders` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_conditional_forwarders]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_conditional_forwarders]
 
 ```python
 def describe_conditional_forwarders(
@@ -530,7 +530,7 @@ def describe_conditional_forwarders(
 
 Type annotations for `boto3.client("ds").describe_directories` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_directories]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_directories]
 
 ```python
 def describe_directories(
@@ -546,7 +546,7 @@ def describe_directories(
 
 Type annotations for `boto3.client("ds").describe_domain_controllers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_domain_controllers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_domain_controllers]
 
 ```python
 def describe_domain_controllers(
@@ -563,7 +563,7 @@ def describe_domain_controllers(
 
 Type annotations for `boto3.client("ds").describe_event_topics` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_event_topics]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_event_topics]
 
 ```python
 def describe_event_topics(
@@ -578,7 +578,7 @@ def describe_event_topics(
 
 Type annotations for `boto3.client("ds").describe_ldaps_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_ldaps_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_ldaps_settings]
 
 ```python
 def describe_ldaps_settings(
@@ -595,7 +595,7 @@ def describe_ldaps_settings(
 
 Type annotations for `boto3.client("ds").describe_regions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_regions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_regions]
 
 ```python
 def describe_regions(
@@ -611,7 +611,7 @@ def describe_regions(
 
 Type annotations for `boto3.client("ds").describe_shared_directories` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_shared_directories]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_shared_directories]
 
 ```python
 def describe_shared_directories(
@@ -628,7 +628,7 @@ def describe_shared_directories(
 
 Type annotations for `boto3.client("ds").describe_snapshots` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_snapshots]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_snapshots]
 
 ```python
 def describe_snapshots(
@@ -645,7 +645,7 @@ def describe_snapshots(
 
 Type annotations for `boto3.client("ds").describe_trusts` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_trusts]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_trusts]
 
 ```python
 def describe_trusts(
@@ -662,7 +662,7 @@ def describe_trusts(
 
 Type annotations for `boto3.client("ds").disable_client_authentication` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_client_authentication]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_client_authentication]
 
 ```python
 def disable_client_authentication(
@@ -677,7 +677,7 @@ def disable_client_authentication(
 
 Type annotations for `boto3.client("ds").disable_ldaps` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_ldaps]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_ldaps]
 
 ```python
 def disable_ldaps(
@@ -692,7 +692,7 @@ def disable_ldaps(
 
 Type annotations for `boto3.client("ds").disable_radius` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_radius]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_radius]
 
 ```python
 def disable_radius(
@@ -706,7 +706,7 @@ def disable_radius(
 
 Type annotations for `boto3.client("ds").disable_sso` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_sso]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_sso]
 
 ```python
 def disable_sso(
@@ -722,7 +722,7 @@ def disable_sso(
 
 Type annotations for `boto3.client("ds").enable_client_authentication` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_client_authentication]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_client_authentication]
 
 ```python
 def enable_client_authentication(
@@ -737,7 +737,7 @@ def enable_client_authentication(
 
 Type annotations for `boto3.client("ds").enable_ldaps` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_ldaps]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_ldaps]
 
 ```python
 def enable_ldaps(
@@ -752,7 +752,7 @@ def enable_ldaps(
 
 Type annotations for `boto3.client("ds").enable_radius` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_radius]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_radius]
 
 ```python
 def enable_radius(
@@ -767,7 +767,7 @@ def enable_radius(
 
 Type annotations for `boto3.client("ds").enable_sso` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_sso]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_sso]
 
 ```python
 def enable_sso(
@@ -783,7 +783,7 @@ def enable_sso(
 
 Type annotations for `boto3.client("ds").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -800,7 +800,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("ds").get_directory_limits` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.get_directory_limits]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.get_directory_limits]
 
 ```python
 def get_directory_limits(
@@ -813,7 +813,7 @@ def get_directory_limits(
 
 Type annotations for `boto3.client("ds").get_snapshot_limits` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.get_snapshot_limits]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.get_snapshot_limits]
 
 ```python
 def get_snapshot_limits(
@@ -827,7 +827,7 @@ def get_snapshot_limits(
 
 Type annotations for `boto3.client("ds").list_certificates` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_certificates]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_certificates]
 
 ```python
 def list_certificates(
@@ -843,7 +843,7 @@ def list_certificates(
 
 Type annotations for `boto3.client("ds").list_ip_routes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_ip_routes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_ip_routes]
 
 ```python
 def list_ip_routes(
@@ -859,7 +859,7 @@ def list_ip_routes(
 
 Type annotations for `boto3.client("ds").list_log_subscriptions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_log_subscriptions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_log_subscriptions]
 
 ```python
 def list_log_subscriptions(
@@ -875,7 +875,7 @@ def list_log_subscriptions(
 
 Type annotations for `boto3.client("ds").list_schema_extensions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_schema_extensions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_schema_extensions]
 
 ```python
 def list_schema_extensions(
@@ -891,7 +891,7 @@ def list_schema_extensions(
 
 Type annotations for `boto3.client("ds").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -907,7 +907,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("ds").register_certificate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.register_certificate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.register_certificate]
 
 ```python
 def register_certificate(
@@ -924,7 +924,7 @@ def register_certificate(
 
 Type annotations for `boto3.client("ds").register_event_topic` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.register_event_topic]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.register_event_topic]
 
 ```python
 def register_event_topic(
@@ -939,7 +939,7 @@ def register_event_topic(
 
 Type annotations for `boto3.client("ds").reject_shared_directory` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.reject_shared_directory]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.reject_shared_directory]
 
 ```python
 def reject_shared_directory(
@@ -953,7 +953,7 @@ def reject_shared_directory(
 
 Type annotations for `boto3.client("ds").remove_ip_routes` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_ip_routes]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_ip_routes]
 
 ```python
 def remove_ip_routes(
@@ -968,7 +968,7 @@ def remove_ip_routes(
 
 Type annotations for `boto3.client("ds").remove_region` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_region]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_region]
 
 ```python
 def remove_region(
@@ -982,7 +982,7 @@ def remove_region(
 
 Type annotations for `boto3.client("ds").remove_tags_from_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_tags_from_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_tags_from_resource]
 
 ```python
 def remove_tags_from_resource(
@@ -997,7 +997,7 @@ def remove_tags_from_resource(
 
 Type annotations for `boto3.client("ds").reset_user_password` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.reset_user_password]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.reset_user_password]
 
 ```python
 def reset_user_password(
@@ -1013,7 +1013,7 @@ def reset_user_password(
 
 Type annotations for `boto3.client("ds").restore_from_snapshot` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.restore_from_snapshot]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.restore_from_snapshot]
 
 ```python
 def restore_from_snapshot(
@@ -1027,7 +1027,7 @@ def restore_from_snapshot(
 
 Type annotations for `boto3.client("ds").share_directory` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.share_directory]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.share_directory]
 
 ```python
 def share_directory(
@@ -1044,7 +1044,7 @@ def share_directory(
 
 Type annotations for `boto3.client("ds").start_schema_extension` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.start_schema_extension]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.start_schema_extension]
 
 ```python
 def start_schema_extension(
@@ -1061,7 +1061,7 @@ def start_schema_extension(
 
 Type annotations for `boto3.client("ds").unshare_directory` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.unshare_directory]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.unshare_directory]
 
 ```python
 def unshare_directory(
@@ -1076,7 +1076,7 @@ def unshare_directory(
 
 Type annotations for `boto3.client("ds").update_conditional_forwarder` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_conditional_forwarder]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_conditional_forwarder]
 
 ```python
 def update_conditional_forwarder(
@@ -1092,7 +1092,7 @@ def update_conditional_forwarder(
 
 Type annotations for `boto3.client("ds").update_number_of_domain_controllers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_number_of_domain_controllers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_number_of_domain_controllers]
 
 ```python
 def update_number_of_domain_controllers(
@@ -1107,7 +1107,7 @@ def update_number_of_domain_controllers(
 
 Type annotations for `boto3.client("ds").update_radius` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_radius]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_radius]
 
 ```python
 def update_radius(
@@ -1122,7 +1122,7 @@ def update_radius(
 
 Type annotations for `boto3.client("ds").update_trust` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_trust]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_trust]
 
 ```python
 def update_trust(
@@ -1137,7 +1137,7 @@ def update_trust(
 
 Type annotations for `boto3.client("ds").verify_trust` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.verify_trust]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.verify_trust]
 
 ```python
 def verify_trust(

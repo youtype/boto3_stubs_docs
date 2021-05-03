@@ -22,7 +22,7 @@ def get_list_bundles_paginator() -> ListBundlesPaginator:
     return boto3.client("mobile").get_paginator("list_bundles")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Paginator.ListBundles)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Paginator.ListBundles)
 
 ```python
 class ListBundlesPaginator(Boto3Paginator):
@@ -45,7 +45,7 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("mobile").get_paginator("list_projects")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Paginator.ListProjects)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Paginator.ListProjects)
 
 ```python
 class ListProjectsPaginator(Boto3Paginator):

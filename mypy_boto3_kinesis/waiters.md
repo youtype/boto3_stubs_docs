@@ -22,19 +22,15 @@ def get_stream_exists_waiter() -> StreamExistsWaiter:
     return boto3.client("kinesis").get_waiter("stream_exists")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Waiter.stream_exists)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Waiter.stream_exists)
 
-```python
-class StreamExistsWaiter(Boto3Waiter):
-    def wait(
-        self,
-        StreamName: str,
-        Limit: int = None,
-        ExclusiveStartShardId: str = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `StreamExistsWaiter.wait` method:
+
+- `StreamName`: `str` *(required)*
+- `Limit`: `int`
+- `ExclusiveStartShardId`: `str`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#waiterconfigtypedef)
+
 ## StreamNotExistsWaiter
 
 Type annotations for `boto3.client("kinesis").get_waiter("stream_not_exists")`.
@@ -48,16 +44,11 @@ def get_stream_not_exists_waiter() -> StreamNotExistsWaiter:
     return boto3.client("kinesis").get_waiter("stream_not_exists")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Waiter.stream_not_exists)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Waiter.stream_not_exists)
 
-```python
-class StreamNotExistsWaiter(Boto3Waiter):
-    def wait(
-        self,
-        StreamName: str,
-        Limit: int = None,
-        ExclusiveStartShardId: str = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `StreamNotExistsWaiter.wait` method:
+
+- `StreamName`: `str` *(required)*
+- `Limit`: `int`
+- `ExclusiveStartShardId`: `str`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#waiterconfigtypedef)

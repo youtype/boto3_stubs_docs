@@ -63,7 +63,7 @@ def get_swf_client() -> SWFClient:
     return boto3.client("swf")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client)
 
 ## Exceptions
 
@@ -100,7 +100,7 @@ Exceptions:
 
 Type annotations for `boto3.client("swf").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -114,7 +114,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("swf").count_closed_workflow_executions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_closed_workflow_executions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_closed_workflow_executions]
 
 ```python
 def count_closed_workflow_executions(
@@ -134,7 +134,7 @@ def count_closed_workflow_executions(
 
 Type annotations for `boto3.client("swf").count_open_workflow_executions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_open_workflow_executions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_open_workflow_executions]
 
 ```python
 def count_open_workflow_executions(
@@ -152,7 +152,7 @@ def count_open_workflow_executions(
 
 Type annotations for `boto3.client("swf").count_pending_activity_tasks` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_pending_activity_tasks]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_pending_activity_tasks]
 
 ```python
 def count_pending_activity_tasks(
@@ -167,7 +167,7 @@ def count_pending_activity_tasks(
 
 Type annotations for `boto3.client("swf").count_pending_decision_tasks` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_pending_decision_tasks]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_pending_decision_tasks]
 
 ```python
 def count_pending_decision_tasks(
@@ -182,7 +182,7 @@ def count_pending_decision_tasks(
 
 Type annotations for `boto3.client("swf").deprecate_activity_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.deprecate_activity_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.deprecate_activity_type]
 
 ```python
 def deprecate_activity_type(
@@ -197,7 +197,7 @@ def deprecate_activity_type(
 
 Type annotations for `boto3.client("swf").deprecate_domain` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.deprecate_domain]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.deprecate_domain]
 
 ```python
 def deprecate_domain(
@@ -211,7 +211,7 @@ def deprecate_domain(
 
 Type annotations for `boto3.client("swf").deprecate_workflow_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.deprecate_workflow_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.deprecate_workflow_type]
 
 ```python
 def deprecate_workflow_type(
@@ -226,7 +226,7 @@ def deprecate_workflow_type(
 
 Type annotations for `boto3.client("swf").describe_activity_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_activity_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_activity_type]
 
 ```python
 def describe_activity_type(
@@ -241,7 +241,7 @@ def describe_activity_type(
 
 Type annotations for `boto3.client("swf").describe_domain` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_domain]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_domain]
 
 ```python
 def describe_domain(
@@ -255,7 +255,7 @@ def describe_domain(
 
 Type annotations for `boto3.client("swf").describe_workflow_execution` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_workflow_execution]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_workflow_execution]
 
 ```python
 def describe_workflow_execution(
@@ -270,7 +270,7 @@ def describe_workflow_execution(
 
 Type annotations for `boto3.client("swf").describe_workflow_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_workflow_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_workflow_type]
 
 ```python
 def describe_workflow_type(
@@ -285,7 +285,7 @@ def describe_workflow_type(
 
 Type annotations for `boto3.client("swf").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -302,7 +302,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("swf").get_workflow_execution_history` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.get_workflow_execution_history]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.get_workflow_execution_history]
 
 ```python
 def get_workflow_execution_history(
@@ -320,7 +320,7 @@ def get_workflow_execution_history(
 
 Type annotations for `boto3.client("swf").list_activity_types` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_activity_types]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_activity_types]
 
 ```python
 def list_activity_types(
@@ -339,7 +339,7 @@ def list_activity_types(
 
 Type annotations for `boto3.client("swf").list_closed_workflow_executions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_closed_workflow_executions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_closed_workflow_executions]
 
 ```python
 def list_closed_workflow_executions(
@@ -362,7 +362,7 @@ def list_closed_workflow_executions(
 
 Type annotations for `boto3.client("swf").list_domains` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_domains]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_domains]
 
 ```python
 def list_domains(
@@ -379,7 +379,7 @@ def list_domains(
 
 Type annotations for `boto3.client("swf").list_open_workflow_executions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_open_workflow_executions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_open_workflow_executions]
 
 ```python
 def list_open_workflow_executions(
@@ -400,7 +400,7 @@ def list_open_workflow_executions(
 
 Type annotations for `boto3.client("swf").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -414,7 +414,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("swf").list_workflow_types` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_workflow_types]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_workflow_types]
 
 ```python
 def list_workflow_types(
@@ -433,7 +433,7 @@ def list_workflow_types(
 
 Type annotations for `boto3.client("swf").poll_for_activity_task` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.poll_for_activity_task]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.poll_for_activity_task]
 
 ```python
 def poll_for_activity_task(
@@ -449,7 +449,7 @@ def poll_for_activity_task(
 
 Type annotations for `boto3.client("swf").poll_for_decision_task` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.poll_for_decision_task]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.poll_for_decision_task]
 
 ```python
 def poll_for_decision_task(
@@ -468,7 +468,7 @@ def poll_for_decision_task(
 
 Type annotations for `boto3.client("swf").record_activity_task_heartbeat` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.record_activity_task_heartbeat]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.record_activity_task_heartbeat]
 
 ```python
 def record_activity_task_heartbeat(
@@ -483,7 +483,7 @@ def record_activity_task_heartbeat(
 
 Type annotations for `boto3.client("swf").register_activity_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_activity_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_activity_type]
 
 ```python
 def register_activity_type(
@@ -506,7 +506,7 @@ def register_activity_type(
 
 Type annotations for `boto3.client("swf").register_domain` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_domain]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_domain]
 
 ```python
 def register_domain(
@@ -523,7 +523,7 @@ def register_domain(
 
 Type annotations for `boto3.client("swf").register_workflow_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_workflow_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_workflow_type]
 
 ```python
 def register_workflow_type(
@@ -546,7 +546,7 @@ def register_workflow_type(
 
 Type annotations for `boto3.client("swf").request_cancel_workflow_execution` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.request_cancel_workflow_execution]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.request_cancel_workflow_execution]
 
 ```python
 def request_cancel_workflow_execution(
@@ -562,7 +562,7 @@ def request_cancel_workflow_execution(
 
 Type annotations for `boto3.client("swf").respond_activity_task_canceled` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_activity_task_canceled]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_activity_task_canceled]
 
 ```python
 def respond_activity_task_canceled(
@@ -577,7 +577,7 @@ def respond_activity_task_canceled(
 
 Type annotations for `boto3.client("swf").respond_activity_task_completed` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_activity_task_completed]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_activity_task_completed]
 
 ```python
 def respond_activity_task_completed(
@@ -592,7 +592,7 @@ def respond_activity_task_completed(
 
 Type annotations for `boto3.client("swf").respond_activity_task_failed` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_activity_task_failed]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_activity_task_failed]
 
 ```python
 def respond_activity_task_failed(
@@ -608,7 +608,7 @@ def respond_activity_task_failed(
 
 Type annotations for `boto3.client("swf").respond_decision_task_completed` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_decision_task_completed]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_decision_task_completed]
 
 ```python
 def respond_decision_task_completed(
@@ -624,7 +624,7 @@ def respond_decision_task_completed(
 
 Type annotations for `boto3.client("swf").signal_workflow_execution` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.signal_workflow_execution]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.signal_workflow_execution]
 
 ```python
 def signal_workflow_execution(
@@ -642,7 +642,7 @@ def signal_workflow_execution(
 
 Type annotations for `boto3.client("swf").start_workflow_execution` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.start_workflow_execution]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.start_workflow_execution]
 
 ```python
 def start_workflow_execution(
@@ -666,7 +666,7 @@ def start_workflow_execution(
 
 Type annotations for `boto3.client("swf").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -681,7 +681,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("swf").terminate_workflow_execution` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.terminate_workflow_execution]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.terminate_workflow_execution]
 
 ```python
 def terminate_workflow_execution(
@@ -700,7 +700,7 @@ def terminate_workflow_execution(
 
 Type annotations for `boto3.client("swf").undeprecate_activity_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.undeprecate_activity_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.undeprecate_activity_type]
 
 ```python
 def undeprecate_activity_type(
@@ -715,7 +715,7 @@ def undeprecate_activity_type(
 
 Type annotations for `boto3.client("swf").undeprecate_domain` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.undeprecate_domain]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.undeprecate_domain]
 
 ```python
 def undeprecate_domain(
@@ -729,7 +729,7 @@ def undeprecate_domain(
 
 Type annotations for `boto3.client("swf").undeprecate_workflow_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.undeprecate_workflow_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.undeprecate_workflow_type]
 
 ```python
 def undeprecate_workflow_type(
@@ -744,7 +744,7 @@ def undeprecate_workflow_type(
 
 Type annotations for `boto3.client("swf").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.untag_resource]
 
 ```python
 def untag_resource(

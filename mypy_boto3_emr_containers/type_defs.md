@@ -74,7 +74,7 @@ from mypy_boto3_emr_containers.type_defs import ConfigurationOverridesTypeDef
 
 
 Optional fields:
-- `applicationConfiguration`: `List[Dict[str, Any]]`
+- `applicationConfiguration`: `List["ConfigurationTypeDef"]`
 - `monitoringConfiguration`: `"MonitoringConfigurationTypeDef"`
 
 
@@ -92,7 +92,7 @@ Required fields:
 
 Optional fields:
 - `properties`: `Dict[str, str]`
-- `configurations`: `List[Dict[str, Any]]`
+- `configurations`: `List["ConfigurationTypeDef"]`
 
 
 ## ContainerInfoTypeDef

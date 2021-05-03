@@ -27,7 +27,7 @@ def get_describe_addon_versions_paginator() -> DescribeAddonVersionsPaginator:
     return boto3.client("eks").get_paginator("describe_addon_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.DescribeAddonVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.DescribeAddonVersions)
 
 ```python
 class DescribeAddonVersionsPaginator(Boto3Paginator):
@@ -52,7 +52,7 @@ def get_list_addons_paginator() -> ListAddonsPaginator:
     return boto3.client("eks").get_paginator("list_addons")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListAddons)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListAddons)
 
 ```python
 class ListAddonsPaginator(Boto3Paginator):
@@ -76,7 +76,7 @@ def get_list_clusters_paginator() -> ListClustersPaginator:
     return boto3.client("eks").get_paginator("list_clusters")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListClusters)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListClusters)
 
 ```python
 class ListClustersPaginator(Boto3Paginator):
@@ -99,7 +99,7 @@ def get_list_fargate_profiles_paginator() -> ListFargateProfilesPaginator:
     return boto3.client("eks").get_paginator("list_fargate_profiles")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListFargateProfiles)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListFargateProfiles)
 
 ```python
 class ListFargateProfilesPaginator(Boto3Paginator):
@@ -123,7 +123,7 @@ def get_list_identity_provider_configs_paginator() -> ListIdentityProviderConfig
     return boto3.client("eks").get_paginator("list_identity_provider_configs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListIdentityProviderConfigs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListIdentityProviderConfigs)
 
 ```python
 class ListIdentityProviderConfigsPaginator(Boto3Paginator):
@@ -147,7 +147,7 @@ def get_list_nodegroups_paginator() -> ListNodegroupsPaginator:
     return boto3.client("eks").get_paginator("list_nodegroups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListNodegroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListNodegroups)
 
 ```python
 class ListNodegroupsPaginator(Boto3Paginator):
@@ -171,7 +171,7 @@ def get_list_updates_paginator() -> ListUpdatesPaginator:
     return boto3.client("eks").get_paginator("list_updates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListUpdates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Paginator.ListUpdates)
 
 ```python
 class ListUpdatesPaginator(Boto3Paginator):

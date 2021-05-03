@@ -65,7 +65,7 @@ def get_mturk_client() -> MTurkClient:
     return boto3.client("mturk")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client)
 
 ## Exceptions
 
@@ -94,7 +94,7 @@ Exceptions:
 
 Type annotations for `boto3.client("mturk").accept_qualification_request` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.accept_qualification_request]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.accept_qualification_request]
 
 ```python
 def accept_qualification_request(
@@ -109,7 +109,7 @@ def accept_qualification_request(
 
 Type annotations for `boto3.client("mturk").approve_assignment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.approve_assignment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.approve_assignment]
 
 ```python
 def approve_assignment(
@@ -125,7 +125,7 @@ def approve_assignment(
 
 Type annotations for `boto3.client("mturk").associate_qualification_with_worker` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.associate_qualification_with_worker]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.associate_qualification_with_worker]
 
 ```python
 def associate_qualification_with_worker(
@@ -142,7 +142,7 @@ def associate_qualification_with_worker(
 
 Type annotations for `boto3.client("mturk").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -156,7 +156,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("mturk").create_additional_assignments_for_hit` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_additional_assignments_for_hit]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_additional_assignments_for_hit]
 
 ```python
 def create_additional_assignments_for_hit(
@@ -172,7 +172,7 @@ def create_additional_assignments_for_hit(
 
 Type annotations for `boto3.client("mturk").create_hit` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit]
 
 ```python
 def create_hit(
@@ -201,7 +201,7 @@ def create_hit(
 
 Type annotations for `boto3.client("mturk").create_hit_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit_type]
 
 ```python
 def create_hit_type(
@@ -221,7 +221,7 @@ def create_hit_type(
 
 Type annotations for `boto3.client("mturk").create_hit_with_hit_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit_with_hit_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit_with_hit_type]
 
 ```python
 def create_hit_with_hit_type(
@@ -244,7 +244,7 @@ def create_hit_with_hit_type(
 
 Type annotations for `boto3.client("mturk").create_qualification_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_qualification_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_qualification_type]
 
 ```python
 def create_qualification_type(
@@ -267,7 +267,7 @@ def create_qualification_type(
 
 Type annotations for `boto3.client("mturk").create_worker_block` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_worker_block]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_worker_block]
 
 ```python
 def create_worker_block(
@@ -282,7 +282,7 @@ def create_worker_block(
 
 Type annotations for `boto3.client("mturk").delete_hit` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_hit]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_hit]
 
 ```python
 def delete_hit(
@@ -296,7 +296,7 @@ def delete_hit(
 
 Type annotations for `boto3.client("mturk").delete_qualification_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_qualification_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_qualification_type]
 
 ```python
 def delete_qualification_type(
@@ -310,7 +310,7 @@ def delete_qualification_type(
 
 Type annotations for `boto3.client("mturk").delete_worker_block` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_worker_block]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_worker_block]
 
 ```python
 def delete_worker_block(
@@ -325,7 +325,7 @@ def delete_worker_block(
 
 Type annotations for `boto3.client("mturk").disassociate_qualification_from_worker` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.disassociate_qualification_from_worker]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.disassociate_qualification_from_worker]
 
 ```python
 def disassociate_qualification_from_worker(
@@ -341,7 +341,7 @@ def disassociate_qualification_from_worker(
 
 Type annotations for `boto3.client("mturk").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -358,7 +358,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("mturk").get_account_balance` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_account_balance]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_account_balance]
 
 ```python
 def get_account_balance(
@@ -371,7 +371,7 @@ def get_account_balance(
 
 Type annotations for `boto3.client("mturk").get_assignment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_assignment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_assignment]
 
 ```python
 def get_assignment(
@@ -385,7 +385,7 @@ def get_assignment(
 
 Type annotations for `boto3.client("mturk").get_file_upload_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_file_upload_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_file_upload_url]
 
 ```python
 def get_file_upload_url(
@@ -400,7 +400,7 @@ def get_file_upload_url(
 
 Type annotations for `boto3.client("mturk").get_hit` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_hit]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_hit]
 
 ```python
 def get_hit(
@@ -414,7 +414,7 @@ def get_hit(
 
 Type annotations for `boto3.client("mturk").get_qualification_score` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_qualification_score]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_qualification_score]
 
 ```python
 def get_qualification_score(
@@ -429,7 +429,7 @@ def get_qualification_score(
 
 Type annotations for `boto3.client("mturk").get_qualification_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_qualification_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_qualification_type]
 
 ```python
 def get_qualification_type(
@@ -443,7 +443,7 @@ def get_qualification_type(
 
 Type annotations for `boto3.client("mturk").list_assignments_for_hit` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_assignments_for_hit]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_assignments_for_hit]
 
 ```python
 def list_assignments_for_hit(
@@ -460,7 +460,7 @@ def list_assignments_for_hit(
 
 Type annotations for `boto3.client("mturk").list_bonus_payments` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_bonus_payments]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_bonus_payments]
 
 ```python
 def list_bonus_payments(
@@ -477,7 +477,7 @@ def list_bonus_payments(
 
 Type annotations for `boto3.client("mturk").list_hits` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_hits]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_hits]
 
 ```python
 def list_hits(
@@ -492,7 +492,7 @@ def list_hits(
 
 Type annotations for `boto3.client("mturk").list_hits_for_qualification_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_hits_for_qualification_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_hits_for_qualification_type]
 
 ```python
 def list_hits_for_qualification_type(
@@ -508,7 +508,7 @@ def list_hits_for_qualification_type(
 
 Type annotations for `boto3.client("mturk").list_qualification_requests` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_qualification_requests]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_qualification_requests]
 
 ```python
 def list_qualification_requests(
@@ -524,7 +524,7 @@ def list_qualification_requests(
 
 Type annotations for `boto3.client("mturk").list_qualification_types` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_qualification_types]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_qualification_types]
 
 ```python
 def list_qualification_types(
@@ -542,7 +542,7 @@ def list_qualification_types(
 
 Type annotations for `boto3.client("mturk").list_review_policy_results_for_hit` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_review_policy_results_for_hit]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_review_policy_results_for_hit]
 
 ```python
 def list_review_policy_results_for_hit(
@@ -561,7 +561,7 @@ def list_review_policy_results_for_hit(
 
 Type annotations for `boto3.client("mturk").list_reviewable_hits` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_reviewable_hits]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_reviewable_hits]
 
 ```python
 def list_reviewable_hits(
@@ -578,7 +578,7 @@ def list_reviewable_hits(
 
 Type annotations for `boto3.client("mturk").list_worker_blocks` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_worker_blocks]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_worker_blocks]
 
 ```python
 def list_worker_blocks(
@@ -593,7 +593,7 @@ def list_worker_blocks(
 
 Type annotations for `boto3.client("mturk").list_workers_with_qualification_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_workers_with_qualification_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_workers_with_qualification_type]
 
 ```python
 def list_workers_with_qualification_type(
@@ -610,7 +610,7 @@ def list_workers_with_qualification_type(
 
 Type annotations for `boto3.client("mturk").notify_workers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.notify_workers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.notify_workers]
 
 ```python
 def notify_workers(
@@ -626,7 +626,7 @@ def notify_workers(
 
 Type annotations for `boto3.client("mturk").reject_assignment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.reject_assignment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.reject_assignment]
 
 ```python
 def reject_assignment(
@@ -641,7 +641,7 @@ def reject_assignment(
 
 Type annotations for `boto3.client("mturk").reject_qualification_request` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.reject_qualification_request]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.reject_qualification_request]
 
 ```python
 def reject_qualification_request(
@@ -656,7 +656,7 @@ def reject_qualification_request(
 
 Type annotations for `boto3.client("mturk").send_bonus` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.send_bonus]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.send_bonus]
 
 ```python
 def send_bonus(
@@ -674,7 +674,7 @@ def send_bonus(
 
 Type annotations for `boto3.client("mturk").send_test_event_notification` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.send_test_event_notification]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.send_test_event_notification]
 
 ```python
 def send_test_event_notification(
@@ -689,7 +689,7 @@ def send_test_event_notification(
 
 Type annotations for `boto3.client("mturk").update_expiration_for_hit` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_expiration_for_hit]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_expiration_for_hit]
 
 ```python
 def update_expiration_for_hit(
@@ -704,7 +704,7 @@ def update_expiration_for_hit(
 
 Type annotations for `boto3.client("mturk").update_hit_review_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_hit_review_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_hit_review_status]
 
 ```python
 def update_hit_review_status(
@@ -719,7 +719,7 @@ def update_hit_review_status(
 
 Type annotations for `boto3.client("mturk").update_hit_type_of_hit` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_hit_type_of_hit]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_hit_type_of_hit]
 
 ```python
 def update_hit_type_of_hit(
@@ -734,7 +734,7 @@ def update_hit_type_of_hit(
 
 Type annotations for `boto3.client("mturk").update_notification_settings` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_notification_settings]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_notification_settings]
 
 ```python
 def update_notification_settings(
@@ -750,7 +750,7 @@ def update_notification_settings(
 
 Type annotations for `boto3.client("mturk").update_qualification_type` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_qualification_type]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_qualification_type]
 
 ```python
 def update_qualification_type(

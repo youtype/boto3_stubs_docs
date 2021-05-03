@@ -26,7 +26,7 @@ def get_list_aws_default_service_quotas_paginator() -> ListAWSDefaultServiceQuot
     return boto3.client("service-quotas").get_paginator("list_aws_default_service_quotas")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListAWSDefaultServiceQuotas)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListAWSDefaultServiceQuotas)
 
 ```python
 class ListAWSDefaultServiceQuotasPaginator(Boto3Paginator):
@@ -50,7 +50,7 @@ def get_list_requested_service_quota_change_history_paginator() -> ListRequested
     return boto3.client("service-quotas").get_paginator("list_requested_service_quota_change_history")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListRequestedServiceQuotaChangeHistory)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListRequestedServiceQuotaChangeHistory)
 
 ```python
 class ListRequestedServiceQuotaChangeHistoryPaginator(Boto3Paginator):
@@ -75,7 +75,7 @@ def get_list_requested_service_quota_change_history_by_quota_paginator() -> List
     return boto3.client("service-quotas").get_paginator("list_requested_service_quota_change_history_by_quota")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListRequestedServiceQuotaChangeHistoryByQuota)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListRequestedServiceQuotaChangeHistoryByQuota)
 
 ```python
 class ListRequestedServiceQuotaChangeHistoryByQuotaPaginator(Boto3Paginator):
@@ -101,7 +101,7 @@ def get_list_service_quota_increase_requests_in_template_paginator() -> ListServ
     return boto3.client("service-quotas").get_paginator("list_service_quota_increase_requests_in_template")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListServiceQuotaIncreaseRequestsInTemplate)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListServiceQuotaIncreaseRequestsInTemplate)
 
 ```python
 class ListServiceQuotaIncreaseRequestsInTemplatePaginator(Boto3Paginator):
@@ -126,7 +126,7 @@ def get_list_service_quotas_paginator() -> ListServiceQuotasPaginator:
     return boto3.client("service-quotas").get_paginator("list_service_quotas")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListServiceQuotas)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListServiceQuotas)
 
 ```python
 class ListServiceQuotasPaginator(Boto3Paginator):
@@ -150,7 +150,7 @@ def get_list_services_paginator() -> ListServicesPaginator:
     return boto3.client("service-quotas").get_paginator("list_services")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListServices)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListServices)
 
 ```python
 class ListServicesPaginator(Boto3Paginator):

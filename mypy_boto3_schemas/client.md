@@ -58,7 +58,7 @@ def get_schemas_client() -> SchemasClient:
     return boto3.client("schemas")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client)
 
 ## Exceptions
 
@@ -95,7 +95,7 @@ Exceptions:
 
 Type annotations for `boto3.client("schemas").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -109,7 +109,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("schemas").create_discoverer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_discoverer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_discoverer]
 
 ```python
 def create_discoverer(
@@ -125,7 +125,7 @@ def create_discoverer(
 
 Type annotations for `boto3.client("schemas").create_registry` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_registry]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_registry]
 
 ```python
 def create_registry(
@@ -141,7 +141,7 @@ def create_registry(
 
 Type annotations for `boto3.client("schemas").create_schema` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_schema]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_schema]
 
 ```python
 def create_schema(
@@ -160,7 +160,7 @@ def create_schema(
 
 Type annotations for `boto3.client("schemas").delete_discoverer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_discoverer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_discoverer]
 
 ```python
 def delete_discoverer(
@@ -174,7 +174,7 @@ def delete_discoverer(
 
 Type annotations for `boto3.client("schemas").delete_registry` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_registry]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_registry]
 
 ```python
 def delete_registry(
@@ -188,7 +188,7 @@ def delete_registry(
 
 Type annotations for `boto3.client("schemas").delete_resource_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_resource_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_resource_policy]
 
 ```python
 def delete_resource_policy(
@@ -202,7 +202,7 @@ def delete_resource_policy(
 
 Type annotations for `boto3.client("schemas").delete_schema` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_schema]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_schema]
 
 ```python
 def delete_schema(
@@ -217,7 +217,7 @@ def delete_schema(
 
 Type annotations for `boto3.client("schemas").delete_schema_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_schema_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_schema_version]
 
 ```python
 def delete_schema_version(
@@ -233,7 +233,7 @@ def delete_schema_version(
 
 Type annotations for `boto3.client("schemas").describe_code_binding` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_code_binding]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_code_binding]
 
 ```python
 def describe_code_binding(
@@ -250,7 +250,7 @@ def describe_code_binding(
 
 Type annotations for `boto3.client("schemas").describe_discoverer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_discoverer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_discoverer]
 
 ```python
 def describe_discoverer(
@@ -264,7 +264,7 @@ def describe_discoverer(
 
 Type annotations for `boto3.client("schemas").describe_registry` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_registry]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_registry]
 
 ```python
 def describe_registry(
@@ -278,7 +278,7 @@ def describe_registry(
 
 Type annotations for `boto3.client("schemas").describe_schema` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_schema]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_schema]
 
 ```python
 def describe_schema(
@@ -294,7 +294,7 @@ def describe_schema(
 
 Type annotations for `boto3.client("schemas").export_schema` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.export_schema]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.export_schema]
 
 ```python
 def export_schema(
@@ -311,7 +311,7 @@ def export_schema(
 
 Type annotations for `boto3.client("schemas").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -328,7 +328,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("schemas").get_code_binding_source` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.get_code_binding_source]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.get_code_binding_source]
 
 ```python
 def get_code_binding_source(
@@ -345,7 +345,7 @@ def get_code_binding_source(
 
 Type annotations for `boto3.client("schemas").get_discovered_schema` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.get_discovered_schema]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.get_discovered_schema]
 
 ```python
 def get_discovered_schema(
@@ -360,7 +360,7 @@ def get_discovered_schema(
 
 Type annotations for `boto3.client("schemas").get_resource_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.get_resource_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.get_resource_policy]
 
 ```python
 def get_resource_policy(
@@ -374,7 +374,7 @@ def get_resource_policy(
 
 Type annotations for `boto3.client("schemas").list_discoverers` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_discoverers]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_discoverers]
 
 ```python
 def list_discoverers(
@@ -391,7 +391,7 @@ def list_discoverers(
 
 Type annotations for `boto3.client("schemas").list_registries` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_registries]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_registries]
 
 ```python
 def list_registries(
@@ -408,7 +408,7 @@ def list_registries(
 
 Type annotations for `boto3.client("schemas").list_schema_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_schema_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_schema_versions]
 
 ```python
 def list_schema_versions(
@@ -425,7 +425,7 @@ def list_schema_versions(
 
 Type annotations for `boto3.client("schemas").list_schemas` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_schemas]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_schemas]
 
 ```python
 def list_schemas(
@@ -442,7 +442,7 @@ def list_schemas(
 
 Type annotations for `boto3.client("schemas").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -456,7 +456,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("schemas").put_code_binding` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.put_code_binding]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.put_code_binding]
 
 ```python
 def put_code_binding(
@@ -473,7 +473,7 @@ def put_code_binding(
 
 Type annotations for `boto3.client("schemas").put_resource_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.put_resource_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.put_resource_policy]
 
 ```python
 def put_resource_policy(
@@ -489,7 +489,7 @@ def put_resource_policy(
 
 Type annotations for `boto3.client("schemas").search_schemas` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.search_schemas]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.search_schemas]
 
 ```python
 def search_schemas(
@@ -506,7 +506,7 @@ def search_schemas(
 
 Type annotations for `boto3.client("schemas").start_discoverer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.start_discoverer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.start_discoverer]
 
 ```python
 def start_discoverer(
@@ -520,7 +520,7 @@ def start_discoverer(
 
 Type annotations for `boto3.client("schemas").stop_discoverer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.stop_discoverer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.stop_discoverer]
 
 ```python
 def stop_discoverer(
@@ -534,7 +534,7 @@ def stop_discoverer(
 
 Type annotations for `boto3.client("schemas").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -549,7 +549,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("schemas").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -564,7 +564,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("schemas").update_discoverer` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.update_discoverer]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.update_discoverer]
 
 ```python
 def update_discoverer(
@@ -579,7 +579,7 @@ def update_discoverer(
 
 Type annotations for `boto3.client("schemas").update_registry` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.update_registry]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.update_registry]
 
 ```python
 def update_registry(
@@ -594,7 +594,7 @@ def update_registry(
 
 Type annotations for `boto3.client("schemas").update_schema` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.update_schema]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.update_schema]
 
 ```python
 def update_schema(

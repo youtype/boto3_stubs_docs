@@ -25,7 +25,7 @@ def get_get_channel_schedule_paginator() -> GetChannelSchedulePaginator:
     return boto3.client("mediatailor").get_paginator("get_channel_schedule")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.GetChannelSchedule)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.GetChannelSchedule)
 
 ```python
 class GetChannelSchedulePaginator(Boto3Paginator):
@@ -50,7 +50,7 @@ def get_list_channels_paginator() -> ListChannelsPaginator:
     return boto3.client("mediatailor").get_paginator("list_channels")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListChannels)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListChannels)
 
 ```python
 class ListChannelsPaginator(Boto3Paginator):
@@ -73,7 +73,7 @@ def get_list_playback_configurations_paginator() -> ListPlaybackConfigurationsPa
     return boto3.client("mediatailor").get_paginator("list_playback_configurations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListPlaybackConfigurations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListPlaybackConfigurations)
 
 ```python
 class ListPlaybackConfigurationsPaginator(Boto3Paginator):
@@ -96,7 +96,7 @@ def get_list_source_locations_paginator() -> ListSourceLocationsPaginator:
     return boto3.client("mediatailor").get_paginator("list_source_locations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListSourceLocations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListSourceLocations)
 
 ```python
 class ListSourceLocationsPaginator(Boto3Paginator):
@@ -119,7 +119,7 @@ def get_list_vod_sources_paginator() -> ListVodSourcesPaginator:
     return boto3.client("mediatailor").get_paginator("list_vod_sources")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListVodSources)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListVodSources)
 
 ```python
 class ListVodSourcesPaginator(Boto3Paginator):

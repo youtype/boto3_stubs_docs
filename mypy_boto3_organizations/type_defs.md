@@ -456,7 +456,7 @@ from mypy_boto3_organizations.type_defs import HandshakeResourceTypeDef
 Optional fields:
 - `Value`: `str`
 - `Type`: `HandshakeResourceType`
-- `Resources`: `List[Dict[str, Any]]`
+- `Resources`: `List["HandshakeResourceTypeDef"]`
 
 
 ## HandshakeTypeDef
@@ -476,7 +476,7 @@ Optional fields:
 - `RequestedTimestamp`: `datetime`
 - `ExpirationTimestamp`: `datetime`
 - `Action`: `ActionType`
-- `Resources`: `List[Dict[str, Any]]`
+- `Resources`: `List["HandshakeResourceTypeDef"]`
 
 
 ## InviteAccountToOrganizationResponseTypeDef

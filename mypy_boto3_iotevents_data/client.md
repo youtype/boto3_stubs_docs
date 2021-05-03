@@ -29,7 +29,7 @@ def get_iotevents-data_client() -> IoTEventsDataClient:
     return boto3.client("iotevents-data")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client)
 
 ## Exceptions
 
@@ -61,7 +61,7 @@ Exceptions:
 
 Type annotations for `boto3.client("iotevents-data").batch_put_message` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_put_message]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_put_message]
 
 ```python
 def batch_put_message(
@@ -75,7 +75,7 @@ def batch_put_message(
 
 Type annotations for `boto3.client("iotevents-data").batch_update_detector` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_update_detector]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_update_detector]
 
 ```python
 def batch_update_detector(
@@ -89,7 +89,7 @@ def batch_update_detector(
 
 Type annotations for `boto3.client("iotevents-data").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -103,7 +103,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("iotevents-data").describe_detector` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.describe_detector]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.describe_detector]
 
 ```python
 def describe_detector(
@@ -118,7 +118,7 @@ def describe_detector(
 
 Type annotations for `boto3.client("iotevents-data").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -135,7 +135,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("iotevents-data").list_detectors` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.list_detectors]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.list_detectors]
 
 ```python
 def list_detectors(

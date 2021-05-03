@@ -29,7 +29,7 @@ def get_admin_list_groups_for_user_paginator() -> AdminListGroupsForUserPaginato
     return boto3.client("cognito-idp").get_paginator("admin_list_groups_for_user")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.AdminListGroupsForUser)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.AdminListGroupsForUser)
 
 ```python
 class AdminListGroupsForUserPaginator(Boto3Paginator):
@@ -54,7 +54,7 @@ def get_admin_list_user_auth_events_paginator() -> AdminListUserAuthEventsPagina
     return boto3.client("cognito-idp").get_paginator("admin_list_user_auth_events")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.AdminListUserAuthEvents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.AdminListUserAuthEvents)
 
 ```python
 class AdminListUserAuthEventsPaginator(Boto3Paginator):
@@ -79,7 +79,7 @@ def get_list_groups_paginator() -> ListGroupsPaginator:
     return boto3.client("cognito-idp").get_paginator("list_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListGroups)
 
 ```python
 class ListGroupsPaginator(Boto3Paginator):
@@ -103,7 +103,7 @@ def get_list_identity_providers_paginator() -> ListIdentityProvidersPaginator:
     return boto3.client("cognito-idp").get_paginator("list_identity_providers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListIdentityProviders)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListIdentityProviders)
 
 ```python
 class ListIdentityProvidersPaginator(Boto3Paginator):
@@ -127,7 +127,7 @@ def get_list_resource_servers_paginator() -> ListResourceServersPaginator:
     return boto3.client("cognito-idp").get_paginator("list_resource_servers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListResourceServers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListResourceServers)
 
 ```python
 class ListResourceServersPaginator(Boto3Paginator):
@@ -151,7 +151,7 @@ def get_list_user_pool_clients_paginator() -> ListUserPoolClientsPaginator:
     return boto3.client("cognito-idp").get_paginator("list_user_pool_clients")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUserPoolClients)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUserPoolClients)
 
 ```python
 class ListUserPoolClientsPaginator(Boto3Paginator):
@@ -175,7 +175,7 @@ def get_list_user_pools_paginator() -> ListUserPoolsPaginator:
     return boto3.client("cognito-idp").get_paginator("list_user_pools")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUserPools)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUserPools)
 
 ```python
 class ListUserPoolsPaginator(Boto3Paginator):
@@ -198,7 +198,7 @@ def get_list_users_paginator() -> ListUsersPaginator:
     return boto3.client("cognito-idp").get_paginator("list_users")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUsers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUsers)
 
 ```python
 class ListUsersPaginator(Boto3Paginator):
@@ -224,7 +224,7 @@ def get_list_users_in_group_paginator() -> ListUsersInGroupPaginator:
     return boto3.client("cognito-idp").get_paginator("list_users_in_group")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUsersInGroup)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUsersInGroup)
 
 ```python
 class ListUsersInGroupPaginator(Boto3Paginator):

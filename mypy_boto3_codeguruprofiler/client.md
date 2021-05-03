@@ -49,7 +49,7 @@ def get_codeguruprofiler_client() -> CodeGuruProfilerClient:
     return boto3.client("codeguruprofiler")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client)
 
 ## Exceptions
 
@@ -82,7 +82,7 @@ Exceptions:
 
 Type annotations for `boto3.client("codeguruprofiler").add_notification_channels` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.add_notification_channels]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.add_notification_channels]
 
 ```python
 def add_notification_channels(
@@ -97,7 +97,7 @@ def add_notification_channels(
 
 Type annotations for `boto3.client("codeguruprofiler").batch_get_frame_metric_data` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.batch_get_frame_metric_data]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.batch_get_frame_metric_data]
 
 ```python
 def batch_get_frame_metric_data(
@@ -116,7 +116,7 @@ def batch_get_frame_metric_data(
 
 Type annotations for `boto3.client("codeguruprofiler").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -130,7 +130,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("codeguruprofiler").configure_agent` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.configure_agent]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.configure_agent]
 
 ```python
 def configure_agent(
@@ -146,7 +146,7 @@ def configure_agent(
 
 Type annotations for `boto3.client("codeguruprofiler").create_profiling_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.create_profiling_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.create_profiling_group]
 
 ```python
 def create_profiling_group(
@@ -164,7 +164,7 @@ def create_profiling_group(
 
 Type annotations for `boto3.client("codeguruprofiler").delete_profiling_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.delete_profiling_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.delete_profiling_group]
 
 ```python
 def delete_profiling_group(
@@ -178,7 +178,7 @@ def delete_profiling_group(
 
 Type annotations for `boto3.client("codeguruprofiler").describe_profiling_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.describe_profiling_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.describe_profiling_group]
 
 ```python
 def describe_profiling_group(
@@ -192,7 +192,7 @@ def describe_profiling_group(
 
 Type annotations for `boto3.client("codeguruprofiler").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -209,7 +209,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("codeguruprofiler").get_findings_report_account_summary` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_findings_report_account_summary]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_findings_report_account_summary]
 
 ```python
 def get_findings_report_account_summary(
@@ -225,7 +225,7 @@ def get_findings_report_account_summary(
 
 Type annotations for `boto3.client("codeguruprofiler").get_notification_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_notification_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_notification_configuration]
 
 ```python
 def get_notification_configuration(
@@ -239,7 +239,7 @@ def get_notification_configuration(
 
 Type annotations for `boto3.client("codeguruprofiler").get_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_policy]
 
 ```python
 def get_policy(
@@ -253,7 +253,7 @@ def get_policy(
 
 Type annotations for `boto3.client("codeguruprofiler").get_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_profile]
 
 ```python
 def get_profile(
@@ -272,7 +272,7 @@ def get_profile(
 
 Type annotations for `boto3.client("codeguruprofiler").get_recommendations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_recommendations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_recommendations]
 
 ```python
 def get_recommendations(
@@ -289,7 +289,7 @@ def get_recommendations(
 
 Type annotations for `boto3.client("codeguruprofiler").list_findings_reports` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_findings_reports]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_findings_reports]
 
 ```python
 def list_findings_reports(
@@ -308,7 +308,7 @@ def list_findings_reports(
 
 Type annotations for `boto3.client("codeguruprofiler").list_profile_times` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profile_times]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profile_times]
 
 ```python
 def list_profile_times(
@@ -328,7 +328,7 @@ def list_profile_times(
 
 Type annotations for `boto3.client("codeguruprofiler").list_profiling_groups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profiling_groups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profiling_groups]
 
 ```python
 def list_profiling_groups(
@@ -344,7 +344,7 @@ def list_profiling_groups(
 
 Type annotations for `boto3.client("codeguruprofiler").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -358,7 +358,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("codeguruprofiler").post_agent_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.post_agent_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.post_agent_profile]
 
 ```python
 def post_agent_profile(
@@ -375,7 +375,7 @@ def post_agent_profile(
 
 Type annotations for `boto3.client("codeguruprofiler").put_permission` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.put_permission]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.put_permission]
 
 ```python
 def put_permission(
@@ -392,7 +392,7 @@ def put_permission(
 
 Type annotations for `boto3.client("codeguruprofiler").remove_notification_channel` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_notification_channel]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_notification_channel]
 
 ```python
 def remove_notification_channel(
@@ -407,7 +407,7 @@ def remove_notification_channel(
 
 Type annotations for `boto3.client("codeguruprofiler").remove_permission` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_permission]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_permission]
 
 ```python
 def remove_permission(
@@ -423,7 +423,7 @@ def remove_permission(
 
 Type annotations for `boto3.client("codeguruprofiler").submit_feedback` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.submit_feedback]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.submit_feedback]
 
 ```python
 def submit_feedback(
@@ -440,7 +440,7 @@ def submit_feedback(
 
 Type annotations for `boto3.client("codeguruprofiler").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -455,7 +455,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("codeguruprofiler").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -470,7 +470,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("codeguruprofiler").update_profiling_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.update_profiling_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.update_profiling_group]
 
 ```python
 def update_profiling_group(

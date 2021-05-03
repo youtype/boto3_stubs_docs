@@ -27,7 +27,7 @@ def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
     return boto3.client("elbv2").get_paginator("describe_account_limits")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeAccountLimits)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeAccountLimits)
 
 ```python
 class DescribeAccountLimitsPaginator(Boto3Paginator):
@@ -50,7 +50,7 @@ def get_describe_listener_certificates_paginator() -> DescribeListenerCertificat
     return boto3.client("elbv2").get_paginator("describe_listener_certificates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListenerCertificates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListenerCertificates)
 
 ```python
 class DescribeListenerCertificatesPaginator(Boto3Paginator):
@@ -74,7 +74,7 @@ def get_describe_listeners_paginator() -> DescribeListenersPaginator:
     return boto3.client("elbv2").get_paginator("describe_listeners")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListeners)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListeners)
 
 ```python
 class DescribeListenersPaginator(Boto3Paginator):
@@ -99,7 +99,7 @@ def get_describe_load_balancers_paginator() -> DescribeLoadBalancersPaginator:
     return boto3.client("elbv2").get_paginator("describe_load_balancers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeLoadBalancers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeLoadBalancers)
 
 ```python
 class DescribeLoadBalancersPaginator(Boto3Paginator):
@@ -124,7 +124,7 @@ def get_describe_rules_paginator() -> DescribeRulesPaginator:
     return boto3.client("elbv2").get_paginator("describe_rules")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeRules)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeRules)
 
 ```python
 class DescribeRulesPaginator(Boto3Paginator):
@@ -149,7 +149,7 @@ def get_describe_ssl_policies_paginator() -> DescribeSSLPoliciesPaginator:
     return boto3.client("elbv2").get_paginator("describe_ssl_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeSSLPolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeSSLPolicies)
 
 ```python
 class DescribeSSLPoliciesPaginator(Boto3Paginator):
@@ -173,7 +173,7 @@ def get_describe_target_groups_paginator() -> DescribeTargetGroupsPaginator:
     return boto3.client("elbv2").get_paginator("describe_target_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeTargetGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeTargetGroups)
 
 ```python
 class DescribeTargetGroupsPaginator(Boto3Paginator):

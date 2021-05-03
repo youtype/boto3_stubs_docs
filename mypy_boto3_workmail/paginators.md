@@ -28,7 +28,7 @@ def get_list_aliases_paginator() -> ListAliasesPaginator:
     return boto3.client("workmail").get_paginator("list_aliases")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListAliases)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListAliases)
 
 ```python
 class ListAliasesPaginator(Boto3Paginator):
@@ -53,7 +53,7 @@ def get_list_group_members_paginator() -> ListGroupMembersPaginator:
     return boto3.client("workmail").get_paginator("list_group_members")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListGroupMembers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListGroupMembers)
 
 ```python
 class ListGroupMembersPaginator(Boto3Paginator):
@@ -78,7 +78,7 @@ def get_list_groups_paginator() -> ListGroupsPaginator:
     return boto3.client("workmail").get_paginator("list_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListGroups)
 
 ```python
 class ListGroupsPaginator(Boto3Paginator):
@@ -102,7 +102,7 @@ def get_list_mailbox_permissions_paginator() -> ListMailboxPermissionsPaginator:
     return boto3.client("workmail").get_paginator("list_mailbox_permissions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListMailboxPermissions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListMailboxPermissions)
 
 ```python
 class ListMailboxPermissionsPaginator(Boto3Paginator):
@@ -127,7 +127,7 @@ def get_list_organizations_paginator() -> ListOrganizationsPaginator:
     return boto3.client("workmail").get_paginator("list_organizations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListOrganizations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListOrganizations)
 
 ```python
 class ListOrganizationsPaginator(Boto3Paginator):
@@ -150,7 +150,7 @@ def get_list_resource_delegates_paginator() -> ListResourceDelegatesPaginator:
     return boto3.client("workmail").get_paginator("list_resource_delegates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListResourceDelegates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListResourceDelegates)
 
 ```python
 class ListResourceDelegatesPaginator(Boto3Paginator):
@@ -175,7 +175,7 @@ def get_list_resources_paginator() -> ListResourcesPaginator:
     return boto3.client("workmail").get_paginator("list_resources")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListResources)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListResources)
 
 ```python
 class ListResourcesPaginator(Boto3Paginator):
@@ -199,7 +199,7 @@ def get_list_users_paginator() -> ListUsersPaginator:
     return boto3.client("workmail").get_paginator("list_users")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListUsers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListUsers)
 
 ```python
 class ListUsersPaginator(Boto3Paginator):

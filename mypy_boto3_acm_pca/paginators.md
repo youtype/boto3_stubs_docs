@@ -23,7 +23,7 @@ def get_list_certificate_authorities_paginator() -> ListCertificateAuthoritiesPa
     return boto3.client("acm-pca").get_paginator("list_certificate_authorities")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Paginator.ListCertificateAuthorities)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Paginator.ListCertificateAuthorities)
 
 ```python
 class ListCertificateAuthoritiesPaginator(Boto3Paginator):
@@ -47,7 +47,7 @@ def get_list_permissions_paginator() -> ListPermissionsPaginator:
     return boto3.client("acm-pca").get_paginator("list_permissions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Paginator.ListPermissions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Paginator.ListPermissions)
 
 ```python
 class ListPermissionsPaginator(Boto3Paginator):
@@ -71,7 +71,7 @@ def get_list_tags_paginator() -> ListTagsPaginator:
     return boto3.client("acm-pca").get_paginator("list_tags")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Paginator.ListTags)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Paginator.ListTags)
 
 ```python
 class ListTagsPaginator(Boto3Paginator):

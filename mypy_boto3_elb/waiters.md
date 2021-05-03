@@ -23,18 +23,14 @@ def get_any_instance_in_service_waiter() -> AnyInstanceInServiceWaiter:
     return boto3.client("elb").get_waiter("any_instance_in_service")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.any_instance_in_service)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.any_instance_in_service)
 
-```python
-class AnyInstanceInServiceWaiter(Boto3Waiter):
-    def wait(
-        self,
-        LoadBalancerName: str,
-        Instances: List["InstanceTypeDef"] = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `AnyInstanceInServiceWaiter.wait` method:
+
+- `LoadBalancerName`: `str` *(required)*
+- `Instances`: `List["InstanceTypeDef"]`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#waiterconfigtypedef)
+
 ## InstanceDeregisteredWaiter
 
 Type annotations for `boto3.client("elb").get_waiter("instance_deregistered")`.
@@ -48,18 +44,14 @@ def get_instance_deregistered_waiter() -> InstanceDeregisteredWaiter:
     return boto3.client("elb").get_waiter("instance_deregistered")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.instance_deregistered)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.instance_deregistered)
 
-```python
-class InstanceDeregisteredWaiter(Boto3Waiter):
-    def wait(
-        self,
-        LoadBalancerName: str,
-        Instances: List["InstanceTypeDef"] = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `InstanceDeregisteredWaiter.wait` method:
+
+- `LoadBalancerName`: `str` *(required)*
+- `Instances`: `List["InstanceTypeDef"]`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#waiterconfigtypedef)
+
 ## InstanceInServiceWaiter
 
 Type annotations for `boto3.client("elb").get_waiter("instance_in_service")`.
@@ -73,15 +65,10 @@ def get_instance_in_service_waiter() -> InstanceInServiceWaiter:
     return boto3.client("elb").get_waiter("instance_in_service")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.instance_in_service)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.instance_in_service)
 
-```python
-class InstanceInServiceWaiter(Boto3Waiter):
-    def wait(
-        self,
-        LoadBalancerName: str,
-        Instances: List["InstanceTypeDef"] = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `InstanceInServiceWaiter.wait` method:
+
+- `LoadBalancerName`: `str` *(required)*
+- `Instances`: `List["InstanceTypeDef"]`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#waiterconfigtypedef)

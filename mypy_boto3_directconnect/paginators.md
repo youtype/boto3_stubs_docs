@@ -23,7 +23,7 @@ def get_describe_direct_connect_gateway_associations_paginator() -> DescribeDire
     return boto3.client("directconnect").get_paginator("describe_direct_connect_gateway_associations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAssociations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAssociations)
 
 ```python
 class DescribeDirectConnectGatewayAssociationsPaginator(Boto3Paginator):
@@ -50,7 +50,7 @@ def get_describe_direct_connect_gateway_attachments_paginator() -> DescribeDirec
     return boto3.client("directconnect").get_paginator("describe_direct_connect_gateway_attachments")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAttachments)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAttachments)
 
 ```python
 class DescribeDirectConnectGatewayAttachmentsPaginator(Boto3Paginator):
@@ -75,7 +75,7 @@ def get_describe_direct_connect_gateways_paginator() -> DescribeDirectConnectGat
     return boto3.client("directconnect").get_paginator("describe_direct_connect_gateways")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGateways)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGateways)
 
 ```python
 class DescribeDirectConnectGatewaysPaginator(Boto3Paginator):

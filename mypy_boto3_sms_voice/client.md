@@ -33,7 +33,7 @@ def get_sms-voice_client() -> SMSVoiceClient:
     return boto3.client("sms-voice")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client)
 
 ## Exceptions
 
@@ -66,7 +66,7 @@ Exceptions:
 
 Type annotations for `boto3.client("sms-voice").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -80,7 +80,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("sms-voice").create_configuration_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.create_configuration_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.create_configuration_set]
 
 ```python
 def create_configuration_set(
@@ -94,7 +94,7 @@ def create_configuration_set(
 
 Type annotations for `boto3.client("sms-voice").create_configuration_set_event_destination` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.create_configuration_set_event_destination]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.create_configuration_set_event_destination]
 
 ```python
 def create_configuration_set_event_destination(
@@ -110,7 +110,7 @@ def create_configuration_set_event_destination(
 
 Type annotations for `boto3.client("sms-voice").delete_configuration_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.delete_configuration_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.delete_configuration_set]
 
 ```python
 def delete_configuration_set(
@@ -124,7 +124,7 @@ def delete_configuration_set(
 
 Type annotations for `boto3.client("sms-voice").delete_configuration_set_event_destination` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.delete_configuration_set_event_destination]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.delete_configuration_set_event_destination]
 
 ```python
 def delete_configuration_set_event_destination(
@@ -139,7 +139,7 @@ def delete_configuration_set_event_destination(
 
 Type annotations for `boto3.client("sms-voice").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -156,7 +156,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("sms-voice").get_configuration_set_event_destinations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.get_configuration_set_event_destinations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.get_configuration_set_event_destinations]
 
 ```python
 def get_configuration_set_event_destinations(
@@ -170,7 +170,7 @@ def get_configuration_set_event_destinations(
 
 Type annotations for `boto3.client("sms-voice").list_configuration_sets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.list_configuration_sets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.list_configuration_sets]
 
 ```python
 def list_configuration_sets(
@@ -185,7 +185,7 @@ def list_configuration_sets(
 
 Type annotations for `boto3.client("sms-voice").send_voice_message` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.send_voice_message]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.send_voice_message]
 
 ```python
 def send_voice_message(
@@ -203,7 +203,7 @@ def send_voice_message(
 
 Type annotations for `boto3.client("sms-voice").update_configuration_set_event_destination` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.update_configuration_set_event_destination]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice.Client.update_configuration_set_event_destination]
 
 ```python
 def update_configuration_set_event_destination(

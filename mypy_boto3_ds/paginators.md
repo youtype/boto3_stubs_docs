@@ -29,7 +29,7 @@ def get_describe_directories_paginator() -> DescribeDirectoriesPaginator:
     return boto3.client("ds").get_paginator("describe_directories")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.DescribeDirectories)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.DescribeDirectories)
 
 ```python
 class DescribeDirectoriesPaginator(Boto3Paginator):
@@ -53,7 +53,7 @@ def get_describe_domain_controllers_paginator() -> DescribeDomainControllersPagi
     return boto3.client("ds").get_paginator("describe_domain_controllers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.DescribeDomainControllers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.DescribeDomainControllers)
 
 ```python
 class DescribeDomainControllersPaginator(Boto3Paginator):
@@ -78,7 +78,7 @@ def get_describe_shared_directories_paginator() -> DescribeSharedDirectoriesPagi
     return boto3.client("ds").get_paginator("describe_shared_directories")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.DescribeSharedDirectories)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.DescribeSharedDirectories)
 
 ```python
 class DescribeSharedDirectoriesPaginator(Boto3Paginator):
@@ -103,7 +103,7 @@ def get_describe_snapshots_paginator() -> DescribeSnapshotsPaginator:
     return boto3.client("ds").get_paginator("describe_snapshots")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.DescribeSnapshots)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.DescribeSnapshots)
 
 ```python
 class DescribeSnapshotsPaginator(Boto3Paginator):
@@ -128,7 +128,7 @@ def get_describe_trusts_paginator() -> DescribeTrustsPaginator:
     return boto3.client("ds").get_paginator("describe_trusts")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.DescribeTrusts)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.DescribeTrusts)
 
 ```python
 class DescribeTrustsPaginator(Boto3Paginator):
@@ -153,7 +153,7 @@ def get_list_ip_routes_paginator() -> ListIpRoutesPaginator:
     return boto3.client("ds").get_paginator("list_ip_routes")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.ListIpRoutes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.ListIpRoutes)
 
 ```python
 class ListIpRoutesPaginator(Boto3Paginator):
@@ -177,7 +177,7 @@ def get_list_log_subscriptions_paginator() -> ListLogSubscriptionsPaginator:
     return boto3.client("ds").get_paginator("list_log_subscriptions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.ListLogSubscriptions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.ListLogSubscriptions)
 
 ```python
 class ListLogSubscriptionsPaginator(Boto3Paginator):
@@ -201,7 +201,7 @@ def get_list_schema_extensions_paginator() -> ListSchemaExtensionsPaginator:
     return boto3.client("ds").get_paginator("list_schema_extensions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.ListSchemaExtensions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.ListSchemaExtensions)
 
 ```python
 class ListSchemaExtensionsPaginator(Boto3Paginator):
@@ -225,7 +225,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("ds").get_paginator("list_tags_for_resource")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.ListTagsForResource)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):

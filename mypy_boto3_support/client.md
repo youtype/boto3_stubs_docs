@@ -40,7 +40,7 @@ def get_support_client() -> SupportClient:
     return boto3.client("support")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client)
 
 ## Exceptions
 
@@ -76,7 +76,7 @@ Exceptions:
 
 Type annotations for `boto3.client("support").add_attachments_to_set` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.add_attachments_to_set]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.add_attachments_to_set]
 
 ```python
 def add_attachments_to_set(
@@ -91,7 +91,7 @@ def add_attachments_to_set(
 
 Type annotations for `boto3.client("support").add_communication_to_case` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.add_communication_to_case]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.add_communication_to_case]
 
 ```python
 def add_communication_to_case(
@@ -108,7 +108,7 @@ def add_communication_to_case(
 
 Type annotations for `boto3.client("support").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -122,7 +122,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("support").create_case` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.create_case]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.create_case]
 
 ```python
 def create_case(
@@ -144,7 +144,7 @@ def create_case(
 
 Type annotations for `boto3.client("support").describe_attachment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_attachment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_attachment]
 
 ```python
 def describe_attachment(
@@ -158,7 +158,7 @@ def describe_attachment(
 
 Type annotations for `boto3.client("support").describe_cases` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_cases]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_cases]
 
 ```python
 def describe_cases(
@@ -180,7 +180,7 @@ def describe_cases(
 
 Type annotations for `boto3.client("support").describe_communications` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_communications]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_communications]
 
 ```python
 def describe_communications(
@@ -198,7 +198,7 @@ def describe_communications(
 
 Type annotations for `boto3.client("support").describe_services` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_services]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_services]
 
 ```python
 def describe_services(
@@ -213,7 +213,7 @@ def describe_services(
 
 Type annotations for `boto3.client("support").describe_severity_levels` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_severity_levels]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_severity_levels]
 
 ```python
 def describe_severity_levels(
@@ -227,7 +227,7 @@ def describe_severity_levels(
 
 Type annotations for `boto3.client("support").describe_trusted_advisor_check_refresh_statuses` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_refresh_statuses]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_refresh_statuses]
 
 ```python
 def describe_trusted_advisor_check_refresh_statuses(
@@ -241,7 +241,7 @@ def describe_trusted_advisor_check_refresh_statuses(
 
 Type annotations for `boto3.client("support").describe_trusted_advisor_check_result` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_result]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_result]
 
 ```python
 def describe_trusted_advisor_check_result(
@@ -256,7 +256,7 @@ def describe_trusted_advisor_check_result(
 
 Type annotations for `boto3.client("support").describe_trusted_advisor_check_summaries` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_summaries]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_summaries]
 
 ```python
 def describe_trusted_advisor_check_summaries(
@@ -270,7 +270,7 @@ def describe_trusted_advisor_check_summaries(
 
 Type annotations for `boto3.client("support").describe_trusted_advisor_checks` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_checks]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_checks]
 
 ```python
 def describe_trusted_advisor_checks(
@@ -284,7 +284,7 @@ def describe_trusted_advisor_checks(
 
 Type annotations for `boto3.client("support").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -301,7 +301,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("support").refresh_trusted_advisor_check` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.refresh_trusted_advisor_check]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.refresh_trusted_advisor_check]
 
 ```python
 def refresh_trusted_advisor_check(
@@ -315,7 +315,7 @@ def refresh_trusted_advisor_check(
 
 Type annotations for `boto3.client("support").resolve_case` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.resolve_case]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.resolve_case]
 
 ```python
 def resolve_case(

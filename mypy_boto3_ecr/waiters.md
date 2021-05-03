@@ -22,21 +22,17 @@ def get_image_scan_complete_waiter() -> ImageScanCompleteWaiter:
     return boto3.client("ecr").get_waiter("image_scan_complete")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Waiter.image_scan_complete)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Waiter.image_scan_complete)
 
-```python
-class ImageScanCompleteWaiter(Boto3Waiter):
-    def wait(
-        self,
-        repositoryName: str,
-        imageId: "ImageIdentifierTypeDef",
-        registryId: str = None,
-        nextToken: str = None,
-        maxResults: int = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `ImageScanCompleteWaiter.wait` method:
+
+- `repositoryName`: `str` *(required)*
+- `imageId`: [ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef) *(required)*
+- `registryId`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#waiterconfigtypedef)
+
 ## LifecyclePolicyPreviewCompleteWaiter
 
 Type annotations for `boto3.client("ecr").get_waiter("lifecycle_policy_preview_complete")`.
@@ -50,19 +46,14 @@ def get_lifecycle_policy_preview_complete_waiter() -> LifecyclePolicyPreviewComp
     return boto3.client("ecr").get_waiter("lifecycle_policy_preview_complete")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Waiter.lifecycle_policy_preview_complete)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Waiter.lifecycle_policy_preview_complete)
 
-```python
-class LifecyclePolicyPreviewCompleteWaiter(Boto3Waiter):
-    def wait(
-        self,
-        repositoryName: str,
-        registryId: str = None,
-        imageIds: List["ImageIdentifierTypeDef"] = None,
-        nextToken: str = None,
-        maxResults: int = None,
-        filter: LifecyclePolicyPreviewFilterTypeDef = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `LifecyclePolicyPreviewCompleteWaiter.wait` method:
+
+- `repositoryName`: `str` *(required)*
+- `registryId`: `str`
+- `imageIds`: `List["ImageIdentifierTypeDef"]`
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `filter`: [LifecyclePolicyPreviewFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#lifecyclepolicypreviewfiltertypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#waiterconfigtypedef)

@@ -36,7 +36,7 @@ def get_compute-optimizer_client() -> ComputeOptimizerClient:
     return boto3.client("compute-optimizer")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client)
 
 ## Exceptions
 
@@ -72,7 +72,7 @@ Exceptions:
 
 Type annotations for `boto3.client("compute-optimizer").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -86,7 +86,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("compute-optimizer").describe_recommendation_export_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.describe_recommendation_export_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.describe_recommendation_export_jobs]
 
 ```python
 def describe_recommendation_export_jobs(
@@ -103,7 +103,7 @@ def describe_recommendation_export_jobs(
 
 Type annotations for `boto3.client("compute-optimizer").export_auto_scaling_group_recommendations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_auto_scaling_group_recommendations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_auto_scaling_group_recommendations]
 
 ```python
 def export_auto_scaling_group_recommendations(
@@ -122,7 +122,7 @@ def export_auto_scaling_group_recommendations(
 
 Type annotations for `boto3.client("compute-optimizer").export_ec2_instance_recommendations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_ec2_instance_recommendations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_ec2_instance_recommendations]
 
 ```python
 def export_ec2_instance_recommendations(
@@ -141,7 +141,7 @@ def export_ec2_instance_recommendations(
 
 Type annotations for `boto3.client("compute-optimizer").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -158,7 +158,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("compute-optimizer").get_auto_scaling_group_recommendations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_auto_scaling_group_recommendations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_auto_scaling_group_recommendations]
 
 ```python
 def get_auto_scaling_group_recommendations(
@@ -176,7 +176,7 @@ def get_auto_scaling_group_recommendations(
 
 Type annotations for `boto3.client("compute-optimizer").get_ebs_volume_recommendations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ebs_volume_recommendations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ebs_volume_recommendations]
 
 ```python
 def get_ebs_volume_recommendations(
@@ -194,7 +194,7 @@ def get_ebs_volume_recommendations(
 
 Type annotations for `boto3.client("compute-optimizer").get_ec2_instance_recommendations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ec2_instance_recommendations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ec2_instance_recommendations]
 
 ```python
 def get_ec2_instance_recommendations(
@@ -212,7 +212,7 @@ def get_ec2_instance_recommendations(
 
 Type annotations for `boto3.client("compute-optimizer").get_ec2_recommendation_projected_metrics` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ec2_recommendation_projected_metrics]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ec2_recommendation_projected_metrics]
 
 ```python
 def get_ec2_recommendation_projected_metrics(
@@ -230,7 +230,7 @@ def get_ec2_recommendation_projected_metrics(
 
 Type annotations for `boto3.client("compute-optimizer").get_enrollment_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_enrollment_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_enrollment_status]
 
 ```python
 def get_enrollment_status(
@@ -243,7 +243,7 @@ def get_enrollment_status(
 
 Type annotations for `boto3.client("compute-optimizer").get_lambda_function_recommendations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_lambda_function_recommendations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_lambda_function_recommendations]
 
 ```python
 def get_lambda_function_recommendations(
@@ -261,7 +261,7 @@ def get_lambda_function_recommendations(
 
 Type annotations for `boto3.client("compute-optimizer").get_recommendation_summaries` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_recommendation_summaries]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_recommendation_summaries]
 
 ```python
 def get_recommendation_summaries(
@@ -277,7 +277,7 @@ def get_recommendation_summaries(
 
 Type annotations for `boto3.client("compute-optimizer").update_enrollment_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.update_enrollment_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.update_enrollment_status]
 
 ```python
 def update_enrollment_status(

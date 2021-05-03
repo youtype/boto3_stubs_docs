@@ -22,25 +22,21 @@ def get_alarm_exists_waiter() -> AlarmExistsWaiter:
     return boto3.client("cloudwatch").get_waiter("alarm_exists")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Waiter.alarm_exists)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Waiter.alarm_exists)
 
-```python
-class AlarmExistsWaiter(Boto3Waiter):
-    def wait(
-        self,
-        AlarmNames: List[str] = None,
-        AlarmNamePrefix: str = None,
-        AlarmTypes: List[AlarmType] = None,
-        ChildrenOfAlarmName: str = None,
-        ParentsOfAlarmName: str = None,
-        StateValue: StateValue = None,
-        ActionPrefix: str = None,
-        MaxRecords: int = None,
-        NextToken: str = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `AlarmExistsWaiter.wait` method:
+
+- `AlarmNames`: `List[str]`
+- `AlarmNamePrefix`: `str`
+- `AlarmTypes`: `List[AlarmType]`
+- `ChildrenOfAlarmName`: `str`
+- `ParentsOfAlarmName`: `str`
+- `StateValue`: [StateValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#statevalue)
+- `ActionPrefix`: `str`
+- `MaxRecords`: `int`
+- `NextToken`: `str`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#waiterconfigtypedef)
+
 ## CompositeAlarmExistsWaiter
 
 Type annotations for `boto3.client("cloudwatch").get_waiter("composite_alarm_exists")`.
@@ -54,22 +50,17 @@ def get_composite_alarm_exists_waiter() -> CompositeAlarmExistsWaiter:
     return boto3.client("cloudwatch").get_waiter("composite_alarm_exists")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Waiter.composite_alarm_exists)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Waiter.composite_alarm_exists)
 
-```python
-class CompositeAlarmExistsWaiter(Boto3Waiter):
-    def wait(
-        self,
-        AlarmNames: List[str] = None,
-        AlarmNamePrefix: str = None,
-        AlarmTypes: List[AlarmType] = None,
-        ChildrenOfAlarmName: str = None,
-        ParentsOfAlarmName: str = None,
-        StateValue: StateValue = None,
-        ActionPrefix: str = None,
-        MaxRecords: int = None,
-        NextToken: str = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `CompositeAlarmExistsWaiter.wait` method:
+
+- `AlarmNames`: `List[str]`
+- `AlarmNamePrefix`: `str`
+- `AlarmTypes`: `List[AlarmType]`
+- `ChildrenOfAlarmName`: `str`
+- `ParentsOfAlarmName`: `str`
+- `StateValue`: [StateValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#statevalue)
+- `ActionPrefix`: `str`
+- `MaxRecords`: `int`
+- `NextToken`: `str`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#waiterconfigtypedef)

@@ -51,7 +51,7 @@ def get_mediaconvert_client() -> MediaConvertClient:
     return boto3.client("mediaconvert")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client)
 
 ## Exceptions
 
@@ -84,7 +84,7 @@ Exceptions:
 
 Type annotations for `boto3.client("mediaconvert").associate_certificate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.associate_certificate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.associate_certificate]
 
 ```python
 def associate_certificate(
@@ -98,7 +98,7 @@ def associate_certificate(
 
 Type annotations for `boto3.client("mediaconvert").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -112,7 +112,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("mediaconvert").cancel_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.cancel_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.cancel_job]
 
 ```python
 def cancel_job(
@@ -126,7 +126,7 @@ def cancel_job(
 
 Type annotations for `boto3.client("mediaconvert").create_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_job]
 
 ```python
 def create_job(
@@ -152,7 +152,7 @@ def create_job(
 
 Type annotations for `boto3.client("mediaconvert").create_job_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_job_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_job_template]
 
 ```python
 def create_job_template(
@@ -175,7 +175,7 @@ def create_job_template(
 
 Type annotations for `boto3.client("mediaconvert").create_preset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_preset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_preset]
 
 ```python
 def create_preset(
@@ -193,7 +193,7 @@ def create_preset(
 
 Type annotations for `boto3.client("mediaconvert").create_queue` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_queue]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_queue]
 
 ```python
 def create_queue(
@@ -212,7 +212,7 @@ def create_queue(
 
 Type annotations for `boto3.client("mediaconvert").delete_job_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_job_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_job_template]
 
 ```python
 def delete_job_template(
@@ -226,7 +226,7 @@ def delete_job_template(
 
 Type annotations for `boto3.client("mediaconvert").delete_preset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_preset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_preset]
 
 ```python
 def delete_preset(
@@ -240,7 +240,7 @@ def delete_preset(
 
 Type annotations for `boto3.client("mediaconvert").delete_queue` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_queue]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_queue]
 
 ```python
 def delete_queue(
@@ -254,7 +254,7 @@ def delete_queue(
 
 Type annotations for `boto3.client("mediaconvert").describe_endpoints` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.describe_endpoints]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.describe_endpoints]
 
 ```python
 def describe_endpoints(
@@ -270,7 +270,7 @@ def describe_endpoints(
 
 Type annotations for `boto3.client("mediaconvert").disassociate_certificate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.disassociate_certificate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.disassociate_certificate]
 
 ```python
 def disassociate_certificate(
@@ -284,7 +284,7 @@ def disassociate_certificate(
 
 Type annotations for `boto3.client("mediaconvert").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -301,7 +301,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("mediaconvert").get_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_job]
 
 ```python
 def get_job(
@@ -315,7 +315,7 @@ def get_job(
 
 Type annotations for `boto3.client("mediaconvert").get_job_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_job_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_job_template]
 
 ```python
 def get_job_template(
@@ -329,7 +329,7 @@ def get_job_template(
 
 Type annotations for `boto3.client("mediaconvert").get_preset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_preset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_preset]
 
 ```python
 def get_preset(
@@ -343,7 +343,7 @@ def get_preset(
 
 Type annotations for `boto3.client("mediaconvert").get_queue` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_queue]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_queue]
 
 ```python
 def get_queue(
@@ -357,7 +357,7 @@ def get_queue(
 
 Type annotations for `boto3.client("mediaconvert").list_job_templates` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_job_templates]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_job_templates]
 
 ```python
 def list_job_templates(
@@ -375,7 +375,7 @@ def list_job_templates(
 
 Type annotations for `boto3.client("mediaconvert").list_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_jobs]
 
 ```python
 def list_jobs(
@@ -393,7 +393,7 @@ def list_jobs(
 
 Type annotations for `boto3.client("mediaconvert").list_presets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_presets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_presets]
 
 ```python
 def list_presets(
@@ -411,7 +411,7 @@ def list_presets(
 
 Type annotations for `boto3.client("mediaconvert").list_queues` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_queues]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_queues]
 
 ```python
 def list_queues(
@@ -428,7 +428,7 @@ def list_queues(
 
 Type annotations for `boto3.client("mediaconvert").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -442,7 +442,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("mediaconvert").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -457,7 +457,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("mediaconvert").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -472,7 +472,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("mediaconvert").update_job_template` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_job_template]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_job_template]
 
 ```python
 def update_job_template(
@@ -494,7 +494,7 @@ def update_job_template(
 
 Type annotations for `boto3.client("mediaconvert").update_preset` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_preset]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_preset]
 
 ```python
 def update_preset(
@@ -511,7 +511,7 @@ def update_preset(
 
 Type annotations for `boto3.client("mediaconvert").update_queue` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_queue]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_queue]
 
 ```python
 def update_queue(

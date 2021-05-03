@@ -23,18 +23,14 @@ def get_function_active_waiter() -> FunctionActiveWaiter:
     return boto3.client("lambda").get_waiter("function_active")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.function_active)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.function_active)
 
-```python
-class FunctionActiveWaiter(Boto3Waiter):
-    def wait(
-        self,
-        FunctionName: str,
-        Qualifier: str = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `FunctionActiveWaiter.wait` method:
+
+- `FunctionName`: `str` *(required)*
+- `Qualifier`: `str`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#waiterconfigtypedef)
+
 ## FunctionExistsWaiter
 
 Type annotations for `boto3.client("lambda").get_waiter("function_exists")`.
@@ -48,18 +44,14 @@ def get_function_exists_waiter() -> FunctionExistsWaiter:
     return boto3.client("lambda").get_waiter("function_exists")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.function_exists)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.function_exists)
 
-```python
-class FunctionExistsWaiter(Boto3Waiter):
-    def wait(
-        self,
-        FunctionName: str,
-        Qualifier: str = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `FunctionExistsWaiter.wait` method:
+
+- `FunctionName`: `str` *(required)*
+- `Qualifier`: `str`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#waiterconfigtypedef)
+
 ## FunctionUpdatedWaiter
 
 Type annotations for `boto3.client("lambda").get_waiter("function_updated")`.
@@ -73,15 +65,10 @@ def get_function_updated_waiter() -> FunctionUpdatedWaiter:
     return boto3.client("lambda").get_waiter("function_updated")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.function_updated)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.function_updated)
 
-```python
-class FunctionUpdatedWaiter(Boto3Waiter):
-    def wait(
-        self,
-        FunctionName: str,
-        Qualifier: str = None,
-        WaiterConfig: WaiterConfigTypeDef = None
-    ) -> None:
-        pass
-```
+Arguments for `FunctionUpdatedWaiter.wait` method:
+
+- `FunctionName`: `str` *(required)*
+- `Qualifier`: `str`
+- `WaiterConfig`: [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#waiterconfigtypedef)

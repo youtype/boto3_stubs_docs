@@ -21,7 +21,7 @@ def get_list_brokers_paginator() -> ListBrokersPaginator:
     return boto3.client("mq").get_paginator("list_brokers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Paginator.ListBrokers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Paginator.ListBrokers)
 
 ```python
 class ListBrokersPaginator(Boto3Paginator):

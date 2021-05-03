@@ -22,7 +22,7 @@ def get_describe_environment_memberships_paginator() -> DescribeEnvironmentMembe
     return boto3.client("cloud9").get_paginator("describe_environment_memberships")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Paginator.DescribeEnvironmentMemberships)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Paginator.DescribeEnvironmentMemberships)
 
 ```python
 class DescribeEnvironmentMembershipsPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_list_environments_paginator() -> ListEnvironmentsPaginator:
     return boto3.client("cloud9").get_paginator("list_environments")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Paginator.ListEnvironments)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Paginator.ListEnvironments)
 
 ```python
 class ListEnvironmentsPaginator(Boto3Paginator):

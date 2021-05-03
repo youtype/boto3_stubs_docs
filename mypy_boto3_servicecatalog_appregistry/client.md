@@ -46,7 +46,7 @@ def get_servicecatalog-appregistry_client() -> AppRegistryClient:
     return boto3.client("servicecatalog-appregistry")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client)
 
 ## Exceptions
 
@@ -78,7 +78,7 @@ Exceptions:
 
 Type annotations for `boto3.client("servicecatalog-appregistry").associate_attribute_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.associate_attribute_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.associate_attribute_group]
 
 ```python
 def associate_attribute_group(
@@ -93,7 +93,7 @@ def associate_attribute_group(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").associate_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.associate_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.associate_resource]
 
 ```python
 def associate_resource(
@@ -109,7 +109,7 @@ def associate_resource(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -123,7 +123,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").create_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.create_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.create_application]
 
 ```python
 def create_application(
@@ -140,7 +140,7 @@ def create_application(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").create_attribute_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.create_attribute_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.create_attribute_group]
 
 ```python
 def create_attribute_group(
@@ -158,7 +158,7 @@ def create_attribute_group(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").delete_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.delete_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.delete_application]
 
 ```python
 def delete_application(
@@ -172,7 +172,7 @@ def delete_application(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").delete_attribute_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.delete_attribute_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.delete_attribute_group]
 
 ```python
 def delete_attribute_group(
@@ -186,7 +186,7 @@ def delete_attribute_group(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").disassociate_attribute_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.disassociate_attribute_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.disassociate_attribute_group]
 
 ```python
 def disassociate_attribute_group(
@@ -201,7 +201,7 @@ def disassociate_attribute_group(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").disassociate_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.disassociate_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.disassociate_resource]
 
 ```python
 def disassociate_resource(
@@ -217,7 +217,7 @@ def disassociate_resource(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -234,7 +234,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").get_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.get_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.get_application]
 
 ```python
 def get_application(
@@ -248,7 +248,7 @@ def get_application(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").get_attribute_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.get_attribute_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.get_attribute_group]
 
 ```python
 def get_attribute_group(
@@ -262,7 +262,7 @@ def get_attribute_group(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").list_applications` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_applications]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_applications]
 
 ```python
 def list_applications(
@@ -277,7 +277,7 @@ def list_applications(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").list_associated_attribute_groups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_associated_attribute_groups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_associated_attribute_groups]
 
 ```python
 def list_associated_attribute_groups(
@@ -293,7 +293,7 @@ def list_associated_attribute_groups(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").list_associated_resources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_associated_resources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_associated_resources]
 
 ```python
 def list_associated_resources(
@@ -309,7 +309,7 @@ def list_associated_resources(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").list_attribute_groups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_attribute_groups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_attribute_groups]
 
 ```python
 def list_attribute_groups(
@@ -324,7 +324,7 @@ def list_attribute_groups(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -338,7 +338,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").sync_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.sync_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.sync_resource]
 
 ```python
 def sync_resource(
@@ -353,7 +353,7 @@ def sync_resource(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -368,7 +368,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -383,7 +383,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").update_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.update_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.update_application]
 
 ```python
 def update_application(
@@ -399,7 +399,7 @@ def update_application(
 
 Type annotations for `boto3.client("servicecatalog-appregistry").update_attribute_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.update_attribute_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.update_attribute_group]
 
 ```python
 def update_attribute_group(

@@ -23,7 +23,7 @@ def get_list_compliance_status_paginator() -> ListComplianceStatusPaginator:
     return boto3.client("fms").get_paginator("list_compliance_status")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListComplianceStatus)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListComplianceStatus)
 
 ```python
 class ListComplianceStatusPaginator(Boto3Paginator):
@@ -47,7 +47,7 @@ def get_list_member_accounts_paginator() -> ListMemberAccountsPaginator:
     return boto3.client("fms").get_paginator("list_member_accounts")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListMemberAccounts)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListMemberAccounts)
 
 ```python
 class ListMemberAccountsPaginator(Boto3Paginator):
@@ -70,7 +70,7 @@ def get_list_policies_paginator() -> ListPoliciesPaginator:
     return boto3.client("fms").get_paginator("list_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListPolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListPolicies)
 
 ```python
 class ListPoliciesPaginator(Boto3Paginator):

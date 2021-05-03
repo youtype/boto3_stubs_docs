@@ -63,7 +63,7 @@ def get_amplify_client() -> AmplifyClient:
     return boto3.client("amplify")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client)
 
 ## Exceptions
 
@@ -97,7 +97,7 @@ Exceptions:
 
 Type annotations for `boto3.client("amplify").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -111,7 +111,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("amplify").create_app` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_app]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_app]
 
 ```python
 def create_app(
@@ -143,7 +143,7 @@ def create_app(
 
 Type annotations for `boto3.client("amplify").create_backend_environment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_backend_environment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_backend_environment]
 
 ```python
 def create_backend_environment(
@@ -160,7 +160,7 @@ def create_backend_environment(
 
 Type annotations for `boto3.client("amplify").create_branch` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_branch]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_branch]
 
 ```python
 def create_branch(
@@ -191,7 +191,7 @@ def create_branch(
 
 Type annotations for `boto3.client("amplify").create_deployment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_deployment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_deployment]
 
 ```python
 def create_deployment(
@@ -207,7 +207,7 @@ def create_deployment(
 
 Type annotations for `boto3.client("amplify").create_domain_association` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_domain_association]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_domain_association]
 
 ```python
 def create_domain_association(
@@ -226,7 +226,7 @@ def create_domain_association(
 
 Type annotations for `boto3.client("amplify").create_webhook` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_webhook]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_webhook]
 
 ```python
 def create_webhook(
@@ -242,7 +242,7 @@ def create_webhook(
 
 Type annotations for `boto3.client("amplify").delete_app` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_app]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_app]
 
 ```python
 def delete_app(
@@ -256,7 +256,7 @@ def delete_app(
 
 Type annotations for `boto3.client("amplify").delete_backend_environment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_backend_environment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_backend_environment]
 
 ```python
 def delete_backend_environment(
@@ -271,7 +271,7 @@ def delete_backend_environment(
 
 Type annotations for `boto3.client("amplify").delete_branch` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_branch]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_branch]
 
 ```python
 def delete_branch(
@@ -286,7 +286,7 @@ def delete_branch(
 
 Type annotations for `boto3.client("amplify").delete_domain_association` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_domain_association]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_domain_association]
 
 ```python
 def delete_domain_association(
@@ -301,7 +301,7 @@ def delete_domain_association(
 
 Type annotations for `boto3.client("amplify").delete_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_job]
 
 ```python
 def delete_job(
@@ -317,7 +317,7 @@ def delete_job(
 
 Type annotations for `boto3.client("amplify").delete_webhook` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_webhook]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_webhook]
 
 ```python
 def delete_webhook(
@@ -331,7 +331,7 @@ def delete_webhook(
 
 Type annotations for `boto3.client("amplify").generate_access_logs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.generate_access_logs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.generate_access_logs]
 
 ```python
 def generate_access_logs(
@@ -348,7 +348,7 @@ def generate_access_logs(
 
 Type annotations for `boto3.client("amplify").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -365,7 +365,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("amplify").get_app` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_app]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_app]
 
 ```python
 def get_app(
@@ -379,7 +379,7 @@ def get_app(
 
 Type annotations for `boto3.client("amplify").get_artifact_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_artifact_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_artifact_url]
 
 ```python
 def get_artifact_url(
@@ -393,7 +393,7 @@ def get_artifact_url(
 
 Type annotations for `boto3.client("amplify").get_backend_environment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_backend_environment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_backend_environment]
 
 ```python
 def get_backend_environment(
@@ -408,7 +408,7 @@ def get_backend_environment(
 
 Type annotations for `boto3.client("amplify").get_branch` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_branch]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_branch]
 
 ```python
 def get_branch(
@@ -423,7 +423,7 @@ def get_branch(
 
 Type annotations for `boto3.client("amplify").get_domain_association` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_domain_association]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_domain_association]
 
 ```python
 def get_domain_association(
@@ -438,7 +438,7 @@ def get_domain_association(
 
 Type annotations for `boto3.client("amplify").get_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_job]
 
 ```python
 def get_job(
@@ -454,7 +454,7 @@ def get_job(
 
 Type annotations for `boto3.client("amplify").get_webhook` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_webhook]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_webhook]
 
 ```python
 def get_webhook(
@@ -468,7 +468,7 @@ def get_webhook(
 
 Type annotations for `boto3.client("amplify").list_apps` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_apps]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_apps]
 
 ```python
 def list_apps(
@@ -483,7 +483,7 @@ def list_apps(
 
 Type annotations for `boto3.client("amplify").list_artifacts` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_artifacts]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_artifacts]
 
 ```python
 def list_artifacts(
@@ -501,7 +501,7 @@ def list_artifacts(
 
 Type annotations for `boto3.client("amplify").list_backend_environments` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_backend_environments]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_backend_environments]
 
 ```python
 def list_backend_environments(
@@ -518,7 +518,7 @@ def list_backend_environments(
 
 Type annotations for `boto3.client("amplify").list_branches` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_branches]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_branches]
 
 ```python
 def list_branches(
@@ -534,7 +534,7 @@ def list_branches(
 
 Type annotations for `boto3.client("amplify").list_domain_associations` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_domain_associations]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_domain_associations]
 
 ```python
 def list_domain_associations(
@@ -550,7 +550,7 @@ def list_domain_associations(
 
 Type annotations for `boto3.client("amplify").list_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_jobs]
 
 ```python
 def list_jobs(
@@ -567,7 +567,7 @@ def list_jobs(
 
 Type annotations for `boto3.client("amplify").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -581,7 +581,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("amplify").list_webhooks` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_webhooks]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_webhooks]
 
 ```python
 def list_webhooks(
@@ -597,7 +597,7 @@ def list_webhooks(
 
 Type annotations for `boto3.client("amplify").start_deployment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.start_deployment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.start_deployment]
 
 ```python
 def start_deployment(
@@ -614,7 +614,7 @@ def start_deployment(
 
 Type annotations for `boto3.client("amplify").start_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.start_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.start_job]
 
 ```python
 def start_job(
@@ -635,7 +635,7 @@ def start_job(
 
 Type annotations for `boto3.client("amplify").stop_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.stop_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.stop_job]
 
 ```python
 def stop_job(
@@ -651,7 +651,7 @@ def stop_job(
 
 Type annotations for `boto3.client("amplify").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -666,7 +666,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("amplify").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -681,7 +681,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("amplify").update_app` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_app]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_app]
 
 ```python
 def update_app(
@@ -713,7 +713,7 @@ def update_app(
 
 Type annotations for `boto3.client("amplify").update_branch` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_branch]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_branch]
 
 ```python
 def update_branch(
@@ -743,7 +743,7 @@ def update_branch(
 
 Type annotations for `boto3.client("amplify").update_domain_association` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_domain_association]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_domain_association]
 
 ```python
 def update_domain_association(
@@ -762,7 +762,7 @@ def update_domain_association(
 
 Type annotations for `boto3.client("amplify").update_webhook` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_webhook]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_webhook]
 
 ```python
 def update_webhook(

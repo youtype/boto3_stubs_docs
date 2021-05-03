@@ -25,7 +25,7 @@ def get_get_connectors_paginator() -> GetConnectorsPaginator:
     return boto3.client("sms").get_paginator("get_connectors")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetConnectors)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetConnectors)
 
 ```python
 class GetConnectorsPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_get_replication_jobs_paginator() -> GetReplicationJobsPaginator:
     return boto3.client("sms").get_paginator("get_replication_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetReplicationJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetReplicationJobs)
 
 ```python
 class GetReplicationJobsPaginator(Boto3Paginator):
@@ -72,7 +72,7 @@ def get_get_replication_runs_paginator() -> GetReplicationRunsPaginator:
     return boto3.client("sms").get_paginator("get_replication_runs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetReplicationRuns)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetReplicationRuns)
 
 ```python
 class GetReplicationRunsPaginator(Boto3Paginator):
@@ -96,7 +96,7 @@ def get_get_servers_paginator() -> GetServersPaginator:
     return boto3.client("sms").get_paginator("get_servers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetServers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetServers)
 
 ```python
 class GetServersPaginator(Boto3Paginator):
@@ -120,7 +120,7 @@ def get_list_apps_paginator() -> ListAppsPaginator:
     return boto3.client("sms").get_paginator("list_apps")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.ListApps)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.ListApps)
 
 ```python
 class ListAppsPaginator(Boto3Paginator):

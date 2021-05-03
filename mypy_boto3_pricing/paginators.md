@@ -23,7 +23,7 @@ def get_describe_services_paginator() -> DescribeServicesPaginator:
     return boto3.client("pricing").get_paginator("describe_services")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Paginator.DescribeServices)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Paginator.DescribeServices)
 
 ```python
 class DescribeServicesPaginator(Boto3Paginator):
@@ -48,7 +48,7 @@ def get_get_attribute_values_paginator() -> GetAttributeValuesPaginator:
     return boto3.client("pricing").get_paginator("get_attribute_values")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Paginator.GetAttributeValues)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Paginator.GetAttributeValues)
 
 ```python
 class GetAttributeValuesPaginator(Boto3Paginator):
@@ -73,7 +73,7 @@ def get_get_products_paginator() -> GetProductsPaginator:
     return boto3.client("pricing").get_paginator("get_products")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Paginator.GetProducts)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Paginator.GetProducts)
 
 ```python
 class GetProductsPaginator(Boto3Paginator):

@@ -24,7 +24,7 @@ def get_get_execution_history_paginator() -> GetExecutionHistoryPaginator:
     return boto3.client("stepfunctions").get_paginator("get_execution_history")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.GetExecutionHistory)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.GetExecutionHistory)
 
 ```python
 class GetExecutionHistoryPaginator(Boto3Paginator):
@@ -50,7 +50,7 @@ def get_list_activities_paginator() -> ListActivitiesPaginator:
     return boto3.client("stepfunctions").get_paginator("list_activities")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListActivities)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListActivities)
 
 ```python
 class ListActivitiesPaginator(Boto3Paginator):
@@ -73,7 +73,7 @@ def get_list_executions_paginator() -> ListExecutionsPaginator:
     return boto3.client("stepfunctions").get_paginator("list_executions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListExecutions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListExecutions)
 
 ```python
 class ListExecutionsPaginator(Boto3Paginator):
@@ -98,7 +98,7 @@ def get_list_state_machines_paginator() -> ListStateMachinesPaginator:
     return boto3.client("stepfunctions").get_paginator("list_state_machines")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListStateMachines)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListStateMachines)
 
 ```python
 class ListStateMachinesPaginator(Boto3Paginator):

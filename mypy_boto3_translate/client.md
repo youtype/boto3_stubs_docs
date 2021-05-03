@@ -40,7 +40,7 @@ def get_translate_client() -> TranslateClient:
     return boto3.client("translate")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client)
 
 ## Exceptions
 
@@ -80,7 +80,7 @@ Exceptions:
 
 Type annotations for `boto3.client("translate").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -94,7 +94,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("translate").create_parallel_data` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.create_parallel_data]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.create_parallel_data]
 
 ```python
 def create_parallel_data(
@@ -112,7 +112,7 @@ def create_parallel_data(
 
 Type annotations for `boto3.client("translate").delete_parallel_data` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.delete_parallel_data]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.delete_parallel_data]
 
 ```python
 def delete_parallel_data(
@@ -126,7 +126,7 @@ def delete_parallel_data(
 
 Type annotations for `boto3.client("translate").delete_terminology` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.delete_terminology]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.delete_terminology]
 
 ```python
 def delete_terminology(
@@ -140,7 +140,7 @@ def delete_terminology(
 
 Type annotations for `boto3.client("translate").describe_text_translation_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.describe_text_translation_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.describe_text_translation_job]
 
 ```python
 def describe_text_translation_job(
@@ -154,7 +154,7 @@ def describe_text_translation_job(
 
 Type annotations for `boto3.client("translate").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -171,7 +171,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("translate").get_parallel_data` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.get_parallel_data]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.get_parallel_data]
 
 ```python
 def get_parallel_data(
@@ -185,7 +185,7 @@ def get_parallel_data(
 
 Type annotations for `boto3.client("translate").get_terminology` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.get_terminology]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.get_terminology]
 
 ```python
 def get_terminology(
@@ -200,7 +200,7 @@ def get_terminology(
 
 Type annotations for `boto3.client("translate").import_terminology` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.import_terminology]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.import_terminology]
 
 ```python
 def import_terminology(
@@ -218,7 +218,7 @@ def import_terminology(
 
 Type annotations for `boto3.client("translate").list_parallel_data` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_parallel_data]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_parallel_data]
 
 ```python
 def list_parallel_data(
@@ -233,7 +233,7 @@ def list_parallel_data(
 
 Type annotations for `boto3.client("translate").list_terminologies` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_terminologies]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_terminologies]
 
 ```python
 def list_terminologies(
@@ -248,7 +248,7 @@ def list_terminologies(
 
 Type annotations for `boto3.client("translate").list_text_translation_jobs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_text_translation_jobs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_text_translation_jobs]
 
 ```python
 def list_text_translation_jobs(
@@ -264,7 +264,7 @@ def list_text_translation_jobs(
 
 Type annotations for `boto3.client("translate").start_text_translation_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.start_text_translation_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.start_text_translation_job]
 
 ```python
 def start_text_translation_job(
@@ -286,7 +286,7 @@ def start_text_translation_job(
 
 Type annotations for `boto3.client("translate").stop_text_translation_job` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.stop_text_translation_job]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.stop_text_translation_job]
 
 ```python
 def stop_text_translation_job(
@@ -300,7 +300,7 @@ def stop_text_translation_job(
 
 Type annotations for `boto3.client("translate").translate_text` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.translate_text]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.translate_text]
 
 ```python
 def translate_text(
@@ -317,7 +317,7 @@ def translate_text(
 
 Type annotations for `boto3.client("translate").update_parallel_data` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.update_parallel_data]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.update_parallel_data]
 
 ```python
 def update_parallel_data(

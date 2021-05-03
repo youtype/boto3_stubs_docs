@@ -59,7 +59,7 @@ def get_eks_client() -> EKSClient:
     return boto3.client("eks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client)
 
 ## Exceptions
 
@@ -97,7 +97,7 @@ Exceptions:
 
 Type annotations for `boto3.client("eks").associate_encryption_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.associate_encryption_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.associate_encryption_config]
 
 ```python
 def associate_encryption_config(
@@ -113,7 +113,7 @@ def associate_encryption_config(
 
 Type annotations for `boto3.client("eks").associate_identity_provider_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.associate_identity_provider_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.associate_identity_provider_config]
 
 ```python
 def associate_identity_provider_config(
@@ -130,7 +130,7 @@ def associate_identity_provider_config(
 
 Type annotations for `boto3.client("eks").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -144,7 +144,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("eks").create_addon` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_addon]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_addon]
 
 ```python
 def create_addon(
@@ -164,7 +164,7 @@ def create_addon(
 
 Type annotations for `boto3.client("eks").create_cluster` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_cluster]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_cluster]
 
 ```python
 def create_cluster(
@@ -186,7 +186,7 @@ def create_cluster(
 
 Type annotations for `boto3.client("eks").create_fargate_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_fargate_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_fargate_profile]
 
 ```python
 def create_fargate_profile(
@@ -206,7 +206,7 @@ def create_fargate_profile(
 
 Type annotations for `boto3.client("eks").create_nodegroup` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_nodegroup]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_nodegroup]
 
 ```python
 def create_nodegroup(
@@ -235,7 +235,7 @@ def create_nodegroup(
 
 Type annotations for `boto3.client("eks").delete_addon` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_addon]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_addon]
 
 ```python
 def delete_addon(
@@ -250,7 +250,7 @@ def delete_addon(
 
 Type annotations for `boto3.client("eks").delete_cluster` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_cluster]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_cluster]
 
 ```python
 def delete_cluster(
@@ -264,7 +264,7 @@ def delete_cluster(
 
 Type annotations for `boto3.client("eks").delete_fargate_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_fargate_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_fargate_profile]
 
 ```python
 def delete_fargate_profile(
@@ -279,7 +279,7 @@ def delete_fargate_profile(
 
 Type annotations for `boto3.client("eks").delete_nodegroup` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_nodegroup]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_nodegroup]
 
 ```python
 def delete_nodegroup(
@@ -294,7 +294,7 @@ def delete_nodegroup(
 
 Type annotations for `boto3.client("eks").describe_addon` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_addon]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_addon]
 
 ```python
 def describe_addon(
@@ -309,7 +309,7 @@ def describe_addon(
 
 Type annotations for `boto3.client("eks").describe_addon_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_addon_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_addon_versions]
 
 ```python
 def describe_addon_versions(
@@ -326,7 +326,7 @@ def describe_addon_versions(
 
 Type annotations for `boto3.client("eks").describe_cluster` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_cluster]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_cluster]
 
 ```python
 def describe_cluster(
@@ -340,7 +340,7 @@ def describe_cluster(
 
 Type annotations for `boto3.client("eks").describe_fargate_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_fargate_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_fargate_profile]
 
 ```python
 def describe_fargate_profile(
@@ -355,7 +355,7 @@ def describe_fargate_profile(
 
 Type annotations for `boto3.client("eks").describe_identity_provider_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_identity_provider_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_identity_provider_config]
 
 ```python
 def describe_identity_provider_config(
@@ -370,7 +370,7 @@ def describe_identity_provider_config(
 
 Type annotations for `boto3.client("eks").describe_nodegroup` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_nodegroup]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_nodegroup]
 
 ```python
 def describe_nodegroup(
@@ -385,7 +385,7 @@ def describe_nodegroup(
 
 Type annotations for `boto3.client("eks").describe_update` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_update]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_update]
 
 ```python
 def describe_update(
@@ -402,7 +402,7 @@ def describe_update(
 
 Type annotations for `boto3.client("eks").disassociate_identity_provider_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.disassociate_identity_provider_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.disassociate_identity_provider_config]
 
 ```python
 def disassociate_identity_provider_config(
@@ -418,7 +418,7 @@ def disassociate_identity_provider_config(
 
 Type annotations for `boto3.client("eks").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -435,7 +435,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("eks").list_addons` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_addons]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_addons]
 
 ```python
 def list_addons(
@@ -451,7 +451,7 @@ def list_addons(
 
 Type annotations for `boto3.client("eks").list_clusters` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_clusters]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_clusters]
 
 ```python
 def list_clusters(
@@ -466,7 +466,7 @@ def list_clusters(
 
 Type annotations for `boto3.client("eks").list_fargate_profiles` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_fargate_profiles]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_fargate_profiles]
 
 ```python
 def list_fargate_profiles(
@@ -482,7 +482,7 @@ def list_fargate_profiles(
 
 Type annotations for `boto3.client("eks").list_identity_provider_configs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_identity_provider_configs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_identity_provider_configs]
 
 ```python
 def list_identity_provider_configs(
@@ -498,7 +498,7 @@ def list_identity_provider_configs(
 
 Type annotations for `boto3.client("eks").list_nodegroups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_nodegroups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_nodegroups]
 
 ```python
 def list_nodegroups(
@@ -514,7 +514,7 @@ def list_nodegroups(
 
 Type annotations for `boto3.client("eks").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -528,7 +528,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("eks").list_updates` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_updates]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_updates]
 
 ```python
 def list_updates(
@@ -546,7 +546,7 @@ def list_updates(
 
 Type annotations for `boto3.client("eks").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -561,7 +561,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("eks").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -576,7 +576,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("eks").update_addon` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_addon]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_addon]
 
 ```python
 def update_addon(
@@ -595,7 +595,7 @@ def update_addon(
 
 Type annotations for `boto3.client("eks").update_cluster_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_cluster_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_cluster_config]
 
 ```python
 def update_cluster_config(
@@ -612,7 +612,7 @@ def update_cluster_config(
 
 Type annotations for `boto3.client("eks").update_cluster_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_cluster_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_cluster_version]
 
 ```python
 def update_cluster_version(
@@ -628,7 +628,7 @@ def update_cluster_version(
 
 Type annotations for `boto3.client("eks").update_nodegroup_config` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_nodegroup_config]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_nodegroup_config]
 
 ```python
 def update_nodegroup_config(
@@ -646,7 +646,7 @@ def update_nodegroup_config(
 
 Type annotations for `boto3.client("eks").update_nodegroup_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_nodegroup_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_nodegroup_version]
 
 ```python
 def update_nodegroup_version(

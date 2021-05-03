@@ -72,7 +72,7 @@ def get_get_behavior_model_training_summaries_paginator() -> GetBehaviorModelTra
     return boto3.client("iot").get_paginator("get_behavior_model_training_summaries")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.GetBehaviorModelTrainingSummaries)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.GetBehaviorModelTrainingSummaries)
 
 ```python
 class GetBehaviorModelTrainingSummariesPaginator(Boto3Paginator):
@@ -96,7 +96,7 @@ def get_list_active_violations_paginator() -> ListActiveViolationsPaginator:
     return boto3.client("iot").get_paginator("list_active_violations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListActiveViolations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListActiveViolations)
 
 ```python
 class ListActiveViolationsPaginator(Boto3Paginator):
@@ -123,7 +123,7 @@ def get_list_attached_policies_paginator() -> ListAttachedPoliciesPaginator:
     return boto3.client("iot").get_paginator("list_attached_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAttachedPolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAttachedPolicies)
 
 ```python
 class ListAttachedPoliciesPaginator(Boto3Paginator):
@@ -148,7 +148,7 @@ def get_list_audit_findings_paginator() -> ListAuditFindingsPaginator:
     return boto3.client("iot").get_paginator("list_audit_findings")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditFindings)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditFindings)
 
 ```python
 class ListAuditFindingsPaginator(Boto3Paginator):
@@ -177,7 +177,7 @@ def get_list_audit_mitigation_actions_executions_paginator() -> ListAuditMitigat
     return boto3.client("iot").get_paginator("list_audit_mitigation_actions_executions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditMitigationActionsExecutions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditMitigationActionsExecutions)
 
 ```python
 class ListAuditMitigationActionsExecutionsPaginator(Boto3Paginator):
@@ -203,7 +203,7 @@ def get_list_audit_mitigation_actions_tasks_paginator() -> ListAuditMitigationAc
     return boto3.client("iot").get_paginator("list_audit_mitigation_actions_tasks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditMitigationActionsTasks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditMitigationActionsTasks)
 
 ```python
 class ListAuditMitigationActionsTasksPaginator(Boto3Paginator):
@@ -231,7 +231,7 @@ def get_list_audit_suppressions_paginator() -> ListAuditSuppressionsPaginator:
     return boto3.client("iot").get_paginator("list_audit_suppressions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditSuppressions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditSuppressions)
 
 ```python
 class ListAuditSuppressionsPaginator(Boto3Paginator):
@@ -257,7 +257,7 @@ def get_list_audit_tasks_paginator() -> ListAuditTasksPaginator:
     return boto3.client("iot").get_paginator("list_audit_tasks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditTasks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditTasks)
 
 ```python
 class ListAuditTasksPaginator(Boto3Paginator):
@@ -284,7 +284,7 @@ def get_list_authorizers_paginator() -> ListAuthorizersPaginator:
     return boto3.client("iot").get_paginator("list_authorizers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuthorizers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuthorizers)
 
 ```python
 class ListAuthorizersPaginator(Boto3Paginator):
@@ -309,7 +309,7 @@ def get_list_billing_groups_paginator() -> ListBillingGroupsPaginator:
     return boto3.client("iot").get_paginator("list_billing_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListBillingGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListBillingGroups)
 
 ```python
 class ListBillingGroupsPaginator(Boto3Paginator):
@@ -333,7 +333,7 @@ def get_list_ca_certificates_paginator() -> ListCACertificatesPaginator:
     return boto3.client("iot").get_paginator("list_ca_certificates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCACertificates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCACertificates)
 
 ```python
 class ListCACertificatesPaginator(Boto3Paginator):
@@ -357,7 +357,7 @@ def get_list_certificates_paginator() -> ListCertificatesPaginator:
     return boto3.client("iot").get_paginator("list_certificates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCertificates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCertificates)
 
 ```python
 class ListCertificatesPaginator(Boto3Paginator):
@@ -381,7 +381,7 @@ def get_list_certificates_by_ca_paginator() -> ListCertificatesByCAPaginator:
     return boto3.client("iot").get_paginator("list_certificates_by_ca")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCertificatesByCA)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCertificatesByCA)
 
 ```python
 class ListCertificatesByCAPaginator(Boto3Paginator):
@@ -406,7 +406,7 @@ def get_list_custom_metrics_paginator() -> ListCustomMetricsPaginator:
     return boto3.client("iot").get_paginator("list_custom_metrics")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCustomMetrics)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCustomMetrics)
 
 ```python
 class ListCustomMetricsPaginator(Boto3Paginator):
@@ -429,7 +429,7 @@ def get_list_detect_mitigation_actions_executions_paginator() -> ListDetectMitig
     return boto3.client("iot").get_paginator("list_detect_mitigation_actions_executions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDetectMitigationActionsExecutions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDetectMitigationActionsExecutions)
 
 ```python
 class ListDetectMitigationActionsExecutionsPaginator(Boto3Paginator):
@@ -457,7 +457,7 @@ def get_list_detect_mitigation_actions_tasks_paginator() -> ListDetectMitigation
     return boto3.client("iot").get_paginator("list_detect_mitigation_actions_tasks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDetectMitigationActionsTasks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDetectMitigationActionsTasks)
 
 ```python
 class ListDetectMitigationActionsTasksPaginator(Boto3Paginator):
@@ -482,7 +482,7 @@ def get_list_dimensions_paginator() -> ListDimensionsPaginator:
     return boto3.client("iot").get_paginator("list_dimensions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDimensions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDimensions)
 
 ```python
 class ListDimensionsPaginator(Boto3Paginator):
@@ -505,7 +505,7 @@ def get_list_domain_configurations_paginator() -> ListDomainConfigurationsPagina
     return boto3.client("iot").get_paginator("list_domain_configurations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDomainConfigurations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDomainConfigurations)
 
 ```python
 class ListDomainConfigurationsPaginator(Boto3Paginator):
@@ -529,7 +529,7 @@ def get_list_indices_paginator() -> ListIndicesPaginator:
     return boto3.client("iot").get_paginator("list_indices")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListIndices)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListIndices)
 
 ```python
 class ListIndicesPaginator(Boto3Paginator):
@@ -552,7 +552,7 @@ def get_list_job_executions_for_job_paginator() -> ListJobExecutionsForJobPagina
     return boto3.client("iot").get_paginator("list_job_executions_for_job")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListJobExecutionsForJob)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListJobExecutionsForJob)
 
 ```python
 class ListJobExecutionsForJobPaginator(Boto3Paginator):
@@ -577,7 +577,7 @@ def get_list_job_executions_for_thing_paginator() -> ListJobExecutionsForThingPa
     return boto3.client("iot").get_paginator("list_job_executions_for_thing")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListJobExecutionsForThing)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListJobExecutionsForThing)
 
 ```python
 class ListJobExecutionsForThingPaginator(Boto3Paginator):
@@ -603,7 +603,7 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("iot").get_paginator("list_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListJobs)
 
 ```python
 class ListJobsPaginator(Boto3Paginator):
@@ -631,7 +631,7 @@ def get_list_mitigation_actions_paginator() -> ListMitigationActionsPaginator:
     return boto3.client("iot").get_paginator("list_mitigation_actions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListMitigationActions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListMitigationActions)
 
 ```python
 class ListMitigationActionsPaginator(Boto3Paginator):
@@ -655,7 +655,7 @@ def get_list_ota_updates_paginator() -> ListOTAUpdatesPaginator:
     return boto3.client("iot").get_paginator("list_ota_updates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListOTAUpdates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListOTAUpdates)
 
 ```python
 class ListOTAUpdatesPaginator(Boto3Paginator):
@@ -679,7 +679,7 @@ def get_list_outgoing_certificates_paginator() -> ListOutgoingCertificatesPagina
     return boto3.client("iot").get_paginator("list_outgoing_certificates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListOutgoingCertificates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListOutgoingCertificates)
 
 ```python
 class ListOutgoingCertificatesPaginator(Boto3Paginator):
@@ -703,7 +703,7 @@ def get_list_policies_paginator() -> ListPoliciesPaginator:
     return boto3.client("iot").get_paginator("list_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPolicies)
 
 ```python
 class ListPoliciesPaginator(Boto3Paginator):
@@ -727,7 +727,7 @@ def get_list_policy_principals_paginator() -> ListPolicyPrincipalsPaginator:
     return boto3.client("iot").get_paginator("list_policy_principals")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPolicyPrincipals)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPolicyPrincipals)
 
 ```python
 class ListPolicyPrincipalsPaginator(Boto3Paginator):
@@ -752,7 +752,7 @@ def get_list_principal_policies_paginator() -> ListPrincipalPoliciesPaginator:
     return boto3.client("iot").get_paginator("list_principal_policies")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPrincipalPolicies)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPrincipalPolicies)
 
 ```python
 class ListPrincipalPoliciesPaginator(Boto3Paginator):
@@ -777,7 +777,7 @@ def get_list_principal_things_paginator() -> ListPrincipalThingsPaginator:
     return boto3.client("iot").get_paginator("list_principal_things")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPrincipalThings)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPrincipalThings)
 
 ```python
 class ListPrincipalThingsPaginator(Boto3Paginator):
@@ -801,7 +801,7 @@ def get_list_provisioning_template_versions_paginator() -> ListProvisioningTempl
     return boto3.client("iot").get_paginator("list_provisioning_template_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListProvisioningTemplateVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListProvisioningTemplateVersions)
 
 ```python
 class ListProvisioningTemplateVersionsPaginator(Boto3Paginator):
@@ -825,7 +825,7 @@ def get_list_provisioning_templates_paginator() -> ListProvisioningTemplatesPagi
     return boto3.client("iot").get_paginator("list_provisioning_templates")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListProvisioningTemplates)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListProvisioningTemplates)
 
 ```python
 class ListProvisioningTemplatesPaginator(Boto3Paginator):
@@ -848,7 +848,7 @@ def get_list_role_aliases_paginator() -> ListRoleAliasesPaginator:
     return boto3.client("iot").get_paginator("list_role_aliases")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListRoleAliases)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListRoleAliases)
 
 ```python
 class ListRoleAliasesPaginator(Boto3Paginator):
@@ -872,7 +872,7 @@ def get_list_scheduled_audits_paginator() -> ListScheduledAuditsPaginator:
     return boto3.client("iot").get_paginator("list_scheduled_audits")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListScheduledAudits)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListScheduledAudits)
 
 ```python
 class ListScheduledAuditsPaginator(Boto3Paginator):
@@ -895,7 +895,7 @@ def get_list_security_profiles_paginator() -> ListSecurityProfilesPaginator:
     return boto3.client("iot").get_paginator("list_security_profiles")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListSecurityProfiles)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListSecurityProfiles)
 
 ```python
 class ListSecurityProfilesPaginator(Boto3Paginator):
@@ -920,7 +920,7 @@ def get_list_security_profiles_for_target_paginator() -> ListSecurityProfilesFor
     return boto3.client("iot").get_paginator("list_security_profiles_for_target")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListSecurityProfilesForTarget)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListSecurityProfilesForTarget)
 
 ```python
 class ListSecurityProfilesForTargetPaginator(Boto3Paginator):
@@ -945,7 +945,7 @@ def get_list_streams_paginator() -> ListStreamsPaginator:
     return boto3.client("iot").get_paginator("list_streams")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListStreams)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListStreams)
 
 ```python
 class ListStreamsPaginator(Boto3Paginator):
@@ -969,7 +969,7 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("iot").get_paginator("list_tags_for_resource")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTagsForResource)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):
@@ -993,7 +993,7 @@ def get_list_targets_for_policy_paginator() -> ListTargetsForPolicyPaginator:
     return boto3.client("iot").get_paginator("list_targets_for_policy")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTargetsForPolicy)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTargetsForPolicy)
 
 ```python
 class ListTargetsForPolicyPaginator(Boto3Paginator):
@@ -1017,7 +1017,7 @@ def get_list_targets_for_security_profile_paginator() -> ListTargetsForSecurityP
     return boto3.client("iot").get_paginator("list_targets_for_security_profile")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTargetsForSecurityProfile)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTargetsForSecurityProfile)
 
 ```python
 class ListTargetsForSecurityProfilePaginator(Boto3Paginator):
@@ -1041,7 +1041,7 @@ def get_list_thing_groups_paginator() -> ListThingGroupsPaginator:
     return boto3.client("iot").get_paginator("list_thing_groups")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingGroups)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingGroups)
 
 ```python
 class ListThingGroupsPaginator(Boto3Paginator):
@@ -1067,7 +1067,7 @@ def get_list_thing_groups_for_thing_paginator() -> ListThingGroupsForThingPagina
     return boto3.client("iot").get_paginator("list_thing_groups_for_thing")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingGroupsForThing)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingGroupsForThing)
 
 ```python
 class ListThingGroupsForThingPaginator(Boto3Paginator):
@@ -1091,7 +1091,7 @@ def get_list_thing_principals_paginator() -> ListThingPrincipalsPaginator:
     return boto3.client("iot").get_paginator("list_thing_principals")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingPrincipals)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingPrincipals)
 
 ```python
 class ListThingPrincipalsPaginator(Boto3Paginator):
@@ -1115,7 +1115,7 @@ def get_list_thing_registration_task_reports_paginator() -> ListThingRegistratio
     return boto3.client("iot").get_paginator("list_thing_registration_task_reports")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingRegistrationTaskReports)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingRegistrationTaskReports)
 
 ```python
 class ListThingRegistrationTaskReportsPaginator(Boto3Paginator):
@@ -1140,7 +1140,7 @@ def get_list_thing_registration_tasks_paginator() -> ListThingRegistrationTasksP
     return boto3.client("iot").get_paginator("list_thing_registration_tasks")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingRegistrationTasks)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingRegistrationTasks)
 
 ```python
 class ListThingRegistrationTasksPaginator(Boto3Paginator):
@@ -1164,7 +1164,7 @@ def get_list_thing_types_paginator() -> ListThingTypesPaginator:
     return boto3.client("iot").get_paginator("list_thing_types")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingTypes)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingTypes)
 
 ```python
 class ListThingTypesPaginator(Boto3Paginator):
@@ -1188,7 +1188,7 @@ def get_list_things_paginator() -> ListThingsPaginator:
     return boto3.client("iot").get_paginator("list_things")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThings)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThings)
 
 ```python
 class ListThingsPaginator(Boto3Paginator):
@@ -1215,7 +1215,7 @@ def get_list_things_in_billing_group_paginator() -> ListThingsInBillingGroupPagi
     return boto3.client("iot").get_paginator("list_things_in_billing_group")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingsInBillingGroup)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingsInBillingGroup)
 
 ```python
 class ListThingsInBillingGroupPaginator(Boto3Paginator):
@@ -1239,7 +1239,7 @@ def get_list_things_in_thing_group_paginator() -> ListThingsInThingGroupPaginato
     return boto3.client("iot").get_paginator("list_things_in_thing_group")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingsInThingGroup)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingsInThingGroup)
 
 ```python
 class ListThingsInThingGroupPaginator(Boto3Paginator):
@@ -1264,7 +1264,7 @@ def get_list_topic_rule_destinations_paginator() -> ListTopicRuleDestinationsPag
     return boto3.client("iot").get_paginator("list_topic_rule_destinations")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTopicRuleDestinations)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTopicRuleDestinations)
 
 ```python
 class ListTopicRuleDestinationsPaginator(Boto3Paginator):
@@ -1287,7 +1287,7 @@ def get_list_topic_rules_paginator() -> ListTopicRulesPaginator:
     return boto3.client("iot").get_paginator("list_topic_rules")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTopicRules)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTopicRules)
 
 ```python
 class ListTopicRulesPaginator(Boto3Paginator):
@@ -1312,7 +1312,7 @@ def get_list_v2_logging_levels_paginator() -> ListV2LoggingLevelsPaginator:
     return boto3.client("iot").get_paginator("list_v2_logging_levels")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListV2LoggingLevels)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListV2LoggingLevels)
 
 ```python
 class ListV2LoggingLevelsPaginator(Boto3Paginator):
@@ -1336,7 +1336,7 @@ def get_list_violation_events_paginator() -> ListViolationEventsPaginator:
     return boto3.client("iot").get_paginator("list_violation_events")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListViolationEvents)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListViolationEvents)
 
 ```python
 class ListViolationEventsPaginator(Boto3Paginator):

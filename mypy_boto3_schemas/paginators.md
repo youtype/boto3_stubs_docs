@@ -25,7 +25,7 @@ def get_list_discoverers_paginator() -> ListDiscoverersPaginator:
     return boto3.client("schemas").get_paginator("list_discoverers")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListDiscoverers)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListDiscoverers)
 
 ```python
 class ListDiscoverersPaginator(Boto3Paginator):
@@ -50,7 +50,7 @@ def get_list_registries_paginator() -> ListRegistriesPaginator:
     return boto3.client("schemas").get_paginator("list_registries")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListRegistries)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListRegistries)
 
 ```python
 class ListRegistriesPaginator(Boto3Paginator):
@@ -75,7 +75,7 @@ def get_list_schema_versions_paginator() -> ListSchemaVersionsPaginator:
     return boto3.client("schemas").get_paginator("list_schema_versions")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListSchemaVersions)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListSchemaVersions)
 
 ```python
 class ListSchemaVersionsPaginator(Boto3Paginator):
@@ -100,7 +100,7 @@ def get_list_schemas_paginator() -> ListSchemasPaginator:
     return boto3.client("schemas").get_paginator("list_schemas")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListSchemas)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListSchemas)
 
 ```python
 class ListSchemasPaginator(Boto3Paginator):
@@ -125,7 +125,7 @@ def get_search_schemas_paginator() -> SearchSchemasPaginator:
     return boto3.client("schemas").get_paginator("search_schemas")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.SearchSchemas)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.SearchSchemas)
 
 ```python
 class SearchSchemasPaginator(Boto3Paginator):

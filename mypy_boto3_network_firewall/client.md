@@ -55,7 +55,7 @@ def get_network-firewall_client() -> NetworkFirewallClient:
     return boto3.client("network-firewall")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client)
 
 ## Exceptions
 
@@ -94,7 +94,7 @@ Exceptions:
 
 Type annotations for `boto3.client("network-firewall").associate_firewall_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.associate_firewall_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.associate_firewall_policy]
 
 ```python
 def associate_firewall_policy(
@@ -111,7 +111,7 @@ def associate_firewall_policy(
 
 Type annotations for `boto3.client("network-firewall").associate_subnets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.associate_subnets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.associate_subnets]
 
 ```python
 def associate_subnets(
@@ -128,7 +128,7 @@ def associate_subnets(
 
 Type annotations for `boto3.client("network-firewall").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -142,7 +142,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("network-firewall").create_firewall` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_firewall]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_firewall]
 
 ```python
 def create_firewall(
@@ -164,7 +164,7 @@ def create_firewall(
 
 Type annotations for `boto3.client("network-firewall").create_firewall_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_firewall_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_firewall_policy]
 
 ```python
 def create_firewall_policy(
@@ -182,7 +182,7 @@ def create_firewall_policy(
 
 Type annotations for `boto3.client("network-firewall").create_rule_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_rule_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_rule_group]
 
 ```python
 def create_rule_group(
@@ -203,7 +203,7 @@ def create_rule_group(
 
 Type annotations for `boto3.client("network-firewall").delete_firewall` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_firewall]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_firewall]
 
 ```python
 def delete_firewall(
@@ -218,7 +218,7 @@ def delete_firewall(
 
 Type annotations for `boto3.client("network-firewall").delete_firewall_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_firewall_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_firewall_policy]
 
 ```python
 def delete_firewall_policy(
@@ -233,7 +233,7 @@ def delete_firewall_policy(
 
 Type annotations for `boto3.client("network-firewall").delete_resource_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_resource_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_resource_policy]
 
 ```python
 def delete_resource_policy(
@@ -247,7 +247,7 @@ def delete_resource_policy(
 
 Type annotations for `boto3.client("network-firewall").delete_rule_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_rule_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_rule_group]
 
 ```python
 def delete_rule_group(
@@ -263,7 +263,7 @@ def delete_rule_group(
 
 Type annotations for `boto3.client("network-firewall").describe_firewall` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_firewall]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_firewall]
 
 ```python
 def describe_firewall(
@@ -278,7 +278,7 @@ def describe_firewall(
 
 Type annotations for `boto3.client("network-firewall").describe_firewall_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_firewall_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_firewall_policy]
 
 ```python
 def describe_firewall_policy(
@@ -293,7 +293,7 @@ def describe_firewall_policy(
 
 Type annotations for `boto3.client("network-firewall").describe_logging_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_logging_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_logging_configuration]
 
 ```python
 def describe_logging_configuration(
@@ -308,7 +308,7 @@ def describe_logging_configuration(
 
 Type annotations for `boto3.client("network-firewall").describe_resource_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_resource_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_resource_policy]
 
 ```python
 def describe_resource_policy(
@@ -322,7 +322,7 @@ def describe_resource_policy(
 
 Type annotations for `boto3.client("network-firewall").describe_rule_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_rule_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_rule_group]
 
 ```python
 def describe_rule_group(
@@ -338,7 +338,7 @@ def describe_rule_group(
 
 Type annotations for `boto3.client("network-firewall").disassociate_subnets` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.disassociate_subnets]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.disassociate_subnets]
 
 ```python
 def disassociate_subnets(
@@ -355,7 +355,7 @@ def disassociate_subnets(
 
 Type annotations for `boto3.client("network-firewall").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -372,7 +372,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("network-firewall").list_firewall_policies` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_firewall_policies]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_firewall_policies]
 
 ```python
 def list_firewall_policies(
@@ -387,7 +387,7 @@ def list_firewall_policies(
 
 Type annotations for `boto3.client("network-firewall").list_firewalls` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_firewalls]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_firewalls]
 
 ```python
 def list_firewalls(
@@ -403,7 +403,7 @@ def list_firewalls(
 
 Type annotations for `boto3.client("network-firewall").list_rule_groups` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_rule_groups]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_rule_groups]
 
 ```python
 def list_rule_groups(
@@ -418,7 +418,7 @@ def list_rule_groups(
 
 Type annotations for `boto3.client("network-firewall").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -434,7 +434,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("network-firewall").put_resource_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.put_resource_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.put_resource_policy]
 
 ```python
 def put_resource_policy(
@@ -449,7 +449,7 @@ def put_resource_policy(
 
 Type annotations for `boto3.client("network-firewall").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -464,7 +464,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("network-firewall").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -479,7 +479,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("network-firewall").update_firewall_delete_protection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_delete_protection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_delete_protection]
 
 ```python
 def update_firewall_delete_protection(
@@ -496,7 +496,7 @@ def update_firewall_delete_protection(
 
 Type annotations for `boto3.client("network-firewall").update_firewall_description` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_description]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_description]
 
 ```python
 def update_firewall_description(
@@ -513,7 +513,7 @@ def update_firewall_description(
 
 Type annotations for `boto3.client("network-firewall").update_firewall_policy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_policy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_policy]
 
 ```python
 def update_firewall_policy(
@@ -532,7 +532,7 @@ def update_firewall_policy(
 
 Type annotations for `boto3.client("network-firewall").update_firewall_policy_change_protection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_policy_change_protection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_policy_change_protection]
 
 ```python
 def update_firewall_policy_change_protection(
@@ -549,7 +549,7 @@ def update_firewall_policy_change_protection(
 
 Type annotations for `boto3.client("network-firewall").update_logging_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_logging_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_logging_configuration]
 
 ```python
 def update_logging_configuration(
@@ -565,7 +565,7 @@ def update_logging_configuration(
 
 Type annotations for `boto3.client("network-firewall").update_rule_group` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_rule_group]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_rule_group]
 
 ```python
 def update_rule_group(
@@ -586,7 +586,7 @@ def update_rule_group(
 
 Type annotations for `boto3.client("network-firewall").update_subnet_change_protection` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_subnet_change_protection]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_subnet_change_protection]
 
 ```python
 def update_subnet_change_protection(

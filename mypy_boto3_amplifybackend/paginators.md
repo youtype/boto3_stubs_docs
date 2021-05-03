@@ -21,7 +21,7 @@ def get_list_backend_jobs_paginator() -> ListBackendJobsPaginator:
     return boto3.client("amplifybackend").get_paginator("list_backend_jobs")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Paginator.ListBackendJobs)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Paginator.ListBackendJobs)
 
 ```python
 class ListBackendJobsPaginator(Boto3Paginator):

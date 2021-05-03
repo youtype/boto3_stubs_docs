@@ -55,7 +55,7 @@ def get_ce_client() -> CostExplorerClient:
     return boto3.client("ce")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client)
 
 ## Exceptions
 
@@ -92,7 +92,7 @@ Exceptions:
 
 Type annotations for `boto3.client("ce").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -106,7 +106,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("ce").create_anomaly_monitor` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_anomaly_monitor]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_anomaly_monitor]
 
 ```python
 def create_anomaly_monitor(
@@ -120,7 +120,7 @@ def create_anomaly_monitor(
 
 Type annotations for `boto3.client("ce").create_anomaly_subscription` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_anomaly_subscription]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_anomaly_subscription]
 
 ```python
 def create_anomaly_subscription(
@@ -134,7 +134,7 @@ def create_anomaly_subscription(
 
 Type annotations for `boto3.client("ce").create_cost_category_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_cost_category_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_cost_category_definition]
 
 ```python
 def create_cost_category_definition(
@@ -151,7 +151,7 @@ def create_cost_category_definition(
 
 Type annotations for `boto3.client("ce").delete_anomaly_monitor` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_anomaly_monitor]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_anomaly_monitor]
 
 ```python
 def delete_anomaly_monitor(
@@ -165,7 +165,7 @@ def delete_anomaly_monitor(
 
 Type annotations for `boto3.client("ce").delete_anomaly_subscription` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_anomaly_subscription]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_anomaly_subscription]
 
 ```python
 def delete_anomaly_subscription(
@@ -179,7 +179,7 @@ def delete_anomaly_subscription(
 
 Type annotations for `boto3.client("ce").delete_cost_category_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_cost_category_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_cost_category_definition]
 
 ```python
 def delete_cost_category_definition(
@@ -193,7 +193,7 @@ def delete_cost_category_definition(
 
 Type annotations for `boto3.client("ce").describe_cost_category_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.describe_cost_category_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.describe_cost_category_definition]
 
 ```python
 def describe_cost_category_definition(
@@ -208,7 +208,7 @@ def describe_cost_category_definition(
 
 Type annotations for `boto3.client("ce").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -225,7 +225,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("ce").get_anomalies` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_anomalies]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_anomalies]
 
 ```python
 def get_anomalies(
@@ -244,7 +244,7 @@ def get_anomalies(
 
 Type annotations for `boto3.client("ce").get_anomaly_monitors` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_anomaly_monitors]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_anomaly_monitors]
 
 ```python
 def get_anomaly_monitors(
@@ -260,7 +260,7 @@ def get_anomaly_monitors(
 
 Type annotations for `boto3.client("ce").get_anomaly_subscriptions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_anomaly_subscriptions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_anomaly_subscriptions]
 
 ```python
 def get_anomaly_subscriptions(
@@ -277,7 +277,7 @@ def get_anomaly_subscriptions(
 
 Type annotations for `boto3.client("ce").get_cost_and_usage` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_and_usage]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_and_usage]
 
 ```python
 def get_cost_and_usage(
@@ -285,7 +285,7 @@ def get_cost_and_usage(
     TimePeriod: "DateIntervalTypeDef",
     Granularity: Granularity,
     Metrics: List[str],
-    Filter: Dict[str, Any] = None,
+    Filter: "ExpressionTypeDef" = None,
     GroupBy: List["GroupDefinitionTypeDef"] = None,
     NextPageToken: str = None
 ) -> GetCostAndUsageResponseTypeDef:
@@ -296,14 +296,14 @@ def get_cost_and_usage(
 
 Type annotations for `boto3.client("ce").get_cost_and_usage_with_resources` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_and_usage_with_resources]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_and_usage_with_resources]
 
 ```python
 def get_cost_and_usage_with_resources(
     self,
     TimePeriod: "DateIntervalTypeDef",
     Granularity: Granularity,
-    Filter: Dict[str, Any],
+    Filter: "ExpressionTypeDef",
     Metrics: List[str] = None,
     GroupBy: List["GroupDefinitionTypeDef"] = None,
     NextPageToken: str = None
@@ -315,7 +315,7 @@ def get_cost_and_usage_with_resources(
 
 Type annotations for `boto3.client("ce").get_cost_categories` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_categories]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_categories]
 
 ```python
 def get_cost_categories(
@@ -323,7 +323,7 @@ def get_cost_categories(
     TimePeriod: "DateIntervalTypeDef",
     SearchString: str = None,
     CostCategoryName: str = None,
-    Filter: Dict[str, Any] = None,
+    Filter: "ExpressionTypeDef" = None,
     SortBy: List[SortDefinitionTypeDef] = None,
     MaxResults: int = None,
     NextPageToken: str = None
@@ -335,7 +335,7 @@ def get_cost_categories(
 
 Type annotations for `boto3.client("ce").get_cost_forecast` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_forecast]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_forecast]
 
 ```python
 def get_cost_forecast(
@@ -343,7 +343,7 @@ def get_cost_forecast(
     TimePeriod: "DateIntervalTypeDef",
     Metric: Metric,
     Granularity: Granularity,
-    Filter: Dict[str, Any] = None,
+    Filter: "ExpressionTypeDef" = None,
     PredictionIntervalLevel: int = None
 ) -> GetCostForecastResponseTypeDef:
     pass
@@ -353,7 +353,7 @@ def get_cost_forecast(
 
 Type annotations for `boto3.client("ce").get_dimension_values` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_dimension_values]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_dimension_values]
 
 ```python
 def get_dimension_values(
@@ -362,7 +362,7 @@ def get_dimension_values(
     Dimension: Dimension,
     SearchString: str = None,
     Context: Context = None,
-    Filter: Dict[str, Any] = None,
+    Filter: "ExpressionTypeDef" = None,
     SortBy: List[SortDefinitionTypeDef] = None,
     MaxResults: int = None,
     NextPageToken: str = None
@@ -374,7 +374,7 @@ def get_dimension_values(
 
 Type annotations for `boto3.client("ce").get_reservation_coverage` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_coverage]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_coverage]
 
 ```python
 def get_reservation_coverage(
@@ -382,7 +382,7 @@ def get_reservation_coverage(
     TimePeriod: "DateIntervalTypeDef",
     GroupBy: List["GroupDefinitionTypeDef"] = None,
     Granularity: Granularity = None,
-    Filter: Dict[str, Any] = None,
+    Filter: "ExpressionTypeDef" = None,
     Metrics: List[str] = None,
     NextPageToken: str = None,
     SortBy: SortDefinitionTypeDef = None,
@@ -395,14 +395,14 @@ def get_reservation_coverage(
 
 Type annotations for `boto3.client("ce").get_reservation_purchase_recommendation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_purchase_recommendation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_purchase_recommendation]
 
 ```python
 def get_reservation_purchase_recommendation(
     self,
     Service: str,
     AccountId: str = None,
-    Filter: Dict[str, Any] = None,
+    Filter: "ExpressionTypeDef" = None,
     AccountScope: AccountScope = None,
     LookbackPeriodInDays: LookbackPeriodInDays = None,
     TermInYears: TermInYears = None,
@@ -418,7 +418,7 @@ def get_reservation_purchase_recommendation(
 
 Type annotations for `boto3.client("ce").get_reservation_utilization` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_utilization]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_utilization]
 
 ```python
 def get_reservation_utilization(
@@ -426,7 +426,7 @@ def get_reservation_utilization(
     TimePeriod: "DateIntervalTypeDef",
     GroupBy: List["GroupDefinitionTypeDef"] = None,
     Granularity: Granularity = None,
-    Filter: Dict[str, Any] = None,
+    Filter: "ExpressionTypeDef" = None,
     SortBy: SortDefinitionTypeDef = None,
     NextPageToken: str = None,
     MaxResults: int = None
@@ -438,13 +438,13 @@ def get_reservation_utilization(
 
 Type annotations for `boto3.client("ce").get_rightsizing_recommendation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_rightsizing_recommendation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_rightsizing_recommendation]
 
 ```python
 def get_rightsizing_recommendation(
     self,
     Service: str,
-    Filter: Dict[str, Any] = None,
+    Filter: "ExpressionTypeDef" = None,
     Configuration: "RightsizingRecommendationConfigurationTypeDef" = None,
     PageSize: int = None,
     NextPageToken: str = None
@@ -456,7 +456,7 @@ def get_rightsizing_recommendation(
 
 Type annotations for `boto3.client("ce").get_savings_plans_coverage` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_coverage]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_coverage]
 
 ```python
 def get_savings_plans_coverage(
@@ -464,7 +464,7 @@ def get_savings_plans_coverage(
     TimePeriod: "DateIntervalTypeDef",
     GroupBy: List["GroupDefinitionTypeDef"] = None,
     Granularity: Granularity = None,
-    Filter: Dict[str, Any] = None,
+    Filter: "ExpressionTypeDef" = None,
     Metrics: List[str] = None,
     NextToken: str = None,
     MaxResults: int = None,
@@ -477,7 +477,7 @@ def get_savings_plans_coverage(
 
 Type annotations for `boto3.client("ce").get_savings_plans_purchase_recommendation` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_purchase_recommendation]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_purchase_recommendation]
 
 ```python
 def get_savings_plans_purchase_recommendation(
@@ -489,7 +489,7 @@ def get_savings_plans_purchase_recommendation(
     AccountScope: AccountScope = None,
     NextPageToken: str = None,
     PageSize: int = None,
-    Filter: Dict[str, Any] = None
+    Filter: "ExpressionTypeDef" = None
 ) -> GetSavingsPlansPurchaseRecommendationResponseTypeDef:
     pass
 ```
@@ -498,14 +498,14 @@ def get_savings_plans_purchase_recommendation(
 
 Type annotations for `boto3.client("ce").get_savings_plans_utilization` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_utilization]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_utilization]
 
 ```python
 def get_savings_plans_utilization(
     self,
     TimePeriod: "DateIntervalTypeDef",
     Granularity: Granularity = None,
-    Filter: Dict[str, Any] = None,
+    Filter: "ExpressionTypeDef" = None,
     SortBy: SortDefinitionTypeDef = None
 ) -> GetSavingsPlansUtilizationResponseTypeDef:
     pass
@@ -515,13 +515,13 @@ def get_savings_plans_utilization(
 
 Type annotations for `boto3.client("ce").get_savings_plans_utilization_details` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_utilization_details]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_utilization_details]
 
 ```python
 def get_savings_plans_utilization_details(
     self,
     TimePeriod: "DateIntervalTypeDef",
-    Filter: Dict[str, Any] = None,
+    Filter: "ExpressionTypeDef" = None,
     DataType: List[SavingsPlansDataType] = None,
     NextToken: str = None,
     MaxResults: int = None,
@@ -534,7 +534,7 @@ def get_savings_plans_utilization_details(
 
 Type annotations for `boto3.client("ce").get_tags` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_tags]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_tags]
 
 ```python
 def get_tags(
@@ -542,7 +542,7 @@ def get_tags(
     TimePeriod: "DateIntervalTypeDef",
     SearchString: str = None,
     TagKey: str = None,
-    Filter: Dict[str, Any] = None,
+    Filter: "ExpressionTypeDef" = None,
     SortBy: List[SortDefinitionTypeDef] = None,
     MaxResults: int = None,
     NextPageToken: str = None
@@ -554,7 +554,7 @@ def get_tags(
 
 Type annotations for `boto3.client("ce").get_usage_forecast` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_usage_forecast]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_usage_forecast]
 
 ```python
 def get_usage_forecast(
@@ -562,7 +562,7 @@ def get_usage_forecast(
     TimePeriod: "DateIntervalTypeDef",
     Metric: Metric,
     Granularity: Granularity,
-    Filter: Dict[str, Any] = None,
+    Filter: "ExpressionTypeDef" = None,
     PredictionIntervalLevel: int = None
 ) -> GetUsageForecastResponseTypeDef:
     pass
@@ -572,7 +572,7 @@ def get_usage_forecast(
 
 Type annotations for `boto3.client("ce").list_cost_category_definitions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.list_cost_category_definitions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.list_cost_category_definitions]
 
 ```python
 def list_cost_category_definitions(
@@ -588,7 +588,7 @@ def list_cost_category_definitions(
 
 Type annotations for `boto3.client("ce").provide_anomaly_feedback` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.provide_anomaly_feedback]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.provide_anomaly_feedback]
 
 ```python
 def provide_anomaly_feedback(
@@ -603,7 +603,7 @@ def provide_anomaly_feedback(
 
 Type annotations for `boto3.client("ce").update_anomaly_monitor` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_anomaly_monitor]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_anomaly_monitor]
 
 ```python
 def update_anomaly_monitor(
@@ -618,7 +618,7 @@ def update_anomaly_monitor(
 
 Type annotations for `boto3.client("ce").update_anomaly_subscription` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_anomaly_subscription]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_anomaly_subscription]
 
 ```python
 def update_anomaly_subscription(
@@ -637,7 +637,7 @@ def update_anomaly_subscription(
 
 Type annotations for `boto3.client("ce").update_cost_category_definition` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_cost_category_definition]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_cost_category_definition]
 
 ```python
 def update_cost_category_definition(

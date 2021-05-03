@@ -27,7 +27,7 @@ def get_describe_budget_action_histories_paginator() -> DescribeBudgetActionHist
     return boto3.client("budgets").get_paginator("describe_budget_action_histories")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionHistories)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionHistories)
 
 ```python
 class DescribeBudgetActionHistoriesPaginator(Boto3Paginator):
@@ -54,7 +54,7 @@ def get_describe_budget_actions_for_account_paginator() -> DescribeBudgetActions
     return boto3.client("budgets").get_paginator("describe_budget_actions_for_account")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionsForAccount)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionsForAccount)
 
 ```python
 class DescribeBudgetActionsForAccountPaginator(Boto3Paginator):
@@ -78,7 +78,7 @@ def get_describe_budget_actions_for_budget_paginator() -> DescribeBudgetActionsF
     return boto3.client("budgets").get_paginator("describe_budget_actions_for_budget")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionsForBudget)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionsForBudget)
 
 ```python
 class DescribeBudgetActionsForBudgetPaginator(Boto3Paginator):
@@ -103,7 +103,7 @@ def get_describe_budget_performance_history_paginator() -> DescribeBudgetPerform
     return boto3.client("budgets").get_paginator("describe_budget_performance_history")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetPerformanceHistory)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetPerformanceHistory)
 
 ```python
 class DescribeBudgetPerformanceHistoryPaginator(Boto3Paginator):
@@ -129,7 +129,7 @@ def get_describe_budgets_paginator() -> DescribeBudgetsPaginator:
     return boto3.client("budgets").get_paginator("describe_budgets")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgets)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgets)
 
 ```python
 class DescribeBudgetsPaginator(Boto3Paginator):
@@ -153,7 +153,7 @@ def get_describe_notifications_for_budget_paginator() -> DescribeNotificationsFo
     return boto3.client("budgets").get_paginator("describe_notifications_for_budget")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeNotificationsForBudget)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeNotificationsForBudget)
 
 ```python
 class DescribeNotificationsForBudgetPaginator(Boto3Paginator):
@@ -178,7 +178,7 @@ def get_describe_subscribers_for_notification_paginator() -> DescribeSubscribers
     return boto3.client("budgets").get_paginator("describe_subscribers_for_notification")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeSubscribersForNotification)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeSubscribersForNotification)
 
 ```python
 class DescribeSubscribersForNotificationPaginator(Boto3Paginator):

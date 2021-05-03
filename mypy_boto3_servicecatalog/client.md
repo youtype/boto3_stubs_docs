@@ -113,7 +113,7 @@ def get_servicecatalog_client() -> ServiceCatalogClient:
     return boto3.client("servicecatalog")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client)
 
 ## Exceptions
 
@@ -148,7 +148,7 @@ Exceptions:
 
 Type annotations for `boto3.client("servicecatalog").accept_portfolio_share` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.accept_portfolio_share]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.accept_portfolio_share]
 
 ```python
 def accept_portfolio_share(
@@ -164,7 +164,7 @@ def accept_portfolio_share(
 
 Type annotations for `boto3.client("servicecatalog").associate_budget_with_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_budget_with_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_budget_with_resource]
 
 ```python
 def associate_budget_with_resource(
@@ -179,7 +179,7 @@ def associate_budget_with_resource(
 
 Type annotations for `boto3.client("servicecatalog").associate_principal_with_portfolio` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_principal_with_portfolio]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_principal_with_portfolio]
 
 ```python
 def associate_principal_with_portfolio(
@@ -196,7 +196,7 @@ def associate_principal_with_portfolio(
 
 Type annotations for `boto3.client("servicecatalog").associate_product_with_portfolio` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_product_with_portfolio]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_product_with_portfolio]
 
 ```python
 def associate_product_with_portfolio(
@@ -213,7 +213,7 @@ def associate_product_with_portfolio(
 
 Type annotations for `boto3.client("servicecatalog").associate_service_action_with_provisioning_artifact` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_service_action_with_provisioning_artifact]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_service_action_with_provisioning_artifact]
 
 ```python
 def associate_service_action_with_provisioning_artifact(
@@ -230,7 +230,7 @@ def associate_service_action_with_provisioning_artifact(
 
 Type annotations for `boto3.client("servicecatalog").associate_tag_option_with_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_tag_option_with_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_tag_option_with_resource]
 
 ```python
 def associate_tag_option_with_resource(
@@ -245,7 +245,7 @@ def associate_tag_option_with_resource(
 
 Type annotations for `boto3.client("servicecatalog").batch_associate_service_action_with_provisioning_artifact` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.batch_associate_service_action_with_provisioning_artifact]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.batch_associate_service_action_with_provisioning_artifact]
 
 ```python
 def batch_associate_service_action_with_provisioning_artifact(
@@ -260,7 +260,7 @@ def batch_associate_service_action_with_provisioning_artifact(
 
 Type annotations for `boto3.client("servicecatalog").batch_disassociate_service_action_from_provisioning_artifact` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.batch_disassociate_service_action_from_provisioning_artifact]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.batch_disassociate_service_action_from_provisioning_artifact]
 
 ```python
 def batch_disassociate_service_action_from_provisioning_artifact(
@@ -275,7 +275,7 @@ def batch_disassociate_service_action_from_provisioning_artifact(
 
 Type annotations for `boto3.client("servicecatalog").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -289,7 +289,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("servicecatalog").copy_product` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.copy_product]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.copy_product]
 
 ```python
 def copy_product(
@@ -309,7 +309,7 @@ def copy_product(
 
 Type annotations for `boto3.client("servicecatalog").create_constraint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_constraint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_constraint]
 
 ```python
 def create_constraint(
@@ -329,7 +329,7 @@ def create_constraint(
 
 Type annotations for `boto3.client("servicecatalog").create_portfolio` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio]
 
 ```python
 def create_portfolio(
@@ -348,7 +348,7 @@ def create_portfolio(
 
 Type annotations for `boto3.client("servicecatalog").create_portfolio_share` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio_share]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio_share]
 
 ```python
 def create_portfolio_share(
@@ -366,7 +366,7 @@ def create_portfolio_share(
 
 Type annotations for `boto3.client("servicecatalog").create_product` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_product]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_product]
 
 ```python
 def create_product(
@@ -391,7 +391,7 @@ def create_product(
 
 Type annotations for `boto3.client("servicecatalog").create_provisioned_product_plan` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioned_product_plan]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioned_product_plan]
 
 ```python
 def create_provisioned_product_plan(
@@ -415,7 +415,7 @@ def create_provisioned_product_plan(
 
 Type annotations for `boto3.client("servicecatalog").create_provisioning_artifact` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioning_artifact]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioning_artifact]
 
 ```python
 def create_provisioning_artifact(
@@ -432,7 +432,7 @@ def create_provisioning_artifact(
 
 Type annotations for `boto3.client("servicecatalog").create_service_action` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_service_action]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_service_action]
 
 ```python
 def create_service_action(
@@ -451,7 +451,7 @@ def create_service_action(
 
 Type annotations for `boto3.client("servicecatalog").create_tag_option` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_tag_option]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_tag_option]
 
 ```python
 def create_tag_option(
@@ -466,7 +466,7 @@ def create_tag_option(
 
 Type annotations for `boto3.client("servicecatalog").delete_constraint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_constraint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_constraint]
 
 ```python
 def delete_constraint(
@@ -481,7 +481,7 @@ def delete_constraint(
 
 Type annotations for `boto3.client("servicecatalog").delete_portfolio` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_portfolio]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_portfolio]
 
 ```python
 def delete_portfolio(
@@ -496,7 +496,7 @@ def delete_portfolio(
 
 Type annotations for `boto3.client("servicecatalog").delete_portfolio_share` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_portfolio_share]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_portfolio_share]
 
 ```python
 def delete_portfolio_share(
@@ -513,7 +513,7 @@ def delete_portfolio_share(
 
 Type annotations for `boto3.client("servicecatalog").delete_product` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_product]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_product]
 
 ```python
 def delete_product(
@@ -528,7 +528,7 @@ def delete_product(
 
 Type annotations for `boto3.client("servicecatalog").delete_provisioned_product_plan` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioned_product_plan]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioned_product_plan]
 
 ```python
 def delete_provisioned_product_plan(
@@ -544,7 +544,7 @@ def delete_provisioned_product_plan(
 
 Type annotations for `boto3.client("servicecatalog").delete_provisioning_artifact` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioning_artifact]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioning_artifact]
 
 ```python
 def delete_provisioning_artifact(
@@ -560,7 +560,7 @@ def delete_provisioning_artifact(
 
 Type annotations for `boto3.client("servicecatalog").delete_service_action` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_service_action]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_service_action]
 
 ```python
 def delete_service_action(
@@ -575,7 +575,7 @@ def delete_service_action(
 
 Type annotations for `boto3.client("servicecatalog").delete_tag_option` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_tag_option]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_tag_option]
 
 ```python
 def delete_tag_option(
@@ -589,7 +589,7 @@ def delete_tag_option(
 
 Type annotations for `boto3.client("servicecatalog").describe_constraint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_constraint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_constraint]
 
 ```python
 def describe_constraint(
@@ -604,7 +604,7 @@ def describe_constraint(
 
 Type annotations for `boto3.client("servicecatalog").describe_copy_product_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_copy_product_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_copy_product_status]
 
 ```python
 def describe_copy_product_status(
@@ -619,7 +619,7 @@ def describe_copy_product_status(
 
 Type annotations for `boto3.client("servicecatalog").describe_portfolio` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio]
 
 ```python
 def describe_portfolio(
@@ -634,7 +634,7 @@ def describe_portfolio(
 
 Type annotations for `boto3.client("servicecatalog").describe_portfolio_share_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio_share_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio_share_status]
 
 ```python
 def describe_portfolio_share_status(
@@ -648,7 +648,7 @@ def describe_portfolio_share_status(
 
 Type annotations for `boto3.client("servicecatalog").describe_portfolio_shares` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio_shares]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio_shares]
 
 ```python
 def describe_portfolio_shares(
@@ -665,7 +665,7 @@ def describe_portfolio_shares(
 
 Type annotations for `boto3.client("servicecatalog").describe_product` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product]
 
 ```python
 def describe_product(
@@ -681,7 +681,7 @@ def describe_product(
 
 Type annotations for `boto3.client("servicecatalog").describe_product_as_admin` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product_as_admin]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product_as_admin]
 
 ```python
 def describe_product_as_admin(
@@ -698,7 +698,7 @@ def describe_product_as_admin(
 
 Type annotations for `boto3.client("servicecatalog").describe_product_view` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product_view]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product_view]
 
 ```python
 def describe_product_view(
@@ -713,7 +713,7 @@ def describe_product_view(
 
 Type annotations for `boto3.client("servicecatalog").describe_provisioned_product` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product]
 
 ```python
 def describe_provisioned_product(
@@ -729,7 +729,7 @@ def describe_provisioned_product(
 
 Type annotations for `boto3.client("servicecatalog").describe_provisioned_product_plan` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product_plan]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product_plan]
 
 ```python
 def describe_provisioned_product_plan(
@@ -746,7 +746,7 @@ def describe_provisioned_product_plan(
 
 Type annotations for `boto3.client("servicecatalog").describe_provisioning_artifact` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_artifact]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_artifact]
 
 ```python
 def describe_provisioning_artifact(
@@ -765,7 +765,7 @@ def describe_provisioning_artifact(
 
 Type annotations for `boto3.client("servicecatalog").describe_provisioning_parameters` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_parameters]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_parameters]
 
 ```python
 def describe_provisioning_parameters(
@@ -785,7 +785,7 @@ def describe_provisioning_parameters(
 
 Type annotations for `boto3.client("servicecatalog").describe_record` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_record]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_record]
 
 ```python
 def describe_record(
@@ -802,7 +802,7 @@ def describe_record(
 
 Type annotations for `boto3.client("servicecatalog").describe_service_action` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_service_action]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_service_action]
 
 ```python
 def describe_service_action(
@@ -817,7 +817,7 @@ def describe_service_action(
 
 Type annotations for `boto3.client("servicecatalog").describe_service_action_execution_parameters` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_service_action_execution_parameters]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_service_action_execution_parameters]
 
 ```python
 def describe_service_action_execution_parameters(
@@ -833,7 +833,7 @@ def describe_service_action_execution_parameters(
 
 Type annotations for `boto3.client("servicecatalog").describe_tag_option` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_tag_option]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_tag_option]
 
 ```python
 def describe_tag_option(
@@ -847,7 +847,7 @@ def describe_tag_option(
 
 Type annotations for `boto3.client("servicecatalog").disable_aws_organizations_access` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disable_aws_organizations_access]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disable_aws_organizations_access]
 
 ```python
 def disable_aws_organizations_access(
@@ -860,7 +860,7 @@ def disable_aws_organizations_access(
 
 Type annotations for `boto3.client("servicecatalog").disassociate_budget_from_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_budget_from_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_budget_from_resource]
 
 ```python
 def disassociate_budget_from_resource(
@@ -875,7 +875,7 @@ def disassociate_budget_from_resource(
 
 Type annotations for `boto3.client("servicecatalog").disassociate_principal_from_portfolio` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_principal_from_portfolio]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_principal_from_portfolio]
 
 ```python
 def disassociate_principal_from_portfolio(
@@ -891,7 +891,7 @@ def disassociate_principal_from_portfolio(
 
 Type annotations for `boto3.client("servicecatalog").disassociate_product_from_portfolio` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_product_from_portfolio]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_product_from_portfolio]
 
 ```python
 def disassociate_product_from_portfolio(
@@ -907,7 +907,7 @@ def disassociate_product_from_portfolio(
 
 Type annotations for `boto3.client("servicecatalog").disassociate_service_action_from_provisioning_artifact` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_service_action_from_provisioning_artifact]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_service_action_from_provisioning_artifact]
 
 ```python
 def disassociate_service_action_from_provisioning_artifact(
@@ -924,7 +924,7 @@ def disassociate_service_action_from_provisioning_artifact(
 
 Type annotations for `boto3.client("servicecatalog").disassociate_tag_option_from_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_tag_option_from_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_tag_option_from_resource]
 
 ```python
 def disassociate_tag_option_from_resource(
@@ -939,7 +939,7 @@ def disassociate_tag_option_from_resource(
 
 Type annotations for `boto3.client("servicecatalog").enable_aws_organizations_access` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.enable_aws_organizations_access]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.enable_aws_organizations_access]
 
 ```python
 def enable_aws_organizations_access(
@@ -952,7 +952,7 @@ def enable_aws_organizations_access(
 
 Type annotations for `boto3.client("servicecatalog").execute_provisioned_product_plan` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_plan]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_plan]
 
 ```python
 def execute_provisioned_product_plan(
@@ -968,7 +968,7 @@ def execute_provisioned_product_plan(
 
 Type annotations for `boto3.client("servicecatalog").execute_provisioned_product_service_action` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_service_action]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_service_action]
 
 ```python
 def execute_provisioned_product_service_action(
@@ -986,7 +986,7 @@ def execute_provisioned_product_service_action(
 
 Type annotations for `boto3.client("servicecatalog").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -1003,7 +1003,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("servicecatalog").get_aws_organizations_access_status` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.get_aws_organizations_access_status]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.get_aws_organizations_access_status]
 
 ```python
 def get_aws_organizations_access_status(
@@ -1016,7 +1016,7 @@ def get_aws_organizations_access_status(
 
 Type annotations for `boto3.client("servicecatalog").get_provisioned_product_outputs` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.get_provisioned_product_outputs]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.get_provisioned_product_outputs]
 
 ```python
 def get_provisioned_product_outputs(
@@ -1035,7 +1035,7 @@ def get_provisioned_product_outputs(
 
 Type annotations for `boto3.client("servicecatalog").import_as_provisioned_product` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.import_as_provisioned_product]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.import_as_provisioned_product]
 
 ```python
 def import_as_provisioned_product(
@@ -1054,7 +1054,7 @@ def import_as_provisioned_product(
 
 Type annotations for `boto3.client("servicecatalog").list_accepted_portfolio_shares` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_accepted_portfolio_shares]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_accepted_portfolio_shares]
 
 ```python
 def list_accepted_portfolio_shares(
@@ -1071,7 +1071,7 @@ def list_accepted_portfolio_shares(
 
 Type annotations for `boto3.client("servicecatalog").list_budgets_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_budgets_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_budgets_for_resource]
 
 ```python
 def list_budgets_for_resource(
@@ -1088,7 +1088,7 @@ def list_budgets_for_resource(
 
 Type annotations for `boto3.client("servicecatalog").list_constraints_for_portfolio` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_constraints_for_portfolio]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_constraints_for_portfolio]
 
 ```python
 def list_constraints_for_portfolio(
@@ -1106,7 +1106,7 @@ def list_constraints_for_portfolio(
 
 Type annotations for `boto3.client("servicecatalog").list_launch_paths` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_launch_paths]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_launch_paths]
 
 ```python
 def list_launch_paths(
@@ -1123,7 +1123,7 @@ def list_launch_paths(
 
 Type annotations for `boto3.client("servicecatalog").list_organization_portfolio_access` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_organization_portfolio_access]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_organization_portfolio_access]
 
 ```python
 def list_organization_portfolio_access(
@@ -1141,7 +1141,7 @@ def list_organization_portfolio_access(
 
 Type annotations for `boto3.client("servicecatalog").list_portfolio_access` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolio_access]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolio_access]
 
 ```python
 def list_portfolio_access(
@@ -1159,7 +1159,7 @@ def list_portfolio_access(
 
 Type annotations for `boto3.client("servicecatalog").list_portfolios` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios]
 
 ```python
 def list_portfolios(
@@ -1175,7 +1175,7 @@ def list_portfolios(
 
 Type annotations for `boto3.client("servicecatalog").list_portfolios_for_product` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios_for_product]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios_for_product]
 
 ```python
 def list_portfolios_for_product(
@@ -1192,7 +1192,7 @@ def list_portfolios_for_product(
 
 Type annotations for `boto3.client("servicecatalog").list_principals_for_portfolio` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_principals_for_portfolio]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_principals_for_portfolio]
 
 ```python
 def list_principals_for_portfolio(
@@ -1209,7 +1209,7 @@ def list_principals_for_portfolio(
 
 Type annotations for `boto3.client("servicecatalog").list_provisioned_product_plans` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioned_product_plans]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioned_product_plans]
 
 ```python
 def list_provisioned_product_plans(
@@ -1227,7 +1227,7 @@ def list_provisioned_product_plans(
 
 Type annotations for `boto3.client("servicecatalog").list_provisioning_artifacts` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioning_artifacts]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioning_artifacts]
 
 ```python
 def list_provisioning_artifacts(
@@ -1242,7 +1242,7 @@ def list_provisioning_artifacts(
 
 Type annotations for `boto3.client("servicecatalog").list_provisioning_artifacts_for_service_action` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioning_artifacts_for_service_action]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioning_artifacts_for_service_action]
 
 ```python
 def list_provisioning_artifacts_for_service_action(
@@ -1259,7 +1259,7 @@ def list_provisioning_artifacts_for_service_action(
 
 Type annotations for `boto3.client("servicecatalog").list_record_history` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_record_history]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_record_history]
 
 ```python
 def list_record_history(
@@ -1277,7 +1277,7 @@ def list_record_history(
 
 Type annotations for `boto3.client("servicecatalog").list_resources_for_tag_option` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_resources_for_tag_option]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_resources_for_tag_option]
 
 ```python
 def list_resources_for_tag_option(
@@ -1294,7 +1294,7 @@ def list_resources_for_tag_option(
 
 Type annotations for `boto3.client("servicecatalog").list_service_actions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions]
 
 ```python
 def list_service_actions(
@@ -1310,7 +1310,7 @@ def list_service_actions(
 
 Type annotations for `boto3.client("servicecatalog").list_service_actions_for_provisioning_artifact` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions_for_provisioning_artifact]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions_for_provisioning_artifact]
 
 ```python
 def list_service_actions_for_provisioning_artifact(
@@ -1328,7 +1328,7 @@ def list_service_actions_for_provisioning_artifact(
 
 Type annotations for `boto3.client("servicecatalog").list_stack_instances_for_provisioned_product` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_stack_instances_for_provisioned_product]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_stack_instances_for_provisioned_product]
 
 ```python
 def list_stack_instances_for_provisioned_product(
@@ -1345,7 +1345,7 @@ def list_stack_instances_for_provisioned_product(
 
 Type annotations for `boto3.client("servicecatalog").list_tag_options` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_tag_options]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_tag_options]
 
 ```python
 def list_tag_options(
@@ -1361,7 +1361,7 @@ def list_tag_options(
 
 Type annotations for `boto3.client("servicecatalog").provision_product` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.provision_product]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.provision_product]
 
 ```python
 def provision_product(
@@ -1387,7 +1387,7 @@ def provision_product(
 
 Type annotations for `boto3.client("servicecatalog").reject_portfolio_share` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.reject_portfolio_share]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.reject_portfolio_share]
 
 ```python
 def reject_portfolio_share(
@@ -1403,7 +1403,7 @@ def reject_portfolio_share(
 
 Type annotations for `boto3.client("servicecatalog").scan_provisioned_products` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.scan_provisioned_products]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.scan_provisioned_products]
 
 ```python
 def scan_provisioned_products(
@@ -1420,7 +1420,7 @@ def scan_provisioned_products(
 
 Type annotations for `boto3.client("servicecatalog").search_products` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products]
 
 ```python
 def search_products(
@@ -1439,7 +1439,7 @@ def search_products(
 
 Type annotations for `boto3.client("servicecatalog").search_products_as_admin` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products_as_admin]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products_as_admin]
 
 ```python
 def search_products_as_admin(
@@ -1460,7 +1460,7 @@ def search_products_as_admin(
 
 Type annotations for `boto3.client("servicecatalog").search_provisioned_products` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_provisioned_products]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_provisioned_products]
 
 ```python
 def search_provisioned_products(
@@ -1480,7 +1480,7 @@ def search_provisioned_products(
 
 Type annotations for `boto3.client("servicecatalog").terminate_provisioned_product` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.terminate_provisioned_product]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.terminate_provisioned_product]
 
 ```python
 def terminate_provisioned_product(
@@ -1499,7 +1499,7 @@ def terminate_provisioned_product(
 
 Type annotations for `boto3.client("servicecatalog").update_constraint` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_constraint]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_constraint]
 
 ```python
 def update_constraint(
@@ -1516,7 +1516,7 @@ def update_constraint(
 
 Type annotations for `boto3.client("servicecatalog").update_portfolio` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio]
 
 ```python
 def update_portfolio(
@@ -1536,7 +1536,7 @@ def update_portfolio(
 
 Type annotations for `boto3.client("servicecatalog").update_portfolio_share` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio_share]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio_share]
 
 ```python
 def update_portfolio_share(
@@ -1554,7 +1554,7 @@ def update_portfolio_share(
 
 Type annotations for `boto3.client("servicecatalog").update_product` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_product]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_product]
 
 ```python
 def update_product(
@@ -1578,7 +1578,7 @@ def update_product(
 
 Type annotations for `boto3.client("servicecatalog").update_provisioned_product` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product]
 
 ```python
 def update_provisioned_product(
@@ -1604,7 +1604,7 @@ def update_provisioned_product(
 
 Type annotations for `boto3.client("servicecatalog").update_provisioned_product_properties` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product_properties]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product_properties]
 
 ```python
 def update_provisioned_product_properties(
@@ -1621,7 +1621,7 @@ def update_provisioned_product_properties(
 
 Type annotations for `boto3.client("servicecatalog").update_provisioning_artifact` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioning_artifact]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioning_artifact]
 
 ```python
 def update_provisioning_artifact(
@@ -1641,7 +1641,7 @@ def update_provisioning_artifact(
 
 Type annotations for `boto3.client("servicecatalog").update_service_action` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_service_action]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_service_action]
 
 ```python
 def update_service_action(
@@ -1659,7 +1659,7 @@ def update_service_action(
 
 Type annotations for `boto3.client("servicecatalog").update_tag_option` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_tag_option]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_tag_option]
 
 ```python
 def update_tag_option(

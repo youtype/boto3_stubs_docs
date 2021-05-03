@@ -58,7 +58,7 @@ def get_appconfig_client() -> AppConfigClient:
     return boto3.client("appconfig")
 ```
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client)
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client)
 
 ## Exceptions
 
@@ -91,7 +91,7 @@ Exceptions:
 
 Type annotations for `boto3.client("appconfig").can_paginate` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.can_paginate]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -105,7 +105,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("appconfig").create_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_application]
 
 ```python
 def create_application(
@@ -121,7 +121,7 @@ def create_application(
 
 Type annotations for `boto3.client("appconfig").create_configuration_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_configuration_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_configuration_profile]
 
 ```python
 def create_configuration_profile(
@@ -141,7 +141,7 @@ def create_configuration_profile(
 
 Type annotations for `boto3.client("appconfig").create_deployment_strategy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_deployment_strategy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_deployment_strategy]
 
 ```python
 def create_deployment_strategy(
@@ -162,7 +162,7 @@ def create_deployment_strategy(
 
 Type annotations for `boto3.client("appconfig").create_environment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_environment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_environment]
 
 ```python
 def create_environment(
@@ -180,7 +180,7 @@ def create_environment(
 
 Type annotations for `boto3.client("appconfig").create_hosted_configuration_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_hosted_configuration_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_hosted_configuration_version]
 
 ```python
 def create_hosted_configuration_version(
@@ -199,7 +199,7 @@ def create_hosted_configuration_version(
 
 Type annotations for `boto3.client("appconfig").delete_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_application]
 
 ```python
 def delete_application(
@@ -213,7 +213,7 @@ def delete_application(
 
 Type annotations for `boto3.client("appconfig").delete_configuration_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_configuration_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_configuration_profile]
 
 ```python
 def delete_configuration_profile(
@@ -228,7 +228,7 @@ def delete_configuration_profile(
 
 Type annotations for `boto3.client("appconfig").delete_deployment_strategy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_deployment_strategy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_deployment_strategy]
 
 ```python
 def delete_deployment_strategy(
@@ -242,7 +242,7 @@ def delete_deployment_strategy(
 
 Type annotations for `boto3.client("appconfig").delete_environment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_environment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_environment]
 
 ```python
 def delete_environment(
@@ -257,7 +257,7 @@ def delete_environment(
 
 Type annotations for `boto3.client("appconfig").delete_hosted_configuration_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_hosted_configuration_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_hosted_configuration_version]
 
 ```python
 def delete_hosted_configuration_version(
@@ -273,7 +273,7 @@ def delete_hosted_configuration_version(
 
 Type annotations for `boto3.client("appconfig").generate_presigned_url` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.generate_presigned_url]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -290,7 +290,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("appconfig").get_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_application]
 
 ```python
 def get_application(
@@ -304,7 +304,7 @@ def get_application(
 
 Type annotations for `boto3.client("appconfig").get_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_configuration]
 
 ```python
 def get_configuration(
@@ -322,7 +322,7 @@ def get_configuration(
 
 Type annotations for `boto3.client("appconfig").get_configuration_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_configuration_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_configuration_profile]
 
 ```python
 def get_configuration_profile(
@@ -337,7 +337,7 @@ def get_configuration_profile(
 
 Type annotations for `boto3.client("appconfig").get_deployment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_deployment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_deployment]
 
 ```python
 def get_deployment(
@@ -353,7 +353,7 @@ def get_deployment(
 
 Type annotations for `boto3.client("appconfig").get_deployment_strategy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_deployment_strategy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_deployment_strategy]
 
 ```python
 def get_deployment_strategy(
@@ -367,7 +367,7 @@ def get_deployment_strategy(
 
 Type annotations for `boto3.client("appconfig").get_environment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_environment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_environment]
 
 ```python
 def get_environment(
@@ -382,7 +382,7 @@ def get_environment(
 
 Type annotations for `boto3.client("appconfig").get_hosted_configuration_version` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_hosted_configuration_version]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_hosted_configuration_version]
 
 ```python
 def get_hosted_configuration_version(
@@ -398,7 +398,7 @@ def get_hosted_configuration_version(
 
 Type annotations for `boto3.client("appconfig").list_applications` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_applications]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_applications]
 
 ```python
 def list_applications(
@@ -413,7 +413,7 @@ def list_applications(
 
 Type annotations for `boto3.client("appconfig").list_configuration_profiles` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_configuration_profiles]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_configuration_profiles]
 
 ```python
 def list_configuration_profiles(
@@ -429,7 +429,7 @@ def list_configuration_profiles(
 
 Type annotations for `boto3.client("appconfig").list_deployment_strategies` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_deployment_strategies]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_deployment_strategies]
 
 ```python
 def list_deployment_strategies(
@@ -444,7 +444,7 @@ def list_deployment_strategies(
 
 Type annotations for `boto3.client("appconfig").list_deployments` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_deployments]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_deployments]
 
 ```python
 def list_deployments(
@@ -461,7 +461,7 @@ def list_deployments(
 
 Type annotations for `boto3.client("appconfig").list_environments` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_environments]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_environments]
 
 ```python
 def list_environments(
@@ -477,7 +477,7 @@ def list_environments(
 
 Type annotations for `boto3.client("appconfig").list_hosted_configuration_versions` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_hosted_configuration_versions]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_hosted_configuration_versions]
 
 ```python
 def list_hosted_configuration_versions(
@@ -494,7 +494,7 @@ def list_hosted_configuration_versions(
 
 Type annotations for `boto3.client("appconfig").list_tags_for_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_tags_for_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -508,7 +508,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("appconfig").start_deployment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.start_deployment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.start_deployment]
 
 ```python
 def start_deployment(
@@ -528,7 +528,7 @@ def start_deployment(
 
 Type annotations for `boto3.client("appconfig").stop_deployment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.stop_deployment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.stop_deployment]
 
 ```python
 def stop_deployment(
@@ -544,7 +544,7 @@ def stop_deployment(
 
 Type annotations for `boto3.client("appconfig").tag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.tag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -559,7 +559,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("appconfig").untag_resource` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.untag_resource]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -574,7 +574,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("appconfig").update_application` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_application]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_application]
 
 ```python
 def update_application(
@@ -590,7 +590,7 @@ def update_application(
 
 Type annotations for `boto3.client("appconfig").update_configuration_profile` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_configuration_profile]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_configuration_profile]
 
 ```python
 def update_configuration_profile(
@@ -609,7 +609,7 @@ def update_configuration_profile(
 
 Type annotations for `boto3.client("appconfig").update_deployment_strategy` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_deployment_strategy]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_deployment_strategy]
 
 ```python
 def update_deployment_strategy(
@@ -628,7 +628,7 @@ def update_deployment_strategy(
 
 Type annotations for `boto3.client("appconfig").update_environment` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_environment]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_environment]
 
 ```python
 def update_environment(
@@ -646,7 +646,7 @@ def update_environment(
 
 Type annotations for `boto3.client("appconfig").validate_configuration` method.
 
-[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.validate_configuration]
+[Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.validate_configuration]
 
 ```python
 def validate_configuration(
