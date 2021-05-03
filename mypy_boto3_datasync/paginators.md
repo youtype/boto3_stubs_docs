@@ -19,13 +19,13 @@ Type annotations for `boto3.client("datasync").get_paginator("list_agents")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_datasync.paginators import ListAgentsPaginator
+from mypy_boto3_datasync.paginator import ListAgentsPaginator
 
 def get_list_agents_paginator() -> ListAgentsPaginator:
     return boto3.client("datasync").get_paginator("list_agents")
 ```
 
-[Paginator.ListAgents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListAgents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListAgents)
 
 ```python
 class ListAgentsPaginator(Boto3Paginator):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("datasync").get_paginator("list_locations")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_datasync.paginators import ListLocationsPaginator
+from mypy_boto3_datasync.paginator import ListLocationsPaginator
 
 def get_list_locations_paginator() -> ListLocationsPaginator:
     return boto3.client("datasync").get_paginator("list_locations")
 ```
 
-[Paginator.ListLocations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListLocations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListLocations)
 
 ```python
 class ListLocationsPaginator(Boto3Paginator):
@@ -66,13 +66,13 @@ Type annotations for `boto3.client("datasync").get_paginator("list_tags_for_reso
 Can be used directly:
 
 ```python
-from mypy_boto3_datasync.paginators import ListTagsForResourcePaginator
+from mypy_boto3_datasync.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("datasync").get_paginator("list_tags_for_resource")
 ```
 
-[Paginator.ListTagsForResource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTagsForResource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):
@@ -90,13 +90,13 @@ Type annotations for `boto3.client("datasync").get_paginator("list_task_executio
 Can be used directly:
 
 ```python
-from mypy_boto3_datasync.paginators import ListTaskExecutionsPaginator
+from mypy_boto3_datasync.paginator import ListTaskExecutionsPaginator
 
 def get_list_task_executions_paginator() -> ListTaskExecutionsPaginator:
     return boto3.client("datasync").get_paginator("list_task_executions")
 ```
 
-[Paginator.ListTaskExecutions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTaskExecutions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTaskExecutions)
 
 ```python
 class ListTaskExecutionsPaginator(Boto3Paginator):
@@ -114,13 +114,13 @@ Type annotations for `boto3.client("datasync").get_paginator("list_tasks")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_datasync.paginators import ListTasksPaginator
+from mypy_boto3_datasync.paginator import ListTasksPaginator
 
 def get_list_tasks_paginator() -> ListTasksPaginator:
     return boto3.client("datasync").get_paginator("list_tasks")
 ```
 
-[Paginator.ListTasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTasks)
 
 ```python
 class ListTasksPaginator(Boto3Paginator):

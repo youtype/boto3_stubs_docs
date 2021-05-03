@@ -15,7 +15,7 @@ pip install mypy-boto3-forecast
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ForecastServiceClient
 
@@ -140,7 +140,7 @@ from mypy_boto3_forecast.literals import AttributeType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

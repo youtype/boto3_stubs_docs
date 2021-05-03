@@ -1,11 +1,11 @@
-# Structures for boto3 AccessAnalyzer module
+# Typed dictionaries for boto3 AccessAnalyzer module
 
 > [Index](../README.md) > [AccessAnalyzer](./README.md) > Structures
 
 Auto-generated documentation for [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
 type annotations stubs module [mypy_boto3_accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
 
-- [Structures for boto3 AccessAnalyzer module](#structures-for-boto3-accessanalyzer-module)
+- [Typed dictionaries for boto3 AccessAnalyzer module](#typed-dictionaries-for-boto3-accessanalyzer-module)
   - [AccessPreviewFindingTypeDef](#accesspreviewfindingtypedef)
   - [AccessPreviewStatusReasonTypeDef](#accesspreviewstatusreasontypedef)
   - [AccessPreviewSummaryTypeDef](#accesspreviewsummarytypedef)

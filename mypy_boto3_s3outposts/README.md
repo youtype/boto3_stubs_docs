@@ -15,7 +15,7 @@ pip install mypy-boto3-s3outposts
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## S3OutpostsClient
 
@@ -89,7 +89,7 @@ from mypy_boto3_s3outposts.literals import EndpointStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

@@ -1,11 +1,11 @@
-# Structures for boto3 LookoutMetrics module
+# Typed dictionaries for boto3 LookoutMetrics module
 
 > [Index](../README.md) > [LookoutMetrics](./README.md) > Structures
 
 Auto-generated documentation for [LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
 type annotations stubs module [mypy_boto3_lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
 
-- [Structures for boto3 LookoutMetrics module](#structures-for-boto3-lookoutmetrics-module)
+- [Typed dictionaries for boto3 LookoutMetrics module](#typed-dictionaries-for-boto3-lookoutmetrics-module)
   - [ActionTypeDef](#actiontypedef)
   - [AlertSummaryTypeDef](#alertsummarytypedef)
   - [AlertTypeDef](#alerttypedef)

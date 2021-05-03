@@ -1,11 +1,11 @@
-# Structures for boto3 CustomerProfiles module
+# Typed dictionaries for boto3 CustomerProfiles module
 
 > [Index](../README.md) > [CustomerProfiles](./README.md) > Structures
 
 Auto-generated documentation for [CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
 type annotations stubs module [mypy_boto3_customer_profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
 
-- [Structures for boto3 CustomerProfiles module](#structures-for-boto3-customerprofiles-module)
+- [Typed dictionaries for boto3 CustomerProfiles module](#typed-dictionaries-for-boto3-customerprofiles-module)
   - [AddProfileKeyResponseTypeDef](#addprofilekeyresponsetypedef)
   - [AddressTypeDef](#addresstypedef)
   - [ConnectorOperatorTypeDef](#connectoroperatortypedef)

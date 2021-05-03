@@ -18,13 +18,13 @@ Type annotations for `boto3.client("network-firewall").get_paginator("list_firew
 Can be used directly:
 
 ```python
-from mypy_boto3_network_firewall.paginators import ListFirewallPoliciesPaginator
+from mypy_boto3_network_firewall.paginator import ListFirewallPoliciesPaginator
 
 def get_list_firewall_policies_paginator() -> ListFirewallPoliciesPaginator:
     return boto3.client("network-firewall").get_paginator("list_firewall_policies")
 ```
 
-[Paginator.ListFirewallPolicies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewallPolicies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewallPolicies)
 
 ```python
 class ListFirewallPoliciesPaginator(Boto3Paginator):
@@ -41,13 +41,13 @@ Type annotations for `boto3.client("network-firewall").get_paginator("list_firew
 Can be used directly:
 
 ```python
-from mypy_boto3_network_firewall.paginators import ListFirewallsPaginator
+from mypy_boto3_network_firewall.paginator import ListFirewallsPaginator
 
 def get_list_firewalls_paginator() -> ListFirewallsPaginator:
     return boto3.client("network-firewall").get_paginator("list_firewalls")
 ```
 
-[Paginator.ListFirewalls documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewalls)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewalls)
 
 ```python
 class ListFirewallsPaginator(Boto3Paginator):
@@ -65,13 +65,13 @@ Type annotations for `boto3.client("network-firewall").get_paginator("list_rule_
 Can be used directly:
 
 ```python
-from mypy_boto3_network_firewall.paginators import ListRuleGroupsPaginator
+from mypy_boto3_network_firewall.paginator import ListRuleGroupsPaginator
 
 def get_list_rule_groups_paginator() -> ListRuleGroupsPaginator:
     return boto3.client("network-firewall").get_paginator("list_rule_groups")
 ```
 
-[Paginator.ListRuleGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListRuleGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListRuleGroups)
 
 ```python
 class ListRuleGroupsPaginator(Boto3Paginator):
@@ -88,13 +88,13 @@ Type annotations for `boto3.client("network-firewall").get_paginator("list_tags_
 Can be used directly:
 
 ```python
-from mypy_boto3_network_firewall.paginators import ListTagsForResourcePaginator
+from mypy_boto3_network_firewall.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("network-firewall").get_paginator("list_tags_for_resource")
 ```
 
-[Paginator.ListTagsForResource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListTagsForResource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):

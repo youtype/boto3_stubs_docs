@@ -18,13 +18,13 @@ Type annotations for `boto3.client("kinesis").get_paginator("describe_stream")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesis.paginators import DescribeStreamPaginator
+from mypy_boto3_kinesis.paginator import DescribeStreamPaginator
 
 def get_describe_stream_paginator() -> DescribeStreamPaginator:
     return boto3.client("kinesis").get_paginator("describe_stream")
 ```
 
-[Paginator.DescribeStream documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.DescribeStream)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.DescribeStream)
 
 ```python
 class DescribeStreamPaginator(Boto3Paginator):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("kinesis").get_paginator("list_shards")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesis.paginators import ListShardsPaginator
+from mypy_boto3_kinesis.paginator import ListShardsPaginator
 
 def get_list_shards_paginator() -> ListShardsPaginator:
     return boto3.client("kinesis").get_paginator("list_shards")
 ```
 
-[Paginator.ListShards documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListShards)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListShards)
 
 ```python
 class ListShardsPaginator(Boto3Paginator):
@@ -69,13 +69,13 @@ Type annotations for `boto3.client("kinesis").get_paginator("list_stream_consume
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesis.paginators import ListStreamConsumersPaginator
+from mypy_boto3_kinesis.paginator import ListStreamConsumersPaginator
 
 def get_list_stream_consumers_paginator() -> ListStreamConsumersPaginator:
     return boto3.client("kinesis").get_paginator("list_stream_consumers")
 ```
 
-[Paginator.ListStreamConsumers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListStreamConsumers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListStreamConsumers)
 
 ```python
 class ListStreamConsumersPaginator(Boto3Paginator):
@@ -94,13 +94,13 @@ Type annotations for `boto3.client("kinesis").get_paginator("list_streams")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesis.paginators import ListStreamsPaginator
+from mypy_boto3_kinesis.paginator import ListStreamsPaginator
 
 def get_list_streams_paginator() -> ListStreamsPaginator:
     return boto3.client("kinesis").get_paginator("list_streams")
 ```
 
-[Paginator.ListStreams documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListStreams)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListStreams)
 
 ```python
 class ListStreamsPaginator(Boto3Paginator):

@@ -27,13 +27,13 @@ Type annotations for `boto3.client("cloudformation").get_paginator("describe_acc
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudformation.paginators import DescribeAccountLimitsPaginator
+from mypy_boto3_cloudformation.paginator import DescribeAccountLimitsPaginator
 
 def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
     return boto3.client("cloudformation").get_paginator("describe_account_limits")
 ```
 
-[Paginator.DescribeAccountLimits documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeAccountLimits)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeAccountLimits)
 
 ```python
 class DescribeAccountLimitsPaginator(Boto3Paginator):
@@ -50,13 +50,13 @@ Type annotations for `boto3.client("cloudformation").get_paginator("describe_cha
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudformation.paginators import DescribeChangeSetPaginator
+from mypy_boto3_cloudformation.paginator import DescribeChangeSetPaginator
 
 def get_describe_change_set_paginator() -> DescribeChangeSetPaginator:
     return boto3.client("cloudformation").get_paginator("describe_change_set")
 ```
 
-[Paginator.DescribeChangeSet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeChangeSet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeChangeSet)
 
 ```python
 class DescribeChangeSetPaginator(Boto3Paginator):
@@ -75,13 +75,13 @@ Type annotations for `boto3.client("cloudformation").get_paginator("describe_sta
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudformation.paginators import DescribeStackEventsPaginator
+from mypy_boto3_cloudformation.paginator import DescribeStackEventsPaginator
 
 def get_describe_stack_events_paginator() -> DescribeStackEventsPaginator:
     return boto3.client("cloudformation").get_paginator("describe_stack_events")
 ```
 
-[Paginator.DescribeStackEvents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeStackEvents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeStackEvents)
 
 ```python
 class DescribeStackEventsPaginator(Boto3Paginator):
@@ -99,13 +99,13 @@ Type annotations for `boto3.client("cloudformation").get_paginator("describe_sta
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudformation.paginators import DescribeStacksPaginator
+from mypy_boto3_cloudformation.paginator import DescribeStacksPaginator
 
 def get_describe_stacks_paginator() -> DescribeStacksPaginator:
     return boto3.client("cloudformation").get_paginator("describe_stacks")
 ```
 
-[Paginator.DescribeStacks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeStacks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.DescribeStacks)
 
 ```python
 class DescribeStacksPaginator(Boto3Paginator):
@@ -123,13 +123,13 @@ Type annotations for `boto3.client("cloudformation").get_paginator("list_change_
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudformation.paginators import ListChangeSetsPaginator
+from mypy_boto3_cloudformation.paginator import ListChangeSetsPaginator
 
 def get_list_change_sets_paginator() -> ListChangeSetsPaginator:
     return boto3.client("cloudformation").get_paginator("list_change_sets")
 ```
 
-[Paginator.ListChangeSets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListChangeSets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListChangeSets)
 
 ```python
 class ListChangeSetsPaginator(Boto3Paginator):
@@ -147,13 +147,13 @@ Type annotations for `boto3.client("cloudformation").get_paginator("list_exports
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudformation.paginators import ListExportsPaginator
+from mypy_boto3_cloudformation.paginator import ListExportsPaginator
 
 def get_list_exports_paginator() -> ListExportsPaginator:
     return boto3.client("cloudformation").get_paginator("list_exports")
 ```
 
-[Paginator.ListExports documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListExports)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListExports)
 
 ```python
 class ListExportsPaginator(Boto3Paginator):
@@ -170,13 +170,13 @@ Type annotations for `boto3.client("cloudformation").get_paginator("list_imports
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudformation.paginators import ListImportsPaginator
+from mypy_boto3_cloudformation.paginator import ListImportsPaginator
 
 def get_list_imports_paginator() -> ListImportsPaginator:
     return boto3.client("cloudformation").get_paginator("list_imports")
 ```
 
-[Paginator.ListImports documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListImports)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListImports)
 
 ```python
 class ListImportsPaginator(Boto3Paginator):
@@ -194,13 +194,13 @@ Type annotations for `boto3.client("cloudformation").get_paginator("list_stack_i
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudformation.paginators import ListStackInstancesPaginator
+from mypy_boto3_cloudformation.paginator import ListStackInstancesPaginator
 
 def get_list_stack_instances_paginator() -> ListStackInstancesPaginator:
     return boto3.client("cloudformation").get_paginator("list_stack_instances")
 ```
 
-[Paginator.ListStackInstances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackInstances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackInstances)
 
 ```python
 class ListStackInstancesPaginator(Boto3Paginator):
@@ -222,13 +222,13 @@ Type annotations for `boto3.client("cloudformation").get_paginator("list_stack_r
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudformation.paginators import ListStackResourcesPaginator
+from mypy_boto3_cloudformation.paginator import ListStackResourcesPaginator
 
 def get_list_stack_resources_paginator() -> ListStackResourcesPaginator:
     return boto3.client("cloudformation").get_paginator("list_stack_resources")
 ```
 
-[Paginator.ListStackResources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackResources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackResources)
 
 ```python
 class ListStackResourcesPaginator(Boto3Paginator):
@@ -246,13 +246,13 @@ Type annotations for `boto3.client("cloudformation").get_paginator("list_stack_s
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudformation.paginators import ListStackSetOperationResultsPaginator
+from mypy_boto3_cloudformation.paginator import ListStackSetOperationResultsPaginator
 
 def get_list_stack_set_operation_results_paginator() -> ListStackSetOperationResultsPaginator:
     return boto3.client("cloudformation").get_paginator("list_stack_set_operation_results")
 ```
 
-[Paginator.ListStackSetOperationResults documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSetOperationResults)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSetOperationResults)
 
 ```python
 class ListStackSetOperationResultsPaginator(Boto3Paginator):
@@ -272,13 +272,13 @@ Type annotations for `boto3.client("cloudformation").get_paginator("list_stack_s
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudformation.paginators import ListStackSetOperationsPaginator
+from mypy_boto3_cloudformation.paginator import ListStackSetOperationsPaginator
 
 def get_list_stack_set_operations_paginator() -> ListStackSetOperationsPaginator:
     return boto3.client("cloudformation").get_paginator("list_stack_set_operations")
 ```
 
-[Paginator.ListStackSetOperations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSetOperations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSetOperations)
 
 ```python
 class ListStackSetOperationsPaginator(Boto3Paginator):
@@ -297,13 +297,13 @@ Type annotations for `boto3.client("cloudformation").get_paginator("list_stack_s
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudformation.paginators import ListStackSetsPaginator
+from mypy_boto3_cloudformation.paginator import ListStackSetsPaginator
 
 def get_list_stack_sets_paginator() -> ListStackSetsPaginator:
     return boto3.client("cloudformation").get_paginator("list_stack_sets")
 ```
 
-[Paginator.ListStackSets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStackSets)
 
 ```python
 class ListStackSetsPaginator(Boto3Paginator):
@@ -322,13 +322,13 @@ Type annotations for `boto3.client("cloudformation").get_paginator("list_stacks"
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudformation.paginators import ListStacksPaginator
+from mypy_boto3_cloudformation.paginator import ListStacksPaginator
 
 def get_list_stacks_paginator() -> ListStacksPaginator:
     return boto3.client("cloudformation").get_paginator("list_stacks")
 ```
 
-[Paginator.ListStacks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStacks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListStacks)
 
 ```python
 class ListStacksPaginator(Boto3Paginator):

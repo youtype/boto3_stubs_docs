@@ -1,11 +1,11 @@
-# Structures for boto3 Glue module
+# Typed dictionaries for boto3 Glue module
 
 > [Index](../README.md) > [Glue](./README.md) > Structures
 
 Auto-generated documentation for [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
 type annotations stubs module [mypy_boto3_glue](https://pypi.org/project/mypy-boto3-glue/).
 
-- [Structures for boto3 Glue module](#structures-for-boto3-glue-module)
+- [Typed dictionaries for boto3 Glue module](#typed-dictionaries-for-boto3-glue-module)
   - [ActionTypeDef](#actiontypedef)
   - [BackfillErrorTypeDef](#backfillerrortypedef)
   - [BatchCreatePartitionResponseTypeDef](#batchcreatepartitionresponsetypedef)

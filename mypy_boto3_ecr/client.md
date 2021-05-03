@@ -56,7 +56,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_ecr.client import ECRClient
+
+def get_ecr_client() -> ECRClient:
+    return boto3.client("ecr")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client)
 
 ## Exceptions
 
@@ -113,7 +118,7 @@ Exceptions:
 
 Type annotations for `boto3.client("ecr").batch_check_layer_availability` method.
 
-[Client.batch_check_layer_availability documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.batch_check_layer_availability)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.batch_check_layer_availability]
 
 ```python
 def batch_check_layer_availability(
@@ -129,7 +134,7 @@ def batch_check_layer_availability(
 
 Type annotations for `boto3.client("ecr").batch_delete_image` method.
 
-[Client.batch_delete_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.batch_delete_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.batch_delete_image]
 
 ```python
 def batch_delete_image(
@@ -145,7 +150,7 @@ def batch_delete_image(
 
 Type annotations for `boto3.client("ecr").batch_get_image` method.
 
-[Client.batch_get_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.batch_get_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.batch_get_image]
 
 ```python
 def batch_get_image(
@@ -162,7 +167,7 @@ def batch_get_image(
 
 Type annotations for `boto3.client("ecr").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -176,7 +181,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("ecr").complete_layer_upload` method.
 
-[Client.complete_layer_upload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.complete_layer_upload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.complete_layer_upload]
 
 ```python
 def complete_layer_upload(
@@ -193,7 +198,7 @@ def complete_layer_upload(
 
 Type annotations for `boto3.client("ecr").create_repository` method.
 
-[Client.create_repository documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.create_repository)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.create_repository]
 
 ```python
 def create_repository(
@@ -211,7 +216,7 @@ def create_repository(
 
 Type annotations for `boto3.client("ecr").delete_lifecycle_policy` method.
 
-[Client.delete_lifecycle_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_lifecycle_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_lifecycle_policy]
 
 ```python
 def delete_lifecycle_policy(
@@ -226,7 +231,7 @@ def delete_lifecycle_policy(
 
 Type annotations for `boto3.client("ecr").delete_registry_policy` method.
 
-[Client.delete_registry_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_registry_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_registry_policy]
 
 ```python
 def delete_registry_policy(
@@ -239,7 +244,7 @@ def delete_registry_policy(
 
 Type annotations for `boto3.client("ecr").delete_repository` method.
 
-[Client.delete_repository documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_repository)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_repository]
 
 ```python
 def delete_repository(
@@ -255,7 +260,7 @@ def delete_repository(
 
 Type annotations for `boto3.client("ecr").delete_repository_policy` method.
 
-[Client.delete_repository_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_repository_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_repository_policy]
 
 ```python
 def delete_repository_policy(
@@ -270,7 +275,7 @@ def delete_repository_policy(
 
 Type annotations for `boto3.client("ecr").describe_image_scan_findings` method.
 
-[Client.describe_image_scan_findings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_image_scan_findings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_image_scan_findings]
 
 ```python
 def describe_image_scan_findings(
@@ -288,7 +293,7 @@ def describe_image_scan_findings(
 
 Type annotations for `boto3.client("ecr").describe_images` method.
 
-[Client.describe_images documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_images)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_images]
 
 ```python
 def describe_images(
@@ -307,7 +312,7 @@ def describe_images(
 
 Type annotations for `boto3.client("ecr").describe_registry` method.
 
-[Client.describe_registry documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_registry)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_registry]
 
 ```python
 def describe_registry(
@@ -320,7 +325,7 @@ def describe_registry(
 
 Type annotations for `boto3.client("ecr").describe_repositories` method.
 
-[Client.describe_repositories documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_repositories)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_repositories]
 
 ```python
 def describe_repositories(
@@ -337,7 +342,7 @@ def describe_repositories(
 
 Type annotations for `boto3.client("ecr").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -354,7 +359,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("ecr").get_authorization_token` method.
 
-[Client.get_authorization_token documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_authorization_token)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_authorization_token]
 
 ```python
 def get_authorization_token(
@@ -368,7 +373,7 @@ def get_authorization_token(
 
 Type annotations for `boto3.client("ecr").get_download_url_for_layer` method.
 
-[Client.get_download_url_for_layer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_download_url_for_layer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_download_url_for_layer]
 
 ```python
 def get_download_url_for_layer(
@@ -384,7 +389,7 @@ def get_download_url_for_layer(
 
 Type annotations for `boto3.client("ecr").get_lifecycle_policy` method.
 
-[Client.get_lifecycle_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_lifecycle_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_lifecycle_policy]
 
 ```python
 def get_lifecycle_policy(
@@ -399,7 +404,7 @@ def get_lifecycle_policy(
 
 Type annotations for `boto3.client("ecr").get_lifecycle_policy_preview` method.
 
-[Client.get_lifecycle_policy_preview documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_lifecycle_policy_preview)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_lifecycle_policy_preview]
 
 ```python
 def get_lifecycle_policy_preview(
@@ -418,7 +423,7 @@ def get_lifecycle_policy_preview(
 
 Type annotations for `boto3.client("ecr").get_registry_policy` method.
 
-[Client.get_registry_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_registry_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_registry_policy]
 
 ```python
 def get_registry_policy(
@@ -431,7 +436,7 @@ def get_registry_policy(
 
 Type annotations for `boto3.client("ecr").get_repository_policy` method.
 
-[Client.get_repository_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_repository_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_repository_policy]
 
 ```python
 def get_repository_policy(
@@ -446,7 +451,7 @@ def get_repository_policy(
 
 Type annotations for `boto3.client("ecr").initiate_layer_upload` method.
 
-[Client.initiate_layer_upload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.initiate_layer_upload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.initiate_layer_upload]
 
 ```python
 def initiate_layer_upload(
@@ -461,7 +466,7 @@ def initiate_layer_upload(
 
 Type annotations for `boto3.client("ecr").list_images` method.
 
-[Client.list_images documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.list_images)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.list_images]
 
 ```python
 def list_images(
@@ -479,7 +484,7 @@ def list_images(
 
 Type annotations for `boto3.client("ecr").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -493,7 +498,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("ecr").put_image` method.
 
-[Client.put_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_image]
 
 ```python
 def put_image(
@@ -512,7 +517,7 @@ def put_image(
 
 Type annotations for `boto3.client("ecr").put_image_scanning_configuration` method.
 
-[Client.put_image_scanning_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_image_scanning_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_image_scanning_configuration]
 
 ```python
 def put_image_scanning_configuration(
@@ -528,7 +533,7 @@ def put_image_scanning_configuration(
 
 Type annotations for `boto3.client("ecr").put_image_tag_mutability` method.
 
-[Client.put_image_tag_mutability documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_image_tag_mutability)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_image_tag_mutability]
 
 ```python
 def put_image_tag_mutability(
@@ -544,7 +549,7 @@ def put_image_tag_mutability(
 
 Type annotations for `boto3.client("ecr").put_lifecycle_policy` method.
 
-[Client.put_lifecycle_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_lifecycle_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_lifecycle_policy]
 
 ```python
 def put_lifecycle_policy(
@@ -560,7 +565,7 @@ def put_lifecycle_policy(
 
 Type annotations for `boto3.client("ecr").put_registry_policy` method.
 
-[Client.put_registry_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_registry_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_registry_policy]
 
 ```python
 def put_registry_policy(
@@ -574,7 +579,7 @@ def put_registry_policy(
 
 Type annotations for `boto3.client("ecr").put_replication_configuration` method.
 
-[Client.put_replication_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_replication_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_replication_configuration]
 
 ```python
 def put_replication_configuration(
@@ -588,7 +593,7 @@ def put_replication_configuration(
 
 Type annotations for `boto3.client("ecr").set_repository_policy` method.
 
-[Client.set_repository_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.set_repository_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.set_repository_policy]
 
 ```python
 def set_repository_policy(
@@ -605,7 +610,7 @@ def set_repository_policy(
 
 Type annotations for `boto3.client("ecr").start_image_scan` method.
 
-[Client.start_image_scan documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.start_image_scan)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.start_image_scan]
 
 ```python
 def start_image_scan(
@@ -621,7 +626,7 @@ def start_image_scan(
 
 Type annotations for `boto3.client("ecr").start_lifecycle_policy_preview` method.
 
-[Client.start_lifecycle_policy_preview documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.start_lifecycle_policy_preview)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.start_lifecycle_policy_preview]
 
 ```python
 def start_lifecycle_policy_preview(
@@ -637,7 +642,7 @@ def start_lifecycle_policy_preview(
 
 Type annotations for `boto3.client("ecr").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -652,7 +657,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("ecr").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -667,7 +672,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("ecr").upload_layer_part` method.
 
-[Client.upload_layer_part documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.upload_layer_part)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.upload_layer_part]
 
 ```python
 def upload_layer_part(

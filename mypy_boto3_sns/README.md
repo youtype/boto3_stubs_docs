@@ -18,7 +18,7 @@ pip install mypy-boto3-sns
     - [Resources](#resources)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## SNSClient
 
@@ -194,7 +194,7 @@ from mypy_boto3_sns.literals import ListEndpointsByPlatformApplicationPaginatorN
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

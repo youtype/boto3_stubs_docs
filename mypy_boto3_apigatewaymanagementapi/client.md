@@ -23,7 +23,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_apigatewaymanagementapi.client import ApiGatewayManagementApiClient
+
+def get_apigatewaymanagementapi_client() -> ApiGatewayManagementApiClient:
+    return boto3.client("apigatewaymanagementapi")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client)
 
 ## Exceptions
 
@@ -54,7 +59,7 @@ Exceptions:
 
 Type annotations for `boto3.client("apigatewaymanagementapi").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -68,7 +73,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("apigatewaymanagementapi").delete_connection` method.
 
-[Client.delete_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.delete_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.delete_connection]
 
 ```python
 def delete_connection(
@@ -82,7 +87,7 @@ def delete_connection(
 
 Type annotations for `boto3.client("apigatewaymanagementapi").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -99,7 +104,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("apigatewaymanagementapi").get_connection` method.
 
-[Client.get_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.get_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.get_connection]
 
 ```python
 def get_connection(
@@ -113,7 +118,7 @@ def get_connection(
 
 Type annotations for `boto3.client("apigatewaymanagementapi").post_to_connection` method.
 
-[Client.post_to_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.post_to_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.post_to_connection]
 
 ```python
 def post_to_connection(

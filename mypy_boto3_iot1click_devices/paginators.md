@@ -16,13 +16,13 @@ Type annotations for `boto3.client("iot1click-devices").get_paginator("list_devi
 Can be used directly:
 
 ```python
-from mypy_boto3_iot1click_devices.paginators import ListDeviceEventsPaginator
+from mypy_boto3_iot1click_devices.paginator import ListDeviceEventsPaginator
 
 def get_list_device_events_paginator() -> ListDeviceEventsPaginator:
     return boto3.client("iot1click-devices").get_paginator("list_device_events")
 ```
 
-[Paginator.ListDeviceEvents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Paginator.ListDeviceEvents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Paginator.ListDeviceEvents)
 
 ```python
 class ListDeviceEventsPaginator(Boto3Paginator):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("iot1click-devices").get_paginator("list_devi
 Can be used directly:
 
 ```python
-from mypy_boto3_iot1click_devices.paginators import ListDevicesPaginator
+from mypy_boto3_iot1click_devices.paginator import ListDevicesPaginator
 
 def get_list_devices_paginator() -> ListDevicesPaginator:
     return boto3.client("iot1click-devices").get_paginator("list_devices")
 ```
 
-[Paginator.ListDevices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Paginator.ListDevices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Paginator.ListDevices)
 
 ```python
 class ListDevicesPaginator(Boto3Paginator):

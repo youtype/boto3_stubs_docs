@@ -14,7 +14,7 @@ pip install mypy-boto3-compute-optimizer
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ComputeOptimizerClient
 
@@ -107,7 +107,7 @@ from mypy_boto3_compute_optimizer.literals import EBSFilterName, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

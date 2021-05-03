@@ -21,13 +21,13 @@ Type annotations for `boto3.client("forecast").get_paginator("list_dataset_group
 Can be used directly:
 
 ```python
-from mypy_boto3_forecast.paginators import ListDatasetGroupsPaginator
+from mypy_boto3_forecast.paginator import ListDatasetGroupsPaginator
 
 def get_list_dataset_groups_paginator() -> ListDatasetGroupsPaginator:
     return boto3.client("forecast").get_paginator("list_dataset_groups")
 ```
 
-[Paginator.ListDatasetGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListDatasetGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListDatasetGroups)
 
 ```python
 class ListDatasetGroupsPaginator(Boto3Paginator):
@@ -44,13 +44,13 @@ Type annotations for `boto3.client("forecast").get_paginator("list_dataset_impor
 Can be used directly:
 
 ```python
-from mypy_boto3_forecast.paginators import ListDatasetImportJobsPaginator
+from mypy_boto3_forecast.paginator import ListDatasetImportJobsPaginator
 
 def get_list_dataset_import_jobs_paginator() -> ListDatasetImportJobsPaginator:
     return boto3.client("forecast").get_paginator("list_dataset_import_jobs")
 ```
 
-[Paginator.ListDatasetImportJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListDatasetImportJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListDatasetImportJobs)
 
 ```python
 class ListDatasetImportJobsPaginator(Boto3Paginator):
@@ -68,13 +68,13 @@ Type annotations for `boto3.client("forecast").get_paginator("list_datasets")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_forecast.paginators import ListDatasetsPaginator
+from mypy_boto3_forecast.paginator import ListDatasetsPaginator
 
 def get_list_datasets_paginator() -> ListDatasetsPaginator:
     return boto3.client("forecast").get_paginator("list_datasets")
 ```
 
-[Paginator.ListDatasets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListDatasets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListDatasets)
 
 ```python
 class ListDatasetsPaginator(Boto3Paginator):
@@ -91,13 +91,13 @@ Type annotations for `boto3.client("forecast").get_paginator("list_forecast_expo
 Can be used directly:
 
 ```python
-from mypy_boto3_forecast.paginators import ListForecastExportJobsPaginator
+from mypy_boto3_forecast.paginator import ListForecastExportJobsPaginator
 
 def get_list_forecast_export_jobs_paginator() -> ListForecastExportJobsPaginator:
     return boto3.client("forecast").get_paginator("list_forecast_export_jobs")
 ```
 
-[Paginator.ListForecastExportJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListForecastExportJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListForecastExportJobs)
 
 ```python
 class ListForecastExportJobsPaginator(Boto3Paginator):
@@ -115,13 +115,13 @@ Type annotations for `boto3.client("forecast").get_paginator("list_forecasts")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_forecast.paginators import ListForecastsPaginator
+from mypy_boto3_forecast.paginator import ListForecastsPaginator
 
 def get_list_forecasts_paginator() -> ListForecastsPaginator:
     return boto3.client("forecast").get_paginator("list_forecasts")
 ```
 
-[Paginator.ListForecasts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListForecasts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListForecasts)
 
 ```python
 class ListForecastsPaginator(Boto3Paginator):
@@ -139,13 +139,13 @@ Type annotations for `boto3.client("forecast").get_paginator("list_predictor_bac
 Can be used directly:
 
 ```python
-from mypy_boto3_forecast.paginators import ListPredictorBacktestExportJobsPaginator
+from mypy_boto3_forecast.paginator import ListPredictorBacktestExportJobsPaginator
 
 def get_list_predictor_backtest_export_jobs_paginator() -> ListPredictorBacktestExportJobsPaginator:
     return boto3.client("forecast").get_paginator("list_predictor_backtest_export_jobs")
 ```
 
-[Paginator.ListPredictorBacktestExportJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListPredictorBacktestExportJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListPredictorBacktestExportJobs)
 
 ```python
 class ListPredictorBacktestExportJobsPaginator(Boto3Paginator):
@@ -163,13 +163,13 @@ Type annotations for `boto3.client("forecast").get_paginator("list_predictors")`
 Can be used directly:
 
 ```python
-from mypy_boto3_forecast.paginators import ListPredictorsPaginator
+from mypy_boto3_forecast.paginator import ListPredictorsPaginator
 
 def get_list_predictors_paginator() -> ListPredictorsPaginator:
     return boto3.client("forecast").get_paginator("list_predictors")
 ```
 
-[Paginator.ListPredictors documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListPredictors)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListPredictors)
 
 ```python
 class ListPredictorsPaginator(Boto3Paginator):

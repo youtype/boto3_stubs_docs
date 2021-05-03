@@ -13,7 +13,7 @@ pip install mypy-boto3-personalize-runtime
   - [PersonalizeRuntimeClient](#personalizeruntimeclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## PersonalizeRuntimeClient
 
@@ -55,7 +55,7 @@ PersonalizeRuntimeClient [exceptions](./client.md#exceptions)
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

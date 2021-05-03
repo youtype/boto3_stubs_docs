@@ -14,7 +14,7 @@ pip install mypy-boto3-comprehendmedical
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ComprehendMedicalClient
 
@@ -108,7 +108,7 @@ from mypy_boto3_comprehendmedical.literals import AttributeName, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

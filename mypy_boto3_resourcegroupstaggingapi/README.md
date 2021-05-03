@@ -15,7 +15,7 @@ pip install mypy-boto3-resourcegroupstaggingapi
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ResourceGroupsTaggingAPIClient
 
@@ -103,7 +103,7 @@ from mypy_boto3_resourcegroupstaggingapi.literals import ErrorCode, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

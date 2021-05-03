@@ -17,13 +17,13 @@ Type annotations for `boto3.client("cloudhsmv2").get_paginator("describe_backups
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudhsmv2.paginators import DescribeBackupsPaginator
+from mypy_boto3_cloudhsmv2.paginator import DescribeBackupsPaginator
 
 def get_describe_backups_paginator() -> DescribeBackupsPaginator:
     return boto3.client("cloudhsmv2").get_paginator("describe_backups")
 ```
 
-[Paginator.DescribeBackups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.DescribeBackups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.DescribeBackups)
 
 ```python
 class DescribeBackupsPaginator(Boto3Paginator):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("cloudhsmv2").get_paginator("describe_cluster
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudhsmv2.paginators import DescribeClustersPaginator
+from mypy_boto3_cloudhsmv2.paginator import DescribeClustersPaginator
 
 def get_describe_clusters_paginator() -> DescribeClustersPaginator:
     return boto3.client("cloudhsmv2").get_paginator("describe_clusters")
 ```
 
-[Paginator.DescribeClusters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.DescribeClusters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.DescribeClusters)
 
 ```python
 class DescribeClustersPaginator(Boto3Paginator):
@@ -66,13 +66,13 @@ Type annotations for `boto3.client("cloudhsmv2").get_paginator("list_tags")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudhsmv2.paginators import ListTagsPaginator
+from mypy_boto3_cloudhsmv2.paginator import ListTagsPaginator
 
 def get_list_tags_paginator() -> ListTagsPaginator:
     return boto3.client("cloudhsmv2").get_paginator("list_tags")
 ```
 
-[Paginator.ListTags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.ListTags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Paginator.ListTags)
 
 ```python
 class ListTagsPaginator(Boto3Paginator):

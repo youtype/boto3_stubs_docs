@@ -1,11 +1,11 @@
-# Structures for boto3 PI module
+# Typed dictionaries for boto3 PI module
 
 > [Index](../README.md) > [PI](./README.md) > Structures
 
 Auto-generated documentation for [PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
 type annotations stubs module [mypy_boto3_pi](https://pypi.org/project/mypy-boto3-pi/).
 
-- [Structures for boto3 PI module](#structures-for-boto3-pi-module)
+- [Typed dictionaries for boto3 PI module](#typed-dictionaries-for-boto3-pi-module)
   - [DataPointTypeDef](#datapointtypedef)
   - [DescribeDimensionKeysResponseTypeDef](#describedimensionkeysresponsetypedef)
   - [DimensionGroupTypeDef](#dimensiongrouptypedef)

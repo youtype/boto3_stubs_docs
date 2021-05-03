@@ -15,7 +15,7 @@ pip install mypy-boto3-securityhub
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## SecurityHubClient
 
@@ -170,7 +170,7 @@ from mypy_boto3_securityhub.literals import AdminStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

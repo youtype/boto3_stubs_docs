@@ -141,7 +141,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_apigateway.client import APIGatewayClient
+
+def get_apigateway_client() -> APIGatewayClient:
+    return boto3.client("apigateway")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client)
 
 ## Exceptions
 
@@ -175,7 +180,7 @@ Exceptions:
 
 Type annotations for `boto3.client("apigateway").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -189,7 +194,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("apigateway").create_api_key` method.
 
-[Client.create_api_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_api_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_api_key]
 
 ```python
 def create_api_key(
@@ -210,7 +215,7 @@ def create_api_key(
 
 Type annotations for `boto3.client("apigateway").create_authorizer` method.
 
-[Client.create_authorizer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_authorizer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_authorizer]
 
 ```python
 def create_authorizer(
@@ -233,7 +238,7 @@ def create_authorizer(
 
 Type annotations for `boto3.client("apigateway").create_base_path_mapping` method.
 
-[Client.create_base_path_mapping documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_base_path_mapping)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_base_path_mapping]
 
 ```python
 def create_base_path_mapping(
@@ -250,7 +255,7 @@ def create_base_path_mapping(
 
 Type annotations for `boto3.client("apigateway").create_deployment` method.
 
-[Client.create_deployment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_deployment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_deployment]
 
 ```python
 def create_deployment(
@@ -272,7 +277,7 @@ def create_deployment(
 
 Type annotations for `boto3.client("apigateway").create_documentation_part` method.
 
-[Client.create_documentation_part documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_documentation_part)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_documentation_part]
 
 ```python
 def create_documentation_part(
@@ -288,7 +293,7 @@ def create_documentation_part(
 
 Type annotations for `boto3.client("apigateway").create_documentation_version` method.
 
-[Client.create_documentation_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_documentation_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_documentation_version]
 
 ```python
 def create_documentation_version(
@@ -305,7 +310,7 @@ def create_documentation_version(
 
 Type annotations for `boto3.client("apigateway").create_domain_name` method.
 
-[Client.create_domain_name documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_domain_name)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_domain_name]
 
 ```python
 def create_domain_name(
@@ -330,7 +335,7 @@ def create_domain_name(
 
 Type annotations for `boto3.client("apigateway").create_model` method.
 
-[Client.create_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_model]
 
 ```python
 def create_model(
@@ -348,7 +353,7 @@ def create_model(
 
 Type annotations for `boto3.client("apigateway").create_request_validator` method.
 
-[Client.create_request_validator documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_request_validator)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_request_validator]
 
 ```python
 def create_request_validator(
@@ -365,7 +370,7 @@ def create_request_validator(
 
 Type annotations for `boto3.client("apigateway").create_resource` method.
 
-[Client.create_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_resource]
 
 ```python
 def create_resource(
@@ -381,7 +386,7 @@ def create_resource(
 
 Type annotations for `boto3.client("apigateway").create_rest_api` method.
 
-[Client.create_rest_api documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_rest_api)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_rest_api]
 
 ```python
 def create_rest_api(
@@ -405,7 +410,7 @@ def create_rest_api(
 
 Type annotations for `boto3.client("apigateway").create_stage` method.
 
-[Client.create_stage documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_stage)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_stage]
 
 ```python
 def create_stage(
@@ -429,7 +434,7 @@ def create_stage(
 
 Type annotations for `boto3.client("apigateway").create_usage_plan` method.
 
-[Client.create_usage_plan documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_usage_plan)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_usage_plan]
 
 ```python
 def create_usage_plan(
@@ -448,7 +453,7 @@ def create_usage_plan(
 
 Type annotations for `boto3.client("apigateway").create_usage_plan_key` method.
 
-[Client.create_usage_plan_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_usage_plan_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_usage_plan_key]
 
 ```python
 def create_usage_plan_key(
@@ -464,7 +469,7 @@ def create_usage_plan_key(
 
 Type annotations for `boto3.client("apigateway").create_vpc_link` method.
 
-[Client.create_vpc_link documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_vpc_link)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_vpc_link]
 
 ```python
 def create_vpc_link(
@@ -481,7 +486,7 @@ def create_vpc_link(
 
 Type annotations for `boto3.client("apigateway").delete_api_key` method.
 
-[Client.delete_api_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_api_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_api_key]
 
 ```python
 def delete_api_key(
@@ -495,7 +500,7 @@ def delete_api_key(
 
 Type annotations for `boto3.client("apigateway").delete_authorizer` method.
 
-[Client.delete_authorizer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_authorizer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_authorizer]
 
 ```python
 def delete_authorizer(
@@ -510,7 +515,7 @@ def delete_authorizer(
 
 Type annotations for `boto3.client("apigateway").delete_base_path_mapping` method.
 
-[Client.delete_base_path_mapping documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_base_path_mapping)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_base_path_mapping]
 
 ```python
 def delete_base_path_mapping(
@@ -525,7 +530,7 @@ def delete_base_path_mapping(
 
 Type annotations for `boto3.client("apigateway").delete_client_certificate` method.
 
-[Client.delete_client_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_client_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_client_certificate]
 
 ```python
 def delete_client_certificate(
@@ -539,7 +544,7 @@ def delete_client_certificate(
 
 Type annotations for `boto3.client("apigateway").delete_deployment` method.
 
-[Client.delete_deployment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_deployment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_deployment]
 
 ```python
 def delete_deployment(
@@ -554,7 +559,7 @@ def delete_deployment(
 
 Type annotations for `boto3.client("apigateway").delete_documentation_part` method.
 
-[Client.delete_documentation_part documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_documentation_part)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_documentation_part]
 
 ```python
 def delete_documentation_part(
@@ -569,7 +574,7 @@ def delete_documentation_part(
 
 Type annotations for `boto3.client("apigateway").delete_documentation_version` method.
 
-[Client.delete_documentation_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_documentation_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_documentation_version]
 
 ```python
 def delete_documentation_version(
@@ -584,7 +589,7 @@ def delete_documentation_version(
 
 Type annotations for `boto3.client("apigateway").delete_domain_name` method.
 
-[Client.delete_domain_name documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_domain_name)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_domain_name]
 
 ```python
 def delete_domain_name(
@@ -598,7 +603,7 @@ def delete_domain_name(
 
 Type annotations for `boto3.client("apigateway").delete_gateway_response` method.
 
-[Client.delete_gateway_response documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_gateway_response)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_gateway_response]
 
 ```python
 def delete_gateway_response(
@@ -613,7 +618,7 @@ def delete_gateway_response(
 
 Type annotations for `boto3.client("apigateway").delete_integration` method.
 
-[Client.delete_integration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_integration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_integration]
 
 ```python
 def delete_integration(
@@ -629,7 +634,7 @@ def delete_integration(
 
 Type annotations for `boto3.client("apigateway").delete_integration_response` method.
 
-[Client.delete_integration_response documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_integration_response)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_integration_response]
 
 ```python
 def delete_integration_response(
@@ -646,7 +651,7 @@ def delete_integration_response(
 
 Type annotations for `boto3.client("apigateway").delete_method` method.
 
-[Client.delete_method documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_method)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_method]
 
 ```python
 def delete_method(
@@ -662,7 +667,7 @@ def delete_method(
 
 Type annotations for `boto3.client("apigateway").delete_method_response` method.
 
-[Client.delete_method_response documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_method_response)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_method_response]
 
 ```python
 def delete_method_response(
@@ -679,7 +684,7 @@ def delete_method_response(
 
 Type annotations for `boto3.client("apigateway").delete_model` method.
 
-[Client.delete_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_model]
 
 ```python
 def delete_model(
@@ -694,7 +699,7 @@ def delete_model(
 
 Type annotations for `boto3.client("apigateway").delete_request_validator` method.
 
-[Client.delete_request_validator documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_request_validator)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_request_validator]
 
 ```python
 def delete_request_validator(
@@ -709,7 +714,7 @@ def delete_request_validator(
 
 Type annotations for `boto3.client("apigateway").delete_resource` method.
 
-[Client.delete_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_resource]
 
 ```python
 def delete_resource(
@@ -724,7 +729,7 @@ def delete_resource(
 
 Type annotations for `boto3.client("apigateway").delete_rest_api` method.
 
-[Client.delete_rest_api documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_rest_api)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_rest_api]
 
 ```python
 def delete_rest_api(
@@ -738,7 +743,7 @@ def delete_rest_api(
 
 Type annotations for `boto3.client("apigateway").delete_stage` method.
 
-[Client.delete_stage documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_stage)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_stage]
 
 ```python
 def delete_stage(
@@ -753,7 +758,7 @@ def delete_stage(
 
 Type annotations for `boto3.client("apigateway").delete_usage_plan` method.
 
-[Client.delete_usage_plan documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_usage_plan)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_usage_plan]
 
 ```python
 def delete_usage_plan(
@@ -767,7 +772,7 @@ def delete_usage_plan(
 
 Type annotations for `boto3.client("apigateway").delete_usage_plan_key` method.
 
-[Client.delete_usage_plan_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_usage_plan_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_usage_plan_key]
 
 ```python
 def delete_usage_plan_key(
@@ -782,7 +787,7 @@ def delete_usage_plan_key(
 
 Type annotations for `boto3.client("apigateway").delete_vpc_link` method.
 
-[Client.delete_vpc_link documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_vpc_link)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_vpc_link]
 
 ```python
 def delete_vpc_link(
@@ -796,7 +801,7 @@ def delete_vpc_link(
 
 Type annotations for `boto3.client("apigateway").flush_stage_authorizers_cache` method.
 
-[Client.flush_stage_authorizers_cache documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.flush_stage_authorizers_cache)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.flush_stage_authorizers_cache]
 
 ```python
 def flush_stage_authorizers_cache(
@@ -811,7 +816,7 @@ def flush_stage_authorizers_cache(
 
 Type annotations for `boto3.client("apigateway").flush_stage_cache` method.
 
-[Client.flush_stage_cache documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.flush_stage_cache)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.flush_stage_cache]
 
 ```python
 def flush_stage_cache(
@@ -826,7 +831,7 @@ def flush_stage_cache(
 
 Type annotations for `boto3.client("apigateway").generate_client_certificate` method.
 
-[Client.generate_client_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.generate_client_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.generate_client_certificate]
 
 ```python
 def generate_client_certificate(
@@ -841,7 +846,7 @@ def generate_client_certificate(
 
 Type annotations for `boto3.client("apigateway").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -858,7 +863,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("apigateway").get_account` method.
 
-[Client.get_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_account]
 
 ```python
 def get_account(
@@ -871,7 +876,7 @@ def get_account(
 
 Type annotations for `boto3.client("apigateway").get_api_key` method.
 
-[Client.get_api_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_api_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_api_key]
 
 ```python
 def get_api_key(
@@ -886,7 +891,7 @@ def get_api_key(
 
 Type annotations for `boto3.client("apigateway").get_api_keys` method.
 
-[Client.get_api_keys documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_api_keys)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_api_keys]
 
 ```python
 def get_api_keys(
@@ -904,7 +909,7 @@ def get_api_keys(
 
 Type annotations for `boto3.client("apigateway").get_authorizer` method.
 
-[Client.get_authorizer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_authorizer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_authorizer]
 
 ```python
 def get_authorizer(
@@ -919,7 +924,7 @@ def get_authorizer(
 
 Type annotations for `boto3.client("apigateway").get_authorizers` method.
 
-[Client.get_authorizers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_authorizers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_authorizers]
 
 ```python
 def get_authorizers(
@@ -935,7 +940,7 @@ def get_authorizers(
 
 Type annotations for `boto3.client("apigateway").get_base_path_mapping` method.
 
-[Client.get_base_path_mapping documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_base_path_mapping)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_base_path_mapping]
 
 ```python
 def get_base_path_mapping(
@@ -950,7 +955,7 @@ def get_base_path_mapping(
 
 Type annotations for `boto3.client("apigateway").get_base_path_mappings` method.
 
-[Client.get_base_path_mappings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_base_path_mappings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_base_path_mappings]
 
 ```python
 def get_base_path_mappings(
@@ -966,7 +971,7 @@ def get_base_path_mappings(
 
 Type annotations for `boto3.client("apigateway").get_client_certificate` method.
 
-[Client.get_client_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_client_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_client_certificate]
 
 ```python
 def get_client_certificate(
@@ -980,7 +985,7 @@ def get_client_certificate(
 
 Type annotations for `boto3.client("apigateway").get_client_certificates` method.
 
-[Client.get_client_certificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_client_certificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_client_certificates]
 
 ```python
 def get_client_certificates(
@@ -995,7 +1000,7 @@ def get_client_certificates(
 
 Type annotations for `boto3.client("apigateway").get_deployment` method.
 
-[Client.get_deployment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_deployment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_deployment]
 
 ```python
 def get_deployment(
@@ -1011,7 +1016,7 @@ def get_deployment(
 
 Type annotations for `boto3.client("apigateway").get_deployments` method.
 
-[Client.get_deployments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_deployments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_deployments]
 
 ```python
 def get_deployments(
@@ -1027,7 +1032,7 @@ def get_deployments(
 
 Type annotations for `boto3.client("apigateway").get_documentation_part` method.
 
-[Client.get_documentation_part documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_part)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_part]
 
 ```python
 def get_documentation_part(
@@ -1042,7 +1047,7 @@ def get_documentation_part(
 
 Type annotations for `boto3.client("apigateway").get_documentation_parts` method.
 
-[Client.get_documentation_parts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_parts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_parts]
 
 ```python
 def get_documentation_parts(
@@ -1062,7 +1067,7 @@ def get_documentation_parts(
 
 Type annotations for `boto3.client("apigateway").get_documentation_version` method.
 
-[Client.get_documentation_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_version]
 
 ```python
 def get_documentation_version(
@@ -1077,7 +1082,7 @@ def get_documentation_version(
 
 Type annotations for `boto3.client("apigateway").get_documentation_versions` method.
 
-[Client.get_documentation_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_versions]
 
 ```python
 def get_documentation_versions(
@@ -1093,7 +1098,7 @@ def get_documentation_versions(
 
 Type annotations for `boto3.client("apigateway").get_domain_name` method.
 
-[Client.get_domain_name documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_domain_name)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_domain_name]
 
 ```python
 def get_domain_name(
@@ -1107,7 +1112,7 @@ def get_domain_name(
 
 Type annotations for `boto3.client("apigateway").get_domain_names` method.
 
-[Client.get_domain_names documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_domain_names)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_domain_names]
 
 ```python
 def get_domain_names(
@@ -1122,7 +1127,7 @@ def get_domain_names(
 
 Type annotations for `boto3.client("apigateway").get_export` method.
 
-[Client.get_export documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_export)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_export]
 
 ```python
 def get_export(
@@ -1140,7 +1145,7 @@ def get_export(
 
 Type annotations for `boto3.client("apigateway").get_gateway_response` method.
 
-[Client.get_gateway_response documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_gateway_response)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_gateway_response]
 
 ```python
 def get_gateway_response(
@@ -1155,7 +1160,7 @@ def get_gateway_response(
 
 Type annotations for `boto3.client("apigateway").get_gateway_responses` method.
 
-[Client.get_gateway_responses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_gateway_responses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_gateway_responses]
 
 ```python
 def get_gateway_responses(
@@ -1171,7 +1176,7 @@ def get_gateway_responses(
 
 Type annotations for `boto3.client("apigateway").get_integration` method.
 
-[Client.get_integration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_integration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_integration]
 
 ```python
 def get_integration(
@@ -1187,7 +1192,7 @@ def get_integration(
 
 Type annotations for `boto3.client("apigateway").get_integration_response` method.
 
-[Client.get_integration_response documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_integration_response)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_integration_response]
 
 ```python
 def get_integration_response(
@@ -1204,7 +1209,7 @@ def get_integration_response(
 
 Type annotations for `boto3.client("apigateway").get_method` method.
 
-[Client.get_method documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_method)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_method]
 
 ```python
 def get_method(
@@ -1220,7 +1225,7 @@ def get_method(
 
 Type annotations for `boto3.client("apigateway").get_method_response` method.
 
-[Client.get_method_response documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_method_response)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_method_response]
 
 ```python
 def get_method_response(
@@ -1237,7 +1242,7 @@ def get_method_response(
 
 Type annotations for `boto3.client("apigateway").get_model` method.
 
-[Client.get_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_model]
 
 ```python
 def get_model(
@@ -1253,7 +1258,7 @@ def get_model(
 
 Type annotations for `boto3.client("apigateway").get_model_template` method.
 
-[Client.get_model_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_model_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_model_template]
 
 ```python
 def get_model_template(
@@ -1268,7 +1273,7 @@ def get_model_template(
 
 Type annotations for `boto3.client("apigateway").get_models` method.
 
-[Client.get_models documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_models)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_models]
 
 ```python
 def get_models(
@@ -1284,7 +1289,7 @@ def get_models(
 
 Type annotations for `boto3.client("apigateway").get_request_validator` method.
 
-[Client.get_request_validator documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_request_validator)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_request_validator]
 
 ```python
 def get_request_validator(
@@ -1299,7 +1304,7 @@ def get_request_validator(
 
 Type annotations for `boto3.client("apigateway").get_request_validators` method.
 
-[Client.get_request_validators documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_request_validators)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_request_validators]
 
 ```python
 def get_request_validators(
@@ -1315,7 +1320,7 @@ def get_request_validators(
 
 Type annotations for `boto3.client("apigateway").get_resource` method.
 
-[Client.get_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_resource]
 
 ```python
 def get_resource(
@@ -1331,7 +1336,7 @@ def get_resource(
 
 Type annotations for `boto3.client("apigateway").get_resources` method.
 
-[Client.get_resources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_resources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_resources]
 
 ```python
 def get_resources(
@@ -1348,7 +1353,7 @@ def get_resources(
 
 Type annotations for `boto3.client("apigateway").get_rest_api` method.
 
-[Client.get_rest_api documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_rest_api)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_rest_api]
 
 ```python
 def get_rest_api(
@@ -1362,7 +1367,7 @@ def get_rest_api(
 
 Type annotations for `boto3.client("apigateway").get_rest_apis` method.
 
-[Client.get_rest_apis documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_rest_apis)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_rest_apis]
 
 ```python
 def get_rest_apis(
@@ -1377,7 +1382,7 @@ def get_rest_apis(
 
 Type annotations for `boto3.client("apigateway").get_sdk` method.
 
-[Client.get_sdk documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk]
 
 ```python
 def get_sdk(
@@ -1394,7 +1399,7 @@ def get_sdk(
 
 Type annotations for `boto3.client("apigateway").get_sdk_type` method.
 
-[Client.get_sdk_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk_type]
 
 ```python
 def get_sdk_type(
@@ -1408,7 +1413,7 @@ def get_sdk_type(
 
 Type annotations for `boto3.client("apigateway").get_sdk_types` method.
 
-[Client.get_sdk_types documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk_types)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk_types]
 
 ```python
 def get_sdk_types(
@@ -1423,7 +1428,7 @@ def get_sdk_types(
 
 Type annotations for `boto3.client("apigateway").get_stage` method.
 
-[Client.get_stage documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_stage)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_stage]
 
 ```python
 def get_stage(
@@ -1438,7 +1443,7 @@ def get_stage(
 
 Type annotations for `boto3.client("apigateway").get_stages` method.
 
-[Client.get_stages documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_stages)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_stages]
 
 ```python
 def get_stages(
@@ -1453,7 +1458,7 @@ def get_stages(
 
 Type annotations for `boto3.client("apigateway").get_tags` method.
 
-[Client.get_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_tags]
 
 ```python
 def get_tags(
@@ -1469,7 +1474,7 @@ def get_tags(
 
 Type annotations for `boto3.client("apigateway").get_usage` method.
 
-[Client.get_usage documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage]
 
 ```python
 def get_usage(
@@ -1488,7 +1493,7 @@ def get_usage(
 
 Type annotations for `boto3.client("apigateway").get_usage_plan` method.
 
-[Client.get_usage_plan documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plan)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plan]
 
 ```python
 def get_usage_plan(
@@ -1502,7 +1507,7 @@ def get_usage_plan(
 
 Type annotations for `boto3.client("apigateway").get_usage_plan_key` method.
 
-[Client.get_usage_plan_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plan_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plan_key]
 
 ```python
 def get_usage_plan_key(
@@ -1517,7 +1522,7 @@ def get_usage_plan_key(
 
 Type annotations for `boto3.client("apigateway").get_usage_plan_keys` method.
 
-[Client.get_usage_plan_keys documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plan_keys)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plan_keys]
 
 ```python
 def get_usage_plan_keys(
@@ -1534,7 +1539,7 @@ def get_usage_plan_keys(
 
 Type annotations for `boto3.client("apigateway").get_usage_plans` method.
 
-[Client.get_usage_plans documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plans)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plans]
 
 ```python
 def get_usage_plans(
@@ -1550,7 +1555,7 @@ def get_usage_plans(
 
 Type annotations for `boto3.client("apigateway").get_vpc_link` method.
 
-[Client.get_vpc_link documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_vpc_link)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_vpc_link]
 
 ```python
 def get_vpc_link(
@@ -1564,7 +1569,7 @@ def get_vpc_link(
 
 Type annotations for `boto3.client("apigateway").get_vpc_links` method.
 
-[Client.get_vpc_links documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_vpc_links)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_vpc_links]
 
 ```python
 def get_vpc_links(
@@ -1579,7 +1584,7 @@ def get_vpc_links(
 
 Type annotations for `boto3.client("apigateway").import_api_keys` method.
 
-[Client.import_api_keys documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_api_keys)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_api_keys]
 
 ```python
 def import_api_keys(
@@ -1595,7 +1600,7 @@ def import_api_keys(
 
 Type annotations for `boto3.client("apigateway").import_documentation_parts` method.
 
-[Client.import_documentation_parts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_documentation_parts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_documentation_parts]
 
 ```python
 def import_documentation_parts(
@@ -1612,7 +1617,7 @@ def import_documentation_parts(
 
 Type annotations for `boto3.client("apigateway").import_rest_api` method.
 
-[Client.import_rest_api documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_rest_api)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_rest_api]
 
 ```python
 def import_rest_api(
@@ -1628,7 +1633,7 @@ def import_rest_api(
 
 Type annotations for `boto3.client("apigateway").put_gateway_response` method.
 
-[Client.put_gateway_response documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_gateway_response)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_gateway_response]
 
 ```python
 def put_gateway_response(
@@ -1646,7 +1651,7 @@ def put_gateway_response(
 
 Type annotations for `boto3.client("apigateway").put_integration` method.
 
-[Client.put_integration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_integration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_integration]
 
 ```python
 def put_integration(
@@ -1676,7 +1681,7 @@ def put_integration(
 
 Type annotations for `boto3.client("apigateway").put_integration_response` method.
 
-[Client.put_integration_response documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_integration_response)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_integration_response]
 
 ```python
 def put_integration_response(
@@ -1697,7 +1702,7 @@ def put_integration_response(
 
 Type annotations for `boto3.client("apigateway").put_method` method.
 
-[Client.put_method documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_method)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_method]
 
 ```python
 def put_method(
@@ -1721,7 +1726,7 @@ def put_method(
 
 Type annotations for `boto3.client("apigateway").put_method_response` method.
 
-[Client.put_method_response documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_method_response)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_method_response]
 
 ```python
 def put_method_response(
@@ -1740,7 +1745,7 @@ def put_method_response(
 
 Type annotations for `boto3.client("apigateway").put_rest_api` method.
 
-[Client.put_rest_api documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_rest_api)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_rest_api]
 
 ```python
 def put_rest_api(
@@ -1758,7 +1763,7 @@ def put_rest_api(
 
 Type annotations for `boto3.client("apigateway").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -1773,7 +1778,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("apigateway").test_invoke_authorizer` method.
 
-[Client.test_invoke_authorizer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.test_invoke_authorizer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.test_invoke_authorizer]
 
 ```python
 def test_invoke_authorizer(
@@ -1794,7 +1799,7 @@ def test_invoke_authorizer(
 
 Type annotations for `boto3.client("apigateway").test_invoke_method` method.
 
-[Client.test_invoke_method documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.test_invoke_method)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.test_invoke_method]
 
 ```python
 def test_invoke_method(
@@ -1816,7 +1821,7 @@ def test_invoke_method(
 
 Type annotations for `boto3.client("apigateway").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -1831,7 +1836,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("apigateway").update_account` method.
 
-[Client.update_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_account]
 
 ```python
 def update_account(
@@ -1845,7 +1850,7 @@ def update_account(
 
 Type annotations for `boto3.client("apigateway").update_api_key` method.
 
-[Client.update_api_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_api_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_api_key]
 
 ```python
 def update_api_key(
@@ -1860,7 +1865,7 @@ def update_api_key(
 
 Type annotations for `boto3.client("apigateway").update_authorizer` method.
 
-[Client.update_authorizer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_authorizer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_authorizer]
 
 ```python
 def update_authorizer(
@@ -1876,7 +1881,7 @@ def update_authorizer(
 
 Type annotations for `boto3.client("apigateway").update_base_path_mapping` method.
 
-[Client.update_base_path_mapping documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_base_path_mapping)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_base_path_mapping]
 
 ```python
 def update_base_path_mapping(
@@ -1892,7 +1897,7 @@ def update_base_path_mapping(
 
 Type annotations for `boto3.client("apigateway").update_client_certificate` method.
 
-[Client.update_client_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_client_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_client_certificate]
 
 ```python
 def update_client_certificate(
@@ -1907,7 +1912,7 @@ def update_client_certificate(
 
 Type annotations for `boto3.client("apigateway").update_deployment` method.
 
-[Client.update_deployment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_deployment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_deployment]
 
 ```python
 def update_deployment(
@@ -1923,7 +1928,7 @@ def update_deployment(
 
 Type annotations for `boto3.client("apigateway").update_documentation_part` method.
 
-[Client.update_documentation_part documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_documentation_part)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_documentation_part]
 
 ```python
 def update_documentation_part(
@@ -1939,7 +1944,7 @@ def update_documentation_part(
 
 Type annotations for `boto3.client("apigateway").update_documentation_version` method.
 
-[Client.update_documentation_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_documentation_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_documentation_version]
 
 ```python
 def update_documentation_version(
@@ -1955,7 +1960,7 @@ def update_documentation_version(
 
 Type annotations for `boto3.client("apigateway").update_domain_name` method.
 
-[Client.update_domain_name documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_domain_name)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_domain_name]
 
 ```python
 def update_domain_name(
@@ -1970,7 +1975,7 @@ def update_domain_name(
 
 Type annotations for `boto3.client("apigateway").update_gateway_response` method.
 
-[Client.update_gateway_response documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_gateway_response)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_gateway_response]
 
 ```python
 def update_gateway_response(
@@ -1986,7 +1991,7 @@ def update_gateway_response(
 
 Type annotations for `boto3.client("apigateway").update_integration` method.
 
-[Client.update_integration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_integration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_integration]
 
 ```python
 def update_integration(
@@ -2003,7 +2008,7 @@ def update_integration(
 
 Type annotations for `boto3.client("apigateway").update_integration_response` method.
 
-[Client.update_integration_response documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_integration_response)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_integration_response]
 
 ```python
 def update_integration_response(
@@ -2021,7 +2026,7 @@ def update_integration_response(
 
 Type annotations for `boto3.client("apigateway").update_method` method.
 
-[Client.update_method documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_method)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_method]
 
 ```python
 def update_method(
@@ -2038,7 +2043,7 @@ def update_method(
 
 Type annotations for `boto3.client("apigateway").update_method_response` method.
 
-[Client.update_method_response documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_method_response)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_method_response]
 
 ```python
 def update_method_response(
@@ -2056,7 +2061,7 @@ def update_method_response(
 
 Type annotations for `boto3.client("apigateway").update_model` method.
 
-[Client.update_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_model]
 
 ```python
 def update_model(
@@ -2072,7 +2077,7 @@ def update_model(
 
 Type annotations for `boto3.client("apigateway").update_request_validator` method.
 
-[Client.update_request_validator documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_request_validator)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_request_validator]
 
 ```python
 def update_request_validator(
@@ -2088,7 +2093,7 @@ def update_request_validator(
 
 Type annotations for `boto3.client("apigateway").update_resource` method.
 
-[Client.update_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_resource]
 
 ```python
 def update_resource(
@@ -2104,7 +2109,7 @@ def update_resource(
 
 Type annotations for `boto3.client("apigateway").update_rest_api` method.
 
-[Client.update_rest_api documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_rest_api)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_rest_api]
 
 ```python
 def update_rest_api(
@@ -2119,7 +2124,7 @@ def update_rest_api(
 
 Type annotations for `boto3.client("apigateway").update_stage` method.
 
-[Client.update_stage documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_stage)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_stage]
 
 ```python
 def update_stage(
@@ -2135,7 +2140,7 @@ def update_stage(
 
 Type annotations for `boto3.client("apigateway").update_usage` method.
 
-[Client.update_usage documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_usage)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_usage]
 
 ```python
 def update_usage(
@@ -2151,7 +2156,7 @@ def update_usage(
 
 Type annotations for `boto3.client("apigateway").update_usage_plan` method.
 
-[Client.update_usage_plan documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_usage_plan)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_usage_plan]
 
 ```python
 def update_usage_plan(
@@ -2166,7 +2171,7 @@ def update_usage_plan(
 
 Type annotations for `boto3.client("apigateway").update_vpc_link` method.
 
-[Client.update_vpc_link documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_vpc_link)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_vpc_link]
 
 ```python
 def update_vpc_link(

@@ -1,11 +1,11 @@
-# Structures for boto3 Inspector module
+# Typed dictionaries for boto3 Inspector module
 
 > [Index](../README.md) > [Inspector](./README.md) > Structures
 
 Auto-generated documentation for [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
 type annotations stubs module [mypy_boto3_inspector](https://pypi.org/project/mypy-boto3-inspector/).
 
-- [Structures for boto3 Inspector module](#structures-for-boto3-inspector-module)
+- [Typed dictionaries for boto3 Inspector module](#typed-dictionaries-for-boto3-inspector-module)
   - [AddAttributesToFindingsResponseTypeDef](#addattributestofindingsresponsetypedef)
   - [AgentFilterTypeDef](#agentfiltertypedef)
   - [AgentPreviewTypeDef](#agentpreviewtypedef)

@@ -29,7 +29,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_appintegrations.client import AppIntegrationsServiceClient
+
+def get_appintegrations_client() -> AppIntegrationsServiceClient:
+    return boto3.client("appintegrations")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client)
 
 ## Exceptions
 
@@ -63,7 +68,7 @@ Exceptions:
 
 Type annotations for `boto3.client("appintegrations").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -77,7 +82,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("appintegrations").create_event_integration` method.
 
-[Client.create_event_integration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.create_event_integration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.create_event_integration]
 
 ```python
 def create_event_integration(
@@ -96,7 +101,7 @@ def create_event_integration(
 
 Type annotations for `boto3.client("appintegrations").delete_event_integration` method.
 
-[Client.delete_event_integration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.delete_event_integration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.delete_event_integration]
 
 ```python
 def delete_event_integration(
@@ -110,7 +115,7 @@ def delete_event_integration(
 
 Type annotations for `boto3.client("appintegrations").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -127,7 +132,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("appintegrations").get_event_integration` method.
 
-[Client.get_event_integration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.get_event_integration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.get_event_integration]
 
 ```python
 def get_event_integration(
@@ -141,7 +146,7 @@ def get_event_integration(
 
 Type annotations for `boto3.client("appintegrations").list_event_integration_associations` method.
 
-[Client.list_event_integration_associations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integration_associations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integration_associations]
 
 ```python
 def list_event_integration_associations(
@@ -157,7 +162,7 @@ def list_event_integration_associations(
 
 Type annotations for `boto3.client("appintegrations").list_event_integrations` method.
 
-[Client.list_event_integrations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integrations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integrations]
 
 ```python
 def list_event_integrations(
@@ -172,7 +177,7 @@ def list_event_integrations(
 
 Type annotations for `boto3.client("appintegrations").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -186,7 +191,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("appintegrations").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -201,7 +206,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("appintegrations").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -216,7 +221,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("appintegrations").update_event_integration` method.
 
-[Client.update_event_integration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.update_event_integration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.update_event_integration]
 
 ```python
 def update_event_integration(

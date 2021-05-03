@@ -17,13 +17,13 @@ Type annotations for `boto3.client("cloudfront").get_waiter("distribution_deploy
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudfront.waiters import DistributionDeployedWaiter
+from mypy_boto3_cloudfront.waiter import DistributionDeployedWaiter
 
 def get_distribution_deployed_waiter() -> DistributionDeployedWaiter:
     return boto3.client("cloudfront").get_waiter("distribution_deployed")
 ```
 
-[Waiter.DistributionDeployed documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.DistributionDeployed)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.distribution_deployed)
 
 ```python
 class DistributionDeployedWaiter(Boto3Waiter):
@@ -41,13 +41,13 @@ Type annotations for `boto3.client("cloudfront").get_waiter("invalidation_comple
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudfront.waiters import InvalidationCompletedWaiter
+from mypy_boto3_cloudfront.waiter import InvalidationCompletedWaiter
 
 def get_invalidation_completed_waiter() -> InvalidationCompletedWaiter:
     return boto3.client("cloudfront").get_waiter("invalidation_completed")
 ```
 
-[Waiter.InvalidationCompleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.InvalidationCompleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.invalidation_completed)
 
 ```python
 class InvalidationCompletedWaiter(Boto3Waiter):
@@ -66,13 +66,13 @@ Type annotations for `boto3.client("cloudfront").get_waiter("streaming_distribut
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudfront.waiters import StreamingDistributionDeployedWaiter
+from mypy_boto3_cloudfront.waiter import StreamingDistributionDeployedWaiter
 
 def get_streaming_distribution_deployed_waiter() -> StreamingDistributionDeployedWaiter:
     return boto3.client("cloudfront").get_waiter("streaming_distribution_deployed")
 ```
 
-[Waiter.StreamingDistributionDeployed documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.StreamingDistributionDeployed)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.streaming_distribution_deployed)
 
 ```python
 class StreamingDistributionDeployedWaiter(Boto3Waiter):

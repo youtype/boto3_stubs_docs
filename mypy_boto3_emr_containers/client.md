@@ -36,7 +36,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_emr_containers.client import EMRContainersClient
+
+def get_emr-containers_client() -> EMRContainersClient:
+    return boto3.client("emr-containers")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client)
 
 ## Exceptions
 
@@ -66,7 +71,7 @@ Exceptions:
 
 Type annotations for `boto3.client("emr-containers").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -80,7 +85,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("emr-containers").cancel_job_run` method.
 
-[Client.cancel_job_run documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.cancel_job_run)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.cancel_job_run]
 
 ```python
 def cancel_job_run(
@@ -95,7 +100,7 @@ def cancel_job_run(
 
 Type annotations for `boto3.client("emr-containers").create_managed_endpoint` method.
 
-[Client.create_managed_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.create_managed_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.create_managed_endpoint]
 
 ```python
 def create_managed_endpoint(
@@ -117,7 +122,7 @@ def create_managed_endpoint(
 
 Type annotations for `boto3.client("emr-containers").create_virtual_cluster` method.
 
-[Client.create_virtual_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.create_virtual_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.create_virtual_cluster]
 
 ```python
 def create_virtual_cluster(
@@ -134,7 +139,7 @@ def create_virtual_cluster(
 
 Type annotations for `boto3.client("emr-containers").delete_managed_endpoint` method.
 
-[Client.delete_managed_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.delete_managed_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.delete_managed_endpoint]
 
 ```python
 def delete_managed_endpoint(
@@ -149,7 +154,7 @@ def delete_managed_endpoint(
 
 Type annotations for `boto3.client("emr-containers").delete_virtual_cluster` method.
 
-[Client.delete_virtual_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.delete_virtual_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.delete_virtual_cluster]
 
 ```python
 def delete_virtual_cluster(
@@ -163,7 +168,7 @@ def delete_virtual_cluster(
 
 Type annotations for `boto3.client("emr-containers").describe_job_run` method.
 
-[Client.describe_job_run documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_job_run)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_job_run]
 
 ```python
 def describe_job_run(
@@ -178,7 +183,7 @@ def describe_job_run(
 
 Type annotations for `boto3.client("emr-containers").describe_managed_endpoint` method.
 
-[Client.describe_managed_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_managed_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_managed_endpoint]
 
 ```python
 def describe_managed_endpoint(
@@ -193,7 +198,7 @@ def describe_managed_endpoint(
 
 Type annotations for `boto3.client("emr-containers").describe_virtual_cluster` method.
 
-[Client.describe_virtual_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_virtual_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_virtual_cluster]
 
 ```python
 def describe_virtual_cluster(
@@ -207,7 +212,7 @@ def describe_virtual_cluster(
 
 Type annotations for `boto3.client("emr-containers").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -224,7 +229,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("emr-containers").list_job_runs` method.
 
-[Client.list_job_runs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_job_runs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_job_runs]
 
 ```python
 def list_job_runs(
@@ -244,7 +249,7 @@ def list_job_runs(
 
 Type annotations for `boto3.client("emr-containers").list_managed_endpoints` method.
 
-[Client.list_managed_endpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_managed_endpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_managed_endpoints]
 
 ```python
 def list_managed_endpoints(
@@ -264,7 +269,7 @@ def list_managed_endpoints(
 
 Type annotations for `boto3.client("emr-containers").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -278,7 +283,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("emr-containers").list_virtual_clusters` method.
 
-[Client.list_virtual_clusters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_virtual_clusters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_virtual_clusters]
 
 ```python
 def list_virtual_clusters(
@@ -298,7 +303,7 @@ def list_virtual_clusters(
 
 Type annotations for `boto3.client("emr-containers").start_job_run` method.
 
-[Client.start_job_run documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.start_job_run)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.start_job_run]
 
 ```python
 def start_job_run(
@@ -319,7 +324,7 @@ def start_job_run(
 
 Type annotations for `boto3.client("emr-containers").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -334,7 +339,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("emr-containers").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.untag_resource]
 
 ```python
 def untag_resource(

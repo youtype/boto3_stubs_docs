@@ -116,7 +116,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_gamelift.client import GameLiftClient
+
+def get_gamelift_client() -> GameLiftClient:
+    return boto3.client("gamelift")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client)
 
 ## Exceptions
 
@@ -158,7 +163,7 @@ Exceptions:
 
 Type annotations for `boto3.client("gamelift").accept_match` method.
 
-[Client.accept_match documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.accept_match)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.accept_match]
 
 ```python
 def accept_match(
@@ -174,7 +179,7 @@ def accept_match(
 
 Type annotations for `boto3.client("gamelift").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -188,7 +193,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("gamelift").claim_game_server` method.
 
-[Client.claim_game_server documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.claim_game_server)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.claim_game_server]
 
 ```python
 def claim_game_server(
@@ -204,7 +209,7 @@ def claim_game_server(
 
 Type annotations for `boto3.client("gamelift").create_alias` method.
 
-[Client.create_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_alias]
 
 ```python
 def create_alias(
@@ -221,7 +226,7 @@ def create_alias(
 
 Type annotations for `boto3.client("gamelift").create_build` method.
 
-[Client.create_build documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_build)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_build]
 
 ```python
 def create_build(
@@ -239,7 +244,7 @@ def create_build(
 
 Type annotations for `boto3.client("gamelift").create_fleet` method.
 
-[Client.create_fleet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_fleet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_fleet]
 
 ```python
 def create_fleet(
@@ -272,7 +277,7 @@ def create_fleet(
 
 Type annotations for `boto3.client("gamelift").create_fleet_locations` method.
 
-[Client.create_fleet_locations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_fleet_locations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_fleet_locations]
 
 ```python
 def create_fleet_locations(
@@ -287,7 +292,7 @@ def create_fleet_locations(
 
 Type annotations for `boto3.client("gamelift").create_game_server_group` method.
 
-[Client.create_game_server_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_server_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_server_group]
 
 ```python
 def create_game_server_group(
@@ -311,7 +316,7 @@ def create_game_server_group(
 
 Type annotations for `boto3.client("gamelift").create_game_session` method.
 
-[Client.create_game_session documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_session)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_session]
 
 ```python
 def create_game_session(
@@ -334,7 +339,7 @@ def create_game_session(
 
 Type annotations for `boto3.client("gamelift").create_game_session_queue` method.
 
-[Client.create_game_session_queue documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_session_queue)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_session_queue]
 
 ```python
 def create_game_session_queue(
@@ -356,7 +361,7 @@ def create_game_session_queue(
 
 Type annotations for `boto3.client("gamelift").create_matchmaking_configuration` method.
 
-[Client.create_matchmaking_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_matchmaking_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_matchmaking_configuration]
 
 ```python
 def create_matchmaking_configuration(
@@ -384,7 +389,7 @@ def create_matchmaking_configuration(
 
 Type annotations for `boto3.client("gamelift").create_matchmaking_rule_set` method.
 
-[Client.create_matchmaking_rule_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_matchmaking_rule_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_matchmaking_rule_set]
 
 ```python
 def create_matchmaking_rule_set(
@@ -400,7 +405,7 @@ def create_matchmaking_rule_set(
 
 Type annotations for `boto3.client("gamelift").create_player_session` method.
 
-[Client.create_player_session documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_player_session)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_player_session]
 
 ```python
 def create_player_session(
@@ -416,7 +421,7 @@ def create_player_session(
 
 Type annotations for `boto3.client("gamelift").create_player_sessions` method.
 
-[Client.create_player_sessions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_player_sessions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_player_sessions]
 
 ```python
 def create_player_sessions(
@@ -432,7 +437,7 @@ def create_player_sessions(
 
 Type annotations for `boto3.client("gamelift").create_script` method.
 
-[Client.create_script documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_script)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_script]
 
 ```python
 def create_script(
@@ -450,7 +455,7 @@ def create_script(
 
 Type annotations for `boto3.client("gamelift").create_vpc_peering_authorization` method.
 
-[Client.create_vpc_peering_authorization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_vpc_peering_authorization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_vpc_peering_authorization]
 
 ```python
 def create_vpc_peering_authorization(
@@ -465,7 +470,7 @@ def create_vpc_peering_authorization(
 
 Type annotations for `boto3.client("gamelift").create_vpc_peering_connection` method.
 
-[Client.create_vpc_peering_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_vpc_peering_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_vpc_peering_connection]
 
 ```python
 def create_vpc_peering_connection(
@@ -481,7 +486,7 @@ def create_vpc_peering_connection(
 
 Type annotations for `boto3.client("gamelift").delete_alias` method.
 
-[Client.delete_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_alias]
 
 ```python
 def delete_alias(
@@ -495,7 +500,7 @@ def delete_alias(
 
 Type annotations for `boto3.client("gamelift").delete_build` method.
 
-[Client.delete_build documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_build)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_build]
 
 ```python
 def delete_build(
@@ -509,7 +514,7 @@ def delete_build(
 
 Type annotations for `boto3.client("gamelift").delete_fleet` method.
 
-[Client.delete_fleet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_fleet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_fleet]
 
 ```python
 def delete_fleet(
@@ -523,7 +528,7 @@ def delete_fleet(
 
 Type annotations for `boto3.client("gamelift").delete_fleet_locations` method.
 
-[Client.delete_fleet_locations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_fleet_locations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_fleet_locations]
 
 ```python
 def delete_fleet_locations(
@@ -538,7 +543,7 @@ def delete_fleet_locations(
 
 Type annotations for `boto3.client("gamelift").delete_game_server_group` method.
 
-[Client.delete_game_server_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_game_server_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_game_server_group]
 
 ```python
 def delete_game_server_group(
@@ -553,7 +558,7 @@ def delete_game_server_group(
 
 Type annotations for `boto3.client("gamelift").delete_game_session_queue` method.
 
-[Client.delete_game_session_queue documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_game_session_queue)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_game_session_queue]
 
 ```python
 def delete_game_session_queue(
@@ -567,7 +572,7 @@ def delete_game_session_queue(
 
 Type annotations for `boto3.client("gamelift").delete_matchmaking_configuration` method.
 
-[Client.delete_matchmaking_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_matchmaking_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_matchmaking_configuration]
 
 ```python
 def delete_matchmaking_configuration(
@@ -581,7 +586,7 @@ def delete_matchmaking_configuration(
 
 Type annotations for `boto3.client("gamelift").delete_matchmaking_rule_set` method.
 
-[Client.delete_matchmaking_rule_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_matchmaking_rule_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_matchmaking_rule_set]
 
 ```python
 def delete_matchmaking_rule_set(
@@ -595,7 +600,7 @@ def delete_matchmaking_rule_set(
 
 Type annotations for `boto3.client("gamelift").delete_scaling_policy` method.
 
-[Client.delete_scaling_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_scaling_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_scaling_policy]
 
 ```python
 def delete_scaling_policy(
@@ -610,7 +615,7 @@ def delete_scaling_policy(
 
 Type annotations for `boto3.client("gamelift").delete_script` method.
 
-[Client.delete_script documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_script)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_script]
 
 ```python
 def delete_script(
@@ -624,7 +629,7 @@ def delete_script(
 
 Type annotations for `boto3.client("gamelift").delete_vpc_peering_authorization` method.
 
-[Client.delete_vpc_peering_authorization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_vpc_peering_authorization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_vpc_peering_authorization]
 
 ```python
 def delete_vpc_peering_authorization(
@@ -639,7 +644,7 @@ def delete_vpc_peering_authorization(
 
 Type annotations for `boto3.client("gamelift").delete_vpc_peering_connection` method.
 
-[Client.delete_vpc_peering_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_vpc_peering_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_vpc_peering_connection]
 
 ```python
 def delete_vpc_peering_connection(
@@ -654,7 +659,7 @@ def delete_vpc_peering_connection(
 
 Type annotations for `boto3.client("gamelift").deregister_game_server` method.
 
-[Client.deregister_game_server documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.deregister_game_server)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.deregister_game_server]
 
 ```python
 def deregister_game_server(
@@ -669,7 +674,7 @@ def deregister_game_server(
 
 Type annotations for `boto3.client("gamelift").describe_alias` method.
 
-[Client.describe_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_alias]
 
 ```python
 def describe_alias(
@@ -683,7 +688,7 @@ def describe_alias(
 
 Type annotations for `boto3.client("gamelift").describe_build` method.
 
-[Client.describe_build documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_build)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_build]
 
 ```python
 def describe_build(
@@ -697,7 +702,7 @@ def describe_build(
 
 Type annotations for `boto3.client("gamelift").describe_ec2_instance_limits` method.
 
-[Client.describe_ec2_instance_limits documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_ec2_instance_limits)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_ec2_instance_limits]
 
 ```python
 def describe_ec2_instance_limits(
@@ -712,7 +717,7 @@ def describe_ec2_instance_limits(
 
 Type annotations for `boto3.client("gamelift").describe_fleet_attributes` method.
 
-[Client.describe_fleet_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_attributes]
 
 ```python
 def describe_fleet_attributes(
@@ -728,7 +733,7 @@ def describe_fleet_attributes(
 
 Type annotations for `boto3.client("gamelift").describe_fleet_capacity` method.
 
-[Client.describe_fleet_capacity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_capacity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_capacity]
 
 ```python
 def describe_fleet_capacity(
@@ -744,7 +749,7 @@ def describe_fleet_capacity(
 
 Type annotations for `boto3.client("gamelift").describe_fleet_events` method.
 
-[Client.describe_fleet_events documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_events)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_events]
 
 ```python
 def describe_fleet_events(
@@ -762,7 +767,7 @@ def describe_fleet_events(
 
 Type annotations for `boto3.client("gamelift").describe_fleet_location_attributes` method.
 
-[Client.describe_fleet_location_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_attributes]
 
 ```python
 def describe_fleet_location_attributes(
@@ -779,7 +784,7 @@ def describe_fleet_location_attributes(
 
 Type annotations for `boto3.client("gamelift").describe_fleet_location_capacity` method.
 
-[Client.describe_fleet_location_capacity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_capacity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_capacity]
 
 ```python
 def describe_fleet_location_capacity(
@@ -794,7 +799,7 @@ def describe_fleet_location_capacity(
 
 Type annotations for `boto3.client("gamelift").describe_fleet_location_utilization` method.
 
-[Client.describe_fleet_location_utilization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_utilization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_utilization]
 
 ```python
 def describe_fleet_location_utilization(
@@ -809,7 +814,7 @@ def describe_fleet_location_utilization(
 
 Type annotations for `boto3.client("gamelift").describe_fleet_port_settings` method.
 
-[Client.describe_fleet_port_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_port_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_port_settings]
 
 ```python
 def describe_fleet_port_settings(
@@ -824,7 +829,7 @@ def describe_fleet_port_settings(
 
 Type annotations for `boto3.client("gamelift").describe_fleet_utilization` method.
 
-[Client.describe_fleet_utilization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_utilization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_utilization]
 
 ```python
 def describe_fleet_utilization(
@@ -840,7 +845,7 @@ def describe_fleet_utilization(
 
 Type annotations for `boto3.client("gamelift").describe_game_server` method.
 
-[Client.describe_game_server documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server]
 
 ```python
 def describe_game_server(
@@ -855,7 +860,7 @@ def describe_game_server(
 
 Type annotations for `boto3.client("gamelift").describe_game_server_group` method.
 
-[Client.describe_game_server_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server_group]
 
 ```python
 def describe_game_server_group(
@@ -869,7 +874,7 @@ def describe_game_server_group(
 
 Type annotations for `boto3.client("gamelift").describe_game_server_instances` method.
 
-[Client.describe_game_server_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server_instances]
 
 ```python
 def describe_game_server_instances(
@@ -886,7 +891,7 @@ def describe_game_server_instances(
 
 Type annotations for `boto3.client("gamelift").describe_game_session_details` method.
 
-[Client.describe_game_session_details documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_details)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_details]
 
 ```python
 def describe_game_session_details(
@@ -906,7 +911,7 @@ def describe_game_session_details(
 
 Type annotations for `boto3.client("gamelift").describe_game_session_placement` method.
 
-[Client.describe_game_session_placement documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_placement)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_placement]
 
 ```python
 def describe_game_session_placement(
@@ -920,7 +925,7 @@ def describe_game_session_placement(
 
 Type annotations for `boto3.client("gamelift").describe_game_session_queues` method.
 
-[Client.describe_game_session_queues documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_queues)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_queues]
 
 ```python
 def describe_game_session_queues(
@@ -936,7 +941,7 @@ def describe_game_session_queues(
 
 Type annotations for `boto3.client("gamelift").describe_game_sessions` method.
 
-[Client.describe_game_sessions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_sessions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_sessions]
 
 ```python
 def describe_game_sessions(
@@ -956,7 +961,7 @@ def describe_game_sessions(
 
 Type annotations for `boto3.client("gamelift").describe_instances` method.
 
-[Client.describe_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_instances]
 
 ```python
 def describe_instances(
@@ -974,7 +979,7 @@ def describe_instances(
 
 Type annotations for `boto3.client("gamelift").describe_matchmaking` method.
 
-[Client.describe_matchmaking documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking]
 
 ```python
 def describe_matchmaking(
@@ -988,7 +993,7 @@ def describe_matchmaking(
 
 Type annotations for `boto3.client("gamelift").describe_matchmaking_configurations` method.
 
-[Client.describe_matchmaking_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking_configurations]
 
 ```python
 def describe_matchmaking_configurations(
@@ -1005,7 +1010,7 @@ def describe_matchmaking_configurations(
 
 Type annotations for `boto3.client("gamelift").describe_matchmaking_rule_sets` method.
 
-[Client.describe_matchmaking_rule_sets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking_rule_sets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking_rule_sets]
 
 ```python
 def describe_matchmaking_rule_sets(
@@ -1021,7 +1026,7 @@ def describe_matchmaking_rule_sets(
 
 Type annotations for `boto3.client("gamelift").describe_player_sessions` method.
 
-[Client.describe_player_sessions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_player_sessions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_player_sessions]
 
 ```python
 def describe_player_sessions(
@@ -1040,7 +1045,7 @@ def describe_player_sessions(
 
 Type annotations for `boto3.client("gamelift").describe_runtime_configuration` method.
 
-[Client.describe_runtime_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_runtime_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_runtime_configuration]
 
 ```python
 def describe_runtime_configuration(
@@ -1054,7 +1059,7 @@ def describe_runtime_configuration(
 
 Type annotations for `boto3.client("gamelift").describe_scaling_policies` method.
 
-[Client.describe_scaling_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_scaling_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_scaling_policies]
 
 ```python
 def describe_scaling_policies(
@@ -1072,7 +1077,7 @@ def describe_scaling_policies(
 
 Type annotations for `boto3.client("gamelift").describe_script` method.
 
-[Client.describe_script documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_script)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_script]
 
 ```python
 def describe_script(
@@ -1086,7 +1091,7 @@ def describe_script(
 
 Type annotations for `boto3.client("gamelift").describe_vpc_peering_authorizations` method.
 
-[Client.describe_vpc_peering_authorizations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_vpc_peering_authorizations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_vpc_peering_authorizations]
 
 ```python
 def describe_vpc_peering_authorizations(
@@ -1099,7 +1104,7 @@ def describe_vpc_peering_authorizations(
 
 Type annotations for `boto3.client("gamelift").describe_vpc_peering_connections` method.
 
-[Client.describe_vpc_peering_connections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_vpc_peering_connections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_vpc_peering_connections]
 
 ```python
 def describe_vpc_peering_connections(
@@ -1113,7 +1118,7 @@ def describe_vpc_peering_connections(
 
 Type annotations for `boto3.client("gamelift").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -1130,7 +1135,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("gamelift").get_game_session_log_url` method.
 
-[Client.get_game_session_log_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.get_game_session_log_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.get_game_session_log_url]
 
 ```python
 def get_game_session_log_url(
@@ -1144,7 +1149,7 @@ def get_game_session_log_url(
 
 Type annotations for `boto3.client("gamelift").get_instance_access` method.
 
-[Client.get_instance_access documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.get_instance_access)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.get_instance_access]
 
 ```python
 def get_instance_access(
@@ -1159,7 +1164,7 @@ def get_instance_access(
 
 Type annotations for `boto3.client("gamelift").list_aliases` method.
 
-[Client.list_aliases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_aliases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_aliases]
 
 ```python
 def list_aliases(
@@ -1176,7 +1181,7 @@ def list_aliases(
 
 Type annotations for `boto3.client("gamelift").list_builds` method.
 
-[Client.list_builds documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_builds)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_builds]
 
 ```python
 def list_builds(
@@ -1192,7 +1197,7 @@ def list_builds(
 
 Type annotations for `boto3.client("gamelift").list_fleets` method.
 
-[Client.list_fleets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_fleets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_fleets]
 
 ```python
 def list_fleets(
@@ -1209,7 +1214,7 @@ def list_fleets(
 
 Type annotations for `boto3.client("gamelift").list_game_server_groups` method.
 
-[Client.list_game_server_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_game_server_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_game_server_groups]
 
 ```python
 def list_game_server_groups(
@@ -1224,7 +1229,7 @@ def list_game_server_groups(
 
 Type annotations for `boto3.client("gamelift").list_game_servers` method.
 
-[Client.list_game_servers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_game_servers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_game_servers]
 
 ```python
 def list_game_servers(
@@ -1241,7 +1246,7 @@ def list_game_servers(
 
 Type annotations for `boto3.client("gamelift").list_scripts` method.
 
-[Client.list_scripts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_scripts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_scripts]
 
 ```python
 def list_scripts(
@@ -1256,7 +1261,7 @@ def list_scripts(
 
 Type annotations for `boto3.client("gamelift").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -1270,7 +1275,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("gamelift").put_scaling_policy` method.
 
-[Client.put_scaling_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.put_scaling_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.put_scaling_policy]
 
 ```python
 def put_scaling_policy(
@@ -1293,7 +1298,7 @@ def put_scaling_policy(
 
 Type annotations for `boto3.client("gamelift").register_game_server` method.
 
-[Client.register_game_server documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.register_game_server)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.register_game_server]
 
 ```python
 def register_game_server(
@@ -1311,7 +1316,7 @@ def register_game_server(
 
 Type annotations for `boto3.client("gamelift").request_upload_credentials` method.
 
-[Client.request_upload_credentials documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.request_upload_credentials)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.request_upload_credentials]
 
 ```python
 def request_upload_credentials(
@@ -1325,7 +1330,7 @@ def request_upload_credentials(
 
 Type annotations for `boto3.client("gamelift").resolve_alias` method.
 
-[Client.resolve_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.resolve_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.resolve_alias]
 
 ```python
 def resolve_alias(
@@ -1339,7 +1344,7 @@ def resolve_alias(
 
 Type annotations for `boto3.client("gamelift").resume_game_server_group` method.
 
-[Client.resume_game_server_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.resume_game_server_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.resume_game_server_group]
 
 ```python
 def resume_game_server_group(
@@ -1354,7 +1359,7 @@ def resume_game_server_group(
 
 Type annotations for `boto3.client("gamelift").search_game_sessions` method.
 
-[Client.search_game_sessions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.search_game_sessions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.search_game_sessions]
 
 ```python
 def search_game_sessions(
@@ -1374,7 +1379,7 @@ def search_game_sessions(
 
 Type annotations for `boto3.client("gamelift").start_fleet_actions` method.
 
-[Client.start_fleet_actions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_fleet_actions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_fleet_actions]
 
 ```python
 def start_fleet_actions(
@@ -1390,7 +1395,7 @@ def start_fleet_actions(
 
 Type annotations for `boto3.client("gamelift").start_game_session_placement` method.
 
-[Client.start_game_session_placement documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_game_session_placement)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_game_session_placement]
 
 ```python
 def start_game_session_placement(
@@ -1411,7 +1416,7 @@ def start_game_session_placement(
 
 Type annotations for `boto3.client("gamelift").start_match_backfill` method.
 
-[Client.start_match_backfill documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_match_backfill)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_match_backfill]
 
 ```python
 def start_match_backfill(
@@ -1428,7 +1433,7 @@ def start_match_backfill(
 
 Type annotations for `boto3.client("gamelift").start_matchmaking` method.
 
-[Client.start_matchmaking documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_matchmaking)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_matchmaking]
 
 ```python
 def start_matchmaking(
@@ -1444,7 +1449,7 @@ def start_matchmaking(
 
 Type annotations for `boto3.client("gamelift").stop_fleet_actions` method.
 
-[Client.stop_fleet_actions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_fleet_actions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_fleet_actions]
 
 ```python
 def stop_fleet_actions(
@@ -1460,7 +1465,7 @@ def stop_fleet_actions(
 
 Type annotations for `boto3.client("gamelift").stop_game_session_placement` method.
 
-[Client.stop_game_session_placement documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_game_session_placement)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_game_session_placement]
 
 ```python
 def stop_game_session_placement(
@@ -1474,7 +1479,7 @@ def stop_game_session_placement(
 
 Type annotations for `boto3.client("gamelift").stop_matchmaking` method.
 
-[Client.stop_matchmaking documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_matchmaking)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_matchmaking]
 
 ```python
 def stop_matchmaking(
@@ -1488,7 +1493,7 @@ def stop_matchmaking(
 
 Type annotations for `boto3.client("gamelift").suspend_game_server_group` method.
 
-[Client.suspend_game_server_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.suspend_game_server_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.suspend_game_server_group]
 
 ```python
 def suspend_game_server_group(
@@ -1503,7 +1508,7 @@ def suspend_game_server_group(
 
 Type annotations for `boto3.client("gamelift").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -1518,7 +1523,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("gamelift").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -1533,7 +1538,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("gamelift").update_alias` method.
 
-[Client.update_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_alias]
 
 ```python
 def update_alias(
@@ -1550,7 +1555,7 @@ def update_alias(
 
 Type annotations for `boto3.client("gamelift").update_build` method.
 
-[Client.update_build documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_build)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_build]
 
 ```python
 def update_build(
@@ -1566,7 +1571,7 @@ def update_build(
 
 Type annotations for `boto3.client("gamelift").update_fleet_attributes` method.
 
-[Client.update_fleet_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_attributes]
 
 ```python
 def update_fleet_attributes(
@@ -1585,7 +1590,7 @@ def update_fleet_attributes(
 
 Type annotations for `boto3.client("gamelift").update_fleet_capacity` method.
 
-[Client.update_fleet_capacity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_capacity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_capacity]
 
 ```python
 def update_fleet_capacity(
@@ -1603,7 +1608,7 @@ def update_fleet_capacity(
 
 Type annotations for `boto3.client("gamelift").update_fleet_port_settings` method.
 
-[Client.update_fleet_port_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_port_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_port_settings]
 
 ```python
 def update_fleet_port_settings(
@@ -1619,7 +1624,7 @@ def update_fleet_port_settings(
 
 Type annotations for `boto3.client("gamelift").update_game_server` method.
 
-[Client.update_game_server documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_server)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_server]
 
 ```python
 def update_game_server(
@@ -1637,7 +1642,7 @@ def update_game_server(
 
 Type annotations for `boto3.client("gamelift").update_game_server_group` method.
 
-[Client.update_game_server_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_server_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_server_group]
 
 ```python
 def update_game_server_group(
@@ -1655,7 +1660,7 @@ def update_game_server_group(
 
 Type annotations for `boto3.client("gamelift").update_game_session` method.
 
-[Client.update_game_session documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_session)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_session]
 
 ```python
 def update_game_session(
@@ -1673,7 +1678,7 @@ def update_game_session(
 
 Type annotations for `boto3.client("gamelift").update_game_session_queue` method.
 
-[Client.update_game_session_queue documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_session_queue)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_session_queue]
 
 ```python
 def update_game_session_queue(
@@ -1694,7 +1699,7 @@ def update_game_session_queue(
 
 Type annotations for `boto3.client("gamelift").update_matchmaking_configuration` method.
 
-[Client.update_matchmaking_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_matchmaking_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_matchmaking_configuration]
 
 ```python
 def update_matchmaking_configuration(
@@ -1721,7 +1726,7 @@ def update_matchmaking_configuration(
 
 Type annotations for `boto3.client("gamelift").update_runtime_configuration` method.
 
-[Client.update_runtime_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_runtime_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_runtime_configuration]
 
 ```python
 def update_runtime_configuration(
@@ -1736,7 +1741,7 @@ def update_runtime_configuration(
 
 Type annotations for `boto3.client("gamelift").update_script` method.
 
-[Client.update_script documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_script)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_script]
 
 ```python
 def update_script(
@@ -1754,7 +1759,7 @@ def update_script(
 
 Type annotations for `boto3.client("gamelift").validate_matchmaking_rule_set` method.
 
-[Client.validate_matchmaking_rule_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.validate_matchmaking_rule_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.validate_matchmaking_rule_set]
 
 ```python
 def validate_matchmaking_rule_set(

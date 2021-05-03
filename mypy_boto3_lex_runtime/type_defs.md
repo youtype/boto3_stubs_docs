@@ -1,11 +1,11 @@
-# Structures for boto3 LexRuntimeService module
+# Typed dictionaries for boto3 LexRuntimeService module
 
 > [Index](../README.md) > [LexRuntimeService](./README.md) > Structures
 
 Auto-generated documentation for [LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService)
 type annotations stubs module [mypy_boto3_lex_runtime](https://pypi.org/project/mypy-boto3-lex-runtime/).
 
-- [Structures for boto3 LexRuntimeService module](#structures-for-boto3-lexruntimeservice-module)
+- [Typed dictionaries for boto3 LexRuntimeService module](#typed-dictionaries-for-boto3-lexruntimeservice-module)
   - [ActiveContextTimeToLiveTypeDef](#activecontexttimetolivetypedef)
   - [ActiveContextTypeDef](#activecontexttypedef)
   - [ButtonTypeDef](#buttontypedef)

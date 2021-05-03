@@ -15,13 +15,13 @@ Type annotations for `boto3.client("transfer").get_paginator("list_servers")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_transfer.paginators import ListServersPaginator
+from mypy_boto3_transfer.paginator import ListServersPaginator
 
 def get_list_servers_paginator() -> ListServersPaginator:
     return boto3.client("transfer").get_paginator("list_servers")
 ```
 
-[Paginator.ListServers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Paginator.ListServers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Paginator.ListServers)
 
 ```python
 class ListServersPaginator(Boto3Paginator):

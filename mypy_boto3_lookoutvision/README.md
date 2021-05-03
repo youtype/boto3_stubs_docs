@@ -15,7 +15,7 @@ pip install mypy-boto3-lookoutvision
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## LookoutforVisionClient
 
@@ -113,7 +113,7 @@ from mypy_boto3_lookoutvision.literals import DatasetStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

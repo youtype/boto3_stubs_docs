@@ -1,11 +1,11 @@
-# Structures for boto3 SESV2 module
+# Typed dictionaries for boto3 SESV2 module
 
 > [Index](../README.md) > [SESV2](./README.md) > Structures
 
 Auto-generated documentation for [SESV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2)
 type annotations stubs module [mypy_boto3_sesv2](https://pypi.org/project/mypy-boto3-sesv2/).
 
-- [Structures for boto3 SESV2 module](#structures-for-boto3-sesv2-module)
+- [Typed dictionaries for boto3 SESV2 module](#typed-dictionaries-for-boto3-sesv2-module)
   - [AccountDetailsTypeDef](#accountdetailstypedef)
   - [BlacklistEntryTypeDef](#blacklistentrytypedef)
   - [BodyTypeDef](#bodytypedef)

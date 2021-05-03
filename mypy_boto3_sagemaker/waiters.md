@@ -22,13 +22,13 @@ Type annotations for `boto3.client("sagemaker").get_waiter("endpoint_deleted")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.waiters import EndpointDeletedWaiter
+from mypy_boto3_sagemaker.waiter import EndpointDeletedWaiter
 
 def get_endpoint_deleted_waiter() -> EndpointDeletedWaiter:
     return boto3.client("sagemaker").get_waiter("endpoint_deleted")
 ```
 
-[Waiter.EndpointDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.EndpointDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.endpoint_deleted)
 
 ```python
 class EndpointDeletedWaiter(Boto3Waiter):
@@ -46,13 +46,13 @@ Type annotations for `boto3.client("sagemaker").get_waiter("endpoint_in_service"
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.waiters import EndpointInServiceWaiter
+from mypy_boto3_sagemaker.waiter import EndpointInServiceWaiter
 
 def get_endpoint_in_service_waiter() -> EndpointInServiceWaiter:
     return boto3.client("sagemaker").get_waiter("endpoint_in_service")
 ```
 
-[Waiter.EndpointInService documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.EndpointInService)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.endpoint_in_service)
 
 ```python
 class EndpointInServiceWaiter(Boto3Waiter):
@@ -70,13 +70,13 @@ Type annotations for `boto3.client("sagemaker").get_waiter("notebook_instance_de
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.waiters import NotebookInstanceDeletedWaiter
+from mypy_boto3_sagemaker.waiter import NotebookInstanceDeletedWaiter
 
 def get_notebook_instance_deleted_waiter() -> NotebookInstanceDeletedWaiter:
     return boto3.client("sagemaker").get_waiter("notebook_instance_deleted")
 ```
 
-[Waiter.NotebookInstanceDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.NotebookInstanceDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.notebook_instance_deleted)
 
 ```python
 class NotebookInstanceDeletedWaiter(Boto3Waiter):
@@ -94,13 +94,13 @@ Type annotations for `boto3.client("sagemaker").get_waiter("notebook_instance_in
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.waiters import NotebookInstanceInServiceWaiter
+from mypy_boto3_sagemaker.waiter import NotebookInstanceInServiceWaiter
 
 def get_notebook_instance_in_service_waiter() -> NotebookInstanceInServiceWaiter:
     return boto3.client("sagemaker").get_waiter("notebook_instance_in_service")
 ```
 
-[Waiter.NotebookInstanceInService documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.NotebookInstanceInService)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.notebook_instance_in_service)
 
 ```python
 class NotebookInstanceInServiceWaiter(Boto3Waiter):
@@ -118,13 +118,13 @@ Type annotations for `boto3.client("sagemaker").get_waiter("notebook_instance_st
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.waiters import NotebookInstanceStoppedWaiter
+from mypy_boto3_sagemaker.waiter import NotebookInstanceStoppedWaiter
 
 def get_notebook_instance_stopped_waiter() -> NotebookInstanceStoppedWaiter:
     return boto3.client("sagemaker").get_waiter("notebook_instance_stopped")
 ```
 
-[Waiter.NotebookInstanceStopped documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.NotebookInstanceStopped)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.notebook_instance_stopped)
 
 ```python
 class NotebookInstanceStoppedWaiter(Boto3Waiter):
@@ -142,13 +142,13 @@ Type annotations for `boto3.client("sagemaker").get_waiter("processing_job_compl
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.waiters import ProcessingJobCompletedOrStoppedWaiter
+from mypy_boto3_sagemaker.waiter import ProcessingJobCompletedOrStoppedWaiter
 
 def get_processing_job_completed_or_stopped_waiter() -> ProcessingJobCompletedOrStoppedWaiter:
     return boto3.client("sagemaker").get_waiter("processing_job_completed_or_stopped")
 ```
 
-[Waiter.ProcessingJobCompletedOrStopped documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.ProcessingJobCompletedOrStopped)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.processing_job_completed_or_stopped)
 
 ```python
 class ProcessingJobCompletedOrStoppedWaiter(Boto3Waiter):
@@ -166,13 +166,13 @@ Type annotations for `boto3.client("sagemaker").get_waiter("training_job_complet
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.waiters import TrainingJobCompletedOrStoppedWaiter
+from mypy_boto3_sagemaker.waiter import TrainingJobCompletedOrStoppedWaiter
 
 def get_training_job_completed_or_stopped_waiter() -> TrainingJobCompletedOrStoppedWaiter:
     return boto3.client("sagemaker").get_waiter("training_job_completed_or_stopped")
 ```
 
-[Waiter.TrainingJobCompletedOrStopped documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.TrainingJobCompletedOrStopped)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.training_job_completed_or_stopped)
 
 ```python
 class TrainingJobCompletedOrStoppedWaiter(Boto3Waiter):
@@ -190,13 +190,13 @@ Type annotations for `boto3.client("sagemaker").get_waiter("transform_job_comple
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.waiters import TransformJobCompletedOrStoppedWaiter
+from mypy_boto3_sagemaker.waiter import TransformJobCompletedOrStoppedWaiter
 
 def get_transform_job_completed_or_stopped_waiter() -> TransformJobCompletedOrStoppedWaiter:
     return boto3.client("sagemaker").get_waiter("transform_job_completed_or_stopped")
 ```
 
-[Waiter.TransformJobCompletedOrStopped documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.TransformJobCompletedOrStopped)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.transform_job_completed_or_stopped)
 
 ```python
 class TransformJobCompletedOrStoppedWaiter(Boto3Waiter):

@@ -29,7 +29,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_resourcegroupstaggingapi.client import ResourceGroupsTaggingAPIClient
+
+def get_resourcegroupstaggingapi_client() -> ResourceGroupsTaggingAPIClient:
+    return boto3.client("resourcegroupstaggingapi")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client)
 
 ## Exceptions
 
@@ -62,7 +67,7 @@ Exceptions:
 
 Type annotations for `boto3.client("resourcegroupstaggingapi").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -76,7 +81,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("resourcegroupstaggingapi").describe_report_creation` method.
 
-[Client.describe_report_creation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.describe_report_creation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.describe_report_creation]
 
 ```python
 def describe_report_creation(
@@ -89,7 +94,7 @@ def describe_report_creation(
 
 Type annotations for `boto3.client("resourcegroupstaggingapi").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -106,7 +111,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("resourcegroupstaggingapi").get_compliance_summary` method.
 
-[Client.get_compliance_summary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_compliance_summary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_compliance_summary]
 
 ```python
 def get_compliance_summary(
@@ -126,7 +131,7 @@ def get_compliance_summary(
 
 Type annotations for `boto3.client("resourcegroupstaggingapi").get_resources` method.
 
-[Client.get_resources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_resources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_resources]
 
 ```python
 def get_resources(
@@ -147,7 +152,7 @@ def get_resources(
 
 Type annotations for `boto3.client("resourcegroupstaggingapi").get_tag_keys` method.
 
-[Client.get_tag_keys documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_keys)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_keys]
 
 ```python
 def get_tag_keys(
@@ -161,7 +166,7 @@ def get_tag_keys(
 
 Type annotations for `boto3.client("resourcegroupstaggingapi").get_tag_values` method.
 
-[Client.get_tag_values documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_values)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_values]
 
 ```python
 def get_tag_values(
@@ -176,7 +181,7 @@ def get_tag_values(
 
 Type annotations for `boto3.client("resourcegroupstaggingapi").start_report_creation` method.
 
-[Client.start_report_creation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.start_report_creation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.start_report_creation]
 
 ```python
 def start_report_creation(
@@ -190,7 +195,7 @@ def start_report_creation(
 
 Type annotations for `boto3.client("resourcegroupstaggingapi").tag_resources` method.
 
-[Client.tag_resources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.tag_resources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.tag_resources]
 
 ```python
 def tag_resources(
@@ -205,7 +210,7 @@ def tag_resources(
 
 Type annotations for `boto3.client("resourcegroupstaggingapi").untag_resources` method.
 
-[Client.untag_resources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.untag_resources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.untag_resources]
 
 ```python
 def untag_resources(

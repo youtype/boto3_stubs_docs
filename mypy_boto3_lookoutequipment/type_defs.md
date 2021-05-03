@@ -1,11 +1,11 @@
-# Structures for boto3 LookoutEquipment module
+# Typed dictionaries for boto3 LookoutEquipment module
 
 > [Index](../README.md) > [LookoutEquipment](./README.md) > Structures
 
 Auto-generated documentation for [LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
 type annotations stubs module [mypy_boto3_lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
 
-- [Structures for boto3 LookoutEquipment module](#structures-for-boto3-lookoutequipment-module)
+- [Typed dictionaries for boto3 LookoutEquipment module](#typed-dictionaries-for-boto3-lookoutequipment-module)
   - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
   - [CreateInferenceSchedulerResponseTypeDef](#createinferenceschedulerresponsetypedef)
   - [CreateModelResponseTypeDef](#createmodelresponsetypedef)

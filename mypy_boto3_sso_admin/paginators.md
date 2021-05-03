@@ -24,13 +24,13 @@ Type annotations for `boto3.client("sso-admin").get_paginator("list_account_assi
 Can be used directly:
 
 ```python
-from mypy_boto3_sso_admin.paginators import ListAccountAssignmentCreationStatusPaginator
+from mypy_boto3_sso_admin.paginator import ListAccountAssignmentCreationStatusPaginator
 
 def get_list_account_assignment_creation_status_paginator() -> ListAccountAssignmentCreationStatusPaginator:
     return boto3.client("sso-admin").get_paginator("list_account_assignment_creation_status")
 ```
 
-[Paginator.ListAccountAssignmentCreationStatus documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountAssignmentCreationStatus)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountAssignmentCreationStatus)
 
 ```python
 class ListAccountAssignmentCreationStatusPaginator(Boto3Paginator):
@@ -49,13 +49,13 @@ Type annotations for `boto3.client("sso-admin").get_paginator("list_account_assi
 Can be used directly:
 
 ```python
-from mypy_boto3_sso_admin.paginators import ListAccountAssignmentDeletionStatusPaginator
+from mypy_boto3_sso_admin.paginator import ListAccountAssignmentDeletionStatusPaginator
 
 def get_list_account_assignment_deletion_status_paginator() -> ListAccountAssignmentDeletionStatusPaginator:
     return boto3.client("sso-admin").get_paginator("list_account_assignment_deletion_status")
 ```
 
-[Paginator.ListAccountAssignmentDeletionStatus documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountAssignmentDeletionStatus)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountAssignmentDeletionStatus)
 
 ```python
 class ListAccountAssignmentDeletionStatusPaginator(Boto3Paginator):
@@ -74,13 +74,13 @@ Type annotations for `boto3.client("sso-admin").get_paginator("list_account_assi
 Can be used directly:
 
 ```python
-from mypy_boto3_sso_admin.paginators import ListAccountAssignmentsPaginator
+from mypy_boto3_sso_admin.paginator import ListAccountAssignmentsPaginator
 
 def get_list_account_assignments_paginator() -> ListAccountAssignmentsPaginator:
     return boto3.client("sso-admin").get_paginator("list_account_assignments")
 ```
 
-[Paginator.ListAccountAssignments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountAssignments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountAssignments)
 
 ```python
 class ListAccountAssignmentsPaginator(Boto3Paginator):
@@ -100,13 +100,13 @@ Type annotations for `boto3.client("sso-admin").get_paginator("list_accounts_for
 Can be used directly:
 
 ```python
-from mypy_boto3_sso_admin.paginators import ListAccountsForProvisionedPermissionSetPaginator
+from mypy_boto3_sso_admin.paginator import ListAccountsForProvisionedPermissionSetPaginator
 
 def get_list_accounts_for_provisioned_permission_set_paginator() -> ListAccountsForProvisionedPermissionSetPaginator:
     return boto3.client("sso-admin").get_paginator("list_accounts_for_provisioned_permission_set")
 ```
 
-[Paginator.ListAccountsForProvisionedPermissionSet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountsForProvisionedPermissionSet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountsForProvisionedPermissionSet)
 
 ```python
 class ListAccountsForProvisionedPermissionSetPaginator(Boto3Paginator):
@@ -126,13 +126,13 @@ Type annotations for `boto3.client("sso-admin").get_paginator("list_instances")`
 Can be used directly:
 
 ```python
-from mypy_boto3_sso_admin.paginators import ListInstancesPaginator
+from mypy_boto3_sso_admin.paginator import ListInstancesPaginator
 
 def get_list_instances_paginator() -> ListInstancesPaginator:
     return boto3.client("sso-admin").get_paginator("list_instances")
 ```
 
-[Paginator.ListInstances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListInstances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListInstances)
 
 ```python
 class ListInstancesPaginator(Boto3Paginator):
@@ -149,13 +149,13 @@ Type annotations for `boto3.client("sso-admin").get_paginator("list_managed_poli
 Can be used directly:
 
 ```python
-from mypy_boto3_sso_admin.paginators import ListManagedPoliciesInPermissionSetPaginator
+from mypy_boto3_sso_admin.paginator import ListManagedPoliciesInPermissionSetPaginator
 
 def get_list_managed_policies_in_permission_set_paginator() -> ListManagedPoliciesInPermissionSetPaginator:
     return boto3.client("sso-admin").get_paginator("list_managed_policies_in_permission_set")
 ```
 
-[Paginator.ListManagedPoliciesInPermissionSet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListManagedPoliciesInPermissionSet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListManagedPoliciesInPermissionSet)
 
 ```python
 class ListManagedPoliciesInPermissionSetPaginator(Boto3Paginator):
@@ -174,13 +174,13 @@ Type annotations for `boto3.client("sso-admin").get_paginator("list_permission_s
 Can be used directly:
 
 ```python
-from mypy_boto3_sso_admin.paginators import ListPermissionSetProvisioningStatusPaginator
+from mypy_boto3_sso_admin.paginator import ListPermissionSetProvisioningStatusPaginator
 
 def get_list_permission_set_provisioning_status_paginator() -> ListPermissionSetProvisioningStatusPaginator:
     return boto3.client("sso-admin").get_paginator("list_permission_set_provisioning_status")
 ```
 
-[Paginator.ListPermissionSetProvisioningStatus documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListPermissionSetProvisioningStatus)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListPermissionSetProvisioningStatus)
 
 ```python
 class ListPermissionSetProvisioningStatusPaginator(Boto3Paginator):
@@ -199,13 +199,13 @@ Type annotations for `boto3.client("sso-admin").get_paginator("list_permission_s
 Can be used directly:
 
 ```python
-from mypy_boto3_sso_admin.paginators import ListPermissionSetsPaginator
+from mypy_boto3_sso_admin.paginator import ListPermissionSetsPaginator
 
 def get_list_permission_sets_paginator() -> ListPermissionSetsPaginator:
     return boto3.client("sso-admin").get_paginator("list_permission_sets")
 ```
 
-[Paginator.ListPermissionSets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListPermissionSets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListPermissionSets)
 
 ```python
 class ListPermissionSetsPaginator(Boto3Paginator):
@@ -223,13 +223,13 @@ Type annotations for `boto3.client("sso-admin").get_paginator("list_permission_s
 Can be used directly:
 
 ```python
-from mypy_boto3_sso_admin.paginators import ListPermissionSetsProvisionedToAccountPaginator
+from mypy_boto3_sso_admin.paginator import ListPermissionSetsProvisionedToAccountPaginator
 
 def get_list_permission_sets_provisioned_to_account_paginator() -> ListPermissionSetsProvisionedToAccountPaginator:
     return boto3.client("sso-admin").get_paginator("list_permission_sets_provisioned_to_account")
 ```
 
-[Paginator.ListPermissionSetsProvisionedToAccount documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListPermissionSetsProvisionedToAccount)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListPermissionSetsProvisionedToAccount)
 
 ```python
 class ListPermissionSetsProvisionedToAccountPaginator(Boto3Paginator):
@@ -249,13 +249,13 @@ Type annotations for `boto3.client("sso-admin").get_paginator("list_tags_for_res
 Can be used directly:
 
 ```python
-from mypy_boto3_sso_admin.paginators import ListTagsForResourcePaginator
+from mypy_boto3_sso_admin.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("sso-admin").get_paginator("list_tags_for_resource")
 ```
 
-[Paginator.ListTagsForResource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListTagsForResource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):

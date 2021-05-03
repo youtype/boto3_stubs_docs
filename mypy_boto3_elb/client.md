@@ -51,7 +51,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_elb.client import ElasticLoadBalancingClient
+
+def get_elb_client() -> ElasticLoadBalancingClient:
+    return boto3.client("elb")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client)
 
 ## Exceptions
 
@@ -100,7 +105,7 @@ Exceptions:
 
 Type annotations for `boto3.client("elb").add_tags` method.
 
-[Client.add_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.add_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.add_tags]
 
 ```python
 def add_tags(
@@ -115,7 +120,7 @@ def add_tags(
 
 Type annotations for `boto3.client("elb").apply_security_groups_to_load_balancer` method.
 
-[Client.apply_security_groups_to_load_balancer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.apply_security_groups_to_load_balancer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.apply_security_groups_to_load_balancer]
 
 ```python
 def apply_security_groups_to_load_balancer(
@@ -130,7 +135,7 @@ def apply_security_groups_to_load_balancer(
 
 Type annotations for `boto3.client("elb").attach_load_balancer_to_subnets` method.
 
-[Client.attach_load_balancer_to_subnets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.attach_load_balancer_to_subnets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.attach_load_balancer_to_subnets]
 
 ```python
 def attach_load_balancer_to_subnets(
@@ -145,7 +150,7 @@ def attach_load_balancer_to_subnets(
 
 Type annotations for `boto3.client("elb").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -159,7 +164,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("elb").configure_health_check` method.
 
-[Client.configure_health_check documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.configure_health_check)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.configure_health_check]
 
 ```python
 def configure_health_check(
@@ -174,7 +179,7 @@ def configure_health_check(
 
 Type annotations for `boto3.client("elb").create_app_cookie_stickiness_policy` method.
 
-[Client.create_app_cookie_stickiness_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_app_cookie_stickiness_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_app_cookie_stickiness_policy]
 
 ```python
 def create_app_cookie_stickiness_policy(
@@ -190,7 +195,7 @@ def create_app_cookie_stickiness_policy(
 
 Type annotations for `boto3.client("elb").create_lb_cookie_stickiness_policy` method.
 
-[Client.create_lb_cookie_stickiness_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_lb_cookie_stickiness_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_lb_cookie_stickiness_policy]
 
 ```python
 def create_lb_cookie_stickiness_policy(
@@ -206,7 +211,7 @@ def create_lb_cookie_stickiness_policy(
 
 Type annotations for `boto3.client("elb").create_load_balancer` method.
 
-[Client.create_load_balancer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_load_balancer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_load_balancer]
 
 ```python
 def create_load_balancer(
@@ -226,7 +231,7 @@ def create_load_balancer(
 
 Type annotations for `boto3.client("elb").create_load_balancer_listeners` method.
 
-[Client.create_load_balancer_listeners documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_load_balancer_listeners)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_load_balancer_listeners]
 
 ```python
 def create_load_balancer_listeners(
@@ -241,7 +246,7 @@ def create_load_balancer_listeners(
 
 Type annotations for `boto3.client("elb").create_load_balancer_policy` method.
 
-[Client.create_load_balancer_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_load_balancer_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_load_balancer_policy]
 
 ```python
 def create_load_balancer_policy(
@@ -258,7 +263,7 @@ def create_load_balancer_policy(
 
 Type annotations for `boto3.client("elb").delete_load_balancer` method.
 
-[Client.delete_load_balancer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.delete_load_balancer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.delete_load_balancer]
 
 ```python
 def delete_load_balancer(
@@ -272,7 +277,7 @@ def delete_load_balancer(
 
 Type annotations for `boto3.client("elb").delete_load_balancer_listeners` method.
 
-[Client.delete_load_balancer_listeners documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.delete_load_balancer_listeners)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.delete_load_balancer_listeners]
 
 ```python
 def delete_load_balancer_listeners(
@@ -287,7 +292,7 @@ def delete_load_balancer_listeners(
 
 Type annotations for `boto3.client("elb").delete_load_balancer_policy` method.
 
-[Client.delete_load_balancer_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.delete_load_balancer_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.delete_load_balancer_policy]
 
 ```python
 def delete_load_balancer_policy(
@@ -302,7 +307,7 @@ def delete_load_balancer_policy(
 
 Type annotations for `boto3.client("elb").deregister_instances_from_load_balancer` method.
 
-[Client.deregister_instances_from_load_balancer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.deregister_instances_from_load_balancer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.deregister_instances_from_load_balancer]
 
 ```python
 def deregister_instances_from_load_balancer(
@@ -317,7 +322,7 @@ def deregister_instances_from_load_balancer(
 
 Type annotations for `boto3.client("elb").describe_account_limits` method.
 
-[Client.describe_account_limits documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_account_limits)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_account_limits]
 
 ```python
 def describe_account_limits(
@@ -332,7 +337,7 @@ def describe_account_limits(
 
 Type annotations for `boto3.client("elb").describe_instance_health` method.
 
-[Client.describe_instance_health documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_instance_health)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_instance_health]
 
 ```python
 def describe_instance_health(
@@ -347,7 +352,7 @@ def describe_instance_health(
 
 Type annotations for `boto3.client("elb").describe_load_balancer_attributes` method.
 
-[Client.describe_load_balancer_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancer_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancer_attributes]
 
 ```python
 def describe_load_balancer_attributes(
@@ -361,7 +366,7 @@ def describe_load_balancer_attributes(
 
 Type annotations for `boto3.client("elb").describe_load_balancer_policies` method.
 
-[Client.describe_load_balancer_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancer_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancer_policies]
 
 ```python
 def describe_load_balancer_policies(
@@ -376,7 +381,7 @@ def describe_load_balancer_policies(
 
 Type annotations for `boto3.client("elb").describe_load_balancer_policy_types` method.
 
-[Client.describe_load_balancer_policy_types documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancer_policy_types)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancer_policy_types]
 
 ```python
 def describe_load_balancer_policy_types(
@@ -390,7 +395,7 @@ def describe_load_balancer_policy_types(
 
 Type annotations for `boto3.client("elb").describe_load_balancers` method.
 
-[Client.describe_load_balancers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancers]
 
 ```python
 def describe_load_balancers(
@@ -406,7 +411,7 @@ def describe_load_balancers(
 
 Type annotations for `boto3.client("elb").describe_tags` method.
 
-[Client.describe_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_tags]
 
 ```python
 def describe_tags(
@@ -420,7 +425,7 @@ def describe_tags(
 
 Type annotations for `boto3.client("elb").detach_load_balancer_from_subnets` method.
 
-[Client.detach_load_balancer_from_subnets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.detach_load_balancer_from_subnets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.detach_load_balancer_from_subnets]
 
 ```python
 def detach_load_balancer_from_subnets(
@@ -435,7 +440,7 @@ def detach_load_balancer_from_subnets(
 
 Type annotations for `boto3.client("elb").disable_availability_zones_for_load_balancer` method.
 
-[Client.disable_availability_zones_for_load_balancer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.disable_availability_zones_for_load_balancer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.disable_availability_zones_for_load_balancer]
 
 ```python
 def disable_availability_zones_for_load_balancer(
@@ -450,7 +455,7 @@ def disable_availability_zones_for_load_balancer(
 
 Type annotations for `boto3.client("elb").enable_availability_zones_for_load_balancer` method.
 
-[Client.enable_availability_zones_for_load_balancer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.enable_availability_zones_for_load_balancer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.enable_availability_zones_for_load_balancer]
 
 ```python
 def enable_availability_zones_for_load_balancer(
@@ -465,7 +470,7 @@ def enable_availability_zones_for_load_balancer(
 
 Type annotations for `boto3.client("elb").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -482,7 +487,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("elb").modify_load_balancer_attributes` method.
 
-[Client.modify_load_balancer_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.modify_load_balancer_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.modify_load_balancer_attributes]
 
 ```python
 def modify_load_balancer_attributes(
@@ -497,7 +502,7 @@ def modify_load_balancer_attributes(
 
 Type annotations for `boto3.client("elb").register_instances_with_load_balancer` method.
 
-[Client.register_instances_with_load_balancer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.register_instances_with_load_balancer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.register_instances_with_load_balancer]
 
 ```python
 def register_instances_with_load_balancer(
@@ -512,7 +517,7 @@ def register_instances_with_load_balancer(
 
 Type annotations for `boto3.client("elb").remove_tags` method.
 
-[Client.remove_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.remove_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.remove_tags]
 
 ```python
 def remove_tags(
@@ -527,7 +532,7 @@ def remove_tags(
 
 Type annotations for `boto3.client("elb").set_load_balancer_listener_ssl_certificate` method.
 
-[Client.set_load_balancer_listener_ssl_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.set_load_balancer_listener_ssl_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.set_load_balancer_listener_ssl_certificate]
 
 ```python
 def set_load_balancer_listener_ssl_certificate(
@@ -543,7 +548,7 @@ def set_load_balancer_listener_ssl_certificate(
 
 Type annotations for `boto3.client("elb").set_load_balancer_policies_for_backend_server` method.
 
-[Client.set_load_balancer_policies_for_backend_server documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.set_load_balancer_policies_for_backend_server)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.set_load_balancer_policies_for_backend_server]
 
 ```python
 def set_load_balancer_policies_for_backend_server(
@@ -559,7 +564,7 @@ def set_load_balancer_policies_for_backend_server(
 
 Type annotations for `boto3.client("elb").set_load_balancer_policies_of_listener` method.
 
-[Client.set_load_balancer_policies_of_listener documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.set_load_balancer_policies_of_listener)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.set_load_balancer_policies_of_listener]
 
 ```python
 def set_load_balancer_policies_of_listener(

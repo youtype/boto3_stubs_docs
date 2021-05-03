@@ -19,13 +19,13 @@ Type annotations for `boto3.client("license-manager").get_paginator("list_associ
 Can be used directly:
 
 ```python
-from mypy_boto3_license_manager.paginators import ListAssociationsForLicenseConfigurationPaginator
+from mypy_boto3_license_manager.paginator import ListAssociationsForLicenseConfigurationPaginator
 
 def get_list_associations_for_license_configuration_paginator() -> ListAssociationsForLicenseConfigurationPaginator:
     return boto3.client("license-manager").get_paginator("list_associations_for_license_configuration")
 ```
 
-[Paginator.ListAssociationsForLicenseConfiguration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListAssociationsForLicenseConfiguration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListAssociationsForLicenseConfiguration)
 
 ```python
 class ListAssociationsForLicenseConfigurationPaginator(Boto3Paginator):
@@ -43,13 +43,13 @@ Type annotations for `boto3.client("license-manager").get_paginator("list_licens
 Can be used directly:
 
 ```python
-from mypy_boto3_license_manager.paginators import ListLicenseConfigurationsPaginator
+from mypy_boto3_license_manager.paginator import ListLicenseConfigurationsPaginator
 
 def get_list_license_configurations_paginator() -> ListLicenseConfigurationsPaginator:
     return boto3.client("license-manager").get_paginator("list_license_configurations")
 ```
 
-[Paginator.ListLicenseConfigurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListLicenseConfigurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListLicenseConfigurations)
 
 ```python
 class ListLicenseConfigurationsPaginator(Boto3Paginator):
@@ -68,13 +68,13 @@ Type annotations for `boto3.client("license-manager").get_paginator("list_licens
 Can be used directly:
 
 ```python
-from mypy_boto3_license_manager.paginators import ListLicenseSpecificationsForResourcePaginator
+from mypy_boto3_license_manager.paginator import ListLicenseSpecificationsForResourcePaginator
 
 def get_list_license_specifications_for_resource_paginator() -> ListLicenseSpecificationsForResourcePaginator:
     return boto3.client("license-manager").get_paginator("list_license_specifications_for_resource")
 ```
 
-[Paginator.ListLicenseSpecificationsForResource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListLicenseSpecificationsForResource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListLicenseSpecificationsForResource)
 
 ```python
 class ListLicenseSpecificationsForResourcePaginator(Boto3Paginator):
@@ -92,13 +92,13 @@ Type annotations for `boto3.client("license-manager").get_paginator("list_resour
 Can be used directly:
 
 ```python
-from mypy_boto3_license_manager.paginators import ListResourceInventoryPaginator
+from mypy_boto3_license_manager.paginator import ListResourceInventoryPaginator
 
 def get_list_resource_inventory_paginator() -> ListResourceInventoryPaginator:
     return boto3.client("license-manager").get_paginator("list_resource_inventory")
 ```
 
-[Paginator.ListResourceInventory documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListResourceInventory)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListResourceInventory)
 
 ```python
 class ListResourceInventoryPaginator(Boto3Paginator):
@@ -116,13 +116,13 @@ Type annotations for `boto3.client("license-manager").get_paginator("list_usage_
 Can be used directly:
 
 ```python
-from mypy_boto3_license_manager.paginators import ListUsageForLicenseConfigurationPaginator
+from mypy_boto3_license_manager.paginator import ListUsageForLicenseConfigurationPaginator
 
 def get_list_usage_for_license_configuration_paginator() -> ListUsageForLicenseConfigurationPaginator:
     return boto3.client("license-manager").get_paginator("list_usage_for_license_configuration")
 ```
 
-[Paginator.ListUsageForLicenseConfiguration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListUsageForLicenseConfiguration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Paginator.ListUsageForLicenseConfiguration)
 
 ```python
 class ListUsageForLicenseConfigurationPaginator(Boto3Paginator):

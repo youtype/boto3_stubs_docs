@@ -1,11 +1,11 @@
-# Structures for boto3 Synthetics module
+# Typed dictionaries for boto3 Synthetics module
 
 > [Index](../README.md) > [Synthetics](./README.md) > Structures
 
 Auto-generated documentation for [Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
 type annotations stubs module [mypy_boto3_synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
 
-- [Structures for boto3 Synthetics module](#structures-for-boto3-synthetics-module)
+- [Typed dictionaries for boto3 Synthetics module](#typed-dictionaries-for-boto3-synthetics-module)
   - [CanaryCodeInputTypeDef](#canarycodeinputtypedef)
   - [CanaryCodeOutputTypeDef](#canarycodeoutputtypedef)
   - [CanaryLastRunTypeDef](#canarylastruntypedef)
@@ -57,12 +57,12 @@ from mypy_boto3_synthetics.type_defs import CanaryCodeOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `SourceLocationArn`: `str`
 - `Handler`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CanaryLastRunTypeDef
@@ -102,13 +102,13 @@ from mypy_boto3_synthetics.type_defs import CanaryRunConfigOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TimeoutInSeconds`: `int`
 - `MemoryInMB`: `int`
 - `ActiveTracing`: `bool`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CanaryRunStatusTypeDef
@@ -180,12 +180,12 @@ from mypy_boto3_synthetics.type_defs import CanaryScheduleOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Expression`: `str`
 - `DurationInSeconds`: `int`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CanaryStatusTypeDef
@@ -395,11 +395,11 @@ from mypy_boto3_synthetics.type_defs import VpcConfigOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `VpcId`: `str`
 - `SubnetIds`: `List[str]`
 - `SecurityGroupIds`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 

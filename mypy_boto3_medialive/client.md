@@ -78,7 +78,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_medialive.client import MediaLiveClient
+
+def get_medialive_client() -> MediaLiveClient:
+    return boto3.client("medialive")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client)
 
 ## Exceptions
 
@@ -114,7 +119,7 @@ Exceptions:
 
 Type annotations for `boto3.client("medialive").accept_input_device_transfer` method.
 
-[Client.accept_input_device_transfer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.accept_input_device_transfer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.accept_input_device_transfer]
 
 ```python
 def accept_input_device_transfer(
@@ -128,7 +133,7 @@ def accept_input_device_transfer(
 
 Type annotations for `boto3.client("medialive").batch_delete` method.
 
-[Client.batch_delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_delete]
 
 ```python
 def batch_delete(
@@ -145,7 +150,7 @@ def batch_delete(
 
 Type annotations for `boto3.client("medialive").batch_start` method.
 
-[Client.batch_start documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_start)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_start]
 
 ```python
 def batch_start(
@@ -160,7 +165,7 @@ def batch_start(
 
 Type annotations for `boto3.client("medialive").batch_stop` method.
 
-[Client.batch_stop documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_stop)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_stop]
 
 ```python
 def batch_stop(
@@ -175,7 +180,7 @@ def batch_stop(
 
 Type annotations for `boto3.client("medialive").batch_update_schedule` method.
 
-[Client.batch_update_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_update_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_update_schedule]
 
 ```python
 def batch_update_schedule(
@@ -191,7 +196,7 @@ def batch_update_schedule(
 
 Type annotations for `boto3.client("medialive").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -205,7 +210,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("medialive").cancel_input_device_transfer` method.
 
-[Client.cancel_input_device_transfer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.cancel_input_device_transfer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.cancel_input_device_transfer]
 
 ```python
 def cancel_input_device_transfer(
@@ -219,7 +224,7 @@ def cancel_input_device_transfer(
 
 Type annotations for `boto3.client("medialive").create_channel` method.
 
-[Client.create_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_channel]
 
 ```python
 def create_channel(
@@ -245,7 +250,7 @@ def create_channel(
 
 Type annotations for `boto3.client("medialive").create_input` method.
 
-[Client.create_input documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_input)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_input]
 
 ```python
 def create_input(
@@ -269,7 +274,7 @@ def create_input(
 
 Type annotations for `boto3.client("medialive").create_input_security_group` method.
 
-[Client.create_input_security_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_input_security_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_input_security_group]
 
 ```python
 def create_input_security_group(
@@ -284,7 +289,7 @@ def create_input_security_group(
 
 Type annotations for `boto3.client("medialive").create_multiplex` method.
 
-[Client.create_multiplex documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_multiplex)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_multiplex]
 
 ```python
 def create_multiplex(
@@ -302,7 +307,7 @@ def create_multiplex(
 
 Type annotations for `boto3.client("medialive").create_multiplex_program` method.
 
-[Client.create_multiplex_program documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_multiplex_program)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_multiplex_program]
 
 ```python
 def create_multiplex_program(
@@ -319,7 +324,7 @@ def create_multiplex_program(
 
 Type annotations for `boto3.client("medialive").create_partner_input` method.
 
-[Client.create_partner_input documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_partner_input)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_partner_input]
 
 ```python
 def create_partner_input(
@@ -335,7 +340,7 @@ def create_partner_input(
 
 Type annotations for `boto3.client("medialive").create_tags` method.
 
-[Client.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_tags]
 
 ```python
 def create_tags(
@@ -350,7 +355,7 @@ def create_tags(
 
 Type annotations for `boto3.client("medialive").delete_channel` method.
 
-[Client.delete_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_channel]
 
 ```python
 def delete_channel(
@@ -364,7 +369,7 @@ def delete_channel(
 
 Type annotations for `boto3.client("medialive").delete_input` method.
 
-[Client.delete_input documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_input)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_input]
 
 ```python
 def delete_input(
@@ -378,7 +383,7 @@ def delete_input(
 
 Type annotations for `boto3.client("medialive").delete_input_security_group` method.
 
-[Client.delete_input_security_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_input_security_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_input_security_group]
 
 ```python
 def delete_input_security_group(
@@ -392,7 +397,7 @@ def delete_input_security_group(
 
 Type annotations for `boto3.client("medialive").delete_multiplex` method.
 
-[Client.delete_multiplex documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_multiplex)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_multiplex]
 
 ```python
 def delete_multiplex(
@@ -406,7 +411,7 @@ def delete_multiplex(
 
 Type annotations for `boto3.client("medialive").delete_multiplex_program` method.
 
-[Client.delete_multiplex_program documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_multiplex_program)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_multiplex_program]
 
 ```python
 def delete_multiplex_program(
@@ -421,7 +426,7 @@ def delete_multiplex_program(
 
 Type annotations for `boto3.client("medialive").delete_reservation` method.
 
-[Client.delete_reservation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_reservation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_reservation]
 
 ```python
 def delete_reservation(
@@ -435,7 +440,7 @@ def delete_reservation(
 
 Type annotations for `boto3.client("medialive").delete_schedule` method.
 
-[Client.delete_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_schedule]
 
 ```python
 def delete_schedule(
@@ -449,7 +454,7 @@ def delete_schedule(
 
 Type annotations for `boto3.client("medialive").delete_tags` method.
 
-[Client.delete_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_tags]
 
 ```python
 def delete_tags(
@@ -464,7 +469,7 @@ def delete_tags(
 
 Type annotations for `boto3.client("medialive").describe_channel` method.
 
-[Client.describe_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_channel]
 
 ```python
 def describe_channel(
@@ -478,7 +483,7 @@ def describe_channel(
 
 Type annotations for `boto3.client("medialive").describe_input` method.
 
-[Client.describe_input documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input]
 
 ```python
 def describe_input(
@@ -492,7 +497,7 @@ def describe_input(
 
 Type annotations for `boto3.client("medialive").describe_input_device` method.
 
-[Client.describe_input_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_device]
 
 ```python
 def describe_input_device(
@@ -506,7 +511,7 @@ def describe_input_device(
 
 Type annotations for `boto3.client("medialive").describe_input_device_thumbnail` method.
 
-[Client.describe_input_device_thumbnail documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_device_thumbnail)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_device_thumbnail]
 
 ```python
 def describe_input_device_thumbnail(
@@ -521,7 +526,7 @@ def describe_input_device_thumbnail(
 
 Type annotations for `boto3.client("medialive").describe_input_security_group` method.
 
-[Client.describe_input_security_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_security_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_security_group]
 
 ```python
 def describe_input_security_group(
@@ -535,7 +540,7 @@ def describe_input_security_group(
 
 Type annotations for `boto3.client("medialive").describe_multiplex` method.
 
-[Client.describe_multiplex documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_multiplex)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_multiplex]
 
 ```python
 def describe_multiplex(
@@ -549,7 +554,7 @@ def describe_multiplex(
 
 Type annotations for `boto3.client("medialive").describe_multiplex_program` method.
 
-[Client.describe_multiplex_program documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_multiplex_program)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_multiplex_program]
 
 ```python
 def describe_multiplex_program(
@@ -564,7 +569,7 @@ def describe_multiplex_program(
 
 Type annotations for `boto3.client("medialive").describe_offering` method.
 
-[Client.describe_offering documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_offering)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_offering]
 
 ```python
 def describe_offering(
@@ -578,7 +583,7 @@ def describe_offering(
 
 Type annotations for `boto3.client("medialive").describe_reservation` method.
 
-[Client.describe_reservation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_reservation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_reservation]
 
 ```python
 def describe_reservation(
@@ -592,7 +597,7 @@ def describe_reservation(
 
 Type annotations for `boto3.client("medialive").describe_schedule` method.
 
-[Client.describe_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_schedule]
 
 ```python
 def describe_schedule(
@@ -608,7 +613,7 @@ def describe_schedule(
 
 Type annotations for `boto3.client("medialive").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -625,7 +630,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("medialive").list_channels` method.
 
-[Client.list_channels documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_channels)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_channels]
 
 ```python
 def list_channels(
@@ -640,7 +645,7 @@ def list_channels(
 
 Type annotations for `boto3.client("medialive").list_input_device_transfers` method.
 
-[Client.list_input_device_transfers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_device_transfers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_device_transfers]
 
 ```python
 def list_input_device_transfers(
@@ -656,7 +661,7 @@ def list_input_device_transfers(
 
 Type annotations for `boto3.client("medialive").list_input_devices` method.
 
-[Client.list_input_devices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_devices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_devices]
 
 ```python
 def list_input_devices(
@@ -671,7 +676,7 @@ def list_input_devices(
 
 Type annotations for `boto3.client("medialive").list_input_security_groups` method.
 
-[Client.list_input_security_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_security_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_security_groups]
 
 ```python
 def list_input_security_groups(
@@ -686,7 +691,7 @@ def list_input_security_groups(
 
 Type annotations for `boto3.client("medialive").list_inputs` method.
 
-[Client.list_inputs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_inputs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_inputs]
 
 ```python
 def list_inputs(
@@ -701,7 +706,7 @@ def list_inputs(
 
 Type annotations for `boto3.client("medialive").list_multiplex_programs` method.
 
-[Client.list_multiplex_programs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_multiplex_programs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_multiplex_programs]
 
 ```python
 def list_multiplex_programs(
@@ -717,7 +722,7 @@ def list_multiplex_programs(
 
 Type annotations for `boto3.client("medialive").list_multiplexes` method.
 
-[Client.list_multiplexes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_multiplexes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_multiplexes]
 
 ```python
 def list_multiplexes(
@@ -732,7 +737,7 @@ def list_multiplexes(
 
 Type annotations for `boto3.client("medialive").list_offerings` method.
 
-[Client.list_offerings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_offerings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_offerings]
 
 ```python
 def list_offerings(
@@ -757,7 +762,7 @@ def list_offerings(
 
 Type annotations for `boto3.client("medialive").list_reservations` method.
 
-[Client.list_reservations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_reservations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_reservations]
 
 ```python
 def list_reservations(
@@ -780,7 +785,7 @@ def list_reservations(
 
 Type annotations for `boto3.client("medialive").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -794,7 +799,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("medialive").purchase_offering` method.
 
-[Client.purchase_offering documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.purchase_offering)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.purchase_offering]
 
 ```python
 def purchase_offering(
@@ -813,7 +818,7 @@ def purchase_offering(
 
 Type annotations for `boto3.client("medialive").reject_input_device_transfer` method.
 
-[Client.reject_input_device_transfer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.reject_input_device_transfer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.reject_input_device_transfer]
 
 ```python
 def reject_input_device_transfer(
@@ -827,7 +832,7 @@ def reject_input_device_transfer(
 
 Type annotations for `boto3.client("medialive").start_channel` method.
 
-[Client.start_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.start_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.start_channel]
 
 ```python
 def start_channel(
@@ -841,7 +846,7 @@ def start_channel(
 
 Type annotations for `boto3.client("medialive").start_multiplex` method.
 
-[Client.start_multiplex documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.start_multiplex)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.start_multiplex]
 
 ```python
 def start_multiplex(
@@ -855,7 +860,7 @@ def start_multiplex(
 
 Type annotations for `boto3.client("medialive").stop_channel` method.
 
-[Client.stop_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.stop_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.stop_channel]
 
 ```python
 def stop_channel(
@@ -869,7 +874,7 @@ def stop_channel(
 
 Type annotations for `boto3.client("medialive").stop_multiplex` method.
 
-[Client.stop_multiplex documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.stop_multiplex)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.stop_multiplex]
 
 ```python
 def stop_multiplex(
@@ -883,7 +888,7 @@ def stop_multiplex(
 
 Type annotations for `boto3.client("medialive").transfer_input_device` method.
 
-[Client.transfer_input_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.transfer_input_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.transfer_input_device]
 
 ```python
 def transfer_input_device(
@@ -900,7 +905,7 @@ def transfer_input_device(
 
 Type annotations for `boto3.client("medialive").update_channel` method.
 
-[Client.update_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_channel]
 
 ```python
 def update_channel(
@@ -922,7 +927,7 @@ def update_channel(
 
 Type annotations for `boto3.client("medialive").update_channel_class` method.
 
-[Client.update_channel_class documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_channel_class)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_channel_class]
 
 ```python
 def update_channel_class(
@@ -938,7 +943,7 @@ def update_channel_class(
 
 Type annotations for `boto3.client("medialive").update_input` method.
 
-[Client.update_input documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input]
 
 ```python
 def update_input(
@@ -959,7 +964,7 @@ def update_input(
 
 Type annotations for `boto3.client("medialive").update_input_device` method.
 
-[Client.update_input_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input_device]
 
 ```python
 def update_input_device(
@@ -976,7 +981,7 @@ def update_input_device(
 
 Type annotations for `boto3.client("medialive").update_input_security_group` method.
 
-[Client.update_input_security_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input_security_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input_security_group]
 
 ```python
 def update_input_security_group(
@@ -992,7 +997,7 @@ def update_input_security_group(
 
 Type annotations for `boto3.client("medialive").update_multiplex` method.
 
-[Client.update_multiplex documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_multiplex)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_multiplex]
 
 ```python
 def update_multiplex(
@@ -1008,7 +1013,7 @@ def update_multiplex(
 
 Type annotations for `boto3.client("medialive").update_multiplex_program` method.
 
-[Client.update_multiplex_program documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_multiplex_program)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_multiplex_program]
 
 ```python
 def update_multiplex_program(
@@ -1024,7 +1029,7 @@ def update_multiplex_program(
 
 Type annotations for `boto3.client("medialive").update_reservation` method.
 
-[Client.update_reservation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_reservation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_reservation]
 
 ```python
 def update_reservation(

@@ -20,13 +20,13 @@ Type annotations for `boto3.client("sns").get_paginator("list_endpoints_by_platf
 Can be used directly:
 
 ```python
-from mypy_boto3_sns.paginators import ListEndpointsByPlatformApplicationPaginator
+from mypy_boto3_sns.paginator import ListEndpointsByPlatformApplicationPaginator
 
 def get_list_endpoints_by_platform_application_paginator() -> ListEndpointsByPlatformApplicationPaginator:
     return boto3.client("sns").get_paginator("list_endpoints_by_platform_application")
 ```
 
-[Paginator.ListEndpointsByPlatformApplication documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListEndpointsByPlatformApplication)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListEndpointsByPlatformApplication)
 
 ```python
 class ListEndpointsByPlatformApplicationPaginator(Boto3Paginator):
@@ -44,13 +44,13 @@ Type annotations for `boto3.client("sns").get_paginator("list_phone_numbers_opte
 Can be used directly:
 
 ```python
-from mypy_boto3_sns.paginators import ListPhoneNumbersOptedOutPaginator
+from mypy_boto3_sns.paginator import ListPhoneNumbersOptedOutPaginator
 
 def get_list_phone_numbers_opted_out_paginator() -> ListPhoneNumbersOptedOutPaginator:
     return boto3.client("sns").get_paginator("list_phone_numbers_opted_out")
 ```
 
-[Paginator.ListPhoneNumbersOptedOut documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListPhoneNumbersOptedOut)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListPhoneNumbersOptedOut)
 
 ```python
 class ListPhoneNumbersOptedOutPaginator(Boto3Paginator):
@@ -67,13 +67,13 @@ Type annotations for `boto3.client("sns").get_paginator("list_platform_applicati
 Can be used directly:
 
 ```python
-from mypy_boto3_sns.paginators import ListPlatformApplicationsPaginator
+from mypy_boto3_sns.paginator import ListPlatformApplicationsPaginator
 
 def get_list_platform_applications_paginator() -> ListPlatformApplicationsPaginator:
     return boto3.client("sns").get_paginator("list_platform_applications")
 ```
 
-[Paginator.ListPlatformApplications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListPlatformApplications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListPlatformApplications)
 
 ```python
 class ListPlatformApplicationsPaginator(Boto3Paginator):
@@ -90,13 +90,13 @@ Type annotations for `boto3.client("sns").get_paginator("list_subscriptions")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sns.paginators import ListSubscriptionsPaginator
+from mypy_boto3_sns.paginator import ListSubscriptionsPaginator
 
 def get_list_subscriptions_paginator() -> ListSubscriptionsPaginator:
     return boto3.client("sns").get_paginator("list_subscriptions")
 ```
 
-[Paginator.ListSubscriptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListSubscriptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListSubscriptions)
 
 ```python
 class ListSubscriptionsPaginator(Boto3Paginator):
@@ -113,13 +113,13 @@ Type annotations for `boto3.client("sns").get_paginator("list_subscriptions_by_t
 Can be used directly:
 
 ```python
-from mypy_boto3_sns.paginators import ListSubscriptionsByTopicPaginator
+from mypy_boto3_sns.paginator import ListSubscriptionsByTopicPaginator
 
 def get_list_subscriptions_by_topic_paginator() -> ListSubscriptionsByTopicPaginator:
     return boto3.client("sns").get_paginator("list_subscriptions_by_topic")
 ```
 
-[Paginator.ListSubscriptionsByTopic documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListSubscriptionsByTopic)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListSubscriptionsByTopic)
 
 ```python
 class ListSubscriptionsByTopicPaginator(Boto3Paginator):
@@ -137,13 +137,13 @@ Type annotations for `boto3.client("sns").get_paginator("list_topics")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sns.paginators import ListTopicsPaginator
+from mypy_boto3_sns.paginator import ListTopicsPaginator
 
 def get_list_topics_paginator() -> ListTopicsPaginator:
     return boto3.client("sns").get_paginator("list_topics")
 ```
 
-[Paginator.ListTopics documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListTopics)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListTopics)
 
 ```python
 class ListTopicsPaginator(Boto3Paginator):

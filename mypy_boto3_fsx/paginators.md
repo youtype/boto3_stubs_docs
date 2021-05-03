@@ -17,13 +17,13 @@ Type annotations for `boto3.client("fsx").get_paginator("describe_backups")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_fsx.paginators import DescribeBackupsPaginator
+from mypy_boto3_fsx.paginator import DescribeBackupsPaginator
 
 def get_describe_backups_paginator() -> DescribeBackupsPaginator:
     return boto3.client("fsx").get_paginator("describe_backups")
 ```
 
-[Paginator.DescribeBackups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Paginator.DescribeBackups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Paginator.DescribeBackups)
 
 ```python
 class DescribeBackupsPaginator(Boto3Paginator):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("fsx").get_paginator("describe_file_systems")
 Can be used directly:
 
 ```python
-from mypy_boto3_fsx.paginators import DescribeFileSystemsPaginator
+from mypy_boto3_fsx.paginator import DescribeFileSystemsPaginator
 
 def get_describe_file_systems_paginator() -> DescribeFileSystemsPaginator:
     return boto3.client("fsx").get_paginator("describe_file_systems")
 ```
 
-[Paginator.DescribeFileSystems documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Paginator.DescribeFileSystems)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Paginator.DescribeFileSystems)
 
 ```python
 class DescribeFileSystemsPaginator(Boto3Paginator):
@@ -66,13 +66,13 @@ Type annotations for `boto3.client("fsx").get_paginator("list_tags_for_resource"
 Can be used directly:
 
 ```python
-from mypy_boto3_fsx.paginators import ListTagsForResourcePaginator
+from mypy_boto3_fsx.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("fsx").get_paginator("list_tags_for_resource")
 ```
 
-[Paginator.ListTagsForResource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Paginator.ListTagsForResource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):

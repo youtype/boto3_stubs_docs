@@ -15,13 +15,13 @@ Type annotations for `boto3.client("amplifybackend").get_paginator("list_backend
 Can be used directly:
 
 ```python
-from mypy_boto3_amplifybackend.paginators import ListBackendJobsPaginator
+from mypy_boto3_amplifybackend.paginator import ListBackendJobsPaginator
 
 def get_list_backend_jobs_paginator() -> ListBackendJobsPaginator:
     return boto3.client("amplifybackend").get_paginator("list_backend_jobs")
 ```
 
-[Paginator.ListBackendJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Paginator.ListBackendJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Paginator.ListBackendJobs)
 
 ```python
 class ListBackendJobsPaginator(Boto3Paginator):

@@ -471,7 +471,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_ec2.client import EC2Client
+
+def get_ec2_client() -> EC2Client:
+    return boto3.client("ec2")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client)
 
 ## Exceptions
 
@@ -498,7 +503,7 @@ Exceptions:
 
 Type annotations for `boto3.client("ec2").accept_reserved_instances_exchange_quote` method.
 
-[Client.accept_reserved_instances_exchange_quote documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_reserved_instances_exchange_quote)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_reserved_instances_exchange_quote]
 
 ```python
 def accept_reserved_instances_exchange_quote(
@@ -514,7 +519,7 @@ def accept_reserved_instances_exchange_quote(
 
 Type annotations for `boto3.client("ec2").accept_transit_gateway_multicast_domain_associations` method.
 
-[Client.accept_transit_gateway_multicast_domain_associations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_transit_gateway_multicast_domain_associations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_transit_gateway_multicast_domain_associations]
 
 ```python
 def accept_transit_gateway_multicast_domain_associations(
@@ -531,7 +536,7 @@ def accept_transit_gateway_multicast_domain_associations(
 
 Type annotations for `boto3.client("ec2").accept_transit_gateway_peering_attachment` method.
 
-[Client.accept_transit_gateway_peering_attachment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_transit_gateway_peering_attachment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_transit_gateway_peering_attachment]
 
 ```python
 def accept_transit_gateway_peering_attachment(
@@ -546,7 +551,7 @@ def accept_transit_gateway_peering_attachment(
 
 Type annotations for `boto3.client("ec2").accept_transit_gateway_vpc_attachment` method.
 
-[Client.accept_transit_gateway_vpc_attachment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_transit_gateway_vpc_attachment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_transit_gateway_vpc_attachment]
 
 ```python
 def accept_transit_gateway_vpc_attachment(
@@ -561,7 +566,7 @@ def accept_transit_gateway_vpc_attachment(
 
 Type annotations for `boto3.client("ec2").accept_vpc_endpoint_connections` method.
 
-[Client.accept_vpc_endpoint_connections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_vpc_endpoint_connections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_vpc_endpoint_connections]
 
 ```python
 def accept_vpc_endpoint_connections(
@@ -577,7 +582,7 @@ def accept_vpc_endpoint_connections(
 
 Type annotations for `boto3.client("ec2").accept_vpc_peering_connection` method.
 
-[Client.accept_vpc_peering_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_vpc_peering_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_vpc_peering_connection]
 
 ```python
 def accept_vpc_peering_connection(
@@ -592,7 +597,7 @@ def accept_vpc_peering_connection(
 
 Type annotations for `boto3.client("ec2").advertise_byoip_cidr` method.
 
-[Client.advertise_byoip_cidr documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.advertise_byoip_cidr)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.advertise_byoip_cidr]
 
 ```python
 def advertise_byoip_cidr(
@@ -607,7 +612,7 @@ def advertise_byoip_cidr(
 
 Type annotations for `boto3.client("ec2").allocate_address` method.
 
-[Client.allocate_address documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.allocate_address)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.allocate_address]
 
 ```python
 def allocate_address(
@@ -627,7 +632,7 @@ def allocate_address(
 
 Type annotations for `boto3.client("ec2").allocate_hosts` method.
 
-[Client.allocate_hosts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.allocate_hosts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.allocate_hosts]
 
 ```python
 def allocate_hosts(
@@ -648,7 +653,7 @@ def allocate_hosts(
 
 Type annotations for `boto3.client("ec2").apply_security_groups_to_client_vpn_target_network` method.
 
-[Client.apply_security_groups_to_client_vpn_target_network documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.apply_security_groups_to_client_vpn_target_network)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.apply_security_groups_to_client_vpn_target_network]
 
 ```python
 def apply_security_groups_to_client_vpn_target_network(
@@ -665,7 +670,7 @@ def apply_security_groups_to_client_vpn_target_network(
 
 Type annotations for `boto3.client("ec2").assign_ipv6_addresses` method.
 
-[Client.assign_ipv6_addresses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.assign_ipv6_addresses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.assign_ipv6_addresses]
 
 ```python
 def assign_ipv6_addresses(
@@ -681,7 +686,7 @@ def assign_ipv6_addresses(
 
 Type annotations for `boto3.client("ec2").assign_private_ip_addresses` method.
 
-[Client.assign_private_ip_addresses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.assign_private_ip_addresses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.assign_private_ip_addresses]
 
 ```python
 def assign_private_ip_addresses(
@@ -698,7 +703,7 @@ def assign_private_ip_addresses(
 
 Type annotations for `boto3.client("ec2").associate_address` method.
 
-[Client.associate_address documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_address)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_address]
 
 ```python
 def associate_address(
@@ -718,7 +723,7 @@ def associate_address(
 
 Type annotations for `boto3.client("ec2").associate_client_vpn_target_network` method.
 
-[Client.associate_client_vpn_target_network documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_client_vpn_target_network)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_client_vpn_target_network]
 
 ```python
 def associate_client_vpn_target_network(
@@ -735,7 +740,7 @@ def associate_client_vpn_target_network(
 
 Type annotations for `boto3.client("ec2").associate_dhcp_options` method.
 
-[Client.associate_dhcp_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_dhcp_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_dhcp_options]
 
 ```python
 def associate_dhcp_options(
@@ -751,7 +756,7 @@ def associate_dhcp_options(
 
 Type annotations for `boto3.client("ec2").associate_enclave_certificate_iam_role` method.
 
-[Client.associate_enclave_certificate_iam_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_enclave_certificate_iam_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_enclave_certificate_iam_role]
 
 ```python
 def associate_enclave_certificate_iam_role(
@@ -767,7 +772,7 @@ def associate_enclave_certificate_iam_role(
 
 Type annotations for `boto3.client("ec2").associate_iam_instance_profile` method.
 
-[Client.associate_iam_instance_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_iam_instance_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_iam_instance_profile]
 
 ```python
 def associate_iam_instance_profile(
@@ -782,7 +787,7 @@ def associate_iam_instance_profile(
 
 Type annotations for `boto3.client("ec2").associate_route_table` method.
 
-[Client.associate_route_table documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_route_table)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_route_table]
 
 ```python
 def associate_route_table(
@@ -799,7 +804,7 @@ def associate_route_table(
 
 Type annotations for `boto3.client("ec2").associate_subnet_cidr_block` method.
 
-[Client.associate_subnet_cidr_block documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_subnet_cidr_block)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_subnet_cidr_block]
 
 ```python
 def associate_subnet_cidr_block(
@@ -814,7 +819,7 @@ def associate_subnet_cidr_block(
 
 Type annotations for `boto3.client("ec2").associate_transit_gateway_multicast_domain` method.
 
-[Client.associate_transit_gateway_multicast_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_transit_gateway_multicast_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_transit_gateway_multicast_domain]
 
 ```python
 def associate_transit_gateway_multicast_domain(
@@ -831,7 +836,7 @@ def associate_transit_gateway_multicast_domain(
 
 Type annotations for `boto3.client("ec2").associate_transit_gateway_route_table` method.
 
-[Client.associate_transit_gateway_route_table documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_transit_gateway_route_table)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_transit_gateway_route_table]
 
 ```python
 def associate_transit_gateway_route_table(
@@ -847,7 +852,7 @@ def associate_transit_gateway_route_table(
 
 Type annotations for `boto3.client("ec2").associate_vpc_cidr_block` method.
 
-[Client.associate_vpc_cidr_block documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_vpc_cidr_block)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_vpc_cidr_block]
 
 ```python
 def associate_vpc_cidr_block(
@@ -866,7 +871,7 @@ def associate_vpc_cidr_block(
 
 Type annotations for `boto3.client("ec2").attach_classic_link_vpc` method.
 
-[Client.attach_classic_link_vpc documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_classic_link_vpc)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_classic_link_vpc]
 
 ```python
 def attach_classic_link_vpc(
@@ -883,7 +888,7 @@ def attach_classic_link_vpc(
 
 Type annotations for `boto3.client("ec2").attach_internet_gateway` method.
 
-[Client.attach_internet_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_internet_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_internet_gateway]
 
 ```python
 def attach_internet_gateway(
@@ -899,7 +904,7 @@ def attach_internet_gateway(
 
 Type annotations for `boto3.client("ec2").attach_network_interface` method.
 
-[Client.attach_network_interface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_network_interface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_network_interface]
 
 ```python
 def attach_network_interface(
@@ -917,7 +922,7 @@ def attach_network_interface(
 
 Type annotations for `boto3.client("ec2").attach_volume` method.
 
-[Client.attach_volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_volume]
 
 ```python
 def attach_volume(
@@ -934,7 +939,7 @@ def attach_volume(
 
 Type annotations for `boto3.client("ec2").attach_vpn_gateway` method.
 
-[Client.attach_vpn_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_vpn_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_vpn_gateway]
 
 ```python
 def attach_vpn_gateway(
@@ -950,7 +955,7 @@ def attach_vpn_gateway(
 
 Type annotations for `boto3.client("ec2").authorize_client_vpn_ingress` method.
 
-[Client.authorize_client_vpn_ingress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.authorize_client_vpn_ingress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.authorize_client_vpn_ingress]
 
 ```python
 def authorize_client_vpn_ingress(
@@ -970,7 +975,7 @@ def authorize_client_vpn_ingress(
 
 Type annotations for `boto3.client("ec2").authorize_security_group_egress` method.
 
-[Client.authorize_security_group_egress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.authorize_security_group_egress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.authorize_security_group_egress]
 
 ```python
 def authorize_security_group_egress(
@@ -992,7 +997,7 @@ def authorize_security_group_egress(
 
 Type annotations for `boto3.client("ec2").authorize_security_group_ingress` method.
 
-[Client.authorize_security_group_ingress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.authorize_security_group_ingress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.authorize_security_group_ingress]
 
 ```python
 def authorize_security_group_ingress(
@@ -1015,7 +1020,7 @@ def authorize_security_group_ingress(
 
 Type annotations for `boto3.client("ec2").bundle_instance` method.
 
-[Client.bundle_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.bundle_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.bundle_instance]
 
 ```python
 def bundle_instance(
@@ -1031,7 +1036,7 @@ def bundle_instance(
 
 Type annotations for `boto3.client("ec2").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -1045,7 +1050,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("ec2").cancel_bundle_task` method.
 
-[Client.cancel_bundle_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_bundle_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_bundle_task]
 
 ```python
 def cancel_bundle_task(
@@ -1060,7 +1065,7 @@ def cancel_bundle_task(
 
 Type annotations for `boto3.client("ec2").cancel_capacity_reservation` method.
 
-[Client.cancel_capacity_reservation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_capacity_reservation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_capacity_reservation]
 
 ```python
 def cancel_capacity_reservation(
@@ -1075,7 +1080,7 @@ def cancel_capacity_reservation(
 
 Type annotations for `boto3.client("ec2").cancel_conversion_task` method.
 
-[Client.cancel_conversion_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_conversion_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_conversion_task]
 
 ```python
 def cancel_conversion_task(
@@ -1091,7 +1096,7 @@ def cancel_conversion_task(
 
 Type annotations for `boto3.client("ec2").cancel_export_task` method.
 
-[Client.cancel_export_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_export_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_export_task]
 
 ```python
 def cancel_export_task(
@@ -1105,7 +1110,7 @@ def cancel_export_task(
 
 Type annotations for `boto3.client("ec2").cancel_import_task` method.
 
-[Client.cancel_import_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_import_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_import_task]
 
 ```python
 def cancel_import_task(
@@ -1121,7 +1126,7 @@ def cancel_import_task(
 
 Type annotations for `boto3.client("ec2").cancel_reserved_instances_listing` method.
 
-[Client.cancel_reserved_instances_listing documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_reserved_instances_listing)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_reserved_instances_listing]
 
 ```python
 def cancel_reserved_instances_listing(
@@ -1135,7 +1140,7 @@ def cancel_reserved_instances_listing(
 
 Type annotations for `boto3.client("ec2").cancel_spot_fleet_requests` method.
 
-[Client.cancel_spot_fleet_requests documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_spot_fleet_requests)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_spot_fleet_requests]
 
 ```python
 def cancel_spot_fleet_requests(
@@ -1151,7 +1156,7 @@ def cancel_spot_fleet_requests(
 
 Type annotations for `boto3.client("ec2").cancel_spot_instance_requests` method.
 
-[Client.cancel_spot_instance_requests documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_spot_instance_requests)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_spot_instance_requests]
 
 ```python
 def cancel_spot_instance_requests(
@@ -1166,7 +1171,7 @@ def cancel_spot_instance_requests(
 
 Type annotations for `boto3.client("ec2").confirm_product_instance` method.
 
-[Client.confirm_product_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.confirm_product_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.confirm_product_instance]
 
 ```python
 def confirm_product_instance(
@@ -1182,7 +1187,7 @@ def confirm_product_instance(
 
 Type annotations for `boto3.client("ec2").copy_fpga_image` method.
 
-[Client.copy_fpga_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.copy_fpga_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.copy_fpga_image]
 
 ```python
 def copy_fpga_image(
@@ -1201,7 +1206,7 @@ def copy_fpga_image(
 
 Type annotations for `boto3.client("ec2").copy_image` method.
 
-[Client.copy_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.copy_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.copy_image]
 
 ```python
 def copy_image(
@@ -1223,7 +1228,7 @@ def copy_image(
 
 Type annotations for `boto3.client("ec2").copy_snapshot` method.
 
-[Client.copy_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.copy_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.copy_snapshot]
 
 ```python
 def copy_snapshot(
@@ -1246,7 +1251,7 @@ def copy_snapshot(
 
 Type annotations for `boto3.client("ec2").create_capacity_reservation` method.
 
-[Client.create_capacity_reservation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_capacity_reservation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_capacity_reservation]
 
 ```python
 def create_capacity_reservation(
@@ -1273,7 +1278,7 @@ def create_capacity_reservation(
 
 Type annotations for `boto3.client("ec2").create_carrier_gateway` method.
 
-[Client.create_carrier_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_carrier_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_carrier_gateway]
 
 ```python
 def create_carrier_gateway(
@@ -1290,7 +1295,7 @@ def create_carrier_gateway(
 
 Type annotations for `boto3.client("ec2").create_client_vpn_endpoint` method.
 
-[Client.create_client_vpn_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_client_vpn_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_client_vpn_endpoint]
 
 ```python
 def create_client_vpn_endpoint(
@@ -1319,7 +1324,7 @@ def create_client_vpn_endpoint(
 
 Type annotations for `boto3.client("ec2").create_client_vpn_route` method.
 
-[Client.create_client_vpn_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_client_vpn_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_client_vpn_route]
 
 ```python
 def create_client_vpn_route(
@@ -1338,7 +1343,7 @@ def create_client_vpn_route(
 
 Type annotations for `boto3.client("ec2").create_customer_gateway` method.
 
-[Client.create_customer_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_customer_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_customer_gateway]
 
 ```python
 def create_customer_gateway(
@@ -1358,7 +1363,7 @@ def create_customer_gateway(
 
 Type annotations for `boto3.client("ec2").create_default_subnet` method.
 
-[Client.create_default_subnet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_default_subnet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_default_subnet]
 
 ```python
 def create_default_subnet(
@@ -1373,7 +1378,7 @@ def create_default_subnet(
 
 Type annotations for `boto3.client("ec2").create_default_vpc` method.
 
-[Client.create_default_vpc documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_default_vpc)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_default_vpc]
 
 ```python
 def create_default_vpc(
@@ -1387,7 +1392,7 @@ def create_default_vpc(
 
 Type annotations for `boto3.client("ec2").create_dhcp_options` method.
 
-[Client.create_dhcp_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_dhcp_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_dhcp_options]
 
 ```python
 def create_dhcp_options(
@@ -1403,7 +1408,7 @@ def create_dhcp_options(
 
 Type annotations for `boto3.client("ec2").create_egress_only_internet_gateway` method.
 
-[Client.create_egress_only_internet_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_egress_only_internet_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_egress_only_internet_gateway]
 
 ```python
 def create_egress_only_internet_gateway(
@@ -1420,7 +1425,7 @@ def create_egress_only_internet_gateway(
 
 Type annotations for `boto3.client("ec2").create_fleet` method.
 
-[Client.create_fleet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_fleet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_fleet]
 
 ```python
 def create_fleet(
@@ -1446,7 +1451,7 @@ def create_fleet(
 
 Type annotations for `boto3.client("ec2").create_flow_logs` method.
 
-[Client.create_flow_logs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_flow_logs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_flow_logs]
 
 ```python
 def create_flow_logs(
@@ -1471,7 +1476,7 @@ def create_flow_logs(
 
 Type annotations for `boto3.client("ec2").create_fpga_image` method.
 
-[Client.create_fpga_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_fpga_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_fpga_image]
 
 ```python
 def create_fpga_image(
@@ -1491,7 +1496,7 @@ def create_fpga_image(
 
 Type annotations for `boto3.client("ec2").create_image` method.
 
-[Client.create_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_image]
 
 ```python
 def create_image(
@@ -1511,7 +1516,7 @@ def create_image(
 
 Type annotations for `boto3.client("ec2").create_instance_export_task` method.
 
-[Client.create_instance_export_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_instance_export_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_instance_export_task]
 
 ```python
 def create_instance_export_task(
@@ -1529,7 +1534,7 @@ def create_instance_export_task(
 
 Type annotations for `boto3.client("ec2").create_internet_gateway` method.
 
-[Client.create_internet_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_internet_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_internet_gateway]
 
 ```python
 def create_internet_gateway(
@@ -1544,7 +1549,7 @@ def create_internet_gateway(
 
 Type annotations for `boto3.client("ec2").create_key_pair` method.
 
-[Client.create_key_pair documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_key_pair)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_key_pair]
 
 ```python
 def create_key_pair(
@@ -1560,7 +1565,7 @@ def create_key_pair(
 
 Type annotations for `boto3.client("ec2").create_launch_template` method.
 
-[Client.create_launch_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_launch_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_launch_template]
 
 ```python
 def create_launch_template(
@@ -1579,7 +1584,7 @@ def create_launch_template(
 
 Type annotations for `boto3.client("ec2").create_launch_template_version` method.
 
-[Client.create_launch_template_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_launch_template_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_launch_template_version]
 
 ```python
 def create_launch_template_version(
@@ -1599,7 +1604,7 @@ def create_launch_template_version(
 
 Type annotations for `boto3.client("ec2").create_local_gateway_route` method.
 
-[Client.create_local_gateway_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_local_gateway_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_local_gateway_route]
 
 ```python
 def create_local_gateway_route(
@@ -1616,7 +1621,7 @@ def create_local_gateway_route(
 
 Type annotations for `boto3.client("ec2").create_local_gateway_route_table_vpc_association` method.
 
-[Client.create_local_gateway_route_table_vpc_association documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_local_gateway_route_table_vpc_association)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_local_gateway_route_table_vpc_association]
 
 ```python
 def create_local_gateway_route_table_vpc_association(
@@ -1633,7 +1638,7 @@ def create_local_gateway_route_table_vpc_association(
 
 Type annotations for `boto3.client("ec2").create_managed_prefix_list` method.
 
-[Client.create_managed_prefix_list documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_managed_prefix_list)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_managed_prefix_list]
 
 ```python
 def create_managed_prefix_list(
@@ -1653,7 +1658,7 @@ def create_managed_prefix_list(
 
 Type annotations for `boto3.client("ec2").create_nat_gateway` method.
 
-[Client.create_nat_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_nat_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_nat_gateway]
 
 ```python
 def create_nat_gateway(
@@ -1671,7 +1676,7 @@ def create_nat_gateway(
 
 Type annotations for `boto3.client("ec2").create_network_acl` method.
 
-[Client.create_network_acl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_acl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_acl]
 
 ```python
 def create_network_acl(
@@ -1687,7 +1692,7 @@ def create_network_acl(
 
 Type annotations for `boto3.client("ec2").create_network_acl_entry` method.
 
-[Client.create_network_acl_entry documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_acl_entry)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_acl_entry]
 
 ```python
 def create_network_acl_entry(
@@ -1710,7 +1715,7 @@ def create_network_acl_entry(
 
 Type annotations for `boto3.client("ec2").create_network_insights_path` method.
 
-[Client.create_network_insights_path documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_insights_path)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_insights_path]
 
 ```python
 def create_network_insights_path(
@@ -1732,7 +1737,7 @@ def create_network_insights_path(
 
 Type annotations for `boto3.client("ec2").create_network_interface` method.
 
-[Client.create_network_interface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_interface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_interface]
 
 ```python
 def create_network_interface(
@@ -1756,7 +1761,7 @@ def create_network_interface(
 
 Type annotations for `boto3.client("ec2").create_network_interface_permission` method.
 
-[Client.create_network_interface_permission documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_interface_permission)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_interface_permission]
 
 ```python
 def create_network_interface_permission(
@@ -1774,7 +1779,7 @@ def create_network_interface_permission(
 
 Type annotations for `boto3.client("ec2").create_placement_group` method.
 
-[Client.create_placement_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_placement_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_placement_group]
 
 ```python
 def create_placement_group(
@@ -1792,7 +1797,7 @@ def create_placement_group(
 
 Type annotations for `boto3.client("ec2").create_replace_root_volume_task` method.
 
-[Client.create_replace_root_volume_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_replace_root_volume_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_replace_root_volume_task]
 
 ```python
 def create_replace_root_volume_task(
@@ -1810,7 +1815,7 @@ def create_replace_root_volume_task(
 
 Type annotations for `boto3.client("ec2").create_reserved_instances_listing` method.
 
-[Client.create_reserved_instances_listing documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_reserved_instances_listing)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_reserved_instances_listing]
 
 ```python
 def create_reserved_instances_listing(
@@ -1827,7 +1832,7 @@ def create_reserved_instances_listing(
 
 Type annotations for `boto3.client("ec2").create_restore_image_task` method.
 
-[Client.create_restore_image_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_restore_image_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_restore_image_task]
 
 ```python
 def create_restore_image_task(
@@ -1845,7 +1850,7 @@ def create_restore_image_task(
 
 Type annotations for `boto3.client("ec2").create_route` method.
 
-[Client.create_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_route]
 
 ```python
 def create_route(
@@ -1873,7 +1878,7 @@ def create_route(
 
 Type annotations for `boto3.client("ec2").create_route_table` method.
 
-[Client.create_route_table documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_route_table)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_route_table]
 
 ```python
 def create_route_table(
@@ -1889,7 +1894,7 @@ def create_route_table(
 
 Type annotations for `boto3.client("ec2").create_security_group` method.
 
-[Client.create_security_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_security_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_security_group]
 
 ```python
 def create_security_group(
@@ -1907,7 +1912,7 @@ def create_security_group(
 
 Type annotations for `boto3.client("ec2").create_snapshot` method.
 
-[Client.create_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_snapshot]
 
 ```python
 def create_snapshot(
@@ -1925,7 +1930,7 @@ def create_snapshot(
 
 Type annotations for `boto3.client("ec2").create_snapshots` method.
 
-[Client.create_snapshots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_snapshots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_snapshots]
 
 ```python
 def create_snapshots(
@@ -1944,7 +1949,7 @@ def create_snapshots(
 
 Type annotations for `boto3.client("ec2").create_spot_datafeed_subscription` method.
 
-[Client.create_spot_datafeed_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_spot_datafeed_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_spot_datafeed_subscription]
 
 ```python
 def create_spot_datafeed_subscription(
@@ -1960,7 +1965,7 @@ def create_spot_datafeed_subscription(
 
 Type annotations for `boto3.client("ec2").create_store_image_task` method.
 
-[Client.create_store_image_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_store_image_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_store_image_task]
 
 ```python
 def create_store_image_task(
@@ -1977,7 +1982,7 @@ def create_store_image_task(
 
 Type annotations for `boto3.client("ec2").create_subnet` method.
 
-[Client.create_subnet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_subnet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_subnet]
 
 ```python
 def create_subnet(
@@ -1998,7 +2003,7 @@ def create_subnet(
 
 Type annotations for `boto3.client("ec2").create_tags` method.
 
-[Client.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_tags]
 
 ```python
 def create_tags(
@@ -2014,7 +2019,7 @@ def create_tags(
 
 Type annotations for `boto3.client("ec2").create_traffic_mirror_filter` method.
 
-[Client.create_traffic_mirror_filter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_traffic_mirror_filter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_traffic_mirror_filter]
 
 ```python
 def create_traffic_mirror_filter(
@@ -2031,7 +2036,7 @@ def create_traffic_mirror_filter(
 
 Type annotations for `boto3.client("ec2").create_traffic_mirror_filter_rule` method.
 
-[Client.create_traffic_mirror_filter_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_traffic_mirror_filter_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_traffic_mirror_filter_rule]
 
 ```python
 def create_traffic_mirror_filter_rule(
@@ -2056,7 +2061,7 @@ def create_traffic_mirror_filter_rule(
 
 Type annotations for `boto3.client("ec2").create_traffic_mirror_session` method.
 
-[Client.create_traffic_mirror_session documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_traffic_mirror_session)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_traffic_mirror_session]
 
 ```python
 def create_traffic_mirror_session(
@@ -2079,7 +2084,7 @@ def create_traffic_mirror_session(
 
 Type annotations for `boto3.client("ec2").create_traffic_mirror_target` method.
 
-[Client.create_traffic_mirror_target documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_traffic_mirror_target)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_traffic_mirror_target]
 
 ```python
 def create_traffic_mirror_target(
@@ -2098,7 +2103,7 @@ def create_traffic_mirror_target(
 
 Type annotations for `boto3.client("ec2").create_transit_gateway` method.
 
-[Client.create_transit_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway]
 
 ```python
 def create_transit_gateway(
@@ -2115,7 +2120,7 @@ def create_transit_gateway(
 
 Type annotations for `boto3.client("ec2").create_transit_gateway_connect` method.
 
-[Client.create_transit_gateway_connect documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_connect)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_connect]
 
 ```python
 def create_transit_gateway_connect(
@@ -2132,7 +2137,7 @@ def create_transit_gateway_connect(
 
 Type annotations for `boto3.client("ec2").create_transit_gateway_connect_peer` method.
 
-[Client.create_transit_gateway_connect_peer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_connect_peer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_connect_peer]
 
 ```python
 def create_transit_gateway_connect_peer(
@@ -2152,7 +2157,7 @@ def create_transit_gateway_connect_peer(
 
 Type annotations for `boto3.client("ec2").create_transit_gateway_multicast_domain` method.
 
-[Client.create_transit_gateway_multicast_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_multicast_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_multicast_domain]
 
 ```python
 def create_transit_gateway_multicast_domain(
@@ -2169,7 +2174,7 @@ def create_transit_gateway_multicast_domain(
 
 Type annotations for `boto3.client("ec2").create_transit_gateway_peering_attachment` method.
 
-[Client.create_transit_gateway_peering_attachment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_peering_attachment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_peering_attachment]
 
 ```python
 def create_transit_gateway_peering_attachment(
@@ -2188,7 +2193,7 @@ def create_transit_gateway_peering_attachment(
 
 Type annotations for `boto3.client("ec2").create_transit_gateway_prefix_list_reference` method.
 
-[Client.create_transit_gateway_prefix_list_reference documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_prefix_list_reference)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_prefix_list_reference]
 
 ```python
 def create_transit_gateway_prefix_list_reference(
@@ -2206,7 +2211,7 @@ def create_transit_gateway_prefix_list_reference(
 
 Type annotations for `boto3.client("ec2").create_transit_gateway_route` method.
 
-[Client.create_transit_gateway_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_route]
 
 ```python
 def create_transit_gateway_route(
@@ -2224,7 +2229,7 @@ def create_transit_gateway_route(
 
 Type annotations for `boto3.client("ec2").create_transit_gateway_route_table` method.
 
-[Client.create_transit_gateway_route_table documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_route_table)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_route_table]
 
 ```python
 def create_transit_gateway_route_table(
@@ -2240,7 +2245,7 @@ def create_transit_gateway_route_table(
 
 Type annotations for `boto3.client("ec2").create_transit_gateway_vpc_attachment` method.
 
-[Client.create_transit_gateway_vpc_attachment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_vpc_attachment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_vpc_attachment]
 
 ```python
 def create_transit_gateway_vpc_attachment(
@@ -2259,7 +2264,7 @@ def create_transit_gateway_vpc_attachment(
 
 Type annotations for `boto3.client("ec2").create_volume` method.
 
-[Client.create_volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_volume]
 
 ```python
 def create_volume(
@@ -2284,7 +2289,7 @@ def create_volume(
 
 Type annotations for `boto3.client("ec2").create_vpc` method.
 
-[Client.create_vpc documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc]
 
 ```python
 def create_vpc(
@@ -2305,7 +2310,7 @@ def create_vpc(
 
 Type annotations for `boto3.client("ec2").create_vpc_endpoint` method.
 
-[Client.create_vpc_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc_endpoint]
 
 ```python
 def create_vpc_endpoint(
@@ -2329,7 +2334,7 @@ def create_vpc_endpoint(
 
 Type annotations for `boto3.client("ec2").create_vpc_endpoint_connection_notification` method.
 
-[Client.create_vpc_endpoint_connection_notification documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc_endpoint_connection_notification)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc_endpoint_connection_notification]
 
 ```python
 def create_vpc_endpoint_connection_notification(
@@ -2348,7 +2353,7 @@ def create_vpc_endpoint_connection_notification(
 
 Type annotations for `boto3.client("ec2").create_vpc_endpoint_service_configuration` method.
 
-[Client.create_vpc_endpoint_service_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc_endpoint_service_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc_endpoint_service_configuration]
 
 ```python
 def create_vpc_endpoint_service_configuration(
@@ -2368,7 +2373,7 @@ def create_vpc_endpoint_service_configuration(
 
 Type annotations for `boto3.client("ec2").create_vpc_peering_connection` method.
 
-[Client.create_vpc_peering_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc_peering_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc_peering_connection]
 
 ```python
 def create_vpc_peering_connection(
@@ -2387,7 +2392,7 @@ def create_vpc_peering_connection(
 
 Type annotations for `boto3.client("ec2").create_vpn_connection` method.
 
-[Client.create_vpn_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpn_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpn_connection]
 
 ```python
 def create_vpn_connection(
@@ -2407,7 +2412,7 @@ def create_vpn_connection(
 
 Type annotations for `boto3.client("ec2").create_vpn_connection_route` method.
 
-[Client.create_vpn_connection_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpn_connection_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpn_connection_route]
 
 ```python
 def create_vpn_connection_route(
@@ -2422,7 +2427,7 @@ def create_vpn_connection_route(
 
 Type annotations for `boto3.client("ec2").create_vpn_gateway` method.
 
-[Client.create_vpn_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpn_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpn_gateway]
 
 ```python
 def create_vpn_gateway(
@@ -2440,7 +2445,7 @@ def create_vpn_gateway(
 
 Type annotations for `boto3.client("ec2").delete_carrier_gateway` method.
 
-[Client.delete_carrier_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_carrier_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_carrier_gateway]
 
 ```python
 def delete_carrier_gateway(
@@ -2455,7 +2460,7 @@ def delete_carrier_gateway(
 
 Type annotations for `boto3.client("ec2").delete_client_vpn_endpoint` method.
 
-[Client.delete_client_vpn_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_client_vpn_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_client_vpn_endpoint]
 
 ```python
 def delete_client_vpn_endpoint(
@@ -2470,7 +2475,7 @@ def delete_client_vpn_endpoint(
 
 Type annotations for `boto3.client("ec2").delete_client_vpn_route` method.
 
-[Client.delete_client_vpn_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_client_vpn_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_client_vpn_route]
 
 ```python
 def delete_client_vpn_route(
@@ -2487,7 +2492,7 @@ def delete_client_vpn_route(
 
 Type annotations for `boto3.client("ec2").delete_customer_gateway` method.
 
-[Client.delete_customer_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_customer_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_customer_gateway]
 
 ```python
 def delete_customer_gateway(
@@ -2502,7 +2507,7 @@ def delete_customer_gateway(
 
 Type annotations for `boto3.client("ec2").delete_dhcp_options` method.
 
-[Client.delete_dhcp_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_dhcp_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_dhcp_options]
 
 ```python
 def delete_dhcp_options(
@@ -2517,7 +2522,7 @@ def delete_dhcp_options(
 
 Type annotations for `boto3.client("ec2").delete_egress_only_internet_gateway` method.
 
-[Client.delete_egress_only_internet_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_egress_only_internet_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_egress_only_internet_gateway]
 
 ```python
 def delete_egress_only_internet_gateway(
@@ -2532,7 +2537,7 @@ def delete_egress_only_internet_gateway(
 
 Type annotations for `boto3.client("ec2").delete_fleets` method.
 
-[Client.delete_fleets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_fleets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_fleets]
 
 ```python
 def delete_fleets(
@@ -2548,7 +2553,7 @@ def delete_fleets(
 
 Type annotations for `boto3.client("ec2").delete_flow_logs` method.
 
-[Client.delete_flow_logs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_flow_logs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_flow_logs]
 
 ```python
 def delete_flow_logs(
@@ -2563,7 +2568,7 @@ def delete_flow_logs(
 
 Type annotations for `boto3.client("ec2").delete_fpga_image` method.
 
-[Client.delete_fpga_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_fpga_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_fpga_image]
 
 ```python
 def delete_fpga_image(
@@ -2578,7 +2583,7 @@ def delete_fpga_image(
 
 Type annotations for `boto3.client("ec2").delete_internet_gateway` method.
 
-[Client.delete_internet_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_internet_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_internet_gateway]
 
 ```python
 def delete_internet_gateway(
@@ -2593,7 +2598,7 @@ def delete_internet_gateway(
 
 Type annotations for `boto3.client("ec2").delete_key_pair` method.
 
-[Client.delete_key_pair documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_key_pair)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_key_pair]
 
 ```python
 def delete_key_pair(
@@ -2609,7 +2614,7 @@ def delete_key_pair(
 
 Type annotations for `boto3.client("ec2").delete_launch_template` method.
 
-[Client.delete_launch_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_launch_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_launch_template]
 
 ```python
 def delete_launch_template(
@@ -2625,7 +2630,7 @@ def delete_launch_template(
 
 Type annotations for `boto3.client("ec2").delete_launch_template_versions` method.
 
-[Client.delete_launch_template_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_launch_template_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_launch_template_versions]
 
 ```python
 def delete_launch_template_versions(
@@ -2642,7 +2647,7 @@ def delete_launch_template_versions(
 
 Type annotations for `boto3.client("ec2").delete_local_gateway_route` method.
 
-[Client.delete_local_gateway_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_local_gateway_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_local_gateway_route]
 
 ```python
 def delete_local_gateway_route(
@@ -2658,7 +2663,7 @@ def delete_local_gateway_route(
 
 Type annotations for `boto3.client("ec2").delete_local_gateway_route_table_vpc_association` method.
 
-[Client.delete_local_gateway_route_table_vpc_association documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_local_gateway_route_table_vpc_association)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_local_gateway_route_table_vpc_association]
 
 ```python
 def delete_local_gateway_route_table_vpc_association(
@@ -2673,7 +2678,7 @@ def delete_local_gateway_route_table_vpc_association(
 
 Type annotations for `boto3.client("ec2").delete_managed_prefix_list` method.
 
-[Client.delete_managed_prefix_list documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_managed_prefix_list)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_managed_prefix_list]
 
 ```python
 def delete_managed_prefix_list(
@@ -2688,7 +2693,7 @@ def delete_managed_prefix_list(
 
 Type annotations for `boto3.client("ec2").delete_nat_gateway` method.
 
-[Client.delete_nat_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_nat_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_nat_gateway]
 
 ```python
 def delete_nat_gateway(
@@ -2703,7 +2708,7 @@ def delete_nat_gateway(
 
 Type annotations for `boto3.client("ec2").delete_network_acl` method.
 
-[Client.delete_network_acl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_acl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_acl]
 
 ```python
 def delete_network_acl(
@@ -2718,7 +2723,7 @@ def delete_network_acl(
 
 Type annotations for `boto3.client("ec2").delete_network_acl_entry` method.
 
-[Client.delete_network_acl_entry documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_acl_entry)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_acl_entry]
 
 ```python
 def delete_network_acl_entry(
@@ -2735,7 +2740,7 @@ def delete_network_acl_entry(
 
 Type annotations for `boto3.client("ec2").delete_network_insights_analysis` method.
 
-[Client.delete_network_insights_analysis documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_insights_analysis)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_insights_analysis]
 
 ```python
 def delete_network_insights_analysis(
@@ -2750,7 +2755,7 @@ def delete_network_insights_analysis(
 
 Type annotations for `boto3.client("ec2").delete_network_insights_path` method.
 
-[Client.delete_network_insights_path documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_insights_path)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_insights_path]
 
 ```python
 def delete_network_insights_path(
@@ -2765,7 +2770,7 @@ def delete_network_insights_path(
 
 Type annotations for `boto3.client("ec2").delete_network_interface` method.
 
-[Client.delete_network_interface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_interface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_interface]
 
 ```python
 def delete_network_interface(
@@ -2780,7 +2785,7 @@ def delete_network_interface(
 
 Type annotations for `boto3.client("ec2").delete_network_interface_permission` method.
 
-[Client.delete_network_interface_permission documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_interface_permission)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_interface_permission]
 
 ```python
 def delete_network_interface_permission(
@@ -2796,7 +2801,7 @@ def delete_network_interface_permission(
 
 Type annotations for `boto3.client("ec2").delete_placement_group` method.
 
-[Client.delete_placement_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_placement_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_placement_group]
 
 ```python
 def delete_placement_group(
@@ -2811,7 +2816,7 @@ def delete_placement_group(
 
 Type annotations for `boto3.client("ec2").delete_queued_reserved_instances` method.
 
-[Client.delete_queued_reserved_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_queued_reserved_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_queued_reserved_instances]
 
 ```python
 def delete_queued_reserved_instances(
@@ -2826,7 +2831,7 @@ def delete_queued_reserved_instances(
 
 Type annotations for `boto3.client("ec2").delete_route` method.
 
-[Client.delete_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_route]
 
 ```python
 def delete_route(
@@ -2844,7 +2849,7 @@ def delete_route(
 
 Type annotations for `boto3.client("ec2").delete_route_table` method.
 
-[Client.delete_route_table documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_route_table)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_route_table]
 
 ```python
 def delete_route_table(
@@ -2859,7 +2864,7 @@ def delete_route_table(
 
 Type annotations for `boto3.client("ec2").delete_security_group` method.
 
-[Client.delete_security_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_security_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_security_group]
 
 ```python
 def delete_security_group(
@@ -2875,7 +2880,7 @@ def delete_security_group(
 
 Type annotations for `boto3.client("ec2").delete_snapshot` method.
 
-[Client.delete_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_snapshot]
 
 ```python
 def delete_snapshot(
@@ -2890,7 +2895,7 @@ def delete_snapshot(
 
 Type annotations for `boto3.client("ec2").delete_spot_datafeed_subscription` method.
 
-[Client.delete_spot_datafeed_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_spot_datafeed_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_spot_datafeed_subscription]
 
 ```python
 def delete_spot_datafeed_subscription(
@@ -2904,7 +2909,7 @@ def delete_spot_datafeed_subscription(
 
 Type annotations for `boto3.client("ec2").delete_subnet` method.
 
-[Client.delete_subnet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_subnet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_subnet]
 
 ```python
 def delete_subnet(
@@ -2919,7 +2924,7 @@ def delete_subnet(
 
 Type annotations for `boto3.client("ec2").delete_tags` method.
 
-[Client.delete_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_tags]
 
 ```python
 def delete_tags(
@@ -2935,7 +2940,7 @@ def delete_tags(
 
 Type annotations for `boto3.client("ec2").delete_traffic_mirror_filter` method.
 
-[Client.delete_traffic_mirror_filter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_traffic_mirror_filter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_traffic_mirror_filter]
 
 ```python
 def delete_traffic_mirror_filter(
@@ -2950,7 +2955,7 @@ def delete_traffic_mirror_filter(
 
 Type annotations for `boto3.client("ec2").delete_traffic_mirror_filter_rule` method.
 
-[Client.delete_traffic_mirror_filter_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_traffic_mirror_filter_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_traffic_mirror_filter_rule]
 
 ```python
 def delete_traffic_mirror_filter_rule(
@@ -2965,7 +2970,7 @@ def delete_traffic_mirror_filter_rule(
 
 Type annotations for `boto3.client("ec2").delete_traffic_mirror_session` method.
 
-[Client.delete_traffic_mirror_session documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_traffic_mirror_session)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_traffic_mirror_session]
 
 ```python
 def delete_traffic_mirror_session(
@@ -2980,7 +2985,7 @@ def delete_traffic_mirror_session(
 
 Type annotations for `boto3.client("ec2").delete_traffic_mirror_target` method.
 
-[Client.delete_traffic_mirror_target documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_traffic_mirror_target)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_traffic_mirror_target]
 
 ```python
 def delete_traffic_mirror_target(
@@ -2995,7 +3000,7 @@ def delete_traffic_mirror_target(
 
 Type annotations for `boto3.client("ec2").delete_transit_gateway` method.
 
-[Client.delete_transit_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway]
 
 ```python
 def delete_transit_gateway(
@@ -3010,7 +3015,7 @@ def delete_transit_gateway(
 
 Type annotations for `boto3.client("ec2").delete_transit_gateway_connect` method.
 
-[Client.delete_transit_gateway_connect documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_connect)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_connect]
 
 ```python
 def delete_transit_gateway_connect(
@@ -3025,7 +3030,7 @@ def delete_transit_gateway_connect(
 
 Type annotations for `boto3.client("ec2").delete_transit_gateway_connect_peer` method.
 
-[Client.delete_transit_gateway_connect_peer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_connect_peer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_connect_peer]
 
 ```python
 def delete_transit_gateway_connect_peer(
@@ -3040,7 +3045,7 @@ def delete_transit_gateway_connect_peer(
 
 Type annotations for `boto3.client("ec2").delete_transit_gateway_multicast_domain` method.
 
-[Client.delete_transit_gateway_multicast_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_multicast_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_multicast_domain]
 
 ```python
 def delete_transit_gateway_multicast_domain(
@@ -3055,7 +3060,7 @@ def delete_transit_gateway_multicast_domain(
 
 Type annotations for `boto3.client("ec2").delete_transit_gateway_peering_attachment` method.
 
-[Client.delete_transit_gateway_peering_attachment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_peering_attachment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_peering_attachment]
 
 ```python
 def delete_transit_gateway_peering_attachment(
@@ -3070,7 +3075,7 @@ def delete_transit_gateway_peering_attachment(
 
 Type annotations for `boto3.client("ec2").delete_transit_gateway_prefix_list_reference` method.
 
-[Client.delete_transit_gateway_prefix_list_reference documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_prefix_list_reference)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_prefix_list_reference]
 
 ```python
 def delete_transit_gateway_prefix_list_reference(
@@ -3086,7 +3091,7 @@ def delete_transit_gateway_prefix_list_reference(
 
 Type annotations for `boto3.client("ec2").delete_transit_gateway_route` method.
 
-[Client.delete_transit_gateway_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_route]
 
 ```python
 def delete_transit_gateway_route(
@@ -3102,7 +3107,7 @@ def delete_transit_gateway_route(
 
 Type annotations for `boto3.client("ec2").delete_transit_gateway_route_table` method.
 
-[Client.delete_transit_gateway_route_table documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_route_table)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_route_table]
 
 ```python
 def delete_transit_gateway_route_table(
@@ -3117,7 +3122,7 @@ def delete_transit_gateway_route_table(
 
 Type annotations for `boto3.client("ec2").delete_transit_gateway_vpc_attachment` method.
 
-[Client.delete_transit_gateway_vpc_attachment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_vpc_attachment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_vpc_attachment]
 
 ```python
 def delete_transit_gateway_vpc_attachment(
@@ -3132,7 +3137,7 @@ def delete_transit_gateway_vpc_attachment(
 
 Type annotations for `boto3.client("ec2").delete_volume` method.
 
-[Client.delete_volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_volume]
 
 ```python
 def delete_volume(
@@ -3147,7 +3152,7 @@ def delete_volume(
 
 Type annotations for `boto3.client("ec2").delete_vpc` method.
 
-[Client.delete_vpc documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpc)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpc]
 
 ```python
 def delete_vpc(
@@ -3162,7 +3167,7 @@ def delete_vpc(
 
 Type annotations for `boto3.client("ec2").delete_vpc_endpoint_connection_notifications` method.
 
-[Client.delete_vpc_endpoint_connection_notifications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpc_endpoint_connection_notifications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpc_endpoint_connection_notifications]
 
 ```python
 def delete_vpc_endpoint_connection_notifications(
@@ -3177,7 +3182,7 @@ def delete_vpc_endpoint_connection_notifications(
 
 Type annotations for `boto3.client("ec2").delete_vpc_endpoint_service_configurations` method.
 
-[Client.delete_vpc_endpoint_service_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpc_endpoint_service_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpc_endpoint_service_configurations]
 
 ```python
 def delete_vpc_endpoint_service_configurations(
@@ -3192,7 +3197,7 @@ def delete_vpc_endpoint_service_configurations(
 
 Type annotations for `boto3.client("ec2").delete_vpc_endpoints` method.
 
-[Client.delete_vpc_endpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpc_endpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpc_endpoints]
 
 ```python
 def delete_vpc_endpoints(
@@ -3207,7 +3212,7 @@ def delete_vpc_endpoints(
 
 Type annotations for `boto3.client("ec2").delete_vpc_peering_connection` method.
 
-[Client.delete_vpc_peering_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpc_peering_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpc_peering_connection]
 
 ```python
 def delete_vpc_peering_connection(
@@ -3222,7 +3227,7 @@ def delete_vpc_peering_connection(
 
 Type annotations for `boto3.client("ec2").delete_vpn_connection` method.
 
-[Client.delete_vpn_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpn_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpn_connection]
 
 ```python
 def delete_vpn_connection(
@@ -3237,7 +3242,7 @@ def delete_vpn_connection(
 
 Type annotations for `boto3.client("ec2").delete_vpn_connection_route` method.
 
-[Client.delete_vpn_connection_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpn_connection_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpn_connection_route]
 
 ```python
 def delete_vpn_connection_route(
@@ -3252,7 +3257,7 @@ def delete_vpn_connection_route(
 
 Type annotations for `boto3.client("ec2").delete_vpn_gateway` method.
 
-[Client.delete_vpn_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpn_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpn_gateway]
 
 ```python
 def delete_vpn_gateway(
@@ -3267,7 +3272,7 @@ def delete_vpn_gateway(
 
 Type annotations for `boto3.client("ec2").deprovision_byoip_cidr` method.
 
-[Client.deprovision_byoip_cidr documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.deprovision_byoip_cidr)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.deprovision_byoip_cidr]
 
 ```python
 def deprovision_byoip_cidr(
@@ -3282,7 +3287,7 @@ def deprovision_byoip_cidr(
 
 Type annotations for `boto3.client("ec2").deregister_image` method.
 
-[Client.deregister_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.deregister_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.deregister_image]
 
 ```python
 def deregister_image(
@@ -3297,7 +3302,7 @@ def deregister_image(
 
 Type annotations for `boto3.client("ec2").deregister_instance_event_notification_attributes` method.
 
-[Client.deregister_instance_event_notification_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.deregister_instance_event_notification_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.deregister_instance_event_notification_attributes]
 
 ```python
 def deregister_instance_event_notification_attributes(
@@ -3312,7 +3317,7 @@ def deregister_instance_event_notification_attributes(
 
 Type annotations for `boto3.client("ec2").deregister_transit_gateway_multicast_group_members` method.
 
-[Client.deregister_transit_gateway_multicast_group_members documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.deregister_transit_gateway_multicast_group_members)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.deregister_transit_gateway_multicast_group_members]
 
 ```python
 def deregister_transit_gateway_multicast_group_members(
@@ -3329,7 +3334,7 @@ def deregister_transit_gateway_multicast_group_members(
 
 Type annotations for `boto3.client("ec2").deregister_transit_gateway_multicast_group_sources` method.
 
-[Client.deregister_transit_gateway_multicast_group_sources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.deregister_transit_gateway_multicast_group_sources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.deregister_transit_gateway_multicast_group_sources]
 
 ```python
 def deregister_transit_gateway_multicast_group_sources(
@@ -3346,7 +3351,7 @@ def deregister_transit_gateway_multicast_group_sources(
 
 Type annotations for `boto3.client("ec2").describe_account_attributes` method.
 
-[Client.describe_account_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_account_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_account_attributes]
 
 ```python
 def describe_account_attributes(
@@ -3361,7 +3366,7 @@ def describe_account_attributes(
 
 Type annotations for `boto3.client("ec2").describe_addresses` method.
 
-[Client.describe_addresses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_addresses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_addresses]
 
 ```python
 def describe_addresses(
@@ -3378,7 +3383,7 @@ def describe_addresses(
 
 Type annotations for `boto3.client("ec2").describe_addresses_attribute` method.
 
-[Client.describe_addresses_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_addresses_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_addresses_attribute]
 
 ```python
 def describe_addresses_attribute(
@@ -3396,7 +3401,7 @@ def describe_addresses_attribute(
 
 Type annotations for `boto3.client("ec2").describe_aggregate_id_format` method.
 
-[Client.describe_aggregate_id_format documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_aggregate_id_format)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_aggregate_id_format]
 
 ```python
 def describe_aggregate_id_format(
@@ -3410,7 +3415,7 @@ def describe_aggregate_id_format(
 
 Type annotations for `boto3.client("ec2").describe_availability_zones` method.
 
-[Client.describe_availability_zones documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_availability_zones)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_availability_zones]
 
 ```python
 def describe_availability_zones(
@@ -3428,7 +3433,7 @@ def describe_availability_zones(
 
 Type annotations for `boto3.client("ec2").describe_bundle_tasks` method.
 
-[Client.describe_bundle_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_bundle_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_bundle_tasks]
 
 ```python
 def describe_bundle_tasks(
@@ -3444,7 +3449,7 @@ def describe_bundle_tasks(
 
 Type annotations for `boto3.client("ec2").describe_byoip_cidrs` method.
 
-[Client.describe_byoip_cidrs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_byoip_cidrs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_byoip_cidrs]
 
 ```python
 def describe_byoip_cidrs(
@@ -3460,7 +3465,7 @@ def describe_byoip_cidrs(
 
 Type annotations for `boto3.client("ec2").describe_capacity_reservations` method.
 
-[Client.describe_capacity_reservations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_capacity_reservations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_capacity_reservations]
 
 ```python
 def describe_capacity_reservations(
@@ -3478,7 +3483,7 @@ def describe_capacity_reservations(
 
 Type annotations for `boto3.client("ec2").describe_carrier_gateways` method.
 
-[Client.describe_carrier_gateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_carrier_gateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_carrier_gateways]
 
 ```python
 def describe_carrier_gateways(
@@ -3496,7 +3501,7 @@ def describe_carrier_gateways(
 
 Type annotations for `boto3.client("ec2").describe_classic_link_instances` method.
 
-[Client.describe_classic_link_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_classic_link_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_classic_link_instances]
 
 ```python
 def describe_classic_link_instances(
@@ -3514,7 +3519,7 @@ def describe_classic_link_instances(
 
 Type annotations for `boto3.client("ec2").describe_client_vpn_authorization_rules` method.
 
-[Client.describe_client_vpn_authorization_rules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_authorization_rules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_authorization_rules]
 
 ```python
 def describe_client_vpn_authorization_rules(
@@ -3532,7 +3537,7 @@ def describe_client_vpn_authorization_rules(
 
 Type annotations for `boto3.client("ec2").describe_client_vpn_connections` method.
 
-[Client.describe_client_vpn_connections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_connections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_connections]
 
 ```python
 def describe_client_vpn_connections(
@@ -3550,7 +3555,7 @@ def describe_client_vpn_connections(
 
 Type annotations for `boto3.client("ec2").describe_client_vpn_endpoints` method.
 
-[Client.describe_client_vpn_endpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_endpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_endpoints]
 
 ```python
 def describe_client_vpn_endpoints(
@@ -3568,7 +3573,7 @@ def describe_client_vpn_endpoints(
 
 Type annotations for `boto3.client("ec2").describe_client_vpn_routes` method.
 
-[Client.describe_client_vpn_routes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_routes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_routes]
 
 ```python
 def describe_client_vpn_routes(
@@ -3586,7 +3591,7 @@ def describe_client_vpn_routes(
 
 Type annotations for `boto3.client("ec2").describe_client_vpn_target_networks` method.
 
-[Client.describe_client_vpn_target_networks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_target_networks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_target_networks]
 
 ```python
 def describe_client_vpn_target_networks(
@@ -3605,7 +3610,7 @@ def describe_client_vpn_target_networks(
 
 Type annotations for `boto3.client("ec2").describe_coip_pools` method.
 
-[Client.describe_coip_pools documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_coip_pools)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_coip_pools]
 
 ```python
 def describe_coip_pools(
@@ -3623,7 +3628,7 @@ def describe_coip_pools(
 
 Type annotations for `boto3.client("ec2").describe_conversion_tasks` method.
 
-[Client.describe_conversion_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_conversion_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_conversion_tasks]
 
 ```python
 def describe_conversion_tasks(
@@ -3638,7 +3643,7 @@ def describe_conversion_tasks(
 
 Type annotations for `boto3.client("ec2").describe_customer_gateways` method.
 
-[Client.describe_customer_gateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_customer_gateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_customer_gateways]
 
 ```python
 def describe_customer_gateways(
@@ -3654,7 +3659,7 @@ def describe_customer_gateways(
 
 Type annotations for `boto3.client("ec2").describe_dhcp_options` method.
 
-[Client.describe_dhcp_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_dhcp_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_dhcp_options]
 
 ```python
 def describe_dhcp_options(
@@ -3672,7 +3677,7 @@ def describe_dhcp_options(
 
 Type annotations for `boto3.client("ec2").describe_egress_only_internet_gateways` method.
 
-[Client.describe_egress_only_internet_gateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_egress_only_internet_gateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_egress_only_internet_gateways]
 
 ```python
 def describe_egress_only_internet_gateways(
@@ -3690,7 +3695,7 @@ def describe_egress_only_internet_gateways(
 
 Type annotations for `boto3.client("ec2").describe_elastic_gpus` method.
 
-[Client.describe_elastic_gpus documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_elastic_gpus)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_elastic_gpus]
 
 ```python
 def describe_elastic_gpus(
@@ -3708,7 +3713,7 @@ def describe_elastic_gpus(
 
 Type annotations for `boto3.client("ec2").describe_export_image_tasks` method.
 
-[Client.describe_export_image_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_export_image_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_export_image_tasks]
 
 ```python
 def describe_export_image_tasks(
@@ -3726,7 +3731,7 @@ def describe_export_image_tasks(
 
 Type annotations for `boto3.client("ec2").describe_export_tasks` method.
 
-[Client.describe_export_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_export_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_export_tasks]
 
 ```python
 def describe_export_tasks(
@@ -3741,7 +3746,7 @@ def describe_export_tasks(
 
 Type annotations for `boto3.client("ec2").describe_fast_snapshot_restores` method.
 
-[Client.describe_fast_snapshot_restores documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fast_snapshot_restores)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fast_snapshot_restores]
 
 ```python
 def describe_fast_snapshot_restores(
@@ -3758,7 +3763,7 @@ def describe_fast_snapshot_restores(
 
 Type annotations for `boto3.client("ec2").describe_fleet_history` method.
 
-[Client.describe_fleet_history documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fleet_history)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fleet_history]
 
 ```python
 def describe_fleet_history(
@@ -3777,7 +3782,7 @@ def describe_fleet_history(
 
 Type annotations for `boto3.client("ec2").describe_fleet_instances` method.
 
-[Client.describe_fleet_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fleet_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fleet_instances]
 
 ```python
 def describe_fleet_instances(
@@ -3795,7 +3800,7 @@ def describe_fleet_instances(
 
 Type annotations for `boto3.client("ec2").describe_fleets` method.
 
-[Client.describe_fleets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fleets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fleets]
 
 ```python
 def describe_fleets(
@@ -3813,7 +3818,7 @@ def describe_fleets(
 
 Type annotations for `boto3.client("ec2").describe_flow_logs` method.
 
-[Client.describe_flow_logs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_flow_logs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_flow_logs]
 
 ```python
 def describe_flow_logs(
@@ -3831,7 +3836,7 @@ def describe_flow_logs(
 
 Type annotations for `boto3.client("ec2").describe_fpga_image_attribute` method.
 
-[Client.describe_fpga_image_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fpga_image_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fpga_image_attribute]
 
 ```python
 def describe_fpga_image_attribute(
@@ -3847,7 +3852,7 @@ def describe_fpga_image_attribute(
 
 Type annotations for `boto3.client("ec2").describe_fpga_images` method.
 
-[Client.describe_fpga_images documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fpga_images)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fpga_images]
 
 ```python
 def describe_fpga_images(
@@ -3866,7 +3871,7 @@ def describe_fpga_images(
 
 Type annotations for `boto3.client("ec2").describe_host_reservation_offerings` method.
 
-[Client.describe_host_reservation_offerings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_host_reservation_offerings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_host_reservation_offerings]
 
 ```python
 def describe_host_reservation_offerings(
@@ -3885,7 +3890,7 @@ def describe_host_reservation_offerings(
 
 Type annotations for `boto3.client("ec2").describe_host_reservations` method.
 
-[Client.describe_host_reservations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_host_reservations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_host_reservations]
 
 ```python
 def describe_host_reservations(
@@ -3902,7 +3907,7 @@ def describe_host_reservations(
 
 Type annotations for `boto3.client("ec2").describe_hosts` method.
 
-[Client.describe_hosts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_hosts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_hosts]
 
 ```python
 def describe_hosts(
@@ -3919,7 +3924,7 @@ def describe_hosts(
 
 Type annotations for `boto3.client("ec2").describe_iam_instance_profile_associations` method.
 
-[Client.describe_iam_instance_profile_associations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_iam_instance_profile_associations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_iam_instance_profile_associations]
 
 ```python
 def describe_iam_instance_profile_associations(
@@ -3936,7 +3941,7 @@ def describe_iam_instance_profile_associations(
 
 Type annotations for `boto3.client("ec2").describe_id_format` method.
 
-[Client.describe_id_format documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_id_format)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_id_format]
 
 ```python
 def describe_id_format(
@@ -3950,7 +3955,7 @@ def describe_id_format(
 
 Type annotations for `boto3.client("ec2").describe_identity_id_format` method.
 
-[Client.describe_identity_id_format documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_identity_id_format)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_identity_id_format]
 
 ```python
 def describe_identity_id_format(
@@ -3965,7 +3970,7 @@ def describe_identity_id_format(
 
 Type annotations for `boto3.client("ec2").describe_image_attribute` method.
 
-[Client.describe_image_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_image_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_image_attribute]
 
 ```python
 def describe_image_attribute(
@@ -3981,7 +3986,7 @@ def describe_image_attribute(
 
 Type annotations for `boto3.client("ec2").describe_images` method.
 
-[Client.describe_images documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_images)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_images]
 
 ```python
 def describe_images(
@@ -3999,7 +4004,7 @@ def describe_images(
 
 Type annotations for `boto3.client("ec2").describe_import_image_tasks` method.
 
-[Client.describe_import_image_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_import_image_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_import_image_tasks]
 
 ```python
 def describe_import_image_tasks(
@@ -4017,7 +4022,7 @@ def describe_import_image_tasks(
 
 Type annotations for `boto3.client("ec2").describe_import_snapshot_tasks` method.
 
-[Client.describe_import_snapshot_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_import_snapshot_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_import_snapshot_tasks]
 
 ```python
 def describe_import_snapshot_tasks(
@@ -4035,7 +4040,7 @@ def describe_import_snapshot_tasks(
 
 Type annotations for `boto3.client("ec2").describe_instance_attribute` method.
 
-[Client.describe_instance_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_attribute]
 
 ```python
 def describe_instance_attribute(
@@ -4051,7 +4056,7 @@ def describe_instance_attribute(
 
 Type annotations for `boto3.client("ec2").describe_instance_credit_specifications` method.
 
-[Client.describe_instance_credit_specifications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_credit_specifications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_credit_specifications]
 
 ```python
 def describe_instance_credit_specifications(
@@ -4069,7 +4074,7 @@ def describe_instance_credit_specifications(
 
 Type annotations for `boto3.client("ec2").describe_instance_event_notification_attributes` method.
 
-[Client.describe_instance_event_notification_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_event_notification_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_event_notification_attributes]
 
 ```python
 def describe_instance_event_notification_attributes(
@@ -4083,7 +4088,7 @@ def describe_instance_event_notification_attributes(
 
 Type annotations for `boto3.client("ec2").describe_instance_status` method.
 
-[Client.describe_instance_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_status]
 
 ```python
 def describe_instance_status(
@@ -4102,7 +4107,7 @@ def describe_instance_status(
 
 Type annotations for `boto3.client("ec2").describe_instance_type_offerings` method.
 
-[Client.describe_instance_type_offerings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_type_offerings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_type_offerings]
 
 ```python
 def describe_instance_type_offerings(
@@ -4120,7 +4125,7 @@ def describe_instance_type_offerings(
 
 Type annotations for `boto3.client("ec2").describe_instance_types` method.
 
-[Client.describe_instance_types documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_types)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_types]
 
 ```python
 def describe_instance_types(
@@ -4138,7 +4143,7 @@ def describe_instance_types(
 
 Type annotations for `boto3.client("ec2").describe_instances` method.
 
-[Client.describe_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instances]
 
 ```python
 def describe_instances(
@@ -4156,7 +4161,7 @@ def describe_instances(
 
 Type annotations for `boto3.client("ec2").describe_internet_gateways` method.
 
-[Client.describe_internet_gateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_internet_gateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_internet_gateways]
 
 ```python
 def describe_internet_gateways(
@@ -4174,7 +4179,7 @@ def describe_internet_gateways(
 
 Type annotations for `boto3.client("ec2").describe_ipv6_pools` method.
 
-[Client.describe_ipv6_pools documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_ipv6_pools)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_ipv6_pools]
 
 ```python
 def describe_ipv6_pools(
@@ -4192,7 +4197,7 @@ def describe_ipv6_pools(
 
 Type annotations for `boto3.client("ec2").describe_key_pairs` method.
 
-[Client.describe_key_pairs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_key_pairs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_key_pairs]
 
 ```python
 def describe_key_pairs(
@@ -4209,7 +4214,7 @@ def describe_key_pairs(
 
 Type annotations for `boto3.client("ec2").describe_launch_template_versions` method.
 
-[Client.describe_launch_template_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_launch_template_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_launch_template_versions]
 
 ```python
 def describe_launch_template_versions(
@@ -4231,7 +4236,7 @@ def describe_launch_template_versions(
 
 Type annotations for `boto3.client("ec2").describe_launch_templates` method.
 
-[Client.describe_launch_templates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_launch_templates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_launch_templates]
 
 ```python
 def describe_launch_templates(
@@ -4250,7 +4255,7 @@ def describe_launch_templates(
 
 Type annotations for `boto3.client("ec2").describe_local_gateway_route_table_virtual_interface_group_associations` method.
 
-[Client.describe_local_gateway_route_table_virtual_interface_group_associations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_route_table_virtual_interface_group_associations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_route_table_virtual_interface_group_associations]
 
 ```python
 def describe_local_gateway_route_table_virtual_interface_group_associations(
@@ -4268,7 +4273,7 @@ def describe_local_gateway_route_table_virtual_interface_group_associations(
 
 Type annotations for `boto3.client("ec2").describe_local_gateway_route_table_vpc_associations` method.
 
-[Client.describe_local_gateway_route_table_vpc_associations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_route_table_vpc_associations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_route_table_vpc_associations]
 
 ```python
 def describe_local_gateway_route_table_vpc_associations(
@@ -4286,7 +4291,7 @@ def describe_local_gateway_route_table_vpc_associations(
 
 Type annotations for `boto3.client("ec2").describe_local_gateway_route_tables` method.
 
-[Client.describe_local_gateway_route_tables documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_route_tables)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_route_tables]
 
 ```python
 def describe_local_gateway_route_tables(
@@ -4304,7 +4309,7 @@ def describe_local_gateway_route_tables(
 
 Type annotations for `boto3.client("ec2").describe_local_gateway_virtual_interface_groups` method.
 
-[Client.describe_local_gateway_virtual_interface_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_virtual_interface_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_virtual_interface_groups]
 
 ```python
 def describe_local_gateway_virtual_interface_groups(
@@ -4322,7 +4327,7 @@ def describe_local_gateway_virtual_interface_groups(
 
 Type annotations for `boto3.client("ec2").describe_local_gateway_virtual_interfaces` method.
 
-[Client.describe_local_gateway_virtual_interfaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_virtual_interfaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_virtual_interfaces]
 
 ```python
 def describe_local_gateway_virtual_interfaces(
@@ -4340,7 +4345,7 @@ def describe_local_gateway_virtual_interfaces(
 
 Type annotations for `boto3.client("ec2").describe_local_gateways` method.
 
-[Client.describe_local_gateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateways]
 
 ```python
 def describe_local_gateways(
@@ -4358,7 +4363,7 @@ def describe_local_gateways(
 
 Type annotations for `boto3.client("ec2").describe_managed_prefix_lists` method.
 
-[Client.describe_managed_prefix_lists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_managed_prefix_lists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_managed_prefix_lists]
 
 ```python
 def describe_managed_prefix_lists(
@@ -4376,7 +4381,7 @@ def describe_managed_prefix_lists(
 
 Type annotations for `boto3.client("ec2").describe_moving_addresses` method.
 
-[Client.describe_moving_addresses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_moving_addresses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_moving_addresses]
 
 ```python
 def describe_moving_addresses(
@@ -4394,7 +4399,7 @@ def describe_moving_addresses(
 
 Type annotations for `boto3.client("ec2").describe_nat_gateways` method.
 
-[Client.describe_nat_gateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_nat_gateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_nat_gateways]
 
 ```python
 def describe_nat_gateways(
@@ -4412,7 +4417,7 @@ def describe_nat_gateways(
 
 Type annotations for `boto3.client("ec2").describe_network_acls` method.
 
-[Client.describe_network_acls documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_acls)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_acls]
 
 ```python
 def describe_network_acls(
@@ -4430,7 +4435,7 @@ def describe_network_acls(
 
 Type annotations for `boto3.client("ec2").describe_network_insights_analyses` method.
 
-[Client.describe_network_insights_analyses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_insights_analyses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_insights_analyses]
 
 ```python
 def describe_network_insights_analyses(
@@ -4451,7 +4456,7 @@ def describe_network_insights_analyses(
 
 Type annotations for `boto3.client("ec2").describe_network_insights_paths` method.
 
-[Client.describe_network_insights_paths documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_insights_paths)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_insights_paths]
 
 ```python
 def describe_network_insights_paths(
@@ -4469,7 +4474,7 @@ def describe_network_insights_paths(
 
 Type annotations for `boto3.client("ec2").describe_network_interface_attribute` method.
 
-[Client.describe_network_interface_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_interface_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_interface_attribute]
 
 ```python
 def describe_network_interface_attribute(
@@ -4485,7 +4490,7 @@ def describe_network_interface_attribute(
 
 Type annotations for `boto3.client("ec2").describe_network_interface_permissions` method.
 
-[Client.describe_network_interface_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_interface_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_interface_permissions]
 
 ```python
 def describe_network_interface_permissions(
@@ -4502,7 +4507,7 @@ def describe_network_interface_permissions(
 
 Type annotations for `boto3.client("ec2").describe_network_interfaces` method.
 
-[Client.describe_network_interfaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_interfaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_interfaces]
 
 ```python
 def describe_network_interfaces(
@@ -4520,7 +4525,7 @@ def describe_network_interfaces(
 
 Type annotations for `boto3.client("ec2").describe_placement_groups` method.
 
-[Client.describe_placement_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_placement_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_placement_groups]
 
 ```python
 def describe_placement_groups(
@@ -4537,7 +4542,7 @@ def describe_placement_groups(
 
 Type annotations for `boto3.client("ec2").describe_prefix_lists` method.
 
-[Client.describe_prefix_lists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_prefix_lists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_prefix_lists]
 
 ```python
 def describe_prefix_lists(
@@ -4555,7 +4560,7 @@ def describe_prefix_lists(
 
 Type annotations for `boto3.client("ec2").describe_principal_id_format` method.
 
-[Client.describe_principal_id_format documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_principal_id_format)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_principal_id_format]
 
 ```python
 def describe_principal_id_format(
@@ -4572,7 +4577,7 @@ def describe_principal_id_format(
 
 Type annotations for `boto3.client("ec2").describe_public_ipv4_pools` method.
 
-[Client.describe_public_ipv4_pools documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_public_ipv4_pools)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_public_ipv4_pools]
 
 ```python
 def describe_public_ipv4_pools(
@@ -4589,7 +4594,7 @@ def describe_public_ipv4_pools(
 
 Type annotations for `boto3.client("ec2").describe_regions` method.
 
-[Client.describe_regions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_regions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_regions]
 
 ```python
 def describe_regions(
@@ -4606,7 +4611,7 @@ def describe_regions(
 
 Type annotations for `boto3.client("ec2").describe_replace_root_volume_tasks` method.
 
-[Client.describe_replace_root_volume_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_replace_root_volume_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_replace_root_volume_tasks]
 
 ```python
 def describe_replace_root_volume_tasks(
@@ -4624,7 +4629,7 @@ def describe_replace_root_volume_tasks(
 
 Type annotations for `boto3.client("ec2").describe_reserved_instances` method.
 
-[Client.describe_reserved_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_reserved_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_reserved_instances]
 
 ```python
 def describe_reserved_instances(
@@ -4642,7 +4647,7 @@ def describe_reserved_instances(
 
 Type annotations for `boto3.client("ec2").describe_reserved_instances_listings` method.
 
-[Client.describe_reserved_instances_listings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_reserved_instances_listings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_reserved_instances_listings]
 
 ```python
 def describe_reserved_instances_listings(
@@ -4658,7 +4663,7 @@ def describe_reserved_instances_listings(
 
 Type annotations for `boto3.client("ec2").describe_reserved_instances_modifications` method.
 
-[Client.describe_reserved_instances_modifications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_reserved_instances_modifications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_reserved_instances_modifications]
 
 ```python
 def describe_reserved_instances_modifications(
@@ -4674,7 +4679,7 @@ def describe_reserved_instances_modifications(
 
 Type annotations for `boto3.client("ec2").describe_reserved_instances_offerings` method.
 
-[Client.describe_reserved_instances_offerings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_reserved_instances_offerings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_reserved_instances_offerings]
 
 ```python
 def describe_reserved_instances_offerings(
@@ -4702,7 +4707,7 @@ def describe_reserved_instances_offerings(
 
 Type annotations for `boto3.client("ec2").describe_route_tables` method.
 
-[Client.describe_route_tables documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_route_tables)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_route_tables]
 
 ```python
 def describe_route_tables(
@@ -4720,7 +4725,7 @@ def describe_route_tables(
 
 Type annotations for `boto3.client("ec2").describe_scheduled_instance_availability` method.
 
-[Client.describe_scheduled_instance_availability documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_scheduled_instance_availability)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_scheduled_instance_availability]
 
 ```python
 def describe_scheduled_instance_availability(
@@ -4741,7 +4746,7 @@ def describe_scheduled_instance_availability(
 
 Type annotations for `boto3.client("ec2").describe_scheduled_instances` method.
 
-[Client.describe_scheduled_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_scheduled_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_scheduled_instances]
 
 ```python
 def describe_scheduled_instances(
@@ -4760,7 +4765,7 @@ def describe_scheduled_instances(
 
 Type annotations for `boto3.client("ec2").describe_security_group_references` method.
 
-[Client.describe_security_group_references documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_security_group_references)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_security_group_references]
 
 ```python
 def describe_security_group_references(
@@ -4775,7 +4780,7 @@ def describe_security_group_references(
 
 Type annotations for `boto3.client("ec2").describe_security_groups` method.
 
-[Client.describe_security_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_security_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_security_groups]
 
 ```python
 def describe_security_groups(
@@ -4794,7 +4799,7 @@ def describe_security_groups(
 
 Type annotations for `boto3.client("ec2").describe_snapshot_attribute` method.
 
-[Client.describe_snapshot_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_snapshot_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_snapshot_attribute]
 
 ```python
 def describe_snapshot_attribute(
@@ -4810,7 +4815,7 @@ def describe_snapshot_attribute(
 
 Type annotations for `boto3.client("ec2").describe_snapshots` method.
 
-[Client.describe_snapshots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_snapshots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_snapshots]
 
 ```python
 def describe_snapshots(
@@ -4830,7 +4835,7 @@ def describe_snapshots(
 
 Type annotations for `boto3.client("ec2").describe_spot_datafeed_subscription` method.
 
-[Client.describe_spot_datafeed_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_datafeed_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_datafeed_subscription]
 
 ```python
 def describe_spot_datafeed_subscription(
@@ -4844,7 +4849,7 @@ def describe_spot_datafeed_subscription(
 
 Type annotations for `boto3.client("ec2").describe_spot_fleet_instances` method.
 
-[Client.describe_spot_fleet_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_fleet_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_fleet_instances]
 
 ```python
 def describe_spot_fleet_instances(
@@ -4861,7 +4866,7 @@ def describe_spot_fleet_instances(
 
 Type annotations for `boto3.client("ec2").describe_spot_fleet_request_history` method.
 
-[Client.describe_spot_fleet_request_history documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_fleet_request_history)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_fleet_request_history]
 
 ```python
 def describe_spot_fleet_request_history(
@@ -4880,7 +4885,7 @@ def describe_spot_fleet_request_history(
 
 Type annotations for `boto3.client("ec2").describe_spot_fleet_requests` method.
 
-[Client.describe_spot_fleet_requests documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_fleet_requests)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_fleet_requests]
 
 ```python
 def describe_spot_fleet_requests(
@@ -4897,7 +4902,7 @@ def describe_spot_fleet_requests(
 
 Type annotations for `boto3.client("ec2").describe_spot_instance_requests` method.
 
-[Client.describe_spot_instance_requests documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_instance_requests)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_instance_requests]
 
 ```python
 def describe_spot_instance_requests(
@@ -4915,7 +4920,7 @@ def describe_spot_instance_requests(
 
 Type annotations for `boto3.client("ec2").describe_spot_price_history` method.
 
-[Client.describe_spot_price_history documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_price_history)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_price_history]
 
 ```python
 def describe_spot_price_history(
@@ -4937,7 +4942,7 @@ def describe_spot_price_history(
 
 Type annotations for `boto3.client("ec2").describe_stale_security_groups` method.
 
-[Client.describe_stale_security_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_stale_security_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_stale_security_groups]
 
 ```python
 def describe_stale_security_groups(
@@ -4954,7 +4959,7 @@ def describe_stale_security_groups(
 
 Type annotations for `boto3.client("ec2").describe_store_image_tasks` method.
 
-[Client.describe_store_image_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_store_image_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_store_image_tasks]
 
 ```python
 def describe_store_image_tasks(
@@ -4972,7 +4977,7 @@ def describe_store_image_tasks(
 
 Type annotations for `boto3.client("ec2").describe_subnets` method.
 
-[Client.describe_subnets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_subnets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_subnets]
 
 ```python
 def describe_subnets(
@@ -4990,7 +4995,7 @@ def describe_subnets(
 
 Type annotations for `boto3.client("ec2").describe_tags` method.
 
-[Client.describe_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_tags]
 
 ```python
 def describe_tags(
@@ -5007,7 +5012,7 @@ def describe_tags(
 
 Type annotations for `boto3.client("ec2").describe_traffic_mirror_filters` method.
 
-[Client.describe_traffic_mirror_filters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_traffic_mirror_filters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_traffic_mirror_filters]
 
 ```python
 def describe_traffic_mirror_filters(
@@ -5025,7 +5030,7 @@ def describe_traffic_mirror_filters(
 
 Type annotations for `boto3.client("ec2").describe_traffic_mirror_sessions` method.
 
-[Client.describe_traffic_mirror_sessions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_traffic_mirror_sessions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_traffic_mirror_sessions]
 
 ```python
 def describe_traffic_mirror_sessions(
@@ -5043,7 +5048,7 @@ def describe_traffic_mirror_sessions(
 
 Type annotations for `boto3.client("ec2").describe_traffic_mirror_targets` method.
 
-[Client.describe_traffic_mirror_targets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_traffic_mirror_targets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_traffic_mirror_targets]
 
 ```python
 def describe_traffic_mirror_targets(
@@ -5061,7 +5066,7 @@ def describe_traffic_mirror_targets(
 
 Type annotations for `boto3.client("ec2").describe_transit_gateway_attachments` method.
 
-[Client.describe_transit_gateway_attachments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_attachments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_attachments]
 
 ```python
 def describe_transit_gateway_attachments(
@@ -5079,7 +5084,7 @@ def describe_transit_gateway_attachments(
 
 Type annotations for `boto3.client("ec2").describe_transit_gateway_connect_peers` method.
 
-[Client.describe_transit_gateway_connect_peers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_connect_peers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_connect_peers]
 
 ```python
 def describe_transit_gateway_connect_peers(
@@ -5097,7 +5102,7 @@ def describe_transit_gateway_connect_peers(
 
 Type annotations for `boto3.client("ec2").describe_transit_gateway_connects` method.
 
-[Client.describe_transit_gateway_connects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_connects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_connects]
 
 ```python
 def describe_transit_gateway_connects(
@@ -5115,7 +5120,7 @@ def describe_transit_gateway_connects(
 
 Type annotations for `boto3.client("ec2").describe_transit_gateway_multicast_domains` method.
 
-[Client.describe_transit_gateway_multicast_domains documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_multicast_domains)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_multicast_domains]
 
 ```python
 def describe_transit_gateway_multicast_domains(
@@ -5133,7 +5138,7 @@ def describe_transit_gateway_multicast_domains(
 
 Type annotations for `boto3.client("ec2").describe_transit_gateway_peering_attachments` method.
 
-[Client.describe_transit_gateway_peering_attachments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_peering_attachments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_peering_attachments]
 
 ```python
 def describe_transit_gateway_peering_attachments(
@@ -5151,7 +5156,7 @@ def describe_transit_gateway_peering_attachments(
 
 Type annotations for `boto3.client("ec2").describe_transit_gateway_route_tables` method.
 
-[Client.describe_transit_gateway_route_tables documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_route_tables)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_route_tables]
 
 ```python
 def describe_transit_gateway_route_tables(
@@ -5169,7 +5174,7 @@ def describe_transit_gateway_route_tables(
 
 Type annotations for `boto3.client("ec2").describe_transit_gateway_vpc_attachments` method.
 
-[Client.describe_transit_gateway_vpc_attachments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_vpc_attachments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_vpc_attachments]
 
 ```python
 def describe_transit_gateway_vpc_attachments(
@@ -5187,7 +5192,7 @@ def describe_transit_gateway_vpc_attachments(
 
 Type annotations for `boto3.client("ec2").describe_transit_gateways` method.
 
-[Client.describe_transit_gateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateways]
 
 ```python
 def describe_transit_gateways(
@@ -5205,7 +5210,7 @@ def describe_transit_gateways(
 
 Type annotations for `boto3.client("ec2").describe_volume_attribute` method.
 
-[Client.describe_volume_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_volume_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_volume_attribute]
 
 ```python
 def describe_volume_attribute(
@@ -5221,7 +5226,7 @@ def describe_volume_attribute(
 
 Type annotations for `boto3.client("ec2").describe_volume_status` method.
 
-[Client.describe_volume_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_volume_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_volume_status]
 
 ```python
 def describe_volume_status(
@@ -5239,7 +5244,7 @@ def describe_volume_status(
 
 Type annotations for `boto3.client("ec2").describe_volumes` method.
 
-[Client.describe_volumes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_volumes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_volumes]
 
 ```python
 def describe_volumes(
@@ -5257,7 +5262,7 @@ def describe_volumes(
 
 Type annotations for `boto3.client("ec2").describe_volumes_modifications` method.
 
-[Client.describe_volumes_modifications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_volumes_modifications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_volumes_modifications]
 
 ```python
 def describe_volumes_modifications(
@@ -5275,7 +5280,7 @@ def describe_volumes_modifications(
 
 Type annotations for `boto3.client("ec2").describe_vpc_attribute` method.
 
-[Client.describe_vpc_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_attribute]
 
 ```python
 def describe_vpc_attribute(
@@ -5291,7 +5296,7 @@ def describe_vpc_attribute(
 
 Type annotations for `boto3.client("ec2").describe_vpc_classic_link` method.
 
-[Client.describe_vpc_classic_link documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_classic_link)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_classic_link]
 
 ```python
 def describe_vpc_classic_link(
@@ -5307,7 +5312,7 @@ def describe_vpc_classic_link(
 
 Type annotations for `boto3.client("ec2").describe_vpc_classic_link_dns_support` method.
 
-[Client.describe_vpc_classic_link_dns_support documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_classic_link_dns_support)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_classic_link_dns_support]
 
 ```python
 def describe_vpc_classic_link_dns_support(
@@ -5323,7 +5328,7 @@ def describe_vpc_classic_link_dns_support(
 
 Type annotations for `boto3.client("ec2").describe_vpc_endpoint_connection_notifications` method.
 
-[Client.describe_vpc_endpoint_connection_notifications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_connection_notifications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_connection_notifications]
 
 ```python
 def describe_vpc_endpoint_connection_notifications(
@@ -5341,7 +5346,7 @@ def describe_vpc_endpoint_connection_notifications(
 
 Type annotations for `boto3.client("ec2").describe_vpc_endpoint_connections` method.
 
-[Client.describe_vpc_endpoint_connections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_connections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_connections]
 
 ```python
 def describe_vpc_endpoint_connections(
@@ -5358,7 +5363,7 @@ def describe_vpc_endpoint_connections(
 
 Type annotations for `boto3.client("ec2").describe_vpc_endpoint_service_configurations` method.
 
-[Client.describe_vpc_endpoint_service_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_service_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_service_configurations]
 
 ```python
 def describe_vpc_endpoint_service_configurations(
@@ -5376,7 +5381,7 @@ def describe_vpc_endpoint_service_configurations(
 
 Type annotations for `boto3.client("ec2").describe_vpc_endpoint_service_permissions` method.
 
-[Client.describe_vpc_endpoint_service_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_service_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_service_permissions]
 
 ```python
 def describe_vpc_endpoint_service_permissions(
@@ -5394,7 +5399,7 @@ def describe_vpc_endpoint_service_permissions(
 
 Type annotations for `boto3.client("ec2").describe_vpc_endpoint_services` method.
 
-[Client.describe_vpc_endpoint_services documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_services)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_services]
 
 ```python
 def describe_vpc_endpoint_services(
@@ -5412,7 +5417,7 @@ def describe_vpc_endpoint_services(
 
 Type annotations for `boto3.client("ec2").describe_vpc_endpoints` method.
 
-[Client.describe_vpc_endpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoints]
 
 ```python
 def describe_vpc_endpoints(
@@ -5430,7 +5435,7 @@ def describe_vpc_endpoints(
 
 Type annotations for `boto3.client("ec2").describe_vpc_peering_connections` method.
 
-[Client.describe_vpc_peering_connections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_peering_connections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_peering_connections]
 
 ```python
 def describe_vpc_peering_connections(
@@ -5448,7 +5453,7 @@ def describe_vpc_peering_connections(
 
 Type annotations for `boto3.client("ec2").describe_vpcs` method.
 
-[Client.describe_vpcs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpcs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpcs]
 
 ```python
 def describe_vpcs(
@@ -5466,7 +5471,7 @@ def describe_vpcs(
 
 Type annotations for `boto3.client("ec2").describe_vpn_connections` method.
 
-[Client.describe_vpn_connections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpn_connections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpn_connections]
 
 ```python
 def describe_vpn_connections(
@@ -5482,7 +5487,7 @@ def describe_vpn_connections(
 
 Type annotations for `boto3.client("ec2").describe_vpn_gateways` method.
 
-[Client.describe_vpn_gateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpn_gateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpn_gateways]
 
 ```python
 def describe_vpn_gateways(
@@ -5498,7 +5503,7 @@ def describe_vpn_gateways(
 
 Type annotations for `boto3.client("ec2").detach_classic_link_vpc` method.
 
-[Client.detach_classic_link_vpc documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_classic_link_vpc)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_classic_link_vpc]
 
 ```python
 def detach_classic_link_vpc(
@@ -5514,7 +5519,7 @@ def detach_classic_link_vpc(
 
 Type annotations for `boto3.client("ec2").detach_internet_gateway` method.
 
-[Client.detach_internet_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_internet_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_internet_gateway]
 
 ```python
 def detach_internet_gateway(
@@ -5530,7 +5535,7 @@ def detach_internet_gateway(
 
 Type annotations for `boto3.client("ec2").detach_network_interface` method.
 
-[Client.detach_network_interface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_network_interface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_network_interface]
 
 ```python
 def detach_network_interface(
@@ -5546,7 +5551,7 @@ def detach_network_interface(
 
 Type annotations for `boto3.client("ec2").detach_volume` method.
 
-[Client.detach_volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_volume]
 
 ```python
 def detach_volume(
@@ -5564,7 +5569,7 @@ def detach_volume(
 
 Type annotations for `boto3.client("ec2").detach_vpn_gateway` method.
 
-[Client.detach_vpn_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_vpn_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_vpn_gateway]
 
 ```python
 def detach_vpn_gateway(
@@ -5580,7 +5585,7 @@ def detach_vpn_gateway(
 
 Type annotations for `boto3.client("ec2").disable_ebs_encryption_by_default` method.
 
-[Client.disable_ebs_encryption_by_default documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_ebs_encryption_by_default)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_ebs_encryption_by_default]
 
 ```python
 def disable_ebs_encryption_by_default(
@@ -5594,7 +5599,7 @@ def disable_ebs_encryption_by_default(
 
 Type annotations for `boto3.client("ec2").disable_fast_snapshot_restores` method.
 
-[Client.disable_fast_snapshot_restores documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_fast_snapshot_restores)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_fast_snapshot_restores]
 
 ```python
 def disable_fast_snapshot_restores(
@@ -5610,7 +5615,7 @@ def disable_fast_snapshot_restores(
 
 Type annotations for `boto3.client("ec2").disable_serial_console_access` method.
 
-[Client.disable_serial_console_access documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_serial_console_access)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_serial_console_access]
 
 ```python
 def disable_serial_console_access(
@@ -5624,7 +5629,7 @@ def disable_serial_console_access(
 
 Type annotations for `boto3.client("ec2").disable_transit_gateway_route_table_propagation` method.
 
-[Client.disable_transit_gateway_route_table_propagation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_transit_gateway_route_table_propagation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_transit_gateway_route_table_propagation]
 
 ```python
 def disable_transit_gateway_route_table_propagation(
@@ -5640,7 +5645,7 @@ def disable_transit_gateway_route_table_propagation(
 
 Type annotations for `boto3.client("ec2").disable_vgw_route_propagation` method.
 
-[Client.disable_vgw_route_propagation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_vgw_route_propagation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_vgw_route_propagation]
 
 ```python
 def disable_vgw_route_propagation(
@@ -5656,7 +5661,7 @@ def disable_vgw_route_propagation(
 
 Type annotations for `boto3.client("ec2").disable_vpc_classic_link` method.
 
-[Client.disable_vpc_classic_link documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_vpc_classic_link)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_vpc_classic_link]
 
 ```python
 def disable_vpc_classic_link(
@@ -5671,7 +5676,7 @@ def disable_vpc_classic_link(
 
 Type annotations for `boto3.client("ec2").disable_vpc_classic_link_dns_support` method.
 
-[Client.disable_vpc_classic_link_dns_support documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_vpc_classic_link_dns_support)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_vpc_classic_link_dns_support]
 
 ```python
 def disable_vpc_classic_link_dns_support(
@@ -5685,7 +5690,7 @@ def disable_vpc_classic_link_dns_support(
 
 Type annotations for `boto3.client("ec2").disassociate_address` method.
 
-[Client.disassociate_address documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_address)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_address]
 
 ```python
 def disassociate_address(
@@ -5701,7 +5706,7 @@ def disassociate_address(
 
 Type annotations for `boto3.client("ec2").disassociate_client_vpn_target_network` method.
 
-[Client.disassociate_client_vpn_target_network documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_client_vpn_target_network)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_client_vpn_target_network]
 
 ```python
 def disassociate_client_vpn_target_network(
@@ -5717,7 +5722,7 @@ def disassociate_client_vpn_target_network(
 
 Type annotations for `boto3.client("ec2").disassociate_enclave_certificate_iam_role` method.
 
-[Client.disassociate_enclave_certificate_iam_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_enclave_certificate_iam_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_enclave_certificate_iam_role]
 
 ```python
 def disassociate_enclave_certificate_iam_role(
@@ -5733,7 +5738,7 @@ def disassociate_enclave_certificate_iam_role(
 
 Type annotations for `boto3.client("ec2").disassociate_iam_instance_profile` method.
 
-[Client.disassociate_iam_instance_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_iam_instance_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_iam_instance_profile]
 
 ```python
 def disassociate_iam_instance_profile(
@@ -5747,7 +5752,7 @@ def disassociate_iam_instance_profile(
 
 Type annotations for `boto3.client("ec2").disassociate_route_table` method.
 
-[Client.disassociate_route_table documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_route_table)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_route_table]
 
 ```python
 def disassociate_route_table(
@@ -5762,7 +5767,7 @@ def disassociate_route_table(
 
 Type annotations for `boto3.client("ec2").disassociate_subnet_cidr_block` method.
 
-[Client.disassociate_subnet_cidr_block documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_subnet_cidr_block)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_subnet_cidr_block]
 
 ```python
 def disassociate_subnet_cidr_block(
@@ -5776,7 +5781,7 @@ def disassociate_subnet_cidr_block(
 
 Type annotations for `boto3.client("ec2").disassociate_transit_gateway_multicast_domain` method.
 
-[Client.disassociate_transit_gateway_multicast_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_transit_gateway_multicast_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_transit_gateway_multicast_domain]
 
 ```python
 def disassociate_transit_gateway_multicast_domain(
@@ -5793,7 +5798,7 @@ def disassociate_transit_gateway_multicast_domain(
 
 Type annotations for `boto3.client("ec2").disassociate_transit_gateway_route_table` method.
 
-[Client.disassociate_transit_gateway_route_table documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_transit_gateway_route_table)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_transit_gateway_route_table]
 
 ```python
 def disassociate_transit_gateway_route_table(
@@ -5809,7 +5814,7 @@ def disassociate_transit_gateway_route_table(
 
 Type annotations for `boto3.client("ec2").disassociate_vpc_cidr_block` method.
 
-[Client.disassociate_vpc_cidr_block documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_vpc_cidr_block)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_vpc_cidr_block]
 
 ```python
 def disassociate_vpc_cidr_block(
@@ -5823,7 +5828,7 @@ def disassociate_vpc_cidr_block(
 
 Type annotations for `boto3.client("ec2").enable_ebs_encryption_by_default` method.
 
-[Client.enable_ebs_encryption_by_default documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_ebs_encryption_by_default)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_ebs_encryption_by_default]
 
 ```python
 def enable_ebs_encryption_by_default(
@@ -5837,7 +5842,7 @@ def enable_ebs_encryption_by_default(
 
 Type annotations for `boto3.client("ec2").enable_fast_snapshot_restores` method.
 
-[Client.enable_fast_snapshot_restores documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_fast_snapshot_restores)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_fast_snapshot_restores]
 
 ```python
 def enable_fast_snapshot_restores(
@@ -5853,7 +5858,7 @@ def enable_fast_snapshot_restores(
 
 Type annotations for `boto3.client("ec2").enable_serial_console_access` method.
 
-[Client.enable_serial_console_access documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_serial_console_access)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_serial_console_access]
 
 ```python
 def enable_serial_console_access(
@@ -5867,7 +5872,7 @@ def enable_serial_console_access(
 
 Type annotations for `boto3.client("ec2").enable_transit_gateway_route_table_propagation` method.
 
-[Client.enable_transit_gateway_route_table_propagation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_transit_gateway_route_table_propagation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_transit_gateway_route_table_propagation]
 
 ```python
 def enable_transit_gateway_route_table_propagation(
@@ -5883,7 +5888,7 @@ def enable_transit_gateway_route_table_propagation(
 
 Type annotations for `boto3.client("ec2").enable_vgw_route_propagation` method.
 
-[Client.enable_vgw_route_propagation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_vgw_route_propagation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_vgw_route_propagation]
 
 ```python
 def enable_vgw_route_propagation(
@@ -5899,7 +5904,7 @@ def enable_vgw_route_propagation(
 
 Type annotations for `boto3.client("ec2").enable_volume_io` method.
 
-[Client.enable_volume_io documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_volume_io)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_volume_io]
 
 ```python
 def enable_volume_io(
@@ -5914,7 +5919,7 @@ def enable_volume_io(
 
 Type annotations for `boto3.client("ec2").enable_vpc_classic_link` method.
 
-[Client.enable_vpc_classic_link documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_vpc_classic_link)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_vpc_classic_link]
 
 ```python
 def enable_vpc_classic_link(
@@ -5929,7 +5934,7 @@ def enable_vpc_classic_link(
 
 Type annotations for `boto3.client("ec2").enable_vpc_classic_link_dns_support` method.
 
-[Client.enable_vpc_classic_link_dns_support documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_vpc_classic_link_dns_support)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_vpc_classic_link_dns_support]
 
 ```python
 def enable_vpc_classic_link_dns_support(
@@ -5943,7 +5948,7 @@ def enable_vpc_classic_link_dns_support(
 
 Type annotations for `boto3.client("ec2").export_client_vpn_client_certificate_revocation_list` method.
 
-[Client.export_client_vpn_client_certificate_revocation_list documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.export_client_vpn_client_certificate_revocation_list)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.export_client_vpn_client_certificate_revocation_list]
 
 ```python
 def export_client_vpn_client_certificate_revocation_list(
@@ -5958,7 +5963,7 @@ def export_client_vpn_client_certificate_revocation_list(
 
 Type annotations for `boto3.client("ec2").export_client_vpn_client_configuration` method.
 
-[Client.export_client_vpn_client_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.export_client_vpn_client_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.export_client_vpn_client_configuration]
 
 ```python
 def export_client_vpn_client_configuration(
@@ -5973,7 +5978,7 @@ def export_client_vpn_client_configuration(
 
 Type annotations for `boto3.client("ec2").export_image` method.
 
-[Client.export_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.export_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.export_image]
 
 ```python
 def export_image(
@@ -5994,7 +5999,7 @@ def export_image(
 
 Type annotations for `boto3.client("ec2").export_transit_gateway_routes` method.
 
-[Client.export_transit_gateway_routes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.export_transit_gateway_routes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.export_transit_gateway_routes]
 
 ```python
 def export_transit_gateway_routes(
@@ -6011,7 +6016,7 @@ def export_transit_gateway_routes(
 
 Type annotations for `boto3.client("ec2").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -6028,7 +6033,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("ec2").get_associated_enclave_certificate_iam_roles` method.
 
-[Client.get_associated_enclave_certificate_iam_roles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_associated_enclave_certificate_iam_roles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_associated_enclave_certificate_iam_roles]
 
 ```python
 def get_associated_enclave_certificate_iam_roles(
@@ -6043,7 +6048,7 @@ def get_associated_enclave_certificate_iam_roles(
 
 Type annotations for `boto3.client("ec2").get_associated_ipv6_pool_cidrs` method.
 
-[Client.get_associated_ipv6_pool_cidrs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_associated_ipv6_pool_cidrs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_associated_ipv6_pool_cidrs]
 
 ```python
 def get_associated_ipv6_pool_cidrs(
@@ -6060,7 +6065,7 @@ def get_associated_ipv6_pool_cidrs(
 
 Type annotations for `boto3.client("ec2").get_capacity_reservation_usage` method.
 
-[Client.get_capacity_reservation_usage documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_capacity_reservation_usage)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_capacity_reservation_usage]
 
 ```python
 def get_capacity_reservation_usage(
@@ -6077,7 +6082,7 @@ def get_capacity_reservation_usage(
 
 Type annotations for `boto3.client("ec2").get_coip_pool_usage` method.
 
-[Client.get_coip_pool_usage documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_coip_pool_usage)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_coip_pool_usage]
 
 ```python
 def get_coip_pool_usage(
@@ -6095,7 +6100,7 @@ def get_coip_pool_usage(
 
 Type annotations for `boto3.client("ec2").get_console_output` method.
 
-[Client.get_console_output documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_console_output)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_console_output]
 
 ```python
 def get_console_output(
@@ -6111,7 +6116,7 @@ def get_console_output(
 
 Type annotations for `boto3.client("ec2").get_console_screenshot` method.
 
-[Client.get_console_screenshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_console_screenshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_console_screenshot]
 
 ```python
 def get_console_screenshot(
@@ -6127,7 +6132,7 @@ def get_console_screenshot(
 
 Type annotations for `boto3.client("ec2").get_default_credit_specification` method.
 
-[Client.get_default_credit_specification documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_default_credit_specification)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_default_credit_specification]
 
 ```python
 def get_default_credit_specification(
@@ -6142,7 +6147,7 @@ def get_default_credit_specification(
 
 Type annotations for `boto3.client("ec2").get_ebs_default_kms_key_id` method.
 
-[Client.get_ebs_default_kms_key_id documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_ebs_default_kms_key_id)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_ebs_default_kms_key_id]
 
 ```python
 def get_ebs_default_kms_key_id(
@@ -6156,7 +6161,7 @@ def get_ebs_default_kms_key_id(
 
 Type annotations for `boto3.client("ec2").get_ebs_encryption_by_default` method.
 
-[Client.get_ebs_encryption_by_default documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_ebs_encryption_by_default)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_ebs_encryption_by_default]
 
 ```python
 def get_ebs_encryption_by_default(
@@ -6170,7 +6175,7 @@ def get_ebs_encryption_by_default(
 
 Type annotations for `boto3.client("ec2").get_flow_logs_integration_template` method.
 
-[Client.get_flow_logs_integration_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_flow_logs_integration_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_flow_logs_integration_template]
 
 ```python
 def get_flow_logs_integration_template(
@@ -6187,7 +6192,7 @@ def get_flow_logs_integration_template(
 
 Type annotations for `boto3.client("ec2").get_groups_for_capacity_reservation` method.
 
-[Client.get_groups_for_capacity_reservation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_groups_for_capacity_reservation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_groups_for_capacity_reservation]
 
 ```python
 def get_groups_for_capacity_reservation(
@@ -6204,7 +6209,7 @@ def get_groups_for_capacity_reservation(
 
 Type annotations for `boto3.client("ec2").get_host_reservation_purchase_preview` method.
 
-[Client.get_host_reservation_purchase_preview documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_host_reservation_purchase_preview)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_host_reservation_purchase_preview]
 
 ```python
 def get_host_reservation_purchase_preview(
@@ -6219,7 +6224,7 @@ def get_host_reservation_purchase_preview(
 
 Type annotations for `boto3.client("ec2").get_launch_template_data` method.
 
-[Client.get_launch_template_data documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_launch_template_data)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_launch_template_data]
 
 ```python
 def get_launch_template_data(
@@ -6234,7 +6239,7 @@ def get_launch_template_data(
 
 Type annotations for `boto3.client("ec2").get_managed_prefix_list_associations` method.
 
-[Client.get_managed_prefix_list_associations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_managed_prefix_list_associations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_managed_prefix_list_associations]
 
 ```python
 def get_managed_prefix_list_associations(
@@ -6251,7 +6256,7 @@ def get_managed_prefix_list_associations(
 
 Type annotations for `boto3.client("ec2").get_managed_prefix_list_entries` method.
 
-[Client.get_managed_prefix_list_entries documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_managed_prefix_list_entries)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_managed_prefix_list_entries]
 
 ```python
 def get_managed_prefix_list_entries(
@@ -6269,7 +6274,7 @@ def get_managed_prefix_list_entries(
 
 Type annotations for `boto3.client("ec2").get_password_data` method.
 
-[Client.get_password_data documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_password_data)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_password_data]
 
 ```python
 def get_password_data(
@@ -6284,7 +6289,7 @@ def get_password_data(
 
 Type annotations for `boto3.client("ec2").get_reserved_instances_exchange_quote` method.
 
-[Client.get_reserved_instances_exchange_quote documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_reserved_instances_exchange_quote)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_reserved_instances_exchange_quote]
 
 ```python
 def get_reserved_instances_exchange_quote(
@@ -6300,7 +6305,7 @@ def get_reserved_instances_exchange_quote(
 
 Type annotations for `boto3.client("ec2").get_serial_console_access_status` method.
 
-[Client.get_serial_console_access_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_serial_console_access_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_serial_console_access_status]
 
 ```python
 def get_serial_console_access_status(
@@ -6314,7 +6319,7 @@ def get_serial_console_access_status(
 
 Type annotations for `boto3.client("ec2").get_transit_gateway_attachment_propagations` method.
 
-[Client.get_transit_gateway_attachment_propagations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_attachment_propagations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_attachment_propagations]
 
 ```python
 def get_transit_gateway_attachment_propagations(
@@ -6332,7 +6337,7 @@ def get_transit_gateway_attachment_propagations(
 
 Type annotations for `boto3.client("ec2").get_transit_gateway_multicast_domain_associations` method.
 
-[Client.get_transit_gateway_multicast_domain_associations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_multicast_domain_associations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_multicast_domain_associations]
 
 ```python
 def get_transit_gateway_multicast_domain_associations(
@@ -6350,7 +6355,7 @@ def get_transit_gateway_multicast_domain_associations(
 
 Type annotations for `boto3.client("ec2").get_transit_gateway_prefix_list_references` method.
 
-[Client.get_transit_gateway_prefix_list_references documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_prefix_list_references)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_prefix_list_references]
 
 ```python
 def get_transit_gateway_prefix_list_references(
@@ -6368,7 +6373,7 @@ def get_transit_gateway_prefix_list_references(
 
 Type annotations for `boto3.client("ec2").get_transit_gateway_route_table_associations` method.
 
-[Client.get_transit_gateway_route_table_associations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_route_table_associations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_route_table_associations]
 
 ```python
 def get_transit_gateway_route_table_associations(
@@ -6386,7 +6391,7 @@ def get_transit_gateway_route_table_associations(
 
 Type annotations for `boto3.client("ec2").get_transit_gateway_route_table_propagations` method.
 
-[Client.get_transit_gateway_route_table_propagations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_route_table_propagations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_route_table_propagations]
 
 ```python
 def get_transit_gateway_route_table_propagations(
@@ -6404,7 +6409,7 @@ def get_transit_gateway_route_table_propagations(
 
 Type annotations for `boto3.client("ec2").import_client_vpn_client_certificate_revocation_list` method.
 
-[Client.import_client_vpn_client_certificate_revocation_list documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_client_vpn_client_certificate_revocation_list)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_client_vpn_client_certificate_revocation_list]
 
 ```python
 def import_client_vpn_client_certificate_revocation_list(
@@ -6420,7 +6425,7 @@ def import_client_vpn_client_certificate_revocation_list(
 
 Type annotations for `boto3.client("ec2").import_image` method.
 
-[Client.import_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_image]
 
 ```python
 def import_image(
@@ -6447,7 +6452,7 @@ def import_image(
 
 Type annotations for `boto3.client("ec2").import_instance` method.
 
-[Client.import_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_instance]
 
 ```python
 def import_instance(
@@ -6465,7 +6470,7 @@ def import_instance(
 
 Type annotations for `boto3.client("ec2").import_key_pair` method.
 
-[Client.import_key_pair documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_key_pair)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_key_pair]
 
 ```python
 def import_key_pair(
@@ -6482,7 +6487,7 @@ def import_key_pair(
 
 Type annotations for `boto3.client("ec2").import_snapshot` method.
 
-[Client.import_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_snapshot]
 
 ```python
 def import_snapshot(
@@ -6504,7 +6509,7 @@ def import_snapshot(
 
 Type annotations for `boto3.client("ec2").import_volume` method.
 
-[Client.import_volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_volume]
 
 ```python
 def import_volume(
@@ -6522,7 +6527,7 @@ def import_volume(
 
 Type annotations for `boto3.client("ec2").modify_address_attribute` method.
 
-[Client.modify_address_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_address_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_address_attribute]
 
 ```python
 def modify_address_attribute(
@@ -6538,7 +6543,7 @@ def modify_address_attribute(
 
 Type annotations for `boto3.client("ec2").modify_availability_zone_group` method.
 
-[Client.modify_availability_zone_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_availability_zone_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_availability_zone_group]
 
 ```python
 def modify_availability_zone_group(
@@ -6554,7 +6559,7 @@ def modify_availability_zone_group(
 
 Type annotations for `boto3.client("ec2").modify_capacity_reservation` method.
 
-[Client.modify_capacity_reservation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_capacity_reservation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_capacity_reservation]
 
 ```python
 def modify_capacity_reservation(
@@ -6573,7 +6578,7 @@ def modify_capacity_reservation(
 
 Type annotations for `boto3.client("ec2").modify_client_vpn_endpoint` method.
 
-[Client.modify_client_vpn_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_client_vpn_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_client_vpn_endpoint]
 
 ```python
 def modify_client_vpn_endpoint(
@@ -6598,7 +6603,7 @@ def modify_client_vpn_endpoint(
 
 Type annotations for `boto3.client("ec2").modify_default_credit_specification` method.
 
-[Client.modify_default_credit_specification documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_default_credit_specification)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_default_credit_specification]
 
 ```python
 def modify_default_credit_specification(
@@ -6614,7 +6619,7 @@ def modify_default_credit_specification(
 
 Type annotations for `boto3.client("ec2").modify_ebs_default_kms_key_id` method.
 
-[Client.modify_ebs_default_kms_key_id documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_ebs_default_kms_key_id)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_ebs_default_kms_key_id]
 
 ```python
 def modify_ebs_default_kms_key_id(
@@ -6629,7 +6634,7 @@ def modify_ebs_default_kms_key_id(
 
 Type annotations for `boto3.client("ec2").modify_fleet` method.
 
-[Client.modify_fleet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_fleet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_fleet]
 
 ```python
 def modify_fleet(
@@ -6647,7 +6652,7 @@ def modify_fleet(
 
 Type annotations for `boto3.client("ec2").modify_fpga_image_attribute` method.
 
-[Client.modify_fpga_image_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_fpga_image_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_fpga_image_attribute]
 
 ```python
 def modify_fpga_image_attribute(
@@ -6670,7 +6675,7 @@ def modify_fpga_image_attribute(
 
 Type annotations for `boto3.client("ec2").modify_hosts` method.
 
-[Client.modify_hosts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_hosts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_hosts]
 
 ```python
 def modify_hosts(
@@ -6688,7 +6693,7 @@ def modify_hosts(
 
 Type annotations for `boto3.client("ec2").modify_id_format` method.
 
-[Client.modify_id_format documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_id_format)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_id_format]
 
 ```python
 def modify_id_format(
@@ -6703,7 +6708,7 @@ def modify_id_format(
 
 Type annotations for `boto3.client("ec2").modify_identity_id_format` method.
 
-[Client.modify_identity_id_format documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_identity_id_format)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_identity_id_format]
 
 ```python
 def modify_identity_id_format(
@@ -6719,7 +6724,7 @@ def modify_identity_id_format(
 
 Type annotations for `boto3.client("ec2").modify_image_attribute` method.
 
-[Client.modify_image_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_image_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_image_attribute]
 
 ```python
 def modify_image_attribute(
@@ -6742,7 +6747,7 @@ def modify_image_attribute(
 
 Type annotations for `boto3.client("ec2").modify_instance_attribute` method.
 
-[Client.modify_instance_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_attribute]
 
 ```python
 def modify_instance_attribute(
@@ -6771,7 +6776,7 @@ def modify_instance_attribute(
 
 Type annotations for `boto3.client("ec2").modify_instance_capacity_reservation_attributes` method.
 
-[Client.modify_instance_capacity_reservation_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_capacity_reservation_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_capacity_reservation_attributes]
 
 ```python
 def modify_instance_capacity_reservation_attributes(
@@ -6787,7 +6792,7 @@ def modify_instance_capacity_reservation_attributes(
 
 Type annotations for `boto3.client("ec2").modify_instance_credit_specification` method.
 
-[Client.modify_instance_credit_specification documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_credit_specification)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_credit_specification]
 
 ```python
 def modify_instance_credit_specification(
@@ -6803,7 +6808,7 @@ def modify_instance_credit_specification(
 
 Type annotations for `boto3.client("ec2").modify_instance_event_start_time` method.
 
-[Client.modify_instance_event_start_time documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_event_start_time)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_event_start_time]
 
 ```python
 def modify_instance_event_start_time(
@@ -6820,7 +6825,7 @@ def modify_instance_event_start_time(
 
 Type annotations for `boto3.client("ec2").modify_instance_metadata_options` method.
 
-[Client.modify_instance_metadata_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_metadata_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_metadata_options]
 
 ```python
 def modify_instance_metadata_options(
@@ -6838,7 +6843,7 @@ def modify_instance_metadata_options(
 
 Type annotations for `boto3.client("ec2").modify_instance_placement` method.
 
-[Client.modify_instance_placement documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_placement)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_placement]
 
 ```python
 def modify_instance_placement(
@@ -6858,7 +6863,7 @@ def modify_instance_placement(
 
 Type annotations for `boto3.client("ec2").modify_launch_template` method.
 
-[Client.modify_launch_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_launch_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_launch_template]
 
 ```python
 def modify_launch_template(
@@ -6876,7 +6881,7 @@ def modify_launch_template(
 
 Type annotations for `boto3.client("ec2").modify_managed_prefix_list` method.
 
-[Client.modify_managed_prefix_list documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_managed_prefix_list)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_managed_prefix_list]
 
 ```python
 def modify_managed_prefix_list(
@@ -6895,7 +6900,7 @@ def modify_managed_prefix_list(
 
 Type annotations for `boto3.client("ec2").modify_network_interface_attribute` method.
 
-[Client.modify_network_interface_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_network_interface_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_network_interface_attribute]
 
 ```python
 def modify_network_interface_attribute(
@@ -6914,7 +6919,7 @@ def modify_network_interface_attribute(
 
 Type annotations for `boto3.client("ec2").modify_reserved_instances` method.
 
-[Client.modify_reserved_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_reserved_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_reserved_instances]
 
 ```python
 def modify_reserved_instances(
@@ -6930,7 +6935,7 @@ def modify_reserved_instances(
 
 Type annotations for `boto3.client("ec2").modify_snapshot_attribute` method.
 
-[Client.modify_snapshot_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_snapshot_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_snapshot_attribute]
 
 ```python
 def modify_snapshot_attribute(
@@ -6950,7 +6955,7 @@ def modify_snapshot_attribute(
 
 Type annotations for `boto3.client("ec2").modify_spot_fleet_request` method.
 
-[Client.modify_spot_fleet_request documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_spot_fleet_request)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_spot_fleet_request]
 
 ```python
 def modify_spot_fleet_request(
@@ -6968,7 +6973,7 @@ def modify_spot_fleet_request(
 
 Type annotations for `boto3.client("ec2").modify_subnet_attribute` method.
 
-[Client.modify_subnet_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_subnet_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_subnet_attribute]
 
 ```python
 def modify_subnet_attribute(
@@ -6986,7 +6991,7 @@ def modify_subnet_attribute(
 
 Type annotations for `boto3.client("ec2").modify_traffic_mirror_filter_network_services` method.
 
-[Client.modify_traffic_mirror_filter_network_services documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_traffic_mirror_filter_network_services)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_traffic_mirror_filter_network_services]
 
 ```python
 def modify_traffic_mirror_filter_network_services(
@@ -7003,7 +7008,7 @@ def modify_traffic_mirror_filter_network_services(
 
 Type annotations for `boto3.client("ec2").modify_traffic_mirror_filter_rule` method.
 
-[Client.modify_traffic_mirror_filter_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_traffic_mirror_filter_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_traffic_mirror_filter_rule]
 
 ```python
 def modify_traffic_mirror_filter_rule(
@@ -7028,7 +7033,7 @@ def modify_traffic_mirror_filter_rule(
 
 Type annotations for `boto3.client("ec2").modify_traffic_mirror_session` method.
 
-[Client.modify_traffic_mirror_session documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_traffic_mirror_session)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_traffic_mirror_session]
 
 ```python
 def modify_traffic_mirror_session(
@@ -7050,7 +7055,7 @@ def modify_traffic_mirror_session(
 
 Type annotations for `boto3.client("ec2").modify_transit_gateway` method.
 
-[Client.modify_transit_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_transit_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_transit_gateway]
 
 ```python
 def modify_transit_gateway(
@@ -7067,7 +7072,7 @@ def modify_transit_gateway(
 
 Type annotations for `boto3.client("ec2").modify_transit_gateway_prefix_list_reference` method.
 
-[Client.modify_transit_gateway_prefix_list_reference documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_transit_gateway_prefix_list_reference)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_transit_gateway_prefix_list_reference]
 
 ```python
 def modify_transit_gateway_prefix_list_reference(
@@ -7085,7 +7090,7 @@ def modify_transit_gateway_prefix_list_reference(
 
 Type annotations for `boto3.client("ec2").modify_transit_gateway_vpc_attachment` method.
 
-[Client.modify_transit_gateway_vpc_attachment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_transit_gateway_vpc_attachment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_transit_gateway_vpc_attachment]
 
 ```python
 def modify_transit_gateway_vpc_attachment(
@@ -7103,7 +7108,7 @@ def modify_transit_gateway_vpc_attachment(
 
 Type annotations for `boto3.client("ec2").modify_volume` method.
 
-[Client.modify_volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_volume]
 
 ```python
 def modify_volume(
@@ -7123,7 +7128,7 @@ def modify_volume(
 
 Type annotations for `boto3.client("ec2").modify_volume_attribute` method.
 
-[Client.modify_volume_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_volume_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_volume_attribute]
 
 ```python
 def modify_volume_attribute(
@@ -7139,7 +7144,7 @@ def modify_volume_attribute(
 
 Type annotations for `boto3.client("ec2").modify_vpc_attribute` method.
 
-[Client.modify_vpc_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_attribute]
 
 ```python
 def modify_vpc_attribute(
@@ -7155,7 +7160,7 @@ def modify_vpc_attribute(
 
 Type annotations for `boto3.client("ec2").modify_vpc_endpoint` method.
 
-[Client.modify_vpc_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_endpoint]
 
 ```python
 def modify_vpc_endpoint(
@@ -7179,7 +7184,7 @@ def modify_vpc_endpoint(
 
 Type annotations for `boto3.client("ec2").modify_vpc_endpoint_connection_notification` method.
 
-[Client.modify_vpc_endpoint_connection_notification documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_endpoint_connection_notification)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_endpoint_connection_notification]
 
 ```python
 def modify_vpc_endpoint_connection_notification(
@@ -7196,7 +7201,7 @@ def modify_vpc_endpoint_connection_notification(
 
 Type annotations for `boto3.client("ec2").modify_vpc_endpoint_service_configuration` method.
 
-[Client.modify_vpc_endpoint_service_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_endpoint_service_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_endpoint_service_configuration]
 
 ```python
 def modify_vpc_endpoint_service_configuration(
@@ -7218,7 +7223,7 @@ def modify_vpc_endpoint_service_configuration(
 
 Type annotations for `boto3.client("ec2").modify_vpc_endpoint_service_permissions` method.
 
-[Client.modify_vpc_endpoint_service_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_endpoint_service_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_endpoint_service_permissions]
 
 ```python
 def modify_vpc_endpoint_service_permissions(
@@ -7235,7 +7240,7 @@ def modify_vpc_endpoint_service_permissions(
 
 Type annotations for `boto3.client("ec2").modify_vpc_peering_connection_options` method.
 
-[Client.modify_vpc_peering_connection_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_peering_connection_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_peering_connection_options]
 
 ```python
 def modify_vpc_peering_connection_options(
@@ -7252,7 +7257,7 @@ def modify_vpc_peering_connection_options(
 
 Type annotations for `boto3.client("ec2").modify_vpc_tenancy` method.
 
-[Client.modify_vpc_tenancy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_tenancy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_tenancy]
 
 ```python
 def modify_vpc_tenancy(
@@ -7268,7 +7273,7 @@ def modify_vpc_tenancy(
 
 Type annotations for `boto3.client("ec2").modify_vpn_connection` method.
 
-[Client.modify_vpn_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpn_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpn_connection]
 
 ```python
 def modify_vpn_connection(
@@ -7286,7 +7291,7 @@ def modify_vpn_connection(
 
 Type annotations for `boto3.client("ec2").modify_vpn_connection_options` method.
 
-[Client.modify_vpn_connection_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpn_connection_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpn_connection_options]
 
 ```python
 def modify_vpn_connection_options(
@@ -7305,7 +7310,7 @@ def modify_vpn_connection_options(
 
 Type annotations for `boto3.client("ec2").modify_vpn_tunnel_certificate` method.
 
-[Client.modify_vpn_tunnel_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpn_tunnel_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpn_tunnel_certificate]
 
 ```python
 def modify_vpn_tunnel_certificate(
@@ -7321,7 +7326,7 @@ def modify_vpn_tunnel_certificate(
 
 Type annotations for `boto3.client("ec2").modify_vpn_tunnel_options` method.
 
-[Client.modify_vpn_tunnel_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpn_tunnel_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpn_tunnel_options]
 
 ```python
 def modify_vpn_tunnel_options(
@@ -7338,7 +7343,7 @@ def modify_vpn_tunnel_options(
 
 Type annotations for `boto3.client("ec2").monitor_instances` method.
 
-[Client.monitor_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.monitor_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.monitor_instances]
 
 ```python
 def monitor_instances(
@@ -7353,7 +7358,7 @@ def monitor_instances(
 
 Type annotations for `boto3.client("ec2").move_address_to_vpc` method.
 
-[Client.move_address_to_vpc documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.move_address_to_vpc)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.move_address_to_vpc]
 
 ```python
 def move_address_to_vpc(
@@ -7368,7 +7373,7 @@ def move_address_to_vpc(
 
 Type annotations for `boto3.client("ec2").provision_byoip_cidr` method.
 
-[Client.provision_byoip_cidr documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.provision_byoip_cidr)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.provision_byoip_cidr]
 
 ```python
 def provision_byoip_cidr(
@@ -7387,7 +7392,7 @@ def provision_byoip_cidr(
 
 Type annotations for `boto3.client("ec2").purchase_host_reservation` method.
 
-[Client.purchase_host_reservation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.purchase_host_reservation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.purchase_host_reservation]
 
 ```python
 def purchase_host_reservation(
@@ -7406,7 +7411,7 @@ def purchase_host_reservation(
 
 Type annotations for `boto3.client("ec2").purchase_reserved_instances_offering` method.
 
-[Client.purchase_reserved_instances_offering documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.purchase_reserved_instances_offering)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.purchase_reserved_instances_offering]
 
 ```python
 def purchase_reserved_instances_offering(
@@ -7424,7 +7429,7 @@ def purchase_reserved_instances_offering(
 
 Type annotations for `boto3.client("ec2").purchase_scheduled_instances` method.
 
-[Client.purchase_scheduled_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.purchase_scheduled_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.purchase_scheduled_instances]
 
 ```python
 def purchase_scheduled_instances(
@@ -7440,7 +7445,7 @@ def purchase_scheduled_instances(
 
 Type annotations for `boto3.client("ec2").reboot_instances` method.
 
-[Client.reboot_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reboot_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reboot_instances]
 
 ```python
 def reboot_instances(
@@ -7455,7 +7460,7 @@ def reboot_instances(
 
 Type annotations for `boto3.client("ec2").register_image` method.
 
-[Client.register_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.register_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.register_image]
 
 ```python
 def register_image(
@@ -7482,7 +7487,7 @@ def register_image(
 
 Type annotations for `boto3.client("ec2").register_instance_event_notification_attributes` method.
 
-[Client.register_instance_event_notification_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.register_instance_event_notification_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.register_instance_event_notification_attributes]
 
 ```python
 def register_instance_event_notification_attributes(
@@ -7497,7 +7502,7 @@ def register_instance_event_notification_attributes(
 
 Type annotations for `boto3.client("ec2").register_transit_gateway_multicast_group_members` method.
 
-[Client.register_transit_gateway_multicast_group_members documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.register_transit_gateway_multicast_group_members)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.register_transit_gateway_multicast_group_members]
 
 ```python
 def register_transit_gateway_multicast_group_members(
@@ -7514,7 +7519,7 @@ def register_transit_gateway_multicast_group_members(
 
 Type annotations for `boto3.client("ec2").register_transit_gateway_multicast_group_sources` method.
 
-[Client.register_transit_gateway_multicast_group_sources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.register_transit_gateway_multicast_group_sources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.register_transit_gateway_multicast_group_sources]
 
 ```python
 def register_transit_gateway_multicast_group_sources(
@@ -7531,7 +7536,7 @@ def register_transit_gateway_multicast_group_sources(
 
 Type annotations for `boto3.client("ec2").reject_transit_gateway_multicast_domain_associations` method.
 
-[Client.reject_transit_gateway_multicast_domain_associations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reject_transit_gateway_multicast_domain_associations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reject_transit_gateway_multicast_domain_associations]
 
 ```python
 def reject_transit_gateway_multicast_domain_associations(
@@ -7548,7 +7553,7 @@ def reject_transit_gateway_multicast_domain_associations(
 
 Type annotations for `boto3.client("ec2").reject_transit_gateway_peering_attachment` method.
 
-[Client.reject_transit_gateway_peering_attachment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reject_transit_gateway_peering_attachment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reject_transit_gateway_peering_attachment]
 
 ```python
 def reject_transit_gateway_peering_attachment(
@@ -7563,7 +7568,7 @@ def reject_transit_gateway_peering_attachment(
 
 Type annotations for `boto3.client("ec2").reject_transit_gateway_vpc_attachment` method.
 
-[Client.reject_transit_gateway_vpc_attachment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reject_transit_gateway_vpc_attachment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reject_transit_gateway_vpc_attachment]
 
 ```python
 def reject_transit_gateway_vpc_attachment(
@@ -7578,7 +7583,7 @@ def reject_transit_gateway_vpc_attachment(
 
 Type annotations for `boto3.client("ec2").reject_vpc_endpoint_connections` method.
 
-[Client.reject_vpc_endpoint_connections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reject_vpc_endpoint_connections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reject_vpc_endpoint_connections]
 
 ```python
 def reject_vpc_endpoint_connections(
@@ -7594,7 +7599,7 @@ def reject_vpc_endpoint_connections(
 
 Type annotations for `boto3.client("ec2").reject_vpc_peering_connection` method.
 
-[Client.reject_vpc_peering_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reject_vpc_peering_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reject_vpc_peering_connection]
 
 ```python
 def reject_vpc_peering_connection(
@@ -7609,7 +7614,7 @@ def reject_vpc_peering_connection(
 
 Type annotations for `boto3.client("ec2").release_address` method.
 
-[Client.release_address documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.release_address)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.release_address]
 
 ```python
 def release_address(
@@ -7626,7 +7631,7 @@ def release_address(
 
 Type annotations for `boto3.client("ec2").release_hosts` method.
 
-[Client.release_hosts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.release_hosts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.release_hosts]
 
 ```python
 def release_hosts(
@@ -7640,7 +7645,7 @@ def release_hosts(
 
 Type annotations for `boto3.client("ec2").replace_iam_instance_profile_association` method.
 
-[Client.replace_iam_instance_profile_association documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_iam_instance_profile_association)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_iam_instance_profile_association]
 
 ```python
 def replace_iam_instance_profile_association(
@@ -7655,7 +7660,7 @@ def replace_iam_instance_profile_association(
 
 Type annotations for `boto3.client("ec2").replace_network_acl_association` method.
 
-[Client.replace_network_acl_association documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_network_acl_association)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_network_acl_association]
 
 ```python
 def replace_network_acl_association(
@@ -7671,7 +7676,7 @@ def replace_network_acl_association(
 
 Type annotations for `boto3.client("ec2").replace_network_acl_entry` method.
 
-[Client.replace_network_acl_entry documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_network_acl_entry)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_network_acl_entry]
 
 ```python
 def replace_network_acl_entry(
@@ -7694,7 +7699,7 @@ def replace_network_acl_entry(
 
 Type annotations for `boto3.client("ec2").replace_route` method.
 
-[Client.replace_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_route]
 
 ```python
 def replace_route(
@@ -7723,7 +7728,7 @@ def replace_route(
 
 Type annotations for `boto3.client("ec2").replace_route_table_association` method.
 
-[Client.replace_route_table_association documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_route_table_association)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_route_table_association]
 
 ```python
 def replace_route_table_association(
@@ -7739,7 +7744,7 @@ def replace_route_table_association(
 
 Type annotations for `boto3.client("ec2").replace_transit_gateway_route` method.
 
-[Client.replace_transit_gateway_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_transit_gateway_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_transit_gateway_route]
 
 ```python
 def replace_transit_gateway_route(
@@ -7757,7 +7762,7 @@ def replace_transit_gateway_route(
 
 Type annotations for `boto3.client("ec2").report_instance_status` method.
 
-[Client.report_instance_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.report_instance_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.report_instance_status]
 
 ```python
 def report_instance_status(
@@ -7777,7 +7782,7 @@ def report_instance_status(
 
 Type annotations for `boto3.client("ec2").request_spot_fleet` method.
 
-[Client.request_spot_fleet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.request_spot_fleet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.request_spot_fleet]
 
 ```python
 def request_spot_fleet(
@@ -7792,7 +7797,7 @@ def request_spot_fleet(
 
 Type annotations for `boto3.client("ec2").request_spot_instances` method.
 
-[Client.request_spot_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.request_spot_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.request_spot_instances]
 
 ```python
 def request_spot_instances(
@@ -7818,7 +7823,7 @@ def request_spot_instances(
 
 Type annotations for `boto3.client("ec2").reset_address_attribute` method.
 
-[Client.reset_address_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_address_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_address_attribute]
 
 ```python
 def reset_address_attribute(
@@ -7834,7 +7839,7 @@ def reset_address_attribute(
 
 Type annotations for `boto3.client("ec2").reset_ebs_default_kms_key_id` method.
 
-[Client.reset_ebs_default_kms_key_id documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_ebs_default_kms_key_id)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_ebs_default_kms_key_id]
 
 ```python
 def reset_ebs_default_kms_key_id(
@@ -7848,7 +7853,7 @@ def reset_ebs_default_kms_key_id(
 
 Type annotations for `boto3.client("ec2").reset_fpga_image_attribute` method.
 
-[Client.reset_fpga_image_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_fpga_image_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_fpga_image_attribute]
 
 ```python
 def reset_fpga_image_attribute(
@@ -7864,7 +7869,7 @@ def reset_fpga_image_attribute(
 
 Type annotations for `boto3.client("ec2").reset_image_attribute` method.
 
-[Client.reset_image_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_image_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_image_attribute]
 
 ```python
 def reset_image_attribute(
@@ -7880,7 +7885,7 @@ def reset_image_attribute(
 
 Type annotations for `boto3.client("ec2").reset_instance_attribute` method.
 
-[Client.reset_instance_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_instance_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_instance_attribute]
 
 ```python
 def reset_instance_attribute(
@@ -7896,7 +7901,7 @@ def reset_instance_attribute(
 
 Type annotations for `boto3.client("ec2").reset_network_interface_attribute` method.
 
-[Client.reset_network_interface_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_network_interface_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_network_interface_attribute]
 
 ```python
 def reset_network_interface_attribute(
@@ -7912,7 +7917,7 @@ def reset_network_interface_attribute(
 
 Type annotations for `boto3.client("ec2").reset_snapshot_attribute` method.
 
-[Client.reset_snapshot_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_snapshot_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_snapshot_attribute]
 
 ```python
 def reset_snapshot_attribute(
@@ -7928,7 +7933,7 @@ def reset_snapshot_attribute(
 
 Type annotations for `boto3.client("ec2").restore_address_to_classic` method.
 
-[Client.restore_address_to_classic documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.restore_address_to_classic)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.restore_address_to_classic]
 
 ```python
 def restore_address_to_classic(
@@ -7943,7 +7948,7 @@ def restore_address_to_classic(
 
 Type annotations for `boto3.client("ec2").restore_managed_prefix_list_version` method.
 
-[Client.restore_managed_prefix_list_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.restore_managed_prefix_list_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.restore_managed_prefix_list_version]
 
 ```python
 def restore_managed_prefix_list_version(
@@ -7960,7 +7965,7 @@ def restore_managed_prefix_list_version(
 
 Type annotations for `boto3.client("ec2").revoke_client_vpn_ingress` method.
 
-[Client.revoke_client_vpn_ingress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.revoke_client_vpn_ingress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.revoke_client_vpn_ingress]
 
 ```python
 def revoke_client_vpn_ingress(
@@ -7978,7 +7983,7 @@ def revoke_client_vpn_ingress(
 
 Type annotations for `boto3.client("ec2").revoke_security_group_egress` method.
 
-[Client.revoke_security_group_egress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.revoke_security_group_egress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.revoke_security_group_egress]
 
 ```python
 def revoke_security_group_egress(
@@ -8000,7 +8005,7 @@ def revoke_security_group_egress(
 
 Type annotations for `boto3.client("ec2").revoke_security_group_ingress` method.
 
-[Client.revoke_security_group_ingress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.revoke_security_group_ingress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.revoke_security_group_ingress]
 
 ```python
 def revoke_security_group_ingress(
@@ -8023,7 +8028,7 @@ def revoke_security_group_ingress(
 
 Type annotations for `boto3.client("ec2").run_instances` method.
 
-[Client.run_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.run_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.run_instances]
 
 ```python
 def run_instances(
@@ -8073,7 +8078,7 @@ def run_instances(
 
 Type annotations for `boto3.client("ec2").run_scheduled_instances` method.
 
-[Client.run_scheduled_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.run_scheduled_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.run_scheduled_instances]
 
 ```python
 def run_scheduled_instances(
@@ -8091,7 +8096,7 @@ def run_scheduled_instances(
 
 Type annotations for `boto3.client("ec2").search_local_gateway_routes` method.
 
-[Client.search_local_gateway_routes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.search_local_gateway_routes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.search_local_gateway_routes]
 
 ```python
 def search_local_gateway_routes(
@@ -8109,7 +8114,7 @@ def search_local_gateway_routes(
 
 Type annotations for `boto3.client("ec2").search_transit_gateway_multicast_groups` method.
 
-[Client.search_transit_gateway_multicast_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.search_transit_gateway_multicast_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.search_transit_gateway_multicast_groups]
 
 ```python
 def search_transit_gateway_multicast_groups(
@@ -8127,7 +8132,7 @@ def search_transit_gateway_multicast_groups(
 
 Type annotations for `boto3.client("ec2").search_transit_gateway_routes` method.
 
-[Client.search_transit_gateway_routes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.search_transit_gateway_routes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.search_transit_gateway_routes]
 
 ```python
 def search_transit_gateway_routes(
@@ -8144,7 +8149,7 @@ def search_transit_gateway_routes(
 
 Type annotations for `boto3.client("ec2").send_diagnostic_interrupt` method.
 
-[Client.send_diagnostic_interrupt documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.send_diagnostic_interrupt)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.send_diagnostic_interrupt]
 
 ```python
 def send_diagnostic_interrupt(
@@ -8159,7 +8164,7 @@ def send_diagnostic_interrupt(
 
 Type annotations for `boto3.client("ec2").start_instances` method.
 
-[Client.start_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.start_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.start_instances]
 
 ```python
 def start_instances(
@@ -8175,7 +8180,7 @@ def start_instances(
 
 Type annotations for `boto3.client("ec2").start_network_insights_analysis` method.
 
-[Client.start_network_insights_analysis documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.start_network_insights_analysis)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.start_network_insights_analysis]
 
 ```python
 def start_network_insights_analysis(
@@ -8193,7 +8198,7 @@ def start_network_insights_analysis(
 
 Type annotations for `boto3.client("ec2").start_vpc_endpoint_service_private_dns_verification` method.
 
-[Client.start_vpc_endpoint_service_private_dns_verification documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.start_vpc_endpoint_service_private_dns_verification)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.start_vpc_endpoint_service_private_dns_verification]
 
 ```python
 def start_vpc_endpoint_service_private_dns_verification(
@@ -8208,7 +8213,7 @@ def start_vpc_endpoint_service_private_dns_verification(
 
 Type annotations for `boto3.client("ec2").stop_instances` method.
 
-[Client.stop_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.stop_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.stop_instances]
 
 ```python
 def stop_instances(
@@ -8225,7 +8230,7 @@ def stop_instances(
 
 Type annotations for `boto3.client("ec2").terminate_client_vpn_connections` method.
 
-[Client.terminate_client_vpn_connections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.terminate_client_vpn_connections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.terminate_client_vpn_connections]
 
 ```python
 def terminate_client_vpn_connections(
@@ -8242,7 +8247,7 @@ def terminate_client_vpn_connections(
 
 Type annotations for `boto3.client("ec2").terminate_instances` method.
 
-[Client.terminate_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.terminate_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.terminate_instances]
 
 ```python
 def terminate_instances(
@@ -8257,7 +8262,7 @@ def terminate_instances(
 
 Type annotations for `boto3.client("ec2").unassign_ipv6_addresses` method.
 
-[Client.unassign_ipv6_addresses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.unassign_ipv6_addresses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.unassign_ipv6_addresses]
 
 ```python
 def unassign_ipv6_addresses(
@@ -8272,7 +8277,7 @@ def unassign_ipv6_addresses(
 
 Type annotations for `boto3.client("ec2").unassign_private_ip_addresses` method.
 
-[Client.unassign_private_ip_addresses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.unassign_private_ip_addresses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.unassign_private_ip_addresses]
 
 ```python
 def unassign_private_ip_addresses(
@@ -8287,7 +8292,7 @@ def unassign_private_ip_addresses(
 
 Type annotations for `boto3.client("ec2").unmonitor_instances` method.
 
-[Client.unmonitor_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.unmonitor_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.unmonitor_instances]
 
 ```python
 def unmonitor_instances(
@@ -8302,7 +8307,7 @@ def unmonitor_instances(
 
 Type annotations for `boto3.client("ec2").update_security_group_rule_descriptions_egress` method.
 
-[Client.update_security_group_rule_descriptions_egress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.update_security_group_rule_descriptions_egress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.update_security_group_rule_descriptions_egress]
 
 ```python
 def update_security_group_rule_descriptions_egress(
@@ -8319,7 +8324,7 @@ def update_security_group_rule_descriptions_egress(
 
 Type annotations for `boto3.client("ec2").update_security_group_rule_descriptions_ingress` method.
 
-[Client.update_security_group_rule_descriptions_ingress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.update_security_group_rule_descriptions_ingress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.update_security_group_rule_descriptions_ingress]
 
 ```python
 def update_security_group_rule_descriptions_ingress(
@@ -8336,7 +8341,7 @@ def update_security_group_rule_descriptions_ingress(
 
 Type annotations for `boto3.client("ec2").withdraw_byoip_cidr` method.
 
-[Client.withdraw_byoip_cidr documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.withdraw_byoip_cidr)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.withdraw_byoip_cidr]
 
 ```python
 def withdraw_byoip_cidr(

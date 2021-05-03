@@ -18,13 +18,13 @@ Type annotations for `boto3.client("resourcegroupstaggingapi").get_paginator("ge
 Can be used directly:
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.paginators import GetComplianceSummaryPaginator
+from mypy_boto3_resourcegroupstaggingapi.paginator import GetComplianceSummaryPaginator
 
 def get_get_compliance_summary_paginator() -> GetComplianceSummaryPaginator:
     return boto3.client("resourcegroupstaggingapi").get_paginator("get_compliance_summary")
 ```
 
-[Paginator.GetComplianceSummary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetComplianceSummary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetComplianceSummary)
 
 ```python
 class GetComplianceSummaryPaginator(Boto3Paginator):
@@ -46,13 +46,13 @@ Type annotations for `boto3.client("resourcegroupstaggingapi").get_paginator("ge
 Can be used directly:
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.paginators import GetResourcesPaginator
+from mypy_boto3_resourcegroupstaggingapi.paginator import GetResourcesPaginator
 
 def get_get_resources_paginator() -> GetResourcesPaginator:
     return boto3.client("resourcegroupstaggingapi").get_paginator("get_resources")
 ```
 
-[Paginator.GetResources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetResources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetResources)
 
 ```python
 class GetResourcesPaginator(Boto3Paginator):
@@ -75,13 +75,13 @@ Type annotations for `boto3.client("resourcegroupstaggingapi").get_paginator("ge
 Can be used directly:
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.paginators import GetTagKeysPaginator
+from mypy_boto3_resourcegroupstaggingapi.paginator import GetTagKeysPaginator
 
 def get_get_tag_keys_paginator() -> GetTagKeysPaginator:
     return boto3.client("resourcegroupstaggingapi").get_paginator("get_tag_keys")
 ```
 
-[Paginator.GetTagKeys documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetTagKeys)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetTagKeys)
 
 ```python
 class GetTagKeysPaginator(Boto3Paginator):
@@ -98,13 +98,13 @@ Type annotations for `boto3.client("resourcegroupstaggingapi").get_paginator("ge
 Can be used directly:
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.paginators import GetTagValuesPaginator
+from mypy_boto3_resourcegroupstaggingapi.paginator import GetTagValuesPaginator
 
 def get_get_tag_values_paginator() -> GetTagValuesPaginator:
     return boto3.client("resourcegroupstaggingapi").get_paginator("get_tag_values")
 ```
 
-[Paginator.GetTagValues documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetTagValues)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetTagValues)
 
 ```python
 class GetTagValuesPaginator(Boto3Paginator):

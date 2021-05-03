@@ -1,11 +1,11 @@
-# Structures for boto3 CodeGuruProfiler module
+# Typed dictionaries for boto3 CodeGuruProfiler module
 
 > [Index](../README.md) > [CodeGuruProfiler](./README.md) > Structures
 
 Auto-generated documentation for [CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
 type annotations stubs module [mypy_boto3_codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
 
-- [Structures for boto3 CodeGuruProfiler module](#structures-for-boto3-codeguruprofiler-module)
+- [Typed dictionaries for boto3 CodeGuruProfiler module](#typed-dictionaries-for-boto3-codeguruprofiler-module)
   - [AddNotificationChannelsResponseTypeDef](#addnotificationchannelsresponsetypedef)
   - [AgentConfigurationTypeDef](#agentconfigurationtypedef)
   - [AgentOrchestrationConfigTypeDef](#agentorchestrationconfigtypedef)

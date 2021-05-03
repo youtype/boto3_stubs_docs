@@ -15,7 +15,7 @@ pip install mypy-boto3-cognito-identity
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## CognitoIdentityClient
 
@@ -118,7 +118,7 @@ from mypy_boto3_cognito_identity.literals import AmbiguousRoleResolutionType, ..
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

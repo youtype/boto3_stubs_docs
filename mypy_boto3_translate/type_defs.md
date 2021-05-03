@@ -1,11 +1,11 @@
-# Structures for boto3 Translate module
+# Typed dictionaries for boto3 Translate module
 
 > [Index](../README.md) > [Translate](./README.md) > Structures
 
 Auto-generated documentation for [Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
 type annotations stubs module [mypy_boto3_translate](https://pypi.org/project/mypy-boto3-translate/).
 
-- [Structures for boto3 Translate module](#structures-for-boto3-translate-module)
+- [Typed dictionaries for boto3 Translate module](#typed-dictionaries-for-boto3-translate-module)
   - [AppliedTerminologyTypeDef](#appliedterminologytypedef)
   - [CreateParallelDataResponseTypeDef](#createparalleldataresponsetypedef)
   - [DeleteParallelDataResponseTypeDef](#deleteparalleldataresponsetypedef)

@@ -15,7 +15,7 @@ pip install mypy-boto3-logs
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## CloudWatchLogsClient
 
@@ -153,7 +153,7 @@ from mypy_boto3_logs.literals import DescribeDestinationsPaginatorName, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

@@ -1,11 +1,11 @@
-# Structures for boto3 MediaConnect module
+# Typed dictionaries for boto3 MediaConnect module
 
 > [Index](../README.md) > [MediaConnect](./README.md) > Structures
 
 Auto-generated documentation for [MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
 type annotations stubs module [mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
 
-- [Structures for boto3 MediaConnect module](#structures-for-boto3-mediaconnect-module)
+- [Typed dictionaries for boto3 MediaConnect module](#typed-dictionaries-for-boto3-mediaconnect-module)
   - [AddFlowOutputsResponseTypeDef](#addflowoutputsresponsetypedef)
   - [AddFlowSourcesResponseTypeDef](#addflowsourcesresponsetypedef)
   - [AddFlowVpcInterfacesResponseTypeDef](#addflowvpcinterfacesresponsetypedef)
@@ -455,12 +455,6 @@ from mypy_boto3_mediaconnect.type_defs import OutputTypeDef
 
 
 Required fields:
-- `Name`: `str`
-- `OutputArn`: `str`
-
-
-
-Optional fields:
 - `DataTransferSubscriberFeePercent`: `int`
 - `Description`: `str`
 - `Destination`: `str`
@@ -468,10 +462,14 @@ Optional fields:
 - `EntitlementArn`: `str`
 - `ListenerAddress`: `str`
 - `MediaLiveInputArn`: `str`
+- `Name`: `str`
+- `OutputArn`: `str`
 - `Port`: `int`
 - `Transport`: `"TransportTypeDef"`
 - `VpcInterfaceAttachment`: `"VpcInterfaceAttachmentTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PaginatorConfigTypeDef

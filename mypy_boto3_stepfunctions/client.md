@@ -44,7 +44,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_stepfunctions.client import SFNClient
+
+def get_stepfunctions_client() -> SFNClient:
+    return boto3.client("stepfunctions")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client)
 
 ## Exceptions
 
@@ -95,7 +100,7 @@ Exceptions:
 
 Type annotations for `boto3.client("stepfunctions").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -109,7 +114,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("stepfunctions").create_activity` method.
 
-[Client.create_activity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.create_activity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.create_activity]
 
 ```python
 def create_activity(
@@ -124,7 +129,7 @@ def create_activity(
 
 Type annotations for `boto3.client("stepfunctions").create_state_machine` method.
 
-[Client.create_state_machine documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.create_state_machine)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.create_state_machine]
 
 ```python
 def create_state_machine(
@@ -144,7 +149,7 @@ def create_state_machine(
 
 Type annotations for `boto3.client("stepfunctions").delete_activity` method.
 
-[Client.delete_activity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.delete_activity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.delete_activity]
 
 ```python
 def delete_activity(
@@ -158,7 +163,7 @@ def delete_activity(
 
 Type annotations for `boto3.client("stepfunctions").delete_state_machine` method.
 
-[Client.delete_state_machine documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.delete_state_machine)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.delete_state_machine]
 
 ```python
 def delete_state_machine(
@@ -172,7 +177,7 @@ def delete_state_machine(
 
 Type annotations for `boto3.client("stepfunctions").describe_activity` method.
 
-[Client.describe_activity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_activity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_activity]
 
 ```python
 def describe_activity(
@@ -186,7 +191,7 @@ def describe_activity(
 
 Type annotations for `boto3.client("stepfunctions").describe_execution` method.
 
-[Client.describe_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_execution]
 
 ```python
 def describe_execution(
@@ -200,7 +205,7 @@ def describe_execution(
 
 Type annotations for `boto3.client("stepfunctions").describe_state_machine` method.
 
-[Client.describe_state_machine documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine]
 
 ```python
 def describe_state_machine(
@@ -214,7 +219,7 @@ def describe_state_machine(
 
 Type annotations for `boto3.client("stepfunctions").describe_state_machine_for_execution` method.
 
-[Client.describe_state_machine_for_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine_for_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine_for_execution]
 
 ```python
 def describe_state_machine_for_execution(
@@ -228,7 +233,7 @@ def describe_state_machine_for_execution(
 
 Type annotations for `boto3.client("stepfunctions").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -245,7 +250,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("stepfunctions").get_activity_task` method.
 
-[Client.get_activity_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.get_activity_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.get_activity_task]
 
 ```python
 def get_activity_task(
@@ -260,7 +265,7 @@ def get_activity_task(
 
 Type annotations for `boto3.client("stepfunctions").get_execution_history` method.
 
-[Client.get_execution_history documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.get_execution_history)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.get_execution_history]
 
 ```python
 def get_execution_history(
@@ -278,7 +283,7 @@ def get_execution_history(
 
 Type annotations for `boto3.client("stepfunctions").list_activities` method.
 
-[Client.list_activities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_activities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_activities]
 
 ```python
 def list_activities(
@@ -293,7 +298,7 @@ def list_activities(
 
 Type annotations for `boto3.client("stepfunctions").list_executions` method.
 
-[Client.list_executions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_executions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_executions]
 
 ```python
 def list_executions(
@@ -310,7 +315,7 @@ def list_executions(
 
 Type annotations for `boto3.client("stepfunctions").list_state_machines` method.
 
-[Client.list_state_machines documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_state_machines)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_state_machines]
 
 ```python
 def list_state_machines(
@@ -325,7 +330,7 @@ def list_state_machines(
 
 Type annotations for `boto3.client("stepfunctions").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -339,7 +344,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("stepfunctions").send_task_failure` method.
 
-[Client.send_task_failure documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_failure)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_failure]
 
 ```python
 def send_task_failure(
@@ -355,7 +360,7 @@ def send_task_failure(
 
 Type annotations for `boto3.client("stepfunctions").send_task_heartbeat` method.
 
-[Client.send_task_heartbeat documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_heartbeat)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_heartbeat]
 
 ```python
 def send_task_heartbeat(
@@ -369,7 +374,7 @@ def send_task_heartbeat(
 
 Type annotations for `boto3.client("stepfunctions").send_task_success` method.
 
-[Client.send_task_success documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_success)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_success]
 
 ```python
 def send_task_success(
@@ -384,7 +389,7 @@ def send_task_success(
 
 Type annotations for `boto3.client("stepfunctions").start_execution` method.
 
-[Client.start_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.start_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.start_execution]
 
 ```python
 def start_execution(
@@ -401,7 +406,7 @@ def start_execution(
 
 Type annotations for `boto3.client("stepfunctions").start_sync_execution` method.
 
-[Client.start_sync_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.start_sync_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.start_sync_execution]
 
 ```python
 def start_sync_execution(
@@ -418,7 +423,7 @@ def start_sync_execution(
 
 Type annotations for `boto3.client("stepfunctions").stop_execution` method.
 
-[Client.stop_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.stop_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.stop_execution]
 
 ```python
 def stop_execution(
@@ -434,7 +439,7 @@ def stop_execution(
 
 Type annotations for `boto3.client("stepfunctions").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -449,7 +454,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("stepfunctions").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -464,7 +469,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("stepfunctions").update_state_machine` method.
 
-[Client.update_state_machine documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.update_state_machine)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.update_state_machine]
 
 ```python
 def update_state_machine(

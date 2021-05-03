@@ -1,11 +1,11 @@
-# Structures for boto3 SMS module
+# Typed dictionaries for boto3 SMS module
 
 > [Index](../README.md) > [SMS](./README.md) > Structures
 
 Auto-generated documentation for [SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
 type annotations stubs module [mypy_boto3_sms](https://pypi.org/project/mypy-boto3-sms/).
 
-- [Structures for boto3 SMS module](#structures-for-boto3-sms-module)
+- [Typed dictionaries for boto3 SMS module](#typed-dictionaries-for-boto3-sms-module)
   - [AppSummaryTypeDef](#appsummarytypedef)
   - [AppValidationConfigurationTypeDef](#appvalidationconfigurationtypedef)
   - [AppValidationOutputTypeDef](#appvalidationoutputtypedef)
@@ -108,11 +108,11 @@ from mypy_boto3_sms.type_defs import AppValidationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ssmOutput`: `"SSMOutputTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ConnectorTypeDef
@@ -485,11 +485,11 @@ from mypy_boto3_sms.type_defs import SSMOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `s3Location`: `"S3LocationTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## SSMValidationParametersTypeDef
@@ -666,11 +666,11 @@ from mypy_boto3_sms.type_defs import ServerValidationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `server`: `"ServerTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## SourceTypeDef
@@ -762,9 +762,7 @@ from mypy_boto3_sms.type_defs import ValidationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `validationId`: `str`
 - `name`: `str`
 - `status`: `ValidationStatus`
@@ -773,6 +771,8 @@ Optional fields:
 - `appValidationOutput`: `"AppValidationOutputTypeDef"`
 - `serverValidationOutput`: `"ServerValidationOutputTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## VmServerAddressTypeDef

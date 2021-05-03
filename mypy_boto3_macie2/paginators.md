@@ -23,13 +23,13 @@ Type annotations for `boto3.client("macie2").get_paginator("describe_buckets")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_macie2.paginators import DescribeBucketsPaginator
+from mypy_boto3_macie2.paginator import DescribeBucketsPaginator
 
 def get_describe_buckets_paginator() -> DescribeBucketsPaginator:
     return boto3.client("macie2").get_paginator("describe_buckets")
 ```
 
-[Paginator.DescribeBuckets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.DescribeBuckets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.DescribeBuckets)
 
 ```python
 class DescribeBucketsPaginator(Boto3Paginator):
@@ -48,13 +48,13 @@ Type annotations for `boto3.client("macie2").get_paginator("get_usage_statistics
 Can be used directly:
 
 ```python
-from mypy_boto3_macie2.paginators import GetUsageStatisticsPaginator
+from mypy_boto3_macie2.paginator import GetUsageStatisticsPaginator
 
 def get_get_usage_statistics_paginator() -> GetUsageStatisticsPaginator:
     return boto3.client("macie2").get_paginator("get_usage_statistics")
 ```
 
-[Paginator.GetUsageStatistics documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.GetUsageStatistics)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.GetUsageStatistics)
 
 ```python
 class GetUsageStatisticsPaginator(Boto3Paginator):
@@ -74,13 +74,13 @@ Type annotations for `boto3.client("macie2").get_paginator("list_classification_
 Can be used directly:
 
 ```python
-from mypy_boto3_macie2.paginators import ListClassificationJobsPaginator
+from mypy_boto3_macie2.paginator import ListClassificationJobsPaginator
 
 def get_list_classification_jobs_paginator() -> ListClassificationJobsPaginator:
     return boto3.client("macie2").get_paginator("list_classification_jobs")
 ```
 
-[Paginator.ListClassificationJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListClassificationJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListClassificationJobs)
 
 ```python
 class ListClassificationJobsPaginator(Boto3Paginator):
@@ -99,13 +99,13 @@ Type annotations for `boto3.client("macie2").get_paginator("list_custom_data_ide
 Can be used directly:
 
 ```python
-from mypy_boto3_macie2.paginators import ListCustomDataIdentifiersPaginator
+from mypy_boto3_macie2.paginator import ListCustomDataIdentifiersPaginator
 
 def get_list_custom_data_identifiers_paginator() -> ListCustomDataIdentifiersPaginator:
     return boto3.client("macie2").get_paginator("list_custom_data_identifiers")
 ```
 
-[Paginator.ListCustomDataIdentifiers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListCustomDataIdentifiers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListCustomDataIdentifiers)
 
 ```python
 class ListCustomDataIdentifiersPaginator(Boto3Paginator):
@@ -122,13 +122,13 @@ Type annotations for `boto3.client("macie2").get_paginator("list_findings")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_macie2.paginators import ListFindingsPaginator
+from mypy_boto3_macie2.paginator import ListFindingsPaginator
 
 def get_list_findings_paginator() -> ListFindingsPaginator:
     return boto3.client("macie2").get_paginator("list_findings")
 ```
 
-[Paginator.ListFindings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListFindings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListFindings)
 
 ```python
 class ListFindingsPaginator(Boto3Paginator):
@@ -147,13 +147,13 @@ Type annotations for `boto3.client("macie2").get_paginator("list_findings_filter
 Can be used directly:
 
 ```python
-from mypy_boto3_macie2.paginators import ListFindingsFiltersPaginator
+from mypy_boto3_macie2.paginator import ListFindingsFiltersPaginator
 
 def get_list_findings_filters_paginator() -> ListFindingsFiltersPaginator:
     return boto3.client("macie2").get_paginator("list_findings_filters")
 ```
 
-[Paginator.ListFindingsFilters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListFindingsFilters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListFindingsFilters)
 
 ```python
 class ListFindingsFiltersPaginator(Boto3Paginator):
@@ -170,13 +170,13 @@ Type annotations for `boto3.client("macie2").get_paginator("list_invitations")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_macie2.paginators import ListInvitationsPaginator
+from mypy_boto3_macie2.paginator import ListInvitationsPaginator
 
 def get_list_invitations_paginator() -> ListInvitationsPaginator:
     return boto3.client("macie2").get_paginator("list_invitations")
 ```
 
-[Paginator.ListInvitations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListInvitations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListInvitations)
 
 ```python
 class ListInvitationsPaginator(Boto3Paginator):
@@ -193,13 +193,13 @@ Type annotations for `boto3.client("macie2").get_paginator("list_members")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_macie2.paginators import ListMembersPaginator
+from mypy_boto3_macie2.paginator import ListMembersPaginator
 
 def get_list_members_paginator() -> ListMembersPaginator:
     return boto3.client("macie2").get_paginator("list_members")
 ```
 
-[Paginator.ListMembers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListMembers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListMembers)
 
 ```python
 class ListMembersPaginator(Boto3Paginator):
@@ -217,13 +217,13 @@ Type annotations for `boto3.client("macie2").get_paginator("list_organization_ad
 Can be used directly:
 
 ```python
-from mypy_boto3_macie2.paginators import ListOrganizationAdminAccountsPaginator
+from mypy_boto3_macie2.paginator import ListOrganizationAdminAccountsPaginator
 
 def get_list_organization_admin_accounts_paginator() -> ListOrganizationAdminAccountsPaginator:
     return boto3.client("macie2").get_paginator("list_organization_admin_accounts")
 ```
 
-[Paginator.ListOrganizationAdminAccounts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListOrganizationAdminAccounts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListOrganizationAdminAccounts)
 
 ```python
 class ListOrganizationAdminAccountsPaginator(Boto3Paginator):

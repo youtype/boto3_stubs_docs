@@ -1,11 +1,11 @@
-# Structures for boto3 StorageGateway module
+# Typed dictionaries for boto3 StorageGateway module
 
 > [Index](../README.md) > [StorageGateway](./README.md) > Structures
 
 Auto-generated documentation for [StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
 type annotations stubs module [mypy_boto3_storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
 
-- [Structures for boto3 StorageGateway module](#structures-for-boto3-storagegateway-module)
+- [Typed dictionaries for boto3 StorageGateway module](#typed-dictionaries-for-boto3-storagegateway-module)
   - [ActivateGatewayOutputTypeDef](#activategatewayoutputtypedef)
   - [AddCacheOutputTypeDef](#addcacheoutputtypedef)
   - [AddTagsToResourceOutputTypeDef](#addtagstoresourceoutputtypedef)
@@ -132,11 +132,11 @@ from mypy_boto3_storagegateway.type_defs import ActivateGatewayOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## AddCacheOutputTypeDef
@@ -146,11 +146,11 @@ from mypy_boto3_storagegateway.type_defs import AddCacheOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## AddTagsToResourceOutputTypeDef
@@ -160,11 +160,11 @@ from mypy_boto3_storagegateway.type_defs import AddTagsToResourceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ResourceARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## AddUploadBufferOutputTypeDef
@@ -174,11 +174,11 @@ from mypy_boto3_storagegateway.type_defs import AddUploadBufferOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## AddWorkingStorageOutputTypeDef
@@ -188,11 +188,11 @@ from mypy_boto3_storagegateway.type_defs import AddWorkingStorageOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## AssignTapePoolOutputTypeDef
@@ -202,11 +202,11 @@ from mypy_boto3_storagegateway.type_defs import AssignTapePoolOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TapeARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## AssociateFileSystemOutputTypeDef
@@ -216,11 +216,11 @@ from mypy_boto3_storagegateway.type_defs import AssociateFileSystemOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `FileSystemAssociationARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## AttachVolumeOutputTypeDef
@@ -230,12 +230,12 @@ from mypy_boto3_storagegateway.type_defs import AttachVolumeOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `VolumeARN`: `str`
 - `TargetARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## AutomaticTapeCreationPolicyInfoTypeDef
@@ -337,11 +337,11 @@ from mypy_boto3_storagegateway.type_defs import CancelArchivalOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TapeARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CancelRetrievalOutputTypeDef
@@ -351,11 +351,11 @@ from mypy_boto3_storagegateway.type_defs import CancelRetrievalOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TapeARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ChapInfoTypeDef
@@ -381,12 +381,12 @@ from mypy_boto3_storagegateway.type_defs import CreateCachediSCSIVolumeOutputTyp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `VolumeARN`: `str`
 - `TargetARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateNFSFileShareOutputTypeDef
@@ -396,11 +396,11 @@ from mypy_boto3_storagegateway.type_defs import CreateNFSFileShareOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `FileShareARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateSMBFileShareOutputTypeDef
@@ -410,11 +410,11 @@ from mypy_boto3_storagegateway.type_defs import CreateSMBFileShareOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `FileShareARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateSnapshotFromVolumeRecoveryPointOutputTypeDef
@@ -424,13 +424,13 @@ from mypy_boto3_storagegateway.type_defs import CreateSnapshotFromVolumeRecovery
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `SnapshotId`: `str`
 - `VolumeARN`: `str`
 - `VolumeRecoveryPointTime`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateSnapshotOutputTypeDef
@@ -440,12 +440,12 @@ from mypy_boto3_storagegateway.type_defs import CreateSnapshotOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `VolumeARN`: `str`
 - `SnapshotId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateStorediSCSIVolumeOutputTypeDef
@@ -455,13 +455,13 @@ from mypy_boto3_storagegateway.type_defs import CreateStorediSCSIVolumeOutputTyp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `VolumeARN`: `str`
 - `VolumeSizeInBytes`: `int`
 - `TargetARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateTapePoolOutputTypeDef
@@ -471,11 +471,11 @@ from mypy_boto3_storagegateway.type_defs import CreateTapePoolOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PoolARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateTapeWithBarcodeOutputTypeDef
@@ -485,11 +485,11 @@ from mypy_boto3_storagegateway.type_defs import CreateTapeWithBarcodeOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TapeARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateTapesOutputTypeDef
@@ -499,11 +499,11 @@ from mypy_boto3_storagegateway.type_defs import CreateTapesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TapeARNs`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteAutomaticTapeCreationPolicyOutputTypeDef
@@ -513,11 +513,11 @@ from mypy_boto3_storagegateway.type_defs import DeleteAutomaticTapeCreationPolic
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteBandwidthRateLimitOutputTypeDef
@@ -527,11 +527,11 @@ from mypy_boto3_storagegateway.type_defs import DeleteBandwidthRateLimitOutputTy
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteChapCredentialsOutputTypeDef
@@ -541,12 +541,12 @@ from mypy_boto3_storagegateway.type_defs import DeleteChapCredentialsOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TargetARN`: `str`
 - `InitiatorName`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteFileShareOutputTypeDef
@@ -556,11 +556,11 @@ from mypy_boto3_storagegateway.type_defs import DeleteFileShareOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `FileShareARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteGatewayOutputTypeDef
@@ -570,11 +570,11 @@ from mypy_boto3_storagegateway.type_defs import DeleteGatewayOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteSnapshotScheduleOutputTypeDef
@@ -584,11 +584,11 @@ from mypy_boto3_storagegateway.type_defs import DeleteSnapshotScheduleOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `VolumeARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteTapeArchiveOutputTypeDef
@@ -598,11 +598,11 @@ from mypy_boto3_storagegateway.type_defs import DeleteTapeArchiveOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TapeARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteTapeOutputTypeDef
@@ -612,11 +612,11 @@ from mypy_boto3_storagegateway.type_defs import DeleteTapeOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TapeARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteTapePoolOutputTypeDef
@@ -626,11 +626,11 @@ from mypy_boto3_storagegateway.type_defs import DeleteTapePoolOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PoolARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteVolumeOutputTypeDef
@@ -640,11 +640,11 @@ from mypy_boto3_storagegateway.type_defs import DeleteVolumeOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `VolumeARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeAvailabilityMonitorTestOutputTypeDef
@@ -654,13 +654,13 @@ from mypy_boto3_storagegateway.type_defs import DescribeAvailabilityMonitorTestO
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `Status`: `AvailabilityMonitorTestStatus`
 - `StartTime`: `datetime`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeBandwidthRateLimitOutputTypeDef
@@ -670,13 +670,13 @@ from mypy_boto3_storagegateway.type_defs import DescribeBandwidthRateLimitOutput
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `AverageUploadRateLimitInBitsPerSec`: `int`
 - `AverageDownloadRateLimitInBitsPerSec`: `int`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeBandwidthRateLimitScheduleOutputTypeDef
@@ -686,12 +686,12 @@ from mypy_boto3_storagegateway.type_defs import DescribeBandwidthRateLimitSchedu
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `BandwidthRateLimitIntervals`: `List["BandwidthRateLimitIntervalTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeCacheOutputTypeDef
@@ -701,9 +701,7 @@ from mypy_boto3_storagegateway.type_defs import DescribeCacheOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `DiskIds`: `List[str]`
 - `CacheAllocatedInBytes`: `int`
@@ -714,6 +712,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## DescribeCachediSCSIVolumesOutputTypeDef
 
 ```python
@@ -721,11 +721,11 @@ from mypy_boto3_storagegateway.type_defs import DescribeCachediSCSIVolumesOutput
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `CachediSCSIVolumes`: `List["CachediSCSIVolumeTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeChapCredentialsOutputTypeDef
@@ -735,11 +735,11 @@ from mypy_boto3_storagegateway.type_defs import DescribeChapCredentialsOutputTyp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ChapCredentials`: `List["ChapInfoTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeFileSystemAssociationsOutputTypeDef
@@ -749,11 +749,11 @@ from mypy_boto3_storagegateway.type_defs import DescribeFileSystemAssociationsOu
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `FileSystemAssociationInfoList`: `List["FileSystemAssociationInfoTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeGatewayInformationOutputTypeDef
@@ -763,9 +763,7 @@ from mypy_boto3_storagegateway.type_defs import DescribeGatewayInformationOutput
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `GatewayId`: `str`
 - `GatewayName`: `str`
@@ -787,6 +785,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## DescribeMaintenanceStartTimeOutputTypeDef
 
 ```python
@@ -794,9 +794,7 @@ from mypy_boto3_storagegateway.type_defs import DescribeMaintenanceStartTimeOutp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `HourOfDay`: `int`
 - `MinuteOfHour`: `int`
@@ -806,6 +804,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## DescribeNFSFileSharesOutputTypeDef
 
 ```python
@@ -813,11 +813,11 @@ from mypy_boto3_storagegateway.type_defs import DescribeNFSFileSharesOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NFSFileShareInfoList`: `List["NFSFileShareInfoTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeSMBFileSharesOutputTypeDef
@@ -827,11 +827,11 @@ from mypy_boto3_storagegateway.type_defs import DescribeSMBFileSharesOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `SMBFileShareInfoList`: `List["SMBFileShareInfoTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeSMBSettingsOutputTypeDef
@@ -841,9 +841,7 @@ from mypy_boto3_storagegateway.type_defs import DescribeSMBSettingsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `DomainName`: `str`
 - `ActiveDirectoryStatus`: `ActiveDirectoryStatus`
@@ -853,6 +851,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## DescribeSnapshotScheduleOutputTypeDef
 
 ```python
@@ -860,9 +860,7 @@ from mypy_boto3_storagegateway.type_defs import DescribeSnapshotScheduleOutputTy
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `VolumeARN`: `str`
 - `StartAt`: `int`
 - `RecurrenceInHours`: `int`
@@ -872,6 +870,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## DescribeStorediSCSIVolumesOutputTypeDef
 
 ```python
@@ -879,11 +879,11 @@ from mypy_boto3_storagegateway.type_defs import DescribeStorediSCSIVolumesOutput
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `StorediSCSIVolumes`: `List["StorediSCSIVolumeTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeTapeArchivesOutputTypeDef
@@ -893,12 +893,12 @@ from mypy_boto3_storagegateway.type_defs import DescribeTapeArchivesOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TapeArchives`: `List["TapeArchiveTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeTapeRecoveryPointsOutputTypeDef
@@ -908,13 +908,13 @@ from mypy_boto3_storagegateway.type_defs import DescribeTapeRecoveryPointsOutput
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `TapeRecoveryPointInfos`: `List["TapeRecoveryPointInfoTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeTapesOutputTypeDef
@@ -924,12 +924,12 @@ from mypy_boto3_storagegateway.type_defs import DescribeTapesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Tapes`: `List["TapeTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeUploadBufferOutputTypeDef
@@ -939,14 +939,14 @@ from mypy_boto3_storagegateway.type_defs import DescribeUploadBufferOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `DiskIds`: `List[str]`
 - `UploadBufferUsedInBytes`: `int`
 - `UploadBufferAllocatedInBytes`: `int`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeVTLDevicesOutputTypeDef
@@ -956,13 +956,13 @@ from mypy_boto3_storagegateway.type_defs import DescribeVTLDevicesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `VTLDevices`: `List["VTLDeviceTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeWorkingStorageOutputTypeDef
@@ -972,14 +972,14 @@ from mypy_boto3_storagegateway.type_defs import DescribeWorkingStorageOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `DiskIds`: `List[str]`
 - `WorkingStorageUsedInBytes`: `int`
 - `WorkingStorageAllocatedInBytes`: `int`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DetachVolumeOutputTypeDef
@@ -989,11 +989,11 @@ from mypy_boto3_storagegateway.type_defs import DetachVolumeOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `VolumeARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeviceiSCSIAttributesTypeDef
@@ -1019,11 +1019,11 @@ from mypy_boto3_storagegateway.type_defs import DisableGatewayOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DisassociateFileSystemOutputTypeDef
@@ -1033,11 +1033,11 @@ from mypy_boto3_storagegateway.type_defs import DisassociateFileSystemOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `FileSystemAssociationARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DiskTypeDef
@@ -1138,12 +1138,12 @@ from mypy_boto3_storagegateway.type_defs import JoinDomainOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ActiveDirectoryStatus`: `ActiveDirectoryStatus`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListAutomaticTapeCreationPoliciesOutputTypeDef
@@ -1153,11 +1153,11 @@ from mypy_boto3_storagegateway.type_defs import ListAutomaticTapeCreationPolicie
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `AutomaticTapeCreationPolicyInfos`: `List["AutomaticTapeCreationPolicyInfoTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListFileSharesOutputTypeDef
@@ -1167,13 +1167,13 @@ from mypy_boto3_storagegateway.type_defs import ListFileSharesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Marker`: `str`
 - `NextMarker`: `str`
 - `FileShareInfoList`: `List["FileShareInfoTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListFileSystemAssociationsOutputTypeDef
@@ -1183,13 +1183,13 @@ from mypy_boto3_storagegateway.type_defs import ListFileSystemAssociationsOutput
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Marker`: `str`
 - `NextMarker`: `str`
 - `FileSystemAssociationSummaryList`: `List["FileSystemAssociationSummaryTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListGatewaysOutputTypeDef
@@ -1199,12 +1199,12 @@ from mypy_boto3_storagegateway.type_defs import ListGatewaysOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Gateways`: `List["GatewayInfoTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListLocalDisksOutputTypeDef
@@ -1214,12 +1214,12 @@ from mypy_boto3_storagegateway.type_defs import ListLocalDisksOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `Disks`: `List["DiskTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagsForResourceOutputTypeDef
@@ -1229,13 +1229,13 @@ from mypy_boto3_storagegateway.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ResourceARN`: `str`
 - `Marker`: `str`
 - `Tags`: `List["TagTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTapePoolsOutputTypeDef
@@ -1245,12 +1245,12 @@ from mypy_boto3_storagegateway.type_defs import ListTapePoolsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PoolInfos`: `List["PoolInfoTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTapesOutputTypeDef
@@ -1260,12 +1260,12 @@ from mypy_boto3_storagegateway.type_defs import ListTapesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TapeInfos`: `List["TapeInfoTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListVolumeInitiatorsOutputTypeDef
@@ -1275,11 +1275,11 @@ from mypy_boto3_storagegateway.type_defs import ListVolumeInitiatorsOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Initiators`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListVolumeRecoveryPointsOutputTypeDef
@@ -1289,12 +1289,12 @@ from mypy_boto3_storagegateway.type_defs import ListVolumeRecoveryPointsOutputTy
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `VolumeRecoveryPointInfos`: `List["VolumeRecoveryPointInfoTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListVolumesOutputTypeDef
@@ -1304,13 +1304,13 @@ from mypy_boto3_storagegateway.type_defs import ListVolumesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `Marker`: `str`
 - `VolumeInfos`: `List["VolumeInfoTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## NFSFileShareDefaultsTypeDef
@@ -1384,12 +1384,12 @@ from mypy_boto3_storagegateway.type_defs import NotifyWhenUploadedOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `FileShareARN`: `str`
 - `NotificationId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PaginatorConfigTypeDef
@@ -1432,12 +1432,12 @@ from mypy_boto3_storagegateway.type_defs import RefreshCacheOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `FileShareARN`: `str`
 - `NotificationId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## RemoveTagsFromResourceOutputTypeDef
@@ -1447,11 +1447,11 @@ from mypy_boto3_storagegateway.type_defs import RemoveTagsFromResourceOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ResourceARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ResetCacheOutputTypeDef
@@ -1461,11 +1461,11 @@ from mypy_boto3_storagegateway.type_defs import ResetCacheOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ResponseMetadata
@@ -1492,11 +1492,11 @@ from mypy_boto3_storagegateway.type_defs import RetrieveTapeArchiveOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TapeARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## RetrieveTapeRecoveryPointOutputTypeDef
@@ -1506,11 +1506,11 @@ from mypy_boto3_storagegateway.type_defs import RetrieveTapeRecoveryPointOutputT
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TapeARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## SMBFileShareInfoTypeDef
@@ -1558,11 +1558,11 @@ from mypy_boto3_storagegateway.type_defs import SetLocalConsolePasswordOutputTyp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## SetSMBGuestPasswordOutputTypeDef
@@ -1572,11 +1572,11 @@ from mypy_boto3_storagegateway.type_defs import SetSMBGuestPasswordOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ShutdownGatewayOutputTypeDef
@@ -1586,11 +1586,11 @@ from mypy_boto3_storagegateway.type_defs import ShutdownGatewayOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## StartAvailabilityMonitorTestOutputTypeDef
@@ -1600,11 +1600,11 @@ from mypy_boto3_storagegateway.type_defs import StartAvailabilityMonitorTestOutp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## StartGatewayOutputTypeDef
@@ -1614,11 +1614,11 @@ from mypy_boto3_storagegateway.type_defs import StartGatewayOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## StorediSCSIVolumeTypeDef
@@ -1755,11 +1755,11 @@ from mypy_boto3_storagegateway.type_defs import UpdateAutomaticTapeCreationPolic
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateBandwidthRateLimitOutputTypeDef
@@ -1769,11 +1769,11 @@ from mypy_boto3_storagegateway.type_defs import UpdateBandwidthRateLimitOutputTy
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateBandwidthRateLimitScheduleOutputTypeDef
@@ -1783,11 +1783,11 @@ from mypy_boto3_storagegateway.type_defs import UpdateBandwidthRateLimitSchedule
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateChapCredentialsOutputTypeDef
@@ -1797,12 +1797,12 @@ from mypy_boto3_storagegateway.type_defs import UpdateChapCredentialsOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TargetARN`: `str`
 - `InitiatorName`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateFileSystemAssociationOutputTypeDef
@@ -1812,11 +1812,11 @@ from mypy_boto3_storagegateway.type_defs import UpdateFileSystemAssociationOutpu
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `FileSystemAssociationARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateGatewayInformationOutputTypeDef
@@ -1826,12 +1826,12 @@ from mypy_boto3_storagegateway.type_defs import UpdateGatewayInformationOutputTy
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `GatewayName`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateGatewaySoftwareNowOutputTypeDef
@@ -1841,11 +1841,11 @@ from mypy_boto3_storagegateway.type_defs import UpdateGatewaySoftwareNowOutputTy
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateMaintenanceStartTimeOutputTypeDef
@@ -1855,11 +1855,11 @@ from mypy_boto3_storagegateway.type_defs import UpdateMaintenanceStartTimeOutput
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateNFSFileShareOutputTypeDef
@@ -1869,11 +1869,11 @@ from mypy_boto3_storagegateway.type_defs import UpdateNFSFileShareOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `FileShareARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateSMBFileShareOutputTypeDef
@@ -1883,11 +1883,11 @@ from mypy_boto3_storagegateway.type_defs import UpdateSMBFileShareOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `FileShareARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateSMBFileShareVisibilityOutputTypeDef
@@ -1897,11 +1897,11 @@ from mypy_boto3_storagegateway.type_defs import UpdateSMBFileShareVisibilityOutp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateSMBSecurityStrategyOutputTypeDef
@@ -1911,11 +1911,11 @@ from mypy_boto3_storagegateway.type_defs import UpdateSMBSecurityStrategyOutputT
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GatewayARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateSnapshotScheduleOutputTypeDef
@@ -1925,11 +1925,11 @@ from mypy_boto3_storagegateway.type_defs import UpdateSnapshotScheduleOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `VolumeARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateVTLDeviceTypeOutputTypeDef
@@ -1939,11 +1939,11 @@ from mypy_boto3_storagegateway.type_defs import UpdateVTLDeviceTypeOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `VTLDeviceARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## VTLDeviceTypeDef

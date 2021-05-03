@@ -15,7 +15,7 @@ pip install mypy-boto3-mediaconvert
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## MediaConvertClient
 
@@ -442,7 +442,7 @@ from mypy_boto3_mediaconvert.literals import AacAudioDescriptionBroadcasterMix, 
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

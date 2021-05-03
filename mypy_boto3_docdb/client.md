@@ -70,7 +70,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_docdb.client import DocDBClient
+
+def get_docdb_client() -> DocDBClient:
+    return boto3.client("docdb")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client)
 
 ## Exceptions
 
@@ -150,7 +155,7 @@ Exceptions:
 
 Type annotations for `boto3.client("docdb").add_source_identifier_to_subscription` method.
 
-[Client.add_source_identifier_to_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.add_source_identifier_to_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.add_source_identifier_to_subscription]
 
 ```python
 def add_source_identifier_to_subscription(
@@ -165,7 +170,7 @@ def add_source_identifier_to_subscription(
 
 Type annotations for `boto3.client("docdb").add_tags_to_resource` method.
 
-[Client.add_tags_to_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.add_tags_to_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.add_tags_to_resource]
 
 ```python
 def add_tags_to_resource(
@@ -180,7 +185,7 @@ def add_tags_to_resource(
 
 Type annotations for `boto3.client("docdb").apply_pending_maintenance_action` method.
 
-[Client.apply_pending_maintenance_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.apply_pending_maintenance_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.apply_pending_maintenance_action]
 
 ```python
 def apply_pending_maintenance_action(
@@ -196,7 +201,7 @@ def apply_pending_maintenance_action(
 
 Type annotations for `boto3.client("docdb").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -210,7 +215,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("docdb").copy_db_cluster_parameter_group` method.
 
-[Client.copy_db_cluster_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.copy_db_cluster_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.copy_db_cluster_parameter_group]
 
 ```python
 def copy_db_cluster_parameter_group(
@@ -227,7 +232,7 @@ def copy_db_cluster_parameter_group(
 
 Type annotations for `boto3.client("docdb").copy_db_cluster_snapshot` method.
 
-[Client.copy_db_cluster_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.copy_db_cluster_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.copy_db_cluster_snapshot]
 
 ```python
 def copy_db_cluster_snapshot(
@@ -247,7 +252,7 @@ def copy_db_cluster_snapshot(
 
 Type annotations for `boto3.client("docdb").create_db_cluster` method.
 
-[Client.create_db_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_cluster]
 
 ```python
 def create_db_cluster(
@@ -280,7 +285,7 @@ def create_db_cluster(
 
 Type annotations for `boto3.client("docdb").create_db_cluster_parameter_group` method.
 
-[Client.create_db_cluster_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_cluster_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_cluster_parameter_group]
 
 ```python
 def create_db_cluster_parameter_group(
@@ -297,7 +302,7 @@ def create_db_cluster_parameter_group(
 
 Type annotations for `boto3.client("docdb").create_db_cluster_snapshot` method.
 
-[Client.create_db_cluster_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_cluster_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_cluster_snapshot]
 
 ```python
 def create_db_cluster_snapshot(
@@ -313,7 +318,7 @@ def create_db_cluster_snapshot(
 
 Type annotations for `boto3.client("docdb").create_db_instance` method.
 
-[Client.create_db_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_instance]
 
 ```python
 def create_db_instance(
@@ -335,7 +340,7 @@ def create_db_instance(
 
 Type annotations for `boto3.client("docdb").create_db_subnet_group` method.
 
-[Client.create_db_subnet_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_subnet_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_subnet_group]
 
 ```python
 def create_db_subnet_group(
@@ -352,7 +357,7 @@ def create_db_subnet_group(
 
 Type annotations for `boto3.client("docdb").create_event_subscription` method.
 
-[Client.create_event_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_event_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_event_subscription]
 
 ```python
 def create_event_subscription(
@@ -372,7 +377,7 @@ def create_event_subscription(
 
 Type annotations for `boto3.client("docdb").delete_db_cluster` method.
 
-[Client.delete_db_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_cluster]
 
 ```python
 def delete_db_cluster(
@@ -388,7 +393,7 @@ def delete_db_cluster(
 
 Type annotations for `boto3.client("docdb").delete_db_cluster_parameter_group` method.
 
-[Client.delete_db_cluster_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_cluster_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_cluster_parameter_group]
 
 ```python
 def delete_db_cluster_parameter_group(
@@ -402,7 +407,7 @@ def delete_db_cluster_parameter_group(
 
 Type annotations for `boto3.client("docdb").delete_db_cluster_snapshot` method.
 
-[Client.delete_db_cluster_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_cluster_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_cluster_snapshot]
 
 ```python
 def delete_db_cluster_snapshot(
@@ -416,7 +421,7 @@ def delete_db_cluster_snapshot(
 
 Type annotations for `boto3.client("docdb").delete_db_instance` method.
 
-[Client.delete_db_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_instance]
 
 ```python
 def delete_db_instance(
@@ -430,7 +435,7 @@ def delete_db_instance(
 
 Type annotations for `boto3.client("docdb").delete_db_subnet_group` method.
 
-[Client.delete_db_subnet_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_subnet_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_subnet_group]
 
 ```python
 def delete_db_subnet_group(
@@ -444,7 +449,7 @@ def delete_db_subnet_group(
 
 Type annotations for `boto3.client("docdb").delete_event_subscription` method.
 
-[Client.delete_event_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_event_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_event_subscription]
 
 ```python
 def delete_event_subscription(
@@ -458,7 +463,7 @@ def delete_event_subscription(
 
 Type annotations for `boto3.client("docdb").describe_certificates` method.
 
-[Client.describe_certificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_certificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_certificates]
 
 ```python
 def describe_certificates(
@@ -475,7 +480,7 @@ def describe_certificates(
 
 Type annotations for `boto3.client("docdb").describe_db_cluster_parameter_groups` method.
 
-[Client.describe_db_cluster_parameter_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_cluster_parameter_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_cluster_parameter_groups]
 
 ```python
 def describe_db_cluster_parameter_groups(
@@ -492,7 +497,7 @@ def describe_db_cluster_parameter_groups(
 
 Type annotations for `boto3.client("docdb").describe_db_cluster_parameters` method.
 
-[Client.describe_db_cluster_parameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_cluster_parameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_cluster_parameters]
 
 ```python
 def describe_db_cluster_parameters(
@@ -510,7 +515,7 @@ def describe_db_cluster_parameters(
 
 Type annotations for `boto3.client("docdb").describe_db_cluster_snapshot_attributes` method.
 
-[Client.describe_db_cluster_snapshot_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_cluster_snapshot_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_cluster_snapshot_attributes]
 
 ```python
 def describe_db_cluster_snapshot_attributes(
@@ -524,7 +529,7 @@ def describe_db_cluster_snapshot_attributes(
 
 Type annotations for `boto3.client("docdb").describe_db_cluster_snapshots` method.
 
-[Client.describe_db_cluster_snapshots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_cluster_snapshots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_cluster_snapshots]
 
 ```python
 def describe_db_cluster_snapshots(
@@ -545,7 +550,7 @@ def describe_db_cluster_snapshots(
 
 Type annotations for `boto3.client("docdb").describe_db_clusters` method.
 
-[Client.describe_db_clusters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_clusters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_clusters]
 
 ```python
 def describe_db_clusters(
@@ -562,7 +567,7 @@ def describe_db_clusters(
 
 Type annotations for `boto3.client("docdb").describe_db_engine_versions` method.
 
-[Client.describe_db_engine_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_engine_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_engine_versions]
 
 ```python
 def describe_db_engine_versions(
@@ -584,7 +589,7 @@ def describe_db_engine_versions(
 
 Type annotations for `boto3.client("docdb").describe_db_instances` method.
 
-[Client.describe_db_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_instances]
 
 ```python
 def describe_db_instances(
@@ -601,7 +606,7 @@ def describe_db_instances(
 
 Type annotations for `boto3.client("docdb").describe_db_subnet_groups` method.
 
-[Client.describe_db_subnet_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_subnet_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_subnet_groups]
 
 ```python
 def describe_db_subnet_groups(
@@ -618,7 +623,7 @@ def describe_db_subnet_groups(
 
 Type annotations for `boto3.client("docdb").describe_engine_default_cluster_parameters` method.
 
-[Client.describe_engine_default_cluster_parameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_engine_default_cluster_parameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_engine_default_cluster_parameters]
 
 ```python
 def describe_engine_default_cluster_parameters(
@@ -635,7 +640,7 @@ def describe_engine_default_cluster_parameters(
 
 Type annotations for `boto3.client("docdb").describe_event_categories` method.
 
-[Client.describe_event_categories documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_event_categories)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_event_categories]
 
 ```python
 def describe_event_categories(
@@ -650,7 +655,7 @@ def describe_event_categories(
 
 Type annotations for `boto3.client("docdb").describe_event_subscriptions` method.
 
-[Client.describe_event_subscriptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_event_subscriptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_event_subscriptions]
 
 ```python
 def describe_event_subscriptions(
@@ -667,7 +672,7 @@ def describe_event_subscriptions(
 
 Type annotations for `boto3.client("docdb").describe_events` method.
 
-[Client.describe_events documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_events)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_events]
 
 ```python
 def describe_events(
@@ -689,7 +694,7 @@ def describe_events(
 
 Type annotations for `boto3.client("docdb").describe_orderable_db_instance_options` method.
 
-[Client.describe_orderable_db_instance_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_orderable_db_instance_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_orderable_db_instance_options]
 
 ```python
 def describe_orderable_db_instance_options(
@@ -710,7 +715,7 @@ def describe_orderable_db_instance_options(
 
 Type annotations for `boto3.client("docdb").describe_pending_maintenance_actions` method.
 
-[Client.describe_pending_maintenance_actions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_pending_maintenance_actions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_pending_maintenance_actions]
 
 ```python
 def describe_pending_maintenance_actions(
@@ -727,7 +732,7 @@ def describe_pending_maintenance_actions(
 
 Type annotations for `boto3.client("docdb").failover_db_cluster` method.
 
-[Client.failover_db_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.failover_db_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.failover_db_cluster]
 
 ```python
 def failover_db_cluster(
@@ -742,7 +747,7 @@ def failover_db_cluster(
 
 Type annotations for `boto3.client("docdb").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -759,7 +764,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("docdb").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -774,7 +779,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("docdb").modify_db_cluster` method.
 
-[Client.modify_db_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_cluster]
 
 ```python
 def modify_db_cluster(
@@ -800,7 +805,7 @@ def modify_db_cluster(
 
 Type annotations for `boto3.client("docdb").modify_db_cluster_parameter_group` method.
 
-[Client.modify_db_cluster_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_cluster_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_cluster_parameter_group]
 
 ```python
 def modify_db_cluster_parameter_group(
@@ -815,7 +820,7 @@ def modify_db_cluster_parameter_group(
 
 Type annotations for `boto3.client("docdb").modify_db_cluster_snapshot_attribute` method.
 
-[Client.modify_db_cluster_snapshot_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_cluster_snapshot_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_cluster_snapshot_attribute]
 
 ```python
 def modify_db_cluster_snapshot_attribute(
@@ -832,7 +837,7 @@ def modify_db_cluster_snapshot_attribute(
 
 Type annotations for `boto3.client("docdb").modify_db_instance` method.
 
-[Client.modify_db_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_instance]
 
 ```python
 def modify_db_instance(
@@ -853,7 +858,7 @@ def modify_db_instance(
 
 Type annotations for `boto3.client("docdb").modify_db_subnet_group` method.
 
-[Client.modify_db_subnet_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_subnet_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_subnet_group]
 
 ```python
 def modify_db_subnet_group(
@@ -869,7 +874,7 @@ def modify_db_subnet_group(
 
 Type annotations for `boto3.client("docdb").modify_event_subscription` method.
 
-[Client.modify_event_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_event_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_event_subscription]
 
 ```python
 def modify_event_subscription(
@@ -887,7 +892,7 @@ def modify_event_subscription(
 
 Type annotations for `boto3.client("docdb").reboot_db_instance` method.
 
-[Client.reboot_db_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.reboot_db_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.reboot_db_instance]
 
 ```python
 def reboot_db_instance(
@@ -902,7 +907,7 @@ def reboot_db_instance(
 
 Type annotations for `boto3.client("docdb").remove_source_identifier_from_subscription` method.
 
-[Client.remove_source_identifier_from_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.remove_source_identifier_from_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.remove_source_identifier_from_subscription]
 
 ```python
 def remove_source_identifier_from_subscription(
@@ -917,7 +922,7 @@ def remove_source_identifier_from_subscription(
 
 Type annotations for `boto3.client("docdb").remove_tags_from_resource` method.
 
-[Client.remove_tags_from_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.remove_tags_from_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.remove_tags_from_resource]
 
 ```python
 def remove_tags_from_resource(
@@ -932,7 +937,7 @@ def remove_tags_from_resource(
 
 Type annotations for `boto3.client("docdb").reset_db_cluster_parameter_group` method.
 
-[Client.reset_db_cluster_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.reset_db_cluster_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.reset_db_cluster_parameter_group]
 
 ```python
 def reset_db_cluster_parameter_group(
@@ -948,7 +953,7 @@ def reset_db_cluster_parameter_group(
 
 Type annotations for `boto3.client("docdb").restore_db_cluster_from_snapshot` method.
 
-[Client.restore_db_cluster_from_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.restore_db_cluster_from_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.restore_db_cluster_from_snapshot]
 
 ```python
 def restore_db_cluster_from_snapshot(
@@ -973,7 +978,7 @@ def restore_db_cluster_from_snapshot(
 
 Type annotations for `boto3.client("docdb").restore_db_cluster_to_point_in_time` method.
 
-[Client.restore_db_cluster_to_point_in_time documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.restore_db_cluster_to_point_in_time)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.restore_db_cluster_to_point_in_time]
 
 ```python
 def restore_db_cluster_to_point_in_time(
@@ -997,7 +1002,7 @@ def restore_db_cluster_to_point_in_time(
 
 Type annotations for `boto3.client("docdb").start_db_cluster` method.
 
-[Client.start_db_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.start_db_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.start_db_cluster]
 
 ```python
 def start_db_cluster(
@@ -1011,7 +1016,7 @@ def start_db_cluster(
 
 Type annotations for `boto3.client("docdb").stop_db_cluster` method.
 
-[Client.stop_db_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.stop_db_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.stop_db_cluster]
 
 ```python
 def stop_db_cluster(

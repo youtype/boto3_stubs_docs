@@ -1,11 +1,11 @@
-# Structures for boto3 DynamoDBStreams module
+# Typed dictionaries for boto3 DynamoDBStreams module
 
 > [Index](../README.md) > [DynamoDBStreams](./README.md) > Structures
 
 Auto-generated documentation for [DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)
 type annotations stubs module [mypy_boto3_dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
 
-- [Structures for boto3 DynamoDBStreams module](#structures-for-boto3-dynamodbstreams-module)
+- [Typed dictionaries for boto3 DynamoDBStreams module](#typed-dictionaries-for-boto3-dynamodbstreams-module)
   - [AttributeValueTypeDef](#attributevaluetypedef)
   - [DescribeStreamOutputTypeDef](#describestreamoutputtypedef)
   - [GetRecordsOutputTypeDef](#getrecordsoutputtypedef)
@@ -50,11 +50,11 @@ from mypy_boto3_dynamodbstreams.type_defs import DescribeStreamOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `StreamDescription`: `"StreamDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetRecordsOutputTypeDef
@@ -64,12 +64,12 @@ from mypy_boto3_dynamodbstreams.type_defs import GetRecordsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Records`: `List["RecordTypeDef"]`
 - `NextShardIterator`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetShardIteratorOutputTypeDef
@@ -79,11 +79,11 @@ from mypy_boto3_dynamodbstreams.type_defs import GetShardIteratorOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ShardIterator`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## IdentityTypeDef
@@ -121,12 +121,12 @@ from mypy_boto3_dynamodbstreams.type_defs import ListStreamsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Streams`: `List["StreamTypeDef"]`
 - `LastEvaluatedStreamArn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## RecordTypeDef

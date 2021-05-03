@@ -1,11 +1,11 @@
-# Structures for boto3 CodeArtifact module
+# Typed dictionaries for boto3 CodeArtifact module
 
 > [Index](../README.md) > [CodeArtifact](./README.md) > Structures
 
 Auto-generated documentation for [CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
 type annotations stubs module [mypy_boto3_codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
 
-- [Structures for boto3 CodeArtifact module](#structures-for-boto3-codeartifact-module)
+- [Typed dictionaries for boto3 CodeArtifact module](#typed-dictionaries-for-boto3-codeartifact-module)
   - [AssetSummaryTypeDef](#assetsummarytypedef)
   - [AssociateExternalConnectionResultTypeDef](#associateexternalconnectionresulttypedef)
   - [CopyPackageVersionsResultTypeDef](#copypackageversionsresulttypedef)

@@ -17,13 +17,13 @@ Type annotations for `boto3.client("elasticbeanstalk").get_waiter("environment_e
 Can be used directly:
 
 ```python
-from mypy_boto3_elasticbeanstalk.waiters import EnvironmentExistsWaiter
+from mypy_boto3_elasticbeanstalk.waiter import EnvironmentExistsWaiter
 
 def get_environment_exists_waiter() -> EnvironmentExistsWaiter:
     return boto3.client("elasticbeanstalk").get_waiter("environment_exists")
 ```
 
-[Waiter.EnvironmentExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.EnvironmentExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.environment_exists)
 
 ```python
 class EnvironmentExistsWaiter(Boto3Waiter):
@@ -48,13 +48,13 @@ Type annotations for `boto3.client("elasticbeanstalk").get_waiter("environment_t
 Can be used directly:
 
 ```python
-from mypy_boto3_elasticbeanstalk.waiters import EnvironmentTerminatedWaiter
+from mypy_boto3_elasticbeanstalk.waiter import EnvironmentTerminatedWaiter
 
 def get_environment_terminated_waiter() -> EnvironmentTerminatedWaiter:
     return boto3.client("elasticbeanstalk").get_waiter("environment_terminated")
 ```
 
-[Waiter.EnvironmentTerminated documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.EnvironmentTerminated)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.environment_terminated)
 
 ```python
 class EnvironmentTerminatedWaiter(Boto3Waiter):
@@ -79,13 +79,13 @@ Type annotations for `boto3.client("elasticbeanstalk").get_waiter("environment_u
 Can be used directly:
 
 ```python
-from mypy_boto3_elasticbeanstalk.waiters import EnvironmentUpdatedWaiter
+from mypy_boto3_elasticbeanstalk.waiter import EnvironmentUpdatedWaiter
 
 def get_environment_updated_waiter() -> EnvironmentUpdatedWaiter:
     return boto3.client("elasticbeanstalk").get_waiter("environment_updated")
 ```
 
-[Waiter.EnvironmentUpdated documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.EnvironmentUpdated)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.environment_updated)
 
 ```python
 class EnvironmentUpdatedWaiter(Boto3Waiter):

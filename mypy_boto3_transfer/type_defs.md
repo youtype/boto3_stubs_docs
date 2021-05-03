@@ -1,11 +1,11 @@
-# Structures for boto3 Transfer module
+# Typed dictionaries for boto3 Transfer module
 
 > [Index](../README.md) > [Transfer](./README.md) > Structures
 
 Auto-generated documentation for [Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
 type annotations stubs module [mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
-- [Structures for boto3 Transfer module](#structures-for-boto3-transfer-module)
+- [Typed dictionaries for boto3 Transfer module](#typed-dictionaries-for-boto3-transfer-module)
   - [CreateServerResponseTypeDef](#createserverresponsetypedef)
   - [CreateUserResponseTypeDef](#createuserresponsetypedef)
   - [DescribeSecurityPolicyResponseTypeDef](#describesecuritypolicyresponsetypedef)

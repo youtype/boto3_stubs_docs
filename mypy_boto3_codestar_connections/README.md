@@ -14,7 +14,7 @@ pip install mypy-boto3-codestar-connections
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## CodeStarconnectionsClient
 
@@ -83,7 +83,7 @@ from mypy_boto3_codestar_connections.literals import ConnectionStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

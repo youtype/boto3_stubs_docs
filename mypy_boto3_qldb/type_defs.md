@@ -1,11 +1,11 @@
-# Structures for boto3 QLDB module
+# Typed dictionaries for boto3 QLDB module
 
 > [Index](../README.md) > [QLDB](./README.md) > Structures
 
 Auto-generated documentation for [QLDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB)
 type annotations stubs module [mypy_boto3_qldb](https://pypi.org/project/mypy-boto3-qldb/).
 
-- [Structures for boto3 QLDB module](#structures-for-boto3-qldb-module)
+- [Typed dictionaries for boto3 QLDB module](#typed-dictionaries-for-boto3-qldb-module)
   - [CancelJournalKinesisStreamResponseTypeDef](#canceljournalkinesisstreamresponsetypedef)
   - [CreateLedgerResponseTypeDef](#createledgerresponsetypedef)
   - [DescribeJournalKinesisStreamResponseTypeDef](#describejournalkinesisstreamresponsetypedef)

@@ -1,11 +1,11 @@
-# Structures for boto3 WorkSpaces module
+# Typed dictionaries for boto3 WorkSpaces module
 
 > [Index](../README.md) > [WorkSpaces](./README.md) > Structures
 
 Auto-generated documentation for [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
 type annotations stubs module [mypy_boto3_workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
 
-- [Structures for boto3 WorkSpaces module](#structures-for-boto3-workspaces-module)
+- [Typed dictionaries for boto3 WorkSpaces module](#typed-dictionaries-for-boto3-workspaces-module)
   - [AccountModificationTypeDef](#accountmodificationtypedef)
   - [AssociateConnectionAliasResultTypeDef](#associateconnectionaliasresulttypedef)
   - [ClientPropertiesResultTypeDef](#clientpropertiesresulttypedef)

@@ -22,13 +22,13 @@ Type annotations for `boto3.client("dms").get_waiter("endpoint_deleted")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_dms.waiters import EndpointDeletedWaiter
+from mypy_boto3_dms.waiter import EndpointDeletedWaiter
 
 def get_endpoint_deleted_waiter() -> EndpointDeletedWaiter:
     return boto3.client("dms").get_waiter("endpoint_deleted")
 ```
 
-[Waiter.EndpointDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.EndpointDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.endpoint_deleted)
 
 ```python
 class EndpointDeletedWaiter(Boto3Waiter):
@@ -48,13 +48,13 @@ Type annotations for `boto3.client("dms").get_waiter("replication_instance_avail
 Can be used directly:
 
 ```python
-from mypy_boto3_dms.waiters import ReplicationInstanceAvailableWaiter
+from mypy_boto3_dms.waiter import ReplicationInstanceAvailableWaiter
 
 def get_replication_instance_available_waiter() -> ReplicationInstanceAvailableWaiter:
     return boto3.client("dms").get_waiter("replication_instance_available")
 ```
 
-[Waiter.ReplicationInstanceAvailable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.ReplicationInstanceAvailable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.replication_instance_available)
 
 ```python
 class ReplicationInstanceAvailableWaiter(Boto3Waiter):
@@ -74,13 +74,13 @@ Type annotations for `boto3.client("dms").get_waiter("replication_instance_delet
 Can be used directly:
 
 ```python
-from mypy_boto3_dms.waiters import ReplicationInstanceDeletedWaiter
+from mypy_boto3_dms.waiter import ReplicationInstanceDeletedWaiter
 
 def get_replication_instance_deleted_waiter() -> ReplicationInstanceDeletedWaiter:
     return boto3.client("dms").get_waiter("replication_instance_deleted")
 ```
 
-[Waiter.ReplicationInstanceDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.ReplicationInstanceDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.replication_instance_deleted)
 
 ```python
 class ReplicationInstanceDeletedWaiter(Boto3Waiter):
@@ -100,13 +100,13 @@ Type annotations for `boto3.client("dms").get_waiter("replication_task_deleted")
 Can be used directly:
 
 ```python
-from mypy_boto3_dms.waiters import ReplicationTaskDeletedWaiter
+from mypy_boto3_dms.waiter import ReplicationTaskDeletedWaiter
 
 def get_replication_task_deleted_waiter() -> ReplicationTaskDeletedWaiter:
     return boto3.client("dms").get_waiter("replication_task_deleted")
 ```
 
-[Waiter.ReplicationTaskDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.ReplicationTaskDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.replication_task_deleted)
 
 ```python
 class ReplicationTaskDeletedWaiter(Boto3Waiter):
@@ -127,13 +127,13 @@ Type annotations for `boto3.client("dms").get_waiter("replication_task_ready")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_dms.waiters import ReplicationTaskReadyWaiter
+from mypy_boto3_dms.waiter import ReplicationTaskReadyWaiter
 
 def get_replication_task_ready_waiter() -> ReplicationTaskReadyWaiter:
     return boto3.client("dms").get_waiter("replication_task_ready")
 ```
 
-[Waiter.ReplicationTaskReady documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.ReplicationTaskReady)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.replication_task_ready)
 
 ```python
 class ReplicationTaskReadyWaiter(Boto3Waiter):
@@ -154,13 +154,13 @@ Type annotations for `boto3.client("dms").get_waiter("replication_task_running")
 Can be used directly:
 
 ```python
-from mypy_boto3_dms.waiters import ReplicationTaskRunningWaiter
+from mypy_boto3_dms.waiter import ReplicationTaskRunningWaiter
 
 def get_replication_task_running_waiter() -> ReplicationTaskRunningWaiter:
     return boto3.client("dms").get_waiter("replication_task_running")
 ```
 
-[Waiter.ReplicationTaskRunning documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.ReplicationTaskRunning)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.replication_task_running)
 
 ```python
 class ReplicationTaskRunningWaiter(Boto3Waiter):
@@ -181,13 +181,13 @@ Type annotations for `boto3.client("dms").get_waiter("replication_task_stopped")
 Can be used directly:
 
 ```python
-from mypy_boto3_dms.waiters import ReplicationTaskStoppedWaiter
+from mypy_boto3_dms.waiter import ReplicationTaskStoppedWaiter
 
 def get_replication_task_stopped_waiter() -> ReplicationTaskStoppedWaiter:
     return boto3.client("dms").get_waiter("replication_task_stopped")
 ```
 
-[Waiter.ReplicationTaskStopped documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.ReplicationTaskStopped)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.replication_task_stopped)
 
 ```python
 class ReplicationTaskStoppedWaiter(Boto3Waiter):
@@ -208,13 +208,13 @@ Type annotations for `boto3.client("dms").get_waiter("test_connection_succeeds")
 Can be used directly:
 
 ```python
-from mypy_boto3_dms.waiters import TestConnectionSucceedsWaiter
+from mypy_boto3_dms.waiter import TestConnectionSucceedsWaiter
 
 def get_test_connection_succeeds_waiter() -> TestConnectionSucceedsWaiter:
     return boto3.client("dms").get_waiter("test_connection_succeeds")
 ```
 
-[Waiter.TestConnectionSucceeds documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.TestConnectionSucceeds)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.test_connection_succeeds)
 
 ```python
 class TestConnectionSucceedsWaiter(Boto3Waiter):

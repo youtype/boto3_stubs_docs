@@ -14,7 +14,7 @@ pip install mypy-boto3-qldb
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## QLDBClient
 
@@ -95,7 +95,7 @@ from mypy_boto3_qldb.literals import ErrorCause, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

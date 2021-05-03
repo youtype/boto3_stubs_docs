@@ -15,13 +15,13 @@ Type annotations for `boto3.client("cur").get_paginator("describe_report_definit
 Can be used directly:
 
 ```python
-from mypy_boto3_cur.paginators import DescribeReportDefinitionsPaginator
+from mypy_boto3_cur.paginator import DescribeReportDefinitionsPaginator
 
 def get_describe_report_definitions_paginator() -> DescribeReportDefinitionsPaginator:
     return boto3.client("cur").get_paginator("describe_report_definitions")
 ```
 
-[Paginator.DescribeReportDefinitions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Paginator.DescribeReportDefinitions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Paginator.DescribeReportDefinitions)
 
 ```python
 class DescribeReportDefinitionsPaginator(Boto3Paginator):

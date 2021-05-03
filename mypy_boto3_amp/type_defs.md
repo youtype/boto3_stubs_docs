@@ -1,11 +1,11 @@
-# Structures for boto3 PrometheusService module
+# Typed dictionaries for boto3 PrometheusService module
 
 > [Index](../README.md) > [PrometheusService](./README.md) > Structures
 
 Auto-generated documentation for [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
 type annotations stubs module [mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).
 
-- [Structures for boto3 PrometheusService module](#structures-for-boto3-prometheusservice-module)
+- [Typed dictionaries for boto3 PrometheusService module](#typed-dictionaries-for-boto3-prometheusservice-module)
   - [CreateWorkspaceResponseTypeDef](#createworkspaceresponsetypedef)
   - [DescribeWorkspaceResponseTypeDef](#describeworkspaceresponsetypedef)
   - [ListWorkspacesResponseTypeDef](#listworkspacesresponsetypedef)

@@ -14,7 +14,7 @@ pip install mypy-boto3-ce
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## CostExplorerClient
 
@@ -132,7 +132,7 @@ from mypy_boto3_ce.literals import AccountScope, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

@@ -126,7 +126,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_redshift.client import RedshiftClient
+
+def get_redshift_client() -> RedshiftClient:
+    return boto3.client("redshift")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client)
 
 ## Exceptions
 
@@ -272,7 +277,7 @@ Exceptions:
 
 Type annotations for `boto3.client("redshift").accept_reserved_node_exchange` method.
 
-[Client.accept_reserved_node_exchange documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.accept_reserved_node_exchange)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.accept_reserved_node_exchange]
 
 ```python
 def accept_reserved_node_exchange(
@@ -287,7 +292,7 @@ def accept_reserved_node_exchange(
 
 Type annotations for `boto3.client("redshift").add_partner` method.
 
-[Client.add_partner documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.add_partner)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.add_partner]
 
 ```python
 def add_partner(
@@ -304,7 +309,7 @@ def add_partner(
 
 Type annotations for `boto3.client("redshift").authorize_cluster_security_group_ingress` method.
 
-[Client.authorize_cluster_security_group_ingress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.authorize_cluster_security_group_ingress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.authorize_cluster_security_group_ingress]
 
 ```python
 def authorize_cluster_security_group_ingress(
@@ -321,7 +326,7 @@ def authorize_cluster_security_group_ingress(
 
 Type annotations for `boto3.client("redshift").authorize_endpoint_access` method.
 
-[Client.authorize_endpoint_access documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.authorize_endpoint_access)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.authorize_endpoint_access]
 
 ```python
 def authorize_endpoint_access(
@@ -337,7 +342,7 @@ def authorize_endpoint_access(
 
 Type annotations for `boto3.client("redshift").authorize_snapshot_access` method.
 
-[Client.authorize_snapshot_access documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.authorize_snapshot_access)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.authorize_snapshot_access]
 
 ```python
 def authorize_snapshot_access(
@@ -353,7 +358,7 @@ def authorize_snapshot_access(
 
 Type annotations for `boto3.client("redshift").batch_delete_cluster_snapshots` method.
 
-[Client.batch_delete_cluster_snapshots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.batch_delete_cluster_snapshots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.batch_delete_cluster_snapshots]
 
 ```python
 def batch_delete_cluster_snapshots(
@@ -367,7 +372,7 @@ def batch_delete_cluster_snapshots(
 
 Type annotations for `boto3.client("redshift").batch_modify_cluster_snapshots` method.
 
-[Client.batch_modify_cluster_snapshots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.batch_modify_cluster_snapshots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.batch_modify_cluster_snapshots]
 
 ```python
 def batch_modify_cluster_snapshots(
@@ -383,7 +388,7 @@ def batch_modify_cluster_snapshots(
 
 Type annotations for `boto3.client("redshift").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -397,7 +402,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("redshift").cancel_resize` method.
 
-[Client.cancel_resize documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.cancel_resize)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.cancel_resize]
 
 ```python
 def cancel_resize(
@@ -411,7 +416,7 @@ def cancel_resize(
 
 Type annotations for `boto3.client("redshift").copy_cluster_snapshot` method.
 
-[Client.copy_cluster_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.copy_cluster_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.copy_cluster_snapshot]
 
 ```python
 def copy_cluster_snapshot(
@@ -428,7 +433,7 @@ def copy_cluster_snapshot(
 
 Type annotations for `boto3.client("redshift").create_cluster` method.
 
-[Client.create_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster]
 
 ```python
 def create_cluster(
@@ -473,7 +478,7 @@ def create_cluster(
 
 Type annotations for `boto3.client("redshift").create_cluster_parameter_group` method.
 
-[Client.create_cluster_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_parameter_group]
 
 ```python
 def create_cluster_parameter_group(
@@ -490,7 +495,7 @@ def create_cluster_parameter_group(
 
 Type annotations for `boto3.client("redshift").create_cluster_security_group` method.
 
-[Client.create_cluster_security_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_security_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_security_group]
 
 ```python
 def create_cluster_security_group(
@@ -506,7 +511,7 @@ def create_cluster_security_group(
 
 Type annotations for `boto3.client("redshift").create_cluster_snapshot` method.
 
-[Client.create_cluster_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_snapshot]
 
 ```python
 def create_cluster_snapshot(
@@ -523,7 +528,7 @@ def create_cluster_snapshot(
 
 Type annotations for `boto3.client("redshift").create_cluster_subnet_group` method.
 
-[Client.create_cluster_subnet_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_subnet_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_cluster_subnet_group]
 
 ```python
 def create_cluster_subnet_group(
@@ -540,7 +545,7 @@ def create_cluster_subnet_group(
 
 Type annotations for `boto3.client("redshift").create_endpoint_access` method.
 
-[Client.create_endpoint_access documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_endpoint_access)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_endpoint_access]
 
 ```python
 def create_endpoint_access(
@@ -558,7 +563,7 @@ def create_endpoint_access(
 
 Type annotations for `boto3.client("redshift").create_event_subscription` method.
 
-[Client.create_event_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_event_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_event_subscription]
 
 ```python
 def create_event_subscription(
@@ -579,7 +584,7 @@ def create_event_subscription(
 
 Type annotations for `boto3.client("redshift").create_hsm_client_certificate` method.
 
-[Client.create_hsm_client_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_hsm_client_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_hsm_client_certificate]
 
 ```python
 def create_hsm_client_certificate(
@@ -594,7 +599,7 @@ def create_hsm_client_certificate(
 
 Type annotations for `boto3.client("redshift").create_hsm_configuration` method.
 
-[Client.create_hsm_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_hsm_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_hsm_configuration]
 
 ```python
 def create_hsm_configuration(
@@ -614,7 +619,7 @@ def create_hsm_configuration(
 
 Type annotations for `boto3.client("redshift").create_scheduled_action` method.
 
-[Client.create_scheduled_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_scheduled_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_scheduled_action]
 
 ```python
 def create_scheduled_action(
@@ -635,7 +640,7 @@ def create_scheduled_action(
 
 Type annotations for `boto3.client("redshift").create_snapshot_copy_grant` method.
 
-[Client.create_snapshot_copy_grant documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_snapshot_copy_grant)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_snapshot_copy_grant]
 
 ```python
 def create_snapshot_copy_grant(
@@ -651,7 +656,7 @@ def create_snapshot_copy_grant(
 
 Type annotations for `boto3.client("redshift").create_snapshot_schedule` method.
 
-[Client.create_snapshot_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_snapshot_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_snapshot_schedule]
 
 ```python
 def create_snapshot_schedule(
@@ -670,7 +675,7 @@ def create_snapshot_schedule(
 
 Type annotations for `boto3.client("redshift").create_tags` method.
 
-[Client.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_tags]
 
 ```python
 def create_tags(
@@ -685,7 +690,7 @@ def create_tags(
 
 Type annotations for `boto3.client("redshift").create_usage_limit` method.
 
-[Client.create_usage_limit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_usage_limit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_usage_limit]
 
 ```python
 def create_usage_limit(
@@ -705,7 +710,7 @@ def create_usage_limit(
 
 Type annotations for `boto3.client("redshift").delete_cluster` method.
 
-[Client.delete_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster]
 
 ```python
 def delete_cluster(
@@ -722,7 +727,7 @@ def delete_cluster(
 
 Type annotations for `boto3.client("redshift").delete_cluster_parameter_group` method.
 
-[Client.delete_cluster_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_parameter_group]
 
 ```python
 def delete_cluster_parameter_group(
@@ -736,7 +741,7 @@ def delete_cluster_parameter_group(
 
 Type annotations for `boto3.client("redshift").delete_cluster_security_group` method.
 
-[Client.delete_cluster_security_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_security_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_security_group]
 
 ```python
 def delete_cluster_security_group(
@@ -750,7 +755,7 @@ def delete_cluster_security_group(
 
 Type annotations for `boto3.client("redshift").delete_cluster_snapshot` method.
 
-[Client.delete_cluster_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_snapshot]
 
 ```python
 def delete_cluster_snapshot(
@@ -765,7 +770,7 @@ def delete_cluster_snapshot(
 
 Type annotations for `boto3.client("redshift").delete_cluster_subnet_group` method.
 
-[Client.delete_cluster_subnet_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_subnet_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_subnet_group]
 
 ```python
 def delete_cluster_subnet_group(
@@ -779,7 +784,7 @@ def delete_cluster_subnet_group(
 
 Type annotations for `boto3.client("redshift").delete_endpoint_access` method.
 
-[Client.delete_endpoint_access documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_endpoint_access)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_endpoint_access]
 
 ```python
 def delete_endpoint_access(
@@ -793,7 +798,7 @@ def delete_endpoint_access(
 
 Type annotations for `boto3.client("redshift").delete_event_subscription` method.
 
-[Client.delete_event_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_event_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_event_subscription]
 
 ```python
 def delete_event_subscription(
@@ -807,7 +812,7 @@ def delete_event_subscription(
 
 Type annotations for `boto3.client("redshift").delete_hsm_client_certificate` method.
 
-[Client.delete_hsm_client_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_hsm_client_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_hsm_client_certificate]
 
 ```python
 def delete_hsm_client_certificate(
@@ -821,7 +826,7 @@ def delete_hsm_client_certificate(
 
 Type annotations for `boto3.client("redshift").delete_hsm_configuration` method.
 
-[Client.delete_hsm_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_hsm_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_hsm_configuration]
 
 ```python
 def delete_hsm_configuration(
@@ -835,7 +840,7 @@ def delete_hsm_configuration(
 
 Type annotations for `boto3.client("redshift").delete_partner` method.
 
-[Client.delete_partner documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_partner)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_partner]
 
 ```python
 def delete_partner(
@@ -852,7 +857,7 @@ def delete_partner(
 
 Type annotations for `boto3.client("redshift").delete_scheduled_action` method.
 
-[Client.delete_scheduled_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_scheduled_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_scheduled_action]
 
 ```python
 def delete_scheduled_action(
@@ -866,7 +871,7 @@ def delete_scheduled_action(
 
 Type annotations for `boto3.client("redshift").delete_snapshot_copy_grant` method.
 
-[Client.delete_snapshot_copy_grant documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_snapshot_copy_grant)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_snapshot_copy_grant]
 
 ```python
 def delete_snapshot_copy_grant(
@@ -880,7 +885,7 @@ def delete_snapshot_copy_grant(
 
 Type annotations for `boto3.client("redshift").delete_snapshot_schedule` method.
 
-[Client.delete_snapshot_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_snapshot_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_snapshot_schedule]
 
 ```python
 def delete_snapshot_schedule(
@@ -894,7 +899,7 @@ def delete_snapshot_schedule(
 
 Type annotations for `boto3.client("redshift").delete_tags` method.
 
-[Client.delete_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_tags]
 
 ```python
 def delete_tags(
@@ -909,7 +914,7 @@ def delete_tags(
 
 Type annotations for `boto3.client("redshift").delete_usage_limit` method.
 
-[Client.delete_usage_limit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_usage_limit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_usage_limit]
 
 ```python
 def delete_usage_limit(
@@ -923,7 +928,7 @@ def delete_usage_limit(
 
 Type annotations for `boto3.client("redshift").describe_account_attributes` method.
 
-[Client.describe_account_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_account_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_account_attributes]
 
 ```python
 def describe_account_attributes(
@@ -937,7 +942,7 @@ def describe_account_attributes(
 
 Type annotations for `boto3.client("redshift").describe_cluster_db_revisions` method.
 
-[Client.describe_cluster_db_revisions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_db_revisions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_db_revisions]
 
 ```python
 def describe_cluster_db_revisions(
@@ -953,7 +958,7 @@ def describe_cluster_db_revisions(
 
 Type annotations for `boto3.client("redshift").describe_cluster_parameter_groups` method.
 
-[Client.describe_cluster_parameter_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_parameter_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_parameter_groups]
 
 ```python
 def describe_cluster_parameter_groups(
@@ -971,7 +976,7 @@ def describe_cluster_parameter_groups(
 
 Type annotations for `boto3.client("redshift").describe_cluster_parameters` method.
 
-[Client.describe_cluster_parameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_parameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_parameters]
 
 ```python
 def describe_cluster_parameters(
@@ -988,7 +993,7 @@ def describe_cluster_parameters(
 
 Type annotations for `boto3.client("redshift").describe_cluster_security_groups` method.
 
-[Client.describe_cluster_security_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_security_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_security_groups]
 
 ```python
 def describe_cluster_security_groups(
@@ -1006,7 +1011,7 @@ def describe_cluster_security_groups(
 
 Type annotations for `boto3.client("redshift").describe_cluster_snapshots` method.
 
-[Client.describe_cluster_snapshots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_snapshots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_snapshots]
 
 ```python
 def describe_cluster_snapshots(
@@ -1031,7 +1036,7 @@ def describe_cluster_snapshots(
 
 Type annotations for `boto3.client("redshift").describe_cluster_subnet_groups` method.
 
-[Client.describe_cluster_subnet_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_subnet_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_subnet_groups]
 
 ```python
 def describe_cluster_subnet_groups(
@@ -1049,7 +1054,7 @@ def describe_cluster_subnet_groups(
 
 Type annotations for `boto3.client("redshift").describe_cluster_tracks` method.
 
-[Client.describe_cluster_tracks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_tracks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_tracks]
 
 ```python
 def describe_cluster_tracks(
@@ -1065,7 +1070,7 @@ def describe_cluster_tracks(
 
 Type annotations for `boto3.client("redshift").describe_cluster_versions` method.
 
-[Client.describe_cluster_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_cluster_versions]
 
 ```python
 def describe_cluster_versions(
@@ -1082,7 +1087,7 @@ def describe_cluster_versions(
 
 Type annotations for `boto3.client("redshift").describe_clusters` method.
 
-[Client.describe_clusters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_clusters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_clusters]
 
 ```python
 def describe_clusters(
@@ -1100,7 +1105,7 @@ def describe_clusters(
 
 Type annotations for `boto3.client("redshift").describe_default_cluster_parameters` method.
 
-[Client.describe_default_cluster_parameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_default_cluster_parameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_default_cluster_parameters]
 
 ```python
 def describe_default_cluster_parameters(
@@ -1116,7 +1121,7 @@ def describe_default_cluster_parameters(
 
 Type annotations for `boto3.client("redshift").describe_endpoint_access` method.
 
-[Client.describe_endpoint_access documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_endpoint_access)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_endpoint_access]
 
 ```python
 def describe_endpoint_access(
@@ -1135,7 +1140,7 @@ def describe_endpoint_access(
 
 Type annotations for `boto3.client("redshift").describe_endpoint_authorization` method.
 
-[Client.describe_endpoint_authorization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_endpoint_authorization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_endpoint_authorization]
 
 ```python
 def describe_endpoint_authorization(
@@ -1153,7 +1158,7 @@ def describe_endpoint_authorization(
 
 Type annotations for `boto3.client("redshift").describe_event_categories` method.
 
-[Client.describe_event_categories documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_event_categories)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_event_categories]
 
 ```python
 def describe_event_categories(
@@ -1167,7 +1172,7 @@ def describe_event_categories(
 
 Type annotations for `boto3.client("redshift").describe_event_subscriptions` method.
 
-[Client.describe_event_subscriptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_event_subscriptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_event_subscriptions]
 
 ```python
 def describe_event_subscriptions(
@@ -1185,7 +1190,7 @@ def describe_event_subscriptions(
 
 Type annotations for `boto3.client("redshift").describe_events` method.
 
-[Client.describe_events documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_events)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_events]
 
 ```python
 def describe_events(
@@ -1205,7 +1210,7 @@ def describe_events(
 
 Type annotations for `boto3.client("redshift").describe_hsm_client_certificates` method.
 
-[Client.describe_hsm_client_certificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_hsm_client_certificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_hsm_client_certificates]
 
 ```python
 def describe_hsm_client_certificates(
@@ -1223,7 +1228,7 @@ def describe_hsm_client_certificates(
 
 Type annotations for `boto3.client("redshift").describe_hsm_configurations` method.
 
-[Client.describe_hsm_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_hsm_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_hsm_configurations]
 
 ```python
 def describe_hsm_configurations(
@@ -1241,7 +1246,7 @@ def describe_hsm_configurations(
 
 Type annotations for `boto3.client("redshift").describe_logging_status` method.
 
-[Client.describe_logging_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_logging_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_logging_status]
 
 ```python
 def describe_logging_status(
@@ -1255,7 +1260,7 @@ def describe_logging_status(
 
 Type annotations for `boto3.client("redshift").describe_node_configuration_options` method.
 
-[Client.describe_node_configuration_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_node_configuration_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_node_configuration_options]
 
 ```python
 def describe_node_configuration_options(
@@ -1275,7 +1280,7 @@ def describe_node_configuration_options(
 
 Type annotations for `boto3.client("redshift").describe_orderable_cluster_options` method.
 
-[Client.describe_orderable_cluster_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_orderable_cluster_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_orderable_cluster_options]
 
 ```python
 def describe_orderable_cluster_options(
@@ -1292,7 +1297,7 @@ def describe_orderable_cluster_options(
 
 Type annotations for `boto3.client("redshift").describe_partners` method.
 
-[Client.describe_partners documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_partners)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_partners]
 
 ```python
 def describe_partners(
@@ -1309,7 +1314,7 @@ def describe_partners(
 
 Type annotations for `boto3.client("redshift").describe_reserved_node_offerings` method.
 
-[Client.describe_reserved_node_offerings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_reserved_node_offerings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_reserved_node_offerings]
 
 ```python
 def describe_reserved_node_offerings(
@@ -1325,7 +1330,7 @@ def describe_reserved_node_offerings(
 
 Type annotations for `boto3.client("redshift").describe_reserved_nodes` method.
 
-[Client.describe_reserved_nodes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_reserved_nodes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_reserved_nodes]
 
 ```python
 def describe_reserved_nodes(
@@ -1341,7 +1346,7 @@ def describe_reserved_nodes(
 
 Type annotations for `boto3.client("redshift").describe_resize` method.
 
-[Client.describe_resize documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_resize)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_resize]
 
 ```python
 def describe_resize(
@@ -1355,7 +1360,7 @@ def describe_resize(
 
 Type annotations for `boto3.client("redshift").describe_scheduled_actions` method.
 
-[Client.describe_scheduled_actions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_scheduled_actions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_scheduled_actions]
 
 ```python
 def describe_scheduled_actions(
@@ -1376,7 +1381,7 @@ def describe_scheduled_actions(
 
 Type annotations for `boto3.client("redshift").describe_snapshot_copy_grants` method.
 
-[Client.describe_snapshot_copy_grants documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_snapshot_copy_grants)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_snapshot_copy_grants]
 
 ```python
 def describe_snapshot_copy_grants(
@@ -1394,7 +1399,7 @@ def describe_snapshot_copy_grants(
 
 Type annotations for `boto3.client("redshift").describe_snapshot_schedules` method.
 
-[Client.describe_snapshot_schedules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_snapshot_schedules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_snapshot_schedules]
 
 ```python
 def describe_snapshot_schedules(
@@ -1413,7 +1418,7 @@ def describe_snapshot_schedules(
 
 Type annotations for `boto3.client("redshift").describe_storage` method.
 
-[Client.describe_storage documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_storage)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_storage]
 
 ```python
 def describe_storage(
@@ -1426,7 +1431,7 @@ def describe_storage(
 
 Type annotations for `boto3.client("redshift").describe_table_restore_status` method.
 
-[Client.describe_table_restore_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_table_restore_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_table_restore_status]
 
 ```python
 def describe_table_restore_status(
@@ -1443,7 +1448,7 @@ def describe_table_restore_status(
 
 Type annotations for `boto3.client("redshift").describe_tags` method.
 
-[Client.describe_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_tags]
 
 ```python
 def describe_tags(
@@ -1462,7 +1467,7 @@ def describe_tags(
 
 Type annotations for `boto3.client("redshift").describe_usage_limits` method.
 
-[Client.describe_usage_limits documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_usage_limits)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_usage_limits]
 
 ```python
 def describe_usage_limits(
@@ -1482,7 +1487,7 @@ def describe_usage_limits(
 
 Type annotations for `boto3.client("redshift").disable_logging` method.
 
-[Client.disable_logging documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.disable_logging)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.disable_logging]
 
 ```python
 def disable_logging(
@@ -1496,7 +1501,7 @@ def disable_logging(
 
 Type annotations for `boto3.client("redshift").disable_snapshot_copy` method.
 
-[Client.disable_snapshot_copy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.disable_snapshot_copy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.disable_snapshot_copy]
 
 ```python
 def disable_snapshot_copy(
@@ -1510,7 +1515,7 @@ def disable_snapshot_copy(
 
 Type annotations for `boto3.client("redshift").enable_logging` method.
 
-[Client.enable_logging documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.enable_logging)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.enable_logging]
 
 ```python
 def enable_logging(
@@ -1526,7 +1531,7 @@ def enable_logging(
 
 Type annotations for `boto3.client("redshift").enable_snapshot_copy` method.
 
-[Client.enable_snapshot_copy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.enable_snapshot_copy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.enable_snapshot_copy]
 
 ```python
 def enable_snapshot_copy(
@@ -1544,7 +1549,7 @@ def enable_snapshot_copy(
 
 Type annotations for `boto3.client("redshift").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -1561,7 +1566,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("redshift").get_cluster_credentials` method.
 
-[Client.get_cluster_credentials documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.get_cluster_credentials)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.get_cluster_credentials]
 
 ```python
 def get_cluster_credentials(
@@ -1580,7 +1585,7 @@ def get_cluster_credentials(
 
 Type annotations for `boto3.client("redshift").get_reserved_node_exchange_offerings` method.
 
-[Client.get_reserved_node_exchange_offerings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.get_reserved_node_exchange_offerings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.get_reserved_node_exchange_offerings]
 
 ```python
 def get_reserved_node_exchange_offerings(
@@ -1596,7 +1601,7 @@ def get_reserved_node_exchange_offerings(
 
 Type annotations for `boto3.client("redshift").modify_aqua_configuration` method.
 
-[Client.modify_aqua_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_aqua_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_aqua_configuration]
 
 ```python
 def modify_aqua_configuration(
@@ -1611,7 +1616,7 @@ def modify_aqua_configuration(
 
 Type annotations for `boto3.client("redshift").modify_cluster` method.
 
-[Client.modify_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster]
 
 ```python
 def modify_cluster(
@@ -1649,7 +1654,7 @@ def modify_cluster(
 
 Type annotations for `boto3.client("redshift").modify_cluster_db_revision` method.
 
-[Client.modify_cluster_db_revision documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_db_revision)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_db_revision]
 
 ```python
 def modify_cluster_db_revision(
@@ -1664,7 +1669,7 @@ def modify_cluster_db_revision(
 
 Type annotations for `boto3.client("redshift").modify_cluster_iam_roles` method.
 
-[Client.modify_cluster_iam_roles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_iam_roles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_iam_roles]
 
 ```python
 def modify_cluster_iam_roles(
@@ -1680,7 +1685,7 @@ def modify_cluster_iam_roles(
 
 Type annotations for `boto3.client("redshift").modify_cluster_maintenance` method.
 
-[Client.modify_cluster_maintenance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_maintenance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_maintenance]
 
 ```python
 def modify_cluster_maintenance(
@@ -1699,7 +1704,7 @@ def modify_cluster_maintenance(
 
 Type annotations for `boto3.client("redshift").modify_cluster_parameter_group` method.
 
-[Client.modify_cluster_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_parameter_group]
 
 ```python
 def modify_cluster_parameter_group(
@@ -1714,7 +1719,7 @@ def modify_cluster_parameter_group(
 
 Type annotations for `boto3.client("redshift").modify_cluster_snapshot` method.
 
-[Client.modify_cluster_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_snapshot]
 
 ```python
 def modify_cluster_snapshot(
@@ -1730,7 +1735,7 @@ def modify_cluster_snapshot(
 
 Type annotations for `boto3.client("redshift").modify_cluster_snapshot_schedule` method.
 
-[Client.modify_cluster_snapshot_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_snapshot_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_snapshot_schedule]
 
 ```python
 def modify_cluster_snapshot_schedule(
@@ -1746,7 +1751,7 @@ def modify_cluster_snapshot_schedule(
 
 Type annotations for `boto3.client("redshift").modify_cluster_subnet_group` method.
 
-[Client.modify_cluster_subnet_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_subnet_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_subnet_group]
 
 ```python
 def modify_cluster_subnet_group(
@@ -1762,7 +1767,7 @@ def modify_cluster_subnet_group(
 
 Type annotations for `boto3.client("redshift").modify_endpoint_access` method.
 
-[Client.modify_endpoint_access documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_endpoint_access)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_endpoint_access]
 
 ```python
 def modify_endpoint_access(
@@ -1777,7 +1782,7 @@ def modify_endpoint_access(
 
 Type annotations for `boto3.client("redshift").modify_event_subscription` method.
 
-[Client.modify_event_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_event_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_event_subscription]
 
 ```python
 def modify_event_subscription(
@@ -1797,7 +1802,7 @@ def modify_event_subscription(
 
 Type annotations for `boto3.client("redshift").modify_scheduled_action` method.
 
-[Client.modify_scheduled_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_scheduled_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_scheduled_action]
 
 ```python
 def modify_scheduled_action(
@@ -1818,7 +1823,7 @@ def modify_scheduled_action(
 
 Type annotations for `boto3.client("redshift").modify_snapshot_copy_retention_period` method.
 
-[Client.modify_snapshot_copy_retention_period documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_snapshot_copy_retention_period)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_snapshot_copy_retention_period]
 
 ```python
 def modify_snapshot_copy_retention_period(
@@ -1834,7 +1839,7 @@ def modify_snapshot_copy_retention_period(
 
 Type annotations for `boto3.client("redshift").modify_snapshot_schedule` method.
 
-[Client.modify_snapshot_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_snapshot_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_snapshot_schedule]
 
 ```python
 def modify_snapshot_schedule(
@@ -1849,7 +1854,7 @@ def modify_snapshot_schedule(
 
 Type annotations for `boto3.client("redshift").modify_usage_limit` method.
 
-[Client.modify_usage_limit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_usage_limit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_usage_limit]
 
 ```python
 def modify_usage_limit(
@@ -1865,7 +1870,7 @@ def modify_usage_limit(
 
 Type annotations for `boto3.client("redshift").pause_cluster` method.
 
-[Client.pause_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.pause_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.pause_cluster]
 
 ```python
 def pause_cluster(
@@ -1879,7 +1884,7 @@ def pause_cluster(
 
 Type annotations for `boto3.client("redshift").purchase_reserved_node_offering` method.
 
-[Client.purchase_reserved_node_offering documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.purchase_reserved_node_offering)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.purchase_reserved_node_offering]
 
 ```python
 def purchase_reserved_node_offering(
@@ -1894,7 +1899,7 @@ def purchase_reserved_node_offering(
 
 Type annotations for `boto3.client("redshift").reboot_cluster` method.
 
-[Client.reboot_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.reboot_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.reboot_cluster]
 
 ```python
 def reboot_cluster(
@@ -1908,7 +1913,7 @@ def reboot_cluster(
 
 Type annotations for `boto3.client("redshift").reset_cluster_parameter_group` method.
 
-[Client.reset_cluster_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.reset_cluster_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.reset_cluster_parameter_group]
 
 ```python
 def reset_cluster_parameter_group(
@@ -1924,7 +1929,7 @@ def reset_cluster_parameter_group(
 
 Type annotations for `boto3.client("redshift").resize_cluster` method.
 
-[Client.resize_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.resize_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.resize_cluster]
 
 ```python
 def resize_cluster(
@@ -1942,7 +1947,7 @@ def resize_cluster(
 
 Type annotations for `boto3.client("redshift").restore_from_cluster_snapshot` method.
 
-[Client.restore_from_cluster_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.restore_from_cluster_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.restore_from_cluster_snapshot]
 
 ```python
 def restore_from_cluster_snapshot(
@@ -1983,7 +1988,7 @@ def restore_from_cluster_snapshot(
 
 Type annotations for `boto3.client("redshift").restore_table_from_cluster_snapshot` method.
 
-[Client.restore_table_from_cluster_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.restore_table_from_cluster_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.restore_table_from_cluster_snapshot]
 
 ```python
 def restore_table_from_cluster_snapshot(
@@ -2005,7 +2010,7 @@ def restore_table_from_cluster_snapshot(
 
 Type annotations for `boto3.client("redshift").resume_cluster` method.
 
-[Client.resume_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.resume_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.resume_cluster]
 
 ```python
 def resume_cluster(
@@ -2019,7 +2024,7 @@ def resume_cluster(
 
 Type annotations for `boto3.client("redshift").revoke_cluster_security_group_ingress` method.
 
-[Client.revoke_cluster_security_group_ingress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.revoke_cluster_security_group_ingress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.revoke_cluster_security_group_ingress]
 
 ```python
 def revoke_cluster_security_group_ingress(
@@ -2036,7 +2041,7 @@ def revoke_cluster_security_group_ingress(
 
 Type annotations for `boto3.client("redshift").revoke_endpoint_access` method.
 
-[Client.revoke_endpoint_access documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.revoke_endpoint_access)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.revoke_endpoint_access]
 
 ```python
 def revoke_endpoint_access(
@@ -2053,7 +2058,7 @@ def revoke_endpoint_access(
 
 Type annotations for `boto3.client("redshift").revoke_snapshot_access` method.
 
-[Client.revoke_snapshot_access documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.revoke_snapshot_access)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.revoke_snapshot_access]
 
 ```python
 def revoke_snapshot_access(
@@ -2069,7 +2074,7 @@ def revoke_snapshot_access(
 
 Type annotations for `boto3.client("redshift").rotate_encryption_key` method.
 
-[Client.rotate_encryption_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.rotate_encryption_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.rotate_encryption_key]
 
 ```python
 def rotate_encryption_key(
@@ -2083,7 +2088,7 @@ def rotate_encryption_key(
 
 Type annotations for `boto3.client("redshift").update_partner_status` method.
 
-[Client.update_partner_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.update_partner_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.update_partner_status]
 
 ```python
 def update_partner_status(

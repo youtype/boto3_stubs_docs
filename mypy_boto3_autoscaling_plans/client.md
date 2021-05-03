@@ -27,7 +27,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_autoscaling_plans.client import AutoScalingPlansClient
+
+def get_autoscaling-plans_client() -> AutoScalingPlansClient:
+    return boto3.client("autoscaling-plans")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client)
 
 ## Exceptions
 
@@ -60,7 +65,7 @@ Exceptions:
 
 Type annotations for `boto3.client("autoscaling-plans").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -74,7 +79,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("autoscaling-plans").create_scaling_plan` method.
 
-[Client.create_scaling_plan documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.create_scaling_plan)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.create_scaling_plan]
 
 ```python
 def create_scaling_plan(
@@ -90,7 +95,7 @@ def create_scaling_plan(
 
 Type annotations for `boto3.client("autoscaling-plans").delete_scaling_plan` method.
 
-[Client.delete_scaling_plan documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.delete_scaling_plan)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.delete_scaling_plan]
 
 ```python
 def delete_scaling_plan(
@@ -105,7 +110,7 @@ def delete_scaling_plan(
 
 Type annotations for `boto3.client("autoscaling-plans").describe_scaling_plan_resources` method.
 
-[Client.describe_scaling_plan_resources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plan_resources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plan_resources]
 
 ```python
 def describe_scaling_plan_resources(
@@ -122,7 +127,7 @@ def describe_scaling_plan_resources(
 
 Type annotations for `boto3.client("autoscaling-plans").describe_scaling_plans` method.
 
-[Client.describe_scaling_plans documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plans)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plans]
 
 ```python
 def describe_scaling_plans(
@@ -140,7 +145,7 @@ def describe_scaling_plans(
 
 Type annotations for `boto3.client("autoscaling-plans").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -157,7 +162,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("autoscaling-plans").get_scaling_plan_resource_forecast_data` method.
 
-[Client.get_scaling_plan_resource_forecast_data documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.get_scaling_plan_resource_forecast_data)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.get_scaling_plan_resource_forecast_data]
 
 ```python
 def get_scaling_plan_resource_forecast_data(
@@ -178,7 +183,7 @@ def get_scaling_plan_resource_forecast_data(
 
 Type annotations for `boto3.client("autoscaling-plans").update_scaling_plan` method.
 
-[Client.update_scaling_plan documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.update_scaling_plan)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.update_scaling_plan]
 
 ```python
 def update_scaling_plan(

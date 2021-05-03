@@ -40,7 +40,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_batch.client import BatchClient
+
+def get_batch_client() -> BatchClient:
+    return boto3.client("batch")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client)
 
 ## Exceptions
 
@@ -69,7 +74,7 @@ Exceptions:
 
 Type annotations for `boto3.client("batch").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -83,7 +88,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("batch").cancel_job` method.
 
-[Client.cancel_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.cancel_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.cancel_job]
 
 ```python
 def cancel_job(
@@ -98,7 +103,7 @@ def cancel_job(
 
 Type annotations for `boto3.client("batch").create_compute_environment` method.
 
-[Client.create_compute_environment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_compute_environment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_compute_environment]
 
 ```python
 def create_compute_environment(
@@ -117,7 +122,7 @@ def create_compute_environment(
 
 Type annotations for `boto3.client("batch").create_job_queue` method.
 
-[Client.create_job_queue documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_job_queue)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_job_queue]
 
 ```python
 def create_job_queue(
@@ -135,7 +140,7 @@ def create_job_queue(
 
 Type annotations for `boto3.client("batch").delete_compute_environment` method.
 
-[Client.delete_compute_environment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_compute_environment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_compute_environment]
 
 ```python
 def delete_compute_environment(
@@ -149,7 +154,7 @@ def delete_compute_environment(
 
 Type annotations for `boto3.client("batch").delete_job_queue` method.
 
-[Client.delete_job_queue documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_job_queue)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_job_queue]
 
 ```python
 def delete_job_queue(
@@ -163,7 +168,7 @@ def delete_job_queue(
 
 Type annotations for `boto3.client("batch").deregister_job_definition` method.
 
-[Client.deregister_job_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.deregister_job_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.deregister_job_definition]
 
 ```python
 def deregister_job_definition(
@@ -177,7 +182,7 @@ def deregister_job_definition(
 
 Type annotations for `boto3.client("batch").describe_compute_environments` method.
 
-[Client.describe_compute_environments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_compute_environments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_compute_environments]
 
 ```python
 def describe_compute_environments(
@@ -193,7 +198,7 @@ def describe_compute_environments(
 
 Type annotations for `boto3.client("batch").describe_job_definitions` method.
 
-[Client.describe_job_definitions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_job_definitions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_job_definitions]
 
 ```python
 def describe_job_definitions(
@@ -211,7 +216,7 @@ def describe_job_definitions(
 
 Type annotations for `boto3.client("batch").describe_job_queues` method.
 
-[Client.describe_job_queues documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_job_queues)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_job_queues]
 
 ```python
 def describe_job_queues(
@@ -227,7 +232,7 @@ def describe_job_queues(
 
 Type annotations for `boto3.client("batch").describe_jobs` method.
 
-[Client.describe_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_jobs]
 
 ```python
 def describe_jobs(
@@ -241,7 +246,7 @@ def describe_jobs(
 
 Type annotations for `boto3.client("batch").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -258,7 +263,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("batch").list_jobs` method.
 
-[Client.list_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_jobs]
 
 ```python
 def list_jobs(
@@ -277,7 +282,7 @@ def list_jobs(
 
 Type annotations for `boto3.client("batch").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -291,7 +296,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("batch").register_job_definition` method.
 
-[Client.register_job_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.register_job_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.register_job_definition]
 
 ```python
 def register_job_definition(
@@ -314,7 +319,7 @@ def register_job_definition(
 
 Type annotations for `boto3.client("batch").submit_job` method.
 
-[Client.submit_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.submit_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.submit_job]
 
 ```python
 def submit_job(
@@ -339,7 +344,7 @@ def submit_job(
 
 Type annotations for `boto3.client("batch").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -354,7 +359,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("batch").terminate_job` method.
 
-[Client.terminate_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.terminate_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.terminate_job]
 
 ```python
 def terminate_job(
@@ -369,7 +374,7 @@ def terminate_job(
 
 Type annotations for `boto3.client("batch").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -384,7 +389,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("batch").update_compute_environment` method.
 
-[Client.update_compute_environment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_compute_environment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_compute_environment]
 
 ```python
 def update_compute_environment(
@@ -401,7 +406,7 @@ def update_compute_environment(
 
 Type annotations for `boto3.client("batch").update_job_queue` method.
 
-[Client.update_job_queue documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_job_queue)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_job_queue]
 
 ```python
 def update_job_queue(

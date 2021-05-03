@@ -15,7 +15,7 @@ pip install mypy-boto3-iot
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## IoTClient
 
@@ -494,7 +494,7 @@ from mypy_boto3_iot.literals import AbortAction, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

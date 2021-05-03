@@ -1,11 +1,11 @@
-# Structures for boto3 Detective module
+# Typed dictionaries for boto3 Detective module
 
 > [Index](../README.md) > [Detective](./README.md) > Structures
 
 Auto-generated documentation for [Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
 type annotations stubs module [mypy_boto3_detective](https://pypi.org/project/mypy-boto3-detective/).
 
-- [Structures for boto3 Detective module](#structures-for-boto3-detective-module)
+- [Typed dictionaries for boto3 Detective module](#typed-dictionaries-for-boto3-detective-module)
   - [AccountTypeDef](#accounttypedef)
   - [CreateGraphResponseTypeDef](#creategraphresponsetypedef)
   - [CreateMembersResponseTypeDef](#createmembersresponsetypedef)

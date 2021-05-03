@@ -14,7 +14,7 @@ pip install mypy-boto3-worklink
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## WorkLinkClient
 
@@ -108,7 +108,7 @@ from mypy_boto3_worklink.literals import AuthorizationProviderType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

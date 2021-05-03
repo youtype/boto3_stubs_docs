@@ -1,11 +1,11 @@
-# Structures for boto3 DirectConnect module
+# Typed dictionaries for boto3 DirectConnect module
 
 > [Index](../README.md) > [DirectConnect](./README.md) > Structures
 
 Auto-generated documentation for [DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
 type annotations stubs module [mypy_boto3_directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
 
-- [Structures for boto3 DirectConnect module](#structures-for-boto3-directconnect-module)
+- [Typed dictionaries for boto3 DirectConnect module](#typed-dictionaries-for-boto3-directconnect-module)
   - [AcceptDirectConnectGatewayAssociationProposalResultTypeDef](#acceptdirectconnectgatewayassociationproposalresulttypedef)
   - [AllocateTransitVirtualInterfaceResultTypeDef](#allocatetransitvirtualinterfaceresulttypedef)
   - [AssociateMacSecKeyResponseTypeDef](#associatemacseckeyresponsetypedef)

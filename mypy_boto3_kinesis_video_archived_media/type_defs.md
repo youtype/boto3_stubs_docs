@@ -1,11 +1,11 @@
-# Structures for boto3 KinesisVideoArchivedMedia module
+# Typed dictionaries for boto3 KinesisVideoArchivedMedia module
 
 > [Index](../README.md) > [KinesisVideoArchivedMedia](./README.md) > Structures
 
 Auto-generated documentation for [KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
 type annotations stubs module [mypy_boto3_kinesis_video_archived_media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
 
-- [Structures for boto3 KinesisVideoArchivedMedia module](#structures-for-boto3-kinesisvideoarchivedmedia-module)
+- [Typed dictionaries for boto3 KinesisVideoArchivedMedia module](#typed-dictionaries-for-boto3-kinesisvideoarchivedmedia-module)
   - [ClipFragmentSelectorTypeDef](#clipfragmentselectortypedef)
   - [ClipTimestampRangeTypeDef](#cliptimestamprangetypedef)
   - [DASHFragmentSelectorTypeDef](#dashfragmentselectortypedef)
@@ -117,12 +117,12 @@ from mypy_boto3_kinesis_video_archived_media.type_defs import GetClipOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ContentType`: `str`
 - `Payload`: `StreamingBody`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetDASHStreamingSessionURLOutputTypeDef
@@ -132,11 +132,11 @@ from mypy_boto3_kinesis_video_archived_media.type_defs import GetDASHStreamingSe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DASHStreamingSessionURL`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetHLSStreamingSessionURLOutputTypeDef
@@ -146,11 +146,11 @@ from mypy_boto3_kinesis_video_archived_media.type_defs import GetHLSStreamingSes
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `HLSStreamingSessionURL`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetMediaForFragmentListOutputTypeDef
@@ -160,12 +160,12 @@ from mypy_boto3_kinesis_video_archived_media.type_defs import GetMediaForFragmen
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ContentType`: `str`
 - `Payload`: `StreamingBody`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## HLSFragmentSelectorTypeDef
@@ -203,12 +203,12 @@ from mypy_boto3_kinesis_video_archived_media.type_defs import ListFragmentsOutpu
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Fragments`: `List["FragmentTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PaginatorConfigTypeDef

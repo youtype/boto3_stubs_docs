@@ -24,13 +24,13 @@ Type annotations for `boto3.client("lambda").get_paginator("list_aliases")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_lambda.paginators import ListAliasesPaginator
+from mypy_boto3_lambda.paginator import ListAliasesPaginator
 
 def get_list_aliases_paginator() -> ListAliasesPaginator:
     return boto3.client("lambda").get_paginator("list_aliases")
 ```
 
-[Paginator.ListAliases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListAliases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListAliases)
 
 ```python
 class ListAliasesPaginator(Boto3Paginator):
@@ -49,13 +49,13 @@ Type annotations for `boto3.client("lambda").get_paginator("list_code_signing_co
 Can be used directly:
 
 ```python
-from mypy_boto3_lambda.paginators import ListCodeSigningConfigsPaginator
+from mypy_boto3_lambda.paginator import ListCodeSigningConfigsPaginator
 
 def get_list_code_signing_configs_paginator() -> ListCodeSigningConfigsPaginator:
     return boto3.client("lambda").get_paginator("list_code_signing_configs")
 ```
 
-[Paginator.ListCodeSigningConfigs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListCodeSigningConfigs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListCodeSigningConfigs)
 
 ```python
 class ListCodeSigningConfigsPaginator(Boto3Paginator):
@@ -72,13 +72,13 @@ Type annotations for `boto3.client("lambda").get_paginator("list_event_source_ma
 Can be used directly:
 
 ```python
-from mypy_boto3_lambda.paginators import ListEventSourceMappingsPaginator
+from mypy_boto3_lambda.paginator import ListEventSourceMappingsPaginator
 
 def get_list_event_source_mappings_paginator() -> ListEventSourceMappingsPaginator:
     return boto3.client("lambda").get_paginator("list_event_source_mappings")
 ```
 
-[Paginator.ListEventSourceMappings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListEventSourceMappings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListEventSourceMappings)
 
 ```python
 class ListEventSourceMappingsPaginator(Boto3Paginator):
@@ -97,13 +97,13 @@ Type annotations for `boto3.client("lambda").get_paginator("list_function_event_
 Can be used directly:
 
 ```python
-from mypy_boto3_lambda.paginators import ListFunctionEventInvokeConfigsPaginator
+from mypy_boto3_lambda.paginator import ListFunctionEventInvokeConfigsPaginator
 
 def get_list_function_event_invoke_configs_paginator() -> ListFunctionEventInvokeConfigsPaginator:
     return boto3.client("lambda").get_paginator("list_function_event_invoke_configs")
 ```
 
-[Paginator.ListFunctionEventInvokeConfigs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListFunctionEventInvokeConfigs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListFunctionEventInvokeConfigs)
 
 ```python
 class ListFunctionEventInvokeConfigsPaginator(Boto3Paginator):
@@ -121,13 +121,13 @@ Type annotations for `boto3.client("lambda").get_paginator("list_functions")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_lambda.paginators import ListFunctionsPaginator
+from mypy_boto3_lambda.paginator import ListFunctionsPaginator
 
 def get_list_functions_paginator() -> ListFunctionsPaginator:
     return boto3.client("lambda").get_paginator("list_functions")
 ```
 
-[Paginator.ListFunctions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListFunctions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListFunctions)
 
 ```python
 class ListFunctionsPaginator(Boto3Paginator):
@@ -146,13 +146,13 @@ Type annotations for `boto3.client("lambda").get_paginator("list_functions_by_co
 Can be used directly:
 
 ```python
-from mypy_boto3_lambda.paginators import ListFunctionsByCodeSigningConfigPaginator
+from mypy_boto3_lambda.paginator import ListFunctionsByCodeSigningConfigPaginator
 
 def get_list_functions_by_code_signing_config_paginator() -> ListFunctionsByCodeSigningConfigPaginator:
     return boto3.client("lambda").get_paginator("list_functions_by_code_signing_config")
 ```
 
-[Paginator.ListFunctionsByCodeSigningConfig documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListFunctionsByCodeSigningConfig)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListFunctionsByCodeSigningConfig)
 
 ```python
 class ListFunctionsByCodeSigningConfigPaginator(Boto3Paginator):
@@ -170,13 +170,13 @@ Type annotations for `boto3.client("lambda").get_paginator("list_layer_versions"
 Can be used directly:
 
 ```python
-from mypy_boto3_lambda.paginators import ListLayerVersionsPaginator
+from mypy_boto3_lambda.paginator import ListLayerVersionsPaginator
 
 def get_list_layer_versions_paginator() -> ListLayerVersionsPaginator:
     return boto3.client("lambda").get_paginator("list_layer_versions")
 ```
 
-[Paginator.ListLayerVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListLayerVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListLayerVersions)
 
 ```python
 class ListLayerVersionsPaginator(Boto3Paginator):
@@ -195,13 +195,13 @@ Type annotations for `boto3.client("lambda").get_paginator("list_layers")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_lambda.paginators import ListLayersPaginator
+from mypy_boto3_lambda.paginator import ListLayersPaginator
 
 def get_list_layers_paginator() -> ListLayersPaginator:
     return boto3.client("lambda").get_paginator("list_layers")
 ```
 
-[Paginator.ListLayers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListLayers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListLayers)
 
 ```python
 class ListLayersPaginator(Boto3Paginator):
@@ -219,13 +219,13 @@ Type annotations for `boto3.client("lambda").get_paginator("list_provisioned_con
 Can be used directly:
 
 ```python
-from mypy_boto3_lambda.paginators import ListProvisionedConcurrencyConfigsPaginator
+from mypy_boto3_lambda.paginator import ListProvisionedConcurrencyConfigsPaginator
 
 def get_list_provisioned_concurrency_configs_paginator() -> ListProvisionedConcurrencyConfigsPaginator:
     return boto3.client("lambda").get_paginator("list_provisioned_concurrency_configs")
 ```
 
-[Paginator.ListProvisionedConcurrencyConfigs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListProvisionedConcurrencyConfigs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListProvisionedConcurrencyConfigs)
 
 ```python
 class ListProvisionedConcurrencyConfigsPaginator(Boto3Paginator):
@@ -243,13 +243,13 @@ Type annotations for `boto3.client("lambda").get_paginator("list_versions_by_fun
 Can be used directly:
 
 ```python
-from mypy_boto3_lambda.paginators import ListVersionsByFunctionPaginator
+from mypy_boto3_lambda.paginator import ListVersionsByFunctionPaginator
 
 def get_list_versions_by_function_paginator() -> ListVersionsByFunctionPaginator:
     return boto3.client("lambda").get_paginator("list_versions_by_function")
 ```
 
-[Paginator.ListVersionsByFunction documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListVersionsByFunction)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListVersionsByFunction)
 
 ```python
 class ListVersionsByFunctionPaginator(Boto3Paginator):

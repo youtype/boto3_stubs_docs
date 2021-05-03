@@ -1,11 +1,11 @@
-# Structures for boto3 ManagedBlockchain module
+# Typed dictionaries for boto3 ManagedBlockchain module
 
 > [Index](../README.md) > [ManagedBlockchain](./README.md) > Structures
 
 Auto-generated documentation for [ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
 type annotations stubs module [mypy_boto3_managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
 
-- [Structures for boto3 ManagedBlockchain module](#structures-for-boto3-managedblockchain-module)
+- [Typed dictionaries for boto3 ManagedBlockchain module](#typed-dictionaries-for-boto3-managedblockchain-module)
   - [ApprovalThresholdPolicyTypeDef](#approvalthresholdpolicytypedef)
   - [CreateMemberOutputTypeDef](#creatememberoutputtypedef)
   - [CreateNetworkOutputTypeDef](#createnetworkoutputtypedef)
@@ -80,11 +80,11 @@ from mypy_boto3_managedblockchain.type_defs import CreateMemberOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `MemberId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateNetworkOutputTypeDef
@@ -94,12 +94,12 @@ from mypy_boto3_managedblockchain.type_defs import CreateNetworkOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NetworkId`: `str`
 - `MemberId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateNodeOutputTypeDef
@@ -109,11 +109,11 @@ from mypy_boto3_managedblockchain.type_defs import CreateNodeOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NodeId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateProposalOutputTypeDef
@@ -123,11 +123,11 @@ from mypy_boto3_managedblockchain.type_defs import CreateProposalOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProposalId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetMemberOutputTypeDef
@@ -137,11 +137,11 @@ from mypy_boto3_managedblockchain.type_defs import GetMemberOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Member`: `"MemberTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetNetworkOutputTypeDef
@@ -151,11 +151,11 @@ from mypy_boto3_managedblockchain.type_defs import GetNetworkOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Network`: `"NetworkTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetNodeOutputTypeDef
@@ -165,11 +165,11 @@ from mypy_boto3_managedblockchain.type_defs import GetNodeOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Node`: `"NodeTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetProposalOutputTypeDef
@@ -179,11 +179,11 @@ from mypy_boto3_managedblockchain.type_defs import GetProposalOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Proposal`: `"ProposalTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## InvitationTypeDef
@@ -224,12 +224,12 @@ from mypy_boto3_managedblockchain.type_defs import ListInvitationsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Invitations`: `List["InvitationTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListMembersOutputTypeDef
@@ -239,12 +239,12 @@ from mypy_boto3_managedblockchain.type_defs import ListMembersOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Members`: `List["MemberSummaryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListNetworksOutputTypeDef
@@ -254,12 +254,12 @@ from mypy_boto3_managedblockchain.type_defs import ListNetworksOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Networks`: `List["NetworkSummaryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListNodesOutputTypeDef
@@ -269,12 +269,12 @@ from mypy_boto3_managedblockchain.type_defs import ListNodesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Nodes`: `List["NodeSummaryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListProposalVotesOutputTypeDef
@@ -284,12 +284,12 @@ from mypy_boto3_managedblockchain.type_defs import ListProposalVotesOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProposalVotes`: `List["VoteSummaryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListProposalsOutputTypeDef
@@ -299,12 +299,12 @@ from mypy_boto3_managedblockchain.type_defs import ListProposalsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Proposals`: `List["ProposalSummaryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagsForResourceResponseTypeDef

@@ -19,13 +19,13 @@ Type annotations for `boto3.client("iotanalytics").get_paginator("list_channels"
 Can be used directly:
 
 ```python
-from mypy_boto3_iotanalytics.paginators import ListChannelsPaginator
+from mypy_boto3_iotanalytics.paginator import ListChannelsPaginator
 
 def get_list_channels_paginator() -> ListChannelsPaginator:
     return boto3.client("iotanalytics").get_paginator("list_channels")
 ```
 
-[Paginator.ListChannels documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListChannels)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListChannels)
 
 ```python
 class ListChannelsPaginator(Boto3Paginator):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("iotanalytics").get_paginator("list_dataset_c
 Can be used directly:
 
 ```python
-from mypy_boto3_iotanalytics.paginators import ListDatasetContentsPaginator
+from mypy_boto3_iotanalytics.paginator import ListDatasetContentsPaginator
 
 def get_list_dataset_contents_paginator() -> ListDatasetContentsPaginator:
     return boto3.client("iotanalytics").get_paginator("list_dataset_contents")
 ```
 
-[Paginator.ListDatasetContents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatasetContents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatasetContents)
 
 ```python
 class ListDatasetContentsPaginator(Boto3Paginator):
@@ -68,13 +68,13 @@ Type annotations for `boto3.client("iotanalytics").get_paginator("list_datasets"
 Can be used directly:
 
 ```python
-from mypy_boto3_iotanalytics.paginators import ListDatasetsPaginator
+from mypy_boto3_iotanalytics.paginator import ListDatasetsPaginator
 
 def get_list_datasets_paginator() -> ListDatasetsPaginator:
     return boto3.client("iotanalytics").get_paginator("list_datasets")
 ```
 
-[Paginator.ListDatasets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatasets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatasets)
 
 ```python
 class ListDatasetsPaginator(Boto3Paginator):
@@ -91,13 +91,13 @@ Type annotations for `boto3.client("iotanalytics").get_paginator("list_datastore
 Can be used directly:
 
 ```python
-from mypy_boto3_iotanalytics.paginators import ListDatastoresPaginator
+from mypy_boto3_iotanalytics.paginator import ListDatastoresPaginator
 
 def get_list_datastores_paginator() -> ListDatastoresPaginator:
     return boto3.client("iotanalytics").get_paginator("list_datastores")
 ```
 
-[Paginator.ListDatastores documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatastores)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatastores)
 
 ```python
 class ListDatastoresPaginator(Boto3Paginator):
@@ -114,13 +114,13 @@ Type annotations for `boto3.client("iotanalytics").get_paginator("list_pipelines
 Can be used directly:
 
 ```python
-from mypy_boto3_iotanalytics.paginators import ListPipelinesPaginator
+from mypy_boto3_iotanalytics.paginator import ListPipelinesPaginator
 
 def get_list_pipelines_paginator() -> ListPipelinesPaginator:
     return boto3.client("iotanalytics").get_paginator("list_pipelines")
 ```
 
-[Paginator.ListPipelines documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListPipelines)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListPipelines)
 
 ```python
 class ListPipelinesPaginator(Boto3Paginator):

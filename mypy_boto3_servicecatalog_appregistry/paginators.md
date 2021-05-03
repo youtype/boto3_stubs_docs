@@ -18,13 +18,13 @@ Type annotations for `boto3.client("servicecatalog-appregistry").get_paginator("
 Can be used directly:
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.paginators import ListApplicationsPaginator
+from mypy_boto3_servicecatalog_appregistry.paginator import ListApplicationsPaginator
 
 def get_list_applications_paginator() -> ListApplicationsPaginator:
     return boto3.client("servicecatalog-appregistry").get_paginator("list_applications")
 ```
 
-[Paginator.ListApplications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListApplications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListApplications)
 
 ```python
 class ListApplicationsPaginator(Boto3Paginator):
@@ -41,13 +41,13 @@ Type annotations for `boto3.client("servicecatalog-appregistry").get_paginator("
 Can be used directly:
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.paginators import ListAssociatedAttributeGroupsPaginator
+from mypy_boto3_servicecatalog_appregistry.paginator import ListAssociatedAttributeGroupsPaginator
 
 def get_list_associated_attribute_groups_paginator() -> ListAssociatedAttributeGroupsPaginator:
     return boto3.client("servicecatalog-appregistry").get_paginator("list_associated_attribute_groups")
 ```
 
-[Paginator.ListAssociatedAttributeGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAssociatedAttributeGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAssociatedAttributeGroups)
 
 ```python
 class ListAssociatedAttributeGroupsPaginator(Boto3Paginator):
@@ -65,13 +65,13 @@ Type annotations for `boto3.client("servicecatalog-appregistry").get_paginator("
 Can be used directly:
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.paginators import ListAssociatedResourcesPaginator
+from mypy_boto3_servicecatalog_appregistry.paginator import ListAssociatedResourcesPaginator
 
 def get_list_associated_resources_paginator() -> ListAssociatedResourcesPaginator:
     return boto3.client("servicecatalog-appregistry").get_paginator("list_associated_resources")
 ```
 
-[Paginator.ListAssociatedResources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAssociatedResources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAssociatedResources)
 
 ```python
 class ListAssociatedResourcesPaginator(Boto3Paginator):
@@ -89,13 +89,13 @@ Type annotations for `boto3.client("servicecatalog-appregistry").get_paginator("
 Can be used directly:
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.paginators import ListAttributeGroupsPaginator
+from mypy_boto3_servicecatalog_appregistry.paginator import ListAttributeGroupsPaginator
 
 def get_list_attribute_groups_paginator() -> ListAttributeGroupsPaginator:
     return boto3.client("servicecatalog-appregistry").get_paginator("list_attribute_groups")
 ```
 
-[Paginator.ListAttributeGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAttributeGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAttributeGroups)
 
 ```python
 class ListAttributeGroupsPaginator(Boto3Paginator):

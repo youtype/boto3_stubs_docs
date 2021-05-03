@@ -14,7 +14,7 @@ pip install mypy-boto3-wellarchitected
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## WellArchitectedClient
 
@@ -111,7 +111,7 @@ from mypy_boto3_wellarchitected.literals import DifferenceStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

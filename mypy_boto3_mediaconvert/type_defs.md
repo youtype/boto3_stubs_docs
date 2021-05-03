@@ -1,11 +1,11 @@
-# Structures for boto3 MediaConvert module
+# Typed dictionaries for boto3 MediaConvert module
 
 > [Index](../README.md) > [MediaConvert](./README.md) > Structures
 
 Auto-generated documentation for [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
 type annotations stubs module [mypy_boto3_mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
 
-- [Structures for boto3 MediaConvert module](#structures-for-boto3-mediaconvert-module)
+- [Typed dictionaries for boto3 MediaConvert module](#typed-dictionaries-for-boto3-mediaconvert-module)
   - [AacSettingsTypeDef](#aacsettingstypedef)
   - [Ac3SettingsTypeDef](#ac3settingstypedef)
   - [AccelerationSettingsTypeDef](#accelerationsettingstypedef)
@@ -2448,9 +2448,7 @@ from mypy_boto3_mediaconvert.type_defs import OutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `AudioDescriptions`: `List["AudioDescriptionTypeDef"]`
 - `CaptionDescriptions`: `List["CaptionDescriptionTypeDef"]`
 - `ContainerSettings`: `"ContainerSettingsTypeDef"`
@@ -2460,6 +2458,8 @@ Optional fields:
 - `Preset`: `str`
 - `VideoDescription`: `"VideoDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PaginatorConfigTypeDef

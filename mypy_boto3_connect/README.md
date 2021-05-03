@@ -15,7 +15,7 @@ pip install mypy-boto3-connect
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ConnectClient
 
@@ -263,7 +263,7 @@ from mypy_boto3_connect.literals import Channel, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

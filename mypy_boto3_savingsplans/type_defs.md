@@ -1,11 +1,11 @@
-# Structures for boto3 SavingsPlans module
+# Typed dictionaries for boto3 SavingsPlans module
 
 > [Index](../README.md) > [SavingsPlans](./README.md) > Structures
 
 Auto-generated documentation for [SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
 type annotations stubs module [mypy_boto3_savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
 
-- [Structures for boto3 SavingsPlans module](#structures-for-boto3-savingsplans-module)
+- [Typed dictionaries for boto3 SavingsPlans module](#typed-dictionaries-for-boto3-savingsplans-module)
   - [CreateSavingsPlanResponseTypeDef](#createsavingsplanresponsetypedef)
   - [DescribeSavingsPlanRatesResponseTypeDef](#describesavingsplanratesresponsetypedef)
   - [DescribeSavingsPlansOfferingRatesResponseTypeDef](#describesavingsplansofferingratesresponsetypedef)

@@ -80,7 +80,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_lambda.client import LambdaClient
+
+def get_lambda_client() -> LambdaClient:
+    return boto3.client("lambda")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client)
 
 ## Exceptions
 
@@ -141,7 +146,7 @@ Exceptions:
 
 Type annotations for `boto3.client("lambda").add_layer_version_permission` method.
 
-[Client.add_layer_version_permission documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.add_layer_version_permission)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.add_layer_version_permission]
 
 ```python
 def add_layer_version_permission(
@@ -161,7 +166,7 @@ def add_layer_version_permission(
 
 Type annotations for `boto3.client("lambda").add_permission` method.
 
-[Client.add_permission documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.add_permission)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.add_permission]
 
 ```python
 def add_permission(
@@ -183,7 +188,7 @@ def add_permission(
 
 Type annotations for `boto3.client("lambda").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -197,7 +202,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("lambda").create_alias` method.
 
-[Client.create_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_alias]
 
 ```python
 def create_alias(
@@ -215,7 +220,7 @@ def create_alias(
 
 Type annotations for `boto3.client("lambda").create_code_signing_config` method.
 
-[Client.create_code_signing_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_code_signing_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_code_signing_config]
 
 ```python
 def create_code_signing_config(
@@ -231,7 +236,7 @@ def create_code_signing_config(
 
 Type annotations for `boto3.client("lambda").create_event_source_mapping` method.
 
-[Client.create_event_source_mapping documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_event_source_mapping)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_event_source_mapping]
 
 ```python
 def create_event_source_mapping(
@@ -262,7 +267,7 @@ def create_event_source_mapping(
 
 Type annotations for `boto3.client("lambda").create_function` method.
 
-[Client.create_function documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_function)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_function]
 
 ```python
 def create_function(
@@ -295,7 +300,7 @@ def create_function(
 
 Type annotations for `boto3.client("lambda").delete_alias` method.
 
-[Client.delete_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_alias]
 
 ```python
 def delete_alias(
@@ -310,7 +315,7 @@ def delete_alias(
 
 Type annotations for `boto3.client("lambda").delete_code_signing_config` method.
 
-[Client.delete_code_signing_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_code_signing_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_code_signing_config]
 
 ```python
 def delete_code_signing_config(
@@ -324,7 +329,7 @@ def delete_code_signing_config(
 
 Type annotations for `boto3.client("lambda").delete_event_source_mapping` method.
 
-[Client.delete_event_source_mapping documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_event_source_mapping)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_event_source_mapping]
 
 ```python
 def delete_event_source_mapping(
@@ -338,7 +343,7 @@ def delete_event_source_mapping(
 
 Type annotations for `boto3.client("lambda").delete_function` method.
 
-[Client.delete_function documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function]
 
 ```python
 def delete_function(
@@ -353,7 +358,7 @@ def delete_function(
 
 Type annotations for `boto3.client("lambda").delete_function_code_signing_config` method.
 
-[Client.delete_function_code_signing_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_code_signing_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_code_signing_config]
 
 ```python
 def delete_function_code_signing_config(
@@ -367,7 +372,7 @@ def delete_function_code_signing_config(
 
 Type annotations for `boto3.client("lambda").delete_function_concurrency` method.
 
-[Client.delete_function_concurrency documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_concurrency)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_concurrency]
 
 ```python
 def delete_function_concurrency(
@@ -381,7 +386,7 @@ def delete_function_concurrency(
 
 Type annotations for `boto3.client("lambda").delete_function_event_invoke_config` method.
 
-[Client.delete_function_event_invoke_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_event_invoke_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_event_invoke_config]
 
 ```python
 def delete_function_event_invoke_config(
@@ -396,7 +401,7 @@ def delete_function_event_invoke_config(
 
 Type annotations for `boto3.client("lambda").delete_layer_version` method.
 
-[Client.delete_layer_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_layer_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_layer_version]
 
 ```python
 def delete_layer_version(
@@ -411,7 +416,7 @@ def delete_layer_version(
 
 Type annotations for `boto3.client("lambda").delete_provisioned_concurrency_config` method.
 
-[Client.delete_provisioned_concurrency_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_provisioned_concurrency_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_provisioned_concurrency_config]
 
 ```python
 def delete_provisioned_concurrency_config(
@@ -426,7 +431,7 @@ def delete_provisioned_concurrency_config(
 
 Type annotations for `boto3.client("lambda").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -443,7 +448,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("lambda").get_account_settings` method.
 
-[Client.get_account_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_account_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_account_settings]
 
 ```python
 def get_account_settings(
@@ -456,7 +461,7 @@ def get_account_settings(
 
 Type annotations for `boto3.client("lambda").get_alias` method.
 
-[Client.get_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_alias]
 
 ```python
 def get_alias(
@@ -471,7 +476,7 @@ def get_alias(
 
 Type annotations for `boto3.client("lambda").get_code_signing_config` method.
 
-[Client.get_code_signing_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_code_signing_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_code_signing_config]
 
 ```python
 def get_code_signing_config(
@@ -485,7 +490,7 @@ def get_code_signing_config(
 
 Type annotations for `boto3.client("lambda").get_event_source_mapping` method.
 
-[Client.get_event_source_mapping documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_event_source_mapping)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_event_source_mapping]
 
 ```python
 def get_event_source_mapping(
@@ -499,7 +504,7 @@ def get_event_source_mapping(
 
 Type annotations for `boto3.client("lambda").get_function` method.
 
-[Client.get_function documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function]
 
 ```python
 def get_function(
@@ -514,7 +519,7 @@ def get_function(
 
 Type annotations for `boto3.client("lambda").get_function_code_signing_config` method.
 
-[Client.get_function_code_signing_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_code_signing_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_code_signing_config]
 
 ```python
 def get_function_code_signing_config(
@@ -528,7 +533,7 @@ def get_function_code_signing_config(
 
 Type annotations for `boto3.client("lambda").get_function_concurrency` method.
 
-[Client.get_function_concurrency documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_concurrency)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_concurrency]
 
 ```python
 def get_function_concurrency(
@@ -542,7 +547,7 @@ def get_function_concurrency(
 
 Type annotations for `boto3.client("lambda").get_function_configuration` method.
 
-[Client.get_function_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_configuration]
 
 ```python
 def get_function_configuration(
@@ -557,7 +562,7 @@ def get_function_configuration(
 
 Type annotations for `boto3.client("lambda").get_function_event_invoke_config` method.
 
-[Client.get_function_event_invoke_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_event_invoke_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_event_invoke_config]
 
 ```python
 def get_function_event_invoke_config(
@@ -572,7 +577,7 @@ def get_function_event_invoke_config(
 
 Type annotations for `boto3.client("lambda").get_layer_version` method.
 
-[Client.get_layer_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version]
 
 ```python
 def get_layer_version(
@@ -587,7 +592,7 @@ def get_layer_version(
 
 Type annotations for `boto3.client("lambda").get_layer_version_by_arn` method.
 
-[Client.get_layer_version_by_arn documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version_by_arn)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version_by_arn]
 
 ```python
 def get_layer_version_by_arn(
@@ -601,7 +606,7 @@ def get_layer_version_by_arn(
 
 Type annotations for `boto3.client("lambda").get_layer_version_policy` method.
 
-[Client.get_layer_version_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version_policy]
 
 ```python
 def get_layer_version_policy(
@@ -616,7 +621,7 @@ def get_layer_version_policy(
 
 Type annotations for `boto3.client("lambda").get_policy` method.
 
-[Client.get_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_policy]
 
 ```python
 def get_policy(
@@ -631,7 +636,7 @@ def get_policy(
 
 Type annotations for `boto3.client("lambda").get_provisioned_concurrency_config` method.
 
-[Client.get_provisioned_concurrency_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_provisioned_concurrency_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_provisioned_concurrency_config]
 
 ```python
 def get_provisioned_concurrency_config(
@@ -646,7 +651,7 @@ def get_provisioned_concurrency_config(
 
 Type annotations for `boto3.client("lambda").invoke` method.
 
-[Client.invoke documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.invoke)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.invoke]
 
 ```python
 def invoke(
@@ -665,7 +670,7 @@ def invoke(
 
 Type annotations for `boto3.client("lambda").invoke_async` method.
 
-[Client.invoke_async documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.invoke_async)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.invoke_async]
 
 ```python
 def invoke_async(
@@ -680,7 +685,7 @@ def invoke_async(
 
 Type annotations for `boto3.client("lambda").list_aliases` method.
 
-[Client.list_aliases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_aliases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_aliases]
 
 ```python
 def list_aliases(
@@ -697,7 +702,7 @@ def list_aliases(
 
 Type annotations for `boto3.client("lambda").list_code_signing_configs` method.
 
-[Client.list_code_signing_configs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_code_signing_configs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_code_signing_configs]
 
 ```python
 def list_code_signing_configs(
@@ -712,7 +717,7 @@ def list_code_signing_configs(
 
 Type annotations for `boto3.client("lambda").list_event_source_mappings` method.
 
-[Client.list_event_source_mappings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_event_source_mappings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_event_source_mappings]
 
 ```python
 def list_event_source_mappings(
@@ -729,7 +734,7 @@ def list_event_source_mappings(
 
 Type annotations for `boto3.client("lambda").list_function_event_invoke_configs` method.
 
-[Client.list_function_event_invoke_configs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_function_event_invoke_configs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_function_event_invoke_configs]
 
 ```python
 def list_function_event_invoke_configs(
@@ -745,7 +750,7 @@ def list_function_event_invoke_configs(
 
 Type annotations for `boto3.client("lambda").list_functions` method.
 
-[Client.list_functions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_functions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_functions]
 
 ```python
 def list_functions(
@@ -762,7 +767,7 @@ def list_functions(
 
 Type annotations for `boto3.client("lambda").list_functions_by_code_signing_config` method.
 
-[Client.list_functions_by_code_signing_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_functions_by_code_signing_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_functions_by_code_signing_config]
 
 ```python
 def list_functions_by_code_signing_config(
@@ -778,7 +783,7 @@ def list_functions_by_code_signing_config(
 
 Type annotations for `boto3.client("lambda").list_layer_versions` method.
 
-[Client.list_layer_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_layer_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_layer_versions]
 
 ```python
 def list_layer_versions(
@@ -795,7 +800,7 @@ def list_layer_versions(
 
 Type annotations for `boto3.client("lambda").list_layers` method.
 
-[Client.list_layers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_layers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_layers]
 
 ```python
 def list_layers(
@@ -811,7 +816,7 @@ def list_layers(
 
 Type annotations for `boto3.client("lambda").list_provisioned_concurrency_configs` method.
 
-[Client.list_provisioned_concurrency_configs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_provisioned_concurrency_configs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_provisioned_concurrency_configs]
 
 ```python
 def list_provisioned_concurrency_configs(
@@ -827,7 +832,7 @@ def list_provisioned_concurrency_configs(
 
 Type annotations for `boto3.client("lambda").list_tags` method.
 
-[Client.list_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_tags]
 
 ```python
 def list_tags(
@@ -841,7 +846,7 @@ def list_tags(
 
 Type annotations for `boto3.client("lambda").list_versions_by_function` method.
 
-[Client.list_versions_by_function documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_versions_by_function)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_versions_by_function]
 
 ```python
 def list_versions_by_function(
@@ -857,7 +862,7 @@ def list_versions_by_function(
 
 Type annotations for `boto3.client("lambda").publish_layer_version` method.
 
-[Client.publish_layer_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.publish_layer_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.publish_layer_version]
 
 ```python
 def publish_layer_version(
@@ -875,7 +880,7 @@ def publish_layer_version(
 
 Type annotations for `boto3.client("lambda").publish_version` method.
 
-[Client.publish_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.publish_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.publish_version]
 
 ```python
 def publish_version(
@@ -892,7 +897,7 @@ def publish_version(
 
 Type annotations for `boto3.client("lambda").put_function_code_signing_config` method.
 
-[Client.put_function_code_signing_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_code_signing_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_code_signing_config]
 
 ```python
 def put_function_code_signing_config(
@@ -907,7 +912,7 @@ def put_function_code_signing_config(
 
 Type annotations for `boto3.client("lambda").put_function_concurrency` method.
 
-[Client.put_function_concurrency documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_concurrency)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_concurrency]
 
 ```python
 def put_function_concurrency(
@@ -922,7 +927,7 @@ def put_function_concurrency(
 
 Type annotations for `boto3.client("lambda").put_function_event_invoke_config` method.
 
-[Client.put_function_event_invoke_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_event_invoke_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_event_invoke_config]
 
 ```python
 def put_function_event_invoke_config(
@@ -940,7 +945,7 @@ def put_function_event_invoke_config(
 
 Type annotations for `boto3.client("lambda").put_provisioned_concurrency_config` method.
 
-[Client.put_provisioned_concurrency_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_provisioned_concurrency_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_provisioned_concurrency_config]
 
 ```python
 def put_provisioned_concurrency_config(
@@ -956,7 +961,7 @@ def put_provisioned_concurrency_config(
 
 Type annotations for `boto3.client("lambda").remove_layer_version_permission` method.
 
-[Client.remove_layer_version_permission documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.remove_layer_version_permission)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.remove_layer_version_permission]
 
 ```python
 def remove_layer_version_permission(
@@ -973,7 +978,7 @@ def remove_layer_version_permission(
 
 Type annotations for `boto3.client("lambda").remove_permission` method.
 
-[Client.remove_permission documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.remove_permission)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.remove_permission]
 
 ```python
 def remove_permission(
@@ -990,7 +995,7 @@ def remove_permission(
 
 Type annotations for `boto3.client("lambda").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -1005,7 +1010,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("lambda").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -1020,7 +1025,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("lambda").update_alias` method.
 
-[Client.update_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_alias]
 
 ```python
 def update_alias(
@@ -1039,7 +1044,7 @@ def update_alias(
 
 Type annotations for `boto3.client("lambda").update_code_signing_config` method.
 
-[Client.update_code_signing_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_code_signing_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_code_signing_config]
 
 ```python
 def update_code_signing_config(
@@ -1056,7 +1061,7 @@ def update_code_signing_config(
 
 Type annotations for `boto3.client("lambda").update_event_source_mapping` method.
 
-[Client.update_event_source_mapping documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_event_source_mapping)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_event_source_mapping]
 
 ```python
 def update_event_source_mapping(
@@ -1082,7 +1087,7 @@ def update_event_source_mapping(
 
 Type annotations for `boto3.client("lambda").update_function_code` method.
 
-[Client.update_function_code documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_code)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_code]
 
 ```python
 def update_function_code(
@@ -1104,7 +1109,7 @@ def update_function_code(
 
 Type annotations for `boto3.client("lambda").update_function_configuration` method.
 
-[Client.update_function_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_configuration]
 
 ```python
 def update_function_configuration(
@@ -1133,7 +1138,7 @@ def update_function_configuration(
 
 Type annotations for `boto3.client("lambda").update_function_event_invoke_config` method.
 
-[Client.update_function_event_invoke_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_event_invoke_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_event_invoke_config]
 
 ```python
 def update_function_event_invoke_config(

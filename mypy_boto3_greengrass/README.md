@@ -15,7 +15,7 @@ pip install mypy-boto3-greengrass
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## GreengrassClient
 
@@ -224,7 +224,7 @@ from mypy_boto3_greengrass.literals import BulkDeploymentStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

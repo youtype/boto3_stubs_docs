@@ -15,7 +15,7 @@ pip install mypy-boto3-workspaces
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## WorkSpacesClient
 
@@ -184,7 +184,7 @@ from mypy_boto3_workspaces.literals import AccessPropertyValue, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

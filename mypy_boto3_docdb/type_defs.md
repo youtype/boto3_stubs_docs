@@ -1,11 +1,11 @@
-# Structures for boto3 DocDB module
+# Typed dictionaries for boto3 DocDB module
 
 > [Index](../README.md) > [DocDB](./README.md) > Structures
 
 Auto-generated documentation for [DocDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB)
 type annotations stubs module [mypy_boto3_docdb](https://pypi.org/project/mypy-boto3-docdb/).
 
-- [Structures for boto3 DocDB module](#structures-for-boto3-docdb-module)
+- [Typed dictionaries for boto3 DocDB module](#typed-dictionaries-for-boto3-docdb-module)
   - [AddSourceIdentifierToSubscriptionResultTypeDef](#addsourceidentifiertosubscriptionresulttypedef)
   - [ApplyPendingMaintenanceActionResultTypeDef](#applypendingmaintenanceactionresulttypedef)
   - [AvailabilityZoneTypeDef](#availabilityzonetypedef)

@@ -21,13 +21,13 @@ Type annotations for `boto3.client("dax").get_paginator("describe_clusters")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_dax.paginators import DescribeClustersPaginator
+from mypy_boto3_dax.paginator import DescribeClustersPaginator
 
 def get_describe_clusters_paginator() -> DescribeClustersPaginator:
     return boto3.client("dax").get_paginator("describe_clusters")
 ```
 
-[Paginator.DescribeClusters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeClusters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeClusters)
 
 ```python
 class DescribeClustersPaginator(Boto3Paginator):
@@ -45,13 +45,13 @@ Type annotations for `boto3.client("dax").get_paginator("describe_default_parame
 Can be used directly:
 
 ```python
-from mypy_boto3_dax.paginators import DescribeDefaultParametersPaginator
+from mypy_boto3_dax.paginator import DescribeDefaultParametersPaginator
 
 def get_describe_default_parameters_paginator() -> DescribeDefaultParametersPaginator:
     return boto3.client("dax").get_paginator("describe_default_parameters")
 ```
 
-[Paginator.DescribeDefaultParameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeDefaultParameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeDefaultParameters)
 
 ```python
 class DescribeDefaultParametersPaginator(Boto3Paginator):
@@ -68,13 +68,13 @@ Type annotations for `boto3.client("dax").get_paginator("describe_events")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_dax.paginators import DescribeEventsPaginator
+from mypy_boto3_dax.paginator import DescribeEventsPaginator
 
 def get_describe_events_paginator() -> DescribeEventsPaginator:
     return boto3.client("dax").get_paginator("describe_events")
 ```
 
-[Paginator.DescribeEvents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeEvents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeEvents)
 
 ```python
 class DescribeEventsPaginator(Boto3Paginator):
@@ -96,13 +96,13 @@ Type annotations for `boto3.client("dax").get_paginator("describe_parameter_grou
 Can be used directly:
 
 ```python
-from mypy_boto3_dax.paginators import DescribeParameterGroupsPaginator
+from mypy_boto3_dax.paginator import DescribeParameterGroupsPaginator
 
 def get_describe_parameter_groups_paginator() -> DescribeParameterGroupsPaginator:
     return boto3.client("dax").get_paginator("describe_parameter_groups")
 ```
 
-[Paginator.DescribeParameterGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeParameterGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeParameterGroups)
 
 ```python
 class DescribeParameterGroupsPaginator(Boto3Paginator):
@@ -120,13 +120,13 @@ Type annotations for `boto3.client("dax").get_paginator("describe_parameters")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_dax.paginators import DescribeParametersPaginator
+from mypy_boto3_dax.paginator import DescribeParametersPaginator
 
 def get_describe_parameters_paginator() -> DescribeParametersPaginator:
     return boto3.client("dax").get_paginator("describe_parameters")
 ```
 
-[Paginator.DescribeParameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeParameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeParameters)
 
 ```python
 class DescribeParametersPaginator(Boto3Paginator):
@@ -145,13 +145,13 @@ Type annotations for `boto3.client("dax").get_paginator("describe_subnet_groups"
 Can be used directly:
 
 ```python
-from mypy_boto3_dax.paginators import DescribeSubnetGroupsPaginator
+from mypy_boto3_dax.paginator import DescribeSubnetGroupsPaginator
 
 def get_describe_subnet_groups_paginator() -> DescribeSubnetGroupsPaginator:
     return boto3.client("dax").get_paginator("describe_subnet_groups")
 ```
 
-[Paginator.DescribeSubnetGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeSubnetGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeSubnetGroups)
 
 ```python
 class DescribeSubnetGroupsPaginator(Boto3Paginator):
@@ -169,13 +169,13 @@ Type annotations for `boto3.client("dax").get_paginator("list_tags")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_dax.paginators import ListTagsPaginator
+from mypy_boto3_dax.paginator import ListTagsPaginator
 
 def get_list_tags_paginator() -> ListTagsPaginator:
     return boto3.client("dax").get_paginator("list_tags")
 ```
 
-[Paginator.ListTags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.ListTags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.ListTags)
 
 ```python
 class ListTagsPaginator(Boto3Paginator):

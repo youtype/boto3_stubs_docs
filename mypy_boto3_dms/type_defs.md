@@ -1,11 +1,11 @@
-# Structures for boto3 DatabaseMigrationService module
+# Typed dictionaries for boto3 DatabaseMigrationService module
 
 > [Index](../README.md) > [DatabaseMigrationService](./README.md) > Structures
 
 Auto-generated documentation for [DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
 type annotations stubs module [mypy_boto3_dms](https://pypi.org/project/mypy-boto3-dms/).
 
-- [Structures for boto3 DatabaseMigrationService module](#structures-for-boto3-databasemigrationservice-module)
+- [Typed dictionaries for boto3 DatabaseMigrationService module](#typed-dictionaries-for-boto3-databasemigrationservice-module)
   - [AccountQuotaTypeDef](#accountquotatypedef)
   - [ApplyPendingMaintenanceActionResponseTypeDef](#applypendingmaintenanceactionresponsetypedef)
   - [AvailabilityZoneTypeDef](#availabilityzonetypedef)

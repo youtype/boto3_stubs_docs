@@ -96,7 +96,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_opsworks.client import OpsWorksClient
+
+def get_opsworks_client() -> OpsWorksClient:
+    return boto3.client("opsworks")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client)
 
 ## Exceptions
 
@@ -125,7 +130,7 @@ Exceptions:
 
 Type annotations for `boto3.client("opsworks").assign_instance` method.
 
-[Client.assign_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.assign_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.assign_instance]
 
 ```python
 def assign_instance(
@@ -140,7 +145,7 @@ def assign_instance(
 
 Type annotations for `boto3.client("opsworks").assign_volume` method.
 
-[Client.assign_volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.assign_volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.assign_volume]
 
 ```python
 def assign_volume(
@@ -155,7 +160,7 @@ def assign_volume(
 
 Type annotations for `boto3.client("opsworks").associate_elastic_ip` method.
 
-[Client.associate_elastic_ip documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.associate_elastic_ip)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.associate_elastic_ip]
 
 ```python
 def associate_elastic_ip(
@@ -170,7 +175,7 @@ def associate_elastic_ip(
 
 Type annotations for `boto3.client("opsworks").attach_elastic_load_balancer` method.
 
-[Client.attach_elastic_load_balancer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.attach_elastic_load_balancer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.attach_elastic_load_balancer]
 
 ```python
 def attach_elastic_load_balancer(
@@ -185,7 +190,7 @@ def attach_elastic_load_balancer(
 
 Type annotations for `boto3.client("opsworks").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -199,7 +204,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("opsworks").clone_stack` method.
 
-[Client.clone_stack documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.clone_stack)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.clone_stack]
 
 ```python
 def clone_stack(
@@ -234,7 +239,7 @@ def clone_stack(
 
 Type annotations for `boto3.client("opsworks").create_app` method.
 
-[Client.create_app documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_app)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_app]
 
 ```python
 def create_app(
@@ -259,7 +264,7 @@ def create_app(
 
 Type annotations for `boto3.client("opsworks").create_deployment` method.
 
-[Client.create_deployment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_deployment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_deployment]
 
 ```python
 def create_deployment(
@@ -279,7 +284,7 @@ def create_deployment(
 
 Type annotations for `boto3.client("opsworks").create_instance` method.
 
-[Client.create_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_instance]
 
 ```python
 def create_instance(
@@ -310,7 +315,7 @@ def create_instance(
 
 Type annotations for `boto3.client("opsworks").create_layer` method.
 
-[Client.create_layer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_layer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_layer]
 
 ```python
 def create_layer(
@@ -341,7 +346,7 @@ def create_layer(
 
 Type annotations for `boto3.client("opsworks").create_stack` method.
 
-[Client.create_stack documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_stack)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_stack]
 
 ```python
 def create_stack(
@@ -373,7 +378,7 @@ def create_stack(
 
 Type annotations for `boto3.client("opsworks").create_user_profile` method.
 
-[Client.create_user_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_user_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_user_profile]
 
 ```python
 def create_user_profile(
@@ -390,7 +395,7 @@ def create_user_profile(
 
 Type annotations for `boto3.client("opsworks").delete_app` method.
 
-[Client.delete_app documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_app)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_app]
 
 ```python
 def delete_app(
@@ -404,7 +409,7 @@ def delete_app(
 
 Type annotations for `boto3.client("opsworks").delete_instance` method.
 
-[Client.delete_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_instance]
 
 ```python
 def delete_instance(
@@ -420,7 +425,7 @@ def delete_instance(
 
 Type annotations for `boto3.client("opsworks").delete_layer` method.
 
-[Client.delete_layer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_layer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_layer]
 
 ```python
 def delete_layer(
@@ -434,7 +439,7 @@ def delete_layer(
 
 Type annotations for `boto3.client("opsworks").delete_stack` method.
 
-[Client.delete_stack documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_stack)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_stack]
 
 ```python
 def delete_stack(
@@ -448,7 +453,7 @@ def delete_stack(
 
 Type annotations for `boto3.client("opsworks").delete_user_profile` method.
 
-[Client.delete_user_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_user_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_user_profile]
 
 ```python
 def delete_user_profile(
@@ -462,7 +467,7 @@ def delete_user_profile(
 
 Type annotations for `boto3.client("opsworks").deregister_ecs_cluster` method.
 
-[Client.deregister_ecs_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_ecs_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_ecs_cluster]
 
 ```python
 def deregister_ecs_cluster(
@@ -476,7 +481,7 @@ def deregister_ecs_cluster(
 
 Type annotations for `boto3.client("opsworks").deregister_elastic_ip` method.
 
-[Client.deregister_elastic_ip documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_elastic_ip)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_elastic_ip]
 
 ```python
 def deregister_elastic_ip(
@@ -490,7 +495,7 @@ def deregister_elastic_ip(
 
 Type annotations for `boto3.client("opsworks").deregister_instance` method.
 
-[Client.deregister_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_instance]
 
 ```python
 def deregister_instance(
@@ -504,7 +509,7 @@ def deregister_instance(
 
 Type annotations for `boto3.client("opsworks").deregister_rds_db_instance` method.
 
-[Client.deregister_rds_db_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_rds_db_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_rds_db_instance]
 
 ```python
 def deregister_rds_db_instance(
@@ -518,7 +523,7 @@ def deregister_rds_db_instance(
 
 Type annotations for `boto3.client("opsworks").deregister_volume` method.
 
-[Client.deregister_volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_volume]
 
 ```python
 def deregister_volume(
@@ -532,7 +537,7 @@ def deregister_volume(
 
 Type annotations for `boto3.client("opsworks").describe_agent_versions` method.
 
-[Client.describe_agent_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_agent_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_agent_versions]
 
 ```python
 def describe_agent_versions(
@@ -547,7 +552,7 @@ def describe_agent_versions(
 
 Type annotations for `boto3.client("opsworks").describe_apps` method.
 
-[Client.describe_apps documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_apps)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_apps]
 
 ```python
 def describe_apps(
@@ -562,7 +567,7 @@ def describe_apps(
 
 Type annotations for `boto3.client("opsworks").describe_commands` method.
 
-[Client.describe_commands documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_commands)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_commands]
 
 ```python
 def describe_commands(
@@ -578,7 +583,7 @@ def describe_commands(
 
 Type annotations for `boto3.client("opsworks").describe_deployments` method.
 
-[Client.describe_deployments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_deployments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_deployments]
 
 ```python
 def describe_deployments(
@@ -594,7 +599,7 @@ def describe_deployments(
 
 Type annotations for `boto3.client("opsworks").describe_ecs_clusters` method.
 
-[Client.describe_ecs_clusters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_ecs_clusters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_ecs_clusters]
 
 ```python
 def describe_ecs_clusters(
@@ -611,7 +616,7 @@ def describe_ecs_clusters(
 
 Type annotations for `boto3.client("opsworks").describe_elastic_ips` method.
 
-[Client.describe_elastic_ips documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_elastic_ips)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_elastic_ips]
 
 ```python
 def describe_elastic_ips(
@@ -627,7 +632,7 @@ def describe_elastic_ips(
 
 Type annotations for `boto3.client("opsworks").describe_elastic_load_balancers` method.
 
-[Client.describe_elastic_load_balancers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_elastic_load_balancers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_elastic_load_balancers]
 
 ```python
 def describe_elastic_load_balancers(
@@ -642,7 +647,7 @@ def describe_elastic_load_balancers(
 
 Type annotations for `boto3.client("opsworks").describe_instances` method.
 
-[Client.describe_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_instances]
 
 ```python
 def describe_instances(
@@ -658,7 +663,7 @@ def describe_instances(
 
 Type annotations for `boto3.client("opsworks").describe_layers` method.
 
-[Client.describe_layers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_layers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_layers]
 
 ```python
 def describe_layers(
@@ -673,7 +678,7 @@ def describe_layers(
 
 Type annotations for `boto3.client("opsworks").describe_load_based_auto_scaling` method.
 
-[Client.describe_load_based_auto_scaling documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_load_based_auto_scaling)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_load_based_auto_scaling]
 
 ```python
 def describe_load_based_auto_scaling(
@@ -687,7 +692,7 @@ def describe_load_based_auto_scaling(
 
 Type annotations for `boto3.client("opsworks").describe_my_user_profile` method.
 
-[Client.describe_my_user_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_my_user_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_my_user_profile]
 
 ```python
 def describe_my_user_profile(
@@ -700,7 +705,7 @@ def describe_my_user_profile(
 
 Type annotations for `boto3.client("opsworks").describe_operating_systems` method.
 
-[Client.describe_operating_systems documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_operating_systems)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_operating_systems]
 
 ```python
 def describe_operating_systems(
@@ -713,7 +718,7 @@ def describe_operating_systems(
 
 Type annotations for `boto3.client("opsworks").describe_permissions` method.
 
-[Client.describe_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_permissions]
 
 ```python
 def describe_permissions(
@@ -728,7 +733,7 @@ def describe_permissions(
 
 Type annotations for `boto3.client("opsworks").describe_raid_arrays` method.
 
-[Client.describe_raid_arrays documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_raid_arrays)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_raid_arrays]
 
 ```python
 def describe_raid_arrays(
@@ -744,7 +749,7 @@ def describe_raid_arrays(
 
 Type annotations for `boto3.client("opsworks").describe_rds_db_instances` method.
 
-[Client.describe_rds_db_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_rds_db_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_rds_db_instances]
 
 ```python
 def describe_rds_db_instances(
@@ -759,7 +764,7 @@ def describe_rds_db_instances(
 
 Type annotations for `boto3.client("opsworks").describe_service_errors` method.
 
-[Client.describe_service_errors documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_service_errors)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_service_errors]
 
 ```python
 def describe_service_errors(
@@ -775,7 +780,7 @@ def describe_service_errors(
 
 Type annotations for `boto3.client("opsworks").describe_stack_provisioning_parameters` method.
 
-[Client.describe_stack_provisioning_parameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_stack_provisioning_parameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_stack_provisioning_parameters]
 
 ```python
 def describe_stack_provisioning_parameters(
@@ -789,7 +794,7 @@ def describe_stack_provisioning_parameters(
 
 Type annotations for `boto3.client("opsworks").describe_stack_summary` method.
 
-[Client.describe_stack_summary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_stack_summary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_stack_summary]
 
 ```python
 def describe_stack_summary(
@@ -803,7 +808,7 @@ def describe_stack_summary(
 
 Type annotations for `boto3.client("opsworks").describe_stacks` method.
 
-[Client.describe_stacks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_stacks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_stacks]
 
 ```python
 def describe_stacks(
@@ -817,7 +822,7 @@ def describe_stacks(
 
 Type annotations for `boto3.client("opsworks").describe_time_based_auto_scaling` method.
 
-[Client.describe_time_based_auto_scaling documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_time_based_auto_scaling)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_time_based_auto_scaling]
 
 ```python
 def describe_time_based_auto_scaling(
@@ -831,7 +836,7 @@ def describe_time_based_auto_scaling(
 
 Type annotations for `boto3.client("opsworks").describe_user_profiles` method.
 
-[Client.describe_user_profiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_user_profiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_user_profiles]
 
 ```python
 def describe_user_profiles(
@@ -845,7 +850,7 @@ def describe_user_profiles(
 
 Type annotations for `boto3.client("opsworks").describe_volumes` method.
 
-[Client.describe_volumes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_volumes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_volumes]
 
 ```python
 def describe_volumes(
@@ -862,7 +867,7 @@ def describe_volumes(
 
 Type annotations for `boto3.client("opsworks").detach_elastic_load_balancer` method.
 
-[Client.detach_elastic_load_balancer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.detach_elastic_load_balancer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.detach_elastic_load_balancer]
 
 ```python
 def detach_elastic_load_balancer(
@@ -877,7 +882,7 @@ def detach_elastic_load_balancer(
 
 Type annotations for `boto3.client("opsworks").disassociate_elastic_ip` method.
 
-[Client.disassociate_elastic_ip documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.disassociate_elastic_ip)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.disassociate_elastic_ip]
 
 ```python
 def disassociate_elastic_ip(
@@ -891,7 +896,7 @@ def disassociate_elastic_ip(
 
 Type annotations for `boto3.client("opsworks").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -908,7 +913,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("opsworks").get_hostname_suggestion` method.
 
-[Client.get_hostname_suggestion documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.get_hostname_suggestion)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.get_hostname_suggestion]
 
 ```python
 def get_hostname_suggestion(
@@ -922,7 +927,7 @@ def get_hostname_suggestion(
 
 Type annotations for `boto3.client("opsworks").grant_access` method.
 
-[Client.grant_access documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.grant_access)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.grant_access]
 
 ```python
 def grant_access(
@@ -937,7 +942,7 @@ def grant_access(
 
 Type annotations for `boto3.client("opsworks").list_tags` method.
 
-[Client.list_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.list_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.list_tags]
 
 ```python
 def list_tags(
@@ -953,7 +958,7 @@ def list_tags(
 
 Type annotations for `boto3.client("opsworks").reboot_instance` method.
 
-[Client.reboot_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.reboot_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.reboot_instance]
 
 ```python
 def reboot_instance(
@@ -967,7 +972,7 @@ def reboot_instance(
 
 Type annotations for `boto3.client("opsworks").register_ecs_cluster` method.
 
-[Client.register_ecs_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_ecs_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_ecs_cluster]
 
 ```python
 def register_ecs_cluster(
@@ -982,7 +987,7 @@ def register_ecs_cluster(
 
 Type annotations for `boto3.client("opsworks").register_elastic_ip` method.
 
-[Client.register_elastic_ip documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_elastic_ip)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_elastic_ip]
 
 ```python
 def register_elastic_ip(
@@ -997,7 +1002,7 @@ def register_elastic_ip(
 
 Type annotations for `boto3.client("opsworks").register_instance` method.
 
-[Client.register_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_instance]
 
 ```python
 def register_instance(
@@ -1017,7 +1022,7 @@ def register_instance(
 
 Type annotations for `boto3.client("opsworks").register_rds_db_instance` method.
 
-[Client.register_rds_db_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_rds_db_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_rds_db_instance]
 
 ```python
 def register_rds_db_instance(
@@ -1034,7 +1039,7 @@ def register_rds_db_instance(
 
 Type annotations for `boto3.client("opsworks").register_volume` method.
 
-[Client.register_volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_volume]
 
 ```python
 def register_volume(
@@ -1049,7 +1054,7 @@ def register_volume(
 
 Type annotations for `boto3.client("opsworks").set_load_based_auto_scaling` method.
 
-[Client.set_load_based_auto_scaling documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.set_load_based_auto_scaling)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.set_load_based_auto_scaling]
 
 ```python
 def set_load_based_auto_scaling(
@@ -1066,7 +1071,7 @@ def set_load_based_auto_scaling(
 
 Type annotations for `boto3.client("opsworks").set_permission` method.
 
-[Client.set_permission documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.set_permission)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.set_permission]
 
 ```python
 def set_permission(
@@ -1084,7 +1089,7 @@ def set_permission(
 
 Type annotations for `boto3.client("opsworks").set_time_based_auto_scaling` method.
 
-[Client.set_time_based_auto_scaling documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.set_time_based_auto_scaling)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.set_time_based_auto_scaling]
 
 ```python
 def set_time_based_auto_scaling(
@@ -1099,7 +1104,7 @@ def set_time_based_auto_scaling(
 
 Type annotations for `boto3.client("opsworks").start_instance` method.
 
-[Client.start_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.start_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.start_instance]
 
 ```python
 def start_instance(
@@ -1113,7 +1118,7 @@ def start_instance(
 
 Type annotations for `boto3.client("opsworks").start_stack` method.
 
-[Client.start_stack documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.start_stack)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.start_stack]
 
 ```python
 def start_stack(
@@ -1127,7 +1132,7 @@ def start_stack(
 
 Type annotations for `boto3.client("opsworks").stop_instance` method.
 
-[Client.stop_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.stop_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.stop_instance]
 
 ```python
 def stop_instance(
@@ -1142,7 +1147,7 @@ def stop_instance(
 
 Type annotations for `boto3.client("opsworks").stop_stack` method.
 
-[Client.stop_stack documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.stop_stack)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.stop_stack]
 
 ```python
 def stop_stack(
@@ -1156,7 +1161,7 @@ def stop_stack(
 
 Type annotations for `boto3.client("opsworks").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -1171,7 +1176,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("opsworks").unassign_instance` method.
 
-[Client.unassign_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.unassign_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.unassign_instance]
 
 ```python
 def unassign_instance(
@@ -1185,7 +1190,7 @@ def unassign_instance(
 
 Type annotations for `boto3.client("opsworks").unassign_volume` method.
 
-[Client.unassign_volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.unassign_volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.unassign_volume]
 
 ```python
 def unassign_volume(
@@ -1199,7 +1204,7 @@ def unassign_volume(
 
 Type annotations for `boto3.client("opsworks").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -1214,7 +1219,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("opsworks").update_app` method.
 
-[Client.update_app documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_app)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_app]
 
 ```python
 def update_app(
@@ -1238,7 +1243,7 @@ def update_app(
 
 Type annotations for `boto3.client("opsworks").update_elastic_ip` method.
 
-[Client.update_elastic_ip documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_elastic_ip)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_elastic_ip]
 
 ```python
 def update_elastic_ip(
@@ -1253,7 +1258,7 @@ def update_elastic_ip(
 
 Type annotations for `boto3.client("opsworks").update_instance` method.
 
-[Client.update_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_instance]
 
 ```python
 def update_instance(
@@ -1278,7 +1283,7 @@ def update_instance(
 
 Type annotations for `boto3.client("opsworks").update_layer` method.
 
-[Client.update_layer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_layer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_layer]
 
 ```python
 def update_layer(
@@ -1308,7 +1313,7 @@ def update_layer(
 
 Type annotations for `boto3.client("opsworks").update_my_user_profile` method.
 
-[Client.update_my_user_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_my_user_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_my_user_profile]
 
 ```python
 def update_my_user_profile(
@@ -1322,7 +1327,7 @@ def update_my_user_profile(
 
 Type annotations for `boto3.client("opsworks").update_rds_db_instance` method.
 
-[Client.update_rds_db_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_rds_db_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_rds_db_instance]
 
 ```python
 def update_rds_db_instance(
@@ -1338,7 +1343,7 @@ def update_rds_db_instance(
 
 Type annotations for `boto3.client("opsworks").update_stack` method.
 
-[Client.update_stack documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_stack)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_stack]
 
 ```python
 def update_stack(
@@ -1369,7 +1374,7 @@ def update_stack(
 
 Type annotations for `boto3.client("opsworks").update_user_profile` method.
 
-[Client.update_user_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_user_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_user_profile]
 
 ```python
 def update_user_profile(
@@ -1386,7 +1391,7 @@ def update_user_profile(
 
 Type annotations for `boto3.client("opsworks").update_volume` method.
 
-[Client.update_volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_volume]
 
 ```python
 def update_volume(

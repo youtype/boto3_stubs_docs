@@ -16,7 +16,7 @@ pip install mypy-boto3-docdb
   - [Paginators](#paginators)
   - [Waiters](#waiters)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## DocDBClient
 
@@ -223,7 +223,7 @@ from mypy_boto3_docdb.literals import ApplyMethod, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

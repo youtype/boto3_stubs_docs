@@ -18,13 +18,13 @@ Type annotations for `boto3.client("elastictranscoder").get_paginator("list_jobs
 Can be used directly:
 
 ```python
-from mypy_boto3_elastictranscoder.paginators import ListJobsByPipelinePaginator
+from mypy_boto3_elastictranscoder.paginator import ListJobsByPipelinePaginator
 
 def get_list_jobs_by_pipeline_paginator() -> ListJobsByPipelinePaginator:
     return boto3.client("elastictranscoder").get_paginator("list_jobs_by_pipeline")
 ```
 
-[Paginator.ListJobsByPipeline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListJobsByPipeline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListJobsByPipeline)
 
 ```python
 class ListJobsByPipelinePaginator(Boto3Paginator):
@@ -43,13 +43,13 @@ Type annotations for `boto3.client("elastictranscoder").get_paginator("list_jobs
 Can be used directly:
 
 ```python
-from mypy_boto3_elastictranscoder.paginators import ListJobsByStatusPaginator
+from mypy_boto3_elastictranscoder.paginator import ListJobsByStatusPaginator
 
 def get_list_jobs_by_status_paginator() -> ListJobsByStatusPaginator:
     return boto3.client("elastictranscoder").get_paginator("list_jobs_by_status")
 ```
 
-[Paginator.ListJobsByStatus documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListJobsByStatus)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListJobsByStatus)
 
 ```python
 class ListJobsByStatusPaginator(Boto3Paginator):
@@ -68,13 +68,13 @@ Type annotations for `boto3.client("elastictranscoder").get_paginator("list_pipe
 Can be used directly:
 
 ```python
-from mypy_boto3_elastictranscoder.paginators import ListPipelinesPaginator
+from mypy_boto3_elastictranscoder.paginator import ListPipelinesPaginator
 
 def get_list_pipelines_paginator() -> ListPipelinesPaginator:
     return boto3.client("elastictranscoder").get_paginator("list_pipelines")
 ```
 
-[Paginator.ListPipelines documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListPipelines)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListPipelines)
 
 ```python
 class ListPipelinesPaginator(Boto3Paginator):
@@ -92,13 +92,13 @@ Type annotations for `boto3.client("elastictranscoder").get_paginator("list_pres
 Can be used directly:
 
 ```python
-from mypy_boto3_elastictranscoder.paginators import ListPresetsPaginator
+from mypy_boto3_elastictranscoder.paginator import ListPresetsPaginator
 
 def get_list_presets_paginator() -> ListPresetsPaginator:
     return boto3.client("elastictranscoder").get_paginator("list_presets")
 ```
 
-[Paginator.ListPresets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListPresets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListPresets)
 
 ```python
 class ListPresetsPaginator(Boto3Paginator):

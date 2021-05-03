@@ -15,7 +15,7 @@ pip install mypy-boto3-serverlessrepo
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ServerlessApplicationRepositoryClient
 
@@ -106,7 +106,7 @@ from mypy_boto3_serverlessrepo.literals import Capability, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

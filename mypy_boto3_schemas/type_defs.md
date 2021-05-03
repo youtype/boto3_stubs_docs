@@ -1,11 +1,11 @@
-# Structures for boto3 Schemas module
+# Typed dictionaries for boto3 Schemas module
 
 > [Index](../README.md) > [Schemas](./README.md) > Structures
 
 Auto-generated documentation for [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
 type annotations stubs module [mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
-- [Structures for boto3 Schemas module](#structures-for-boto3-schemas-module)
+- [Typed dictionaries for boto3 Schemas module](#typed-dictionaries-for-boto3-schemas-module)
   - [CreateDiscovererResponseTypeDef](#creatediscovererresponsetypedef)
   - [CreateRegistryResponseTypeDef](#createregistryresponsetypedef)
   - [CreateSchemaResponseTypeDef](#createschemaresponsetypedef)

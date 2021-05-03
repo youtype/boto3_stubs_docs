@@ -180,7 +180,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_iam.client import IAMClient
+
+def get_iam_client() -> IAMClient:
+    return boto3.client("iam")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client)
 
 ## Exceptions
 
@@ -234,7 +239,7 @@ Exceptions:
 
 Type annotations for `boto3.client("iam").add_client_id_to_open_id_connect_provider` method.
 
-[Client.add_client_id_to_open_id_connect_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_client_id_to_open_id_connect_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_client_id_to_open_id_connect_provider]
 
 ```python
 def add_client_id_to_open_id_connect_provider(
@@ -249,7 +254,7 @@ def add_client_id_to_open_id_connect_provider(
 
 Type annotations for `boto3.client("iam").add_role_to_instance_profile` method.
 
-[Client.add_role_to_instance_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_role_to_instance_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_role_to_instance_profile]
 
 ```python
 def add_role_to_instance_profile(
@@ -264,7 +269,7 @@ def add_role_to_instance_profile(
 
 Type annotations for `boto3.client("iam").add_user_to_group` method.
 
-[Client.add_user_to_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_user_to_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_user_to_group]
 
 ```python
 def add_user_to_group(
@@ -279,7 +284,7 @@ def add_user_to_group(
 
 Type annotations for `boto3.client("iam").attach_group_policy` method.
 
-[Client.attach_group_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_group_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_group_policy]
 
 ```python
 def attach_group_policy(
@@ -294,7 +299,7 @@ def attach_group_policy(
 
 Type annotations for `boto3.client("iam").attach_role_policy` method.
 
-[Client.attach_role_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_role_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_role_policy]
 
 ```python
 def attach_role_policy(
@@ -309,7 +314,7 @@ def attach_role_policy(
 
 Type annotations for `boto3.client("iam").attach_user_policy` method.
 
-[Client.attach_user_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_user_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_user_policy]
 
 ```python
 def attach_user_policy(
@@ -324,7 +329,7 @@ def attach_user_policy(
 
 Type annotations for `boto3.client("iam").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -338,7 +343,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("iam").change_password` method.
 
-[Client.change_password documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.change_password)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.change_password]
 
 ```python
 def change_password(
@@ -353,7 +358,7 @@ def change_password(
 
 Type annotations for `boto3.client("iam").create_access_key` method.
 
-[Client.create_access_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_access_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_access_key]
 
 ```python
 def create_access_key(
@@ -367,7 +372,7 @@ def create_access_key(
 
 Type annotations for `boto3.client("iam").create_account_alias` method.
 
-[Client.create_account_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_account_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_account_alias]
 
 ```python
 def create_account_alias(
@@ -381,7 +386,7 @@ def create_account_alias(
 
 Type annotations for `boto3.client("iam").create_group` method.
 
-[Client.create_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_group]
 
 ```python
 def create_group(
@@ -396,7 +401,7 @@ def create_group(
 
 Type annotations for `boto3.client("iam").create_instance_profile` method.
 
-[Client.create_instance_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_instance_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_instance_profile]
 
 ```python
 def create_instance_profile(
@@ -412,7 +417,7 @@ def create_instance_profile(
 
 Type annotations for `boto3.client("iam").create_login_profile` method.
 
-[Client.create_login_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_login_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_login_profile]
 
 ```python
 def create_login_profile(
@@ -428,7 +433,7 @@ def create_login_profile(
 
 Type annotations for `boto3.client("iam").create_open_id_connect_provider` method.
 
-[Client.create_open_id_connect_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_open_id_connect_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_open_id_connect_provider]
 
 ```python
 def create_open_id_connect_provider(
@@ -445,7 +450,7 @@ def create_open_id_connect_provider(
 
 Type annotations for `boto3.client("iam").create_policy` method.
 
-[Client.create_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_policy]
 
 ```python
 def create_policy(
@@ -463,7 +468,7 @@ def create_policy(
 
 Type annotations for `boto3.client("iam").create_policy_version` method.
 
-[Client.create_policy_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_policy_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_policy_version]
 
 ```python
 def create_policy_version(
@@ -479,7 +484,7 @@ def create_policy_version(
 
 Type annotations for `boto3.client("iam").create_role` method.
 
-[Client.create_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_role]
 
 ```python
 def create_role(
@@ -499,7 +504,7 @@ def create_role(
 
 Type annotations for `boto3.client("iam").create_saml_provider` method.
 
-[Client.create_saml_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_saml_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_saml_provider]
 
 ```python
 def create_saml_provider(
@@ -515,7 +520,7 @@ def create_saml_provider(
 
 Type annotations for `boto3.client("iam").create_service_linked_role` method.
 
-[Client.create_service_linked_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_service_linked_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_service_linked_role]
 
 ```python
 def create_service_linked_role(
@@ -531,7 +536,7 @@ def create_service_linked_role(
 
 Type annotations for `boto3.client("iam").create_service_specific_credential` method.
 
-[Client.create_service_specific_credential documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_service_specific_credential)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_service_specific_credential]
 
 ```python
 def create_service_specific_credential(
@@ -546,7 +551,7 @@ def create_service_specific_credential(
 
 Type annotations for `boto3.client("iam").create_user` method.
 
-[Client.create_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_user]
 
 ```python
 def create_user(
@@ -563,7 +568,7 @@ def create_user(
 
 Type annotations for `boto3.client("iam").create_virtual_mfa_device` method.
 
-[Client.create_virtual_mfa_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_virtual_mfa_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_virtual_mfa_device]
 
 ```python
 def create_virtual_mfa_device(
@@ -579,7 +584,7 @@ def create_virtual_mfa_device(
 
 Type annotations for `boto3.client("iam").deactivate_mfa_device` method.
 
-[Client.deactivate_mfa_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.deactivate_mfa_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.deactivate_mfa_device]
 
 ```python
 def deactivate_mfa_device(
@@ -594,7 +599,7 @@ def deactivate_mfa_device(
 
 Type annotations for `boto3.client("iam").delete_access_key` method.
 
-[Client.delete_access_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_access_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_access_key]
 
 ```python
 def delete_access_key(
@@ -609,7 +614,7 @@ def delete_access_key(
 
 Type annotations for `boto3.client("iam").delete_account_alias` method.
 
-[Client.delete_account_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_account_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_account_alias]
 
 ```python
 def delete_account_alias(
@@ -623,7 +628,7 @@ def delete_account_alias(
 
 Type annotations for `boto3.client("iam").delete_account_password_policy` method.
 
-[Client.delete_account_password_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_account_password_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_account_password_policy]
 
 ```python
 def delete_account_password_policy(
@@ -636,7 +641,7 @@ def delete_account_password_policy(
 
 Type annotations for `boto3.client("iam").delete_group` method.
 
-[Client.delete_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_group]
 
 ```python
 def delete_group(
@@ -650,7 +655,7 @@ def delete_group(
 
 Type annotations for `boto3.client("iam").delete_group_policy` method.
 
-[Client.delete_group_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_group_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_group_policy]
 
 ```python
 def delete_group_policy(
@@ -665,7 +670,7 @@ def delete_group_policy(
 
 Type annotations for `boto3.client("iam").delete_instance_profile` method.
 
-[Client.delete_instance_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_instance_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_instance_profile]
 
 ```python
 def delete_instance_profile(
@@ -679,7 +684,7 @@ def delete_instance_profile(
 
 Type annotations for `boto3.client("iam").delete_login_profile` method.
 
-[Client.delete_login_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_login_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_login_profile]
 
 ```python
 def delete_login_profile(
@@ -693,7 +698,7 @@ def delete_login_profile(
 
 Type annotations for `boto3.client("iam").delete_open_id_connect_provider` method.
 
-[Client.delete_open_id_connect_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_open_id_connect_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_open_id_connect_provider]
 
 ```python
 def delete_open_id_connect_provider(
@@ -707,7 +712,7 @@ def delete_open_id_connect_provider(
 
 Type annotations for `boto3.client("iam").delete_policy` method.
 
-[Client.delete_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_policy]
 
 ```python
 def delete_policy(
@@ -721,7 +726,7 @@ def delete_policy(
 
 Type annotations for `boto3.client("iam").delete_policy_version` method.
 
-[Client.delete_policy_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_policy_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_policy_version]
 
 ```python
 def delete_policy_version(
@@ -736,7 +741,7 @@ def delete_policy_version(
 
 Type annotations for `boto3.client("iam").delete_role` method.
 
-[Client.delete_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role]
 
 ```python
 def delete_role(
@@ -750,7 +755,7 @@ def delete_role(
 
 Type annotations for `boto3.client("iam").delete_role_permissions_boundary` method.
 
-[Client.delete_role_permissions_boundary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role_permissions_boundary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role_permissions_boundary]
 
 ```python
 def delete_role_permissions_boundary(
@@ -764,7 +769,7 @@ def delete_role_permissions_boundary(
 
 Type annotations for `boto3.client("iam").delete_role_policy` method.
 
-[Client.delete_role_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role_policy]
 
 ```python
 def delete_role_policy(
@@ -779,7 +784,7 @@ def delete_role_policy(
 
 Type annotations for `boto3.client("iam").delete_saml_provider` method.
 
-[Client.delete_saml_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_saml_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_saml_provider]
 
 ```python
 def delete_saml_provider(
@@ -793,7 +798,7 @@ def delete_saml_provider(
 
 Type annotations for `boto3.client("iam").delete_server_certificate` method.
 
-[Client.delete_server_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_server_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_server_certificate]
 
 ```python
 def delete_server_certificate(
@@ -807,7 +812,7 @@ def delete_server_certificate(
 
 Type annotations for `boto3.client("iam").delete_service_linked_role` method.
 
-[Client.delete_service_linked_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_service_linked_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_service_linked_role]
 
 ```python
 def delete_service_linked_role(
@@ -821,7 +826,7 @@ def delete_service_linked_role(
 
 Type annotations for `boto3.client("iam").delete_service_specific_credential` method.
 
-[Client.delete_service_specific_credential documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_service_specific_credential)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_service_specific_credential]
 
 ```python
 def delete_service_specific_credential(
@@ -836,7 +841,7 @@ def delete_service_specific_credential(
 
 Type annotations for `boto3.client("iam").delete_signing_certificate` method.
 
-[Client.delete_signing_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_signing_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_signing_certificate]
 
 ```python
 def delete_signing_certificate(
@@ -851,7 +856,7 @@ def delete_signing_certificate(
 
 Type annotations for `boto3.client("iam").delete_ssh_public_key` method.
 
-[Client.delete_ssh_public_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_ssh_public_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_ssh_public_key]
 
 ```python
 def delete_ssh_public_key(
@@ -866,7 +871,7 @@ def delete_ssh_public_key(
 
 Type annotations for `boto3.client("iam").delete_user` method.
 
-[Client.delete_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user]
 
 ```python
 def delete_user(
@@ -880,7 +885,7 @@ def delete_user(
 
 Type annotations for `boto3.client("iam").delete_user_permissions_boundary` method.
 
-[Client.delete_user_permissions_boundary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user_permissions_boundary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user_permissions_boundary]
 
 ```python
 def delete_user_permissions_boundary(
@@ -894,7 +899,7 @@ def delete_user_permissions_boundary(
 
 Type annotations for `boto3.client("iam").delete_user_policy` method.
 
-[Client.delete_user_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user_policy]
 
 ```python
 def delete_user_policy(
@@ -909,7 +914,7 @@ def delete_user_policy(
 
 Type annotations for `boto3.client("iam").delete_virtual_mfa_device` method.
 
-[Client.delete_virtual_mfa_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_virtual_mfa_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_virtual_mfa_device]
 
 ```python
 def delete_virtual_mfa_device(
@@ -923,7 +928,7 @@ def delete_virtual_mfa_device(
 
 Type annotations for `boto3.client("iam").detach_group_policy` method.
 
-[Client.detach_group_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_group_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_group_policy]
 
 ```python
 def detach_group_policy(
@@ -938,7 +943,7 @@ def detach_group_policy(
 
 Type annotations for `boto3.client("iam").detach_role_policy` method.
 
-[Client.detach_role_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_role_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_role_policy]
 
 ```python
 def detach_role_policy(
@@ -953,7 +958,7 @@ def detach_role_policy(
 
 Type annotations for `boto3.client("iam").detach_user_policy` method.
 
-[Client.detach_user_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_user_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_user_policy]
 
 ```python
 def detach_user_policy(
@@ -968,7 +973,7 @@ def detach_user_policy(
 
 Type annotations for `boto3.client("iam").enable_mfa_device` method.
 
-[Client.enable_mfa_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.enable_mfa_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.enable_mfa_device]
 
 ```python
 def enable_mfa_device(
@@ -985,7 +990,7 @@ def enable_mfa_device(
 
 Type annotations for `boto3.client("iam").generate_credential_report` method.
 
-[Client.generate_credential_report documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_credential_report)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_credential_report]
 
 ```python
 def generate_credential_report(
@@ -998,7 +1003,7 @@ def generate_credential_report(
 
 Type annotations for `boto3.client("iam").generate_organizations_access_report` method.
 
-[Client.generate_organizations_access_report documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_organizations_access_report)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_organizations_access_report]
 
 ```python
 def generate_organizations_access_report(
@@ -1013,7 +1018,7 @@ def generate_organizations_access_report(
 
 Type annotations for `boto3.client("iam").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -1030,7 +1035,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("iam").generate_service_last_accessed_details` method.
 
-[Client.generate_service_last_accessed_details documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_service_last_accessed_details)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_service_last_accessed_details]
 
 ```python
 def generate_service_last_accessed_details(
@@ -1045,7 +1050,7 @@ def generate_service_last_accessed_details(
 
 Type annotations for `boto3.client("iam").get_access_key_last_used` method.
 
-[Client.get_access_key_last_used documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_access_key_last_used)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_access_key_last_used]
 
 ```python
 def get_access_key_last_used(
@@ -1059,7 +1064,7 @@ def get_access_key_last_used(
 
 Type annotations for `boto3.client("iam").get_account_authorization_details` method.
 
-[Client.get_account_authorization_details documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_authorization_details)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_authorization_details]
 
 ```python
 def get_account_authorization_details(
@@ -1075,7 +1080,7 @@ def get_account_authorization_details(
 
 Type annotations for `boto3.client("iam").get_account_password_policy` method.
 
-[Client.get_account_password_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_password_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_password_policy]
 
 ```python
 def get_account_password_policy(
@@ -1088,7 +1093,7 @@ def get_account_password_policy(
 
 Type annotations for `boto3.client("iam").get_account_summary` method.
 
-[Client.get_account_summary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_summary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_summary]
 
 ```python
 def get_account_summary(
@@ -1101,7 +1106,7 @@ def get_account_summary(
 
 Type annotations for `boto3.client("iam").get_context_keys_for_custom_policy` method.
 
-[Client.get_context_keys_for_custom_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_context_keys_for_custom_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_context_keys_for_custom_policy]
 
 ```python
 def get_context_keys_for_custom_policy(
@@ -1115,7 +1120,7 @@ def get_context_keys_for_custom_policy(
 
 Type annotations for `boto3.client("iam").get_context_keys_for_principal_policy` method.
 
-[Client.get_context_keys_for_principal_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_context_keys_for_principal_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_context_keys_for_principal_policy]
 
 ```python
 def get_context_keys_for_principal_policy(
@@ -1130,7 +1135,7 @@ def get_context_keys_for_principal_policy(
 
 Type annotations for `boto3.client("iam").get_credential_report` method.
 
-[Client.get_credential_report documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_credential_report)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_credential_report]
 
 ```python
 def get_credential_report(
@@ -1143,7 +1148,7 @@ def get_credential_report(
 
 Type annotations for `boto3.client("iam").get_group` method.
 
-[Client.get_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_group]
 
 ```python
 def get_group(
@@ -1159,7 +1164,7 @@ def get_group(
 
 Type annotations for `boto3.client("iam").get_group_policy` method.
 
-[Client.get_group_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_group_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_group_policy]
 
 ```python
 def get_group_policy(
@@ -1174,7 +1179,7 @@ def get_group_policy(
 
 Type annotations for `boto3.client("iam").get_instance_profile` method.
 
-[Client.get_instance_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_instance_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_instance_profile]
 
 ```python
 def get_instance_profile(
@@ -1188,7 +1193,7 @@ def get_instance_profile(
 
 Type annotations for `boto3.client("iam").get_login_profile` method.
 
-[Client.get_login_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_login_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_login_profile]
 
 ```python
 def get_login_profile(
@@ -1202,7 +1207,7 @@ def get_login_profile(
 
 Type annotations for `boto3.client("iam").get_open_id_connect_provider` method.
 
-[Client.get_open_id_connect_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_open_id_connect_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_open_id_connect_provider]
 
 ```python
 def get_open_id_connect_provider(
@@ -1216,7 +1221,7 @@ def get_open_id_connect_provider(
 
 Type annotations for `boto3.client("iam").get_organizations_access_report` method.
 
-[Client.get_organizations_access_report documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_organizations_access_report)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_organizations_access_report]
 
 ```python
 def get_organizations_access_report(
@@ -1233,7 +1238,7 @@ def get_organizations_access_report(
 
 Type annotations for `boto3.client("iam").get_policy` method.
 
-[Client.get_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_policy]
 
 ```python
 def get_policy(
@@ -1247,7 +1252,7 @@ def get_policy(
 
 Type annotations for `boto3.client("iam").get_policy_version` method.
 
-[Client.get_policy_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_policy_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_policy_version]
 
 ```python
 def get_policy_version(
@@ -1262,7 +1267,7 @@ def get_policy_version(
 
 Type annotations for `boto3.client("iam").get_role` method.
 
-[Client.get_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_role]
 
 ```python
 def get_role(
@@ -1276,7 +1281,7 @@ def get_role(
 
 Type annotations for `boto3.client("iam").get_role_policy` method.
 
-[Client.get_role_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_role_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_role_policy]
 
 ```python
 def get_role_policy(
@@ -1291,7 +1296,7 @@ def get_role_policy(
 
 Type annotations for `boto3.client("iam").get_saml_provider` method.
 
-[Client.get_saml_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_saml_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_saml_provider]
 
 ```python
 def get_saml_provider(
@@ -1305,7 +1310,7 @@ def get_saml_provider(
 
 Type annotations for `boto3.client("iam").get_server_certificate` method.
 
-[Client.get_server_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_server_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_server_certificate]
 
 ```python
 def get_server_certificate(
@@ -1319,7 +1324,7 @@ def get_server_certificate(
 
 Type annotations for `boto3.client("iam").get_service_last_accessed_details` method.
 
-[Client.get_service_last_accessed_details documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_last_accessed_details)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_last_accessed_details]
 
 ```python
 def get_service_last_accessed_details(
@@ -1335,7 +1340,7 @@ def get_service_last_accessed_details(
 
 Type annotations for `boto3.client("iam").get_service_last_accessed_details_with_entities` method.
 
-[Client.get_service_last_accessed_details_with_entities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_last_accessed_details_with_entities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_last_accessed_details_with_entities]
 
 ```python
 def get_service_last_accessed_details_with_entities(
@@ -1352,7 +1357,7 @@ def get_service_last_accessed_details_with_entities(
 
 Type annotations for `boto3.client("iam").get_service_linked_role_deletion_status` method.
 
-[Client.get_service_linked_role_deletion_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_linked_role_deletion_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_linked_role_deletion_status]
 
 ```python
 def get_service_linked_role_deletion_status(
@@ -1366,7 +1371,7 @@ def get_service_linked_role_deletion_status(
 
 Type annotations for `boto3.client("iam").get_ssh_public_key` method.
 
-[Client.get_ssh_public_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_ssh_public_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_ssh_public_key]
 
 ```python
 def get_ssh_public_key(
@@ -1382,7 +1387,7 @@ def get_ssh_public_key(
 
 Type annotations for `boto3.client("iam").get_user` method.
 
-[Client.get_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_user]
 
 ```python
 def get_user(
@@ -1396,7 +1401,7 @@ def get_user(
 
 Type annotations for `boto3.client("iam").get_user_policy` method.
 
-[Client.get_user_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_user_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_user_policy]
 
 ```python
 def get_user_policy(
@@ -1411,7 +1416,7 @@ def get_user_policy(
 
 Type annotations for `boto3.client("iam").list_access_keys` method.
 
-[Client.list_access_keys documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_access_keys)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_access_keys]
 
 ```python
 def list_access_keys(
@@ -1427,7 +1432,7 @@ def list_access_keys(
 
 Type annotations for `boto3.client("iam").list_account_aliases` method.
 
-[Client.list_account_aliases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_account_aliases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_account_aliases]
 
 ```python
 def list_account_aliases(
@@ -1442,7 +1447,7 @@ def list_account_aliases(
 
 Type annotations for `boto3.client("iam").list_attached_group_policies` method.
 
-[Client.list_attached_group_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_group_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_group_policies]
 
 ```python
 def list_attached_group_policies(
@@ -1459,7 +1464,7 @@ def list_attached_group_policies(
 
 Type annotations for `boto3.client("iam").list_attached_role_policies` method.
 
-[Client.list_attached_role_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_role_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_role_policies]
 
 ```python
 def list_attached_role_policies(
@@ -1476,7 +1481,7 @@ def list_attached_role_policies(
 
 Type annotations for `boto3.client("iam").list_attached_user_policies` method.
 
-[Client.list_attached_user_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_user_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_user_policies]
 
 ```python
 def list_attached_user_policies(
@@ -1493,7 +1498,7 @@ def list_attached_user_policies(
 
 Type annotations for `boto3.client("iam").list_entities_for_policy` method.
 
-[Client.list_entities_for_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_entities_for_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_entities_for_policy]
 
 ```python
 def list_entities_for_policy(
@@ -1512,7 +1517,7 @@ def list_entities_for_policy(
 
 Type annotations for `boto3.client("iam").list_group_policies` method.
 
-[Client.list_group_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_group_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_group_policies]
 
 ```python
 def list_group_policies(
@@ -1528,7 +1533,7 @@ def list_group_policies(
 
 Type annotations for `boto3.client("iam").list_groups` method.
 
-[Client.list_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_groups]
 
 ```python
 def list_groups(
@@ -1544,7 +1549,7 @@ def list_groups(
 
 Type annotations for `boto3.client("iam").list_groups_for_user` method.
 
-[Client.list_groups_for_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_groups_for_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_groups_for_user]
 
 ```python
 def list_groups_for_user(
@@ -1560,7 +1565,7 @@ def list_groups_for_user(
 
 Type annotations for `boto3.client("iam").list_instance_profile_tags` method.
 
-[Client.list_instance_profile_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profile_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profile_tags]
 
 ```python
 def list_instance_profile_tags(
@@ -1576,7 +1581,7 @@ def list_instance_profile_tags(
 
 Type annotations for `boto3.client("iam").list_instance_profiles` method.
 
-[Client.list_instance_profiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profiles]
 
 ```python
 def list_instance_profiles(
@@ -1592,7 +1597,7 @@ def list_instance_profiles(
 
 Type annotations for `boto3.client("iam").list_instance_profiles_for_role` method.
 
-[Client.list_instance_profiles_for_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profiles_for_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profiles_for_role]
 
 ```python
 def list_instance_profiles_for_role(
@@ -1608,7 +1613,7 @@ def list_instance_profiles_for_role(
 
 Type annotations for `boto3.client("iam").list_mfa_device_tags` method.
 
-[Client.list_mfa_device_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_mfa_device_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_mfa_device_tags]
 
 ```python
 def list_mfa_device_tags(
@@ -1624,7 +1629,7 @@ def list_mfa_device_tags(
 
 Type annotations for `boto3.client("iam").list_mfa_devices` method.
 
-[Client.list_mfa_devices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_mfa_devices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_mfa_devices]
 
 ```python
 def list_mfa_devices(
@@ -1640,7 +1645,7 @@ def list_mfa_devices(
 
 Type annotations for `boto3.client("iam").list_open_id_connect_provider_tags` method.
 
-[Client.list_open_id_connect_provider_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_open_id_connect_provider_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_open_id_connect_provider_tags]
 
 ```python
 def list_open_id_connect_provider_tags(
@@ -1656,7 +1661,7 @@ def list_open_id_connect_provider_tags(
 
 Type annotations for `boto3.client("iam").list_open_id_connect_providers` method.
 
-[Client.list_open_id_connect_providers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_open_id_connect_providers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_open_id_connect_providers]
 
 ```python
 def list_open_id_connect_providers(
@@ -1669,7 +1674,7 @@ def list_open_id_connect_providers(
 
 Type annotations for `boto3.client("iam").list_policies` method.
 
-[Client.list_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policies]
 
 ```python
 def list_policies(
@@ -1688,7 +1693,7 @@ def list_policies(
 
 Type annotations for `boto3.client("iam").list_policies_granting_service_access` method.
 
-[Client.list_policies_granting_service_access documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policies_granting_service_access)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policies_granting_service_access]
 
 ```python
 def list_policies_granting_service_access(
@@ -1704,7 +1709,7 @@ def list_policies_granting_service_access(
 
 Type annotations for `boto3.client("iam").list_policy_tags` method.
 
-[Client.list_policy_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policy_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policy_tags]
 
 ```python
 def list_policy_tags(
@@ -1720,7 +1725,7 @@ def list_policy_tags(
 
 Type annotations for `boto3.client("iam").list_policy_versions` method.
 
-[Client.list_policy_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policy_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policy_versions]
 
 ```python
 def list_policy_versions(
@@ -1736,7 +1741,7 @@ def list_policy_versions(
 
 Type annotations for `boto3.client("iam").list_role_policies` method.
 
-[Client.list_role_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_role_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_role_policies]
 
 ```python
 def list_role_policies(
@@ -1752,7 +1757,7 @@ def list_role_policies(
 
 Type annotations for `boto3.client("iam").list_role_tags` method.
 
-[Client.list_role_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_role_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_role_tags]
 
 ```python
 def list_role_tags(
@@ -1768,7 +1773,7 @@ def list_role_tags(
 
 Type annotations for `boto3.client("iam").list_roles` method.
 
-[Client.list_roles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_roles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_roles]
 
 ```python
 def list_roles(
@@ -1784,7 +1789,7 @@ def list_roles(
 
 Type annotations for `boto3.client("iam").list_saml_provider_tags` method.
 
-[Client.list_saml_provider_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_saml_provider_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_saml_provider_tags]
 
 ```python
 def list_saml_provider_tags(
@@ -1800,7 +1805,7 @@ def list_saml_provider_tags(
 
 Type annotations for `boto3.client("iam").list_saml_providers` method.
 
-[Client.list_saml_providers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_saml_providers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_saml_providers]
 
 ```python
 def list_saml_providers(
@@ -1813,7 +1818,7 @@ def list_saml_providers(
 
 Type annotations for `boto3.client("iam").list_server_certificate_tags` method.
 
-[Client.list_server_certificate_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_server_certificate_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_server_certificate_tags]
 
 ```python
 def list_server_certificate_tags(
@@ -1829,7 +1834,7 @@ def list_server_certificate_tags(
 
 Type annotations for `boto3.client("iam").list_server_certificates` method.
 
-[Client.list_server_certificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_server_certificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_server_certificates]
 
 ```python
 def list_server_certificates(
@@ -1845,7 +1850,7 @@ def list_server_certificates(
 
 Type annotations for `boto3.client("iam").list_service_specific_credentials` method.
 
-[Client.list_service_specific_credentials documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_service_specific_credentials)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_service_specific_credentials]
 
 ```python
 def list_service_specific_credentials(
@@ -1860,7 +1865,7 @@ def list_service_specific_credentials(
 
 Type annotations for `boto3.client("iam").list_signing_certificates` method.
 
-[Client.list_signing_certificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_signing_certificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_signing_certificates]
 
 ```python
 def list_signing_certificates(
@@ -1876,7 +1881,7 @@ def list_signing_certificates(
 
 Type annotations for `boto3.client("iam").list_ssh_public_keys` method.
 
-[Client.list_ssh_public_keys documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_ssh_public_keys)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_ssh_public_keys]
 
 ```python
 def list_ssh_public_keys(
@@ -1892,7 +1897,7 @@ def list_ssh_public_keys(
 
 Type annotations for `boto3.client("iam").list_user_policies` method.
 
-[Client.list_user_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_user_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_user_policies]
 
 ```python
 def list_user_policies(
@@ -1908,7 +1913,7 @@ def list_user_policies(
 
 Type annotations for `boto3.client("iam").list_user_tags` method.
 
-[Client.list_user_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_user_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_user_tags]
 
 ```python
 def list_user_tags(
@@ -1924,7 +1929,7 @@ def list_user_tags(
 
 Type annotations for `boto3.client("iam").list_users` method.
 
-[Client.list_users documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_users)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_users]
 
 ```python
 def list_users(
@@ -1940,7 +1945,7 @@ def list_users(
 
 Type annotations for `boto3.client("iam").list_virtual_mfa_devices` method.
 
-[Client.list_virtual_mfa_devices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_virtual_mfa_devices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_virtual_mfa_devices]
 
 ```python
 def list_virtual_mfa_devices(
@@ -1956,7 +1961,7 @@ def list_virtual_mfa_devices(
 
 Type annotations for `boto3.client("iam").put_group_policy` method.
 
-[Client.put_group_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_group_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_group_policy]
 
 ```python
 def put_group_policy(
@@ -1972,7 +1977,7 @@ def put_group_policy(
 
 Type annotations for `boto3.client("iam").put_role_permissions_boundary` method.
 
-[Client.put_role_permissions_boundary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_role_permissions_boundary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_role_permissions_boundary]
 
 ```python
 def put_role_permissions_boundary(
@@ -1987,7 +1992,7 @@ def put_role_permissions_boundary(
 
 Type annotations for `boto3.client("iam").put_role_policy` method.
 
-[Client.put_role_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_role_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_role_policy]
 
 ```python
 def put_role_policy(
@@ -2003,7 +2008,7 @@ def put_role_policy(
 
 Type annotations for `boto3.client("iam").put_user_permissions_boundary` method.
 
-[Client.put_user_permissions_boundary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_user_permissions_boundary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_user_permissions_boundary]
 
 ```python
 def put_user_permissions_boundary(
@@ -2018,7 +2023,7 @@ def put_user_permissions_boundary(
 
 Type annotations for `boto3.client("iam").put_user_policy` method.
 
-[Client.put_user_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_user_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_user_policy]
 
 ```python
 def put_user_policy(
@@ -2034,7 +2039,7 @@ def put_user_policy(
 
 Type annotations for `boto3.client("iam").remove_client_id_from_open_id_connect_provider` method.
 
-[Client.remove_client_id_from_open_id_connect_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_client_id_from_open_id_connect_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_client_id_from_open_id_connect_provider]
 
 ```python
 def remove_client_id_from_open_id_connect_provider(
@@ -2049,7 +2054,7 @@ def remove_client_id_from_open_id_connect_provider(
 
 Type annotations for `boto3.client("iam").remove_role_from_instance_profile` method.
 
-[Client.remove_role_from_instance_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_role_from_instance_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_role_from_instance_profile]
 
 ```python
 def remove_role_from_instance_profile(
@@ -2064,7 +2069,7 @@ def remove_role_from_instance_profile(
 
 Type annotations for `boto3.client("iam").remove_user_from_group` method.
 
-[Client.remove_user_from_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_user_from_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_user_from_group]
 
 ```python
 def remove_user_from_group(
@@ -2079,7 +2084,7 @@ def remove_user_from_group(
 
 Type annotations for `boto3.client("iam").reset_service_specific_credential` method.
 
-[Client.reset_service_specific_credential documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.reset_service_specific_credential)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.reset_service_specific_credential]
 
 ```python
 def reset_service_specific_credential(
@@ -2094,7 +2099,7 @@ def reset_service_specific_credential(
 
 Type annotations for `boto3.client("iam").resync_mfa_device` method.
 
-[Client.resync_mfa_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.resync_mfa_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.resync_mfa_device]
 
 ```python
 def resync_mfa_device(
@@ -2111,7 +2116,7 @@ def resync_mfa_device(
 
 Type annotations for `boto3.client("iam").set_default_policy_version` method.
 
-[Client.set_default_policy_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.set_default_policy_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.set_default_policy_version]
 
 ```python
 def set_default_policy_version(
@@ -2126,7 +2131,7 @@ def set_default_policy_version(
 
 Type annotations for `boto3.client("iam").set_security_token_service_preferences` method.
 
-[Client.set_security_token_service_preferences documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.set_security_token_service_preferences)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.set_security_token_service_preferences]
 
 ```python
 def set_security_token_service_preferences(
@@ -2140,7 +2145,7 @@ def set_security_token_service_preferences(
 
 Type annotations for `boto3.client("iam").simulate_custom_policy` method.
 
-[Client.simulate_custom_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.simulate_custom_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.simulate_custom_policy]
 
 ```python
 def simulate_custom_policy(
@@ -2164,7 +2169,7 @@ def simulate_custom_policy(
 
 Type annotations for `boto3.client("iam").simulate_principal_policy` method.
 
-[Client.simulate_principal_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.simulate_principal_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.simulate_principal_policy]
 
 ```python
 def simulate_principal_policy(
@@ -2189,7 +2194,7 @@ def simulate_principal_policy(
 
 Type annotations for `boto3.client("iam").tag_instance_profile` method.
 
-[Client.tag_instance_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_instance_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_instance_profile]
 
 ```python
 def tag_instance_profile(
@@ -2204,7 +2209,7 @@ def tag_instance_profile(
 
 Type annotations for `boto3.client("iam").tag_mfa_device` method.
 
-[Client.tag_mfa_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_mfa_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_mfa_device]
 
 ```python
 def tag_mfa_device(
@@ -2219,7 +2224,7 @@ def tag_mfa_device(
 
 Type annotations for `boto3.client("iam").tag_open_id_connect_provider` method.
 
-[Client.tag_open_id_connect_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_open_id_connect_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_open_id_connect_provider]
 
 ```python
 def tag_open_id_connect_provider(
@@ -2234,7 +2239,7 @@ def tag_open_id_connect_provider(
 
 Type annotations for `boto3.client("iam").tag_policy` method.
 
-[Client.tag_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_policy]
 
 ```python
 def tag_policy(
@@ -2249,7 +2254,7 @@ def tag_policy(
 
 Type annotations for `boto3.client("iam").tag_role` method.
 
-[Client.tag_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_role]
 
 ```python
 def tag_role(
@@ -2264,7 +2269,7 @@ def tag_role(
 
 Type annotations for `boto3.client("iam").tag_saml_provider` method.
 
-[Client.tag_saml_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_saml_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_saml_provider]
 
 ```python
 def tag_saml_provider(
@@ -2279,7 +2284,7 @@ def tag_saml_provider(
 
 Type annotations for `boto3.client("iam").tag_server_certificate` method.
 
-[Client.tag_server_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_server_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_server_certificate]
 
 ```python
 def tag_server_certificate(
@@ -2294,7 +2299,7 @@ def tag_server_certificate(
 
 Type annotations for `boto3.client("iam").tag_user` method.
 
-[Client.tag_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_user]
 
 ```python
 def tag_user(
@@ -2309,7 +2314,7 @@ def tag_user(
 
 Type annotations for `boto3.client("iam").untag_instance_profile` method.
 
-[Client.untag_instance_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_instance_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_instance_profile]
 
 ```python
 def untag_instance_profile(
@@ -2324,7 +2329,7 @@ def untag_instance_profile(
 
 Type annotations for `boto3.client("iam").untag_mfa_device` method.
 
-[Client.untag_mfa_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_mfa_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_mfa_device]
 
 ```python
 def untag_mfa_device(
@@ -2339,7 +2344,7 @@ def untag_mfa_device(
 
 Type annotations for `boto3.client("iam").untag_open_id_connect_provider` method.
 
-[Client.untag_open_id_connect_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_open_id_connect_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_open_id_connect_provider]
 
 ```python
 def untag_open_id_connect_provider(
@@ -2354,7 +2359,7 @@ def untag_open_id_connect_provider(
 
 Type annotations for `boto3.client("iam").untag_policy` method.
 
-[Client.untag_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_policy]
 
 ```python
 def untag_policy(
@@ -2369,7 +2374,7 @@ def untag_policy(
 
 Type annotations for `boto3.client("iam").untag_role` method.
 
-[Client.untag_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_role]
 
 ```python
 def untag_role(
@@ -2384,7 +2389,7 @@ def untag_role(
 
 Type annotations for `boto3.client("iam").untag_saml_provider` method.
 
-[Client.untag_saml_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_saml_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_saml_provider]
 
 ```python
 def untag_saml_provider(
@@ -2399,7 +2404,7 @@ def untag_saml_provider(
 
 Type annotations for `boto3.client("iam").untag_server_certificate` method.
 
-[Client.untag_server_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_server_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_server_certificate]
 
 ```python
 def untag_server_certificate(
@@ -2414,7 +2419,7 @@ def untag_server_certificate(
 
 Type annotations for `boto3.client("iam").untag_user` method.
 
-[Client.untag_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_user]
 
 ```python
 def untag_user(
@@ -2429,7 +2434,7 @@ def untag_user(
 
 Type annotations for `boto3.client("iam").update_access_key` method.
 
-[Client.update_access_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_access_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_access_key]
 
 ```python
 def update_access_key(
@@ -2445,7 +2450,7 @@ def update_access_key(
 
 Type annotations for `boto3.client("iam").update_account_password_policy` method.
 
-[Client.update_account_password_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_account_password_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_account_password_policy]
 
 ```python
 def update_account_password_policy(
@@ -2467,7 +2472,7 @@ def update_account_password_policy(
 
 Type annotations for `boto3.client("iam").update_assume_role_policy` method.
 
-[Client.update_assume_role_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_assume_role_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_assume_role_policy]
 
 ```python
 def update_assume_role_policy(
@@ -2482,7 +2487,7 @@ def update_assume_role_policy(
 
 Type annotations for `boto3.client("iam").update_group` method.
 
-[Client.update_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_group]
 
 ```python
 def update_group(
@@ -2498,7 +2503,7 @@ def update_group(
 
 Type annotations for `boto3.client("iam").update_login_profile` method.
 
-[Client.update_login_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_login_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_login_profile]
 
 ```python
 def update_login_profile(
@@ -2514,7 +2519,7 @@ def update_login_profile(
 
 Type annotations for `boto3.client("iam").update_open_id_connect_provider_thumbprint` method.
 
-[Client.update_open_id_connect_provider_thumbprint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_open_id_connect_provider_thumbprint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_open_id_connect_provider_thumbprint]
 
 ```python
 def update_open_id_connect_provider_thumbprint(
@@ -2529,7 +2534,7 @@ def update_open_id_connect_provider_thumbprint(
 
 Type annotations for `boto3.client("iam").update_role` method.
 
-[Client.update_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_role]
 
 ```python
 def update_role(
@@ -2545,7 +2550,7 @@ def update_role(
 
 Type annotations for `boto3.client("iam").update_role_description` method.
 
-[Client.update_role_description documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_role_description)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_role_description]
 
 ```python
 def update_role_description(
@@ -2560,7 +2565,7 @@ def update_role_description(
 
 Type annotations for `boto3.client("iam").update_saml_provider` method.
 
-[Client.update_saml_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_saml_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_saml_provider]
 
 ```python
 def update_saml_provider(
@@ -2575,7 +2580,7 @@ def update_saml_provider(
 
 Type annotations for `boto3.client("iam").update_server_certificate` method.
 
-[Client.update_server_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_server_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_server_certificate]
 
 ```python
 def update_server_certificate(
@@ -2591,7 +2596,7 @@ def update_server_certificate(
 
 Type annotations for `boto3.client("iam").update_service_specific_credential` method.
 
-[Client.update_service_specific_credential documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_service_specific_credential)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_service_specific_credential]
 
 ```python
 def update_service_specific_credential(
@@ -2607,7 +2612,7 @@ def update_service_specific_credential(
 
 Type annotations for `boto3.client("iam").update_signing_certificate` method.
 
-[Client.update_signing_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_signing_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_signing_certificate]
 
 ```python
 def update_signing_certificate(
@@ -2623,7 +2628,7 @@ def update_signing_certificate(
 
 Type annotations for `boto3.client("iam").update_ssh_public_key` method.
 
-[Client.update_ssh_public_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_ssh_public_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_ssh_public_key]
 
 ```python
 def update_ssh_public_key(
@@ -2639,7 +2644,7 @@ def update_ssh_public_key(
 
 Type annotations for `boto3.client("iam").update_user` method.
 
-[Client.update_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_user]
 
 ```python
 def update_user(
@@ -2655,7 +2660,7 @@ def update_user(
 
 Type annotations for `boto3.client("iam").upload_server_certificate` method.
 
-[Client.upload_server_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_server_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_server_certificate]
 
 ```python
 def upload_server_certificate(
@@ -2674,7 +2679,7 @@ def upload_server_certificate(
 
 Type annotations for `boto3.client("iam").upload_signing_certificate` method.
 
-[Client.upload_signing_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_signing_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_signing_certificate]
 
 ```python
 def upload_signing_certificate(
@@ -2689,7 +2694,7 @@ def upload_signing_certificate(
 
 Type annotations for `boto3.client("iam").upload_ssh_public_key` method.
 
-[Client.upload_ssh_public_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_ssh_public_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_ssh_public_key]
 
 ```python
 def upload_ssh_public_key(

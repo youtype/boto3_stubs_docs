@@ -1,11 +1,11 @@
-# Structures for boto3 Kendra module
+# Typed dictionaries for boto3 Kendra module
 
 > [Index](../README.md) > [Kendra](./README.md) > Structures
 
 Auto-generated documentation for [Kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra)
 type annotations stubs module [mypy_boto3_kendra](https://pypi.org/project/mypy-boto3-kendra/).
 
-- [Structures for boto3 Kendra module](#structures-for-boto3-kendra-module)
+- [Typed dictionaries for boto3 Kendra module](#typed-dictionaries-for-boto3-kendra-module)
   - [AccessControlListConfigurationTypeDef](#accesscontrollistconfigurationtypedef)
   - [AclConfigurationTypeDef](#aclconfigurationtypedef)
   - [AdditionalResultAttributeTypeDef](#additionalresultattributetypedef)

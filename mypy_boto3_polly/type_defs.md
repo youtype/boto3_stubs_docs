@@ -1,11 +1,11 @@
-# Structures for boto3 Polly module
+# Typed dictionaries for boto3 Polly module
 
 > [Index](../README.md) > [Polly](./README.md) > Structures
 
 Auto-generated documentation for [Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
 type annotations stubs module [mypy_boto3_polly](https://pypi.org/project/mypy-boto3-polly/).
 
-- [Structures for boto3 Polly module](#structures-for-boto3-polly-module)
+- [Typed dictionaries for boto3 Polly module](#typed-dictionaries-for-boto3-polly-module)
   - [DescribeVoicesOutputTypeDef](#describevoicesoutputtypedef)
   - [GetLexiconOutputTypeDef](#getlexiconoutputtypedef)
   - [GetSpeechSynthesisTaskOutputTypeDef](#getspeechsynthesistaskoutputtypedef)
@@ -28,12 +28,12 @@ from mypy_boto3_polly.type_defs import DescribeVoicesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Voices`: `List["VoiceTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetLexiconOutputTypeDef
@@ -43,12 +43,12 @@ from mypy_boto3_polly.type_defs import GetLexiconOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Lexicon`: `"LexiconTypeDef"`
 - `LexiconAttributes`: `"LexiconAttributesTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetSpeechSynthesisTaskOutputTypeDef
@@ -58,11 +58,11 @@ from mypy_boto3_polly.type_defs import GetSpeechSynthesisTaskOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `SynthesisTask`: `"SynthesisTaskTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## LexiconAttributesTypeDef
@@ -118,12 +118,12 @@ from mypy_boto3_polly.type_defs import ListLexiconsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Lexicons`: `List["LexiconDescriptionTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListSpeechSynthesisTasksOutputTypeDef
@@ -133,12 +133,12 @@ from mypy_boto3_polly.type_defs import ListSpeechSynthesisTasksOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NextToken`: `str`
 - `SynthesisTasks`: `List["SynthesisTaskTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PaginatorConfigTypeDef
@@ -180,11 +180,11 @@ from mypy_boto3_polly.type_defs import StartSpeechSynthesisTaskOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `SynthesisTask`: `"SynthesisTaskTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## SynthesisTaskTypeDef
@@ -221,13 +221,13 @@ from mypy_boto3_polly.type_defs import SynthesizeSpeechOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `AudioStream`: `StreamingBody`
 - `ContentType`: `str`
 - `RequestCharacters`: `int`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## VoiceTypeDef

@@ -1,11 +1,11 @@
-# Structures for boto3 CloudDirectory module
+# Typed dictionaries for boto3 CloudDirectory module
 
 > [Index](../README.md) > [CloudDirectory](./README.md) > Structures
 
 Auto-generated documentation for [CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory)
 type annotations stubs module [mypy_boto3_clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
 
-- [Structures for boto3 CloudDirectory module](#structures-for-boto3-clouddirectory-module)
+- [Typed dictionaries for boto3 CloudDirectory module](#typed-dictionaries-for-boto3-clouddirectory-module)
   - [ApplySchemaResponseTypeDef](#applyschemaresponsetypedef)
   - [AttachObjectResponseTypeDef](#attachobjectresponsetypedef)
   - [AttachToIndexResponseTypeDef](#attachtoindexresponsetypedef)

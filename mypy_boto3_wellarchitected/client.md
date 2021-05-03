@@ -51,7 +51,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_wellarchitected.client import WellArchitectedClient
+
+def get_wellarchitected_client() -> WellArchitectedClient:
+    return boto3.client("wellarchitected")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client)
 
 ## Exceptions
 
@@ -85,7 +90,7 @@ Exceptions:
 
 Type annotations for `boto3.client("wellarchitected").associate_lenses` method.
 
-[Client.associate_lenses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.associate_lenses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.associate_lenses]
 
 ```python
 def associate_lenses(
@@ -100,7 +105,7 @@ def associate_lenses(
 
 Type annotations for `boto3.client("wellarchitected").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -114,7 +119,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("wellarchitected").create_milestone` method.
 
-[Client.create_milestone documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_milestone)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_milestone]
 
 ```python
 def create_milestone(
@@ -130,7 +135,7 @@ def create_milestone(
 
 Type annotations for `boto3.client("wellarchitected").create_workload` method.
 
-[Client.create_workload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_workload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_workload]
 
 ```python
 def create_workload(
@@ -158,7 +163,7 @@ def create_workload(
 
 Type annotations for `boto3.client("wellarchitected").create_workload_share` method.
 
-[Client.create_workload_share documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_workload_share)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_workload_share]
 
 ```python
 def create_workload_share(
@@ -175,7 +180,7 @@ def create_workload_share(
 
 Type annotations for `boto3.client("wellarchitected").delete_workload` method.
 
-[Client.delete_workload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload]
 
 ```python
 def delete_workload(
@@ -190,7 +195,7 @@ def delete_workload(
 
 Type annotations for `boto3.client("wellarchitected").delete_workload_share` method.
 
-[Client.delete_workload_share documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload_share)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload_share]
 
 ```python
 def delete_workload_share(
@@ -206,7 +211,7 @@ def delete_workload_share(
 
 Type annotations for `boto3.client("wellarchitected").disassociate_lenses` method.
 
-[Client.disassociate_lenses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.disassociate_lenses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.disassociate_lenses]
 
 ```python
 def disassociate_lenses(
@@ -221,7 +226,7 @@ def disassociate_lenses(
 
 Type annotations for `boto3.client("wellarchitected").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -238,7 +243,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("wellarchitected").get_answer` method.
 
-[Client.get_answer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_answer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_answer]
 
 ```python
 def get_answer(
@@ -255,7 +260,7 @@ def get_answer(
 
 Type annotations for `boto3.client("wellarchitected").get_lens_review` method.
 
-[Client.get_lens_review documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review]
 
 ```python
 def get_lens_review(
@@ -271,7 +276,7 @@ def get_lens_review(
 
 Type annotations for `boto3.client("wellarchitected").get_lens_review_report` method.
 
-[Client.get_lens_review_report documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review_report)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review_report]
 
 ```python
 def get_lens_review_report(
@@ -287,7 +292,7 @@ def get_lens_review_report(
 
 Type annotations for `boto3.client("wellarchitected").get_lens_version_difference` method.
 
-[Client.get_lens_version_difference documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_version_difference)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_version_difference]
 
 ```python
 def get_lens_version_difference(
@@ -302,7 +307,7 @@ def get_lens_version_difference(
 
 Type annotations for `boto3.client("wellarchitected").get_milestone` method.
 
-[Client.get_milestone documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_milestone)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_milestone]
 
 ```python
 def get_milestone(
@@ -317,7 +322,7 @@ def get_milestone(
 
 Type annotations for `boto3.client("wellarchitected").get_workload` method.
 
-[Client.get_workload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_workload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_workload]
 
 ```python
 def get_workload(
@@ -331,7 +336,7 @@ def get_workload(
 
 Type annotations for `boto3.client("wellarchitected").list_answers` method.
 
-[Client.list_answers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_answers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_answers]
 
 ```python
 def list_answers(
@@ -350,7 +355,7 @@ def list_answers(
 
 Type annotations for `boto3.client("wellarchitected").list_lens_review_improvements` method.
 
-[Client.list_lens_review_improvements documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_review_improvements)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_review_improvements]
 
 ```python
 def list_lens_review_improvements(
@@ -369,7 +374,7 @@ def list_lens_review_improvements(
 
 Type annotations for `boto3.client("wellarchitected").list_lens_reviews` method.
 
-[Client.list_lens_reviews documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_reviews)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_reviews]
 
 ```python
 def list_lens_reviews(
@@ -386,7 +391,7 @@ def list_lens_reviews(
 
 Type annotations for `boto3.client("wellarchitected").list_lenses` method.
 
-[Client.list_lenses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lenses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lenses]
 
 ```python
 def list_lenses(
@@ -401,7 +406,7 @@ def list_lenses(
 
 Type annotations for `boto3.client("wellarchitected").list_milestones` method.
 
-[Client.list_milestones documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_milestones)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_milestones]
 
 ```python
 def list_milestones(
@@ -417,7 +422,7 @@ def list_milestones(
 
 Type annotations for `boto3.client("wellarchitected").list_notifications` method.
 
-[Client.list_notifications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_notifications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_notifications]
 
 ```python
 def list_notifications(
@@ -433,7 +438,7 @@ def list_notifications(
 
 Type annotations for `boto3.client("wellarchitected").list_share_invitations` method.
 
-[Client.list_share_invitations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_share_invitations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_share_invitations]
 
 ```python
 def list_share_invitations(
@@ -449,7 +454,7 @@ def list_share_invitations(
 
 Type annotations for `boto3.client("wellarchitected").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -463,7 +468,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("wellarchitected").list_workload_shares` method.
 
-[Client.list_workload_shares documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_workload_shares)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_workload_shares]
 
 ```python
 def list_workload_shares(
@@ -480,7 +485,7 @@ def list_workload_shares(
 
 Type annotations for `boto3.client("wellarchitected").list_workloads` method.
 
-[Client.list_workloads documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_workloads)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_workloads]
 
 ```python
 def list_workloads(
@@ -496,7 +501,7 @@ def list_workloads(
 
 Type annotations for `boto3.client("wellarchitected").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -511,7 +516,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("wellarchitected").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -526,7 +531,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("wellarchitected").update_answer` method.
 
-[Client.update_answer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_answer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_answer]
 
 ```python
 def update_answer(
@@ -545,7 +550,7 @@ def update_answer(
 
 Type annotations for `boto3.client("wellarchitected").update_lens_review` method.
 
-[Client.update_lens_review documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_lens_review)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_lens_review]
 
 ```python
 def update_lens_review(
@@ -562,7 +567,7 @@ def update_lens_review(
 
 Type annotations for `boto3.client("wellarchitected").update_share_invitation` method.
 
-[Client.update_share_invitation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_share_invitation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_share_invitation]
 
 ```python
 def update_share_invitation(
@@ -577,7 +582,7 @@ def update_share_invitation(
 
 Type annotations for `boto3.client("wellarchitected").update_workload` method.
 
-[Client.update_workload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_workload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_workload]
 
 ```python
 def update_workload(
@@ -605,7 +610,7 @@ def update_workload(
 
 Type annotations for `boto3.client("wellarchitected").update_workload_share` method.
 
-[Client.update_workload_share documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_workload_share)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_workload_share]
 
 ```python
 def update_workload_share(
@@ -621,7 +626,7 @@ def update_workload_share(
 
 Type annotations for `boto3.client("wellarchitected").upgrade_lens_review` method.
 
-[Client.upgrade_lens_review documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.upgrade_lens_review)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.upgrade_lens_review]
 
 ```python
 def upgrade_lens_review(

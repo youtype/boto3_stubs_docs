@@ -15,13 +15,13 @@ Type annotations for `boto3.client("marketplace-entitlement").get_paginator("get
 Can be used directly:
 
 ```python
-from mypy_boto3_marketplace_entitlement.paginators import GetEntitlementsPaginator
+from mypy_boto3_marketplace_entitlement.paginator import GetEntitlementsPaginator
 
 def get_get_entitlements_paginator() -> GetEntitlementsPaginator:
     return boto3.client("marketplace-entitlement").get_paginator("get_entitlements")
 ```
 
-[Paginator.GetEntitlements documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Paginator.GetEntitlements)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Paginator.GetEntitlements)
 
 ```python
 class GetEntitlementsPaginator(Boto3Paginator):

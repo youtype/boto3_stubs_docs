@@ -15,7 +15,7 @@ pip install mypy-boto3-codebuild
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## CodeBuildClient
 
@@ -187,7 +187,7 @@ from mypy_boto3_codebuild.literals import ArtifactNamespace, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

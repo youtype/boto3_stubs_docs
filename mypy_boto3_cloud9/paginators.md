@@ -16,13 +16,13 @@ Type annotations for `boto3.client("cloud9").get_paginator("describe_environment
 Can be used directly:
 
 ```python
-from mypy_boto3_cloud9.paginators import DescribeEnvironmentMembershipsPaginator
+from mypy_boto3_cloud9.paginator import DescribeEnvironmentMembershipsPaginator
 
 def get_describe_environment_memberships_paginator() -> DescribeEnvironmentMembershipsPaginator:
     return boto3.client("cloud9").get_paginator("describe_environment_memberships")
 ```
 
-[Paginator.DescribeEnvironmentMemberships documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Paginator.DescribeEnvironmentMemberships)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Paginator.DescribeEnvironmentMemberships)
 
 ```python
 class DescribeEnvironmentMembershipsPaginator(Boto3Paginator):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("cloud9").get_paginator("list_environments")`
 Can be used directly:
 
 ```python
-from mypy_boto3_cloud9.paginators import ListEnvironmentsPaginator
+from mypy_boto3_cloud9.paginator import ListEnvironmentsPaginator
 
 def get_list_environments_paginator() -> ListEnvironmentsPaginator:
     return boto3.client("cloud9").get_paginator("list_environments")
 ```
 
-[Paginator.ListEnvironments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Paginator.ListEnvironments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Paginator.ListEnvironments)
 
 ```python
 class ListEnvironmentsPaginator(Boto3Paginator):

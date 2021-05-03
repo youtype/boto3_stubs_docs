@@ -15,7 +15,7 @@ pip install mypy-boto3-amplifybackend
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## AmplifyBackendClient
 
@@ -121,7 +121,7 @@ from mypy_boto3_amplifybackend.literals import AdditionalConstraintsElement, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

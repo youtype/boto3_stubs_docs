@@ -15,7 +15,7 @@ pip install mypy-boto3-inspector
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## InspectorClient
 
@@ -159,7 +159,7 @@ from mypy_boto3_inspector.literals import AgentHealth, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

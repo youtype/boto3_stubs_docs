@@ -18,13 +18,13 @@ Type annotations for `boto3.client("mediaconnect").get_paginator("list_entitleme
 Can be used directly:
 
 ```python
-from mypy_boto3_mediaconnect.paginators import ListEntitlementsPaginator
+from mypy_boto3_mediaconnect.paginator import ListEntitlementsPaginator
 
 def get_list_entitlements_paginator() -> ListEntitlementsPaginator:
     return boto3.client("mediaconnect").get_paginator("list_entitlements")
 ```
 
-[Paginator.ListEntitlements documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Paginator.ListEntitlements)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Paginator.ListEntitlements)
 
 ```python
 class ListEntitlementsPaginator(Boto3Paginator):
@@ -41,13 +41,13 @@ Type annotations for `boto3.client("mediaconnect").get_paginator("list_flows")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_mediaconnect.paginators import ListFlowsPaginator
+from mypy_boto3_mediaconnect.paginator import ListFlowsPaginator
 
 def get_list_flows_paginator() -> ListFlowsPaginator:
     return boto3.client("mediaconnect").get_paginator("list_flows")
 ```
 
-[Paginator.ListFlows documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Paginator.ListFlows)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Paginator.ListFlows)
 
 ```python
 class ListFlowsPaginator(Boto3Paginator):
@@ -64,13 +64,13 @@ Type annotations for `boto3.client("mediaconnect").get_paginator("list_offerings
 Can be used directly:
 
 ```python
-from mypy_boto3_mediaconnect.paginators import ListOfferingsPaginator
+from mypy_boto3_mediaconnect.paginator import ListOfferingsPaginator
 
 def get_list_offerings_paginator() -> ListOfferingsPaginator:
     return boto3.client("mediaconnect").get_paginator("list_offerings")
 ```
 
-[Paginator.ListOfferings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Paginator.ListOfferings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Paginator.ListOfferings)
 
 ```python
 class ListOfferingsPaginator(Boto3Paginator):
@@ -87,13 +87,13 @@ Type annotations for `boto3.client("mediaconnect").get_paginator("list_reservati
 Can be used directly:
 
 ```python
-from mypy_boto3_mediaconnect.paginators import ListReservationsPaginator
+from mypy_boto3_mediaconnect.paginator import ListReservationsPaginator
 
 def get_list_reservations_paginator() -> ListReservationsPaginator:
     return boto3.client("mediaconnect").get_paginator("list_reservations")
 ```
 
-[Paginator.ListReservations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Paginator.ListReservations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Paginator.ListReservations)
 
 ```python
 class ListReservationsPaginator(Boto3Paginator):

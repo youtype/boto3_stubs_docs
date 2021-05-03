@@ -60,7 +60,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_wafv2.client import WAFV2Client
+
+def get_wafv2_client() -> WAFV2Client:
+    return boto3.client("wafv2")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client)
 
 ## Exceptions
 
@@ -102,7 +107,7 @@ Exceptions:
 
 Type annotations for `boto3.client("wafv2").associate_web_acl` method.
 
-[Client.associate_web_acl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.associate_web_acl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.associate_web_acl]
 
 ```python
 def associate_web_acl(
@@ -117,7 +122,7 @@ def associate_web_acl(
 
 Type annotations for `boto3.client("wafv2").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -131,7 +136,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("wafv2").check_capacity` method.
 
-[Client.check_capacity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.check_capacity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.check_capacity]
 
 ```python
 def check_capacity(
@@ -146,7 +151,7 @@ def check_capacity(
 
 Type annotations for `boto3.client("wafv2").create_ip_set` method.
 
-[Client.create_ip_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_ip_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_ip_set]
 
 ```python
 def create_ip_set(
@@ -165,7 +170,7 @@ def create_ip_set(
 
 Type annotations for `boto3.client("wafv2").create_regex_pattern_set` method.
 
-[Client.create_regex_pattern_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_regex_pattern_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_regex_pattern_set]
 
 ```python
 def create_regex_pattern_set(
@@ -183,7 +188,7 @@ def create_regex_pattern_set(
 
 Type annotations for `boto3.client("wafv2").create_rule_group` method.
 
-[Client.create_rule_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_rule_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_rule_group]
 
 ```python
 def create_rule_group(
@@ -204,7 +209,7 @@ def create_rule_group(
 
 Type annotations for `boto3.client("wafv2").create_web_acl` method.
 
-[Client.create_web_acl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_web_acl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_web_acl]
 
 ```python
 def create_web_acl(
@@ -225,7 +230,7 @@ def create_web_acl(
 
 Type annotations for `boto3.client("wafv2").delete_firewall_manager_rule_groups` method.
 
-[Client.delete_firewall_manager_rule_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_firewall_manager_rule_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_firewall_manager_rule_groups]
 
 ```python
 def delete_firewall_manager_rule_groups(
@@ -240,7 +245,7 @@ def delete_firewall_manager_rule_groups(
 
 Type annotations for `boto3.client("wafv2").delete_ip_set` method.
 
-[Client.delete_ip_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_ip_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_ip_set]
 
 ```python
 def delete_ip_set(
@@ -257,7 +262,7 @@ def delete_ip_set(
 
 Type annotations for `boto3.client("wafv2").delete_logging_configuration` method.
 
-[Client.delete_logging_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_logging_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_logging_configuration]
 
 ```python
 def delete_logging_configuration(
@@ -271,7 +276,7 @@ def delete_logging_configuration(
 
 Type annotations for `boto3.client("wafv2").delete_permission_policy` method.
 
-[Client.delete_permission_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_permission_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_permission_policy]
 
 ```python
 def delete_permission_policy(
@@ -285,7 +290,7 @@ def delete_permission_policy(
 
 Type annotations for `boto3.client("wafv2").delete_regex_pattern_set` method.
 
-[Client.delete_regex_pattern_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_regex_pattern_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_regex_pattern_set]
 
 ```python
 def delete_regex_pattern_set(
@@ -302,7 +307,7 @@ def delete_regex_pattern_set(
 
 Type annotations for `boto3.client("wafv2").delete_rule_group` method.
 
-[Client.delete_rule_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_rule_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_rule_group]
 
 ```python
 def delete_rule_group(
@@ -319,7 +324,7 @@ def delete_rule_group(
 
 Type annotations for `boto3.client("wafv2").delete_web_acl` method.
 
-[Client.delete_web_acl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_web_acl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_web_acl]
 
 ```python
 def delete_web_acl(
@@ -336,7 +341,7 @@ def delete_web_acl(
 
 Type annotations for `boto3.client("wafv2").describe_managed_rule_group` method.
 
-[Client.describe_managed_rule_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.describe_managed_rule_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.describe_managed_rule_group]
 
 ```python
 def describe_managed_rule_group(
@@ -352,7 +357,7 @@ def describe_managed_rule_group(
 
 Type annotations for `boto3.client("wafv2").disassociate_web_acl` method.
 
-[Client.disassociate_web_acl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.disassociate_web_acl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.disassociate_web_acl]
 
 ```python
 def disassociate_web_acl(
@@ -366,7 +371,7 @@ def disassociate_web_acl(
 
 Type annotations for `boto3.client("wafv2").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -383,7 +388,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("wafv2").get_ip_set` method.
 
-[Client.get_ip_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_ip_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_ip_set]
 
 ```python
 def get_ip_set(
@@ -399,7 +404,7 @@ def get_ip_set(
 
 Type annotations for `boto3.client("wafv2").get_logging_configuration` method.
 
-[Client.get_logging_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_logging_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_logging_configuration]
 
 ```python
 def get_logging_configuration(
@@ -413,7 +418,7 @@ def get_logging_configuration(
 
 Type annotations for `boto3.client("wafv2").get_permission_policy` method.
 
-[Client.get_permission_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_permission_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_permission_policy]
 
 ```python
 def get_permission_policy(
@@ -427,7 +432,7 @@ def get_permission_policy(
 
 Type annotations for `boto3.client("wafv2").get_rate_based_statement_managed_keys` method.
 
-[Client.get_rate_based_statement_managed_keys documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_rate_based_statement_managed_keys)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_rate_based_statement_managed_keys]
 
 ```python
 def get_rate_based_statement_managed_keys(
@@ -444,7 +449,7 @@ def get_rate_based_statement_managed_keys(
 
 Type annotations for `boto3.client("wafv2").get_regex_pattern_set` method.
 
-[Client.get_regex_pattern_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_regex_pattern_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_regex_pattern_set]
 
 ```python
 def get_regex_pattern_set(
@@ -460,7 +465,7 @@ def get_regex_pattern_set(
 
 Type annotations for `boto3.client("wafv2").get_rule_group` method.
 
-[Client.get_rule_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_rule_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_rule_group]
 
 ```python
 def get_rule_group(
@@ -476,7 +481,7 @@ def get_rule_group(
 
 Type annotations for `boto3.client("wafv2").get_sampled_requests` method.
 
-[Client.get_sampled_requests documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_sampled_requests)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_sampled_requests]
 
 ```python
 def get_sampled_requests(
@@ -494,7 +499,7 @@ def get_sampled_requests(
 
 Type annotations for `boto3.client("wafv2").get_web_acl` method.
 
-[Client.get_web_acl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_web_acl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_web_acl]
 
 ```python
 def get_web_acl(
@@ -510,7 +515,7 @@ def get_web_acl(
 
 Type annotations for `boto3.client("wafv2").get_web_acl_for_resource` method.
 
-[Client.get_web_acl_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_web_acl_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_web_acl_for_resource]
 
 ```python
 def get_web_acl_for_resource(
@@ -524,7 +529,7 @@ def get_web_acl_for_resource(
 
 Type annotations for `boto3.client("wafv2").list_available_managed_rule_groups` method.
 
-[Client.list_available_managed_rule_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_available_managed_rule_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_available_managed_rule_groups]
 
 ```python
 def list_available_managed_rule_groups(
@@ -540,7 +545,7 @@ def list_available_managed_rule_groups(
 
 Type annotations for `boto3.client("wafv2").list_ip_sets` method.
 
-[Client.list_ip_sets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_ip_sets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_ip_sets]
 
 ```python
 def list_ip_sets(
@@ -556,7 +561,7 @@ def list_ip_sets(
 
 Type annotations for `boto3.client("wafv2").list_logging_configurations` method.
 
-[Client.list_logging_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_logging_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_logging_configurations]
 
 ```python
 def list_logging_configurations(
@@ -572,7 +577,7 @@ def list_logging_configurations(
 
 Type annotations for `boto3.client("wafv2").list_regex_pattern_sets` method.
 
-[Client.list_regex_pattern_sets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_regex_pattern_sets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_regex_pattern_sets]
 
 ```python
 def list_regex_pattern_sets(
@@ -588,7 +593,7 @@ def list_regex_pattern_sets(
 
 Type annotations for `boto3.client("wafv2").list_resources_for_web_acl` method.
 
-[Client.list_resources_for_web_acl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_resources_for_web_acl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_resources_for_web_acl]
 
 ```python
 def list_resources_for_web_acl(
@@ -603,7 +608,7 @@ def list_resources_for_web_acl(
 
 Type annotations for `boto3.client("wafv2").list_rule_groups` method.
 
-[Client.list_rule_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_rule_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_rule_groups]
 
 ```python
 def list_rule_groups(
@@ -619,7 +624,7 @@ def list_rule_groups(
 
 Type annotations for `boto3.client("wafv2").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -635,7 +640,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("wafv2").list_web_acls` method.
 
-[Client.list_web_acls documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_web_acls)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_web_acls]
 
 ```python
 def list_web_acls(
@@ -651,7 +656,7 @@ def list_web_acls(
 
 Type annotations for `boto3.client("wafv2").put_logging_configuration` method.
 
-[Client.put_logging_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.put_logging_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.put_logging_configuration]
 
 ```python
 def put_logging_configuration(
@@ -665,7 +670,7 @@ def put_logging_configuration(
 
 Type annotations for `boto3.client("wafv2").put_permission_policy` method.
 
-[Client.put_permission_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.put_permission_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.put_permission_policy]
 
 ```python
 def put_permission_policy(
@@ -680,7 +685,7 @@ def put_permission_policy(
 
 Type annotations for `boto3.client("wafv2").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -695,7 +700,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("wafv2").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -710,7 +715,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("wafv2").update_ip_set` method.
 
-[Client.update_ip_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_ip_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_ip_set]
 
 ```python
 def update_ip_set(
@@ -729,7 +734,7 @@ def update_ip_set(
 
 Type annotations for `boto3.client("wafv2").update_regex_pattern_set` method.
 
-[Client.update_regex_pattern_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_regex_pattern_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_regex_pattern_set]
 
 ```python
 def update_regex_pattern_set(
@@ -748,7 +753,7 @@ def update_regex_pattern_set(
 
 Type annotations for `boto3.client("wafv2").update_rule_group` method.
 
-[Client.update_rule_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_rule_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_rule_group]
 
 ```python
 def update_rule_group(
@@ -769,7 +774,7 @@ def update_rule_group(
 
 Type annotations for `boto3.client("wafv2").update_web_acl` method.
 
-[Client.update_web_acl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_web_acl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_web_acl]
 
 ```python
 def update_web_acl(

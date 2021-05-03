@@ -14,7 +14,7 @@ pip install mypy-boto3-lexv2-models
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## LexModelsV2Client
 
@@ -136,7 +136,7 @@ from mypy_boto3_lexv2_models.literals import BotAliasStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

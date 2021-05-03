@@ -62,7 +62,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_workdocs.client import WorkDocsClient
+
+def get_workdocs_client() -> WorkDocsClient:
+    return boto3.client("workdocs")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client)
 
 ## Exceptions
 
@@ -114,7 +119,7 @@ Exceptions:
 
 Type annotations for `boto3.client("workdocs").abort_document_version_upload` method.
 
-[Client.abort_document_version_upload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.abort_document_version_upload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.abort_document_version_upload]
 
 ```python
 def abort_document_version_upload(
@@ -130,7 +135,7 @@ def abort_document_version_upload(
 
 Type annotations for `boto3.client("workdocs").activate_user` method.
 
-[Client.activate_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.activate_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.activate_user]
 
 ```python
 def activate_user(
@@ -145,7 +150,7 @@ def activate_user(
 
 Type annotations for `boto3.client("workdocs").add_resource_permissions` method.
 
-[Client.add_resource_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.add_resource_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.add_resource_permissions]
 
 ```python
 def add_resource_permissions(
@@ -162,7 +167,7 @@ def add_resource_permissions(
 
 Type annotations for `boto3.client("workdocs").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -176,7 +181,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("workdocs").create_comment` method.
 
-[Client.create_comment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_comment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_comment]
 
 ```python
 def create_comment(
@@ -197,7 +202,7 @@ def create_comment(
 
 Type annotations for `boto3.client("workdocs").create_custom_metadata` method.
 
-[Client.create_custom_metadata documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_custom_metadata)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_custom_metadata]
 
 ```python
 def create_custom_metadata(
@@ -214,7 +219,7 @@ def create_custom_metadata(
 
 Type annotations for `boto3.client("workdocs").create_folder` method.
 
-[Client.create_folder documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_folder)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_folder]
 
 ```python
 def create_folder(
@@ -230,7 +235,7 @@ def create_folder(
 
 Type annotations for `boto3.client("workdocs").create_labels` method.
 
-[Client.create_labels documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_labels)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_labels]
 
 ```python
 def create_labels(
@@ -246,7 +251,7 @@ def create_labels(
 
 Type annotations for `boto3.client("workdocs").create_notification_subscription` method.
 
-[Client.create_notification_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_notification_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_notification_subscription]
 
 ```python
 def create_notification_subscription(
@@ -263,7 +268,7 @@ def create_notification_subscription(
 
 Type annotations for `boto3.client("workdocs").create_user` method.
 
-[Client.create_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_user]
 
 ```python
 def create_user(
@@ -285,7 +290,7 @@ def create_user(
 
 Type annotations for `boto3.client("workdocs").deactivate_user` method.
 
-[Client.deactivate_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.deactivate_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.deactivate_user]
 
 ```python
 def deactivate_user(
@@ -300,7 +305,7 @@ def deactivate_user(
 
 Type annotations for `boto3.client("workdocs").delete_comment` method.
 
-[Client.delete_comment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_comment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_comment]
 
 ```python
 def delete_comment(
@@ -317,7 +322,7 @@ def delete_comment(
 
 Type annotations for `boto3.client("workdocs").delete_custom_metadata` method.
 
-[Client.delete_custom_metadata documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_custom_metadata)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_custom_metadata]
 
 ```python
 def delete_custom_metadata(
@@ -335,7 +340,7 @@ def delete_custom_metadata(
 
 Type annotations for `boto3.client("workdocs").delete_document` method.
 
-[Client.delete_document documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_document)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_document]
 
 ```python
 def delete_document(
@@ -350,7 +355,7 @@ def delete_document(
 
 Type annotations for `boto3.client("workdocs").delete_folder` method.
 
-[Client.delete_folder documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_folder)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_folder]
 
 ```python
 def delete_folder(
@@ -365,7 +370,7 @@ def delete_folder(
 
 Type annotations for `boto3.client("workdocs").delete_folder_contents` method.
 
-[Client.delete_folder_contents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_folder_contents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_folder_contents]
 
 ```python
 def delete_folder_contents(
@@ -380,7 +385,7 @@ def delete_folder_contents(
 
 Type annotations for `boto3.client("workdocs").delete_labels` method.
 
-[Client.delete_labels documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_labels)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_labels]
 
 ```python
 def delete_labels(
@@ -397,7 +402,7 @@ def delete_labels(
 
 Type annotations for `boto3.client("workdocs").delete_notification_subscription` method.
 
-[Client.delete_notification_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_notification_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_notification_subscription]
 
 ```python
 def delete_notification_subscription(
@@ -412,7 +417,7 @@ def delete_notification_subscription(
 
 Type annotations for `boto3.client("workdocs").delete_user` method.
 
-[Client.delete_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_user]
 
 ```python
 def delete_user(
@@ -427,7 +432,7 @@ def delete_user(
 
 Type annotations for `boto3.client("workdocs").describe_activities` method.
 
-[Client.describe_activities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_activities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_activities]
 
 ```python
 def describe_activities(
@@ -450,7 +455,7 @@ def describe_activities(
 
 Type annotations for `boto3.client("workdocs").describe_comments` method.
 
-[Client.describe_comments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_comments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_comments]
 
 ```python
 def describe_comments(
@@ -468,7 +473,7 @@ def describe_comments(
 
 Type annotations for `boto3.client("workdocs").describe_document_versions` method.
 
-[Client.describe_document_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_document_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_document_versions]
 
 ```python
 def describe_document_versions(
@@ -487,7 +492,7 @@ def describe_document_versions(
 
 Type annotations for `boto3.client("workdocs").describe_folder_contents` method.
 
-[Client.describe_folder_contents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_folder_contents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_folder_contents]
 
 ```python
 def describe_folder_contents(
@@ -508,7 +513,7 @@ def describe_folder_contents(
 
 Type annotations for `boto3.client("workdocs").describe_groups` method.
 
-[Client.describe_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_groups]
 
 ```python
 def describe_groups(
@@ -526,7 +531,7 @@ def describe_groups(
 
 Type annotations for `boto3.client("workdocs").describe_notification_subscriptions` method.
 
-[Client.describe_notification_subscriptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_notification_subscriptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_notification_subscriptions]
 
 ```python
 def describe_notification_subscriptions(
@@ -542,7 +547,7 @@ def describe_notification_subscriptions(
 
 Type annotations for `boto3.client("workdocs").describe_resource_permissions` method.
 
-[Client.describe_resource_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_resource_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_resource_permissions]
 
 ```python
 def describe_resource_permissions(
@@ -560,7 +565,7 @@ def describe_resource_permissions(
 
 Type annotations for `boto3.client("workdocs").describe_root_folders` method.
 
-[Client.describe_root_folders documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_root_folders)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_root_folders]
 
 ```python
 def describe_root_folders(
@@ -576,7 +581,7 @@ def describe_root_folders(
 
 Type annotations for `boto3.client("workdocs").describe_users` method.
 
-[Client.describe_users documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_users)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_users]
 
 ```python
 def describe_users(
@@ -599,7 +604,7 @@ def describe_users(
 
 Type annotations for `boto3.client("workdocs").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -616,7 +621,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("workdocs").get_current_user` method.
 
-[Client.get_current_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_current_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_current_user]
 
 ```python
 def get_current_user(
@@ -630,7 +635,7 @@ def get_current_user(
 
 Type annotations for `boto3.client("workdocs").get_document` method.
 
-[Client.get_document documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document]
 
 ```python
 def get_document(
@@ -646,7 +651,7 @@ def get_document(
 
 Type annotations for `boto3.client("workdocs").get_document_path` method.
 
-[Client.get_document_path documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document_path)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document_path]
 
 ```python
 def get_document_path(
@@ -664,7 +669,7 @@ def get_document_path(
 
 Type annotations for `boto3.client("workdocs").get_document_version` method.
 
-[Client.get_document_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document_version]
 
 ```python
 def get_document_version(
@@ -682,7 +687,7 @@ def get_document_version(
 
 Type annotations for `boto3.client("workdocs").get_folder` method.
 
-[Client.get_folder documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_folder)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_folder]
 
 ```python
 def get_folder(
@@ -698,7 +703,7 @@ def get_folder(
 
 Type annotations for `boto3.client("workdocs").get_folder_path` method.
 
-[Client.get_folder_path documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_folder_path)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_folder_path]
 
 ```python
 def get_folder_path(
@@ -716,7 +721,7 @@ def get_folder_path(
 
 Type annotations for `boto3.client("workdocs").get_resources` method.
 
-[Client.get_resources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_resources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_resources]
 
 ```python
 def get_resources(
@@ -734,7 +739,7 @@ def get_resources(
 
 Type annotations for `boto3.client("workdocs").initiate_document_version_upload` method.
 
-[Client.initiate_document_version_upload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.initiate_document_version_upload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.initiate_document_version_upload]
 
 ```python
 def initiate_document_version_upload(
@@ -755,7 +760,7 @@ def initiate_document_version_upload(
 
 Type annotations for `boto3.client("workdocs").remove_all_resource_permissions` method.
 
-[Client.remove_all_resource_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.remove_all_resource_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.remove_all_resource_permissions]
 
 ```python
 def remove_all_resource_permissions(
@@ -770,7 +775,7 @@ def remove_all_resource_permissions(
 
 Type annotations for `boto3.client("workdocs").remove_resource_permission` method.
 
-[Client.remove_resource_permission documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.remove_resource_permission)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.remove_resource_permission]
 
 ```python
 def remove_resource_permission(
@@ -787,7 +792,7 @@ def remove_resource_permission(
 
 Type annotations for `boto3.client("workdocs").update_document` method.
 
-[Client.update_document documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_document)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_document]
 
 ```python
 def update_document(
@@ -805,7 +810,7 @@ def update_document(
 
 Type annotations for `boto3.client("workdocs").update_document_version` method.
 
-[Client.update_document_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_document_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_document_version]
 
 ```python
 def update_document_version(
@@ -822,7 +827,7 @@ def update_document_version(
 
 Type annotations for `boto3.client("workdocs").update_folder` method.
 
-[Client.update_folder documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_folder)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_folder]
 
 ```python
 def update_folder(
@@ -840,7 +845,7 @@ def update_folder(
 
 Type annotations for `boto3.client("workdocs").update_user` method.
 
-[Client.update_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_user]
 
 ```python
 def update_user(

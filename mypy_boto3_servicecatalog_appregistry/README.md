@@ -15,7 +15,7 @@ pip install mypy-boto3-servicecatalog-appregistry
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## AppRegistryClient
 
@@ -113,7 +113,7 @@ from mypy_boto3_servicecatalog_appregistry.literals import ListApplicationsPagin
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

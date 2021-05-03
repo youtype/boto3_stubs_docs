@@ -15,13 +15,13 @@ Type annotations for `boto3.client("secretsmanager").get_paginator("list_secrets
 Can be used directly:
 
 ```python
-from mypy_boto3_secretsmanager.paginators import ListSecretsPaginator
+from mypy_boto3_secretsmanager.paginator import ListSecretsPaginator
 
 def get_list_secrets_paginator() -> ListSecretsPaginator:
     return boto3.client("secretsmanager").get_paginator("list_secrets")
 ```
 
-[Paginator.ListSecrets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Paginator.ListSecrets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Paginator.ListSecrets)
 
 ```python
 class ListSecretsPaginator(Boto3Paginator):

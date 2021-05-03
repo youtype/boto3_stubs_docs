@@ -1,11 +1,11 @@
-# Structures for boto3 SSO module
+# Typed dictionaries for boto3 SSO module
 
 > [Index](../README.md) > [SSO](./README.md) > Structures
 
 Auto-generated documentation for [SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
 type annotations stubs module [mypy_boto3_sso](https://pypi.org/project/mypy-boto3-sso/).
 
-- [Structures for boto3 SSO module](#structures-for-boto3-sso-module)
+- [Typed dictionaries for boto3 SSO module](#typed-dictionaries-for-boto3-sso-module)
   - [AccountInfoTypeDef](#accountinfotypedef)
   - [GetRoleCredentialsResponseTypeDef](#getrolecredentialsresponsetypedef)
   - [ListAccountRolesResponseTypeDef](#listaccountrolesresponsetypedef)

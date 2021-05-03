@@ -26,7 +26,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_amp.client import PrometheusServiceClient
+
+def get_amp_client() -> PrometheusServiceClient:
+    return boto3.client("amp")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client)
 
 ## Exceptions
 
@@ -60,7 +65,7 @@ Exceptions:
 
 Type annotations for `boto3.client("amp").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -74,7 +79,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("amp").create_workspace` method.
 
-[Client.create_workspace documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.create_workspace)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.create_workspace]
 
 ```python
 def create_workspace(
@@ -89,7 +94,7 @@ def create_workspace(
 
 Type annotations for `boto3.client("amp").delete_workspace` method.
 
-[Client.delete_workspace documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.delete_workspace)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.delete_workspace]
 
 ```python
 def delete_workspace(
@@ -104,7 +109,7 @@ def delete_workspace(
 
 Type annotations for `boto3.client("amp").describe_workspace` method.
 
-[Client.describe_workspace documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.describe_workspace)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.describe_workspace]
 
 ```python
 def describe_workspace(
@@ -118,7 +123,7 @@ def describe_workspace(
 
 Type annotations for `boto3.client("amp").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -135,7 +140,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("amp").list_workspaces` method.
 
-[Client.list_workspaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.list_workspaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.list_workspaces]
 
 ```python
 def list_workspaces(
@@ -151,7 +156,7 @@ def list_workspaces(
 
 Type annotations for `boto3.client("amp").update_workspace_alias` method.
 
-[Client.update_workspace_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.update_workspace_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.update_workspace_alias]
 
 ```python
 def update_workspace_alias(

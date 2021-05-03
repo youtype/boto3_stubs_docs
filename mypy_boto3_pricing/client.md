@@ -24,7 +24,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_pricing.client import PricingClient
+
+def get_pricing_client() -> PricingClient:
+    return boto3.client("pricing")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client)
 
 ## Exceptions
 
@@ -56,7 +61,7 @@ Exceptions:
 
 Type annotations for `boto3.client("pricing").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -70,7 +75,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("pricing").describe_services` method.
 
-[Client.describe_services documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.describe_services)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.describe_services]
 
 ```python
 def describe_services(
@@ -87,7 +92,7 @@ def describe_services(
 
 Type annotations for `boto3.client("pricing").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -104,7 +109,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("pricing").get_attribute_values` method.
 
-[Client.get_attribute_values documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.get_attribute_values)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.get_attribute_values]
 
 ```python
 def get_attribute_values(
@@ -121,7 +126,7 @@ def get_attribute_values(
 
 Type annotations for `boto3.client("pricing").get_products` method.
 
-[Client.get_products documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.get_products)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.get_products]
 
 ```python
 def get_products(

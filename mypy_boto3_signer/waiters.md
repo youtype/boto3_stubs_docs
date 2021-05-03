@@ -15,13 +15,13 @@ Type annotations for `boto3.client("signer").get_waiter("successful_signing_job"
 Can be used directly:
 
 ```python
-from mypy_boto3_signer.waiters import SuccessfulSigningJobWaiter
+from mypy_boto3_signer.waiter import SuccessfulSigningJobWaiter
 
 def get_successful_signing_job_waiter() -> SuccessfulSigningJobWaiter:
     return boto3.client("signer").get_waiter("successful_signing_job")
 ```
 
-[Waiter.SuccessfulSigningJob documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Waiter.SuccessfulSigningJob)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Waiter.successful_signing_job)
 
 ```python
 class SuccessfulSigningJobWaiter(Boto3Waiter):

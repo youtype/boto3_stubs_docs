@@ -67,7 +67,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_personalize.client import PersonalizeClient
+
+def get_personalize_client() -> PersonalizeClient:
+    return boto3.client("personalize")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client)
 
 ## Exceptions
 
@@ -100,7 +105,7 @@ Exceptions:
 
 Type annotations for `boto3.client("personalize").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -114,7 +119,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("personalize").create_batch_inference_job` method.
 
-[Client.create_batch_inference_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_batch_inference_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_batch_inference_job]
 
 ```python
 def create_batch_inference_job(
@@ -135,7 +140,7 @@ def create_batch_inference_job(
 
 Type annotations for `boto3.client("personalize").create_campaign` method.
 
-[Client.create_campaign documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_campaign)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_campaign]
 
 ```python
 def create_campaign(
@@ -152,7 +157,7 @@ def create_campaign(
 
 Type annotations for `boto3.client("personalize").create_dataset` method.
 
-[Client.create_dataset documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset]
 
 ```python
 def create_dataset(
@@ -169,7 +174,7 @@ def create_dataset(
 
 Type annotations for `boto3.client("personalize").create_dataset_export_job` method.
 
-[Client.create_dataset_export_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_export_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_export_job]
 
 ```python
 def create_dataset_export_job(
@@ -187,7 +192,7 @@ def create_dataset_export_job(
 
 Type annotations for `boto3.client("personalize").create_dataset_group` method.
 
-[Client.create_dataset_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_group]
 
 ```python
 def create_dataset_group(
@@ -203,7 +208,7 @@ def create_dataset_group(
 
 Type annotations for `boto3.client("personalize").create_dataset_import_job` method.
 
-[Client.create_dataset_import_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_import_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_import_job]
 
 ```python
 def create_dataset_import_job(
@@ -220,7 +225,7 @@ def create_dataset_import_job(
 
 Type annotations for `boto3.client("personalize").create_event_tracker` method.
 
-[Client.create_event_tracker documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_event_tracker)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_event_tracker]
 
 ```python
 def create_event_tracker(
@@ -235,7 +240,7 @@ def create_event_tracker(
 
 Type annotations for `boto3.client("personalize").create_filter` method.
 
-[Client.create_filter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_filter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_filter]
 
 ```python
 def create_filter(
@@ -251,7 +256,7 @@ def create_filter(
 
 Type annotations for `boto3.client("personalize").create_schema` method.
 
-[Client.create_schema documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_schema)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_schema]
 
 ```python
 def create_schema(
@@ -266,7 +271,7 @@ def create_schema(
 
 Type annotations for `boto3.client("personalize").create_solution` method.
 
-[Client.create_solution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution]
 
 ```python
 def create_solution(
@@ -286,7 +291,7 @@ def create_solution(
 
 Type annotations for `boto3.client("personalize").create_solution_version` method.
 
-[Client.create_solution_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution_version]
 
 ```python
 def create_solution_version(
@@ -301,7 +306,7 @@ def create_solution_version(
 
 Type annotations for `boto3.client("personalize").delete_campaign` method.
 
-[Client.delete_campaign documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_campaign)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_campaign]
 
 ```python
 def delete_campaign(
@@ -315,7 +320,7 @@ def delete_campaign(
 
 Type annotations for `boto3.client("personalize").delete_dataset` method.
 
-[Client.delete_dataset documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset]
 
 ```python
 def delete_dataset(
@@ -329,7 +334,7 @@ def delete_dataset(
 
 Type annotations for `boto3.client("personalize").delete_dataset_group` method.
 
-[Client.delete_dataset_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset_group]
 
 ```python
 def delete_dataset_group(
@@ -343,7 +348,7 @@ def delete_dataset_group(
 
 Type annotations for `boto3.client("personalize").delete_event_tracker` method.
 
-[Client.delete_event_tracker documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_event_tracker)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_event_tracker]
 
 ```python
 def delete_event_tracker(
@@ -357,7 +362,7 @@ def delete_event_tracker(
 
 Type annotations for `boto3.client("personalize").delete_filter` method.
 
-[Client.delete_filter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_filter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_filter]
 
 ```python
 def delete_filter(
@@ -371,7 +376,7 @@ def delete_filter(
 
 Type annotations for `boto3.client("personalize").delete_schema` method.
 
-[Client.delete_schema documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_schema)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_schema]
 
 ```python
 def delete_schema(
@@ -385,7 +390,7 @@ def delete_schema(
 
 Type annotations for `boto3.client("personalize").delete_solution` method.
 
-[Client.delete_solution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_solution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_solution]
 
 ```python
 def delete_solution(
@@ -399,7 +404,7 @@ def delete_solution(
 
 Type annotations for `boto3.client("personalize").describe_algorithm` method.
 
-[Client.describe_algorithm documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_algorithm)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_algorithm]
 
 ```python
 def describe_algorithm(
@@ -413,7 +418,7 @@ def describe_algorithm(
 
 Type annotations for `boto3.client("personalize").describe_batch_inference_job` method.
 
-[Client.describe_batch_inference_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_batch_inference_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_batch_inference_job]
 
 ```python
 def describe_batch_inference_job(
@@ -427,7 +432,7 @@ def describe_batch_inference_job(
 
 Type annotations for `boto3.client("personalize").describe_campaign` method.
 
-[Client.describe_campaign documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_campaign)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_campaign]
 
 ```python
 def describe_campaign(
@@ -441,7 +446,7 @@ def describe_campaign(
 
 Type annotations for `boto3.client("personalize").describe_dataset` method.
 
-[Client.describe_dataset documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset]
 
 ```python
 def describe_dataset(
@@ -455,7 +460,7 @@ def describe_dataset(
 
 Type annotations for `boto3.client("personalize").describe_dataset_export_job` method.
 
-[Client.describe_dataset_export_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_export_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_export_job]
 
 ```python
 def describe_dataset_export_job(
@@ -469,7 +474,7 @@ def describe_dataset_export_job(
 
 Type annotations for `boto3.client("personalize").describe_dataset_group` method.
 
-[Client.describe_dataset_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_group]
 
 ```python
 def describe_dataset_group(
@@ -483,7 +488,7 @@ def describe_dataset_group(
 
 Type annotations for `boto3.client("personalize").describe_dataset_import_job` method.
 
-[Client.describe_dataset_import_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_import_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_import_job]
 
 ```python
 def describe_dataset_import_job(
@@ -497,7 +502,7 @@ def describe_dataset_import_job(
 
 Type annotations for `boto3.client("personalize").describe_event_tracker` method.
 
-[Client.describe_event_tracker documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_event_tracker)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_event_tracker]
 
 ```python
 def describe_event_tracker(
@@ -511,7 +516,7 @@ def describe_event_tracker(
 
 Type annotations for `boto3.client("personalize").describe_feature_transformation` method.
 
-[Client.describe_feature_transformation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_feature_transformation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_feature_transformation]
 
 ```python
 def describe_feature_transformation(
@@ -525,7 +530,7 @@ def describe_feature_transformation(
 
 Type annotations for `boto3.client("personalize").describe_filter` method.
 
-[Client.describe_filter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_filter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_filter]
 
 ```python
 def describe_filter(
@@ -539,7 +544,7 @@ def describe_filter(
 
 Type annotations for `boto3.client("personalize").describe_recipe` method.
 
-[Client.describe_recipe documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_recipe)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_recipe]
 
 ```python
 def describe_recipe(
@@ -553,7 +558,7 @@ def describe_recipe(
 
 Type annotations for `boto3.client("personalize").describe_schema` method.
 
-[Client.describe_schema documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_schema)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_schema]
 
 ```python
 def describe_schema(
@@ -567,7 +572,7 @@ def describe_schema(
 
 Type annotations for `boto3.client("personalize").describe_solution` method.
 
-[Client.describe_solution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution]
 
 ```python
 def describe_solution(
@@ -581,7 +586,7 @@ def describe_solution(
 
 Type annotations for `boto3.client("personalize").describe_solution_version` method.
 
-[Client.describe_solution_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution_version]
 
 ```python
 def describe_solution_version(
@@ -595,7 +600,7 @@ def describe_solution_version(
 
 Type annotations for `boto3.client("personalize").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -612,7 +617,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("personalize").get_solution_metrics` method.
 
-[Client.get_solution_metrics documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.get_solution_metrics)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.get_solution_metrics]
 
 ```python
 def get_solution_metrics(
@@ -626,7 +631,7 @@ def get_solution_metrics(
 
 Type annotations for `boto3.client("personalize").list_batch_inference_jobs` method.
 
-[Client.list_batch_inference_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_batch_inference_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_batch_inference_jobs]
 
 ```python
 def list_batch_inference_jobs(
@@ -642,7 +647,7 @@ def list_batch_inference_jobs(
 
 Type annotations for `boto3.client("personalize").list_campaigns` method.
 
-[Client.list_campaigns documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_campaigns)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_campaigns]
 
 ```python
 def list_campaigns(
@@ -658,7 +663,7 @@ def list_campaigns(
 
 Type annotations for `boto3.client("personalize").list_dataset_export_jobs` method.
 
-[Client.list_dataset_export_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_export_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_export_jobs]
 
 ```python
 def list_dataset_export_jobs(
@@ -674,7 +679,7 @@ def list_dataset_export_jobs(
 
 Type annotations for `boto3.client("personalize").list_dataset_groups` method.
 
-[Client.list_dataset_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_groups]
 
 ```python
 def list_dataset_groups(
@@ -689,7 +694,7 @@ def list_dataset_groups(
 
 Type annotations for `boto3.client("personalize").list_dataset_import_jobs` method.
 
-[Client.list_dataset_import_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_import_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_import_jobs]
 
 ```python
 def list_dataset_import_jobs(
@@ -705,7 +710,7 @@ def list_dataset_import_jobs(
 
 Type annotations for `boto3.client("personalize").list_datasets` method.
 
-[Client.list_datasets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_datasets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_datasets]
 
 ```python
 def list_datasets(
@@ -721,7 +726,7 @@ def list_datasets(
 
 Type annotations for `boto3.client("personalize").list_event_trackers` method.
 
-[Client.list_event_trackers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_event_trackers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_event_trackers]
 
 ```python
 def list_event_trackers(
@@ -737,7 +742,7 @@ def list_event_trackers(
 
 Type annotations for `boto3.client("personalize").list_filters` method.
 
-[Client.list_filters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_filters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_filters]
 
 ```python
 def list_filters(
@@ -753,7 +758,7 @@ def list_filters(
 
 Type annotations for `boto3.client("personalize").list_recipes` method.
 
-[Client.list_recipes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_recipes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_recipes]
 
 ```python
 def list_recipes(
@@ -769,7 +774,7 @@ def list_recipes(
 
 Type annotations for `boto3.client("personalize").list_schemas` method.
 
-[Client.list_schemas documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_schemas)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_schemas]
 
 ```python
 def list_schemas(
@@ -784,7 +789,7 @@ def list_schemas(
 
 Type annotations for `boto3.client("personalize").list_solution_versions` method.
 
-[Client.list_solution_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solution_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solution_versions]
 
 ```python
 def list_solution_versions(
@@ -800,7 +805,7 @@ def list_solution_versions(
 
 Type annotations for `boto3.client("personalize").list_solutions` method.
 
-[Client.list_solutions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solutions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solutions]
 
 ```python
 def list_solutions(
@@ -816,7 +821,7 @@ def list_solutions(
 
 Type annotations for `boto3.client("personalize").update_campaign` method.
 
-[Client.update_campaign documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.update_campaign)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.update_campaign]
 
 ```python
 def update_campaign(

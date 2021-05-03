@@ -17,13 +17,13 @@ Type annotations for `boto3.client("polly").get_paginator("describe_voices")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_polly.paginators import DescribeVoicesPaginator
+from mypy_boto3_polly.paginator import DescribeVoicesPaginator
 
 def get_describe_voices_paginator() -> DescribeVoicesPaginator:
     return boto3.client("polly").get_paginator("describe_voices")
 ```
 
-[Paginator.DescribeVoices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Paginator.DescribeVoices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Paginator.DescribeVoices)
 
 ```python
 class DescribeVoicesPaginator(Boto3Paginator):
@@ -43,13 +43,13 @@ Type annotations for `boto3.client("polly").get_paginator("list_lexicons")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_polly.paginators import ListLexiconsPaginator
+from mypy_boto3_polly.paginator import ListLexiconsPaginator
 
 def get_list_lexicons_paginator() -> ListLexiconsPaginator:
     return boto3.client("polly").get_paginator("list_lexicons")
 ```
 
-[Paginator.ListLexicons documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Paginator.ListLexicons)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Paginator.ListLexicons)
 
 ```python
 class ListLexiconsPaginator(Boto3Paginator):
@@ -66,13 +66,13 @@ Type annotations for `boto3.client("polly").get_paginator("list_speech_synthesis
 Can be used directly:
 
 ```python
-from mypy_boto3_polly.paginators import ListSpeechSynthesisTasksPaginator
+from mypy_boto3_polly.paginator import ListSpeechSynthesisTasksPaginator
 
 def get_list_speech_synthesis_tasks_paginator() -> ListSpeechSynthesisTasksPaginator:
     return boto3.client("polly").get_paginator("list_speech_synthesis_tasks")
 ```
 
-[Paginator.ListSpeechSynthesisTasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Paginator.ListSpeechSynthesisTasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Paginator.ListSpeechSynthesisTasks)
 
 ```python
 class ListSpeechSynthesisTasksPaginator(Boto3Paginator):

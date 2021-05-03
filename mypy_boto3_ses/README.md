@@ -16,7 +16,7 @@ pip install mypy-boto3-ses
   - [Paginators](#paginators)
   - [Waiters](#waiters)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## SESClient
 
@@ -225,7 +225,7 @@ from mypy_boto3_ses.literals import BehaviorOnMXFailure, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

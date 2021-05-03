@@ -36,13 +36,13 @@ Type annotations for `boto3.client("connect").get_paginator("get_metric_data")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import GetMetricDataPaginator
+from mypy_boto3_connect.paginator import GetMetricDataPaginator
 
 def get_get_metric_data_paginator() -> GetMetricDataPaginator:
     return boto3.client("connect").get_paginator("get_metric_data")
 ```
 
-[Paginator.GetMetricData documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.GetMetricData)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.GetMetricData)
 
 ```python
 class GetMetricDataPaginator(Boto3Paginator):
@@ -65,13 +65,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_approved_origi
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListApprovedOriginsPaginator
+from mypy_boto3_connect.paginator import ListApprovedOriginsPaginator
 
 def get_list_approved_origins_paginator() -> ListApprovedOriginsPaginator:
     return boto3.client("connect").get_paginator("list_approved_origins")
 ```
 
-[Paginator.ListApprovedOrigins documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListApprovedOrigins)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListApprovedOrigins)
 
 ```python
 class ListApprovedOriginsPaginator(Boto3Paginator):
@@ -89,13 +89,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_contact_flows"
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListContactFlowsPaginator
+from mypy_boto3_connect.paginator import ListContactFlowsPaginator
 
 def get_list_contact_flows_paginator() -> ListContactFlowsPaginator:
     return boto3.client("connect").get_paginator("list_contact_flows")
 ```
 
-[Paginator.ListContactFlows documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListContactFlows)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListContactFlows)
 
 ```python
 class ListContactFlowsPaginator(Boto3Paginator):
@@ -114,13 +114,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_hours_of_opera
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListHoursOfOperationsPaginator
+from mypy_boto3_connect.paginator import ListHoursOfOperationsPaginator
 
 def get_list_hours_of_operations_paginator() -> ListHoursOfOperationsPaginator:
     return boto3.client("connect").get_paginator("list_hours_of_operations")
 ```
 
-[Paginator.ListHoursOfOperations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListHoursOfOperations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListHoursOfOperations)
 
 ```python
 class ListHoursOfOperationsPaginator(Boto3Paginator):
@@ -138,13 +138,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_instance_attri
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListInstanceAttributesPaginator
+from mypy_boto3_connect.paginator import ListInstanceAttributesPaginator
 
 def get_list_instance_attributes_paginator() -> ListInstanceAttributesPaginator:
     return boto3.client("connect").get_paginator("list_instance_attributes")
 ```
 
-[Paginator.ListInstanceAttributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListInstanceAttributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListInstanceAttributes)
 
 ```python
 class ListInstanceAttributesPaginator(Boto3Paginator):
@@ -162,13 +162,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_instance_stora
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListInstanceStorageConfigsPaginator
+from mypy_boto3_connect.paginator import ListInstanceStorageConfigsPaginator
 
 def get_list_instance_storage_configs_paginator() -> ListInstanceStorageConfigsPaginator:
     return boto3.client("connect").get_paginator("list_instance_storage_configs")
 ```
 
-[Paginator.ListInstanceStorageConfigs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListInstanceStorageConfigs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListInstanceStorageConfigs)
 
 ```python
 class ListInstanceStorageConfigsPaginator(Boto3Paginator):
@@ -187,13 +187,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_instances")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListInstancesPaginator
+from mypy_boto3_connect.paginator import ListInstancesPaginator
 
 def get_list_instances_paginator() -> ListInstancesPaginator:
     return boto3.client("connect").get_paginator("list_instances")
 ```
 
-[Paginator.ListInstances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListInstances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListInstances)
 
 ```python
 class ListInstancesPaginator(Boto3Paginator):
@@ -210,13 +210,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_integration_as
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListIntegrationAssociationsPaginator
+from mypy_boto3_connect.paginator import ListIntegrationAssociationsPaginator
 
 def get_list_integration_associations_paginator() -> ListIntegrationAssociationsPaginator:
     return boto3.client("connect").get_paginator("list_integration_associations")
 ```
 
-[Paginator.ListIntegrationAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListIntegrationAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListIntegrationAssociations)
 
 ```python
 class ListIntegrationAssociationsPaginator(Boto3Paginator):
@@ -234,13 +234,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_lambda_functio
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListLambdaFunctionsPaginator
+from mypy_boto3_connect.paginator import ListLambdaFunctionsPaginator
 
 def get_list_lambda_functions_paginator() -> ListLambdaFunctionsPaginator:
     return boto3.client("connect").get_paginator("list_lambda_functions")
 ```
 
-[Paginator.ListLambdaFunctions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListLambdaFunctions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListLambdaFunctions)
 
 ```python
 class ListLambdaFunctionsPaginator(Boto3Paginator):
@@ -258,13 +258,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_lex_bots")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListLexBotsPaginator
+from mypy_boto3_connect.paginator import ListLexBotsPaginator
 
 def get_list_lex_bots_paginator() -> ListLexBotsPaginator:
     return boto3.client("connect").get_paginator("list_lex_bots")
 ```
 
-[Paginator.ListLexBots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListLexBots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListLexBots)
 
 ```python
 class ListLexBotsPaginator(Boto3Paginator):
@@ -282,13 +282,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_phone_numbers"
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListPhoneNumbersPaginator
+from mypy_boto3_connect.paginator import ListPhoneNumbersPaginator
 
 def get_list_phone_numbers_paginator() -> ListPhoneNumbersPaginator:
     return boto3.client("connect").get_paginator("list_phone_numbers")
 ```
 
-[Paginator.ListPhoneNumbers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListPhoneNumbers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListPhoneNumbers)
 
 ```python
 class ListPhoneNumbersPaginator(Boto3Paginator):
@@ -308,13 +308,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_prompts")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListPromptsPaginator
+from mypy_boto3_connect.paginator import ListPromptsPaginator
 
 def get_list_prompts_paginator() -> ListPromptsPaginator:
     return boto3.client("connect").get_paginator("list_prompts")
 ```
 
-[Paginator.ListPrompts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListPrompts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListPrompts)
 
 ```python
 class ListPromptsPaginator(Boto3Paginator):
@@ -332,13 +332,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_queue_quick_co
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListQueueQuickConnectsPaginator
+from mypy_boto3_connect.paginator import ListQueueQuickConnectsPaginator
 
 def get_list_queue_quick_connects_paginator() -> ListQueueQuickConnectsPaginator:
     return boto3.client("connect").get_paginator("list_queue_quick_connects")
 ```
 
-[Paginator.ListQueueQuickConnects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListQueueQuickConnects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListQueueQuickConnects)
 
 ```python
 class ListQueueQuickConnectsPaginator(Boto3Paginator):
@@ -357,13 +357,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_queues")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListQueuesPaginator
+from mypy_boto3_connect.paginator import ListQueuesPaginator
 
 def get_list_queues_paginator() -> ListQueuesPaginator:
     return boto3.client("connect").get_paginator("list_queues")
 ```
 
-[Paginator.ListQueues documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListQueues)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListQueues)
 
 ```python
 class ListQueuesPaginator(Boto3Paginator):
@@ -382,13 +382,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_quick_connects
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListQuickConnectsPaginator
+from mypy_boto3_connect.paginator import ListQuickConnectsPaginator
 
 def get_list_quick_connects_paginator() -> ListQuickConnectsPaginator:
     return boto3.client("connect").get_paginator("list_quick_connects")
 ```
 
-[Paginator.ListQuickConnects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListQuickConnects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListQuickConnects)
 
 ```python
 class ListQuickConnectsPaginator(Boto3Paginator):
@@ -407,13 +407,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_routing_profil
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListRoutingProfileQueuesPaginator
+from mypy_boto3_connect.paginator import ListRoutingProfileQueuesPaginator
 
 def get_list_routing_profile_queues_paginator() -> ListRoutingProfileQueuesPaginator:
     return boto3.client("connect").get_paginator("list_routing_profile_queues")
 ```
 
-[Paginator.ListRoutingProfileQueues documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListRoutingProfileQueues)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListRoutingProfileQueues)
 
 ```python
 class ListRoutingProfileQueuesPaginator(Boto3Paginator):
@@ -432,13 +432,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_routing_profil
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListRoutingProfilesPaginator
+from mypy_boto3_connect.paginator import ListRoutingProfilesPaginator
 
 def get_list_routing_profiles_paginator() -> ListRoutingProfilesPaginator:
     return boto3.client("connect").get_paginator("list_routing_profiles")
 ```
 
-[Paginator.ListRoutingProfiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListRoutingProfiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListRoutingProfiles)
 
 ```python
 class ListRoutingProfilesPaginator(Boto3Paginator):
@@ -456,13 +456,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_security_keys"
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListSecurityKeysPaginator
+from mypy_boto3_connect.paginator import ListSecurityKeysPaginator
 
 def get_list_security_keys_paginator() -> ListSecurityKeysPaginator:
     return boto3.client("connect").get_paginator("list_security_keys")
 ```
 
-[Paginator.ListSecurityKeys documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListSecurityKeys)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListSecurityKeys)
 
 ```python
 class ListSecurityKeysPaginator(Boto3Paginator):
@@ -480,13 +480,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_security_profi
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListSecurityProfilesPaginator
+from mypy_boto3_connect.paginator import ListSecurityProfilesPaginator
 
 def get_list_security_profiles_paginator() -> ListSecurityProfilesPaginator:
     return boto3.client("connect").get_paginator("list_security_profiles")
 ```
 
-[Paginator.ListSecurityProfiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListSecurityProfiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListSecurityProfiles)
 
 ```python
 class ListSecurityProfilesPaginator(Boto3Paginator):
@@ -504,13 +504,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_use_cases")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListUseCasesPaginator
+from mypy_boto3_connect.paginator import ListUseCasesPaginator
 
 def get_list_use_cases_paginator() -> ListUseCasesPaginator:
     return boto3.client("connect").get_paginator("list_use_cases")
 ```
 
-[Paginator.ListUseCases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListUseCases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListUseCases)
 
 ```python
 class ListUseCasesPaginator(Boto3Paginator):
@@ -529,13 +529,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_user_hierarchy
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListUserHierarchyGroupsPaginator
+from mypy_boto3_connect.paginator import ListUserHierarchyGroupsPaginator
 
 def get_list_user_hierarchy_groups_paginator() -> ListUserHierarchyGroupsPaginator:
     return boto3.client("connect").get_paginator("list_user_hierarchy_groups")
 ```
 
-[Paginator.ListUserHierarchyGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListUserHierarchyGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListUserHierarchyGroups)
 
 ```python
 class ListUserHierarchyGroupsPaginator(Boto3Paginator):
@@ -553,13 +553,13 @@ Type annotations for `boto3.client("connect").get_paginator("list_users")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import ListUsersPaginator
+from mypy_boto3_connect.paginator import ListUsersPaginator
 
 def get_list_users_paginator() -> ListUsersPaginator:
     return boto3.client("connect").get_paginator("list_users")
 ```
 
-[Paginator.ListUsers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListUsers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListUsers)
 
 ```python
 class ListUsersPaginator(Boto3Paginator):

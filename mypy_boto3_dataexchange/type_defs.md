@@ -1,11 +1,11 @@
-# Structures for boto3 DataExchange module
+# Typed dictionaries for boto3 DataExchange module
 
 > [Index](../README.md) > [DataExchange](./README.md) > Structures
 
 Auto-generated documentation for [DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
 type annotations stubs module [mypy_boto3_dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
 
-- [Structures for boto3 DataExchange module](#structures-for-boto3-dataexchange-module)
+- [Typed dictionaries for boto3 DataExchange module](#typed-dictionaries-for-boto3-dataexchange-module)
   - [AssetDestinationEntryTypeDef](#assetdestinationentrytypedef)
   - [AssetDetailsTypeDef](#assetdetailstypedef)
   - [AssetEntryTypeDef](#assetentrytypedef)

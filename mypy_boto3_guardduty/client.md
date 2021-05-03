@@ -79,7 +79,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_guardduty.client import GuardDutyClient
+
+def get_guardduty_client() -> GuardDutyClient:
+    return boto3.client("guardduty")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client)
 
 ## Exceptions
 
@@ -108,7 +113,7 @@ Exceptions:
 
 Type annotations for `boto3.client("guardduty").accept_invitation` method.
 
-[Client.accept_invitation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.accept_invitation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.accept_invitation]
 
 ```python
 def accept_invitation(
@@ -124,7 +129,7 @@ def accept_invitation(
 
 Type annotations for `boto3.client("guardduty").archive_findings` method.
 
-[Client.archive_findings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.archive_findings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.archive_findings]
 
 ```python
 def archive_findings(
@@ -139,7 +144,7 @@ def archive_findings(
 
 Type annotations for `boto3.client("guardduty").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -153,7 +158,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("guardduty").create_detector` method.
 
-[Client.create_detector documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_detector)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_detector]
 
 ```python
 def create_detector(
@@ -171,7 +176,7 @@ def create_detector(
 
 Type annotations for `boto3.client("guardduty").create_filter` method.
 
-[Client.create_filter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_filter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_filter]
 
 ```python
 def create_filter(
@@ -192,7 +197,7 @@ def create_filter(
 
 Type annotations for `boto3.client("guardduty").create_ip_set` method.
 
-[Client.create_ip_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_ip_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_ip_set]
 
 ```python
 def create_ip_set(
@@ -212,7 +217,7 @@ def create_ip_set(
 
 Type annotations for `boto3.client("guardduty").create_members` method.
 
-[Client.create_members documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_members)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_members]
 
 ```python
 def create_members(
@@ -227,7 +232,7 @@ def create_members(
 
 Type annotations for `boto3.client("guardduty").create_publishing_destination` method.
 
-[Client.create_publishing_destination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_publishing_destination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_publishing_destination]
 
 ```python
 def create_publishing_destination(
@@ -244,7 +249,7 @@ def create_publishing_destination(
 
 Type annotations for `boto3.client("guardduty").create_sample_findings` method.
 
-[Client.create_sample_findings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_sample_findings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_sample_findings]
 
 ```python
 def create_sample_findings(
@@ -259,7 +264,7 @@ def create_sample_findings(
 
 Type annotations for `boto3.client("guardduty").create_threat_intel_set` method.
 
-[Client.create_threat_intel_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_threat_intel_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_threat_intel_set]
 
 ```python
 def create_threat_intel_set(
@@ -279,7 +284,7 @@ def create_threat_intel_set(
 
 Type annotations for `boto3.client("guardduty").decline_invitations` method.
 
-[Client.decline_invitations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.decline_invitations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.decline_invitations]
 
 ```python
 def decline_invitations(
@@ -293,7 +298,7 @@ def decline_invitations(
 
 Type annotations for `boto3.client("guardduty").delete_detector` method.
 
-[Client.delete_detector documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_detector)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_detector]
 
 ```python
 def delete_detector(
@@ -307,7 +312,7 @@ def delete_detector(
 
 Type annotations for `boto3.client("guardduty").delete_filter` method.
 
-[Client.delete_filter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_filter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_filter]
 
 ```python
 def delete_filter(
@@ -322,7 +327,7 @@ def delete_filter(
 
 Type annotations for `boto3.client("guardduty").delete_invitations` method.
 
-[Client.delete_invitations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_invitations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_invitations]
 
 ```python
 def delete_invitations(
@@ -336,7 +341,7 @@ def delete_invitations(
 
 Type annotations for `boto3.client("guardduty").delete_ip_set` method.
 
-[Client.delete_ip_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_ip_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_ip_set]
 
 ```python
 def delete_ip_set(
@@ -351,7 +356,7 @@ def delete_ip_set(
 
 Type annotations for `boto3.client("guardduty").delete_members` method.
 
-[Client.delete_members documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_members)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_members]
 
 ```python
 def delete_members(
@@ -366,7 +371,7 @@ def delete_members(
 
 Type annotations for `boto3.client("guardduty").delete_publishing_destination` method.
 
-[Client.delete_publishing_destination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_publishing_destination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_publishing_destination]
 
 ```python
 def delete_publishing_destination(
@@ -381,7 +386,7 @@ def delete_publishing_destination(
 
 Type annotations for `boto3.client("guardduty").delete_threat_intel_set` method.
 
-[Client.delete_threat_intel_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_threat_intel_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_threat_intel_set]
 
 ```python
 def delete_threat_intel_set(
@@ -396,7 +401,7 @@ def delete_threat_intel_set(
 
 Type annotations for `boto3.client("guardduty").describe_organization_configuration` method.
 
-[Client.describe_organization_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.describe_organization_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.describe_organization_configuration]
 
 ```python
 def describe_organization_configuration(
@@ -410,7 +415,7 @@ def describe_organization_configuration(
 
 Type annotations for `boto3.client("guardduty").describe_publishing_destination` method.
 
-[Client.describe_publishing_destination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.describe_publishing_destination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.describe_publishing_destination]
 
 ```python
 def describe_publishing_destination(
@@ -425,7 +430,7 @@ def describe_publishing_destination(
 
 Type annotations for `boto3.client("guardduty").disable_organization_admin_account` method.
 
-[Client.disable_organization_admin_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disable_organization_admin_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disable_organization_admin_account]
 
 ```python
 def disable_organization_admin_account(
@@ -439,7 +444,7 @@ def disable_organization_admin_account(
 
 Type annotations for `boto3.client("guardduty").disassociate_from_master_account` method.
 
-[Client.disassociate_from_master_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disassociate_from_master_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disassociate_from_master_account]
 
 ```python
 def disassociate_from_master_account(
@@ -453,7 +458,7 @@ def disassociate_from_master_account(
 
 Type annotations for `boto3.client("guardduty").disassociate_members` method.
 
-[Client.disassociate_members documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disassociate_members)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disassociate_members]
 
 ```python
 def disassociate_members(
@@ -468,7 +473,7 @@ def disassociate_members(
 
 Type annotations for `boto3.client("guardduty").enable_organization_admin_account` method.
 
-[Client.enable_organization_admin_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.enable_organization_admin_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.enable_organization_admin_account]
 
 ```python
 def enable_organization_admin_account(
@@ -482,7 +487,7 @@ def enable_organization_admin_account(
 
 Type annotations for `boto3.client("guardduty").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -499,7 +504,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("guardduty").get_detector` method.
 
-[Client.get_detector documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_detector)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_detector]
 
 ```python
 def get_detector(
@@ -513,7 +518,7 @@ def get_detector(
 
 Type annotations for `boto3.client("guardduty").get_filter` method.
 
-[Client.get_filter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_filter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_filter]
 
 ```python
 def get_filter(
@@ -528,7 +533,7 @@ def get_filter(
 
 Type annotations for `boto3.client("guardduty").get_findings` method.
 
-[Client.get_findings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_findings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_findings]
 
 ```python
 def get_findings(
@@ -544,7 +549,7 @@ def get_findings(
 
 Type annotations for `boto3.client("guardduty").get_findings_statistics` method.
 
-[Client.get_findings_statistics documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_findings_statistics)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_findings_statistics]
 
 ```python
 def get_findings_statistics(
@@ -560,7 +565,7 @@ def get_findings_statistics(
 
 Type annotations for `boto3.client("guardduty").get_invitations_count` method.
 
-[Client.get_invitations_count documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_invitations_count)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_invitations_count]
 
 ```python
 def get_invitations_count(
@@ -573,7 +578,7 @@ def get_invitations_count(
 
 Type annotations for `boto3.client("guardduty").get_ip_set` method.
 
-[Client.get_ip_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_ip_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_ip_set]
 
 ```python
 def get_ip_set(
@@ -588,7 +593,7 @@ def get_ip_set(
 
 Type annotations for `boto3.client("guardduty").get_master_account` method.
 
-[Client.get_master_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_master_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_master_account]
 
 ```python
 def get_master_account(
@@ -602,7 +607,7 @@ def get_master_account(
 
 Type annotations for `boto3.client("guardduty").get_member_detectors` method.
 
-[Client.get_member_detectors documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_member_detectors)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_member_detectors]
 
 ```python
 def get_member_detectors(
@@ -617,7 +622,7 @@ def get_member_detectors(
 
 Type annotations for `boto3.client("guardduty").get_members` method.
 
-[Client.get_members documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_members)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_members]
 
 ```python
 def get_members(
@@ -632,7 +637,7 @@ def get_members(
 
 Type annotations for `boto3.client("guardduty").get_threat_intel_set` method.
 
-[Client.get_threat_intel_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_threat_intel_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_threat_intel_set]
 
 ```python
 def get_threat_intel_set(
@@ -647,7 +652,7 @@ def get_threat_intel_set(
 
 Type annotations for `boto3.client("guardduty").get_usage_statistics` method.
 
-[Client.get_usage_statistics documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_usage_statistics)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_usage_statistics]
 
 ```python
 def get_usage_statistics(
@@ -666,7 +671,7 @@ def get_usage_statistics(
 
 Type annotations for `boto3.client("guardduty").invite_members` method.
 
-[Client.invite_members documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.invite_members)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.invite_members]
 
 ```python
 def invite_members(
@@ -683,7 +688,7 @@ def invite_members(
 
 Type annotations for `boto3.client("guardduty").list_detectors` method.
 
-[Client.list_detectors documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_detectors)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_detectors]
 
 ```python
 def list_detectors(
@@ -698,7 +703,7 @@ def list_detectors(
 
 Type annotations for `boto3.client("guardduty").list_filters` method.
 
-[Client.list_filters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_filters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_filters]
 
 ```python
 def list_filters(
@@ -714,7 +719,7 @@ def list_filters(
 
 Type annotations for `boto3.client("guardduty").list_findings` method.
 
-[Client.list_findings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_findings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_findings]
 
 ```python
 def list_findings(
@@ -732,7 +737,7 @@ def list_findings(
 
 Type annotations for `boto3.client("guardduty").list_invitations` method.
 
-[Client.list_invitations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_invitations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_invitations]
 
 ```python
 def list_invitations(
@@ -747,7 +752,7 @@ def list_invitations(
 
 Type annotations for `boto3.client("guardduty").list_ip_sets` method.
 
-[Client.list_ip_sets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_ip_sets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_ip_sets]
 
 ```python
 def list_ip_sets(
@@ -763,7 +768,7 @@ def list_ip_sets(
 
 Type annotations for `boto3.client("guardduty").list_members` method.
 
-[Client.list_members documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_members)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_members]
 
 ```python
 def list_members(
@@ -780,7 +785,7 @@ def list_members(
 
 Type annotations for `boto3.client("guardduty").list_organization_admin_accounts` method.
 
-[Client.list_organization_admin_accounts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_organization_admin_accounts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_organization_admin_accounts]
 
 ```python
 def list_organization_admin_accounts(
@@ -795,7 +800,7 @@ def list_organization_admin_accounts(
 
 Type annotations for `boto3.client("guardduty").list_publishing_destinations` method.
 
-[Client.list_publishing_destinations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_publishing_destinations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_publishing_destinations]
 
 ```python
 def list_publishing_destinations(
@@ -811,7 +816,7 @@ def list_publishing_destinations(
 
 Type annotations for `boto3.client("guardduty").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -825,7 +830,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("guardduty").list_threat_intel_sets` method.
 
-[Client.list_threat_intel_sets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_threat_intel_sets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_threat_intel_sets]
 
 ```python
 def list_threat_intel_sets(
@@ -841,7 +846,7 @@ def list_threat_intel_sets(
 
 Type annotations for `boto3.client("guardduty").start_monitoring_members` method.
 
-[Client.start_monitoring_members documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.start_monitoring_members)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.start_monitoring_members]
 
 ```python
 def start_monitoring_members(
@@ -856,7 +861,7 @@ def start_monitoring_members(
 
 Type annotations for `boto3.client("guardduty").stop_monitoring_members` method.
 
-[Client.stop_monitoring_members documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.stop_monitoring_members)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.stop_monitoring_members]
 
 ```python
 def stop_monitoring_members(
@@ -871,7 +876,7 @@ def stop_monitoring_members(
 
 Type annotations for `boto3.client("guardduty").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -886,7 +891,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("guardduty").unarchive_findings` method.
 
-[Client.unarchive_findings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.unarchive_findings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.unarchive_findings]
 
 ```python
 def unarchive_findings(
@@ -901,7 +906,7 @@ def unarchive_findings(
 
 Type annotations for `boto3.client("guardduty").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -916,7 +921,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("guardduty").update_detector` method.
 
-[Client.update_detector documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_detector)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_detector]
 
 ```python
 def update_detector(
@@ -933,7 +938,7 @@ def update_detector(
 
 Type annotations for `boto3.client("guardduty").update_filter` method.
 
-[Client.update_filter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_filter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_filter]
 
 ```python
 def update_filter(
@@ -952,7 +957,7 @@ def update_filter(
 
 Type annotations for `boto3.client("guardduty").update_findings_feedback` method.
 
-[Client.update_findings_feedback documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_findings_feedback)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_findings_feedback]
 
 ```python
 def update_findings_feedback(
@@ -969,7 +974,7 @@ def update_findings_feedback(
 
 Type annotations for `boto3.client("guardduty").update_ip_set` method.
 
-[Client.update_ip_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_ip_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_ip_set]
 
 ```python
 def update_ip_set(
@@ -987,7 +992,7 @@ def update_ip_set(
 
 Type annotations for `boto3.client("guardduty").update_member_detectors` method.
 
-[Client.update_member_detectors documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_member_detectors)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_member_detectors]
 
 ```python
 def update_member_detectors(
@@ -1003,7 +1008,7 @@ def update_member_detectors(
 
 Type annotations for `boto3.client("guardduty").update_organization_configuration` method.
 
-[Client.update_organization_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_organization_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_organization_configuration]
 
 ```python
 def update_organization_configuration(
@@ -1019,7 +1024,7 @@ def update_organization_configuration(
 
 Type annotations for `boto3.client("guardduty").update_publishing_destination` method.
 
-[Client.update_publishing_destination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_publishing_destination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_publishing_destination]
 
 ```python
 def update_publishing_destination(
@@ -1035,7 +1040,7 @@ def update_publishing_destination(
 
 Type annotations for `boto3.client("guardduty").update_threat_intel_set` method.
 
-[Client.update_threat_intel_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_threat_intel_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_threat_intel_set]
 
 ```python
 def update_threat_intel_set(

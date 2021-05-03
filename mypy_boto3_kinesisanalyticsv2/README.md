@@ -15,7 +15,7 @@ pip install mypy-boto3-kinesisanalyticsv2
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## KinesisAnalyticsV2Client
 
@@ -134,7 +134,7 @@ from mypy_boto3_kinesisanalyticsv2.literals import ApplicationRestoreType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

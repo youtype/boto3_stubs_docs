@@ -1,11 +1,11 @@
-# Structures for boto3 PinpointSMSVoice module
+# Typed dictionaries for boto3 PinpointSMSVoice module
 
 > [Index](../README.md) > [PinpointSMSVoice](./README.md) > Structures
 
 Auto-generated documentation for [PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice)
 type annotations stubs module [mypy_boto3_pinpoint_sms_voice](https://pypi.org/project/mypy-boto3-pinpoint-sms-voice/).
 
-- [Structures for boto3 PinpointSMSVoice module](#structures-for-boto3-pinpointsmsvoice-module)
+- [Typed dictionaries for boto3 PinpointSMSVoice module](#typed-dictionaries-for-boto3-pinpointsmsvoice-module)
   - [CallInstructionsMessageTypeTypeDef](#callinstructionsmessagetypetypedef)
   - [CloudWatchLogsDestinationTypeDef](#cloudwatchlogsdestinationtypedef)
   - [EventDestinationDefinitionTypeDef](#eventdestinationdefinitiontypedef)

@@ -1,11 +1,11 @@
-# Structures for boto3 CodeStarconnections module
+# Typed dictionaries for boto3 CodeStarconnections module
 
 > [Index](../README.md) > [CodeStarconnections](./README.md) > Structures
 
 Auto-generated documentation for [CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
 type annotations stubs module [mypy_boto3_codestar_connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
 
-- [Structures for boto3 CodeStarconnections module](#structures-for-boto3-codestarconnections-module)
+- [Typed dictionaries for boto3 CodeStarconnections module](#typed-dictionaries-for-boto3-codestarconnections-module)
   - [ConnectionTypeDef](#connectiontypedef)
   - [CreateConnectionOutputTypeDef](#createconnectionoutputtypedef)
   - [CreateHostOutputTypeDef](#createhostoutputtypedef)
@@ -46,12 +46,10 @@ from mypy_boto3_codestar_connections.type_defs import CreateConnectionOutputType
 
 Required fields:
 - `ConnectionArn`: `str`
-
-
-
-Optional fields:
 - `Tags`: `List["TagTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateHostOutputTypeDef
@@ -61,12 +59,12 @@ from mypy_boto3_codestar_connections.type_defs import CreateHostOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `HostArn`: `str`
 - `Tags`: `List["TagTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetConnectionOutputTypeDef
@@ -76,11 +74,11 @@ from mypy_boto3_codestar_connections.type_defs import GetConnectionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Connection`: `"ConnectionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetHostOutputTypeDef
@@ -90,15 +88,15 @@ from mypy_boto3_codestar_connections.type_defs import GetHostOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Name`: `str`
 - `Status`: `str`
 - `ProviderType`: `ProviderType`
 - `ProviderEndpoint`: `str`
 - `VpcConfiguration`: `"VpcConfigurationTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## HostTypeDef
@@ -127,12 +125,12 @@ from mypy_boto3_codestar_connections.type_defs import ListConnectionsOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Connections`: `List["ConnectionTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListHostsOutputTypeDef
@@ -142,12 +140,12 @@ from mypy_boto3_codestar_connections.type_defs import ListHostsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Hosts`: `List["HostTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagsForResourceOutputTypeDef
@@ -157,11 +155,11 @@ from mypy_boto3_codestar_connections.type_defs import ListTagsForResourceOutputT
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Tags`: `List["TagTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ResponseMetadata

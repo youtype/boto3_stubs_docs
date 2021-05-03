@@ -15,7 +15,7 @@ pip install mypy-boto3-clouddirectory
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## CloudDirectoryClient
 
@@ -227,7 +227,7 @@ from mypy_boto3_clouddirectory.literals import BatchReadExceptionType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

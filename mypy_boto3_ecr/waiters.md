@@ -16,13 +16,13 @@ Type annotations for `boto3.client("ecr").get_waiter("image_scan_complete")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ecr.waiters import ImageScanCompleteWaiter
+from mypy_boto3_ecr.waiter import ImageScanCompleteWaiter
 
 def get_image_scan_complete_waiter() -> ImageScanCompleteWaiter:
     return boto3.client("ecr").get_waiter("image_scan_complete")
 ```
 
-[Waiter.ImageScanComplete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Waiter.ImageScanComplete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Waiter.image_scan_complete)
 
 ```python
 class ImageScanCompleteWaiter(Boto3Waiter):
@@ -44,13 +44,13 @@ Type annotations for `boto3.client("ecr").get_waiter("lifecycle_policy_preview_c
 Can be used directly:
 
 ```python
-from mypy_boto3_ecr.waiters import LifecyclePolicyPreviewCompleteWaiter
+from mypy_boto3_ecr.waiter import LifecyclePolicyPreviewCompleteWaiter
 
 def get_lifecycle_policy_preview_complete_waiter() -> LifecyclePolicyPreviewCompleteWaiter:
     return boto3.client("ecr").get_waiter("lifecycle_policy_preview_complete")
 ```
 
-[Waiter.LifecyclePolicyPreviewComplete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Waiter.LifecyclePolicyPreviewComplete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Waiter.lifecycle_policy_preview_complete)
 
 ```python
 class LifecyclePolicyPreviewCompleteWaiter(Boto3Waiter):

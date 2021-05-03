@@ -23,13 +23,13 @@ Type annotations for `boto3.client("codedeploy").get_paginator("list_application
 Can be used directly:
 
 ```python
-from mypy_boto3_codedeploy.paginators import ListApplicationRevisionsPaginator
+from mypy_boto3_codedeploy.paginator import ListApplicationRevisionsPaginator
 
 def get_list_application_revisions_paginator() -> ListApplicationRevisionsPaginator:
     return boto3.client("codedeploy").get_paginator("list_application_revisions")
 ```
 
-[Paginator.ListApplicationRevisions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListApplicationRevisions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListApplicationRevisions)
 
 ```python
 class ListApplicationRevisionsPaginator(Boto3Paginator):
@@ -52,13 +52,13 @@ Type annotations for `boto3.client("codedeploy").get_paginator("list_application
 Can be used directly:
 
 ```python
-from mypy_boto3_codedeploy.paginators import ListApplicationsPaginator
+from mypy_boto3_codedeploy.paginator import ListApplicationsPaginator
 
 def get_list_applications_paginator() -> ListApplicationsPaginator:
     return boto3.client("codedeploy").get_paginator("list_applications")
 ```
 
-[Paginator.ListApplications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListApplications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListApplications)
 
 ```python
 class ListApplicationsPaginator(Boto3Paginator):
@@ -75,13 +75,13 @@ Type annotations for `boto3.client("codedeploy").get_paginator("list_deployment_
 Can be used directly:
 
 ```python
-from mypy_boto3_codedeploy.paginators import ListDeploymentConfigsPaginator
+from mypy_boto3_codedeploy.paginator import ListDeploymentConfigsPaginator
 
 def get_list_deployment_configs_paginator() -> ListDeploymentConfigsPaginator:
     return boto3.client("codedeploy").get_paginator("list_deployment_configs")
 ```
 
-[Paginator.ListDeploymentConfigs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentConfigs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentConfigs)
 
 ```python
 class ListDeploymentConfigsPaginator(Boto3Paginator):
@@ -98,13 +98,13 @@ Type annotations for `boto3.client("codedeploy").get_paginator("list_deployment_
 Can be used directly:
 
 ```python
-from mypy_boto3_codedeploy.paginators import ListDeploymentGroupsPaginator
+from mypy_boto3_codedeploy.paginator import ListDeploymentGroupsPaginator
 
 def get_list_deployment_groups_paginator() -> ListDeploymentGroupsPaginator:
     return boto3.client("codedeploy").get_paginator("list_deployment_groups")
 ```
 
-[Paginator.ListDeploymentGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentGroups)
 
 ```python
 class ListDeploymentGroupsPaginator(Boto3Paginator):
@@ -122,13 +122,13 @@ Type annotations for `boto3.client("codedeploy").get_paginator("list_deployment_
 Can be used directly:
 
 ```python
-from mypy_boto3_codedeploy.paginators import ListDeploymentInstancesPaginator
+from mypy_boto3_codedeploy.paginator import ListDeploymentInstancesPaginator
 
 def get_list_deployment_instances_paginator() -> ListDeploymentInstancesPaginator:
     return boto3.client("codedeploy").get_paginator("list_deployment_instances")
 ```
 
-[Paginator.ListDeploymentInstances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentInstances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentInstances)
 
 ```python
 class ListDeploymentInstancesPaginator(Boto3Paginator):
@@ -148,13 +148,13 @@ Type annotations for `boto3.client("codedeploy").get_paginator("list_deployment_
 Can be used directly:
 
 ```python
-from mypy_boto3_codedeploy.paginators import ListDeploymentTargetsPaginator
+from mypy_boto3_codedeploy.paginator import ListDeploymentTargetsPaginator
 
 def get_list_deployment_targets_paginator() -> ListDeploymentTargetsPaginator:
     return boto3.client("codedeploy").get_paginator("list_deployment_targets")
 ```
 
-[Paginator.ListDeploymentTargets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentTargets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeploymentTargets)
 
 ```python
 class ListDeploymentTargetsPaginator(Boto3Paginator):
@@ -173,13 +173,13 @@ Type annotations for `boto3.client("codedeploy").get_paginator("list_deployments
 Can be used directly:
 
 ```python
-from mypy_boto3_codedeploy.paginators import ListDeploymentsPaginator
+from mypy_boto3_codedeploy.paginator import ListDeploymentsPaginator
 
 def get_list_deployments_paginator() -> ListDeploymentsPaginator:
     return boto3.client("codedeploy").get_paginator("list_deployments")
 ```
 
-[Paginator.ListDeployments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeployments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListDeployments)
 
 ```python
 class ListDeploymentsPaginator(Boto3Paginator):
@@ -201,13 +201,13 @@ Type annotations for `boto3.client("codedeploy").get_paginator("list_git_hub_acc
 Can be used directly:
 
 ```python
-from mypy_boto3_codedeploy.paginators import ListGitHubAccountTokenNamesPaginator
+from mypy_boto3_codedeploy.paginator import ListGitHubAccountTokenNamesPaginator
 
 def get_list_git_hub_account_token_names_paginator() -> ListGitHubAccountTokenNamesPaginator:
     return boto3.client("codedeploy").get_paginator("list_git_hub_account_token_names")
 ```
 
-[Paginator.ListGitHubAccountTokenNames documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListGitHubAccountTokenNames)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListGitHubAccountTokenNames)
 
 ```python
 class ListGitHubAccountTokenNamesPaginator(Boto3Paginator):
@@ -224,13 +224,13 @@ Type annotations for `boto3.client("codedeploy").get_paginator("list_on_premises
 Can be used directly:
 
 ```python
-from mypy_boto3_codedeploy.paginators import ListOnPremisesInstancesPaginator
+from mypy_boto3_codedeploy.paginator import ListOnPremisesInstancesPaginator
 
 def get_list_on_premises_instances_paginator() -> ListOnPremisesInstancesPaginator:
     return boto3.client("codedeploy").get_paginator("list_on_premises_instances")
 ```
 
-[Paginator.ListOnPremisesInstances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListOnPremisesInstances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Paginator.ListOnPremisesInstances)
 
 ```python
 class ListOnPremisesInstancesPaginator(Boto3Paginator):

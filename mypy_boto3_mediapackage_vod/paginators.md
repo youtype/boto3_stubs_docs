@@ -17,13 +17,13 @@ Type annotations for `boto3.client("mediapackage-vod").get_paginator("list_asset
 Can be used directly:
 
 ```python
-from mypy_boto3_mediapackage_vod.paginators import ListAssetsPaginator
+from mypy_boto3_mediapackage_vod.paginator import ListAssetsPaginator
 
 def get_list_assets_paginator() -> ListAssetsPaginator:
     return boto3.client("mediapackage-vod").get_paginator("list_assets")
 ```
 
-[Paginator.ListAssets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListAssets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListAssets)
 
 ```python
 class ListAssetsPaginator(Boto3Paginator):
@@ -41,13 +41,13 @@ Type annotations for `boto3.client("mediapackage-vod").get_paginator("list_packa
 Can be used directly:
 
 ```python
-from mypy_boto3_mediapackage_vod.paginators import ListPackagingConfigurationsPaginator
+from mypy_boto3_mediapackage_vod.paginator import ListPackagingConfigurationsPaginator
 
 def get_list_packaging_configurations_paginator() -> ListPackagingConfigurationsPaginator:
     return boto3.client("mediapackage-vod").get_paginator("list_packaging_configurations")
 ```
 
-[Paginator.ListPackagingConfigurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListPackagingConfigurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListPackagingConfigurations)
 
 ```python
 class ListPackagingConfigurationsPaginator(Boto3Paginator):
@@ -65,13 +65,13 @@ Type annotations for `boto3.client("mediapackage-vod").get_paginator("list_packa
 Can be used directly:
 
 ```python
-from mypy_boto3_mediapackage_vod.paginators import ListPackagingGroupsPaginator
+from mypy_boto3_mediapackage_vod.paginator import ListPackagingGroupsPaginator
 
 def get_list_packaging_groups_paginator() -> ListPackagingGroupsPaginator:
     return boto3.client("mediapackage-vod").get_paginator("list_packaging_groups")
 ```
 
-[Paginator.ListPackagingGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListPackagingGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListPackagingGroups)
 
 ```python
 class ListPackagingGroupsPaginator(Boto3Paginator):

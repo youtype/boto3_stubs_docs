@@ -14,7 +14,7 @@ pip install mypy-boto3-lookoutequipment
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## LookoutEquipmentClient
 
@@ -100,7 +100,7 @@ from mypy_boto3_lookoutequipment.literals import DataUploadFrequency, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

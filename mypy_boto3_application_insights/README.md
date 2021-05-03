@@ -14,7 +14,7 @@ pip install mypy-boto3-application-insights
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ApplicationInsightsClient
 
@@ -109,7 +109,7 @@ from mypy_boto3_application_insights.literals import CloudWatchEventSource, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

@@ -1,11 +1,11 @@
-# Structures for boto3 AppIntegrationsService module
+# Typed dictionaries for boto3 AppIntegrationsService module
 
 > [Index](../README.md) > [AppIntegrationsService](./README.md) > Structures
 
 Auto-generated documentation for [AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)
 type annotations stubs module [mypy_boto3_appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
 
-- [Structures for boto3 AppIntegrationsService module](#structures-for-boto3-appintegrationsservice-module)
+- [Typed dictionaries for boto3 AppIntegrationsService module](#typed-dictionaries-for-boto3-appintegrationsservice-module)
   - [CreateEventIntegrationResponseTypeDef](#createeventintegrationresponsetypedef)
   - [EventFilterTypeDef](#eventfiltertypedef)
   - [EventIntegrationAssociationTypeDef](#eventintegrationassociationtypedef)

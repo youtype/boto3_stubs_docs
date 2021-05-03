@@ -69,7 +69,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_emr.client import EMRClient
+
+def get_emr_client() -> EMRClient:
+    return boto3.client("emr")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client)
 
 ## Exceptions
 
@@ -99,7 +104,7 @@ Exceptions:
 
 Type annotations for `boto3.client("emr").add_instance_fleet` method.
 
-[Client.add_instance_fleet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_fleet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_fleet]
 
 ```python
 def add_instance_fleet(
@@ -114,7 +119,7 @@ def add_instance_fleet(
 
 Type annotations for `boto3.client("emr").add_instance_groups` method.
 
-[Client.add_instance_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_groups]
 
 ```python
 def add_instance_groups(
@@ -129,7 +134,7 @@ def add_instance_groups(
 
 Type annotations for `boto3.client("emr").add_job_flow_steps` method.
 
-[Client.add_job_flow_steps documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_job_flow_steps)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_job_flow_steps]
 
 ```python
 def add_job_flow_steps(
@@ -144,7 +149,7 @@ def add_job_flow_steps(
 
 Type annotations for `boto3.client("emr").add_tags` method.
 
-[Client.add_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_tags]
 
 ```python
 def add_tags(
@@ -159,7 +164,7 @@ def add_tags(
 
 Type annotations for `boto3.client("emr").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -173,7 +178,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("emr").cancel_steps` method.
 
-[Client.cancel_steps documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.cancel_steps)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.cancel_steps]
 
 ```python
 def cancel_steps(
@@ -189,7 +194,7 @@ def cancel_steps(
 
 Type annotations for `boto3.client("emr").create_security_configuration` method.
 
-[Client.create_security_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_security_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_security_configuration]
 
 ```python
 def create_security_configuration(
@@ -204,7 +209,7 @@ def create_security_configuration(
 
 Type annotations for `boto3.client("emr").create_studio` method.
 
-[Client.create_studio documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio]
 
 ```python
 def create_studio(
@@ -228,7 +233,7 @@ def create_studio(
 
 Type annotations for `boto3.client("emr").create_studio_session_mapping` method.
 
-[Client.create_studio_session_mapping documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio_session_mapping)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio_session_mapping]
 
 ```python
 def create_studio_session_mapping(
@@ -246,7 +251,7 @@ def create_studio_session_mapping(
 
 Type annotations for `boto3.client("emr").delete_security_configuration` method.
 
-[Client.delete_security_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_security_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_security_configuration]
 
 ```python
 def delete_security_configuration(
@@ -260,7 +265,7 @@ def delete_security_configuration(
 
 Type annotations for `boto3.client("emr").delete_studio` method.
 
-[Client.delete_studio documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio]
 
 ```python
 def delete_studio(
@@ -274,7 +279,7 @@ def delete_studio(
 
 Type annotations for `boto3.client("emr").delete_studio_session_mapping` method.
 
-[Client.delete_studio_session_mapping documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio_session_mapping)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio_session_mapping]
 
 ```python
 def delete_studio_session_mapping(
@@ -291,7 +296,7 @@ def delete_studio_session_mapping(
 
 Type annotations for `boto3.client("emr").describe_cluster` method.
 
-[Client.describe_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_cluster]
 
 ```python
 def describe_cluster(
@@ -305,7 +310,7 @@ def describe_cluster(
 
 Type annotations for `boto3.client("emr").describe_job_flows` method.
 
-[Client.describe_job_flows documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_job_flows)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_job_flows]
 
 ```python
 def describe_job_flows(
@@ -322,7 +327,7 @@ def describe_job_flows(
 
 Type annotations for `boto3.client("emr").describe_notebook_execution` method.
 
-[Client.describe_notebook_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_notebook_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_notebook_execution]
 
 ```python
 def describe_notebook_execution(
@@ -336,7 +341,7 @@ def describe_notebook_execution(
 
 Type annotations for `boto3.client("emr").describe_security_configuration` method.
 
-[Client.describe_security_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_security_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_security_configuration]
 
 ```python
 def describe_security_configuration(
@@ -350,7 +355,7 @@ def describe_security_configuration(
 
 Type annotations for `boto3.client("emr").describe_step` method.
 
-[Client.describe_step documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_step)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_step]
 
 ```python
 def describe_step(
@@ -365,7 +370,7 @@ def describe_step(
 
 Type annotations for `boto3.client("emr").describe_studio` method.
 
-[Client.describe_studio documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_studio)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_studio]
 
 ```python
 def describe_studio(
@@ -379,7 +384,7 @@ def describe_studio(
 
 Type annotations for `boto3.client("emr").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -396,7 +401,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("emr").get_block_public_access_configuration` method.
 
-[Client.get_block_public_access_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_block_public_access_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_block_public_access_configuration]
 
 ```python
 def get_block_public_access_configuration(
@@ -409,7 +414,7 @@ def get_block_public_access_configuration(
 
 Type annotations for `boto3.client("emr").get_managed_scaling_policy` method.
 
-[Client.get_managed_scaling_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_managed_scaling_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_managed_scaling_policy]
 
 ```python
 def get_managed_scaling_policy(
@@ -423,7 +428,7 @@ def get_managed_scaling_policy(
 
 Type annotations for `boto3.client("emr").get_studio_session_mapping` method.
 
-[Client.get_studio_session_mapping documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_studio_session_mapping)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_studio_session_mapping]
 
 ```python
 def get_studio_session_mapping(
@@ -440,7 +445,7 @@ def get_studio_session_mapping(
 
 Type annotations for `boto3.client("emr").list_bootstrap_actions` method.
 
-[Client.list_bootstrap_actions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_bootstrap_actions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_bootstrap_actions]
 
 ```python
 def list_bootstrap_actions(
@@ -455,7 +460,7 @@ def list_bootstrap_actions(
 
 Type annotations for `boto3.client("emr").list_clusters` method.
 
-[Client.list_clusters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_clusters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_clusters]
 
 ```python
 def list_clusters(
@@ -472,7 +477,7 @@ def list_clusters(
 
 Type annotations for `boto3.client("emr").list_instance_fleets` method.
 
-[Client.list_instance_fleets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_fleets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_fleets]
 
 ```python
 def list_instance_fleets(
@@ -487,7 +492,7 @@ def list_instance_fleets(
 
 Type annotations for `boto3.client("emr").list_instance_groups` method.
 
-[Client.list_instance_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_groups]
 
 ```python
 def list_instance_groups(
@@ -502,7 +507,7 @@ def list_instance_groups(
 
 Type annotations for `boto3.client("emr").list_instances` method.
 
-[Client.list_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instances]
 
 ```python
 def list_instances(
@@ -522,7 +527,7 @@ def list_instances(
 
 Type annotations for `boto3.client("emr").list_notebook_executions` method.
 
-[Client.list_notebook_executions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_notebook_executions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_notebook_executions]
 
 ```python
 def list_notebook_executions(
@@ -540,7 +545,7 @@ def list_notebook_executions(
 
 Type annotations for `boto3.client("emr").list_security_configurations` method.
 
-[Client.list_security_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_security_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_security_configurations]
 
 ```python
 def list_security_configurations(
@@ -554,7 +559,7 @@ def list_security_configurations(
 
 Type annotations for `boto3.client("emr").list_steps` method.
 
-[Client.list_steps documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_steps)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_steps]
 
 ```python
 def list_steps(
@@ -571,7 +576,7 @@ def list_steps(
 
 Type annotations for `boto3.client("emr").list_studio_session_mappings` method.
 
-[Client.list_studio_session_mappings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studio_session_mappings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studio_session_mappings]
 
 ```python
 def list_studio_session_mappings(
@@ -587,7 +592,7 @@ def list_studio_session_mappings(
 
 Type annotations for `boto3.client("emr").list_studios` method.
 
-[Client.list_studios documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studios)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studios]
 
 ```python
 def list_studios(
@@ -601,7 +606,7 @@ def list_studios(
 
 Type annotations for `boto3.client("emr").modify_cluster` method.
 
-[Client.modify_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_cluster]
 
 ```python
 def modify_cluster(
@@ -616,7 +621,7 @@ def modify_cluster(
 
 Type annotations for `boto3.client("emr").modify_instance_fleet` method.
 
-[Client.modify_instance_fleet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_fleet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_fleet]
 
 ```python
 def modify_instance_fleet(
@@ -631,7 +636,7 @@ def modify_instance_fleet(
 
 Type annotations for `boto3.client("emr").modify_instance_groups` method.
 
-[Client.modify_instance_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_groups]
 
 ```python
 def modify_instance_groups(
@@ -646,7 +651,7 @@ def modify_instance_groups(
 
 Type annotations for `boto3.client("emr").put_auto_scaling_policy` method.
 
-[Client.put_auto_scaling_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_auto_scaling_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_auto_scaling_policy]
 
 ```python
 def put_auto_scaling_policy(
@@ -662,7 +667,7 @@ def put_auto_scaling_policy(
 
 Type annotations for `boto3.client("emr").put_block_public_access_configuration` method.
 
-[Client.put_block_public_access_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_block_public_access_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_block_public_access_configuration]
 
 ```python
 def put_block_public_access_configuration(
@@ -676,7 +681,7 @@ def put_block_public_access_configuration(
 
 Type annotations for `boto3.client("emr").put_managed_scaling_policy` method.
 
-[Client.put_managed_scaling_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_managed_scaling_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_managed_scaling_policy]
 
 ```python
 def put_managed_scaling_policy(
@@ -691,7 +696,7 @@ def put_managed_scaling_policy(
 
 Type annotations for `boto3.client("emr").remove_auto_scaling_policy` method.
 
-[Client.remove_auto_scaling_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_auto_scaling_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_auto_scaling_policy]
 
 ```python
 def remove_auto_scaling_policy(
@@ -706,7 +711,7 @@ def remove_auto_scaling_policy(
 
 Type annotations for `boto3.client("emr").remove_managed_scaling_policy` method.
 
-[Client.remove_managed_scaling_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_managed_scaling_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_managed_scaling_policy]
 
 ```python
 def remove_managed_scaling_policy(
@@ -720,7 +725,7 @@ def remove_managed_scaling_policy(
 
 Type annotations for `boto3.client("emr").remove_tags` method.
 
-[Client.remove_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_tags]
 
 ```python
 def remove_tags(
@@ -735,7 +740,7 @@ def remove_tags(
 
 Type annotations for `boto3.client("emr").run_job_flow` method.
 
-[Client.run_job_flow documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.run_job_flow)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.run_job_flow]
 
 ```python
 def run_job_flow(
@@ -775,7 +780,7 @@ def run_job_flow(
 
 Type annotations for `boto3.client("emr").set_termination_protection` method.
 
-[Client.set_termination_protection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_termination_protection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_termination_protection]
 
 ```python
 def set_termination_protection(
@@ -790,7 +795,7 @@ def set_termination_protection(
 
 Type annotations for `boto3.client("emr").set_visible_to_all_users` method.
 
-[Client.set_visible_to_all_users documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_visible_to_all_users)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_visible_to_all_users]
 
 ```python
 def set_visible_to_all_users(
@@ -805,7 +810,7 @@ def set_visible_to_all_users(
 
 Type annotations for `boto3.client("emr").start_notebook_execution` method.
 
-[Client.start_notebook_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.start_notebook_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.start_notebook_execution]
 
 ```python
 def start_notebook_execution(
@@ -826,7 +831,7 @@ def start_notebook_execution(
 
 Type annotations for `boto3.client("emr").stop_notebook_execution` method.
 
-[Client.stop_notebook_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.stop_notebook_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.stop_notebook_execution]
 
 ```python
 def stop_notebook_execution(
@@ -840,7 +845,7 @@ def stop_notebook_execution(
 
 Type annotations for `boto3.client("emr").terminate_job_flows` method.
 
-[Client.terminate_job_flows documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.terminate_job_flows)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.terminate_job_flows]
 
 ```python
 def terminate_job_flows(
@@ -854,7 +859,7 @@ def terminate_job_flows(
 
 Type annotations for `boto3.client("emr").update_studio` method.
 
-[Client.update_studio documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio]
 
 ```python
 def update_studio(
@@ -872,7 +877,7 @@ def update_studio(
 
 Type annotations for `boto3.client("emr").update_studio_session_mapping` method.
 
-[Client.update_studio_session_mapping documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio_session_mapping)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio_session_mapping]
 
 ```python
 def update_studio_session_mapping(

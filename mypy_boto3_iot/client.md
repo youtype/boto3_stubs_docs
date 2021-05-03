@@ -244,7 +244,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_iot.client import IoTClient
+
+def get_iot_client() -> IoTClient:
+    return boto3.client("iot")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client)
 
 ## Exceptions
 
@@ -300,7 +305,7 @@ Exceptions:
 
 Type annotations for `boto3.client("iot").accept_certificate_transfer` method.
 
-[Client.accept_certificate_transfer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.accept_certificate_transfer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.accept_certificate_transfer]
 
 ```python
 def accept_certificate_transfer(
@@ -315,7 +320,7 @@ def accept_certificate_transfer(
 
 Type annotations for `boto3.client("iot").add_thing_to_billing_group` method.
 
-[Client.add_thing_to_billing_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.add_thing_to_billing_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.add_thing_to_billing_group]
 
 ```python
 def add_thing_to_billing_group(
@@ -332,7 +337,7 @@ def add_thing_to_billing_group(
 
 Type annotations for `boto3.client("iot").add_thing_to_thing_group` method.
 
-[Client.add_thing_to_thing_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.add_thing_to_thing_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.add_thing_to_thing_group]
 
 ```python
 def add_thing_to_thing_group(
@@ -350,7 +355,7 @@ def add_thing_to_thing_group(
 
 Type annotations for `boto3.client("iot").associate_targets_with_job` method.
 
-[Client.associate_targets_with_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.associate_targets_with_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.associate_targets_with_job]
 
 ```python
 def associate_targets_with_job(
@@ -367,7 +372,7 @@ def associate_targets_with_job(
 
 Type annotations for `boto3.client("iot").attach_policy` method.
 
-[Client.attach_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_policy]
 
 ```python
 def attach_policy(
@@ -382,7 +387,7 @@ def attach_policy(
 
 Type annotations for `boto3.client("iot").attach_principal_policy` method.
 
-[Client.attach_principal_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_principal_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_principal_policy]
 
 ```python
 def attach_principal_policy(
@@ -397,7 +402,7 @@ def attach_principal_policy(
 
 Type annotations for `boto3.client("iot").attach_security_profile` method.
 
-[Client.attach_security_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_security_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_security_profile]
 
 ```python
 def attach_security_profile(
@@ -412,7 +417,7 @@ def attach_security_profile(
 
 Type annotations for `boto3.client("iot").attach_thing_principal` method.
 
-[Client.attach_thing_principal documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_thing_principal)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_thing_principal]
 
 ```python
 def attach_thing_principal(
@@ -427,7 +432,7 @@ def attach_thing_principal(
 
 Type annotations for `boto3.client("iot").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -441,7 +446,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("iot").cancel_audit_mitigation_actions_task` method.
 
-[Client.cancel_audit_mitigation_actions_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_audit_mitigation_actions_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_audit_mitigation_actions_task]
 
 ```python
 def cancel_audit_mitigation_actions_task(
@@ -455,7 +460,7 @@ def cancel_audit_mitigation_actions_task(
 
 Type annotations for `boto3.client("iot").cancel_audit_task` method.
 
-[Client.cancel_audit_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_audit_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_audit_task]
 
 ```python
 def cancel_audit_task(
@@ -469,7 +474,7 @@ def cancel_audit_task(
 
 Type annotations for `boto3.client("iot").cancel_certificate_transfer` method.
 
-[Client.cancel_certificate_transfer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_certificate_transfer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_certificate_transfer]
 
 ```python
 def cancel_certificate_transfer(
@@ -483,7 +488,7 @@ def cancel_certificate_transfer(
 
 Type annotations for `boto3.client("iot").cancel_detect_mitigation_actions_task` method.
 
-[Client.cancel_detect_mitigation_actions_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_detect_mitigation_actions_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_detect_mitigation_actions_task]
 
 ```python
 def cancel_detect_mitigation_actions_task(
@@ -497,7 +502,7 @@ def cancel_detect_mitigation_actions_task(
 
 Type annotations for `boto3.client("iot").cancel_job` method.
 
-[Client.cancel_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_job]
 
 ```python
 def cancel_job(
@@ -514,7 +519,7 @@ def cancel_job(
 
 Type annotations for `boto3.client("iot").cancel_job_execution` method.
 
-[Client.cancel_job_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_job_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_job_execution]
 
 ```python
 def cancel_job_execution(
@@ -532,7 +537,7 @@ def cancel_job_execution(
 
 Type annotations for `boto3.client("iot").clear_default_authorizer` method.
 
-[Client.clear_default_authorizer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.clear_default_authorizer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.clear_default_authorizer]
 
 ```python
 def clear_default_authorizer(
@@ -545,7 +550,7 @@ def clear_default_authorizer(
 
 Type annotations for `boto3.client("iot").confirm_topic_rule_destination` method.
 
-[Client.confirm_topic_rule_destination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.confirm_topic_rule_destination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.confirm_topic_rule_destination]
 
 ```python
 def confirm_topic_rule_destination(
@@ -559,7 +564,7 @@ def confirm_topic_rule_destination(
 
 Type annotations for `boto3.client("iot").create_audit_suppression` method.
 
-[Client.create_audit_suppression documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_audit_suppression)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_audit_suppression]
 
 ```python
 def create_audit_suppression(
@@ -578,7 +583,7 @@ def create_audit_suppression(
 
 Type annotations for `boto3.client("iot").create_authorizer` method.
 
-[Client.create_authorizer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_authorizer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_authorizer]
 
 ```python
 def create_authorizer(
@@ -598,7 +603,7 @@ def create_authorizer(
 
 Type annotations for `boto3.client("iot").create_billing_group` method.
 
-[Client.create_billing_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_billing_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_billing_group]
 
 ```python
 def create_billing_group(
@@ -614,7 +619,7 @@ def create_billing_group(
 
 Type annotations for `boto3.client("iot").create_certificate_from_csr` method.
 
-[Client.create_certificate_from_csr documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_certificate_from_csr)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_certificate_from_csr]
 
 ```python
 def create_certificate_from_csr(
@@ -629,7 +634,7 @@ def create_certificate_from_csr(
 
 Type annotations for `boto3.client("iot").create_custom_metric` method.
 
-[Client.create_custom_metric documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_custom_metric)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_custom_metric]
 
 ```python
 def create_custom_metric(
@@ -647,7 +652,7 @@ def create_custom_metric(
 
 Type annotations for `boto3.client("iot").create_dimension` method.
 
-[Client.create_dimension documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_dimension)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_dimension]
 
 ```python
 def create_dimension(
@@ -665,7 +670,7 @@ def create_dimension(
 
 Type annotations for `boto3.client("iot").create_domain_configuration` method.
 
-[Client.create_domain_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_domain_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_domain_configuration]
 
 ```python
 def create_domain_configuration(
@@ -685,7 +690,7 @@ def create_domain_configuration(
 
 Type annotations for `boto3.client("iot").create_dynamic_thing_group` method.
 
-[Client.create_dynamic_thing_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_dynamic_thing_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_dynamic_thing_group]
 
 ```python
 def create_dynamic_thing_group(
@@ -704,7 +709,7 @@ def create_dynamic_thing_group(
 
 Type annotations for `boto3.client("iot").create_job` method.
 
-[Client.create_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_job]
 
 ```python
 def create_job(
@@ -729,7 +734,7 @@ def create_job(
 
 Type annotations for `boto3.client("iot").create_keys_and_certificate` method.
 
-[Client.create_keys_and_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_keys_and_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_keys_and_certificate]
 
 ```python
 def create_keys_and_certificate(
@@ -743,7 +748,7 @@ def create_keys_and_certificate(
 
 Type annotations for `boto3.client("iot").create_mitigation_action` method.
 
-[Client.create_mitigation_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_mitigation_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_mitigation_action]
 
 ```python
 def create_mitigation_action(
@@ -760,7 +765,7 @@ def create_mitigation_action(
 
 Type annotations for `boto3.client("iot").create_ota_update` method.
 
-[Client.create_ota_update documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_ota_update)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_ota_update]
 
 ```python
 def create_ota_update(
@@ -786,7 +791,7 @@ def create_ota_update(
 
 Type annotations for `boto3.client("iot").create_policy` method.
 
-[Client.create_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_policy]
 
 ```python
 def create_policy(
@@ -802,7 +807,7 @@ def create_policy(
 
 Type annotations for `boto3.client("iot").create_policy_version` method.
 
-[Client.create_policy_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_policy_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_policy_version]
 
 ```python
 def create_policy_version(
@@ -818,7 +823,7 @@ def create_policy_version(
 
 Type annotations for `boto3.client("iot").create_provisioning_claim` method.
 
-[Client.create_provisioning_claim documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_claim)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_claim]
 
 ```python
 def create_provisioning_claim(
@@ -832,7 +837,7 @@ def create_provisioning_claim(
 
 Type annotations for `boto3.client("iot").create_provisioning_template` method.
 
-[Client.create_provisioning_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_template]
 
 ```python
 def create_provisioning_template(
@@ -852,7 +857,7 @@ def create_provisioning_template(
 
 Type annotations for `boto3.client("iot").create_provisioning_template_version` method.
 
-[Client.create_provisioning_template_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_template_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_template_version]
 
 ```python
 def create_provisioning_template_version(
@@ -868,7 +873,7 @@ def create_provisioning_template_version(
 
 Type annotations for `boto3.client("iot").create_role_alias` method.
 
-[Client.create_role_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_role_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_role_alias]
 
 ```python
 def create_role_alias(
@@ -885,7 +890,7 @@ def create_role_alias(
 
 Type annotations for `boto3.client("iot").create_scheduled_audit` method.
 
-[Client.create_scheduled_audit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_scheduled_audit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_scheduled_audit]
 
 ```python
 def create_scheduled_audit(
@@ -904,7 +909,7 @@ def create_scheduled_audit(
 
 Type annotations for `boto3.client("iot").create_security_profile` method.
 
-[Client.create_security_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_security_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_security_profile]
 
 ```python
 def create_security_profile(
@@ -924,7 +929,7 @@ def create_security_profile(
 
 Type annotations for `boto3.client("iot").create_stream` method.
 
-[Client.create_stream documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_stream)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_stream]
 
 ```python
 def create_stream(
@@ -942,7 +947,7 @@ def create_stream(
 
 Type annotations for `boto3.client("iot").create_thing` method.
 
-[Client.create_thing documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_thing)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_thing]
 
 ```python
 def create_thing(
@@ -959,7 +964,7 @@ def create_thing(
 
 Type annotations for `boto3.client("iot").create_thing_group` method.
 
-[Client.create_thing_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_thing_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_thing_group]
 
 ```python
 def create_thing_group(
@@ -976,7 +981,7 @@ def create_thing_group(
 
 Type annotations for `boto3.client("iot").create_thing_type` method.
 
-[Client.create_thing_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_thing_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_thing_type]
 
 ```python
 def create_thing_type(
@@ -992,7 +997,7 @@ def create_thing_type(
 
 Type annotations for `boto3.client("iot").create_topic_rule` method.
 
-[Client.create_topic_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_topic_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_topic_rule]
 
 ```python
 def create_topic_rule(
@@ -1008,7 +1013,7 @@ def create_topic_rule(
 
 Type annotations for `boto3.client("iot").create_topic_rule_destination` method.
 
-[Client.create_topic_rule_destination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_topic_rule_destination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_topic_rule_destination]
 
 ```python
 def create_topic_rule_destination(
@@ -1022,7 +1027,7 @@ def create_topic_rule_destination(
 
 Type annotations for `boto3.client("iot").delete_account_audit_configuration` method.
 
-[Client.delete_account_audit_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_account_audit_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_account_audit_configuration]
 
 ```python
 def delete_account_audit_configuration(
@@ -1036,7 +1041,7 @@ def delete_account_audit_configuration(
 
 Type annotations for `boto3.client("iot").delete_audit_suppression` method.
 
-[Client.delete_audit_suppression documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_audit_suppression)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_audit_suppression]
 
 ```python
 def delete_audit_suppression(
@@ -1051,7 +1056,7 @@ def delete_audit_suppression(
 
 Type annotations for `boto3.client("iot").delete_authorizer` method.
 
-[Client.delete_authorizer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_authorizer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_authorizer]
 
 ```python
 def delete_authorizer(
@@ -1065,7 +1070,7 @@ def delete_authorizer(
 
 Type annotations for `boto3.client("iot").delete_billing_group` method.
 
-[Client.delete_billing_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_billing_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_billing_group]
 
 ```python
 def delete_billing_group(
@@ -1080,7 +1085,7 @@ def delete_billing_group(
 
 Type annotations for `boto3.client("iot").delete_ca_certificate` method.
 
-[Client.delete_ca_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_ca_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_ca_certificate]
 
 ```python
 def delete_ca_certificate(
@@ -1094,7 +1099,7 @@ def delete_ca_certificate(
 
 Type annotations for `boto3.client("iot").delete_certificate` method.
 
-[Client.delete_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_certificate]
 
 ```python
 def delete_certificate(
@@ -1109,7 +1114,7 @@ def delete_certificate(
 
 Type annotations for `boto3.client("iot").delete_custom_metric` method.
 
-[Client.delete_custom_metric documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_custom_metric)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_custom_metric]
 
 ```python
 def delete_custom_metric(
@@ -1123,7 +1128,7 @@ def delete_custom_metric(
 
 Type annotations for `boto3.client("iot").delete_dimension` method.
 
-[Client.delete_dimension documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_dimension)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_dimension]
 
 ```python
 def delete_dimension(
@@ -1137,7 +1142,7 @@ def delete_dimension(
 
 Type annotations for `boto3.client("iot").delete_domain_configuration` method.
 
-[Client.delete_domain_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_domain_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_domain_configuration]
 
 ```python
 def delete_domain_configuration(
@@ -1151,7 +1156,7 @@ def delete_domain_configuration(
 
 Type annotations for `boto3.client("iot").delete_dynamic_thing_group` method.
 
-[Client.delete_dynamic_thing_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_dynamic_thing_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_dynamic_thing_group]
 
 ```python
 def delete_dynamic_thing_group(
@@ -1166,7 +1171,7 @@ def delete_dynamic_thing_group(
 
 Type annotations for `boto3.client("iot").delete_job` method.
 
-[Client.delete_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_job]
 
 ```python
 def delete_job(
@@ -1182,7 +1187,7 @@ def delete_job(
 
 Type annotations for `boto3.client("iot").delete_job_execution` method.
 
-[Client.delete_job_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_job_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_job_execution]
 
 ```python
 def delete_job_execution(
@@ -1200,7 +1205,7 @@ def delete_job_execution(
 
 Type annotations for `boto3.client("iot").delete_mitigation_action` method.
 
-[Client.delete_mitigation_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_mitigation_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_mitigation_action]
 
 ```python
 def delete_mitigation_action(
@@ -1214,7 +1219,7 @@ def delete_mitigation_action(
 
 Type annotations for `boto3.client("iot").delete_ota_update` method.
 
-[Client.delete_ota_update documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_ota_update)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_ota_update]
 
 ```python
 def delete_ota_update(
@@ -1230,7 +1235,7 @@ def delete_ota_update(
 
 Type annotations for `boto3.client("iot").delete_policy` method.
 
-[Client.delete_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_policy]
 
 ```python
 def delete_policy(
@@ -1244,7 +1249,7 @@ def delete_policy(
 
 Type annotations for `boto3.client("iot").delete_policy_version` method.
 
-[Client.delete_policy_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_policy_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_policy_version]
 
 ```python
 def delete_policy_version(
@@ -1259,7 +1264,7 @@ def delete_policy_version(
 
 Type annotations for `boto3.client("iot").delete_provisioning_template` method.
 
-[Client.delete_provisioning_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_provisioning_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_provisioning_template]
 
 ```python
 def delete_provisioning_template(
@@ -1273,7 +1278,7 @@ def delete_provisioning_template(
 
 Type annotations for `boto3.client("iot").delete_provisioning_template_version` method.
 
-[Client.delete_provisioning_template_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_provisioning_template_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_provisioning_template_version]
 
 ```python
 def delete_provisioning_template_version(
@@ -1288,7 +1293,7 @@ def delete_provisioning_template_version(
 
 Type annotations for `boto3.client("iot").delete_registration_code` method.
 
-[Client.delete_registration_code documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_registration_code)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_registration_code]
 
 ```python
 def delete_registration_code(
@@ -1301,7 +1306,7 @@ def delete_registration_code(
 
 Type annotations for `boto3.client("iot").delete_role_alias` method.
 
-[Client.delete_role_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_role_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_role_alias]
 
 ```python
 def delete_role_alias(
@@ -1315,7 +1320,7 @@ def delete_role_alias(
 
 Type annotations for `boto3.client("iot").delete_scheduled_audit` method.
 
-[Client.delete_scheduled_audit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_scheduled_audit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_scheduled_audit]
 
 ```python
 def delete_scheduled_audit(
@@ -1329,7 +1334,7 @@ def delete_scheduled_audit(
 
 Type annotations for `boto3.client("iot").delete_security_profile` method.
 
-[Client.delete_security_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_security_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_security_profile]
 
 ```python
 def delete_security_profile(
@@ -1344,7 +1349,7 @@ def delete_security_profile(
 
 Type annotations for `boto3.client("iot").delete_stream` method.
 
-[Client.delete_stream documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_stream)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_stream]
 
 ```python
 def delete_stream(
@@ -1358,7 +1363,7 @@ def delete_stream(
 
 Type annotations for `boto3.client("iot").delete_thing` method.
 
-[Client.delete_thing documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_thing)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_thing]
 
 ```python
 def delete_thing(
@@ -1373,7 +1378,7 @@ def delete_thing(
 
 Type annotations for `boto3.client("iot").delete_thing_group` method.
 
-[Client.delete_thing_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_thing_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_thing_group]
 
 ```python
 def delete_thing_group(
@@ -1388,7 +1393,7 @@ def delete_thing_group(
 
 Type annotations for `boto3.client("iot").delete_thing_type` method.
 
-[Client.delete_thing_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_thing_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_thing_type]
 
 ```python
 def delete_thing_type(
@@ -1402,7 +1407,7 @@ def delete_thing_type(
 
 Type annotations for `boto3.client("iot").delete_topic_rule` method.
 
-[Client.delete_topic_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_topic_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_topic_rule]
 
 ```python
 def delete_topic_rule(
@@ -1416,7 +1421,7 @@ def delete_topic_rule(
 
 Type annotations for `boto3.client("iot").delete_topic_rule_destination` method.
 
-[Client.delete_topic_rule_destination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_topic_rule_destination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_topic_rule_destination]
 
 ```python
 def delete_topic_rule_destination(
@@ -1430,7 +1435,7 @@ def delete_topic_rule_destination(
 
 Type annotations for `boto3.client("iot").delete_v2_logging_level` method.
 
-[Client.delete_v2_logging_level documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_v2_logging_level)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_v2_logging_level]
 
 ```python
 def delete_v2_logging_level(
@@ -1445,7 +1450,7 @@ def delete_v2_logging_level(
 
 Type annotations for `boto3.client("iot").deprecate_thing_type` method.
 
-[Client.deprecate_thing_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.deprecate_thing_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.deprecate_thing_type]
 
 ```python
 def deprecate_thing_type(
@@ -1460,7 +1465,7 @@ def deprecate_thing_type(
 
 Type annotations for `boto3.client("iot").describe_account_audit_configuration` method.
 
-[Client.describe_account_audit_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_account_audit_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_account_audit_configuration]
 
 ```python
 def describe_account_audit_configuration(
@@ -1473,7 +1478,7 @@ def describe_account_audit_configuration(
 
 Type annotations for `boto3.client("iot").describe_audit_finding` method.
 
-[Client.describe_audit_finding documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_finding)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_finding]
 
 ```python
 def describe_audit_finding(
@@ -1487,7 +1492,7 @@ def describe_audit_finding(
 
 Type annotations for `boto3.client("iot").describe_audit_mitigation_actions_task` method.
 
-[Client.describe_audit_mitigation_actions_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_mitigation_actions_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_mitigation_actions_task]
 
 ```python
 def describe_audit_mitigation_actions_task(
@@ -1501,7 +1506,7 @@ def describe_audit_mitigation_actions_task(
 
 Type annotations for `boto3.client("iot").describe_audit_suppression` method.
 
-[Client.describe_audit_suppression documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_suppression)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_suppression]
 
 ```python
 def describe_audit_suppression(
@@ -1516,7 +1521,7 @@ def describe_audit_suppression(
 
 Type annotations for `boto3.client("iot").describe_audit_task` method.
 
-[Client.describe_audit_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_task]
 
 ```python
 def describe_audit_task(
@@ -1530,7 +1535,7 @@ def describe_audit_task(
 
 Type annotations for `boto3.client("iot").describe_authorizer` method.
 
-[Client.describe_authorizer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_authorizer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_authorizer]
 
 ```python
 def describe_authorizer(
@@ -1544,7 +1549,7 @@ def describe_authorizer(
 
 Type annotations for `boto3.client("iot").describe_billing_group` method.
 
-[Client.describe_billing_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_billing_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_billing_group]
 
 ```python
 def describe_billing_group(
@@ -1558,7 +1563,7 @@ def describe_billing_group(
 
 Type annotations for `boto3.client("iot").describe_ca_certificate` method.
 
-[Client.describe_ca_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_ca_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_ca_certificate]
 
 ```python
 def describe_ca_certificate(
@@ -1572,7 +1577,7 @@ def describe_ca_certificate(
 
 Type annotations for `boto3.client("iot").describe_certificate` method.
 
-[Client.describe_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_certificate]
 
 ```python
 def describe_certificate(
@@ -1586,7 +1591,7 @@ def describe_certificate(
 
 Type annotations for `boto3.client("iot").describe_custom_metric` method.
 
-[Client.describe_custom_metric documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_custom_metric)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_custom_metric]
 
 ```python
 def describe_custom_metric(
@@ -1600,7 +1605,7 @@ def describe_custom_metric(
 
 Type annotations for `boto3.client("iot").describe_default_authorizer` method.
 
-[Client.describe_default_authorizer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_default_authorizer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_default_authorizer]
 
 ```python
 def describe_default_authorizer(
@@ -1613,7 +1618,7 @@ def describe_default_authorizer(
 
 Type annotations for `boto3.client("iot").describe_detect_mitigation_actions_task` method.
 
-[Client.describe_detect_mitigation_actions_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_detect_mitigation_actions_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_detect_mitigation_actions_task]
 
 ```python
 def describe_detect_mitigation_actions_task(
@@ -1627,7 +1632,7 @@ def describe_detect_mitigation_actions_task(
 
 Type annotations for `boto3.client("iot").describe_dimension` method.
 
-[Client.describe_dimension documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_dimension)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_dimension]
 
 ```python
 def describe_dimension(
@@ -1641,7 +1646,7 @@ def describe_dimension(
 
 Type annotations for `boto3.client("iot").describe_domain_configuration` method.
 
-[Client.describe_domain_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_domain_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_domain_configuration]
 
 ```python
 def describe_domain_configuration(
@@ -1655,7 +1660,7 @@ def describe_domain_configuration(
 
 Type annotations for `boto3.client("iot").describe_endpoint` method.
 
-[Client.describe_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_endpoint]
 
 ```python
 def describe_endpoint(
@@ -1669,7 +1674,7 @@ def describe_endpoint(
 
 Type annotations for `boto3.client("iot").describe_event_configurations` method.
 
-[Client.describe_event_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_event_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_event_configurations]
 
 ```python
 def describe_event_configurations(
@@ -1682,7 +1687,7 @@ def describe_event_configurations(
 
 Type annotations for `boto3.client("iot").describe_index` method.
 
-[Client.describe_index documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_index)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_index]
 
 ```python
 def describe_index(
@@ -1696,7 +1701,7 @@ def describe_index(
 
 Type annotations for `boto3.client("iot").describe_job` method.
 
-[Client.describe_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_job]
 
 ```python
 def describe_job(
@@ -1710,7 +1715,7 @@ def describe_job(
 
 Type annotations for `boto3.client("iot").describe_job_execution` method.
 
-[Client.describe_job_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_job_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_job_execution]
 
 ```python
 def describe_job_execution(
@@ -1726,7 +1731,7 @@ def describe_job_execution(
 
 Type annotations for `boto3.client("iot").describe_mitigation_action` method.
 
-[Client.describe_mitigation_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_mitigation_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_mitigation_action]
 
 ```python
 def describe_mitigation_action(
@@ -1740,7 +1745,7 @@ def describe_mitigation_action(
 
 Type annotations for `boto3.client("iot").describe_provisioning_template` method.
 
-[Client.describe_provisioning_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_provisioning_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_provisioning_template]
 
 ```python
 def describe_provisioning_template(
@@ -1754,7 +1759,7 @@ def describe_provisioning_template(
 
 Type annotations for `boto3.client("iot").describe_provisioning_template_version` method.
 
-[Client.describe_provisioning_template_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_provisioning_template_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_provisioning_template_version]
 
 ```python
 def describe_provisioning_template_version(
@@ -1769,7 +1774,7 @@ def describe_provisioning_template_version(
 
 Type annotations for `boto3.client("iot").describe_role_alias` method.
 
-[Client.describe_role_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_role_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_role_alias]
 
 ```python
 def describe_role_alias(
@@ -1783,7 +1788,7 @@ def describe_role_alias(
 
 Type annotations for `boto3.client("iot").describe_scheduled_audit` method.
 
-[Client.describe_scheduled_audit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_scheduled_audit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_scheduled_audit]
 
 ```python
 def describe_scheduled_audit(
@@ -1797,7 +1802,7 @@ def describe_scheduled_audit(
 
 Type annotations for `boto3.client("iot").describe_security_profile` method.
 
-[Client.describe_security_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_security_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_security_profile]
 
 ```python
 def describe_security_profile(
@@ -1811,7 +1816,7 @@ def describe_security_profile(
 
 Type annotations for `boto3.client("iot").describe_stream` method.
 
-[Client.describe_stream documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_stream)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_stream]
 
 ```python
 def describe_stream(
@@ -1825,7 +1830,7 @@ def describe_stream(
 
 Type annotations for `boto3.client("iot").describe_thing` method.
 
-[Client.describe_thing documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing]
 
 ```python
 def describe_thing(
@@ -1839,7 +1844,7 @@ def describe_thing(
 
 Type annotations for `boto3.client("iot").describe_thing_group` method.
 
-[Client.describe_thing_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing_group]
 
 ```python
 def describe_thing_group(
@@ -1853,7 +1858,7 @@ def describe_thing_group(
 
 Type annotations for `boto3.client("iot").describe_thing_registration_task` method.
 
-[Client.describe_thing_registration_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing_registration_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing_registration_task]
 
 ```python
 def describe_thing_registration_task(
@@ -1867,7 +1872,7 @@ def describe_thing_registration_task(
 
 Type annotations for `boto3.client("iot").describe_thing_type` method.
 
-[Client.describe_thing_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing_type]
 
 ```python
 def describe_thing_type(
@@ -1881,7 +1886,7 @@ def describe_thing_type(
 
 Type annotations for `boto3.client("iot").detach_policy` method.
 
-[Client.detach_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_policy]
 
 ```python
 def detach_policy(
@@ -1896,7 +1901,7 @@ def detach_policy(
 
 Type annotations for `boto3.client("iot").detach_principal_policy` method.
 
-[Client.detach_principal_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_principal_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_principal_policy]
 
 ```python
 def detach_principal_policy(
@@ -1911,7 +1916,7 @@ def detach_principal_policy(
 
 Type annotations for `boto3.client("iot").detach_security_profile` method.
 
-[Client.detach_security_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_security_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_security_profile]
 
 ```python
 def detach_security_profile(
@@ -1926,7 +1931,7 @@ def detach_security_profile(
 
 Type annotations for `boto3.client("iot").detach_thing_principal` method.
 
-[Client.detach_thing_principal documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_thing_principal)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_thing_principal]
 
 ```python
 def detach_thing_principal(
@@ -1941,7 +1946,7 @@ def detach_thing_principal(
 
 Type annotations for `boto3.client("iot").disable_topic_rule` method.
 
-[Client.disable_topic_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.disable_topic_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.disable_topic_rule]
 
 ```python
 def disable_topic_rule(
@@ -1955,7 +1960,7 @@ def disable_topic_rule(
 
 Type annotations for `boto3.client("iot").enable_topic_rule` method.
 
-[Client.enable_topic_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.enable_topic_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.enable_topic_rule]
 
 ```python
 def enable_topic_rule(
@@ -1969,7 +1974,7 @@ def enable_topic_rule(
 
 Type annotations for `boto3.client("iot").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -1986,7 +1991,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("iot").get_behavior_model_training_summaries` method.
 
-[Client.get_behavior_model_training_summaries documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_behavior_model_training_summaries)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_behavior_model_training_summaries]
 
 ```python
 def get_behavior_model_training_summaries(
@@ -2002,7 +2007,7 @@ def get_behavior_model_training_summaries(
 
 Type annotations for `boto3.client("iot").get_cardinality` method.
 
-[Client.get_cardinality documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_cardinality)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_cardinality]
 
 ```python
 def get_cardinality(
@@ -2019,7 +2024,7 @@ def get_cardinality(
 
 Type annotations for `boto3.client("iot").get_effective_policies` method.
 
-[Client.get_effective_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_effective_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_effective_policies]
 
 ```python
 def get_effective_policies(
@@ -2035,7 +2040,7 @@ def get_effective_policies(
 
 Type annotations for `boto3.client("iot").get_indexing_configuration` method.
 
-[Client.get_indexing_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_indexing_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_indexing_configuration]
 
 ```python
 def get_indexing_configuration(
@@ -2048,7 +2053,7 @@ def get_indexing_configuration(
 
 Type annotations for `boto3.client("iot").get_job_document` method.
 
-[Client.get_job_document documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_job_document)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_job_document]
 
 ```python
 def get_job_document(
@@ -2062,7 +2067,7 @@ def get_job_document(
 
 Type annotations for `boto3.client("iot").get_logging_options` method.
 
-[Client.get_logging_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_logging_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_logging_options]
 
 ```python
 def get_logging_options(
@@ -2075,7 +2080,7 @@ def get_logging_options(
 
 Type annotations for `boto3.client("iot").get_ota_update` method.
 
-[Client.get_ota_update documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_ota_update)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_ota_update]
 
 ```python
 def get_ota_update(
@@ -2089,7 +2094,7 @@ def get_ota_update(
 
 Type annotations for `boto3.client("iot").get_percentiles` method.
 
-[Client.get_percentiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_percentiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_percentiles]
 
 ```python
 def get_percentiles(
@@ -2107,7 +2112,7 @@ def get_percentiles(
 
 Type annotations for `boto3.client("iot").get_policy` method.
 
-[Client.get_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_policy]
 
 ```python
 def get_policy(
@@ -2121,7 +2126,7 @@ def get_policy(
 
 Type annotations for `boto3.client("iot").get_policy_version` method.
 
-[Client.get_policy_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_policy_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_policy_version]
 
 ```python
 def get_policy_version(
@@ -2136,7 +2141,7 @@ def get_policy_version(
 
 Type annotations for `boto3.client("iot").get_registration_code` method.
 
-[Client.get_registration_code documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_registration_code)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_registration_code]
 
 ```python
 def get_registration_code(
@@ -2149,7 +2154,7 @@ def get_registration_code(
 
 Type annotations for `boto3.client("iot").get_statistics` method.
 
-[Client.get_statistics documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_statistics)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_statistics]
 
 ```python
 def get_statistics(
@@ -2166,7 +2171,7 @@ def get_statistics(
 
 Type annotations for `boto3.client("iot").get_topic_rule` method.
 
-[Client.get_topic_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_topic_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_topic_rule]
 
 ```python
 def get_topic_rule(
@@ -2180,7 +2185,7 @@ def get_topic_rule(
 
 Type annotations for `boto3.client("iot").get_topic_rule_destination` method.
 
-[Client.get_topic_rule_destination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_topic_rule_destination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_topic_rule_destination]
 
 ```python
 def get_topic_rule_destination(
@@ -2194,7 +2199,7 @@ def get_topic_rule_destination(
 
 Type annotations for `boto3.client("iot").get_v2_logging_options` method.
 
-[Client.get_v2_logging_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_v2_logging_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_v2_logging_options]
 
 ```python
 def get_v2_logging_options(
@@ -2207,7 +2212,7 @@ def get_v2_logging_options(
 
 Type annotations for `boto3.client("iot").list_active_violations` method.
 
-[Client.list_active_violations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_active_violations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_active_violations]
 
 ```python
 def list_active_violations(
@@ -2226,7 +2231,7 @@ def list_active_violations(
 
 Type annotations for `boto3.client("iot").list_attached_policies` method.
 
-[Client.list_attached_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_attached_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_attached_policies]
 
 ```python
 def list_attached_policies(
@@ -2243,7 +2248,7 @@ def list_attached_policies(
 
 Type annotations for `boto3.client("iot").list_audit_findings` method.
 
-[Client.list_audit_findings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_findings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_findings]
 
 ```python
 def list_audit_findings(
@@ -2264,7 +2269,7 @@ def list_audit_findings(
 
 Type annotations for `boto3.client("iot").list_audit_mitigation_actions_executions` method.
 
-[Client.list_audit_mitigation_actions_executions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_mitigation_actions_executions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_mitigation_actions_executions]
 
 ```python
 def list_audit_mitigation_actions_executions(
@@ -2282,7 +2287,7 @@ def list_audit_mitigation_actions_executions(
 
 Type annotations for `boto3.client("iot").list_audit_mitigation_actions_tasks` method.
 
-[Client.list_audit_mitigation_actions_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_mitigation_actions_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_mitigation_actions_tasks]
 
 ```python
 def list_audit_mitigation_actions_tasks(
@@ -2302,7 +2307,7 @@ def list_audit_mitigation_actions_tasks(
 
 Type annotations for `boto3.client("iot").list_audit_suppressions` method.
 
-[Client.list_audit_suppressions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_suppressions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_suppressions]
 
 ```python
 def list_audit_suppressions(
@@ -2320,7 +2325,7 @@ def list_audit_suppressions(
 
 Type annotations for `boto3.client("iot").list_audit_tasks` method.
 
-[Client.list_audit_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_tasks]
 
 ```python
 def list_audit_tasks(
@@ -2339,7 +2344,7 @@ def list_audit_tasks(
 
 Type annotations for `boto3.client("iot").list_authorizers` method.
 
-[Client.list_authorizers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_authorizers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_authorizers]
 
 ```python
 def list_authorizers(
@@ -2356,7 +2361,7 @@ def list_authorizers(
 
 Type annotations for `boto3.client("iot").list_billing_groups` method.
 
-[Client.list_billing_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_billing_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_billing_groups]
 
 ```python
 def list_billing_groups(
@@ -2372,7 +2377,7 @@ def list_billing_groups(
 
 Type annotations for `boto3.client("iot").list_ca_certificates` method.
 
-[Client.list_ca_certificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_ca_certificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_ca_certificates]
 
 ```python
 def list_ca_certificates(
@@ -2388,7 +2393,7 @@ def list_ca_certificates(
 
 Type annotations for `boto3.client("iot").list_certificates` method.
 
-[Client.list_certificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_certificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_certificates]
 
 ```python
 def list_certificates(
@@ -2404,7 +2409,7 @@ def list_certificates(
 
 Type annotations for `boto3.client("iot").list_certificates_by_ca` method.
 
-[Client.list_certificates_by_ca documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_certificates_by_ca)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_certificates_by_ca]
 
 ```python
 def list_certificates_by_ca(
@@ -2421,7 +2426,7 @@ def list_certificates_by_ca(
 
 Type annotations for `boto3.client("iot").list_custom_metrics` method.
 
-[Client.list_custom_metrics documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_custom_metrics)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_custom_metrics]
 
 ```python
 def list_custom_metrics(
@@ -2436,7 +2441,7 @@ def list_custom_metrics(
 
 Type annotations for `boto3.client("iot").list_detect_mitigation_actions_executions` method.
 
-[Client.list_detect_mitigation_actions_executions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_detect_mitigation_actions_executions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_detect_mitigation_actions_executions]
 
 ```python
 def list_detect_mitigation_actions_executions(
@@ -2456,7 +2461,7 @@ def list_detect_mitigation_actions_executions(
 
 Type annotations for `boto3.client("iot").list_detect_mitigation_actions_tasks` method.
 
-[Client.list_detect_mitigation_actions_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_detect_mitigation_actions_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_detect_mitigation_actions_tasks]
 
 ```python
 def list_detect_mitigation_actions_tasks(
@@ -2473,7 +2478,7 @@ def list_detect_mitigation_actions_tasks(
 
 Type annotations for `boto3.client("iot").list_dimensions` method.
 
-[Client.list_dimensions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_dimensions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_dimensions]
 
 ```python
 def list_dimensions(
@@ -2488,7 +2493,7 @@ def list_dimensions(
 
 Type annotations for `boto3.client("iot").list_domain_configurations` method.
 
-[Client.list_domain_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_domain_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_domain_configurations]
 
 ```python
 def list_domain_configurations(
@@ -2504,7 +2509,7 @@ def list_domain_configurations(
 
 Type annotations for `boto3.client("iot").list_indices` method.
 
-[Client.list_indices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_indices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_indices]
 
 ```python
 def list_indices(
@@ -2519,7 +2524,7 @@ def list_indices(
 
 Type annotations for `boto3.client("iot").list_job_executions_for_job` method.
 
-[Client.list_job_executions_for_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_job_executions_for_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_job_executions_for_job]
 
 ```python
 def list_job_executions_for_job(
@@ -2536,7 +2541,7 @@ def list_job_executions_for_job(
 
 Type annotations for `boto3.client("iot").list_job_executions_for_thing` method.
 
-[Client.list_job_executions_for_thing documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_job_executions_for_thing)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_job_executions_for_thing]
 
 ```python
 def list_job_executions_for_thing(
@@ -2554,7 +2559,7 @@ def list_job_executions_for_thing(
 
 Type annotations for `boto3.client("iot").list_jobs` method.
 
-[Client.list_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_jobs]
 
 ```python
 def list_jobs(
@@ -2574,7 +2579,7 @@ def list_jobs(
 
 Type annotations for `boto3.client("iot").list_mitigation_actions` method.
 
-[Client.list_mitigation_actions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_mitigation_actions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_mitigation_actions]
 
 ```python
 def list_mitigation_actions(
@@ -2590,7 +2595,7 @@ def list_mitigation_actions(
 
 Type annotations for `boto3.client("iot").list_ota_updates` method.
 
-[Client.list_ota_updates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_ota_updates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_ota_updates]
 
 ```python
 def list_ota_updates(
@@ -2606,7 +2611,7 @@ def list_ota_updates(
 
 Type annotations for `boto3.client("iot").list_outgoing_certificates` method.
 
-[Client.list_outgoing_certificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_outgoing_certificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_outgoing_certificates]
 
 ```python
 def list_outgoing_certificates(
@@ -2622,7 +2627,7 @@ def list_outgoing_certificates(
 
 Type annotations for `boto3.client("iot").list_policies` method.
 
-[Client.list_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_policies]
 
 ```python
 def list_policies(
@@ -2638,7 +2643,7 @@ def list_policies(
 
 Type annotations for `boto3.client("iot").list_policy_principals` method.
 
-[Client.list_policy_principals documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_policy_principals)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_policy_principals]
 
 ```python
 def list_policy_principals(
@@ -2655,7 +2660,7 @@ def list_policy_principals(
 
 Type annotations for `boto3.client("iot").list_policy_versions` method.
 
-[Client.list_policy_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_policy_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_policy_versions]
 
 ```python
 def list_policy_versions(
@@ -2669,7 +2674,7 @@ def list_policy_versions(
 
 Type annotations for `boto3.client("iot").list_principal_policies` method.
 
-[Client.list_principal_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_principal_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_principal_policies]
 
 ```python
 def list_principal_policies(
@@ -2686,7 +2691,7 @@ def list_principal_policies(
 
 Type annotations for `boto3.client("iot").list_principal_things` method.
 
-[Client.list_principal_things documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_principal_things)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_principal_things]
 
 ```python
 def list_principal_things(
@@ -2702,7 +2707,7 @@ def list_principal_things(
 
 Type annotations for `boto3.client("iot").list_provisioning_template_versions` method.
 
-[Client.list_provisioning_template_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_provisioning_template_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_provisioning_template_versions]
 
 ```python
 def list_provisioning_template_versions(
@@ -2718,7 +2723,7 @@ def list_provisioning_template_versions(
 
 Type annotations for `boto3.client("iot").list_provisioning_templates` method.
 
-[Client.list_provisioning_templates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_provisioning_templates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_provisioning_templates]
 
 ```python
 def list_provisioning_templates(
@@ -2733,7 +2738,7 @@ def list_provisioning_templates(
 
 Type annotations for `boto3.client("iot").list_role_aliases` method.
 
-[Client.list_role_aliases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_role_aliases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_role_aliases]
 
 ```python
 def list_role_aliases(
@@ -2749,7 +2754,7 @@ def list_role_aliases(
 
 Type annotations for `boto3.client("iot").list_scheduled_audits` method.
 
-[Client.list_scheduled_audits documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_scheduled_audits)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_scheduled_audits]
 
 ```python
 def list_scheduled_audits(
@@ -2764,7 +2769,7 @@ def list_scheduled_audits(
 
 Type annotations for `boto3.client("iot").list_security_profiles` method.
 
-[Client.list_security_profiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_security_profiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_security_profiles]
 
 ```python
 def list_security_profiles(
@@ -2781,7 +2786,7 @@ def list_security_profiles(
 
 Type annotations for `boto3.client("iot").list_security_profiles_for_target` method.
 
-[Client.list_security_profiles_for_target documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_security_profiles_for_target)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_security_profiles_for_target]
 
 ```python
 def list_security_profiles_for_target(
@@ -2798,7 +2803,7 @@ def list_security_profiles_for_target(
 
 Type annotations for `boto3.client("iot").list_streams` method.
 
-[Client.list_streams documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_streams)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_streams]
 
 ```python
 def list_streams(
@@ -2814,7 +2819,7 @@ def list_streams(
 
 Type annotations for `boto3.client("iot").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -2829,7 +2834,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("iot").list_targets_for_policy` method.
 
-[Client.list_targets_for_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_targets_for_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_targets_for_policy]
 
 ```python
 def list_targets_for_policy(
@@ -2845,7 +2850,7 @@ def list_targets_for_policy(
 
 Type annotations for `boto3.client("iot").list_targets_for_security_profile` method.
 
-[Client.list_targets_for_security_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_targets_for_security_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_targets_for_security_profile]
 
 ```python
 def list_targets_for_security_profile(
@@ -2861,7 +2866,7 @@ def list_targets_for_security_profile(
 
 Type annotations for `boto3.client("iot").list_thing_groups` method.
 
-[Client.list_thing_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_groups]
 
 ```python
 def list_thing_groups(
@@ -2879,7 +2884,7 @@ def list_thing_groups(
 
 Type annotations for `boto3.client("iot").list_thing_groups_for_thing` method.
 
-[Client.list_thing_groups_for_thing documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_groups_for_thing)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_groups_for_thing]
 
 ```python
 def list_thing_groups_for_thing(
@@ -2895,7 +2900,7 @@ def list_thing_groups_for_thing(
 
 Type annotations for `boto3.client("iot").list_thing_principals` method.
 
-[Client.list_thing_principals documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_principals)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_principals]
 
 ```python
 def list_thing_principals(
@@ -2911,7 +2916,7 @@ def list_thing_principals(
 
 Type annotations for `boto3.client("iot").list_thing_registration_task_reports` method.
 
-[Client.list_thing_registration_task_reports documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_registration_task_reports)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_registration_task_reports]
 
 ```python
 def list_thing_registration_task_reports(
@@ -2928,7 +2933,7 @@ def list_thing_registration_task_reports(
 
 Type annotations for `boto3.client("iot").list_thing_registration_tasks` method.
 
-[Client.list_thing_registration_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_registration_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_registration_tasks]
 
 ```python
 def list_thing_registration_tasks(
@@ -2944,7 +2949,7 @@ def list_thing_registration_tasks(
 
 Type annotations for `boto3.client("iot").list_thing_types` method.
 
-[Client.list_thing_types documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_types)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_types]
 
 ```python
 def list_thing_types(
@@ -2960,7 +2965,7 @@ def list_thing_types(
 
 Type annotations for `boto3.client("iot").list_things` method.
 
-[Client.list_things documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_things)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_things]
 
 ```python
 def list_things(
@@ -2979,7 +2984,7 @@ def list_things(
 
 Type annotations for `boto3.client("iot").list_things_in_billing_group` method.
 
-[Client.list_things_in_billing_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_things_in_billing_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_things_in_billing_group]
 
 ```python
 def list_things_in_billing_group(
@@ -2995,7 +3000,7 @@ def list_things_in_billing_group(
 
 Type annotations for `boto3.client("iot").list_things_in_thing_group` method.
 
-[Client.list_things_in_thing_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_things_in_thing_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_things_in_thing_group]
 
 ```python
 def list_things_in_thing_group(
@@ -3012,7 +3017,7 @@ def list_things_in_thing_group(
 
 Type annotations for `boto3.client("iot").list_topic_rule_destinations` method.
 
-[Client.list_topic_rule_destinations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_topic_rule_destinations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_topic_rule_destinations]
 
 ```python
 def list_topic_rule_destinations(
@@ -3027,7 +3032,7 @@ def list_topic_rule_destinations(
 
 Type annotations for `boto3.client("iot").list_topic_rules` method.
 
-[Client.list_topic_rules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_topic_rules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_topic_rules]
 
 ```python
 def list_topic_rules(
@@ -3044,7 +3049,7 @@ def list_topic_rules(
 
 Type annotations for `boto3.client("iot").list_v2_logging_levels` method.
 
-[Client.list_v2_logging_levels documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_v2_logging_levels)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_v2_logging_levels]
 
 ```python
 def list_v2_logging_levels(
@@ -3060,7 +3065,7 @@ def list_v2_logging_levels(
 
 Type annotations for `boto3.client("iot").list_violation_events` method.
 
-[Client.list_violation_events documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_violation_events)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_violation_events]
 
 ```python
 def list_violation_events(
@@ -3081,7 +3086,7 @@ def list_violation_events(
 
 Type annotations for `boto3.client("iot").register_ca_certificate` method.
 
-[Client.register_ca_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_ca_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_ca_certificate]
 
 ```python
 def register_ca_certificate(
@@ -3100,7 +3105,7 @@ def register_ca_certificate(
 
 Type annotations for `boto3.client("iot").register_certificate` method.
 
-[Client.register_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_certificate]
 
 ```python
 def register_certificate(
@@ -3117,7 +3122,7 @@ def register_certificate(
 
 Type annotations for `boto3.client("iot").register_certificate_without_ca` method.
 
-[Client.register_certificate_without_ca documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_certificate_without_ca)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_certificate_without_ca]
 
 ```python
 def register_certificate_without_ca(
@@ -3132,7 +3137,7 @@ def register_certificate_without_ca(
 
 Type annotations for `boto3.client("iot").register_thing` method.
 
-[Client.register_thing documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_thing)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_thing]
 
 ```python
 def register_thing(
@@ -3147,7 +3152,7 @@ def register_thing(
 
 Type annotations for `boto3.client("iot").reject_certificate_transfer` method.
 
-[Client.reject_certificate_transfer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.reject_certificate_transfer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.reject_certificate_transfer]
 
 ```python
 def reject_certificate_transfer(
@@ -3162,7 +3167,7 @@ def reject_certificate_transfer(
 
 Type annotations for `boto3.client("iot").remove_thing_from_billing_group` method.
 
-[Client.remove_thing_from_billing_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.remove_thing_from_billing_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.remove_thing_from_billing_group]
 
 ```python
 def remove_thing_from_billing_group(
@@ -3179,7 +3184,7 @@ def remove_thing_from_billing_group(
 
 Type annotations for `boto3.client("iot").remove_thing_from_thing_group` method.
 
-[Client.remove_thing_from_thing_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.remove_thing_from_thing_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.remove_thing_from_thing_group]
 
 ```python
 def remove_thing_from_thing_group(
@@ -3196,7 +3201,7 @@ def remove_thing_from_thing_group(
 
 Type annotations for `boto3.client("iot").replace_topic_rule` method.
 
-[Client.replace_topic_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.replace_topic_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.replace_topic_rule]
 
 ```python
 def replace_topic_rule(
@@ -3211,7 +3216,7 @@ def replace_topic_rule(
 
 Type annotations for `boto3.client("iot").search_index` method.
 
-[Client.search_index documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.search_index)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.search_index]
 
 ```python
 def search_index(
@@ -3229,7 +3234,7 @@ def search_index(
 
 Type annotations for `boto3.client("iot").set_default_authorizer` method.
 
-[Client.set_default_authorizer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_default_authorizer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_default_authorizer]
 
 ```python
 def set_default_authorizer(
@@ -3243,7 +3248,7 @@ def set_default_authorizer(
 
 Type annotations for `boto3.client("iot").set_default_policy_version` method.
 
-[Client.set_default_policy_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_default_policy_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_default_policy_version]
 
 ```python
 def set_default_policy_version(
@@ -3258,7 +3263,7 @@ def set_default_policy_version(
 
 Type annotations for `boto3.client("iot").set_logging_options` method.
 
-[Client.set_logging_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_logging_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_logging_options]
 
 ```python
 def set_logging_options(
@@ -3272,7 +3277,7 @@ def set_logging_options(
 
 Type annotations for `boto3.client("iot").set_v2_logging_level` method.
 
-[Client.set_v2_logging_level documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_v2_logging_level)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_v2_logging_level]
 
 ```python
 def set_v2_logging_level(
@@ -3287,7 +3292,7 @@ def set_v2_logging_level(
 
 Type annotations for `boto3.client("iot").set_v2_logging_options` method.
 
-[Client.set_v2_logging_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_v2_logging_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_v2_logging_options]
 
 ```python
 def set_v2_logging_options(
@@ -3303,7 +3308,7 @@ def set_v2_logging_options(
 
 Type annotations for `boto3.client("iot").start_audit_mitigation_actions_task` method.
 
-[Client.start_audit_mitigation_actions_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_audit_mitigation_actions_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_audit_mitigation_actions_task]
 
 ```python
 def start_audit_mitigation_actions_task(
@@ -3320,7 +3325,7 @@ def start_audit_mitigation_actions_task(
 
 Type annotations for `boto3.client("iot").start_detect_mitigation_actions_task` method.
 
-[Client.start_detect_mitigation_actions_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_detect_mitigation_actions_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_detect_mitigation_actions_task]
 
 ```python
 def start_detect_mitigation_actions_task(
@@ -3340,7 +3345,7 @@ def start_detect_mitigation_actions_task(
 
 Type annotations for `boto3.client("iot").start_on_demand_audit_task` method.
 
-[Client.start_on_demand_audit_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_on_demand_audit_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_on_demand_audit_task]
 
 ```python
 def start_on_demand_audit_task(
@@ -3354,7 +3359,7 @@ def start_on_demand_audit_task(
 
 Type annotations for `boto3.client("iot").start_thing_registration_task` method.
 
-[Client.start_thing_registration_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_thing_registration_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_thing_registration_task]
 
 ```python
 def start_thing_registration_task(
@@ -3371,7 +3376,7 @@ def start_thing_registration_task(
 
 Type annotations for `boto3.client("iot").stop_thing_registration_task` method.
 
-[Client.stop_thing_registration_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.stop_thing_registration_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.stop_thing_registration_task]
 
 ```python
 def stop_thing_registration_task(
@@ -3385,7 +3390,7 @@ def stop_thing_registration_task(
 
 Type annotations for `boto3.client("iot").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -3400,7 +3405,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("iot").test_authorization` method.
 
-[Client.test_authorization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.test_authorization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.test_authorization]
 
 ```python
 def test_authorization(
@@ -3419,7 +3424,7 @@ def test_authorization(
 
 Type annotations for `boto3.client("iot").test_invoke_authorizer` method.
 
-[Client.test_invoke_authorizer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.test_invoke_authorizer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.test_invoke_authorizer]
 
 ```python
 def test_invoke_authorizer(
@@ -3438,7 +3443,7 @@ def test_invoke_authorizer(
 
 Type annotations for `boto3.client("iot").transfer_certificate` method.
 
-[Client.transfer_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.transfer_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.transfer_certificate]
 
 ```python
 def transfer_certificate(
@@ -3454,7 +3459,7 @@ def transfer_certificate(
 
 Type annotations for `boto3.client("iot").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -3469,7 +3474,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("iot").update_account_audit_configuration` method.
 
-[Client.update_account_audit_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_account_audit_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_account_audit_configuration]
 
 ```python
 def update_account_audit_configuration(
@@ -3485,7 +3490,7 @@ def update_account_audit_configuration(
 
 Type annotations for `boto3.client("iot").update_audit_suppression` method.
 
-[Client.update_audit_suppression documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_audit_suppression)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_audit_suppression]
 
 ```python
 def update_audit_suppression(
@@ -3503,7 +3508,7 @@ def update_audit_suppression(
 
 Type annotations for `boto3.client("iot").update_authorizer` method.
 
-[Client.update_authorizer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_authorizer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_authorizer]
 
 ```python
 def update_authorizer(
@@ -3521,7 +3526,7 @@ def update_authorizer(
 
 Type annotations for `boto3.client("iot").update_billing_group` method.
 
-[Client.update_billing_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_billing_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_billing_group]
 
 ```python
 def update_billing_group(
@@ -3537,7 +3542,7 @@ def update_billing_group(
 
 Type annotations for `boto3.client("iot").update_ca_certificate` method.
 
-[Client.update_ca_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_ca_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_ca_certificate]
 
 ```python
 def update_ca_certificate(
@@ -3555,7 +3560,7 @@ def update_ca_certificate(
 
 Type annotations for `boto3.client("iot").update_certificate` method.
 
-[Client.update_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_certificate]
 
 ```python
 def update_certificate(
@@ -3570,7 +3575,7 @@ def update_certificate(
 
 Type annotations for `boto3.client("iot").update_custom_metric` method.
 
-[Client.update_custom_metric documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_custom_metric)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_custom_metric]
 
 ```python
 def update_custom_metric(
@@ -3585,7 +3590,7 @@ def update_custom_metric(
 
 Type annotations for `boto3.client("iot").update_dimension` method.
 
-[Client.update_dimension documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_dimension)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_dimension]
 
 ```python
 def update_dimension(
@@ -3600,7 +3605,7 @@ def update_dimension(
 
 Type annotations for `boto3.client("iot").update_domain_configuration` method.
 
-[Client.update_domain_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_domain_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_domain_configuration]
 
 ```python
 def update_domain_configuration(
@@ -3617,7 +3622,7 @@ def update_domain_configuration(
 
 Type annotations for `boto3.client("iot").update_dynamic_thing_group` method.
 
-[Client.update_dynamic_thing_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_dynamic_thing_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_dynamic_thing_group]
 
 ```python
 def update_dynamic_thing_group(
@@ -3636,7 +3641,7 @@ def update_dynamic_thing_group(
 
 Type annotations for `boto3.client("iot").update_event_configurations` method.
 
-[Client.update_event_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_event_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_event_configurations]
 
 ```python
 def update_event_configurations(
@@ -3650,7 +3655,7 @@ def update_event_configurations(
 
 Type annotations for `boto3.client("iot").update_indexing_configuration` method.
 
-[Client.update_indexing_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_indexing_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_indexing_configuration]
 
 ```python
 def update_indexing_configuration(
@@ -3665,7 +3670,7 @@ def update_indexing_configuration(
 
 Type annotations for `boto3.client("iot").update_job` method.
 
-[Client.update_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_job]
 
 ```python
 def update_job(
@@ -3685,7 +3690,7 @@ def update_job(
 
 Type annotations for `boto3.client("iot").update_mitigation_action` method.
 
-[Client.update_mitigation_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_mitigation_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_mitigation_action]
 
 ```python
 def update_mitigation_action(
@@ -3701,7 +3706,7 @@ def update_mitigation_action(
 
 Type annotations for `boto3.client("iot").update_provisioning_template` method.
 
-[Client.update_provisioning_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_provisioning_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_provisioning_template]
 
 ```python
 def update_provisioning_template(
@@ -3721,7 +3726,7 @@ def update_provisioning_template(
 
 Type annotations for `boto3.client("iot").update_role_alias` method.
 
-[Client.update_role_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_role_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_role_alias]
 
 ```python
 def update_role_alias(
@@ -3737,7 +3742,7 @@ def update_role_alias(
 
 Type annotations for `boto3.client("iot").update_scheduled_audit` method.
 
-[Client.update_scheduled_audit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_scheduled_audit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_scheduled_audit]
 
 ```python
 def update_scheduled_audit(
@@ -3755,7 +3760,7 @@ def update_scheduled_audit(
 
 Type annotations for `boto3.client("iot").update_security_profile` method.
 
-[Client.update_security_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_security_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_security_profile]
 
 ```python
 def update_security_profile(
@@ -3778,7 +3783,7 @@ def update_security_profile(
 
 Type annotations for `boto3.client("iot").update_stream` method.
 
-[Client.update_stream documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_stream)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_stream]
 
 ```python
 def update_stream(
@@ -3795,7 +3800,7 @@ def update_stream(
 
 Type annotations for `boto3.client("iot").update_thing` method.
 
-[Client.update_thing documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_thing)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_thing]
 
 ```python
 def update_thing(
@@ -3813,7 +3818,7 @@ def update_thing(
 
 Type annotations for `boto3.client("iot").update_thing_group` method.
 
-[Client.update_thing_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_thing_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_thing_group]
 
 ```python
 def update_thing_group(
@@ -3829,7 +3834,7 @@ def update_thing_group(
 
 Type annotations for `boto3.client("iot").update_thing_groups_for_thing` method.
 
-[Client.update_thing_groups_for_thing documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_thing_groups_for_thing)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_thing_groups_for_thing]
 
 ```python
 def update_thing_groups_for_thing(
@@ -3846,7 +3851,7 @@ def update_thing_groups_for_thing(
 
 Type annotations for `boto3.client("iot").update_topic_rule_destination` method.
 
-[Client.update_topic_rule_destination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_topic_rule_destination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_topic_rule_destination]
 
 ```python
 def update_topic_rule_destination(
@@ -3861,7 +3866,7 @@ def update_topic_rule_destination(
 
 Type annotations for `boto3.client("iot").validate_security_profile_behaviors` method.
 
-[Client.validate_security_profile_behaviors documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.validate_security_profile_behaviors)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.validate_security_profile_behaviors]
 
 ```python
 def validate_security_profile_behaviors(

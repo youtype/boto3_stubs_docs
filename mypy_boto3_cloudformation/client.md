@@ -77,7 +77,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_cloudformation.client import CloudFormationClient
+
+def get_cloudformation_client() -> CloudFormationClient:
+    return boto3.client("cloudformation")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client)
 
 ## Exceptions
 
@@ -124,7 +129,7 @@ Exceptions:
 
 Type annotations for `boto3.client("cloudformation").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -138,7 +143,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("cloudformation").cancel_update_stack` method.
 
-[Client.cancel_update_stack documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.cancel_update_stack)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.cancel_update_stack]
 
 ```python
 def cancel_update_stack(
@@ -153,7 +158,7 @@ def cancel_update_stack(
 
 Type annotations for `boto3.client("cloudformation").continue_update_rollback` method.
 
-[Client.continue_update_rollback documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.continue_update_rollback)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.continue_update_rollback]
 
 ```python
 def continue_update_rollback(
@@ -170,7 +175,7 @@ def continue_update_rollback(
 
 Type annotations for `boto3.client("cloudformation").create_change_set` method.
 
-[Client.create_change_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_change_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_change_set]
 
 ```python
 def create_change_set(
@@ -200,7 +205,7 @@ def create_change_set(
 
 Type annotations for `boto3.client("cloudformation").create_stack` method.
 
-[Client.create_stack documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack]
 
 ```python
 def create_stack(
@@ -230,7 +235,7 @@ def create_stack(
 
 Type annotations for `boto3.client("cloudformation").create_stack_instances` method.
 
-[Client.create_stack_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_instances]
 
 ```python
 def create_stack_instances(
@@ -251,7 +256,7 @@ def create_stack_instances(
 
 Type annotations for `boto3.client("cloudformation").create_stack_set` method.
 
-[Client.create_stack_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_set]
 
 ```python
 def create_stack_set(
@@ -277,7 +282,7 @@ def create_stack_set(
 
 Type annotations for `boto3.client("cloudformation").delete_change_set` method.
 
-[Client.delete_change_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_change_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_change_set]
 
 ```python
 def delete_change_set(
@@ -292,7 +297,7 @@ def delete_change_set(
 
 Type annotations for `boto3.client("cloudformation").delete_stack` method.
 
-[Client.delete_stack documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack]
 
 ```python
 def delete_stack(
@@ -309,7 +314,7 @@ def delete_stack(
 
 Type annotations for `boto3.client("cloudformation").delete_stack_instances` method.
 
-[Client.delete_stack_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_instances]
 
 ```python
 def delete_stack_instances(
@@ -330,7 +335,7 @@ def delete_stack_instances(
 
 Type annotations for `boto3.client("cloudformation").delete_stack_set` method.
 
-[Client.delete_stack_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_set]
 
 ```python
 def delete_stack_set(
@@ -345,7 +350,7 @@ def delete_stack_set(
 
 Type annotations for `boto3.client("cloudformation").deregister_type` method.
 
-[Client.deregister_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.deregister_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.deregister_type]
 
 ```python
 def deregister_type(
@@ -362,7 +367,7 @@ def deregister_type(
 
 Type annotations for `boto3.client("cloudformation").describe_account_limits` method.
 
-[Client.describe_account_limits documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_account_limits)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_account_limits]
 
 ```python
 def describe_account_limits(
@@ -376,7 +381,7 @@ def describe_account_limits(
 
 Type annotations for `boto3.client("cloudformation").describe_change_set` method.
 
-[Client.describe_change_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_change_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_change_set]
 
 ```python
 def describe_change_set(
@@ -392,7 +397,7 @@ def describe_change_set(
 
 Type annotations for `boto3.client("cloudformation").describe_stack_drift_detection_status` method.
 
-[Client.describe_stack_drift_detection_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_drift_detection_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_drift_detection_status]
 
 ```python
 def describe_stack_drift_detection_status(
@@ -406,7 +411,7 @@ def describe_stack_drift_detection_status(
 
 Type annotations for `boto3.client("cloudformation").describe_stack_events` method.
 
-[Client.describe_stack_events documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_events)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_events]
 
 ```python
 def describe_stack_events(
@@ -421,7 +426,7 @@ def describe_stack_events(
 
 Type annotations for `boto3.client("cloudformation").describe_stack_instance` method.
 
-[Client.describe_stack_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_instance]
 
 ```python
 def describe_stack_instance(
@@ -438,7 +443,7 @@ def describe_stack_instance(
 
 Type annotations for `boto3.client("cloudformation").describe_stack_resource` method.
 
-[Client.describe_stack_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource]
 
 ```python
 def describe_stack_resource(
@@ -453,7 +458,7 @@ def describe_stack_resource(
 
 Type annotations for `boto3.client("cloudformation").describe_stack_resource_drifts` method.
 
-[Client.describe_stack_resource_drifts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource_drifts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource_drifts]
 
 ```python
 def describe_stack_resource_drifts(
@@ -470,7 +475,7 @@ def describe_stack_resource_drifts(
 
 Type annotations for `boto3.client("cloudformation").describe_stack_resources` method.
 
-[Client.describe_stack_resources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resources]
 
 ```python
 def describe_stack_resources(
@@ -486,7 +491,7 @@ def describe_stack_resources(
 
 Type annotations for `boto3.client("cloudformation").describe_stack_set` method.
 
-[Client.describe_stack_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set]
 
 ```python
 def describe_stack_set(
@@ -501,7 +506,7 @@ def describe_stack_set(
 
 Type annotations for `boto3.client("cloudformation").describe_stack_set_operation` method.
 
-[Client.describe_stack_set_operation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set_operation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set_operation]
 
 ```python
 def describe_stack_set_operation(
@@ -517,7 +522,7 @@ def describe_stack_set_operation(
 
 Type annotations for `boto3.client("cloudformation").describe_stacks` method.
 
-[Client.describe_stacks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stacks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stacks]
 
 ```python
 def describe_stacks(
@@ -532,7 +537,7 @@ def describe_stacks(
 
 Type annotations for `boto3.client("cloudformation").describe_type` method.
 
-[Client.describe_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_type]
 
 ```python
 def describe_type(
@@ -549,7 +554,7 @@ def describe_type(
 
 Type annotations for `boto3.client("cloudformation").describe_type_registration` method.
 
-[Client.describe_type_registration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_type_registration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_type_registration]
 
 ```python
 def describe_type_registration(
@@ -563,7 +568,7 @@ def describe_type_registration(
 
 Type annotations for `boto3.client("cloudformation").detect_stack_drift` method.
 
-[Client.detect_stack_drift documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_drift)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_drift]
 
 ```python
 def detect_stack_drift(
@@ -578,7 +583,7 @@ def detect_stack_drift(
 
 Type annotations for `boto3.client("cloudformation").detect_stack_resource_drift` method.
 
-[Client.detect_stack_resource_drift documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_resource_drift)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_resource_drift]
 
 ```python
 def detect_stack_resource_drift(
@@ -593,7 +598,7 @@ def detect_stack_resource_drift(
 
 Type annotations for `boto3.client("cloudformation").detect_stack_set_drift` method.
 
-[Client.detect_stack_set_drift documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_set_drift)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_set_drift]
 
 ```python
 def detect_stack_set_drift(
@@ -610,7 +615,7 @@ def detect_stack_set_drift(
 
 Type annotations for `boto3.client("cloudformation").estimate_template_cost` method.
 
-[Client.estimate_template_cost documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.estimate_template_cost)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.estimate_template_cost]
 
 ```python
 def estimate_template_cost(
@@ -626,7 +631,7 @@ def estimate_template_cost(
 
 Type annotations for `boto3.client("cloudformation").execute_change_set` method.
 
-[Client.execute_change_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.execute_change_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.execute_change_set]
 
 ```python
 def execute_change_set(
@@ -642,7 +647,7 @@ def execute_change_set(
 
 Type annotations for `boto3.client("cloudformation").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -659,7 +664,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("cloudformation").get_stack_policy` method.
 
-[Client.get_stack_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_stack_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_stack_policy]
 
 ```python
 def get_stack_policy(
@@ -673,7 +678,7 @@ def get_stack_policy(
 
 Type annotations for `boto3.client("cloudformation").get_template` method.
 
-[Client.get_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_template]
 
 ```python
 def get_template(
@@ -689,7 +694,7 @@ def get_template(
 
 Type annotations for `boto3.client("cloudformation").get_template_summary` method.
 
-[Client.get_template_summary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_template_summary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_template_summary]
 
 ```python
 def get_template_summary(
@@ -707,7 +712,7 @@ def get_template_summary(
 
 Type annotations for `boto3.client("cloudformation").list_change_sets` method.
 
-[Client.list_change_sets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_change_sets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_change_sets]
 
 ```python
 def list_change_sets(
@@ -722,7 +727,7 @@ def list_change_sets(
 
 Type annotations for `boto3.client("cloudformation").list_exports` method.
 
-[Client.list_exports documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_exports)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_exports]
 
 ```python
 def list_exports(
@@ -736,7 +741,7 @@ def list_exports(
 
 Type annotations for `boto3.client("cloudformation").list_imports` method.
 
-[Client.list_imports documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_imports)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_imports]
 
 ```python
 def list_imports(
@@ -751,7 +756,7 @@ def list_imports(
 
 Type annotations for `boto3.client("cloudformation").list_stack_instances` method.
 
-[Client.list_stack_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_instances]
 
 ```python
 def list_stack_instances(
@@ -771,7 +776,7 @@ def list_stack_instances(
 
 Type annotations for `boto3.client("cloudformation").list_stack_resources` method.
 
-[Client.list_stack_resources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_resources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_resources]
 
 ```python
 def list_stack_resources(
@@ -786,7 +791,7 @@ def list_stack_resources(
 
 Type annotations for `boto3.client("cloudformation").list_stack_set_operation_results` method.
 
-[Client.list_stack_set_operation_results documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operation_results)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operation_results]
 
 ```python
 def list_stack_set_operation_results(
@@ -804,7 +809,7 @@ def list_stack_set_operation_results(
 
 Type annotations for `boto3.client("cloudformation").list_stack_set_operations` method.
 
-[Client.list_stack_set_operations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operations]
 
 ```python
 def list_stack_set_operations(
@@ -821,7 +826,7 @@ def list_stack_set_operations(
 
 Type annotations for `boto3.client("cloudformation").list_stack_sets` method.
 
-[Client.list_stack_sets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_sets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_sets]
 
 ```python
 def list_stack_sets(
@@ -838,7 +843,7 @@ def list_stack_sets(
 
 Type annotations for `boto3.client("cloudformation").list_stacks` method.
 
-[Client.list_stacks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stacks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stacks]
 
 ```python
 def list_stacks(
@@ -853,7 +858,7 @@ def list_stacks(
 
 Type annotations for `boto3.client("cloudformation").list_type_registrations` method.
 
-[Client.list_type_registrations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_type_registrations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_type_registrations]
 
 ```python
 def list_type_registrations(
@@ -872,7 +877,7 @@ def list_type_registrations(
 
 Type annotations for `boto3.client("cloudformation").list_type_versions` method.
 
-[Client.list_type_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_type_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_type_versions]
 
 ```python
 def list_type_versions(
@@ -891,7 +896,7 @@ def list_type_versions(
 
 Type annotations for `boto3.client("cloudformation").list_types` method.
 
-[Client.list_types documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_types)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_types]
 
 ```python
 def list_types(
@@ -910,7 +915,7 @@ def list_types(
 
 Type annotations for `boto3.client("cloudformation").record_handler_progress` method.
 
-[Client.record_handler_progress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.record_handler_progress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.record_handler_progress]
 
 ```python
 def record_handler_progress(
@@ -930,7 +935,7 @@ def record_handler_progress(
 
 Type annotations for `boto3.client("cloudformation").register_type` method.
 
-[Client.register_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.register_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.register_type]
 
 ```python
 def register_type(
@@ -949,7 +954,7 @@ def register_type(
 
 Type annotations for `boto3.client("cloudformation").set_stack_policy` method.
 
-[Client.set_stack_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_stack_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_stack_policy]
 
 ```python
 def set_stack_policy(
@@ -965,7 +970,7 @@ def set_stack_policy(
 
 Type annotations for `boto3.client("cloudformation").set_type_default_version` method.
 
-[Client.set_type_default_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_type_default_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_type_default_version]
 
 ```python
 def set_type_default_version(
@@ -982,7 +987,7 @@ def set_type_default_version(
 
 Type annotations for `boto3.client("cloudformation").signal_resource` method.
 
-[Client.signal_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.signal_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.signal_resource]
 
 ```python
 def signal_resource(
@@ -999,7 +1004,7 @@ def signal_resource(
 
 Type annotations for `boto3.client("cloudformation").stop_stack_set_operation` method.
 
-[Client.stop_stack_set_operation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.stop_stack_set_operation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.stop_stack_set_operation]
 
 ```python
 def stop_stack_set_operation(
@@ -1015,7 +1020,7 @@ def stop_stack_set_operation(
 
 Type annotations for `boto3.client("cloudformation").update_stack` method.
 
-[Client.update_stack documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack]
 
 ```python
 def update_stack(
@@ -1044,7 +1049,7 @@ def update_stack(
 
 Type annotations for `boto3.client("cloudformation").update_stack_instances` method.
 
-[Client.update_stack_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_instances]
 
 ```python
 def update_stack_instances(
@@ -1065,7 +1070,7 @@ def update_stack_instances(
 
 Type annotations for `boto3.client("cloudformation").update_stack_set` method.
 
-[Client.update_stack_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_set]
 
 ```python
 def update_stack_set(
@@ -1096,7 +1101,7 @@ def update_stack_set(
 
 Type annotations for `boto3.client("cloudformation").update_termination_protection` method.
 
-[Client.update_termination_protection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_termination_protection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_termination_protection]
 
 ```python
 def update_termination_protection(
@@ -1111,7 +1116,7 @@ def update_termination_protection(
 
 Type annotations for `boto3.client("cloudformation").validate_template` method.
 
-[Client.validate_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.validate_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.validate_template]
 
 ```python
 def validate_template(

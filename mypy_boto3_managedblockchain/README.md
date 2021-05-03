@@ -14,7 +14,7 @@ pip install mypy-boto3-managedblockchain
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ManagedBlockchainClient
 
@@ -107,7 +107,7 @@ from mypy_boto3_managedblockchain.literals import Edition, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

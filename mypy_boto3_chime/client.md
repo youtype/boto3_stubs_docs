@@ -202,7 +202,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_chime.client import ChimeClient
+
+def get_chime_client() -> ChimeClient:
+    return boto3.client("chime")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client)
 
 ## Exceptions
 
@@ -240,7 +245,7 @@ Exceptions:
 
 Type annotations for `boto3.client("chime").associate_phone_number_with_user` method.
 
-[Client.associate_phone_number_with_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_number_with_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_number_with_user]
 
 ```python
 def associate_phone_number_with_user(
@@ -256,7 +261,7 @@ def associate_phone_number_with_user(
 
 Type annotations for `boto3.client("chime").associate_phone_numbers_with_voice_connector` method.
 
-[Client.associate_phone_numbers_with_voice_connector documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector]
 
 ```python
 def associate_phone_numbers_with_voice_connector(
@@ -272,7 +277,7 @@ def associate_phone_numbers_with_voice_connector(
 
 Type annotations for `boto3.client("chime").associate_phone_numbers_with_voice_connector_group` method.
 
-[Client.associate_phone_numbers_with_voice_connector_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector_group]
 
 ```python
 def associate_phone_numbers_with_voice_connector_group(
@@ -288,7 +293,7 @@ def associate_phone_numbers_with_voice_connector_group(
 
 Type annotations for `boto3.client("chime").associate_signin_delegate_groups_with_account` method.
 
-[Client.associate_signin_delegate_groups_with_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_signin_delegate_groups_with_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_signin_delegate_groups_with_account]
 
 ```python
 def associate_signin_delegate_groups_with_account(
@@ -303,7 +308,7 @@ def associate_signin_delegate_groups_with_account(
 
 Type annotations for `boto3.client("chime").batch_create_attendee` method.
 
-[Client.batch_create_attendee documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_attendee)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_attendee]
 
 ```python
 def batch_create_attendee(
@@ -318,7 +323,7 @@ def batch_create_attendee(
 
 Type annotations for `boto3.client("chime").batch_create_room_membership` method.
 
-[Client.batch_create_room_membership documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_room_membership)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_room_membership]
 
 ```python
 def batch_create_room_membership(
@@ -334,7 +339,7 @@ def batch_create_room_membership(
 
 Type annotations for `boto3.client("chime").batch_delete_phone_number` method.
 
-[Client.batch_delete_phone_number documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_delete_phone_number)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_delete_phone_number]
 
 ```python
 def batch_delete_phone_number(
@@ -348,7 +353,7 @@ def batch_delete_phone_number(
 
 Type annotations for `boto3.client("chime").batch_suspend_user` method.
 
-[Client.batch_suspend_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_suspend_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_suspend_user]
 
 ```python
 def batch_suspend_user(
@@ -363,7 +368,7 @@ def batch_suspend_user(
 
 Type annotations for `boto3.client("chime").batch_unsuspend_user` method.
 
-[Client.batch_unsuspend_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_unsuspend_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_unsuspend_user]
 
 ```python
 def batch_unsuspend_user(
@@ -378,7 +383,7 @@ def batch_unsuspend_user(
 
 Type annotations for `boto3.client("chime").batch_update_phone_number` method.
 
-[Client.batch_update_phone_number documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_update_phone_number)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_update_phone_number]
 
 ```python
 def batch_update_phone_number(
@@ -392,7 +397,7 @@ def batch_update_phone_number(
 
 Type annotations for `boto3.client("chime").batch_update_user` method.
 
-[Client.batch_update_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_update_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_update_user]
 
 ```python
 def batch_update_user(
@@ -407,7 +412,7 @@ def batch_update_user(
 
 Type annotations for `boto3.client("chime").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -421,7 +426,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("chime").create_account` method.
 
-[Client.create_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_account]
 
 ```python
 def create_account(
@@ -435,7 +440,7 @@ def create_account(
 
 Type annotations for `boto3.client("chime").create_app_instance` method.
 
-[Client.create_app_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance]
 
 ```python
 def create_app_instance(
@@ -452,7 +457,7 @@ def create_app_instance(
 
 Type annotations for `boto3.client("chime").create_app_instance_admin` method.
 
-[Client.create_app_instance_admin documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance_admin)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance_admin]
 
 ```python
 def create_app_instance_admin(
@@ -467,7 +472,7 @@ def create_app_instance_admin(
 
 Type annotations for `boto3.client("chime").create_app_instance_user` method.
 
-[Client.create_app_instance_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance_user]
 
 ```python
 def create_app_instance_user(
@@ -486,7 +491,7 @@ def create_app_instance_user(
 
 Type annotations for `boto3.client("chime").create_attendee` method.
 
-[Client.create_attendee documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_attendee)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_attendee]
 
 ```python
 def create_attendee(
@@ -502,7 +507,7 @@ def create_attendee(
 
 Type annotations for `boto3.client("chime").create_bot` method.
 
-[Client.create_bot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_bot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_bot]
 
 ```python
 def create_bot(
@@ -518,7 +523,7 @@ def create_bot(
 
 Type annotations for `boto3.client("chime").create_channel` method.
 
-[Client.create_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel]
 
 ```python
 def create_channel(
@@ -539,7 +544,7 @@ def create_channel(
 
 Type annotations for `boto3.client("chime").create_channel_ban` method.
 
-[Client.create_channel_ban documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_ban)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_ban]
 
 ```python
 def create_channel_ban(
@@ -555,7 +560,7 @@ def create_channel_ban(
 
 Type annotations for `boto3.client("chime").create_channel_membership` method.
 
-[Client.create_channel_membership documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_membership)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_membership]
 
 ```python
 def create_channel_membership(
@@ -572,7 +577,7 @@ def create_channel_membership(
 
 Type annotations for `boto3.client("chime").create_channel_moderator` method.
 
-[Client.create_channel_moderator documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_moderator)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_moderator]
 
 ```python
 def create_channel_moderator(
@@ -588,7 +593,7 @@ def create_channel_moderator(
 
 Type annotations for `boto3.client("chime").create_meeting` method.
 
-[Client.create_meeting documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting]
 
 ```python
 def create_meeting(
@@ -607,7 +612,7 @@ def create_meeting(
 
 Type annotations for `boto3.client("chime").create_meeting_dial_out` method.
 
-[Client.create_meeting_dial_out documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting_dial_out)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting_dial_out]
 
 ```python
 def create_meeting_dial_out(
@@ -624,7 +629,7 @@ def create_meeting_dial_out(
 
 Type annotations for `boto3.client("chime").create_meeting_with_attendees` method.
 
-[Client.create_meeting_with_attendees documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting_with_attendees)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting_with_attendees]
 
 ```python
 def create_meeting_with_attendees(
@@ -644,7 +649,7 @@ def create_meeting_with_attendees(
 
 Type annotations for `boto3.client("chime").create_phone_number_order` method.
 
-[Client.create_phone_number_order documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_phone_number_order)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_phone_number_order]
 
 ```python
 def create_phone_number_order(
@@ -659,7 +664,7 @@ def create_phone_number_order(
 
 Type annotations for `boto3.client("chime").create_proxy_session` method.
 
-[Client.create_proxy_session documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_proxy_session)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_proxy_session]
 
 ```python
 def create_proxy_session(
@@ -680,7 +685,7 @@ def create_proxy_session(
 
 Type annotations for `boto3.client("chime").create_room` method.
 
-[Client.create_room documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_room)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_room]
 
 ```python
 def create_room(
@@ -696,7 +701,7 @@ def create_room(
 
 Type annotations for `boto3.client("chime").create_room_membership` method.
 
-[Client.create_room_membership documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_room_membership)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_room_membership]
 
 ```python
 def create_room_membership(
@@ -713,7 +718,7 @@ def create_room_membership(
 
 Type annotations for `boto3.client("chime").create_sip_media_application` method.
 
-[Client.create_sip_media_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_media_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_media_application]
 
 ```python
 def create_sip_media_application(
@@ -729,7 +734,7 @@ def create_sip_media_application(
 
 Type annotations for `boto3.client("chime").create_sip_media_application_call` method.
 
-[Client.create_sip_media_application_call documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_media_application_call)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_media_application_call]
 
 ```python
 def create_sip_media_application_call(
@@ -745,7 +750,7 @@ def create_sip_media_application_call(
 
 Type annotations for `boto3.client("chime").create_sip_rule` method.
 
-[Client.create_sip_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_rule]
 
 ```python
 def create_sip_rule(
@@ -763,7 +768,7 @@ def create_sip_rule(
 
 Type annotations for `boto3.client("chime").create_user` method.
 
-[Client.create_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_user]
 
 ```python
 def create_user(
@@ -780,7 +785,7 @@ def create_user(
 
 Type annotations for `boto3.client("chime").create_voice_connector` method.
 
-[Client.create_voice_connector documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_voice_connector)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_voice_connector]
 
 ```python
 def create_voice_connector(
@@ -796,7 +801,7 @@ def create_voice_connector(
 
 Type annotations for `boto3.client("chime").create_voice_connector_group` method.
 
-[Client.create_voice_connector_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_voice_connector_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_voice_connector_group]
 
 ```python
 def create_voice_connector_group(
@@ -811,7 +816,7 @@ def create_voice_connector_group(
 
 Type annotations for `boto3.client("chime").delete_account` method.
 
-[Client.delete_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_account]
 
 ```python
 def delete_account(
@@ -825,7 +830,7 @@ def delete_account(
 
 Type annotations for `boto3.client("chime").delete_app_instance` method.
 
-[Client.delete_app_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance]
 
 ```python
 def delete_app_instance(
@@ -839,7 +844,7 @@ def delete_app_instance(
 
 Type annotations for `boto3.client("chime").delete_app_instance_admin` method.
 
-[Client.delete_app_instance_admin documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_admin)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_admin]
 
 ```python
 def delete_app_instance_admin(
@@ -854,7 +859,7 @@ def delete_app_instance_admin(
 
 Type annotations for `boto3.client("chime").delete_app_instance_streaming_configurations` method.
 
-[Client.delete_app_instance_streaming_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_streaming_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_streaming_configurations]
 
 ```python
 def delete_app_instance_streaming_configurations(
@@ -868,7 +873,7 @@ def delete_app_instance_streaming_configurations(
 
 Type annotations for `boto3.client("chime").delete_app_instance_user` method.
 
-[Client.delete_app_instance_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_user]
 
 ```python
 def delete_app_instance_user(
@@ -882,7 +887,7 @@ def delete_app_instance_user(
 
 Type annotations for `boto3.client("chime").delete_attendee` method.
 
-[Client.delete_attendee documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_attendee)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_attendee]
 
 ```python
 def delete_attendee(
@@ -897,7 +902,7 @@ def delete_attendee(
 
 Type annotations for `boto3.client("chime").delete_channel` method.
 
-[Client.delete_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel]
 
 ```python
 def delete_channel(
@@ -912,7 +917,7 @@ def delete_channel(
 
 Type annotations for `boto3.client("chime").delete_channel_ban` method.
 
-[Client.delete_channel_ban documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_ban)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_ban]
 
 ```python
 def delete_channel_ban(
@@ -928,7 +933,7 @@ def delete_channel_ban(
 
 Type annotations for `boto3.client("chime").delete_channel_membership` method.
 
-[Client.delete_channel_membership documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_membership)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_membership]
 
 ```python
 def delete_channel_membership(
@@ -944,7 +949,7 @@ def delete_channel_membership(
 
 Type annotations for `boto3.client("chime").delete_channel_message` method.
 
-[Client.delete_channel_message documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_message)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_message]
 
 ```python
 def delete_channel_message(
@@ -960,7 +965,7 @@ def delete_channel_message(
 
 Type annotations for `boto3.client("chime").delete_channel_moderator` method.
 
-[Client.delete_channel_moderator documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_moderator)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_moderator]
 
 ```python
 def delete_channel_moderator(
@@ -976,7 +981,7 @@ def delete_channel_moderator(
 
 Type annotations for `boto3.client("chime").delete_events_configuration` method.
 
-[Client.delete_events_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_events_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_events_configuration]
 
 ```python
 def delete_events_configuration(
@@ -991,7 +996,7 @@ def delete_events_configuration(
 
 Type annotations for `boto3.client("chime").delete_meeting` method.
 
-[Client.delete_meeting documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_meeting)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_meeting]
 
 ```python
 def delete_meeting(
@@ -1005,7 +1010,7 @@ def delete_meeting(
 
 Type annotations for `boto3.client("chime").delete_phone_number` method.
 
-[Client.delete_phone_number documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_phone_number)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_phone_number]
 
 ```python
 def delete_phone_number(
@@ -1019,7 +1024,7 @@ def delete_phone_number(
 
 Type annotations for `boto3.client("chime").delete_proxy_session` method.
 
-[Client.delete_proxy_session documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_proxy_session)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_proxy_session]
 
 ```python
 def delete_proxy_session(
@@ -1034,7 +1039,7 @@ def delete_proxy_session(
 
 Type annotations for `boto3.client("chime").delete_room` method.
 
-[Client.delete_room documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_room)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_room]
 
 ```python
 def delete_room(
@@ -1049,7 +1054,7 @@ def delete_room(
 
 Type annotations for `boto3.client("chime").delete_room_membership` method.
 
-[Client.delete_room_membership documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_room_membership)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_room_membership]
 
 ```python
 def delete_room_membership(
@@ -1065,7 +1070,7 @@ def delete_room_membership(
 
 Type annotations for `boto3.client("chime").delete_sip_media_application` method.
 
-[Client.delete_sip_media_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_sip_media_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_sip_media_application]
 
 ```python
 def delete_sip_media_application(
@@ -1079,7 +1084,7 @@ def delete_sip_media_application(
 
 Type annotations for `boto3.client("chime").delete_sip_rule` method.
 
-[Client.delete_sip_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_sip_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_sip_rule]
 
 ```python
 def delete_sip_rule(
@@ -1093,7 +1098,7 @@ def delete_sip_rule(
 
 Type annotations for `boto3.client("chime").delete_voice_connector` method.
 
-[Client.delete_voice_connector documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector]
 
 ```python
 def delete_voice_connector(
@@ -1107,7 +1112,7 @@ def delete_voice_connector(
 
 Type annotations for `boto3.client("chime").delete_voice_connector_emergency_calling_configuration` method.
 
-[Client.delete_voice_connector_emergency_calling_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_emergency_calling_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_emergency_calling_configuration]
 
 ```python
 def delete_voice_connector_emergency_calling_configuration(
@@ -1121,7 +1126,7 @@ def delete_voice_connector_emergency_calling_configuration(
 
 Type annotations for `boto3.client("chime").delete_voice_connector_group` method.
 
-[Client.delete_voice_connector_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_group]
 
 ```python
 def delete_voice_connector_group(
@@ -1135,7 +1140,7 @@ def delete_voice_connector_group(
 
 Type annotations for `boto3.client("chime").delete_voice_connector_origination` method.
 
-[Client.delete_voice_connector_origination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_origination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_origination]
 
 ```python
 def delete_voice_connector_origination(
@@ -1149,7 +1154,7 @@ def delete_voice_connector_origination(
 
 Type annotations for `boto3.client("chime").delete_voice_connector_proxy` method.
 
-[Client.delete_voice_connector_proxy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_proxy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_proxy]
 
 ```python
 def delete_voice_connector_proxy(
@@ -1163,7 +1168,7 @@ def delete_voice_connector_proxy(
 
 Type annotations for `boto3.client("chime").delete_voice_connector_streaming_configuration` method.
 
-[Client.delete_voice_connector_streaming_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_streaming_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_streaming_configuration]
 
 ```python
 def delete_voice_connector_streaming_configuration(
@@ -1177,7 +1182,7 @@ def delete_voice_connector_streaming_configuration(
 
 Type annotations for `boto3.client("chime").delete_voice_connector_termination` method.
 
-[Client.delete_voice_connector_termination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_termination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_termination]
 
 ```python
 def delete_voice_connector_termination(
@@ -1191,7 +1196,7 @@ def delete_voice_connector_termination(
 
 Type annotations for `boto3.client("chime").delete_voice_connector_termination_credentials` method.
 
-[Client.delete_voice_connector_termination_credentials documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_termination_credentials)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_termination_credentials]
 
 ```python
 def delete_voice_connector_termination_credentials(
@@ -1206,7 +1211,7 @@ def delete_voice_connector_termination_credentials(
 
 Type annotations for `boto3.client("chime").describe_app_instance` method.
 
-[Client.describe_app_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance]
 
 ```python
 def describe_app_instance(
@@ -1220,7 +1225,7 @@ def describe_app_instance(
 
 Type annotations for `boto3.client("chime").describe_app_instance_admin` method.
 
-[Client.describe_app_instance_admin documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance_admin)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance_admin]
 
 ```python
 def describe_app_instance_admin(
@@ -1235,7 +1240,7 @@ def describe_app_instance_admin(
 
 Type annotations for `boto3.client("chime").describe_app_instance_user` method.
 
-[Client.describe_app_instance_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance_user]
 
 ```python
 def describe_app_instance_user(
@@ -1249,7 +1254,7 @@ def describe_app_instance_user(
 
 Type annotations for `boto3.client("chime").describe_channel` method.
 
-[Client.describe_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel]
 
 ```python
 def describe_channel(
@@ -1264,7 +1269,7 @@ def describe_channel(
 
 Type annotations for `boto3.client("chime").describe_channel_ban` method.
 
-[Client.describe_channel_ban documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_ban)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_ban]
 
 ```python
 def describe_channel_ban(
@@ -1280,7 +1285,7 @@ def describe_channel_ban(
 
 Type annotations for `boto3.client("chime").describe_channel_membership` method.
 
-[Client.describe_channel_membership documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_membership)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_membership]
 
 ```python
 def describe_channel_membership(
@@ -1296,7 +1301,7 @@ def describe_channel_membership(
 
 Type annotations for `boto3.client("chime").describe_channel_membership_for_app_instance_user` method.
 
-[Client.describe_channel_membership_for_app_instance_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_membership_for_app_instance_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_membership_for_app_instance_user]
 
 ```python
 def describe_channel_membership_for_app_instance_user(
@@ -1312,7 +1317,7 @@ def describe_channel_membership_for_app_instance_user(
 
 Type annotations for `boto3.client("chime").describe_channel_moderated_by_app_instance_user` method.
 
-[Client.describe_channel_moderated_by_app_instance_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_moderated_by_app_instance_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_moderated_by_app_instance_user]
 
 ```python
 def describe_channel_moderated_by_app_instance_user(
@@ -1328,7 +1333,7 @@ def describe_channel_moderated_by_app_instance_user(
 
 Type annotations for `boto3.client("chime").describe_channel_moderator` method.
 
-[Client.describe_channel_moderator documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_moderator)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_moderator]
 
 ```python
 def describe_channel_moderator(
@@ -1344,7 +1349,7 @@ def describe_channel_moderator(
 
 Type annotations for `boto3.client("chime").disassociate_phone_number_from_user` method.
 
-[Client.disassociate_phone_number_from_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_number_from_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_number_from_user]
 
 ```python
 def disassociate_phone_number_from_user(
@@ -1359,7 +1364,7 @@ def disassociate_phone_number_from_user(
 
 Type annotations for `boto3.client("chime").disassociate_phone_numbers_from_voice_connector` method.
 
-[Client.disassociate_phone_numbers_from_voice_connector documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector]
 
 ```python
 def disassociate_phone_numbers_from_voice_connector(
@@ -1374,7 +1379,7 @@ def disassociate_phone_numbers_from_voice_connector(
 
 Type annotations for `boto3.client("chime").disassociate_phone_numbers_from_voice_connector_group` method.
 
-[Client.disassociate_phone_numbers_from_voice_connector_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector_group]
 
 ```python
 def disassociate_phone_numbers_from_voice_connector_group(
@@ -1389,7 +1394,7 @@ def disassociate_phone_numbers_from_voice_connector_group(
 
 Type annotations for `boto3.client("chime").disassociate_signin_delegate_groups_from_account` method.
 
-[Client.disassociate_signin_delegate_groups_from_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_signin_delegate_groups_from_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_signin_delegate_groups_from_account]
 
 ```python
 def disassociate_signin_delegate_groups_from_account(
@@ -1404,7 +1409,7 @@ def disassociate_signin_delegate_groups_from_account(
 
 Type annotations for `boto3.client("chime").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -1421,7 +1426,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("chime").get_account` method.
 
-[Client.get_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_account]
 
 ```python
 def get_account(
@@ -1435,7 +1440,7 @@ def get_account(
 
 Type annotations for `boto3.client("chime").get_account_settings` method.
 
-[Client.get_account_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_account_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_account_settings]
 
 ```python
 def get_account_settings(
@@ -1449,7 +1454,7 @@ def get_account_settings(
 
 Type annotations for `boto3.client("chime").get_app_instance_retention_settings` method.
 
-[Client.get_app_instance_retention_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_app_instance_retention_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_app_instance_retention_settings]
 
 ```python
 def get_app_instance_retention_settings(
@@ -1463,7 +1468,7 @@ def get_app_instance_retention_settings(
 
 Type annotations for `boto3.client("chime").get_app_instance_streaming_configurations` method.
 
-[Client.get_app_instance_streaming_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_app_instance_streaming_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_app_instance_streaming_configurations]
 
 ```python
 def get_app_instance_streaming_configurations(
@@ -1477,7 +1482,7 @@ def get_app_instance_streaming_configurations(
 
 Type annotations for `boto3.client("chime").get_attendee` method.
 
-[Client.get_attendee documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_attendee)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_attendee]
 
 ```python
 def get_attendee(
@@ -1492,7 +1497,7 @@ def get_attendee(
 
 Type annotations for `boto3.client("chime").get_bot` method.
 
-[Client.get_bot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_bot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_bot]
 
 ```python
 def get_bot(
@@ -1507,7 +1512,7 @@ def get_bot(
 
 Type annotations for `boto3.client("chime").get_channel_message` method.
 
-[Client.get_channel_message documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_channel_message)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_channel_message]
 
 ```python
 def get_channel_message(
@@ -1523,7 +1528,7 @@ def get_channel_message(
 
 Type annotations for `boto3.client("chime").get_events_configuration` method.
 
-[Client.get_events_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_events_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_events_configuration]
 
 ```python
 def get_events_configuration(
@@ -1538,7 +1543,7 @@ def get_events_configuration(
 
 Type annotations for `boto3.client("chime").get_global_settings` method.
 
-[Client.get_global_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_global_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_global_settings]
 
 ```python
 def get_global_settings(
@@ -1551,7 +1556,7 @@ def get_global_settings(
 
 Type annotations for `boto3.client("chime").get_meeting` method.
 
-[Client.get_meeting documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_meeting)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_meeting]
 
 ```python
 def get_meeting(
@@ -1565,7 +1570,7 @@ def get_meeting(
 
 Type annotations for `boto3.client("chime").get_messaging_session_endpoint` method.
 
-[Client.get_messaging_session_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_messaging_session_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_messaging_session_endpoint]
 
 ```python
 def get_messaging_session_endpoint(
@@ -1578,7 +1583,7 @@ def get_messaging_session_endpoint(
 
 Type annotations for `boto3.client("chime").get_phone_number` method.
 
-[Client.get_phone_number documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number]
 
 ```python
 def get_phone_number(
@@ -1592,7 +1597,7 @@ def get_phone_number(
 
 Type annotations for `boto3.client("chime").get_phone_number_order` method.
 
-[Client.get_phone_number_order documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number_order)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number_order]
 
 ```python
 def get_phone_number_order(
@@ -1606,7 +1611,7 @@ def get_phone_number_order(
 
 Type annotations for `boto3.client("chime").get_phone_number_settings` method.
 
-[Client.get_phone_number_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number_settings]
 
 ```python
 def get_phone_number_settings(
@@ -1619,7 +1624,7 @@ def get_phone_number_settings(
 
 Type annotations for `boto3.client("chime").get_proxy_session` method.
 
-[Client.get_proxy_session documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_proxy_session)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_proxy_session]
 
 ```python
 def get_proxy_session(
@@ -1634,7 +1639,7 @@ def get_proxy_session(
 
 Type annotations for `boto3.client("chime").get_retention_settings` method.
 
-[Client.get_retention_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_retention_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_retention_settings]
 
 ```python
 def get_retention_settings(
@@ -1648,7 +1653,7 @@ def get_retention_settings(
 
 Type annotations for `boto3.client("chime").get_room` method.
 
-[Client.get_room documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_room)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_room]
 
 ```python
 def get_room(
@@ -1663,7 +1668,7 @@ def get_room(
 
 Type annotations for `boto3.client("chime").get_sip_media_application` method.
 
-[Client.get_sip_media_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_media_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_media_application]
 
 ```python
 def get_sip_media_application(
@@ -1677,7 +1682,7 @@ def get_sip_media_application(
 
 Type annotations for `boto3.client("chime").get_sip_media_application_logging_configuration` method.
 
-[Client.get_sip_media_application_logging_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_media_application_logging_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_media_application_logging_configuration]
 
 ```python
 def get_sip_media_application_logging_configuration(
@@ -1691,7 +1696,7 @@ def get_sip_media_application_logging_configuration(
 
 Type annotations for `boto3.client("chime").get_sip_rule` method.
 
-[Client.get_sip_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_rule]
 
 ```python
 def get_sip_rule(
@@ -1705,7 +1710,7 @@ def get_sip_rule(
 
 Type annotations for `boto3.client("chime").get_user` method.
 
-[Client.get_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_user]
 
 ```python
 def get_user(
@@ -1720,7 +1725,7 @@ def get_user(
 
 Type annotations for `boto3.client("chime").get_user_settings` method.
 
-[Client.get_user_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_user_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_user_settings]
 
 ```python
 def get_user_settings(
@@ -1735,7 +1740,7 @@ def get_user_settings(
 
 Type annotations for `boto3.client("chime").get_voice_connector` method.
 
-[Client.get_voice_connector documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector]
 
 ```python
 def get_voice_connector(
@@ -1749,7 +1754,7 @@ def get_voice_connector(
 
 Type annotations for `boto3.client("chime").get_voice_connector_emergency_calling_configuration` method.
 
-[Client.get_voice_connector_emergency_calling_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_emergency_calling_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_emergency_calling_configuration]
 
 ```python
 def get_voice_connector_emergency_calling_configuration(
@@ -1763,7 +1768,7 @@ def get_voice_connector_emergency_calling_configuration(
 
 Type annotations for `boto3.client("chime").get_voice_connector_group` method.
 
-[Client.get_voice_connector_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_group]
 
 ```python
 def get_voice_connector_group(
@@ -1777,7 +1782,7 @@ def get_voice_connector_group(
 
 Type annotations for `boto3.client("chime").get_voice_connector_logging_configuration` method.
 
-[Client.get_voice_connector_logging_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_logging_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_logging_configuration]
 
 ```python
 def get_voice_connector_logging_configuration(
@@ -1791,7 +1796,7 @@ def get_voice_connector_logging_configuration(
 
 Type annotations for `boto3.client("chime").get_voice_connector_origination` method.
 
-[Client.get_voice_connector_origination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_origination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_origination]
 
 ```python
 def get_voice_connector_origination(
@@ -1805,7 +1810,7 @@ def get_voice_connector_origination(
 
 Type annotations for `boto3.client("chime").get_voice_connector_proxy` method.
 
-[Client.get_voice_connector_proxy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_proxy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_proxy]
 
 ```python
 def get_voice_connector_proxy(
@@ -1819,7 +1824,7 @@ def get_voice_connector_proxy(
 
 Type annotations for `boto3.client("chime").get_voice_connector_streaming_configuration` method.
 
-[Client.get_voice_connector_streaming_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_streaming_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_streaming_configuration]
 
 ```python
 def get_voice_connector_streaming_configuration(
@@ -1833,7 +1838,7 @@ def get_voice_connector_streaming_configuration(
 
 Type annotations for `boto3.client("chime").get_voice_connector_termination` method.
 
-[Client.get_voice_connector_termination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_termination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_termination]
 
 ```python
 def get_voice_connector_termination(
@@ -1847,7 +1852,7 @@ def get_voice_connector_termination(
 
 Type annotations for `boto3.client("chime").get_voice_connector_termination_health` method.
 
-[Client.get_voice_connector_termination_health documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_termination_health)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_termination_health]
 
 ```python
 def get_voice_connector_termination_health(
@@ -1861,7 +1866,7 @@ def get_voice_connector_termination_health(
 
 Type annotations for `boto3.client("chime").invite_users` method.
 
-[Client.invite_users documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.invite_users)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.invite_users]
 
 ```python
 def invite_users(
@@ -1877,7 +1882,7 @@ def invite_users(
 
 Type annotations for `boto3.client("chime").list_accounts` method.
 
-[Client.list_accounts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_accounts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_accounts]
 
 ```python
 def list_accounts(
@@ -1894,7 +1899,7 @@ def list_accounts(
 
 Type annotations for `boto3.client("chime").list_app_instance_admins` method.
 
-[Client.list_app_instance_admins documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instance_admins)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instance_admins]
 
 ```python
 def list_app_instance_admins(
@@ -1910,7 +1915,7 @@ def list_app_instance_admins(
 
 Type annotations for `boto3.client("chime").list_app_instance_users` method.
 
-[Client.list_app_instance_users documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instance_users)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instance_users]
 
 ```python
 def list_app_instance_users(
@@ -1926,7 +1931,7 @@ def list_app_instance_users(
 
 Type annotations for `boto3.client("chime").list_app_instances` method.
 
-[Client.list_app_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instances]
 
 ```python
 def list_app_instances(
@@ -1941,7 +1946,7 @@ def list_app_instances(
 
 Type annotations for `boto3.client("chime").list_attendee_tags` method.
 
-[Client.list_attendee_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_attendee_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_attendee_tags]
 
 ```python
 def list_attendee_tags(
@@ -1956,7 +1961,7 @@ def list_attendee_tags(
 
 Type annotations for `boto3.client("chime").list_attendees` method.
 
-[Client.list_attendees documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_attendees)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_attendees]
 
 ```python
 def list_attendees(
@@ -1972,7 +1977,7 @@ def list_attendees(
 
 Type annotations for `boto3.client("chime").list_bots` method.
 
-[Client.list_bots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_bots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_bots]
 
 ```python
 def list_bots(
@@ -1988,7 +1993,7 @@ def list_bots(
 
 Type annotations for `boto3.client("chime").list_channel_bans` method.
 
-[Client.list_channel_bans documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_bans)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_bans]
 
 ```python
 def list_channel_bans(
@@ -2005,7 +2010,7 @@ def list_channel_bans(
 
 Type annotations for `boto3.client("chime").list_channel_memberships` method.
 
-[Client.list_channel_memberships documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_memberships)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_memberships]
 
 ```python
 def list_channel_memberships(
@@ -2023,7 +2028,7 @@ def list_channel_memberships(
 
 Type annotations for `boto3.client("chime").list_channel_memberships_for_app_instance_user` method.
 
-[Client.list_channel_memberships_for_app_instance_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_memberships_for_app_instance_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_memberships_for_app_instance_user]
 
 ```python
 def list_channel_memberships_for_app_instance_user(
@@ -2040,7 +2045,7 @@ def list_channel_memberships_for_app_instance_user(
 
 Type annotations for `boto3.client("chime").list_channel_messages` method.
 
-[Client.list_channel_messages documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_messages)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_messages]
 
 ```python
 def list_channel_messages(
@@ -2060,7 +2065,7 @@ def list_channel_messages(
 
 Type annotations for `boto3.client("chime").list_channel_moderators` method.
 
-[Client.list_channel_moderators documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_moderators)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_moderators]
 
 ```python
 def list_channel_moderators(
@@ -2077,7 +2082,7 @@ def list_channel_moderators(
 
 Type annotations for `boto3.client("chime").list_channels` method.
 
-[Client.list_channels documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channels)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channels]
 
 ```python
 def list_channels(
@@ -2095,7 +2100,7 @@ def list_channels(
 
 Type annotations for `boto3.client("chime").list_channels_moderated_by_app_instance_user` method.
 
-[Client.list_channels_moderated_by_app_instance_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channels_moderated_by_app_instance_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channels_moderated_by_app_instance_user]
 
 ```python
 def list_channels_moderated_by_app_instance_user(
@@ -2112,7 +2117,7 @@ def list_channels_moderated_by_app_instance_user(
 
 Type annotations for `boto3.client("chime").list_meeting_tags` method.
 
-[Client.list_meeting_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_meeting_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_meeting_tags]
 
 ```python
 def list_meeting_tags(
@@ -2126,7 +2131,7 @@ def list_meeting_tags(
 
 Type annotations for `boto3.client("chime").list_meetings` method.
 
-[Client.list_meetings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_meetings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_meetings]
 
 ```python
 def list_meetings(
@@ -2141,7 +2146,7 @@ def list_meetings(
 
 Type annotations for `boto3.client("chime").list_phone_number_orders` method.
 
-[Client.list_phone_number_orders documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_phone_number_orders)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_phone_number_orders]
 
 ```python
 def list_phone_number_orders(
@@ -2156,7 +2161,7 @@ def list_phone_number_orders(
 
 Type annotations for `boto3.client("chime").list_phone_numbers` method.
 
-[Client.list_phone_numbers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_phone_numbers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_phone_numbers]
 
 ```python
 def list_phone_numbers(
@@ -2175,7 +2180,7 @@ def list_phone_numbers(
 
 Type annotations for `boto3.client("chime").list_proxy_sessions` method.
 
-[Client.list_proxy_sessions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_proxy_sessions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_proxy_sessions]
 
 ```python
 def list_proxy_sessions(
@@ -2192,7 +2197,7 @@ def list_proxy_sessions(
 
 Type annotations for `boto3.client("chime").list_room_memberships` method.
 
-[Client.list_room_memberships documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_room_memberships)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_room_memberships]
 
 ```python
 def list_room_memberships(
@@ -2209,7 +2214,7 @@ def list_room_memberships(
 
 Type annotations for `boto3.client("chime").list_rooms` method.
 
-[Client.list_rooms documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_rooms)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_rooms]
 
 ```python
 def list_rooms(
@@ -2226,7 +2231,7 @@ def list_rooms(
 
 Type annotations for `boto3.client("chime").list_sip_media_applications` method.
 
-[Client.list_sip_media_applications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_sip_media_applications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_sip_media_applications]
 
 ```python
 def list_sip_media_applications(
@@ -2241,7 +2246,7 @@ def list_sip_media_applications(
 
 Type annotations for `boto3.client("chime").list_sip_rules` method.
 
-[Client.list_sip_rules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_sip_rules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_sip_rules]
 
 ```python
 def list_sip_rules(
@@ -2257,7 +2262,7 @@ def list_sip_rules(
 
 Type annotations for `boto3.client("chime").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -2271,7 +2276,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("chime").list_users` method.
 
-[Client.list_users documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_users)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_users]
 
 ```python
 def list_users(
@@ -2289,7 +2294,7 @@ def list_users(
 
 Type annotations for `boto3.client("chime").list_voice_connector_groups` method.
 
-[Client.list_voice_connector_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connector_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connector_groups]
 
 ```python
 def list_voice_connector_groups(
@@ -2304,7 +2309,7 @@ def list_voice_connector_groups(
 
 Type annotations for `boto3.client("chime").list_voice_connector_termination_credentials` method.
 
-[Client.list_voice_connector_termination_credentials documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connector_termination_credentials)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connector_termination_credentials]
 
 ```python
 def list_voice_connector_termination_credentials(
@@ -2318,7 +2323,7 @@ def list_voice_connector_termination_credentials(
 
 Type annotations for `boto3.client("chime").list_voice_connectors` method.
 
-[Client.list_voice_connectors documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connectors)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connectors]
 
 ```python
 def list_voice_connectors(
@@ -2333,7 +2338,7 @@ def list_voice_connectors(
 
 Type annotations for `boto3.client("chime").logout_user` method.
 
-[Client.logout_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.logout_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.logout_user]
 
 ```python
 def logout_user(
@@ -2348,7 +2353,7 @@ def logout_user(
 
 Type annotations for `boto3.client("chime").put_app_instance_retention_settings` method.
 
-[Client.put_app_instance_retention_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_app_instance_retention_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_app_instance_retention_settings]
 
 ```python
 def put_app_instance_retention_settings(
@@ -2363,7 +2368,7 @@ def put_app_instance_retention_settings(
 
 Type annotations for `boto3.client("chime").put_app_instance_streaming_configurations` method.
 
-[Client.put_app_instance_streaming_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_app_instance_streaming_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_app_instance_streaming_configurations]
 
 ```python
 def put_app_instance_streaming_configurations(
@@ -2378,7 +2383,7 @@ def put_app_instance_streaming_configurations(
 
 Type annotations for `boto3.client("chime").put_events_configuration` method.
 
-[Client.put_events_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_events_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_events_configuration]
 
 ```python
 def put_events_configuration(
@@ -2395,7 +2400,7 @@ def put_events_configuration(
 
 Type annotations for `boto3.client("chime").put_retention_settings` method.
 
-[Client.put_retention_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_retention_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_retention_settings]
 
 ```python
 def put_retention_settings(
@@ -2410,7 +2415,7 @@ def put_retention_settings(
 
 Type annotations for `boto3.client("chime").put_sip_media_application_logging_configuration` method.
 
-[Client.put_sip_media_application_logging_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_sip_media_application_logging_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_sip_media_application_logging_configuration]
 
 ```python
 def put_sip_media_application_logging_configuration(
@@ -2425,7 +2430,7 @@ def put_sip_media_application_logging_configuration(
 
 Type annotations for `boto3.client("chime").put_voice_connector_emergency_calling_configuration` method.
 
-[Client.put_voice_connector_emergency_calling_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_emergency_calling_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_emergency_calling_configuration]
 
 ```python
 def put_voice_connector_emergency_calling_configuration(
@@ -2440,7 +2445,7 @@ def put_voice_connector_emergency_calling_configuration(
 
 Type annotations for `boto3.client("chime").put_voice_connector_logging_configuration` method.
 
-[Client.put_voice_connector_logging_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_logging_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_logging_configuration]
 
 ```python
 def put_voice_connector_logging_configuration(
@@ -2455,7 +2460,7 @@ def put_voice_connector_logging_configuration(
 
 Type annotations for `boto3.client("chime").put_voice_connector_origination` method.
 
-[Client.put_voice_connector_origination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_origination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_origination]
 
 ```python
 def put_voice_connector_origination(
@@ -2470,7 +2475,7 @@ def put_voice_connector_origination(
 
 Type annotations for `boto3.client("chime").put_voice_connector_proxy` method.
 
-[Client.put_voice_connector_proxy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_proxy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_proxy]
 
 ```python
 def put_voice_connector_proxy(
@@ -2488,7 +2493,7 @@ def put_voice_connector_proxy(
 
 Type annotations for `boto3.client("chime").put_voice_connector_streaming_configuration` method.
 
-[Client.put_voice_connector_streaming_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_streaming_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_streaming_configuration]
 
 ```python
 def put_voice_connector_streaming_configuration(
@@ -2503,7 +2508,7 @@ def put_voice_connector_streaming_configuration(
 
 Type annotations for `boto3.client("chime").put_voice_connector_termination` method.
 
-[Client.put_voice_connector_termination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_termination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_termination]
 
 ```python
 def put_voice_connector_termination(
@@ -2518,7 +2523,7 @@ def put_voice_connector_termination(
 
 Type annotations for `boto3.client("chime").put_voice_connector_termination_credentials` method.
 
-[Client.put_voice_connector_termination_credentials documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_termination_credentials)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_termination_credentials]
 
 ```python
 def put_voice_connector_termination_credentials(
@@ -2533,7 +2538,7 @@ def put_voice_connector_termination_credentials(
 
 Type annotations for `boto3.client("chime").redact_channel_message` method.
 
-[Client.redact_channel_message documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_channel_message)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_channel_message]
 
 ```python
 def redact_channel_message(
@@ -2549,7 +2554,7 @@ def redact_channel_message(
 
 Type annotations for `boto3.client("chime").redact_conversation_message` method.
 
-[Client.redact_conversation_message documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_conversation_message)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_conversation_message]
 
 ```python
 def redact_conversation_message(
@@ -2565,7 +2570,7 @@ def redact_conversation_message(
 
 Type annotations for `boto3.client("chime").redact_room_message` method.
 
-[Client.redact_room_message documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_room_message)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_room_message]
 
 ```python
 def redact_room_message(
@@ -2581,7 +2586,7 @@ def redact_room_message(
 
 Type annotations for `boto3.client("chime").regenerate_security_token` method.
 
-[Client.regenerate_security_token documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.regenerate_security_token)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.regenerate_security_token]
 
 ```python
 def regenerate_security_token(
@@ -2596,7 +2601,7 @@ def regenerate_security_token(
 
 Type annotations for `boto3.client("chime").reset_personal_pin` method.
 
-[Client.reset_personal_pin documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.reset_personal_pin)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.reset_personal_pin]
 
 ```python
 def reset_personal_pin(
@@ -2611,7 +2616,7 @@ def reset_personal_pin(
 
 Type annotations for `boto3.client("chime").restore_phone_number` method.
 
-[Client.restore_phone_number documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.restore_phone_number)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.restore_phone_number]
 
 ```python
 def restore_phone_number(
@@ -2625,7 +2630,7 @@ def restore_phone_number(
 
 Type annotations for `boto3.client("chime").search_available_phone_numbers` method.
 
-[Client.search_available_phone_numbers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.search_available_phone_numbers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.search_available_phone_numbers]
 
 ```python
 def search_available_phone_numbers(
@@ -2645,7 +2650,7 @@ def search_available_phone_numbers(
 
 Type annotations for `boto3.client("chime").send_channel_message` method.
 
-[Client.send_channel_message documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.send_channel_message)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.send_channel_message]
 
 ```python
 def send_channel_message(
@@ -2665,7 +2670,7 @@ def send_channel_message(
 
 Type annotations for `boto3.client("chime").tag_attendee` method.
 
-[Client.tag_attendee documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_attendee)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_attendee]
 
 ```python
 def tag_attendee(
@@ -2681,7 +2686,7 @@ def tag_attendee(
 
 Type annotations for `boto3.client("chime").tag_meeting` method.
 
-[Client.tag_meeting documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_meeting)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_meeting]
 
 ```python
 def tag_meeting(
@@ -2696,7 +2701,7 @@ def tag_meeting(
 
 Type annotations for `boto3.client("chime").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -2711,7 +2716,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("chime").untag_attendee` method.
 
-[Client.untag_attendee documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_attendee)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_attendee]
 
 ```python
 def untag_attendee(
@@ -2727,7 +2732,7 @@ def untag_attendee(
 
 Type annotations for `boto3.client("chime").untag_meeting` method.
 
-[Client.untag_meeting documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_meeting)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_meeting]
 
 ```python
 def untag_meeting(
@@ -2742,7 +2747,7 @@ def untag_meeting(
 
 Type annotations for `boto3.client("chime").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -2757,7 +2762,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("chime").update_account` method.
 
-[Client.update_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_account]
 
 ```python
 def update_account(
@@ -2772,7 +2777,7 @@ def update_account(
 
 Type annotations for `boto3.client("chime").update_account_settings` method.
 
-[Client.update_account_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_account_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_account_settings]
 
 ```python
 def update_account_settings(
@@ -2787,7 +2792,7 @@ def update_account_settings(
 
 Type annotations for `boto3.client("chime").update_app_instance` method.
 
-[Client.update_app_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_app_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_app_instance]
 
 ```python
 def update_app_instance(
@@ -2803,7 +2808,7 @@ def update_app_instance(
 
 Type annotations for `boto3.client("chime").update_app_instance_user` method.
 
-[Client.update_app_instance_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_app_instance_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_app_instance_user]
 
 ```python
 def update_app_instance_user(
@@ -2819,7 +2824,7 @@ def update_app_instance_user(
 
 Type annotations for `boto3.client("chime").update_bot` method.
 
-[Client.update_bot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_bot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_bot]
 
 ```python
 def update_bot(
@@ -2835,7 +2840,7 @@ def update_bot(
 
 Type annotations for `boto3.client("chime").update_channel` method.
 
-[Client.update_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel]
 
 ```python
 def update_channel(
@@ -2853,7 +2858,7 @@ def update_channel(
 
 Type annotations for `boto3.client("chime").update_channel_message` method.
 
-[Client.update_channel_message documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel_message)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel_message]
 
 ```python
 def update_channel_message(
@@ -2871,7 +2876,7 @@ def update_channel_message(
 
 Type annotations for `boto3.client("chime").update_channel_read_marker` method.
 
-[Client.update_channel_read_marker documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel_read_marker)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel_read_marker]
 
 ```python
 def update_channel_read_marker(
@@ -2886,7 +2891,7 @@ def update_channel_read_marker(
 
 Type annotations for `boto3.client("chime").update_global_settings` method.
 
-[Client.update_global_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_global_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_global_settings]
 
 ```python
 def update_global_settings(
@@ -2901,7 +2906,7 @@ def update_global_settings(
 
 Type annotations for `boto3.client("chime").update_phone_number` method.
 
-[Client.update_phone_number documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_phone_number)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_phone_number]
 
 ```python
 def update_phone_number(
@@ -2917,7 +2922,7 @@ def update_phone_number(
 
 Type annotations for `boto3.client("chime").update_phone_number_settings` method.
 
-[Client.update_phone_number_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_phone_number_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_phone_number_settings]
 
 ```python
 def update_phone_number_settings(
@@ -2931,7 +2936,7 @@ def update_phone_number_settings(
 
 Type annotations for `boto3.client("chime").update_proxy_session` method.
 
-[Client.update_proxy_session documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_proxy_session)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_proxy_session]
 
 ```python
 def update_proxy_session(
@@ -2948,7 +2953,7 @@ def update_proxy_session(
 
 Type annotations for `boto3.client("chime").update_room` method.
 
-[Client.update_room documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_room)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_room]
 
 ```python
 def update_room(
@@ -2964,7 +2969,7 @@ def update_room(
 
 Type annotations for `boto3.client("chime").update_room_membership` method.
 
-[Client.update_room_membership documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_room_membership)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_room_membership]
 
 ```python
 def update_room_membership(
@@ -2981,7 +2986,7 @@ def update_room_membership(
 
 Type annotations for `boto3.client("chime").update_sip_media_application` method.
 
-[Client.update_sip_media_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_media_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_media_application]
 
 ```python
 def update_sip_media_application(
@@ -2997,7 +3002,7 @@ def update_sip_media_application(
 
 Type annotations for `boto3.client("chime").update_sip_rule` method.
 
-[Client.update_sip_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_rule]
 
 ```python
 def update_sip_rule(
@@ -3014,7 +3019,7 @@ def update_sip_rule(
 
 Type annotations for `boto3.client("chime").update_user` method.
 
-[Client.update_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_user]
 
 ```python
 def update_user(
@@ -3032,7 +3037,7 @@ def update_user(
 
 Type annotations for `boto3.client("chime").update_user_settings` method.
 
-[Client.update_user_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_user_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_user_settings]
 
 ```python
 def update_user_settings(
@@ -3048,7 +3053,7 @@ def update_user_settings(
 
 Type annotations for `boto3.client("chime").update_voice_connector` method.
 
-[Client.update_voice_connector documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_voice_connector)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_voice_connector]
 
 ```python
 def update_voice_connector(
@@ -3064,7 +3069,7 @@ def update_voice_connector(
 
 Type annotations for `boto3.client("chime").update_voice_connector_group` method.
 
-[Client.update_voice_connector_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_voice_connector_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_voice_connector_group]
 
 ```python
 def update_voice_connector_group(

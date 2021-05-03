@@ -56,7 +56,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_iotthingsgraph.client import IoTThingsGraphClient
+
+def get_iotthingsgraph_client() -> IoTThingsGraphClient:
+    return boto3.client("iotthingsgraph")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client)
 
 ## Exceptions
 
@@ -90,7 +95,7 @@ Exceptions:
 
 Type annotations for `boto3.client("iotthingsgraph").associate_entity_to_thing` method.
 
-[Client.associate_entity_to_thing documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.associate_entity_to_thing)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.associate_entity_to_thing]
 
 ```python
 def associate_entity_to_thing(
@@ -106,7 +111,7 @@ def associate_entity_to_thing(
 
 Type annotations for `boto3.client("iotthingsgraph").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -120,7 +125,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("iotthingsgraph").create_flow_template` method.
 
-[Client.create_flow_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.create_flow_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.create_flow_template]
 
 ```python
 def create_flow_template(
@@ -135,7 +140,7 @@ def create_flow_template(
 
 Type annotations for `boto3.client("iotthingsgraph").create_system_instance` method.
 
-[Client.create_system_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.create_system_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.create_system_instance]
 
 ```python
 def create_system_instance(
@@ -155,7 +160,7 @@ def create_system_instance(
 
 Type annotations for `boto3.client("iotthingsgraph").create_system_template` method.
 
-[Client.create_system_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.create_system_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.create_system_template]
 
 ```python
 def create_system_template(
@@ -170,7 +175,7 @@ def create_system_template(
 
 Type annotations for `boto3.client("iotthingsgraph").delete_flow_template` method.
 
-[Client.delete_flow_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_flow_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_flow_template]
 
 ```python
 def delete_flow_template(
@@ -184,7 +189,7 @@ def delete_flow_template(
 
 Type annotations for `boto3.client("iotthingsgraph").delete_namespace` method.
 
-[Client.delete_namespace documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_namespace)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_namespace]
 
 ```python
 def delete_namespace(
@@ -197,7 +202,7 @@ def delete_namespace(
 
 Type annotations for `boto3.client("iotthingsgraph").delete_system_instance` method.
 
-[Client.delete_system_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_system_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_system_instance]
 
 ```python
 def delete_system_instance(
@@ -211,7 +216,7 @@ def delete_system_instance(
 
 Type annotations for `boto3.client("iotthingsgraph").delete_system_template` method.
 
-[Client.delete_system_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_system_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_system_template]
 
 ```python
 def delete_system_template(
@@ -225,7 +230,7 @@ def delete_system_template(
 
 Type annotations for `boto3.client("iotthingsgraph").deploy_system_instance` method.
 
-[Client.deploy_system_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.deploy_system_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.deploy_system_instance]
 
 ```python
 def deploy_system_instance(
@@ -239,7 +244,7 @@ def deploy_system_instance(
 
 Type annotations for `boto3.client("iotthingsgraph").deprecate_flow_template` method.
 
-[Client.deprecate_flow_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.deprecate_flow_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.deprecate_flow_template]
 
 ```python
 def deprecate_flow_template(
@@ -253,7 +258,7 @@ def deprecate_flow_template(
 
 Type annotations for `boto3.client("iotthingsgraph").deprecate_system_template` method.
 
-[Client.deprecate_system_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.deprecate_system_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.deprecate_system_template]
 
 ```python
 def deprecate_system_template(
@@ -267,7 +272,7 @@ def deprecate_system_template(
 
 Type annotations for `boto3.client("iotthingsgraph").describe_namespace` method.
 
-[Client.describe_namespace documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.describe_namespace)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.describe_namespace]
 
 ```python
 def describe_namespace(
@@ -281,7 +286,7 @@ def describe_namespace(
 
 Type annotations for `boto3.client("iotthingsgraph").dissociate_entity_from_thing` method.
 
-[Client.dissociate_entity_from_thing documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.dissociate_entity_from_thing)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.dissociate_entity_from_thing]
 
 ```python
 def dissociate_entity_from_thing(
@@ -296,7 +301,7 @@ def dissociate_entity_from_thing(
 
 Type annotations for `boto3.client("iotthingsgraph").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -313,7 +318,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("iotthingsgraph").get_entities` method.
 
-[Client.get_entities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_entities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_entities]
 
 ```python
 def get_entities(
@@ -328,7 +333,7 @@ def get_entities(
 
 Type annotations for `boto3.client("iotthingsgraph").get_flow_template` method.
 
-[Client.get_flow_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_flow_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_flow_template]
 
 ```python
 def get_flow_template(
@@ -343,7 +348,7 @@ def get_flow_template(
 
 Type annotations for `boto3.client("iotthingsgraph").get_flow_template_revisions` method.
 
-[Client.get_flow_template_revisions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_flow_template_revisions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_flow_template_revisions]
 
 ```python
 def get_flow_template_revisions(
@@ -359,7 +364,7 @@ def get_flow_template_revisions(
 
 Type annotations for `boto3.client("iotthingsgraph").get_namespace_deletion_status` method.
 
-[Client.get_namespace_deletion_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_namespace_deletion_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_namespace_deletion_status]
 
 ```python
 def get_namespace_deletion_status(
@@ -372,7 +377,7 @@ def get_namespace_deletion_status(
 
 Type annotations for `boto3.client("iotthingsgraph").get_system_instance` method.
 
-[Client.get_system_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_system_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_system_instance]
 
 ```python
 def get_system_instance(
@@ -386,7 +391,7 @@ def get_system_instance(
 
 Type annotations for `boto3.client("iotthingsgraph").get_system_template` method.
 
-[Client.get_system_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_system_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_system_template]
 
 ```python
 def get_system_template(
@@ -401,7 +406,7 @@ def get_system_template(
 
 Type annotations for `boto3.client("iotthingsgraph").get_system_template_revisions` method.
 
-[Client.get_system_template_revisions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_system_template_revisions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_system_template_revisions]
 
 ```python
 def get_system_template_revisions(
@@ -417,7 +422,7 @@ def get_system_template_revisions(
 
 Type annotations for `boto3.client("iotthingsgraph").get_upload_status` method.
 
-[Client.get_upload_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_upload_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_upload_status]
 
 ```python
 def get_upload_status(
@@ -431,7 +436,7 @@ def get_upload_status(
 
 Type annotations for `boto3.client("iotthingsgraph").list_flow_execution_messages` method.
 
-[Client.list_flow_execution_messages documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.list_flow_execution_messages)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.list_flow_execution_messages]
 
 ```python
 def list_flow_execution_messages(
@@ -447,7 +452,7 @@ def list_flow_execution_messages(
 
 Type annotations for `boto3.client("iotthingsgraph").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -463,7 +468,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("iotthingsgraph").search_entities` method.
 
-[Client.search_entities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_entities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_entities]
 
 ```python
 def search_entities(
@@ -481,7 +486,7 @@ def search_entities(
 
 Type annotations for `boto3.client("iotthingsgraph").search_flow_executions` method.
 
-[Client.search_flow_executions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_flow_executions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_flow_executions]
 
 ```python
 def search_flow_executions(
@@ -500,7 +505,7 @@ def search_flow_executions(
 
 Type annotations for `boto3.client("iotthingsgraph").search_flow_templates` method.
 
-[Client.search_flow_templates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_flow_templates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_flow_templates]
 
 ```python
 def search_flow_templates(
@@ -516,7 +521,7 @@ def search_flow_templates(
 
 Type annotations for `boto3.client("iotthingsgraph").search_system_instances` method.
 
-[Client.search_system_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_system_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_system_instances]
 
 ```python
 def search_system_instances(
@@ -532,7 +537,7 @@ def search_system_instances(
 
 Type annotations for `boto3.client("iotthingsgraph").search_system_templates` method.
 
-[Client.search_system_templates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_system_templates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_system_templates]
 
 ```python
 def search_system_templates(
@@ -548,7 +553,7 @@ def search_system_templates(
 
 Type annotations for `boto3.client("iotthingsgraph").search_things` method.
 
-[Client.search_things documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_things)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_things]
 
 ```python
 def search_things(
@@ -565,7 +570,7 @@ def search_things(
 
 Type annotations for `boto3.client("iotthingsgraph").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -580,7 +585,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("iotthingsgraph").undeploy_system_instance` method.
 
-[Client.undeploy_system_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.undeploy_system_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.undeploy_system_instance]
 
 ```python
 def undeploy_system_instance(
@@ -594,7 +599,7 @@ def undeploy_system_instance(
 
 Type annotations for `boto3.client("iotthingsgraph").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -609,7 +614,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("iotthingsgraph").update_flow_template` method.
 
-[Client.update_flow_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.update_flow_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.update_flow_template]
 
 ```python
 def update_flow_template(
@@ -625,7 +630,7 @@ def update_flow_template(
 
 Type annotations for `boto3.client("iotthingsgraph").update_system_template` method.
 
-[Client.update_system_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.update_system_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.update_system_template]
 
 ```python
 def update_system_template(
@@ -641,7 +646,7 @@ def update_system_template(
 
 Type annotations for `boto3.client("iotthingsgraph").upload_entity_definitions` method.
 
-[Client.upload_entity_definitions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.upload_entity_definitions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.upload_entity_definitions]
 
 ```python
 def upload_entity_definitions(

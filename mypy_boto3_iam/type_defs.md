@@ -1,11 +1,11 @@
-# Structures for boto3 IAM module
+# Typed dictionaries for boto3 IAM module
 
 > [Index](../README.md) > [IAM](./README.md) > Structures
 
 Auto-generated documentation for [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
 type annotations stubs module [mypy_boto3_iam](https://pypi.org/project/mypy-boto3-iam/).
 
-- [Structures for boto3 IAM module](#structures-for-boto3-iam-module)
+- [Typed dictionaries for boto3 IAM module](#typed-dictionaries-for-boto3-iam-module)
   - [AccessDetailTypeDef](#accessdetailtypedef)
   - [AccessKeyLastUsedTypeDef](#accesskeylastusedtypedef)
   - [AccessKeyMetadataTypeDef](#accesskeymetadatatypedef)

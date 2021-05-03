@@ -15,13 +15,13 @@ Type annotations for `boto3.client("s3outposts").get_paginator("list_endpoints")
 Can be used directly:
 
 ```python
-from mypy_boto3_s3outposts.paginators import ListEndpointsPaginator
+from mypy_boto3_s3outposts.paginator import ListEndpointsPaginator
 
 def get_list_endpoints_paginator() -> ListEndpointsPaginator:
     return boto3.client("s3outposts").get_paginator("list_endpoints")
 ```
 
-[Paginator.ListEndpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Paginator.ListEndpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Paginator.ListEndpoints)
 
 ```python
 class ListEndpointsPaginator(Boto3Paginator):

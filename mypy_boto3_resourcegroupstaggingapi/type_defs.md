@@ -1,11 +1,11 @@
-# Structures for boto3 ResourceGroupsTaggingAPI module
+# Typed dictionaries for boto3 ResourceGroupsTaggingAPI module
 
 > [Index](../README.md) > [ResourceGroupsTaggingAPI](./README.md) > Structures
 
 Auto-generated documentation for [ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
 type annotations stubs module [mypy_boto3_resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
 
-- [Structures for boto3 ResourceGroupsTaggingAPI module](#structures-for-boto3-resourcegroupstaggingapi-module)
+- [Typed dictionaries for boto3 ResourceGroupsTaggingAPI module](#typed-dictionaries-for-boto3-resourcegroupstaggingapi-module)
   - [ComplianceDetailsTypeDef](#compliancedetailstypedef)
   - [DescribeReportCreationOutputTypeDef](#describereportcreationoutputtypedef)
   - [FailureInfoTypeDef](#failureinfotypedef)
@@ -44,13 +44,13 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import DescribeReportCreation
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Status`: `str`
 - `S3Location`: `str`
 - `ErrorMessage`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## FailureInfoTypeDef
@@ -75,12 +75,12 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import GetComplianceSummaryOu
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `SummaryList`: `List["SummaryTypeDef"]`
 - `PaginationToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetResourcesOutputTypeDef
@@ -90,12 +90,12 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import GetResourcesOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PaginationToken`: `str`
 - `ResourceTagMappingList`: `List["ResourceTagMappingTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetTagKeysOutputTypeDef
@@ -105,12 +105,12 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagKeysOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PaginationToken`: `str`
 - `TagKeys`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetTagValuesOutputTypeDef
@@ -120,12 +120,12 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagValuesOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PaginationToken`: `str`
 - `TagValues`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PaginatorConfigTypeDef
@@ -214,11 +214,11 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import TagResourcesOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `FailedResourcesMap`: `Dict[str, "FailureInfoTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## TagTypeDef
@@ -242,9 +242,9 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import UntagResourcesOutputTy
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `FailedResourcesMap`: `Dict[str, "FailureInfoTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 

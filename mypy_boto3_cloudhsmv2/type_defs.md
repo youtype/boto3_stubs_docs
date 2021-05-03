@@ -1,11 +1,11 @@
-# Structures for boto3 CloudHSMV2 module
+# Typed dictionaries for boto3 CloudHSMV2 module
 
 > [Index](../README.md) > [CloudHSMV2](./README.md) > Structures
 
 Auto-generated documentation for [CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
 type annotations stubs module [mypy_boto3_cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
 
-- [Structures for boto3 CloudHSMV2 module](#structures-for-boto3-cloudhsmv2-module)
+- [Typed dictionaries for boto3 CloudHSMV2 module](#typed-dictionaries-for-boto3-cloudhsmv2-module)
   - [BackupRetentionPolicyTypeDef](#backupretentionpolicytypedef)
   - [BackupTypeDef](#backuptypedef)
   - [CertificatesTypeDef](#certificatestypedef)

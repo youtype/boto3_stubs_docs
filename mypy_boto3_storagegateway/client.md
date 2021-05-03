@@ -110,7 +110,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_storagegateway.client import StorageGatewayClient
+
+def get_storagegateway_client() -> StorageGatewayClient:
+    return boto3.client("storagegateway")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client)
 
 ## Exceptions
 
@@ -140,7 +145,7 @@ Exceptions:
 
 Type annotations for `boto3.client("storagegateway").activate_gateway` method.
 
-[Client.activate_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.activate_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.activate_gateway]
 
 ```python
 def activate_gateway(
@@ -161,7 +166,7 @@ def activate_gateway(
 
 Type annotations for `boto3.client("storagegateway").add_cache` method.
 
-[Client.add_cache documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_cache)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_cache]
 
 ```python
 def add_cache(
@@ -176,7 +181,7 @@ def add_cache(
 
 Type annotations for `boto3.client("storagegateway").add_tags_to_resource` method.
 
-[Client.add_tags_to_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_tags_to_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_tags_to_resource]
 
 ```python
 def add_tags_to_resource(
@@ -191,7 +196,7 @@ def add_tags_to_resource(
 
 Type annotations for `boto3.client("storagegateway").add_upload_buffer` method.
 
-[Client.add_upload_buffer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_upload_buffer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_upload_buffer]
 
 ```python
 def add_upload_buffer(
@@ -206,7 +211,7 @@ def add_upload_buffer(
 
 Type annotations for `boto3.client("storagegateway").add_working_storage` method.
 
-[Client.add_working_storage documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_working_storage)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_working_storage]
 
 ```python
 def add_working_storage(
@@ -221,7 +226,7 @@ def add_working_storage(
 
 Type annotations for `boto3.client("storagegateway").assign_tape_pool` method.
 
-[Client.assign_tape_pool documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.assign_tape_pool)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.assign_tape_pool]
 
 ```python
 def assign_tape_pool(
@@ -237,7 +242,7 @@ def assign_tape_pool(
 
 Type annotations for `boto3.client("storagegateway").associate_file_system` method.
 
-[Client.associate_file_system documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.associate_file_system)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.associate_file_system]
 
 ```python
 def associate_file_system(
@@ -258,7 +263,7 @@ def associate_file_system(
 
 Type annotations for `boto3.client("storagegateway").attach_volume` method.
 
-[Client.attach_volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.attach_volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.attach_volume]
 
 ```python
 def attach_volume(
@@ -276,7 +281,7 @@ def attach_volume(
 
 Type annotations for `boto3.client("storagegateway").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -290,7 +295,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("storagegateway").cancel_archival` method.
 
-[Client.cancel_archival documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.cancel_archival)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.cancel_archival]
 
 ```python
 def cancel_archival(
@@ -305,7 +310,7 @@ def cancel_archival(
 
 Type annotations for `boto3.client("storagegateway").cancel_retrieval` method.
 
-[Client.cancel_retrieval documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.cancel_retrieval)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.cancel_retrieval]
 
 ```python
 def cancel_retrieval(
@@ -320,7 +325,7 @@ def cancel_retrieval(
 
 Type annotations for `boto3.client("storagegateway").create_cached_iscsi_volume` method.
 
-[Client.create_cached_iscsi_volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_cached_iscsi_volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_cached_iscsi_volume]
 
 ```python
 def create_cached_iscsi_volume(
@@ -343,7 +348,7 @@ def create_cached_iscsi_volume(
 
 Type annotations for `boto3.client("storagegateway").create_nfs_file_share` method.
 
-[Client.create_nfs_file_share documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_nfs_file_share)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_nfs_file_share]
 
 ```python
 def create_nfs_file_share(
@@ -374,7 +379,7 @@ def create_nfs_file_share(
 
 Type annotations for `boto3.client("storagegateway").create_smb_file_share` method.
 
-[Client.create_smb_file_share documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_smb_file_share)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_smb_file_share]
 
 ```python
 def create_smb_file_share(
@@ -410,7 +415,7 @@ def create_smb_file_share(
 
 Type annotations for `boto3.client("storagegateway").create_snapshot` method.
 
-[Client.create_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_snapshot]
 
 ```python
 def create_snapshot(
@@ -426,7 +431,7 @@ def create_snapshot(
 
 Type annotations for `boto3.client("storagegateway").create_snapshot_from_volume_recovery_point` method.
 
-[Client.create_snapshot_from_volume_recovery_point documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_snapshot_from_volume_recovery_point)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_snapshot_from_volume_recovery_point]
 
 ```python
 def create_snapshot_from_volume_recovery_point(
@@ -442,7 +447,7 @@ def create_snapshot_from_volume_recovery_point(
 
 Type annotations for `boto3.client("storagegateway").create_stored_iscsi_volume` method.
 
-[Client.create_stored_iscsi_volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_stored_iscsi_volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_stored_iscsi_volume]
 
 ```python
 def create_stored_iscsi_volume(
@@ -464,7 +469,7 @@ def create_stored_iscsi_volume(
 
 Type annotations for `boto3.client("storagegateway").create_tape_pool` method.
 
-[Client.create_tape_pool documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_tape_pool)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_tape_pool]
 
 ```python
 def create_tape_pool(
@@ -482,7 +487,7 @@ def create_tape_pool(
 
 Type annotations for `boto3.client("storagegateway").create_tape_with_barcode` method.
 
-[Client.create_tape_with_barcode documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_tape_with_barcode)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_tape_with_barcode]
 
 ```python
 def create_tape_with_barcode(
@@ -503,7 +508,7 @@ def create_tape_with_barcode(
 
 Type annotations for `boto3.client("storagegateway").create_tapes` method.
 
-[Client.create_tapes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_tapes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_tapes]
 
 ```python
 def create_tapes(
@@ -526,7 +531,7 @@ def create_tapes(
 
 Type annotations for `boto3.client("storagegateway").delete_automatic_tape_creation_policy` method.
 
-[Client.delete_automatic_tape_creation_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_automatic_tape_creation_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_automatic_tape_creation_policy]
 
 ```python
 def delete_automatic_tape_creation_policy(
@@ -540,7 +545,7 @@ def delete_automatic_tape_creation_policy(
 
 Type annotations for `boto3.client("storagegateway").delete_bandwidth_rate_limit` method.
 
-[Client.delete_bandwidth_rate_limit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_bandwidth_rate_limit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_bandwidth_rate_limit]
 
 ```python
 def delete_bandwidth_rate_limit(
@@ -555,7 +560,7 @@ def delete_bandwidth_rate_limit(
 
 Type annotations for `boto3.client("storagegateway").delete_chap_credentials` method.
 
-[Client.delete_chap_credentials documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_chap_credentials)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_chap_credentials]
 
 ```python
 def delete_chap_credentials(
@@ -570,7 +575,7 @@ def delete_chap_credentials(
 
 Type annotations for `boto3.client("storagegateway").delete_file_share` method.
 
-[Client.delete_file_share documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_file_share)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_file_share]
 
 ```python
 def delete_file_share(
@@ -585,7 +590,7 @@ def delete_file_share(
 
 Type annotations for `boto3.client("storagegateway").delete_gateway` method.
 
-[Client.delete_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_gateway]
 
 ```python
 def delete_gateway(
@@ -599,7 +604,7 @@ def delete_gateway(
 
 Type annotations for `boto3.client("storagegateway").delete_snapshot_schedule` method.
 
-[Client.delete_snapshot_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_snapshot_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_snapshot_schedule]
 
 ```python
 def delete_snapshot_schedule(
@@ -613,7 +618,7 @@ def delete_snapshot_schedule(
 
 Type annotations for `boto3.client("storagegateway").delete_tape` method.
 
-[Client.delete_tape documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_tape)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_tape]
 
 ```python
 def delete_tape(
@@ -629,7 +634,7 @@ def delete_tape(
 
 Type annotations for `boto3.client("storagegateway").delete_tape_archive` method.
 
-[Client.delete_tape_archive documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_tape_archive)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_tape_archive]
 
 ```python
 def delete_tape_archive(
@@ -644,7 +649,7 @@ def delete_tape_archive(
 
 Type annotations for `boto3.client("storagegateway").delete_tape_pool` method.
 
-[Client.delete_tape_pool documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_tape_pool)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_tape_pool]
 
 ```python
 def delete_tape_pool(
@@ -658,7 +663,7 @@ def delete_tape_pool(
 
 Type annotations for `boto3.client("storagegateway").delete_volume` method.
 
-[Client.delete_volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_volume]
 
 ```python
 def delete_volume(
@@ -672,7 +677,7 @@ def delete_volume(
 
 Type annotations for `boto3.client("storagegateway").describe_availability_monitor_test` method.
 
-[Client.describe_availability_monitor_test documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_availability_monitor_test)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_availability_monitor_test]
 
 ```python
 def describe_availability_monitor_test(
@@ -686,7 +691,7 @@ def describe_availability_monitor_test(
 
 Type annotations for `boto3.client("storagegateway").describe_bandwidth_rate_limit` method.
 
-[Client.describe_bandwidth_rate_limit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_bandwidth_rate_limit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_bandwidth_rate_limit]
 
 ```python
 def describe_bandwidth_rate_limit(
@@ -700,7 +705,7 @@ def describe_bandwidth_rate_limit(
 
 Type annotations for `boto3.client("storagegateway").describe_bandwidth_rate_limit_schedule` method.
 
-[Client.describe_bandwidth_rate_limit_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_bandwidth_rate_limit_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_bandwidth_rate_limit_schedule]
 
 ```python
 def describe_bandwidth_rate_limit_schedule(
@@ -714,7 +719,7 @@ def describe_bandwidth_rate_limit_schedule(
 
 Type annotations for `boto3.client("storagegateway").describe_cache` method.
 
-[Client.describe_cache documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_cache)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_cache]
 
 ```python
 def describe_cache(
@@ -728,7 +733,7 @@ def describe_cache(
 
 Type annotations for `boto3.client("storagegateway").describe_cached_iscsi_volumes` method.
 
-[Client.describe_cached_iscsi_volumes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_cached_iscsi_volumes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_cached_iscsi_volumes]
 
 ```python
 def describe_cached_iscsi_volumes(
@@ -742,7 +747,7 @@ def describe_cached_iscsi_volumes(
 
 Type annotations for `boto3.client("storagegateway").describe_chap_credentials` method.
 
-[Client.describe_chap_credentials documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_chap_credentials)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_chap_credentials]
 
 ```python
 def describe_chap_credentials(
@@ -756,7 +761,7 @@ def describe_chap_credentials(
 
 Type annotations for `boto3.client("storagegateway").describe_file_system_associations` method.
 
-[Client.describe_file_system_associations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_file_system_associations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_file_system_associations]
 
 ```python
 def describe_file_system_associations(
@@ -770,7 +775,7 @@ def describe_file_system_associations(
 
 Type annotations for `boto3.client("storagegateway").describe_gateway_information` method.
 
-[Client.describe_gateway_information documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_gateway_information)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_gateway_information]
 
 ```python
 def describe_gateway_information(
@@ -784,7 +789,7 @@ def describe_gateway_information(
 
 Type annotations for `boto3.client("storagegateway").describe_maintenance_start_time` method.
 
-[Client.describe_maintenance_start_time documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_maintenance_start_time)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_maintenance_start_time]
 
 ```python
 def describe_maintenance_start_time(
@@ -798,7 +803,7 @@ def describe_maintenance_start_time(
 
 Type annotations for `boto3.client("storagegateway").describe_nfs_file_shares` method.
 
-[Client.describe_nfs_file_shares documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_nfs_file_shares)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_nfs_file_shares]
 
 ```python
 def describe_nfs_file_shares(
@@ -812,7 +817,7 @@ def describe_nfs_file_shares(
 
 Type annotations for `boto3.client("storagegateway").describe_smb_file_shares` method.
 
-[Client.describe_smb_file_shares documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_smb_file_shares)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_smb_file_shares]
 
 ```python
 def describe_smb_file_shares(
@@ -826,7 +831,7 @@ def describe_smb_file_shares(
 
 Type annotations for `boto3.client("storagegateway").describe_smb_settings` method.
 
-[Client.describe_smb_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_smb_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_smb_settings]
 
 ```python
 def describe_smb_settings(
@@ -840,7 +845,7 @@ def describe_smb_settings(
 
 Type annotations for `boto3.client("storagegateway").describe_snapshot_schedule` method.
 
-[Client.describe_snapshot_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_snapshot_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_snapshot_schedule]
 
 ```python
 def describe_snapshot_schedule(
@@ -854,7 +859,7 @@ def describe_snapshot_schedule(
 
 Type annotations for `boto3.client("storagegateway").describe_stored_iscsi_volumes` method.
 
-[Client.describe_stored_iscsi_volumes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_stored_iscsi_volumes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_stored_iscsi_volumes]
 
 ```python
 def describe_stored_iscsi_volumes(
@@ -868,7 +873,7 @@ def describe_stored_iscsi_volumes(
 
 Type annotations for `boto3.client("storagegateway").describe_tape_archives` method.
 
-[Client.describe_tape_archives documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_tape_archives)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_tape_archives]
 
 ```python
 def describe_tape_archives(
@@ -884,7 +889,7 @@ def describe_tape_archives(
 
 Type annotations for `boto3.client("storagegateway").describe_tape_recovery_points` method.
 
-[Client.describe_tape_recovery_points documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_tape_recovery_points)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_tape_recovery_points]
 
 ```python
 def describe_tape_recovery_points(
@@ -900,7 +905,7 @@ def describe_tape_recovery_points(
 
 Type annotations for `boto3.client("storagegateway").describe_tapes` method.
 
-[Client.describe_tapes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_tapes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_tapes]
 
 ```python
 def describe_tapes(
@@ -917,7 +922,7 @@ def describe_tapes(
 
 Type annotations for `boto3.client("storagegateway").describe_upload_buffer` method.
 
-[Client.describe_upload_buffer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_upload_buffer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_upload_buffer]
 
 ```python
 def describe_upload_buffer(
@@ -931,7 +936,7 @@ def describe_upload_buffer(
 
 Type annotations for `boto3.client("storagegateway").describe_vtl_devices` method.
 
-[Client.describe_vtl_devices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_vtl_devices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_vtl_devices]
 
 ```python
 def describe_vtl_devices(
@@ -948,7 +953,7 @@ def describe_vtl_devices(
 
 Type annotations for `boto3.client("storagegateway").describe_working_storage` method.
 
-[Client.describe_working_storage documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_working_storage)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_working_storage]
 
 ```python
 def describe_working_storage(
@@ -962,7 +967,7 @@ def describe_working_storage(
 
 Type annotations for `boto3.client("storagegateway").detach_volume` method.
 
-[Client.detach_volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.detach_volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.detach_volume]
 
 ```python
 def detach_volume(
@@ -977,7 +982,7 @@ def detach_volume(
 
 Type annotations for `boto3.client("storagegateway").disable_gateway` method.
 
-[Client.disable_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.disable_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.disable_gateway]
 
 ```python
 def disable_gateway(
@@ -991,7 +996,7 @@ def disable_gateway(
 
 Type annotations for `boto3.client("storagegateway").disassociate_file_system` method.
 
-[Client.disassociate_file_system documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.disassociate_file_system)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.disassociate_file_system]
 
 ```python
 def disassociate_file_system(
@@ -1006,7 +1011,7 @@ def disassociate_file_system(
 
 Type annotations for `boto3.client("storagegateway").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -1023,7 +1028,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("storagegateway").join_domain` method.
 
-[Client.join_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.join_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.join_domain]
 
 ```python
 def join_domain(
@@ -1043,7 +1048,7 @@ def join_domain(
 
 Type annotations for `boto3.client("storagegateway").list_automatic_tape_creation_policies` method.
 
-[Client.list_automatic_tape_creation_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_automatic_tape_creation_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_automatic_tape_creation_policies]
 
 ```python
 def list_automatic_tape_creation_policies(
@@ -1057,7 +1062,7 @@ def list_automatic_tape_creation_policies(
 
 Type annotations for `boto3.client("storagegateway").list_file_shares` method.
 
-[Client.list_file_shares documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_file_shares)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_file_shares]
 
 ```python
 def list_file_shares(
@@ -1073,7 +1078,7 @@ def list_file_shares(
 
 Type annotations for `boto3.client("storagegateway").list_file_system_associations` method.
 
-[Client.list_file_system_associations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_file_system_associations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_file_system_associations]
 
 ```python
 def list_file_system_associations(
@@ -1089,7 +1094,7 @@ def list_file_system_associations(
 
 Type annotations for `boto3.client("storagegateway").list_gateways` method.
 
-[Client.list_gateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_gateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_gateways]
 
 ```python
 def list_gateways(
@@ -1104,7 +1109,7 @@ def list_gateways(
 
 Type annotations for `boto3.client("storagegateway").list_local_disks` method.
 
-[Client.list_local_disks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_local_disks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_local_disks]
 
 ```python
 def list_local_disks(
@@ -1118,7 +1123,7 @@ def list_local_disks(
 
 Type annotations for `boto3.client("storagegateway").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -1134,7 +1139,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("storagegateway").list_tape_pools` method.
 
-[Client.list_tape_pools documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_tape_pools)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_tape_pools]
 
 ```python
 def list_tape_pools(
@@ -1150,7 +1155,7 @@ def list_tape_pools(
 
 Type annotations for `boto3.client("storagegateway").list_tapes` method.
 
-[Client.list_tapes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_tapes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_tapes]
 
 ```python
 def list_tapes(
@@ -1166,7 +1171,7 @@ def list_tapes(
 
 Type annotations for `boto3.client("storagegateway").list_volume_initiators` method.
 
-[Client.list_volume_initiators documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_volume_initiators)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_volume_initiators]
 
 ```python
 def list_volume_initiators(
@@ -1180,7 +1185,7 @@ def list_volume_initiators(
 
 Type annotations for `boto3.client("storagegateway").list_volume_recovery_points` method.
 
-[Client.list_volume_recovery_points documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_volume_recovery_points)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_volume_recovery_points]
 
 ```python
 def list_volume_recovery_points(
@@ -1194,7 +1199,7 @@ def list_volume_recovery_points(
 
 Type annotations for `boto3.client("storagegateway").list_volumes` method.
 
-[Client.list_volumes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_volumes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_volumes]
 
 ```python
 def list_volumes(
@@ -1210,7 +1215,7 @@ def list_volumes(
 
 Type annotations for `boto3.client("storagegateway").notify_when_uploaded` method.
 
-[Client.notify_when_uploaded documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.notify_when_uploaded)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.notify_when_uploaded]
 
 ```python
 def notify_when_uploaded(
@@ -1224,7 +1229,7 @@ def notify_when_uploaded(
 
 Type annotations for `boto3.client("storagegateway").refresh_cache` method.
 
-[Client.refresh_cache documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.refresh_cache)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.refresh_cache]
 
 ```python
 def refresh_cache(
@@ -1240,7 +1245,7 @@ def refresh_cache(
 
 Type annotations for `boto3.client("storagegateway").remove_tags_from_resource` method.
 
-[Client.remove_tags_from_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.remove_tags_from_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.remove_tags_from_resource]
 
 ```python
 def remove_tags_from_resource(
@@ -1255,7 +1260,7 @@ def remove_tags_from_resource(
 
 Type annotations for `boto3.client("storagegateway").reset_cache` method.
 
-[Client.reset_cache documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.reset_cache)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.reset_cache]
 
 ```python
 def reset_cache(
@@ -1269,7 +1274,7 @@ def reset_cache(
 
 Type annotations for `boto3.client("storagegateway").retrieve_tape_archive` method.
 
-[Client.retrieve_tape_archive documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.retrieve_tape_archive)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.retrieve_tape_archive]
 
 ```python
 def retrieve_tape_archive(
@@ -1284,7 +1289,7 @@ def retrieve_tape_archive(
 
 Type annotations for `boto3.client("storagegateway").retrieve_tape_recovery_point` method.
 
-[Client.retrieve_tape_recovery_point documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.retrieve_tape_recovery_point)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.retrieve_tape_recovery_point]
 
 ```python
 def retrieve_tape_recovery_point(
@@ -1299,7 +1304,7 @@ def retrieve_tape_recovery_point(
 
 Type annotations for `boto3.client("storagegateway").set_local_console_password` method.
 
-[Client.set_local_console_password documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.set_local_console_password)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.set_local_console_password]
 
 ```python
 def set_local_console_password(
@@ -1314,7 +1319,7 @@ def set_local_console_password(
 
 Type annotations for `boto3.client("storagegateway").set_smb_guest_password` method.
 
-[Client.set_smb_guest_password documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.set_smb_guest_password)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.set_smb_guest_password]
 
 ```python
 def set_smb_guest_password(
@@ -1329,7 +1334,7 @@ def set_smb_guest_password(
 
 Type annotations for `boto3.client("storagegateway").shutdown_gateway` method.
 
-[Client.shutdown_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.shutdown_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.shutdown_gateway]
 
 ```python
 def shutdown_gateway(
@@ -1343,7 +1348,7 @@ def shutdown_gateway(
 
 Type annotations for `boto3.client("storagegateway").start_availability_monitor_test` method.
 
-[Client.start_availability_monitor_test documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.start_availability_monitor_test)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.start_availability_monitor_test]
 
 ```python
 def start_availability_monitor_test(
@@ -1357,7 +1362,7 @@ def start_availability_monitor_test(
 
 Type annotations for `boto3.client("storagegateway").start_gateway` method.
 
-[Client.start_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.start_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.start_gateway]
 
 ```python
 def start_gateway(
@@ -1371,7 +1376,7 @@ def start_gateway(
 
 Type annotations for `boto3.client("storagegateway").update_automatic_tape_creation_policy` method.
 
-[Client.update_automatic_tape_creation_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_automatic_tape_creation_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_automatic_tape_creation_policy]
 
 ```python
 def update_automatic_tape_creation_policy(
@@ -1386,7 +1391,7 @@ def update_automatic_tape_creation_policy(
 
 Type annotations for `boto3.client("storagegateway").update_bandwidth_rate_limit` method.
 
-[Client.update_bandwidth_rate_limit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_bandwidth_rate_limit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_bandwidth_rate_limit]
 
 ```python
 def update_bandwidth_rate_limit(
@@ -1402,7 +1407,7 @@ def update_bandwidth_rate_limit(
 
 Type annotations for `boto3.client("storagegateway").update_bandwidth_rate_limit_schedule` method.
 
-[Client.update_bandwidth_rate_limit_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_bandwidth_rate_limit_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_bandwidth_rate_limit_schedule]
 
 ```python
 def update_bandwidth_rate_limit_schedule(
@@ -1417,7 +1422,7 @@ def update_bandwidth_rate_limit_schedule(
 
 Type annotations for `boto3.client("storagegateway").update_chap_credentials` method.
 
-[Client.update_chap_credentials documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_chap_credentials)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_chap_credentials]
 
 ```python
 def update_chap_credentials(
@@ -1434,7 +1439,7 @@ def update_chap_credentials(
 
 Type annotations for `boto3.client("storagegateway").update_file_system_association` method.
 
-[Client.update_file_system_association documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_file_system_association)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_file_system_association]
 
 ```python
 def update_file_system_association(
@@ -1452,7 +1457,7 @@ def update_file_system_association(
 
 Type annotations for `boto3.client("storagegateway").update_gateway_information` method.
 
-[Client.update_gateway_information documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_gateway_information)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_gateway_information]
 
 ```python
 def update_gateway_information(
@@ -1469,7 +1474,7 @@ def update_gateway_information(
 
 Type annotations for `boto3.client("storagegateway").update_gateway_software_now` method.
 
-[Client.update_gateway_software_now documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_gateway_software_now)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_gateway_software_now]
 
 ```python
 def update_gateway_software_now(
@@ -1483,7 +1488,7 @@ def update_gateway_software_now(
 
 Type annotations for `boto3.client("storagegateway").update_maintenance_start_time` method.
 
-[Client.update_maintenance_start_time documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_maintenance_start_time)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_maintenance_start_time]
 
 ```python
 def update_maintenance_start_time(
@@ -1501,7 +1506,7 @@ def update_maintenance_start_time(
 
 Type annotations for `boto3.client("storagegateway").update_nfs_file_share` method.
 
-[Client.update_nfs_file_share documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_nfs_file_share)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_nfs_file_share]
 
 ```python
 def update_nfs_file_share(
@@ -1528,7 +1533,7 @@ def update_nfs_file_share(
 
 Type annotations for `boto3.client("storagegateway").update_smb_file_share` method.
 
-[Client.update_smb_file_share documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_file_share)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_file_share]
 
 ```python
 def update_smb_file_share(
@@ -1559,7 +1564,7 @@ def update_smb_file_share(
 
 Type annotations for `boto3.client("storagegateway").update_smb_file_share_visibility` method.
 
-[Client.update_smb_file_share_visibility documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_file_share_visibility)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_file_share_visibility]
 
 ```python
 def update_smb_file_share_visibility(
@@ -1574,7 +1579,7 @@ def update_smb_file_share_visibility(
 
 Type annotations for `boto3.client("storagegateway").update_smb_security_strategy` method.
 
-[Client.update_smb_security_strategy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_security_strategy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_security_strategy]
 
 ```python
 def update_smb_security_strategy(
@@ -1589,7 +1594,7 @@ def update_smb_security_strategy(
 
 Type annotations for `boto3.client("storagegateway").update_snapshot_schedule` method.
 
-[Client.update_snapshot_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_snapshot_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_snapshot_schedule]
 
 ```python
 def update_snapshot_schedule(
@@ -1607,7 +1612,7 @@ def update_snapshot_schedule(
 
 Type annotations for `boto3.client("storagegateway").update_vtl_device_type` method.
 
-[Client.update_vtl_device_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_vtl_device_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_vtl_device_type]
 
 ```python
 def update_vtl_device_type(

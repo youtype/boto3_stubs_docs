@@ -1,11 +1,11 @@
-# Structures for boto3 IdentityStore module
+# Typed dictionaries for boto3 IdentityStore module
 
 > [Index](../README.md) > [IdentityStore](./README.md) > Structures
 
 Auto-generated documentation for [IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore)
 type annotations stubs module [mypy_boto3_identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
 
-- [Structures for boto3 IdentityStore module](#structures-for-boto3-identitystore-module)
+- [Typed dictionaries for boto3 IdentityStore module](#typed-dictionaries-for-boto3-identitystore-module)
   - [DescribeGroupResponseTypeDef](#describegroupresponsetypedef)
   - [DescribeUserResponseTypeDef](#describeuserresponsetypedef)
   - [FilterTypeDef](#filtertypedef)

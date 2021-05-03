@@ -154,7 +154,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_ssm.client import SSMClient
+
+def get_ssm_client() -> SSMClient:
+    return boto3.client("ssm")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client)
 
 ## Exceptions
 
@@ -301,7 +306,7 @@ Exceptions:
 
 Type annotations for `boto3.client("ssm").add_tags_to_resource` method.
 
-[Client.add_tags_to_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.add_tags_to_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.add_tags_to_resource]
 
 ```python
 def add_tags_to_resource(
@@ -317,7 +322,7 @@ def add_tags_to_resource(
 
 Type annotations for `boto3.client("ssm").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -331,7 +336,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("ssm").cancel_command` method.
 
-[Client.cancel_command documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.cancel_command)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.cancel_command]
 
 ```python
 def cancel_command(
@@ -346,7 +351,7 @@ def cancel_command(
 
 Type annotations for `boto3.client("ssm").cancel_maintenance_window_execution` method.
 
-[Client.cancel_maintenance_window_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.cancel_maintenance_window_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.cancel_maintenance_window_execution]
 
 ```python
 def cancel_maintenance_window_execution(
@@ -360,7 +365,7 @@ def cancel_maintenance_window_execution(
 
 Type annotations for `boto3.client("ssm").create_activation` method.
 
-[Client.create_activation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_activation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_activation]
 
 ```python
 def create_activation(
@@ -379,7 +384,7 @@ def create_activation(
 
 Type annotations for `boto3.client("ssm").create_association` method.
 
-[Client.create_association documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_association)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_association]
 
 ```python
 def create_association(
@@ -407,7 +412,7 @@ def create_association(
 
 Type annotations for `boto3.client("ssm").create_association_batch` method.
 
-[Client.create_association_batch documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_association_batch)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_association_batch]
 
 ```python
 def create_association_batch(
@@ -421,7 +426,7 @@ def create_association_batch(
 
 Type annotations for `boto3.client("ssm").create_document` method.
 
-[Client.create_document documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_document)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_document]
 
 ```python
 def create_document(
@@ -443,7 +448,7 @@ def create_document(
 
 Type annotations for `boto3.client("ssm").create_maintenance_window` method.
 
-[Client.create_maintenance_window documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_maintenance_window)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_maintenance_window]
 
 ```python
 def create_maintenance_window(
@@ -468,7 +473,7 @@ def create_maintenance_window(
 
 Type annotations for `boto3.client("ssm").create_ops_item` method.
 
-[Client.create_ops_item documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_ops_item)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_ops_item]
 
 ```python
 def create_ops_item(
@@ -496,7 +501,7 @@ def create_ops_item(
 
 Type annotations for `boto3.client("ssm").create_ops_metadata` method.
 
-[Client.create_ops_metadata documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_ops_metadata)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_ops_metadata]
 
 ```python
 def create_ops_metadata(
@@ -512,7 +517,7 @@ def create_ops_metadata(
 
 Type annotations for `boto3.client("ssm").create_patch_baseline` method.
 
-[Client.create_patch_baseline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_patch_baseline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_patch_baseline]
 
 ```python
 def create_patch_baseline(
@@ -538,7 +543,7 @@ def create_patch_baseline(
 
 Type annotations for `boto3.client("ssm").create_resource_data_sync` method.
 
-[Client.create_resource_data_sync documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_resource_data_sync)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_resource_data_sync]
 
 ```python
 def create_resource_data_sync(
@@ -555,7 +560,7 @@ def create_resource_data_sync(
 
 Type annotations for `boto3.client("ssm").delete_activation` method.
 
-[Client.delete_activation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_activation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_activation]
 
 ```python
 def delete_activation(
@@ -569,7 +574,7 @@ def delete_activation(
 
 Type annotations for `boto3.client("ssm").delete_association` method.
 
-[Client.delete_association documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_association)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_association]
 
 ```python
 def delete_association(
@@ -585,7 +590,7 @@ def delete_association(
 
 Type annotations for `boto3.client("ssm").delete_document` method.
 
-[Client.delete_document documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_document)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_document]
 
 ```python
 def delete_document(
@@ -602,7 +607,7 @@ def delete_document(
 
 Type annotations for `boto3.client("ssm").delete_inventory` method.
 
-[Client.delete_inventory documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_inventory)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_inventory]
 
 ```python
 def delete_inventory(
@@ -619,7 +624,7 @@ def delete_inventory(
 
 Type annotations for `boto3.client("ssm").delete_maintenance_window` method.
 
-[Client.delete_maintenance_window documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_maintenance_window)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_maintenance_window]
 
 ```python
 def delete_maintenance_window(
@@ -633,7 +638,7 @@ def delete_maintenance_window(
 
 Type annotations for `boto3.client("ssm").delete_ops_metadata` method.
 
-[Client.delete_ops_metadata documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_ops_metadata)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_ops_metadata]
 
 ```python
 def delete_ops_metadata(
@@ -647,7 +652,7 @@ def delete_ops_metadata(
 
 Type annotations for `boto3.client("ssm").delete_parameter` method.
 
-[Client.delete_parameter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_parameter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_parameter]
 
 ```python
 def delete_parameter(
@@ -661,7 +666,7 @@ def delete_parameter(
 
 Type annotations for `boto3.client("ssm").delete_parameters` method.
 
-[Client.delete_parameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_parameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_parameters]
 
 ```python
 def delete_parameters(
@@ -675,7 +680,7 @@ def delete_parameters(
 
 Type annotations for `boto3.client("ssm").delete_patch_baseline` method.
 
-[Client.delete_patch_baseline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_patch_baseline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_patch_baseline]
 
 ```python
 def delete_patch_baseline(
@@ -689,7 +694,7 @@ def delete_patch_baseline(
 
 Type annotations for `boto3.client("ssm").delete_resource_data_sync` method.
 
-[Client.delete_resource_data_sync documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_resource_data_sync)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_resource_data_sync]
 
 ```python
 def delete_resource_data_sync(
@@ -704,7 +709,7 @@ def delete_resource_data_sync(
 
 Type annotations for `boto3.client("ssm").deregister_managed_instance` method.
 
-[Client.deregister_managed_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.deregister_managed_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.deregister_managed_instance]
 
 ```python
 def deregister_managed_instance(
@@ -718,7 +723,7 @@ def deregister_managed_instance(
 
 Type annotations for `boto3.client("ssm").deregister_patch_baseline_for_patch_group` method.
 
-[Client.deregister_patch_baseline_for_patch_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.deregister_patch_baseline_for_patch_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.deregister_patch_baseline_for_patch_group]
 
 ```python
 def deregister_patch_baseline_for_patch_group(
@@ -733,7 +738,7 @@ def deregister_patch_baseline_for_patch_group(
 
 Type annotations for `boto3.client("ssm").deregister_target_from_maintenance_window` method.
 
-[Client.deregister_target_from_maintenance_window documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.deregister_target_from_maintenance_window)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.deregister_target_from_maintenance_window]
 
 ```python
 def deregister_target_from_maintenance_window(
@@ -749,7 +754,7 @@ def deregister_target_from_maintenance_window(
 
 Type annotations for `boto3.client("ssm").deregister_task_from_maintenance_window` method.
 
-[Client.deregister_task_from_maintenance_window documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.deregister_task_from_maintenance_window)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.deregister_task_from_maintenance_window]
 
 ```python
 def deregister_task_from_maintenance_window(
@@ -764,7 +769,7 @@ def deregister_task_from_maintenance_window(
 
 Type annotations for `boto3.client("ssm").describe_activations` method.
 
-[Client.describe_activations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_activations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_activations]
 
 ```python
 def describe_activations(
@@ -780,7 +785,7 @@ def describe_activations(
 
 Type annotations for `boto3.client("ssm").describe_association` method.
 
-[Client.describe_association documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_association)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_association]
 
 ```python
 def describe_association(
@@ -797,7 +802,7 @@ def describe_association(
 
 Type annotations for `boto3.client("ssm").describe_association_execution_targets` method.
 
-[Client.describe_association_execution_targets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_association_execution_targets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_association_execution_targets]
 
 ```python
 def describe_association_execution_targets(
@@ -815,7 +820,7 @@ def describe_association_execution_targets(
 
 Type annotations for `boto3.client("ssm").describe_association_executions` method.
 
-[Client.describe_association_executions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_association_executions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_association_executions]
 
 ```python
 def describe_association_executions(
@@ -832,7 +837,7 @@ def describe_association_executions(
 
 Type annotations for `boto3.client("ssm").describe_automation_executions` method.
 
-[Client.describe_automation_executions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_automation_executions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_automation_executions]
 
 ```python
 def describe_automation_executions(
@@ -848,7 +853,7 @@ def describe_automation_executions(
 
 Type annotations for `boto3.client("ssm").describe_automation_step_executions` method.
 
-[Client.describe_automation_step_executions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_automation_step_executions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_automation_step_executions]
 
 ```python
 def describe_automation_step_executions(
@@ -866,7 +871,7 @@ def describe_automation_step_executions(
 
 Type annotations for `boto3.client("ssm").describe_available_patches` method.
 
-[Client.describe_available_patches documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_available_patches)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_available_patches]
 
 ```python
 def describe_available_patches(
@@ -882,7 +887,7 @@ def describe_available_patches(
 
 Type annotations for `boto3.client("ssm").describe_document` method.
 
-[Client.describe_document documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_document)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_document]
 
 ```python
 def describe_document(
@@ -898,7 +903,7 @@ def describe_document(
 
 Type annotations for `boto3.client("ssm").describe_document_permission` method.
 
-[Client.describe_document_permission documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_document_permission)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_document_permission]
 
 ```python
 def describe_document_permission(
@@ -915,7 +920,7 @@ def describe_document_permission(
 
 Type annotations for `boto3.client("ssm").describe_effective_instance_associations` method.
 
-[Client.describe_effective_instance_associations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_effective_instance_associations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_effective_instance_associations]
 
 ```python
 def describe_effective_instance_associations(
@@ -931,7 +936,7 @@ def describe_effective_instance_associations(
 
 Type annotations for `boto3.client("ssm").describe_effective_patches_for_patch_baseline` method.
 
-[Client.describe_effective_patches_for_patch_baseline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_effective_patches_for_patch_baseline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_effective_patches_for_patch_baseline]
 
 ```python
 def describe_effective_patches_for_patch_baseline(
@@ -947,7 +952,7 @@ def describe_effective_patches_for_patch_baseline(
 
 Type annotations for `boto3.client("ssm").describe_instance_associations_status` method.
 
-[Client.describe_instance_associations_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_associations_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_associations_status]
 
 ```python
 def describe_instance_associations_status(
@@ -963,7 +968,7 @@ def describe_instance_associations_status(
 
 Type annotations for `boto3.client("ssm").describe_instance_information` method.
 
-[Client.describe_instance_information documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_information)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_information]
 
 ```python
 def describe_instance_information(
@@ -980,7 +985,7 @@ def describe_instance_information(
 
 Type annotations for `boto3.client("ssm").describe_instance_patch_states` method.
 
-[Client.describe_instance_patch_states documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_patch_states)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_patch_states]
 
 ```python
 def describe_instance_patch_states(
@@ -996,7 +1001,7 @@ def describe_instance_patch_states(
 
 Type annotations for `boto3.client("ssm").describe_instance_patch_states_for_patch_group` method.
 
-[Client.describe_instance_patch_states_for_patch_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_patch_states_for_patch_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_patch_states_for_patch_group]
 
 ```python
 def describe_instance_patch_states_for_patch_group(
@@ -1013,7 +1018,7 @@ def describe_instance_patch_states_for_patch_group(
 
 Type annotations for `boto3.client("ssm").describe_instance_patches` method.
 
-[Client.describe_instance_patches documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_patches)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_patches]
 
 ```python
 def describe_instance_patches(
@@ -1030,7 +1035,7 @@ def describe_instance_patches(
 
 Type annotations for `boto3.client("ssm").describe_inventory_deletions` method.
 
-[Client.describe_inventory_deletions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_inventory_deletions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_inventory_deletions]
 
 ```python
 def describe_inventory_deletions(
@@ -1046,7 +1051,7 @@ def describe_inventory_deletions(
 
 Type annotations for `boto3.client("ssm").describe_maintenance_window_execution_task_invocations` method.
 
-[Client.describe_maintenance_window_execution_task_invocations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_execution_task_invocations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_execution_task_invocations]
 
 ```python
 def describe_maintenance_window_execution_task_invocations(
@@ -1064,7 +1069,7 @@ def describe_maintenance_window_execution_task_invocations(
 
 Type annotations for `boto3.client("ssm").describe_maintenance_window_execution_tasks` method.
 
-[Client.describe_maintenance_window_execution_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_execution_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_execution_tasks]
 
 ```python
 def describe_maintenance_window_execution_tasks(
@@ -1081,7 +1086,7 @@ def describe_maintenance_window_execution_tasks(
 
 Type annotations for `boto3.client("ssm").describe_maintenance_window_executions` method.
 
-[Client.describe_maintenance_window_executions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_executions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_executions]
 
 ```python
 def describe_maintenance_window_executions(
@@ -1098,7 +1103,7 @@ def describe_maintenance_window_executions(
 
 Type annotations for `boto3.client("ssm").describe_maintenance_window_schedule` method.
 
-[Client.describe_maintenance_window_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_schedule]
 
 ```python
 def describe_maintenance_window_schedule(
@@ -1117,7 +1122,7 @@ def describe_maintenance_window_schedule(
 
 Type annotations for `boto3.client("ssm").describe_maintenance_window_targets` method.
 
-[Client.describe_maintenance_window_targets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_targets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_targets]
 
 ```python
 def describe_maintenance_window_targets(
@@ -1134,7 +1139,7 @@ def describe_maintenance_window_targets(
 
 Type annotations for `boto3.client("ssm").describe_maintenance_window_tasks` method.
 
-[Client.describe_maintenance_window_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_tasks]
 
 ```python
 def describe_maintenance_window_tasks(
@@ -1151,7 +1156,7 @@ def describe_maintenance_window_tasks(
 
 Type annotations for `boto3.client("ssm").describe_maintenance_windows` method.
 
-[Client.describe_maintenance_windows documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_windows)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_windows]
 
 ```python
 def describe_maintenance_windows(
@@ -1167,7 +1172,7 @@ def describe_maintenance_windows(
 
 Type annotations for `boto3.client("ssm").describe_maintenance_windows_for_target` method.
 
-[Client.describe_maintenance_windows_for_target documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_windows_for_target)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_windows_for_target]
 
 ```python
 def describe_maintenance_windows_for_target(
@@ -1184,7 +1189,7 @@ def describe_maintenance_windows_for_target(
 
 Type annotations for `boto3.client("ssm").describe_ops_items` method.
 
-[Client.describe_ops_items documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_ops_items)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_ops_items]
 
 ```python
 def describe_ops_items(
@@ -1200,7 +1205,7 @@ def describe_ops_items(
 
 Type annotations for `boto3.client("ssm").describe_parameters` method.
 
-[Client.describe_parameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_parameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_parameters]
 
 ```python
 def describe_parameters(
@@ -1217,7 +1222,7 @@ def describe_parameters(
 
 Type annotations for `boto3.client("ssm").describe_patch_baselines` method.
 
-[Client.describe_patch_baselines documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_patch_baselines)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_patch_baselines]
 
 ```python
 def describe_patch_baselines(
@@ -1233,7 +1238,7 @@ def describe_patch_baselines(
 
 Type annotations for `boto3.client("ssm").describe_patch_group_state` method.
 
-[Client.describe_patch_group_state documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_patch_group_state)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_patch_group_state]
 
 ```python
 def describe_patch_group_state(
@@ -1247,7 +1252,7 @@ def describe_patch_group_state(
 
 Type annotations for `boto3.client("ssm").describe_patch_groups` method.
 
-[Client.describe_patch_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_patch_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_patch_groups]
 
 ```python
 def describe_patch_groups(
@@ -1263,7 +1268,7 @@ def describe_patch_groups(
 
 Type annotations for `boto3.client("ssm").describe_patch_properties` method.
 
-[Client.describe_patch_properties documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_patch_properties)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_patch_properties]
 
 ```python
 def describe_patch_properties(
@@ -1281,7 +1286,7 @@ def describe_patch_properties(
 
 Type annotations for `boto3.client("ssm").describe_sessions` method.
 
-[Client.describe_sessions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_sessions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_sessions]
 
 ```python
 def describe_sessions(
@@ -1298,7 +1303,7 @@ def describe_sessions(
 
 Type annotations for `boto3.client("ssm").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -1315,7 +1320,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("ssm").get_automation_execution` method.
 
-[Client.get_automation_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_automation_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_automation_execution]
 
 ```python
 def get_automation_execution(
@@ -1329,7 +1334,7 @@ def get_automation_execution(
 
 Type annotations for `boto3.client("ssm").get_calendar_state` method.
 
-[Client.get_calendar_state documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_calendar_state)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_calendar_state]
 
 ```python
 def get_calendar_state(
@@ -1344,7 +1349,7 @@ def get_calendar_state(
 
 Type annotations for `boto3.client("ssm").get_command_invocation` method.
 
-[Client.get_command_invocation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_command_invocation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_command_invocation]
 
 ```python
 def get_command_invocation(
@@ -1360,7 +1365,7 @@ def get_command_invocation(
 
 Type annotations for `boto3.client("ssm").get_connection_status` method.
 
-[Client.get_connection_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_connection_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_connection_status]
 
 ```python
 def get_connection_status(
@@ -1374,7 +1379,7 @@ def get_connection_status(
 
 Type annotations for `boto3.client("ssm").get_default_patch_baseline` method.
 
-[Client.get_default_patch_baseline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_default_patch_baseline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_default_patch_baseline]
 
 ```python
 def get_default_patch_baseline(
@@ -1388,7 +1393,7 @@ def get_default_patch_baseline(
 
 Type annotations for `boto3.client("ssm").get_deployable_patch_snapshot_for_instance` method.
 
-[Client.get_deployable_patch_snapshot_for_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_deployable_patch_snapshot_for_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_deployable_patch_snapshot_for_instance]
 
 ```python
 def get_deployable_patch_snapshot_for_instance(
@@ -1404,7 +1409,7 @@ def get_deployable_patch_snapshot_for_instance(
 
 Type annotations for `boto3.client("ssm").get_document` method.
 
-[Client.get_document documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_document)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_document]
 
 ```python
 def get_document(
@@ -1421,7 +1426,7 @@ def get_document(
 
 Type annotations for `boto3.client("ssm").get_inventory` method.
 
-[Client.get_inventory documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_inventory)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_inventory]
 
 ```python
 def get_inventory(
@@ -1439,7 +1444,7 @@ def get_inventory(
 
 Type annotations for `boto3.client("ssm").get_inventory_schema` method.
 
-[Client.get_inventory_schema documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_inventory_schema)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_inventory_schema]
 
 ```python
 def get_inventory_schema(
@@ -1457,7 +1462,7 @@ def get_inventory_schema(
 
 Type annotations for `boto3.client("ssm").get_maintenance_window` method.
 
-[Client.get_maintenance_window documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window]
 
 ```python
 def get_maintenance_window(
@@ -1471,7 +1476,7 @@ def get_maintenance_window(
 
 Type annotations for `boto3.client("ssm").get_maintenance_window_execution` method.
 
-[Client.get_maintenance_window_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window_execution]
 
 ```python
 def get_maintenance_window_execution(
@@ -1485,7 +1490,7 @@ def get_maintenance_window_execution(
 
 Type annotations for `boto3.client("ssm").get_maintenance_window_execution_task` method.
 
-[Client.get_maintenance_window_execution_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window_execution_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window_execution_task]
 
 ```python
 def get_maintenance_window_execution_task(
@@ -1500,7 +1505,7 @@ def get_maintenance_window_execution_task(
 
 Type annotations for `boto3.client("ssm").get_maintenance_window_execution_task_invocation` method.
 
-[Client.get_maintenance_window_execution_task_invocation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window_execution_task_invocation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window_execution_task_invocation]
 
 ```python
 def get_maintenance_window_execution_task_invocation(
@@ -1516,7 +1521,7 @@ def get_maintenance_window_execution_task_invocation(
 
 Type annotations for `boto3.client("ssm").get_maintenance_window_task` method.
 
-[Client.get_maintenance_window_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window_task]
 
 ```python
 def get_maintenance_window_task(
@@ -1531,7 +1536,7 @@ def get_maintenance_window_task(
 
 Type annotations for `boto3.client("ssm").get_ops_item` method.
 
-[Client.get_ops_item documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_ops_item)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_ops_item]
 
 ```python
 def get_ops_item(
@@ -1545,7 +1550,7 @@ def get_ops_item(
 
 Type annotations for `boto3.client("ssm").get_ops_metadata` method.
 
-[Client.get_ops_metadata documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_ops_metadata)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_ops_metadata]
 
 ```python
 def get_ops_metadata(
@@ -1561,7 +1566,7 @@ def get_ops_metadata(
 
 Type annotations for `boto3.client("ssm").get_ops_summary` method.
 
-[Client.get_ops_summary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_ops_summary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_ops_summary]
 
 ```python
 def get_ops_summary(
@@ -1580,7 +1585,7 @@ def get_ops_summary(
 
 Type annotations for `boto3.client("ssm").get_parameter` method.
 
-[Client.get_parameter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_parameter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_parameter]
 
 ```python
 def get_parameter(
@@ -1595,7 +1600,7 @@ def get_parameter(
 
 Type annotations for `boto3.client("ssm").get_parameter_history` method.
 
-[Client.get_parameter_history documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_parameter_history)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_parameter_history]
 
 ```python
 def get_parameter_history(
@@ -1612,7 +1617,7 @@ def get_parameter_history(
 
 Type annotations for `boto3.client("ssm").get_parameters` method.
 
-[Client.get_parameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_parameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_parameters]
 
 ```python
 def get_parameters(
@@ -1627,7 +1632,7 @@ def get_parameters(
 
 Type annotations for `boto3.client("ssm").get_parameters_by_path` method.
 
-[Client.get_parameters_by_path documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_parameters_by_path)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_parameters_by_path]
 
 ```python
 def get_parameters_by_path(
@@ -1646,7 +1651,7 @@ def get_parameters_by_path(
 
 Type annotations for `boto3.client("ssm").get_patch_baseline` method.
 
-[Client.get_patch_baseline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_patch_baseline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_patch_baseline]
 
 ```python
 def get_patch_baseline(
@@ -1660,7 +1665,7 @@ def get_patch_baseline(
 
 Type annotations for `boto3.client("ssm").get_patch_baseline_for_patch_group` method.
 
-[Client.get_patch_baseline_for_patch_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_patch_baseline_for_patch_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_patch_baseline_for_patch_group]
 
 ```python
 def get_patch_baseline_for_patch_group(
@@ -1675,7 +1680,7 @@ def get_patch_baseline_for_patch_group(
 
 Type annotations for `boto3.client("ssm").get_service_setting` method.
 
-[Client.get_service_setting documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_service_setting)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_service_setting]
 
 ```python
 def get_service_setting(
@@ -1689,7 +1694,7 @@ def get_service_setting(
 
 Type annotations for `boto3.client("ssm").label_parameter_version` method.
 
-[Client.label_parameter_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.label_parameter_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.label_parameter_version]
 
 ```python
 def label_parameter_version(
@@ -1705,7 +1710,7 @@ def label_parameter_version(
 
 Type annotations for `boto3.client("ssm").list_association_versions` method.
 
-[Client.list_association_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_association_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_association_versions]
 
 ```python
 def list_association_versions(
@@ -1721,7 +1726,7 @@ def list_association_versions(
 
 Type annotations for `boto3.client("ssm").list_associations` method.
 
-[Client.list_associations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_associations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_associations]
 
 ```python
 def list_associations(
@@ -1737,7 +1742,7 @@ def list_associations(
 
 Type annotations for `boto3.client("ssm").list_command_invocations` method.
 
-[Client.list_command_invocations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_command_invocations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_command_invocations]
 
 ```python
 def list_command_invocations(
@@ -1756,7 +1761,7 @@ def list_command_invocations(
 
 Type annotations for `boto3.client("ssm").list_commands` method.
 
-[Client.list_commands documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_commands)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_commands]
 
 ```python
 def list_commands(
@@ -1774,7 +1779,7 @@ def list_commands(
 
 Type annotations for `boto3.client("ssm").list_compliance_items` method.
 
-[Client.list_compliance_items documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_compliance_items)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_compliance_items]
 
 ```python
 def list_compliance_items(
@@ -1792,7 +1797,7 @@ def list_compliance_items(
 
 Type annotations for `boto3.client("ssm").list_compliance_summaries` method.
 
-[Client.list_compliance_summaries documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_compliance_summaries)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_compliance_summaries]
 
 ```python
 def list_compliance_summaries(
@@ -1808,7 +1813,7 @@ def list_compliance_summaries(
 
 Type annotations for `boto3.client("ssm").list_document_metadata_history` method.
 
-[Client.list_document_metadata_history documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_document_metadata_history)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_document_metadata_history]
 
 ```python
 def list_document_metadata_history(
@@ -1826,7 +1831,7 @@ def list_document_metadata_history(
 
 Type annotations for `boto3.client("ssm").list_document_versions` method.
 
-[Client.list_document_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_document_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_document_versions]
 
 ```python
 def list_document_versions(
@@ -1842,7 +1847,7 @@ def list_document_versions(
 
 Type annotations for `boto3.client("ssm").list_documents` method.
 
-[Client.list_documents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_documents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_documents]
 
 ```python
 def list_documents(
@@ -1859,7 +1864,7 @@ def list_documents(
 
 Type annotations for `boto3.client("ssm").list_inventory_entries` method.
 
-[Client.list_inventory_entries documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_inventory_entries)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_inventory_entries]
 
 ```python
 def list_inventory_entries(
@@ -1877,7 +1882,7 @@ def list_inventory_entries(
 
 Type annotations for `boto3.client("ssm").list_ops_item_events` method.
 
-[Client.list_ops_item_events documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_ops_item_events)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_ops_item_events]
 
 ```python
 def list_ops_item_events(
@@ -1893,7 +1898,7 @@ def list_ops_item_events(
 
 Type annotations for `boto3.client("ssm").list_ops_metadata` method.
 
-[Client.list_ops_metadata documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_ops_metadata)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_ops_metadata]
 
 ```python
 def list_ops_metadata(
@@ -1909,7 +1914,7 @@ def list_ops_metadata(
 
 Type annotations for `boto3.client("ssm").list_resource_compliance_summaries` method.
 
-[Client.list_resource_compliance_summaries documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_resource_compliance_summaries)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_resource_compliance_summaries]
 
 ```python
 def list_resource_compliance_summaries(
@@ -1925,7 +1930,7 @@ def list_resource_compliance_summaries(
 
 Type annotations for `boto3.client("ssm").list_resource_data_sync` method.
 
-[Client.list_resource_data_sync documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_resource_data_sync)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_resource_data_sync]
 
 ```python
 def list_resource_data_sync(
@@ -1941,7 +1946,7 @@ def list_resource_data_sync(
 
 Type annotations for `boto3.client("ssm").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -1956,7 +1961,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("ssm").modify_document_permission` method.
 
-[Client.modify_document_permission documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.modify_document_permission)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.modify_document_permission]
 
 ```python
 def modify_document_permission(
@@ -1974,7 +1979,7 @@ def modify_document_permission(
 
 Type annotations for `boto3.client("ssm").put_compliance_items` method.
 
-[Client.put_compliance_items documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.put_compliance_items)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.put_compliance_items]
 
 ```python
 def put_compliance_items(
@@ -1994,7 +1999,7 @@ def put_compliance_items(
 
 Type annotations for `boto3.client("ssm").put_inventory` method.
 
-[Client.put_inventory documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.put_inventory)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.put_inventory]
 
 ```python
 def put_inventory(
@@ -2009,7 +2014,7 @@ def put_inventory(
 
 Type annotations for `boto3.client("ssm").put_parameter` method.
 
-[Client.put_parameter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.put_parameter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.put_parameter]
 
 ```python
 def put_parameter(
@@ -2033,7 +2038,7 @@ def put_parameter(
 
 Type annotations for `boto3.client("ssm").register_default_patch_baseline` method.
 
-[Client.register_default_patch_baseline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.register_default_patch_baseline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.register_default_patch_baseline]
 
 ```python
 def register_default_patch_baseline(
@@ -2047,7 +2052,7 @@ def register_default_patch_baseline(
 
 Type annotations for `boto3.client("ssm").register_patch_baseline_for_patch_group` method.
 
-[Client.register_patch_baseline_for_patch_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.register_patch_baseline_for_patch_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.register_patch_baseline_for_patch_group]
 
 ```python
 def register_patch_baseline_for_patch_group(
@@ -2062,7 +2067,7 @@ def register_patch_baseline_for_patch_group(
 
 Type annotations for `boto3.client("ssm").register_target_with_maintenance_window` method.
 
-[Client.register_target_with_maintenance_window documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.register_target_with_maintenance_window)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.register_target_with_maintenance_window]
 
 ```python
 def register_target_with_maintenance_window(
@@ -2082,7 +2087,7 @@ def register_target_with_maintenance_window(
 
 Type annotations for `boto3.client("ssm").register_task_with_maintenance_window` method.
 
-[Client.register_task_with_maintenance_window documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.register_task_with_maintenance_window)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.register_task_with_maintenance_window]
 
 ```python
 def register_task_with_maintenance_window(
@@ -2109,7 +2114,7 @@ def register_task_with_maintenance_window(
 
 Type annotations for `boto3.client("ssm").remove_tags_from_resource` method.
 
-[Client.remove_tags_from_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.remove_tags_from_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.remove_tags_from_resource]
 
 ```python
 def remove_tags_from_resource(
@@ -2125,7 +2130,7 @@ def remove_tags_from_resource(
 
 Type annotations for `boto3.client("ssm").reset_service_setting` method.
 
-[Client.reset_service_setting documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.reset_service_setting)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.reset_service_setting]
 
 ```python
 def reset_service_setting(
@@ -2139,7 +2144,7 @@ def reset_service_setting(
 
 Type annotations for `boto3.client("ssm").resume_session` method.
 
-[Client.resume_session documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.resume_session)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.resume_session]
 
 ```python
 def resume_session(
@@ -2153,7 +2158,7 @@ def resume_session(
 
 Type annotations for `boto3.client("ssm").send_automation_signal` method.
 
-[Client.send_automation_signal documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.send_automation_signal)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.send_automation_signal]
 
 ```python
 def send_automation_signal(
@@ -2169,7 +2174,7 @@ def send_automation_signal(
 
 Type annotations for `boto3.client("ssm").send_command` method.
 
-[Client.send_command documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.send_command)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.send_command]
 
 ```python
 def send_command(
@@ -2199,7 +2204,7 @@ def send_command(
 
 Type annotations for `boto3.client("ssm").start_associations_once` method.
 
-[Client.start_associations_once documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.start_associations_once)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.start_associations_once]
 
 ```python
 def start_associations_once(
@@ -2213,7 +2218,7 @@ def start_associations_once(
 
 Type annotations for `boto3.client("ssm").start_automation_execution` method.
 
-[Client.start_automation_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.start_automation_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.start_automation_execution]
 
 ```python
 def start_automation_execution(
@@ -2238,7 +2243,7 @@ def start_automation_execution(
 
 Type annotations for `boto3.client("ssm").start_change_request_execution` method.
 
-[Client.start_change_request_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.start_change_request_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.start_change_request_execution]
 
 ```python
 def start_change_request_execution(
@@ -2261,7 +2266,7 @@ def start_change_request_execution(
 
 Type annotations for `boto3.client("ssm").start_session` method.
 
-[Client.start_session documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.start_session)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.start_session]
 
 ```python
 def start_session(
@@ -2277,7 +2282,7 @@ def start_session(
 
 Type annotations for `boto3.client("ssm").stop_automation_execution` method.
 
-[Client.stop_automation_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.stop_automation_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.stop_automation_execution]
 
 ```python
 def stop_automation_execution(
@@ -2292,7 +2297,7 @@ def stop_automation_execution(
 
 Type annotations for `boto3.client("ssm").terminate_session` method.
 
-[Client.terminate_session documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.terminate_session)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.terminate_session]
 
 ```python
 def terminate_session(
@@ -2306,7 +2311,7 @@ def terminate_session(
 
 Type annotations for `boto3.client("ssm").unlabel_parameter_version` method.
 
-[Client.unlabel_parameter_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.unlabel_parameter_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.unlabel_parameter_version]
 
 ```python
 def unlabel_parameter_version(
@@ -2322,7 +2327,7 @@ def unlabel_parameter_version(
 
 Type annotations for `boto3.client("ssm").update_association` method.
 
-[Client.update_association documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_association)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_association]
 
 ```python
 def update_association(
@@ -2351,7 +2356,7 @@ def update_association(
 
 Type annotations for `boto3.client("ssm").update_association_status` method.
 
-[Client.update_association_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_association_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_association_status]
 
 ```python
 def update_association_status(
@@ -2367,7 +2372,7 @@ def update_association_status(
 
 Type annotations for `boto3.client("ssm").update_document` method.
 
-[Client.update_document documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_document)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_document]
 
 ```python
 def update_document(
@@ -2387,7 +2392,7 @@ def update_document(
 
 Type annotations for `boto3.client("ssm").update_document_default_version` method.
 
-[Client.update_document_default_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_document_default_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_document_default_version]
 
 ```python
 def update_document_default_version(
@@ -2402,7 +2407,7 @@ def update_document_default_version(
 
 Type annotations for `boto3.client("ssm").update_document_metadata` method.
 
-[Client.update_document_metadata documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_document_metadata)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_document_metadata]
 
 ```python
 def update_document_metadata(
@@ -2418,7 +2423,7 @@ def update_document_metadata(
 
 Type annotations for `boto3.client("ssm").update_maintenance_window` method.
 
-[Client.update_maintenance_window documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_maintenance_window)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_maintenance_window]
 
 ```python
 def update_maintenance_window(
@@ -2444,7 +2449,7 @@ def update_maintenance_window(
 
 Type annotations for `boto3.client("ssm").update_maintenance_window_target` method.
 
-[Client.update_maintenance_window_target documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_maintenance_window_target)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_maintenance_window_target]
 
 ```python
 def update_maintenance_window_target(
@@ -2464,7 +2469,7 @@ def update_maintenance_window_target(
 
 Type annotations for `boto3.client("ssm").update_maintenance_window_task` method.
 
-[Client.update_maintenance_window_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_maintenance_window_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_maintenance_window_task]
 
 ```python
 def update_maintenance_window_task(
@@ -2491,7 +2496,7 @@ def update_maintenance_window_task(
 
 Type annotations for `boto3.client("ssm").update_managed_instance_role` method.
 
-[Client.update_managed_instance_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_managed_instance_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_managed_instance_role]
 
 ```python
 def update_managed_instance_role(
@@ -2506,7 +2511,7 @@ def update_managed_instance_role(
 
 Type annotations for `boto3.client("ssm").update_ops_item` method.
 
-[Client.update_ops_item documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_ops_item)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_ops_item]
 
 ```python
 def update_ops_item(
@@ -2534,7 +2539,7 @@ def update_ops_item(
 
 Type annotations for `boto3.client("ssm").update_ops_metadata` method.
 
-[Client.update_ops_metadata documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_ops_metadata)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_ops_metadata]
 
 ```python
 def update_ops_metadata(
@@ -2550,7 +2555,7 @@ def update_ops_metadata(
 
 Type annotations for `boto3.client("ssm").update_patch_baseline` method.
 
-[Client.update_patch_baseline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_patch_baseline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_patch_baseline]
 
 ```python
 def update_patch_baseline(
@@ -2575,7 +2580,7 @@ def update_patch_baseline(
 
 Type annotations for `boto3.client("ssm").update_resource_data_sync` method.
 
-[Client.update_resource_data_sync documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_resource_data_sync)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_resource_data_sync]
 
 ```python
 def update_resource_data_sync(
@@ -2591,7 +2596,7 @@ def update_resource_data_sync(
 
 Type annotations for `boto3.client("ssm").update_service_setting` method.
 
-[Client.update_service_setting documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_service_setting)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_service_setting]
 
 ```python
 def update_service_setting(

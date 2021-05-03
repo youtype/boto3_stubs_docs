@@ -1,11 +1,11 @@
-# Structures for boto3 Route53Domains module
+# Typed dictionaries for boto3 Route53Domains module
 
 > [Index](../README.md) > [Route53Domains](./README.md) > Structures
 
 Auto-generated documentation for [Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
 type annotations stubs module [mypy_boto3_route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
 
-- [Structures for boto3 Route53Domains module](#structures-for-boto3-route53domains-module)
+- [Typed dictionaries for boto3 Route53Domains module](#typed-dictionaries-for-boto3-route53domains-module)
   - [AcceptDomainTransferFromAnotherAwsAccountResponseTypeDef](#acceptdomaintransferfromanotherawsaccountresponsetypedef)
   - [BillingRecordTypeDef](#billingrecordtypedef)
   - [CancelDomainTransferToAnotherAwsAccountResponseTypeDef](#canceldomaintransfertoanotherawsaccountresponsetypedef)

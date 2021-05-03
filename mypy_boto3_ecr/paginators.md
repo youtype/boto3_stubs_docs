@@ -19,13 +19,13 @@ Type annotations for `boto3.client("ecr").get_paginator("describe_image_scan_fin
 Can be used directly:
 
 ```python
-from mypy_boto3_ecr.paginators import DescribeImageScanFindingsPaginator
+from mypy_boto3_ecr.paginator import DescribeImageScanFindingsPaginator
 
 def get_describe_image_scan_findings_paginator() -> DescribeImageScanFindingsPaginator:
     return boto3.client("ecr").get_paginator("describe_image_scan_findings")
 ```
 
-[Paginator.DescribeImageScanFindings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.DescribeImageScanFindings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.DescribeImageScanFindings)
 
 ```python
 class DescribeImageScanFindingsPaginator(Boto3Paginator):
@@ -45,13 +45,13 @@ Type annotations for `boto3.client("ecr").get_paginator("describe_images")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ecr.paginators import DescribeImagesPaginator
+from mypy_boto3_ecr.paginator import DescribeImagesPaginator
 
 def get_describe_images_paginator() -> DescribeImagesPaginator:
     return boto3.client("ecr").get_paginator("describe_images")
 ```
 
-[Paginator.DescribeImages documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.DescribeImages)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.DescribeImages)
 
 ```python
 class DescribeImagesPaginator(Boto3Paginator):
@@ -72,13 +72,13 @@ Type annotations for `boto3.client("ecr").get_paginator("describe_repositories")
 Can be used directly:
 
 ```python
-from mypy_boto3_ecr.paginators import DescribeRepositoriesPaginator
+from mypy_boto3_ecr.paginator import DescribeRepositoriesPaginator
 
 def get_describe_repositories_paginator() -> DescribeRepositoriesPaginator:
     return boto3.client("ecr").get_paginator("describe_repositories")
 ```
 
-[Paginator.DescribeRepositories documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.DescribeRepositories)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.DescribeRepositories)
 
 ```python
 class DescribeRepositoriesPaginator(Boto3Paginator):
@@ -97,13 +97,13 @@ Type annotations for `boto3.client("ecr").get_paginator("get_lifecycle_policy_pr
 Can be used directly:
 
 ```python
-from mypy_boto3_ecr.paginators import GetLifecyclePolicyPreviewPaginator
+from mypy_boto3_ecr.paginator import GetLifecyclePolicyPreviewPaginator
 
 def get_get_lifecycle_policy_preview_paginator() -> GetLifecyclePolicyPreviewPaginator:
     return boto3.client("ecr").get_paginator("get_lifecycle_policy_preview")
 ```
 
-[Paginator.GetLifecyclePolicyPreview documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.GetLifecyclePolicyPreview)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.GetLifecyclePolicyPreview)
 
 ```python
 class GetLifecyclePolicyPreviewPaginator(Boto3Paginator):
@@ -124,13 +124,13 @@ Type annotations for `boto3.client("ecr").get_paginator("list_images")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ecr.paginators import ListImagesPaginator
+from mypy_boto3_ecr.paginator import ListImagesPaginator
 
 def get_list_images_paginator() -> ListImagesPaginator:
     return boto3.client("ecr").get_paginator("list_images")
 ```
 
-[Paginator.ListImages documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.ListImages)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Paginator.ListImages)
 
 ```python
 class ListImagesPaginator(Boto3Paginator):

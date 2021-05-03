@@ -23,7 +23,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_personalize_events.client import PersonalizeEventsClient
+
+def get_personalize-events_client() -> PersonalizeEventsClient:
+    return boto3.client("personalize-events")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client)
 
 ## Exceptions
 
@@ -53,7 +58,7 @@ Exceptions:
 
 Type annotations for `boto3.client("personalize-events").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -67,7 +72,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("personalize-events").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -84,7 +89,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("personalize-events").put_events` method.
 
-[Client.put_events documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.put_events)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.put_events]
 
 ```python
 def put_events(
@@ -101,7 +106,7 @@ def put_events(
 
 Type annotations for `boto3.client("personalize-events").put_items` method.
 
-[Client.put_items documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.put_items)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.put_items]
 
 ```python
 def put_items(
@@ -116,7 +121,7 @@ def put_items(
 
 Type annotations for `boto3.client("personalize-events").put_users` method.
 
-[Client.put_users documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.put_users)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.put_users]
 
 ```python
 def put_users(

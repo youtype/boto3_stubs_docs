@@ -18,13 +18,13 @@ Type annotations for `boto3.client("redshift").get_waiter("cluster_available")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.waiters import ClusterAvailableWaiter
+from mypy_boto3_redshift.waiter import ClusterAvailableWaiter
 
 def get_cluster_available_waiter() -> ClusterAvailableWaiter:
     return boto3.client("redshift").get_waiter("cluster_available")
 ```
 
-[Waiter.ClusterAvailable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.ClusterAvailable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.cluster_available)
 
 ```python
 class ClusterAvailableWaiter(Boto3Waiter):
@@ -46,13 +46,13 @@ Type annotations for `boto3.client("redshift").get_waiter("cluster_deleted")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.waiters import ClusterDeletedWaiter
+from mypy_boto3_redshift.waiter import ClusterDeletedWaiter
 
 def get_cluster_deleted_waiter() -> ClusterDeletedWaiter:
     return boto3.client("redshift").get_waiter("cluster_deleted")
 ```
 
-[Waiter.ClusterDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.ClusterDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.cluster_deleted)
 
 ```python
 class ClusterDeletedWaiter(Boto3Waiter):
@@ -74,13 +74,13 @@ Type annotations for `boto3.client("redshift").get_waiter("cluster_restored")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.waiters import ClusterRestoredWaiter
+from mypy_boto3_redshift.waiter import ClusterRestoredWaiter
 
 def get_cluster_restored_waiter() -> ClusterRestoredWaiter:
     return boto3.client("redshift").get_waiter("cluster_restored")
 ```
 
-[Waiter.ClusterRestored documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.ClusterRestored)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.cluster_restored)
 
 ```python
 class ClusterRestoredWaiter(Boto3Waiter):
@@ -102,13 +102,13 @@ Type annotations for `boto3.client("redshift").get_waiter("snapshot_available")`
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.waiters import SnapshotAvailableWaiter
+from mypy_boto3_redshift.waiter import SnapshotAvailableWaiter
 
 def get_snapshot_available_waiter() -> SnapshotAvailableWaiter:
     return boto3.client("redshift").get_waiter("snapshot_available")
 ```
 
-[Waiter.SnapshotAvailable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.SnapshotAvailable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.snapshot_available)
 
 ```python
 class SnapshotAvailableWaiter(Boto3Waiter):

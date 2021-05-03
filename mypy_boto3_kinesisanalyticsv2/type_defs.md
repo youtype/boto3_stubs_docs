@@ -1,11 +1,11 @@
-# Structures for boto3 KinesisAnalyticsV2 module
+# Typed dictionaries for boto3 KinesisAnalyticsV2 module
 
 > [Index](../README.md) > [KinesisAnalyticsV2](./README.md) > Structures
 
 Auto-generated documentation for [KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
 type annotations stubs module [mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
 
-- [Structures for boto3 KinesisAnalyticsV2 module](#structures-for-boto3-kinesisanalyticsv2-module)
+- [Typed dictionaries for boto3 KinesisAnalyticsV2 module](#typed-dictionaries-for-boto3-kinesisanalyticsv2-module)
   - [AddApplicationCloudWatchLoggingOptionResponseTypeDef](#addapplicationcloudwatchloggingoptionresponsetypedef)
   - [AddApplicationInputProcessingConfigurationResponseTypeDef](#addapplicationinputprocessingconfigurationresponsetypedef)
   - [AddApplicationInputResponseTypeDef](#addapplicationinputresponsetypedef)
@@ -1129,11 +1129,9 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisFirehoseOutputTypeDef
 
 Required fields:
 - `ResourceARN`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## KinesisFirehoseOutputUpdateTypeDef
@@ -1216,11 +1214,9 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisStreamsOutputTypeDef
 
 Required fields:
 - `ResourceARN`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## KinesisStreamsOutputUpdateTypeDef
@@ -1261,11 +1257,9 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import LambdaOutputTypeDef
 
 Required fields:
 - `ResourceARN`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## LambdaOutputUpdateTypeDef
@@ -1412,15 +1406,13 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import OutputTypeDef
 
 Required fields:
 - `Name`: `str`
-- `DestinationSchema`: `"DestinationSchemaTypeDef"`
-
-
-
-Optional fields:
 - `KinesisStreamsOutput`: `"KinesisStreamsOutputTypeDef"`
 - `KinesisFirehoseOutput`: `"KinesisFirehoseOutputTypeDef"`
 - `LambdaOutput`: `"LambdaOutputTypeDef"`
+- `DestinationSchema`: `"DestinationSchemaTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## OutputUpdateTypeDef

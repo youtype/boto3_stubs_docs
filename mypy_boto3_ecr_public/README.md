@@ -15,7 +15,7 @@ pip install mypy-boto3-ecr-public
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ECRPublicClient
 
@@ -136,7 +136,7 @@ from mypy_boto3_ecr_public.literals import DescribeImageTagsPaginatorName, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

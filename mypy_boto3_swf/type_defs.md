@@ -1,11 +1,11 @@
-# Structures for boto3 SWF module
+# Typed dictionaries for boto3 SWF module
 
 > [Index](../README.md) > [SWF](./README.md) > Structures
 
 Auto-generated documentation for [SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF)
 type annotations stubs module [mypy_boto3_swf](https://pypi.org/project/mypy-boto3-swf/).
 
-- [Structures for boto3 SWF module](#structures-for-boto3-swf-module)
+- [Typed dictionaries for boto3 SWF module](#typed-dictionaries-for-boto3-swf-module)
   - [ActivityTaskCancelRequestedEventAttributesTypeDef](#activitytaskcancelrequestedeventattributestypedef)
   - [ActivityTaskCanceledEventAttributesTypeDef](#activitytaskcanceledeventattributestypedef)
   - [ActivityTaskCompletedEventAttributesTypeDef](#activitytaskcompletedeventattributestypedef)
@@ -1015,11 +1015,11 @@ from mypy_boto3_swf.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `tags`: `List["ResourceTagTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## MarkerRecordedEventAttributesTypeDef

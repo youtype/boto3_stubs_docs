@@ -18,13 +18,13 @@ Type annotations for `boto3.client("codestar").get_paginator("list_projects")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_codestar.paginators import ListProjectsPaginator
+from mypy_boto3_codestar.paginator import ListProjectsPaginator
 
 def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("codestar").get_paginator("list_projects")
 ```
 
-[Paginator.ListProjects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListProjects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListProjects)
 
 ```python
 class ListProjectsPaginator(Boto3Paginator):
@@ -41,13 +41,13 @@ Type annotations for `boto3.client("codestar").get_paginator("list_resources")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_codestar.paginators import ListResourcesPaginator
+from mypy_boto3_codestar.paginator import ListResourcesPaginator
 
 def get_list_resources_paginator() -> ListResourcesPaginator:
     return boto3.client("codestar").get_paginator("list_resources")
 ```
 
-[Paginator.ListResources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListResources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListResources)
 
 ```python
 class ListResourcesPaginator(Boto3Paginator):
@@ -65,13 +65,13 @@ Type annotations for `boto3.client("codestar").get_paginator("list_team_members"
 Can be used directly:
 
 ```python
-from mypy_boto3_codestar.paginators import ListTeamMembersPaginator
+from mypy_boto3_codestar.paginator import ListTeamMembersPaginator
 
 def get_list_team_members_paginator() -> ListTeamMembersPaginator:
     return boto3.client("codestar").get_paginator("list_team_members")
 ```
 
-[Paginator.ListTeamMembers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListTeamMembers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListTeamMembers)
 
 ```python
 class ListTeamMembersPaginator(Boto3Paginator):
@@ -89,13 +89,13 @@ Type annotations for `boto3.client("codestar").get_paginator("list_user_profiles
 Can be used directly:
 
 ```python
-from mypy_boto3_codestar.paginators import ListUserProfilesPaginator
+from mypy_boto3_codestar.paginator import ListUserProfilesPaginator
 
 def get_list_user_profiles_paginator() -> ListUserProfilesPaginator:
     return boto3.client("codestar").get_paginator("list_user_profiles")
 ```
 
-[Paginator.ListUserProfiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListUserProfiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListUserProfiles)
 
 ```python
 class ListUserProfilesPaginator(Boto3Paginator):

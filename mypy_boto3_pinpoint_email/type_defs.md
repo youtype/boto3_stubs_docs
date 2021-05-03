@@ -1,11 +1,11 @@
-# Structures for boto3 PinpointEmail module
+# Typed dictionaries for boto3 PinpointEmail module
 
 > [Index](../README.md) > [PinpointEmail](./README.md) > Structures
 
 Auto-generated documentation for [PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
 type annotations stubs module [mypy_boto3_pinpoint_email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
 
-- [Structures for boto3 PinpointEmail module](#structures-for-boto3-pinpointemail-module)
+- [Typed dictionaries for boto3 PinpointEmail module](#typed-dictionaries-for-boto3-pinpointemail-module)
   - [BlacklistEntryTypeDef](#blacklistentrytypedef)
   - [BodyTypeDef](#bodytypedef)
   - [CloudWatchDestinationTypeDef](#cloudwatchdestinationtypedef)

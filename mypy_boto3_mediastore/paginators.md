@@ -15,13 +15,13 @@ Type annotations for `boto3.client("mediastore").get_paginator("list_containers"
 Can be used directly:
 
 ```python
-from mypy_boto3_mediastore.paginators import ListContainersPaginator
+from mypy_boto3_mediastore.paginator import ListContainersPaginator
 
 def get_list_containers_paginator() -> ListContainersPaginator:
     return boto3.client("mediastore").get_paginator("list_containers")
 ```
 
-[Paginator.ListContainers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Paginator.ListContainers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Paginator.ListContainers)
 
 ```python
 class ListContainersPaginator(Boto3Paginator):

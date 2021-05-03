@@ -1,11 +1,11 @@
-# Structures for boto3 KinesisVideo module
+# Typed dictionaries for boto3 KinesisVideo module
 
 > [Index](../README.md) > [KinesisVideo](./README.md) > Structures
 
 Auto-generated documentation for [KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo)
 type annotations stubs module [mypy_boto3_kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
 
-- [Structures for boto3 KinesisVideo module](#structures-for-boto3-kinesisvideo-module)
+- [Typed dictionaries for boto3 KinesisVideo module](#typed-dictionaries-for-boto3-kinesisvideo-module)
   - [ChannelInfoTypeDef](#channelinfotypedef)
   - [ChannelNameConditionTypeDef](#channelnameconditiontypedef)
   - [CreateSignalingChannelOutputTypeDef](#createsignalingchanneloutputtypedef)
@@ -67,11 +67,11 @@ from mypy_boto3_kinesisvideo.type_defs import CreateSignalingChannelOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ChannelARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateStreamOutputTypeDef
@@ -81,11 +81,11 @@ from mypy_boto3_kinesisvideo.type_defs import CreateStreamOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `StreamARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeSignalingChannelOutputTypeDef
@@ -95,11 +95,11 @@ from mypy_boto3_kinesisvideo.type_defs import DescribeSignalingChannelOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ChannelInfo`: `"ChannelInfoTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeStreamOutputTypeDef
@@ -109,11 +109,11 @@ from mypy_boto3_kinesisvideo.type_defs import DescribeStreamOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `StreamInfo`: `"StreamInfoTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetDataEndpointOutputTypeDef
@@ -123,11 +123,11 @@ from mypy_boto3_kinesisvideo.type_defs import GetDataEndpointOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DataEndpoint`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetSignalingChannelEndpointOutputTypeDef
@@ -137,11 +137,11 @@ from mypy_boto3_kinesisvideo.type_defs import GetSignalingChannelEndpointOutputT
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ResourceEndpointList`: `List["ResourceEndpointListItemTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListSignalingChannelsOutputTypeDef
@@ -151,12 +151,12 @@ from mypy_boto3_kinesisvideo.type_defs import ListSignalingChannelsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ChannelInfoList`: `List["ChannelInfoTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListStreamsOutputTypeDef
@@ -166,12 +166,12 @@ from mypy_boto3_kinesisvideo.type_defs import ListStreamsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `StreamInfoList`: `List["StreamInfoTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagsForResourceOutputTypeDef
@@ -181,12 +181,12 @@ from mypy_boto3_kinesisvideo.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NextToken`: `str`
 - `Tags`: `Dict[str, str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagsForStreamOutputTypeDef
@@ -196,12 +196,12 @@ from mypy_boto3_kinesisvideo.type_defs import ListTagsForStreamOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NextToken`: `str`
 - `Tags`: `Dict[str, str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PaginatorConfigTypeDef

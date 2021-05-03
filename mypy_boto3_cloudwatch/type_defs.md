@@ -1,11 +1,11 @@
-# Structures for boto3 CloudWatch module
+# Typed dictionaries for boto3 CloudWatch module
 
 > [Index](../README.md) > [CloudWatch](./README.md) > Structures
 
 Auto-generated documentation for [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
 type annotations stubs module [mypy_boto3_cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
 
-- [Structures for boto3 CloudWatch module](#structures-for-boto3-cloudwatch-module)
+- [Typed dictionaries for boto3 CloudWatch module](#typed-dictionaries-for-boto3-cloudwatch-module)
   - [AlarmHistoryItemTypeDef](#alarmhistoryitemtypedef)
   - [AnomalyDetectorConfigurationTypeDef](#anomalydetectorconfigurationtypedef)
   - [AnomalyDetectorTypeDef](#anomalydetectortypedef)
@@ -189,11 +189,11 @@ from mypy_boto3_cloudwatch.type_defs import DeleteInsightRulesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Failures`: `List["PartialFailureTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeAlarmHistoryOutputTypeDef
@@ -203,12 +203,12 @@ from mypy_boto3_cloudwatch.type_defs import DescribeAlarmHistoryOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `AlarmHistoryItems`: `List["AlarmHistoryItemTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeAlarmsForMetricOutputTypeDef
@@ -218,11 +218,11 @@ from mypy_boto3_cloudwatch.type_defs import DescribeAlarmsForMetricOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `MetricAlarms`: `List["MetricAlarmTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeAlarmsOutputTypeDef
@@ -232,13 +232,13 @@ from mypy_boto3_cloudwatch.type_defs import DescribeAlarmsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `CompositeAlarms`: `List["CompositeAlarmTypeDef"]`
 - `MetricAlarms`: `List["MetricAlarmTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeAnomalyDetectorsOutputTypeDef
@@ -248,12 +248,12 @@ from mypy_boto3_cloudwatch.type_defs import DescribeAnomalyDetectorsOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `AnomalyDetectors`: `List["AnomalyDetectorTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeInsightRulesOutputTypeDef
@@ -263,12 +263,12 @@ from mypy_boto3_cloudwatch.type_defs import DescribeInsightRulesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NextToken`: `str`
 - `InsightRules`: `List["InsightRuleTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DimensionFilterTypeDef
@@ -308,11 +308,11 @@ from mypy_boto3_cloudwatch.type_defs import DisableInsightRulesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Failures`: `List["PartialFailureTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## EnableInsightRulesOutputTypeDef
@@ -322,11 +322,11 @@ from mypy_boto3_cloudwatch.type_defs import EnableInsightRulesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Failures`: `List["PartialFailureTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetDashboardOutputTypeDef
@@ -336,13 +336,13 @@ from mypy_boto3_cloudwatch.type_defs import GetDashboardOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DashboardArn`: `str`
 - `DashboardBody`: `str`
 - `DashboardName`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetInsightRuleReportOutputTypeDef
@@ -352,9 +352,7 @@ from mypy_boto3_cloudwatch.type_defs import GetInsightRuleReportOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `KeyLabels`: `List[str]`
 - `AggregationStatistic`: `str`
 - `AggregateValue`: `float`
@@ -364,6 +362,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## GetMetricDataOutputTypeDef
 
 ```python
@@ -371,13 +371,13 @@ from mypy_boto3_cloudwatch.type_defs import GetMetricDataOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `MetricDataResults`: `List["MetricDataResultTypeDef"]`
 - `NextToken`: `str`
 - `Messages`: `List["MessageDataTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetMetricStatisticsOutputTypeDef
@@ -387,12 +387,12 @@ from mypy_boto3_cloudwatch.type_defs import GetMetricStatisticsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Label`: `str`
 - `Datapoints`: `List["DatapointTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetMetricStreamOutputTypeDef
@@ -402,9 +402,7 @@ from mypy_boto3_cloudwatch.type_defs import GetMetricStreamOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Arn`: `str`
 - `Name`: `str`
 - `IncludeFilters`: `List["MetricStreamFilterTypeDef"]`
@@ -418,6 +416,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## GetMetricWidgetImageOutputTypeDef
 
 ```python
@@ -425,11 +425,11 @@ from mypy_boto3_cloudwatch.type_defs import GetMetricWidgetImageOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `MetricWidgetImage`: `Union[bytes, IO[bytes]]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## InsightRuleContributorDatapointTypeDef
@@ -519,12 +519,12 @@ from mypy_boto3_cloudwatch.type_defs import ListDashboardsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DashboardEntries`: `List["DashboardEntryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListMetricStreamsOutputTypeDef
@@ -534,12 +534,12 @@ from mypy_boto3_cloudwatch.type_defs import ListMetricStreamsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NextToken`: `str`
 - `Entries`: `List["MetricStreamEntryTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListMetricsOutputTypeDef
@@ -549,12 +549,12 @@ from mypy_boto3_cloudwatch.type_defs import ListMetricsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Metrics`: `List["MetricTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagsForResourceOutputTypeDef
@@ -564,11 +564,11 @@ from mypy_boto3_cloudwatch.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Tags`: `List["TagTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## MessageDataTypeDef
@@ -788,11 +788,11 @@ from mypy_boto3_cloudwatch.type_defs import PutDashboardOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DashboardValidationMessages`: `List["DashboardValidationMessageTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PutMetricStreamOutputTypeDef
@@ -802,11 +802,11 @@ from mypy_boto3_cloudwatch.type_defs import PutMetricStreamOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Arn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## RangeTypeDef

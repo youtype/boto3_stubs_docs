@@ -24,13 +24,13 @@ Type annotations for `boto3.client("apigatewayv2").get_paginator("get_apis")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_apigatewayv2.paginators import GetApisPaginator
+from mypy_boto3_apigatewayv2.paginator import GetApisPaginator
 
 def get_get_apis_paginator() -> GetApisPaginator:
     return boto3.client("apigatewayv2").get_paginator("get_apis")
 ```
 
-[Paginator.GetApis documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetApis)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetApis)
 
 ```python
 class GetApisPaginator(Boto3Paginator):
@@ -47,13 +47,13 @@ Type annotations for `boto3.client("apigatewayv2").get_paginator("get_authorizer
 Can be used directly:
 
 ```python
-from mypy_boto3_apigatewayv2.paginators import GetAuthorizersPaginator
+from mypy_boto3_apigatewayv2.paginator import GetAuthorizersPaginator
 
 def get_get_authorizers_paginator() -> GetAuthorizersPaginator:
     return boto3.client("apigatewayv2").get_paginator("get_authorizers")
 ```
 
-[Paginator.GetAuthorizers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetAuthorizers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetAuthorizers)
 
 ```python
 class GetAuthorizersPaginator(Boto3Paginator):
@@ -71,13 +71,13 @@ Type annotations for `boto3.client("apigatewayv2").get_paginator("get_deployment
 Can be used directly:
 
 ```python
-from mypy_boto3_apigatewayv2.paginators import GetDeploymentsPaginator
+from mypy_boto3_apigatewayv2.paginator import GetDeploymentsPaginator
 
 def get_get_deployments_paginator() -> GetDeploymentsPaginator:
     return boto3.client("apigatewayv2").get_paginator("get_deployments")
 ```
 
-[Paginator.GetDeployments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetDeployments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetDeployments)
 
 ```python
 class GetDeploymentsPaginator(Boto3Paginator):
@@ -95,13 +95,13 @@ Type annotations for `boto3.client("apigatewayv2").get_paginator("get_domain_nam
 Can be used directly:
 
 ```python
-from mypy_boto3_apigatewayv2.paginators import GetDomainNamesPaginator
+from mypy_boto3_apigatewayv2.paginator import GetDomainNamesPaginator
 
 def get_get_domain_names_paginator() -> GetDomainNamesPaginator:
     return boto3.client("apigatewayv2").get_paginator("get_domain_names")
 ```
 
-[Paginator.GetDomainNames documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetDomainNames)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetDomainNames)
 
 ```python
 class GetDomainNamesPaginator(Boto3Paginator):
@@ -118,13 +118,13 @@ Type annotations for `boto3.client("apigatewayv2").get_paginator("get_integratio
 Can be used directly:
 
 ```python
-from mypy_boto3_apigatewayv2.paginators import GetIntegrationResponsesPaginator
+from mypy_boto3_apigatewayv2.paginator import GetIntegrationResponsesPaginator
 
 def get_get_integration_responses_paginator() -> GetIntegrationResponsesPaginator:
     return boto3.client("apigatewayv2").get_paginator("get_integration_responses")
 ```
 
-[Paginator.GetIntegrationResponses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetIntegrationResponses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetIntegrationResponses)
 
 ```python
 class GetIntegrationResponsesPaginator(Boto3Paginator):
@@ -143,13 +143,13 @@ Type annotations for `boto3.client("apigatewayv2").get_paginator("get_integratio
 Can be used directly:
 
 ```python
-from mypy_boto3_apigatewayv2.paginators import GetIntegrationsPaginator
+from mypy_boto3_apigatewayv2.paginator import GetIntegrationsPaginator
 
 def get_get_integrations_paginator() -> GetIntegrationsPaginator:
     return boto3.client("apigatewayv2").get_paginator("get_integrations")
 ```
 
-[Paginator.GetIntegrations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetIntegrations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetIntegrations)
 
 ```python
 class GetIntegrationsPaginator(Boto3Paginator):
@@ -167,13 +167,13 @@ Type annotations for `boto3.client("apigatewayv2").get_paginator("get_models")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_apigatewayv2.paginators import GetModelsPaginator
+from mypy_boto3_apigatewayv2.paginator import GetModelsPaginator
 
 def get_get_models_paginator() -> GetModelsPaginator:
     return boto3.client("apigatewayv2").get_paginator("get_models")
 ```
 
-[Paginator.GetModels documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetModels)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetModels)
 
 ```python
 class GetModelsPaginator(Boto3Paginator):
@@ -191,13 +191,13 @@ Type annotations for `boto3.client("apigatewayv2").get_paginator("get_route_resp
 Can be used directly:
 
 ```python
-from mypy_boto3_apigatewayv2.paginators import GetRouteResponsesPaginator
+from mypy_boto3_apigatewayv2.paginator import GetRouteResponsesPaginator
 
 def get_get_route_responses_paginator() -> GetRouteResponsesPaginator:
     return boto3.client("apigatewayv2").get_paginator("get_route_responses")
 ```
 
-[Paginator.GetRouteResponses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetRouteResponses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetRouteResponses)
 
 ```python
 class GetRouteResponsesPaginator(Boto3Paginator):
@@ -216,13 +216,13 @@ Type annotations for `boto3.client("apigatewayv2").get_paginator("get_routes")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_apigatewayv2.paginators import GetRoutesPaginator
+from mypy_boto3_apigatewayv2.paginator import GetRoutesPaginator
 
 def get_get_routes_paginator() -> GetRoutesPaginator:
     return boto3.client("apigatewayv2").get_paginator("get_routes")
 ```
 
-[Paginator.GetRoutes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetRoutes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetRoutes)
 
 ```python
 class GetRoutesPaginator(Boto3Paginator):
@@ -240,13 +240,13 @@ Type annotations for `boto3.client("apigatewayv2").get_paginator("get_stages")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_apigatewayv2.paginators import GetStagesPaginator
+from mypy_boto3_apigatewayv2.paginator import GetStagesPaginator
 
 def get_get_stages_paginator() -> GetStagesPaginator:
     return boto3.client("apigatewayv2").get_paginator("get_stages")
 ```
 
-[Paginator.GetStages documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetStages)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetStages)
 
 ```python
 class GetStagesPaginator(Boto3Paginator):

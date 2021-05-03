@@ -15,7 +15,7 @@ pip install mypy-boto3-honeycode
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## HoneycodeClient
 
@@ -113,7 +113,7 @@ from mypy_boto3_honeycode.literals import Format, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

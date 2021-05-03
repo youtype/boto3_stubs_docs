@@ -1,11 +1,11 @@
-# Structures for boto3 STS module
+# Typed dictionaries for boto3 STS module
 
 > [Index](../README.md) > [STS](./README.md) > Structures
 
 Auto-generated documentation for [STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
 type annotations stubs module [mypy_boto3_sts](https://pypi.org/project/mypy-boto3-sts/).
 
-- [Structures for boto3 STS module](#structures-for-boto3-sts-module)
+- [Typed dictionaries for boto3 STS module](#typed-dictionaries-for-boto3-sts-module)
   - [AssumeRoleResponseTypeDef](#assumeroleresponsetypedef)
   - [AssumeRoleWithSAMLResponseTypeDef](#assumerolewithsamlresponsetypedef)
   - [AssumeRoleWithWebIdentityResponseTypeDef](#assumerolewithwebidentityresponsetypedef)

@@ -16,7 +16,7 @@ pip install mypy-boto3-signer
   - [Paginators](#paginators)
   - [Waiters](#waiters)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## SignerClient
 
@@ -134,7 +134,7 @@ from mypy_boto3_signer.literals import Category, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

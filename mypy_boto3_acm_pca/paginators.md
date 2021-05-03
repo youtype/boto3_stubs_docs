@@ -17,13 +17,13 @@ Type annotations for `boto3.client("acm-pca").get_paginator("list_certificate_au
 Can be used directly:
 
 ```python
-from mypy_boto3_acm_pca.paginators import ListCertificateAuthoritiesPaginator
+from mypy_boto3_acm_pca.paginator import ListCertificateAuthoritiesPaginator
 
 def get_list_certificate_authorities_paginator() -> ListCertificateAuthoritiesPaginator:
     return boto3.client("acm-pca").get_paginator("list_certificate_authorities")
 ```
 
-[Paginator.ListCertificateAuthorities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Paginator.ListCertificateAuthorities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Paginator.ListCertificateAuthorities)
 
 ```python
 class ListCertificateAuthoritiesPaginator(Boto3Paginator):
@@ -41,13 +41,13 @@ Type annotations for `boto3.client("acm-pca").get_paginator("list_permissions")`
 Can be used directly:
 
 ```python
-from mypy_boto3_acm_pca.paginators import ListPermissionsPaginator
+from mypy_boto3_acm_pca.paginator import ListPermissionsPaginator
 
 def get_list_permissions_paginator() -> ListPermissionsPaginator:
     return boto3.client("acm-pca").get_paginator("list_permissions")
 ```
 
-[Paginator.ListPermissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Paginator.ListPermissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Paginator.ListPermissions)
 
 ```python
 class ListPermissionsPaginator(Boto3Paginator):
@@ -65,13 +65,13 @@ Type annotations for `boto3.client("acm-pca").get_paginator("list_tags")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_acm_pca.paginators import ListTagsPaginator
+from mypy_boto3_acm_pca.paginator import ListTagsPaginator
 
 def get_list_tags_paginator() -> ListTagsPaginator:
     return boto3.client("acm-pca").get_paginator("list_tags")
 ```
 
-[Paginator.ListTags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Paginator.ListTags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Paginator.ListTags)
 
 ```python
 class ListTagsPaginator(Boto3Paginator):

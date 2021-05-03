@@ -21,13 +21,13 @@ Type annotations for `boto3.client("location").get_paginator("get_device_positio
 Can be used directly:
 
 ```python
-from mypy_boto3_location.paginators import GetDevicePositionHistoryPaginator
+from mypy_boto3_location.paginator import GetDevicePositionHistoryPaginator
 
 def get_get_device_position_history_paginator() -> GetDevicePositionHistoryPaginator:
     return boto3.client("location").get_paginator("get_device_position_history")
 ```
 
-[Paginator.GetDevicePositionHistory documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.GetDevicePositionHistory)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.GetDevicePositionHistory)
 
 ```python
 class GetDevicePositionHistoryPaginator(Boto3Paginator):
@@ -48,13 +48,13 @@ Type annotations for `boto3.client("location").get_paginator("list_geofence_coll
 Can be used directly:
 
 ```python
-from mypy_boto3_location.paginators import ListGeofenceCollectionsPaginator
+from mypy_boto3_location.paginator import ListGeofenceCollectionsPaginator
 
 def get_list_geofence_collections_paginator() -> ListGeofenceCollectionsPaginator:
     return boto3.client("location").get_paginator("list_geofence_collections")
 ```
 
-[Paginator.ListGeofenceCollections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListGeofenceCollections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListGeofenceCollections)
 
 ```python
 class ListGeofenceCollectionsPaginator(Boto3Paginator):
@@ -71,13 +71,13 @@ Type annotations for `boto3.client("location").get_paginator("list_geofences")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_location.paginators import ListGeofencesPaginator
+from mypy_boto3_location.paginator import ListGeofencesPaginator
 
 def get_list_geofences_paginator() -> ListGeofencesPaginator:
     return boto3.client("location").get_paginator("list_geofences")
 ```
 
-[Paginator.ListGeofences documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListGeofences)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListGeofences)
 
 ```python
 class ListGeofencesPaginator(Boto3Paginator):
@@ -95,13 +95,13 @@ Type annotations for `boto3.client("location").get_paginator("list_maps")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_location.paginators import ListMapsPaginator
+from mypy_boto3_location.paginator import ListMapsPaginator
 
 def get_list_maps_paginator() -> ListMapsPaginator:
     return boto3.client("location").get_paginator("list_maps")
 ```
 
-[Paginator.ListMaps documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListMaps)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListMaps)
 
 ```python
 class ListMapsPaginator(Boto3Paginator):
@@ -118,13 +118,13 @@ Type annotations for `boto3.client("location").get_paginator("list_place_indexes
 Can be used directly:
 
 ```python
-from mypy_boto3_location.paginators import ListPlaceIndexesPaginator
+from mypy_boto3_location.paginator import ListPlaceIndexesPaginator
 
 def get_list_place_indexes_paginator() -> ListPlaceIndexesPaginator:
     return boto3.client("location").get_paginator("list_place_indexes")
 ```
 
-[Paginator.ListPlaceIndexes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListPlaceIndexes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListPlaceIndexes)
 
 ```python
 class ListPlaceIndexesPaginator(Boto3Paginator):
@@ -141,13 +141,13 @@ Type annotations for `boto3.client("location").get_paginator("list_tracker_consu
 Can be used directly:
 
 ```python
-from mypy_boto3_location.paginators import ListTrackerConsumersPaginator
+from mypy_boto3_location.paginator import ListTrackerConsumersPaginator
 
 def get_list_tracker_consumers_paginator() -> ListTrackerConsumersPaginator:
     return boto3.client("location").get_paginator("list_tracker_consumers")
 ```
 
-[Paginator.ListTrackerConsumers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListTrackerConsumers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListTrackerConsumers)
 
 ```python
 class ListTrackerConsumersPaginator(Boto3Paginator):
@@ -165,13 +165,13 @@ Type annotations for `boto3.client("location").get_paginator("list_trackers")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_location.paginators import ListTrackersPaginator
+from mypy_boto3_location.paginator import ListTrackersPaginator
 
 def get_list_trackers_paginator() -> ListTrackersPaginator:
     return boto3.client("location").get_paginator("list_trackers")
 ```
 
-[Paginator.ListTrackers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListTrackers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListTrackers)
 
 ```python
 class ListTrackersPaginator(Boto3Paginator):

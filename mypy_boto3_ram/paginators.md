@@ -20,13 +20,13 @@ Type annotations for `boto3.client("ram").get_paginator("get_resource_policies")
 Can be used directly:
 
 ```python
-from mypy_boto3_ram.paginators import GetResourcePoliciesPaginator
+from mypy_boto3_ram.paginator import GetResourcePoliciesPaginator
 
 def get_get_resource_policies_paginator() -> GetResourcePoliciesPaginator:
     return boto3.client("ram").get_paginator("get_resource_policies")
 ```
 
-[Paginator.GetResourcePolicies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourcePolicies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourcePolicies)
 
 ```python
 class GetResourcePoliciesPaginator(Boto3Paginator):
@@ -45,13 +45,13 @@ Type annotations for `boto3.client("ram").get_paginator("get_resource_share_asso
 Can be used directly:
 
 ```python
-from mypy_boto3_ram.paginators import GetResourceShareAssociationsPaginator
+from mypy_boto3_ram.paginator import GetResourceShareAssociationsPaginator
 
 def get_get_resource_share_associations_paginator() -> GetResourceShareAssociationsPaginator:
     return boto3.client("ram").get_paginator("get_resource_share_associations")
 ```
 
-[Paginator.GetResourceShareAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourceShareAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourceShareAssociations)
 
 ```python
 class GetResourceShareAssociationsPaginator(Boto3Paginator):
@@ -73,13 +73,13 @@ Type annotations for `boto3.client("ram").get_paginator("get_resource_share_invi
 Can be used directly:
 
 ```python
-from mypy_boto3_ram.paginators import GetResourceShareInvitationsPaginator
+from mypy_boto3_ram.paginator import GetResourceShareInvitationsPaginator
 
 def get_get_resource_share_invitations_paginator() -> GetResourceShareInvitationsPaginator:
     return boto3.client("ram").get_paginator("get_resource_share_invitations")
 ```
 
-[Paginator.GetResourceShareInvitations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourceShareInvitations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourceShareInvitations)
 
 ```python
 class GetResourceShareInvitationsPaginator(Boto3Paginator):
@@ -98,13 +98,13 @@ Type annotations for `boto3.client("ram").get_paginator("get_resource_shares")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ram.paginators import GetResourceSharesPaginator
+from mypy_boto3_ram.paginator import GetResourceSharesPaginator
 
 def get_get_resource_shares_paginator() -> GetResourceSharesPaginator:
     return boto3.client("ram").get_paginator("get_resource_shares")
 ```
 
-[Paginator.GetResourceShares documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourceShares)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.GetResourceShares)
 
 ```python
 class GetResourceSharesPaginator(Boto3Paginator):
@@ -126,13 +126,13 @@ Type annotations for `boto3.client("ram").get_paginator("list_principals")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ram.paginators import ListPrincipalsPaginator
+from mypy_boto3_ram.paginator import ListPrincipalsPaginator
 
 def get_list_principals_paginator() -> ListPrincipalsPaginator:
     return boto3.client("ram").get_paginator("list_principals")
 ```
 
-[Paginator.ListPrincipals documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.ListPrincipals)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.ListPrincipals)
 
 ```python
 class ListPrincipalsPaginator(Boto3Paginator):
@@ -154,13 +154,13 @@ Type annotations for `boto3.client("ram").get_paginator("list_resources")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ram.paginators import ListResourcesPaginator
+from mypy_boto3_ram.paginator import ListResourcesPaginator
 
 def get_list_resources_paginator() -> ListResourcesPaginator:
     return boto3.client("ram").get_paginator("list_resources")
 ```
 
-[Paginator.ListResources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.ListResources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Paginator.ListResources)
 
 ```python
 class ListResourcesPaginator(Boto3Paginator):

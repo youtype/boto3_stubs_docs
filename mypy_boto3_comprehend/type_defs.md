@@ -1,11 +1,11 @@
-# Structures for boto3 Comprehend module
+# Typed dictionaries for boto3 Comprehend module
 
 > [Index](../README.md) > [Comprehend](./README.md) > Structures
 
 Auto-generated documentation for [Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)
 type annotations stubs module [mypy_boto3_comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
 
-- [Structures for boto3 Comprehend module](#structures-for-boto3-comprehend-module)
+- [Typed dictionaries for boto3 Comprehend module](#typed-dictionaries-for-boto3-comprehend-module)
   - [AugmentedManifestsListItemTypeDef](#augmentedmanifestslistitemtypedef)
   - [BatchDetectDominantLanguageItemResultTypeDef](#batchdetectdominantlanguageitemresulttypedef)
   - [BatchDetectDominantLanguageResponseTypeDef](#batchdetectdominantlanguageresponsetypedef)

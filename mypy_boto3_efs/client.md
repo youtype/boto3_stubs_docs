@@ -46,7 +46,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_efs.client import EFSClient
+
+def get_efs_client() -> EFSClient:
+    return boto3.client("efs")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client)
 
 ## Exceptions
 
@@ -101,7 +106,7 @@ Exceptions:
 
 Type annotations for `boto3.client("efs").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -115,7 +120,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("efs").create_access_point` method.
 
-[Client.create_access_point documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_access_point)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_access_point]
 
 ```python
 def create_access_point(
@@ -133,7 +138,7 @@ def create_access_point(
 
 Type annotations for `boto3.client("efs").create_file_system` method.
 
-[Client.create_file_system documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_file_system)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_file_system]
 
 ```python
 def create_file_system(
@@ -155,7 +160,7 @@ def create_file_system(
 
 Type annotations for `boto3.client("efs").create_mount_target` method.
 
-[Client.create_mount_target documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_mount_target)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_mount_target]
 
 ```python
 def create_mount_target(
@@ -172,7 +177,7 @@ def create_mount_target(
 
 Type annotations for `boto3.client("efs").create_tags` method.
 
-[Client.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_tags]
 
 ```python
 def create_tags(
@@ -187,7 +192,7 @@ def create_tags(
 
 Type annotations for `boto3.client("efs").delete_access_point` method.
 
-[Client.delete_access_point documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_access_point)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_access_point]
 
 ```python
 def delete_access_point(
@@ -201,7 +206,7 @@ def delete_access_point(
 
 Type annotations for `boto3.client("efs").delete_file_system` method.
 
-[Client.delete_file_system documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_file_system)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_file_system]
 
 ```python
 def delete_file_system(
@@ -215,7 +220,7 @@ def delete_file_system(
 
 Type annotations for `boto3.client("efs").delete_file_system_policy` method.
 
-[Client.delete_file_system_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_file_system_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_file_system_policy]
 
 ```python
 def delete_file_system_policy(
@@ -229,7 +234,7 @@ def delete_file_system_policy(
 
 Type annotations for `boto3.client("efs").delete_mount_target` method.
 
-[Client.delete_mount_target documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_mount_target)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_mount_target]
 
 ```python
 def delete_mount_target(
@@ -243,7 +248,7 @@ def delete_mount_target(
 
 Type annotations for `boto3.client("efs").delete_tags` method.
 
-[Client.delete_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_tags]
 
 ```python
 def delete_tags(
@@ -258,7 +263,7 @@ def delete_tags(
 
 Type annotations for `boto3.client("efs").describe_access_points` method.
 
-[Client.describe_access_points documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_access_points)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_access_points]
 
 ```python
 def describe_access_points(
@@ -275,7 +280,7 @@ def describe_access_points(
 
 Type annotations for `boto3.client("efs").describe_backup_policy` method.
 
-[Client.describe_backup_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_backup_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_backup_policy]
 
 ```python
 def describe_backup_policy(
@@ -289,7 +294,7 @@ def describe_backup_policy(
 
 Type annotations for `boto3.client("efs").describe_file_system_policy` method.
 
-[Client.describe_file_system_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_file_system_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_file_system_policy]
 
 ```python
 def describe_file_system_policy(
@@ -303,7 +308,7 @@ def describe_file_system_policy(
 
 Type annotations for `boto3.client("efs").describe_file_systems` method.
 
-[Client.describe_file_systems documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_file_systems)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_file_systems]
 
 ```python
 def describe_file_systems(
@@ -320,7 +325,7 @@ def describe_file_systems(
 
 Type annotations for `boto3.client("efs").describe_lifecycle_configuration` method.
 
-[Client.describe_lifecycle_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_lifecycle_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_lifecycle_configuration]
 
 ```python
 def describe_lifecycle_configuration(
@@ -334,7 +339,7 @@ def describe_lifecycle_configuration(
 
 Type annotations for `boto3.client("efs").describe_mount_target_security_groups` method.
 
-[Client.describe_mount_target_security_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_mount_target_security_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_mount_target_security_groups]
 
 ```python
 def describe_mount_target_security_groups(
@@ -348,7 +353,7 @@ def describe_mount_target_security_groups(
 
 Type annotations for `boto3.client("efs").describe_mount_targets` method.
 
-[Client.describe_mount_targets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_mount_targets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_mount_targets]
 
 ```python
 def describe_mount_targets(
@@ -366,7 +371,7 @@ def describe_mount_targets(
 
 Type annotations for `boto3.client("efs").describe_tags` method.
 
-[Client.describe_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_tags]
 
 ```python
 def describe_tags(
@@ -382,7 +387,7 @@ def describe_tags(
 
 Type annotations for `boto3.client("efs").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -399,7 +404,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("efs").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -415,7 +420,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("efs").modify_mount_target_security_groups` method.
 
-[Client.modify_mount_target_security_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.modify_mount_target_security_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.modify_mount_target_security_groups]
 
 ```python
 def modify_mount_target_security_groups(
@@ -430,7 +435,7 @@ def modify_mount_target_security_groups(
 
 Type annotations for `boto3.client("efs").put_backup_policy` method.
 
-[Client.put_backup_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_backup_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_backup_policy]
 
 ```python
 def put_backup_policy(
@@ -445,7 +450,7 @@ def put_backup_policy(
 
 Type annotations for `boto3.client("efs").put_file_system_policy` method.
 
-[Client.put_file_system_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_file_system_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_file_system_policy]
 
 ```python
 def put_file_system_policy(
@@ -461,7 +466,7 @@ def put_file_system_policy(
 
 Type annotations for `boto3.client("efs").put_lifecycle_configuration` method.
 
-[Client.put_lifecycle_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_lifecycle_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_lifecycle_configuration]
 
 ```python
 def put_lifecycle_configuration(
@@ -476,7 +481,7 @@ def put_lifecycle_configuration(
 
 Type annotations for `boto3.client("efs").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -491,7 +496,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("efs").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -506,7 +511,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("efs").update_file_system` method.
 
-[Client.update_file_system documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.update_file_system)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.update_file_system]
 
 ```python
 def update_file_system(

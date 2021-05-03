@@ -23,7 +23,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_cloudsearchdomain.client import CloudSearchDomainClient
+
+def get_cloudsearchdomain_client() -> CloudSearchDomainClient:
+    return boto3.client("cloudsearchdomain")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client)
 
 ## Exceptions
 
@@ -52,7 +57,7 @@ Exceptions:
 
 Type annotations for `boto3.client("cloudsearchdomain").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -66,7 +71,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("cloudsearchdomain").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -83,7 +88,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("cloudsearchdomain").search` method.
 
-[Client.search documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.search)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.search]
 
 ```python
 def search(
@@ -110,7 +115,7 @@ def search(
 
 Type annotations for `boto3.client("cloudsearchdomain").suggest` method.
 
-[Client.suggest documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.suggest)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.suggest]
 
 ```python
 def suggest(
@@ -126,7 +131,7 @@ def suggest(
 
 Type annotations for `boto3.client("cloudsearchdomain").upload_documents` method.
 
-[Client.upload_documents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.upload_documents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.upload_documents]
 
 ```python
 def upload_documents(

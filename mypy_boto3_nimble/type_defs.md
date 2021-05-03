@@ -1,11 +1,11 @@
-# Structures for boto3 NimbleStudio module
+# Typed dictionaries for boto3 NimbleStudio module
 
 > [Index](../README.md) > [NimbleStudio](./README.md) > Structures
 
 Auto-generated documentation for [NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
 type annotations stubs module [mypy_boto3_nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
-- [Structures for boto3 NimbleStudio module](#structures-for-boto3-nimblestudio-module)
+- [Typed dictionaries for boto3 NimbleStudio module](#typed-dictionaries-for-boto3-nimblestudio-module)
   - [AcceptEulasResponseTypeDef](#accepteulasresponsetypedef)
   - [ActiveDirectoryComputerAttributeTypeDef](#activedirectorycomputerattributetypedef)
   - [ActiveDirectoryConfigurationTypeDef](#activedirectoryconfigurationtypedef)

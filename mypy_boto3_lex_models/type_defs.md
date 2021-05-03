@@ -1,11 +1,11 @@
-# Structures for boto3 LexModelBuildingService module
+# Typed dictionaries for boto3 LexModelBuildingService module
 
 > [Index](../README.md) > [LexModelBuildingService](./README.md) > Structures
 
 Auto-generated documentation for [LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
 type annotations stubs module [mypy_boto3_lex_models](https://pypi.org/project/mypy-boto3-lex-models/).
 
-- [Structures for boto3 LexModelBuildingService module](#structures-for-boto3-lexmodelbuildingservice-module)
+- [Typed dictionaries for boto3 LexModelBuildingService module](#typed-dictionaries-for-boto3-lexmodelbuildingservice-module)
   - [BotAliasMetadataTypeDef](#botaliasmetadatatypedef)
   - [BotChannelAssociationTypeDef](#botchannelassociationtypedef)
   - [BotMetadataTypeDef](#botmetadatatypedef)

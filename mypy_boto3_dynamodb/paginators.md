@@ -19,13 +19,13 @@ Type annotations for `boto3.client("dynamodb").get_paginator("list_backups")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_dynamodb.paginators import ListBackupsPaginator
+from mypy_boto3_dynamodb.paginator import ListBackupsPaginator
 
 def get_list_backups_paginator() -> ListBackupsPaginator:
     return boto3.client("dynamodb").get_paginator("list_backups")
 ```
 
-[Paginator.ListBackups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListBackups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListBackups)
 
 ```python
 class ListBackupsPaginator(Boto3Paginator):
@@ -46,13 +46,13 @@ Type annotations for `boto3.client("dynamodb").get_paginator("list_tables")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_dynamodb.paginators import ListTablesPaginator
+from mypy_boto3_dynamodb.paginator import ListTablesPaginator
 
 def get_list_tables_paginator() -> ListTablesPaginator:
     return boto3.client("dynamodb").get_paginator("list_tables")
 ```
 
-[Paginator.ListTables documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListTables)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListTables)
 
 ```python
 class ListTablesPaginator(Boto3Paginator):
@@ -69,13 +69,13 @@ Type annotations for `boto3.client("dynamodb").get_paginator("list_tags_of_resou
 Can be used directly:
 
 ```python
-from mypy_boto3_dynamodb.paginators import ListTagsOfResourcePaginator
+from mypy_boto3_dynamodb.paginator import ListTagsOfResourcePaginator
 
 def get_list_tags_of_resource_paginator() -> ListTagsOfResourcePaginator:
     return boto3.client("dynamodb").get_paginator("list_tags_of_resource")
 ```
 
-[Paginator.ListTagsOfResource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListTagsOfResource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.ListTagsOfResource)
 
 ```python
 class ListTagsOfResourcePaginator(Boto3Paginator):
@@ -93,13 +93,13 @@ Type annotations for `boto3.client("dynamodb").get_paginator("query")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_dynamodb.paginators import QueryPaginator
+from mypy_boto3_dynamodb.paginator import QueryPaginator
 
 def get_query_paginator() -> QueryPaginator:
     return boto3.client("dynamodb").get_paginator("query")
 ```
 
-[Paginator.Query documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.Query)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.Query)
 
 ```python
 class QueryPaginator(Boto3Paginator):
@@ -131,13 +131,13 @@ Type annotations for `boto3.client("dynamodb").get_paginator("scan")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_dynamodb.paginators import ScanPaginator
+from mypy_boto3_dynamodb.paginator import ScanPaginator
 
 def get_scan_paginator() -> ScanPaginator:
     return boto3.client("dynamodb").get_paginator("scan")
 ```
 
-[Paginator.Scan documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.Scan)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Paginator.Scan)
 
 ```python
 class ScanPaginator(Boto3Paginator):

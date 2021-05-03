@@ -26,13 +26,13 @@ Type annotations for `boto3.client("personalize").get_paginator("list_batch_infe
 Can be used directly:
 
 ```python
-from mypy_boto3_personalize.paginators import ListBatchInferenceJobsPaginator
+from mypy_boto3_personalize.paginator import ListBatchInferenceJobsPaginator
 
 def get_list_batch_inference_jobs_paginator() -> ListBatchInferenceJobsPaginator:
     return boto3.client("personalize").get_paginator("list_batch_inference_jobs")
 ```
 
-[Paginator.ListBatchInferenceJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListBatchInferenceJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListBatchInferenceJobs)
 
 ```python
 class ListBatchInferenceJobsPaginator(Boto3Paginator):
@@ -50,13 +50,13 @@ Type annotations for `boto3.client("personalize").get_paginator("list_campaigns"
 Can be used directly:
 
 ```python
-from mypy_boto3_personalize.paginators import ListCampaignsPaginator
+from mypy_boto3_personalize.paginator import ListCampaignsPaginator
 
 def get_list_campaigns_paginator() -> ListCampaignsPaginator:
     return boto3.client("personalize").get_paginator("list_campaigns")
 ```
 
-[Paginator.ListCampaigns documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListCampaigns)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListCampaigns)
 
 ```python
 class ListCampaignsPaginator(Boto3Paginator):
@@ -74,13 +74,13 @@ Type annotations for `boto3.client("personalize").get_paginator("list_dataset_ex
 Can be used directly:
 
 ```python
-from mypy_boto3_personalize.paginators import ListDatasetExportJobsPaginator
+from mypy_boto3_personalize.paginator import ListDatasetExportJobsPaginator
 
 def get_list_dataset_export_jobs_paginator() -> ListDatasetExportJobsPaginator:
     return boto3.client("personalize").get_paginator("list_dataset_export_jobs")
 ```
 
-[Paginator.ListDatasetExportJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListDatasetExportJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListDatasetExportJobs)
 
 ```python
 class ListDatasetExportJobsPaginator(Boto3Paginator):
@@ -98,13 +98,13 @@ Type annotations for `boto3.client("personalize").get_paginator("list_dataset_gr
 Can be used directly:
 
 ```python
-from mypy_boto3_personalize.paginators import ListDatasetGroupsPaginator
+from mypy_boto3_personalize.paginator import ListDatasetGroupsPaginator
 
 def get_list_dataset_groups_paginator() -> ListDatasetGroupsPaginator:
     return boto3.client("personalize").get_paginator("list_dataset_groups")
 ```
 
-[Paginator.ListDatasetGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListDatasetGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListDatasetGroups)
 
 ```python
 class ListDatasetGroupsPaginator(Boto3Paginator):
@@ -121,13 +121,13 @@ Type annotations for `boto3.client("personalize").get_paginator("list_dataset_im
 Can be used directly:
 
 ```python
-from mypy_boto3_personalize.paginators import ListDatasetImportJobsPaginator
+from mypy_boto3_personalize.paginator import ListDatasetImportJobsPaginator
 
 def get_list_dataset_import_jobs_paginator() -> ListDatasetImportJobsPaginator:
     return boto3.client("personalize").get_paginator("list_dataset_import_jobs")
 ```
 
-[Paginator.ListDatasetImportJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListDatasetImportJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListDatasetImportJobs)
 
 ```python
 class ListDatasetImportJobsPaginator(Boto3Paginator):
@@ -145,13 +145,13 @@ Type annotations for `boto3.client("personalize").get_paginator("list_datasets")
 Can be used directly:
 
 ```python
-from mypy_boto3_personalize.paginators import ListDatasetsPaginator
+from mypy_boto3_personalize.paginator import ListDatasetsPaginator
 
 def get_list_datasets_paginator() -> ListDatasetsPaginator:
     return boto3.client("personalize").get_paginator("list_datasets")
 ```
 
-[Paginator.ListDatasets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListDatasets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListDatasets)
 
 ```python
 class ListDatasetsPaginator(Boto3Paginator):
@@ -169,13 +169,13 @@ Type annotations for `boto3.client("personalize").get_paginator("list_event_trac
 Can be used directly:
 
 ```python
-from mypy_boto3_personalize.paginators import ListEventTrackersPaginator
+from mypy_boto3_personalize.paginator import ListEventTrackersPaginator
 
 def get_list_event_trackers_paginator() -> ListEventTrackersPaginator:
     return boto3.client("personalize").get_paginator("list_event_trackers")
 ```
 
-[Paginator.ListEventTrackers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListEventTrackers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListEventTrackers)
 
 ```python
 class ListEventTrackersPaginator(Boto3Paginator):
@@ -193,13 +193,13 @@ Type annotations for `boto3.client("personalize").get_paginator("list_filters")`
 Can be used directly:
 
 ```python
-from mypy_boto3_personalize.paginators import ListFiltersPaginator
+from mypy_boto3_personalize.paginator import ListFiltersPaginator
 
 def get_list_filters_paginator() -> ListFiltersPaginator:
     return boto3.client("personalize").get_paginator("list_filters")
 ```
 
-[Paginator.ListFilters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListFilters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListFilters)
 
 ```python
 class ListFiltersPaginator(Boto3Paginator):
@@ -217,13 +217,13 @@ Type annotations for `boto3.client("personalize").get_paginator("list_recipes")`
 Can be used directly:
 
 ```python
-from mypy_boto3_personalize.paginators import ListRecipesPaginator
+from mypy_boto3_personalize.paginator import ListRecipesPaginator
 
 def get_list_recipes_paginator() -> ListRecipesPaginator:
     return boto3.client("personalize").get_paginator("list_recipes")
 ```
 
-[Paginator.ListRecipes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListRecipes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListRecipes)
 
 ```python
 class ListRecipesPaginator(Boto3Paginator):
@@ -241,13 +241,13 @@ Type annotations for `boto3.client("personalize").get_paginator("list_schemas")`
 Can be used directly:
 
 ```python
-from mypy_boto3_personalize.paginators import ListSchemasPaginator
+from mypy_boto3_personalize.paginator import ListSchemasPaginator
 
 def get_list_schemas_paginator() -> ListSchemasPaginator:
     return boto3.client("personalize").get_paginator("list_schemas")
 ```
 
-[Paginator.ListSchemas documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListSchemas)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListSchemas)
 
 ```python
 class ListSchemasPaginator(Boto3Paginator):
@@ -264,13 +264,13 @@ Type annotations for `boto3.client("personalize").get_paginator("list_solution_v
 Can be used directly:
 
 ```python
-from mypy_boto3_personalize.paginators import ListSolutionVersionsPaginator
+from mypy_boto3_personalize.paginator import ListSolutionVersionsPaginator
 
 def get_list_solution_versions_paginator() -> ListSolutionVersionsPaginator:
     return boto3.client("personalize").get_paginator("list_solution_versions")
 ```
 
-[Paginator.ListSolutionVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListSolutionVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListSolutionVersions)
 
 ```python
 class ListSolutionVersionsPaginator(Boto3Paginator):
@@ -288,13 +288,13 @@ Type annotations for `boto3.client("personalize").get_paginator("list_solutions"
 Can be used directly:
 
 ```python
-from mypy_boto3_personalize.paginators import ListSolutionsPaginator
+from mypy_boto3_personalize.paginator import ListSolutionsPaginator
 
 def get_list_solutions_paginator() -> ListSolutionsPaginator:
     return boto3.client("personalize").get_paginator("list_solutions")
 ```
 
-[Paginator.ListSolutions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListSolutions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListSolutions)
 
 ```python
 class ListSolutionsPaginator(Boto3Paginator):

@@ -16,13 +16,13 @@ Type annotations for `boto3.client("cloudwatch").get_waiter("alarm_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudwatch.waiters import AlarmExistsWaiter
+from mypy_boto3_cloudwatch.waiter import AlarmExistsWaiter
 
 def get_alarm_exists_waiter() -> AlarmExistsWaiter:
     return boto3.client("cloudwatch").get_waiter("alarm_exists")
 ```
 
-[Waiter.AlarmExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Waiter.AlarmExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Waiter.alarm_exists)
 
 ```python
 class AlarmExistsWaiter(Boto3Waiter):
@@ -48,13 +48,13 @@ Type annotations for `boto3.client("cloudwatch").get_waiter("composite_alarm_exi
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudwatch.waiters import CompositeAlarmExistsWaiter
+from mypy_boto3_cloudwatch.waiter import CompositeAlarmExistsWaiter
 
 def get_composite_alarm_exists_waiter() -> CompositeAlarmExistsWaiter:
     return boto3.client("cloudwatch").get_waiter("composite_alarm_exists")
 ```
 
-[Waiter.CompositeAlarmExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Waiter.CompositeAlarmExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Waiter.composite_alarm_exists)
 
 ```python
 class CompositeAlarmExistsWaiter(Boto3Waiter):

@@ -16,13 +16,13 @@ Type annotations for `boto3.client("braket").get_paginator("search_devices")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_braket.paginators import SearchDevicesPaginator
+from mypy_boto3_braket.paginator import SearchDevicesPaginator
 
 def get_search_devices_paginator() -> SearchDevicesPaginator:
     return boto3.client("braket").get_paginator("search_devices")
 ```
 
-[Paginator.SearchDevices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Paginator.SearchDevices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Paginator.SearchDevices)
 
 ```python
 class SearchDevicesPaginator(Boto3Paginator):
@@ -40,13 +40,13 @@ Type annotations for `boto3.client("braket").get_paginator("search_quantum_tasks
 Can be used directly:
 
 ```python
-from mypy_boto3_braket.paginators import SearchQuantumTasksPaginator
+from mypy_boto3_braket.paginator import SearchQuantumTasksPaginator
 
 def get_search_quantum_tasks_paginator() -> SearchQuantumTasksPaginator:
     return boto3.client("braket").get_paginator("search_quantum_tasks")
 ```
 
-[Paginator.SearchQuantumTasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Paginator.SearchQuantumTasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Paginator.SearchQuantumTasks)
 
 ```python
 class SearchQuantumTasksPaginator(Boto3Paginator):

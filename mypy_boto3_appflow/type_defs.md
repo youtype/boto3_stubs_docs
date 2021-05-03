@@ -1,11 +1,11 @@
-# Structures for boto3 Appflow module
+# Typed dictionaries for boto3 Appflow module
 
 > [Index](../README.md) > [Appflow](./README.md) > Structures
 
 Auto-generated documentation for [Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
 type annotations stubs module [mypy_boto3_appflow](https://pypi.org/project/mypy-boto3-appflow/).
 
-- [Structures for boto3 Appflow module](#structures-for-boto3-appflow-module)
+- [Typed dictionaries for boto3 Appflow module](#typed-dictionaries-for-boto3-appflow-module)
   - [AggregationConfigTypeDef](#aggregationconfigtypedef)
   - [AmplitudeConnectorProfileCredentialsTypeDef](#amplitudeconnectorprofilecredentialstypedef)
   - [AmplitudeSourcePropertiesTypeDef](#amplitudesourcepropertiestypedef)

@@ -1,11 +1,11 @@
-# Structures for boto3 MediaLive module
+# Typed dictionaries for boto3 MediaLive module
 
 > [Index](../README.md) > [MediaLive](./README.md) > Structures
 
 Auto-generated documentation for [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
 type annotations stubs module [mypy_boto3_medialive](https://pypi.org/project/mypy-boto3-medialive/).
 
-- [Structures for boto3 MediaLive module](#structures-for-boto3-medialive-module)
+- [Typed dictionaries for boto3 MediaLive module](#typed-dictionaries-for-boto3-medialive-module)
   - [AacSettingsTypeDef](#aacsettingstypedef)
   - [Ac3SettingsTypeDef](#ac3settingstypedef)
   - [AncillarySourceSettingsTypeDef](#ancillarysourcesettingstypedef)
@@ -3473,16 +3473,14 @@ from mypy_boto3_medialive.type_defs import OutputTypeDef
 
 
 Required fields:
-- `OutputSettings`: `"OutputSettingsTypeDef"`
-
-
-
-Optional fields:
 - `AudioDescriptionNames`: `List[str]`
 - `CaptionDescriptionNames`: `List[str]`
 - `OutputName`: `str`
+- `OutputSettings`: `"OutputSettingsTypeDef"`
 - `VideoDescriptionName`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PaginatorConfigTypeDef

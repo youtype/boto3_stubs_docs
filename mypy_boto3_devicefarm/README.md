@@ -15,7 +15,7 @@ pip install mypy-boto3-devicefarm
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## DeviceFarmClient
 
@@ -235,7 +235,7 @@ from mypy_boto3_devicefarm.literals import ArtifactCategory, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

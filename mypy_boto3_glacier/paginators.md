@@ -18,13 +18,13 @@ Type annotations for `boto3.client("glacier").get_paginator("list_jobs")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_glacier.paginators import ListJobsPaginator
+from mypy_boto3_glacier.paginator import ListJobsPaginator
 
 def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("glacier").get_paginator("list_jobs")
 ```
 
-[Paginator.ListJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListJobs)
 
 ```python
 class ListJobsPaginator(Boto3Paginator):
@@ -45,13 +45,13 @@ Type annotations for `boto3.client("glacier").get_paginator("list_multipart_uplo
 Can be used directly:
 
 ```python
-from mypy_boto3_glacier.paginators import ListMultipartUploadsPaginator
+from mypy_boto3_glacier.paginator import ListMultipartUploadsPaginator
 
 def get_list_multipart_uploads_paginator() -> ListMultipartUploadsPaginator:
     return boto3.client("glacier").get_paginator("list_multipart_uploads")
 ```
 
-[Paginator.ListMultipartUploads documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListMultipartUploads)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListMultipartUploads)
 
 ```python
 class ListMultipartUploadsPaginator(Boto3Paginator):
@@ -70,13 +70,13 @@ Type annotations for `boto3.client("glacier").get_paginator("list_parts")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_glacier.paginators import ListPartsPaginator
+from mypy_boto3_glacier.paginator import ListPartsPaginator
 
 def get_list_parts_paginator() -> ListPartsPaginator:
     return boto3.client("glacier").get_paginator("list_parts")
 ```
 
-[Paginator.ListParts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListParts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListParts)
 
 ```python
 class ListPartsPaginator(Boto3Paginator):
@@ -96,13 +96,13 @@ Type annotations for `boto3.client("glacier").get_paginator("list_vaults")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_glacier.paginators import ListVaultsPaginator
+from mypy_boto3_glacier.paginator import ListVaultsPaginator
 
 def get_list_vaults_paginator() -> ListVaultsPaginator:
     return boto3.client("glacier").get_paginator("list_vaults")
 ```
 
-[Paginator.ListVaults documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListVaults)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListVaults)
 
 ```python
 class ListVaultsPaginator(Boto3Paginator):

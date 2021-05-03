@@ -18,13 +18,13 @@ Type annotations for `boto3.client("stepfunctions").get_paginator("get_execution
 Can be used directly:
 
 ```python
-from mypy_boto3_stepfunctions.paginators import GetExecutionHistoryPaginator
+from mypy_boto3_stepfunctions.paginator import GetExecutionHistoryPaginator
 
 def get_get_execution_history_paginator() -> GetExecutionHistoryPaginator:
     return boto3.client("stepfunctions").get_paginator("get_execution_history")
 ```
 
-[Paginator.GetExecutionHistory documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.GetExecutionHistory)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.GetExecutionHistory)
 
 ```python
 class GetExecutionHistoryPaginator(Boto3Paginator):
@@ -44,13 +44,13 @@ Type annotations for `boto3.client("stepfunctions").get_paginator("list_activiti
 Can be used directly:
 
 ```python
-from mypy_boto3_stepfunctions.paginators import ListActivitiesPaginator
+from mypy_boto3_stepfunctions.paginator import ListActivitiesPaginator
 
 def get_list_activities_paginator() -> ListActivitiesPaginator:
     return boto3.client("stepfunctions").get_paginator("list_activities")
 ```
 
-[Paginator.ListActivities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListActivities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListActivities)
 
 ```python
 class ListActivitiesPaginator(Boto3Paginator):
@@ -67,13 +67,13 @@ Type annotations for `boto3.client("stepfunctions").get_paginator("list_executio
 Can be used directly:
 
 ```python
-from mypy_boto3_stepfunctions.paginators import ListExecutionsPaginator
+from mypy_boto3_stepfunctions.paginator import ListExecutionsPaginator
 
 def get_list_executions_paginator() -> ListExecutionsPaginator:
     return boto3.client("stepfunctions").get_paginator("list_executions")
 ```
 
-[Paginator.ListExecutions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListExecutions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListExecutions)
 
 ```python
 class ListExecutionsPaginator(Boto3Paginator):
@@ -92,13 +92,13 @@ Type annotations for `boto3.client("stepfunctions").get_paginator("list_state_ma
 Can be used directly:
 
 ```python
-from mypy_boto3_stepfunctions.paginators import ListStateMachinesPaginator
+from mypy_boto3_stepfunctions.paginator import ListStateMachinesPaginator
 
 def get_list_state_machines_paginator() -> ListStateMachinesPaginator:
     return boto3.client("stepfunctions").get_paginator("list_state_machines")
 ```
 
-[Paginator.ListStateMachines documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListStateMachines)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListStateMachines)
 
 ```python
 class ListStateMachinesPaginator(Boto3Paginator):

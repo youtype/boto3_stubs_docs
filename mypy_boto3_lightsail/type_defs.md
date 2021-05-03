@@ -1,11 +1,11 @@
-# Structures for boto3 Lightsail module
+# Typed dictionaries for boto3 Lightsail module
 
 > [Index](../README.md) > [Lightsail](./README.md) > Structures
 
 Auto-generated documentation for [Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
 type annotations stubs module [mypy_boto3_lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
 
-- [Structures for boto3 Lightsail module](#structures-for-boto3-lightsail-module)
+- [Typed dictionaries for boto3 Lightsail module](#typed-dictionaries-for-boto3-lightsail-module)
   - [AddOnRequestTypeDef](#addonrequesttypedef)
   - [AddOnTypeDef](#addontypedef)
   - [AlarmTypeDef](#alarmtypedef)

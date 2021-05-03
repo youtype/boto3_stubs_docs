@@ -24,13 +24,13 @@ Type annotations for `boto3.client("medialive").get_paginator("describe_schedule
 Can be used directly:
 
 ```python
-from mypy_boto3_medialive.paginators import DescribeSchedulePaginator
+from mypy_boto3_medialive.paginator import DescribeSchedulePaginator
 
 def get_describe_schedule_paginator() -> DescribeSchedulePaginator:
     return boto3.client("medialive").get_paginator("describe_schedule")
 ```
 
-[Paginator.DescribeSchedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.DescribeSchedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.DescribeSchedule)
 
 ```python
 class DescribeSchedulePaginator(Boto3Paginator):
@@ -48,13 +48,13 @@ Type annotations for `boto3.client("medialive").get_paginator("list_channels")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_medialive.paginators import ListChannelsPaginator
+from mypy_boto3_medialive.paginator import ListChannelsPaginator
 
 def get_list_channels_paginator() -> ListChannelsPaginator:
     return boto3.client("medialive").get_paginator("list_channels")
 ```
 
-[Paginator.ListChannels documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListChannels)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListChannels)
 
 ```python
 class ListChannelsPaginator(Boto3Paginator):
@@ -71,13 +71,13 @@ Type annotations for `boto3.client("medialive").get_paginator("list_input_device
 Can be used directly:
 
 ```python
-from mypy_boto3_medialive.paginators import ListInputDeviceTransfersPaginator
+from mypy_boto3_medialive.paginator import ListInputDeviceTransfersPaginator
 
 def get_list_input_device_transfers_paginator() -> ListInputDeviceTransfersPaginator:
     return boto3.client("medialive").get_paginator("list_input_device_transfers")
 ```
 
-[Paginator.ListInputDeviceTransfers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputDeviceTransfers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputDeviceTransfers)
 
 ```python
 class ListInputDeviceTransfersPaginator(Boto3Paginator):
@@ -95,13 +95,13 @@ Type annotations for `boto3.client("medialive").get_paginator("list_input_device
 Can be used directly:
 
 ```python
-from mypy_boto3_medialive.paginators import ListInputDevicesPaginator
+from mypy_boto3_medialive.paginator import ListInputDevicesPaginator
 
 def get_list_input_devices_paginator() -> ListInputDevicesPaginator:
     return boto3.client("medialive").get_paginator("list_input_devices")
 ```
 
-[Paginator.ListInputDevices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputDevices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputDevices)
 
 ```python
 class ListInputDevicesPaginator(Boto3Paginator):
@@ -118,13 +118,13 @@ Type annotations for `boto3.client("medialive").get_paginator("list_input_securi
 Can be used directly:
 
 ```python
-from mypy_boto3_medialive.paginators import ListInputSecurityGroupsPaginator
+from mypy_boto3_medialive.paginator import ListInputSecurityGroupsPaginator
 
 def get_list_input_security_groups_paginator() -> ListInputSecurityGroupsPaginator:
     return boto3.client("medialive").get_paginator("list_input_security_groups")
 ```
 
-[Paginator.ListInputSecurityGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputSecurityGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputSecurityGroups)
 
 ```python
 class ListInputSecurityGroupsPaginator(Boto3Paginator):
@@ -141,13 +141,13 @@ Type annotations for `boto3.client("medialive").get_paginator("list_inputs")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_medialive.paginators import ListInputsPaginator
+from mypy_boto3_medialive.paginator import ListInputsPaginator
 
 def get_list_inputs_paginator() -> ListInputsPaginator:
     return boto3.client("medialive").get_paginator("list_inputs")
 ```
 
-[Paginator.ListInputs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputs)
 
 ```python
 class ListInputsPaginator(Boto3Paginator):
@@ -164,13 +164,13 @@ Type annotations for `boto3.client("medialive").get_paginator("list_multiplex_pr
 Can be used directly:
 
 ```python
-from mypy_boto3_medialive.paginators import ListMultiplexProgramsPaginator
+from mypy_boto3_medialive.paginator import ListMultiplexProgramsPaginator
 
 def get_list_multiplex_programs_paginator() -> ListMultiplexProgramsPaginator:
     return boto3.client("medialive").get_paginator("list_multiplex_programs")
 ```
 
-[Paginator.ListMultiplexPrograms documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListMultiplexPrograms)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListMultiplexPrograms)
 
 ```python
 class ListMultiplexProgramsPaginator(Boto3Paginator):
@@ -188,13 +188,13 @@ Type annotations for `boto3.client("medialive").get_paginator("list_multiplexes"
 Can be used directly:
 
 ```python
-from mypy_boto3_medialive.paginators import ListMultiplexesPaginator
+from mypy_boto3_medialive.paginator import ListMultiplexesPaginator
 
 def get_list_multiplexes_paginator() -> ListMultiplexesPaginator:
     return boto3.client("medialive").get_paginator("list_multiplexes")
 ```
 
-[Paginator.ListMultiplexes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListMultiplexes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListMultiplexes)
 
 ```python
 class ListMultiplexesPaginator(Boto3Paginator):
@@ -211,13 +211,13 @@ Type annotations for `boto3.client("medialive").get_paginator("list_offerings")`
 Can be used directly:
 
 ```python
-from mypy_boto3_medialive.paginators import ListOfferingsPaginator
+from mypy_boto3_medialive.paginator import ListOfferingsPaginator
 
 def get_list_offerings_paginator() -> ListOfferingsPaginator:
     return boto3.client("medialive").get_paginator("list_offerings")
 ```
 
-[Paginator.ListOfferings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListOfferings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListOfferings)
 
 ```python
 class ListOfferingsPaginator(Boto3Paginator):
@@ -244,13 +244,13 @@ Type annotations for `boto3.client("medialive").get_paginator("list_reservations
 Can be used directly:
 
 ```python
-from mypy_boto3_medialive.paginators import ListReservationsPaginator
+from mypy_boto3_medialive.paginator import ListReservationsPaginator
 
 def get_list_reservations_paginator() -> ListReservationsPaginator:
     return boto3.client("medialive").get_paginator("list_reservations")
 ```
 
-[Paginator.ListReservations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListReservations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListReservations)
 
 ```python
 class ListReservationsPaginator(Boto3Paginator):

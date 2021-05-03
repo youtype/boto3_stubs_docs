@@ -19,13 +19,13 @@ Type annotations for `boto3.client("elbv2").get_waiter("load_balancer_available"
 Can be used directly:
 
 ```python
-from mypy_boto3_elbv2.waiters import LoadBalancerAvailableWaiter
+from mypy_boto3_elbv2.waiter import LoadBalancerAvailableWaiter
 
 def get_load_balancer_available_waiter() -> LoadBalancerAvailableWaiter:
     return boto3.client("elbv2").get_waiter("load_balancer_available")
 ```
 
-[Waiter.LoadBalancerAvailable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.LoadBalancerAvailable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.load_balancer_available)
 
 ```python
 class LoadBalancerAvailableWaiter(Boto3Waiter):
@@ -46,13 +46,13 @@ Type annotations for `boto3.client("elbv2").get_waiter("load_balancer_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_elbv2.waiters import LoadBalancerExistsWaiter
+from mypy_boto3_elbv2.waiter import LoadBalancerExistsWaiter
 
 def get_load_balancer_exists_waiter() -> LoadBalancerExistsWaiter:
     return boto3.client("elbv2").get_waiter("load_balancer_exists")
 ```
 
-[Waiter.LoadBalancerExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.LoadBalancerExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.load_balancer_exists)
 
 ```python
 class LoadBalancerExistsWaiter(Boto3Waiter):
@@ -73,13 +73,13 @@ Type annotations for `boto3.client("elbv2").get_waiter("load_balancers_deleted")
 Can be used directly:
 
 ```python
-from mypy_boto3_elbv2.waiters import LoadBalancersDeletedWaiter
+from mypy_boto3_elbv2.waiter import LoadBalancersDeletedWaiter
 
 def get_load_balancers_deleted_waiter() -> LoadBalancersDeletedWaiter:
     return boto3.client("elbv2").get_waiter("load_balancers_deleted")
 ```
 
-[Waiter.LoadBalancersDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.LoadBalancersDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.load_balancers_deleted)
 
 ```python
 class LoadBalancersDeletedWaiter(Boto3Waiter):
@@ -100,13 +100,13 @@ Type annotations for `boto3.client("elbv2").get_waiter("target_deregistered")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_elbv2.waiters import TargetDeregisteredWaiter
+from mypy_boto3_elbv2.waiter import TargetDeregisteredWaiter
 
 def get_target_deregistered_waiter() -> TargetDeregisteredWaiter:
     return boto3.client("elbv2").get_waiter("target_deregistered")
 ```
 
-[Waiter.TargetDeregistered documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.TargetDeregistered)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.target_deregistered)
 
 ```python
 class TargetDeregisteredWaiter(Boto3Waiter):
@@ -125,13 +125,13 @@ Type annotations for `boto3.client("elbv2").get_waiter("target_in_service")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_elbv2.waiters import TargetInServiceWaiter
+from mypy_boto3_elbv2.waiter import TargetInServiceWaiter
 
 def get_target_in_service_waiter() -> TargetInServiceWaiter:
     return boto3.client("elbv2").get_waiter("target_in_service")
 ```
 
-[Waiter.TargetInService documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.TargetInService)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.target_in_service)
 
 ```python
 class TargetInServiceWaiter(Boto3Waiter):

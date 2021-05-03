@@ -1,11 +1,11 @@
-# Structures for boto3 IoTDataPlane module
+# Typed dictionaries for boto3 IoTDataPlane module
 
 > [Index](../README.md) > [IoTDataPlane](./README.md) > Structures
 
 Auto-generated documentation for [IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane)
 type annotations stubs module [mypy_boto3_iot_data](https://pypi.org/project/mypy-boto3-iot-data/).
 
-- [Structures for boto3 IoTDataPlane module](#structures-for-boto3-iotdataplane-module)
+- [Typed dictionaries for boto3 IoTDataPlane module](#typed-dictionaries-for-boto3-iotdataplane-module)
   - [DeleteThingShadowResponseTypeDef](#deletethingshadowresponsetypedef)
   - [GetThingShadowResponseTypeDef](#getthingshadowresponsetypedef)
   - [ListNamedShadowsForThingResponseTypeDef](#listnamedshadowsforthingresponsetypedef)

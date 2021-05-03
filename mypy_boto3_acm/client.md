@@ -37,7 +37,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_acm.client import ACMClient
+
+def get_acm_client() -> ACMClient:
+    return boto3.client("acm")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client)
 
 ## Exceptions
 
@@ -80,7 +85,7 @@ Exceptions:
 
 Type annotations for `boto3.client("acm").add_tags_to_certificate` method.
 
-[Client.add_tags_to_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.add_tags_to_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.add_tags_to_certificate]
 
 ```python
 def add_tags_to_certificate(
@@ -95,7 +100,7 @@ def add_tags_to_certificate(
 
 Type annotations for `boto3.client("acm").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -109,7 +114,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("acm").delete_certificate` method.
 
-[Client.delete_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.delete_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.delete_certificate]
 
 ```python
 def delete_certificate(
@@ -123,7 +128,7 @@ def delete_certificate(
 
 Type annotations for `boto3.client("acm").describe_certificate` method.
 
-[Client.describe_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.describe_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.describe_certificate]
 
 ```python
 def describe_certificate(
@@ -137,7 +142,7 @@ def describe_certificate(
 
 Type annotations for `boto3.client("acm").export_certificate` method.
 
-[Client.export_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.export_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.export_certificate]
 
 ```python
 def export_certificate(
@@ -152,7 +157,7 @@ def export_certificate(
 
 Type annotations for `boto3.client("acm").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -169,7 +174,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("acm").get_account_configuration` method.
 
-[Client.get_account_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.get_account_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.get_account_configuration]
 
 ```python
 def get_account_configuration(
@@ -182,7 +187,7 @@ def get_account_configuration(
 
 Type annotations for `boto3.client("acm").get_certificate` method.
 
-[Client.get_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.get_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.get_certificate]
 
 ```python
 def get_certificate(
@@ -196,7 +201,7 @@ def get_certificate(
 
 Type annotations for `boto3.client("acm").import_certificate` method.
 
-[Client.import_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.import_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.import_certificate]
 
 ```python
 def import_certificate(
@@ -214,7 +219,7 @@ def import_certificate(
 
 Type annotations for `boto3.client("acm").list_certificates` method.
 
-[Client.list_certificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.list_certificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.list_certificates]
 
 ```python
 def list_certificates(
@@ -231,7 +236,7 @@ def list_certificates(
 
 Type annotations for `boto3.client("acm").list_tags_for_certificate` method.
 
-[Client.list_tags_for_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.list_tags_for_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.list_tags_for_certificate]
 
 ```python
 def list_tags_for_certificate(
@@ -245,7 +250,7 @@ def list_tags_for_certificate(
 
 Type annotations for `boto3.client("acm").put_account_configuration` method.
 
-[Client.put_account_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.put_account_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.put_account_configuration]
 
 ```python
 def put_account_configuration(
@@ -260,7 +265,7 @@ def put_account_configuration(
 
 Type annotations for `boto3.client("acm").remove_tags_from_certificate` method.
 
-[Client.remove_tags_from_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.remove_tags_from_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.remove_tags_from_certificate]
 
 ```python
 def remove_tags_from_certificate(
@@ -275,7 +280,7 @@ def remove_tags_from_certificate(
 
 Type annotations for `boto3.client("acm").renew_certificate` method.
 
-[Client.renew_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.renew_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.renew_certificate]
 
 ```python
 def renew_certificate(
@@ -289,7 +294,7 @@ def renew_certificate(
 
 Type annotations for `boto3.client("acm").request_certificate` method.
 
-[Client.request_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.request_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.request_certificate]
 
 ```python
 def request_certificate(
@@ -310,7 +315,7 @@ def request_certificate(
 
 Type annotations for `boto3.client("acm").resend_validation_email` method.
 
-[Client.resend_validation_email documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.resend_validation_email)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.resend_validation_email]
 
 ```python
 def resend_validation_email(
@@ -326,7 +331,7 @@ def resend_validation_email(
 
 Type annotations for `boto3.client("acm").update_certificate_options` method.
 
-[Client.update_certificate_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.update_certificate_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.update_certificate_options]
 
 ```python
 def update_certificate_options(

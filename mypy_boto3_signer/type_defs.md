@@ -1,11 +1,11 @@
-# Structures for boto3 Signer module
+# Typed dictionaries for boto3 Signer module
 
 > [Index](../README.md) > [Signer](./README.md) > Structures
 
 Auto-generated documentation for [Signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer)
 type annotations stubs module [mypy_boto3_signer](https://pypi.org/project/mypy-boto3-signer/).
 
-- [Structures for boto3 Signer module](#structures-for-boto3-signer-module)
+- [Typed dictionaries for boto3 Signer module](#typed-dictionaries-for-boto3-signer-module)
   - [AddProfilePermissionResponseTypeDef](#addprofilepermissionresponsetypedef)
   - [DescribeSigningJobResponseTypeDef](#describesigningjobresponsetypedef)
   - [DestinationTypeDef](#destinationtypedef)

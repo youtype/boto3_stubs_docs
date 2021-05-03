@@ -17,13 +17,13 @@ Type annotations for `boto3.client("cloudhsm").get_paginator("list_hapgs")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudhsm.paginators import ListHapgsPaginator
+from mypy_boto3_cloudhsm.paginator import ListHapgsPaginator
 
 def get_list_hapgs_paginator() -> ListHapgsPaginator:
     return boto3.client("cloudhsm").get_paginator("list_hapgs")
 ```
 
-[Paginator.ListHapgs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Paginator.ListHapgs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Paginator.ListHapgs)
 
 ```python
 class ListHapgsPaginator(Boto3Paginator):
@@ -40,13 +40,13 @@ Type annotations for `boto3.client("cloudhsm").get_paginator("list_hsms")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudhsm.paginators import ListHsmsPaginator
+from mypy_boto3_cloudhsm.paginator import ListHsmsPaginator
 
 def get_list_hsms_paginator() -> ListHsmsPaginator:
     return boto3.client("cloudhsm").get_paginator("list_hsms")
 ```
 
-[Paginator.ListHsms documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Paginator.ListHsms)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Paginator.ListHsms)
 
 ```python
 class ListHsmsPaginator(Boto3Paginator):
@@ -63,13 +63,13 @@ Type annotations for `boto3.client("cloudhsm").get_paginator("list_luna_clients"
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudhsm.paginators import ListLunaClientsPaginator
+from mypy_boto3_cloudhsm.paginator import ListLunaClientsPaginator
 
 def get_list_luna_clients_paginator() -> ListLunaClientsPaginator:
     return boto3.client("cloudhsm").get_paginator("list_luna_clients")
 ```
 
-[Paginator.ListLunaClients documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Paginator.ListLunaClients)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Paginator.ListLunaClients)
 
 ```python
 class ListLunaClientsPaginator(Boto3Paginator):

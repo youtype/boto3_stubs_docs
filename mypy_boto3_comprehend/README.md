@@ -15,7 +15,7 @@ pip install mypy-boto3-comprehend
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ComprehendClient
 
@@ -186,7 +186,7 @@ from mypy_boto3_comprehend.literals import DocumentClassifierDataFormat, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

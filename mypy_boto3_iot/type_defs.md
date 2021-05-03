@@ -1,11 +1,11 @@
-# Structures for boto3 IoT module
+# Typed dictionaries for boto3 IoT module
 
 > [Index](../README.md) > [IoT](./README.md) > Structures
 
 Auto-generated documentation for [IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
 type annotations stubs module [mypy_boto3_iot](https://pypi.org/project/mypy-boto3-iot/).
 
-- [Structures for boto3 IoT module](#structures-for-boto3-iot-module)
+- [Typed dictionaries for boto3 IoT module](#typed-dictionaries-for-boto3-iot-module)
   - [AbortConfigTypeDef](#abortconfigtypedef)
   - [AbortCriteriaTypeDef](#abortcriteriatypedef)
   - [ActionTypeDef](#actiontypedef)

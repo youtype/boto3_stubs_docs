@@ -1,11 +1,11 @@
-# Structures for boto3 Kinesis module
+# Typed dictionaries for boto3 Kinesis module
 
 > [Index](../README.md) > [Kinesis](./README.md) > Structures
 
 Auto-generated documentation for [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
 type annotations stubs module [mypy_boto3_kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
 
-- [Structures for boto3 Kinesis module](#structures-for-boto3-kinesis-module)
+- [Typed dictionaries for boto3 Kinesis module](#typed-dictionaries-for-boto3-kinesis-module)
   - [ChildShardTypeDef](#childshardtypedef)
   - [ConsumerDescriptionTypeDef](#consumerdescriptiontypedef)
   - [ConsumerTypeDef](#consumertypedef)
@@ -110,11 +110,9 @@ from mypy_boto3_kinesis.type_defs import DescribeLimitsOutputTypeDef
 Required fields:
 - `ShardLimit`: `int`
 - `OpenShardCount`: `int`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeStreamConsumerOutputTypeDef
@@ -126,11 +124,9 @@ from mypy_boto3_kinesis.type_defs import DescribeStreamConsumerOutputTypeDef
 
 Required fields:
 - `ConsumerDescription`: `"ConsumerDescriptionTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeStreamOutputTypeDef
@@ -142,11 +138,9 @@ from mypy_boto3_kinesis.type_defs import DescribeStreamOutputTypeDef
 
 Required fields:
 - `StreamDescription`: `"StreamDescriptionTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeStreamSummaryOutputTypeDef
@@ -158,11 +152,9 @@ from mypy_boto3_kinesis.type_defs import DescribeStreamSummaryOutputTypeDef
 
 Required fields:
 - `StreamDescriptionSummary`: `"StreamDescriptionSummaryTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## EnhancedMetricsTypeDef
@@ -185,13 +177,13 @@ from mypy_boto3_kinesis.type_defs import EnhancedMonitoringOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `StreamName`: `str`
 - `CurrentShardLevelMetrics`: `List[MetricsName]`
 - `DesiredShardLevelMetrics`: `List[MetricsName]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetRecordsOutputTypeDef
@@ -203,14 +195,12 @@ from mypy_boto3_kinesis.type_defs import GetRecordsOutputTypeDef
 
 Required fields:
 - `Records`: `List["RecordTypeDef"]`
-
-
-
-Optional fields:
 - `NextShardIterator`: `str`
 - `MillisBehindLatest`: `int`
 - `ChildShards`: `List["ChildShardTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetShardIteratorOutputTypeDef
@@ -220,11 +210,11 @@ from mypy_boto3_kinesis.type_defs import GetShardIteratorOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ShardIterator`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## HashKeyRangeTypeDef
@@ -339,12 +329,12 @@ from mypy_boto3_kinesis.type_defs import ListShardsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Shards`: `List["ShardTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListStreamConsumersOutputTypeDef
@@ -354,12 +344,12 @@ from mypy_boto3_kinesis.type_defs import ListStreamConsumersOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Consumers`: `List["ConsumerTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListStreamsOutputTypeDef
@@ -372,11 +362,9 @@ from mypy_boto3_kinesis.type_defs import ListStreamsOutputTypeDef
 Required fields:
 - `StreamNames`: `List[str]`
 - `HasMoreStreams`: `bool`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagsForStreamOutputTypeDef
@@ -389,11 +377,9 @@ from mypy_boto3_kinesis.type_defs import ListTagsForStreamOutputTypeDef
 Required fields:
 - `Tags`: `List["TagTypeDef"]`
 - `HasMoreTags`: `bool`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PaginatorConfigTypeDef
@@ -421,12 +407,10 @@ from mypy_boto3_kinesis.type_defs import PutRecordOutputTypeDef
 Required fields:
 - `ShardId`: `str`
 - `SequenceNumber`: `str`
-
-
-
-Optional fields:
 - `EncryptionType`: `EncryptionType`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PutRecordsOutputTypeDef
@@ -437,14 +421,12 @@ from mypy_boto3_kinesis.type_defs import PutRecordsOutputTypeDef
 
 
 Required fields:
-- `Records`: `List["PutRecordsResultEntryTypeDef"]`
-
-
-
-Optional fields:
 - `FailedRecordCount`: `int`
+- `Records`: `List["PutRecordsResultEntryTypeDef"]`
 - `EncryptionType`: `EncryptionType`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PutRecordsRequestEntryTypeDef
@@ -508,11 +490,9 @@ from mypy_boto3_kinesis.type_defs import RegisterStreamConsumerOutputTypeDef
 
 Required fields:
 - `Consumer`: `"ConsumerTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ResourceInUseExceptionTypeDef
@@ -726,11 +706,9 @@ from mypy_boto3_kinesis.type_defs import SubscribeToShardOutputTypeDef
 
 Required fields:
 - `EventStream`: `"SubscribeToShardEventStreamTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## TagTypeDef
@@ -756,13 +734,13 @@ from mypy_boto3_kinesis.type_defs import UpdateShardCountOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `StreamName`: `str`
 - `CurrentShardCount`: `int`
 - `TargetShardCount`: `int`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## WaiterConfigTypeDef

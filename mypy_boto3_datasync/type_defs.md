@@ -1,11 +1,11 @@
-# Structures for boto3 DataSync module
+# Typed dictionaries for boto3 DataSync module
 
 > [Index](../README.md) > [DataSync](./README.md) > Structures
 
 Auto-generated documentation for [DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
 type annotations stubs module [mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
 
-- [Structures for boto3 DataSync module](#structures-for-boto3-datasync-module)
+- [Typed dictionaries for boto3 DataSync module](#typed-dictionaries-for-boto3-datasync-module)
   - [AgentListEntryTypeDef](#agentlistentrytypedef)
   - [CreateAgentResponseTypeDef](#createagentresponsetypedef)
   - [CreateLocationEfsResponseTypeDef](#createlocationefsresponsetypedef)

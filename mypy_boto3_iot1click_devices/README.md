@@ -15,7 +15,7 @@ pip install mypy-boto3-iot1click-devices
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## IoT1ClickDevicesServiceClient
 
@@ -102,7 +102,7 @@ from mypy_boto3_iot1click_devices.literals import ListDeviceEventsPaginatorName,
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

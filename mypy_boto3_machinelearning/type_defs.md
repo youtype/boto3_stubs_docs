@@ -1,11 +1,11 @@
-# Structures for boto3 MachineLearning module
+# Typed dictionaries for boto3 MachineLearning module
 
 > [Index](../README.md) > [MachineLearning](./README.md) > Structures
 
 Auto-generated documentation for [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
 type annotations stubs module [mypy_boto3_machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
-- [Structures for boto3 MachineLearning module](#structures-for-boto3-machinelearning-module)
+- [Typed dictionaries for boto3 MachineLearning module](#typed-dictionaries-for-boto3-machinelearning-module)
   - [AddTagsOutputTypeDef](#addtagsoutputtypedef)
   - [BatchPredictionTypeDef](#batchpredictiontypedef)
   - [CreateBatchPredictionOutputTypeDef](#createbatchpredictionoutputtypedef)
@@ -62,12 +62,12 @@ from mypy_boto3_machinelearning.type_defs import AddTagsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ResourceId`: `str`
 - `ResourceType`: `TaggableResourceType`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchPredictionTypeDef
@@ -105,11 +105,11 @@ from mypy_boto3_machinelearning.type_defs import CreateBatchPredictionOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BatchPredictionId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateDataSourceFromRDSOutputTypeDef
@@ -119,11 +119,11 @@ from mypy_boto3_machinelearning.type_defs import CreateDataSourceFromRDSOutputTy
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DataSourceId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateDataSourceFromRedshiftOutputTypeDef
@@ -133,11 +133,11 @@ from mypy_boto3_machinelearning.type_defs import CreateDataSourceFromRedshiftOut
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DataSourceId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateDataSourceFromS3OutputTypeDef
@@ -147,11 +147,11 @@ from mypy_boto3_machinelearning.type_defs import CreateDataSourceFromS3OutputTyp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DataSourceId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateEvaluationOutputTypeDef
@@ -161,11 +161,11 @@ from mypy_boto3_machinelearning.type_defs import CreateEvaluationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `EvaluationId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateMLModelOutputTypeDef
@@ -175,11 +175,11 @@ from mypy_boto3_machinelearning.type_defs import CreateMLModelOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `MLModelId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateRealtimeEndpointOutputTypeDef
@@ -189,12 +189,12 @@ from mypy_boto3_machinelearning.type_defs import CreateRealtimeEndpointOutputTyp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `MLModelId`: `str`
 - `RealtimeEndpointInfo`: `"RealtimeEndpointInfoTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DataSourceTypeDef
@@ -234,11 +234,11 @@ from mypy_boto3_machinelearning.type_defs import DeleteBatchPredictionOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BatchPredictionId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteDataSourceOutputTypeDef
@@ -248,11 +248,11 @@ from mypy_boto3_machinelearning.type_defs import DeleteDataSourceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DataSourceId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteEvaluationOutputTypeDef
@@ -262,11 +262,11 @@ from mypy_boto3_machinelearning.type_defs import DeleteEvaluationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `EvaluationId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteMLModelOutputTypeDef
@@ -276,11 +276,11 @@ from mypy_boto3_machinelearning.type_defs import DeleteMLModelOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `MLModelId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteRealtimeEndpointOutputTypeDef
@@ -290,12 +290,12 @@ from mypy_boto3_machinelearning.type_defs import DeleteRealtimeEndpointOutputTyp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `MLModelId`: `str`
 - `RealtimeEndpointInfo`: `"RealtimeEndpointInfoTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteTagsOutputTypeDef
@@ -305,12 +305,12 @@ from mypy_boto3_machinelearning.type_defs import DeleteTagsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ResourceId`: `str`
 - `ResourceType`: `TaggableResourceType`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeBatchPredictionsOutputTypeDef
@@ -320,12 +320,12 @@ from mypy_boto3_machinelearning.type_defs import DescribeBatchPredictionsOutputT
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Results`: `List["BatchPredictionTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeDataSourcesOutputTypeDef
@@ -335,12 +335,12 @@ from mypy_boto3_machinelearning.type_defs import DescribeDataSourcesOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Results`: `List["DataSourceTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeEvaluationsOutputTypeDef
@@ -350,12 +350,12 @@ from mypy_boto3_machinelearning.type_defs import DescribeEvaluationsOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Results`: `List["EvaluationTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeMLModelsOutputTypeDef
@@ -365,12 +365,12 @@ from mypy_boto3_machinelearning.type_defs import DescribeMLModelsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Results`: `List["MLModelTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeTagsOutputTypeDef
@@ -380,13 +380,13 @@ from mypy_boto3_machinelearning.type_defs import DescribeTagsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ResourceId`: `str`
 - `ResourceType`: `TaggableResourceType`
 - `Tags`: `List["TagTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## EvaluationTypeDef
@@ -422,9 +422,7 @@ from mypy_boto3_machinelearning.type_defs import GetBatchPredictionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BatchPredictionId`: `str`
 - `MLModelId`: `str`
 - `BatchPredictionDataSourceId`: `str`
@@ -445,6 +443,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## GetDataSourceOutputTypeDef
 
 ```python
@@ -452,9 +452,7 @@ from mypy_boto3_machinelearning.type_defs import GetDataSourceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DataSourceId`: `str`
 - `DataLocationS3`: `str`
 - `DataRearrangement`: `str`
@@ -478,6 +476,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## GetEvaluationOutputTypeDef
 
 ```python
@@ -485,9 +485,7 @@ from mypy_boto3_machinelearning.type_defs import GetEvaluationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `EvaluationId`: `str`
 - `MLModelId`: `str`
 - `EvaluationDataSourceId`: `str`
@@ -506,6 +504,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## GetMLModelOutputTypeDef
 
 ```python
@@ -513,9 +513,7 @@ from mypy_boto3_machinelearning.type_defs import GetMLModelOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `MLModelId`: `str`
 - `TrainingDataSourceId`: `str`
 - `CreatedByIamUser`: `str`
@@ -538,6 +536,8 @@ Optional fields:
 - `Recipe`: `str`
 - `Schema`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## MLModelTypeDef
@@ -606,11 +606,11 @@ from mypy_boto3_machinelearning.type_defs import PredictOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Prediction`: `"PredictionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PredictionTypeDef
@@ -836,11 +836,11 @@ from mypy_boto3_machinelearning.type_defs import UpdateBatchPredictionOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BatchPredictionId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateDataSourceOutputTypeDef
@@ -850,11 +850,11 @@ from mypy_boto3_machinelearning.type_defs import UpdateDataSourceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DataSourceId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateEvaluationOutputTypeDef
@@ -864,11 +864,11 @@ from mypy_boto3_machinelearning.type_defs import UpdateEvaluationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `EvaluationId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateMLModelOutputTypeDef
@@ -878,11 +878,11 @@ from mypy_boto3_machinelearning.type_defs import UpdateMLModelOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `MLModelId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## WaiterConfigTypeDef

@@ -1,11 +1,11 @@
-# Structures for boto3 ElasticsearchService module
+# Typed dictionaries for boto3 ElasticsearchService module
 
 > [Index](../README.md) > [ElasticsearchService](./README.md) > Structures
 
 Auto-generated documentation for [ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
 type annotations stubs module [mypy_boto3_es](https://pypi.org/project/mypy-boto3-es/).
 
-- [Structures for boto3 ElasticsearchService module](#structures-for-boto3-elasticsearchservice-module)
+- [Typed dictionaries for boto3 ElasticsearchService module](#typed-dictionaries-for-boto3-elasticsearchservice-module)
   - [AcceptInboundCrossClusterSearchConnectionResponseTypeDef](#acceptinboundcrossclustersearchconnectionresponsetypedef)
   - [AccessPoliciesStatusTypeDef](#accesspoliciesstatustypedef)
   - [AdditionalLimitTypeDef](#additionallimittypedef)
@@ -278,12 +278,12 @@ from mypy_boto3_es.type_defs import AutoTuneOptionsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `State`: `AutoTuneState`
 - `ErrorMessage`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## AutoTuneOptionsStatusTypeDef
@@ -1499,15 +1499,15 @@ from mypy_boto3_es.type_defs import SAMLOptionsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Enabled`: `bool`
 - `Idp`: `"SAMLIdpTypeDef"`
 - `SubjectKey`: `str`
 - `RolesKey`: `str`
 - `SessionTimeoutMinutes`: `int`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ScheduledAutoTuneDetailsTypeDef

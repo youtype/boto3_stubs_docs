@@ -15,7 +15,7 @@ pip install mypy-boto3-codepipeline
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## CodePipelineClient
 
@@ -184,7 +184,7 @@ from mypy_boto3_codepipeline.literals import ActionCategory, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

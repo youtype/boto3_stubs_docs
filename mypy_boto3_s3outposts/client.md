@@ -24,7 +24,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_s3outposts.client import S3OutpostsClient
+
+def get_s3outposts_client() -> S3OutpostsClient:
+    return boto3.client("s3outposts")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client)
 
 ## Exceptions
 
@@ -56,7 +61,7 @@ Exceptions:
 
 Type annotations for `boto3.client("s3outposts").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -70,7 +75,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("s3outposts").create_endpoint` method.
 
-[Client.create_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.create_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.create_endpoint]
 
 ```python
 def create_endpoint(
@@ -86,7 +91,7 @@ def create_endpoint(
 
 Type annotations for `boto3.client("s3outposts").delete_endpoint` method.
 
-[Client.delete_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.delete_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.delete_endpoint]
 
 ```python
 def delete_endpoint(
@@ -101,7 +106,7 @@ def delete_endpoint(
 
 Type annotations for `boto3.client("s3outposts").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -118,7 +123,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("s3outposts").list_endpoints` method.
 
-[Client.list_endpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.list_endpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.list_endpoints]
 
 ```python
 def list_endpoints(

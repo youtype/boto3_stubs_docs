@@ -1,11 +1,11 @@
-# Structures for boto3 Kafka module
+# Typed dictionaries for boto3 Kafka module
 
 > [Index](../README.md) > [Kafka](./README.md) > Structures
 
 Auto-generated documentation for [Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
 type annotations stubs module [mypy_boto3_kafka](https://pypi.org/project/mypy-boto3-kafka/).
 
-- [Structures for boto3 Kafka module](#structures-for-boto3-kafka-module)
+- [Typed dictionaries for boto3 Kafka module](#typed-dictionaries-for-boto3-kafka-module)
   - [BatchAssociateScramSecretResponseTypeDef](#batchassociatescramsecretresponsetypedef)
   - [BatchDisassociateScramSecretResponseTypeDef](#batchdisassociatescramsecretresponsetypedef)
   - [BrokerEBSVolumeInfoTypeDef](#brokerebsvolumeinfotypedef)

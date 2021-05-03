@@ -15,7 +15,7 @@ pip install mypy-boto3-lightsail
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## LightsailClient
 
@@ -325,7 +325,7 @@ from mypy_boto3_lightsail.literals import AccessDirection, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

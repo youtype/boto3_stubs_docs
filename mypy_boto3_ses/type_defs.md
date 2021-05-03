@@ -1,11 +1,11 @@
-# Structures for boto3 SES module
+# Typed dictionaries for boto3 SES module
 
 > [Index](../README.md) > [SES](./README.md) > Structures
 
 Auto-generated documentation for [SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
 type annotations stubs module [mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
 
-- [Structures for boto3 SES module](#structures-for-boto3-ses-module)
+- [Typed dictionaries for boto3 SES module](#typed-dictionaries-for-boto3-ses-module)
   - [AddHeaderActionTypeDef](#addheaderactiontypedef)
   - [BodyTypeDef](#bodytypedef)
   - [BounceActionTypeDef](#bounceactiontypedef)

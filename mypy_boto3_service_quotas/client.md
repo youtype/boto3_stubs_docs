@@ -40,7 +40,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_service_quotas.client import ServiceQuotasClient
+
+def get_service-quotas_client() -> ServiceQuotasClient:
+    return boto3.client("service-quotas")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client)
 
 ## Exceptions
 
@@ -84,7 +89,7 @@ Exceptions:
 
 Type annotations for `boto3.client("service-quotas").associate_service_quota_template` method.
 
-[Client.associate_service_quota_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.associate_service_quota_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.associate_service_quota_template]
 
 ```python
 def associate_service_quota_template(
@@ -97,7 +102,7 @@ def associate_service_quota_template(
 
 Type annotations for `boto3.client("service-quotas").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -111,7 +116,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("service-quotas").delete_service_quota_increase_request_from_template` method.
 
-[Client.delete_service_quota_increase_request_from_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.delete_service_quota_increase_request_from_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.delete_service_quota_increase_request_from_template]
 
 ```python
 def delete_service_quota_increase_request_from_template(
@@ -127,7 +132,7 @@ def delete_service_quota_increase_request_from_template(
 
 Type annotations for `boto3.client("service-quotas").disassociate_service_quota_template` method.
 
-[Client.disassociate_service_quota_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.disassociate_service_quota_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.disassociate_service_quota_template]
 
 ```python
 def disassociate_service_quota_template(
@@ -140,7 +145,7 @@ def disassociate_service_quota_template(
 
 Type annotations for `boto3.client("service-quotas").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -157,7 +162,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("service-quotas").get_association_for_service_quota_template` method.
 
-[Client.get_association_for_service_quota_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_association_for_service_quota_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_association_for_service_quota_template]
 
 ```python
 def get_association_for_service_quota_template(
@@ -170,7 +175,7 @@ def get_association_for_service_quota_template(
 
 Type annotations for `boto3.client("service-quotas").get_aws_default_service_quota` method.
 
-[Client.get_aws_default_service_quota documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_aws_default_service_quota)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_aws_default_service_quota]
 
 ```python
 def get_aws_default_service_quota(
@@ -185,7 +190,7 @@ def get_aws_default_service_quota(
 
 Type annotations for `boto3.client("service-quotas").get_requested_service_quota_change` method.
 
-[Client.get_requested_service_quota_change documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_requested_service_quota_change)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_requested_service_quota_change]
 
 ```python
 def get_requested_service_quota_change(
@@ -199,7 +204,7 @@ def get_requested_service_quota_change(
 
 Type annotations for `boto3.client("service-quotas").get_service_quota` method.
 
-[Client.get_service_quota documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_service_quota)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_service_quota]
 
 ```python
 def get_service_quota(
@@ -214,7 +219,7 @@ def get_service_quota(
 
 Type annotations for `boto3.client("service-quotas").get_service_quota_increase_request_from_template` method.
 
-[Client.get_service_quota_increase_request_from_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_service_quota_increase_request_from_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_service_quota_increase_request_from_template]
 
 ```python
 def get_service_quota_increase_request_from_template(
@@ -230,7 +235,7 @@ def get_service_quota_increase_request_from_template(
 
 Type annotations for `boto3.client("service-quotas").list_aws_default_service_quotas` method.
 
-[Client.list_aws_default_service_quotas documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_aws_default_service_quotas)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_aws_default_service_quotas]
 
 ```python
 def list_aws_default_service_quotas(
@@ -246,7 +251,7 @@ def list_aws_default_service_quotas(
 
 Type annotations for `boto3.client("service-quotas").list_requested_service_quota_change_history` method.
 
-[Client.list_requested_service_quota_change_history documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_requested_service_quota_change_history)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_requested_service_quota_change_history]
 
 ```python
 def list_requested_service_quota_change_history(
@@ -263,7 +268,7 @@ def list_requested_service_quota_change_history(
 
 Type annotations for `boto3.client("service-quotas").list_requested_service_quota_change_history_by_quota` method.
 
-[Client.list_requested_service_quota_change_history_by_quota documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_requested_service_quota_change_history_by_quota)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_requested_service_quota_change_history_by_quota]
 
 ```python
 def list_requested_service_quota_change_history_by_quota(
@@ -281,7 +286,7 @@ def list_requested_service_quota_change_history_by_quota(
 
 Type annotations for `boto3.client("service-quotas").list_service_quota_increase_requests_in_template` method.
 
-[Client.list_service_quota_increase_requests_in_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_service_quota_increase_requests_in_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_service_quota_increase_requests_in_template]
 
 ```python
 def list_service_quota_increase_requests_in_template(
@@ -298,7 +303,7 @@ def list_service_quota_increase_requests_in_template(
 
 Type annotations for `boto3.client("service-quotas").list_service_quotas` method.
 
-[Client.list_service_quotas documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_service_quotas)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_service_quotas]
 
 ```python
 def list_service_quotas(
@@ -314,7 +319,7 @@ def list_service_quotas(
 
 Type annotations for `boto3.client("service-quotas").list_services` method.
 
-[Client.list_services documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_services)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_services]
 
 ```python
 def list_services(
@@ -329,7 +334,7 @@ def list_services(
 
 Type annotations for `boto3.client("service-quotas").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -343,7 +348,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("service-quotas").put_service_quota_increase_request_into_template` method.
 
-[Client.put_service_quota_increase_request_into_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.put_service_quota_increase_request_into_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.put_service_quota_increase_request_into_template]
 
 ```python
 def put_service_quota_increase_request_into_template(
@@ -360,7 +365,7 @@ def put_service_quota_increase_request_into_template(
 
 Type annotations for `boto3.client("service-quotas").request_service_quota_increase` method.
 
-[Client.request_service_quota_increase documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.request_service_quota_increase)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.request_service_quota_increase]
 
 ```python
 def request_service_quota_increase(
@@ -376,7 +381,7 @@ def request_service_quota_increase(
 
 Type annotations for `boto3.client("service-quotas").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -391,7 +396,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("service-quotas").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.untag_resource]
 
 ```python
 def untag_resource(

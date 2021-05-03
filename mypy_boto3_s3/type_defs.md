@@ -1,11 +1,11 @@
-# Structures for boto3 S3 module
+# Typed dictionaries for boto3 S3 module
 
 > [Index](../README.md) > [S3](./README.md) > Structures
 
 Auto-generated documentation for [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
 type annotations stubs module [mypy_boto3_s3](https://pypi.org/project/mypy-boto3-s3/).
 
-- [Structures for boto3 S3 module](#structures-for-boto3-s3-module)
+- [Typed dictionaries for boto3 S3 module](#typed-dictionaries-for-boto3-s3-module)
   - [AbortIncompleteMultipartUploadTypeDef](#abortincompletemultipartuploadtypedef)
   - [AbortMultipartUploadOutputTypeDef](#abortmultipartuploadoutputtypedef)
   - [AccelerateConfigurationTypeDef](#accelerateconfigurationtypedef)
@@ -217,11 +217,11 @@ from mypy_boto3_s3.type_defs import AbortMultipartUploadOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `RequestCharged`: `Literal['requester']`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## AccelerateConfigurationTypeDef
@@ -440,15 +440,15 @@ from mypy_boto3_s3.type_defs import CSVOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `QuoteFields`: `QuoteFields`
 - `QuoteEscapeCharacter`: `str`
 - `RecordDelimiter`: `str`
 - `FieldDelimiter`: `str`
 - `QuoteCharacter`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CloudFunctionConfigurationTypeDef
@@ -488,9 +488,7 @@ from mypy_boto3_s3.type_defs import CompleteMultipartUploadOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Location`: `str`
 - `Bucket`: `str`
 - `Key`: `str`
@@ -502,6 +500,8 @@ Optional fields:
 - `BucketKeyEnabled`: `bool`
 - `RequestCharged`: `Literal['requester']`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CompletedMultipartUploadTypeDef
@@ -552,9 +552,7 @@ from mypy_boto3_s3.type_defs import CopyObjectOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `CopyObjectResult`: `"CopyObjectResultTypeDef"`
 - `Expiration`: `str`
 - `CopySourceVersionId`: `str`
@@ -567,6 +565,8 @@ Optional fields:
 - `BucketKeyEnabled`: `bool`
 - `RequestCharged`: `Literal['requester']`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CopyObjectResultTypeDef
@@ -634,11 +634,11 @@ from mypy_boto3_s3.type_defs import CreateBucketOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Location`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateMultipartUploadOutputTypeDef
@@ -648,9 +648,7 @@ from mypy_boto3_s3.type_defs import CreateMultipartUploadOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `AbortDate`: `datetime`
 - `AbortRuleId`: `str`
 - `Bucket`: `str`
@@ -664,6 +662,8 @@ Optional fields:
 - `BucketKeyEnabled`: `bool`
 - `RequestCharged`: `Literal['requester']`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DefaultRetentionTypeDef
@@ -718,13 +718,13 @@ from mypy_boto3_s3.type_defs import DeleteObjectOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DeleteMarker`: `bool`
 - `VersionId`: `str`
 - `RequestCharged`: `Literal['requester']`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteObjectTaggingOutputTypeDef
@@ -734,11 +734,11 @@ from mypy_boto3_s3.type_defs import DeleteObjectTaggingOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `VersionId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteObjectsOutputTypeDef
@@ -748,13 +748,13 @@ from mypy_boto3_s3.type_defs import DeleteObjectsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Deleted`: `List["DeletedObjectTypeDef"]`
 - `RequestCharged`: `Literal['requester']`
 - `Errors`: `List["ErrorTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteTypeDef
@@ -903,11 +903,11 @@ from mypy_boto3_s3.type_defs import GetBucketAccelerateConfigurationOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Status`: `BucketAccelerateStatus`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBucketAclOutputTypeDef
@@ -917,12 +917,12 @@ from mypy_boto3_s3.type_defs import GetBucketAclOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Owner`: `"OwnerTypeDef"`
 - `Grants`: `List["GrantTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBucketAnalyticsConfigurationOutputTypeDef
@@ -932,11 +932,11 @@ from mypy_boto3_s3.type_defs import GetBucketAnalyticsConfigurationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `AnalyticsConfiguration`: `"AnalyticsConfigurationTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBucketCorsOutputTypeDef
@@ -946,11 +946,11 @@ from mypy_boto3_s3.type_defs import GetBucketCorsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `CORSRules`: `List["CORSRuleTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBucketEncryptionOutputTypeDef
@@ -960,11 +960,11 @@ from mypy_boto3_s3.type_defs import GetBucketEncryptionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ServerSideEncryptionConfiguration`: `"ServerSideEncryptionConfigurationTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBucketIntelligentTieringConfigurationOutputTypeDef
@@ -974,11 +974,11 @@ from mypy_boto3_s3.type_defs import GetBucketIntelligentTieringConfigurationOutp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `IntelligentTieringConfiguration`: `"IntelligentTieringConfigurationTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBucketInventoryConfigurationOutputTypeDef
@@ -988,11 +988,11 @@ from mypy_boto3_s3.type_defs import GetBucketInventoryConfigurationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `InventoryConfiguration`: `"InventoryConfigurationTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBucketLifecycleConfigurationOutputTypeDef
@@ -1002,11 +1002,11 @@ from mypy_boto3_s3.type_defs import GetBucketLifecycleConfigurationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Rules`: `List["LifecycleRuleTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBucketLifecycleOutputTypeDef
@@ -1016,11 +1016,11 @@ from mypy_boto3_s3.type_defs import GetBucketLifecycleOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Rules`: `List["RuleTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBucketLocationOutputTypeDef
@@ -1030,11 +1030,11 @@ from mypy_boto3_s3.type_defs import GetBucketLocationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `LocationConstraint`: `BucketLocationConstraint`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBucketLoggingOutputTypeDef
@@ -1044,11 +1044,11 @@ from mypy_boto3_s3.type_defs import GetBucketLoggingOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `LoggingEnabled`: `"LoggingEnabledTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBucketMetricsConfigurationOutputTypeDef
@@ -1058,11 +1058,11 @@ from mypy_boto3_s3.type_defs import GetBucketMetricsConfigurationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `MetricsConfiguration`: `"MetricsConfigurationTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBucketOwnershipControlsOutputTypeDef
@@ -1072,11 +1072,11 @@ from mypy_boto3_s3.type_defs import GetBucketOwnershipControlsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `OwnershipControls`: `"OwnershipControlsTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBucketPolicyOutputTypeDef
@@ -1086,11 +1086,11 @@ from mypy_boto3_s3.type_defs import GetBucketPolicyOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Policy`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBucketPolicyStatusOutputTypeDef
@@ -1100,11 +1100,11 @@ from mypy_boto3_s3.type_defs import GetBucketPolicyStatusOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PolicyStatus`: `"PolicyStatusTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBucketReplicationOutputTypeDef
@@ -1114,11 +1114,11 @@ from mypy_boto3_s3.type_defs import GetBucketReplicationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ReplicationConfiguration`: `"ReplicationConfigurationTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBucketRequestPaymentOutputTypeDef
@@ -1128,11 +1128,11 @@ from mypy_boto3_s3.type_defs import GetBucketRequestPaymentOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Payer`: `Payer`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBucketTaggingOutputTypeDef
@@ -1144,11 +1144,9 @@ from mypy_boto3_s3.type_defs import GetBucketTaggingOutputTypeDef
 
 Required fields:
 - `TagSet`: `List["TagTypeDef"]`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBucketVersioningOutputTypeDef
@@ -1158,12 +1156,12 @@ from mypy_boto3_s3.type_defs import GetBucketVersioningOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Status`: `BucketVersioningStatus`
 - `MFADelete`: `MFADeleteStatus`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBucketWebsiteOutputTypeDef
@@ -1173,14 +1171,14 @@ from mypy_boto3_s3.type_defs import GetBucketWebsiteOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `RedirectAllRequestsTo`: `"RedirectAllRequestsToTypeDef"`
 - `IndexDocument`: `"IndexDocumentTypeDef"`
 - `ErrorDocument`: `"ErrorDocumentTypeDef"`
 - `RoutingRules`: `List["RoutingRuleTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetObjectAclOutputTypeDef
@@ -1190,13 +1188,13 @@ from mypy_boto3_s3.type_defs import GetObjectAclOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Owner`: `"OwnerTypeDef"`
 - `Grants`: `List["GrantTypeDef"]`
 - `RequestCharged`: `Literal['requester']`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetObjectLegalHoldOutputTypeDef
@@ -1206,11 +1204,11 @@ from mypy_boto3_s3.type_defs import GetObjectLegalHoldOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `LegalHold`: `"ObjectLockLegalHoldTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetObjectLockConfigurationOutputTypeDef
@@ -1220,11 +1218,11 @@ from mypy_boto3_s3.type_defs import GetObjectLockConfigurationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ObjectLockConfiguration`: `"ObjectLockConfigurationTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetObjectOutputTypeDef
@@ -1234,9 +1232,7 @@ from mypy_boto3_s3.type_defs import GetObjectOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Body`: `StreamingBody`
 - `DeleteMarker`: `bool`
 - `AcceptRanges`: `str`
@@ -1272,6 +1268,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## GetObjectRetentionOutputTypeDef
 
 ```python
@@ -1279,11 +1277,11 @@ from mypy_boto3_s3.type_defs import GetObjectRetentionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Retention`: `"ObjectLockRetentionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetObjectTaggingOutputTypeDef
@@ -1294,13 +1292,11 @@ from mypy_boto3_s3.type_defs import GetObjectTaggingOutputTypeDef
 
 
 Required fields:
-- `TagSet`: `List["TagTypeDef"]`
-
-
-
-Optional fields:
 - `VersionId`: `str`
+- `TagSet`: `List["TagTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetObjectTorrentOutputTypeDef
@@ -1310,12 +1306,12 @@ from mypy_boto3_s3.type_defs import GetObjectTorrentOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Body`: `StreamingBody`
 - `RequestCharged`: `Literal['requester']`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetPublicAccessBlockOutputTypeDef
@@ -1325,11 +1321,11 @@ from mypy_boto3_s3.type_defs import GetPublicAccessBlockOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PublicAccessBlockConfiguration`: `"PublicAccessBlockConfigurationTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GlacierJobParametersTypeDef
@@ -1385,9 +1381,7 @@ from mypy_boto3_s3.type_defs import HeadObjectOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DeleteMarker`: `bool`
 - `AcceptRanges`: `str`
 - `Expiration`: `str`
@@ -1419,6 +1413,8 @@ Optional fields:
 - `ObjectLockRetainUntilDate`: `datetime`
 - `ObjectLockLegalHoldStatus`: `ObjectLockLegalHoldStatus`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## IndexDocumentTypeDef
@@ -1624,11 +1620,11 @@ from mypy_boto3_s3.type_defs import JSONOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `RecordDelimiter`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## LambdaFunctionConfigurationTypeDef
@@ -1736,14 +1732,14 @@ from mypy_boto3_s3.type_defs import ListBucketAnalyticsConfigurationsOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `IsTruncated`: `bool`
 - `ContinuationToken`: `str`
 - `NextContinuationToken`: `str`
 - `AnalyticsConfigurationList`: `List["AnalyticsConfigurationTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListBucketIntelligentTieringConfigurationsOutputTypeDef
@@ -1753,14 +1749,14 @@ from mypy_boto3_s3.type_defs import ListBucketIntelligentTieringConfigurationsOu
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `IsTruncated`: `bool`
 - `ContinuationToken`: `str`
 - `NextContinuationToken`: `str`
 - `IntelligentTieringConfigurationList`: `List["IntelligentTieringConfigurationTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListBucketInventoryConfigurationsOutputTypeDef
@@ -1770,14 +1766,14 @@ from mypy_boto3_s3.type_defs import ListBucketInventoryConfigurationsOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ContinuationToken`: `str`
 - `InventoryConfigurationList`: `List["InventoryConfigurationTypeDef"]`
 - `IsTruncated`: `bool`
 - `NextContinuationToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListBucketMetricsConfigurationsOutputTypeDef
@@ -1787,14 +1783,14 @@ from mypy_boto3_s3.type_defs import ListBucketMetricsConfigurationsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `IsTruncated`: `bool`
 - `ContinuationToken`: `str`
 - `NextContinuationToken`: `str`
 - `MetricsConfigurationList`: `List["MetricsConfigurationTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListBucketsOutputTypeDef
@@ -1804,12 +1800,12 @@ from mypy_boto3_s3.type_defs import ListBucketsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Buckets`: `List["BucketTypeDef"]`
 - `Owner`: `"OwnerTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListMultipartUploadsOutputTypeDef
@@ -1819,9 +1815,7 @@ from mypy_boto3_s3.type_defs import ListMultipartUploadsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Bucket`: `str`
 - `KeyMarker`: `str`
 - `UploadIdMarker`: `str`
@@ -1837,6 +1831,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## ListObjectVersionsOutputTypeDef
 
 ```python
@@ -1844,9 +1840,7 @@ from mypy_boto3_s3.type_defs import ListObjectVersionsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `IsTruncated`: `bool`
 - `KeyMarker`: `str`
 - `VersionIdMarker`: `str`
@@ -1863,6 +1857,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## ListObjectsOutputTypeDef
 
 ```python
@@ -1870,9 +1866,7 @@ from mypy_boto3_s3.type_defs import ListObjectsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `IsTruncated`: `bool`
 - `Marker`: `str`
 - `NextMarker`: `str`
@@ -1886,6 +1880,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## ListObjectsV2OutputTypeDef
 
 ```python
@@ -1893,9 +1889,7 @@ from mypy_boto3_s3.type_defs import ListObjectsV2OutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `IsTruncated`: `bool`
 - `Contents`: `List["ObjectTypeDef"]`
 - `Name`: `str`
@@ -1911,6 +1905,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## ListPartsOutputTypeDef
 
 ```python
@@ -1918,9 +1914,7 @@ from mypy_boto3_s3.type_defs import ListPartsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `AbortDate`: `datetime`
 - `AbortRuleId`: `str`
 - `Bucket`: `str`
@@ -1936,6 +1930,8 @@ Optional fields:
 - `StorageClass`: `StorageClass`
 - `RequestCharged`: `Literal['requester']`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## LoggingEnabledTypeDef
@@ -2388,11 +2384,11 @@ from mypy_boto3_s3.type_defs import PutObjectAclOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `RequestCharged`: `Literal['requester']`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PutObjectLegalHoldOutputTypeDef
@@ -2402,11 +2398,11 @@ from mypy_boto3_s3.type_defs import PutObjectLegalHoldOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `RequestCharged`: `Literal['requester']`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PutObjectLockConfigurationOutputTypeDef
@@ -2416,11 +2412,11 @@ from mypy_boto3_s3.type_defs import PutObjectLockConfigurationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `RequestCharged`: `Literal['requester']`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PutObjectOutputTypeDef
@@ -2430,9 +2426,7 @@ from mypy_boto3_s3.type_defs import PutObjectOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Expiration`: `str`
 - `ETag`: `str`
 - `ServerSideEncryption`: `ServerSideEncryption`
@@ -2446,6 +2440,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## PutObjectRetentionOutputTypeDef
 
 ```python
@@ -2453,11 +2449,11 @@ from mypy_boto3_s3.type_defs import PutObjectRetentionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `RequestCharged`: `Literal['requester']`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PutObjectTaggingOutputTypeDef
@@ -2467,11 +2463,11 @@ from mypy_boto3_s3.type_defs import PutObjectTaggingOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `VersionId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## QueueConfigurationDeprecatedTypeDef
@@ -2710,12 +2706,12 @@ from mypy_boto3_s3.type_defs import RestoreObjectOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `RequestCharged`: `Literal['requester']`
 - `RestoreOutputPath`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## RestoreRequestTypeDef
@@ -2861,11 +2857,11 @@ from mypy_boto3_s3.type_defs import SelectObjectContentOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Payload`: `"SelectObjectContentEventStreamTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## SelectParametersTypeDef
@@ -3120,9 +3116,7 @@ from mypy_boto3_s3.type_defs import UploadPartCopyOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `CopySourceVersionId`: `str`
 - `CopyPartResult`: `"CopyPartResultTypeDef"`
 - `ServerSideEncryption`: `ServerSideEncryption`
@@ -3134,6 +3128,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## UploadPartOutputTypeDef
 
 ```python
@@ -3141,9 +3137,7 @@ from mypy_boto3_s3.type_defs import UploadPartOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ServerSideEncryption`: `ServerSideEncryption`
 - `ETag`: `str`
 - `SSECustomerAlgorithm`: `str`
@@ -3152,6 +3146,8 @@ Optional fields:
 - `BucketKeyEnabled`: `bool`
 - `RequestCharged`: `Literal['requester']`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## VersioningConfigurationTypeDef

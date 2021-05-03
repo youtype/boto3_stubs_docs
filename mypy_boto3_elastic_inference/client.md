@@ -27,7 +27,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_elastic_inference.client import ElasticInferenceClient
+
+def get_elastic-inference_client() -> ElasticInferenceClient:
+    return boto3.client("elastic-inference")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client)
 
 ## Exceptions
 
@@ -57,7 +62,7 @@ Exceptions:
 
 Type annotations for `boto3.client("elastic-inference").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -71,7 +76,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("elastic-inference").describe_accelerator_offerings` method.
 
-[Client.describe_accelerator_offerings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerator_offerings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerator_offerings]
 
 ```python
 def describe_accelerator_offerings(
@@ -86,7 +91,7 @@ def describe_accelerator_offerings(
 
 Type annotations for `boto3.client("elastic-inference").describe_accelerator_types` method.
 
-[Client.describe_accelerator_types documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerator_types)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerator_types]
 
 ```python
 def describe_accelerator_types(
@@ -99,7 +104,7 @@ def describe_accelerator_types(
 
 Type annotations for `boto3.client("elastic-inference").describe_accelerators` method.
 
-[Client.describe_accelerators documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerators)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerators]
 
 ```python
 def describe_accelerators(
@@ -116,7 +121,7 @@ def describe_accelerators(
 
 Type annotations for `boto3.client("elastic-inference").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -133,7 +138,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("elastic-inference").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -147,7 +152,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("elastic-inference").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -162,7 +167,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("elastic-inference").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.untag_resource]
 
 ```python
 def untag_resource(

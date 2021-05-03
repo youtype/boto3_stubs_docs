@@ -1,11 +1,11 @@
-# Structures for boto3 DLM module
+# Typed dictionaries for boto3 DLM module
 
 > [Index](../README.md) > [DLM](./README.md) > Structures
 
 Auto-generated documentation for [DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
 type annotations stubs module [mypy_boto3_dlm](https://pypi.org/project/mypy-boto3-dlm/).
 
-- [Structures for boto3 DLM module](#structures-for-boto3-dlm-module)
+- [Typed dictionaries for boto3 DLM module](#typed-dictionaries-for-boto3-dlm-module)
   - [ActionTypeDef](#actiontypedef)
   - [CreateLifecyclePolicyResponseTypeDef](#createlifecyclepolicyresponsetypedef)
   - [CreateRuleTypeDef](#createruletypedef)

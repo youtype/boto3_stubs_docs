@@ -14,7 +14,7 @@ pip install mypy-boto3-lakeformation
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## LakeFormationClient
 
@@ -87,7 +87,7 @@ from mypy_boto3_lakeformation.literals import ComparisonOperator, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

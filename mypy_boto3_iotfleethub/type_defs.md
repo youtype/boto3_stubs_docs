@@ -1,11 +1,11 @@
-# Structures for boto3 IoTFleetHub module
+# Typed dictionaries for boto3 IoTFleetHub module
 
 > [Index](../README.md) > [IoTFleetHub](./README.md) > Structures
 
 Auto-generated documentation for [IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub)
 type annotations stubs module [mypy_boto3_iotfleethub](https://pypi.org/project/mypy-boto3-iotfleethub/).
 
-- [Structures for boto3 IoTFleetHub module](#structures-for-boto3-iotfleethub-module)
+- [Typed dictionaries for boto3 IoTFleetHub module](#typed-dictionaries-for-boto3-iotfleethub-module)
   - [ApplicationSummaryTypeDef](#applicationsummarytypedef)
   - [CreateApplicationResponseTypeDef](#createapplicationresponsetypedef)
   - [DescribeApplicationResponseTypeDef](#describeapplicationresponsetypedef)

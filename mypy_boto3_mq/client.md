@@ -43,7 +43,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_mq.client import MQClient
+
+def get_mq_client() -> MQClient:
+    return boto3.client("mq")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client)
 
 ## Exceptions
 
@@ -76,7 +81,7 @@ Exceptions:
 
 Type annotations for `boto3.client("mq").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -90,7 +95,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("mq").create_broker` method.
 
-[Client.create_broker documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_broker)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_broker]
 
 ```python
 def create_broker(
@@ -122,7 +127,7 @@ def create_broker(
 
 Type annotations for `boto3.client("mq").create_configuration` method.
 
-[Client.create_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_configuration]
 
 ```python
 def create_configuration(
@@ -140,7 +145,7 @@ def create_configuration(
 
 Type annotations for `boto3.client("mq").create_tags` method.
 
-[Client.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_tags]
 
 ```python
 def create_tags(
@@ -155,7 +160,7 @@ def create_tags(
 
 Type annotations for `boto3.client("mq").create_user` method.
 
-[Client.create_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_user]
 
 ```python
 def create_user(
@@ -173,7 +178,7 @@ def create_user(
 
 Type annotations for `boto3.client("mq").delete_broker` method.
 
-[Client.delete_broker documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_broker)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_broker]
 
 ```python
 def delete_broker(
@@ -187,7 +192,7 @@ def delete_broker(
 
 Type annotations for `boto3.client("mq").delete_tags` method.
 
-[Client.delete_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_tags]
 
 ```python
 def delete_tags(
@@ -202,7 +207,7 @@ def delete_tags(
 
 Type annotations for `boto3.client("mq").delete_user` method.
 
-[Client.delete_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_user]
 
 ```python
 def delete_user(
@@ -217,7 +222,7 @@ def delete_user(
 
 Type annotations for `boto3.client("mq").describe_broker` method.
 
-[Client.describe_broker documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker]
 
 ```python
 def describe_broker(
@@ -231,7 +236,7 @@ def describe_broker(
 
 Type annotations for `boto3.client("mq").describe_broker_engine_types` method.
 
-[Client.describe_broker_engine_types documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker_engine_types)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker_engine_types]
 
 ```python
 def describe_broker_engine_types(
@@ -247,7 +252,7 @@ def describe_broker_engine_types(
 
 Type annotations for `boto3.client("mq").describe_broker_instance_options` method.
 
-[Client.describe_broker_instance_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker_instance_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker_instance_options]
 
 ```python
 def describe_broker_instance_options(
@@ -265,7 +270,7 @@ def describe_broker_instance_options(
 
 Type annotations for `boto3.client("mq").describe_configuration` method.
 
-[Client.describe_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_configuration]
 
 ```python
 def describe_configuration(
@@ -279,7 +284,7 @@ def describe_configuration(
 
 Type annotations for `boto3.client("mq").describe_configuration_revision` method.
 
-[Client.describe_configuration_revision documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_configuration_revision)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_configuration_revision]
 
 ```python
 def describe_configuration_revision(
@@ -294,7 +299,7 @@ def describe_configuration_revision(
 
 Type annotations for `boto3.client("mq").describe_user` method.
 
-[Client.describe_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_user]
 
 ```python
 def describe_user(
@@ -309,7 +314,7 @@ def describe_user(
 
 Type annotations for `boto3.client("mq").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -326,7 +331,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("mq").list_brokers` method.
 
-[Client.list_brokers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_brokers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_brokers]
 
 ```python
 def list_brokers(
@@ -341,7 +346,7 @@ def list_brokers(
 
 Type annotations for `boto3.client("mq").list_configuration_revisions` method.
 
-[Client.list_configuration_revisions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_configuration_revisions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_configuration_revisions]
 
 ```python
 def list_configuration_revisions(
@@ -357,7 +362,7 @@ def list_configuration_revisions(
 
 Type annotations for `boto3.client("mq").list_configurations` method.
 
-[Client.list_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_configurations]
 
 ```python
 def list_configurations(
@@ -372,7 +377,7 @@ def list_configurations(
 
 Type annotations for `boto3.client("mq").list_tags` method.
 
-[Client.list_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_tags]
 
 ```python
 def list_tags(
@@ -386,7 +391,7 @@ def list_tags(
 
 Type annotations for `boto3.client("mq").list_users` method.
 
-[Client.list_users documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_users)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_users]
 
 ```python
 def list_users(
@@ -402,7 +407,7 @@ def list_users(
 
 Type annotations for `boto3.client("mq").reboot_broker` method.
 
-[Client.reboot_broker documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.reboot_broker)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.reboot_broker]
 
 ```python
 def reboot_broker(
@@ -416,7 +421,7 @@ def reboot_broker(
 
 Type annotations for `boto3.client("mq").update_broker` method.
 
-[Client.update_broker documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_broker)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_broker]
 
 ```python
 def update_broker(
@@ -438,7 +443,7 @@ def update_broker(
 
 Type annotations for `boto3.client("mq").update_configuration` method.
 
-[Client.update_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_configuration]
 
 ```python
 def update_configuration(
@@ -454,7 +459,7 @@ def update_configuration(
 
 Type annotations for `boto3.client("mq").update_user` method.
 
-[Client.update_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_user]
 
 ```python
 def update_user(

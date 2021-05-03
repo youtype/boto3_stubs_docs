@@ -1,11 +1,11 @@
-# Structures for boto3 SageMaker module
+# Typed dictionaries for boto3 SageMaker module
 
 > [Index](../README.md) > [SageMaker](./README.md) > Structures
 
 Auto-generated documentation for [SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
 type annotations stubs module [mypy_boto3_sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
 
-- [Structures for boto3 SageMaker module](#structures-for-boto3-sagemaker-module)
+- [Typed dictionaries for boto3 SageMaker module](#typed-dictionaries-for-boto3-sagemaker-module)
   - [ActionSourceTypeDef](#actionsourcetypedef)
   - [ActionSummaryTypeDef](#actionsummarytypedef)
   - [AddAssociationResponseTypeDef](#addassociationresponsetypedef)
@@ -567,11 +567,11 @@ from mypy_boto3_sagemaker.type_defs import AddTagsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Tags`: `List["TagTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## AgentVersionTypeDef
@@ -1511,11 +1511,9 @@ from mypy_boto3_sagemaker.type_defs import CreateAlgorithmOutputTypeDef
 
 Required fields:
 - `AlgorithmArn`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateAppImageConfigResponseTypeDef
@@ -1579,11 +1577,9 @@ from mypy_boto3_sagemaker.type_defs import CreateCodeRepositoryOutputTypeDef
 
 Required fields:
 - `CodeRepositoryArn`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateCompilationJobResponseTypeDef
@@ -1648,11 +1644,9 @@ from mypy_boto3_sagemaker.type_defs import CreateEndpointConfigOutputTypeDef
 
 Required fields:
 - `EndpointConfigArn`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateEndpointOutputTypeDef
@@ -1664,11 +1658,9 @@ from mypy_boto3_sagemaker.type_defs import CreateEndpointOutputTypeDef
 
 Required fields:
 - `EndpointArn`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateExperimentResponseTypeDef
@@ -1810,11 +1802,9 @@ from mypy_boto3_sagemaker.type_defs import CreateModelOutputTypeDef
 
 Required fields:
 - `ModelArn`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateModelPackageGroupOutputTypeDef
@@ -1826,11 +1816,9 @@ from mypy_boto3_sagemaker.type_defs import CreateModelPackageGroupOutputTypeDef
 
 Required fields:
 - `ModelPackageGroupArn`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateModelPackageOutputTypeDef
@@ -1842,11 +1830,9 @@ from mypy_boto3_sagemaker.type_defs import CreateModelPackageOutputTypeDef
 
 Required fields:
 - `ModelPackageArn`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateModelQualityJobDefinitionResponseTypeDef
@@ -1882,11 +1868,11 @@ from mypy_boto3_sagemaker.type_defs import CreateNotebookInstanceLifecycleConfig
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NotebookInstanceLifecycleConfigArn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateNotebookInstanceOutputTypeDef
@@ -1896,11 +1882,11 @@ from mypy_boto3_sagemaker.type_defs import CreateNotebookInstanceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NotebookInstanceArn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreatePipelineResponseTypeDef
@@ -1936,11 +1922,11 @@ from mypy_boto3_sagemaker.type_defs import CreatePresignedNotebookInstanceUrlOut
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `AuthorizedUrl`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateProcessingJobResponseTypeDef
@@ -1966,11 +1952,9 @@ from mypy_boto3_sagemaker.type_defs import CreateProjectOutputTypeDef
 Required fields:
 - `ProjectArn`: `str`
 - `ProjectId`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateTrainingJobResponseTypeDef
@@ -2466,20 +2450,18 @@ from mypy_boto3_sagemaker.type_defs import DescribeAlgorithmOutputTypeDef
 Required fields:
 - `AlgorithmName`: `str`
 - `AlgorithmArn`: `str`
+- `AlgorithmDescription`: `str`
 - `CreationTime`: `datetime`
 - `TrainingSpecification`: `"TrainingSpecificationTypeDef"`
-- `AlgorithmStatus`: `AlgorithmStatus`
-- `AlgorithmStatusDetails`: `"AlgorithmStatusDetailsTypeDef"`
-
-
-
-Optional fields:
-- `AlgorithmDescription`: `str`
 - `InferenceSpecification`: `"InferenceSpecificationTypeDef"`
 - `ValidationSpecification`: `"AlgorithmValidationSpecificationTypeDef"`
+- `AlgorithmStatus`: `AlgorithmStatus`
+- `AlgorithmStatusDetails`: `"AlgorithmStatusDetailsTypeDef"`
 - `ProductId`: `str`
 - `CertifyForMarketplace`: `bool`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeAppImageConfigResponseTypeDef
@@ -2589,12 +2571,10 @@ Required fields:
 - `CodeRepositoryArn`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
-
-
-
-Optional fields:
 - `GitConfig`: `"GitConfigTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeCompilationJobResponseTypeDef
@@ -2786,14 +2766,12 @@ Required fields:
 - `EndpointConfigName`: `str`
 - `EndpointConfigArn`: `str`
 - `ProductionVariants`: `List["ProductionVariantTypeDef"]`
-- `CreationTime`: `datetime`
-
-
-
-Optional fields:
 - `DataCaptureConfig`: `"DataCaptureConfigTypeDef"`
 - `KmsKeyId`: `str`
+- `CreationTime`: `datetime`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeEndpointOutputTypeDef
@@ -2807,18 +2785,16 @@ Required fields:
 - `EndpointName`: `str`
 - `EndpointArn`: `str`
 - `EndpointConfigName`: `str`
-- `EndpointStatus`: `EndpointStatus`
-- `CreationTime`: `datetime`
-- `LastModifiedTime`: `datetime`
-
-
-
-Optional fields:
 - `ProductionVariants`: `List["ProductionVariantSummaryTypeDef"]`
 - `DataCaptureConfig`: `"DataCaptureConfigSummaryTypeDef"`
+- `EndpointStatus`: `EndpointStatus`
 - `FailureReason`: `str`
+- `CreationTime`: `datetime`
+- `LastModifiedTime`: `datetime`
 - `LastDeploymentConfig`: `"DeploymentConfigTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeExperimentResponseTypeDef
@@ -3075,19 +3051,17 @@ from mypy_boto3_sagemaker.type_defs import DescribeModelOutputTypeDef
 
 Required fields:
 - `ModelName`: `str`
-- `ExecutionRoleArn`: `str`
-- `CreationTime`: `datetime`
-- `ModelArn`: `str`
-
-
-
-Optional fields:
 - `PrimaryContainer`: `"ContainerDefinitionTypeDef"`
 - `Containers`: `List["ContainerDefinitionTypeDef"]`
 - `InferenceExecutionConfig`: `"InferenceExecutionConfigTypeDef"`
+- `ExecutionRoleArn`: `str`
 - `VpcConfig`: `"VpcConfigTypeDef"`
+- `CreationTime`: `datetime`
+- `ModelArn`: `str`
 - `EnableNetworkIsolation`: `bool`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeModelPackageGroupOutputTypeDef
@@ -3100,15 +3074,13 @@ from mypy_boto3_sagemaker.type_defs import DescribeModelPackageGroupOutputTypeDe
 Required fields:
 - `ModelPackageGroupName`: `str`
 - `ModelPackageGroupArn`: `str`
+- `ModelPackageGroupDescription`: `str`
 - `CreationTime`: `datetime`
 - `CreatedBy`: `"UserContextTypeDef"`
 - `ModelPackageGroupStatus`: `ModelPackageGroupStatus`
-
-
-
-Optional fields:
-- `ModelPackageGroupDescription`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeModelPackageOutputTypeDef
@@ -3120,20 +3092,16 @@ from mypy_boto3_sagemaker.type_defs import DescribeModelPackageOutputTypeDef
 
 Required fields:
 - `ModelPackageName`: `str`
-- `ModelPackageArn`: `str`
-- `CreationTime`: `datetime`
-- `ModelPackageStatus`: `ModelPackageStatus`
-- `ModelPackageStatusDetails`: `"ModelPackageStatusDetailsTypeDef"`
-
-
-
-Optional fields:
 - `ModelPackageGroupName`: `str`
 - `ModelPackageVersion`: `int`
+- `ModelPackageArn`: `str`
 - `ModelPackageDescription`: `str`
+- `CreationTime`: `datetime`
 - `InferenceSpecification`: `"InferenceSpecificationTypeDef"`
 - `SourceAlgorithmSpecification`: `"SourceAlgorithmSpecificationTypeDef"`
 - `ValidationSpecification`: `"ModelPackageValidationSpecificationTypeDef"`
+- `ModelPackageStatus`: `ModelPackageStatus`
+- `ModelPackageStatusDetails`: `"ModelPackageStatusDetailsTypeDef"`
 - `CertifyForMarketplace`: `bool`
 - `ModelApprovalStatus`: `ModelApprovalStatus`
 - `CreatedBy`: `"UserContextTypeDef"`
@@ -3143,6 +3111,8 @@ Optional fields:
 - `LastModifiedBy`: `"UserContextTypeDef"`
 - `ApprovalDescription`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeModelQualityJobDefinitionResponseTypeDef
@@ -3201,9 +3171,7 @@ from mypy_boto3_sagemaker.type_defs import DescribeNotebookInstanceLifecycleConf
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NotebookInstanceLifecycleConfigArn`: `str`
 - `NotebookInstanceLifecycleConfigName`: `str`
 - `OnCreate`: `List["NotebookInstanceLifecycleHookTypeDef"]`
@@ -3213,6 +3181,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## DescribeNotebookInstanceOutputTypeDef
 
 ```python
@@ -3220,9 +3190,7 @@ from mypy_boto3_sagemaker.type_defs import DescribeNotebookInstanceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NotebookInstanceArn`: `str`
 - `NotebookInstanceName`: `str`
 - `NotebookInstanceStatus`: `NotebookInstanceStatus`
@@ -3244,6 +3212,8 @@ Optional fields:
 - `AdditionalCodeRepositories`: `List[str]`
 - `RootAccess`: `RootAccess`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribePipelineDefinitionForExecutionResponseTypeDef
@@ -3351,17 +3321,15 @@ Required fields:
 - `ProjectArn`: `str`
 - `ProjectName`: `str`
 - `ProjectId`: `str`
-- `ServiceCatalogProvisioningDetails`: `"ServiceCatalogProvisioningDetailsTypeDef"`
-- `ProjectStatus`: `ProjectStatus`
-- `CreationTime`: `datetime`
-
-
-
-Optional fields:
 - `ProjectDescription`: `str`
+- `ServiceCatalogProvisioningDetails`: `"ServiceCatalogProvisioningDetailsTypeDef"`
 - `ServiceCatalogProvisionedProductDetails`: `"ServiceCatalogProvisionedProductDetailsTypeDef"`
+- `ProjectStatus`: `ProjectStatus`
 - `CreatedBy`: `"UserContextTypeDef"`
+- `CreationTime`: `datetime`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeSubscribedWorkteamResponseTypeDef
@@ -4144,11 +4112,9 @@ from mypy_boto3_sagemaker.type_defs import GetModelPackageGroupPolicyOutputTypeD
 
 Required fields:
 - `ResourcePolicy`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetSagemakerServicecatalogPortfolioStatusOutputTypeDef
@@ -4158,11 +4124,11 @@ from mypy_boto3_sagemaker.type_defs import GetSagemakerServicecatalogPortfolioSt
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Status`: `SagemakerServicecatalogStatus`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetSearchSuggestionsResponseTypeDef
@@ -4815,12 +4781,10 @@ from mypy_boto3_sagemaker.type_defs import LabelingJobOutputTypeDef
 
 Required fields:
 - `OutputDatasetS3Uri`: `str`
-
-
-
-Optional fields:
 - `FinalActiveLearningModelArn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## LabelingJobResourceConfigTypeDef
@@ -4925,12 +4889,10 @@ from mypy_boto3_sagemaker.type_defs import ListAlgorithmsOutputTypeDef
 
 Required fields:
 - `AlgorithmSummaryList`: `List["AlgorithmSummaryTypeDef"]`
-
-
-
-Optional fields:
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListAppImageConfigsResponseTypeDef
@@ -5030,12 +4992,10 @@ from mypy_boto3_sagemaker.type_defs import ListCodeRepositoriesOutputTypeDef
 
 Required fields:
 - `CodeRepositorySummaryList`: `List["CodeRepositorySummaryTypeDef"]`
-
-
-
-Optional fields:
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListCompilationJobsResponseTypeDef
@@ -5155,12 +5115,10 @@ from mypy_boto3_sagemaker.type_defs import ListEndpointConfigsOutputTypeDef
 
 Required fields:
 - `EndpointConfigs`: `List["EndpointConfigSummaryTypeDef"]`
-
-
-
-Optional fields:
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListEndpointsOutputTypeDef
@@ -5172,12 +5130,10 @@ from mypy_boto3_sagemaker.type_defs import ListEndpointsOutputTypeDef
 
 Required fields:
 - `Endpoints`: `List["EndpointSummaryTypeDef"]`
-
-
-
-Optional fields:
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListExperimentsResponseTypeDef
@@ -5355,12 +5311,10 @@ from mypy_boto3_sagemaker.type_defs import ListModelPackageGroupsOutputTypeDef
 
 Required fields:
 - `ModelPackageGroupSummaryList`: `List["ModelPackageGroupSummaryTypeDef"]`
-
-
-
-Optional fields:
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListModelPackagesOutputTypeDef
@@ -5372,12 +5326,10 @@ from mypy_boto3_sagemaker.type_defs import ListModelPackagesOutputTypeDef
 
 Required fields:
 - `ModelPackageSummaryList`: `List["ModelPackageSummaryTypeDef"]`
-
-
-
-Optional fields:
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListModelQualityJobDefinitionsResponseTypeDef
@@ -5405,12 +5357,10 @@ from mypy_boto3_sagemaker.type_defs import ListModelsOutputTypeDef
 
 Required fields:
 - `Models`: `List["ModelSummaryTypeDef"]`
-
-
-
-Optional fields:
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListMonitoringExecutionsResponseTypeDef
@@ -5452,12 +5402,12 @@ from mypy_boto3_sagemaker.type_defs import ListNotebookInstanceLifecycleConfigsO
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NextToken`: `str`
 - `NotebookInstanceLifecycleConfigs`: `List["NotebookInstanceLifecycleConfigSummaryTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListNotebookInstancesOutputTypeDef
@@ -5467,12 +5417,12 @@ from mypy_boto3_sagemaker.type_defs import ListNotebookInstancesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NextToken`: `str`
 - `NotebookInstances`: `List["NotebookInstanceSummaryTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListPipelineExecutionStepsResponseTypeDef
@@ -5556,12 +5506,10 @@ from mypy_boto3_sagemaker.type_defs import ListProjectsOutputTypeDef
 
 Required fields:
 - `ProjectSummaryList`: `List["ProjectSummaryTypeDef"]`
-
-
-
-Optional fields:
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListSubscribedWorkteamsResponseTypeDef
@@ -5587,12 +5535,12 @@ from mypy_boto3_sagemaker.type_defs import ListTagsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Tags`: `List["TagTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTrainingJobsForHyperParameterTuningJobResponseTypeDef
@@ -6409,11 +6357,9 @@ from mypy_boto3_sagemaker.type_defs import MonitoringOutputTypeDef
 
 Required fields:
 - `S3Output`: `"MonitoringS3OutputTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## MonitoringResourcesTypeDef
@@ -6439,12 +6385,10 @@ from mypy_boto3_sagemaker.type_defs import MonitoringS3OutputTypeDef
 Required fields:
 - `S3Uri`: `str`
 - `LocalPath`: `str`
-
-
-
-Optional fields:
 - `S3UploadMode`: `ProcessingS3UploadMode`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## MonitoringScheduleConfigTypeDef
@@ -7039,11 +6983,9 @@ from mypy_boto3_sagemaker.type_defs import ProcessingFeatureStoreOutputTypeDef
 
 Required fields:
 - `FeatureGroupName`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ProcessingInputTypeDef
@@ -7158,14 +7100,12 @@ from mypy_boto3_sagemaker.type_defs import ProcessingOutputTypeDef
 
 Required fields:
 - `OutputName`: `str`
-
-
-
-Optional fields:
 - `S3Output`: `"ProcessingS3OutputTypeDef"`
 - `FeatureStoreOutput`: `"ProcessingFeatureStoreOutputTypeDef"`
 - `AppManaged`: `bool`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ProcessingResourcesTypeDef
@@ -7212,11 +7152,9 @@ Required fields:
 - `S3Uri`: `str`
 - `LocalPath`: `str`
 - `S3UploadMode`: `ProcessingS3UploadMode`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ProcessingStoppingConditionTypeDef
@@ -7442,11 +7380,9 @@ from mypy_boto3_sagemaker.type_defs import PutModelPackageGroupPolicyOutputTypeD
 
 Required fields:
 - `ModelPackageGroupArn`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## RedshiftDatasetDefinitionTypeDef
@@ -8268,14 +8204,12 @@ from mypy_boto3_sagemaker.type_defs import TransformOutputTypeDef
 
 Required fields:
 - `S3OutputPath`: `str`
-
-
-
-Optional fields:
 - `Accept`: `str`
 - `AssembleWith`: `AssemblyType`
 - `KmsKeyId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## TransformResourcesTypeDef
@@ -8652,11 +8586,9 @@ from mypy_boto3_sagemaker.type_defs import UpdateCodeRepositoryOutputTypeDef
 
 Required fields:
 - `CodeRepositoryArn`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateContextResponseTypeDef
@@ -8694,11 +8626,9 @@ from mypy_boto3_sagemaker.type_defs import UpdateEndpointOutputTypeDef
 
 Required fields:
 - `EndpointArn`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateEndpointWeightsAndCapacitiesOutputTypeDef
@@ -8710,11 +8640,9 @@ from mypy_boto3_sagemaker.type_defs import UpdateEndpointWeightsAndCapacitiesOut
 
 Required fields:
 - `EndpointArn`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateExperimentResponseTypeDef
@@ -8752,11 +8680,9 @@ from mypy_boto3_sagemaker.type_defs import UpdateModelPackageOutputTypeDef
 
 Required fields:
 - `ModelPackageArn`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateMonitoringScheduleResponseTypeDef

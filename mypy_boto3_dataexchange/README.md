@@ -15,7 +15,7 @@ pip install mypy-boto3-dataexchange
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## DataExchangeClient
 
@@ -123,7 +123,7 @@ from mypy_boto3_dataexchange.literals import AssetType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

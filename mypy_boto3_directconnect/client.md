@@ -80,7 +80,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_directconnect.client import DirectConnectClient
+
+def get_directconnect_client() -> DirectConnectClient:
+    return boto3.client("directconnect")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client)
 
 ## Exceptions
 
@@ -111,7 +116,7 @@ Exceptions:
 
 Type annotations for `boto3.client("directconnect").accept_direct_connect_gateway_association_proposal` method.
 
-[Client.accept_direct_connect_gateway_association_proposal documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.accept_direct_connect_gateway_association_proposal)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.accept_direct_connect_gateway_association_proposal]
 
 ```python
 def accept_direct_connect_gateway_association_proposal(
@@ -128,7 +133,7 @@ def accept_direct_connect_gateway_association_proposal(
 
 Type annotations for `boto3.client("directconnect").allocate_connection_on_interconnect` method.
 
-[Client.allocate_connection_on_interconnect documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.allocate_connection_on_interconnect)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.allocate_connection_on_interconnect]
 
 ```python
 def allocate_connection_on_interconnect(
@@ -146,7 +151,7 @@ def allocate_connection_on_interconnect(
 
 Type annotations for `boto3.client("directconnect").allocate_hosted_connection` method.
 
-[Client.allocate_hosted_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.allocate_hosted_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.allocate_hosted_connection]
 
 ```python
 def allocate_hosted_connection(
@@ -165,7 +170,7 @@ def allocate_hosted_connection(
 
 Type annotations for `boto3.client("directconnect").allocate_private_virtual_interface` method.
 
-[Client.allocate_private_virtual_interface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.allocate_private_virtual_interface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.allocate_private_virtual_interface]
 
 ```python
 def allocate_private_virtual_interface(
@@ -181,7 +186,7 @@ def allocate_private_virtual_interface(
 
 Type annotations for `boto3.client("directconnect").allocate_public_virtual_interface` method.
 
-[Client.allocate_public_virtual_interface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.allocate_public_virtual_interface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.allocate_public_virtual_interface]
 
 ```python
 def allocate_public_virtual_interface(
@@ -197,7 +202,7 @@ def allocate_public_virtual_interface(
 
 Type annotations for `boto3.client("directconnect").allocate_transit_virtual_interface` method.
 
-[Client.allocate_transit_virtual_interface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.allocate_transit_virtual_interface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.allocate_transit_virtual_interface]
 
 ```python
 def allocate_transit_virtual_interface(
@@ -213,7 +218,7 @@ def allocate_transit_virtual_interface(
 
 Type annotations for `boto3.client("directconnect").associate_connection_with_lag` method.
 
-[Client.associate_connection_with_lag documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.associate_connection_with_lag)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.associate_connection_with_lag]
 
 ```python
 def associate_connection_with_lag(
@@ -228,7 +233,7 @@ def associate_connection_with_lag(
 
 Type annotations for `boto3.client("directconnect").associate_hosted_connection` method.
 
-[Client.associate_hosted_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.associate_hosted_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.associate_hosted_connection]
 
 ```python
 def associate_hosted_connection(
@@ -243,7 +248,7 @@ def associate_hosted_connection(
 
 Type annotations for `boto3.client("directconnect").associate_mac_sec_key` method.
 
-[Client.associate_mac_sec_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.associate_mac_sec_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.associate_mac_sec_key]
 
 ```python
 def associate_mac_sec_key(
@@ -260,7 +265,7 @@ def associate_mac_sec_key(
 
 Type annotations for `boto3.client("directconnect").associate_virtual_interface` method.
 
-[Client.associate_virtual_interface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.associate_virtual_interface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.associate_virtual_interface]
 
 ```python
 def associate_virtual_interface(
@@ -275,7 +280,7 @@ def associate_virtual_interface(
 
 Type annotations for `boto3.client("directconnect").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -289,7 +294,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("directconnect").confirm_connection` method.
 
-[Client.confirm_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.confirm_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.confirm_connection]
 
 ```python
 def confirm_connection(
@@ -303,7 +308,7 @@ def confirm_connection(
 
 Type annotations for `boto3.client("directconnect").confirm_private_virtual_interface` method.
 
-[Client.confirm_private_virtual_interface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.confirm_private_virtual_interface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.confirm_private_virtual_interface]
 
 ```python
 def confirm_private_virtual_interface(
@@ -319,7 +324,7 @@ def confirm_private_virtual_interface(
 
 Type annotations for `boto3.client("directconnect").confirm_public_virtual_interface` method.
 
-[Client.confirm_public_virtual_interface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.confirm_public_virtual_interface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.confirm_public_virtual_interface]
 
 ```python
 def confirm_public_virtual_interface(
@@ -333,7 +338,7 @@ def confirm_public_virtual_interface(
 
 Type annotations for `boto3.client("directconnect").confirm_transit_virtual_interface` method.
 
-[Client.confirm_transit_virtual_interface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.confirm_transit_virtual_interface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.confirm_transit_virtual_interface]
 
 ```python
 def confirm_transit_virtual_interface(
@@ -348,7 +353,7 @@ def confirm_transit_virtual_interface(
 
 Type annotations for `boto3.client("directconnect").create_bgp_peer` method.
 
-[Client.create_bgp_peer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_bgp_peer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_bgp_peer]
 
 ```python
 def create_bgp_peer(
@@ -363,7 +368,7 @@ def create_bgp_peer(
 
 Type annotations for `boto3.client("directconnect").create_connection` method.
 
-[Client.create_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_connection]
 
 ```python
 def create_connection(
@@ -383,7 +388,7 @@ def create_connection(
 
 Type annotations for `boto3.client("directconnect").create_direct_connect_gateway` method.
 
-[Client.create_direct_connect_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_direct_connect_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_direct_connect_gateway]
 
 ```python
 def create_direct_connect_gateway(
@@ -398,7 +403,7 @@ def create_direct_connect_gateway(
 
 Type annotations for `boto3.client("directconnect").create_direct_connect_gateway_association` method.
 
-[Client.create_direct_connect_gateway_association documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_direct_connect_gateway_association)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_direct_connect_gateway_association]
 
 ```python
 def create_direct_connect_gateway_association(
@@ -415,7 +420,7 @@ def create_direct_connect_gateway_association(
 
 Type annotations for `boto3.client("directconnect").create_direct_connect_gateway_association_proposal` method.
 
-[Client.create_direct_connect_gateway_association_proposal documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_direct_connect_gateway_association_proposal)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_direct_connect_gateway_association_proposal]
 
 ```python
 def create_direct_connect_gateway_association_proposal(
@@ -433,7 +438,7 @@ def create_direct_connect_gateway_association_proposal(
 
 Type annotations for `boto3.client("directconnect").create_interconnect` method.
 
-[Client.create_interconnect documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_interconnect)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_interconnect]
 
 ```python
 def create_interconnect(
@@ -452,7 +457,7 @@ def create_interconnect(
 
 Type annotations for `boto3.client("directconnect").create_lag` method.
 
-[Client.create_lag documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_lag)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_lag]
 
 ```python
 def create_lag(
@@ -474,7 +479,7 @@ def create_lag(
 
 Type annotations for `boto3.client("directconnect").create_private_virtual_interface` method.
 
-[Client.create_private_virtual_interface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_private_virtual_interface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_private_virtual_interface]
 
 ```python
 def create_private_virtual_interface(
@@ -489,7 +494,7 @@ def create_private_virtual_interface(
 
 Type annotations for `boto3.client("directconnect").create_public_virtual_interface` method.
 
-[Client.create_public_virtual_interface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_public_virtual_interface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_public_virtual_interface]
 
 ```python
 def create_public_virtual_interface(
@@ -504,7 +509,7 @@ def create_public_virtual_interface(
 
 Type annotations for `boto3.client("directconnect").create_transit_virtual_interface` method.
 
-[Client.create_transit_virtual_interface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_transit_virtual_interface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_transit_virtual_interface]
 
 ```python
 def create_transit_virtual_interface(
@@ -519,7 +524,7 @@ def create_transit_virtual_interface(
 
 Type annotations for `boto3.client("directconnect").delete_bgp_peer` method.
 
-[Client.delete_bgp_peer documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_bgp_peer)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_bgp_peer]
 
 ```python
 def delete_bgp_peer(
@@ -536,7 +541,7 @@ def delete_bgp_peer(
 
 Type annotations for `boto3.client("directconnect").delete_connection` method.
 
-[Client.delete_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_connection]
 
 ```python
 def delete_connection(
@@ -550,7 +555,7 @@ def delete_connection(
 
 Type annotations for `boto3.client("directconnect").delete_direct_connect_gateway` method.
 
-[Client.delete_direct_connect_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_direct_connect_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_direct_connect_gateway]
 
 ```python
 def delete_direct_connect_gateway(
@@ -564,7 +569,7 @@ def delete_direct_connect_gateway(
 
 Type annotations for `boto3.client("directconnect").delete_direct_connect_gateway_association` method.
 
-[Client.delete_direct_connect_gateway_association documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_direct_connect_gateway_association)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_direct_connect_gateway_association]
 
 ```python
 def delete_direct_connect_gateway_association(
@@ -580,7 +585,7 @@ def delete_direct_connect_gateway_association(
 
 Type annotations for `boto3.client("directconnect").delete_direct_connect_gateway_association_proposal` method.
 
-[Client.delete_direct_connect_gateway_association_proposal documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_direct_connect_gateway_association_proposal)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_direct_connect_gateway_association_proposal]
 
 ```python
 def delete_direct_connect_gateway_association_proposal(
@@ -594,7 +599,7 @@ def delete_direct_connect_gateway_association_proposal(
 
 Type annotations for `boto3.client("directconnect").delete_interconnect` method.
 
-[Client.delete_interconnect documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_interconnect)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_interconnect]
 
 ```python
 def delete_interconnect(
@@ -608,7 +613,7 @@ def delete_interconnect(
 
 Type annotations for `boto3.client("directconnect").delete_lag` method.
 
-[Client.delete_lag documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_lag)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_lag]
 
 ```python
 def delete_lag(
@@ -622,7 +627,7 @@ def delete_lag(
 
 Type annotations for `boto3.client("directconnect").delete_virtual_interface` method.
 
-[Client.delete_virtual_interface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_virtual_interface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_virtual_interface]
 
 ```python
 def delete_virtual_interface(
@@ -636,7 +641,7 @@ def delete_virtual_interface(
 
 Type annotations for `boto3.client("directconnect").describe_connection_loa` method.
 
-[Client.describe_connection_loa documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_connection_loa)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_connection_loa]
 
 ```python
 def describe_connection_loa(
@@ -652,7 +657,7 @@ def describe_connection_loa(
 
 Type annotations for `boto3.client("directconnect").describe_connections` method.
 
-[Client.describe_connections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_connections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_connections]
 
 ```python
 def describe_connections(
@@ -666,7 +671,7 @@ def describe_connections(
 
 Type annotations for `boto3.client("directconnect").describe_connections_on_interconnect` method.
 
-[Client.describe_connections_on_interconnect documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_connections_on_interconnect)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_connections_on_interconnect]
 
 ```python
 def describe_connections_on_interconnect(
@@ -680,7 +685,7 @@ def describe_connections_on_interconnect(
 
 Type annotations for `boto3.client("directconnect").describe_direct_connect_gateway_association_proposals` method.
 
-[Client.describe_direct_connect_gateway_association_proposals documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateway_association_proposals)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateway_association_proposals]
 
 ```python
 def describe_direct_connect_gateway_association_proposals(
@@ -698,7 +703,7 @@ def describe_direct_connect_gateway_association_proposals(
 
 Type annotations for `boto3.client("directconnect").describe_direct_connect_gateway_associations` method.
 
-[Client.describe_direct_connect_gateway_associations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateway_associations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateway_associations]
 
 ```python
 def describe_direct_connect_gateway_associations(
@@ -717,7 +722,7 @@ def describe_direct_connect_gateway_associations(
 
 Type annotations for `boto3.client("directconnect").describe_direct_connect_gateway_attachments` method.
 
-[Client.describe_direct_connect_gateway_attachments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateway_attachments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateway_attachments]
 
 ```python
 def describe_direct_connect_gateway_attachments(
@@ -734,7 +739,7 @@ def describe_direct_connect_gateway_attachments(
 
 Type annotations for `boto3.client("directconnect").describe_direct_connect_gateways` method.
 
-[Client.describe_direct_connect_gateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateways]
 
 ```python
 def describe_direct_connect_gateways(
@@ -750,7 +755,7 @@ def describe_direct_connect_gateways(
 
 Type annotations for `boto3.client("directconnect").describe_hosted_connections` method.
 
-[Client.describe_hosted_connections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_hosted_connections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_hosted_connections]
 
 ```python
 def describe_hosted_connections(
@@ -764,7 +769,7 @@ def describe_hosted_connections(
 
 Type annotations for `boto3.client("directconnect").describe_interconnect_loa` method.
 
-[Client.describe_interconnect_loa documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_interconnect_loa)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_interconnect_loa]
 
 ```python
 def describe_interconnect_loa(
@@ -780,7 +785,7 @@ def describe_interconnect_loa(
 
 Type annotations for `boto3.client("directconnect").describe_interconnects` method.
 
-[Client.describe_interconnects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_interconnects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_interconnects]
 
 ```python
 def describe_interconnects(
@@ -794,7 +799,7 @@ def describe_interconnects(
 
 Type annotations for `boto3.client("directconnect").describe_lags` method.
 
-[Client.describe_lags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_lags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_lags]
 
 ```python
 def describe_lags(
@@ -808,7 +813,7 @@ def describe_lags(
 
 Type annotations for `boto3.client("directconnect").describe_loa` method.
 
-[Client.describe_loa documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_loa)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_loa]
 
 ```python
 def describe_loa(
@@ -824,7 +829,7 @@ def describe_loa(
 
 Type annotations for `boto3.client("directconnect").describe_locations` method.
 
-[Client.describe_locations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_locations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_locations]
 
 ```python
 def describe_locations(
@@ -837,7 +842,7 @@ def describe_locations(
 
 Type annotations for `boto3.client("directconnect").describe_tags` method.
 
-[Client.describe_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_tags]
 
 ```python
 def describe_tags(
@@ -851,7 +856,7 @@ def describe_tags(
 
 Type annotations for `boto3.client("directconnect").describe_virtual_gateways` method.
 
-[Client.describe_virtual_gateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_virtual_gateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_virtual_gateways]
 
 ```python
 def describe_virtual_gateways(
@@ -864,7 +869,7 @@ def describe_virtual_gateways(
 
 Type annotations for `boto3.client("directconnect").describe_virtual_interfaces` method.
 
-[Client.describe_virtual_interfaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_virtual_interfaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_virtual_interfaces]
 
 ```python
 def describe_virtual_interfaces(
@@ -879,7 +884,7 @@ def describe_virtual_interfaces(
 
 Type annotations for `boto3.client("directconnect").disassociate_connection_from_lag` method.
 
-[Client.disassociate_connection_from_lag documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.disassociate_connection_from_lag)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.disassociate_connection_from_lag]
 
 ```python
 def disassociate_connection_from_lag(
@@ -894,7 +899,7 @@ def disassociate_connection_from_lag(
 
 Type annotations for `boto3.client("directconnect").disassociate_mac_sec_key` method.
 
-[Client.disassociate_mac_sec_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.disassociate_mac_sec_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.disassociate_mac_sec_key]
 
 ```python
 def disassociate_mac_sec_key(
@@ -909,7 +914,7 @@ def disassociate_mac_sec_key(
 
 Type annotations for `boto3.client("directconnect").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -926,7 +931,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("directconnect").list_virtual_interface_test_history` method.
 
-[Client.list_virtual_interface_test_history documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.list_virtual_interface_test_history)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.list_virtual_interface_test_history]
 
 ```python
 def list_virtual_interface_test_history(
@@ -945,7 +950,7 @@ def list_virtual_interface_test_history(
 
 Type annotations for `boto3.client("directconnect").start_bgp_failover_test` method.
 
-[Client.start_bgp_failover_test documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.start_bgp_failover_test)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.start_bgp_failover_test]
 
 ```python
 def start_bgp_failover_test(
@@ -961,7 +966,7 @@ def start_bgp_failover_test(
 
 Type annotations for `boto3.client("directconnect").stop_bgp_failover_test` method.
 
-[Client.stop_bgp_failover_test documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.stop_bgp_failover_test)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.stop_bgp_failover_test]
 
 ```python
 def stop_bgp_failover_test(
@@ -975,7 +980,7 @@ def stop_bgp_failover_test(
 
 Type annotations for `boto3.client("directconnect").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -990,7 +995,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("directconnect").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -1005,7 +1010,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("directconnect").update_connection` method.
 
-[Client.update_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.update_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.update_connection]
 
 ```python
 def update_connection(
@@ -1021,7 +1026,7 @@ def update_connection(
 
 Type annotations for `boto3.client("directconnect").update_direct_connect_gateway_association` method.
 
-[Client.update_direct_connect_gateway_association documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.update_direct_connect_gateway_association)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.update_direct_connect_gateway_association]
 
 ```python
 def update_direct_connect_gateway_association(
@@ -1037,7 +1042,7 @@ def update_direct_connect_gateway_association(
 
 Type annotations for `boto3.client("directconnect").update_lag` method.
 
-[Client.update_lag documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.update_lag)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.update_lag]
 
 ```python
 def update_lag(
@@ -1054,7 +1059,7 @@ def update_lag(
 
 Type annotations for `boto3.client("directconnect").update_virtual_interface_attributes` method.
 
-[Client.update_virtual_interface_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.update_virtual_interface_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.update_virtual_interface_attributes]
 
 ```python
 def update_virtual_interface_attributes(

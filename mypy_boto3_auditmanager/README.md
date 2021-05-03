@@ -14,7 +14,7 @@ pip install mypy-boto3-auditmanager
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## AuditManagerClient
 
@@ -137,7 +137,7 @@ from mypy_boto3_auditmanager.literals import AccountStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

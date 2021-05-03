@@ -21,13 +21,13 @@ Type annotations for `boto3.client("health").get_paginator("describe_affected_ac
 Can be used directly:
 
 ```python
-from mypy_boto3_health.paginators import DescribeAffectedAccountsForOrganizationPaginator
+from mypy_boto3_health.paginator import DescribeAffectedAccountsForOrganizationPaginator
 
 def get_describe_affected_accounts_for_organization_paginator() -> DescribeAffectedAccountsForOrganizationPaginator:
     return boto3.client("health").get_paginator("describe_affected_accounts_for_organization")
 ```
 
-[Paginator.DescribeAffectedAccountsForOrganization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedAccountsForOrganization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedAccountsForOrganization)
 
 ```python
 class DescribeAffectedAccountsForOrganizationPaginator(Boto3Paginator):
@@ -45,13 +45,13 @@ Type annotations for `boto3.client("health").get_paginator("describe_affected_en
 Can be used directly:
 
 ```python
-from mypy_boto3_health.paginators import DescribeAffectedEntitiesPaginator
+from mypy_boto3_health.paginator import DescribeAffectedEntitiesPaginator
 
 def get_describe_affected_entities_paginator() -> DescribeAffectedEntitiesPaginator:
     return boto3.client("health").get_paginator("describe_affected_entities")
 ```
 
-[Paginator.DescribeAffectedEntities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedEntities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedEntities)
 
 ```python
 class DescribeAffectedEntitiesPaginator(Boto3Paginator):
@@ -70,13 +70,13 @@ Type annotations for `boto3.client("health").get_paginator("describe_affected_en
 Can be used directly:
 
 ```python
-from mypy_boto3_health.paginators import DescribeAffectedEntitiesForOrganizationPaginator
+from mypy_boto3_health.paginator import DescribeAffectedEntitiesForOrganizationPaginator
 
 def get_describe_affected_entities_for_organization_paginator() -> DescribeAffectedEntitiesForOrganizationPaginator:
     return boto3.client("health").get_paginator("describe_affected_entities_for_organization")
 ```
 
-[Paginator.DescribeAffectedEntitiesForOrganization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedEntitiesForOrganization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedEntitiesForOrganization)
 
 ```python
 class DescribeAffectedEntitiesForOrganizationPaginator(Boto3Paginator):
@@ -95,13 +95,13 @@ Type annotations for `boto3.client("health").get_paginator("describe_event_aggre
 Can be used directly:
 
 ```python
-from mypy_boto3_health.paginators import DescribeEventAggregatesPaginator
+from mypy_boto3_health.paginator import DescribeEventAggregatesPaginator
 
 def get_describe_event_aggregates_paginator() -> DescribeEventAggregatesPaginator:
     return boto3.client("health").get_paginator("describe_event_aggregates")
 ```
 
-[Paginator.DescribeEventAggregates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventAggregates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventAggregates)
 
 ```python
 class DescribeEventAggregatesPaginator(Boto3Paginator):
@@ -120,13 +120,13 @@ Type annotations for `boto3.client("health").get_paginator("describe_event_types
 Can be used directly:
 
 ```python
-from mypy_boto3_health.paginators import DescribeEventTypesPaginator
+from mypy_boto3_health.paginator import DescribeEventTypesPaginator
 
 def get_describe_event_types_paginator() -> DescribeEventTypesPaginator:
     return boto3.client("health").get_paginator("describe_event_types")
 ```
 
-[Paginator.DescribeEventTypes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventTypes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventTypes)
 
 ```python
 class DescribeEventTypesPaginator(Boto3Paginator):
@@ -145,13 +145,13 @@ Type annotations for `boto3.client("health").get_paginator("describe_events")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_health.paginators import DescribeEventsPaginator
+from mypy_boto3_health.paginator import DescribeEventsPaginator
 
 def get_describe_events_paginator() -> DescribeEventsPaginator:
     return boto3.client("health").get_paginator("describe_events")
 ```
 
-[Paginator.DescribeEvents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEvents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEvents)
 
 ```python
 class DescribeEventsPaginator(Boto3Paginator):
@@ -170,13 +170,13 @@ Type annotations for `boto3.client("health").get_paginator("describe_events_for_
 Can be used directly:
 
 ```python
-from mypy_boto3_health.paginators import DescribeEventsForOrganizationPaginator
+from mypy_boto3_health.paginator import DescribeEventsForOrganizationPaginator
 
 def get_describe_events_for_organization_paginator() -> DescribeEventsForOrganizationPaginator:
     return boto3.client("health").get_paginator("describe_events_for_organization")
 ```
 
-[Paginator.DescribeEventsForOrganization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventsForOrganization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventsForOrganization)
 
 ```python
 class DescribeEventsForOrganizationPaginator(Boto3Paginator):

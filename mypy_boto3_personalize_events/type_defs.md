@@ -1,11 +1,11 @@
-# Structures for boto3 PersonalizeEvents module
+# Typed dictionaries for boto3 PersonalizeEvents module
 
 > [Index](../README.md) > [PersonalizeEvents](./README.md) > Structures
 
 Auto-generated documentation for [PersonalizeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents)
 type annotations stubs module [mypy_boto3_personalize_events](https://pypi.org/project/mypy-boto3-personalize-events/).
 
-- [Structures for boto3 PersonalizeEvents module](#structures-for-boto3-personalizeevents-module)
+- [Typed dictionaries for boto3 PersonalizeEvents module](#typed-dictionaries-for-boto3-personalizeevents-module)
   - [EventTypeDef](#eventtypedef)
   - [ItemTypeDef](#itemtypedef)
   - [UserTypeDef](#usertypedef)

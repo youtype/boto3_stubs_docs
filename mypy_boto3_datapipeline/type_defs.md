@@ -1,11 +1,11 @@
-# Structures for boto3 DataPipeline module
+# Typed dictionaries for boto3 DataPipeline module
 
 > [Index](../README.md) > [DataPipeline](./README.md) > Structures
 
 Auto-generated documentation for [DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
 type annotations stubs module [mypy_boto3_datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
 
-- [Structures for boto3 DataPipeline module](#structures-for-boto3-datapipeline-module)
+- [Typed dictionaries for boto3 DataPipeline module](#typed-dictionaries-for-boto3-datapipeline-module)
   - [CreatePipelineOutputTypeDef](#createpipelineoutputtypedef)
   - [DescribeObjectsOutputTypeDef](#describeobjectsoutputtypedef)
   - [DescribePipelinesOutputTypeDef](#describepipelinesoutputtypedef)
@@ -45,11 +45,9 @@ from mypy_boto3_datapipeline.type_defs import CreatePipelineOutputTypeDef
 
 Required fields:
 - `pipelineId`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeObjectsOutputTypeDef
@@ -61,13 +59,11 @@ from mypy_boto3_datapipeline.type_defs import DescribeObjectsOutputTypeDef
 
 Required fields:
 - `pipelineObjects`: `List["PipelineObjectTypeDef"]`
-
-
-
-Optional fields:
 - `marker`: `str`
 - `hasMoreResults`: `bool`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribePipelinesOutputTypeDef
@@ -79,11 +75,9 @@ from mypy_boto3_datapipeline.type_defs import DescribePipelinesOutputTypeDef
 
 Required fields:
 - `pipelineDescriptionList`: `List["PipelineDescriptionTypeDef"]`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## EvaluateExpressionOutputTypeDef
@@ -95,11 +89,9 @@ from mypy_boto3_datapipeline.type_defs import EvaluateExpressionOutputTypeDef
 
 Required fields:
 - `evaluatedExpression`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## FieldTypeDef
@@ -126,13 +118,13 @@ from mypy_boto3_datapipeline.type_defs import GetPipelineDefinitionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `pipelineObjects`: `List["PipelineObjectTypeDef"]`
 - `parameterObjects`: `List["ParameterObjectTypeDef"]`
 - `parameterValues`: `List["ParameterValueTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## InstanceIdentityTypeDef
@@ -158,13 +150,11 @@ from mypy_boto3_datapipeline.type_defs import ListPipelinesOutputTypeDef
 
 Required fields:
 - `pipelineIdList`: `List["PipelineIdNameTypeDef"]`
-
-
-
-Optional fields:
 - `marker`: `str`
 - `hasMoreResults`: `bool`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## OperatorTypeDef
@@ -293,11 +283,11 @@ from mypy_boto3_datapipeline.type_defs import PollForTaskOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `taskObject`: `"TaskObjectTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PutPipelineDefinitionOutputTypeDef
@@ -308,14 +298,12 @@ from mypy_boto3_datapipeline.type_defs import PutPipelineDefinitionOutputTypeDef
 
 
 Required fields:
-- `errored`: `bool`
-
-
-
-Optional fields:
 - `validationErrors`: `List["ValidationErrorTypeDef"]`
 - `validationWarnings`: `List["ValidationWarningTypeDef"]`
+- `errored`: `bool`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## QueryObjectsOutputTypeDef
@@ -325,13 +313,13 @@ from mypy_boto3_datapipeline.type_defs import QueryObjectsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ids`: `List[str]`
 - `marker`: `str`
 - `hasMoreResults`: `bool`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## QueryTypeDef
@@ -356,11 +344,9 @@ from mypy_boto3_datapipeline.type_defs import ReportTaskProgressOutputTypeDef
 
 Required fields:
 - `canceled`: `bool`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ReportTaskRunnerHeartbeatOutputTypeDef
@@ -372,11 +358,9 @@ from mypy_boto3_datapipeline.type_defs import ReportTaskRunnerHeartbeatOutputTyp
 
 Required fields:
 - `terminate`: `bool`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ResponseMetadata
@@ -448,14 +432,12 @@ from mypy_boto3_datapipeline.type_defs import ValidatePipelineDefinitionOutputTy
 
 
 Required fields:
-- `errored`: `bool`
-
-
-
-Optional fields:
 - `validationErrors`: `List["ValidationErrorTypeDef"]`
 - `validationWarnings`: `List["ValidationWarningTypeDef"]`
+- `errored`: `bool`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ValidationErrorTypeDef

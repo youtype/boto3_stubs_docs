@@ -15,13 +15,13 @@ Type annotations for `boto3.client("codeguru-reviewer").get_paginator("list_repo
 Can be used directly:
 
 ```python
-from mypy_boto3_codeguru_reviewer.paginators import ListRepositoryAssociationsPaginator
+from mypy_boto3_codeguru_reviewer.paginator import ListRepositoryAssociationsPaginator
 
 def get_list_repository_associations_paginator() -> ListRepositoryAssociationsPaginator:
     return boto3.client("codeguru-reviewer").get_paginator("list_repository_associations")
 ```
 
-[Paginator.ListRepositoryAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Paginator.ListRepositoryAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Paginator.ListRepositoryAssociations)
 
 ```python
 class ListRepositoryAssociationsPaginator(Boto3Paginator):

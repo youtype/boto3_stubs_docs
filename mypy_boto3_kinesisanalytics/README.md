@@ -14,7 +14,7 @@ pip install mypy-boto3-kinesisanalytics
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## KinesisAnalyticsClient
 
@@ -99,7 +99,7 @@ from mypy_boto3_kinesisanalytics.literals import ApplicationStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

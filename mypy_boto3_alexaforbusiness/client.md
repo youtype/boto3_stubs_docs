@@ -114,7 +114,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_alexaforbusiness.client import AlexaForBusinessClient
+
+def get_alexaforbusiness_client() -> AlexaForBusinessClient:
+    return boto3.client("alexaforbusiness")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client)
 
 ## Exceptions
 
@@ -156,7 +161,7 @@ Exceptions:
 
 Type annotations for `boto3.client("alexaforbusiness").approve_skill` method.
 
-[Client.approve_skill documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.approve_skill)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.approve_skill]
 
 ```python
 def approve_skill(
@@ -170,7 +175,7 @@ def approve_skill(
 
 Type annotations for `boto3.client("alexaforbusiness").associate_contact_with_address_book` method.
 
-[Client.associate_contact_with_address_book documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_contact_with_address_book)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_contact_with_address_book]
 
 ```python
 def associate_contact_with_address_book(
@@ -185,7 +190,7 @@ def associate_contact_with_address_book(
 
 Type annotations for `boto3.client("alexaforbusiness").associate_device_with_network_profile` method.
 
-[Client.associate_device_with_network_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_device_with_network_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_device_with_network_profile]
 
 ```python
 def associate_device_with_network_profile(
@@ -200,7 +205,7 @@ def associate_device_with_network_profile(
 
 Type annotations for `boto3.client("alexaforbusiness").associate_device_with_room` method.
 
-[Client.associate_device_with_room documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_device_with_room)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_device_with_room]
 
 ```python
 def associate_device_with_room(
@@ -215,7 +220,7 @@ def associate_device_with_room(
 
 Type annotations for `boto3.client("alexaforbusiness").associate_skill_group_with_room` method.
 
-[Client.associate_skill_group_with_room documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_group_with_room)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_group_with_room]
 
 ```python
 def associate_skill_group_with_room(
@@ -230,7 +235,7 @@ def associate_skill_group_with_room(
 
 Type annotations for `boto3.client("alexaforbusiness").associate_skill_with_skill_group` method.
 
-[Client.associate_skill_with_skill_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_with_skill_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_with_skill_group]
 
 ```python
 def associate_skill_with_skill_group(
@@ -245,7 +250,7 @@ def associate_skill_with_skill_group(
 
 Type annotations for `boto3.client("alexaforbusiness").associate_skill_with_users` method.
 
-[Client.associate_skill_with_users documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_with_users)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_with_users]
 
 ```python
 def associate_skill_with_users(
@@ -259,7 +264,7 @@ def associate_skill_with_users(
 
 Type annotations for `boto3.client("alexaforbusiness").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -273,7 +278,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("alexaforbusiness").create_address_book` method.
 
-[Client.create_address_book documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_address_book)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_address_book]
 
 ```python
 def create_address_book(
@@ -290,7 +295,7 @@ def create_address_book(
 
 Type annotations for `boto3.client("alexaforbusiness").create_business_report_schedule` method.
 
-[Client.create_business_report_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_business_report_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_business_report_schedule]
 
 ```python
 def create_business_report_schedule(
@@ -311,7 +316,7 @@ def create_business_report_schedule(
 
 Type annotations for `boto3.client("alexaforbusiness").create_conference_provider` method.
 
-[Client.create_conference_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_conference_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_conference_provider]
 
 ```python
 def create_conference_provider(
@@ -331,7 +336,7 @@ def create_conference_provider(
 
 Type annotations for `boto3.client("alexaforbusiness").create_contact` method.
 
-[Client.create_contact documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_contact)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_contact]
 
 ```python
 def create_contact(
@@ -352,7 +357,7 @@ def create_contact(
 
 Type annotations for `boto3.client("alexaforbusiness").create_gateway_group` method.
 
-[Client.create_gateway_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_gateway_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_gateway_group]
 
 ```python
 def create_gateway_group(
@@ -369,7 +374,7 @@ def create_gateway_group(
 
 Type annotations for `boto3.client("alexaforbusiness").create_network_profile` method.
 
-[Client.create_network_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_network_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_network_profile]
 
 ```python
 def create_network_profile(
@@ -393,7 +398,7 @@ def create_network_profile(
 
 Type annotations for `boto3.client("alexaforbusiness").create_profile` method.
 
-[Client.create_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_profile]
 
 ```python
 def create_profile(
@@ -420,7 +425,7 @@ def create_profile(
 
 Type annotations for `boto3.client("alexaforbusiness").create_room` method.
 
-[Client.create_room documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_room)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_room]
 
 ```python
 def create_room(
@@ -439,7 +444,7 @@ def create_room(
 
 Type annotations for `boto3.client("alexaforbusiness").create_skill_group` method.
 
-[Client.create_skill_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_skill_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_skill_group]
 
 ```python
 def create_skill_group(
@@ -456,7 +461,7 @@ def create_skill_group(
 
 Type annotations for `boto3.client("alexaforbusiness").create_user` method.
 
-[Client.create_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_user]
 
 ```python
 def create_user(
@@ -475,7 +480,7 @@ def create_user(
 
 Type annotations for `boto3.client("alexaforbusiness").delete_address_book` method.
 
-[Client.delete_address_book documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_address_book)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_address_book]
 
 ```python
 def delete_address_book(
@@ -489,7 +494,7 @@ def delete_address_book(
 
 Type annotations for `boto3.client("alexaforbusiness").delete_business_report_schedule` method.
 
-[Client.delete_business_report_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_business_report_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_business_report_schedule]
 
 ```python
 def delete_business_report_schedule(
@@ -503,7 +508,7 @@ def delete_business_report_schedule(
 
 Type annotations for `boto3.client("alexaforbusiness").delete_conference_provider` method.
 
-[Client.delete_conference_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_conference_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_conference_provider]
 
 ```python
 def delete_conference_provider(
@@ -517,7 +522,7 @@ def delete_conference_provider(
 
 Type annotations for `boto3.client("alexaforbusiness").delete_contact` method.
 
-[Client.delete_contact documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_contact)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_contact]
 
 ```python
 def delete_contact(
@@ -531,7 +536,7 @@ def delete_contact(
 
 Type annotations for `boto3.client("alexaforbusiness").delete_device` method.
 
-[Client.delete_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_device]
 
 ```python
 def delete_device(
@@ -545,7 +550,7 @@ def delete_device(
 
 Type annotations for `boto3.client("alexaforbusiness").delete_device_usage_data` method.
 
-[Client.delete_device_usage_data documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_device_usage_data)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_device_usage_data]
 
 ```python
 def delete_device_usage_data(
@@ -560,7 +565,7 @@ def delete_device_usage_data(
 
 Type annotations for `boto3.client("alexaforbusiness").delete_gateway_group` method.
 
-[Client.delete_gateway_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_gateway_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_gateway_group]
 
 ```python
 def delete_gateway_group(
@@ -574,7 +579,7 @@ def delete_gateway_group(
 
 Type annotations for `boto3.client("alexaforbusiness").delete_network_profile` method.
 
-[Client.delete_network_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_network_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_network_profile]
 
 ```python
 def delete_network_profile(
@@ -588,7 +593,7 @@ def delete_network_profile(
 
 Type annotations for `boto3.client("alexaforbusiness").delete_profile` method.
 
-[Client.delete_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_profile]
 
 ```python
 def delete_profile(
@@ -602,7 +607,7 @@ def delete_profile(
 
 Type annotations for `boto3.client("alexaforbusiness").delete_room` method.
 
-[Client.delete_room documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_room)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_room]
 
 ```python
 def delete_room(
@@ -616,7 +621,7 @@ def delete_room(
 
 Type annotations for `boto3.client("alexaforbusiness").delete_room_skill_parameter` method.
 
-[Client.delete_room_skill_parameter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_room_skill_parameter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_room_skill_parameter]
 
 ```python
 def delete_room_skill_parameter(
@@ -632,7 +637,7 @@ def delete_room_skill_parameter(
 
 Type annotations for `boto3.client("alexaforbusiness").delete_skill_authorization` method.
 
-[Client.delete_skill_authorization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_skill_authorization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_skill_authorization]
 
 ```python
 def delete_skill_authorization(
@@ -647,7 +652,7 @@ def delete_skill_authorization(
 
 Type annotations for `boto3.client("alexaforbusiness").delete_skill_group` method.
 
-[Client.delete_skill_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_skill_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_skill_group]
 
 ```python
 def delete_skill_group(
@@ -661,7 +666,7 @@ def delete_skill_group(
 
 Type annotations for `boto3.client("alexaforbusiness").delete_user` method.
 
-[Client.delete_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_user]
 
 ```python
 def delete_user(
@@ -676,7 +681,7 @@ def delete_user(
 
 Type annotations for `boto3.client("alexaforbusiness").disassociate_contact_from_address_book` method.
 
-[Client.disassociate_contact_from_address_book documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_contact_from_address_book)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_contact_from_address_book]
 
 ```python
 def disassociate_contact_from_address_book(
@@ -691,7 +696,7 @@ def disassociate_contact_from_address_book(
 
 Type annotations for `boto3.client("alexaforbusiness").disassociate_device_from_room` method.
 
-[Client.disassociate_device_from_room documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_device_from_room)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_device_from_room]
 
 ```python
 def disassociate_device_from_room(
@@ -705,7 +710,7 @@ def disassociate_device_from_room(
 
 Type annotations for `boto3.client("alexaforbusiness").disassociate_skill_from_skill_group` method.
 
-[Client.disassociate_skill_from_skill_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_from_skill_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_from_skill_group]
 
 ```python
 def disassociate_skill_from_skill_group(
@@ -720,7 +725,7 @@ def disassociate_skill_from_skill_group(
 
 Type annotations for `boto3.client("alexaforbusiness").disassociate_skill_from_users` method.
 
-[Client.disassociate_skill_from_users documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_from_users)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_from_users]
 
 ```python
 def disassociate_skill_from_users(
@@ -734,7 +739,7 @@ def disassociate_skill_from_users(
 
 Type annotations for `boto3.client("alexaforbusiness").disassociate_skill_group_from_room` method.
 
-[Client.disassociate_skill_group_from_room documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_group_from_room)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_group_from_room]
 
 ```python
 def disassociate_skill_group_from_room(
@@ -749,7 +754,7 @@ def disassociate_skill_group_from_room(
 
 Type annotations for `boto3.client("alexaforbusiness").forget_smart_home_appliances` method.
 
-[Client.forget_smart_home_appliances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.forget_smart_home_appliances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.forget_smart_home_appliances]
 
 ```python
 def forget_smart_home_appliances(
@@ -763,7 +768,7 @@ def forget_smart_home_appliances(
 
 Type annotations for `boto3.client("alexaforbusiness").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -780,7 +785,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("alexaforbusiness").get_address_book` method.
 
-[Client.get_address_book documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_address_book)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_address_book]
 
 ```python
 def get_address_book(
@@ -794,7 +799,7 @@ def get_address_book(
 
 Type annotations for `boto3.client("alexaforbusiness").get_conference_preference` method.
 
-[Client.get_conference_preference documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_conference_preference)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_conference_preference]
 
 ```python
 def get_conference_preference(
@@ -807,7 +812,7 @@ def get_conference_preference(
 
 Type annotations for `boto3.client("alexaforbusiness").get_conference_provider` method.
 
-[Client.get_conference_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_conference_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_conference_provider]
 
 ```python
 def get_conference_provider(
@@ -821,7 +826,7 @@ def get_conference_provider(
 
 Type annotations for `boto3.client("alexaforbusiness").get_contact` method.
 
-[Client.get_contact documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_contact)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_contact]
 
 ```python
 def get_contact(
@@ -835,7 +840,7 @@ def get_contact(
 
 Type annotations for `boto3.client("alexaforbusiness").get_device` method.
 
-[Client.get_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_device]
 
 ```python
 def get_device(
@@ -849,7 +854,7 @@ def get_device(
 
 Type annotations for `boto3.client("alexaforbusiness").get_gateway` method.
 
-[Client.get_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_gateway]
 
 ```python
 def get_gateway(
@@ -863,7 +868,7 @@ def get_gateway(
 
 Type annotations for `boto3.client("alexaforbusiness").get_gateway_group` method.
 
-[Client.get_gateway_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_gateway_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_gateway_group]
 
 ```python
 def get_gateway_group(
@@ -877,7 +882,7 @@ def get_gateway_group(
 
 Type annotations for `boto3.client("alexaforbusiness").get_invitation_configuration` method.
 
-[Client.get_invitation_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_invitation_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_invitation_configuration]
 
 ```python
 def get_invitation_configuration(
@@ -890,7 +895,7 @@ def get_invitation_configuration(
 
 Type annotations for `boto3.client("alexaforbusiness").get_network_profile` method.
 
-[Client.get_network_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_network_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_network_profile]
 
 ```python
 def get_network_profile(
@@ -904,7 +909,7 @@ def get_network_profile(
 
 Type annotations for `boto3.client("alexaforbusiness").get_profile` method.
 
-[Client.get_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_profile]
 
 ```python
 def get_profile(
@@ -918,7 +923,7 @@ def get_profile(
 
 Type annotations for `boto3.client("alexaforbusiness").get_room` method.
 
-[Client.get_room documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_room)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_room]
 
 ```python
 def get_room(
@@ -932,7 +937,7 @@ def get_room(
 
 Type annotations for `boto3.client("alexaforbusiness").get_room_skill_parameter` method.
 
-[Client.get_room_skill_parameter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_room_skill_parameter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_room_skill_parameter]
 
 ```python
 def get_room_skill_parameter(
@@ -948,7 +953,7 @@ def get_room_skill_parameter(
 
 Type annotations for `boto3.client("alexaforbusiness").get_skill_group` method.
 
-[Client.get_skill_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_skill_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_skill_group]
 
 ```python
 def get_skill_group(
@@ -962,7 +967,7 @@ def get_skill_group(
 
 Type annotations for `boto3.client("alexaforbusiness").list_business_report_schedules` method.
 
-[Client.list_business_report_schedules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_business_report_schedules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_business_report_schedules]
 
 ```python
 def list_business_report_schedules(
@@ -977,7 +982,7 @@ def list_business_report_schedules(
 
 Type annotations for `boto3.client("alexaforbusiness").list_conference_providers` method.
 
-[Client.list_conference_providers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_conference_providers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_conference_providers]
 
 ```python
 def list_conference_providers(
@@ -992,7 +997,7 @@ def list_conference_providers(
 
 Type annotations for `boto3.client("alexaforbusiness").list_device_events` method.
 
-[Client.list_device_events documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_device_events)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_device_events]
 
 ```python
 def list_device_events(
@@ -1009,7 +1014,7 @@ def list_device_events(
 
 Type annotations for `boto3.client("alexaforbusiness").list_gateway_groups` method.
 
-[Client.list_gateway_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_gateway_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_gateway_groups]
 
 ```python
 def list_gateway_groups(
@@ -1024,7 +1029,7 @@ def list_gateway_groups(
 
 Type annotations for `boto3.client("alexaforbusiness").list_gateways` method.
 
-[Client.list_gateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_gateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_gateways]
 
 ```python
 def list_gateways(
@@ -1040,7 +1045,7 @@ def list_gateways(
 
 Type annotations for `boto3.client("alexaforbusiness").list_skills` method.
 
-[Client.list_skills documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills]
 
 ```python
 def list_skills(
@@ -1058,7 +1063,7 @@ def list_skills(
 
 Type annotations for `boto3.client("alexaforbusiness").list_skills_store_categories` method.
 
-[Client.list_skills_store_categories documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills_store_categories)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills_store_categories]
 
 ```python
 def list_skills_store_categories(
@@ -1073,7 +1078,7 @@ def list_skills_store_categories(
 
 Type annotations for `boto3.client("alexaforbusiness").list_skills_store_skills_by_category` method.
 
-[Client.list_skills_store_skills_by_category documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills_store_skills_by_category)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills_store_skills_by_category]
 
 ```python
 def list_skills_store_skills_by_category(
@@ -1089,7 +1094,7 @@ def list_skills_store_skills_by_category(
 
 Type annotations for `boto3.client("alexaforbusiness").list_smart_home_appliances` method.
 
-[Client.list_smart_home_appliances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_smart_home_appliances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_smart_home_appliances]
 
 ```python
 def list_smart_home_appliances(
@@ -1105,7 +1110,7 @@ def list_smart_home_appliances(
 
 Type annotations for `boto3.client("alexaforbusiness").list_tags` method.
 
-[Client.list_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_tags]
 
 ```python
 def list_tags(
@@ -1121,7 +1126,7 @@ def list_tags(
 
 Type annotations for `boto3.client("alexaforbusiness").put_conference_preference` method.
 
-[Client.put_conference_preference documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_conference_preference)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_conference_preference]
 
 ```python
 def put_conference_preference(
@@ -1135,7 +1140,7 @@ def put_conference_preference(
 
 Type annotations for `boto3.client("alexaforbusiness").put_invitation_configuration` method.
 
-[Client.put_invitation_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_invitation_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_invitation_configuration]
 
 ```python
 def put_invitation_configuration(
@@ -1151,7 +1156,7 @@ def put_invitation_configuration(
 
 Type annotations for `boto3.client("alexaforbusiness").put_room_skill_parameter` method.
 
-[Client.put_room_skill_parameter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_room_skill_parameter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_room_skill_parameter]
 
 ```python
 def put_room_skill_parameter(
@@ -1167,7 +1172,7 @@ def put_room_skill_parameter(
 
 Type annotations for `boto3.client("alexaforbusiness").put_skill_authorization` method.
 
-[Client.put_skill_authorization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_skill_authorization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_skill_authorization]
 
 ```python
 def put_skill_authorization(
@@ -1183,7 +1188,7 @@ def put_skill_authorization(
 
 Type annotations for `boto3.client("alexaforbusiness").register_avs_device` method.
 
-[Client.register_avs_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.register_avs_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.register_avs_device]
 
 ```python
 def register_avs_device(
@@ -1203,7 +1208,7 @@ def register_avs_device(
 
 Type annotations for `boto3.client("alexaforbusiness").reject_skill` method.
 
-[Client.reject_skill documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.reject_skill)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.reject_skill]
 
 ```python
 def reject_skill(
@@ -1217,7 +1222,7 @@ def reject_skill(
 
 Type annotations for `boto3.client("alexaforbusiness").resolve_room` method.
 
-[Client.resolve_room documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.resolve_room)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.resolve_room]
 
 ```python
 def resolve_room(
@@ -1232,7 +1237,7 @@ def resolve_room(
 
 Type annotations for `boto3.client("alexaforbusiness").revoke_invitation` method.
 
-[Client.revoke_invitation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.revoke_invitation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.revoke_invitation]
 
 ```python
 def revoke_invitation(
@@ -1247,7 +1252,7 @@ def revoke_invitation(
 
 Type annotations for `boto3.client("alexaforbusiness").search_address_books` method.
 
-[Client.search_address_books documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_address_books)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_address_books]
 
 ```python
 def search_address_books(
@@ -1264,7 +1269,7 @@ def search_address_books(
 
 Type annotations for `boto3.client("alexaforbusiness").search_contacts` method.
 
-[Client.search_contacts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_contacts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_contacts]
 
 ```python
 def search_contacts(
@@ -1281,7 +1286,7 @@ def search_contacts(
 
 Type annotations for `boto3.client("alexaforbusiness").search_devices` method.
 
-[Client.search_devices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_devices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_devices]
 
 ```python
 def search_devices(
@@ -1298,7 +1303,7 @@ def search_devices(
 
 Type annotations for `boto3.client("alexaforbusiness").search_network_profiles` method.
 
-[Client.search_network_profiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_network_profiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_network_profiles]
 
 ```python
 def search_network_profiles(
@@ -1315,7 +1320,7 @@ def search_network_profiles(
 
 Type annotations for `boto3.client("alexaforbusiness").search_profiles` method.
 
-[Client.search_profiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_profiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_profiles]
 
 ```python
 def search_profiles(
@@ -1332,7 +1337,7 @@ def search_profiles(
 
 Type annotations for `boto3.client("alexaforbusiness").search_rooms` method.
 
-[Client.search_rooms documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_rooms)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_rooms]
 
 ```python
 def search_rooms(
@@ -1349,7 +1354,7 @@ def search_rooms(
 
 Type annotations for `boto3.client("alexaforbusiness").search_skill_groups` method.
 
-[Client.search_skill_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_skill_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_skill_groups]
 
 ```python
 def search_skill_groups(
@@ -1366,7 +1371,7 @@ def search_skill_groups(
 
 Type annotations for `boto3.client("alexaforbusiness").search_users` method.
 
-[Client.search_users documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_users)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_users]
 
 ```python
 def search_users(
@@ -1383,7 +1388,7 @@ def search_users(
 
 Type annotations for `boto3.client("alexaforbusiness").send_announcement` method.
 
-[Client.send_announcement documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.send_announcement)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.send_announcement]
 
 ```python
 def send_announcement(
@@ -1400,7 +1405,7 @@ def send_announcement(
 
 Type annotations for `boto3.client("alexaforbusiness").send_invitation` method.
 
-[Client.send_invitation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.send_invitation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.send_invitation]
 
 ```python
 def send_invitation(
@@ -1414,7 +1419,7 @@ def send_invitation(
 
 Type annotations for `boto3.client("alexaforbusiness").start_device_sync` method.
 
-[Client.start_device_sync documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.start_device_sync)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.start_device_sync]
 
 ```python
 def start_device_sync(
@@ -1430,7 +1435,7 @@ def start_device_sync(
 
 Type annotations for `boto3.client("alexaforbusiness").start_smart_home_appliance_discovery` method.
 
-[Client.start_smart_home_appliance_discovery documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.start_smart_home_appliance_discovery)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.start_smart_home_appliance_discovery]
 
 ```python
 def start_smart_home_appliance_discovery(
@@ -1444,7 +1449,7 @@ def start_smart_home_appliance_discovery(
 
 Type annotations for `boto3.client("alexaforbusiness").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -1459,7 +1464,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("alexaforbusiness").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -1474,7 +1479,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("alexaforbusiness").update_address_book` method.
 
-[Client.update_address_book documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_address_book)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_address_book]
 
 ```python
 def update_address_book(
@@ -1490,7 +1495,7 @@ def update_address_book(
 
 Type annotations for `boto3.client("alexaforbusiness").update_business_report_schedule` method.
 
-[Client.update_business_report_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_business_report_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_business_report_schedule]
 
 ```python
 def update_business_report_schedule(
@@ -1509,7 +1514,7 @@ def update_business_report_schedule(
 
 Type annotations for `boto3.client("alexaforbusiness").update_conference_provider` method.
 
-[Client.update_conference_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_conference_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_conference_provider]
 
 ```python
 def update_conference_provider(
@@ -1527,7 +1532,7 @@ def update_conference_provider(
 
 Type annotations for `boto3.client("alexaforbusiness").update_contact` method.
 
-[Client.update_contact documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_contact)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_contact]
 
 ```python
 def update_contact(
@@ -1547,7 +1552,7 @@ def update_contact(
 
 Type annotations for `boto3.client("alexaforbusiness").update_device` method.
 
-[Client.update_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_device]
 
 ```python
 def update_device(
@@ -1562,7 +1567,7 @@ def update_device(
 
 Type annotations for `boto3.client("alexaforbusiness").update_gateway` method.
 
-[Client.update_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_gateway]
 
 ```python
 def update_gateway(
@@ -1579,7 +1584,7 @@ def update_gateway(
 
 Type annotations for `boto3.client("alexaforbusiness").update_gateway_group` method.
 
-[Client.update_gateway_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_gateway_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_gateway_group]
 
 ```python
 def update_gateway_group(
@@ -1595,7 +1600,7 @@ def update_gateway_group(
 
 Type annotations for `boto3.client("alexaforbusiness").update_network_profile` method.
 
-[Client.update_network_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_network_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_network_profile]
 
 ```python
 def update_network_profile(
@@ -1615,7 +1620,7 @@ def update_network_profile(
 
 Type annotations for `boto3.client("alexaforbusiness").update_profile` method.
 
-[Client.update_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_profile]
 
 ```python
 def update_profile(
@@ -1642,7 +1647,7 @@ def update_profile(
 
 Type annotations for `boto3.client("alexaforbusiness").update_room` method.
 
-[Client.update_room documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_room)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_room]
 
 ```python
 def update_room(
@@ -1660,7 +1665,7 @@ def update_room(
 
 Type annotations for `boto3.client("alexaforbusiness").update_skill_group` method.
 
-[Client.update_skill_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_skill_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_skill_group]
 
 ```python
 def update_skill_group(

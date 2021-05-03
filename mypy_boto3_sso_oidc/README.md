@@ -13,7 +13,7 @@ pip install mypy-boto3-sso-oidc
   - [SSOOIDCClient](#ssooidcclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## SSOOIDCClient
 
@@ -66,7 +66,7 @@ SSOOIDCClient [exceptions](./client.md#exceptions)
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

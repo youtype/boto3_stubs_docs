@@ -14,7 +14,7 @@ pip install mypy-boto3-fis
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## FISClient
 
@@ -84,7 +84,7 @@ from mypy_boto3_fis.literals import ExperimentActionStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

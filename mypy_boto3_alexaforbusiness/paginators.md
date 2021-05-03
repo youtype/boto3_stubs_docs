@@ -27,13 +27,13 @@ Type annotations for `boto3.client("alexaforbusiness").get_paginator("list_busin
 Can be used directly:
 
 ```python
-from mypy_boto3_alexaforbusiness.paginators import ListBusinessReportSchedulesPaginator
+from mypy_boto3_alexaforbusiness.paginator import ListBusinessReportSchedulesPaginator
 
 def get_list_business_report_schedules_paginator() -> ListBusinessReportSchedulesPaginator:
     return boto3.client("alexaforbusiness").get_paginator("list_business_report_schedules")
 ```
 
-[Paginator.ListBusinessReportSchedules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListBusinessReportSchedules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListBusinessReportSchedules)
 
 ```python
 class ListBusinessReportSchedulesPaginator(Boto3Paginator):
@@ -50,13 +50,13 @@ Type annotations for `boto3.client("alexaforbusiness").get_paginator("list_confe
 Can be used directly:
 
 ```python
-from mypy_boto3_alexaforbusiness.paginators import ListConferenceProvidersPaginator
+from mypy_boto3_alexaforbusiness.paginator import ListConferenceProvidersPaginator
 
 def get_list_conference_providers_paginator() -> ListConferenceProvidersPaginator:
     return boto3.client("alexaforbusiness").get_paginator("list_conference_providers")
 ```
 
-[Paginator.ListConferenceProviders documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListConferenceProviders)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListConferenceProviders)
 
 ```python
 class ListConferenceProvidersPaginator(Boto3Paginator):
@@ -73,13 +73,13 @@ Type annotations for `boto3.client("alexaforbusiness").get_paginator("list_devic
 Can be used directly:
 
 ```python
-from mypy_boto3_alexaforbusiness.paginators import ListDeviceEventsPaginator
+from mypy_boto3_alexaforbusiness.paginator import ListDeviceEventsPaginator
 
 def get_list_device_events_paginator() -> ListDeviceEventsPaginator:
     return boto3.client("alexaforbusiness").get_paginator("list_device_events")
 ```
 
-[Paginator.ListDeviceEvents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListDeviceEvents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListDeviceEvents)
 
 ```python
 class ListDeviceEventsPaginator(Boto3Paginator):
@@ -98,13 +98,13 @@ Type annotations for `boto3.client("alexaforbusiness").get_paginator("list_skill
 Can be used directly:
 
 ```python
-from mypy_boto3_alexaforbusiness.paginators import ListSkillsPaginator
+from mypy_boto3_alexaforbusiness.paginator import ListSkillsPaginator
 
 def get_list_skills_paginator() -> ListSkillsPaginator:
     return boto3.client("alexaforbusiness").get_paginator("list_skills")
 ```
 
-[Paginator.ListSkills documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSkills)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSkills)
 
 ```python
 class ListSkillsPaginator(Boto3Paginator):
@@ -124,13 +124,13 @@ Type annotations for `boto3.client("alexaforbusiness").get_paginator("list_skill
 Can be used directly:
 
 ```python
-from mypy_boto3_alexaforbusiness.paginators import ListSkillsStoreCategoriesPaginator
+from mypy_boto3_alexaforbusiness.paginator import ListSkillsStoreCategoriesPaginator
 
 def get_list_skills_store_categories_paginator() -> ListSkillsStoreCategoriesPaginator:
     return boto3.client("alexaforbusiness").get_paginator("list_skills_store_categories")
 ```
 
-[Paginator.ListSkillsStoreCategories documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSkillsStoreCategories)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSkillsStoreCategories)
 
 ```python
 class ListSkillsStoreCategoriesPaginator(Boto3Paginator):
@@ -147,13 +147,13 @@ Type annotations for `boto3.client("alexaforbusiness").get_paginator("list_skill
 Can be used directly:
 
 ```python
-from mypy_boto3_alexaforbusiness.paginators import ListSkillsStoreSkillsByCategoryPaginator
+from mypy_boto3_alexaforbusiness.paginator import ListSkillsStoreSkillsByCategoryPaginator
 
 def get_list_skills_store_skills_by_category_paginator() -> ListSkillsStoreSkillsByCategoryPaginator:
     return boto3.client("alexaforbusiness").get_paginator("list_skills_store_skills_by_category")
 ```
 
-[Paginator.ListSkillsStoreSkillsByCategory documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSkillsStoreSkillsByCategory)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSkillsStoreSkillsByCategory)
 
 ```python
 class ListSkillsStoreSkillsByCategoryPaginator(Boto3Paginator):
@@ -171,13 +171,13 @@ Type annotations for `boto3.client("alexaforbusiness").get_paginator("list_smart
 Can be used directly:
 
 ```python
-from mypy_boto3_alexaforbusiness.paginators import ListSmartHomeAppliancesPaginator
+from mypy_boto3_alexaforbusiness.paginator import ListSmartHomeAppliancesPaginator
 
 def get_list_smart_home_appliances_paginator() -> ListSmartHomeAppliancesPaginator:
     return boto3.client("alexaforbusiness").get_paginator("list_smart_home_appliances")
 ```
 
-[Paginator.ListSmartHomeAppliances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSmartHomeAppliances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListSmartHomeAppliances)
 
 ```python
 class ListSmartHomeAppliancesPaginator(Boto3Paginator):
@@ -195,13 +195,13 @@ Type annotations for `boto3.client("alexaforbusiness").get_paginator("list_tags"
 Can be used directly:
 
 ```python
-from mypy_boto3_alexaforbusiness.paginators import ListTagsPaginator
+from mypy_boto3_alexaforbusiness.paginator import ListTagsPaginator
 
 def get_list_tags_paginator() -> ListTagsPaginator:
     return boto3.client("alexaforbusiness").get_paginator("list_tags")
 ```
 
-[Paginator.ListTags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListTags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.ListTags)
 
 ```python
 class ListTagsPaginator(Boto3Paginator):
@@ -219,13 +219,13 @@ Type annotations for `boto3.client("alexaforbusiness").get_paginator("search_dev
 Can be used directly:
 
 ```python
-from mypy_boto3_alexaforbusiness.paginators import SearchDevicesPaginator
+from mypy_boto3_alexaforbusiness.paginator import SearchDevicesPaginator
 
 def get_search_devices_paginator() -> SearchDevicesPaginator:
     return boto3.client("alexaforbusiness").get_paginator("search_devices")
 ```
 
-[Paginator.SearchDevices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchDevices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchDevices)
 
 ```python
 class SearchDevicesPaginator(Boto3Paginator):
@@ -244,13 +244,13 @@ Type annotations for `boto3.client("alexaforbusiness").get_paginator("search_pro
 Can be used directly:
 
 ```python
-from mypy_boto3_alexaforbusiness.paginators import SearchProfilesPaginator
+from mypy_boto3_alexaforbusiness.paginator import SearchProfilesPaginator
 
 def get_search_profiles_paginator() -> SearchProfilesPaginator:
     return boto3.client("alexaforbusiness").get_paginator("search_profiles")
 ```
 
-[Paginator.SearchProfiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchProfiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchProfiles)
 
 ```python
 class SearchProfilesPaginator(Boto3Paginator):
@@ -269,13 +269,13 @@ Type annotations for `boto3.client("alexaforbusiness").get_paginator("search_roo
 Can be used directly:
 
 ```python
-from mypy_boto3_alexaforbusiness.paginators import SearchRoomsPaginator
+from mypy_boto3_alexaforbusiness.paginator import SearchRoomsPaginator
 
 def get_search_rooms_paginator() -> SearchRoomsPaginator:
     return boto3.client("alexaforbusiness").get_paginator("search_rooms")
 ```
 
-[Paginator.SearchRooms documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchRooms)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchRooms)
 
 ```python
 class SearchRoomsPaginator(Boto3Paginator):
@@ -294,13 +294,13 @@ Type annotations for `boto3.client("alexaforbusiness").get_paginator("search_ski
 Can be used directly:
 
 ```python
-from mypy_boto3_alexaforbusiness.paginators import SearchSkillGroupsPaginator
+from mypy_boto3_alexaforbusiness.paginator import SearchSkillGroupsPaginator
 
 def get_search_skill_groups_paginator() -> SearchSkillGroupsPaginator:
     return boto3.client("alexaforbusiness").get_paginator("search_skill_groups")
 ```
 
-[Paginator.SearchSkillGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchSkillGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchSkillGroups)
 
 ```python
 class SearchSkillGroupsPaginator(Boto3Paginator):
@@ -319,13 +319,13 @@ Type annotations for `boto3.client("alexaforbusiness").get_paginator("search_use
 Can be used directly:
 
 ```python
-from mypy_boto3_alexaforbusiness.paginators import SearchUsersPaginator
+from mypy_boto3_alexaforbusiness.paginator import SearchUsersPaginator
 
 def get_search_users_paginator() -> SearchUsersPaginator:
     return boto3.client("alexaforbusiness").get_paginator("search_users")
 ```
 
-[Paginator.SearchUsers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchUsers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Paginator.SearchUsers)
 
 ```python
 class SearchUsersPaginator(Boto3Paginator):

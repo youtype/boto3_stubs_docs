@@ -21,13 +21,13 @@ Type annotations for `boto3.client("swf").get_paginator("get_workflow_execution_
 Can be used directly:
 
 ```python
-from mypy_boto3_swf.paginators import GetWorkflowExecutionHistoryPaginator
+from mypy_boto3_swf.paginator import GetWorkflowExecutionHistoryPaginator
 
 def get_get_workflow_execution_history_paginator() -> GetWorkflowExecutionHistoryPaginator:
     return boto3.client("swf").get_paginator("get_workflow_execution_history")
 ```
 
-[Paginator.GetWorkflowExecutionHistory documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Paginator.GetWorkflowExecutionHistory)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Paginator.GetWorkflowExecutionHistory)
 
 ```python
 class GetWorkflowExecutionHistoryPaginator(Boto3Paginator):
@@ -47,13 +47,13 @@ Type annotations for `boto3.client("swf").get_paginator("list_activity_types")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_swf.paginators import ListActivityTypesPaginator
+from mypy_boto3_swf.paginator import ListActivityTypesPaginator
 
 def get_list_activity_types_paginator() -> ListActivityTypesPaginator:
     return boto3.client("swf").get_paginator("list_activity_types")
 ```
 
-[Paginator.ListActivityTypes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Paginator.ListActivityTypes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Paginator.ListActivityTypes)
 
 ```python
 class ListActivityTypesPaginator(Boto3Paginator):
@@ -74,13 +74,13 @@ Type annotations for `boto3.client("swf").get_paginator("list_closed_workflow_ex
 Can be used directly:
 
 ```python
-from mypy_boto3_swf.paginators import ListClosedWorkflowExecutionsPaginator
+from mypy_boto3_swf.paginator import ListClosedWorkflowExecutionsPaginator
 
 def get_list_closed_workflow_executions_paginator() -> ListClosedWorkflowExecutionsPaginator:
     return boto3.client("swf").get_paginator("list_closed_workflow_executions")
 ```
 
-[Paginator.ListClosedWorkflowExecutions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Paginator.ListClosedWorkflowExecutions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Paginator.ListClosedWorkflowExecutions)
 
 ```python
 class ListClosedWorkflowExecutionsPaginator(Boto3Paginator):
@@ -105,13 +105,13 @@ Type annotations for `boto3.client("swf").get_paginator("list_domains")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_swf.paginators import ListDomainsPaginator
+from mypy_boto3_swf.paginator import ListDomainsPaginator
 
 def get_list_domains_paginator() -> ListDomainsPaginator:
     return boto3.client("swf").get_paginator("list_domains")
 ```
 
-[Paginator.ListDomains documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Paginator.ListDomains)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Paginator.ListDomains)
 
 ```python
 class ListDomainsPaginator(Boto3Paginator):
@@ -130,13 +130,13 @@ Type annotations for `boto3.client("swf").get_paginator("list_open_workflow_exec
 Can be used directly:
 
 ```python
-from mypy_boto3_swf.paginators import ListOpenWorkflowExecutionsPaginator
+from mypy_boto3_swf.paginator import ListOpenWorkflowExecutionsPaginator
 
 def get_list_open_workflow_executions_paginator() -> ListOpenWorkflowExecutionsPaginator:
     return boto3.client("swf").get_paginator("list_open_workflow_executions")
 ```
 
-[Paginator.ListOpenWorkflowExecutions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Paginator.ListOpenWorkflowExecutions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Paginator.ListOpenWorkflowExecutions)
 
 ```python
 class ListOpenWorkflowExecutionsPaginator(Boto3Paginator):
@@ -159,13 +159,13 @@ Type annotations for `boto3.client("swf").get_paginator("list_workflow_types")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_swf.paginators import ListWorkflowTypesPaginator
+from mypy_boto3_swf.paginator import ListWorkflowTypesPaginator
 
 def get_list_workflow_types_paginator() -> ListWorkflowTypesPaginator:
     return boto3.client("swf").get_paginator("list_workflow_types")
 ```
 
-[Paginator.ListWorkflowTypes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Paginator.ListWorkflowTypes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Paginator.ListWorkflowTypes)
 
 ```python
 class ListWorkflowTypesPaginator(Boto3Paginator):
@@ -186,13 +186,13 @@ Type annotations for `boto3.client("swf").get_paginator("poll_for_decision_task"
 Can be used directly:
 
 ```python
-from mypy_boto3_swf.paginators import PollForDecisionTaskPaginator
+from mypy_boto3_swf.paginator import PollForDecisionTaskPaginator
 
 def get_poll_for_decision_task_paginator() -> PollForDecisionTaskPaginator:
     return boto3.client("swf").get_paginator("poll_for_decision_task")
 ```
 
-[Paginator.PollForDecisionTask documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Paginator.PollForDecisionTask)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Paginator.PollForDecisionTask)
 
 ```python
 class PollForDecisionTaskPaginator(Boto3Paginator):

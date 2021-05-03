@@ -1,11 +1,11 @@
-# Structures for boto3 ServiceCatalog module
+# Typed dictionaries for boto3 ServiceCatalog module
 
 > [Index](../README.md) > [ServiceCatalog](./README.md) > Structures
 
 Auto-generated documentation for [ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
 type annotations stubs module [mypy_boto3_servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
 
-- [Structures for boto3 ServiceCatalog module](#structures-for-boto3-servicecatalog-module)
+- [Typed dictionaries for boto3 ServiceCatalog module](#typed-dictionaries-for-boto3-servicecatalog-module)
   - [AccessLevelFilterTypeDef](#accesslevelfiltertypedef)
   - [BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef](#batchassociateserviceactionwithprovisioningartifactoutputtypedef)
   - [BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef](#batchdisassociateserviceactionfromprovisioningartifactoutputtypedef)
@@ -149,11 +149,11 @@ from mypy_boto3_servicecatalog.type_defs import BatchAssociateServiceActionWithP
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `FailedServiceActionAssociations`: `List["FailedServiceActionAssociationTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef
@@ -163,11 +163,11 @@ from mypy_boto3_servicecatalog.type_defs import BatchDisassociateServiceActionFr
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `FailedServiceActionAssociations`: `List["FailedServiceActionAssociationTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BudgetDetailTypeDef
@@ -235,11 +235,11 @@ from mypy_boto3_servicecatalog.type_defs import CopyProductOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `CopyProductToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateConstraintOutputTypeDef
@@ -249,13 +249,13 @@ from mypy_boto3_servicecatalog.type_defs import CreateConstraintOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ConstraintDetail`: `"ConstraintDetailTypeDef"`
 - `ConstraintParameters`: `str`
 - `Status`: `Status`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreatePortfolioOutputTypeDef
@@ -265,12 +265,12 @@ from mypy_boto3_servicecatalog.type_defs import CreatePortfolioOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PortfolioDetail`: `"PortfolioDetailTypeDef"`
 - `Tags`: `List["TagTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreatePortfolioShareOutputTypeDef
@@ -280,11 +280,11 @@ from mypy_boto3_servicecatalog.type_defs import CreatePortfolioShareOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PortfolioShareToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateProductOutputTypeDef
@@ -294,13 +294,13 @@ from mypy_boto3_servicecatalog.type_defs import CreateProductOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProductViewDetail`: `"ProductViewDetailTypeDef"`
 - `ProvisioningArtifactDetail`: `"ProvisioningArtifactDetailTypeDef"`
 - `Tags`: `List["TagTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateProvisionedProductPlanOutputTypeDef
@@ -310,15 +310,15 @@ from mypy_boto3_servicecatalog.type_defs import CreateProvisionedProductPlanOutp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PlanName`: `str`
 - `PlanId`: `str`
 - `ProvisionProductId`: `str`
 - `ProvisionedProductName`: `str`
 - `ProvisioningArtifactId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateProvisioningArtifactOutputTypeDef
@@ -328,13 +328,13 @@ from mypy_boto3_servicecatalog.type_defs import CreateProvisioningArtifactOutput
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProvisioningArtifactDetail`: `"ProvisioningArtifactDetailTypeDef"`
 - `Info`: `Dict[str, str]`
 - `Status`: `Status`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateServiceActionOutputTypeDef
@@ -344,11 +344,11 @@ from mypy_boto3_servicecatalog.type_defs import CreateServiceActionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ServiceActionDetail`: `"ServiceActionDetailTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateTagOptionOutputTypeDef
@@ -358,11 +358,11 @@ from mypy_boto3_servicecatalog.type_defs import CreateTagOptionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TagOptionDetail`: `"TagOptionDetailTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeletePortfolioShareOutputTypeDef
@@ -372,11 +372,11 @@ from mypy_boto3_servicecatalog.type_defs import DeletePortfolioShareOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PortfolioShareToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeConstraintOutputTypeDef
@@ -386,13 +386,13 @@ from mypy_boto3_servicecatalog.type_defs import DescribeConstraintOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ConstraintDetail`: `"ConstraintDetailTypeDef"`
 - `ConstraintParameters`: `str`
 - `Status`: `Status`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeCopyProductStatusOutputTypeDef
@@ -402,13 +402,13 @@ from mypy_boto3_servicecatalog.type_defs import DescribeCopyProductStatusOutputT
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `CopyProductStatus`: `CopyProductStatus`
 - `TargetProductId`: `str`
 - `StatusDetail`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribePortfolioOutputTypeDef
@@ -418,14 +418,14 @@ from mypy_boto3_servicecatalog.type_defs import DescribePortfolioOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PortfolioDetail`: `"PortfolioDetailTypeDef"`
 - `Tags`: `List["TagTypeDef"]`
 - `TagOptions`: `List["TagOptionDetailTypeDef"]`
 - `Budgets`: `List["BudgetDetailTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribePortfolioShareStatusOutputTypeDef
@@ -435,15 +435,15 @@ from mypy_boto3_servicecatalog.type_defs import DescribePortfolioShareStatusOutp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PortfolioShareToken`: `str`
 - `PortfolioId`: `str`
 - `OrganizationNodeValue`: `str`
 - `Status`: `ShareStatus`
 - `ShareDetails`: `"ShareDetailsTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribePortfolioSharesOutputTypeDef
@@ -453,12 +453,12 @@ from mypy_boto3_servicecatalog.type_defs import DescribePortfolioSharesOutputTyp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NextPageToken`: `str`
 - `PortfolioShareDetails`: `List["PortfolioShareDetailTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeProductAsAdminOutputTypeDef
@@ -468,15 +468,15 @@ from mypy_boto3_servicecatalog.type_defs import DescribeProductAsAdminOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProductViewDetail`: `"ProductViewDetailTypeDef"`
 - `ProvisioningArtifactSummaries`: `List["ProvisioningArtifactSummaryTypeDef"]`
 - `Tags`: `List["TagTypeDef"]`
 - `TagOptions`: `List["TagOptionDetailTypeDef"]`
 - `Budgets`: `List["BudgetDetailTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeProductOutputTypeDef
@@ -486,14 +486,14 @@ from mypy_boto3_servicecatalog.type_defs import DescribeProductOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProductViewSummary`: `"ProductViewSummaryTypeDef"`
 - `ProvisioningArtifacts`: `List["ProvisioningArtifactTypeDef"]`
 - `Budgets`: `List["BudgetDetailTypeDef"]`
 - `LaunchPaths`: `List["LaunchPathTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeProductViewOutputTypeDef
@@ -503,12 +503,12 @@ from mypy_boto3_servicecatalog.type_defs import DescribeProductViewOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProductViewSummary`: `"ProductViewSummaryTypeDef"`
 - `ProvisioningArtifacts`: `List["ProvisioningArtifactTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeProvisionedProductOutputTypeDef
@@ -518,12 +518,12 @@ from mypy_boto3_servicecatalog.type_defs import DescribeProvisionedProductOutput
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProvisionedProductDetail`: `"ProvisionedProductDetailTypeDef"`
 - `CloudWatchDashboards`: `List["CloudWatchDashboardTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeProvisionedProductPlanOutputTypeDef
@@ -533,13 +533,13 @@ from mypy_boto3_servicecatalog.type_defs import DescribeProvisionedProductPlanOu
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProvisionedProductPlanDetails`: `"ProvisionedProductPlanDetailsTypeDef"`
 - `ResourceChanges`: `List["ResourceChangeTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeProvisioningArtifactOutputTypeDef
@@ -549,13 +549,13 @@ from mypy_boto3_servicecatalog.type_defs import DescribeProvisioningArtifactOutp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProvisioningArtifactDetail`: `"ProvisioningArtifactDetailTypeDef"`
 - `Info`: `Dict[str, str]`
 - `Status`: `Status`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeProvisioningParametersOutputTypeDef
@@ -565,9 +565,7 @@ from mypy_boto3_servicecatalog.type_defs import DescribeProvisioningParametersOu
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProvisioningArtifactParameters`: `List["ProvisioningArtifactParameterTypeDef"]`
 - `ConstraintSummaries`: `List["ConstraintSummaryTypeDef"]`
 - `UsageInstructions`: `List["UsageInstructionTypeDef"]`
@@ -577,6 +575,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## DescribeRecordOutputTypeDef
 
 ```python
@@ -584,13 +584,13 @@ from mypy_boto3_servicecatalog.type_defs import DescribeRecordOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `RecordDetail`: `"RecordDetailTypeDef"`
 - `RecordOutputs`: `List["RecordOutputTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeServiceActionExecutionParametersOutputTypeDef
@@ -600,11 +600,11 @@ from mypy_boto3_servicecatalog.type_defs import DescribeServiceActionExecutionPa
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ServiceActionParameters`: `List["ExecutionParameterTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeServiceActionOutputTypeDef
@@ -614,11 +614,11 @@ from mypy_boto3_servicecatalog.type_defs import DescribeServiceActionOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ServiceActionDetail`: `"ServiceActionDetailTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeTagOptionOutputTypeDef
@@ -628,11 +628,11 @@ from mypy_boto3_servicecatalog.type_defs import DescribeTagOptionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TagOptionDetail`: `"TagOptionDetailTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ExecuteProvisionedProductPlanOutputTypeDef
@@ -642,11 +642,11 @@ from mypy_boto3_servicecatalog.type_defs import ExecuteProvisionedProductPlanOut
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `RecordDetail`: `"RecordDetailTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ExecuteProvisionedProductServiceActionOutputTypeDef
@@ -656,11 +656,11 @@ from mypy_boto3_servicecatalog.type_defs import ExecuteProvisionedProductService
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `RecordDetail`: `"RecordDetailTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ExecutionParameterTypeDef
@@ -702,11 +702,11 @@ from mypy_boto3_servicecatalog.type_defs import GetAWSOrganizationsAccessStatusO
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `AccessStatus`: `AccessStatus`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetProvisionedProductOutputsOutputTypeDef
@@ -716,12 +716,12 @@ from mypy_boto3_servicecatalog.type_defs import GetProvisionedProductOutputsOutp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Outputs`: `List["RecordOutputTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ImportAsProvisionedProductOutputTypeDef
@@ -731,11 +731,11 @@ from mypy_boto3_servicecatalog.type_defs import ImportAsProvisionedProductOutput
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `RecordDetail`: `"RecordDetailTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## LaunchPathSummaryTypeDef
@@ -775,12 +775,12 @@ from mypy_boto3_servicecatalog.type_defs import ListAcceptedPortfolioSharesOutpu
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PortfolioDetails`: `List["PortfolioDetailTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListBudgetsForResourceOutputTypeDef
@@ -790,12 +790,12 @@ from mypy_boto3_servicecatalog.type_defs import ListBudgetsForResourceOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Budgets`: `List["BudgetDetailTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListConstraintsForPortfolioOutputTypeDef
@@ -805,12 +805,12 @@ from mypy_boto3_servicecatalog.type_defs import ListConstraintsForPortfolioOutpu
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ConstraintDetails`: `List["ConstraintDetailTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListLaunchPathsOutputTypeDef
@@ -820,12 +820,12 @@ from mypy_boto3_servicecatalog.type_defs import ListLaunchPathsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `LaunchPathSummaries`: `List["LaunchPathSummaryTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListOrganizationPortfolioAccessOutputTypeDef
@@ -835,12 +835,12 @@ from mypy_boto3_servicecatalog.type_defs import ListOrganizationPortfolioAccessO
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `OrganizationNodes`: `List["OrganizationNodeTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListPortfolioAccessOutputTypeDef
@@ -850,12 +850,12 @@ from mypy_boto3_servicecatalog.type_defs import ListPortfolioAccessOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `AccountIds`: `List[str]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListPortfoliosForProductOutputTypeDef
@@ -865,12 +865,12 @@ from mypy_boto3_servicecatalog.type_defs import ListPortfoliosForProductOutputTy
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PortfolioDetails`: `List["PortfolioDetailTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListPortfoliosOutputTypeDef
@@ -880,12 +880,12 @@ from mypy_boto3_servicecatalog.type_defs import ListPortfoliosOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PortfolioDetails`: `List["PortfolioDetailTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListPrincipalsForPortfolioOutputTypeDef
@@ -895,12 +895,12 @@ from mypy_boto3_servicecatalog.type_defs import ListPrincipalsForPortfolioOutput
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Principals`: `List["PrincipalTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListProvisionedProductPlansOutputTypeDef
@@ -910,12 +910,12 @@ from mypy_boto3_servicecatalog.type_defs import ListProvisionedProductPlansOutpu
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProvisionedProductPlans`: `List["ProvisionedProductPlanSummaryTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListProvisioningArtifactsForServiceActionOutputTypeDef
@@ -925,12 +925,12 @@ from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsForServ
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProvisioningArtifactViews`: `List["ProvisioningArtifactViewTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListProvisioningArtifactsOutputTypeDef
@@ -940,12 +940,12 @@ from mypy_boto3_servicecatalog.type_defs import ListProvisioningArtifactsOutputT
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProvisioningArtifactDetails`: `List["ProvisioningArtifactDetailTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListRecordHistoryOutputTypeDef
@@ -955,12 +955,12 @@ from mypy_boto3_servicecatalog.type_defs import ListRecordHistoryOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `RecordDetails`: `List["RecordDetailTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListRecordHistorySearchFilterTypeDef
@@ -984,12 +984,12 @@ from mypy_boto3_servicecatalog.type_defs import ListResourcesForTagOptionOutputT
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ResourceDetails`: `List["ResourceDetailTypeDef"]`
 - `PageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListServiceActionsForProvisioningArtifactOutputTypeDef
@@ -999,12 +999,12 @@ from mypy_boto3_servicecatalog.type_defs import ListServiceActionsForProvisionin
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ServiceActionSummaries`: `List["ServiceActionSummaryTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListServiceActionsOutputTypeDef
@@ -1014,12 +1014,12 @@ from mypy_boto3_servicecatalog.type_defs import ListServiceActionsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ServiceActionSummaries`: `List["ServiceActionSummaryTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListStackInstancesForProvisionedProductOutputTypeDef
@@ -1029,12 +1029,12 @@ from mypy_boto3_servicecatalog.type_defs import ListStackInstancesForProvisioned
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `StackInstances`: `List["StackInstanceTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagOptionsFiltersTypeDef
@@ -1059,12 +1059,12 @@ from mypy_boto3_servicecatalog.type_defs import ListTagOptionsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TagOptionDetails`: `List["TagOptionDetailTypeDef"]`
 - `PageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## OrganizationNodeTypeDef
@@ -1223,11 +1223,11 @@ from mypy_boto3_servicecatalog.type_defs import ProvisionProductOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `RecordDetail`: `"RecordDetailTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ProvisionedProductAttributeTypeDef
@@ -1358,12 +1358,12 @@ from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Key`: `str`
 - `Description`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ProvisioningArtifactParameterTypeDef
@@ -1544,13 +1544,13 @@ from mypy_boto3_servicecatalog.type_defs import RecordOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `OutputKey`: `str`
 - `OutputValue`: `str`
 - `Description`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## RecordTagTypeDef
@@ -1657,12 +1657,12 @@ from mypy_boto3_servicecatalog.type_defs import ScanProvisionedProductsOutputTyp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProvisionedProducts`: `List["ProvisionedProductDetailTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## SearchProductsAsAdminOutputTypeDef
@@ -1672,12 +1672,12 @@ from mypy_boto3_servicecatalog.type_defs import SearchProductsAsAdminOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProductViewDetails`: `List["ProductViewDetailTypeDef"]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## SearchProductsOutputTypeDef
@@ -1687,13 +1687,13 @@ from mypy_boto3_servicecatalog.type_defs import SearchProductsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProductViewSummaries`: `List["ProductViewSummaryTypeDef"]`
 - `ProductViewAggregations`: `Dict[str, List["ProductViewAggregationValueTypeDef"]]`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## SearchProvisionedProductsOutputTypeDef
@@ -1703,13 +1703,13 @@ from mypy_boto3_servicecatalog.type_defs import SearchProvisionedProductsOutputT
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProvisionedProducts`: `List["ProvisionedProductAttributeTypeDef"]`
 - `TotalResultsCount`: `int`
 - `NextPageToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ServiceActionAssociationTypeDef
@@ -1853,11 +1853,11 @@ from mypy_boto3_servicecatalog.type_defs import TerminateProvisionedProductOutpu
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `RecordDetail`: `"RecordDetailTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateConstraintOutputTypeDef
@@ -1867,13 +1867,13 @@ from mypy_boto3_servicecatalog.type_defs import UpdateConstraintOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ConstraintDetail`: `"ConstraintDetailTypeDef"`
 - `ConstraintParameters`: `str`
 - `Status`: `Status`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdatePortfolioOutputTypeDef
@@ -1883,12 +1883,12 @@ from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PortfolioDetail`: `"PortfolioDetailTypeDef"`
 - `Tags`: `List["TagTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdatePortfolioShareOutputTypeDef
@@ -1898,12 +1898,12 @@ from mypy_boto3_servicecatalog.type_defs import UpdatePortfolioShareOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PortfolioShareToken`: `str`
 - `Status`: `ShareStatus`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateProductOutputTypeDef
@@ -1913,12 +1913,12 @@ from mypy_boto3_servicecatalog.type_defs import UpdateProductOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProductViewDetail`: `"ProductViewDetailTypeDef"`
 - `Tags`: `List["TagTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateProvisionedProductOutputTypeDef
@@ -1928,11 +1928,11 @@ from mypy_boto3_servicecatalog.type_defs import UpdateProvisionedProductOutputTy
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `RecordDetail`: `"RecordDetailTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateProvisionedProductPropertiesOutputTypeDef
@@ -1942,14 +1942,14 @@ from mypy_boto3_servicecatalog.type_defs import UpdateProvisionedProductProperti
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProvisionedProductId`: `str`
 - `ProvisionedProductProperties`: `Dict[PropertyKey, str]`
 - `RecordId`: `str`
 - `Status`: `RecordStatus`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateProvisioningArtifactOutputTypeDef
@@ -1959,13 +1959,13 @@ from mypy_boto3_servicecatalog.type_defs import UpdateProvisioningArtifactOutput
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProvisioningArtifactDetail`: `"ProvisioningArtifactDetailTypeDef"`
 - `Info`: `Dict[str, str]`
 - `Status`: `Status`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateProvisioningParameterTypeDef
@@ -2009,11 +2009,11 @@ from mypy_boto3_servicecatalog.type_defs import UpdateServiceActionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ServiceActionDetail`: `"ServiceActionDetailTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateTagOptionOutputTypeDef
@@ -2023,11 +2023,11 @@ from mypy_boto3_servicecatalog.type_defs import UpdateTagOptionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TagOptionDetail`: `"TagOptionDetailTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UsageInstructionTypeDef

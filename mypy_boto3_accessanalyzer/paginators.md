@@ -22,13 +22,13 @@ Type annotations for `boto3.client("accessanalyzer").get_paginator("list_access_
 Can be used directly:
 
 ```python
-from mypy_boto3_accessanalyzer.paginators import ListAccessPreviewFindingsPaginator
+from mypy_boto3_accessanalyzer.paginator import ListAccessPreviewFindingsPaginator
 
 def get_list_access_preview_findings_paginator() -> ListAccessPreviewFindingsPaginator:
     return boto3.client("accessanalyzer").get_paginator("list_access_preview_findings")
 ```
 
-[Paginator.ListAccessPreviewFindings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAccessPreviewFindings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAccessPreviewFindings)
 
 ```python
 class ListAccessPreviewFindingsPaginator(Boto3Paginator):
@@ -48,13 +48,13 @@ Type annotations for `boto3.client("accessanalyzer").get_paginator("list_access_
 Can be used directly:
 
 ```python
-from mypy_boto3_accessanalyzer.paginators import ListAccessPreviewsPaginator
+from mypy_boto3_accessanalyzer.paginator import ListAccessPreviewsPaginator
 
 def get_list_access_previews_paginator() -> ListAccessPreviewsPaginator:
     return boto3.client("accessanalyzer").get_paginator("list_access_previews")
 ```
 
-[Paginator.ListAccessPreviews documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAccessPreviews)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAccessPreviews)
 
 ```python
 class ListAccessPreviewsPaginator(Boto3Paginator):
@@ -72,13 +72,13 @@ Type annotations for `boto3.client("accessanalyzer").get_paginator("list_analyze
 Can be used directly:
 
 ```python
-from mypy_boto3_accessanalyzer.paginators import ListAnalyzedResourcesPaginator
+from mypy_boto3_accessanalyzer.paginator import ListAnalyzedResourcesPaginator
 
 def get_list_analyzed_resources_paginator() -> ListAnalyzedResourcesPaginator:
     return boto3.client("accessanalyzer").get_paginator("list_analyzed_resources")
 ```
 
-[Paginator.ListAnalyzedResources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAnalyzedResources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAnalyzedResources)
 
 ```python
 class ListAnalyzedResourcesPaginator(Boto3Paginator):
@@ -97,13 +97,13 @@ Type annotations for `boto3.client("accessanalyzer").get_paginator("list_analyze
 Can be used directly:
 
 ```python
-from mypy_boto3_accessanalyzer.paginators import ListAnalyzersPaginator
+from mypy_boto3_accessanalyzer.paginator import ListAnalyzersPaginator
 
 def get_list_analyzers_paginator() -> ListAnalyzersPaginator:
     return boto3.client("accessanalyzer").get_paginator("list_analyzers")
 ```
 
-[Paginator.ListAnalyzers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAnalyzers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAnalyzers)
 
 ```python
 class ListAnalyzersPaginator(Boto3Paginator):
@@ -121,13 +121,13 @@ Type annotations for `boto3.client("accessanalyzer").get_paginator("list_archive
 Can be used directly:
 
 ```python
-from mypy_boto3_accessanalyzer.paginators import ListArchiveRulesPaginator
+from mypy_boto3_accessanalyzer.paginator import ListArchiveRulesPaginator
 
 def get_list_archive_rules_paginator() -> ListArchiveRulesPaginator:
     return boto3.client("accessanalyzer").get_paginator("list_archive_rules")
 ```
 
-[Paginator.ListArchiveRules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListArchiveRules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListArchiveRules)
 
 ```python
 class ListArchiveRulesPaginator(Boto3Paginator):
@@ -145,13 +145,13 @@ Type annotations for `boto3.client("accessanalyzer").get_paginator("list_finding
 Can be used directly:
 
 ```python
-from mypy_boto3_accessanalyzer.paginators import ListFindingsPaginator
+from mypy_boto3_accessanalyzer.paginator import ListFindingsPaginator
 
 def get_list_findings_paginator() -> ListFindingsPaginator:
     return boto3.client("accessanalyzer").get_paginator("list_findings")
 ```
 
-[Paginator.ListFindings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListFindings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListFindings)
 
 ```python
 class ListFindingsPaginator(Boto3Paginator):
@@ -171,13 +171,13 @@ Type annotations for `boto3.client("accessanalyzer").get_paginator("list_policy_
 Can be used directly:
 
 ```python
-from mypy_boto3_accessanalyzer.paginators import ListPolicyGenerationsPaginator
+from mypy_boto3_accessanalyzer.paginator import ListPolicyGenerationsPaginator
 
 def get_list_policy_generations_paginator() -> ListPolicyGenerationsPaginator:
     return boto3.client("accessanalyzer").get_paginator("list_policy_generations")
 ```
 
-[Paginator.ListPolicyGenerations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListPolicyGenerations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListPolicyGenerations)
 
 ```python
 class ListPolicyGenerationsPaginator(Boto3Paginator):
@@ -195,13 +195,13 @@ Type annotations for `boto3.client("accessanalyzer").get_paginator("validate_pol
 Can be used directly:
 
 ```python
-from mypy_boto3_accessanalyzer.paginators import ValidatePolicyPaginator
+from mypy_boto3_accessanalyzer.paginator import ValidatePolicyPaginator
 
 def get_validate_policy_paginator() -> ValidatePolicyPaginator:
     return boto3.client("accessanalyzer").get_paginator("validate_policy")
 ```
 
-[Paginator.ValidatePolicy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ValidatePolicy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ValidatePolicy)
 
 ```python
 class ValidatePolicyPaginator(Boto3Paginator):

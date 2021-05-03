@@ -19,13 +19,13 @@ Type annotations for `boto3.client("snowball").get_paginator("describe_addresses
 Can be used directly:
 
 ```python
-from mypy_boto3_snowball.paginators import DescribeAddressesPaginator
+from mypy_boto3_snowball.paginator import DescribeAddressesPaginator
 
 def get_describe_addresses_paginator() -> DescribeAddressesPaginator:
     return boto3.client("snowball").get_paginator("describe_addresses")
 ```
 
-[Paginator.DescribeAddresses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.DescribeAddresses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.DescribeAddresses)
 
 ```python
 class DescribeAddressesPaginator(Boto3Paginator):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("snowball").get_paginator("list_cluster_jobs"
 Can be used directly:
 
 ```python
-from mypy_boto3_snowball.paginators import ListClusterJobsPaginator
+from mypy_boto3_snowball.paginator import ListClusterJobsPaginator
 
 def get_list_cluster_jobs_paginator() -> ListClusterJobsPaginator:
     return boto3.client("snowball").get_paginator("list_cluster_jobs")
 ```
 
-[Paginator.ListClusterJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListClusterJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListClusterJobs)
 
 ```python
 class ListClusterJobsPaginator(Boto3Paginator):
@@ -66,13 +66,13 @@ Type annotations for `boto3.client("snowball").get_paginator("list_clusters")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_snowball.paginators import ListClustersPaginator
+from mypy_boto3_snowball.paginator import ListClustersPaginator
 
 def get_list_clusters_paginator() -> ListClustersPaginator:
     return boto3.client("snowball").get_paginator("list_clusters")
 ```
 
-[Paginator.ListClusters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListClusters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListClusters)
 
 ```python
 class ListClustersPaginator(Boto3Paginator):
@@ -89,13 +89,13 @@ Type annotations for `boto3.client("snowball").get_paginator("list_compatible_im
 Can be used directly:
 
 ```python
-from mypy_boto3_snowball.paginators import ListCompatibleImagesPaginator
+from mypy_boto3_snowball.paginator import ListCompatibleImagesPaginator
 
 def get_list_compatible_images_paginator() -> ListCompatibleImagesPaginator:
     return boto3.client("snowball").get_paginator("list_compatible_images")
 ```
 
-[Paginator.ListCompatibleImages documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListCompatibleImages)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListCompatibleImages)
 
 ```python
 class ListCompatibleImagesPaginator(Boto3Paginator):
@@ -112,13 +112,13 @@ Type annotations for `boto3.client("snowball").get_paginator("list_jobs")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_snowball.paginators import ListJobsPaginator
+from mypy_boto3_snowball.paginator import ListJobsPaginator
 
 def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("snowball").get_paginator("list_jobs")
 ```
 
-[Paginator.ListJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListJobs)
 
 ```python
 class ListJobsPaginator(Boto3Paginator):

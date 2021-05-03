@@ -43,7 +43,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_snowball.client import SnowballClient
+
+def get_snowball_client() -> SnowballClient:
+    return boto3.client("snowball")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client)
 
 ## Exceptions
 
@@ -81,7 +86,7 @@ Exceptions:
 
 Type annotations for `boto3.client("snowball").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -95,7 +100,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("snowball").cancel_cluster` method.
 
-[Client.cancel_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.cancel_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.cancel_cluster]
 
 ```python
 def cancel_cluster(
@@ -109,7 +114,7 @@ def cancel_cluster(
 
 Type annotations for `boto3.client("snowball").cancel_job` method.
 
-[Client.cancel_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.cancel_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.cancel_job]
 
 ```python
 def cancel_job(
@@ -123,7 +128,7 @@ def cancel_job(
 
 Type annotations for `boto3.client("snowball").create_address` method.
 
-[Client.create_address documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_address)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_address]
 
 ```python
 def create_address(
@@ -137,7 +142,7 @@ def create_address(
 
 Type annotations for `boto3.client("snowball").create_cluster` method.
 
-[Client.create_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_cluster]
 
 ```python
 def create_cluster(
@@ -161,7 +166,7 @@ def create_cluster(
 
 Type annotations for `boto3.client("snowball").create_job` method.
 
-[Client.create_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_job]
 
 ```python
 def create_job(
@@ -188,7 +193,7 @@ def create_job(
 
 Type annotations for `boto3.client("snowball").create_return_shipping_label` method.
 
-[Client.create_return_shipping_label documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_return_shipping_label)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_return_shipping_label]
 
 ```python
 def create_return_shipping_label(
@@ -203,7 +208,7 @@ def create_return_shipping_label(
 
 Type annotations for `boto3.client("snowball").describe_address` method.
 
-[Client.describe_address documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_address)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_address]
 
 ```python
 def describe_address(
@@ -217,7 +222,7 @@ def describe_address(
 
 Type annotations for `boto3.client("snowball").describe_addresses` method.
 
-[Client.describe_addresses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_addresses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_addresses]
 
 ```python
 def describe_addresses(
@@ -232,7 +237,7 @@ def describe_addresses(
 
 Type annotations for `boto3.client("snowball").describe_cluster` method.
 
-[Client.describe_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_cluster]
 
 ```python
 def describe_cluster(
@@ -246,7 +251,7 @@ def describe_cluster(
 
 Type annotations for `boto3.client("snowball").describe_job` method.
 
-[Client.describe_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_job]
 
 ```python
 def describe_job(
@@ -260,7 +265,7 @@ def describe_job(
 
 Type annotations for `boto3.client("snowball").describe_return_shipping_label` method.
 
-[Client.describe_return_shipping_label documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_return_shipping_label)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_return_shipping_label]
 
 ```python
 def describe_return_shipping_label(
@@ -274,7 +279,7 @@ def describe_return_shipping_label(
 
 Type annotations for `boto3.client("snowball").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -291,7 +296,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("snowball").get_job_manifest` method.
 
-[Client.get_job_manifest documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_job_manifest)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_job_manifest]
 
 ```python
 def get_job_manifest(
@@ -305,7 +310,7 @@ def get_job_manifest(
 
 Type annotations for `boto3.client("snowball").get_job_unlock_code` method.
 
-[Client.get_job_unlock_code documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_job_unlock_code)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_job_unlock_code]
 
 ```python
 def get_job_unlock_code(
@@ -319,7 +324,7 @@ def get_job_unlock_code(
 
 Type annotations for `boto3.client("snowball").get_snowball_usage` method.
 
-[Client.get_snowball_usage documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_snowball_usage)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_snowball_usage]
 
 ```python
 def get_snowball_usage(
@@ -332,7 +337,7 @@ def get_snowball_usage(
 
 Type annotations for `boto3.client("snowball").get_software_updates` method.
 
-[Client.get_software_updates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_software_updates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_software_updates]
 
 ```python
 def get_software_updates(
@@ -346,7 +351,7 @@ def get_software_updates(
 
 Type annotations for `boto3.client("snowball").list_cluster_jobs` method.
 
-[Client.list_cluster_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_cluster_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_cluster_jobs]
 
 ```python
 def list_cluster_jobs(
@@ -362,7 +367,7 @@ def list_cluster_jobs(
 
 Type annotations for `boto3.client("snowball").list_clusters` method.
 
-[Client.list_clusters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_clusters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_clusters]
 
 ```python
 def list_clusters(
@@ -377,7 +382,7 @@ def list_clusters(
 
 Type annotations for `boto3.client("snowball").list_compatible_images` method.
 
-[Client.list_compatible_images documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_compatible_images)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_compatible_images]
 
 ```python
 def list_compatible_images(
@@ -392,7 +397,7 @@ def list_compatible_images(
 
 Type annotations for `boto3.client("snowball").list_jobs` method.
 
-[Client.list_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_jobs]
 
 ```python
 def list_jobs(
@@ -407,7 +412,7 @@ def list_jobs(
 
 Type annotations for `boto3.client("snowball").update_cluster` method.
 
-[Client.update_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_cluster]
 
 ```python
 def update_cluster(
@@ -428,7 +433,7 @@ def update_cluster(
 
 Type annotations for `boto3.client("snowball").update_job` method.
 
-[Client.update_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_job]
 
 ```python
 def update_job(
@@ -450,7 +455,7 @@ def update_job(
 
 Type annotations for `boto3.client("snowball").update_job_shipment_state` method.
 
-[Client.update_job_shipment_state documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_job_shipment_state)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_job_shipment_state]
 
 ```python
 def update_job_shipment_state(

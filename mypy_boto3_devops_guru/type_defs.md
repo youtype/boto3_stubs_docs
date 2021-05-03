@@ -1,11 +1,11 @@
-# Structures for boto3 DevopsGuru module
+# Typed dictionaries for boto3 DevopsGuru module
 
 > [Index](../README.md) > [DevopsGuru](./README.md) > Structures
 
 Auto-generated documentation for [DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru)
 type annotations stubs module [mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
-- [Structures for boto3 DevopsGuru module](#structures-for-boto3-devopsguru-module)
+- [Typed dictionaries for boto3 DevopsGuru module](#typed-dictionaries-for-boto3-devopsguru-module)
   - [AddNotificationChannelResponseTypeDef](#addnotificationchannelresponsetypedef)
   - [AnomalySourceDetailsTypeDef](#anomalysourcedetailstypedef)
   - [AnomalyTimeRangeTypeDef](#anomalytimerangetypedef)

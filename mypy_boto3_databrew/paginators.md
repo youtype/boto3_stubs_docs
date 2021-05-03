@@ -21,13 +21,13 @@ Type annotations for `boto3.client("databrew").get_paginator("list_datasets")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_databrew.paginators import ListDatasetsPaginator
+from mypy_boto3_databrew.paginator import ListDatasetsPaginator
 
 def get_list_datasets_paginator() -> ListDatasetsPaginator:
     return boto3.client("databrew").get_paginator("list_datasets")
 ```
 
-[Paginator.ListDatasets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListDatasets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListDatasets)
 
 ```python
 class ListDatasetsPaginator(Boto3Paginator):
@@ -44,13 +44,13 @@ Type annotations for `boto3.client("databrew").get_paginator("list_job_runs")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_databrew.paginators import ListJobRunsPaginator
+from mypy_boto3_databrew.paginator import ListJobRunsPaginator
 
 def get_list_job_runs_paginator() -> ListJobRunsPaginator:
     return boto3.client("databrew").get_paginator("list_job_runs")
 ```
 
-[Paginator.ListJobRuns documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListJobRuns)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListJobRuns)
 
 ```python
 class ListJobRunsPaginator(Boto3Paginator):
@@ -68,13 +68,13 @@ Type annotations for `boto3.client("databrew").get_paginator("list_jobs")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_databrew.paginators import ListJobsPaginator
+from mypy_boto3_databrew.paginator import ListJobsPaginator
 
 def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("databrew").get_paginator("list_jobs")
 ```
 
-[Paginator.ListJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListJobs)
 
 ```python
 class ListJobsPaginator(Boto3Paginator):
@@ -93,13 +93,13 @@ Type annotations for `boto3.client("databrew").get_paginator("list_projects")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_databrew.paginators import ListProjectsPaginator
+from mypy_boto3_databrew.paginator import ListProjectsPaginator
 
 def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("databrew").get_paginator("list_projects")
 ```
 
-[Paginator.ListProjects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListProjects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListProjects)
 
 ```python
 class ListProjectsPaginator(Boto3Paginator):
@@ -116,13 +116,13 @@ Type annotations for `boto3.client("databrew").get_paginator("list_recipe_versio
 Can be used directly:
 
 ```python
-from mypy_boto3_databrew.paginators import ListRecipeVersionsPaginator
+from mypy_boto3_databrew.paginator import ListRecipeVersionsPaginator
 
 def get_list_recipe_versions_paginator() -> ListRecipeVersionsPaginator:
     return boto3.client("databrew").get_paginator("list_recipe_versions")
 ```
 
-[Paginator.ListRecipeVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListRecipeVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListRecipeVersions)
 
 ```python
 class ListRecipeVersionsPaginator(Boto3Paginator):
@@ -140,13 +140,13 @@ Type annotations for `boto3.client("databrew").get_paginator("list_recipes")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_databrew.paginators import ListRecipesPaginator
+from mypy_boto3_databrew.paginator import ListRecipesPaginator
 
 def get_list_recipes_paginator() -> ListRecipesPaginator:
     return boto3.client("databrew").get_paginator("list_recipes")
 ```
 
-[Paginator.ListRecipes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListRecipes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListRecipes)
 
 ```python
 class ListRecipesPaginator(Boto3Paginator):
@@ -164,13 +164,13 @@ Type annotations for `boto3.client("databrew").get_paginator("list_schedules")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_databrew.paginators import ListSchedulesPaginator
+from mypy_boto3_databrew.paginator import ListSchedulesPaginator
 
 def get_list_schedules_paginator() -> ListSchedulesPaginator:
     return boto3.client("databrew").get_paginator("list_schedules")
 ```
 
-[Paginator.ListSchedules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListSchedules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListSchedules)
 
 ```python
 class ListSchedulesPaginator(Boto3Paginator):

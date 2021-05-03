@@ -1,11 +1,11 @@
-# Structures for boto3 FMS module
+# Typed dictionaries for boto3 FMS module
 
 > [Index](../README.md) > [FMS](./README.md) > Structures
 
 Auto-generated documentation for [FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
 type annotations stubs module [mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).
 
-- [Structures for boto3 FMS module](#structures-for-boto3-fms-module)
+- [Typed dictionaries for boto3 FMS module](#typed-dictionaries-for-boto3-fms-module)
   - [AppTypeDef](#apptypedef)
   - [AppsListDataSummaryTypeDef](#appslistdatasummarytypedef)
   - [AppsListDataTypeDef](#appslistdatatypedef)

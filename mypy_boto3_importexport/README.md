@@ -15,7 +15,7 @@ pip install mypy-boto3-importexport
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ImportExportClient
 
@@ -107,7 +107,7 @@ from mypy_boto3_importexport.literals import JobType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

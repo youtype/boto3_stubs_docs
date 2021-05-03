@@ -27,7 +27,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_importexport.client import ImportExportClient
+
+def get_importexport_client() -> ImportExportClient:
+    return boto3.client("importexport")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client)
 
 ## Exceptions
 
@@ -74,7 +79,7 @@ Exceptions:
 
 Type annotations for `boto3.client("importexport").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -88,7 +93,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("importexport").cancel_job` method.
 
-[Client.cancel_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.cancel_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.cancel_job]
 
 ```python
 def cancel_job(
@@ -103,7 +108,7 @@ def cancel_job(
 
 Type annotations for `boto3.client("importexport").create_job` method.
 
-[Client.create_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.create_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.create_job]
 
 ```python
 def create_job(
@@ -121,7 +126,7 @@ def create_job(
 
 Type annotations for `boto3.client("importexport").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -138,7 +143,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("importexport").get_shipping_label` method.
 
-[Client.get_shipping_label documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.get_shipping_label)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.get_shipping_label]
 
 ```python
 def get_shipping_label(
@@ -163,7 +168,7 @@ def get_shipping_label(
 
 Type annotations for `boto3.client("importexport").get_status` method.
 
-[Client.get_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.get_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.get_status]
 
 ```python
 def get_status(
@@ -178,7 +183,7 @@ def get_status(
 
 Type annotations for `boto3.client("importexport").list_jobs` method.
 
-[Client.list_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.list_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.list_jobs]
 
 ```python
 def list_jobs(
@@ -194,7 +199,7 @@ def list_jobs(
 
 Type annotations for `boto3.client("importexport").update_job` method.
 
-[Client.update_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.update_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.update_job]
 
 ```python
 def update_job(

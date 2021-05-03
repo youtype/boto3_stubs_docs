@@ -15,13 +15,13 @@ Type annotations for `boto3.client("codeguruprofiler").get_paginator("list_profi
 Can be used directly:
 
 ```python
-from mypy_boto3_codeguruprofiler.paginators import ListProfileTimesPaginator
+from mypy_boto3_codeguruprofiler.paginator import ListProfileTimesPaginator
 
 def get_list_profile_times_paginator() -> ListProfileTimesPaginator:
     return boto3.client("codeguruprofiler").get_paginator("list_profile_times")
 ```
 
-[Paginator.ListProfileTimes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Paginator.ListProfileTimes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Paginator.ListProfileTimes)
 
 ```python
 class ListProfileTimesPaginator(Boto3Paginator):

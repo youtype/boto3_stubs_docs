@@ -14,7 +14,7 @@ pip install mypy-boto3-healthlake
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## HealthLakeClient
 
@@ -82,7 +82,7 @@ from mypy_boto3_healthlake.literals import DatastoreStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

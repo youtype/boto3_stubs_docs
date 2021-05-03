@@ -16,13 +16,13 @@ Type annotations for `boto3.client("sdb").get_paginator("list_domains")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sdb.paginators import ListDomainsPaginator
+from mypy_boto3_sdb.paginator import ListDomainsPaginator
 
 def get_list_domains_paginator() -> ListDomainsPaginator:
     return boto3.client("sdb").get_paginator("list_domains")
 ```
 
-[Paginator.ListDomains documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Paginator.ListDomains)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Paginator.ListDomains)
 
 ```python
 class ListDomainsPaginator(Boto3Paginator):
@@ -39,13 +39,13 @@ Type annotations for `boto3.client("sdb").get_paginator("select")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sdb.paginators import SelectPaginator
+from mypy_boto3_sdb.paginator import SelectPaginator
 
 def get_select_paginator() -> SelectPaginator:
     return boto3.client("sdb").get_paginator("select")
 ```
 
-[Paginator.Select documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Paginator.Select)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Paginator.Select)
 
 ```python
 class SelectPaginator(Boto3Paginator):

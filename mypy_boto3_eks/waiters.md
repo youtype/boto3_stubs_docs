@@ -20,13 +20,13 @@ Type annotations for `boto3.client("eks").get_waiter("addon_active")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_eks.waiters import AddonActiveWaiter
+from mypy_boto3_eks.waiter import AddonActiveWaiter
 
 def get_addon_active_waiter() -> AddonActiveWaiter:
     return boto3.client("eks").get_waiter("addon_active")
 ```
 
-[Waiter.AddonActive documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.AddonActive)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.addon_active)
 
 ```python
 class AddonActiveWaiter(Boto3Waiter):
@@ -45,13 +45,13 @@ Type annotations for `boto3.client("eks").get_waiter("addon_deleted")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_eks.waiters import AddonDeletedWaiter
+from mypy_boto3_eks.waiter import AddonDeletedWaiter
 
 def get_addon_deleted_waiter() -> AddonDeletedWaiter:
     return boto3.client("eks").get_waiter("addon_deleted")
 ```
 
-[Waiter.AddonDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.AddonDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.addon_deleted)
 
 ```python
 class AddonDeletedWaiter(Boto3Waiter):
@@ -70,13 +70,13 @@ Type annotations for `boto3.client("eks").get_waiter("cluster_active")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_eks.waiters import ClusterActiveWaiter
+from mypy_boto3_eks.waiter import ClusterActiveWaiter
 
 def get_cluster_active_waiter() -> ClusterActiveWaiter:
     return boto3.client("eks").get_waiter("cluster_active")
 ```
 
-[Waiter.ClusterActive documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.ClusterActive)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.cluster_active)
 
 ```python
 class ClusterActiveWaiter(Boto3Waiter):
@@ -94,13 +94,13 @@ Type annotations for `boto3.client("eks").get_waiter("cluster_deleted")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_eks.waiters import ClusterDeletedWaiter
+from mypy_boto3_eks.waiter import ClusterDeletedWaiter
 
 def get_cluster_deleted_waiter() -> ClusterDeletedWaiter:
     return boto3.client("eks").get_waiter("cluster_deleted")
 ```
 
-[Waiter.ClusterDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.ClusterDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.cluster_deleted)
 
 ```python
 class ClusterDeletedWaiter(Boto3Waiter):
@@ -118,13 +118,13 @@ Type annotations for `boto3.client("eks").get_waiter("nodegroup_active")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_eks.waiters import NodegroupActiveWaiter
+from mypy_boto3_eks.waiter import NodegroupActiveWaiter
 
 def get_nodegroup_active_waiter() -> NodegroupActiveWaiter:
     return boto3.client("eks").get_waiter("nodegroup_active")
 ```
 
-[Waiter.NodegroupActive documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.NodegroupActive)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.nodegroup_active)
 
 ```python
 class NodegroupActiveWaiter(Boto3Waiter):
@@ -143,13 +143,13 @@ Type annotations for `boto3.client("eks").get_waiter("nodegroup_deleted")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_eks.waiters import NodegroupDeletedWaiter
+from mypy_boto3_eks.waiter import NodegroupDeletedWaiter
 
 def get_nodegroup_deleted_waiter() -> NodegroupDeletedWaiter:
     return boto3.client("eks").get_waiter("nodegroup_deleted")
 ```
 
-[Waiter.NodegroupDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.NodegroupDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.nodegroup_deleted)
 
 ```python
 class NodegroupDeletedWaiter(Boto3Waiter):

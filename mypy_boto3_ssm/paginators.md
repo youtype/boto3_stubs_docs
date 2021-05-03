@@ -59,13 +59,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_activations")`
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeActivationsPaginator
+from mypy_boto3_ssm.paginator import DescribeActivationsPaginator
 
 def get_describe_activations_paginator() -> DescribeActivationsPaginator:
     return boto3.client("ssm").get_paginator("describe_activations")
 ```
 
-[Paginator.DescribeActivations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeActivations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeActivations)
 
 ```python
 class DescribeActivationsPaginator(Boto3Paginator):
@@ -83,13 +83,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_association_ex
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeAssociationExecutionTargetsPaginator
+from mypy_boto3_ssm.paginator import DescribeAssociationExecutionTargetsPaginator
 
 def get_describe_association_execution_targets_paginator() -> DescribeAssociationExecutionTargetsPaginator:
     return boto3.client("ssm").get_paginator("describe_association_execution_targets")
 ```
 
-[Paginator.DescribeAssociationExecutionTargets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAssociationExecutionTargets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAssociationExecutionTargets)
 
 ```python
 class DescribeAssociationExecutionTargetsPaginator(Boto3Paginator):
@@ -109,13 +109,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_association_ex
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeAssociationExecutionsPaginator
+from mypy_boto3_ssm.paginator import DescribeAssociationExecutionsPaginator
 
 def get_describe_association_executions_paginator() -> DescribeAssociationExecutionsPaginator:
     return boto3.client("ssm").get_paginator("describe_association_executions")
 ```
 
-[Paginator.DescribeAssociationExecutions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAssociationExecutions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAssociationExecutions)
 
 ```python
 class DescribeAssociationExecutionsPaginator(Boto3Paginator):
@@ -134,13 +134,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_automation_exe
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeAutomationExecutionsPaginator
+from mypy_boto3_ssm.paginator import DescribeAutomationExecutionsPaginator
 
 def get_describe_automation_executions_paginator() -> DescribeAutomationExecutionsPaginator:
     return boto3.client("ssm").get_paginator("describe_automation_executions")
 ```
 
-[Paginator.DescribeAutomationExecutions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAutomationExecutions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAutomationExecutions)
 
 ```python
 class DescribeAutomationExecutionsPaginator(Boto3Paginator):
@@ -158,13 +158,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_automation_ste
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeAutomationStepExecutionsPaginator
+from mypy_boto3_ssm.paginator import DescribeAutomationStepExecutionsPaginator
 
 def get_describe_automation_step_executions_paginator() -> DescribeAutomationStepExecutionsPaginator:
     return boto3.client("ssm").get_paginator("describe_automation_step_executions")
 ```
 
-[Paginator.DescribeAutomationStepExecutions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAutomationStepExecutions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAutomationStepExecutions)
 
 ```python
 class DescribeAutomationStepExecutionsPaginator(Boto3Paginator):
@@ -184,13 +184,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_available_patc
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeAvailablePatchesPaginator
+from mypy_boto3_ssm.paginator import DescribeAvailablePatchesPaginator
 
 def get_describe_available_patches_paginator() -> DescribeAvailablePatchesPaginator:
     return boto3.client("ssm").get_paginator("describe_available_patches")
 ```
 
-[Paginator.DescribeAvailablePatches documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAvailablePatches)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAvailablePatches)
 
 ```python
 class DescribeAvailablePatchesPaginator(Boto3Paginator):
@@ -208,13 +208,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_effective_inst
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeEffectiveInstanceAssociationsPaginator
+from mypy_boto3_ssm.paginator import DescribeEffectiveInstanceAssociationsPaginator
 
 def get_describe_effective_instance_associations_paginator() -> DescribeEffectiveInstanceAssociationsPaginator:
     return boto3.client("ssm").get_paginator("describe_effective_instance_associations")
 ```
 
-[Paginator.DescribeEffectiveInstanceAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeEffectiveInstanceAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeEffectiveInstanceAssociations)
 
 ```python
 class DescribeEffectiveInstanceAssociationsPaginator(Boto3Paginator):
@@ -232,13 +232,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_effective_patc
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeEffectivePatchesForPatchBaselinePaginator
+from mypy_boto3_ssm.paginator import DescribeEffectivePatchesForPatchBaselinePaginator
 
 def get_describe_effective_patches_for_patch_baseline_paginator() -> DescribeEffectivePatchesForPatchBaselinePaginator:
     return boto3.client("ssm").get_paginator("describe_effective_patches_for_patch_baseline")
 ```
 
-[Paginator.DescribeEffectivePatchesForPatchBaseline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeEffectivePatchesForPatchBaseline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeEffectivePatchesForPatchBaseline)
 
 ```python
 class DescribeEffectivePatchesForPatchBaselinePaginator(Boto3Paginator):
@@ -256,13 +256,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_instance_assoc
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeInstanceAssociationsStatusPaginator
+from mypy_boto3_ssm.paginator import DescribeInstanceAssociationsStatusPaginator
 
 def get_describe_instance_associations_status_paginator() -> DescribeInstanceAssociationsStatusPaginator:
     return boto3.client("ssm").get_paginator("describe_instance_associations_status")
 ```
 
-[Paginator.DescribeInstanceAssociationsStatus documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstanceAssociationsStatus)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstanceAssociationsStatus)
 
 ```python
 class DescribeInstanceAssociationsStatusPaginator(Boto3Paginator):
@@ -280,13 +280,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_instance_infor
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeInstanceInformationPaginator
+from mypy_boto3_ssm.paginator import DescribeInstanceInformationPaginator
 
 def get_describe_instance_information_paginator() -> DescribeInstanceInformationPaginator:
     return boto3.client("ssm").get_paginator("describe_instance_information")
 ```
 
-[Paginator.DescribeInstanceInformation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstanceInformation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstanceInformation)
 
 ```python
 class DescribeInstanceInformationPaginator(Boto3Paginator):
@@ -305,13 +305,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_instance_patch
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeInstancePatchStatesPaginator
+from mypy_boto3_ssm.paginator import DescribeInstancePatchStatesPaginator
 
 def get_describe_instance_patch_states_paginator() -> DescribeInstancePatchStatesPaginator:
     return boto3.client("ssm").get_paginator("describe_instance_patch_states")
 ```
 
-[Paginator.DescribeInstancePatchStates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstancePatchStates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstancePatchStates)
 
 ```python
 class DescribeInstancePatchStatesPaginator(Boto3Paginator):
@@ -329,13 +329,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_instance_patch
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeInstancePatchStatesForPatchGroupPaginator
+from mypy_boto3_ssm.paginator import DescribeInstancePatchStatesForPatchGroupPaginator
 
 def get_describe_instance_patch_states_for_patch_group_paginator() -> DescribeInstancePatchStatesForPatchGroupPaginator:
     return boto3.client("ssm").get_paginator("describe_instance_patch_states_for_patch_group")
 ```
 
-[Paginator.DescribeInstancePatchStatesForPatchGroup documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstancePatchStatesForPatchGroup)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstancePatchStatesForPatchGroup)
 
 ```python
 class DescribeInstancePatchStatesForPatchGroupPaginator(Boto3Paginator):
@@ -354,13 +354,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_instance_patch
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeInstancePatchesPaginator
+from mypy_boto3_ssm.paginator import DescribeInstancePatchesPaginator
 
 def get_describe_instance_patches_paginator() -> DescribeInstancePatchesPaginator:
     return boto3.client("ssm").get_paginator("describe_instance_patches")
 ```
 
-[Paginator.DescribeInstancePatches documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstancePatches)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstancePatches)
 
 ```python
 class DescribeInstancePatchesPaginator(Boto3Paginator):
@@ -379,13 +379,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_inventory_dele
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeInventoryDeletionsPaginator
+from mypy_boto3_ssm.paginator import DescribeInventoryDeletionsPaginator
 
 def get_describe_inventory_deletions_paginator() -> DescribeInventoryDeletionsPaginator:
     return boto3.client("ssm").get_paginator("describe_inventory_deletions")
 ```
 
-[Paginator.DescribeInventoryDeletions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInventoryDeletions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInventoryDeletions)
 
 ```python
 class DescribeInventoryDeletionsPaginator(Boto3Paginator):
@@ -403,13 +403,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_maintenance_wi
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeMaintenanceWindowExecutionTaskInvocationsPaginator
+from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowExecutionTaskInvocationsPaginator
 
 def get_describe_maintenance_window_execution_task_invocations_paginator() -> DescribeMaintenanceWindowExecutionTaskInvocationsPaginator:
     return boto3.client("ssm").get_paginator("describe_maintenance_window_execution_task_invocations")
 ```
 
-[Paginator.DescribeMaintenanceWindowExecutionTaskInvocations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowExecutionTaskInvocations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowExecutionTaskInvocations)
 
 ```python
 class DescribeMaintenanceWindowExecutionTaskInvocationsPaginator(Boto3Paginator):
@@ -429,13 +429,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_maintenance_wi
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeMaintenanceWindowExecutionTasksPaginator
+from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowExecutionTasksPaginator
 
 def get_describe_maintenance_window_execution_tasks_paginator() -> DescribeMaintenanceWindowExecutionTasksPaginator:
     return boto3.client("ssm").get_paginator("describe_maintenance_window_execution_tasks")
 ```
 
-[Paginator.DescribeMaintenanceWindowExecutionTasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowExecutionTasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowExecutionTasks)
 
 ```python
 class DescribeMaintenanceWindowExecutionTasksPaginator(Boto3Paginator):
@@ -454,13 +454,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_maintenance_wi
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeMaintenanceWindowExecutionsPaginator
+from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowExecutionsPaginator
 
 def get_describe_maintenance_window_executions_paginator() -> DescribeMaintenanceWindowExecutionsPaginator:
     return boto3.client("ssm").get_paginator("describe_maintenance_window_executions")
 ```
 
-[Paginator.DescribeMaintenanceWindowExecutions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowExecutions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowExecutions)
 
 ```python
 class DescribeMaintenanceWindowExecutionsPaginator(Boto3Paginator):
@@ -479,13 +479,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_maintenance_wi
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeMaintenanceWindowSchedulePaginator
+from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowSchedulePaginator
 
 def get_describe_maintenance_window_schedule_paginator() -> DescribeMaintenanceWindowSchedulePaginator:
     return boto3.client("ssm").get_paginator("describe_maintenance_window_schedule")
 ```
 
-[Paginator.DescribeMaintenanceWindowSchedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowSchedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowSchedule)
 
 ```python
 class DescribeMaintenanceWindowSchedulePaginator(Boto3Paginator):
@@ -506,13 +506,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_maintenance_wi
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeMaintenanceWindowTargetsPaginator
+from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowTargetsPaginator
 
 def get_describe_maintenance_window_targets_paginator() -> DescribeMaintenanceWindowTargetsPaginator:
     return boto3.client("ssm").get_paginator("describe_maintenance_window_targets")
 ```
 
-[Paginator.DescribeMaintenanceWindowTargets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowTargets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowTargets)
 
 ```python
 class DescribeMaintenanceWindowTargetsPaginator(Boto3Paginator):
@@ -531,13 +531,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_maintenance_wi
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeMaintenanceWindowTasksPaginator
+from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowTasksPaginator
 
 def get_describe_maintenance_window_tasks_paginator() -> DescribeMaintenanceWindowTasksPaginator:
     return boto3.client("ssm").get_paginator("describe_maintenance_window_tasks")
 ```
 
-[Paginator.DescribeMaintenanceWindowTasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowTasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowTasks)
 
 ```python
 class DescribeMaintenanceWindowTasksPaginator(Boto3Paginator):
@@ -556,13 +556,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_maintenance_wi
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeMaintenanceWindowsPaginator
+from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowsPaginator
 
 def get_describe_maintenance_windows_paginator() -> DescribeMaintenanceWindowsPaginator:
     return boto3.client("ssm").get_paginator("describe_maintenance_windows")
 ```
 
-[Paginator.DescribeMaintenanceWindows documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindows)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindows)
 
 ```python
 class DescribeMaintenanceWindowsPaginator(Boto3Paginator):
@@ -580,13 +580,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_maintenance_wi
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeMaintenanceWindowsForTargetPaginator
+from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowsForTargetPaginator
 
 def get_describe_maintenance_windows_for_target_paginator() -> DescribeMaintenanceWindowsForTargetPaginator:
     return boto3.client("ssm").get_paginator("describe_maintenance_windows_for_target")
 ```
 
-[Paginator.DescribeMaintenanceWindowsForTarget documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowsForTarget)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowsForTarget)
 
 ```python
 class DescribeMaintenanceWindowsForTargetPaginator(Boto3Paginator):
@@ -605,13 +605,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_ops_items")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeOpsItemsPaginator
+from mypy_boto3_ssm.paginator import DescribeOpsItemsPaginator
 
 def get_describe_ops_items_paginator() -> DescribeOpsItemsPaginator:
     return boto3.client("ssm").get_paginator("describe_ops_items")
 ```
 
-[Paginator.DescribeOpsItems documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeOpsItems)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeOpsItems)
 
 ```python
 class DescribeOpsItemsPaginator(Boto3Paginator):
@@ -629,13 +629,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_parameters")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeParametersPaginator
+from mypy_boto3_ssm.paginator import DescribeParametersPaginator
 
 def get_describe_parameters_paginator() -> DescribeParametersPaginator:
     return boto3.client("ssm").get_paginator("describe_parameters")
 ```
 
-[Paginator.DescribeParameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeParameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeParameters)
 
 ```python
 class DescribeParametersPaginator(Boto3Paginator):
@@ -654,13 +654,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_patch_baseline
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribePatchBaselinesPaginator
+from mypy_boto3_ssm.paginator import DescribePatchBaselinesPaginator
 
 def get_describe_patch_baselines_paginator() -> DescribePatchBaselinesPaginator:
     return boto3.client("ssm").get_paginator("describe_patch_baselines")
 ```
 
-[Paginator.DescribePatchBaselines documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribePatchBaselines)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribePatchBaselines)
 
 ```python
 class DescribePatchBaselinesPaginator(Boto3Paginator):
@@ -678,13 +678,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_patch_groups")
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribePatchGroupsPaginator
+from mypy_boto3_ssm.paginator import DescribePatchGroupsPaginator
 
 def get_describe_patch_groups_paginator() -> DescribePatchGroupsPaginator:
     return boto3.client("ssm").get_paginator("describe_patch_groups")
 ```
 
-[Paginator.DescribePatchGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribePatchGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribePatchGroups)
 
 ```python
 class DescribePatchGroupsPaginator(Boto3Paginator):
@@ -702,13 +702,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_patch_properti
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribePatchPropertiesPaginator
+from mypy_boto3_ssm.paginator import DescribePatchPropertiesPaginator
 
 def get_describe_patch_properties_paginator() -> DescribePatchPropertiesPaginator:
     return boto3.client("ssm").get_paginator("describe_patch_properties")
 ```
 
-[Paginator.DescribePatchProperties documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribePatchProperties)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribePatchProperties)
 
 ```python
 class DescribePatchPropertiesPaginator(Boto3Paginator):
@@ -728,13 +728,13 @@ Type annotations for `boto3.client("ssm").get_paginator("describe_sessions")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeSessionsPaginator
+from mypy_boto3_ssm.paginator import DescribeSessionsPaginator
 
 def get_describe_sessions_paginator() -> DescribeSessionsPaginator:
     return boto3.client("ssm").get_paginator("describe_sessions")
 ```
 
-[Paginator.DescribeSessions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeSessions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeSessions)
 
 ```python
 class DescribeSessionsPaginator(Boto3Paginator):
@@ -753,13 +753,13 @@ Type annotations for `boto3.client("ssm").get_paginator("get_inventory")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import GetInventoryPaginator
+from mypy_boto3_ssm.paginator import GetInventoryPaginator
 
 def get_get_inventory_paginator() -> GetInventoryPaginator:
     return boto3.client("ssm").get_paginator("get_inventory")
 ```
 
-[Paginator.GetInventory documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetInventory)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetInventory)
 
 ```python
 class GetInventoryPaginator(Boto3Paginator):
@@ -779,13 +779,13 @@ Type annotations for `boto3.client("ssm").get_paginator("get_inventory_schema")`
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import GetInventorySchemaPaginator
+from mypy_boto3_ssm.paginator import GetInventorySchemaPaginator
 
 def get_get_inventory_schema_paginator() -> GetInventorySchemaPaginator:
     return boto3.client("ssm").get_paginator("get_inventory_schema")
 ```
 
-[Paginator.GetInventorySchema documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetInventorySchema)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetInventorySchema)
 
 ```python
 class GetInventorySchemaPaginator(Boto3Paginator):
@@ -805,13 +805,13 @@ Type annotations for `boto3.client("ssm").get_paginator("get_ops_summary")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import GetOpsSummaryPaginator
+from mypy_boto3_ssm.paginator import GetOpsSummaryPaginator
 
 def get_get_ops_summary_paginator() -> GetOpsSummaryPaginator:
     return boto3.client("ssm").get_paginator("get_ops_summary")
 ```
 
-[Paginator.GetOpsSummary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetOpsSummary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetOpsSummary)
 
 ```python
 class GetOpsSummaryPaginator(Boto3Paginator):
@@ -832,13 +832,13 @@ Type annotations for `boto3.client("ssm").get_paginator("get_parameter_history")
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import GetParameterHistoryPaginator
+from mypy_boto3_ssm.paginator import GetParameterHistoryPaginator
 
 def get_get_parameter_history_paginator() -> GetParameterHistoryPaginator:
     return boto3.client("ssm").get_paginator("get_parameter_history")
 ```
 
-[Paginator.GetParameterHistory documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetParameterHistory)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetParameterHistory)
 
 ```python
 class GetParameterHistoryPaginator(Boto3Paginator):
@@ -857,13 +857,13 @@ Type annotations for `boto3.client("ssm").get_paginator("get_parameters_by_path"
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import GetParametersByPathPaginator
+from mypy_boto3_ssm.paginator import GetParametersByPathPaginator
 
 def get_get_parameters_by_path_paginator() -> GetParametersByPathPaginator:
     return boto3.client("ssm").get_paginator("get_parameters_by_path")
 ```
 
-[Paginator.GetParametersByPath documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetParametersByPath)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetParametersByPath)
 
 ```python
 class GetParametersByPathPaginator(Boto3Paginator):
@@ -884,13 +884,13 @@ Type annotations for `boto3.client("ssm").get_paginator("list_association_versio
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import ListAssociationVersionsPaginator
+from mypy_boto3_ssm.paginator import ListAssociationVersionsPaginator
 
 def get_list_association_versions_paginator() -> ListAssociationVersionsPaginator:
     return boto3.client("ssm").get_paginator("list_association_versions")
 ```
 
-[Paginator.ListAssociationVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListAssociationVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListAssociationVersions)
 
 ```python
 class ListAssociationVersionsPaginator(Boto3Paginator):
@@ -908,13 +908,13 @@ Type annotations for `boto3.client("ssm").get_paginator("list_associations")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import ListAssociationsPaginator
+from mypy_boto3_ssm.paginator import ListAssociationsPaginator
 
 def get_list_associations_paginator() -> ListAssociationsPaginator:
     return boto3.client("ssm").get_paginator("list_associations")
 ```
 
-[Paginator.ListAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListAssociations)
 
 ```python
 class ListAssociationsPaginator(Boto3Paginator):
@@ -932,13 +932,13 @@ Type annotations for `boto3.client("ssm").get_paginator("list_command_invocation
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import ListCommandInvocationsPaginator
+from mypy_boto3_ssm.paginator import ListCommandInvocationsPaginator
 
 def get_list_command_invocations_paginator() -> ListCommandInvocationsPaginator:
     return boto3.client("ssm").get_paginator("list_command_invocations")
 ```
 
-[Paginator.ListCommandInvocations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListCommandInvocations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListCommandInvocations)
 
 ```python
 class ListCommandInvocationsPaginator(Boto3Paginator):
@@ -959,13 +959,13 @@ Type annotations for `boto3.client("ssm").get_paginator("list_commands")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import ListCommandsPaginator
+from mypy_boto3_ssm.paginator import ListCommandsPaginator
 
 def get_list_commands_paginator() -> ListCommandsPaginator:
     return boto3.client("ssm").get_paginator("list_commands")
 ```
 
-[Paginator.ListCommands documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListCommands)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListCommands)
 
 ```python
 class ListCommandsPaginator(Boto3Paginator):
@@ -985,13 +985,13 @@ Type annotations for `boto3.client("ssm").get_paginator("list_compliance_items")
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import ListComplianceItemsPaginator
+from mypy_boto3_ssm.paginator import ListComplianceItemsPaginator
 
 def get_list_compliance_items_paginator() -> ListComplianceItemsPaginator:
     return boto3.client("ssm").get_paginator("list_compliance_items")
 ```
 
-[Paginator.ListComplianceItems documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListComplianceItems)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListComplianceItems)
 
 ```python
 class ListComplianceItemsPaginator(Boto3Paginator):
@@ -1011,13 +1011,13 @@ Type annotations for `boto3.client("ssm").get_paginator("list_compliance_summari
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import ListComplianceSummariesPaginator
+from mypy_boto3_ssm.paginator import ListComplianceSummariesPaginator
 
 def get_list_compliance_summaries_paginator() -> ListComplianceSummariesPaginator:
     return boto3.client("ssm").get_paginator("list_compliance_summaries")
 ```
 
-[Paginator.ListComplianceSummaries documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListComplianceSummaries)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListComplianceSummaries)
 
 ```python
 class ListComplianceSummariesPaginator(Boto3Paginator):
@@ -1035,13 +1035,13 @@ Type annotations for `boto3.client("ssm").get_paginator("list_document_versions"
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import ListDocumentVersionsPaginator
+from mypy_boto3_ssm.paginator import ListDocumentVersionsPaginator
 
 def get_list_document_versions_paginator() -> ListDocumentVersionsPaginator:
     return boto3.client("ssm").get_paginator("list_document_versions")
 ```
 
-[Paginator.ListDocumentVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListDocumentVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListDocumentVersions)
 
 ```python
 class ListDocumentVersionsPaginator(Boto3Paginator):
@@ -1059,13 +1059,13 @@ Type annotations for `boto3.client("ssm").get_paginator("list_documents")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import ListDocumentsPaginator
+from mypy_boto3_ssm.paginator import ListDocumentsPaginator
 
 def get_list_documents_paginator() -> ListDocumentsPaginator:
     return boto3.client("ssm").get_paginator("list_documents")
 ```
 
-[Paginator.ListDocuments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListDocuments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListDocuments)
 
 ```python
 class ListDocumentsPaginator(Boto3Paginator):
@@ -1084,13 +1084,13 @@ Type annotations for `boto3.client("ssm").get_paginator("list_ops_item_events")`
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import ListOpsItemEventsPaginator
+from mypy_boto3_ssm.paginator import ListOpsItemEventsPaginator
 
 def get_list_ops_item_events_paginator() -> ListOpsItemEventsPaginator:
     return boto3.client("ssm").get_paginator("list_ops_item_events")
 ```
 
-[Paginator.ListOpsItemEvents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListOpsItemEvents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListOpsItemEvents)
 
 ```python
 class ListOpsItemEventsPaginator(Boto3Paginator):
@@ -1108,13 +1108,13 @@ Type annotations for `boto3.client("ssm").get_paginator("list_ops_metadata")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import ListOpsMetadataPaginator
+from mypy_boto3_ssm.paginator import ListOpsMetadataPaginator
 
 def get_list_ops_metadata_paginator() -> ListOpsMetadataPaginator:
     return boto3.client("ssm").get_paginator("list_ops_metadata")
 ```
 
-[Paginator.ListOpsMetadata documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListOpsMetadata)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListOpsMetadata)
 
 ```python
 class ListOpsMetadataPaginator(Boto3Paginator):
@@ -1132,13 +1132,13 @@ Type annotations for `boto3.client("ssm").get_paginator("list_resource_complianc
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import ListResourceComplianceSummariesPaginator
+from mypy_boto3_ssm.paginator import ListResourceComplianceSummariesPaginator
 
 def get_list_resource_compliance_summaries_paginator() -> ListResourceComplianceSummariesPaginator:
     return boto3.client("ssm").get_paginator("list_resource_compliance_summaries")
 ```
 
-[Paginator.ListResourceComplianceSummaries documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListResourceComplianceSummaries)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListResourceComplianceSummaries)
 
 ```python
 class ListResourceComplianceSummariesPaginator(Boto3Paginator):
@@ -1156,13 +1156,13 @@ Type annotations for `boto3.client("ssm").get_paginator("list_resource_data_sync
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import ListResourceDataSyncPaginator
+from mypy_boto3_ssm.paginator import ListResourceDataSyncPaginator
 
 def get_list_resource_data_sync_paginator() -> ListResourceDataSyncPaginator:
     return boto3.client("ssm").get_paginator("list_resource_data_sync")
 ```
 
-[Paginator.ListResourceDataSync documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListResourceDataSync)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListResourceDataSync)
 
 ```python
 class ListResourceDataSyncPaginator(Boto3Paginator):

@@ -15,7 +15,7 @@ pip install mypy-boto3-datasync
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## DataSyncClient
 
@@ -150,7 +150,7 @@ from mypy_boto3_datasync.literals import AgentStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

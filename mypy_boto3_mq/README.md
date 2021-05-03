@@ -15,7 +15,7 @@ pip install mypy-boto3-mq
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## MQClient
 
@@ -116,7 +116,7 @@ from mypy_boto3_mq.literals import AuthenticationStrategy, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

@@ -16,13 +16,13 @@ Type annotations for `boto3.client("autoscaling-plans").get_paginator("describe_
 Can be used directly:
 
 ```python
-from mypy_boto3_autoscaling_plans.paginators import DescribeScalingPlanResourcesPaginator
+from mypy_boto3_autoscaling_plans.paginator import DescribeScalingPlanResourcesPaginator
 
 def get_describe_scaling_plan_resources_paginator() -> DescribeScalingPlanResourcesPaginator:
     return boto3.client("autoscaling-plans").get_paginator("describe_scaling_plan_resources")
 ```
 
-[Paginator.DescribeScalingPlanResources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Paginator.DescribeScalingPlanResources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Paginator.DescribeScalingPlanResources)
 
 ```python
 class DescribeScalingPlanResourcesPaginator(Boto3Paginator):
@@ -41,13 +41,13 @@ Type annotations for `boto3.client("autoscaling-plans").get_paginator("describe_
 Can be used directly:
 
 ```python
-from mypy_boto3_autoscaling_plans.paginators import DescribeScalingPlansPaginator
+from mypy_boto3_autoscaling_plans.paginator import DescribeScalingPlansPaginator
 
 def get_describe_scaling_plans_paginator() -> DescribeScalingPlansPaginator:
     return boto3.client("autoscaling-plans").get_paginator("describe_scaling_plans")
 ```
 
-[Paginator.DescribeScalingPlans documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Paginator.DescribeScalingPlans)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Paginator.DescribeScalingPlans)
 
 ```python
 class DescribeScalingPlansPaginator(Boto3Paginator):

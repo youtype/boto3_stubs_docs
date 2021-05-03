@@ -15,7 +15,7 @@ pip install mypy-boto3-personalize
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## PersonalizeClient
 
@@ -157,7 +157,7 @@ from mypy_boto3_personalize.literals import IngestionMode, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

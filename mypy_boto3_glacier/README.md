@@ -19,7 +19,7 @@ pip install mypy-boto3-glacier
   - [Paginators](#paginators)
   - [Waiters](#waiters)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## GlacierClient
 
@@ -203,7 +203,7 @@ from mypy_boto3_glacier.literals import ActionCode, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

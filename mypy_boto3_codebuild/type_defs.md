@@ -1,11 +1,11 @@
-# Structures for boto3 CodeBuild module
+# Typed dictionaries for boto3 CodeBuild module
 
 > [Index](../README.md) > [CodeBuild](./README.md) > Structures
 
 Auto-generated documentation for [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
 type annotations stubs module [mypy_boto3_codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
 
-- [Structures for boto3 CodeBuild module](#structures-for-boto3-codebuild-module)
+- [Typed dictionaries for boto3 CodeBuild module](#typed-dictionaries-for-boto3-codebuild-module)
   - [BatchDeleteBuildsOutputTypeDef](#batchdeletebuildsoutputtypedef)
   - [BatchGetBuildBatchesOutputTypeDef](#batchgetbuildbatchesoutputtypedef)
   - [BatchGetBuildsOutputTypeDef](#batchgetbuildsoutputtypedef)
@@ -107,12 +107,12 @@ from mypy_boto3_codebuild.type_defs import BatchDeleteBuildsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `buildsDeleted`: `List[str]`
 - `buildsNotDeleted`: `List["BuildNotDeletedTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchGetBuildBatchesOutputTypeDef
@@ -122,12 +122,12 @@ from mypy_boto3_codebuild.type_defs import BatchGetBuildBatchesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `buildBatches`: `List["BuildBatchTypeDef"]`
 - `buildBatchesNotFound`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchGetBuildsOutputTypeDef
@@ -137,12 +137,12 @@ from mypy_boto3_codebuild.type_defs import BatchGetBuildsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `builds`: `List["BuildTypeDef"]`
 - `buildsNotFound`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchGetProjectsOutputTypeDef
@@ -152,12 +152,12 @@ from mypy_boto3_codebuild.type_defs import BatchGetProjectsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `projects`: `List["ProjectTypeDef"]`
 - `projectsNotFound`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchGetReportGroupsOutputTypeDef
@@ -167,12 +167,12 @@ from mypy_boto3_codebuild.type_defs import BatchGetReportGroupsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `reportGroups`: `List["ReportGroupTypeDef"]`
 - `reportGroupsNotFound`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchGetReportsOutputTypeDef
@@ -182,12 +182,12 @@ from mypy_boto3_codebuild.type_defs import BatchGetReportsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `reports`: `List["ReportTypeDef"]`
 - `reportsNotFound`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchRestrictionsTypeDef
@@ -484,11 +484,11 @@ from mypy_boto3_codebuild.type_defs import CreateProjectOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `project`: `"ProjectTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateReportGroupOutputTypeDef
@@ -498,11 +498,11 @@ from mypy_boto3_codebuild.type_defs import CreateReportGroupOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `reportGroup`: `"ReportGroupTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateWebhookOutputTypeDef
@@ -512,11 +512,11 @@ from mypy_boto3_codebuild.type_defs import CreateWebhookOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `webhook`: `"WebhookTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DebugSessionTypeDef
@@ -540,13 +540,13 @@ from mypy_boto3_codebuild.type_defs import DeleteBuildBatchOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `statusCode`: `str`
 - `buildsDeleted`: `List[str]`
 - `buildsNotDeleted`: `List["BuildNotDeletedTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteSourceCredentialsOutputTypeDef
@@ -556,11 +556,11 @@ from mypy_boto3_codebuild.type_defs import DeleteSourceCredentialsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `arn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeCodeCoveragesOutputTypeDef
@@ -570,12 +570,12 @@ from mypy_boto3_codebuild.type_defs import DescribeCodeCoveragesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `nextToken`: `str`
 - `codeCoverages`: `List["CodeCoverageTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeTestCasesOutputTypeDef
@@ -585,12 +585,12 @@ from mypy_boto3_codebuild.type_defs import DescribeTestCasesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `nextToken`: `str`
 - `testCases`: `List["TestCaseTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## EnvironmentImageTypeDef
@@ -674,12 +674,12 @@ from mypy_boto3_codebuild.type_defs import GetReportGroupTrendOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `stats`: `"ReportGroupTrendStatsTypeDef"`
 - `rawData`: `List["ReportWithRawDataTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetResourcePolicyOutputTypeDef
@@ -689,11 +689,11 @@ from mypy_boto3_codebuild.type_defs import GetResourcePolicyOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `policy`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GitSubmodulesConfigTypeDef
@@ -716,11 +716,11 @@ from mypy_boto3_codebuild.type_defs import ImportSourceCredentialsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `arn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListBuildBatchesForProjectOutputTypeDef
@@ -730,12 +730,12 @@ from mypy_boto3_codebuild.type_defs import ListBuildBatchesForProjectOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ids`: `List[str]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListBuildBatchesOutputTypeDef
@@ -745,12 +745,12 @@ from mypy_boto3_codebuild.type_defs import ListBuildBatchesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ids`: `List[str]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListBuildsForProjectOutputTypeDef
@@ -760,12 +760,12 @@ from mypy_boto3_codebuild.type_defs import ListBuildsForProjectOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ids`: `List[str]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListBuildsOutputTypeDef
@@ -775,12 +775,12 @@ from mypy_boto3_codebuild.type_defs import ListBuildsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ids`: `List[str]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListCuratedEnvironmentImagesOutputTypeDef
@@ -790,11 +790,11 @@ from mypy_boto3_codebuild.type_defs import ListCuratedEnvironmentImagesOutputTyp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `platforms`: `List["EnvironmentPlatformTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListProjectsOutputTypeDef
@@ -804,12 +804,12 @@ from mypy_boto3_codebuild.type_defs import ListProjectsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `nextToken`: `str`
 - `projects`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListReportGroupsOutputTypeDef
@@ -819,12 +819,12 @@ from mypy_boto3_codebuild.type_defs import ListReportGroupsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `nextToken`: `str`
 - `reportGroups`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListReportsForReportGroupOutputTypeDef
@@ -834,12 +834,12 @@ from mypy_boto3_codebuild.type_defs import ListReportsForReportGroupOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `nextToken`: `str`
 - `reports`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListReportsOutputTypeDef
@@ -849,12 +849,12 @@ from mypy_boto3_codebuild.type_defs import ListReportsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `nextToken`: `str`
 - `reports`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListSharedProjectsOutputTypeDef
@@ -864,12 +864,12 @@ from mypy_boto3_codebuild.type_defs import ListSharedProjectsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `nextToken`: `str`
 - `projects`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListSharedReportGroupsOutputTypeDef
@@ -879,12 +879,12 @@ from mypy_boto3_codebuild.type_defs import ListSharedReportGroupsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `nextToken`: `str`
 - `reportGroups`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListSourceCredentialsOutputTypeDef
@@ -894,11 +894,11 @@ from mypy_boto3_codebuild.type_defs import ListSourceCredentialsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `sourceCredentialsInfos`: `List["SourceCredentialsInfoTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## LogsConfigTypeDef
@@ -1170,11 +1170,11 @@ from mypy_boto3_codebuild.type_defs import PutResourcePolicyOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `resourceArn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## RegistryCredentialTypeDef
@@ -1330,11 +1330,11 @@ from mypy_boto3_codebuild.type_defs import RetryBuildBatchOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `buildBatch`: `"BuildBatchTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## RetryBuildOutputTypeDef
@@ -1344,11 +1344,11 @@ from mypy_boto3_codebuild.type_defs import RetryBuildOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `build`: `"BuildTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## S3LogsConfigTypeDef
@@ -1425,11 +1425,11 @@ from mypy_boto3_codebuild.type_defs import StartBuildBatchOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `buildBatch`: `"BuildBatchTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## StartBuildOutputTypeDef
@@ -1439,11 +1439,11 @@ from mypy_boto3_codebuild.type_defs import StartBuildOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `build`: `"BuildTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## StopBuildBatchOutputTypeDef
@@ -1453,11 +1453,11 @@ from mypy_boto3_codebuild.type_defs import StopBuildBatchOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `buildBatch`: `"BuildBatchTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## StopBuildOutputTypeDef
@@ -1467,11 +1467,11 @@ from mypy_boto3_codebuild.type_defs import StopBuildOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `build`: `"BuildTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## TagTypeDef
@@ -1544,11 +1544,11 @@ from mypy_boto3_codebuild.type_defs import UpdateProjectOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `project`: `"ProjectTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateReportGroupOutputTypeDef
@@ -1558,11 +1558,11 @@ from mypy_boto3_codebuild.type_defs import UpdateReportGroupOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `reportGroup`: `"ReportGroupTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateWebhookOutputTypeDef
@@ -1572,11 +1572,11 @@ from mypy_boto3_codebuild.type_defs import UpdateWebhookOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `webhook`: `"WebhookTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## VpcConfigTypeDef

@@ -1,11 +1,11 @@
-# Structures for boto3 GlueDataBrew module
+# Typed dictionaries for boto3 GlueDataBrew module
 
 > [Index](../README.md) > [GlueDataBrew](./README.md) > Structures
 
 Auto-generated documentation for [GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
 type annotations stubs module [mypy_boto3_databrew](https://pypi.org/project/mypy-boto3-databrew/).
 
-- [Structures for boto3 GlueDataBrew module](#structures-for-boto3-gluedatabrew-module)
+- [Typed dictionaries for boto3 GlueDataBrew module](#typed-dictionaries-for-boto3-gluedatabrew-module)
   - [BatchDeleteRecipeVersionResponseTypeDef](#batchdeleterecipeversionresponsetypedef)
   - [ConditionExpressionTypeDef](#conditionexpressiontypedef)
   - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
@@ -856,17 +856,15 @@ from mypy_boto3_databrew.type_defs import OutputTypeDef
 
 
 Required fields:
-- `Location`: `"S3LocationTypeDef"`
-
-
-
-Optional fields:
 - `CompressionFormat`: `CompressionFormat`
 - `Format`: `OutputFormat`
 - `PartitionColumns`: `List[str]`
+- `Location`: `"S3LocationTypeDef"`
 - `Overwrite`: `bool`
 - `FormatOptions`: `"OutputFormatOptionsTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PaginatorConfigTypeDef

@@ -15,7 +15,7 @@ pip install mypy-boto3-cloudhsm
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## CloudHSMClient
 
@@ -111,7 +111,7 @@ from mypy_boto3_cloudhsm.literals import ClientVersion, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

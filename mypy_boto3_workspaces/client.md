@@ -74,7 +74,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_workspaces.client import WorkSpacesClient
+
+def get_workspaces_client() -> WorkSpacesClient:
+    return boto3.client("workspaces")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client)
 
 ## Exceptions
 
@@ -115,7 +120,7 @@ Exceptions:
 
 Type annotations for `boto3.client("workspaces").associate_connection_alias` method.
 
-[Client.associate_connection_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.associate_connection_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.associate_connection_alias]
 
 ```python
 def associate_connection_alias(
@@ -130,7 +135,7 @@ def associate_connection_alias(
 
 Type annotations for `boto3.client("workspaces").associate_ip_groups` method.
 
-[Client.associate_ip_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.associate_ip_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.associate_ip_groups]
 
 ```python
 def associate_ip_groups(
@@ -145,7 +150,7 @@ def associate_ip_groups(
 
 Type annotations for `boto3.client("workspaces").authorize_ip_rules` method.
 
-[Client.authorize_ip_rules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.authorize_ip_rules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.authorize_ip_rules]
 
 ```python
 def authorize_ip_rules(
@@ -160,7 +165,7 @@ def authorize_ip_rules(
 
 Type annotations for `boto3.client("workspaces").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -174,7 +179,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("workspaces").copy_workspace_image` method.
 
-[Client.copy_workspace_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.copy_workspace_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.copy_workspace_image]
 
 ```python
 def copy_workspace_image(
@@ -192,7 +197,7 @@ def copy_workspace_image(
 
 Type annotations for `boto3.client("workspaces").create_connection_alias` method.
 
-[Client.create_connection_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_connection_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_connection_alias]
 
 ```python
 def create_connection_alias(
@@ -207,7 +212,7 @@ def create_connection_alias(
 
 Type annotations for `boto3.client("workspaces").create_ip_group` method.
 
-[Client.create_ip_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_ip_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_ip_group]
 
 ```python
 def create_ip_group(
@@ -224,7 +229,7 @@ def create_ip_group(
 
 Type annotations for `boto3.client("workspaces").create_tags` method.
 
-[Client.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_tags]
 
 ```python
 def create_tags(
@@ -239,7 +244,7 @@ def create_tags(
 
 Type annotations for `boto3.client("workspaces").create_workspace_bundle` method.
 
-[Client.create_workspace_bundle documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspace_bundle)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspace_bundle]
 
 ```python
 def create_workspace_bundle(
@@ -259,7 +264,7 @@ def create_workspace_bundle(
 
 Type annotations for `boto3.client("workspaces").create_workspaces` method.
 
-[Client.create_workspaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspaces]
 
 ```python
 def create_workspaces(
@@ -273,7 +278,7 @@ def create_workspaces(
 
 Type annotations for `boto3.client("workspaces").delete_connection_alias` method.
 
-[Client.delete_connection_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_connection_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_connection_alias]
 
 ```python
 def delete_connection_alias(
@@ -287,7 +292,7 @@ def delete_connection_alias(
 
 Type annotations for `boto3.client("workspaces").delete_ip_group` method.
 
-[Client.delete_ip_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_ip_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_ip_group]
 
 ```python
 def delete_ip_group(
@@ -301,7 +306,7 @@ def delete_ip_group(
 
 Type annotations for `boto3.client("workspaces").delete_tags` method.
 
-[Client.delete_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_tags]
 
 ```python
 def delete_tags(
@@ -316,7 +321,7 @@ def delete_tags(
 
 Type annotations for `boto3.client("workspaces").delete_workspace_bundle` method.
 
-[Client.delete_workspace_bundle documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_bundle)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_bundle]
 
 ```python
 def delete_workspace_bundle(
@@ -330,7 +335,7 @@ def delete_workspace_bundle(
 
 Type annotations for `boto3.client("workspaces").delete_workspace_image` method.
 
-[Client.delete_workspace_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_image]
 
 ```python
 def delete_workspace_image(
@@ -344,7 +349,7 @@ def delete_workspace_image(
 
 Type annotations for `boto3.client("workspaces").deregister_workspace_directory` method.
 
-[Client.deregister_workspace_directory documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.deregister_workspace_directory)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.deregister_workspace_directory]
 
 ```python
 def deregister_workspace_directory(
@@ -358,7 +363,7 @@ def deregister_workspace_directory(
 
 Type annotations for `boto3.client("workspaces").describe_account` method.
 
-[Client.describe_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_account]
 
 ```python
 def describe_account(
@@ -371,7 +376,7 @@ def describe_account(
 
 Type annotations for `boto3.client("workspaces").describe_account_modifications` method.
 
-[Client.describe_account_modifications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_account_modifications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_account_modifications]
 
 ```python
 def describe_account_modifications(
@@ -385,7 +390,7 @@ def describe_account_modifications(
 
 Type annotations for `boto3.client("workspaces").describe_client_properties` method.
 
-[Client.describe_client_properties documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_client_properties)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_client_properties]
 
 ```python
 def describe_client_properties(
@@ -399,7 +404,7 @@ def describe_client_properties(
 
 Type annotations for `boto3.client("workspaces").describe_connection_alias_permissions` method.
 
-[Client.describe_connection_alias_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_alias_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_alias_permissions]
 
 ```python
 def describe_connection_alias_permissions(
@@ -415,7 +420,7 @@ def describe_connection_alias_permissions(
 
 Type annotations for `boto3.client("workspaces").describe_connection_aliases` method.
 
-[Client.describe_connection_aliases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_aliases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_aliases]
 
 ```python
 def describe_connection_aliases(
@@ -432,7 +437,7 @@ def describe_connection_aliases(
 
 Type annotations for `boto3.client("workspaces").describe_ip_groups` method.
 
-[Client.describe_ip_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_ip_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_ip_groups]
 
 ```python
 def describe_ip_groups(
@@ -448,7 +453,7 @@ def describe_ip_groups(
 
 Type annotations for `boto3.client("workspaces").describe_tags` method.
 
-[Client.describe_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_tags]
 
 ```python
 def describe_tags(
@@ -462,7 +467,7 @@ def describe_tags(
 
 Type annotations for `boto3.client("workspaces").describe_workspace_bundles` method.
 
-[Client.describe_workspace_bundles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_bundles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_bundles]
 
 ```python
 def describe_workspace_bundles(
@@ -478,7 +483,7 @@ def describe_workspace_bundles(
 
 Type annotations for `boto3.client("workspaces").describe_workspace_directories` method.
 
-[Client.describe_workspace_directories documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_directories)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_directories]
 
 ```python
 def describe_workspace_directories(
@@ -494,7 +499,7 @@ def describe_workspace_directories(
 
 Type annotations for `boto3.client("workspaces").describe_workspace_image_permissions` method.
 
-[Client.describe_workspace_image_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_image_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_image_permissions]
 
 ```python
 def describe_workspace_image_permissions(
@@ -510,7 +515,7 @@ def describe_workspace_image_permissions(
 
 Type annotations for `boto3.client("workspaces").describe_workspace_images` method.
 
-[Client.describe_workspace_images documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_images)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_images]
 
 ```python
 def describe_workspace_images(
@@ -527,7 +532,7 @@ def describe_workspace_images(
 
 Type annotations for `boto3.client("workspaces").describe_workspace_snapshots` method.
 
-[Client.describe_workspace_snapshots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_snapshots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_snapshots]
 
 ```python
 def describe_workspace_snapshots(
@@ -541,7 +546,7 @@ def describe_workspace_snapshots(
 
 Type annotations for `boto3.client("workspaces").describe_workspaces` method.
 
-[Client.describe_workspaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces]
 
 ```python
 def describe_workspaces(
@@ -560,7 +565,7 @@ def describe_workspaces(
 
 Type annotations for `boto3.client("workspaces").describe_workspaces_connection_status` method.
 
-[Client.describe_workspaces_connection_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces_connection_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces_connection_status]
 
 ```python
 def describe_workspaces_connection_status(
@@ -575,7 +580,7 @@ def describe_workspaces_connection_status(
 
 Type annotations for `boto3.client("workspaces").disassociate_connection_alias` method.
 
-[Client.disassociate_connection_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.disassociate_connection_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.disassociate_connection_alias]
 
 ```python
 def disassociate_connection_alias(
@@ -589,7 +594,7 @@ def disassociate_connection_alias(
 
 Type annotations for `boto3.client("workspaces").disassociate_ip_groups` method.
 
-[Client.disassociate_ip_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.disassociate_ip_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.disassociate_ip_groups]
 
 ```python
 def disassociate_ip_groups(
@@ -604,7 +609,7 @@ def disassociate_ip_groups(
 
 Type annotations for `boto3.client("workspaces").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -621,7 +626,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("workspaces").import_workspace_image` method.
 
-[Client.import_workspace_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.import_workspace_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.import_workspace_image]
 
 ```python
 def import_workspace_image(
@@ -640,7 +645,7 @@ def import_workspace_image(
 
 Type annotations for `boto3.client("workspaces").list_available_management_cidr_ranges` method.
 
-[Client.list_available_management_cidr_ranges documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.list_available_management_cidr_ranges)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.list_available_management_cidr_ranges]
 
 ```python
 def list_available_management_cidr_ranges(
@@ -656,7 +661,7 @@ def list_available_management_cidr_ranges(
 
 Type annotations for `boto3.client("workspaces").migrate_workspace` method.
 
-[Client.migrate_workspace documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.migrate_workspace)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.migrate_workspace]
 
 ```python
 def migrate_workspace(
@@ -671,7 +676,7 @@ def migrate_workspace(
 
 Type annotations for `boto3.client("workspaces").modify_account` method.
 
-[Client.modify_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_account]
 
 ```python
 def modify_account(
@@ -686,7 +691,7 @@ def modify_account(
 
 Type annotations for `boto3.client("workspaces").modify_client_properties` method.
 
-[Client.modify_client_properties documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_client_properties)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_client_properties]
 
 ```python
 def modify_client_properties(
@@ -701,7 +706,7 @@ def modify_client_properties(
 
 Type annotations for `boto3.client("workspaces").modify_selfservice_permissions` method.
 
-[Client.modify_selfservice_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_selfservice_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_selfservice_permissions]
 
 ```python
 def modify_selfservice_permissions(
@@ -716,7 +721,7 @@ def modify_selfservice_permissions(
 
 Type annotations for `boto3.client("workspaces").modify_workspace_access_properties` method.
 
-[Client.modify_workspace_access_properties documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_access_properties)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_access_properties]
 
 ```python
 def modify_workspace_access_properties(
@@ -731,7 +736,7 @@ def modify_workspace_access_properties(
 
 Type annotations for `boto3.client("workspaces").modify_workspace_creation_properties` method.
 
-[Client.modify_workspace_creation_properties documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_creation_properties)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_creation_properties]
 
 ```python
 def modify_workspace_creation_properties(
@@ -746,7 +751,7 @@ def modify_workspace_creation_properties(
 
 Type annotations for `boto3.client("workspaces").modify_workspace_properties` method.
 
-[Client.modify_workspace_properties documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_properties)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_properties]
 
 ```python
 def modify_workspace_properties(
@@ -761,7 +766,7 @@ def modify_workspace_properties(
 
 Type annotations for `boto3.client("workspaces").modify_workspace_state` method.
 
-[Client.modify_workspace_state documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_state)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_state]
 
 ```python
 def modify_workspace_state(
@@ -776,7 +781,7 @@ def modify_workspace_state(
 
 Type annotations for `boto3.client("workspaces").reboot_workspaces` method.
 
-[Client.reboot_workspaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.reboot_workspaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.reboot_workspaces]
 
 ```python
 def reboot_workspaces(
@@ -790,7 +795,7 @@ def reboot_workspaces(
 
 Type annotations for `boto3.client("workspaces").rebuild_workspaces` method.
 
-[Client.rebuild_workspaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.rebuild_workspaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.rebuild_workspaces]
 
 ```python
 def rebuild_workspaces(
@@ -804,7 +809,7 @@ def rebuild_workspaces(
 
 Type annotations for `boto3.client("workspaces").register_workspace_directory` method.
 
-[Client.register_workspace_directory documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.register_workspace_directory)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.register_workspace_directory]
 
 ```python
 def register_workspace_directory(
@@ -823,7 +828,7 @@ def register_workspace_directory(
 
 Type annotations for `boto3.client("workspaces").restore_workspace` method.
 
-[Client.restore_workspace documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.restore_workspace)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.restore_workspace]
 
 ```python
 def restore_workspace(
@@ -837,7 +842,7 @@ def restore_workspace(
 
 Type annotations for `boto3.client("workspaces").revoke_ip_rules` method.
 
-[Client.revoke_ip_rules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.revoke_ip_rules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.revoke_ip_rules]
 
 ```python
 def revoke_ip_rules(
@@ -852,7 +857,7 @@ def revoke_ip_rules(
 
 Type annotations for `boto3.client("workspaces").start_workspaces` method.
 
-[Client.start_workspaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.start_workspaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.start_workspaces]
 
 ```python
 def start_workspaces(
@@ -866,7 +871,7 @@ def start_workspaces(
 
 Type annotations for `boto3.client("workspaces").stop_workspaces` method.
 
-[Client.stop_workspaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.stop_workspaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.stop_workspaces]
 
 ```python
 def stop_workspaces(
@@ -880,7 +885,7 @@ def stop_workspaces(
 
 Type annotations for `boto3.client("workspaces").terminate_workspaces` method.
 
-[Client.terminate_workspaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.terminate_workspaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.terminate_workspaces]
 
 ```python
 def terminate_workspaces(
@@ -894,7 +899,7 @@ def terminate_workspaces(
 
 Type annotations for `boto3.client("workspaces").update_connection_alias_permission` method.
 
-[Client.update_connection_alias_permission documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_connection_alias_permission)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_connection_alias_permission]
 
 ```python
 def update_connection_alias_permission(
@@ -909,7 +914,7 @@ def update_connection_alias_permission(
 
 Type annotations for `boto3.client("workspaces").update_rules_of_ip_group` method.
 
-[Client.update_rules_of_ip_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_rules_of_ip_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_rules_of_ip_group]
 
 ```python
 def update_rules_of_ip_group(
@@ -924,7 +929,7 @@ def update_rules_of_ip_group(
 
 Type annotations for `boto3.client("workspaces").update_workspace_bundle` method.
 
-[Client.update_workspace_bundle documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_bundle)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_bundle]
 
 ```python
 def update_workspace_bundle(
@@ -939,7 +944,7 @@ def update_workspace_bundle(
 
 Type annotations for `boto3.client("workspaces").update_workspace_image_permission` method.
 
-[Client.update_workspace_image_permission documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_image_permission)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_image_permission]
 
 ```python
 def update_workspace_image_permission(

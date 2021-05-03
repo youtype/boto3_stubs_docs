@@ -1,11 +1,11 @@
-# Structures for boto3 Glacier module
+# Typed dictionaries for boto3 Glacier module
 
 > [Index](../README.md) > [Glacier](./README.md) > Structures
 
 Auto-generated documentation for [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
 type annotations stubs module [mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
-- [Structures for boto3 Glacier module](#structures-for-boto3-glacier-module)
+- [Typed dictionaries for boto3 Glacier module](#typed-dictionaries-for-boto3-glacier-module)
   - [ArchiveCreationOutputTypeDef](#archivecreationoutputtypedef)
   - [CSVInputTypeDef](#csvinputtypedef)
   - [CSVOutputTypeDef](#csvoutputtypedef)
@@ -58,13 +58,13 @@ from mypy_boto3_glacier.type_defs import ArchiveCreationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `location`: `str`
 - `checksum`: `str`
 - `archiveId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CSVInputTypeDef
@@ -92,15 +92,15 @@ from mypy_boto3_glacier.type_defs import CSVOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `QuoteFields`: `QuoteFields`
 - `QuoteEscapeCharacter`: `str`
 - `RecordDelimiter`: `str`
 - `FieldDelimiter`: `str`
 - `QuoteCharacter`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateVaultOutputTypeDef
@@ -110,11 +110,11 @@ from mypy_boto3_glacier.type_defs import CreateVaultOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `location`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DataRetrievalPolicyTypeDef
@@ -151,9 +151,7 @@ from mypy_boto3_glacier.type_defs import DescribeVaultOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `VaultARN`: `str`
 - `VaultName`: `str`
 - `CreationDate`: `str`
@@ -161,6 +159,8 @@ Optional fields:
 - `NumberOfArchives`: `int`
 - `SizeInBytes`: `int`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## EncryptionTypeDef
@@ -185,11 +185,11 @@ from mypy_boto3_glacier.type_defs import GetDataRetrievalPolicyOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Policy`: `"DataRetrievalPolicyTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetJobOutputOutputTypeDef
@@ -199,9 +199,7 @@ from mypy_boto3_glacier.type_defs import GetJobOutputOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `body`: `StreamingBody`
 - `checksum`: `str`
 - `status`: `int`
@@ -212,6 +210,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## GetVaultAccessPolicyOutputTypeDef
 
 ```python
@@ -219,11 +219,11 @@ from mypy_boto3_glacier.type_defs import GetVaultAccessPolicyOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `policy`: `"VaultAccessPolicyTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetVaultLockOutputTypeDef
@@ -233,14 +233,14 @@ from mypy_boto3_glacier.type_defs import GetVaultLockOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Policy`: `str`
 - `State`: `str`
 - `ExpirationDate`: `str`
 - `CreationDate`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetVaultNotificationsOutputTypeDef
@@ -250,11 +250,11 @@ from mypy_boto3_glacier.type_defs import GetVaultNotificationsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `vaultNotificationConfig`: `"VaultNotificationConfigTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GlacierJobDescriptionTypeDef
@@ -330,13 +330,13 @@ from mypy_boto3_glacier.type_defs import InitiateJobOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `location`: `str`
 - `jobId`: `str`
 - `jobOutputPath`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## InitiateMultipartUploadOutputTypeDef
@@ -346,12 +346,12 @@ from mypy_boto3_glacier.type_defs import InitiateMultipartUploadOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `location`: `str`
 - `uploadId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## InitiateVaultLockOutputTypeDef
@@ -361,11 +361,11 @@ from mypy_boto3_glacier.type_defs import InitiateVaultLockOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `lockId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## InputSerializationTypeDef
@@ -443,12 +443,12 @@ from mypy_boto3_glacier.type_defs import ListJobsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `JobList`: `List["GlacierJobDescriptionTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListMultipartUploadsOutputTypeDef
@@ -458,12 +458,12 @@ from mypy_boto3_glacier.type_defs import ListMultipartUploadsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `UploadsList`: `List["UploadListElementTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListPartsOutputTypeDef
@@ -473,9 +473,7 @@ from mypy_boto3_glacier.type_defs import ListPartsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `MultipartUploadId`: `str`
 - `VaultARN`: `str`
 - `ArchiveDescription`: `str`
@@ -486,6 +484,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## ListProvisionedCapacityOutputTypeDef
 
 ```python
@@ -493,11 +493,11 @@ from mypy_boto3_glacier.type_defs import ListProvisionedCapacityOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ProvisionedCapacityList`: `List["ProvisionedCapacityDescriptionTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagsForVaultOutputTypeDef
@@ -507,11 +507,11 @@ from mypy_boto3_glacier.type_defs import ListTagsForVaultOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Tags`: `Dict[str, str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListVaultsOutputTypeDef
@@ -521,12 +521,12 @@ from mypy_boto3_glacier.type_defs import ListVaultsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `VaultList`: `List["DescribeVaultOutputTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## OutputLocationTypeDef
@@ -606,11 +606,11 @@ from mypy_boto3_glacier.type_defs import PurchaseProvisionedCapacityOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `capacityId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ResponseMetadata
@@ -690,11 +690,11 @@ from mypy_boto3_glacier.type_defs import UploadMultipartPartOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `checksum`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## VaultAccessPolicyTypeDef

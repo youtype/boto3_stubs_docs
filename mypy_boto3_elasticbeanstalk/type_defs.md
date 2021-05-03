@@ -1,11 +1,11 @@
-# Structures for boto3 ElasticBeanstalk module
+# Typed dictionaries for boto3 ElasticBeanstalk module
 
 > [Index](../README.md) > [ElasticBeanstalk](./README.md) > Structures
 
 Auto-generated documentation for [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
 type annotations stubs module [mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
-- [Structures for boto3 ElasticBeanstalk module](#structures-for-boto3-elasticbeanstalk-module)
+- [Typed dictionaries for boto3 ElasticBeanstalk module](#typed-dictionaries-for-boto3-elasticbeanstalk-module)
   - [ApplicationDescriptionMessageTypeDef](#applicationdescriptionmessagetypedef)
   - [ApplicationDescriptionTypeDef](#applicationdescriptiontypedef)
   - [ApplicationDescriptionsMessageTypeDef](#applicationdescriptionsmessagetypedef)

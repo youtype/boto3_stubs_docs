@@ -19,13 +19,13 @@ Type annotations for `boto3.client("rekognition").get_paginator("describe_projec
 Can be used directly:
 
 ```python
-from mypy_boto3_rekognition.paginators import DescribeProjectVersionsPaginator
+from mypy_boto3_rekognition.paginator import DescribeProjectVersionsPaginator
 
 def get_describe_project_versions_paginator() -> DescribeProjectVersionsPaginator:
     return boto3.client("rekognition").get_paginator("describe_project_versions")
 ```
 
-[Paginator.DescribeProjectVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.DescribeProjectVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.DescribeProjectVersions)
 
 ```python
 class DescribeProjectVersionsPaginator(Boto3Paginator):
@@ -44,13 +44,13 @@ Type annotations for `boto3.client("rekognition").get_paginator("describe_projec
 Can be used directly:
 
 ```python
-from mypy_boto3_rekognition.paginators import DescribeProjectsPaginator
+from mypy_boto3_rekognition.paginator import DescribeProjectsPaginator
 
 def get_describe_projects_paginator() -> DescribeProjectsPaginator:
     return boto3.client("rekognition").get_paginator("describe_projects")
 ```
 
-[Paginator.DescribeProjects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.DescribeProjects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.DescribeProjects)
 
 ```python
 class DescribeProjectsPaginator(Boto3Paginator):
@@ -67,13 +67,13 @@ Type annotations for `boto3.client("rekognition").get_paginator("list_collection
 Can be used directly:
 
 ```python
-from mypy_boto3_rekognition.paginators import ListCollectionsPaginator
+from mypy_boto3_rekognition.paginator import ListCollectionsPaginator
 
 def get_list_collections_paginator() -> ListCollectionsPaginator:
     return boto3.client("rekognition").get_paginator("list_collections")
 ```
 
-[Paginator.ListCollections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListCollections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListCollections)
 
 ```python
 class ListCollectionsPaginator(Boto3Paginator):
@@ -90,13 +90,13 @@ Type annotations for `boto3.client("rekognition").get_paginator("list_faces")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_rekognition.paginators import ListFacesPaginator
+from mypy_boto3_rekognition.paginator import ListFacesPaginator
 
 def get_list_faces_paginator() -> ListFacesPaginator:
     return boto3.client("rekognition").get_paginator("list_faces")
 ```
 
-[Paginator.ListFaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListFaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListFaces)
 
 ```python
 class ListFacesPaginator(Boto3Paginator):
@@ -114,13 +114,13 @@ Type annotations for `boto3.client("rekognition").get_paginator("list_stream_pro
 Can be used directly:
 
 ```python
-from mypy_boto3_rekognition.paginators import ListStreamProcessorsPaginator
+from mypy_boto3_rekognition.paginator import ListStreamProcessorsPaginator
 
 def get_list_stream_processors_paginator() -> ListStreamProcessorsPaginator:
     return boto3.client("rekognition").get_paginator("list_stream_processors")
 ```
 
-[Paginator.ListStreamProcessors documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListStreamProcessors)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListStreamProcessors)
 
 ```python
 class ListStreamProcessorsPaginator(Boto3Paginator):

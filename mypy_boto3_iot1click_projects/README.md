@@ -15,7 +15,7 @@ pip install mypy-boto3-iot1click-projects
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## IoT1ClickProjectsClient
 
@@ -103,7 +103,7 @@ from mypy_boto3_iot1click_projects.literals import ListPlacementsPaginatorName, 
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

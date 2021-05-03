@@ -14,7 +14,7 @@ pip install mypy-boto3-iotwireless
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## IoTWirelessClient
 
@@ -136,7 +136,7 @@ from mypy_boto3_iotwireless.literals import BatteryLevel, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

@@ -18,13 +18,13 @@ Type annotations for `boto3.client("opsworkscm").get_paginator("describe_backups
 Can be used directly:
 
 ```python
-from mypy_boto3_opsworkscm.paginators import DescribeBackupsPaginator
+from mypy_boto3_opsworkscm.paginator import DescribeBackupsPaginator
 
 def get_describe_backups_paginator() -> DescribeBackupsPaginator:
     return boto3.client("opsworkscm").get_paginator("describe_backups")
 ```
 
-[Paginator.DescribeBackups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Paginator.DescribeBackups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Paginator.DescribeBackups)
 
 ```python
 class DescribeBackupsPaginator(Boto3Paginator):
@@ -43,13 +43,13 @@ Type annotations for `boto3.client("opsworkscm").get_paginator("describe_events"
 Can be used directly:
 
 ```python
-from mypy_boto3_opsworkscm.paginators import DescribeEventsPaginator
+from mypy_boto3_opsworkscm.paginator import DescribeEventsPaginator
 
 def get_describe_events_paginator() -> DescribeEventsPaginator:
     return boto3.client("opsworkscm").get_paginator("describe_events")
 ```
 
-[Paginator.DescribeEvents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Paginator.DescribeEvents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Paginator.DescribeEvents)
 
 ```python
 class DescribeEventsPaginator(Boto3Paginator):
@@ -67,13 +67,13 @@ Type annotations for `boto3.client("opsworkscm").get_paginator("describe_servers
 Can be used directly:
 
 ```python
-from mypy_boto3_opsworkscm.paginators import DescribeServersPaginator
+from mypy_boto3_opsworkscm.paginator import DescribeServersPaginator
 
 def get_describe_servers_paginator() -> DescribeServersPaginator:
     return boto3.client("opsworkscm").get_paginator("describe_servers")
 ```
 
-[Paginator.DescribeServers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Paginator.DescribeServers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Paginator.DescribeServers)
 
 ```python
 class DescribeServersPaginator(Boto3Paginator):
@@ -91,13 +91,13 @@ Type annotations for `boto3.client("opsworkscm").get_paginator("list_tags_for_re
 Can be used directly:
 
 ```python
-from mypy_boto3_opsworkscm.paginators import ListTagsForResourcePaginator
+from mypy_boto3_opsworkscm.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("opsworkscm").get_paginator("list_tags_for_resource")
 ```
 
-[Paginator.ListTagsForResource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Paginator.ListTagsForResource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):

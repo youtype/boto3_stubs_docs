@@ -14,7 +14,7 @@ pip install mypy-boto3-pinpoint
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## PinpointClient
 
@@ -206,7 +206,7 @@ from mypy_boto3_pinpoint.literals import Action, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

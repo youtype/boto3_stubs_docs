@@ -15,7 +15,7 @@ pip install mypy-boto3-sdb
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## SimpleDBClient
 
@@ -109,7 +109,7 @@ from mypy_boto3_sdb.literals import ListDomainsPaginatorName, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

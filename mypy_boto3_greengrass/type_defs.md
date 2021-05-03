@@ -1,11 +1,11 @@
-# Structures for boto3 Greengrass module
+# Typed dictionaries for boto3 Greengrass module
 
 > [Index](../README.md) > [Greengrass](./README.md) > Structures
 
 Auto-generated documentation for [Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
 type annotations stubs module [mypy_boto3_greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
 
-- [Structures for boto3 Greengrass module](#structures-for-boto3-greengrass-module)
+- [Typed dictionaries for boto3 Greengrass module](#typed-dictionaries-for-boto3-greengrass-module)
   - [AssociateRoleToGroupResponseTypeDef](#associateroletogroupresponsetypedef)
   - [AssociateServiceRoleToAccountResponseTypeDef](#associateserviceroletoaccountresponsetypedef)
   - [BulkDeploymentMetricsTypeDef](#bulkdeploymentmetricstypedef)

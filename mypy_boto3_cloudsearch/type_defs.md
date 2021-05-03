@@ -1,11 +1,11 @@
-# Structures for boto3 CloudSearch module
+# Typed dictionaries for boto3 CloudSearch module
 
 > [Index](../README.md) > [CloudSearch](./README.md) > Structures
 
 Auto-generated documentation for [CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
 type annotations stubs module [mypy_boto3_cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
 
-- [Structures for boto3 CloudSearch module](#structures-for-boto3-cloudsearch-module)
+- [Typed dictionaries for boto3 CloudSearch module](#typed-dictionaries-for-boto3-cloudsearch-module)
   - [AccessPoliciesStatusTypeDef](#accesspoliciesstatustypedef)
   - [AnalysisOptionsTypeDef](#analysisoptionstypedef)
   - [AnalysisSchemeStatusTypeDef](#analysisschemestatustypedef)

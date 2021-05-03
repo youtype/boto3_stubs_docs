@@ -21,7 +21,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_kinesis_video_media.client import KinesisVideoMediaClient
+
+def get_kinesis-video-media_client() -> KinesisVideoMediaClient:
+    return boto3.client("kinesis-video-media")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client)
 
 ## Exceptions
 
@@ -54,7 +59,7 @@ Exceptions:
 
 Type annotations for `boto3.client("kinesis-video-media").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -68,7 +73,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("kinesis-video-media").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -85,7 +90,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("kinesis-video-media").get_media` method.
 
-[Client.get_media documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.get_media)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.get_media]
 
 ```python
 def get_media(

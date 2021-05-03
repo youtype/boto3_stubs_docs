@@ -128,8 +128,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_iam.service_resource import IAMServiceResource
+
+def get_iam_resource() -> IAMServiceResource:
+    return boto3.resource("iam")
 ```
 
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource)
 
 
 ## Methods
@@ -138,7 +142,7 @@ from mypy_boto3_iam.service_resource import IAMServiceResource
 
 Type annotations for `boto3.resource("iam").AccessKey` method.
 
-[ServiceResource.AccessKey documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccessKey)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.AccessKey]
 
 Definition:
 
@@ -155,7 +159,7 @@ def AccessKey(
 
 Type annotations for `boto3.resource("iam").AccessKeyPair` method.
 
-[ServiceResource.AccessKeyPair documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccessKeyPair)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.AccessKeyPair]
 
 Definition:
 
@@ -173,7 +177,7 @@ def AccessKeyPair(
 
 Type annotations for `boto3.resource("iam").AccountPasswordPolicy` method.
 
-[ServiceResource.AccountPasswordPolicy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccountPasswordPolicy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.AccountPasswordPolicy]
 
 Definition:
 
@@ -188,7 +192,7 @@ def AccountPasswordPolicy(
 
 Type annotations for `boto3.resource("iam").AccountSummary` method.
 
-[ServiceResource.AccountSummary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccountSummary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.AccountSummary]
 
 Definition:
 
@@ -203,7 +207,7 @@ def AccountSummary(
 
 Type annotations for `boto3.resource("iam").AssumeRolePolicy` method.
 
-[ServiceResource.AssumeRolePolicy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AssumeRolePolicy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.AssumeRolePolicy]
 
 Definition:
 
@@ -219,7 +223,7 @@ def AssumeRolePolicy(
 
 Type annotations for `boto3.resource("iam").CurrentUser` method.
 
-[ServiceResource.CurrentUser documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.CurrentUser)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.CurrentUser]
 
 Definition:
 
@@ -234,7 +238,7 @@ def CurrentUser(
 
 Type annotations for `boto3.resource("iam").Group` method.
 
-[ServiceResource.Group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.Group]
 
 Definition:
 
@@ -250,7 +254,7 @@ def Group(
 
 Type annotations for `boto3.resource("iam").GroupPolicy` method.
 
-[ServiceResource.GroupPolicy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.GroupPolicy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.GroupPolicy]
 
 Definition:
 
@@ -267,7 +271,7 @@ def GroupPolicy(
 
 Type annotations for `boto3.resource("iam").InstanceProfile` method.
 
-[ServiceResource.InstanceProfile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.InstanceProfile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.InstanceProfile]
 
 Definition:
 
@@ -283,7 +287,7 @@ def InstanceProfile(
 
 Type annotations for `boto3.resource("iam").LoginProfile` method.
 
-[ServiceResource.LoginProfile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.LoginProfile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.LoginProfile]
 
 Definition:
 
@@ -299,7 +303,7 @@ def LoginProfile(
 
 Type annotations for `boto3.resource("iam").MfaDevice` method.
 
-[ServiceResource.MfaDevice documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.MfaDevice)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.MfaDevice]
 
 Definition:
 
@@ -316,7 +320,7 @@ def MfaDevice(
 
 Type annotations for `boto3.resource("iam").Policy` method.
 
-[ServiceResource.Policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.Policy]
 
 Definition:
 
@@ -332,7 +336,7 @@ def Policy(
 
 Type annotations for `boto3.resource("iam").PolicyVersion` method.
 
-[ServiceResource.PolicyVersion documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.PolicyVersion)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.PolicyVersion]
 
 Definition:
 
@@ -349,7 +353,7 @@ def PolicyVersion(
 
 Type annotations for `boto3.resource("iam").Role` method.
 
-[ServiceResource.Role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.Role]
 
 Definition:
 
@@ -365,7 +369,7 @@ def Role(
 
 Type annotations for `boto3.resource("iam").RolePolicy` method.
 
-[ServiceResource.RolePolicy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.RolePolicy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.RolePolicy]
 
 Definition:
 
@@ -382,7 +386,7 @@ def RolePolicy(
 
 Type annotations for `boto3.resource("iam").SamlProvider` method.
 
-[ServiceResource.SamlProvider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.SamlProvider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.SamlProvider]
 
 Definition:
 
@@ -398,7 +402,7 @@ def SamlProvider(
 
 Type annotations for `boto3.resource("iam").ServerCertificate` method.
 
-[ServiceResource.ServerCertificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServerCertificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.ServerCertificate]
 
 Definition:
 
@@ -414,7 +418,7 @@ def ServerCertificate(
 
 Type annotations for `boto3.resource("iam").SigningCertificate` method.
 
-[ServiceResource.SigningCertificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.SigningCertificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.SigningCertificate]
 
 Definition:
 
@@ -431,7 +435,7 @@ def SigningCertificate(
 
 Type annotations for `boto3.resource("iam").User` method.
 
-[ServiceResource.User documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.User)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.User]
 
 Definition:
 
@@ -447,7 +451,7 @@ def User(
 
 Type annotations for `boto3.resource("iam").UserPolicy` method.
 
-[ServiceResource.UserPolicy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.UserPolicy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.UserPolicy]
 
 Definition:
 
@@ -464,7 +468,7 @@ def UserPolicy(
 
 Type annotations for `boto3.resource("iam").VirtualMfaDevice` method.
 
-[ServiceResource.VirtualMfaDevice documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.VirtualMfaDevice)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.VirtualMfaDevice]
 
 Definition:
 
@@ -480,7 +484,7 @@ def VirtualMfaDevice(
 
 Type annotations for `boto3.resource("iam").change_password` method.
 
-[ServiceResource.change_password documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.change_password)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.change_password]
 
 Definition:
 
@@ -497,7 +501,7 @@ def change_password(
 
 Type annotations for `boto3.resource("iam").create_account_alias` method.
 
-[ServiceResource.create_account_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_account_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_account_alias]
 
 Definition:
 
@@ -513,7 +517,7 @@ def create_account_alias(
 
 Type annotations for `boto3.resource("iam").create_account_password_policy` method.
 
-[ServiceResource.create_account_password_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_account_password_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_account_password_policy]
 
 Definition:
 
@@ -537,7 +541,7 @@ def create_account_password_policy(
 
 Type annotations for `boto3.resource("iam").create_group` method.
 
-[ServiceResource.create_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_group]
 
 Definition:
 
@@ -554,7 +558,7 @@ def create_group(
 
 Type annotations for `boto3.resource("iam").create_instance_profile` method.
 
-[ServiceResource.create_instance_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_instance_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_instance_profile]
 
 Definition:
 
@@ -572,7 +576,7 @@ def create_instance_profile(
 
 Type annotations for `boto3.resource("iam").create_policy` method.
 
-[ServiceResource.create_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_policy]
 
 Definition:
 
@@ -592,7 +596,7 @@ def create_policy(
 
 Type annotations for `boto3.resource("iam").create_role` method.
 
-[ServiceResource.create_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_role]
 
 Definition:
 
@@ -614,7 +618,7 @@ def create_role(
 
 Type annotations for `boto3.resource("iam").create_saml_provider` method.
 
-[ServiceResource.create_saml_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_saml_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_saml_provider]
 
 Definition:
 
@@ -632,7 +636,7 @@ def create_saml_provider(
 
 Type annotations for `boto3.resource("iam").create_server_certificate` method.
 
-[ServiceResource.create_server_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_server_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_server_certificate]
 
 Definition:
 
@@ -653,7 +657,7 @@ def create_server_certificate(
 
 Type annotations for `boto3.resource("iam").create_signing_certificate` method.
 
-[ServiceResource.create_signing_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_signing_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_signing_certificate]
 
 Definition:
 
@@ -670,7 +674,7 @@ def create_signing_certificate(
 
 Type annotations for `boto3.resource("iam").create_user` method.
 
-[ServiceResource.create_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_user]
 
 Definition:
 
@@ -689,7 +693,7 @@ def create_user(
 
 Type annotations for `boto3.resource("iam").create_virtual_mfa_device` method.
 
-[ServiceResource.create_virtual_mfa_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_virtual_mfa_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.create_virtual_mfa_device]
 
 Definition:
 
@@ -707,7 +711,7 @@ def create_virtual_mfa_device(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[ServiceResource.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.IAMServiceResource.get_available_subresources]
 
 Definition:
 
@@ -738,7 +742,7 @@ def get_collection() -> ServiceResourceGroupsCollection:
     )
 ```
 
-[ServiceResource.groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServiceResourceGroupsCollection)
 
 Definition:
 
@@ -795,7 +799,7 @@ def get_collection() -> ServiceResourceInstanceProfilesCollection:
     )
 ```
 
-[ServiceResource.instance_profiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.instance_profiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServiceResourceInstanceProfilesCollection)
 
 Definition:
 
@@ -852,7 +856,7 @@ def get_collection() -> ServiceResourcePoliciesCollection:
     )
 ```
 
-[ServiceResource.policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServiceResourcePoliciesCollection)
 
 Definition:
 
@@ -912,7 +916,7 @@ def get_collection() -> ServiceResourceRolesCollection:
     )
 ```
 
-[ServiceResource.roles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.roles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServiceResourceRolesCollection)
 
 Definition:
 
@@ -969,7 +973,7 @@ def get_collection() -> ServiceResourceSamlProvidersCollection:
     )
 ```
 
-[ServiceResource.saml_providers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.saml_providers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServiceResourceSamlProvidersCollection)
 
 Definition:
 
@@ -1023,7 +1027,7 @@ def get_collection() -> ServiceResourceServerCertificatesCollection:
     )
 ```
 
-[ServiceResource.server_certificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.server_certificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServiceResourceServerCertificatesCollection)
 
 Definition:
 
@@ -1080,7 +1084,7 @@ def get_collection() -> ServiceResourceUsersCollection:
     )
 ```
 
-[ServiceResource.users documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.users)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServiceResourceUsersCollection)
 
 Definition:
 
@@ -1137,7 +1141,7 @@ def get_collection() -> ServiceResourceVirtualMfaDevicesCollection:
     )
 ```
 
-[ServiceResource.virtual_mfa_devices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.virtual_mfa_devices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServiceResourceVirtualMfaDevicesCollection)
 
 Definition:
 
@@ -1195,7 +1199,7 @@ def get_resource() -> AccessKey:
     return boto3.resource("iam").AccessKey(...)
 ```
 
-[AccessKey documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccessKey)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccessKey)
 
 
 ### AccessKey attributes
@@ -1221,7 +1225,7 @@ def get_resource() -> AccessKey:
 
 Type annotations for `boto3.resource("iam").User` method.
 
-[AccessKey.User documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.User)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.User]
 
 ```python
 def User(
@@ -1234,7 +1238,7 @@ def User(
 
 Type annotations for `boto3.resource("iam").activate` method.
 
-[AccessKey.activate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.activate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.activate]
 
 ```python
 def activate(
@@ -1248,7 +1252,7 @@ def activate(
 
 Type annotations for `boto3.resource("iam").deactivate` method.
 
-[AccessKey.deactivate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.deactivate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.deactivate]
 
 ```python
 def deactivate(
@@ -1262,7 +1266,7 @@ def deactivate(
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[AccessKey.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.delete]
 
 ```python
 def delete(
@@ -1275,7 +1279,7 @@ def delete(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[AccessKey.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -1302,7 +1306,7 @@ def get_resource() -> AccessKeyPair:
     return boto3.resource("iam").AccessKeyPair(...)
 ```
 
-[AccessKeyPair documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccessKeyPair)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccessKeyPair)
 
 
 ### AccessKeyPair attributes
@@ -1332,7 +1336,7 @@ def get_resource() -> AccessKeyPair:
 
 Type annotations for `boto3.resource("iam").activate` method.
 
-[AccessKeyPair.activate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.activate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.activate]
 
 ```python
 def activate(
@@ -1346,7 +1350,7 @@ def activate(
 
 Type annotations for `boto3.resource("iam").deactivate` method.
 
-[AccessKeyPair.deactivate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.deactivate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.deactivate]
 
 ```python
 def deactivate(
@@ -1360,7 +1364,7 @@ def deactivate(
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[AccessKeyPair.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.delete]
 
 ```python
 def delete(
@@ -1373,7 +1377,7 @@ def delete(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[AccessKeyPair.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -1400,7 +1404,7 @@ def get_resource() -> AccountPasswordPolicy:
     return boto3.resource("iam").AccountPasswordPolicy(...)
 ```
 
-[AccountPasswordPolicy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccountPasswordPolicy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccountPasswordPolicy)
 
 
 ### AccountPasswordPolicy attributes
@@ -1436,7 +1440,7 @@ def get_resource() -> AccountPasswordPolicy:
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[AccountPasswordPolicy.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.delete]
 
 ```python
 def delete(
@@ -1449,7 +1453,7 @@ def delete(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[AccountPasswordPolicy.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -1462,7 +1466,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[AccountPasswordPolicy.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.load]
 
 ```python
 def load(
@@ -1475,7 +1479,7 @@ def load(
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[AccountPasswordPolicy.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.reload]
 
 ```python
 def reload(
@@ -1488,7 +1492,7 @@ def reload(
 
 Type annotations for `boto3.resource("iam").update` method.
 
-[AccountPasswordPolicy.update documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.update)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.update]
 
 ```python
 def update(
@@ -1524,7 +1528,7 @@ def get_resource() -> AccountSummary:
     return boto3.resource("iam").AccountSummary(...)
 ```
 
-[AccountSummary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccountSummary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccountSummary)
 
 
 ### AccountSummary attributes
@@ -1542,7 +1546,7 @@ def get_resource() -> AccountSummary:
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[AccountSummary.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountSummary.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountSummary.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -1555,7 +1559,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[AccountSummary.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountSummary.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountSummary.load]
 
 ```python
 def load(
@@ -1568,7 +1572,7 @@ def load(
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[AccountSummary.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountSummary.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountSummary.reload]
 
 ```python
 def reload(
@@ -1595,7 +1599,7 @@ def get_resource() -> AssumeRolePolicy:
     return boto3.resource("iam").AssumeRolePolicy(...)
 ```
 
-[AssumeRolePolicy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AssumeRolePolicy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AssumeRolePolicy)
 
 
 ### AssumeRolePolicy attributes
@@ -1613,7 +1617,7 @@ def get_resource() -> AssumeRolePolicy:
 
 Type annotations for `boto3.resource("iam").Role` method.
 
-[AssumeRolePolicy.Role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AssumeRolePolicy.Role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AssumeRolePolicy.Role]
 
 ```python
 def Role(
@@ -1626,7 +1630,7 @@ def Role(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[AssumeRolePolicy.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AssumeRolePolicy.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AssumeRolePolicy.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -1639,7 +1643,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("iam").update` method.
 
-[AssumeRolePolicy.update documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AssumeRolePolicy.update)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AssumeRolePolicy.update]
 
 ```python
 def update(
@@ -1667,7 +1671,7 @@ def get_resource() -> CurrentUser:
     return boto3.resource("iam").CurrentUser(...)
 ```
 
-[CurrentUser documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.CurrentUser)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.CurrentUser)
 
 
 ### CurrentUser attributes
@@ -1707,7 +1711,7 @@ def get_resource() -> CurrentUser:
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[CurrentUser.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -1720,7 +1724,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[CurrentUser.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.load]
 
 ```python
 def load(
@@ -1733,7 +1737,7 @@ def load(
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[CurrentUser.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.reload]
 
 ```python
 def reload(
@@ -1762,7 +1766,7 @@ def get_collection() -> CurrentUserAccessKeysCollection:
     return resource.access_keys
 ```
 
-[CurrentUser.access_keys documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.access_keys)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.CurrentUserAccessKeysCollection)
 
 ```python
 class CurrentUserAccessKeysCollection(ResourceCollection):
@@ -1816,7 +1820,7 @@ def get_collection() -> CurrentUserMfaDevicesCollection:
     return resource.mfa_devices
 ```
 
-[CurrentUser.mfa_devices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.mfa_devices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.CurrentUserMfaDevicesCollection)
 
 ```python
 class CurrentUserMfaDevicesCollection(ResourceCollection):
@@ -1870,7 +1874,7 @@ def get_collection() -> CurrentUserSigningCertificatesCollection:
     return resource.signing_certificates
 ```
 
-[CurrentUser.signing_certificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.signing_certificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.CurrentUserSigningCertificatesCollection)
 
 ```python
 class CurrentUserSigningCertificatesCollection(ResourceCollection):
@@ -1926,7 +1930,7 @@ def get_resource() -> Group:
     return boto3.resource("iam").Group(...)
 ```
 
-[Group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Group)
 
 
 ### Group attributes
@@ -1960,7 +1964,7 @@ def get_resource() -> Group:
 
 Type annotations for `boto3.resource("iam").Policy` method.
 
-[Group.Policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.Policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.Policy]
 
 ```python
 def Policy(
@@ -1974,7 +1978,7 @@ def Policy(
 
 Type annotations for `boto3.resource("iam").add_user` method.
 
-[Group.add_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.add_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.add_user]
 
 ```python
 def add_user(
@@ -1988,7 +1992,7 @@ def add_user(
 
 Type annotations for `boto3.resource("iam").attach_policy` method.
 
-[Group.attach_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.attach_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.attach_policy]
 
 ```python
 def attach_policy(
@@ -2002,7 +2006,7 @@ def attach_policy(
 
 Type annotations for `boto3.resource("iam").create` method.
 
-[Group.create documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.create)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.create]
 
 ```python
 def create(
@@ -2016,7 +2020,7 @@ def create(
 
 Type annotations for `boto3.resource("iam").create_policy` method.
 
-[Group.create_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.create_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.create_policy]
 
 ```python
 def create_policy(
@@ -2031,7 +2035,7 @@ def create_policy(
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[Group.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.delete]
 
 ```python
 def delete(
@@ -2044,7 +2048,7 @@ def delete(
 
 Type annotations for `boto3.resource("iam").detach_policy` method.
 
-[Group.detach_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.detach_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.detach_policy]
 
 ```python
 def detach_policy(
@@ -2058,7 +2062,7 @@ def detach_policy(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[Group.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -2071,7 +2075,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[Group.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.load]
 
 ```python
 def load(
@@ -2084,7 +2088,7 @@ def load(
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[Group.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.reload]
 
 ```python
 def reload(
@@ -2097,7 +2101,7 @@ def reload(
 
 Type annotations for `boto3.resource("iam").remove_user` method.
 
-[Group.remove_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.remove_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.remove_user]
 
 ```python
 def remove_user(
@@ -2111,7 +2115,7 @@ def remove_user(
 
 Type annotations for `boto3.resource("iam").update` method.
 
-[Group.update documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.update)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.update]
 
 ```python
 def update(
@@ -2142,7 +2146,7 @@ def get_collection() -> GroupAttachedPoliciesCollection:
     return resource.attached_policies
 ```
 
-[Group.attached_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.attached_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.GroupAttachedPoliciesCollection)
 
 ```python
 class GroupAttachedPoliciesCollection(ResourceCollection):
@@ -2196,7 +2200,7 @@ def get_collection() -> GroupPoliciesCollection:
     return resource.policies
 ```
 
-[Group.policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.GroupPoliciesCollection)
 
 ```python
 class GroupPoliciesCollection(ResourceCollection):
@@ -2249,7 +2253,7 @@ def get_collection() -> GroupUsersCollection:
     return resource.users
 ```
 
-[Group.users documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.users)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.GroupUsersCollection)
 
 ```python
 class GroupUsersCollection(ResourceCollection):
@@ -2304,7 +2308,7 @@ def get_resource() -> GroupPolicy:
     return boto3.resource("iam").GroupPolicy(...)
 ```
 
-[GroupPolicy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.GroupPolicy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.GroupPolicy)
 
 
 ### GroupPolicy attributes
@@ -2328,7 +2332,7 @@ def get_resource() -> GroupPolicy:
 
 Type annotations for `boto3.resource("iam").Group` method.
 
-[GroupPolicy.Group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.Group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.Group]
 
 ```python
 def Group(
@@ -2341,7 +2345,7 @@ def Group(
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[GroupPolicy.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.delete]
 
 ```python
 def delete(
@@ -2354,7 +2358,7 @@ def delete(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[GroupPolicy.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -2367,7 +2371,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[GroupPolicy.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.load]
 
 ```python
 def load(
@@ -2380,7 +2384,7 @@ def load(
 
 Type annotations for `boto3.resource("iam").put` method.
 
-[GroupPolicy.put documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.put)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.put]
 
 ```python
 def put(
@@ -2394,7 +2398,7 @@ def put(
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[GroupPolicy.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.reload]
 
 ```python
 def reload(
@@ -2421,7 +2425,7 @@ def get_resource() -> InstanceProfile:
     return boto3.resource("iam").InstanceProfile(...)
 ```
 
-[InstanceProfile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.InstanceProfile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.InstanceProfile)
 
 
 ### InstanceProfile attributes
@@ -2455,7 +2459,7 @@ def get_resource() -> InstanceProfile:
 
 Type annotations for `boto3.resource("iam").add_role` method.
 
-[InstanceProfile.add_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.add_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.add_role]
 
 ```python
 def add_role(
@@ -2469,7 +2473,7 @@ def add_role(
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[InstanceProfile.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.delete]
 
 ```python
 def delete(
@@ -2482,7 +2486,7 @@ def delete(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[InstanceProfile.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -2495,7 +2499,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[InstanceProfile.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.load]
 
 ```python
 def load(
@@ -2508,7 +2512,7 @@ def load(
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[InstanceProfile.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.reload]
 
 ```python
 def reload(
@@ -2521,7 +2525,7 @@ def reload(
 
 Type annotations for `boto3.resource("iam").remove_role` method.
 
-[InstanceProfile.remove_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.remove_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.remove_role]
 
 ```python
 def remove_role(
@@ -2549,7 +2553,7 @@ def get_resource() -> LoginProfile:
     return boto3.resource("iam").LoginProfile(...)
 ```
 
-[LoginProfile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.LoginProfile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.LoginProfile)
 
 
 ### LoginProfile attributes
@@ -2571,7 +2575,7 @@ def get_resource() -> LoginProfile:
 
 Type annotations for `boto3.resource("iam").User` method.
 
-[LoginProfile.User documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.User)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.User]
 
 ```python
 def User(
@@ -2584,7 +2588,7 @@ def User(
 
 Type annotations for `boto3.resource("iam").create` method.
 
-[LoginProfile.create documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.create)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.create]
 
 ```python
 def create(
@@ -2599,7 +2603,7 @@ def create(
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[LoginProfile.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.delete]
 
 ```python
 def delete(
@@ -2612,7 +2616,7 @@ def delete(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[LoginProfile.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -2625,7 +2629,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[LoginProfile.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.load]
 
 ```python
 def load(
@@ -2638,7 +2642,7 @@ def load(
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[LoginProfile.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.reload]
 
 ```python
 def reload(
@@ -2651,7 +2655,7 @@ def reload(
 
 Type annotations for `boto3.resource("iam").update` method.
 
-[LoginProfile.update documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.update)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.update]
 
 ```python
 def update(
@@ -2680,7 +2684,7 @@ def get_resource() -> MfaDevice:
     return boto3.resource("iam").MfaDevice(...)
 ```
 
-[MfaDevice documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.MfaDevice)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.MfaDevice)
 
 
 ### MfaDevice attributes
@@ -2702,7 +2706,7 @@ def get_resource() -> MfaDevice:
 
 Type annotations for `boto3.resource("iam").User` method.
 
-[MfaDevice.User documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.User)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.User]
 
 ```python
 def User(
@@ -2715,7 +2719,7 @@ def User(
 
 Type annotations for `boto3.resource("iam").associate` method.
 
-[MfaDevice.associate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.associate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.associate]
 
 ```python
 def associate(
@@ -2730,7 +2734,7 @@ def associate(
 
 Type annotations for `boto3.resource("iam").disassociate` method.
 
-[MfaDevice.disassociate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.disassociate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.disassociate]
 
 ```python
 def disassociate(
@@ -2743,7 +2747,7 @@ def disassociate(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[MfaDevice.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -2756,7 +2760,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("iam").resync` method.
 
-[MfaDevice.resync documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.resync)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.resync]
 
 ```python
 def resync(
@@ -2785,7 +2789,7 @@ def get_resource() -> Policy:
     return boto3.resource("iam").Policy(...)
 ```
 
-[Policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Policy)
 
 
 ### Policy attributes
@@ -2835,7 +2839,7 @@ def get_resource() -> Policy:
 
 Type annotations for `boto3.resource("iam").attach_group` method.
 
-[Policy.attach_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attach_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attach_group]
 
 ```python
 def attach_group(
@@ -2849,7 +2853,7 @@ def attach_group(
 
 Type annotations for `boto3.resource("iam").attach_role` method.
 
-[Policy.attach_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attach_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attach_role]
 
 ```python
 def attach_role(
@@ -2863,7 +2867,7 @@ def attach_role(
 
 Type annotations for `boto3.resource("iam").attach_user` method.
 
-[Policy.attach_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attach_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attach_user]
 
 ```python
 def attach_user(
@@ -2877,7 +2881,7 @@ def attach_user(
 
 Type annotations for `boto3.resource("iam").create_version` method.
 
-[Policy.create_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.create_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.create_version]
 
 ```python
 def create_version(
@@ -2892,7 +2896,7 @@ def create_version(
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[Policy.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.delete]
 
 ```python
 def delete(
@@ -2905,7 +2909,7 @@ def delete(
 
 Type annotations for `boto3.resource("iam").detach_group` method.
 
-[Policy.detach_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.detach_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.detach_group]
 
 ```python
 def detach_group(
@@ -2919,7 +2923,7 @@ def detach_group(
 
 Type annotations for `boto3.resource("iam").detach_role` method.
 
-[Policy.detach_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.detach_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.detach_role]
 
 ```python
 def detach_role(
@@ -2933,7 +2937,7 @@ def detach_role(
 
 Type annotations for `boto3.resource("iam").detach_user` method.
 
-[Policy.detach_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.detach_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.detach_user]
 
 ```python
 def detach_user(
@@ -2947,7 +2951,7 @@ def detach_user(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[Policy.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -2960,7 +2964,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[Policy.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.load]
 
 ```python
 def load(
@@ -2973,7 +2977,7 @@ def load(
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[Policy.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.reload]
 
 ```python
 def reload(
@@ -3002,7 +3006,7 @@ def get_collection() -> PolicyAttachedGroupsCollection:
     return resource.attached_groups
 ```
 
-[Policy.attached_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attached_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.PolicyAttachedGroupsCollection)
 
 ```python
 class PolicyAttachedGroupsCollection(ResourceCollection):
@@ -3058,7 +3062,7 @@ def get_collection() -> PolicyAttachedRolesCollection:
     return resource.attached_roles
 ```
 
-[Policy.attached_roles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attached_roles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.PolicyAttachedRolesCollection)
 
 ```python
 class PolicyAttachedRolesCollection(ResourceCollection):
@@ -3114,7 +3118,7 @@ def get_collection() -> PolicyAttachedUsersCollection:
     return resource.attached_users
 ```
 
-[Policy.attached_users documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attached_users)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.PolicyAttachedUsersCollection)
 
 ```python
 class PolicyAttachedUsersCollection(ResourceCollection):
@@ -3170,7 +3174,7 @@ def get_collection() -> PolicyVersionsCollection:
     return resource.versions
 ```
 
-[Policy.versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.PolicyVersionsCollection)
 
 ```python
 class PolicyVersionsCollection(ResourceCollection):
@@ -3225,7 +3229,7 @@ def get_resource() -> PolicyVersion:
     return boto3.resource("iam").PolicyVersion(...)
 ```
 
-[PolicyVersion documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.PolicyVersion)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.PolicyVersion)
 
 
 ### PolicyVersion attributes
@@ -3251,7 +3255,7 @@ def get_resource() -> PolicyVersion:
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[PolicyVersion.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.delete]
 
 ```python
 def delete(
@@ -3264,7 +3268,7 @@ def delete(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[PolicyVersion.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -3277,7 +3281,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[PolicyVersion.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.load]
 
 ```python
 def load(
@@ -3290,7 +3294,7 @@ def load(
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[PolicyVersion.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.reload]
 
 ```python
 def reload(
@@ -3303,7 +3307,7 @@ def reload(
 
 Type annotations for `boto3.resource("iam").set_as_default` method.
 
-[PolicyVersion.set_as_default documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.set_as_default)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.set_as_default]
 
 ```python
 def set_as_default(
@@ -3330,7 +3334,7 @@ def get_resource() -> Role:
     return boto3.resource("iam").Role(...)
 ```
 
-[Role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Role)
 
 
 ### Role attributes
@@ -3376,7 +3380,7 @@ def get_resource() -> Role:
 
 Type annotations for `boto3.resource("iam").AssumeRolePolicy` method.
 
-[Role.AssumeRolePolicy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.AssumeRolePolicy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.AssumeRolePolicy]
 
 ```python
 def AssumeRolePolicy(
@@ -3389,7 +3393,7 @@ def AssumeRolePolicy(
 
 Type annotations for `boto3.resource("iam").Policy` method.
 
-[Role.Policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.Policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.Policy]
 
 ```python
 def Policy(
@@ -3403,7 +3407,7 @@ def Policy(
 
 Type annotations for `boto3.resource("iam").attach_policy` method.
 
-[Role.attach_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.attach_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.attach_policy]
 
 ```python
 def attach_policy(
@@ -3417,7 +3421,7 @@ def attach_policy(
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[Role.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.delete]
 
 ```python
 def delete(
@@ -3430,7 +3434,7 @@ def delete(
 
 Type annotations for `boto3.resource("iam").detach_policy` method.
 
-[Role.detach_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.detach_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.detach_policy]
 
 ```python
 def detach_policy(
@@ -3444,7 +3448,7 @@ def detach_policy(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[Role.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -3457,7 +3461,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[Role.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.load]
 
 ```python
 def load(
@@ -3470,7 +3474,7 @@ def load(
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[Role.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.reload]
 
 ```python
 def reload(
@@ -3499,7 +3503,7 @@ def get_collection() -> RoleAttachedPoliciesCollection:
     return resource.attached_policies
 ```
 
-[Role.attached_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.attached_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.RoleAttachedPoliciesCollection)
 
 ```python
 class RoleAttachedPoliciesCollection(ResourceCollection):
@@ -3553,7 +3557,7 @@ def get_collection() -> RoleInstanceProfilesCollection:
     return resource.instance_profiles
 ```
 
-[Role.instance_profiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.instance_profiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.RoleInstanceProfilesCollection)
 
 ```python
 class RoleInstanceProfilesCollection(ResourceCollection):
@@ -3606,7 +3610,7 @@ def get_collection() -> RolePoliciesCollection:
     return resource.policies
 ```
 
-[Role.policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.RolePoliciesCollection)
 
 ```python
 class RolePoliciesCollection(ResourceCollection):
@@ -3661,7 +3665,7 @@ def get_resource() -> RolePolicy:
     return boto3.resource("iam").RolePolicy(...)
 ```
 
-[RolePolicy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.RolePolicy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.RolePolicy)
 
 
 ### RolePolicy attributes
@@ -3685,7 +3689,7 @@ def get_resource() -> RolePolicy:
 
 Type annotations for `boto3.resource("iam").Role` method.
 
-[RolePolicy.Role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.Role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.Role]
 
 ```python
 def Role(
@@ -3698,7 +3702,7 @@ def Role(
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[RolePolicy.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.delete]
 
 ```python
 def delete(
@@ -3711,7 +3715,7 @@ def delete(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[RolePolicy.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -3724,7 +3728,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[RolePolicy.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.load]
 
 ```python
 def load(
@@ -3737,7 +3741,7 @@ def load(
 
 Type annotations for `boto3.resource("iam").put` method.
 
-[RolePolicy.put documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.put)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.put]
 
 ```python
 def put(
@@ -3751,7 +3755,7 @@ def put(
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[RolePolicy.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.reload]
 
 ```python
 def reload(
@@ -3778,7 +3782,7 @@ def get_resource() -> SamlProvider:
     return boto3.resource("iam").SamlProvider(...)
 ```
 
-[SamlProvider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.SamlProvider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.SamlProvider)
 
 
 ### SamlProvider attributes
@@ -3804,7 +3808,7 @@ def get_resource() -> SamlProvider:
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[SamlProvider.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.delete]
 
 ```python
 def delete(
@@ -3817,7 +3821,7 @@ def delete(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[SamlProvider.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -3830,7 +3834,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[SamlProvider.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.load]
 
 ```python
 def load(
@@ -3843,7 +3847,7 @@ def load(
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[SamlProvider.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.reload]
 
 ```python
 def reload(
@@ -3856,7 +3860,7 @@ def reload(
 
 Type annotations for `boto3.resource("iam").update` method.
 
-[SamlProvider.update documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.update)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.update]
 
 ```python
 def update(
@@ -3884,7 +3888,7 @@ def get_resource() -> ServerCertificate:
     return boto3.resource("iam").ServerCertificate(...)
 ```
 
-[ServerCertificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServerCertificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServerCertificate)
 
 
 ### ServerCertificate attributes
@@ -3910,7 +3914,7 @@ def get_resource() -> ServerCertificate:
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[ServerCertificate.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.delete]
 
 ```python
 def delete(
@@ -3923,7 +3927,7 @@ def delete(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[ServerCertificate.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -3936,7 +3940,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[ServerCertificate.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.load]
 
 ```python
 def load(
@@ -3949,7 +3953,7 @@ def load(
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[ServerCertificate.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.reload]
 
 ```python
 def reload(
@@ -3962,7 +3966,7 @@ def reload(
 
 Type annotations for `boto3.resource("iam").update` method.
 
-[ServerCertificate.update documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.update)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.update]
 
 ```python
 def update(
@@ -3991,7 +3995,7 @@ def get_resource() -> SigningCertificate:
     return boto3.resource("iam").SigningCertificate(...)
 ```
 
-[SigningCertificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.SigningCertificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.SigningCertificate)
 
 
 ### SigningCertificate attributes
@@ -4019,7 +4023,7 @@ def get_resource() -> SigningCertificate:
 
 Type annotations for `boto3.resource("iam").User` method.
 
-[SigningCertificate.User documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.User)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.User]
 
 ```python
 def User(
@@ -4032,7 +4036,7 @@ def User(
 
 Type annotations for `boto3.resource("iam").activate` method.
 
-[SigningCertificate.activate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.activate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.activate]
 
 ```python
 def activate(
@@ -4046,7 +4050,7 @@ def activate(
 
 Type annotations for `boto3.resource("iam").deactivate` method.
 
-[SigningCertificate.deactivate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.deactivate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.deactivate]
 
 ```python
 def deactivate(
@@ -4060,7 +4064,7 @@ def deactivate(
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[SigningCertificate.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.delete]
 
 ```python
 def delete(
@@ -4073,7 +4077,7 @@ def delete(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[SigningCertificate.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -4100,7 +4104,7 @@ def get_resource() -> User:
     return boto3.resource("iam").User(...)
 ```
 
-[User documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.User)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.User)
 
 
 ### User attributes
@@ -4146,7 +4150,7 @@ def get_resource() -> User:
 
 Type annotations for `boto3.resource("iam").AccessKey` method.
 
-[User.AccessKey documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.AccessKey)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.AccessKey]
 
 ```python
 def AccessKey(
@@ -4160,7 +4164,7 @@ def AccessKey(
 
 Type annotations for `boto3.resource("iam").LoginProfile` method.
 
-[User.LoginProfile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.LoginProfile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.LoginProfile]
 
 ```python
 def LoginProfile(
@@ -4173,7 +4177,7 @@ def LoginProfile(
 
 Type annotations for `boto3.resource("iam").MfaDevice` method.
 
-[User.MfaDevice documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.MfaDevice)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.MfaDevice]
 
 ```python
 def MfaDevice(
@@ -4187,7 +4191,7 @@ def MfaDevice(
 
 Type annotations for `boto3.resource("iam").Policy` method.
 
-[User.Policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.Policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.Policy]
 
 ```python
 def Policy(
@@ -4201,7 +4205,7 @@ def Policy(
 
 Type annotations for `boto3.resource("iam").SigningCertificate` method.
 
-[User.SigningCertificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.SigningCertificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.SigningCertificate]
 
 ```python
 def SigningCertificate(
@@ -4215,7 +4219,7 @@ def SigningCertificate(
 
 Type annotations for `boto3.resource("iam").add_group` method.
 
-[User.add_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.add_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.add_group]
 
 ```python
 def add_group(
@@ -4229,7 +4233,7 @@ def add_group(
 
 Type annotations for `boto3.resource("iam").attach_policy` method.
 
-[User.attach_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.attach_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.attach_policy]
 
 ```python
 def attach_policy(
@@ -4243,7 +4247,7 @@ def attach_policy(
 
 Type annotations for `boto3.resource("iam").create` method.
 
-[User.create documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create]
 
 ```python
 def create(
@@ -4259,7 +4263,7 @@ def create(
 
 Type annotations for `boto3.resource("iam").create_access_key_pair` method.
 
-[User.create_access_key_pair documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create_access_key_pair)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create_access_key_pair]
 
 ```python
 def create_access_key_pair(
@@ -4272,7 +4276,7 @@ def create_access_key_pair(
 
 Type annotations for `boto3.resource("iam").create_login_profile` method.
 
-[User.create_login_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create_login_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create_login_profile]
 
 ```python
 def create_login_profile(
@@ -4287,7 +4291,7 @@ def create_login_profile(
 
 Type annotations for `boto3.resource("iam").create_policy` method.
 
-[User.create_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create_policy]
 
 ```python
 def create_policy(
@@ -4302,7 +4306,7 @@ def create_policy(
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[User.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.delete]
 
 ```python
 def delete(
@@ -4315,7 +4319,7 @@ def delete(
 
 Type annotations for `boto3.resource("iam").detach_policy` method.
 
-[User.detach_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.detach_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.detach_policy]
 
 ```python
 def detach_policy(
@@ -4329,7 +4333,7 @@ def detach_policy(
 
 Type annotations for `boto3.resource("iam").enable_mfa` method.
 
-[User.enable_mfa documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.enable_mfa)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.enable_mfa]
 
 ```python
 def enable_mfa(
@@ -4345,7 +4349,7 @@ def enable_mfa(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[User.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -4358,7 +4362,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[User.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.load]
 
 ```python
 def load(
@@ -4371,7 +4375,7 @@ def load(
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[User.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.reload]
 
 ```python
 def reload(
@@ -4384,7 +4388,7 @@ def reload(
 
 Type annotations for `boto3.resource("iam").remove_group` method.
 
-[User.remove_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.remove_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.remove_group]
 
 ```python
 def remove_group(
@@ -4398,7 +4402,7 @@ def remove_group(
 
 Type annotations for `boto3.resource("iam").update` method.
 
-[User.update documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.update)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.update]
 
 ```python
 def update(
@@ -4429,7 +4433,7 @@ def get_collection() -> UserAccessKeysCollection:
     return resource.access_keys
 ```
 
-[User.access_keys documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.access_keys)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.UserAccessKeysCollection)
 
 ```python
 class UserAccessKeysCollection(ResourceCollection):
@@ -4483,7 +4487,7 @@ def get_collection() -> UserAttachedPoliciesCollection:
     return resource.attached_policies
 ```
 
-[User.attached_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.attached_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.UserAttachedPoliciesCollection)
 
 ```python
 class UserAttachedPoliciesCollection(ResourceCollection):
@@ -4537,7 +4541,7 @@ def get_collection() -> UserGroupsCollection:
     return resource.groups
 ```
 
-[User.groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.UserGroupsCollection)
 
 ```python
 class UserGroupsCollection(ResourceCollection):
@@ -4590,7 +4594,7 @@ def get_collection() -> UserMfaDevicesCollection:
     return resource.mfa_devices
 ```
 
-[User.mfa_devices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.mfa_devices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.UserMfaDevicesCollection)
 
 ```python
 class UserMfaDevicesCollection(ResourceCollection):
@@ -4644,7 +4648,7 @@ def get_collection() -> UserPoliciesCollection:
     return resource.policies
 ```
 
-[User.policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.UserPoliciesCollection)
 
 ```python
 class UserPoliciesCollection(ResourceCollection):
@@ -4697,7 +4701,7 @@ def get_collection() -> UserSigningCertificatesCollection:
     return resource.signing_certificates
 ```
 
-[User.signing_certificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.signing_certificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.UserSigningCertificatesCollection)
 
 ```python
 class UserSigningCertificatesCollection(ResourceCollection):
@@ -4753,7 +4757,7 @@ def get_resource() -> UserPolicy:
     return boto3.resource("iam").UserPolicy(...)
 ```
 
-[UserPolicy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.UserPolicy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.UserPolicy)
 
 
 ### UserPolicy attributes
@@ -4777,7 +4781,7 @@ def get_resource() -> UserPolicy:
 
 Type annotations for `boto3.resource("iam").User` method.
 
-[UserPolicy.User documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.User)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.User]
 
 ```python
 def User(
@@ -4790,7 +4794,7 @@ def User(
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[UserPolicy.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.delete]
 
 ```python
 def delete(
@@ -4803,7 +4807,7 @@ def delete(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[UserPolicy.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -4816,7 +4820,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("iam").load` method.
 
-[UserPolicy.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.load]
 
 ```python
 def load(
@@ -4829,7 +4833,7 @@ def load(
 
 Type annotations for `boto3.resource("iam").put` method.
 
-[UserPolicy.put documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.put)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.put]
 
 ```python
 def put(
@@ -4843,7 +4847,7 @@ def put(
 
 Type annotations for `boto3.resource("iam").reload` method.
 
-[UserPolicy.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.reload]
 
 ```python
 def reload(
@@ -4870,7 +4874,7 @@ def get_resource() -> VirtualMfaDevice:
     return boto3.resource("iam").VirtualMfaDevice(...)
 ```
 
-[VirtualMfaDevice documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.VirtualMfaDevice)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.VirtualMfaDevice)
 
 
 ### VirtualMfaDevice attributes
@@ -4900,7 +4904,7 @@ def get_resource() -> VirtualMfaDevice:
 
 Type annotations for `boto3.resource("iam").delete` method.
 
-[VirtualMfaDevice.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.VirtualMfaDevice.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.VirtualMfaDevice.delete]
 
 ```python
 def delete(
@@ -4913,7 +4917,7 @@ def delete(
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
-[VirtualMfaDevice.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.VirtualMfaDevice.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.VirtualMfaDevice.get_available_subresources]
 
 ```python
 def get_available_subresources(

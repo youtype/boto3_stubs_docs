@@ -49,7 +49,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_mediaconnect.client import MediaConnectClient
+
+def get_mediaconnect_client() -> MediaConnectClient:
+    return boto3.client("mediaconnect")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client)
 
 ## Exceptions
 
@@ -85,7 +90,7 @@ Exceptions:
 
 Type annotations for `boto3.client("mediaconnect").add_flow_outputs` method.
 
-[Client.add_flow_outputs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_outputs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_outputs]
 
 ```python
 def add_flow_outputs(
@@ -100,7 +105,7 @@ def add_flow_outputs(
 
 Type annotations for `boto3.client("mediaconnect").add_flow_sources` method.
 
-[Client.add_flow_sources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_sources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_sources]
 
 ```python
 def add_flow_sources(
@@ -115,7 +120,7 @@ def add_flow_sources(
 
 Type annotations for `boto3.client("mediaconnect").add_flow_vpc_interfaces` method.
 
-[Client.add_flow_vpc_interfaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_vpc_interfaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_vpc_interfaces]
 
 ```python
 def add_flow_vpc_interfaces(
@@ -130,7 +135,7 @@ def add_flow_vpc_interfaces(
 
 Type annotations for `boto3.client("mediaconnect").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -144,7 +149,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("mediaconnect").create_flow` method.
 
-[Client.create_flow documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.create_flow)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.create_flow]
 
 ```python
 def create_flow(
@@ -165,7 +170,7 @@ def create_flow(
 
 Type annotations for `boto3.client("mediaconnect").delete_flow` method.
 
-[Client.delete_flow documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.delete_flow)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.delete_flow]
 
 ```python
 def delete_flow(
@@ -179,7 +184,7 @@ def delete_flow(
 
 Type annotations for `boto3.client("mediaconnect").describe_flow` method.
 
-[Client.describe_flow documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_flow)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_flow]
 
 ```python
 def describe_flow(
@@ -193,7 +198,7 @@ def describe_flow(
 
 Type annotations for `boto3.client("mediaconnect").describe_offering` method.
 
-[Client.describe_offering documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_offering)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_offering]
 
 ```python
 def describe_offering(
@@ -207,7 +212,7 @@ def describe_offering(
 
 Type annotations for `boto3.client("mediaconnect").describe_reservation` method.
 
-[Client.describe_reservation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_reservation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_reservation]
 
 ```python
 def describe_reservation(
@@ -221,7 +226,7 @@ def describe_reservation(
 
 Type annotations for `boto3.client("mediaconnect").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -238,7 +243,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("mediaconnect").grant_flow_entitlements` method.
 
-[Client.grant_flow_entitlements documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.grant_flow_entitlements)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.grant_flow_entitlements]
 
 ```python
 def grant_flow_entitlements(
@@ -253,7 +258,7 @@ def grant_flow_entitlements(
 
 Type annotations for `boto3.client("mediaconnect").list_entitlements` method.
 
-[Client.list_entitlements documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_entitlements)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_entitlements]
 
 ```python
 def list_entitlements(
@@ -268,7 +273,7 @@ def list_entitlements(
 
 Type annotations for `boto3.client("mediaconnect").list_flows` method.
 
-[Client.list_flows documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_flows)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_flows]
 
 ```python
 def list_flows(
@@ -283,7 +288,7 @@ def list_flows(
 
 Type annotations for `boto3.client("mediaconnect").list_offerings` method.
 
-[Client.list_offerings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_offerings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_offerings]
 
 ```python
 def list_offerings(
@@ -298,7 +303,7 @@ def list_offerings(
 
 Type annotations for `boto3.client("mediaconnect").list_reservations` method.
 
-[Client.list_reservations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_reservations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_reservations]
 
 ```python
 def list_reservations(
@@ -313,7 +318,7 @@ def list_reservations(
 
 Type annotations for `boto3.client("mediaconnect").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -327,7 +332,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("mediaconnect").purchase_offering` method.
 
-[Client.purchase_offering documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.purchase_offering)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.purchase_offering]
 
 ```python
 def purchase_offering(
@@ -343,7 +348,7 @@ def purchase_offering(
 
 Type annotations for `boto3.client("mediaconnect").remove_flow_output` method.
 
-[Client.remove_flow_output documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_output)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_output]
 
 ```python
 def remove_flow_output(
@@ -358,7 +363,7 @@ def remove_flow_output(
 
 Type annotations for `boto3.client("mediaconnect").remove_flow_source` method.
 
-[Client.remove_flow_source documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_source)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_source]
 
 ```python
 def remove_flow_source(
@@ -373,7 +378,7 @@ def remove_flow_source(
 
 Type annotations for `boto3.client("mediaconnect").remove_flow_vpc_interface` method.
 
-[Client.remove_flow_vpc_interface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_vpc_interface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_vpc_interface]
 
 ```python
 def remove_flow_vpc_interface(
@@ -388,7 +393,7 @@ def remove_flow_vpc_interface(
 
 Type annotations for `boto3.client("mediaconnect").revoke_flow_entitlement` method.
 
-[Client.revoke_flow_entitlement documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.revoke_flow_entitlement)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.revoke_flow_entitlement]
 
 ```python
 def revoke_flow_entitlement(
@@ -403,7 +408,7 @@ def revoke_flow_entitlement(
 
 Type annotations for `boto3.client("mediaconnect").start_flow` method.
 
-[Client.start_flow documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.start_flow)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.start_flow]
 
 ```python
 def start_flow(
@@ -417,7 +422,7 @@ def start_flow(
 
 Type annotations for `boto3.client("mediaconnect").stop_flow` method.
 
-[Client.stop_flow documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.stop_flow)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.stop_flow]
 
 ```python
 def stop_flow(
@@ -431,7 +436,7 @@ def stop_flow(
 
 Type annotations for `boto3.client("mediaconnect").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -446,7 +451,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("mediaconnect").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -461,7 +466,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("mediaconnect").update_flow` method.
 
-[Client.update_flow documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow]
 
 ```python
 def update_flow(
@@ -476,7 +481,7 @@ def update_flow(
 
 Type annotations for `boto3.client("mediaconnect").update_flow_entitlement` method.
 
-[Client.update_flow_entitlement documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_entitlement)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_entitlement]
 
 ```python
 def update_flow_entitlement(
@@ -495,7 +500,7 @@ def update_flow_entitlement(
 
 Type annotations for `boto3.client("mediaconnect").update_flow_output` method.
 
-[Client.update_flow_output documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_output)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_output]
 
 ```python
 def update_flow_output(
@@ -522,7 +527,7 @@ def update_flow_output(
 
 Type annotations for `boto3.client("mediaconnect").update_flow_source` method.
 
-[Client.update_flow_source documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_source)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_source]
 
 ```python
 def update_flow_source(

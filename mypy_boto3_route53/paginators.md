@@ -19,13 +19,13 @@ Type annotations for `boto3.client("route53").get_paginator("list_health_checks"
 Can be used directly:
 
 ```python
-from mypy_boto3_route53.paginators import ListHealthChecksPaginator
+from mypy_boto3_route53.paginator import ListHealthChecksPaginator
 
 def get_list_health_checks_paginator() -> ListHealthChecksPaginator:
     return boto3.client("route53").get_paginator("list_health_checks")
 ```
 
-[Paginator.ListHealthChecks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListHealthChecks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListHealthChecks)
 
 ```python
 class ListHealthChecksPaginator(Boto3Paginator):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("route53").get_paginator("list_hosted_zones")
 Can be used directly:
 
 ```python
-from mypy_boto3_route53.paginators import ListHostedZonesPaginator
+from mypy_boto3_route53.paginator import ListHostedZonesPaginator
 
 def get_list_hosted_zones_paginator() -> ListHostedZonesPaginator:
     return boto3.client("route53").get_paginator("list_hosted_zones")
 ```
 
-[Paginator.ListHostedZones documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListHostedZones)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListHostedZones)
 
 ```python
 class ListHostedZonesPaginator(Boto3Paginator):
@@ -66,13 +66,13 @@ Type annotations for `boto3.client("route53").get_paginator("list_query_logging_
 Can be used directly:
 
 ```python
-from mypy_boto3_route53.paginators import ListQueryLoggingConfigsPaginator
+from mypy_boto3_route53.paginator import ListQueryLoggingConfigsPaginator
 
 def get_list_query_logging_configs_paginator() -> ListQueryLoggingConfigsPaginator:
     return boto3.client("route53").get_paginator("list_query_logging_configs")
 ```
 
-[Paginator.ListQueryLoggingConfigs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListQueryLoggingConfigs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListQueryLoggingConfigs)
 
 ```python
 class ListQueryLoggingConfigsPaginator(Boto3Paginator):
@@ -90,13 +90,13 @@ Type annotations for `boto3.client("route53").get_paginator("list_resource_recor
 Can be used directly:
 
 ```python
-from mypy_boto3_route53.paginators import ListResourceRecordSetsPaginator
+from mypy_boto3_route53.paginator import ListResourceRecordSetsPaginator
 
 def get_list_resource_record_sets_paginator() -> ListResourceRecordSetsPaginator:
     return boto3.client("route53").get_paginator("list_resource_record_sets")
 ```
 
-[Paginator.ListResourceRecordSets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListResourceRecordSets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListResourceRecordSets)
 
 ```python
 class ListResourceRecordSetsPaginator(Boto3Paginator):
@@ -114,13 +114,13 @@ Type annotations for `boto3.client("route53").get_paginator("list_vpc_associatio
 Can be used directly:
 
 ```python
-from mypy_boto3_route53.paginators import ListVPCAssociationAuthorizationsPaginator
+from mypy_boto3_route53.paginator import ListVPCAssociationAuthorizationsPaginator
 
 def get_list_vpc_association_authorizations_paginator() -> ListVPCAssociationAuthorizationsPaginator:
     return boto3.client("route53").get_paginator("list_vpc_association_authorizations")
 ```
 
-[Paginator.ListVPCAssociationAuthorizations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListVPCAssociationAuthorizations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListVPCAssociationAuthorizations)
 
 ```python
 class ListVPCAssociationAuthorizationsPaginator(Boto3Paginator):

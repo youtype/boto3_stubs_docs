@@ -1,11 +1,11 @@
-# Structures for boto3 RedshiftDataAPIService module
+# Typed dictionaries for boto3 RedshiftDataAPIService module
 
 > [Index](../README.md) > [RedshiftDataAPIService](./README.md) > Structures
 
 Auto-generated documentation for [RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
 type annotations stubs module [mypy_boto3_redshift_data](https://pypi.org/project/mypy-boto3-redshift-data/).
 
-- [Structures for boto3 RedshiftDataAPIService module](#structures-for-boto3-redshiftdataapiservice-module)
+- [Typed dictionaries for boto3 RedshiftDataAPIService module](#typed-dictionaries-for-boto3-redshiftdataapiservice-module)
   - [CancelStatementResponseTypeDef](#cancelstatementresponsetypedef)
   - [ColumnMetadataTypeDef](#columnmetadatatypedef)
   - [DescribeStatementResponseTypeDef](#describestatementresponsetypedef)
@@ -112,9 +112,7 @@ from mypy_boto3_redshift_data.type_defs import ExecuteStatementOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ClusterIdentifier`: `str`
 - `CreatedAt`: `datetime`
 - `Database`: `str`
@@ -122,6 +120,8 @@ Optional fields:
 - `Id`: `str`
 - `SecretArn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## FieldTypeDef

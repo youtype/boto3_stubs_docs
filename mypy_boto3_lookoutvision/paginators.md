@@ -17,13 +17,13 @@ Type annotations for `boto3.client("lookoutvision").get_paginator("list_dataset_
 Can be used directly:
 
 ```python
-from mypy_boto3_lookoutvision.paginators import ListDatasetEntriesPaginator
+from mypy_boto3_lookoutvision.paginator import ListDatasetEntriesPaginator
 
 def get_list_dataset_entries_paginator() -> ListDatasetEntriesPaginator:
     return boto3.client("lookoutvision").get_paginator("list_dataset_entries")
 ```
 
-[Paginator.ListDatasetEntries documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListDatasetEntries)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListDatasetEntries)
 
 ```python
 class ListDatasetEntriesPaginator(Boto3Paginator):
@@ -47,13 +47,13 @@ Type annotations for `boto3.client("lookoutvision").get_paginator("list_models")
 Can be used directly:
 
 ```python
-from mypy_boto3_lookoutvision.paginators import ListModelsPaginator
+from mypy_boto3_lookoutvision.paginator import ListModelsPaginator
 
 def get_list_models_paginator() -> ListModelsPaginator:
     return boto3.client("lookoutvision").get_paginator("list_models")
 ```
 
-[Paginator.ListModels documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListModels)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListModels)
 
 ```python
 class ListModelsPaginator(Boto3Paginator):
@@ -71,13 +71,13 @@ Type annotations for `boto3.client("lookoutvision").get_paginator("list_projects
 Can be used directly:
 
 ```python
-from mypy_boto3_lookoutvision.paginators import ListProjectsPaginator
+from mypy_boto3_lookoutvision.paginator import ListProjectsPaginator
 
 def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("lookoutvision").get_paginator("list_projects")
 ```
 
-[Paginator.ListProjects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListProjects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListProjects)
 
 ```python
 class ListProjectsPaginator(Boto3Paginator):

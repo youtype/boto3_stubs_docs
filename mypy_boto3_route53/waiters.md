@@ -15,13 +15,13 @@ Type annotations for `boto3.client("route53").get_waiter("resource_record_sets_c
 Can be used directly:
 
 ```python
-from mypy_boto3_route53.waiters import ResourceRecordSetsChangedWaiter
+from mypy_boto3_route53.waiter import ResourceRecordSetsChangedWaiter
 
 def get_resource_record_sets_changed_waiter() -> ResourceRecordSetsChangedWaiter:
     return boto3.client("route53").get_waiter("resource_record_sets_changed")
 ```
 
-[Waiter.ResourceRecordSetsChanged documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Waiter.ResourceRecordSetsChanged)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Waiter.resource_record_sets_changed)
 
 ```python
 class ResourceRecordSetsChangedWaiter(Boto3Waiter):

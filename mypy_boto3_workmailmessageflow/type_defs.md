@@ -1,11 +1,11 @@
-# Structures for boto3 WorkMailMessageFlow module
+# Typed dictionaries for boto3 WorkMailMessageFlow module
 
 > [Index](../README.md) > [WorkMailMessageFlow](./README.md) > Structures
 
 Auto-generated documentation for [WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
 type annotations stubs module [mypy_boto3_workmailmessageflow](https://pypi.org/project/mypy-boto3-workmailmessageflow/).
 
-- [Structures for boto3 WorkMailMessageFlow module](#structures-for-boto3-workmailmessageflow-module)
+- [Typed dictionaries for boto3 WorkMailMessageFlow module](#typed-dictionaries-for-boto3-workmailmessageflow-module)
   - [GetRawMessageContentResponseTypeDef](#getrawmessagecontentresponsetypedef)
   - [RawMessageContentTypeDef](#rawmessagecontenttypedef)
   - [S3ReferenceTypeDef](#s3referencetypedef)

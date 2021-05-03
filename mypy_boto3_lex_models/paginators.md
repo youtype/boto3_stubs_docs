@@ -24,13 +24,13 @@ Type annotations for `boto3.client("lex-models").get_paginator("get_bot_aliases"
 Can be used directly:
 
 ```python
-from mypy_boto3_lex_models.paginators import GetBotAliasesPaginator
+from mypy_boto3_lex_models.paginator import GetBotAliasesPaginator
 
 def get_get_bot_aliases_paginator() -> GetBotAliasesPaginator:
     return boto3.client("lex-models").get_paginator("get_bot_aliases")
 ```
 
-[Paginator.GetBotAliases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBotAliases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBotAliases)
 
 ```python
 class GetBotAliasesPaginator(Boto3Paginator):
@@ -49,13 +49,13 @@ Type annotations for `boto3.client("lex-models").get_paginator("get_bot_channel_
 Can be used directly:
 
 ```python
-from mypy_boto3_lex_models.paginators import GetBotChannelAssociationsPaginator
+from mypy_boto3_lex_models.paginator import GetBotChannelAssociationsPaginator
 
 def get_get_bot_channel_associations_paginator() -> GetBotChannelAssociationsPaginator:
     return boto3.client("lex-models").get_paginator("get_bot_channel_associations")
 ```
 
-[Paginator.GetBotChannelAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBotChannelAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBotChannelAssociations)
 
 ```python
 class GetBotChannelAssociationsPaginator(Boto3Paginator):
@@ -75,13 +75,13 @@ Type annotations for `boto3.client("lex-models").get_paginator("get_bot_versions
 Can be used directly:
 
 ```python
-from mypy_boto3_lex_models.paginators import GetBotVersionsPaginator
+from mypy_boto3_lex_models.paginator import GetBotVersionsPaginator
 
 def get_get_bot_versions_paginator() -> GetBotVersionsPaginator:
     return boto3.client("lex-models").get_paginator("get_bot_versions")
 ```
 
-[Paginator.GetBotVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBotVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBotVersions)
 
 ```python
 class GetBotVersionsPaginator(Boto3Paginator):
@@ -99,13 +99,13 @@ Type annotations for `boto3.client("lex-models").get_paginator("get_bots")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_lex_models.paginators import GetBotsPaginator
+from mypy_boto3_lex_models.paginator import GetBotsPaginator
 
 def get_get_bots_paginator() -> GetBotsPaginator:
     return boto3.client("lex-models").get_paginator("get_bots")
 ```
 
-[Paginator.GetBots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBots)
 
 ```python
 class GetBotsPaginator(Boto3Paginator):
@@ -123,13 +123,13 @@ Type annotations for `boto3.client("lex-models").get_paginator("get_builtin_inte
 Can be used directly:
 
 ```python
-from mypy_boto3_lex_models.paginators import GetBuiltinIntentsPaginator
+from mypy_boto3_lex_models.paginator import GetBuiltinIntentsPaginator
 
 def get_get_builtin_intents_paginator() -> GetBuiltinIntentsPaginator:
     return boto3.client("lex-models").get_paginator("get_builtin_intents")
 ```
 
-[Paginator.GetBuiltinIntents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBuiltinIntents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBuiltinIntents)
 
 ```python
 class GetBuiltinIntentsPaginator(Boto3Paginator):
@@ -148,13 +148,13 @@ Type annotations for `boto3.client("lex-models").get_paginator("get_builtin_slot
 Can be used directly:
 
 ```python
-from mypy_boto3_lex_models.paginators import GetBuiltinSlotTypesPaginator
+from mypy_boto3_lex_models.paginator import GetBuiltinSlotTypesPaginator
 
 def get_get_builtin_slot_types_paginator() -> GetBuiltinSlotTypesPaginator:
     return boto3.client("lex-models").get_paginator("get_builtin_slot_types")
 ```
 
-[Paginator.GetBuiltinSlotTypes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBuiltinSlotTypes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBuiltinSlotTypes)
 
 ```python
 class GetBuiltinSlotTypesPaginator(Boto3Paginator):
@@ -173,13 +173,13 @@ Type annotations for `boto3.client("lex-models").get_paginator("get_intent_versi
 Can be used directly:
 
 ```python
-from mypy_boto3_lex_models.paginators import GetIntentVersionsPaginator
+from mypy_boto3_lex_models.paginator import GetIntentVersionsPaginator
 
 def get_get_intent_versions_paginator() -> GetIntentVersionsPaginator:
     return boto3.client("lex-models").get_paginator("get_intent_versions")
 ```
 
-[Paginator.GetIntentVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetIntentVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetIntentVersions)
 
 ```python
 class GetIntentVersionsPaginator(Boto3Paginator):
@@ -197,13 +197,13 @@ Type annotations for `boto3.client("lex-models").get_paginator("get_intents")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_lex_models.paginators import GetIntentsPaginator
+from mypy_boto3_lex_models.paginator import GetIntentsPaginator
 
 def get_get_intents_paginator() -> GetIntentsPaginator:
     return boto3.client("lex-models").get_paginator("get_intents")
 ```
 
-[Paginator.GetIntents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetIntents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetIntents)
 
 ```python
 class GetIntentsPaginator(Boto3Paginator):
@@ -221,13 +221,13 @@ Type annotations for `boto3.client("lex-models").get_paginator("get_slot_type_ve
 Can be used directly:
 
 ```python
-from mypy_boto3_lex_models.paginators import GetSlotTypeVersionsPaginator
+from mypy_boto3_lex_models.paginator import GetSlotTypeVersionsPaginator
 
 def get_get_slot_type_versions_paginator() -> GetSlotTypeVersionsPaginator:
     return boto3.client("lex-models").get_paginator("get_slot_type_versions")
 ```
 
-[Paginator.GetSlotTypeVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetSlotTypeVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetSlotTypeVersions)
 
 ```python
 class GetSlotTypeVersionsPaginator(Boto3Paginator):
@@ -245,13 +245,13 @@ Type annotations for `boto3.client("lex-models").get_paginator("get_slot_types")
 Can be used directly:
 
 ```python
-from mypy_boto3_lex_models.paginators import GetSlotTypesPaginator
+from mypy_boto3_lex_models.paginator import GetSlotTypesPaginator
 
 def get_get_slot_types_paginator() -> GetSlotTypesPaginator:
     return boto3.client("lex-models").get_paginator("get_slot_types")
 ```
 
-[Paginator.GetSlotTypes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetSlotTypes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetSlotTypes)
 
 ```python
 class GetSlotTypesPaginator(Boto3Paginator):

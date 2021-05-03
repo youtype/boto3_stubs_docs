@@ -40,7 +40,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_mediapackage.client import MediaPackageClient
+
+def get_mediapackage_client() -> MediaPackageClient:
+    return boto3.client("mediapackage")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client)
 
 ## Exceptions
 
@@ -73,7 +78,7 @@ Exceptions:
 
 Type annotations for `boto3.client("mediapackage").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -87,7 +92,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("mediapackage").configure_logs` method.
 
-[Client.configure_logs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.configure_logs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.configure_logs]
 
 ```python
 def configure_logs(
@@ -103,7 +108,7 @@ def configure_logs(
 
 Type annotations for `boto3.client("mediapackage").create_channel` method.
 
-[Client.create_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.create_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.create_channel]
 
 ```python
 def create_channel(
@@ -119,7 +124,7 @@ def create_channel(
 
 Type annotations for `boto3.client("mediapackage").create_harvest_job` method.
 
-[Client.create_harvest_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.create_harvest_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.create_harvest_job]
 
 ```python
 def create_harvest_job(
@@ -137,7 +142,7 @@ def create_harvest_job(
 
 Type annotations for `boto3.client("mediapackage").create_origin_endpoint` method.
 
-[Client.create_origin_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.create_origin_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.create_origin_endpoint]
 
 ```python
 def create_origin_endpoint(
@@ -164,7 +169,7 @@ def create_origin_endpoint(
 
 Type annotations for `boto3.client("mediapackage").delete_channel` method.
 
-[Client.delete_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.delete_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.delete_channel]
 
 ```python
 def delete_channel(
@@ -178,7 +183,7 @@ def delete_channel(
 
 Type annotations for `boto3.client("mediapackage").delete_origin_endpoint` method.
 
-[Client.delete_origin_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.delete_origin_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.delete_origin_endpoint]
 
 ```python
 def delete_origin_endpoint(
@@ -192,7 +197,7 @@ def delete_origin_endpoint(
 
 Type annotations for `boto3.client("mediapackage").describe_channel` method.
 
-[Client.describe_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.describe_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.describe_channel]
 
 ```python
 def describe_channel(
@@ -206,7 +211,7 @@ def describe_channel(
 
 Type annotations for `boto3.client("mediapackage").describe_harvest_job` method.
 
-[Client.describe_harvest_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.describe_harvest_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.describe_harvest_job]
 
 ```python
 def describe_harvest_job(
@@ -220,7 +225,7 @@ def describe_harvest_job(
 
 Type annotations for `boto3.client("mediapackage").describe_origin_endpoint` method.
 
-[Client.describe_origin_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.describe_origin_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.describe_origin_endpoint]
 
 ```python
 def describe_origin_endpoint(
@@ -234,7 +239,7 @@ def describe_origin_endpoint(
 
 Type annotations for `boto3.client("mediapackage").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -251,7 +256,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("mediapackage").list_channels` method.
 
-[Client.list_channels documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_channels)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_channels]
 
 ```python
 def list_channels(
@@ -266,7 +271,7 @@ def list_channels(
 
 Type annotations for `boto3.client("mediapackage").list_harvest_jobs` method.
 
-[Client.list_harvest_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_harvest_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_harvest_jobs]
 
 ```python
 def list_harvest_jobs(
@@ -283,7 +288,7 @@ def list_harvest_jobs(
 
 Type annotations for `boto3.client("mediapackage").list_origin_endpoints` method.
 
-[Client.list_origin_endpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_origin_endpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_origin_endpoints]
 
 ```python
 def list_origin_endpoints(
@@ -299,7 +304,7 @@ def list_origin_endpoints(
 
 Type annotations for `boto3.client("mediapackage").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -313,7 +318,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("mediapackage").rotate_channel_credentials` method.
 
-[Client.rotate_channel_credentials documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.rotate_channel_credentials)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.rotate_channel_credentials]
 
 ```python
 def rotate_channel_credentials(
@@ -327,7 +332,7 @@ def rotate_channel_credentials(
 
 Type annotations for `boto3.client("mediapackage").rotate_ingest_endpoint_credentials` method.
 
-[Client.rotate_ingest_endpoint_credentials documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.rotate_ingest_endpoint_credentials)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.rotate_ingest_endpoint_credentials]
 
 ```python
 def rotate_ingest_endpoint_credentials(
@@ -342,7 +347,7 @@ def rotate_ingest_endpoint_credentials(
 
 Type annotations for `boto3.client("mediapackage").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -357,7 +362,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("mediapackage").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -372,7 +377,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("mediapackage").update_channel` method.
 
-[Client.update_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.update_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.update_channel]
 
 ```python
 def update_channel(
@@ -387,7 +392,7 @@ def update_channel(
 
 Type annotations for `boto3.client("mediapackage").update_origin_endpoint` method.
 
-[Client.update_origin_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.update_origin_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.update_origin_endpoint]
 
 ```python
 def update_origin_endpoint(

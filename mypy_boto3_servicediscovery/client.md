@@ -44,7 +44,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_servicediscovery.client import ServiceDiscoveryClient
+
+def get_servicediscovery_client() -> ServiceDiscoveryClient:
+    return boto3.client("servicediscovery")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client)
 
 ## Exceptions
 
@@ -85,7 +90,7 @@ Exceptions:
 
 Type annotations for `boto3.client("servicediscovery").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -99,7 +104,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("servicediscovery").create_http_namespace` method.
 
-[Client.create_http_namespace documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_http_namespace)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_http_namespace]
 
 ```python
 def create_http_namespace(
@@ -116,7 +121,7 @@ def create_http_namespace(
 
 Type annotations for `boto3.client("servicediscovery").create_private_dns_namespace` method.
 
-[Client.create_private_dns_namespace documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_private_dns_namespace)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_private_dns_namespace]
 
 ```python
 def create_private_dns_namespace(
@@ -134,7 +139,7 @@ def create_private_dns_namespace(
 
 Type annotations for `boto3.client("servicediscovery").create_public_dns_namespace` method.
 
-[Client.create_public_dns_namespace documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_public_dns_namespace)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_public_dns_namespace]
 
 ```python
 def create_public_dns_namespace(
@@ -151,7 +156,7 @@ def create_public_dns_namespace(
 
 Type annotations for `boto3.client("servicediscovery").create_service` method.
 
-[Client.create_service documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_service)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_service]
 
 ```python
 def create_service(
@@ -173,7 +178,7 @@ def create_service(
 
 Type annotations for `boto3.client("servicediscovery").delete_namespace` method.
 
-[Client.delete_namespace documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_namespace)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_namespace]
 
 ```python
 def delete_namespace(
@@ -187,7 +192,7 @@ def delete_namespace(
 
 Type annotations for `boto3.client("servicediscovery").delete_service` method.
 
-[Client.delete_service documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_service)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_service]
 
 ```python
 def delete_service(
@@ -201,7 +206,7 @@ def delete_service(
 
 Type annotations for `boto3.client("servicediscovery").deregister_instance` method.
 
-[Client.deregister_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.deregister_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.deregister_instance]
 
 ```python
 def deregister_instance(
@@ -216,7 +221,7 @@ def deregister_instance(
 
 Type annotations for `boto3.client("servicediscovery").discover_instances` method.
 
-[Client.discover_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.discover_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.discover_instances]
 
 ```python
 def discover_instances(
@@ -235,7 +240,7 @@ def discover_instances(
 
 Type annotations for `boto3.client("servicediscovery").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -252,7 +257,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("servicediscovery").get_instance` method.
 
-[Client.get_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instance]
 
 ```python
 def get_instance(
@@ -267,7 +272,7 @@ def get_instance(
 
 Type annotations for `boto3.client("servicediscovery").get_instances_health_status` method.
 
-[Client.get_instances_health_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instances_health_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instances_health_status]
 
 ```python
 def get_instances_health_status(
@@ -284,7 +289,7 @@ def get_instances_health_status(
 
 Type annotations for `boto3.client("servicediscovery").get_namespace` method.
 
-[Client.get_namespace documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_namespace)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_namespace]
 
 ```python
 def get_namespace(
@@ -298,7 +303,7 @@ def get_namespace(
 
 Type annotations for `boto3.client("servicediscovery").get_operation` method.
 
-[Client.get_operation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_operation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_operation]
 
 ```python
 def get_operation(
@@ -312,7 +317,7 @@ def get_operation(
 
 Type annotations for `boto3.client("servicediscovery").get_service` method.
 
-[Client.get_service documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_service)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_service]
 
 ```python
 def get_service(
@@ -326,7 +331,7 @@ def get_service(
 
 Type annotations for `boto3.client("servicediscovery").list_instances` method.
 
-[Client.list_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_instances]
 
 ```python
 def list_instances(
@@ -342,7 +347,7 @@ def list_instances(
 
 Type annotations for `boto3.client("servicediscovery").list_namespaces` method.
 
-[Client.list_namespaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_namespaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_namespaces]
 
 ```python
 def list_namespaces(
@@ -358,7 +363,7 @@ def list_namespaces(
 
 Type annotations for `boto3.client("servicediscovery").list_operations` method.
 
-[Client.list_operations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_operations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_operations]
 
 ```python
 def list_operations(
@@ -374,7 +379,7 @@ def list_operations(
 
 Type annotations for `boto3.client("servicediscovery").list_services` method.
 
-[Client.list_services documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_services)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_services]
 
 ```python
 def list_services(
@@ -390,7 +395,7 @@ def list_services(
 
 Type annotations for `boto3.client("servicediscovery").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -404,7 +409,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("servicediscovery").register_instance` method.
 
-[Client.register_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.register_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.register_instance]
 
 ```python
 def register_instance(
@@ -421,7 +426,7 @@ def register_instance(
 
 Type annotations for `boto3.client("servicediscovery").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -436,7 +441,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("servicediscovery").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -451,7 +456,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("servicediscovery").update_instance_custom_health_status` method.
 
-[Client.update_instance_custom_health_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_instance_custom_health_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_instance_custom_health_status]
 
 ```python
 def update_instance_custom_health_status(
@@ -467,7 +472,7 @@ def update_instance_custom_health_status(
 
 Type annotations for `boto3.client("servicediscovery").update_service` method.
 
-[Client.update_service documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_service)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_service]
 
 ```python
 def update_service(

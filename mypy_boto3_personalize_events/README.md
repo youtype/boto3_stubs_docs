@@ -13,7 +13,7 @@ pip install mypy-boto3-personalize-events
   - [PersonalizeEventsClient](#personalizeeventsclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## PersonalizeEventsClient
 
@@ -57,7 +57,7 @@ PersonalizeEventsClient [exceptions](./client.md#exceptions)
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

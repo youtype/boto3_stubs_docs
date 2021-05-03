@@ -1,11 +1,11 @@
-# Structures for boto3 IoTWireless module
+# Typed dictionaries for boto3 IoTWireless module
 
 > [Index](../README.md) > [IoTWireless](./README.md) > Structures
 
 Auto-generated documentation for [IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
 type annotations stubs module [mypy_boto3_iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
 
-- [Structures for boto3 IoTWireless module](#structures-for-boto3-iotwireless-module)
+- [Typed dictionaries for boto3 IoTWireless module](#typed-dictionaries-for-boto3-iotwireless-module)
   - [AbpV1_0_xTypeDef](#abpv1_0_xtypedef)
   - [AbpV1_1TypeDef](#abpv1_1typedef)
   - [AssociateAwsAccountWithPartnerAccountResponseTypeDef](#associateawsaccountwithpartneraccountresponsetypedef)

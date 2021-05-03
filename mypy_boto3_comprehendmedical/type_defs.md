@@ -1,11 +1,11 @@
-# Structures for boto3 ComprehendMedical module
+# Typed dictionaries for boto3 ComprehendMedical module
 
 > [Index](../README.md) > [ComprehendMedical](./README.md) > Structures
 
 Auto-generated documentation for [ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical)
 type annotations stubs module [mypy_boto3_comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).
 
-- [Structures for boto3 ComprehendMedical module](#structures-for-boto3-comprehendmedical-module)
+- [Typed dictionaries for boto3 ComprehendMedical module](#typed-dictionaries-for-boto3-comprehendmedical-module)
   - [AttributeTypeDef](#attributetypedef)
   - [ComprehendMedicalAsyncJobFilterTypeDef](#comprehendmedicalasyncjobfiltertypedef)
   - [ComprehendMedicalAsyncJobPropertiesTypeDef](#comprehendmedicalasyncjobpropertiestypedef)

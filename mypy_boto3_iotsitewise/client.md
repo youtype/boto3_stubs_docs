@@ -80,7 +80,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_iotsitewise.client import IoTSiteWiseClient
+
+def get_iotsitewise_client() -> IoTSiteWiseClient:
+    return boto3.client("iotsitewise")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client)
 
 ## Exceptions
 
@@ -117,7 +122,7 @@ Exceptions:
 
 Type annotations for `boto3.client("iotsitewise").associate_assets` method.
 
-[Client.associate_assets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.associate_assets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.associate_assets]
 
 ```python
 def associate_assets(
@@ -134,7 +139,7 @@ def associate_assets(
 
 Type annotations for `boto3.client("iotsitewise").batch_associate_project_assets` method.
 
-[Client.batch_associate_project_assets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_associate_project_assets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_associate_project_assets]
 
 ```python
 def batch_associate_project_assets(
@@ -150,7 +155,7 @@ def batch_associate_project_assets(
 
 Type annotations for `boto3.client("iotsitewise").batch_disassociate_project_assets` method.
 
-[Client.batch_disassociate_project_assets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_disassociate_project_assets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_disassociate_project_assets]
 
 ```python
 def batch_disassociate_project_assets(
@@ -166,7 +171,7 @@ def batch_disassociate_project_assets(
 
 Type annotations for `boto3.client("iotsitewise").batch_put_asset_property_value` method.
 
-[Client.batch_put_asset_property_value documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_put_asset_property_value)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_put_asset_property_value]
 
 ```python
 def batch_put_asset_property_value(
@@ -180,7 +185,7 @@ def batch_put_asset_property_value(
 
 Type annotations for `boto3.client("iotsitewise").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -194,7 +199,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("iotsitewise").create_access_policy` method.
 
-[Client.create_access_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_access_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_access_policy]
 
 ```python
 def create_access_policy(
@@ -212,7 +217,7 @@ def create_access_policy(
 
 Type annotations for `boto3.client("iotsitewise").create_asset` method.
 
-[Client.create_asset documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_asset)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_asset]
 
 ```python
 def create_asset(
@@ -229,7 +234,7 @@ def create_asset(
 
 Type annotations for `boto3.client("iotsitewise").create_asset_model` method.
 
-[Client.create_asset_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_asset_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_asset_model]
 
 ```python
 def create_asset_model(
@@ -249,7 +254,7 @@ def create_asset_model(
 
 Type annotations for `boto3.client("iotsitewise").create_dashboard` method.
 
-[Client.create_dashboard documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_dashboard)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_dashboard]
 
 ```python
 def create_dashboard(
@@ -268,7 +273,7 @@ def create_dashboard(
 
 Type annotations for `boto3.client("iotsitewise").create_gateway` method.
 
-[Client.create_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_gateway]
 
 ```python
 def create_gateway(
@@ -284,7 +289,7 @@ def create_gateway(
 
 Type annotations for `boto3.client("iotsitewise").create_portal` method.
 
-[Client.create_portal documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_portal)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_portal]
 
 ```python
 def create_portal(
@@ -305,7 +310,7 @@ def create_portal(
 
 Type annotations for `boto3.client("iotsitewise").create_project` method.
 
-[Client.create_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_project]
 
 ```python
 def create_project(
@@ -323,7 +328,7 @@ def create_project(
 
 Type annotations for `boto3.client("iotsitewise").delete_access_policy` method.
 
-[Client.delete_access_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_access_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_access_policy]
 
 ```python
 def delete_access_policy(
@@ -338,7 +343,7 @@ def delete_access_policy(
 
 Type annotations for `boto3.client("iotsitewise").delete_asset` method.
 
-[Client.delete_asset documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_asset)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_asset]
 
 ```python
 def delete_asset(
@@ -353,7 +358,7 @@ def delete_asset(
 
 Type annotations for `boto3.client("iotsitewise").delete_asset_model` method.
 
-[Client.delete_asset_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_asset_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_asset_model]
 
 ```python
 def delete_asset_model(
@@ -368,7 +373,7 @@ def delete_asset_model(
 
 Type annotations for `boto3.client("iotsitewise").delete_dashboard` method.
 
-[Client.delete_dashboard documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_dashboard)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_dashboard]
 
 ```python
 def delete_dashboard(
@@ -383,7 +388,7 @@ def delete_dashboard(
 
 Type annotations for `boto3.client("iotsitewise").delete_gateway` method.
 
-[Client.delete_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_gateway]
 
 ```python
 def delete_gateway(
@@ -397,7 +402,7 @@ def delete_gateway(
 
 Type annotations for `boto3.client("iotsitewise").delete_portal` method.
 
-[Client.delete_portal documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_portal)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_portal]
 
 ```python
 def delete_portal(
@@ -412,7 +417,7 @@ def delete_portal(
 
 Type annotations for `boto3.client("iotsitewise").delete_project` method.
 
-[Client.delete_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_project]
 
 ```python
 def delete_project(
@@ -427,7 +432,7 @@ def delete_project(
 
 Type annotations for `boto3.client("iotsitewise").describe_access_policy` method.
 
-[Client.describe_access_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_access_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_access_policy]
 
 ```python
 def describe_access_policy(
@@ -441,7 +446,7 @@ def describe_access_policy(
 
 Type annotations for `boto3.client("iotsitewise").describe_asset` method.
 
-[Client.describe_asset documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset]
 
 ```python
 def describe_asset(
@@ -455,7 +460,7 @@ def describe_asset(
 
 Type annotations for `boto3.client("iotsitewise").describe_asset_model` method.
 
-[Client.describe_asset_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset_model]
 
 ```python
 def describe_asset_model(
@@ -469,7 +474,7 @@ def describe_asset_model(
 
 Type annotations for `boto3.client("iotsitewise").describe_asset_property` method.
 
-[Client.describe_asset_property documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset_property)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset_property]
 
 ```python
 def describe_asset_property(
@@ -484,7 +489,7 @@ def describe_asset_property(
 
 Type annotations for `boto3.client("iotsitewise").describe_dashboard` method.
 
-[Client.describe_dashboard documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_dashboard)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_dashboard]
 
 ```python
 def describe_dashboard(
@@ -498,7 +503,7 @@ def describe_dashboard(
 
 Type annotations for `boto3.client("iotsitewise").describe_default_encryption_configuration` method.
 
-[Client.describe_default_encryption_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_default_encryption_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_default_encryption_configuration]
 
 ```python
 def describe_default_encryption_configuration(
@@ -511,7 +516,7 @@ def describe_default_encryption_configuration(
 
 Type annotations for `boto3.client("iotsitewise").describe_gateway` method.
 
-[Client.describe_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_gateway]
 
 ```python
 def describe_gateway(
@@ -525,7 +530,7 @@ def describe_gateway(
 
 Type annotations for `boto3.client("iotsitewise").describe_gateway_capability_configuration` method.
 
-[Client.describe_gateway_capability_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_gateway_capability_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_gateway_capability_configuration]
 
 ```python
 def describe_gateway_capability_configuration(
@@ -540,7 +545,7 @@ def describe_gateway_capability_configuration(
 
 Type annotations for `boto3.client("iotsitewise").describe_logging_options` method.
 
-[Client.describe_logging_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_logging_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_logging_options]
 
 ```python
 def describe_logging_options(
@@ -553,7 +558,7 @@ def describe_logging_options(
 
 Type annotations for `boto3.client("iotsitewise").describe_portal` method.
 
-[Client.describe_portal documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_portal)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_portal]
 
 ```python
 def describe_portal(
@@ -567,7 +572,7 @@ def describe_portal(
 
 Type annotations for `boto3.client("iotsitewise").describe_project` method.
 
-[Client.describe_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_project]
 
 ```python
 def describe_project(
@@ -581,7 +586,7 @@ def describe_project(
 
 Type annotations for `boto3.client("iotsitewise").disassociate_assets` method.
 
-[Client.disassociate_assets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.disassociate_assets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.disassociate_assets]
 
 ```python
 def disassociate_assets(
@@ -598,7 +603,7 @@ def disassociate_assets(
 
 Type annotations for `boto3.client("iotsitewise").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -615,7 +620,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("iotsitewise").get_asset_property_aggregates` method.
 
-[Client.get_asset_property_aggregates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_aggregates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_aggregates]
 
 ```python
 def get_asset_property_aggregates(
@@ -639,7 +644,7 @@ def get_asset_property_aggregates(
 
 Type annotations for `boto3.client("iotsitewise").get_asset_property_value` method.
 
-[Client.get_asset_property_value documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_value)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_value]
 
 ```python
 def get_asset_property_value(
@@ -655,7 +660,7 @@ def get_asset_property_value(
 
 Type annotations for `boto3.client("iotsitewise").get_asset_property_value_history` method.
 
-[Client.get_asset_property_value_history documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_value_history)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_value_history]
 
 ```python
 def get_asset_property_value_history(
@@ -677,7 +682,7 @@ def get_asset_property_value_history(
 
 Type annotations for `boto3.client("iotsitewise").get_interpolated_asset_property_values` method.
 
-[Client.get_interpolated_asset_property_values documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_interpolated_asset_property_values)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_interpolated_asset_property_values]
 
 ```python
 def get_interpolated_asset_property_values(
@@ -702,7 +707,7 @@ def get_interpolated_asset_property_values(
 
 Type annotations for `boto3.client("iotsitewise").list_access_policies` method.
 
-[Client.list_access_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_access_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_access_policies]
 
 ```python
 def list_access_policies(
@@ -722,7 +727,7 @@ def list_access_policies(
 
 Type annotations for `boto3.client("iotsitewise").list_asset_models` method.
 
-[Client.list_asset_models documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_asset_models)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_asset_models]
 
 ```python
 def list_asset_models(
@@ -737,7 +742,7 @@ def list_asset_models(
 
 Type annotations for `boto3.client("iotsitewise").list_asset_relationships` method.
 
-[Client.list_asset_relationships documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_asset_relationships)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_asset_relationships]
 
 ```python
 def list_asset_relationships(
@@ -754,7 +759,7 @@ def list_asset_relationships(
 
 Type annotations for `boto3.client("iotsitewise").list_assets` method.
 
-[Client.list_assets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_assets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_assets]
 
 ```python
 def list_assets(
@@ -771,7 +776,7 @@ def list_assets(
 
 Type annotations for `boto3.client("iotsitewise").list_associated_assets` method.
 
-[Client.list_associated_assets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_associated_assets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_associated_assets]
 
 ```python
 def list_associated_assets(
@@ -789,7 +794,7 @@ def list_associated_assets(
 
 Type annotations for `boto3.client("iotsitewise").list_dashboards` method.
 
-[Client.list_dashboards documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_dashboards)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_dashboards]
 
 ```python
 def list_dashboards(
@@ -805,7 +810,7 @@ def list_dashboards(
 
 Type annotations for `boto3.client("iotsitewise").list_gateways` method.
 
-[Client.list_gateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_gateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_gateways]
 
 ```python
 def list_gateways(
@@ -820,7 +825,7 @@ def list_gateways(
 
 Type annotations for `boto3.client("iotsitewise").list_portals` method.
 
-[Client.list_portals documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_portals)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_portals]
 
 ```python
 def list_portals(
@@ -835,7 +840,7 @@ def list_portals(
 
 Type annotations for `boto3.client("iotsitewise").list_project_assets` method.
 
-[Client.list_project_assets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_project_assets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_project_assets]
 
 ```python
 def list_project_assets(
@@ -851,7 +856,7 @@ def list_project_assets(
 
 Type annotations for `boto3.client("iotsitewise").list_projects` method.
 
-[Client.list_projects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_projects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_projects]
 
 ```python
 def list_projects(
@@ -867,7 +872,7 @@ def list_projects(
 
 Type annotations for `boto3.client("iotsitewise").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -881,7 +886,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("iotsitewise").put_default_encryption_configuration` method.
 
-[Client.put_default_encryption_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.put_default_encryption_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.put_default_encryption_configuration]
 
 ```python
 def put_default_encryption_configuration(
@@ -896,7 +901,7 @@ def put_default_encryption_configuration(
 
 Type annotations for `boto3.client("iotsitewise").put_logging_options` method.
 
-[Client.put_logging_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.put_logging_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.put_logging_options]
 
 ```python
 def put_logging_options(
@@ -910,7 +915,7 @@ def put_logging_options(
 
 Type annotations for `boto3.client("iotsitewise").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -925,7 +930,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("iotsitewise").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -940,7 +945,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("iotsitewise").update_access_policy` method.
 
-[Client.update_access_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_access_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_access_policy]
 
 ```python
 def update_access_policy(
@@ -958,7 +963,7 @@ def update_access_policy(
 
 Type annotations for `boto3.client("iotsitewise").update_asset` method.
 
-[Client.update_asset documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset]
 
 ```python
 def update_asset(
@@ -974,7 +979,7 @@ def update_asset(
 
 Type annotations for `boto3.client("iotsitewise").update_asset_model` method.
 
-[Client.update_asset_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset_model]
 
 ```python
 def update_asset_model(
@@ -994,7 +999,7 @@ def update_asset_model(
 
 Type annotations for `boto3.client("iotsitewise").update_asset_property` method.
 
-[Client.update_asset_property documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset_property)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset_property]
 
 ```python
 def update_asset_property(
@@ -1012,7 +1017,7 @@ def update_asset_property(
 
 Type annotations for `boto3.client("iotsitewise").update_dashboard` method.
 
-[Client.update_dashboard documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_dashboard)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_dashboard]
 
 ```python
 def update_dashboard(
@@ -1030,7 +1035,7 @@ def update_dashboard(
 
 Type annotations for `boto3.client("iotsitewise").update_gateway` method.
 
-[Client.update_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_gateway]
 
 ```python
 def update_gateway(
@@ -1045,7 +1050,7 @@ def update_gateway(
 
 Type annotations for `boto3.client("iotsitewise").update_gateway_capability_configuration` method.
 
-[Client.update_gateway_capability_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_gateway_capability_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_gateway_capability_configuration]
 
 ```python
 def update_gateway_capability_configuration(
@@ -1061,7 +1066,7 @@ def update_gateway_capability_configuration(
 
 Type annotations for `boto3.client("iotsitewise").update_portal` method.
 
-[Client.update_portal documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_portal)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_portal]
 
 ```python
 def update_portal(
@@ -1081,7 +1086,7 @@ def update_portal(
 
 Type annotations for `boto3.client("iotsitewise").update_project` method.
 
-[Client.update_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_project]
 
 ```python
 def update_project(

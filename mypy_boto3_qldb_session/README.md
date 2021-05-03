@@ -13,7 +13,7 @@ pip install mypy-boto3-qldb-session
   - [QLDBSessionClient](#qldbsessionclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## QLDBSessionClient
 
@@ -58,7 +58,7 @@ QLDBSessionClient [exceptions](./client.md#exceptions)
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

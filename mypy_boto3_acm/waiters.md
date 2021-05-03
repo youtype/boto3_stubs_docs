@@ -15,13 +15,13 @@ Type annotations for `boto3.client("acm").get_waiter("certificate_validated")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_acm.waiters import CertificateValidatedWaiter
+from mypy_boto3_acm.waiter import CertificateValidatedWaiter
 
 def get_certificate_validated_waiter() -> CertificateValidatedWaiter:
     return boto3.client("acm").get_waiter("certificate_validated")
 ```
 
-[Waiter.CertificateValidated documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Waiter.CertificateValidated)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Waiter.certificate_validated)
 
 ```python
 class CertificateValidatedWaiter(Boto3Waiter):

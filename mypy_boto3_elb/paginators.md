@@ -16,13 +16,13 @@ Type annotations for `boto3.client("elb").get_paginator("describe_account_limits
 Can be used directly:
 
 ```python
-from mypy_boto3_elb.paginators import DescribeAccountLimitsPaginator
+from mypy_boto3_elb.paginator import DescribeAccountLimitsPaginator
 
 def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
     return boto3.client("elb").get_paginator("describe_account_limits")
 ```
 
-[Paginator.DescribeAccountLimits documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Paginator.DescribeAccountLimits)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Paginator.DescribeAccountLimits)
 
 ```python
 class DescribeAccountLimitsPaginator(Boto3Paginator):
@@ -39,13 +39,13 @@ Type annotations for `boto3.client("elb").get_paginator("describe_load_balancers
 Can be used directly:
 
 ```python
-from mypy_boto3_elb.paginators import DescribeLoadBalancersPaginator
+from mypy_boto3_elb.paginator import DescribeLoadBalancersPaginator
 
 def get_describe_load_balancers_paginator() -> DescribeLoadBalancersPaginator:
     return boto3.client("elb").get_paginator("describe_load_balancers")
 ```
 
-[Paginator.DescribeLoadBalancers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Paginator.DescribeLoadBalancers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Paginator.DescribeLoadBalancers)
 
 ```python
 class DescribeLoadBalancersPaginator(Boto3Paginator):

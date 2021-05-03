@@ -1,11 +1,11 @@
-# Structures for boto3 RoboMaker module
+# Typed dictionaries for boto3 RoboMaker module
 
 > [Index](../README.md) > [RoboMaker](./README.md) > Structures
 
 Auto-generated documentation for [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
 type annotations stubs module [mypy_boto3_robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
 
-- [Structures for boto3 RoboMaker module](#structures-for-boto3-robomaker-module)
+- [Typed dictionaries for boto3 RoboMaker module](#typed-dictionaries-for-boto3-robomaker-module)
   - [BatchDeleteWorldsResponseTypeDef](#batchdeleteworldsresponsetypedef)
   - [BatchDescribeSimulationJobResponseTypeDef](#batchdescribesimulationjobresponsetypedef)
   - [BatchPolicyTypeDef](#batchpolicytypedef)
@@ -1281,12 +1281,12 @@ from mypy_boto3_robomaker.type_defs import S3KeyOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `s3Key`: `str`
 - `etag`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## S3ObjectTypeDef

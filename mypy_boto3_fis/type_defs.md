@@ -1,11 +1,11 @@
-# Structures for boto3 FIS module
+# Typed dictionaries for boto3 FIS module
 
 > [Index](../README.md) > [FIS](./README.md) > Structures
 
 Auto-generated documentation for [FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)
 type annotations stubs module [mypy_boto3_fis](https://pypi.org/project/mypy-boto3-fis/).
 
-- [Structures for boto3 FIS module](#structures-for-boto3-fis-module)
+- [Typed dictionaries for boto3 FIS module](#typed-dictionaries-for-boto3-fis-module)
   - [ActionParameterTypeDef](#actionparametertypedef)
   - [ActionSummaryTypeDef](#actionsummarytypedef)
   - [ActionTargetTypeDef](#actiontargettypedef)

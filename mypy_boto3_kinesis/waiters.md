@@ -16,13 +16,13 @@ Type annotations for `boto3.client("kinesis").get_waiter("stream_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesis.waiters import StreamExistsWaiter
+from mypy_boto3_kinesis.waiter import StreamExistsWaiter
 
 def get_stream_exists_waiter() -> StreamExistsWaiter:
     return boto3.client("kinesis").get_waiter("stream_exists")
 ```
 
-[Waiter.StreamExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Waiter.StreamExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Waiter.stream_exists)
 
 ```python
 class StreamExistsWaiter(Boto3Waiter):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("kinesis").get_waiter("stream_not_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesis.waiters import StreamNotExistsWaiter
+from mypy_boto3_kinesis.waiter import StreamNotExistsWaiter
 
 def get_stream_not_exists_waiter() -> StreamNotExistsWaiter:
     return boto3.client("kinesis").get_waiter("stream_not_exists")
 ```
 
-[Waiter.StreamNotExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Waiter.StreamNotExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Waiter.stream_not_exists)
 
 ```python
 class StreamNotExistsWaiter(Boto3Waiter):

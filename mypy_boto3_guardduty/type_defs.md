@@ -1,11 +1,11 @@
-# Structures for boto3 GuardDuty module
+# Typed dictionaries for boto3 GuardDuty module
 
 > [Index](../README.md) > [GuardDuty](./README.md) > Structures
 
 Auto-generated documentation for [GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
 type annotations stubs module [mypy_boto3_guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
 
-- [Structures for boto3 GuardDuty module](#structures-for-boto3-guardduty-module)
+- [Typed dictionaries for boto3 GuardDuty module](#typed-dictionaries-for-boto3-guardduty-module)
   - [AccessControlListTypeDef](#accesscontrollisttypedef)
   - [AccessKeyDetailsTypeDef](#accesskeydetailstypedef)
   - [AccountDetailTypeDef](#accountdetailtypedef)

@@ -1,11 +1,11 @@
-# Structures for boto3 MediaPackage module
+# Typed dictionaries for boto3 MediaPackage module
 
 > [Index](../README.md) > [MediaPackage](./README.md) > Structures
 
 Auto-generated documentation for [MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage)
 type annotations stubs module [mypy_boto3_mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
 
-- [Structures for boto3 MediaPackage module](#structures-for-boto3-mediapackage-module)
+- [Typed dictionaries for boto3 MediaPackage module](#typed-dictionaries-for-boto3-mediapackage-module)
   - [AuthorizationTypeDef](#authorizationtypedef)
   - [ChannelTypeDef](#channeltypedef)
   - [CmafEncryptionTypeDef](#cmafencryptiontypedef)

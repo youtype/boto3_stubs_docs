@@ -1,11 +1,11 @@
-# Structures for boto3 Pinpoint module
+# Typed dictionaries for boto3 Pinpoint module
 
 > [Index](../README.md) > [Pinpoint](./README.md) > Structures
 
 Auto-generated documentation for [Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)
 type annotations stubs module [mypy_boto3_pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
 
-- [Structures for boto3 Pinpoint module](#structures-for-boto3-pinpoint-module)
+- [Typed dictionaries for boto3 Pinpoint module](#typed-dictionaries-for-boto3-pinpoint-module)
   - [ADMChannelRequestTypeDef](#admchannelrequesttypedef)
   - [ADMChannelResponseTypeDef](#admchannelresponsetypedef)
   - [ADMMessageTypeDef](#admmessagetypedef)

@@ -1,11 +1,11 @@
-# Structures for boto3 WAFV2 module
+# Typed dictionaries for boto3 WAFV2 module
 
 > [Index](../README.md) > [WAFV2](./README.md) > Structures
 
 Auto-generated documentation for [WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
 type annotations stubs module [mypy_boto3_wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
 
-- [Structures for boto3 WAFV2 module](#structures-for-boto3-wafv2-module)
+- [Typed dictionaries for boto3 WAFV2 module](#typed-dictionaries-for-boto3-wafv2-module)
   - [ActionConditionTypeDef](#actionconditiontypedef)
   - [AllowActionTypeDef](#allowactiontypedef)
   - [AndStatementTypeDef](#andstatementtypedef)

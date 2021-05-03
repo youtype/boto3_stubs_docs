@@ -45,7 +45,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_lookoutmetrics.client import LookoutMetricsClient
+
+def get_lookoutmetrics_client() -> LookoutMetricsClient:
+    return boto3.client("lookoutmetrics")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client)
 
 ## Exceptions
 
@@ -79,7 +84,7 @@ Exceptions:
 
 Type annotations for `boto3.client("lookoutmetrics").activate_anomaly_detector` method.
 
-[Client.activate_anomaly_detector documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.activate_anomaly_detector)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.activate_anomaly_detector]
 
 ```python
 def activate_anomaly_detector(
@@ -93,7 +98,7 @@ def activate_anomaly_detector(
 
 Type annotations for `boto3.client("lookoutmetrics").back_test_anomaly_detector` method.
 
-[Client.back_test_anomaly_detector documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.back_test_anomaly_detector)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.back_test_anomaly_detector]
 
 ```python
 def back_test_anomaly_detector(
@@ -107,7 +112,7 @@ def back_test_anomaly_detector(
 
 Type annotations for `boto3.client("lookoutmetrics").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -121,7 +126,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("lookoutmetrics").create_alert` method.
 
-[Client.create_alert documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_alert)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_alert]
 
 ```python
 def create_alert(
@@ -140,7 +145,7 @@ def create_alert(
 
 Type annotations for `boto3.client("lookoutmetrics").create_anomaly_detector` method.
 
-[Client.create_anomaly_detector documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_anomaly_detector)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_anomaly_detector]
 
 ```python
 def create_anomaly_detector(
@@ -158,7 +163,7 @@ def create_anomaly_detector(
 
 Type annotations for `boto3.client("lookoutmetrics").create_metric_set` method.
 
-[Client.create_metric_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_metric_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_metric_set]
 
 ```python
 def create_metric_set(
@@ -182,7 +187,7 @@ def create_metric_set(
 
 Type annotations for `boto3.client("lookoutmetrics").delete_alert` method.
 
-[Client.delete_alert documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_alert)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_alert]
 
 ```python
 def delete_alert(
@@ -196,7 +201,7 @@ def delete_alert(
 
 Type annotations for `boto3.client("lookoutmetrics").delete_anomaly_detector` method.
 
-[Client.delete_anomaly_detector documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_anomaly_detector)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_anomaly_detector]
 
 ```python
 def delete_anomaly_detector(
@@ -210,7 +215,7 @@ def delete_anomaly_detector(
 
 Type annotations for `boto3.client("lookoutmetrics").describe_alert` method.
 
-[Client.describe_alert documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_alert)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_alert]
 
 ```python
 def describe_alert(
@@ -224,7 +229,7 @@ def describe_alert(
 
 Type annotations for `boto3.client("lookoutmetrics").describe_anomaly_detection_executions` method.
 
-[Client.describe_anomaly_detection_executions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detection_executions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detection_executions]
 
 ```python
 def describe_anomaly_detection_executions(
@@ -241,7 +246,7 @@ def describe_anomaly_detection_executions(
 
 Type annotations for `boto3.client("lookoutmetrics").describe_anomaly_detector` method.
 
-[Client.describe_anomaly_detector documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detector)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detector]
 
 ```python
 def describe_anomaly_detector(
@@ -255,7 +260,7 @@ def describe_anomaly_detector(
 
 Type annotations for `boto3.client("lookoutmetrics").describe_metric_set` method.
 
-[Client.describe_metric_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_metric_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_metric_set]
 
 ```python
 def describe_metric_set(
@@ -269,7 +274,7 @@ def describe_metric_set(
 
 Type annotations for `boto3.client("lookoutmetrics").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -286,7 +291,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("lookoutmetrics").get_anomaly_group` method.
 
-[Client.get_anomaly_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_anomaly_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_anomaly_group]
 
 ```python
 def get_anomaly_group(
@@ -301,7 +306,7 @@ def get_anomaly_group(
 
 Type annotations for `boto3.client("lookoutmetrics").get_feedback` method.
 
-[Client.get_feedback documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_feedback)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_feedback]
 
 ```python
 def get_feedback(
@@ -318,7 +323,7 @@ def get_feedback(
 
 Type annotations for `boto3.client("lookoutmetrics").get_sample_data` method.
 
-[Client.get_sample_data documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_sample_data)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_sample_data]
 
 ```python
 def get_sample_data(
@@ -332,7 +337,7 @@ def get_sample_data(
 
 Type annotations for `boto3.client("lookoutmetrics").list_alerts` method.
 
-[Client.list_alerts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_alerts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_alerts]
 
 ```python
 def list_alerts(
@@ -348,7 +353,7 @@ def list_alerts(
 
 Type annotations for `boto3.client("lookoutmetrics").list_anomaly_detectors` method.
 
-[Client.list_anomaly_detectors documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_detectors)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_detectors]
 
 ```python
 def list_anomaly_detectors(
@@ -363,7 +368,7 @@ def list_anomaly_detectors(
 
 Type annotations for `boto3.client("lookoutmetrics").list_anomaly_group_summaries` method.
 
-[Client.list_anomaly_group_summaries documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_summaries)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_summaries]
 
 ```python
 def list_anomaly_group_summaries(
@@ -380,7 +385,7 @@ def list_anomaly_group_summaries(
 
 Type annotations for `boto3.client("lookoutmetrics").list_anomaly_group_time_series` method.
 
-[Client.list_anomaly_group_time_series documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_time_series)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_time_series]
 
 ```python
 def list_anomaly_group_time_series(
@@ -398,7 +403,7 @@ def list_anomaly_group_time_series(
 
 Type annotations for `boto3.client("lookoutmetrics").list_metric_sets` method.
 
-[Client.list_metric_sets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_metric_sets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_metric_sets]
 
 ```python
 def list_metric_sets(
@@ -414,7 +419,7 @@ def list_metric_sets(
 
 Type annotations for `boto3.client("lookoutmetrics").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -428,7 +433,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("lookoutmetrics").put_feedback` method.
 
-[Client.put_feedback documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.put_feedback)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.put_feedback]
 
 ```python
 def put_feedback(
@@ -443,7 +448,7 @@ def put_feedback(
 
 Type annotations for `boto3.client("lookoutmetrics").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -458,7 +463,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("lookoutmetrics").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -473,7 +478,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("lookoutmetrics").update_anomaly_detector` method.
 
-[Client.update_anomaly_detector documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_anomaly_detector)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_anomaly_detector]
 
 ```python
 def update_anomaly_detector(
@@ -490,7 +495,7 @@ def update_anomaly_detector(
 
 Type annotations for `boto3.client("lookoutmetrics").update_metric_set` method.
 
-[Client.update_metric_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_metric_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_metric_set]
 
 ```python
 def update_metric_set(

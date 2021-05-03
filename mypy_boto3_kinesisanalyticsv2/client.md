@@ -49,7 +49,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_kinesisanalyticsv2.client import KinesisAnalyticsV2Client
+
+def get_kinesisanalyticsv2_client() -> KinesisAnalyticsV2Client:
+    return boto3.client("kinesisanalyticsv2")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client)
 
 ## Exceptions
 
@@ -89,7 +94,7 @@ Exceptions:
 
 Type annotations for `boto3.client("kinesisanalyticsv2").add_application_cloud_watch_logging_option` method.
 
-[Client.add_application_cloud_watch_logging_option documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_cloud_watch_logging_option)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_cloud_watch_logging_option]
 
 ```python
 def add_application_cloud_watch_logging_option(
@@ -105,7 +110,7 @@ def add_application_cloud_watch_logging_option(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").add_application_input` method.
 
-[Client.add_application_input documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_input)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_input]
 
 ```python
 def add_application_input(
@@ -121,7 +126,7 @@ def add_application_input(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").add_application_input_processing_configuration` method.
 
-[Client.add_application_input_processing_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_input_processing_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_input_processing_configuration]
 
 ```python
 def add_application_input_processing_configuration(
@@ -138,7 +143,7 @@ def add_application_input_processing_configuration(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").add_application_output` method.
 
-[Client.add_application_output documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_output)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_output]
 
 ```python
 def add_application_output(
@@ -154,7 +159,7 @@ def add_application_output(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").add_application_reference_data_source` method.
 
-[Client.add_application_reference_data_source documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_reference_data_source)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_reference_data_source]
 
 ```python
 def add_application_reference_data_source(
@@ -170,7 +175,7 @@ def add_application_reference_data_source(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").add_application_vpc_configuration` method.
 
-[Client.add_application_vpc_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_vpc_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.add_application_vpc_configuration]
 
 ```python
 def add_application_vpc_configuration(
@@ -186,7 +191,7 @@ def add_application_vpc_configuration(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -200,7 +205,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").create_application` method.
 
-[Client.create_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.create_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.create_application]
 
 ```python
 def create_application(
@@ -220,7 +225,7 @@ def create_application(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").create_application_presigned_url` method.
 
-[Client.create_application_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.create_application_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.create_application_presigned_url]
 
 ```python
 def create_application_presigned_url(
@@ -236,7 +241,7 @@ def create_application_presigned_url(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").create_application_snapshot` method.
 
-[Client.create_application_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.create_application_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.create_application_snapshot]
 
 ```python
 def create_application_snapshot(
@@ -251,7 +256,7 @@ def create_application_snapshot(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").delete_application` method.
 
-[Client.delete_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application]
 
 ```python
 def delete_application(
@@ -266,7 +271,7 @@ def delete_application(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").delete_application_cloud_watch_logging_option` method.
 
-[Client.delete_application_cloud_watch_logging_option documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_cloud_watch_logging_option)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_cloud_watch_logging_option]
 
 ```python
 def delete_application_cloud_watch_logging_option(
@@ -282,7 +287,7 @@ def delete_application_cloud_watch_logging_option(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").delete_application_input_processing_configuration` method.
 
-[Client.delete_application_input_processing_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_input_processing_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_input_processing_configuration]
 
 ```python
 def delete_application_input_processing_configuration(
@@ -298,7 +303,7 @@ def delete_application_input_processing_configuration(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").delete_application_output` method.
 
-[Client.delete_application_output documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_output)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_output]
 
 ```python
 def delete_application_output(
@@ -314,7 +319,7 @@ def delete_application_output(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").delete_application_reference_data_source` method.
 
-[Client.delete_application_reference_data_source documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_reference_data_source)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_reference_data_source]
 
 ```python
 def delete_application_reference_data_source(
@@ -330,7 +335,7 @@ def delete_application_reference_data_source(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").delete_application_snapshot` method.
 
-[Client.delete_application_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_snapshot]
 
 ```python
 def delete_application_snapshot(
@@ -346,7 +351,7 @@ def delete_application_snapshot(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").delete_application_vpc_configuration` method.
 
-[Client.delete_application_vpc_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_vpc_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application_vpc_configuration]
 
 ```python
 def delete_application_vpc_configuration(
@@ -362,7 +367,7 @@ def delete_application_vpc_configuration(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").describe_application` method.
 
-[Client.describe_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.describe_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.describe_application]
 
 ```python
 def describe_application(
@@ -377,7 +382,7 @@ def describe_application(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").describe_application_snapshot` method.
 
-[Client.describe_application_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.describe_application_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.describe_application_snapshot]
 
 ```python
 def describe_application_snapshot(
@@ -392,7 +397,7 @@ def describe_application_snapshot(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").discover_input_schema` method.
 
-[Client.discover_input_schema documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.discover_input_schema)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.discover_input_schema]
 
 ```python
 def discover_input_schema(
@@ -410,7 +415,7 @@ def discover_input_schema(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -427,7 +432,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").list_application_snapshots` method.
 
-[Client.list_application_snapshots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.list_application_snapshots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.list_application_snapshots]
 
 ```python
 def list_application_snapshots(
@@ -443,7 +448,7 @@ def list_application_snapshots(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").list_applications` method.
 
-[Client.list_applications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.list_applications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.list_applications]
 
 ```python
 def list_applications(
@@ -458,7 +463,7 @@ def list_applications(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -472,7 +477,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").start_application` method.
 
-[Client.start_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.start_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.start_application]
 
 ```python
 def start_application(
@@ -487,7 +492,7 @@ def start_application(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").stop_application` method.
 
-[Client.stop_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.stop_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.stop_application]
 
 ```python
 def stop_application(
@@ -502,7 +507,7 @@ def stop_application(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -517,7 +522,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -532,7 +537,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").update_application` method.
 
-[Client.update_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.update_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.update_application]
 
 ```python
 def update_application(
@@ -551,7 +556,7 @@ def update_application(
 
 Type annotations for `boto3.client("kinesisanalyticsv2").update_application_maintenance_configuration` method.
 
-[Client.update_application_maintenance_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.update_application_maintenance_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.update_application_maintenance_configuration]
 
 ```python
 def update_application_maintenance_configuration(

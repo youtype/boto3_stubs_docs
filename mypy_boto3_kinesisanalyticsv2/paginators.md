@@ -16,13 +16,13 @@ Type annotations for `boto3.client("kinesisanalyticsv2").get_paginator("list_app
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.paginators import ListApplicationSnapshotsPaginator
+from mypy_boto3_kinesisanalyticsv2.paginator import ListApplicationSnapshotsPaginator
 
 def get_list_application_snapshots_paginator() -> ListApplicationSnapshotsPaginator:
     return boto3.client("kinesisanalyticsv2").get_paginator("list_application_snapshots")
 ```
 
-[Paginator.ListApplicationSnapshots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Paginator.ListApplicationSnapshots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Paginator.ListApplicationSnapshots)
 
 ```python
 class ListApplicationSnapshotsPaginator(Boto3Paginator):
@@ -40,13 +40,13 @@ Type annotations for `boto3.client("kinesisanalyticsv2").get_paginator("list_app
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.paginators import ListApplicationsPaginator
+from mypy_boto3_kinesisanalyticsv2.paginator import ListApplicationsPaginator
 
 def get_list_applications_paginator() -> ListApplicationsPaginator:
     return boto3.client("kinesisanalyticsv2").get_paginator("list_applications")
 ```
 
-[Paginator.ListApplications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Paginator.ListApplications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Paginator.ListApplications)
 
 ```python
 class ListApplicationsPaginator(Boto3Paginator):

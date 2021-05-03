@@ -15,7 +15,7 @@ pip install mypy-boto3-ram
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## RAMClient
 
@@ -142,7 +142,7 @@ from mypy_boto3_ram.literals import GetResourcePoliciesPaginatorName, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

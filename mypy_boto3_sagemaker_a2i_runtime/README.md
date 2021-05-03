@@ -15,7 +15,7 @@ pip install mypy-boto3-sagemaker-a2i-runtime
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## AugmentedAIRuntimeClient
 
@@ -94,7 +94,7 @@ from mypy_boto3_sagemaker_a2i_runtime.literals import ContentClassifier, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

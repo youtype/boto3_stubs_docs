@@ -14,7 +14,7 @@ pip install mypy-boto3-detective
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## DetectiveClient
 
@@ -86,7 +86,7 @@ from mypy_boto3_detective.literals import MemberDisabledReason, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

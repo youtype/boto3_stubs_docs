@@ -14,7 +14,7 @@ pip install mypy-boto3-iotsecuretunneling
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## IoTSecureTunnelingClient
 
@@ -75,7 +75,7 @@ from mypy_boto3_iotsecuretunneling.literals import ConnectionStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

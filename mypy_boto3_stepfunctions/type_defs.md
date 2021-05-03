@@ -1,11 +1,11 @@
-# Structures for boto3 SFN module
+# Typed dictionaries for boto3 SFN module
 
 > [Index](../README.md) > [SFN](./README.md) > Structures
 
 Auto-generated documentation for [SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
 type annotations stubs module [mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
-- [Structures for boto3 SFN module](#structures-for-boto3-sfn-module)
+- [Typed dictionaries for boto3 SFN module](#typed-dictionaries-for-boto3-sfn-module)
   - [ActivityFailedEventDetailsTypeDef](#activityfailedeventdetailstypedef)
   - [ActivityListItemTypeDef](#activitylistitemtypedef)
   - [ActivityScheduleFailedEventDetailsTypeDef](#activityschedulefailedeventdetailstypedef)
@@ -219,11 +219,9 @@ from mypy_boto3_stepfunctions.type_defs import CreateActivityOutputTypeDef
 Required fields:
 - `activityArn`: `str`
 - `creationDate`: `datetime`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateStateMachineOutputTypeDef
@@ -236,11 +234,9 @@ from mypy_boto3_stepfunctions.type_defs import CreateStateMachineOutputTypeDef
 Required fields:
 - `stateMachineArn`: `str`
 - `creationDate`: `datetime`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeActivityOutputTypeDef
@@ -254,11 +250,9 @@ Required fields:
 - `activityArn`: `str`
 - `name`: `str`
 - `creationDate`: `datetime`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeExecutionOutputTypeDef
@@ -271,13 +265,9 @@ from mypy_boto3_stepfunctions.type_defs import DescribeExecutionOutputTypeDef
 Required fields:
 - `executionArn`: `str`
 - `stateMachineArn`: `str`
+- `name`: `str`
 - `status`: `ExecutionStatus`
 - `startDate`: `datetime`
-
-
-
-Optional fields:
-- `name`: `str`
 - `stopDate`: `datetime`
 - `input`: `str`
 - `inputDetails`: `"CloudWatchEventsExecutionDataDetailsTypeDef"`
@@ -285,6 +275,8 @@ Optional fields:
 - `outputDetails`: `"CloudWatchEventsExecutionDataDetailsTypeDef"`
 - `traceHeader`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeStateMachineForExecutionOutputTypeDef
@@ -300,13 +292,11 @@ Required fields:
 - `definition`: `str`
 - `roleArn`: `str`
 - `updateDate`: `datetime`
-
-
-
-Optional fields:
 - `loggingConfiguration`: `"LoggingConfigurationTypeDef"`
 - `tracingConfiguration`: `"TracingConfigurationTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeStateMachineOutputTypeDef
@@ -319,18 +309,16 @@ from mypy_boto3_stepfunctions.type_defs import DescribeStateMachineOutputTypeDef
 Required fields:
 - `stateMachineArn`: `str`
 - `name`: `str`
+- `status`: `StateMachineStatus`
 - `definition`: `str`
 - `roleArn`: `str`
 - `type`: `StateMachineType`
 - `creationDate`: `datetime`
-
-
-
-Optional fields:
-- `status`: `StateMachineStatus`
 - `loggingConfiguration`: `"LoggingConfigurationTypeDef"`
 - `tracingConfiguration`: `"TracingConfigurationTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ExecutionAbortedEventDetailsTypeDef
@@ -431,12 +419,12 @@ from mypy_boto3_stepfunctions.type_defs import GetActivityTaskOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `taskToken`: `str`
 - `input`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetExecutionHistoryOutputTypeDef
@@ -448,12 +436,10 @@ from mypy_boto3_stepfunctions.type_defs import GetExecutionHistoryOutputTypeDef
 
 Required fields:
 - `events`: `List["HistoryEventTypeDef"]`
-
-
-
-Optional fields:
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## HistoryEventExecutionDataDetailsTypeDef
@@ -616,12 +602,10 @@ from mypy_boto3_stepfunctions.type_defs import ListActivitiesOutputTypeDef
 
 Required fields:
 - `activities`: `List["ActivityListItemTypeDef"]`
-
-
-
-Optional fields:
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListExecutionsOutputTypeDef
@@ -633,12 +617,10 @@ from mypy_boto3_stepfunctions.type_defs import ListExecutionsOutputTypeDef
 
 Required fields:
 - `executions`: `List["ExecutionListItemTypeDef"]`
-
-
-
-Optional fields:
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListStateMachinesOutputTypeDef
@@ -650,12 +632,10 @@ from mypy_boto3_stepfunctions.type_defs import ListStateMachinesOutputTypeDef
 
 Required fields:
 - `stateMachines`: `List["StateMachineListItemTypeDef"]`
-
-
-
-Optional fields:
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagsForResourceOutputTypeDef
@@ -665,11 +645,11 @@ from mypy_boto3_stepfunctions.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `tags`: `List["TagTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## LogDestinationTypeDef
@@ -769,11 +749,9 @@ from mypy_boto3_stepfunctions.type_defs import StartExecutionOutputTypeDef
 Required fields:
 - `executionArn`: `str`
 - `startDate`: `datetime`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## StartSyncExecutionOutputTypeDef
@@ -785,15 +763,11 @@ from mypy_boto3_stepfunctions.type_defs import StartSyncExecutionOutputTypeDef
 
 Required fields:
 - `executionArn`: `str`
+- `stateMachineArn`: `str`
+- `name`: `str`
 - `startDate`: `datetime`
 - `stopDate`: `datetime`
 - `status`: `SyncExecutionStatus`
-
-
-
-Optional fields:
-- `stateMachineArn`: `str`
-- `name`: `str`
 - `error`: `str`
 - `cause`: `str`
 - `input`: `str`
@@ -803,6 +777,8 @@ Optional fields:
 - `traceHeader`: `str`
 - `billingDetails`: `"BillingDetailsTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## StateEnteredEventDetailsTypeDef
@@ -864,11 +840,9 @@ from mypy_boto3_stepfunctions.type_defs import StopExecutionOutputTypeDef
 
 Required fields:
 - `stopDate`: `datetime`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## TagTypeDef
@@ -1049,9 +1023,7 @@ from mypy_boto3_stepfunctions.type_defs import UpdateStateMachineOutputTypeDef
 
 Required fields:
 - `updateDate`: `datetime`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 

@@ -19,13 +19,13 @@ Type annotations for `boto3.client("mgh").get_paginator("list_application_states
 Can be used directly:
 
 ```python
-from mypy_boto3_mgh.paginators import ListApplicationStatesPaginator
+from mypy_boto3_mgh.paginator import ListApplicationStatesPaginator
 
 def get_list_application_states_paginator() -> ListApplicationStatesPaginator:
     return boto3.client("mgh").get_paginator("list_application_states")
 ```
 
-[Paginator.ListApplicationStates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListApplicationStates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListApplicationStates)
 
 ```python
 class ListApplicationStatesPaginator(Boto3Paginator):
@@ -43,13 +43,13 @@ Type annotations for `boto3.client("mgh").get_paginator("list_created_artifacts"
 Can be used directly:
 
 ```python
-from mypy_boto3_mgh.paginators import ListCreatedArtifactsPaginator
+from mypy_boto3_mgh.paginator import ListCreatedArtifactsPaginator
 
 def get_list_created_artifacts_paginator() -> ListCreatedArtifactsPaginator:
     return boto3.client("mgh").get_paginator("list_created_artifacts")
 ```
 
-[Paginator.ListCreatedArtifacts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListCreatedArtifacts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListCreatedArtifacts)
 
 ```python
 class ListCreatedArtifactsPaginator(Boto3Paginator):
@@ -68,13 +68,13 @@ Type annotations for `boto3.client("mgh").get_paginator("list_discovered_resourc
 Can be used directly:
 
 ```python
-from mypy_boto3_mgh.paginators import ListDiscoveredResourcesPaginator
+from mypy_boto3_mgh.paginator import ListDiscoveredResourcesPaginator
 
 def get_list_discovered_resources_paginator() -> ListDiscoveredResourcesPaginator:
     return boto3.client("mgh").get_paginator("list_discovered_resources")
 ```
 
-[Paginator.ListDiscoveredResources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListDiscoveredResources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListDiscoveredResources)
 
 ```python
 class ListDiscoveredResourcesPaginator(Boto3Paginator):
@@ -93,13 +93,13 @@ Type annotations for `boto3.client("mgh").get_paginator("list_migration_tasks")`
 Can be used directly:
 
 ```python
-from mypy_boto3_mgh.paginators import ListMigrationTasksPaginator
+from mypy_boto3_mgh.paginator import ListMigrationTasksPaginator
 
 def get_list_migration_tasks_paginator() -> ListMigrationTasksPaginator:
     return boto3.client("mgh").get_paginator("list_migration_tasks")
 ```
 
-[Paginator.ListMigrationTasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListMigrationTasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListMigrationTasks)
 
 ```python
 class ListMigrationTasksPaginator(Boto3Paginator):
@@ -117,13 +117,13 @@ Type annotations for `boto3.client("mgh").get_paginator("list_progress_update_st
 Can be used directly:
 
 ```python
-from mypy_boto3_mgh.paginators import ListProgressUpdateStreamsPaginator
+from mypy_boto3_mgh.paginator import ListProgressUpdateStreamsPaginator
 
 def get_list_progress_update_streams_paginator() -> ListProgressUpdateStreamsPaginator:
     return boto3.client("mgh").get_paginator("list_progress_update_streams")
 ```
 
-[Paginator.ListProgressUpdateStreams documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListProgressUpdateStreams)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListProgressUpdateStreams)
 
 ```python
 class ListProgressUpdateStreamsPaginator(Boto3Paginator):

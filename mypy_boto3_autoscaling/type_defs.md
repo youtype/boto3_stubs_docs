@@ -1,11 +1,11 @@
-# Structures for boto3 AutoScaling module
+# Typed dictionaries for boto3 AutoScaling module
 
 > [Index](../README.md) > [AutoScaling](./README.md) > Structures
 
 Auto-generated documentation for [AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
 type annotations stubs module [mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
-- [Structures for boto3 AutoScaling module](#structures-for-boto3-autoscaling-module)
+- [Typed dictionaries for boto3 AutoScaling module](#typed-dictionaries-for-boto3-autoscaling-module)
   - [ActivitiesTypeTypeDef](#activitiestypetypedef)
   - [ActivityTypeDef](#activitytypedef)
   - [ActivityTypeTypeDef](#activitytypetypedef)

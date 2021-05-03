@@ -1,11 +1,11 @@
-# Structures for boto3 Backup module
+# Typed dictionaries for boto3 Backup module
 
 > [Index](../README.md) > [Backup](./README.md) > Structures
 
 Auto-generated documentation for [Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
 type annotations stubs module [mypy_boto3_backup](https://pypi.org/project/mypy-boto3-backup/).
 
-- [Structures for boto3 Backup module](#structures-for-boto3-backup-module)
+- [Typed dictionaries for boto3 Backup module](#typed-dictionaries-for-boto3-backup-module)
   - [AdvancedBackupSettingTypeDef](#advancedbackupsettingtypedef)
   - [BackupJobTypeDef](#backupjobtypedef)
   - [BackupPlanInputTypeDef](#backupplaninputtypedef)
@@ -362,15 +362,15 @@ from mypy_boto3_backup.type_defs import CreateBackupPlanOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupPlanId`: `str`
 - `BackupPlanArn`: `str`
 - `CreationDate`: `datetime`
 - `VersionId`: `str`
 - `AdvancedBackupSettings`: `List["AdvancedBackupSettingTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateBackupSelectionOutputTypeDef
@@ -380,13 +380,13 @@ from mypy_boto3_backup.type_defs import CreateBackupSelectionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `SelectionId`: `str`
 - `BackupPlanId`: `str`
 - `CreationDate`: `datetime`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateBackupVaultOutputTypeDef
@@ -396,13 +396,13 @@ from mypy_boto3_backup.type_defs import CreateBackupVaultOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupVaultName`: `str`
 - `BackupVaultArn`: `str`
 - `CreationDate`: `datetime`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteBackupPlanOutputTypeDef
@@ -412,14 +412,14 @@ from mypy_boto3_backup.type_defs import DeleteBackupPlanOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupPlanId`: `str`
 - `BackupPlanArn`: `str`
 - `DeletionDate`: `datetime`
 - `VersionId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeBackupJobOutputTypeDef
@@ -429,9 +429,7 @@ from mypy_boto3_backup.type_defs import DescribeBackupJobOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `AccountId`: `str`
 - `BackupJobId`: `str`
 - `BackupVaultName`: `str`
@@ -455,6 +453,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## DescribeBackupVaultOutputTypeDef
 
 ```python
@@ -462,9 +462,7 @@ from mypy_boto3_backup.type_defs import DescribeBackupVaultOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupVaultName`: `str`
 - `BackupVaultArn`: `str`
 - `EncryptionKeyArn`: `str`
@@ -474,6 +472,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## DescribeCopyJobOutputTypeDef
 
 ```python
@@ -481,11 +481,11 @@ from mypy_boto3_backup.type_defs import DescribeCopyJobOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `CopyJob`: `"CopyJobTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeGlobalSettingsOutputTypeDef
@@ -495,12 +495,12 @@ from mypy_boto3_backup.type_defs import DescribeGlobalSettingsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GlobalSettings`: `Dict[str, str]`
 - `LastUpdateTime`: `datetime`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeProtectedResourceOutputTypeDef
@@ -510,13 +510,13 @@ from mypy_boto3_backup.type_defs import DescribeProtectedResourceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ResourceArn`: `str`
 - `ResourceType`: `str`
 - `LastBackupTime`: `datetime`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeRecoveryPointOutputTypeDef
@@ -526,9 +526,7 @@ from mypy_boto3_backup.type_defs import DescribeRecoveryPointOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `RecoveryPointArn`: `str`
 - `BackupVaultName`: `str`
 - `BackupVaultArn`: `str`
@@ -550,6 +548,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## DescribeRegionSettingsOutputTypeDef
 
 ```python
@@ -557,11 +557,11 @@ from mypy_boto3_backup.type_defs import DescribeRegionSettingsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ResourceTypeOptInPreference`: `Dict[str, bool]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeRestoreJobOutputTypeDef
@@ -571,9 +571,7 @@ from mypy_boto3_backup.type_defs import DescribeRestoreJobOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `AccountId`: `str`
 - `RestoreJobId`: `str`
 - `RecoveryPointArn`: `str`
@@ -590,6 +588,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## ExportBackupPlanTemplateOutputTypeDef
 
 ```python
@@ -597,11 +597,11 @@ from mypy_boto3_backup.type_defs import ExportBackupPlanTemplateOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupPlanTemplateJson`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBackupPlanFromJSONOutputTypeDef
@@ -611,11 +611,11 @@ from mypy_boto3_backup.type_defs import GetBackupPlanFromJSONOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupPlan`: `"BackupPlanTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBackupPlanFromTemplateOutputTypeDef
@@ -625,11 +625,11 @@ from mypy_boto3_backup.type_defs import GetBackupPlanFromTemplateOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupPlanDocument`: `"BackupPlanTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBackupPlanOutputTypeDef
@@ -639,9 +639,7 @@ from mypy_boto3_backup.type_defs import GetBackupPlanOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupPlan`: `"BackupPlanTypeDef"`
 - `BackupPlanId`: `str`
 - `BackupPlanArn`: `str`
@@ -654,6 +652,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## GetBackupSelectionOutputTypeDef
 
 ```python
@@ -661,15 +661,15 @@ from mypy_boto3_backup.type_defs import GetBackupSelectionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupSelection`: `"BackupSelectionTypeDef"`
 - `SelectionId`: `str`
 - `BackupPlanId`: `str`
 - `CreationDate`: `datetime`
 - `CreatorRequestId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBackupVaultAccessPolicyOutputTypeDef
@@ -679,13 +679,13 @@ from mypy_boto3_backup.type_defs import GetBackupVaultAccessPolicyOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupVaultName`: `str`
 - `BackupVaultArn`: `str`
 - `Policy`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBackupVaultNotificationsOutputTypeDef
@@ -695,14 +695,14 @@ from mypy_boto3_backup.type_defs import GetBackupVaultNotificationsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupVaultName`: `str`
 - `BackupVaultArn`: `str`
 - `SNSTopicArn`: `str`
 - `BackupVaultEvents`: `List[BackupVaultEvent]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetRecoveryPointRestoreMetadataOutputTypeDef
@@ -712,13 +712,13 @@ from mypy_boto3_backup.type_defs import GetRecoveryPointRestoreMetadataOutputTyp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupVaultArn`: `str`
 - `RecoveryPointArn`: `str`
 - `RestoreMetadata`: `Dict[str, str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetSupportedResourceTypesOutputTypeDef
@@ -728,11 +728,11 @@ from mypy_boto3_backup.type_defs import GetSupportedResourceTypesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ResourceTypes`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## LifecycleTypeDef
@@ -756,12 +756,12 @@ from mypy_boto3_backup.type_defs import ListBackupJobsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupJobs`: `List["BackupJobTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListBackupPlanTemplatesOutputTypeDef
@@ -771,12 +771,12 @@ from mypy_boto3_backup.type_defs import ListBackupPlanTemplatesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NextToken`: `str`
 - `BackupPlanTemplatesList`: `List["BackupPlanTemplatesListMemberTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListBackupPlanVersionsOutputTypeDef
@@ -786,12 +786,12 @@ from mypy_boto3_backup.type_defs import ListBackupPlanVersionsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NextToken`: `str`
 - `BackupPlanVersionsList`: `List["BackupPlansListMemberTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListBackupPlansOutputTypeDef
@@ -801,12 +801,12 @@ from mypy_boto3_backup.type_defs import ListBackupPlansOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NextToken`: `str`
 - `BackupPlansList`: `List["BackupPlansListMemberTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListBackupSelectionsOutputTypeDef
@@ -816,12 +816,12 @@ from mypy_boto3_backup.type_defs import ListBackupSelectionsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NextToken`: `str`
 - `BackupSelectionsList`: `List["BackupSelectionsListMemberTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListBackupVaultsOutputTypeDef
@@ -831,12 +831,12 @@ from mypy_boto3_backup.type_defs import ListBackupVaultsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupVaultList`: `List["BackupVaultListMemberTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListCopyJobsOutputTypeDef
@@ -846,12 +846,12 @@ from mypy_boto3_backup.type_defs import ListCopyJobsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `CopyJobs`: `List["CopyJobTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListProtectedResourcesOutputTypeDef
@@ -861,12 +861,12 @@ from mypy_boto3_backup.type_defs import ListProtectedResourcesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Results`: `List["ProtectedResourceTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListRecoveryPointsByBackupVaultOutputTypeDef
@@ -876,12 +876,12 @@ from mypy_boto3_backup.type_defs import ListRecoveryPointsByBackupVaultOutputTyp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NextToken`: `str`
 - `RecoveryPoints`: `List["RecoveryPointByBackupVaultTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListRecoveryPointsByResourceOutputTypeDef
@@ -891,12 +891,12 @@ from mypy_boto3_backup.type_defs import ListRecoveryPointsByResourceOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NextToken`: `str`
 - `RecoveryPoints`: `List["RecoveryPointByResourceTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListRestoreJobsOutputTypeDef
@@ -906,12 +906,12 @@ from mypy_boto3_backup.type_defs import ListRestoreJobsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `RestoreJobs`: `List["RestoreJobsListMemberTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagsOutputTypeDef
@@ -921,12 +921,12 @@ from mypy_boto3_backup.type_defs import ListTagsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NextToken`: `str`
 - `Tags`: `Dict[str, str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ProtectedResourceTypeDef
@@ -1056,13 +1056,13 @@ from mypy_boto3_backup.type_defs import StartBackupJobOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupJobId`: `str`
 - `RecoveryPointArn`: `str`
 - `CreationDate`: `datetime`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## StartCopyJobOutputTypeDef
@@ -1072,12 +1072,12 @@ from mypy_boto3_backup.type_defs import StartCopyJobOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `CopyJobId`: `str`
 - `CreationDate`: `datetime`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## StartRestoreJobOutputTypeDef
@@ -1087,11 +1087,11 @@ from mypy_boto3_backup.type_defs import StartRestoreJobOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `RestoreJobId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateBackupPlanOutputTypeDef
@@ -1101,15 +1101,15 @@ from mypy_boto3_backup.type_defs import UpdateBackupPlanOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupPlanId`: `str`
 - `BackupPlanArn`: `str`
 - `CreationDate`: `datetime`
 - `VersionId`: `str`
 - `AdvancedBackupSettings`: `List["AdvancedBackupSettingTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateRecoveryPointLifecycleOutputTypeDef
@@ -1119,12 +1119,12 @@ from mypy_boto3_backup.type_defs import UpdateRecoveryPointLifecycleOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupVaultArn`: `str`
 - `RecoveryPointArn`: `str`
 - `Lifecycle`: `"LifecycleTypeDef"`
 - `CalculatedLifecycle`: `"CalculatedLifecycleTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 

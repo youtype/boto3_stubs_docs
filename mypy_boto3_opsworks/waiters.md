@@ -20,13 +20,13 @@ Type annotations for `boto3.client("opsworks").get_waiter("app_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_opsworks.waiters import AppExistsWaiter
+from mypy_boto3_opsworks.waiter import AppExistsWaiter
 
 def get_app_exists_waiter() -> AppExistsWaiter:
     return boto3.client("opsworks").get_waiter("app_exists")
 ```
 
-[Waiter.AppExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.AppExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.app_exists)
 
 ```python
 class AppExistsWaiter(Boto3Waiter):
@@ -45,13 +45,13 @@ Type annotations for `boto3.client("opsworks").get_waiter("deployment_successful
 Can be used directly:
 
 ```python
-from mypy_boto3_opsworks.waiters import DeploymentSuccessfulWaiter
+from mypy_boto3_opsworks.waiter import DeploymentSuccessfulWaiter
 
 def get_deployment_successful_waiter() -> DeploymentSuccessfulWaiter:
     return boto3.client("opsworks").get_waiter("deployment_successful")
 ```
 
-[Waiter.DeploymentSuccessful documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.DeploymentSuccessful)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.deployment_successful)
 
 ```python
 class DeploymentSuccessfulWaiter(Boto3Waiter):
@@ -71,13 +71,13 @@ Type annotations for `boto3.client("opsworks").get_waiter("instance_online")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_opsworks.waiters import InstanceOnlineWaiter
+from mypy_boto3_opsworks.waiter import InstanceOnlineWaiter
 
 def get_instance_online_waiter() -> InstanceOnlineWaiter:
     return boto3.client("opsworks").get_waiter("instance_online")
 ```
 
-[Waiter.InstanceOnline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.InstanceOnline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.instance_online)
 
 ```python
 class InstanceOnlineWaiter(Boto3Waiter):
@@ -97,13 +97,13 @@ Type annotations for `boto3.client("opsworks").get_waiter("instance_registered")
 Can be used directly:
 
 ```python
-from mypy_boto3_opsworks.waiters import InstanceRegisteredWaiter
+from mypy_boto3_opsworks.waiter import InstanceRegisteredWaiter
 
 def get_instance_registered_waiter() -> InstanceRegisteredWaiter:
     return boto3.client("opsworks").get_waiter("instance_registered")
 ```
 
-[Waiter.InstanceRegistered documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.InstanceRegistered)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.instance_registered)
 
 ```python
 class InstanceRegisteredWaiter(Boto3Waiter):
@@ -123,13 +123,13 @@ Type annotations for `boto3.client("opsworks").get_waiter("instance_stopped")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_opsworks.waiters import InstanceStoppedWaiter
+from mypy_boto3_opsworks.waiter import InstanceStoppedWaiter
 
 def get_instance_stopped_waiter() -> InstanceStoppedWaiter:
     return boto3.client("opsworks").get_waiter("instance_stopped")
 ```
 
-[Waiter.InstanceStopped documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.InstanceStopped)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.instance_stopped)
 
 ```python
 class InstanceStoppedWaiter(Boto3Waiter):
@@ -149,13 +149,13 @@ Type annotations for `boto3.client("opsworks").get_waiter("instance_terminated")
 Can be used directly:
 
 ```python
-from mypy_boto3_opsworks.waiters import InstanceTerminatedWaiter
+from mypy_boto3_opsworks.waiter import InstanceTerminatedWaiter
 
 def get_instance_terminated_waiter() -> InstanceTerminatedWaiter:
     return boto3.client("opsworks").get_waiter("instance_terminated")
 ```
 
-[Waiter.InstanceTerminated documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.InstanceTerminated)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.instance_terminated)
 
 ```python
 class InstanceTerminatedWaiter(Boto3Waiter):

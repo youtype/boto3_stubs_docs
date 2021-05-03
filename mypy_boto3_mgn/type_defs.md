@@ -1,11 +1,11 @@
-# Structures for boto3 mgn module
+# Typed dictionaries for boto3 mgn module
 
 > [Index](../README.md) > [mgn](./README.md) > Structures
 
 Auto-generated documentation for [mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
 type annotations stubs module [mypy_boto3_mgn](https://pypi.org/project/mypy-boto3-mgn/).
 
-- [Structures for boto3 mgn module](#structures-for-boto3-mgn-module)
+- [Typed dictionaries for boto3 mgn module](#typed-dictionaries-for-boto3-mgn-module)
   - [CPUTypeDef](#cputypedef)
   - [ChangeServerLifeCycleStateSourceServerLifecycleTypeDef](#changeserverlifecyclestatesourceserverlifecycletypedef)
   - [DataReplicationErrorTypeDef](#datareplicationerrortypedef)

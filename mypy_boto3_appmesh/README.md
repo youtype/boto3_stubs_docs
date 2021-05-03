@@ -15,7 +15,7 @@ pip install mypy-boto3-appmesh
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## AppMeshClient
 
@@ -159,7 +159,7 @@ from mypy_boto3_appmesh.literals import DurationUnit, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

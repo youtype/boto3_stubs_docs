@@ -18,13 +18,13 @@ Type annotations for `boto3.client("honeycode").get_paginator("list_table_column
 Can be used directly:
 
 ```python
-from mypy_boto3_honeycode.paginators import ListTableColumnsPaginator
+from mypy_boto3_honeycode.paginator import ListTableColumnsPaginator
 
 def get_list_table_columns_paginator() -> ListTableColumnsPaginator:
     return boto3.client("honeycode").get_paginator("list_table_columns")
 ```
 
-[Paginator.ListTableColumns documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTableColumns)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTableColumns)
 
 ```python
 class ListTableColumnsPaginator(Boto3Paginator):
@@ -43,13 +43,13 @@ Type annotations for `boto3.client("honeycode").get_paginator("list_table_rows")
 Can be used directly:
 
 ```python
-from mypy_boto3_honeycode.paginators import ListTableRowsPaginator
+from mypy_boto3_honeycode.paginator import ListTableRowsPaginator
 
 def get_list_table_rows_paginator() -> ListTableRowsPaginator:
     return boto3.client("honeycode").get_paginator("list_table_rows")
 ```
 
-[Paginator.ListTableRows documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTableRows)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTableRows)
 
 ```python
 class ListTableRowsPaginator(Boto3Paginator):
@@ -69,13 +69,13 @@ Type annotations for `boto3.client("honeycode").get_paginator("list_tables")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_honeycode.paginators import ListTablesPaginator
+from mypy_boto3_honeycode.paginator import ListTablesPaginator
 
 def get_list_tables_paginator() -> ListTablesPaginator:
     return boto3.client("honeycode").get_paginator("list_tables")
 ```
 
-[Paginator.ListTables documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTables)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTables)
 
 ```python
 class ListTablesPaginator(Boto3Paginator):
@@ -93,13 +93,13 @@ Type annotations for `boto3.client("honeycode").get_paginator("query_table_rows"
 Can be used directly:
 
 ```python
-from mypy_boto3_honeycode.paginators import QueryTableRowsPaginator
+from mypy_boto3_honeycode.paginator import QueryTableRowsPaginator
 
 def get_query_table_rows_paginator() -> QueryTableRowsPaginator:
     return boto3.client("honeycode").get_paginator("query_table_rows")
 ```
 
-[Paginator.QueryTableRows documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.QueryTableRows)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.QueryTableRows)
 
 ```python
 class QueryTableRowsPaginator(Boto3Paginator):

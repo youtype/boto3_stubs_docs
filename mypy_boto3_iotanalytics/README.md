@@ -15,7 +15,7 @@ pip install mypy-boto3-iotanalytics
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## IoTAnalyticsClient
 
@@ -138,7 +138,7 @@ from mypy_boto3_iotanalytics.literals import ChannelStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

@@ -93,7 +93,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_ses.client import SESClient
+
+def get_ses_client() -> SESClient:
+    return boto3.client("ses")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client)
 
 ## Exceptions
 
@@ -154,7 +159,7 @@ Exceptions:
 
 Type annotations for `boto3.client("ses").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -168,7 +173,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("ses").clone_receipt_rule_set` method.
 
-[Client.clone_receipt_rule_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.clone_receipt_rule_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.clone_receipt_rule_set]
 
 ```python
 def clone_receipt_rule_set(
@@ -183,7 +188,7 @@ def clone_receipt_rule_set(
 
 Type annotations for `boto3.client("ses").create_configuration_set` method.
 
-[Client.create_configuration_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_configuration_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_configuration_set]
 
 ```python
 def create_configuration_set(
@@ -197,7 +202,7 @@ def create_configuration_set(
 
 Type annotations for `boto3.client("ses").create_configuration_set_event_destination` method.
 
-[Client.create_configuration_set_event_destination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_configuration_set_event_destination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_configuration_set_event_destination]
 
 ```python
 def create_configuration_set_event_destination(
@@ -212,7 +217,7 @@ def create_configuration_set_event_destination(
 
 Type annotations for `boto3.client("ses").create_configuration_set_tracking_options` method.
 
-[Client.create_configuration_set_tracking_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_configuration_set_tracking_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_configuration_set_tracking_options]
 
 ```python
 def create_configuration_set_tracking_options(
@@ -227,7 +232,7 @@ def create_configuration_set_tracking_options(
 
 Type annotations for `boto3.client("ses").create_custom_verification_email_template` method.
 
-[Client.create_custom_verification_email_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_custom_verification_email_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_custom_verification_email_template]
 
 ```python
 def create_custom_verification_email_template(
@@ -246,7 +251,7 @@ def create_custom_verification_email_template(
 
 Type annotations for `boto3.client("ses").create_receipt_filter` method.
 
-[Client.create_receipt_filter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_receipt_filter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_receipt_filter]
 
 ```python
 def create_receipt_filter(
@@ -260,7 +265,7 @@ def create_receipt_filter(
 
 Type annotations for `boto3.client("ses").create_receipt_rule` method.
 
-[Client.create_receipt_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_receipt_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_receipt_rule]
 
 ```python
 def create_receipt_rule(
@@ -276,7 +281,7 @@ def create_receipt_rule(
 
 Type annotations for `boto3.client("ses").create_receipt_rule_set` method.
 
-[Client.create_receipt_rule_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_receipt_rule_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_receipt_rule_set]
 
 ```python
 def create_receipt_rule_set(
@@ -290,7 +295,7 @@ def create_receipt_rule_set(
 
 Type annotations for `boto3.client("ses").create_template` method.
 
-[Client.create_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_template]
 
 ```python
 def create_template(
@@ -304,7 +309,7 @@ def create_template(
 
 Type annotations for `boto3.client("ses").delete_configuration_set` method.
 
-[Client.delete_configuration_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_configuration_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_configuration_set]
 
 ```python
 def delete_configuration_set(
@@ -318,7 +323,7 @@ def delete_configuration_set(
 
 Type annotations for `boto3.client("ses").delete_configuration_set_event_destination` method.
 
-[Client.delete_configuration_set_event_destination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_configuration_set_event_destination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_configuration_set_event_destination]
 
 ```python
 def delete_configuration_set_event_destination(
@@ -333,7 +338,7 @@ def delete_configuration_set_event_destination(
 
 Type annotations for `boto3.client("ses").delete_configuration_set_tracking_options` method.
 
-[Client.delete_configuration_set_tracking_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_configuration_set_tracking_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_configuration_set_tracking_options]
 
 ```python
 def delete_configuration_set_tracking_options(
@@ -347,7 +352,7 @@ def delete_configuration_set_tracking_options(
 
 Type annotations for `boto3.client("ses").delete_custom_verification_email_template` method.
 
-[Client.delete_custom_verification_email_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_custom_verification_email_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_custom_verification_email_template]
 
 ```python
 def delete_custom_verification_email_template(
@@ -361,7 +366,7 @@ def delete_custom_verification_email_template(
 
 Type annotations for `boto3.client("ses").delete_identity` method.
 
-[Client.delete_identity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_identity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_identity]
 
 ```python
 def delete_identity(
@@ -375,7 +380,7 @@ def delete_identity(
 
 Type annotations for `boto3.client("ses").delete_identity_policy` method.
 
-[Client.delete_identity_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_identity_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_identity_policy]
 
 ```python
 def delete_identity_policy(
@@ -390,7 +395,7 @@ def delete_identity_policy(
 
 Type annotations for `boto3.client("ses").delete_receipt_filter` method.
 
-[Client.delete_receipt_filter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_receipt_filter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_receipt_filter]
 
 ```python
 def delete_receipt_filter(
@@ -404,7 +409,7 @@ def delete_receipt_filter(
 
 Type annotations for `boto3.client("ses").delete_receipt_rule` method.
 
-[Client.delete_receipt_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_receipt_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_receipt_rule]
 
 ```python
 def delete_receipt_rule(
@@ -419,7 +424,7 @@ def delete_receipt_rule(
 
 Type annotations for `boto3.client("ses").delete_receipt_rule_set` method.
 
-[Client.delete_receipt_rule_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_receipt_rule_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_receipt_rule_set]
 
 ```python
 def delete_receipt_rule_set(
@@ -433,7 +438,7 @@ def delete_receipt_rule_set(
 
 Type annotations for `boto3.client("ses").delete_template` method.
 
-[Client.delete_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_template]
 
 ```python
 def delete_template(
@@ -447,7 +452,7 @@ def delete_template(
 
 Type annotations for `boto3.client("ses").delete_verified_email_address` method.
 
-[Client.delete_verified_email_address documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_verified_email_address)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.delete_verified_email_address]
 
 ```python
 def delete_verified_email_address(
@@ -461,7 +466,7 @@ def delete_verified_email_address(
 
 Type annotations for `boto3.client("ses").describe_active_receipt_rule_set` method.
 
-[Client.describe_active_receipt_rule_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_active_receipt_rule_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_active_receipt_rule_set]
 
 ```python
 def describe_active_receipt_rule_set(
@@ -474,7 +479,7 @@ def describe_active_receipt_rule_set(
 
 Type annotations for `boto3.client("ses").describe_configuration_set` method.
 
-[Client.describe_configuration_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_configuration_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_configuration_set]
 
 ```python
 def describe_configuration_set(
@@ -489,7 +494,7 @@ def describe_configuration_set(
 
 Type annotations for `boto3.client("ses").describe_receipt_rule` method.
 
-[Client.describe_receipt_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_receipt_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_receipt_rule]
 
 ```python
 def describe_receipt_rule(
@@ -504,7 +509,7 @@ def describe_receipt_rule(
 
 Type annotations for `boto3.client("ses").describe_receipt_rule_set` method.
 
-[Client.describe_receipt_rule_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_receipt_rule_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.describe_receipt_rule_set]
 
 ```python
 def describe_receipt_rule_set(
@@ -518,7 +523,7 @@ def describe_receipt_rule_set(
 
 Type annotations for `boto3.client("ses").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -535,7 +540,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("ses").get_account_sending_enabled` method.
 
-[Client.get_account_sending_enabled documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_account_sending_enabled)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_account_sending_enabled]
 
 ```python
 def get_account_sending_enabled(
@@ -548,7 +553,7 @@ def get_account_sending_enabled(
 
 Type annotations for `boto3.client("ses").get_custom_verification_email_template` method.
 
-[Client.get_custom_verification_email_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_custom_verification_email_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_custom_verification_email_template]
 
 ```python
 def get_custom_verification_email_template(
@@ -562,7 +567,7 @@ def get_custom_verification_email_template(
 
 Type annotations for `boto3.client("ses").get_identity_dkim_attributes` method.
 
-[Client.get_identity_dkim_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_dkim_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_dkim_attributes]
 
 ```python
 def get_identity_dkim_attributes(
@@ -576,7 +581,7 @@ def get_identity_dkim_attributes(
 
 Type annotations for `boto3.client("ses").get_identity_mail_from_domain_attributes` method.
 
-[Client.get_identity_mail_from_domain_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_mail_from_domain_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_mail_from_domain_attributes]
 
 ```python
 def get_identity_mail_from_domain_attributes(
@@ -590,7 +595,7 @@ def get_identity_mail_from_domain_attributes(
 
 Type annotations for `boto3.client("ses").get_identity_notification_attributes` method.
 
-[Client.get_identity_notification_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_notification_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_notification_attributes]
 
 ```python
 def get_identity_notification_attributes(
@@ -604,7 +609,7 @@ def get_identity_notification_attributes(
 
 Type annotations for `boto3.client("ses").get_identity_policies` method.
 
-[Client.get_identity_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_policies]
 
 ```python
 def get_identity_policies(
@@ -619,7 +624,7 @@ def get_identity_policies(
 
 Type annotations for `boto3.client("ses").get_identity_verification_attributes` method.
 
-[Client.get_identity_verification_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_verification_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_identity_verification_attributes]
 
 ```python
 def get_identity_verification_attributes(
@@ -633,7 +638,7 @@ def get_identity_verification_attributes(
 
 Type annotations for `boto3.client("ses").get_send_quota` method.
 
-[Client.get_send_quota documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_send_quota)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_send_quota]
 
 ```python
 def get_send_quota(
@@ -646,7 +651,7 @@ def get_send_quota(
 
 Type annotations for `boto3.client("ses").get_send_statistics` method.
 
-[Client.get_send_statistics documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_send_statistics)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_send_statistics]
 
 ```python
 def get_send_statistics(
@@ -659,7 +664,7 @@ def get_send_statistics(
 
 Type annotations for `boto3.client("ses").get_template` method.
 
-[Client.get_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.get_template]
 
 ```python
 def get_template(
@@ -673,7 +678,7 @@ def get_template(
 
 Type annotations for `boto3.client("ses").list_configuration_sets` method.
 
-[Client.list_configuration_sets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_configuration_sets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_configuration_sets]
 
 ```python
 def list_configuration_sets(
@@ -688,7 +693,7 @@ def list_configuration_sets(
 
 Type annotations for `boto3.client("ses").list_custom_verification_email_templates` method.
 
-[Client.list_custom_verification_email_templates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_custom_verification_email_templates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_custom_verification_email_templates]
 
 ```python
 def list_custom_verification_email_templates(
@@ -703,7 +708,7 @@ def list_custom_verification_email_templates(
 
 Type annotations for `boto3.client("ses").list_identities` method.
 
-[Client.list_identities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_identities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_identities]
 
 ```python
 def list_identities(
@@ -719,7 +724,7 @@ def list_identities(
 
 Type annotations for `boto3.client("ses").list_identity_policies` method.
 
-[Client.list_identity_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_identity_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_identity_policies]
 
 ```python
 def list_identity_policies(
@@ -733,7 +738,7 @@ def list_identity_policies(
 
 Type annotations for `boto3.client("ses").list_receipt_filters` method.
 
-[Client.list_receipt_filters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_receipt_filters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_receipt_filters]
 
 ```python
 def list_receipt_filters(
@@ -746,7 +751,7 @@ def list_receipt_filters(
 
 Type annotations for `boto3.client("ses").list_receipt_rule_sets` method.
 
-[Client.list_receipt_rule_sets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_receipt_rule_sets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_receipt_rule_sets]
 
 ```python
 def list_receipt_rule_sets(
@@ -760,7 +765,7 @@ def list_receipt_rule_sets(
 
 Type annotations for `boto3.client("ses").list_templates` method.
 
-[Client.list_templates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_templates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_templates]
 
 ```python
 def list_templates(
@@ -775,7 +780,7 @@ def list_templates(
 
 Type annotations for `boto3.client("ses").list_verified_email_addresses` method.
 
-[Client.list_verified_email_addresses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_verified_email_addresses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_verified_email_addresses]
 
 ```python
 def list_verified_email_addresses(
@@ -788,7 +793,7 @@ def list_verified_email_addresses(
 
 Type annotations for `boto3.client("ses").put_configuration_set_delivery_options` method.
 
-[Client.put_configuration_set_delivery_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.put_configuration_set_delivery_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.put_configuration_set_delivery_options]
 
 ```python
 def put_configuration_set_delivery_options(
@@ -803,7 +808,7 @@ def put_configuration_set_delivery_options(
 
 Type annotations for `boto3.client("ses").put_identity_policy` method.
 
-[Client.put_identity_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.put_identity_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.put_identity_policy]
 
 ```python
 def put_identity_policy(
@@ -819,7 +824,7 @@ def put_identity_policy(
 
 Type annotations for `boto3.client("ses").reorder_receipt_rule_set` method.
 
-[Client.reorder_receipt_rule_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.reorder_receipt_rule_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.reorder_receipt_rule_set]
 
 ```python
 def reorder_receipt_rule_set(
@@ -834,7 +839,7 @@ def reorder_receipt_rule_set(
 
 Type annotations for `boto3.client("ses").send_bounce` method.
 
-[Client.send_bounce documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_bounce)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_bounce]
 
 ```python
 def send_bounce(
@@ -853,7 +858,7 @@ def send_bounce(
 
 Type annotations for `boto3.client("ses").send_bulk_templated_email` method.
 
-[Client.send_bulk_templated_email documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_bulk_templated_email)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_bulk_templated_email]
 
 ```python
 def send_bulk_templated_email(
@@ -877,7 +882,7 @@ def send_bulk_templated_email(
 
 Type annotations for `boto3.client("ses").send_custom_verification_email` method.
 
-[Client.send_custom_verification_email documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_custom_verification_email)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_custom_verification_email]
 
 ```python
 def send_custom_verification_email(
@@ -893,7 +898,7 @@ def send_custom_verification_email(
 
 Type annotations for `boto3.client("ses").send_email` method.
 
-[Client.send_email documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_email)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_email]
 
 ```python
 def send_email(
@@ -915,7 +920,7 @@ def send_email(
 
 Type annotations for `boto3.client("ses").send_raw_email` method.
 
-[Client.send_raw_email documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_raw_email)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_raw_email]
 
 ```python
 def send_raw_email(
@@ -936,7 +941,7 @@ def send_raw_email(
 
 Type annotations for `boto3.client("ses").send_templated_email` method.
 
-[Client.send_templated_email documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_templated_email)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_templated_email]
 
 ```python
 def send_templated_email(
@@ -960,7 +965,7 @@ def send_templated_email(
 
 Type annotations for `boto3.client("ses").set_active_receipt_rule_set` method.
 
-[Client.set_active_receipt_rule_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_active_receipt_rule_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_active_receipt_rule_set]
 
 ```python
 def set_active_receipt_rule_set(
@@ -974,7 +979,7 @@ def set_active_receipt_rule_set(
 
 Type annotations for `boto3.client("ses").set_identity_dkim_enabled` method.
 
-[Client.set_identity_dkim_enabled documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_dkim_enabled)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_dkim_enabled]
 
 ```python
 def set_identity_dkim_enabled(
@@ -989,7 +994,7 @@ def set_identity_dkim_enabled(
 
 Type annotations for `boto3.client("ses").set_identity_feedback_forwarding_enabled` method.
 
-[Client.set_identity_feedback_forwarding_enabled documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_feedback_forwarding_enabled)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_feedback_forwarding_enabled]
 
 ```python
 def set_identity_feedback_forwarding_enabled(
@@ -1004,7 +1009,7 @@ def set_identity_feedback_forwarding_enabled(
 
 Type annotations for `boto3.client("ses").set_identity_headers_in_notifications_enabled` method.
 
-[Client.set_identity_headers_in_notifications_enabled documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_headers_in_notifications_enabled)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_headers_in_notifications_enabled]
 
 ```python
 def set_identity_headers_in_notifications_enabled(
@@ -1020,7 +1025,7 @@ def set_identity_headers_in_notifications_enabled(
 
 Type annotations for `boto3.client("ses").set_identity_mail_from_domain` method.
 
-[Client.set_identity_mail_from_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_mail_from_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_mail_from_domain]
 
 ```python
 def set_identity_mail_from_domain(
@@ -1036,7 +1041,7 @@ def set_identity_mail_from_domain(
 
 Type annotations for `boto3.client("ses").set_identity_notification_topic` method.
 
-[Client.set_identity_notification_topic documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_notification_topic)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_notification_topic]
 
 ```python
 def set_identity_notification_topic(
@@ -1052,7 +1057,7 @@ def set_identity_notification_topic(
 
 Type annotations for `boto3.client("ses").set_receipt_rule_position` method.
 
-[Client.set_receipt_rule_position documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_receipt_rule_position)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_receipt_rule_position]
 
 ```python
 def set_receipt_rule_position(
@@ -1068,7 +1073,7 @@ def set_receipt_rule_position(
 
 Type annotations for `boto3.client("ses").test_render_template` method.
 
-[Client.test_render_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.test_render_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.test_render_template]
 
 ```python
 def test_render_template(
@@ -1083,7 +1088,7 @@ def test_render_template(
 
 Type annotations for `boto3.client("ses").update_account_sending_enabled` method.
 
-[Client.update_account_sending_enabled documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_account_sending_enabled)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_account_sending_enabled]
 
 ```python
 def update_account_sending_enabled(
@@ -1097,7 +1102,7 @@ def update_account_sending_enabled(
 
 Type annotations for `boto3.client("ses").update_configuration_set_event_destination` method.
 
-[Client.update_configuration_set_event_destination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_event_destination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_event_destination]
 
 ```python
 def update_configuration_set_event_destination(
@@ -1112,7 +1117,7 @@ def update_configuration_set_event_destination(
 
 Type annotations for `boto3.client("ses").update_configuration_set_reputation_metrics_enabled` method.
 
-[Client.update_configuration_set_reputation_metrics_enabled documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_reputation_metrics_enabled)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_reputation_metrics_enabled]
 
 ```python
 def update_configuration_set_reputation_metrics_enabled(
@@ -1127,7 +1132,7 @@ def update_configuration_set_reputation_metrics_enabled(
 
 Type annotations for `boto3.client("ses").update_configuration_set_sending_enabled` method.
 
-[Client.update_configuration_set_sending_enabled documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_sending_enabled)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_sending_enabled]
 
 ```python
 def update_configuration_set_sending_enabled(
@@ -1142,7 +1147,7 @@ def update_configuration_set_sending_enabled(
 
 Type annotations for `boto3.client("ses").update_configuration_set_tracking_options` method.
 
-[Client.update_configuration_set_tracking_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_tracking_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_configuration_set_tracking_options]
 
 ```python
 def update_configuration_set_tracking_options(
@@ -1157,7 +1162,7 @@ def update_configuration_set_tracking_options(
 
 Type annotations for `boto3.client("ses").update_custom_verification_email_template` method.
 
-[Client.update_custom_verification_email_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_custom_verification_email_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_custom_verification_email_template]
 
 ```python
 def update_custom_verification_email_template(
@@ -1176,7 +1181,7 @@ def update_custom_verification_email_template(
 
 Type annotations for `boto3.client("ses").update_receipt_rule` method.
 
-[Client.update_receipt_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_receipt_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_receipt_rule]
 
 ```python
 def update_receipt_rule(
@@ -1191,7 +1196,7 @@ def update_receipt_rule(
 
 Type annotations for `boto3.client("ses").update_template` method.
 
-[Client.update_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_template]
 
 ```python
 def update_template(
@@ -1205,7 +1210,7 @@ def update_template(
 
 Type annotations for `boto3.client("ses").verify_domain_dkim` method.
 
-[Client.verify_domain_dkim documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_domain_dkim)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_domain_dkim]
 
 ```python
 def verify_domain_dkim(
@@ -1219,7 +1224,7 @@ def verify_domain_dkim(
 
 Type annotations for `boto3.client("ses").verify_domain_identity` method.
 
-[Client.verify_domain_identity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_domain_identity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_domain_identity]
 
 ```python
 def verify_domain_identity(
@@ -1233,7 +1238,7 @@ def verify_domain_identity(
 
 Type annotations for `boto3.client("ses").verify_email_address` method.
 
-[Client.verify_email_address documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_email_address)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_email_address]
 
 ```python
 def verify_email_address(
@@ -1247,7 +1252,7 @@ def verify_email_address(
 
 Type annotations for `boto3.client("ses").verify_email_identity` method.
 
-[Client.verify_email_identity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_email_identity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.verify_email_identity]
 
 ```python
 def verify_email_identity(

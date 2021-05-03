@@ -15,7 +15,7 @@ pip install mypy-boto3-ds
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## DirectoryServiceClient
 
@@ -218,7 +218,7 @@ from mypy_boto3_ds.literals import CertificateState, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

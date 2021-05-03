@@ -48,7 +48,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_xray.client import XRayClient
+
+def get_xray_client() -> XRayClient:
+    return boto3.client("xray")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client)
 
 ## Exceptions
 
@@ -80,7 +85,7 @@ Exceptions:
 
 Type annotations for `boto3.client("xray").batch_get_traces` method.
 
-[Client.batch_get_traces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.batch_get_traces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.batch_get_traces]
 
 ```python
 def batch_get_traces(
@@ -95,7 +100,7 @@ def batch_get_traces(
 
 Type annotations for `boto3.client("xray").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -109,7 +114,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("xray").create_group` method.
 
-[Client.create_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.create_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.create_group]
 
 ```python
 def create_group(
@@ -126,7 +131,7 @@ def create_group(
 
 Type annotations for `boto3.client("xray").create_sampling_rule` method.
 
-[Client.create_sampling_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.create_sampling_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.create_sampling_rule]
 
 ```python
 def create_sampling_rule(
@@ -141,7 +146,7 @@ def create_sampling_rule(
 
 Type annotations for `boto3.client("xray").delete_group` method.
 
-[Client.delete_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.delete_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.delete_group]
 
 ```python
 def delete_group(
@@ -156,7 +161,7 @@ def delete_group(
 
 Type annotations for `boto3.client("xray").delete_sampling_rule` method.
 
-[Client.delete_sampling_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.delete_sampling_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.delete_sampling_rule]
 
 ```python
 def delete_sampling_rule(
@@ -171,7 +176,7 @@ def delete_sampling_rule(
 
 Type annotations for `boto3.client("xray").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -188,7 +193,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("xray").get_encryption_config` method.
 
-[Client.get_encryption_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_encryption_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_encryption_config]
 
 ```python
 def get_encryption_config(
@@ -201,7 +206,7 @@ def get_encryption_config(
 
 Type annotations for `boto3.client("xray").get_group` method.
 
-[Client.get_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_group]
 
 ```python
 def get_group(
@@ -216,7 +221,7 @@ def get_group(
 
 Type annotations for `boto3.client("xray").get_groups` method.
 
-[Client.get_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_groups]
 
 ```python
 def get_groups(
@@ -230,7 +235,7 @@ def get_groups(
 
 Type annotations for `boto3.client("xray").get_insight` method.
 
-[Client.get_insight documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight]
 
 ```python
 def get_insight(
@@ -244,7 +249,7 @@ def get_insight(
 
 Type annotations for `boto3.client("xray").get_insight_events` method.
 
-[Client.get_insight_events documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_events)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_events]
 
 ```python
 def get_insight_events(
@@ -260,7 +265,7 @@ def get_insight_events(
 
 Type annotations for `boto3.client("xray").get_insight_impact_graph` method.
 
-[Client.get_insight_impact_graph documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_impact_graph)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_impact_graph]
 
 ```python
 def get_insight_impact_graph(
@@ -277,7 +282,7 @@ def get_insight_impact_graph(
 
 Type annotations for `boto3.client("xray").get_insight_summaries` method.
 
-[Client.get_insight_summaries documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_summaries)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_summaries]
 
 ```python
 def get_insight_summaries(
@@ -297,7 +302,7 @@ def get_insight_summaries(
 
 Type annotations for `boto3.client("xray").get_sampling_rules` method.
 
-[Client.get_sampling_rules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_rules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_rules]
 
 ```python
 def get_sampling_rules(
@@ -311,7 +316,7 @@ def get_sampling_rules(
 
 Type annotations for `boto3.client("xray").get_sampling_statistic_summaries` method.
 
-[Client.get_sampling_statistic_summaries documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_statistic_summaries)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_statistic_summaries]
 
 ```python
 def get_sampling_statistic_summaries(
@@ -325,7 +330,7 @@ def get_sampling_statistic_summaries(
 
 Type annotations for `boto3.client("xray").get_sampling_targets` method.
 
-[Client.get_sampling_targets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_targets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_targets]
 
 ```python
 def get_sampling_targets(
@@ -339,7 +344,7 @@ def get_sampling_targets(
 
 Type annotations for `boto3.client("xray").get_service_graph` method.
 
-[Client.get_service_graph documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_service_graph)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_service_graph]
 
 ```python
 def get_service_graph(
@@ -357,7 +362,7 @@ def get_service_graph(
 
 Type annotations for `boto3.client("xray").get_time_series_service_statistics` method.
 
-[Client.get_time_series_service_statistics documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_time_series_service_statistics)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_time_series_service_statistics]
 
 ```python
 def get_time_series_service_statistics(
@@ -378,7 +383,7 @@ def get_time_series_service_statistics(
 
 Type annotations for `boto3.client("xray").get_trace_graph` method.
 
-[Client.get_trace_graph documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_trace_graph)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_trace_graph]
 
 ```python
 def get_trace_graph(
@@ -393,7 +398,7 @@ def get_trace_graph(
 
 Type annotations for `boto3.client("xray").get_trace_summaries` method.
 
-[Client.get_trace_summaries documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_trace_summaries)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_trace_summaries]
 
 ```python
 def get_trace_summaries(
@@ -413,7 +418,7 @@ def get_trace_summaries(
 
 Type annotations for `boto3.client("xray").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -428,7 +433,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("xray").put_encryption_config` method.
 
-[Client.put_encryption_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_encryption_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_encryption_config]
 
 ```python
 def put_encryption_config(
@@ -443,7 +448,7 @@ def put_encryption_config(
 
 Type annotations for `boto3.client("xray").put_telemetry_records` method.
 
-[Client.put_telemetry_records documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_telemetry_records)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_telemetry_records]
 
 ```python
 def put_telemetry_records(
@@ -460,7 +465,7 @@ def put_telemetry_records(
 
 Type annotations for `boto3.client("xray").put_trace_segments` method.
 
-[Client.put_trace_segments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_trace_segments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_trace_segments]
 
 ```python
 def put_trace_segments(
@@ -474,7 +479,7 @@ def put_trace_segments(
 
 Type annotations for `boto3.client("xray").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -489,7 +494,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("xray").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -504,7 +509,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("xray").update_group` method.
 
-[Client.update_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.update_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.update_group]
 
 ```python
 def update_group(
@@ -521,7 +526,7 @@ def update_group(
 
 Type annotations for `boto3.client("xray").update_sampling_rule` method.
 
-[Client.update_sampling_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.update_sampling_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.update_sampling_rule]
 
 ```python
 def update_sampling_rule(

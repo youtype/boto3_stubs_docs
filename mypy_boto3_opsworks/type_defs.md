@@ -1,11 +1,11 @@
-# Structures for boto3 OpsWorks module
+# Typed dictionaries for boto3 OpsWorks module
 
 > [Index](../README.md) > [OpsWorks](./README.md) > Structures
 
 Auto-generated documentation for [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
 type annotations stubs module [mypy_boto3_opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
 
-- [Structures for boto3 OpsWorks module](#structures-for-boto3-opsworks-module)
+- [Typed dictionaries for boto3 OpsWorks module](#typed-dictionaries-for-boto3-opsworks-module)
   - [AgentVersionTypeDef](#agentversiontypedef)
   - [AppTypeDef](#apptypedef)
   - [AutoScalingThresholdsTypeDef](#autoscalingthresholdstypedef)

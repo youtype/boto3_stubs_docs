@@ -54,7 +54,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_shield.client import ShieldClient
+
+def get_shield_client() -> ShieldClient:
+    return boto3.client("shield")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client)
 
 ## Exceptions
 
@@ -94,7 +99,7 @@ Exceptions:
 
 Type annotations for `boto3.client("shield").associate_drt_log_bucket` method.
 
-[Client.associate_drt_log_bucket documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_drt_log_bucket)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_drt_log_bucket]
 
 ```python
 def associate_drt_log_bucket(
@@ -108,7 +113,7 @@ def associate_drt_log_bucket(
 
 Type annotations for `boto3.client("shield").associate_drt_role` method.
 
-[Client.associate_drt_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_drt_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_drt_role]
 
 ```python
 def associate_drt_role(
@@ -122,7 +127,7 @@ def associate_drt_role(
 
 Type annotations for `boto3.client("shield").associate_health_check` method.
 
-[Client.associate_health_check documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_health_check)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_health_check]
 
 ```python
 def associate_health_check(
@@ -137,7 +142,7 @@ def associate_health_check(
 
 Type annotations for `boto3.client("shield").associate_proactive_engagement_details` method.
 
-[Client.associate_proactive_engagement_details documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_proactive_engagement_details)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_proactive_engagement_details]
 
 ```python
 def associate_proactive_engagement_details(
@@ -151,7 +156,7 @@ def associate_proactive_engagement_details(
 
 Type annotations for `boto3.client("shield").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -165,7 +170,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("shield").create_protection` method.
 
-[Client.create_protection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.create_protection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.create_protection]
 
 ```python
 def create_protection(
@@ -181,7 +186,7 @@ def create_protection(
 
 Type annotations for `boto3.client("shield").create_protection_group` method.
 
-[Client.create_protection_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.create_protection_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.create_protection_group]
 
 ```python
 def create_protection_group(
@@ -200,7 +205,7 @@ def create_protection_group(
 
 Type annotations for `boto3.client("shield").create_subscription` method.
 
-[Client.create_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.create_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.create_subscription]
 
 ```python
 def create_subscription(
@@ -213,7 +218,7 @@ def create_subscription(
 
 Type annotations for `boto3.client("shield").delete_protection` method.
 
-[Client.delete_protection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.delete_protection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.delete_protection]
 
 ```python
 def delete_protection(
@@ -227,7 +232,7 @@ def delete_protection(
 
 Type annotations for `boto3.client("shield").delete_protection_group` method.
 
-[Client.delete_protection_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.delete_protection_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.delete_protection_group]
 
 ```python
 def delete_protection_group(
@@ -241,7 +246,7 @@ def delete_protection_group(
 
 Type annotations for `boto3.client("shield").delete_subscription` method.
 
-[Client.delete_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.delete_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.delete_subscription]
 
 ```python
 def delete_subscription(
@@ -254,7 +259,7 @@ def delete_subscription(
 
 Type annotations for `boto3.client("shield").describe_attack` method.
 
-[Client.describe_attack documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_attack)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_attack]
 
 ```python
 def describe_attack(
@@ -268,7 +273,7 @@ def describe_attack(
 
 Type annotations for `boto3.client("shield").describe_attack_statistics` method.
 
-[Client.describe_attack_statistics documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_attack_statistics)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_attack_statistics]
 
 ```python
 def describe_attack_statistics(
@@ -281,7 +286,7 @@ def describe_attack_statistics(
 
 Type annotations for `boto3.client("shield").describe_drt_access` method.
 
-[Client.describe_drt_access documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_drt_access)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_drt_access]
 
 ```python
 def describe_drt_access(
@@ -294,7 +299,7 @@ def describe_drt_access(
 
 Type annotations for `boto3.client("shield").describe_emergency_contact_settings` method.
 
-[Client.describe_emergency_contact_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_emergency_contact_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_emergency_contact_settings]
 
 ```python
 def describe_emergency_contact_settings(
@@ -307,7 +312,7 @@ def describe_emergency_contact_settings(
 
 Type annotations for `boto3.client("shield").describe_protection` method.
 
-[Client.describe_protection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_protection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_protection]
 
 ```python
 def describe_protection(
@@ -322,7 +327,7 @@ def describe_protection(
 
 Type annotations for `boto3.client("shield").describe_protection_group` method.
 
-[Client.describe_protection_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_protection_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_protection_group]
 
 ```python
 def describe_protection_group(
@@ -336,7 +341,7 @@ def describe_protection_group(
 
 Type annotations for `boto3.client("shield").describe_subscription` method.
 
-[Client.describe_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_subscription]
 
 ```python
 def describe_subscription(
@@ -349,7 +354,7 @@ def describe_subscription(
 
 Type annotations for `boto3.client("shield").disable_proactive_engagement` method.
 
-[Client.disable_proactive_engagement documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disable_proactive_engagement)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disable_proactive_engagement]
 
 ```python
 def disable_proactive_engagement(
@@ -362,7 +367,7 @@ def disable_proactive_engagement(
 
 Type annotations for `boto3.client("shield").disassociate_drt_log_bucket` method.
 
-[Client.disassociate_drt_log_bucket documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disassociate_drt_log_bucket)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disassociate_drt_log_bucket]
 
 ```python
 def disassociate_drt_log_bucket(
@@ -376,7 +381,7 @@ def disassociate_drt_log_bucket(
 
 Type annotations for `boto3.client("shield").disassociate_drt_role` method.
 
-[Client.disassociate_drt_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disassociate_drt_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disassociate_drt_role]
 
 ```python
 def disassociate_drt_role(
@@ -389,7 +394,7 @@ def disassociate_drt_role(
 
 Type annotations for `boto3.client("shield").disassociate_health_check` method.
 
-[Client.disassociate_health_check documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disassociate_health_check)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disassociate_health_check]
 
 ```python
 def disassociate_health_check(
@@ -404,7 +409,7 @@ def disassociate_health_check(
 
 Type annotations for `boto3.client("shield").enable_proactive_engagement` method.
 
-[Client.enable_proactive_engagement documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.enable_proactive_engagement)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.enable_proactive_engagement]
 
 ```python
 def enable_proactive_engagement(
@@ -417,7 +422,7 @@ def enable_proactive_engagement(
 
 Type annotations for `boto3.client("shield").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -434,7 +439,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("shield").get_subscription_state` method.
 
-[Client.get_subscription_state documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.get_subscription_state)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.get_subscription_state]
 
 ```python
 def get_subscription_state(
@@ -447,7 +452,7 @@ def get_subscription_state(
 
 Type annotations for `boto3.client("shield").list_attacks` method.
 
-[Client.list_attacks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_attacks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_attacks]
 
 ```python
 def list_attacks(
@@ -465,7 +470,7 @@ def list_attacks(
 
 Type annotations for `boto3.client("shield").list_protection_groups` method.
 
-[Client.list_protection_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_protection_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_protection_groups]
 
 ```python
 def list_protection_groups(
@@ -480,7 +485,7 @@ def list_protection_groups(
 
 Type annotations for `boto3.client("shield").list_protections` method.
 
-[Client.list_protections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_protections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_protections]
 
 ```python
 def list_protections(
@@ -495,7 +500,7 @@ def list_protections(
 
 Type annotations for `boto3.client("shield").list_resources_in_protection_group` method.
 
-[Client.list_resources_in_protection_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_resources_in_protection_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_resources_in_protection_group]
 
 ```python
 def list_resources_in_protection_group(
@@ -511,7 +516,7 @@ def list_resources_in_protection_group(
 
 Type annotations for `boto3.client("shield").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -525,7 +530,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("shield").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -540,7 +545,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("shield").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -555,7 +560,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("shield").update_emergency_contact_settings` method.
 
-[Client.update_emergency_contact_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_emergency_contact_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_emergency_contact_settings]
 
 ```python
 def update_emergency_contact_settings(
@@ -569,7 +574,7 @@ def update_emergency_contact_settings(
 
 Type annotations for `boto3.client("shield").update_protection_group` method.
 
-[Client.update_protection_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_protection_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_protection_group]
 
 ```python
 def update_protection_group(
@@ -587,7 +592,7 @@ def update_protection_group(
 
 Type annotations for `boto3.client("shield").update_subscription` method.
 
-[Client.update_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_subscription]
 
 ```python
 def update_subscription(

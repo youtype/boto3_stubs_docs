@@ -15,7 +15,7 @@ pip install mypy-boto3-kinesis-video-archived-media
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## KinesisVideoArchivedMediaClient
 
@@ -105,7 +105,7 @@ from mypy_boto3_kinesis_video_archived_media.literals import ClipFragmentSelecto
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

@@ -55,7 +55,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_codeartifact.client import CodeArtifactClient
+
+def get_codeartifact_client() -> CodeArtifactClient:
+    return boto3.client("codeartifact")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client)
 
 ## Exceptions
 
@@ -89,7 +94,7 @@ Exceptions:
 
 Type annotations for `boto3.client("codeartifact").associate_external_connection` method.
 
-[Client.associate_external_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.associate_external_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.associate_external_connection]
 
 ```python
 def associate_external_connection(
@@ -106,7 +111,7 @@ def associate_external_connection(
 
 Type annotations for `boto3.client("codeartifact").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -120,7 +125,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("codeartifact").copy_package_versions` method.
 
-[Client.copy_package_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.copy_package_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.copy_package_versions]
 
 ```python
 def copy_package_versions(
@@ -144,7 +149,7 @@ def copy_package_versions(
 
 Type annotations for `boto3.client("codeartifact").create_domain` method.
 
-[Client.create_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.create_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.create_domain]
 
 ```python
 def create_domain(
@@ -160,7 +165,7 @@ def create_domain(
 
 Type annotations for `boto3.client("codeartifact").create_repository` method.
 
-[Client.create_repository documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.create_repository)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.create_repository]
 
 ```python
 def create_repository(
@@ -179,7 +184,7 @@ def create_repository(
 
 Type annotations for `boto3.client("codeartifact").delete_domain` method.
 
-[Client.delete_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain]
 
 ```python
 def delete_domain(
@@ -194,7 +199,7 @@ def delete_domain(
 
 Type annotations for `boto3.client("codeartifact").delete_domain_permissions_policy` method.
 
-[Client.delete_domain_permissions_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain_permissions_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain_permissions_policy]
 
 ```python
 def delete_domain_permissions_policy(
@@ -210,7 +215,7 @@ def delete_domain_permissions_policy(
 
 Type annotations for `boto3.client("codeartifact").delete_package_versions` method.
 
-[Client.delete_package_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_package_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_package_versions]
 
 ```python
 def delete_package_versions(
@@ -231,7 +236,7 @@ def delete_package_versions(
 
 Type annotations for `boto3.client("codeartifact").delete_repository` method.
 
-[Client.delete_repository documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository]
 
 ```python
 def delete_repository(
@@ -247,7 +252,7 @@ def delete_repository(
 
 Type annotations for `boto3.client("codeartifact").delete_repository_permissions_policy` method.
 
-[Client.delete_repository_permissions_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository_permissions_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository_permissions_policy]
 
 ```python
 def delete_repository_permissions_policy(
@@ -264,7 +269,7 @@ def delete_repository_permissions_policy(
 
 Type annotations for `boto3.client("codeartifact").describe_domain` method.
 
-[Client.describe_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_domain]
 
 ```python
 def describe_domain(
@@ -279,7 +284,7 @@ def describe_domain(
 
 Type annotations for `boto3.client("codeartifact").describe_package_version` method.
 
-[Client.describe_package_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_package_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_package_version]
 
 ```python
 def describe_package_version(
@@ -299,7 +304,7 @@ def describe_package_version(
 
 Type annotations for `boto3.client("codeartifact").describe_repository` method.
 
-[Client.describe_repository documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_repository)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_repository]
 
 ```python
 def describe_repository(
@@ -315,7 +320,7 @@ def describe_repository(
 
 Type annotations for `boto3.client("codeartifact").disassociate_external_connection` method.
 
-[Client.disassociate_external_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.disassociate_external_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.disassociate_external_connection]
 
 ```python
 def disassociate_external_connection(
@@ -332,7 +337,7 @@ def disassociate_external_connection(
 
 Type annotations for `boto3.client("codeartifact").dispose_package_versions` method.
 
-[Client.dispose_package_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.dispose_package_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.dispose_package_versions]
 
 ```python
 def dispose_package_versions(
@@ -354,7 +359,7 @@ def dispose_package_versions(
 
 Type annotations for `boto3.client("codeartifact").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -371,7 +376,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("codeartifact").get_authorization_token` method.
 
-[Client.get_authorization_token documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_authorization_token)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_authorization_token]
 
 ```python
 def get_authorization_token(
@@ -387,7 +392,7 @@ def get_authorization_token(
 
 Type annotations for `boto3.client("codeartifact").get_domain_permissions_policy` method.
 
-[Client.get_domain_permissions_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_domain_permissions_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_domain_permissions_policy]
 
 ```python
 def get_domain_permissions_policy(
@@ -402,7 +407,7 @@ def get_domain_permissions_policy(
 
 Type annotations for `boto3.client("codeartifact").get_package_version_asset` method.
 
-[Client.get_package_version_asset documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_asset)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_asset]
 
 ```python
 def get_package_version_asset(
@@ -424,7 +429,7 @@ def get_package_version_asset(
 
 Type annotations for `boto3.client("codeartifact").get_package_version_readme` method.
 
-[Client.get_package_version_readme documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_readme)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_readme]
 
 ```python
 def get_package_version_readme(
@@ -444,7 +449,7 @@ def get_package_version_readme(
 
 Type annotations for `boto3.client("codeartifact").get_repository_endpoint` method.
 
-[Client.get_repository_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_endpoint]
 
 ```python
 def get_repository_endpoint(
@@ -461,7 +466,7 @@ def get_repository_endpoint(
 
 Type annotations for `boto3.client("codeartifact").get_repository_permissions_policy` method.
 
-[Client.get_repository_permissions_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_permissions_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_permissions_policy]
 
 ```python
 def get_repository_permissions_policy(
@@ -477,7 +482,7 @@ def get_repository_permissions_policy(
 
 Type annotations for `boto3.client("codeartifact").list_domains` method.
 
-[Client.list_domains documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_domains)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_domains]
 
 ```python
 def list_domains(
@@ -492,7 +497,7 @@ def list_domains(
 
 Type annotations for `boto3.client("codeartifact").list_package_version_assets` method.
 
-[Client.list_package_version_assets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_assets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_assets]
 
 ```python
 def list_package_version_assets(
@@ -514,7 +519,7 @@ def list_package_version_assets(
 
 Type annotations for `boto3.client("codeartifact").list_package_version_dependencies` method.
 
-[Client.list_package_version_dependencies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_dependencies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_dependencies]
 
 ```python
 def list_package_version_dependencies(
@@ -535,7 +540,7 @@ def list_package_version_dependencies(
 
 Type annotations for `boto3.client("codeartifact").list_package_versions` method.
 
-[Client.list_package_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_versions]
 
 ```python
 def list_package_versions(
@@ -558,7 +563,7 @@ def list_package_versions(
 
 Type annotations for `boto3.client("codeartifact").list_packages` method.
 
-[Client.list_packages documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_packages)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_packages]
 
 ```python
 def list_packages(
@@ -579,7 +584,7 @@ def list_packages(
 
 Type annotations for `boto3.client("codeartifact").list_repositories` method.
 
-[Client.list_repositories documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories]
 
 ```python
 def list_repositories(
@@ -595,7 +600,7 @@ def list_repositories(
 
 Type annotations for `boto3.client("codeartifact").list_repositories_in_domain` method.
 
-[Client.list_repositories_in_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories_in_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories_in_domain]
 
 ```python
 def list_repositories_in_domain(
@@ -614,7 +619,7 @@ def list_repositories_in_domain(
 
 Type annotations for `boto3.client("codeartifact").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -628,7 +633,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("codeartifact").put_domain_permissions_policy` method.
 
-[Client.put_domain_permissions_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.put_domain_permissions_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.put_domain_permissions_policy]
 
 ```python
 def put_domain_permissions_policy(
@@ -645,7 +650,7 @@ def put_domain_permissions_policy(
 
 Type annotations for `boto3.client("codeartifact").put_repository_permissions_policy` method.
 
-[Client.put_repository_permissions_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.put_repository_permissions_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.put_repository_permissions_policy]
 
 ```python
 def put_repository_permissions_policy(
@@ -663,7 +668,7 @@ def put_repository_permissions_policy(
 
 Type annotations for `boto3.client("codeartifact").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -678,7 +683,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("codeartifact").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -693,7 +698,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("codeartifact").update_package_versions_status` method.
 
-[Client.update_package_versions_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.update_package_versions_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.update_package_versions_status]
 
 ```python
 def update_package_versions_status(
@@ -716,7 +721,7 @@ def update_package_versions_status(
 
 Type annotations for `boto3.client("codeartifact").update_repository` method.
 
-[Client.update_repository documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.update_repository)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.update_repository]
 
 ```python
 def update_repository(

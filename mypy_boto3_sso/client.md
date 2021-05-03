@@ -25,7 +25,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_sso.client import SSOClient
+
+def get_sso_client() -> SSOClient:
+    return boto3.client("sso")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client)
 
 ## Exceptions
 
@@ -56,7 +61,7 @@ Exceptions:
 
 Type annotations for `boto3.client("sso").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -70,7 +75,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("sso").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -87,7 +92,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("sso").get_role_credentials` method.
 
-[Client.get_role_credentials documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.get_role_credentials)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.get_role_credentials]
 
 ```python
 def get_role_credentials(
@@ -103,7 +108,7 @@ def get_role_credentials(
 
 Type annotations for `boto3.client("sso").list_account_roles` method.
 
-[Client.list_account_roles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_account_roles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_account_roles]
 
 ```python
 def list_account_roles(
@@ -120,7 +125,7 @@ def list_account_roles(
 
 Type annotations for `boto3.client("sso").list_accounts` method.
 
-[Client.list_accounts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_accounts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_accounts]
 
 ```python
 def list_accounts(
@@ -136,7 +141,7 @@ def list_accounts(
 
 Type annotations for `boto3.client("sso").logout` method.
 
-[Client.logout documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.logout)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.logout]
 
 ```python
 def logout(

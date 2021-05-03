@@ -15,7 +15,7 @@ pip install mypy-boto3-mediatailor
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## MediaTailorClient
 
@@ -128,7 +128,7 @@ from mypy_boto3_mediatailor.literals import AccessType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

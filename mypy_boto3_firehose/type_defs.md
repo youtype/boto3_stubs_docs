@@ -1,11 +1,11 @@
-# Structures for boto3 Firehose module
+# Typed dictionaries for boto3 Firehose module
 
 > [Index](../README.md) > [Firehose](./README.md) > Structures
 
 Auto-generated documentation for [Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
 type annotations stubs module [mypy_boto3_firehose](https://pypi.org/project/mypy-boto3-firehose/).
 
-- [Structures for boto3 Firehose module](#structures-for-boto3-firehose-module)
+- [Typed dictionaries for boto3 Firehose module](#typed-dictionaries-for-boto3-firehose-module)
   - [BufferingHintsTypeDef](#bufferinghintstypedef)
   - [CloudWatchLoggingOptionsTypeDef](#cloudwatchloggingoptionstypedef)
   - [CopyCommandTypeDef](#copycommandtypedef)
@@ -126,11 +126,11 @@ from mypy_boto3_firehose.type_defs import CreateDeliveryStreamOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DeliveryStreamARN`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DataFormatConversionConfigurationTypeDef
@@ -216,11 +216,9 @@ from mypy_boto3_firehose.type_defs import DescribeDeliveryStreamOutputTypeDef
 
 Required fields:
 - `DeliveryStreamDescription`: `"DeliveryStreamDescriptionTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeserializerTypeDef
@@ -693,11 +691,9 @@ from mypy_boto3_firehose.type_defs import ListDeliveryStreamsOutputTypeDef
 Required fields:
 - `DeliveryStreamNames`: `List[str]`
 - `HasMoreDeliveryStreams`: `bool`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagsForDeliveryStreamOutputTypeDef
@@ -710,11 +706,9 @@ from mypy_boto3_firehose.type_defs import ListTagsForDeliveryStreamOutputTypeDef
 Required fields:
 - `Tags`: `List["TagTypeDef"]`
 - `HasMoreTags`: `bool`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## OpenXJsonSerDeTypeDef
@@ -838,13 +832,11 @@ from mypy_boto3_firehose.type_defs import PutRecordBatchOutputTypeDef
 
 Required fields:
 - `FailedPutCount`: `int`
-- `RequestResponses`: `List["PutRecordBatchResponseEntryTypeDef"]`
-
-
-
-Optional fields:
 - `Encrypted`: `bool`
+- `RequestResponses`: `List["PutRecordBatchResponseEntryTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PutRecordBatchResponseEntryTypeDef
@@ -871,12 +863,10 @@ from mypy_boto3_firehose.type_defs import PutRecordOutputTypeDef
 
 Required fields:
 - `RecordId`: `str`
-
-
-
-Optional fields:
 - `Encrypted`: `bool`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## RecordTypeDef

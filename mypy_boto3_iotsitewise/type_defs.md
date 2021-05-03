@@ -1,11 +1,11 @@
-# Structures for boto3 IoTSiteWise module
+# Typed dictionaries for boto3 IoTSiteWise module
 
 > [Index](../README.md) > [IoTSiteWise](./README.md) > Structures
 
 Auto-generated documentation for [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
 type annotations stubs module [mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
-- [Structures for boto3 IoTSiteWise module](#structures-for-boto3-iotsitewise-module)
+- [Typed dictionaries for boto3 IoTSiteWise module](#typed-dictionaries-for-boto3-iotsitewise-module)
   - [AccessPolicySummaryTypeDef](#accesspolicysummarytypedef)
   - [AggregatedValueTypeDef](#aggregatedvaluetypedef)
   - [AggregatesTypeDef](#aggregatestypedef)

@@ -61,7 +61,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_license_manager.client import LicenseManagerClient
+
+def get_license-manager_client() -> LicenseManagerClient:
+    return boto3.client("license-manager")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client)
 
 ## Exceptions
 
@@ -105,7 +110,7 @@ Exceptions:
 
 Type annotations for `boto3.client("license-manager").accept_grant` method.
 
-[Client.accept_grant documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.accept_grant)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.accept_grant]
 
 ```python
 def accept_grant(
@@ -119,7 +124,7 @@ def accept_grant(
 
 Type annotations for `boto3.client("license-manager").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -133,7 +138,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("license-manager").check_in_license` method.
 
-[Client.check_in_license documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.check_in_license)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.check_in_license]
 
 ```python
 def check_in_license(
@@ -148,7 +153,7 @@ def check_in_license(
 
 Type annotations for `boto3.client("license-manager").checkout_borrow_license` method.
 
-[Client.checkout_borrow_license documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.checkout_borrow_license)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.checkout_borrow_license]
 
 ```python
 def checkout_borrow_license(
@@ -167,7 +172,7 @@ def checkout_borrow_license(
 
 Type annotations for `boto3.client("license-manager").checkout_license` method.
 
-[Client.checkout_license documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.checkout_license)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.checkout_license]
 
 ```python
 def checkout_license(
@@ -187,7 +192,7 @@ def checkout_license(
 
 Type annotations for `boto3.client("license-manager").create_grant` method.
 
-[Client.create_grant documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_grant)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_grant]
 
 ```python
 def create_grant(
@@ -206,7 +211,7 @@ def create_grant(
 
 Type annotations for `boto3.client("license-manager").create_grant_version` method.
 
-[Client.create_grant_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_grant_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_grant_version]
 
 ```python
 def create_grant_version(
@@ -225,7 +230,7 @@ def create_grant_version(
 
 Type annotations for `boto3.client("license-manager").create_license` method.
 
-[Client.create_license documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license]
 
 ```python
 def create_license(
@@ -249,7 +254,7 @@ def create_license(
 
 Type annotations for `boto3.client("license-manager").create_license_configuration` method.
 
-[Client.create_license_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_configuration]
 
 ```python
 def create_license_configuration(
@@ -271,7 +276,7 @@ def create_license_configuration(
 
 Type annotations for `boto3.client("license-manager").create_license_version` method.
 
-[Client.create_license_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_version]
 
 ```python
 def create_license_version(
@@ -296,7 +301,7 @@ def create_license_version(
 
 Type annotations for `boto3.client("license-manager").create_token` method.
 
-[Client.create_token documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_token)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_token]
 
 ```python
 def create_token(
@@ -314,7 +319,7 @@ def create_token(
 
 Type annotations for `boto3.client("license-manager").delete_grant` method.
 
-[Client.delete_grant documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_grant)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_grant]
 
 ```python
 def delete_grant(
@@ -329,7 +334,7 @@ def delete_grant(
 
 Type annotations for `boto3.client("license-manager").delete_license` method.
 
-[Client.delete_license documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license]
 
 ```python
 def delete_license(
@@ -344,7 +349,7 @@ def delete_license(
 
 Type annotations for `boto3.client("license-manager").delete_license_configuration` method.
 
-[Client.delete_license_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license_configuration]
 
 ```python
 def delete_license_configuration(
@@ -358,7 +363,7 @@ def delete_license_configuration(
 
 Type annotations for `boto3.client("license-manager").delete_token` method.
 
-[Client.delete_token documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_token)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_token]
 
 ```python
 def delete_token(
@@ -372,7 +377,7 @@ def delete_token(
 
 Type annotations for `boto3.client("license-manager").extend_license_consumption` method.
 
-[Client.extend_license_consumption documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.extend_license_consumption)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.extend_license_consumption]
 
 ```python
 def extend_license_consumption(
@@ -387,7 +392,7 @@ def extend_license_consumption(
 
 Type annotations for `boto3.client("license-manager").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -404,7 +409,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("license-manager").get_access_token` method.
 
-[Client.get_access_token documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_access_token)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_access_token]
 
 ```python
 def get_access_token(
@@ -419,7 +424,7 @@ def get_access_token(
 
 Type annotations for `boto3.client("license-manager").get_grant` method.
 
-[Client.get_grant documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_grant)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_grant]
 
 ```python
 def get_grant(
@@ -434,7 +439,7 @@ def get_grant(
 
 Type annotations for `boto3.client("license-manager").get_license` method.
 
-[Client.get_license documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license]
 
 ```python
 def get_license(
@@ -449,7 +454,7 @@ def get_license(
 
 Type annotations for `boto3.client("license-manager").get_license_configuration` method.
 
-[Client.get_license_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_configuration]
 
 ```python
 def get_license_configuration(
@@ -463,7 +468,7 @@ def get_license_configuration(
 
 Type annotations for `boto3.client("license-manager").get_license_usage` method.
 
-[Client.get_license_usage documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_usage)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_usage]
 
 ```python
 def get_license_usage(
@@ -477,7 +482,7 @@ def get_license_usage(
 
 Type annotations for `boto3.client("license-manager").get_service_settings` method.
 
-[Client.get_service_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_service_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_service_settings]
 
 ```python
 def get_service_settings(
@@ -490,7 +495,7 @@ def get_service_settings(
 
 Type annotations for `boto3.client("license-manager").list_associations_for_license_configuration` method.
 
-[Client.list_associations_for_license_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_associations_for_license_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_associations_for_license_configuration]
 
 ```python
 def list_associations_for_license_configuration(
@@ -506,7 +511,7 @@ def list_associations_for_license_configuration(
 
 Type annotations for `boto3.client("license-manager").list_distributed_grants` method.
 
-[Client.list_distributed_grants documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_distributed_grants)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_distributed_grants]
 
 ```python
 def list_distributed_grants(
@@ -523,7 +528,7 @@ def list_distributed_grants(
 
 Type annotations for `boto3.client("license-manager").list_failures_for_license_configuration_operations` method.
 
-[Client.list_failures_for_license_configuration_operations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_failures_for_license_configuration_operations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_failures_for_license_configuration_operations]
 
 ```python
 def list_failures_for_license_configuration_operations(
@@ -539,7 +544,7 @@ def list_failures_for_license_configuration_operations(
 
 Type annotations for `boto3.client("license-manager").list_license_configurations` method.
 
-[Client.list_license_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_configurations]
 
 ```python
 def list_license_configurations(
@@ -556,7 +561,7 @@ def list_license_configurations(
 
 Type annotations for `boto3.client("license-manager").list_license_specifications_for_resource` method.
 
-[Client.list_license_specifications_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_specifications_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_specifications_for_resource]
 
 ```python
 def list_license_specifications_for_resource(
@@ -572,7 +577,7 @@ def list_license_specifications_for_resource(
 
 Type annotations for `boto3.client("license-manager").list_license_versions` method.
 
-[Client.list_license_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_versions]
 
 ```python
 def list_license_versions(
@@ -588,7 +593,7 @@ def list_license_versions(
 
 Type annotations for `boto3.client("license-manager").list_licenses` method.
 
-[Client.list_licenses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_licenses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_licenses]
 
 ```python
 def list_licenses(
@@ -605,7 +610,7 @@ def list_licenses(
 
 Type annotations for `boto3.client("license-manager").list_received_grants` method.
 
-[Client.list_received_grants documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_received_grants)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_received_grants]
 
 ```python
 def list_received_grants(
@@ -622,7 +627,7 @@ def list_received_grants(
 
 Type annotations for `boto3.client("license-manager").list_received_licenses` method.
 
-[Client.list_received_licenses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_received_licenses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_received_licenses]
 
 ```python
 def list_received_licenses(
@@ -639,7 +644,7 @@ def list_received_licenses(
 
 Type annotations for `boto3.client("license-manager").list_resource_inventory` method.
 
-[Client.list_resource_inventory documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_resource_inventory)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_resource_inventory]
 
 ```python
 def list_resource_inventory(
@@ -655,7 +660,7 @@ def list_resource_inventory(
 
 Type annotations for `boto3.client("license-manager").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -669,7 +674,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("license-manager").list_tokens` method.
 
-[Client.list_tokens documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_tokens)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_tokens]
 
 ```python
 def list_tokens(
@@ -686,7 +691,7 @@ def list_tokens(
 
 Type annotations for `boto3.client("license-manager").list_usage_for_license_configuration` method.
 
-[Client.list_usage_for_license_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_usage_for_license_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_usage_for_license_configuration]
 
 ```python
 def list_usage_for_license_configuration(
@@ -703,7 +708,7 @@ def list_usage_for_license_configuration(
 
 Type annotations for `boto3.client("license-manager").reject_grant` method.
 
-[Client.reject_grant documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.reject_grant)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.reject_grant]
 
 ```python
 def reject_grant(
@@ -717,7 +722,7 @@ def reject_grant(
 
 Type annotations for `boto3.client("license-manager").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -732,7 +737,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("license-manager").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -747,7 +752,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("license-manager").update_license_configuration` method.
 
-[Client.update_license_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_configuration]
 
 ```python
 def update_license_configuration(
@@ -769,7 +774,7 @@ def update_license_configuration(
 
 Type annotations for `boto3.client("license-manager").update_license_specifications_for_resource` method.
 
-[Client.update_license_specifications_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_specifications_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_specifications_for_resource]
 
 ```python
 def update_license_specifications_for_resource(
@@ -785,7 +790,7 @@ def update_license_specifications_for_resource(
 
 Type annotations for `boto3.client("license-manager").update_service_settings` method.
 
-[Client.update_service_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_service_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_service_settings]
 
 ```python
 def update_service_settings(

@@ -1,11 +1,11 @@
-# Structures for boto3 Connect module
+# Typed dictionaries for boto3 Connect module
 
 > [Index](../README.md) > [Connect](./README.md) > Structures
 
 Auto-generated documentation for [Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
 type annotations stubs module [mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
 
-- [Structures for boto3 Connect module](#structures-for-boto3-connect-module)
+- [Typed dictionaries for boto3 Connect module](#typed-dictionaries-for-boto3-connect-module)
   - [AssociateInstanceStorageConfigResponseTypeDef](#associateinstancestorageconfigresponsetypedef)
   - [AssociateSecurityKeyResponseTypeDef](#associatesecuritykeyresponsetypedef)
   - [AttributeTypeDef](#attributetypedef)

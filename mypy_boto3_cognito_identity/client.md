@@ -44,7 +44,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_cognito_identity.client import CognitoIdentityClient
+
+def get_cognito-identity_client() -> CognitoIdentityClient:
+    return boto3.client("cognito-identity")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client)
 
 ## Exceptions
 
@@ -82,7 +87,7 @@ Exceptions:
 
 Type annotations for `boto3.client("cognito-identity").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -96,7 +101,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("cognito-identity").create_identity_pool` method.
 
-[Client.create_identity_pool documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.create_identity_pool)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.create_identity_pool]
 
 ```python
 def create_identity_pool(
@@ -118,7 +123,7 @@ def create_identity_pool(
 
 Type annotations for `boto3.client("cognito-identity").delete_identities` method.
 
-[Client.delete_identities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identities]
 
 ```python
 def delete_identities(
@@ -132,7 +137,7 @@ def delete_identities(
 
 Type annotations for `boto3.client("cognito-identity").delete_identity_pool` method.
 
-[Client.delete_identity_pool documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identity_pool)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identity_pool]
 
 ```python
 def delete_identity_pool(
@@ -146,7 +151,7 @@ def delete_identity_pool(
 
 Type annotations for `boto3.client("cognito-identity").describe_identity` method.
 
-[Client.describe_identity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity]
 
 ```python
 def describe_identity(
@@ -160,7 +165,7 @@ def describe_identity(
 
 Type annotations for `boto3.client("cognito-identity").describe_identity_pool` method.
 
-[Client.describe_identity_pool documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity_pool)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity_pool]
 
 ```python
 def describe_identity_pool(
@@ -174,7 +179,7 @@ def describe_identity_pool(
 
 Type annotations for `boto3.client("cognito-identity").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -191,7 +196,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("cognito-identity").get_credentials_for_identity` method.
 
-[Client.get_credentials_for_identity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_credentials_for_identity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_credentials_for_identity]
 
 ```python
 def get_credentials_for_identity(
@@ -207,7 +212,7 @@ def get_credentials_for_identity(
 
 Type annotations for `boto3.client("cognito-identity").get_id` method.
 
-[Client.get_id documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_id)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_id]
 
 ```python
 def get_id(
@@ -223,7 +228,7 @@ def get_id(
 
 Type annotations for `boto3.client("cognito-identity").get_identity_pool_roles` method.
 
-[Client.get_identity_pool_roles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_identity_pool_roles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_identity_pool_roles]
 
 ```python
 def get_identity_pool_roles(
@@ -237,7 +242,7 @@ def get_identity_pool_roles(
 
 Type annotations for `boto3.client("cognito-identity").get_open_id_token` method.
 
-[Client.get_open_id_token documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token]
 
 ```python
 def get_open_id_token(
@@ -252,7 +257,7 @@ def get_open_id_token(
 
 Type annotations for `boto3.client("cognito-identity").get_open_id_token_for_developer_identity` method.
 
-[Client.get_open_id_token_for_developer_identity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token_for_developer_identity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token_for_developer_identity]
 
 ```python
 def get_open_id_token_for_developer_identity(
@@ -270,7 +275,7 @@ def get_open_id_token_for_developer_identity(
 
 Type annotations for `boto3.client("cognito-identity").get_principal_tag_attribute_map` method.
 
-[Client.get_principal_tag_attribute_map documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_principal_tag_attribute_map)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_principal_tag_attribute_map]
 
 ```python
 def get_principal_tag_attribute_map(
@@ -285,7 +290,7 @@ def get_principal_tag_attribute_map(
 
 Type annotations for `boto3.client("cognito-identity").list_identities` method.
 
-[Client.list_identities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identities]
 
 ```python
 def list_identities(
@@ -302,7 +307,7 @@ def list_identities(
 
 Type annotations for `boto3.client("cognito-identity").list_identity_pools` method.
 
-[Client.list_identity_pools documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identity_pools)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identity_pools]
 
 ```python
 def list_identity_pools(
@@ -317,7 +322,7 @@ def list_identity_pools(
 
 Type annotations for `boto3.client("cognito-identity").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -331,7 +336,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("cognito-identity").lookup_developer_identity` method.
 
-[Client.lookup_developer_identity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.lookup_developer_identity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.lookup_developer_identity]
 
 ```python
 def lookup_developer_identity(
@@ -349,7 +354,7 @@ def lookup_developer_identity(
 
 Type annotations for `boto3.client("cognito-identity").merge_developer_identities` method.
 
-[Client.merge_developer_identities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.merge_developer_identities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.merge_developer_identities]
 
 ```python
 def merge_developer_identities(
@@ -366,7 +371,7 @@ def merge_developer_identities(
 
 Type annotations for `boto3.client("cognito-identity").set_identity_pool_roles` method.
 
-[Client.set_identity_pool_roles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.set_identity_pool_roles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.set_identity_pool_roles]
 
 ```python
 def set_identity_pool_roles(
@@ -382,7 +387,7 @@ def set_identity_pool_roles(
 
 Type annotations for `boto3.client("cognito-identity").set_principal_tag_attribute_map` method.
 
-[Client.set_principal_tag_attribute_map documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.set_principal_tag_attribute_map)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.set_principal_tag_attribute_map]
 
 ```python
 def set_principal_tag_attribute_map(
@@ -399,7 +404,7 @@ def set_principal_tag_attribute_map(
 
 Type annotations for `boto3.client("cognito-identity").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -414,7 +419,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("cognito-identity").unlink_developer_identity` method.
 
-[Client.unlink_developer_identity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_developer_identity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_developer_identity]
 
 ```python
 def unlink_developer_identity(
@@ -431,7 +436,7 @@ def unlink_developer_identity(
 
 Type annotations for `boto3.client("cognito-identity").unlink_identity` method.
 
-[Client.unlink_identity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_identity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_identity]
 
 ```python
 def unlink_identity(
@@ -447,7 +452,7 @@ def unlink_identity(
 
 Type annotations for `boto3.client("cognito-identity").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -462,7 +467,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("cognito-identity").update_identity_pool` method.
 
-[Client.update_identity_pool documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.update_identity_pool)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.update_identity_pool]
 
 ```python
 def update_identity_pool(

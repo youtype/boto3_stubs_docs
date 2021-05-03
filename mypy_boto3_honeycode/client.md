@@ -33,7 +33,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_honeycode.client import HoneycodeClient
+
+def get_honeycode_client() -> HoneycodeClient:
+    return boto3.client("honeycode")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client)
 
 ## Exceptions
 
@@ -70,7 +75,7 @@ Exceptions:
 
 Type annotations for `boto3.client("honeycode").batch_create_table_rows` method.
 
-[Client.batch_create_table_rows documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_create_table_rows)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_create_table_rows]
 
 ```python
 def batch_create_table_rows(
@@ -87,7 +92,7 @@ def batch_create_table_rows(
 
 Type annotations for `boto3.client("honeycode").batch_delete_table_rows` method.
 
-[Client.batch_delete_table_rows documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_delete_table_rows)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_delete_table_rows]
 
 ```python
 def batch_delete_table_rows(
@@ -104,7 +109,7 @@ def batch_delete_table_rows(
 
 Type annotations for `boto3.client("honeycode").batch_update_table_rows` method.
 
-[Client.batch_update_table_rows documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_update_table_rows)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_update_table_rows]
 
 ```python
 def batch_update_table_rows(
@@ -121,7 +126,7 @@ def batch_update_table_rows(
 
 Type annotations for `boto3.client("honeycode").batch_upsert_table_rows` method.
 
-[Client.batch_upsert_table_rows documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_upsert_table_rows)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_upsert_table_rows]
 
 ```python
 def batch_upsert_table_rows(
@@ -138,7 +143,7 @@ def batch_upsert_table_rows(
 
 Type annotations for `boto3.client("honeycode").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -152,7 +157,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("honeycode").describe_table_data_import_job` method.
 
-[Client.describe_table_data_import_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.describe_table_data_import_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.describe_table_data_import_job]
 
 ```python
 def describe_table_data_import_job(
@@ -168,7 +173,7 @@ def describe_table_data_import_job(
 
 Type annotations for `boto3.client("honeycode").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -185,7 +190,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("honeycode").get_screen_data` method.
 
-[Client.get_screen_data documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.get_screen_data)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.get_screen_data]
 
 ```python
 def get_screen_data(
@@ -204,7 +209,7 @@ def get_screen_data(
 
 Type annotations for `boto3.client("honeycode").invoke_screen_automation` method.
 
-[Client.invoke_screen_automation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.invoke_screen_automation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.invoke_screen_automation]
 
 ```python
 def invoke_screen_automation(
@@ -224,7 +229,7 @@ def invoke_screen_automation(
 
 Type annotations for `boto3.client("honeycode").list_table_columns` method.
 
-[Client.list_table_columns documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_table_columns)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_table_columns]
 
 ```python
 def list_table_columns(
@@ -240,7 +245,7 @@ def list_table_columns(
 
 Type annotations for `boto3.client("honeycode").list_table_rows` method.
 
-[Client.list_table_rows documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_table_rows)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_table_rows]
 
 ```python
 def list_table_rows(
@@ -258,7 +263,7 @@ def list_table_rows(
 
 Type annotations for `boto3.client("honeycode").list_tables` method.
 
-[Client.list_tables documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_tables)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_tables]
 
 ```python
 def list_tables(
@@ -274,7 +279,7 @@ def list_tables(
 
 Type annotations for `boto3.client("honeycode").query_table_rows` method.
 
-[Client.query_table_rows documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.query_table_rows)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.query_table_rows]
 
 ```python
 def query_table_rows(
@@ -292,7 +297,7 @@ def query_table_rows(
 
 Type annotations for `boto3.client("honeycode").start_table_data_import_job` method.
 
-[Client.start_table_data_import_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.start_table_data_import_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.start_table_data_import_job]
 
 ```python
 def start_table_data_import_job(

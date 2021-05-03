@@ -17,13 +17,13 @@ Type annotations for `boto3.client("lambda").get_waiter("function_active")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_lambda.waiters import FunctionActiveWaiter
+from mypy_boto3_lambda.waiter import FunctionActiveWaiter
 
 def get_function_active_waiter() -> FunctionActiveWaiter:
     return boto3.client("lambda").get_waiter("function_active")
 ```
 
-[Waiter.FunctionActive documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionActive)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.function_active)
 
 ```python
 class FunctionActiveWaiter(Boto3Waiter):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("lambda").get_waiter("function_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_lambda.waiters import FunctionExistsWaiter
+from mypy_boto3_lambda.waiter import FunctionExistsWaiter
 
 def get_function_exists_waiter() -> FunctionExistsWaiter:
     return boto3.client("lambda").get_waiter("function_exists")
 ```
 
-[Waiter.FunctionExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.function_exists)
 
 ```python
 class FunctionExistsWaiter(Boto3Waiter):
@@ -67,13 +67,13 @@ Type annotations for `boto3.client("lambda").get_waiter("function_updated")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_lambda.waiters import FunctionUpdatedWaiter
+from mypy_boto3_lambda.waiter import FunctionUpdatedWaiter
 
 def get_function_updated_waiter() -> FunctionUpdatedWaiter:
     return boto3.client("lambda").get_waiter("function_updated")
 ```
 
-[Waiter.FunctionUpdated documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionUpdated)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.function_updated)
 
 ```python
 class FunctionUpdatedWaiter(Boto3Waiter):

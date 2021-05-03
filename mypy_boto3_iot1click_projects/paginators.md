@@ -16,13 +16,13 @@ Type annotations for `boto3.client("iot1click-projects").get_paginator("list_pla
 Can be used directly:
 
 ```python
-from mypy_boto3_iot1click_projects.paginators import ListPlacementsPaginator
+from mypy_boto3_iot1click_projects.paginator import ListPlacementsPaginator
 
 def get_list_placements_paginator() -> ListPlacementsPaginator:
     return boto3.client("iot1click-projects").get_paginator("list_placements")
 ```
 
-[Paginator.ListPlacements documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Paginator.ListPlacements)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Paginator.ListPlacements)
 
 ```python
 class ListPlacementsPaginator(Boto3Paginator):
@@ -40,13 +40,13 @@ Type annotations for `boto3.client("iot1click-projects").get_paginator("list_pro
 Can be used directly:
 
 ```python
-from mypy_boto3_iot1click_projects.paginators import ListProjectsPaginator
+from mypy_boto3_iot1click_projects.paginator import ListProjectsPaginator
 
 def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("iot1click-projects").get_paginator("list_projects")
 ```
 
-[Paginator.ListProjects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Paginator.ListProjects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Paginator.ListProjects)
 
 ```python
 class ListProjectsPaginator(Boto3Paginator):

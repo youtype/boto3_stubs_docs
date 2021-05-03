@@ -1,11 +1,11 @@
-# Structures for boto3 CognitoIdentityProvider module
+# Typed dictionaries for boto3 CognitoIdentityProvider module
 
 > [Index](../README.md) > [CognitoIdentityProvider](./README.md) > Structures
 
 Auto-generated documentation for [CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
 type annotations stubs module [mypy_boto3_cognito_idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
 
-- [Structures for boto3 CognitoIdentityProvider module](#structures-for-boto3-cognitoidentityprovider-module)
+- [Typed dictionaries for boto3 CognitoIdentityProvider module](#typed-dictionaries-for-boto3-cognitoidentityprovider-module)
   - [AccountRecoverySettingTypeTypeDef](#accountrecoverysettingtypetypedef)
   - [AccountTakeoverActionTypeTypeDef](#accounttakeoveractiontypetypedef)
   - [AccountTakeoverActionsTypeTypeDef](#accounttakeoveractionstypetypedef)

@@ -26,7 +26,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_sagemaker_a2i_runtime.client import AugmentedAIRuntimeClient
+
+def get_sagemaker-a2i-runtime_client() -> AugmentedAIRuntimeClient:
+    return boto3.client("sagemaker-a2i-runtime")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client)
 
 ## Exceptions
 
@@ -59,7 +64,7 @@ Exceptions:
 
 Type annotations for `boto3.client("sagemaker-a2i-runtime").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -73,7 +78,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("sagemaker-a2i-runtime").delete_human_loop` method.
 
-[Client.delete_human_loop documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.delete_human_loop)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.delete_human_loop]
 
 ```python
 def delete_human_loop(
@@ -87,7 +92,7 @@ def delete_human_loop(
 
 Type annotations for `boto3.client("sagemaker-a2i-runtime").describe_human_loop` method.
 
-[Client.describe_human_loop documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.describe_human_loop)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.describe_human_loop]
 
 ```python
 def describe_human_loop(
@@ -101,7 +106,7 @@ def describe_human_loop(
 
 Type annotations for `boto3.client("sagemaker-a2i-runtime").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -118,7 +123,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("sagemaker-a2i-runtime").list_human_loops` method.
 
-[Client.list_human_loops documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.list_human_loops)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.list_human_loops]
 
 ```python
 def list_human_loops(
@@ -137,7 +142,7 @@ def list_human_loops(
 
 Type annotations for `boto3.client("sagemaker-a2i-runtime").start_human_loop` method.
 
-[Client.start_human_loop documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.start_human_loop)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.start_human_loop]
 
 ```python
 def start_human_loop(
@@ -154,7 +159,7 @@ def start_human_loop(
 
 Type annotations for `boto3.client("sagemaker-a2i-runtime").stop_human_loop` method.
 
-[Client.stop_human_loop documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.stop_human_loop)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.stop_human_loop]
 
 ```python
 def stop_human_loop(

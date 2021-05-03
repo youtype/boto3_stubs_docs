@@ -15,7 +15,7 @@ pip install mypy-boto3-servicecatalog
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ServiceCatalogClient
 
@@ -239,7 +239,7 @@ from mypy_boto3_servicecatalog.literals import AccessLevelFilterKey, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

@@ -15,7 +15,7 @@ pip install mypy-boto3-application-autoscaling
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ApplicationAutoScalingClient
 
@@ -111,7 +111,7 @@ from mypy_boto3_application_autoscaling.literals import AdjustmentType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

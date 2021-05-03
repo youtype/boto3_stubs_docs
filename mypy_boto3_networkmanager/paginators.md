@@ -23,13 +23,13 @@ Type annotations for `boto3.client("networkmanager").get_paginator("describe_glo
 Can be used directly:
 
 ```python
-from mypy_boto3_networkmanager.paginators import DescribeGlobalNetworksPaginator
+from mypy_boto3_networkmanager.paginator import DescribeGlobalNetworksPaginator
 
 def get_describe_global_networks_paginator() -> DescribeGlobalNetworksPaginator:
     return boto3.client("networkmanager").get_paginator("describe_global_networks")
 ```
 
-[Paginator.DescribeGlobalNetworks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.DescribeGlobalNetworks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.DescribeGlobalNetworks)
 
 ```python
 class DescribeGlobalNetworksPaginator(Boto3Paginator):
@@ -47,13 +47,13 @@ Type annotations for `boto3.client("networkmanager").get_paginator("get_connecti
 Can be used directly:
 
 ```python
-from mypy_boto3_networkmanager.paginators import GetConnectionsPaginator
+from mypy_boto3_networkmanager.paginator import GetConnectionsPaginator
 
 def get_get_connections_paginator() -> GetConnectionsPaginator:
     return boto3.client("networkmanager").get_paginator("get_connections")
 ```
 
-[Paginator.GetConnections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetConnections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetConnections)
 
 ```python
 class GetConnectionsPaginator(Boto3Paginator):
@@ -73,13 +73,13 @@ Type annotations for `boto3.client("networkmanager").get_paginator("get_customer
 Can be used directly:
 
 ```python
-from mypy_boto3_networkmanager.paginators import GetCustomerGatewayAssociationsPaginator
+from mypy_boto3_networkmanager.paginator import GetCustomerGatewayAssociationsPaginator
 
 def get_get_customer_gateway_associations_paginator() -> GetCustomerGatewayAssociationsPaginator:
     return boto3.client("networkmanager").get_paginator("get_customer_gateway_associations")
 ```
 
-[Paginator.GetCustomerGatewayAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetCustomerGatewayAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetCustomerGatewayAssociations)
 
 ```python
 class GetCustomerGatewayAssociationsPaginator(Boto3Paginator):
@@ -98,13 +98,13 @@ Type annotations for `boto3.client("networkmanager").get_paginator("get_devices"
 Can be used directly:
 
 ```python
-from mypy_boto3_networkmanager.paginators import GetDevicesPaginator
+from mypy_boto3_networkmanager.paginator import GetDevicesPaginator
 
 def get_get_devices_paginator() -> GetDevicesPaginator:
     return boto3.client("networkmanager").get_paginator("get_devices")
 ```
 
-[Paginator.GetDevices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetDevices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetDevices)
 
 ```python
 class GetDevicesPaginator(Boto3Paginator):
@@ -124,13 +124,13 @@ Type annotations for `boto3.client("networkmanager").get_paginator("get_link_ass
 Can be used directly:
 
 ```python
-from mypy_boto3_networkmanager.paginators import GetLinkAssociationsPaginator
+from mypy_boto3_networkmanager.paginator import GetLinkAssociationsPaginator
 
 def get_get_link_associations_paginator() -> GetLinkAssociationsPaginator:
     return boto3.client("networkmanager").get_paginator("get_link_associations")
 ```
 
-[Paginator.GetLinkAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetLinkAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetLinkAssociations)
 
 ```python
 class GetLinkAssociationsPaginator(Boto3Paginator):
@@ -150,13 +150,13 @@ Type annotations for `boto3.client("networkmanager").get_paginator("get_links")`
 Can be used directly:
 
 ```python
-from mypy_boto3_networkmanager.paginators import GetLinksPaginator
+from mypy_boto3_networkmanager.paginator import GetLinksPaginator
 
 def get_get_links_paginator() -> GetLinksPaginator:
     return boto3.client("networkmanager").get_paginator("get_links")
 ```
 
-[Paginator.GetLinks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetLinks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetLinks)
 
 ```python
 class GetLinksPaginator(Boto3Paginator):
@@ -178,13 +178,13 @@ Type annotations for `boto3.client("networkmanager").get_paginator("get_sites")`
 Can be used directly:
 
 ```python
-from mypy_boto3_networkmanager.paginators import GetSitesPaginator
+from mypy_boto3_networkmanager.paginator import GetSitesPaginator
 
 def get_get_sites_paginator() -> GetSitesPaginator:
     return boto3.client("networkmanager").get_paginator("get_sites")
 ```
 
-[Paginator.GetSites documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetSites)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetSites)
 
 ```python
 class GetSitesPaginator(Boto3Paginator):
@@ -203,13 +203,13 @@ Type annotations for `boto3.client("networkmanager").get_paginator("get_transit_
 Can be used directly:
 
 ```python
-from mypy_boto3_networkmanager.paginators import GetTransitGatewayConnectPeerAssociationsPaginator
+from mypy_boto3_networkmanager.paginator import GetTransitGatewayConnectPeerAssociationsPaginator
 
 def get_get_transit_gateway_connect_peer_associations_paginator() -> GetTransitGatewayConnectPeerAssociationsPaginator:
     return boto3.client("networkmanager").get_paginator("get_transit_gateway_connect_peer_associations")
 ```
 
-[Paginator.GetTransitGatewayConnectPeerAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetTransitGatewayConnectPeerAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetTransitGatewayConnectPeerAssociations)
 
 ```python
 class GetTransitGatewayConnectPeerAssociationsPaginator(Boto3Paginator):
@@ -228,13 +228,13 @@ Type annotations for `boto3.client("networkmanager").get_paginator("get_transit_
 Can be used directly:
 
 ```python
-from mypy_boto3_networkmanager.paginators import GetTransitGatewayRegistrationsPaginator
+from mypy_boto3_networkmanager.paginator import GetTransitGatewayRegistrationsPaginator
 
 def get_get_transit_gateway_registrations_paginator() -> GetTransitGatewayRegistrationsPaginator:
     return boto3.client("networkmanager").get_paginator("get_transit_gateway_registrations")
 ```
 
-[Paginator.GetTransitGatewayRegistrations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetTransitGatewayRegistrations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetTransitGatewayRegistrations)
 
 ```python
 class GetTransitGatewayRegistrationsPaginator(Boto3Paginator):

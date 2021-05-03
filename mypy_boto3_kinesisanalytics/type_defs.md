@@ -1,11 +1,11 @@
-# Structures for boto3 KinesisAnalytics module
+# Typed dictionaries for boto3 KinesisAnalytics module
 
 > [Index](../README.md) > [KinesisAnalytics](./README.md) > Structures
 
 Auto-generated documentation for [KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics)
 type annotations stubs module [mypy_boto3_kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).
 
-- [Structures for boto3 KinesisAnalytics module](#structures-for-boto3-kinesisanalytics-module)
+- [Typed dictionaries for boto3 KinesisAnalytics module](#typed-dictionaries-for-boto3-kinesisanalytics-module)
   - [ApplicationDetailTypeDef](#applicationdetailtypedef)
   - [ApplicationSummaryTypeDef](#applicationsummarytypedef)
   - [ApplicationUpdateTypeDef](#applicationupdatetypedef)
@@ -531,11 +531,9 @@ from mypy_boto3_kinesisanalytics.type_defs import KinesisFirehoseOutputTypeDef
 Required fields:
 - `ResourceARN`: `str`
 - `RoleARN`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## KinesisFirehoseOutputUpdateTypeDef
@@ -618,11 +616,9 @@ from mypy_boto3_kinesisanalytics.type_defs import KinesisStreamsOutputTypeDef
 Required fields:
 - `ResourceARN`: `str`
 - `RoleARN`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## KinesisStreamsOutputUpdateTypeDef
@@ -663,11 +659,9 @@ from mypy_boto3_kinesisanalytics.type_defs import LambdaOutputTypeDef
 Required fields:
 - `ResourceARN`: `str`
 - `RoleARN`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## LambdaOutputUpdateTypeDef
@@ -752,15 +746,13 @@ from mypy_boto3_kinesisanalytics.type_defs import OutputTypeDef
 
 Required fields:
 - `Name`: `str`
-- `DestinationSchema`: `"DestinationSchemaTypeDef"`
-
-
-
-Optional fields:
 - `KinesisStreamsOutput`: `"KinesisStreamsOutputTypeDef"`
 - `KinesisFirehoseOutput`: `"KinesisFirehoseOutputTypeDef"`
 - `LambdaOutput`: `"LambdaOutputTypeDef"`
+- `DestinationSchema`: `"DestinationSchemaTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## OutputUpdateTypeDef

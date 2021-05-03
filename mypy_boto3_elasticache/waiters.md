@@ -18,13 +18,13 @@ Type annotations for `boto3.client("elasticache").get_waiter("cache_cluster_avai
 Can be used directly:
 
 ```python
-from mypy_boto3_elasticache.waiters import CacheClusterAvailableWaiter
+from mypy_boto3_elasticache.waiter import CacheClusterAvailableWaiter
 
 def get_cache_cluster_available_waiter() -> CacheClusterAvailableWaiter:
     return boto3.client("elasticache").get_waiter("cache_cluster_available")
 ```
 
-[Waiter.CacheClusterAvailable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.CacheClusterAvailable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.cache_cluster_available)
 
 ```python
 class CacheClusterAvailableWaiter(Boto3Waiter):
@@ -46,13 +46,13 @@ Type annotations for `boto3.client("elasticache").get_waiter("cache_cluster_dele
 Can be used directly:
 
 ```python
-from mypy_boto3_elasticache.waiters import CacheClusterDeletedWaiter
+from mypy_boto3_elasticache.waiter import CacheClusterDeletedWaiter
 
 def get_cache_cluster_deleted_waiter() -> CacheClusterDeletedWaiter:
     return boto3.client("elasticache").get_waiter("cache_cluster_deleted")
 ```
 
-[Waiter.CacheClusterDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.CacheClusterDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.cache_cluster_deleted)
 
 ```python
 class CacheClusterDeletedWaiter(Boto3Waiter):
@@ -74,13 +74,13 @@ Type annotations for `boto3.client("elasticache").get_waiter("replication_group_
 Can be used directly:
 
 ```python
-from mypy_boto3_elasticache.waiters import ReplicationGroupAvailableWaiter
+from mypy_boto3_elasticache.waiter import ReplicationGroupAvailableWaiter
 
 def get_replication_group_available_waiter() -> ReplicationGroupAvailableWaiter:
     return boto3.client("elasticache").get_waiter("replication_group_available")
 ```
 
-[Waiter.ReplicationGroupAvailable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.ReplicationGroupAvailable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.replication_group_available)
 
 ```python
 class ReplicationGroupAvailableWaiter(Boto3Waiter):
@@ -100,13 +100,13 @@ Type annotations for `boto3.client("elasticache").get_waiter("replication_group_
 Can be used directly:
 
 ```python
-from mypy_boto3_elasticache.waiters import ReplicationGroupDeletedWaiter
+from mypy_boto3_elasticache.waiter import ReplicationGroupDeletedWaiter
 
 def get_replication_group_deleted_waiter() -> ReplicationGroupDeletedWaiter:
     return boto3.client("elasticache").get_waiter("replication_group_deleted")
 ```
 
-[Waiter.ReplicationGroupDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.ReplicationGroupDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.replication_group_deleted)
 
 ```python
 class ReplicationGroupDeletedWaiter(Boto3Waiter):

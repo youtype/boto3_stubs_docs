@@ -17,13 +17,13 @@ Type annotations for `boto3.client("efs").get_paginator("describe_file_systems")
 Can be used directly:
 
 ```python
-from mypy_boto3_efs.paginators import DescribeFileSystemsPaginator
+from mypy_boto3_efs.paginator import DescribeFileSystemsPaginator
 
 def get_describe_file_systems_paginator() -> DescribeFileSystemsPaginator:
     return boto3.client("efs").get_paginator("describe_file_systems")
 ```
 
-[Paginator.DescribeFileSystems documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Paginator.DescribeFileSystems)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Paginator.DescribeFileSystems)
 
 ```python
 class DescribeFileSystemsPaginator(Boto3Paginator):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("efs").get_paginator("describe_mount_targets"
 Can be used directly:
 
 ```python
-from mypy_boto3_efs.paginators import DescribeMountTargetsPaginator
+from mypy_boto3_efs.paginator import DescribeMountTargetsPaginator
 
 def get_describe_mount_targets_paginator() -> DescribeMountTargetsPaginator:
     return boto3.client("efs").get_paginator("describe_mount_targets")
 ```
 
-[Paginator.DescribeMountTargets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Paginator.DescribeMountTargets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Paginator.DescribeMountTargets)
 
 ```python
 class DescribeMountTargetsPaginator(Boto3Paginator):
@@ -68,13 +68,13 @@ Type annotations for `boto3.client("efs").get_paginator("describe_tags")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_efs.paginators import DescribeTagsPaginator
+from mypy_boto3_efs.paginator import DescribeTagsPaginator
 
 def get_describe_tags_paginator() -> DescribeTagsPaginator:
     return boto3.client("efs").get_paginator("describe_tags")
 ```
 
-[Paginator.DescribeTags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Paginator.DescribeTags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Paginator.DescribeTags)
 
 ```python
 class DescribeTagsPaginator(Boto3Paginator):

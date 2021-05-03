@@ -16,13 +16,13 @@ Type annotations for `boto3.client("appstream").get_waiter("fleet_started")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_appstream.waiters import FleetStartedWaiter
+from mypy_boto3_appstream.waiter import FleetStartedWaiter
 
 def get_fleet_started_waiter() -> FleetStartedWaiter:
     return boto3.client("appstream").get_waiter("fleet_started")
 ```
 
-[Waiter.FleetStarted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Waiter.FleetStarted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Waiter.fleet_started)
 
 ```python
 class FleetStartedWaiter(Boto3Waiter):
@@ -41,13 +41,13 @@ Type annotations for `boto3.client("appstream").get_waiter("fleet_stopped")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_appstream.waiters import FleetStoppedWaiter
+from mypy_boto3_appstream.waiter import FleetStoppedWaiter
 
 def get_fleet_stopped_waiter() -> FleetStoppedWaiter:
     return boto3.client("appstream").get_waiter("fleet_stopped")
 ```
 
-[Waiter.FleetStopped documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Waiter.FleetStopped)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Waiter.fleet_stopped)
 
 ```python
 class FleetStoppedWaiter(Boto3Waiter):

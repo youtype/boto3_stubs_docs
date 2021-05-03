@@ -15,7 +15,7 @@ pip install mypy-boto3-databrew
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## GlueDataBrewClient
 
@@ -151,7 +151,7 @@ from mypy_boto3_databrew.literals import CompressionFormat, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

@@ -56,7 +56,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_sms.client import SMSClient
+
+def get_sms_client() -> SMSClient:
+    return boto3.client("sms")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client)
 
 ## Exceptions
 
@@ -95,7 +100,7 @@ Exceptions:
 
 Type annotations for `boto3.client("sms").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -109,7 +114,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("sms").create_app` method.
 
-[Client.create_app documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.create_app)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.create_app]
 
 ```python
 def create_app(
@@ -128,7 +133,7 @@ def create_app(
 
 Type annotations for `boto3.client("sms").create_replication_job` method.
 
-[Client.create_replication_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.create_replication_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.create_replication_job]
 
 ```python
 def create_replication_job(
@@ -151,7 +156,7 @@ def create_replication_job(
 
 Type annotations for `boto3.client("sms").delete_app` method.
 
-[Client.delete_app documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app]
 
 ```python
 def delete_app(
@@ -167,7 +172,7 @@ def delete_app(
 
 Type annotations for `boto3.client("sms").delete_app_launch_configuration` method.
 
-[Client.delete_app_launch_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app_launch_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app_launch_configuration]
 
 ```python
 def delete_app_launch_configuration(
@@ -181,7 +186,7 @@ def delete_app_launch_configuration(
 
 Type annotations for `boto3.client("sms").delete_app_replication_configuration` method.
 
-[Client.delete_app_replication_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app_replication_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app_replication_configuration]
 
 ```python
 def delete_app_replication_configuration(
@@ -195,7 +200,7 @@ def delete_app_replication_configuration(
 
 Type annotations for `boto3.client("sms").delete_app_validation_configuration` method.
 
-[Client.delete_app_validation_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app_validation_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app_validation_configuration]
 
 ```python
 def delete_app_validation_configuration(
@@ -209,7 +214,7 @@ def delete_app_validation_configuration(
 
 Type annotations for `boto3.client("sms").delete_replication_job` method.
 
-[Client.delete_replication_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_replication_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_replication_job]
 
 ```python
 def delete_replication_job(
@@ -223,7 +228,7 @@ def delete_replication_job(
 
 Type annotations for `boto3.client("sms").delete_server_catalog` method.
 
-[Client.delete_server_catalog documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_server_catalog)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_server_catalog]
 
 ```python
 def delete_server_catalog(
@@ -236,7 +241,7 @@ def delete_server_catalog(
 
 Type annotations for `boto3.client("sms").disassociate_connector` method.
 
-[Client.disassociate_connector documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.disassociate_connector)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.disassociate_connector]
 
 ```python
 def disassociate_connector(
@@ -250,7 +255,7 @@ def disassociate_connector(
 
 Type annotations for `boto3.client("sms").generate_change_set` method.
 
-[Client.generate_change_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.generate_change_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.generate_change_set]
 
 ```python
 def generate_change_set(
@@ -265,7 +270,7 @@ def generate_change_set(
 
 Type annotations for `boto3.client("sms").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -282,7 +287,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("sms").generate_template` method.
 
-[Client.generate_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.generate_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.generate_template]
 
 ```python
 def generate_template(
@@ -297,7 +302,7 @@ def generate_template(
 
 Type annotations for `boto3.client("sms").get_app` method.
 
-[Client.get_app documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app]
 
 ```python
 def get_app(
@@ -311,7 +316,7 @@ def get_app(
 
 Type annotations for `boto3.client("sms").get_app_launch_configuration` method.
 
-[Client.get_app_launch_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_launch_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_launch_configuration]
 
 ```python
 def get_app_launch_configuration(
@@ -325,7 +330,7 @@ def get_app_launch_configuration(
 
 Type annotations for `boto3.client("sms").get_app_replication_configuration` method.
 
-[Client.get_app_replication_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_replication_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_replication_configuration]
 
 ```python
 def get_app_replication_configuration(
@@ -339,7 +344,7 @@ def get_app_replication_configuration(
 
 Type annotations for `boto3.client("sms").get_app_validation_configuration` method.
 
-[Client.get_app_validation_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_validation_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_validation_configuration]
 
 ```python
 def get_app_validation_configuration(
@@ -353,7 +358,7 @@ def get_app_validation_configuration(
 
 Type annotations for `boto3.client("sms").get_app_validation_output` method.
 
-[Client.get_app_validation_output documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_validation_output)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_validation_output]
 
 ```python
 def get_app_validation_output(
@@ -367,7 +372,7 @@ def get_app_validation_output(
 
 Type annotations for `boto3.client("sms").get_connectors` method.
 
-[Client.get_connectors documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_connectors)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_connectors]
 
 ```python
 def get_connectors(
@@ -382,7 +387,7 @@ def get_connectors(
 
 Type annotations for `boto3.client("sms").get_replication_jobs` method.
 
-[Client.get_replication_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_replication_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_replication_jobs]
 
 ```python
 def get_replication_jobs(
@@ -398,7 +403,7 @@ def get_replication_jobs(
 
 Type annotations for `boto3.client("sms").get_replication_runs` method.
 
-[Client.get_replication_runs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_replication_runs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_replication_runs]
 
 ```python
 def get_replication_runs(
@@ -414,7 +419,7 @@ def get_replication_runs(
 
 Type annotations for `boto3.client("sms").get_servers` method.
 
-[Client.get_servers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_servers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_servers]
 
 ```python
 def get_servers(
@@ -430,7 +435,7 @@ def get_servers(
 
 Type annotations for `boto3.client("sms").import_app_catalog` method.
 
-[Client.import_app_catalog documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.import_app_catalog)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.import_app_catalog]
 
 ```python
 def import_app_catalog(
@@ -444,7 +449,7 @@ def import_app_catalog(
 
 Type annotations for `boto3.client("sms").import_server_catalog` method.
 
-[Client.import_server_catalog documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.import_server_catalog)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.import_server_catalog]
 
 ```python
 def import_server_catalog(
@@ -457,7 +462,7 @@ def import_server_catalog(
 
 Type annotations for `boto3.client("sms").launch_app` method.
 
-[Client.launch_app documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.launch_app)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.launch_app]
 
 ```python
 def launch_app(
@@ -471,7 +476,7 @@ def launch_app(
 
 Type annotations for `boto3.client("sms").list_apps` method.
 
-[Client.list_apps documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.list_apps)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.list_apps]
 
 ```python
 def list_apps(
@@ -487,7 +492,7 @@ def list_apps(
 
 Type annotations for `boto3.client("sms").notify_app_validation_output` method.
 
-[Client.notify_app_validation_output documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.notify_app_validation_output)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.notify_app_validation_output]
 
 ```python
 def notify_app_validation_output(
@@ -502,7 +507,7 @@ def notify_app_validation_output(
 
 Type annotations for `boto3.client("sms").put_app_launch_configuration` method.
 
-[Client.put_app_launch_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_launch_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_launch_configuration]
 
 ```python
 def put_app_launch_configuration(
@@ -519,7 +524,7 @@ def put_app_launch_configuration(
 
 Type annotations for `boto3.client("sms").put_app_replication_configuration` method.
 
-[Client.put_app_replication_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_replication_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_replication_configuration]
 
 ```python
 def put_app_replication_configuration(
@@ -534,7 +539,7 @@ def put_app_replication_configuration(
 
 Type annotations for `boto3.client("sms").put_app_validation_configuration` method.
 
-[Client.put_app_validation_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_validation_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_validation_configuration]
 
 ```python
 def put_app_validation_configuration(
@@ -550,7 +555,7 @@ def put_app_validation_configuration(
 
 Type annotations for `boto3.client("sms").start_app_replication` method.
 
-[Client.start_app_replication documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.start_app_replication)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.start_app_replication]
 
 ```python
 def start_app_replication(
@@ -564,7 +569,7 @@ def start_app_replication(
 
 Type annotations for `boto3.client("sms").start_on_demand_app_replication` method.
 
-[Client.start_on_demand_app_replication documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.start_on_demand_app_replication)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.start_on_demand_app_replication]
 
 ```python
 def start_on_demand_app_replication(
@@ -579,7 +584,7 @@ def start_on_demand_app_replication(
 
 Type annotations for `boto3.client("sms").start_on_demand_replication_run` method.
 
-[Client.start_on_demand_replication_run documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.start_on_demand_replication_run)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.start_on_demand_replication_run]
 
 ```python
 def start_on_demand_replication_run(
@@ -594,7 +599,7 @@ def start_on_demand_replication_run(
 
 Type annotations for `boto3.client("sms").stop_app_replication` method.
 
-[Client.stop_app_replication documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.stop_app_replication)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.stop_app_replication]
 
 ```python
 def stop_app_replication(
@@ -608,7 +613,7 @@ def stop_app_replication(
 
 Type annotations for `boto3.client("sms").terminate_app` method.
 
-[Client.terminate_app documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.terminate_app)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.terminate_app]
 
 ```python
 def terminate_app(
@@ -622,7 +627,7 @@ def terminate_app(
 
 Type annotations for `boto3.client("sms").update_app` method.
 
-[Client.update_app documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.update_app)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.update_app]
 
 ```python
 def update_app(
@@ -641,7 +646,7 @@ def update_app(
 
 Type annotations for `boto3.client("sms").update_replication_job` method.
 
-[Client.update_replication_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.update_replication_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.update_replication_job]
 
 ```python
 def update_replication_job(

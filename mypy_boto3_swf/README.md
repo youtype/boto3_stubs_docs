@@ -15,7 +15,7 @@ pip install mypy-boto3-swf
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## SWFClient
 
@@ -165,7 +165,7 @@ from mypy_boto3_swf.literals import ActivityTaskTimeoutType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

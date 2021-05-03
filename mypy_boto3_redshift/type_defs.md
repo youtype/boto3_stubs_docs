@@ -1,11 +1,11 @@
-# Structures for boto3 Redshift module
+# Typed dictionaries for boto3 Redshift module
 
 > [Index](../README.md) > [Redshift](./README.md) > Structures
 
 Auto-generated documentation for [Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
 type annotations stubs module [mypy_boto3_redshift](https://pypi.org/project/mypy-boto3-redshift/).
 
-- [Structures for boto3 Redshift module](#structures-for-boto3-redshift-module)
+- [Typed dictionaries for boto3 Redshift module](#typed-dictionaries-for-boto3-redshift-module)
   - [AcceptReservedNodeExchangeOutputMessageTypeDef](#acceptreservednodeexchangeoutputmessagetypedef)
   - [AccountAttributeListTypeDef](#accountattributelisttypedef)
   - [AccountAttributeTypeDef](#accountattributetypedef)

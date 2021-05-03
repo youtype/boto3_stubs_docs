@@ -54,7 +54,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_sns.client import SNSClient
+
+def get_sns_client() -> SNSClient:
+    return boto3.client("sns")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client)
 
 ## Exceptions
 
@@ -104,7 +109,7 @@ Exceptions:
 
 Type annotations for `boto3.client("sns").add_permission` method.
 
-[Client.add_permission documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.add_permission)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.add_permission]
 
 ```python
 def add_permission(
@@ -121,7 +126,7 @@ def add_permission(
 
 Type annotations for `boto3.client("sns").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -135,7 +140,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("sns").check_if_phone_number_is_opted_out` method.
 
-[Client.check_if_phone_number_is_opted_out documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.check_if_phone_number_is_opted_out)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.check_if_phone_number_is_opted_out]
 
 ```python
 def check_if_phone_number_is_opted_out(
@@ -149,7 +154,7 @@ def check_if_phone_number_is_opted_out(
 
 Type annotations for `boto3.client("sns").confirm_subscription` method.
 
-[Client.confirm_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.confirm_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.confirm_subscription]
 
 ```python
 def confirm_subscription(
@@ -165,7 +170,7 @@ def confirm_subscription(
 
 Type annotations for `boto3.client("sns").create_platform_application` method.
 
-[Client.create_platform_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_platform_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_platform_application]
 
 ```python
 def create_platform_application(
@@ -181,7 +186,7 @@ def create_platform_application(
 
 Type annotations for `boto3.client("sns").create_platform_endpoint` method.
 
-[Client.create_platform_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_platform_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_platform_endpoint]
 
 ```python
 def create_platform_endpoint(
@@ -198,7 +203,7 @@ def create_platform_endpoint(
 
 Type annotations for `boto3.client("sns").create_topic` method.
 
-[Client.create_topic documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_topic)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_topic]
 
 ```python
 def create_topic(
@@ -214,7 +219,7 @@ def create_topic(
 
 Type annotations for `boto3.client("sns").delete_endpoint` method.
 
-[Client.delete_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_endpoint]
 
 ```python
 def delete_endpoint(
@@ -228,7 +233,7 @@ def delete_endpoint(
 
 Type annotations for `boto3.client("sns").delete_platform_application` method.
 
-[Client.delete_platform_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_platform_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_platform_application]
 
 ```python
 def delete_platform_application(
@@ -242,7 +247,7 @@ def delete_platform_application(
 
 Type annotations for `boto3.client("sns").delete_topic` method.
 
-[Client.delete_topic documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_topic)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_topic]
 
 ```python
 def delete_topic(
@@ -256,7 +261,7 @@ def delete_topic(
 
 Type annotations for `boto3.client("sns").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -273,7 +278,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("sns").get_endpoint_attributes` method.
 
-[Client.get_endpoint_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_endpoint_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_endpoint_attributes]
 
 ```python
 def get_endpoint_attributes(
@@ -287,7 +292,7 @@ def get_endpoint_attributes(
 
 Type annotations for `boto3.client("sns").get_platform_application_attributes` method.
 
-[Client.get_platform_application_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_platform_application_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_platform_application_attributes]
 
 ```python
 def get_platform_application_attributes(
@@ -301,7 +306,7 @@ def get_platform_application_attributes(
 
 Type annotations for `boto3.client("sns").get_sms_attributes` method.
 
-[Client.get_sms_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_sms_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_sms_attributes]
 
 ```python
 def get_sms_attributes(
@@ -315,7 +320,7 @@ def get_sms_attributes(
 
 Type annotations for `boto3.client("sns").get_subscription_attributes` method.
 
-[Client.get_subscription_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_subscription_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_subscription_attributes]
 
 ```python
 def get_subscription_attributes(
@@ -329,7 +334,7 @@ def get_subscription_attributes(
 
 Type annotations for `boto3.client("sns").get_topic_attributes` method.
 
-[Client.get_topic_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_topic_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_topic_attributes]
 
 ```python
 def get_topic_attributes(
@@ -343,7 +348,7 @@ def get_topic_attributes(
 
 Type annotations for `boto3.client("sns").list_endpoints_by_platform_application` method.
 
-[Client.list_endpoints_by_platform_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_endpoints_by_platform_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_endpoints_by_platform_application]
 
 ```python
 def list_endpoints_by_platform_application(
@@ -358,7 +363,7 @@ def list_endpoints_by_platform_application(
 
 Type annotations for `boto3.client("sns").list_phone_numbers_opted_out` method.
 
-[Client.list_phone_numbers_opted_out documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_phone_numbers_opted_out)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_phone_numbers_opted_out]
 
 ```python
 def list_phone_numbers_opted_out(
@@ -372,7 +377,7 @@ def list_phone_numbers_opted_out(
 
 Type annotations for `boto3.client("sns").list_platform_applications` method.
 
-[Client.list_platform_applications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_platform_applications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_platform_applications]
 
 ```python
 def list_platform_applications(
@@ -386,7 +391,7 @@ def list_platform_applications(
 
 Type annotations for `boto3.client("sns").list_subscriptions` method.
 
-[Client.list_subscriptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_subscriptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_subscriptions]
 
 ```python
 def list_subscriptions(
@@ -400,7 +405,7 @@ def list_subscriptions(
 
 Type annotations for `boto3.client("sns").list_subscriptions_by_topic` method.
 
-[Client.list_subscriptions_by_topic documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_subscriptions_by_topic)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_subscriptions_by_topic]
 
 ```python
 def list_subscriptions_by_topic(
@@ -415,7 +420,7 @@ def list_subscriptions_by_topic(
 
 Type annotations for `boto3.client("sns").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -429,7 +434,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("sns").list_topics` method.
 
-[Client.list_topics documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_topics)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_topics]
 
 ```python
 def list_topics(
@@ -443,7 +448,7 @@ def list_topics(
 
 Type annotations for `boto3.client("sns").opt_in_phone_number` method.
 
-[Client.opt_in_phone_number documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.opt_in_phone_number)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.opt_in_phone_number]
 
 ```python
 def opt_in_phone_number(
@@ -457,7 +462,7 @@ def opt_in_phone_number(
 
 Type annotations for `boto3.client("sns").publish` method.
 
-[Client.publish documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.publish)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.publish]
 
 ```python
 def publish(
@@ -479,7 +484,7 @@ def publish(
 
 Type annotations for `boto3.client("sns").remove_permission` method.
 
-[Client.remove_permission documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.remove_permission)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.remove_permission]
 
 ```python
 def remove_permission(
@@ -494,7 +499,7 @@ def remove_permission(
 
 Type annotations for `boto3.client("sns").set_endpoint_attributes` method.
 
-[Client.set_endpoint_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_endpoint_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_endpoint_attributes]
 
 ```python
 def set_endpoint_attributes(
@@ -509,7 +514,7 @@ def set_endpoint_attributes(
 
 Type annotations for `boto3.client("sns").set_platform_application_attributes` method.
 
-[Client.set_platform_application_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_platform_application_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_platform_application_attributes]
 
 ```python
 def set_platform_application_attributes(
@@ -524,7 +529,7 @@ def set_platform_application_attributes(
 
 Type annotations for `boto3.client("sns").set_sms_attributes` method.
 
-[Client.set_sms_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_sms_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_sms_attributes]
 
 ```python
 def set_sms_attributes(
@@ -538,7 +543,7 @@ def set_sms_attributes(
 
 Type annotations for `boto3.client("sns").set_subscription_attributes` method.
 
-[Client.set_subscription_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_subscription_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_subscription_attributes]
 
 ```python
 def set_subscription_attributes(
@@ -554,7 +559,7 @@ def set_subscription_attributes(
 
 Type annotations for `boto3.client("sns").set_topic_attributes` method.
 
-[Client.set_topic_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_topic_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_topic_attributes]
 
 ```python
 def set_topic_attributes(
@@ -570,7 +575,7 @@ def set_topic_attributes(
 
 Type annotations for `boto3.client("sns").subscribe` method.
 
-[Client.subscribe documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.subscribe)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.subscribe]
 
 ```python
 def subscribe(
@@ -588,7 +593,7 @@ def subscribe(
 
 Type annotations for `boto3.client("sns").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -603,7 +608,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("sns").unsubscribe` method.
 
-[Client.unsubscribe documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.unsubscribe)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.unsubscribe]
 
 ```python
 def unsubscribe(
@@ -617,7 +622,7 @@ def unsubscribe(
 
 Type annotations for `boto3.client("sns").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.untag_resource]
 
 ```python
 def untag_resource(

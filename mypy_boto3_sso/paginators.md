@@ -16,13 +16,13 @@ Type annotations for `boto3.client("sso").get_paginator("list_account_roles")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sso.paginators import ListAccountRolesPaginator
+from mypy_boto3_sso.paginator import ListAccountRolesPaginator
 
 def get_list_account_roles_paginator() -> ListAccountRolesPaginator:
     return boto3.client("sso").get_paginator("list_account_roles")
 ```
 
-[Paginator.ListAccountRoles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Paginator.ListAccountRoles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Paginator.ListAccountRoles)
 
 ```python
 class ListAccountRolesPaginator(Boto3Paginator):
@@ -41,13 +41,13 @@ Type annotations for `boto3.client("sso").get_paginator("list_accounts")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sso.paginators import ListAccountsPaginator
+from mypy_boto3_sso.paginator import ListAccountsPaginator
 
 def get_list_accounts_paginator() -> ListAccountsPaginator:
     return boto3.client("sso").get_paginator("list_accounts")
 ```
 
-[Paginator.ListAccounts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Paginator.ListAccounts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Paginator.ListAccounts)
 
 ```python
 class ListAccountsPaginator(Boto3Paginator):

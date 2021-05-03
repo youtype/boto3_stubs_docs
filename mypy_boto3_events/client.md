@@ -72,7 +72,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_events.client import EventBridgeClient
+
+def get_events_client() -> EventBridgeClient:
+    return boto3.client("events")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client)
 
 ## Exceptions
 
@@ -110,7 +115,7 @@ Exceptions:
 
 Type annotations for `boto3.client("events").activate_event_source` method.
 
-[Client.activate_event_source documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.activate_event_source)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.activate_event_source]
 
 ```python
 def activate_event_source(
@@ -124,7 +129,7 @@ def activate_event_source(
 
 Type annotations for `boto3.client("events").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -138,7 +143,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("events").cancel_replay` method.
 
-[Client.cancel_replay documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.cancel_replay)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.cancel_replay]
 
 ```python
 def cancel_replay(
@@ -152,7 +157,7 @@ def cancel_replay(
 
 Type annotations for `boto3.client("events").create_api_destination` method.
 
-[Client.create_api_destination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_api_destination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_api_destination]
 
 ```python
 def create_api_destination(
@@ -171,7 +176,7 @@ def create_api_destination(
 
 Type annotations for `boto3.client("events").create_archive` method.
 
-[Client.create_archive documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_archive)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_archive]
 
 ```python
 def create_archive(
@@ -189,7 +194,7 @@ def create_archive(
 
 Type annotations for `boto3.client("events").create_connection` method.
 
-[Client.create_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_connection]
 
 ```python
 def create_connection(
@@ -206,7 +211,7 @@ def create_connection(
 
 Type annotations for `boto3.client("events").create_event_bus` method.
 
-[Client.create_event_bus documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_event_bus)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_event_bus]
 
 ```python
 def create_event_bus(
@@ -222,7 +227,7 @@ def create_event_bus(
 
 Type annotations for `boto3.client("events").create_partner_event_source` method.
 
-[Client.create_partner_event_source documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_partner_event_source)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_partner_event_source]
 
 ```python
 def create_partner_event_source(
@@ -237,7 +242,7 @@ def create_partner_event_source(
 
 Type annotations for `boto3.client("events").deactivate_event_source` method.
 
-[Client.deactivate_event_source documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.deactivate_event_source)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.deactivate_event_source]
 
 ```python
 def deactivate_event_source(
@@ -251,7 +256,7 @@ def deactivate_event_source(
 
 Type annotations for `boto3.client("events").deauthorize_connection` method.
 
-[Client.deauthorize_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.deauthorize_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.deauthorize_connection]
 
 ```python
 def deauthorize_connection(
@@ -265,7 +270,7 @@ def deauthorize_connection(
 
 Type annotations for `boto3.client("events").delete_api_destination` method.
 
-[Client.delete_api_destination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_api_destination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_api_destination]
 
 ```python
 def delete_api_destination(
@@ -279,7 +284,7 @@ def delete_api_destination(
 
 Type annotations for `boto3.client("events").delete_archive` method.
 
-[Client.delete_archive documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_archive)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_archive]
 
 ```python
 def delete_archive(
@@ -293,7 +298,7 @@ def delete_archive(
 
 Type annotations for `boto3.client("events").delete_connection` method.
 
-[Client.delete_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_connection]
 
 ```python
 def delete_connection(
@@ -307,7 +312,7 @@ def delete_connection(
 
 Type annotations for `boto3.client("events").delete_event_bus` method.
 
-[Client.delete_event_bus documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_event_bus)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_event_bus]
 
 ```python
 def delete_event_bus(
@@ -321,7 +326,7 @@ def delete_event_bus(
 
 Type annotations for `boto3.client("events").delete_partner_event_source` method.
 
-[Client.delete_partner_event_source documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_partner_event_source)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_partner_event_source]
 
 ```python
 def delete_partner_event_source(
@@ -336,7 +341,7 @@ def delete_partner_event_source(
 
 Type annotations for `boto3.client("events").delete_rule` method.
 
-[Client.delete_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_rule]
 
 ```python
 def delete_rule(
@@ -352,7 +357,7 @@ def delete_rule(
 
 Type annotations for `boto3.client("events").describe_api_destination` method.
 
-[Client.describe_api_destination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_api_destination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_api_destination]
 
 ```python
 def describe_api_destination(
@@ -366,7 +371,7 @@ def describe_api_destination(
 
 Type annotations for `boto3.client("events").describe_archive` method.
 
-[Client.describe_archive documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_archive)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_archive]
 
 ```python
 def describe_archive(
@@ -380,7 +385,7 @@ def describe_archive(
 
 Type annotations for `boto3.client("events").describe_connection` method.
 
-[Client.describe_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_connection]
 
 ```python
 def describe_connection(
@@ -394,7 +399,7 @@ def describe_connection(
 
 Type annotations for `boto3.client("events").describe_event_bus` method.
 
-[Client.describe_event_bus documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_event_bus)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_event_bus]
 
 ```python
 def describe_event_bus(
@@ -408,7 +413,7 @@ def describe_event_bus(
 
 Type annotations for `boto3.client("events").describe_event_source` method.
 
-[Client.describe_event_source documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_event_source)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_event_source]
 
 ```python
 def describe_event_source(
@@ -422,7 +427,7 @@ def describe_event_source(
 
 Type annotations for `boto3.client("events").describe_partner_event_source` method.
 
-[Client.describe_partner_event_source documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_partner_event_source)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_partner_event_source]
 
 ```python
 def describe_partner_event_source(
@@ -436,7 +441,7 @@ def describe_partner_event_source(
 
 Type annotations for `boto3.client("events").describe_replay` method.
 
-[Client.describe_replay documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_replay)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_replay]
 
 ```python
 def describe_replay(
@@ -450,7 +455,7 @@ def describe_replay(
 
 Type annotations for `boto3.client("events").describe_rule` method.
 
-[Client.describe_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_rule]
 
 ```python
 def describe_rule(
@@ -465,7 +470,7 @@ def describe_rule(
 
 Type annotations for `boto3.client("events").disable_rule` method.
 
-[Client.disable_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.disable_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.disable_rule]
 
 ```python
 def disable_rule(
@@ -480,7 +485,7 @@ def disable_rule(
 
 Type annotations for `boto3.client("events").enable_rule` method.
 
-[Client.enable_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.enable_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.enable_rule]
 
 ```python
 def enable_rule(
@@ -495,7 +500,7 @@ def enable_rule(
 
 Type annotations for `boto3.client("events").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -512,7 +517,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("events").list_api_destinations` method.
 
-[Client.list_api_destinations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_api_destinations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_api_destinations]
 
 ```python
 def list_api_destinations(
@@ -529,7 +534,7 @@ def list_api_destinations(
 
 Type annotations for `boto3.client("events").list_archives` method.
 
-[Client.list_archives documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_archives)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_archives]
 
 ```python
 def list_archives(
@@ -547,7 +552,7 @@ def list_archives(
 
 Type annotations for `boto3.client("events").list_connections` method.
 
-[Client.list_connections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_connections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_connections]
 
 ```python
 def list_connections(
@@ -564,7 +569,7 @@ def list_connections(
 
 Type annotations for `boto3.client("events").list_event_buses` method.
 
-[Client.list_event_buses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_event_buses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_event_buses]
 
 ```python
 def list_event_buses(
@@ -580,7 +585,7 @@ def list_event_buses(
 
 Type annotations for `boto3.client("events").list_event_sources` method.
 
-[Client.list_event_sources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_event_sources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_event_sources]
 
 ```python
 def list_event_sources(
@@ -596,7 +601,7 @@ def list_event_sources(
 
 Type annotations for `boto3.client("events").list_partner_event_source_accounts` method.
 
-[Client.list_partner_event_source_accounts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_partner_event_source_accounts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_partner_event_source_accounts]
 
 ```python
 def list_partner_event_source_accounts(
@@ -612,7 +617,7 @@ def list_partner_event_source_accounts(
 
 Type annotations for `boto3.client("events").list_partner_event_sources` method.
 
-[Client.list_partner_event_sources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_partner_event_sources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_partner_event_sources]
 
 ```python
 def list_partner_event_sources(
@@ -628,7 +633,7 @@ def list_partner_event_sources(
 
 Type annotations for `boto3.client("events").list_replays` method.
 
-[Client.list_replays documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_replays)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_replays]
 
 ```python
 def list_replays(
@@ -646,7 +651,7 @@ def list_replays(
 
 Type annotations for `boto3.client("events").list_rule_names_by_target` method.
 
-[Client.list_rule_names_by_target documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_rule_names_by_target)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_rule_names_by_target]
 
 ```python
 def list_rule_names_by_target(
@@ -663,7 +668,7 @@ def list_rule_names_by_target(
 
 Type annotations for `boto3.client("events").list_rules` method.
 
-[Client.list_rules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_rules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_rules]
 
 ```python
 def list_rules(
@@ -680,7 +685,7 @@ def list_rules(
 
 Type annotations for `boto3.client("events").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -694,7 +699,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("events").list_targets_by_rule` method.
 
-[Client.list_targets_by_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_targets_by_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_targets_by_rule]
 
 ```python
 def list_targets_by_rule(
@@ -711,7 +716,7 @@ def list_targets_by_rule(
 
 Type annotations for `boto3.client("events").put_events` method.
 
-[Client.put_events documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_events)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_events]
 
 ```python
 def put_events(
@@ -725,7 +730,7 @@ def put_events(
 
 Type annotations for `boto3.client("events").put_partner_events` method.
 
-[Client.put_partner_events documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_partner_events)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_partner_events]
 
 ```python
 def put_partner_events(
@@ -739,7 +744,7 @@ def put_partner_events(
 
 Type annotations for `boto3.client("events").put_permission` method.
 
-[Client.put_permission documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_permission)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_permission]
 
 ```python
 def put_permission(
@@ -758,7 +763,7 @@ def put_permission(
 
 Type annotations for `boto3.client("events").put_rule` method.
 
-[Client.put_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_rule]
 
 ```python
 def put_rule(
@@ -779,7 +784,7 @@ def put_rule(
 
 Type annotations for `boto3.client("events").put_targets` method.
 
-[Client.put_targets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_targets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_targets]
 
 ```python
 def put_targets(
@@ -795,7 +800,7 @@ def put_targets(
 
 Type annotations for `boto3.client("events").remove_permission` method.
 
-[Client.remove_permission documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.remove_permission)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.remove_permission]
 
 ```python
 def remove_permission(
@@ -811,7 +816,7 @@ def remove_permission(
 
 Type annotations for `boto3.client("events").remove_targets` method.
 
-[Client.remove_targets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.remove_targets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.remove_targets]
 
 ```python
 def remove_targets(
@@ -828,7 +833,7 @@ def remove_targets(
 
 Type annotations for `boto3.client("events").start_replay` method.
 
-[Client.start_replay documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.start_replay)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.start_replay]
 
 ```python
 def start_replay(
@@ -847,7 +852,7 @@ def start_replay(
 
 Type annotations for `boto3.client("events").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -862,7 +867,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("events").test_event_pattern` method.
 
-[Client.test_event_pattern documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.test_event_pattern)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.test_event_pattern]
 
 ```python
 def test_event_pattern(
@@ -877,7 +882,7 @@ def test_event_pattern(
 
 Type annotations for `boto3.client("events").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -892,7 +897,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("events").update_api_destination` method.
 
-[Client.update_api_destination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.update_api_destination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.update_api_destination]
 
 ```python
 def update_api_destination(
@@ -911,7 +916,7 @@ def update_api_destination(
 
 Type annotations for `boto3.client("events").update_archive` method.
 
-[Client.update_archive documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.update_archive)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.update_archive]
 
 ```python
 def update_archive(
@@ -928,7 +933,7 @@ def update_archive(
 
 Type annotations for `boto3.client("events").update_connection` method.
 
-[Client.update_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.update_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.update_connection]
 
 ```python
 def update_connection(

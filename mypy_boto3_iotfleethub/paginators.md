@@ -15,13 +15,13 @@ Type annotations for `boto3.client("iotfleethub").get_paginator("list_applicatio
 Can be used directly:
 
 ```python
-from mypy_boto3_iotfleethub.paginators import ListApplicationsPaginator
+from mypy_boto3_iotfleethub.paginator import ListApplicationsPaginator
 
 def get_list_applications_paginator() -> ListApplicationsPaginator:
     return boto3.client("iotfleethub").get_paginator("list_applications")
 ```
 
-[Paginator.ListApplications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Paginator.ListApplications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Paginator.ListApplications)
 
 ```python
 class ListApplicationsPaginator(Boto3Paginator):

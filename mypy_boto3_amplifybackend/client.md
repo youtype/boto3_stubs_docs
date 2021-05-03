@@ -45,7 +45,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_amplifybackend.client import AmplifyBackendClient
+
+def get_amplifybackend_client() -> AmplifyBackendClient:
+    return boto3.client("amplifybackend")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client)
 
 ## Exceptions
 
@@ -76,7 +81,7 @@ Exceptions:
 
 Type annotations for `boto3.client("amplifybackend").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -90,7 +95,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("amplifybackend").clone_backend` method.
 
-[Client.clone_backend documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.clone_backend)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.clone_backend]
 
 ```python
 def clone_backend(
@@ -106,7 +111,7 @@ def clone_backend(
 
 Type annotations for `boto3.client("amplifybackend").create_backend` method.
 
-[Client.create_backend documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend]
 
 ```python
 def create_backend(
@@ -124,7 +129,7 @@ def create_backend(
 
 Type annotations for `boto3.client("amplifybackend").create_backend_api` method.
 
-[Client.create_backend_api documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_api)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_api]
 
 ```python
 def create_backend_api(
@@ -141,7 +146,7 @@ def create_backend_api(
 
 Type annotations for `boto3.client("amplifybackend").create_backend_auth` method.
 
-[Client.create_backend_auth documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_auth)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_auth]
 
 ```python
 def create_backend_auth(
@@ -158,7 +163,7 @@ def create_backend_auth(
 
 Type annotations for `boto3.client("amplifybackend").create_backend_config` method.
 
-[Client.create_backend_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_config]
 
 ```python
 def create_backend_config(
@@ -173,7 +178,7 @@ def create_backend_config(
 
 Type annotations for `boto3.client("amplifybackend").create_token` method.
 
-[Client.create_token documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_token)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_token]
 
 ```python
 def create_token(
@@ -187,7 +192,7 @@ def create_token(
 
 Type annotations for `boto3.client("amplifybackend").delete_backend` method.
 
-[Client.delete_backend documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend]
 
 ```python
 def delete_backend(
@@ -202,7 +207,7 @@ def delete_backend(
 
 Type annotations for `boto3.client("amplifybackend").delete_backend_api` method.
 
-[Client.delete_backend_api documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_api)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_api]
 
 ```python
 def delete_backend_api(
@@ -219,7 +224,7 @@ def delete_backend_api(
 
 Type annotations for `boto3.client("amplifybackend").delete_backend_auth` method.
 
-[Client.delete_backend_auth documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_auth)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_auth]
 
 ```python
 def delete_backend_auth(
@@ -235,7 +240,7 @@ def delete_backend_auth(
 
 Type annotations for `boto3.client("amplifybackend").delete_token` method.
 
-[Client.delete_token documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_token)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_token]
 
 ```python
 def delete_token(
@@ -250,7 +255,7 @@ def delete_token(
 
 Type annotations for `boto3.client("amplifybackend").generate_backend_api_models` method.
 
-[Client.generate_backend_api_models documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.generate_backend_api_models)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.generate_backend_api_models]
 
 ```python
 def generate_backend_api_models(
@@ -266,7 +271,7 @@ def generate_backend_api_models(
 
 Type annotations for `boto3.client("amplifybackend").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -283,7 +288,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("amplifybackend").get_backend` method.
 
-[Client.get_backend documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend]
 
 ```python
 def get_backend(
@@ -298,7 +303,7 @@ def get_backend(
 
 Type annotations for `boto3.client("amplifybackend").get_backend_api` method.
 
-[Client.get_backend_api documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api]
 
 ```python
 def get_backend_api(
@@ -315,7 +320,7 @@ def get_backend_api(
 
 Type annotations for `boto3.client("amplifybackend").get_backend_api_models` method.
 
-[Client.get_backend_api_models documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api_models)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api_models]
 
 ```python
 def get_backend_api_models(
@@ -331,7 +336,7 @@ def get_backend_api_models(
 
 Type annotations for `boto3.client("amplifybackend").get_backend_auth` method.
 
-[Client.get_backend_auth documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_auth)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_auth]
 
 ```python
 def get_backend_auth(
@@ -347,7 +352,7 @@ def get_backend_auth(
 
 Type annotations for `boto3.client("amplifybackend").get_backend_job` method.
 
-[Client.get_backend_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_job]
 
 ```python
 def get_backend_job(
@@ -363,7 +368,7 @@ def get_backend_job(
 
 Type annotations for `boto3.client("amplifybackend").get_token` method.
 
-[Client.get_token documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_token)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_token]
 
 ```python
 def get_token(
@@ -378,7 +383,7 @@ def get_token(
 
 Type annotations for `boto3.client("amplifybackend").list_backend_jobs` method.
 
-[Client.list_backend_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.list_backend_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.list_backend_jobs]
 
 ```python
 def list_backend_jobs(
@@ -398,7 +403,7 @@ def list_backend_jobs(
 
 Type annotations for `boto3.client("amplifybackend").remove_all_backends` method.
 
-[Client.remove_all_backends documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_all_backends)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_all_backends]
 
 ```python
 def remove_all_backends(
@@ -413,7 +418,7 @@ def remove_all_backends(
 
 Type annotations for `boto3.client("amplifybackend").remove_backend_config` method.
 
-[Client.remove_backend_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_backend_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_backend_config]
 
 ```python
 def remove_backend_config(
@@ -427,7 +432,7 @@ def remove_backend_config(
 
 Type annotations for `boto3.client("amplifybackend").update_backend_api` method.
 
-[Client.update_backend_api documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_api)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_api]
 
 ```python
 def update_backend_api(
@@ -444,7 +449,7 @@ def update_backend_api(
 
 Type annotations for `boto3.client("amplifybackend").update_backend_auth` method.
 
-[Client.update_backend_auth documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_auth)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_auth]
 
 ```python
 def update_backend_auth(
@@ -461,7 +466,7 @@ def update_backend_auth(
 
 Type annotations for `boto3.client("amplifybackend").update_backend_config` method.
 
-[Client.update_backend_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_config]
 
 ```python
 def update_backend_config(
@@ -476,7 +481,7 @@ def update_backend_config(
 
 Type annotations for `boto3.client("amplifybackend").update_backend_job` method.
 
-[Client.update_backend_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_job]
 
 ```python
 def update_backend_job(

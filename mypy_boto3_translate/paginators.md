@@ -15,13 +15,13 @@ Type annotations for `boto3.client("translate").get_paginator("list_terminologie
 Can be used directly:
 
 ```python
-from mypy_boto3_translate.paginators import ListTerminologiesPaginator
+from mypy_boto3_translate.paginator import ListTerminologiesPaginator
 
 def get_list_terminologies_paginator() -> ListTerminologiesPaginator:
     return boto3.client("translate").get_paginator("list_terminologies")
 ```
 
-[Paginator.ListTerminologies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Paginator.ListTerminologies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Paginator.ListTerminologies)
 
 ```python
 class ListTerminologiesPaginator(Boto3Paginator):

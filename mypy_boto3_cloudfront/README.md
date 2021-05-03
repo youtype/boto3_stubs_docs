@@ -16,7 +16,7 @@ pip install mypy-boto3-cloudfront
   - [Paginators](#paginators)
   - [Waiters](#waiters)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## CloudFrontClient
 
@@ -335,7 +335,7 @@ from mypy_boto3_cloudfront.literals import CachePolicyCookieBehavior, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

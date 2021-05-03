@@ -1,11 +1,11 @@
-# Structures for boto3 AugmentedAIRuntime module
+# Typed dictionaries for boto3 AugmentedAIRuntime module
 
 > [Index](../README.md) > [AugmentedAIRuntime](./README.md) > Structures
 
 Auto-generated documentation for [AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
 type annotations stubs module [mypy_boto3_sagemaker_a2i_runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
 
-- [Structures for boto3 AugmentedAIRuntime module](#structures-for-boto3-augmentedairuntime-module)
+- [Typed dictionaries for boto3 AugmentedAIRuntime module](#typed-dictionaries-for-boto3-augmentedairuntime-module)
   - [DescribeHumanLoopResponseTypeDef](#describehumanloopresponsetypedef)
   - [HumanLoopDataAttributesTypeDef](#humanloopdataattributestypedef)
   - [HumanLoopInputTypeDef](#humanloopinputtypedef)
@@ -73,11 +73,9 @@ from mypy_boto3_sagemaker_a2i_runtime.type_defs import HumanLoopOutputTypeDef
 
 Required fields:
 - `OutputS3Uri`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## HumanLoopSummaryTypeDef

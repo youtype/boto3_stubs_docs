@@ -19,7 +19,7 @@ pip install mypy-boto3-opsworks
   - [Paginators](#paginators)
   - [Waiters](#waiters)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## OpsWorksClient
 
@@ -242,7 +242,7 @@ from mypy_boto3_opsworks.literals import AppAttributesKeys, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

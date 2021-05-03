@@ -1,11 +1,11 @@
-# Structures for boto3 AppSync module
+# Typed dictionaries for boto3 AppSync module
 
 > [Index](../README.md) > [AppSync](./README.md) > Structures
 
 Auto-generated documentation for [AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
 type annotations stubs module [mypy_boto3_appsync](https://pypi.org/project/mypy-boto3-appsync/).
 
-- [Structures for boto3 AppSync module](#structures-for-boto3-appsync-module)
+- [Typed dictionaries for boto3 AppSync module](#typed-dictionaries-for-boto3-appsync-module)
   - [AdditionalAuthenticationProviderTypeDef](#additionalauthenticationprovidertypedef)
   - [ApiCacheTypeDef](#apicachetypedef)
   - [ApiKeyTypeDef](#apikeytypedef)

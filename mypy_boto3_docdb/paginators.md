@@ -26,13 +26,13 @@ Type annotations for `boto3.client("docdb").get_paginator("describe_certificates
 Can be used directly:
 
 ```python
-from mypy_boto3_docdb.paginators import DescribeCertificatesPaginator
+from mypy_boto3_docdb.paginator import DescribeCertificatesPaginator
 
 def get_describe_certificates_paginator() -> DescribeCertificatesPaginator:
     return boto3.client("docdb").get_paginator("describe_certificates")
 ```
 
-[Paginator.DescribeCertificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeCertificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeCertificates)
 
 ```python
 class DescribeCertificatesPaginator(Boto3Paginator):
@@ -51,13 +51,13 @@ Type annotations for `boto3.client("docdb").get_paginator("describe_db_cluster_p
 Can be used directly:
 
 ```python
-from mypy_boto3_docdb.paginators import DescribeDBClusterParameterGroupsPaginator
+from mypy_boto3_docdb.paginator import DescribeDBClusterParameterGroupsPaginator
 
 def get_describe_db_cluster_parameter_groups_paginator() -> DescribeDBClusterParameterGroupsPaginator:
     return boto3.client("docdb").get_paginator("describe_db_cluster_parameter_groups")
 ```
 
-[Paginator.DescribeDBClusterParameterGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusterParameterGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusterParameterGroups)
 
 ```python
 class DescribeDBClusterParameterGroupsPaginator(Boto3Paginator):
@@ -76,13 +76,13 @@ Type annotations for `boto3.client("docdb").get_paginator("describe_db_cluster_p
 Can be used directly:
 
 ```python
-from mypy_boto3_docdb.paginators import DescribeDBClusterParametersPaginator
+from mypy_boto3_docdb.paginator import DescribeDBClusterParametersPaginator
 
 def get_describe_db_cluster_parameters_paginator() -> DescribeDBClusterParametersPaginator:
     return boto3.client("docdb").get_paginator("describe_db_cluster_parameters")
 ```
 
-[Paginator.DescribeDBClusterParameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusterParameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusterParameters)
 
 ```python
 class DescribeDBClusterParametersPaginator(Boto3Paginator):
@@ -102,13 +102,13 @@ Type annotations for `boto3.client("docdb").get_paginator("describe_db_cluster_s
 Can be used directly:
 
 ```python
-from mypy_boto3_docdb.paginators import DescribeDBClusterSnapshotsPaginator
+from mypy_boto3_docdb.paginator import DescribeDBClusterSnapshotsPaginator
 
 def get_describe_db_cluster_snapshots_paginator() -> DescribeDBClusterSnapshotsPaginator:
     return boto3.client("docdb").get_paginator("describe_db_cluster_snapshots")
 ```
 
-[Paginator.DescribeDBClusterSnapshots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusterSnapshots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusterSnapshots)
 
 ```python
 class DescribeDBClusterSnapshotsPaginator(Boto3Paginator):
@@ -131,13 +131,13 @@ Type annotations for `boto3.client("docdb").get_paginator("describe_db_clusters"
 Can be used directly:
 
 ```python
-from mypy_boto3_docdb.paginators import DescribeDBClustersPaginator
+from mypy_boto3_docdb.paginator import DescribeDBClustersPaginator
 
 def get_describe_db_clusters_paginator() -> DescribeDBClustersPaginator:
     return boto3.client("docdb").get_paginator("describe_db_clusters")
 ```
 
-[Paginator.DescribeDBClusters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBClusters)
 
 ```python
 class DescribeDBClustersPaginator(Boto3Paginator):
@@ -156,13 +156,13 @@ Type annotations for `boto3.client("docdb").get_paginator("describe_db_engine_ve
 Can be used directly:
 
 ```python
-from mypy_boto3_docdb.paginators import DescribeDBEngineVersionsPaginator
+from mypy_boto3_docdb.paginator import DescribeDBEngineVersionsPaginator
 
 def get_describe_db_engine_versions_paginator() -> DescribeDBEngineVersionsPaginator:
     return boto3.client("docdb").get_paginator("describe_db_engine_versions")
 ```
 
-[Paginator.DescribeDBEngineVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBEngineVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBEngineVersions)
 
 ```python
 class DescribeDBEngineVersionsPaginator(Boto3Paginator):
@@ -186,13 +186,13 @@ Type annotations for `boto3.client("docdb").get_paginator("describe_db_instances
 Can be used directly:
 
 ```python
-from mypy_boto3_docdb.paginators import DescribeDBInstancesPaginator
+from mypy_boto3_docdb.paginator import DescribeDBInstancesPaginator
 
 def get_describe_db_instances_paginator() -> DescribeDBInstancesPaginator:
     return boto3.client("docdb").get_paginator("describe_db_instances")
 ```
 
-[Paginator.DescribeDBInstances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBInstances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBInstances)
 
 ```python
 class DescribeDBInstancesPaginator(Boto3Paginator):
@@ -211,13 +211,13 @@ Type annotations for `boto3.client("docdb").get_paginator("describe_db_subnet_gr
 Can be used directly:
 
 ```python
-from mypy_boto3_docdb.paginators import DescribeDBSubnetGroupsPaginator
+from mypy_boto3_docdb.paginator import DescribeDBSubnetGroupsPaginator
 
 def get_describe_db_subnet_groups_paginator() -> DescribeDBSubnetGroupsPaginator:
     return boto3.client("docdb").get_paginator("describe_db_subnet_groups")
 ```
 
-[Paginator.DescribeDBSubnetGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBSubnetGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeDBSubnetGroups)
 
 ```python
 class DescribeDBSubnetGroupsPaginator(Boto3Paginator):
@@ -236,13 +236,13 @@ Type annotations for `boto3.client("docdb").get_paginator("describe_event_subscr
 Can be used directly:
 
 ```python
-from mypy_boto3_docdb.paginators import DescribeEventSubscriptionsPaginator
+from mypy_boto3_docdb.paginator import DescribeEventSubscriptionsPaginator
 
 def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPaginator:
     return boto3.client("docdb").get_paginator("describe_event_subscriptions")
 ```
 
-[Paginator.DescribeEventSubscriptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeEventSubscriptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeEventSubscriptions)
 
 ```python
 class DescribeEventSubscriptionsPaginator(Boto3Paginator):
@@ -261,13 +261,13 @@ Type annotations for `boto3.client("docdb").get_paginator("describe_events")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_docdb.paginators import DescribeEventsPaginator
+from mypy_boto3_docdb.paginator import DescribeEventsPaginator
 
 def get_describe_events_paginator() -> DescribeEventsPaginator:
     return boto3.client("docdb").get_paginator("describe_events")
 ```
 
-[Paginator.DescribeEvents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeEvents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeEvents)
 
 ```python
 class DescribeEventsPaginator(Boto3Paginator):
@@ -291,13 +291,13 @@ Type annotations for `boto3.client("docdb").get_paginator("describe_orderable_db
 Can be used directly:
 
 ```python
-from mypy_boto3_docdb.paginators import DescribeOrderableDBInstanceOptionsPaginator
+from mypy_boto3_docdb.paginator import DescribeOrderableDBInstanceOptionsPaginator
 
 def get_describe_orderable_db_instance_options_paginator() -> DescribeOrderableDBInstanceOptionsPaginator:
     return boto3.client("docdb").get_paginator("describe_orderable_db_instance_options")
 ```
 
-[Paginator.DescribeOrderableDBInstanceOptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeOrderableDBInstanceOptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeOrderableDBInstanceOptions)
 
 ```python
 class DescribeOrderableDBInstanceOptionsPaginator(Boto3Paginator):
@@ -320,13 +320,13 @@ Type annotations for `boto3.client("docdb").get_paginator("describe_pending_main
 Can be used directly:
 
 ```python
-from mypy_boto3_docdb.paginators import DescribePendingMaintenanceActionsPaginator
+from mypy_boto3_docdb.paginator import DescribePendingMaintenanceActionsPaginator
 
 def get_describe_pending_maintenance_actions_paginator() -> DescribePendingMaintenanceActionsPaginator:
     return boto3.client("docdb").get_paginator("describe_pending_maintenance_actions")
 ```
 
-[Paginator.DescribePendingMaintenanceActions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribePendingMaintenanceActions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribePendingMaintenanceActions)
 
 ```python
 class DescribePendingMaintenanceActionsPaginator(Boto3Paginator):

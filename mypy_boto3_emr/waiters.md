@@ -17,13 +17,13 @@ Type annotations for `boto3.client("emr").get_waiter("cluster_running")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_emr.waiters import ClusterRunningWaiter
+from mypy_boto3_emr.waiter import ClusterRunningWaiter
 
 def get_cluster_running_waiter() -> ClusterRunningWaiter:
     return boto3.client("emr").get_waiter("cluster_running")
 ```
 
-[Waiter.ClusterRunning documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Waiter.ClusterRunning)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Waiter.cluster_running)
 
 ```python
 class ClusterRunningWaiter(Boto3Waiter):
@@ -41,13 +41,13 @@ Type annotations for `boto3.client("emr").get_waiter("cluster_terminated")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_emr.waiters import ClusterTerminatedWaiter
+from mypy_boto3_emr.waiter import ClusterTerminatedWaiter
 
 def get_cluster_terminated_waiter() -> ClusterTerminatedWaiter:
     return boto3.client("emr").get_waiter("cluster_terminated")
 ```
 
-[Waiter.ClusterTerminated documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Waiter.ClusterTerminated)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Waiter.cluster_terminated)
 
 ```python
 class ClusterTerminatedWaiter(Boto3Waiter):
@@ -65,13 +65,13 @@ Type annotations for `boto3.client("emr").get_waiter("step_complete")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_emr.waiters import StepCompleteWaiter
+from mypy_boto3_emr.waiter import StepCompleteWaiter
 
 def get_step_complete_waiter() -> StepCompleteWaiter:
     return boto3.client("emr").get_waiter("step_complete")
 ```
 
-[Waiter.StepComplete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Waiter.StepComplete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Waiter.step_complete)
 
 ```python
 class StepCompleteWaiter(Boto3Waiter):

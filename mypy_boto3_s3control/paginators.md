@@ -15,13 +15,13 @@ Type annotations for `boto3.client("s3control").get_paginator("list_access_point
 Can be used directly:
 
 ```python
-from mypy_boto3_s3control.paginators import ListAccessPointsForObjectLambdaPaginator
+from mypy_boto3_s3control.paginator import ListAccessPointsForObjectLambdaPaginator
 
 def get_list_access_points_for_object_lambda_paginator() -> ListAccessPointsForObjectLambdaPaginator:
     return boto3.client("s3control").get_paginator("list_access_points_for_object_lambda")
 ```
 
-[Paginator.ListAccessPointsForObjectLambda documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Paginator.ListAccessPointsForObjectLambda)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Paginator.ListAccessPointsForObjectLambda)
 
 ```python
 class ListAccessPointsForObjectLambdaPaginator(Boto3Paginator):

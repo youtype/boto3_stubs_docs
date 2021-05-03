@@ -15,7 +15,7 @@ pip install mypy-boto3-cur
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## CostandUsageReportServiceClient
 
@@ -95,7 +95,7 @@ from mypy_boto3_cur.literals import AWSRegion, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

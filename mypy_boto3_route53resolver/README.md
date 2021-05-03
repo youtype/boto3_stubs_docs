@@ -15,7 +15,7 @@ pip install mypy-boto3-route53resolver
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## Route53ResolverClient
 
@@ -205,7 +205,7 @@ from mypy_boto3_route53resolver.literals import Action, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

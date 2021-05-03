@@ -47,7 +47,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_fms.client import FMSClient
+
+def get_fms_client() -> FMSClient:
+    return boto3.client("fms")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client)
 
 ## Exceptions
 
@@ -80,7 +85,7 @@ Exceptions:
 
 Type annotations for `boto3.client("fms").associate_admin_account` method.
 
-[Client.associate_admin_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.associate_admin_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.associate_admin_account]
 
 ```python
 def associate_admin_account(
@@ -94,7 +99,7 @@ def associate_admin_account(
 
 Type annotations for `boto3.client("fms").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -108,7 +113,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("fms").delete_apps_list` method.
 
-[Client.delete_apps_list documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_apps_list)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_apps_list]
 
 ```python
 def delete_apps_list(
@@ -122,7 +127,7 @@ def delete_apps_list(
 
 Type annotations for `boto3.client("fms").delete_notification_channel` method.
 
-[Client.delete_notification_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_notification_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_notification_channel]
 
 ```python
 def delete_notification_channel(
@@ -135,7 +140,7 @@ def delete_notification_channel(
 
 Type annotations for `boto3.client("fms").delete_policy` method.
 
-[Client.delete_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_policy]
 
 ```python
 def delete_policy(
@@ -150,7 +155,7 @@ def delete_policy(
 
 Type annotations for `boto3.client("fms").delete_protocols_list` method.
 
-[Client.delete_protocols_list documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_protocols_list)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_protocols_list]
 
 ```python
 def delete_protocols_list(
@@ -164,7 +169,7 @@ def delete_protocols_list(
 
 Type annotations for `boto3.client("fms").disassociate_admin_account` method.
 
-[Client.disassociate_admin_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.disassociate_admin_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.disassociate_admin_account]
 
 ```python
 def disassociate_admin_account(
@@ -177,7 +182,7 @@ def disassociate_admin_account(
 
 Type annotations for `boto3.client("fms").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -194,7 +199,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("fms").get_admin_account` method.
 
-[Client.get_admin_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_admin_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_admin_account]
 
 ```python
 def get_admin_account(
@@ -207,7 +212,7 @@ def get_admin_account(
 
 Type annotations for `boto3.client("fms").get_apps_list` method.
 
-[Client.get_apps_list documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_apps_list)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_apps_list]
 
 ```python
 def get_apps_list(
@@ -222,7 +227,7 @@ def get_apps_list(
 
 Type annotations for `boto3.client("fms").get_compliance_detail` method.
 
-[Client.get_compliance_detail documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_compliance_detail)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_compliance_detail]
 
 ```python
 def get_compliance_detail(
@@ -237,7 +242,7 @@ def get_compliance_detail(
 
 Type annotations for `boto3.client("fms").get_notification_channel` method.
 
-[Client.get_notification_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_notification_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_notification_channel]
 
 ```python
 def get_notification_channel(
@@ -250,7 +255,7 @@ def get_notification_channel(
 
 Type annotations for `boto3.client("fms").get_policy` method.
 
-[Client.get_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_policy]
 
 ```python
 def get_policy(
@@ -264,7 +269,7 @@ def get_policy(
 
 Type annotations for `boto3.client("fms").get_protection_status` method.
 
-[Client.get_protection_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_protection_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_protection_status]
 
 ```python
 def get_protection_status(
@@ -283,7 +288,7 @@ def get_protection_status(
 
 Type annotations for `boto3.client("fms").get_protocols_list` method.
 
-[Client.get_protocols_list documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_protocols_list)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_protocols_list]
 
 ```python
 def get_protocols_list(
@@ -298,7 +303,7 @@ def get_protocols_list(
 
 Type annotations for `boto3.client("fms").get_violation_details` method.
 
-[Client.get_violation_details documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_violation_details)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_violation_details]
 
 ```python
 def get_violation_details(
@@ -315,7 +320,7 @@ def get_violation_details(
 
 Type annotations for `boto3.client("fms").list_apps_lists` method.
 
-[Client.list_apps_lists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_apps_lists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_apps_lists]
 
 ```python
 def list_apps_lists(
@@ -331,7 +336,7 @@ def list_apps_lists(
 
 Type annotations for `boto3.client("fms").list_compliance_status` method.
 
-[Client.list_compliance_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_compliance_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_compliance_status]
 
 ```python
 def list_compliance_status(
@@ -347,7 +352,7 @@ def list_compliance_status(
 
 Type annotations for `boto3.client("fms").list_member_accounts` method.
 
-[Client.list_member_accounts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_member_accounts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_member_accounts]
 
 ```python
 def list_member_accounts(
@@ -362,7 +367,7 @@ def list_member_accounts(
 
 Type annotations for `boto3.client("fms").list_policies` method.
 
-[Client.list_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_policies]
 
 ```python
 def list_policies(
@@ -377,7 +382,7 @@ def list_policies(
 
 Type annotations for `boto3.client("fms").list_protocols_lists` method.
 
-[Client.list_protocols_lists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_protocols_lists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_protocols_lists]
 
 ```python
 def list_protocols_lists(
@@ -393,7 +398,7 @@ def list_protocols_lists(
 
 Type annotations for `boto3.client("fms").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -407,7 +412,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("fms").put_apps_list` method.
 
-[Client.put_apps_list documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_apps_list)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_apps_list]
 
 ```python
 def put_apps_list(
@@ -422,7 +427,7 @@ def put_apps_list(
 
 Type annotations for `boto3.client("fms").put_notification_channel` method.
 
-[Client.put_notification_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_notification_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_notification_channel]
 
 ```python
 def put_notification_channel(
@@ -437,7 +442,7 @@ def put_notification_channel(
 
 Type annotations for `boto3.client("fms").put_policy` method.
 
-[Client.put_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_policy]
 
 ```python
 def put_policy(
@@ -452,7 +457,7 @@ def put_policy(
 
 Type annotations for `boto3.client("fms").put_protocols_list` method.
 
-[Client.put_protocols_list documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_protocols_list)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_protocols_list]
 
 ```python
 def put_protocols_list(
@@ -467,7 +472,7 @@ def put_protocols_list(
 
 Type annotations for `boto3.client("fms").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -482,7 +487,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("fms").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.untag_resource]
 
 ```python
 def untag_resource(

@@ -16,13 +16,13 @@ Type annotations for `boto3.client("kinesisvideo").get_paginator("list_signaling
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesisvideo.paginators import ListSignalingChannelsPaginator
+from mypy_boto3_kinesisvideo.paginator import ListSignalingChannelsPaginator
 
 def get_list_signaling_channels_paginator() -> ListSignalingChannelsPaginator:
     return boto3.client("kinesisvideo").get_paginator("list_signaling_channels")
 ```
 
-[Paginator.ListSignalingChannels documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Paginator.ListSignalingChannels)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Paginator.ListSignalingChannels)
 
 ```python
 class ListSignalingChannelsPaginator(Boto3Paginator):
@@ -40,13 +40,13 @@ Type annotations for `boto3.client("kinesisvideo").get_paginator("list_streams")
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesisvideo.paginators import ListStreamsPaginator
+from mypy_boto3_kinesisvideo.paginator import ListStreamsPaginator
 
 def get_list_streams_paginator() -> ListStreamsPaginator:
     return boto3.client("kinesisvideo").get_paginator("list_streams")
 ```
 
-[Paginator.ListStreams documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Paginator.ListStreams)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Paginator.ListStreams)
 
 ```python
 class ListStreamsPaginator(Boto3Paginator):

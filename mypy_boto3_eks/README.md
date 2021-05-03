@@ -16,7 +16,7 @@ pip install mypy-boto3-eks
   - [Paginators](#paginators)
   - [Waiters](#waiters)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## EKSClient
 
@@ -176,7 +176,7 @@ from mypy_boto3_eks.literals import AMITypes, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

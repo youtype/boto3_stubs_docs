@@ -14,7 +14,7 @@ pip install mypy-boto3-lex-runtime
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## LexRuntimeServiceClient
 
@@ -86,7 +86,7 @@ from mypy_boto3_lex_runtime.literals import ConfirmationStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

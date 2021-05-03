@@ -77,7 +77,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_dms.client import DatabaseMigrationServiceClient
+
+def get_dms_client() -> DatabaseMigrationServiceClient:
+    return boto3.client("dms")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client)
 
 ## Exceptions
 
@@ -127,7 +132,7 @@ Exceptions:
 
 Type annotations for `boto3.client("dms").add_tags_to_resource` method.
 
-[Client.add_tags_to_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.add_tags_to_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.add_tags_to_resource]
 
 ```python
 def add_tags_to_resource(
@@ -142,7 +147,7 @@ def add_tags_to_resource(
 
 Type annotations for `boto3.client("dms").apply_pending_maintenance_action` method.
 
-[Client.apply_pending_maintenance_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.apply_pending_maintenance_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.apply_pending_maintenance_action]
 
 ```python
 def apply_pending_maintenance_action(
@@ -158,7 +163,7 @@ def apply_pending_maintenance_action(
 
 Type annotations for `boto3.client("dms").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -172,7 +177,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("dms").cancel_replication_task_assessment_run` method.
 
-[Client.cancel_replication_task_assessment_run documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.cancel_replication_task_assessment_run)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.cancel_replication_task_assessment_run]
 
 ```python
 def cancel_replication_task_assessment_run(
@@ -186,7 +191,7 @@ def cancel_replication_task_assessment_run(
 
 Type annotations for `boto3.client("dms").create_endpoint` method.
 
-[Client.create_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_endpoint]
 
 ```python
 def create_endpoint(
@@ -231,7 +236,7 @@ def create_endpoint(
 
 Type annotations for `boto3.client("dms").create_event_subscription` method.
 
-[Client.create_event_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_event_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_event_subscription]
 
 ```python
 def create_event_subscription(
@@ -251,7 +256,7 @@ def create_event_subscription(
 
 Type annotations for `boto3.client("dms").create_replication_instance` method.
 
-[Client.create_replication_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_instance]
 
 ```python
 def create_replication_instance(
@@ -279,7 +284,7 @@ def create_replication_instance(
 
 Type annotations for `boto3.client("dms").create_replication_subnet_group` method.
 
-[Client.create_replication_subnet_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_subnet_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_subnet_group]
 
 ```python
 def create_replication_subnet_group(
@@ -296,7 +301,7 @@ def create_replication_subnet_group(
 
 Type annotations for `boto3.client("dms").create_replication_task` method.
 
-[Client.create_replication_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_task]
 
 ```python
 def create_replication_task(
@@ -322,7 +327,7 @@ def create_replication_task(
 
 Type annotations for `boto3.client("dms").delete_certificate` method.
 
-[Client.delete_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_certificate]
 
 ```python
 def delete_certificate(
@@ -336,7 +341,7 @@ def delete_certificate(
 
 Type annotations for `boto3.client("dms").delete_connection` method.
 
-[Client.delete_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_connection]
 
 ```python
 def delete_connection(
@@ -351,7 +356,7 @@ def delete_connection(
 
 Type annotations for `boto3.client("dms").delete_endpoint` method.
 
-[Client.delete_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_endpoint]
 
 ```python
 def delete_endpoint(
@@ -365,7 +370,7 @@ def delete_endpoint(
 
 Type annotations for `boto3.client("dms").delete_event_subscription` method.
 
-[Client.delete_event_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_event_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_event_subscription]
 
 ```python
 def delete_event_subscription(
@@ -379,7 +384,7 @@ def delete_event_subscription(
 
 Type annotations for `boto3.client("dms").delete_replication_instance` method.
 
-[Client.delete_replication_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_instance]
 
 ```python
 def delete_replication_instance(
@@ -393,7 +398,7 @@ def delete_replication_instance(
 
 Type annotations for `boto3.client("dms").delete_replication_subnet_group` method.
 
-[Client.delete_replication_subnet_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_subnet_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_subnet_group]
 
 ```python
 def delete_replication_subnet_group(
@@ -407,7 +412,7 @@ def delete_replication_subnet_group(
 
 Type annotations for `boto3.client("dms").delete_replication_task` method.
 
-[Client.delete_replication_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task]
 
 ```python
 def delete_replication_task(
@@ -421,7 +426,7 @@ def delete_replication_task(
 
 Type annotations for `boto3.client("dms").delete_replication_task_assessment_run` method.
 
-[Client.delete_replication_task_assessment_run documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task_assessment_run)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task_assessment_run]
 
 ```python
 def delete_replication_task_assessment_run(
@@ -435,7 +440,7 @@ def delete_replication_task_assessment_run(
 
 Type annotations for `boto3.client("dms").describe_account_attributes` method.
 
-[Client.describe_account_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_account_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_account_attributes]
 
 ```python
 def describe_account_attributes(
@@ -448,7 +453,7 @@ def describe_account_attributes(
 
 Type annotations for `boto3.client("dms").describe_applicable_individual_assessments` method.
 
-[Client.describe_applicable_individual_assessments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_applicable_individual_assessments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_applicable_individual_assessments]
 
 ```python
 def describe_applicable_individual_assessments(
@@ -468,7 +473,7 @@ def describe_applicable_individual_assessments(
 
 Type annotations for `boto3.client("dms").describe_certificates` method.
 
-[Client.describe_certificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_certificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_certificates]
 
 ```python
 def describe_certificates(
@@ -484,7 +489,7 @@ def describe_certificates(
 
 Type annotations for `boto3.client("dms").describe_connections` method.
 
-[Client.describe_connections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_connections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_connections]
 
 ```python
 def describe_connections(
@@ -500,7 +505,7 @@ def describe_connections(
 
 Type annotations for `boto3.client("dms").describe_endpoint_settings` method.
 
-[Client.describe_endpoint_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoint_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoint_settings]
 
 ```python
 def describe_endpoint_settings(
@@ -516,7 +521,7 @@ def describe_endpoint_settings(
 
 Type annotations for `boto3.client("dms").describe_endpoint_types` method.
 
-[Client.describe_endpoint_types documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoint_types)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoint_types]
 
 ```python
 def describe_endpoint_types(
@@ -532,7 +537,7 @@ def describe_endpoint_types(
 
 Type annotations for `boto3.client("dms").describe_endpoints` method.
 
-[Client.describe_endpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoints]
 
 ```python
 def describe_endpoints(
@@ -548,7 +553,7 @@ def describe_endpoints(
 
 Type annotations for `boto3.client("dms").describe_event_categories` method.
 
-[Client.describe_event_categories documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_categories)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_categories]
 
 ```python
 def describe_event_categories(
@@ -563,7 +568,7 @@ def describe_event_categories(
 
 Type annotations for `boto3.client("dms").describe_event_subscriptions` method.
 
-[Client.describe_event_subscriptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_subscriptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_subscriptions]
 
 ```python
 def describe_event_subscriptions(
@@ -580,7 +585,7 @@ def describe_event_subscriptions(
 
 Type annotations for `boto3.client("dms").describe_events` method.
 
-[Client.describe_events documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_events)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_events]
 
 ```python
 def describe_events(
@@ -602,7 +607,7 @@ def describe_events(
 
 Type annotations for `boto3.client("dms").describe_orderable_replication_instances` method.
 
-[Client.describe_orderable_replication_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_orderable_replication_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_orderable_replication_instances]
 
 ```python
 def describe_orderable_replication_instances(
@@ -617,7 +622,7 @@ def describe_orderable_replication_instances(
 
 Type annotations for `boto3.client("dms").describe_pending_maintenance_actions` method.
 
-[Client.describe_pending_maintenance_actions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_pending_maintenance_actions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_pending_maintenance_actions]
 
 ```python
 def describe_pending_maintenance_actions(
@@ -634,7 +639,7 @@ def describe_pending_maintenance_actions(
 
 Type annotations for `boto3.client("dms").describe_refresh_schemas_status` method.
 
-[Client.describe_refresh_schemas_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_refresh_schemas_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_refresh_schemas_status]
 
 ```python
 def describe_refresh_schemas_status(
@@ -648,7 +653,7 @@ def describe_refresh_schemas_status(
 
 Type annotations for `boto3.client("dms").describe_replication_instance_task_logs` method.
 
-[Client.describe_replication_instance_task_logs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_instance_task_logs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_instance_task_logs]
 
 ```python
 def describe_replication_instance_task_logs(
@@ -664,7 +669,7 @@ def describe_replication_instance_task_logs(
 
 Type annotations for `boto3.client("dms").describe_replication_instances` method.
 
-[Client.describe_replication_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_instances]
 
 ```python
 def describe_replication_instances(
@@ -680,7 +685,7 @@ def describe_replication_instances(
 
 Type annotations for `boto3.client("dms").describe_replication_subnet_groups` method.
 
-[Client.describe_replication_subnet_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_subnet_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_subnet_groups]
 
 ```python
 def describe_replication_subnet_groups(
@@ -696,7 +701,7 @@ def describe_replication_subnet_groups(
 
 Type annotations for `boto3.client("dms").describe_replication_task_assessment_results` method.
 
-[Client.describe_replication_task_assessment_results documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_assessment_results)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_assessment_results]
 
 ```python
 def describe_replication_task_assessment_results(
@@ -712,7 +717,7 @@ def describe_replication_task_assessment_results(
 
 Type annotations for `boto3.client("dms").describe_replication_task_assessment_runs` method.
 
-[Client.describe_replication_task_assessment_runs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_assessment_runs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_assessment_runs]
 
 ```python
 def describe_replication_task_assessment_runs(
@@ -728,7 +733,7 @@ def describe_replication_task_assessment_runs(
 
 Type annotations for `boto3.client("dms").describe_replication_task_individual_assessments` method.
 
-[Client.describe_replication_task_individual_assessments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_individual_assessments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_individual_assessments]
 
 ```python
 def describe_replication_task_individual_assessments(
@@ -744,7 +749,7 @@ def describe_replication_task_individual_assessments(
 
 Type annotations for `boto3.client("dms").describe_replication_tasks` method.
 
-[Client.describe_replication_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_tasks]
 
 ```python
 def describe_replication_tasks(
@@ -761,7 +766,7 @@ def describe_replication_tasks(
 
 Type annotations for `boto3.client("dms").describe_schemas` method.
 
-[Client.describe_schemas documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_schemas)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_schemas]
 
 ```python
 def describe_schemas(
@@ -777,7 +782,7 @@ def describe_schemas(
 
 Type annotations for `boto3.client("dms").describe_table_statistics` method.
 
-[Client.describe_table_statistics documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_table_statistics)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_table_statistics]
 
 ```python
 def describe_table_statistics(
@@ -794,7 +799,7 @@ def describe_table_statistics(
 
 Type annotations for `boto3.client("dms").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -811,7 +816,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("dms").import_certificate` method.
 
-[Client.import_certificate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.import_certificate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.import_certificate]
 
 ```python
 def import_certificate(
@@ -828,7 +833,7 @@ def import_certificate(
 
 Type annotations for `boto3.client("dms").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -842,7 +847,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("dms").modify_endpoint` method.
 
-[Client.modify_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_endpoint]
 
 ```python
 def modify_endpoint(
@@ -885,7 +890,7 @@ def modify_endpoint(
 
 Type annotations for `boto3.client("dms").modify_event_subscription` method.
 
-[Client.modify_event_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_event_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_event_subscription]
 
 ```python
 def modify_event_subscription(
@@ -903,7 +908,7 @@ def modify_event_subscription(
 
 Type annotations for `boto3.client("dms").modify_replication_instance` method.
 
-[Client.modify_replication_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_instance]
 
 ```python
 def modify_replication_instance(
@@ -927,7 +932,7 @@ def modify_replication_instance(
 
 Type annotations for `boto3.client("dms").modify_replication_subnet_group` method.
 
-[Client.modify_replication_subnet_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_subnet_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_subnet_group]
 
 ```python
 def modify_replication_subnet_group(
@@ -943,7 +948,7 @@ def modify_replication_subnet_group(
 
 Type annotations for `boto3.client("dms").modify_replication_task` method.
 
-[Client.modify_replication_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_task]
 
 ```python
 def modify_replication_task(
@@ -965,7 +970,7 @@ def modify_replication_task(
 
 Type annotations for `boto3.client("dms").move_replication_task` method.
 
-[Client.move_replication_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.move_replication_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.move_replication_task]
 
 ```python
 def move_replication_task(
@@ -980,7 +985,7 @@ def move_replication_task(
 
 Type annotations for `boto3.client("dms").reboot_replication_instance` method.
 
-[Client.reboot_replication_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.reboot_replication_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.reboot_replication_instance]
 
 ```python
 def reboot_replication_instance(
@@ -995,7 +1000,7 @@ def reboot_replication_instance(
 
 Type annotations for `boto3.client("dms").refresh_schemas` method.
 
-[Client.refresh_schemas documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.refresh_schemas)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.refresh_schemas]
 
 ```python
 def refresh_schemas(
@@ -1010,7 +1015,7 @@ def refresh_schemas(
 
 Type annotations for `boto3.client("dms").reload_tables` method.
 
-[Client.reload_tables documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.reload_tables)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.reload_tables]
 
 ```python
 def reload_tables(
@@ -1026,7 +1031,7 @@ def reload_tables(
 
 Type annotations for `boto3.client("dms").remove_tags_from_resource` method.
 
-[Client.remove_tags_from_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.remove_tags_from_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.remove_tags_from_resource]
 
 ```python
 def remove_tags_from_resource(
@@ -1041,7 +1046,7 @@ def remove_tags_from_resource(
 
 Type annotations for `boto3.client("dms").start_replication_task` method.
 
-[Client.start_replication_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task]
 
 ```python
 def start_replication_task(
@@ -1059,7 +1064,7 @@ def start_replication_task(
 
 Type annotations for `boto3.client("dms").start_replication_task_assessment` method.
 
-[Client.start_replication_task_assessment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment]
 
 ```python
 def start_replication_task_assessment(
@@ -1073,7 +1078,7 @@ def start_replication_task_assessment(
 
 Type annotations for `boto3.client("dms").start_replication_task_assessment_run` method.
 
-[Client.start_replication_task_assessment_run documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment_run)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment_run]
 
 ```python
 def start_replication_task_assessment_run(
@@ -1095,7 +1100,7 @@ def start_replication_task_assessment_run(
 
 Type annotations for `boto3.client("dms").stop_replication_task` method.
 
-[Client.stop_replication_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.stop_replication_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.stop_replication_task]
 
 ```python
 def stop_replication_task(
@@ -1109,7 +1114,7 @@ def stop_replication_task(
 
 Type annotations for `boto3.client("dms").test_connection` method.
 
-[Client.test_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.test_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.test_connection]
 
 ```python
 def test_connection(

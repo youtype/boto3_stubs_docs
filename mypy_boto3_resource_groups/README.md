@@ -15,7 +15,7 @@ pip install mypy-boto3-resource-groups
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ResourceGroupsClient
 
@@ -113,7 +113,7 @@ from mypy_boto3_resource_groups.literals import GroupConfigurationStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

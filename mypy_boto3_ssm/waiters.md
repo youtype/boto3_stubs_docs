@@ -15,13 +15,13 @@ Type annotations for `boto3.client("ssm").get_waiter("command_executed")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.waiters import CommandExecutedWaiter
+from mypy_boto3_ssm.waiter import CommandExecutedWaiter
 
 def get_command_executed_waiter() -> CommandExecutedWaiter:
     return boto3.client("ssm").get_waiter("command_executed")
 ```
 
-[Waiter.CommandExecuted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Waiter.CommandExecuted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Waiter.command_executed)
 
 ```python
 class CommandExecutedWaiter(Boto3Waiter):

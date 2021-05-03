@@ -1,11 +1,11 @@
-# Structures for boto3 MWAA module
+# Typed dictionaries for boto3 MWAA module
 
 > [Index](../README.md) > [MWAA](./README.md) > Structures
 
 Auto-generated documentation for [MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
 type annotations stubs module [mypy_boto3_mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
 
-- [Structures for boto3 MWAA module](#structures-for-boto3-mwaa-module)
+- [Typed dictionaries for boto3 MWAA module](#typed-dictionaries-for-boto3-mwaa-module)
   - [CreateCliTokenResponseTypeDef](#createclitokenresponsetypedef)
   - [CreateEnvironmentOutputTypeDef](#createenvironmentoutputtypedef)
   - [CreateWebLoginTokenResponseTypeDef](#createweblogintokenresponsetypedef)
@@ -49,11 +49,11 @@ from mypy_boto3_mwaa.type_defs import CreateEnvironmentOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Arn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateWebLoginTokenResponseTypeDef
@@ -128,11 +128,11 @@ from mypy_boto3_mwaa.type_defs import GetEnvironmentOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Environment`: `"EnvironmentTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## LastUpdateTypeDef
@@ -159,12 +159,10 @@ from mypy_boto3_mwaa.type_defs import ListEnvironmentsOutputTypeDef
 
 Required fields:
 - `Environments`: `List[str]`
-
-
-
-Optional fields:
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagsForResourceOutputTypeDef
@@ -174,11 +172,11 @@ from mypy_boto3_mwaa.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Tags`: `Dict[str, str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## LoggingConfigurationInputTypeDef
@@ -333,11 +331,11 @@ from mypy_boto3_mwaa.type_defs import UpdateEnvironmentOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Arn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateErrorTypeDef

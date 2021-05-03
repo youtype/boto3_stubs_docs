@@ -95,8 +95,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_s3.service_resource import S3ServiceResource
+
+def get_s3_resource() -> S3ServiceResource:
+    return boto3.resource("s3")
 ```
 
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource)
 
 
 ## Methods
@@ -105,7 +109,7 @@ from mypy_boto3_s3.service_resource import S3ServiceResource
 
 Type annotations for `boto3.resource("s3").Bucket` method.
 
-[ServiceResource.Bucket documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.Bucket)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.Bucket]
 
 Definition:
 
@@ -121,7 +125,7 @@ def Bucket(
 
 Type annotations for `boto3.resource("s3").BucketAcl` method.
 
-[ServiceResource.BucketAcl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketAcl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.BucketAcl]
 
 Definition:
 
@@ -137,7 +141,7 @@ def BucketAcl(
 
 Type annotations for `boto3.resource("s3").BucketCors` method.
 
-[ServiceResource.BucketCors documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketCors)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.BucketCors]
 
 Definition:
 
@@ -153,7 +157,7 @@ def BucketCors(
 
 Type annotations for `boto3.resource("s3").BucketLifecycle` method.
 
-[ServiceResource.BucketLifecycle documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLifecycle)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.BucketLifecycle]
 
 Definition:
 
@@ -169,7 +173,7 @@ def BucketLifecycle(
 
 Type annotations for `boto3.resource("s3").BucketLifecycleConfiguration` method.
 
-[ServiceResource.BucketLifecycleConfiguration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLifecycleConfiguration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.BucketLifecycleConfiguration]
 
 Definition:
 
@@ -185,7 +189,7 @@ def BucketLifecycleConfiguration(
 
 Type annotations for `boto3.resource("s3").BucketLogging` method.
 
-[ServiceResource.BucketLogging documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLogging)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.BucketLogging]
 
 Definition:
 
@@ -201,7 +205,7 @@ def BucketLogging(
 
 Type annotations for `boto3.resource("s3").BucketNotification` method.
 
-[ServiceResource.BucketNotification documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketNotification)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.BucketNotification]
 
 Definition:
 
@@ -217,7 +221,7 @@ def BucketNotification(
 
 Type annotations for `boto3.resource("s3").BucketPolicy` method.
 
-[ServiceResource.BucketPolicy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketPolicy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.BucketPolicy]
 
 Definition:
 
@@ -233,7 +237,7 @@ def BucketPolicy(
 
 Type annotations for `boto3.resource("s3").BucketRequestPayment` method.
 
-[ServiceResource.BucketRequestPayment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketRequestPayment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.BucketRequestPayment]
 
 Definition:
 
@@ -249,7 +253,7 @@ def BucketRequestPayment(
 
 Type annotations for `boto3.resource("s3").BucketTagging` method.
 
-[ServiceResource.BucketTagging documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketTagging)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.BucketTagging]
 
 Definition:
 
@@ -265,7 +269,7 @@ def BucketTagging(
 
 Type annotations for `boto3.resource("s3").BucketVersioning` method.
 
-[ServiceResource.BucketVersioning documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketVersioning)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.BucketVersioning]
 
 Definition:
 
@@ -281,7 +285,7 @@ def BucketVersioning(
 
 Type annotations for `boto3.resource("s3").BucketWebsite` method.
 
-[ServiceResource.BucketWebsite documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketWebsite)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.BucketWebsite]
 
 Definition:
 
@@ -297,7 +301,7 @@ def BucketWebsite(
 
 Type annotations for `boto3.resource("s3").MultipartUpload` method.
 
-[ServiceResource.MultipartUpload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.MultipartUpload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.MultipartUpload]
 
 Definition:
 
@@ -315,7 +319,7 @@ def MultipartUpload(
 
 Type annotations for `boto3.resource("s3").MultipartUploadPart` method.
 
-[ServiceResource.MultipartUploadPart documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.MultipartUploadPart)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.MultipartUploadPart]
 
 Definition:
 
@@ -334,7 +338,7 @@ def MultipartUploadPart(
 
 Type annotations for `boto3.resource("s3").Object` method.
 
-[ServiceResource.Object documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.Object)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.Object]
 
 Definition:
 
@@ -351,7 +355,7 @@ def Object(
 
 Type annotations for `boto3.resource("s3").ObjectAcl` method.
 
-[ServiceResource.ObjectAcl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectAcl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.ObjectAcl]
 
 Definition:
 
@@ -368,7 +372,7 @@ def ObjectAcl(
 
 Type annotations for `boto3.resource("s3").ObjectSummary` method.
 
-[ServiceResource.ObjectSummary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectSummary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.ObjectSummary]
 
 Definition:
 
@@ -385,7 +389,7 @@ def ObjectSummary(
 
 Type annotations for `boto3.resource("s3").ObjectVersion` method.
 
-[ServiceResource.ObjectVersion documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectVersion)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.ObjectVersion]
 
 Definition:
 
@@ -403,7 +407,7 @@ def ObjectVersion(
 
 Type annotations for `boto3.resource("s3").create_bucket` method.
 
-[ServiceResource.create_bucket documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.create_bucket)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.create_bucket]
 
 Definition:
 
@@ -427,7 +431,7 @@ def create_bucket(
 
 Type annotations for `boto3.resource("s3").get_available_subresources` method.
 
-[ServiceResource.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.S3ServiceResource.get_available_subresources]
 
 Definition:
 
@@ -458,7 +462,7 @@ def get_collection() -> ServiceResourceBucketsCollection:
     )
 ```
 
-[ServiceResource.buckets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.buckets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ServiceResourceBucketsCollection)
 
 Definition:
 
@@ -513,7 +517,7 @@ def get_resource() -> Bucket:
     return boto3.resource("s3").Bucket(...)
 ```
 
-[Bucket documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.Bucket)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.Bucket)
 
 
 ### Bucket attributes
@@ -539,7 +543,7 @@ def get_resource() -> Bucket:
 
 Type annotations for `boto3.resource("s3").Acl` method.
 
-[Bucket.Acl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Acl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Acl]
 
 ```python
 def Acl(
@@ -552,7 +556,7 @@ def Acl(
 
 Type annotations for `boto3.resource("s3").Cors` method.
 
-[Bucket.Cors documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Cors)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Cors]
 
 ```python
 def Cors(
@@ -565,7 +569,7 @@ def Cors(
 
 Type annotations for `boto3.resource("s3").Lifecycle` method.
 
-[Bucket.Lifecycle documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Lifecycle)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Lifecycle]
 
 ```python
 def Lifecycle(
@@ -578,7 +582,7 @@ def Lifecycle(
 
 Type annotations for `boto3.resource("s3").LifecycleConfiguration` method.
 
-[Bucket.LifecycleConfiguration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.LifecycleConfiguration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.LifecycleConfiguration]
 
 ```python
 def LifecycleConfiguration(
@@ -591,7 +595,7 @@ def LifecycleConfiguration(
 
 Type annotations for `boto3.resource("s3").Logging` method.
 
-[Bucket.Logging documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Logging)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Logging]
 
 ```python
 def Logging(
@@ -604,7 +608,7 @@ def Logging(
 
 Type annotations for `boto3.resource("s3").Notification` method.
 
-[Bucket.Notification documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Notification)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Notification]
 
 ```python
 def Notification(
@@ -617,7 +621,7 @@ def Notification(
 
 Type annotations for `boto3.resource("s3").Object` method.
 
-[Bucket.Object documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Object)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Object]
 
 ```python
 def Object(
@@ -631,7 +635,7 @@ def Object(
 
 Type annotations for `boto3.resource("s3").Policy` method.
 
-[Bucket.Policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Policy]
 
 ```python
 def Policy(
@@ -644,7 +648,7 @@ def Policy(
 
 Type annotations for `boto3.resource("s3").RequestPayment` method.
 
-[Bucket.RequestPayment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.RequestPayment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.RequestPayment]
 
 ```python
 def RequestPayment(
@@ -657,7 +661,7 @@ def RequestPayment(
 
 Type annotations for `boto3.resource("s3").Tagging` method.
 
-[Bucket.Tagging documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Tagging)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Tagging]
 
 ```python
 def Tagging(
@@ -670,7 +674,7 @@ def Tagging(
 
 Type annotations for `boto3.resource("s3").Versioning` method.
 
-[Bucket.Versioning documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Versioning)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Versioning]
 
 ```python
 def Versioning(
@@ -683,7 +687,7 @@ def Versioning(
 
 Type annotations for `boto3.resource("s3").Website` method.
 
-[Bucket.Website documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Website)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Website]
 
 ```python
 def Website(
@@ -696,7 +700,7 @@ def Website(
 
 Type annotations for `boto3.resource("s3").copy` method.
 
-[Bucket.copy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.copy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.copy]
 
 ```python
 def copy(
@@ -715,7 +719,7 @@ def copy(
 
 Type annotations for `boto3.resource("s3").create` method.
 
-[Bucket.create documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.create)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.create]
 
 ```python
 def create(
@@ -736,7 +740,7 @@ def create(
 
 Type annotations for `boto3.resource("s3").delete` method.
 
-[Bucket.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.delete]
 
 ```python
 def delete(
@@ -750,7 +754,7 @@ def delete(
 
 Type annotations for `boto3.resource("s3").delete_objects` method.
 
-[Bucket.delete_objects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.delete_objects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.delete_objects]
 
 ```python
 def delete_objects(
@@ -768,7 +772,7 @@ def delete_objects(
 
 Type annotations for `boto3.resource("s3").download_file` method.
 
-[Bucket.download_file documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.download_file)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.download_file]
 
 ```python
 def download_file(
@@ -786,7 +790,7 @@ def download_file(
 
 Type annotations for `boto3.resource("s3").download_fileobj` method.
 
-[Bucket.download_fileobj documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.download_fileobj)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.download_fileobj]
 
 ```python
 def download_fileobj(
@@ -804,7 +808,7 @@ def download_fileobj(
 
 Type annotations for `boto3.resource("s3").get_available_subresources` method.
 
-[Bucket.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -817,7 +821,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("s3").load` method.
 
-[Bucket.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.load]
 
 ```python
 def load(
@@ -830,7 +834,7 @@ def load(
 
 Type annotations for `boto3.resource("s3").put_object` method.
 
-[Bucket.put_object documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.put_object)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.put_object]
 
 ```python
 def put_object(
@@ -874,7 +878,7 @@ def put_object(
 
 Type annotations for `boto3.resource("s3").upload_file` method.
 
-[Bucket.upload_file documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.upload_file)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.upload_file]
 
 ```python
 def upload_file(
@@ -892,7 +896,7 @@ def upload_file(
 
 Type annotations for `boto3.resource("s3").upload_fileobj` method.
 
-[Bucket.upload_fileobj documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.upload_fileobj)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.upload_fileobj]
 
 ```python
 def upload_fileobj(
@@ -910,7 +914,7 @@ def upload_fileobj(
 
 Type annotations for `boto3.resource("s3").wait_until_exists` method.
 
-[Bucket.wait_until_exists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.wait_until_exists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.wait_until_exists]
 
 ```python
 def wait_until_exists(
@@ -923,7 +927,7 @@ def wait_until_exists(
 
 Type annotations for `boto3.resource("s3").wait_until_not_exists` method.
 
-[Bucket.wait_until_not_exists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.wait_until_not_exists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.wait_until_not_exists]
 
 ```python
 def wait_until_not_exists(
@@ -952,7 +956,7 @@ def get_collection() -> BucketMultipartUploadsCollection:
     return resource.multipart_uploads
 ```
 
-[Bucket.multipart_uploads documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.multipart_uploads)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.BucketMultipartUploadsCollection)
 
 ```python
 class BucketMultipartUploadsCollection(ResourceCollection):
@@ -1010,7 +1014,7 @@ def get_collection() -> BucketObjectVersionsCollection:
     return resource.object_versions
 ```
 
-[Bucket.object_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.object_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.BucketObjectVersionsCollection)
 
 ```python
 class BucketObjectVersionsCollection(ResourceCollection):
@@ -1077,7 +1081,7 @@ def get_collection() -> BucketObjectsCollection:
     return resource.objects
 ```
 
-[Bucket.objects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.objects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.BucketObjectsCollection)
 
 ```python
 class BucketObjectsCollection(ResourceCollection):
@@ -1146,7 +1150,7 @@ def get_resource() -> BucketAcl:
     return boto3.resource("s3").BucketAcl(...)
 ```
 
-[BucketAcl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketAcl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketAcl)
 
 
 ### BucketAcl attributes
@@ -1168,7 +1172,7 @@ def get_resource() -> BucketAcl:
 
 Type annotations for `boto3.resource("s3").Bucket` method.
 
-[BucketAcl.Bucket documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.Bucket)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.Bucket]
 
 ```python
 def Bucket(
@@ -1181,7 +1185,7 @@ def Bucket(
 
 Type annotations for `boto3.resource("s3").get_available_subresources` method.
 
-[BucketAcl.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -1194,7 +1198,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("s3").load` method.
 
-[BucketAcl.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.load]
 
 ```python
 def load(
@@ -1207,7 +1211,7 @@ def load(
 
 Type annotations for `boto3.resource("s3").put` method.
 
-[BucketAcl.put documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.put)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.put]
 
 ```python
 def put(
@@ -1228,7 +1232,7 @@ def put(
 
 Type annotations for `boto3.resource("s3").reload` method.
 
-[BucketAcl.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.reload]
 
 ```python
 def reload(
@@ -1255,7 +1259,7 @@ def get_resource() -> BucketCors:
     return boto3.resource("s3").BucketCors(...)
 ```
 
-[BucketCors documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketCors)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketCors)
 
 
 ### BucketCors attributes
@@ -1275,7 +1279,7 @@ def get_resource() -> BucketCors:
 
 Type annotations for `boto3.resource("s3").Bucket` method.
 
-[BucketCors.Bucket documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.Bucket)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.Bucket]
 
 ```python
 def Bucket(
@@ -1288,7 +1292,7 @@ def Bucket(
 
 Type annotations for `boto3.resource("s3").delete` method.
 
-[BucketCors.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.delete]
 
 ```python
 def delete(
@@ -1302,7 +1306,7 @@ def delete(
 
 Type annotations for `boto3.resource("s3").get_available_subresources` method.
 
-[BucketCors.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -1315,7 +1319,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("s3").load` method.
 
-[BucketCors.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.load]
 
 ```python
 def load(
@@ -1328,7 +1332,7 @@ def load(
 
 Type annotations for `boto3.resource("s3").put` method.
 
-[BucketCors.put documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.put)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.put]
 
 ```python
 def put(
@@ -1343,7 +1347,7 @@ def put(
 
 Type annotations for `boto3.resource("s3").reload` method.
 
-[BucketCors.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.reload]
 
 ```python
 def reload(
@@ -1370,7 +1374,7 @@ def get_resource() -> BucketLifecycle:
     return boto3.resource("s3").BucketLifecycle(...)
 ```
 
-[BucketLifecycle documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLifecycle)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLifecycle)
 
 
 ### BucketLifecycle attributes
@@ -1390,7 +1394,7 @@ def get_resource() -> BucketLifecycle:
 
 Type annotations for `boto3.resource("s3").Bucket` method.
 
-[BucketLifecycle.Bucket documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.Bucket)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.Bucket]
 
 ```python
 def Bucket(
@@ -1403,7 +1407,7 @@ def Bucket(
 
 Type annotations for `boto3.resource("s3").delete` method.
 
-[BucketLifecycle.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.delete]
 
 ```python
 def delete(
@@ -1417,7 +1421,7 @@ def delete(
 
 Type annotations for `boto3.resource("s3").get_available_subresources` method.
 
-[BucketLifecycle.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -1430,7 +1434,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("s3").load` method.
 
-[BucketLifecycle.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.load]
 
 ```python
 def load(
@@ -1443,7 +1447,7 @@ def load(
 
 Type annotations for `boto3.resource("s3").put` method.
 
-[BucketLifecycle.put documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.put)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.put]
 
 ```python
 def put(
@@ -1458,7 +1462,7 @@ def put(
 
 Type annotations for `boto3.resource("s3").reload` method.
 
-[BucketLifecycle.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.reload]
 
 ```python
 def reload(
@@ -1485,7 +1489,7 @@ def get_resource() -> BucketLifecycleConfiguration:
     return boto3.resource("s3").BucketLifecycleConfiguration(...)
 ```
 
-[BucketLifecycleConfiguration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLifecycleConfiguration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLifecycleConfiguration)
 
 
 ### BucketLifecycleConfiguration attributes
@@ -1505,7 +1509,7 @@ def get_resource() -> BucketLifecycleConfiguration:
 
 Type annotations for `boto3.resource("s3").Bucket` method.
 
-[BucketLifecycleConfiguration.Bucket documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.Bucket)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.Bucket]
 
 ```python
 def Bucket(
@@ -1518,7 +1522,7 @@ def Bucket(
 
 Type annotations for `boto3.resource("s3").delete` method.
 
-[BucketLifecycleConfiguration.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.delete]
 
 ```python
 def delete(
@@ -1532,7 +1536,7 @@ def delete(
 
 Type annotations for `boto3.resource("s3").get_available_subresources` method.
 
-[BucketLifecycleConfiguration.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -1545,7 +1549,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("s3").load` method.
 
-[BucketLifecycleConfiguration.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.load]
 
 ```python
 def load(
@@ -1558,7 +1562,7 @@ def load(
 
 Type annotations for `boto3.resource("s3").put` method.
 
-[BucketLifecycleConfiguration.put documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.put)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.put]
 
 ```python
 def put(
@@ -1573,7 +1577,7 @@ def put(
 
 Type annotations for `boto3.resource("s3").reload` method.
 
-[BucketLifecycleConfiguration.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.reload]
 
 ```python
 def reload(
@@ -1600,7 +1604,7 @@ def get_resource() -> BucketLogging:
     return boto3.resource("s3").BucketLogging(...)
 ```
 
-[BucketLogging documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLogging)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLogging)
 
 
 ### BucketLogging attributes
@@ -1620,7 +1624,7 @@ def get_resource() -> BucketLogging:
 
 Type annotations for `boto3.resource("s3").Bucket` method.
 
-[BucketLogging.Bucket documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.Bucket)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.Bucket]
 
 ```python
 def Bucket(
@@ -1633,7 +1637,7 @@ def Bucket(
 
 Type annotations for `boto3.resource("s3").get_available_subresources` method.
 
-[BucketLogging.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -1646,7 +1650,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("s3").load` method.
 
-[BucketLogging.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.load]
 
 ```python
 def load(
@@ -1659,7 +1663,7 @@ def load(
 
 Type annotations for `boto3.resource("s3").put` method.
 
-[BucketLogging.put documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.put)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.put]
 
 ```python
 def put(
@@ -1674,7 +1678,7 @@ def put(
 
 Type annotations for `boto3.resource("s3").reload` method.
 
-[BucketLogging.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.reload]
 
 ```python
 def reload(
@@ -1701,7 +1705,7 @@ def get_resource() -> BucketNotification:
     return boto3.resource("s3").BucketNotification(...)
 ```
 
-[BucketNotification documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketNotification)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketNotification)
 
 
 ### BucketNotification attributes
@@ -1725,7 +1729,7 @@ def get_resource() -> BucketNotification:
 
 Type annotations for `boto3.resource("s3").Bucket` method.
 
-[BucketNotification.Bucket documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.Bucket)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.Bucket]
 
 ```python
 def Bucket(
@@ -1738,7 +1742,7 @@ def Bucket(
 
 Type annotations for `boto3.resource("s3").get_available_subresources` method.
 
-[BucketNotification.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -1751,7 +1755,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("s3").load` method.
 
-[BucketNotification.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.load]
 
 ```python
 def load(
@@ -1764,7 +1768,7 @@ def load(
 
 Type annotations for `boto3.resource("s3").put` method.
 
-[BucketNotification.put documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.put)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.put]
 
 ```python
 def put(
@@ -1779,7 +1783,7 @@ def put(
 
 Type annotations for `boto3.resource("s3").reload` method.
 
-[BucketNotification.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.reload]
 
 ```python
 def reload(
@@ -1806,7 +1810,7 @@ def get_resource() -> BucketPolicy:
     return boto3.resource("s3").BucketPolicy(...)
 ```
 
-[BucketPolicy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketPolicy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketPolicy)
 
 
 ### BucketPolicy attributes
@@ -1826,7 +1830,7 @@ def get_resource() -> BucketPolicy:
 
 Type annotations for `boto3.resource("s3").Bucket` method.
 
-[BucketPolicy.Bucket documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.Bucket)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.Bucket]
 
 ```python
 def Bucket(
@@ -1839,7 +1843,7 @@ def Bucket(
 
 Type annotations for `boto3.resource("s3").delete` method.
 
-[BucketPolicy.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.delete]
 
 ```python
 def delete(
@@ -1853,7 +1857,7 @@ def delete(
 
 Type annotations for `boto3.resource("s3").get_available_subresources` method.
 
-[BucketPolicy.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -1866,7 +1870,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("s3").load` method.
 
-[BucketPolicy.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.load]
 
 ```python
 def load(
@@ -1879,7 +1883,7 @@ def load(
 
 Type annotations for `boto3.resource("s3").put` method.
 
-[BucketPolicy.put documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.put)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.put]
 
 ```python
 def put(
@@ -1895,7 +1899,7 @@ def put(
 
 Type annotations for `boto3.resource("s3").reload` method.
 
-[BucketPolicy.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.reload]
 
 ```python
 def reload(
@@ -1922,7 +1926,7 @@ def get_resource() -> BucketRequestPayment:
     return boto3.resource("s3").BucketRequestPayment(...)
 ```
 
-[BucketRequestPayment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketRequestPayment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketRequestPayment)
 
 
 ### BucketRequestPayment attributes
@@ -1942,7 +1946,7 @@ def get_resource() -> BucketRequestPayment:
 
 Type annotations for `boto3.resource("s3").Bucket` method.
 
-[BucketRequestPayment.Bucket documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.Bucket)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.Bucket]
 
 ```python
 def Bucket(
@@ -1955,7 +1959,7 @@ def Bucket(
 
 Type annotations for `boto3.resource("s3").get_available_subresources` method.
 
-[BucketRequestPayment.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -1968,7 +1972,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("s3").load` method.
 
-[BucketRequestPayment.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.load]
 
 ```python
 def load(
@@ -1981,7 +1985,7 @@ def load(
 
 Type annotations for `boto3.resource("s3").put` method.
 
-[BucketRequestPayment.put documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.put)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.put]
 
 ```python
 def put(
@@ -1996,7 +2000,7 @@ def put(
 
 Type annotations for `boto3.resource("s3").reload` method.
 
-[BucketRequestPayment.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.reload]
 
 ```python
 def reload(
@@ -2023,7 +2027,7 @@ def get_resource() -> BucketTagging:
     return boto3.resource("s3").BucketTagging(...)
 ```
 
-[BucketTagging documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketTagging)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketTagging)
 
 
 ### BucketTagging attributes
@@ -2043,7 +2047,7 @@ def get_resource() -> BucketTagging:
 
 Type annotations for `boto3.resource("s3").Bucket` method.
 
-[BucketTagging.Bucket documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.Bucket)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.Bucket]
 
 ```python
 def Bucket(
@@ -2056,7 +2060,7 @@ def Bucket(
 
 Type annotations for `boto3.resource("s3").delete` method.
 
-[BucketTagging.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.delete]
 
 ```python
 def delete(
@@ -2070,7 +2074,7 @@ def delete(
 
 Type annotations for `boto3.resource("s3").get_available_subresources` method.
 
-[BucketTagging.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -2083,7 +2087,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("s3").load` method.
 
-[BucketTagging.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.load]
 
 ```python
 def load(
@@ -2096,7 +2100,7 @@ def load(
 
 Type annotations for `boto3.resource("s3").put` method.
 
-[BucketTagging.put documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.put)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.put]
 
 ```python
 def put(
@@ -2111,7 +2115,7 @@ def put(
 
 Type annotations for `boto3.resource("s3").reload` method.
 
-[BucketTagging.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.reload]
 
 ```python
 def reload(
@@ -2138,7 +2142,7 @@ def get_resource() -> BucketVersioning:
     return boto3.resource("s3").BucketVersioning(...)
 ```
 
-[BucketVersioning documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketVersioning)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketVersioning)
 
 
 ### BucketVersioning attributes
@@ -2160,7 +2164,7 @@ def get_resource() -> BucketVersioning:
 
 Type annotations for `boto3.resource("s3").Bucket` method.
 
-[BucketVersioning.Bucket documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.Bucket)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.Bucket]
 
 ```python
 def Bucket(
@@ -2173,7 +2177,7 @@ def Bucket(
 
 Type annotations for `boto3.resource("s3").enable` method.
 
-[BucketVersioning.enable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.enable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.enable]
 
 ```python
 def enable(
@@ -2189,7 +2193,7 @@ def enable(
 
 Type annotations for `boto3.resource("s3").get_available_subresources` method.
 
-[BucketVersioning.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -2202,7 +2206,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("s3").load` method.
 
-[BucketVersioning.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.load]
 
 ```python
 def load(
@@ -2215,7 +2219,7 @@ def load(
 
 Type annotations for `boto3.resource("s3").put` method.
 
-[BucketVersioning.put documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.put)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.put]
 
 ```python
 def put(
@@ -2231,7 +2235,7 @@ def put(
 
 Type annotations for `boto3.resource("s3").reload` method.
 
-[BucketVersioning.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.reload]
 
 ```python
 def reload(
@@ -2244,7 +2248,7 @@ def reload(
 
 Type annotations for `boto3.resource("s3").suspend` method.
 
-[BucketVersioning.suspend documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.suspend)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.suspend]
 
 ```python
 def suspend(
@@ -2274,7 +2278,7 @@ def get_resource() -> BucketWebsite:
     return boto3.resource("s3").BucketWebsite(...)
 ```
 
-[BucketWebsite documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketWebsite)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketWebsite)
 
 
 ### BucketWebsite attributes
@@ -2300,7 +2304,7 @@ def get_resource() -> BucketWebsite:
 
 Type annotations for `boto3.resource("s3").Bucket` method.
 
-[BucketWebsite.Bucket documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.Bucket)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.Bucket]
 
 ```python
 def Bucket(
@@ -2313,7 +2317,7 @@ def Bucket(
 
 Type annotations for `boto3.resource("s3").delete` method.
 
-[BucketWebsite.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.delete]
 
 ```python
 def delete(
@@ -2327,7 +2331,7 @@ def delete(
 
 Type annotations for `boto3.resource("s3").get_available_subresources` method.
 
-[BucketWebsite.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -2340,7 +2344,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("s3").load` method.
 
-[BucketWebsite.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.load]
 
 ```python
 def load(
@@ -2353,7 +2357,7 @@ def load(
 
 Type annotations for `boto3.resource("s3").put` method.
 
-[BucketWebsite.put documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.put)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.put]
 
 ```python
 def put(
@@ -2368,7 +2372,7 @@ def put(
 
 Type annotations for `boto3.resource("s3").reload` method.
 
-[BucketWebsite.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.reload]
 
 ```python
 def reload(
@@ -2395,7 +2399,7 @@ def get_resource() -> MultipartUpload:
     return boto3.resource("s3").MultipartUpload(...)
 ```
 
-[MultipartUpload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.MultipartUpload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.MultipartUpload)
 
 
 ### MultipartUpload attributes
@@ -2431,7 +2435,7 @@ def get_resource() -> MultipartUpload:
 
 Type annotations for `boto3.resource("s3").Object` method.
 
-[MultipartUpload.Object documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.Object)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.Object]
 
 ```python
 def Object(
@@ -2444,7 +2448,7 @@ def Object(
 
 Type annotations for `boto3.resource("s3").Part` method.
 
-[MultipartUpload.Part documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.Part)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.Part]
 
 ```python
 def Part(
@@ -2458,7 +2462,7 @@ def Part(
 
 Type annotations for `boto3.resource("s3").abort` method.
 
-[MultipartUpload.abort documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.abort)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.abort]
 
 ```python
 def abort(
@@ -2473,7 +2477,7 @@ def abort(
 
 Type annotations for `boto3.resource("s3").complete` method.
 
-[MultipartUpload.complete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.complete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.complete]
 
 ```python
 def complete(
@@ -2489,7 +2493,7 @@ def complete(
 
 Type annotations for `boto3.resource("s3").get_available_subresources` method.
 
-[MultipartUpload.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -2518,7 +2522,7 @@ def get_collection() -> MultipartUploadPartsCollection:
     return resource.parts
 ```
 
-[MultipartUpload.parts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.parts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.MultipartUploadPartsCollection)
 
 ```python
 class MultipartUploadPartsCollection(ResourceCollection):
@@ -2575,7 +2579,7 @@ def get_resource() -> MultipartUploadPart:
     return boto3.resource("s3").MultipartUploadPart(...)
 ```
 
-[MultipartUploadPart documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.MultipartUploadPart)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.MultipartUploadPart)
 
 
 ### MultipartUploadPart attributes
@@ -2605,7 +2609,7 @@ def get_resource() -> MultipartUploadPart:
 
 Type annotations for `boto3.resource("s3").MultipartUpload` method.
 
-[MultipartUploadPart.MultipartUpload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUploadPart.MultipartUpload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUploadPart.MultipartUpload]
 
 ```python
 def MultipartUpload(
@@ -2618,7 +2622,7 @@ def MultipartUpload(
 
 Type annotations for `boto3.resource("s3").copy_from` method.
 
-[MultipartUploadPart.copy_from documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUploadPart.copy_from)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUploadPart.copy_from]
 
 ```python
 def copy_from(
@@ -2646,7 +2650,7 @@ def copy_from(
 
 Type annotations for `boto3.resource("s3").get_available_subresources` method.
 
-[MultipartUploadPart.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUploadPart.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUploadPart.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -2659,7 +2663,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("s3").upload` method.
 
-[MultipartUploadPart.upload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUploadPart.upload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUploadPart.upload]
 
 ```python
 def upload(
@@ -2694,7 +2698,7 @@ def get_resource() -> Object:
     return boto3.resource("s3").Object(...)
 ```
 
-[Object documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.Object)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.Object)
 
 
 ### Object attributes
@@ -2774,7 +2778,7 @@ def get_resource() -> Object:
 
 Type annotations for `boto3.resource("s3").Acl` method.
 
-[Object.Acl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.Acl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.Acl]
 
 ```python
 def Acl(
@@ -2787,7 +2791,7 @@ def Acl(
 
 Type annotations for `boto3.resource("s3").Bucket` method.
 
-[Object.Bucket documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.Bucket)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.Bucket]
 
 ```python
 def Bucket(
@@ -2800,7 +2804,7 @@ def Bucket(
 
 Type annotations for `boto3.resource("s3").MultipartUpload` method.
 
-[Object.MultipartUpload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.MultipartUpload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.MultipartUpload]
 
 ```python
 def MultipartUpload(
@@ -2814,7 +2818,7 @@ def MultipartUpload(
 
 Type annotations for `boto3.resource("s3").Version` method.
 
-[Object.Version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.Version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.Version]
 
 ```python
 def Version(
@@ -2828,7 +2832,7 @@ def Version(
 
 Type annotations for `boto3.resource("s3").copy` method.
 
-[Object.copy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.copy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.copy]
 
 ```python
 def copy(
@@ -2846,7 +2850,7 @@ def copy(
 
 Type annotations for `boto3.resource("s3").copy_from` method.
 
-[Object.copy_from documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.copy_from)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.copy_from]
 
 ```python
 def copy_from(
@@ -2897,7 +2901,7 @@ def copy_from(
 
 Type annotations for `boto3.resource("s3").delete` method.
 
-[Object.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.delete]
 
 ```python
 def delete(
@@ -2915,7 +2919,7 @@ def delete(
 
 Type annotations for `boto3.resource("s3").download_file` method.
 
-[Object.download_file documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.download_file)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.download_file]
 
 ```python
 def download_file(
@@ -2932,7 +2936,7 @@ def download_file(
 
 Type annotations for `boto3.resource("s3").download_fileobj` method.
 
-[Object.download_fileobj documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.download_fileobj)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.download_fileobj]
 
 ```python
 def download_fileobj(
@@ -2949,7 +2953,7 @@ def download_fileobj(
 
 Type annotations for `boto3.resource("s3").get` method.
 
-[Object.get documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.get)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.get]
 
 ```python
 def get(
@@ -2980,7 +2984,7 @@ def get(
 
 Type annotations for `boto3.resource("s3").get_available_subresources` method.
 
-[Object.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -2993,7 +2997,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("s3").initiate_multipart_upload` method.
 
-[Object.initiate_multipart_upload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.initiate_multipart_upload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.initiate_multipart_upload]
 
 ```python
 def initiate_multipart_upload(
@@ -3033,7 +3037,7 @@ def initiate_multipart_upload(
 
 Type annotations for `boto3.resource("s3").load` method.
 
-[Object.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.load]
 
 ```python
 def load(
@@ -3046,7 +3050,7 @@ def load(
 
 Type annotations for `boto3.resource("s3").put` method.
 
-[Object.put documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.put)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.put]
 
 ```python
 def put(
@@ -3089,7 +3093,7 @@ def put(
 
 Type annotations for `boto3.resource("s3").reload` method.
 
-[Object.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.reload]
 
 ```python
 def reload(
@@ -3102,7 +3106,7 @@ def reload(
 
 Type annotations for `boto3.resource("s3").restore_object` method.
 
-[Object.restore_object documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.restore_object)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.restore_object]
 
 ```python
 def restore_object(
@@ -3119,7 +3123,7 @@ def restore_object(
 
 Type annotations for `boto3.resource("s3").upload_file` method.
 
-[Object.upload_file documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.upload_file)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.upload_file]
 
 ```python
 def upload_file(
@@ -3136,7 +3140,7 @@ def upload_file(
 
 Type annotations for `boto3.resource("s3").upload_fileobj` method.
 
-[Object.upload_fileobj documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.upload_fileobj)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.upload_fileobj]
 
 ```python
 def upload_fileobj(
@@ -3153,7 +3157,7 @@ def upload_fileobj(
 
 Type annotations for `boto3.resource("s3").wait_until_exists` method.
 
-[Object.wait_until_exists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.wait_until_exists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.wait_until_exists]
 
 ```python
 def wait_until_exists(
@@ -3166,7 +3170,7 @@ def wait_until_exists(
 
 Type annotations for `boto3.resource("s3").wait_until_not_exists` method.
 
-[Object.wait_until_not_exists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.wait_until_not_exists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.wait_until_not_exists]
 
 ```python
 def wait_until_not_exists(
@@ -3193,7 +3197,7 @@ def get_resource() -> ObjectAcl:
     return boto3.resource("s3").ObjectAcl(...)
 ```
 
-[ObjectAcl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectAcl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectAcl)
 
 
 ### ObjectAcl attributes
@@ -3219,7 +3223,7 @@ def get_resource() -> ObjectAcl:
 
 Type annotations for `boto3.resource("s3").Object` method.
 
-[ObjectAcl.Object documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.Object)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.Object]
 
 ```python
 def Object(
@@ -3232,7 +3236,7 @@ def Object(
 
 Type annotations for `boto3.resource("s3").get_available_subresources` method.
 
-[ObjectAcl.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -3245,7 +3249,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("s3").load` method.
 
-[ObjectAcl.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.load]
 
 ```python
 def load(
@@ -3258,7 +3262,7 @@ def load(
 
 Type annotations for `boto3.resource("s3").put` method.
 
-[ObjectAcl.put documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.put)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.put]
 
 ```python
 def put(
@@ -3281,7 +3285,7 @@ def put(
 
 Type annotations for `boto3.resource("s3").reload` method.
 
-[ObjectAcl.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.reload]
 
 ```python
 def reload(
@@ -3308,7 +3312,7 @@ def get_resource() -> ObjectSummary:
     return boto3.resource("s3").ObjectSummary(...)
 ```
 
-[ObjectSummary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectSummary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectSummary)
 
 
 ### ObjectSummary attributes
@@ -3338,7 +3342,7 @@ def get_resource() -> ObjectSummary:
 
 Type annotations for `boto3.resource("s3").Acl` method.
 
-[ObjectSummary.Acl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.Acl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.Acl]
 
 ```python
 def Acl(
@@ -3351,7 +3355,7 @@ def Acl(
 
 Type annotations for `boto3.resource("s3").Bucket` method.
 
-[ObjectSummary.Bucket documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.Bucket)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.Bucket]
 
 ```python
 def Bucket(
@@ -3364,7 +3368,7 @@ def Bucket(
 
 Type annotations for `boto3.resource("s3").MultipartUpload` method.
 
-[ObjectSummary.MultipartUpload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.MultipartUpload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.MultipartUpload]
 
 ```python
 def MultipartUpload(
@@ -3378,7 +3382,7 @@ def MultipartUpload(
 
 Type annotations for `boto3.resource("s3").Object` method.
 
-[ObjectSummary.Object documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.Object)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.Object]
 
 ```python
 def Object(
@@ -3391,7 +3395,7 @@ def Object(
 
 Type annotations for `boto3.resource("s3").Version` method.
 
-[ObjectSummary.Version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.Version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.Version]
 
 ```python
 def Version(
@@ -3405,7 +3409,7 @@ def Version(
 
 Type annotations for `boto3.resource("s3").copy_from` method.
 
-[ObjectSummary.copy_from documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.copy_from)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.copy_from]
 
 ```python
 def copy_from(
@@ -3456,7 +3460,7 @@ def copy_from(
 
 Type annotations for `boto3.resource("s3").delete` method.
 
-[ObjectSummary.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.delete]
 
 ```python
 def delete(
@@ -3474,7 +3478,7 @@ def delete(
 
 Type annotations for `boto3.resource("s3").get` method.
 
-[ObjectSummary.get documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.get)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.get]
 
 ```python
 def get(
@@ -3505,7 +3509,7 @@ def get(
 
 Type annotations for `boto3.resource("s3").get_available_subresources` method.
 
-[ObjectSummary.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -3518,7 +3522,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("s3").initiate_multipart_upload` method.
 
-[ObjectSummary.initiate_multipart_upload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.initiate_multipart_upload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.initiate_multipart_upload]
 
 ```python
 def initiate_multipart_upload(
@@ -3558,7 +3562,7 @@ def initiate_multipart_upload(
 
 Type annotations for `boto3.resource("s3").load` method.
 
-[ObjectSummary.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.load]
 
 ```python
 def load(
@@ -3571,7 +3575,7 @@ def load(
 
 Type annotations for `boto3.resource("s3").put` method.
 
-[ObjectSummary.put documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.put)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.put]
 
 ```python
 def put(
@@ -3614,7 +3618,7 @@ def put(
 
 Type annotations for `boto3.resource("s3").restore_object` method.
 
-[ObjectSummary.restore_object documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.restore_object)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.restore_object]
 
 ```python
 def restore_object(
@@ -3631,7 +3635,7 @@ def restore_object(
 
 Type annotations for `boto3.resource("s3").wait_until_exists` method.
 
-[ObjectSummary.wait_until_exists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.wait_until_exists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.wait_until_exists]
 
 ```python
 def wait_until_exists(
@@ -3644,7 +3648,7 @@ def wait_until_exists(
 
 Type annotations for `boto3.resource("s3").wait_until_not_exists` method.
 
-[ObjectSummary.wait_until_not_exists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.wait_until_not_exists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.wait_until_not_exists]
 
 ```python
 def wait_until_not_exists(
@@ -3671,7 +3675,7 @@ def get_resource() -> ObjectVersion:
     return boto3.resource("s3").ObjectVersion(...)
 ```
 
-[ObjectVersion documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectVersion)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectVersion)
 
 
 ### ObjectVersion attributes
@@ -3709,7 +3713,7 @@ def get_resource() -> ObjectVersion:
 
 Type annotations for `boto3.resource("s3").Object` method.
 
-[ObjectVersion.Object documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.Object)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.Object]
 
 ```python
 def Object(
@@ -3722,7 +3726,7 @@ def Object(
 
 Type annotations for `boto3.resource("s3").delete` method.
 
-[ObjectVersion.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.delete]
 
 ```python
 def delete(
@@ -3739,7 +3743,7 @@ def delete(
 
 Type annotations for `boto3.resource("s3").get` method.
 
-[ObjectVersion.get documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.get)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.get]
 
 ```python
 def get(
@@ -3769,7 +3773,7 @@ def get(
 
 Type annotations for `boto3.resource("s3").get_available_subresources` method.
 
-[ObjectVersion.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -3782,7 +3786,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("s3").head` method.
 
-[ObjectVersion.head documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.head)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.head]
 
 ```python
 def head(

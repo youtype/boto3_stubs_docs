@@ -21,13 +21,13 @@ Type annotations for `boto3.client("elbv2").get_paginator("describe_account_limi
 Can be used directly:
 
 ```python
-from mypy_boto3_elbv2.paginators import DescribeAccountLimitsPaginator
+from mypy_boto3_elbv2.paginator import DescribeAccountLimitsPaginator
 
 def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
     return boto3.client("elbv2").get_paginator("describe_account_limits")
 ```
 
-[Paginator.DescribeAccountLimits documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeAccountLimits)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeAccountLimits)
 
 ```python
 class DescribeAccountLimitsPaginator(Boto3Paginator):
@@ -44,13 +44,13 @@ Type annotations for `boto3.client("elbv2").get_paginator("describe_listener_cer
 Can be used directly:
 
 ```python
-from mypy_boto3_elbv2.paginators import DescribeListenerCertificatesPaginator
+from mypy_boto3_elbv2.paginator import DescribeListenerCertificatesPaginator
 
 def get_describe_listener_certificates_paginator() -> DescribeListenerCertificatesPaginator:
     return boto3.client("elbv2").get_paginator("describe_listener_certificates")
 ```
 
-[Paginator.DescribeListenerCertificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListenerCertificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListenerCertificates)
 
 ```python
 class DescribeListenerCertificatesPaginator(Boto3Paginator):
@@ -68,13 +68,13 @@ Type annotations for `boto3.client("elbv2").get_paginator("describe_listeners")`
 Can be used directly:
 
 ```python
-from mypy_boto3_elbv2.paginators import DescribeListenersPaginator
+from mypy_boto3_elbv2.paginator import DescribeListenersPaginator
 
 def get_describe_listeners_paginator() -> DescribeListenersPaginator:
     return boto3.client("elbv2").get_paginator("describe_listeners")
 ```
 
-[Paginator.DescribeListeners documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListeners)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListeners)
 
 ```python
 class DescribeListenersPaginator(Boto3Paginator):
@@ -93,13 +93,13 @@ Type annotations for `boto3.client("elbv2").get_paginator("describe_load_balance
 Can be used directly:
 
 ```python
-from mypy_boto3_elbv2.paginators import DescribeLoadBalancersPaginator
+from mypy_boto3_elbv2.paginator import DescribeLoadBalancersPaginator
 
 def get_describe_load_balancers_paginator() -> DescribeLoadBalancersPaginator:
     return boto3.client("elbv2").get_paginator("describe_load_balancers")
 ```
 
-[Paginator.DescribeLoadBalancers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeLoadBalancers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeLoadBalancers)
 
 ```python
 class DescribeLoadBalancersPaginator(Boto3Paginator):
@@ -118,13 +118,13 @@ Type annotations for `boto3.client("elbv2").get_paginator("describe_rules")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_elbv2.paginators import DescribeRulesPaginator
+from mypy_boto3_elbv2.paginator import DescribeRulesPaginator
 
 def get_describe_rules_paginator() -> DescribeRulesPaginator:
     return boto3.client("elbv2").get_paginator("describe_rules")
 ```
 
-[Paginator.DescribeRules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeRules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeRules)
 
 ```python
 class DescribeRulesPaginator(Boto3Paginator):
@@ -143,13 +143,13 @@ Type annotations for `boto3.client("elbv2").get_paginator("describe_ssl_policies
 Can be used directly:
 
 ```python
-from mypy_boto3_elbv2.paginators import DescribeSSLPoliciesPaginator
+from mypy_boto3_elbv2.paginator import DescribeSSLPoliciesPaginator
 
 def get_describe_ssl_policies_paginator() -> DescribeSSLPoliciesPaginator:
     return boto3.client("elbv2").get_paginator("describe_ssl_policies")
 ```
 
-[Paginator.DescribeSSLPolicies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeSSLPolicies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeSSLPolicies)
 
 ```python
 class DescribeSSLPoliciesPaginator(Boto3Paginator):
@@ -167,13 +167,13 @@ Type annotations for `boto3.client("elbv2").get_paginator("describe_target_group
 Can be used directly:
 
 ```python
-from mypy_boto3_elbv2.paginators import DescribeTargetGroupsPaginator
+from mypy_boto3_elbv2.paginator import DescribeTargetGroupsPaginator
 
 def get_describe_target_groups_paginator() -> DescribeTargetGroupsPaginator:
     return boto3.client("elbv2").get_paginator("describe_target_groups")
 ```
 
-[Paginator.DescribeTargetGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeTargetGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeTargetGroups)
 
 ```python
 class DescribeTargetGroupsPaginator(Boto3Paginator):

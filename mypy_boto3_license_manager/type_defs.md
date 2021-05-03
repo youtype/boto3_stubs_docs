@@ -1,11 +1,11 @@
-# Structures for boto3 LicenseManager module
+# Typed dictionaries for boto3 LicenseManager module
 
 > [Index](../README.md) > [LicenseManager](./README.md) > Structures
 
 Auto-generated documentation for [LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
 type annotations stubs module [mypy_boto3_license_manager](https://pypi.org/project/mypy-boto3-license-manager/).
 
-- [Structures for boto3 LicenseManager module](#structures-for-boto3-licensemanager-module)
+- [Typed dictionaries for boto3 LicenseManager module](#typed-dictionaries-for-boto3-licensemanager-module)
   - [AcceptGrantResponseTypeDef](#acceptgrantresponsetypedef)
   - [AutomatedDiscoveryInformationTypeDef](#automateddiscoveryinformationtypedef)
   - [BorrowConfigurationTypeDef](#borrowconfigurationtypedef)

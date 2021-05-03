@@ -39,7 +39,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_iotevents.client import IoTEventsClient
+
+def get_iotevents_client() -> IoTEventsClient:
+    return boto3.client("iotevents")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client)
 
 ## Exceptions
 
@@ -75,7 +80,7 @@ Exceptions:
 
 Type annotations for `boto3.client("iotevents").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -89,7 +94,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("iotevents").create_detector_model` method.
 
-[Client.create_detector_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.create_detector_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.create_detector_model]
 
 ```python
 def create_detector_model(
@@ -109,7 +114,7 @@ def create_detector_model(
 
 Type annotations for `boto3.client("iotevents").create_input` method.
 
-[Client.create_input documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.create_input)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.create_input]
 
 ```python
 def create_input(
@@ -126,7 +131,7 @@ def create_input(
 
 Type annotations for `boto3.client("iotevents").delete_detector_model` method.
 
-[Client.delete_detector_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.delete_detector_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.delete_detector_model]
 
 ```python
 def delete_detector_model(
@@ -140,7 +145,7 @@ def delete_detector_model(
 
 Type annotations for `boto3.client("iotevents").delete_input` method.
 
-[Client.delete_input documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.delete_input)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.delete_input]
 
 ```python
 def delete_input(
@@ -154,7 +159,7 @@ def delete_input(
 
 Type annotations for `boto3.client("iotevents").describe_detector_model` method.
 
-[Client.describe_detector_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_detector_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_detector_model]
 
 ```python
 def describe_detector_model(
@@ -169,7 +174,7 @@ def describe_detector_model(
 
 Type annotations for `boto3.client("iotevents").describe_detector_model_analysis` method.
 
-[Client.describe_detector_model_analysis documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_detector_model_analysis)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_detector_model_analysis]
 
 ```python
 def describe_detector_model_analysis(
@@ -183,7 +188,7 @@ def describe_detector_model_analysis(
 
 Type annotations for `boto3.client("iotevents").describe_input` method.
 
-[Client.describe_input documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_input)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_input]
 
 ```python
 def describe_input(
@@ -197,7 +202,7 @@ def describe_input(
 
 Type annotations for `boto3.client("iotevents").describe_logging_options` method.
 
-[Client.describe_logging_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_logging_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_logging_options]
 
 ```python
 def describe_logging_options(
@@ -210,7 +215,7 @@ def describe_logging_options(
 
 Type annotations for `boto3.client("iotevents").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -227,7 +232,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("iotevents").get_detector_model_analysis_results` method.
 
-[Client.get_detector_model_analysis_results documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.get_detector_model_analysis_results)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.get_detector_model_analysis_results]
 
 ```python
 def get_detector_model_analysis_results(
@@ -243,7 +248,7 @@ def get_detector_model_analysis_results(
 
 Type annotations for `boto3.client("iotevents").list_detector_model_versions` method.
 
-[Client.list_detector_model_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_detector_model_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_detector_model_versions]
 
 ```python
 def list_detector_model_versions(
@@ -259,7 +264,7 @@ def list_detector_model_versions(
 
 Type annotations for `boto3.client("iotevents").list_detector_models` method.
 
-[Client.list_detector_models documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_detector_models)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_detector_models]
 
 ```python
 def list_detector_models(
@@ -274,7 +279,7 @@ def list_detector_models(
 
 Type annotations for `boto3.client("iotevents").list_inputs` method.
 
-[Client.list_inputs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_inputs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_inputs]
 
 ```python
 def list_inputs(
@@ -289,7 +294,7 @@ def list_inputs(
 
 Type annotations for `boto3.client("iotevents").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -303,7 +308,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("iotevents").put_logging_options` method.
 
-[Client.put_logging_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.put_logging_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.put_logging_options]
 
 ```python
 def put_logging_options(
@@ -317,7 +322,7 @@ def put_logging_options(
 
 Type annotations for `boto3.client("iotevents").start_detector_model_analysis` method.
 
-[Client.start_detector_model_analysis documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.start_detector_model_analysis)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.start_detector_model_analysis]
 
 ```python
 def start_detector_model_analysis(
@@ -331,7 +336,7 @@ def start_detector_model_analysis(
 
 Type annotations for `boto3.client("iotevents").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -346,7 +351,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("iotevents").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -361,7 +366,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("iotevents").update_detector_model` method.
 
-[Client.update_detector_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.update_detector_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.update_detector_model]
 
 ```python
 def update_detector_model(
@@ -379,7 +384,7 @@ def update_detector_model(
 
 Type annotations for `boto3.client("iotevents").update_input` method.
 
-[Client.update_input documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.update_input)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.update_input]
 
 ```python
 def update_input(

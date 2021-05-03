@@ -25,13 +25,13 @@ Type annotations for `boto3.client("storagegateway").get_paginator("describe_tap
 Can be used directly:
 
 ```python
-from mypy_boto3_storagegateway.paginators import DescribeTapeArchivesPaginator
+from mypy_boto3_storagegateway.paginator import DescribeTapeArchivesPaginator
 
 def get_describe_tape_archives_paginator() -> DescribeTapeArchivesPaginator:
     return boto3.client("storagegateway").get_paginator("describe_tape_archives")
 ```
 
-[Paginator.DescribeTapeArchives documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeArchives)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeArchives)
 
 ```python
 class DescribeTapeArchivesPaginator(Boto3Paginator):
@@ -49,13 +49,13 @@ Type annotations for `boto3.client("storagegateway").get_paginator("describe_tap
 Can be used directly:
 
 ```python
-from mypy_boto3_storagegateway.paginators import DescribeTapeRecoveryPointsPaginator
+from mypy_boto3_storagegateway.paginator import DescribeTapeRecoveryPointsPaginator
 
 def get_describe_tape_recovery_points_paginator() -> DescribeTapeRecoveryPointsPaginator:
     return boto3.client("storagegateway").get_paginator("describe_tape_recovery_points")
 ```
 
-[Paginator.DescribeTapeRecoveryPoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeRecoveryPoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeRecoveryPoints)
 
 ```python
 class DescribeTapeRecoveryPointsPaginator(Boto3Paginator):
@@ -73,13 +73,13 @@ Type annotations for `boto3.client("storagegateway").get_paginator("describe_tap
 Can be used directly:
 
 ```python
-from mypy_boto3_storagegateway.paginators import DescribeTapesPaginator
+from mypy_boto3_storagegateway.paginator import DescribeTapesPaginator
 
 def get_describe_tapes_paginator() -> DescribeTapesPaginator:
     return boto3.client("storagegateway").get_paginator("describe_tapes")
 ```
 
-[Paginator.DescribeTapes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapes)
 
 ```python
 class DescribeTapesPaginator(Boto3Paginator):
@@ -98,13 +98,13 @@ Type annotations for `boto3.client("storagegateway").get_paginator("describe_vtl
 Can be used directly:
 
 ```python
-from mypy_boto3_storagegateway.paginators import DescribeVTLDevicesPaginator
+from mypy_boto3_storagegateway.paginator import DescribeVTLDevicesPaginator
 
 def get_describe_vtl_devices_paginator() -> DescribeVTLDevicesPaginator:
     return boto3.client("storagegateway").get_paginator("describe_vtl_devices")
 ```
 
-[Paginator.DescribeVTLDevices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeVTLDevices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeVTLDevices)
 
 ```python
 class DescribeVTLDevicesPaginator(Boto3Paginator):
@@ -123,13 +123,13 @@ Type annotations for `boto3.client("storagegateway").get_paginator("list_file_sh
 Can be used directly:
 
 ```python
-from mypy_boto3_storagegateway.paginators import ListFileSharesPaginator
+from mypy_boto3_storagegateway.paginator import ListFileSharesPaginator
 
 def get_list_file_shares_paginator() -> ListFileSharesPaginator:
     return boto3.client("storagegateway").get_paginator("list_file_shares")
 ```
 
-[Paginator.ListFileShares documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileShares)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileShares)
 
 ```python
 class ListFileSharesPaginator(Boto3Paginator):
@@ -147,13 +147,13 @@ Type annotations for `boto3.client("storagegateway").get_paginator("list_file_sy
 Can be used directly:
 
 ```python
-from mypy_boto3_storagegateway.paginators import ListFileSystemAssociationsPaginator
+from mypy_boto3_storagegateway.paginator import ListFileSystemAssociationsPaginator
 
 def get_list_file_system_associations_paginator() -> ListFileSystemAssociationsPaginator:
     return boto3.client("storagegateway").get_paginator("list_file_system_associations")
 ```
 
-[Paginator.ListFileSystemAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileSystemAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileSystemAssociations)
 
 ```python
 class ListFileSystemAssociationsPaginator(Boto3Paginator):
@@ -171,13 +171,13 @@ Type annotations for `boto3.client("storagegateway").get_paginator("list_gateway
 Can be used directly:
 
 ```python
-from mypy_boto3_storagegateway.paginators import ListGatewaysPaginator
+from mypy_boto3_storagegateway.paginator import ListGatewaysPaginator
 
 def get_list_gateways_paginator() -> ListGatewaysPaginator:
     return boto3.client("storagegateway").get_paginator("list_gateways")
 ```
 
-[Paginator.ListGateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListGateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListGateways)
 
 ```python
 class ListGatewaysPaginator(Boto3Paginator):
@@ -194,13 +194,13 @@ Type annotations for `boto3.client("storagegateway").get_paginator("list_tags_fo
 Can be used directly:
 
 ```python
-from mypy_boto3_storagegateway.paginators import ListTagsForResourcePaginator
+from mypy_boto3_storagegateway.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("storagegateway").get_paginator("list_tags_for_resource")
 ```
 
-[Paginator.ListTagsForResource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTagsForResource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):
@@ -218,13 +218,13 @@ Type annotations for `boto3.client("storagegateway").get_paginator("list_tape_po
 Can be used directly:
 
 ```python
-from mypy_boto3_storagegateway.paginators import ListTapePoolsPaginator
+from mypy_boto3_storagegateway.paginator import ListTapePoolsPaginator
 
 def get_list_tape_pools_paginator() -> ListTapePoolsPaginator:
     return boto3.client("storagegateway").get_paginator("list_tape_pools")
 ```
 
-[Paginator.ListTapePools documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapePools)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapePools)
 
 ```python
 class ListTapePoolsPaginator(Boto3Paginator):
@@ -242,13 +242,13 @@ Type annotations for `boto3.client("storagegateway").get_paginator("list_tapes")
 Can be used directly:
 
 ```python
-from mypy_boto3_storagegateway.paginators import ListTapesPaginator
+from mypy_boto3_storagegateway.paginator import ListTapesPaginator
 
 def get_list_tapes_paginator() -> ListTapesPaginator:
     return boto3.client("storagegateway").get_paginator("list_tapes")
 ```
 
-[Paginator.ListTapes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapes)
 
 ```python
 class ListTapesPaginator(Boto3Paginator):
@@ -266,13 +266,13 @@ Type annotations for `boto3.client("storagegateway").get_paginator("list_volumes
 Can be used directly:
 
 ```python
-from mypy_boto3_storagegateway.paginators import ListVolumesPaginator
+from mypy_boto3_storagegateway.paginator import ListVolumesPaginator
 
 def get_list_volumes_paginator() -> ListVolumesPaginator:
     return boto3.client("storagegateway").get_paginator("list_volumes")
 ```
 
-[Paginator.ListVolumes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListVolumes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListVolumes)
 
 ```python
 class ListVolumesPaginator(Boto3Paginator):

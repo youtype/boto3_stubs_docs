@@ -13,7 +13,7 @@ pip install mypy-boto3-sts
   - [STSClient](#stsclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## STSClient
 
@@ -67,7 +67,7 @@ STSClient [exceptions](./client.md#exceptions)
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

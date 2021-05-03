@@ -1,11 +1,11 @@
-# Structures for boto3 Organizations module
+# Typed dictionaries for boto3 Organizations module
 
 > [Index](../README.md) > [Organizations](./README.md) > Structures
 
 Auto-generated documentation for [Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
 type annotations stubs module [mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).
 
-- [Structures for boto3 Organizations module](#structures-for-boto3-organizations-module)
+- [Typed dictionaries for boto3 Organizations module](#typed-dictionaries-for-boto3-organizations-module)
   - [AcceptHandshakeResponseTypeDef](#accepthandshakeresponsetypedef)
   - [AccountTypeDef](#accounttypedef)
   - [CancelHandshakeResponseTypeDef](#cancelhandshakeresponsetypedef)

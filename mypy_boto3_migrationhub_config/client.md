@@ -23,7 +23,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_migrationhub_config.client import MigrationHubConfigClient
+
+def get_migrationhub-config_client() -> MigrationHubConfigClient:
+    return boto3.client("migrationhub-config")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client)
 
 ## Exceptions
 
@@ -56,7 +61,7 @@ Exceptions:
 
 Type annotations for `boto3.client("migrationhub-config").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -70,7 +75,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("migrationhub-config").create_home_region_control` method.
 
-[Client.create_home_region_control documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.create_home_region_control)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.create_home_region_control]
 
 ```python
 def create_home_region_control(
@@ -86,7 +91,7 @@ def create_home_region_control(
 
 Type annotations for `boto3.client("migrationhub-config").describe_home_region_controls` method.
 
-[Client.describe_home_region_controls documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.describe_home_region_controls)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.describe_home_region_controls]
 
 ```python
 def describe_home_region_controls(
@@ -104,7 +109,7 @@ def describe_home_region_controls(
 
 Type annotations for `boto3.client("migrationhub-config").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -121,7 +126,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("migrationhub-config").get_home_region` method.
 
-[Client.get_home_region documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.get_home_region)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.get_home_region]
 
 ```python
 def get_home_region(

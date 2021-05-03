@@ -14,7 +14,7 @@ pip install mypy-boto3-dynamodbstreams
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## DynamoDBStreamsClient
 
@@ -78,7 +78,7 @@ from mypy_boto3_dynamodbstreams.literals import KeyType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

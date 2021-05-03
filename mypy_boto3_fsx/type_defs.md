@@ -1,11 +1,11 @@
-# Structures for boto3 FSx module
+# Typed dictionaries for boto3 FSx module
 
 > [Index](../README.md) > [FSx](./README.md) > Structures
 
 Auto-generated documentation for [FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
 type annotations stubs module [mypy_boto3_fsx](https://pypi.org/project/mypy-boto3-fsx/).
 
-- [Structures for boto3 FSx module](#structures-for-boto3-fsx-module)
+- [Typed dictionaries for boto3 FSx module](#typed-dictionaries-for-boto3-fsx-module)
   - [ActiveDirectoryBackupAttributesTypeDef](#activedirectorybackupattributestypedef)
   - [AdministrativeActionFailureDetailsTypeDef](#administrativeactionfailuredetailstypedef)
   - [AdministrativeActionTypeDef](#administrativeactiontypedef)

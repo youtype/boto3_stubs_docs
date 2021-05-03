@@ -1,11 +1,11 @@
-# Structures for boto3 Braket module
+# Typed dictionaries for boto3 Braket module
 
 > [Index](../README.md) > [Braket](./README.md) > Structures
 
 Auto-generated documentation for [Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
 type annotations stubs module [mypy_boto3_braket](https://pypi.org/project/mypy-boto3-braket/).
 
-- [Structures for boto3 Braket module](#structures-for-boto3-braket-module)
+- [Typed dictionaries for boto3 Braket module](#typed-dictionaries-for-boto3-braket-module)
   - [CancelQuantumTaskResponseTypeDef](#cancelquantumtaskresponsetypedef)
   - [CreateQuantumTaskResponseTypeDef](#createquantumtaskresponsetypedef)
   - [DeviceSummaryTypeDef](#devicesummarytypedef)

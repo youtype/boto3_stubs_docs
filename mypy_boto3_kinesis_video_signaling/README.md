@@ -14,7 +14,7 @@ pip install mypy-boto3-kinesis-video-signaling
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## KinesisVideoSignalingChannelsClient
 
@@ -73,7 +73,7 @@ from mypy_boto3_kinesis_video_signaling.literals import Service, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

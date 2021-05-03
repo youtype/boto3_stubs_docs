@@ -68,7 +68,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_globalaccelerator.client import GlobalAcceleratorClient
+
+def get_globalaccelerator_client() -> GlobalAcceleratorClient:
+    return boto3.client("globalaccelerator")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client)
 
 ## Exceptions
 
@@ -113,7 +118,7 @@ Exceptions:
 
 Type annotations for `boto3.client("globalaccelerator").add_custom_routing_endpoints` method.
 
-[Client.add_custom_routing_endpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.add_custom_routing_endpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.add_custom_routing_endpoints]
 
 ```python
 def add_custom_routing_endpoints(
@@ -128,7 +133,7 @@ def add_custom_routing_endpoints(
 
 Type annotations for `boto3.client("globalaccelerator").advertise_byoip_cidr` method.
 
-[Client.advertise_byoip_cidr documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.advertise_byoip_cidr)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.advertise_byoip_cidr]
 
 ```python
 def advertise_byoip_cidr(
@@ -142,7 +147,7 @@ def advertise_byoip_cidr(
 
 Type annotations for `boto3.client("globalaccelerator").allow_custom_routing_traffic` method.
 
-[Client.allow_custom_routing_traffic documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.allow_custom_routing_traffic)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.allow_custom_routing_traffic]
 
 ```python
 def allow_custom_routing_traffic(
@@ -160,7 +165,7 @@ def allow_custom_routing_traffic(
 
 Type annotations for `boto3.client("globalaccelerator").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -174,7 +179,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("globalaccelerator").create_accelerator` method.
 
-[Client.create_accelerator documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_accelerator)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_accelerator]
 
 ```python
 def create_accelerator(
@@ -193,7 +198,7 @@ def create_accelerator(
 
 Type annotations for `boto3.client("globalaccelerator").create_custom_routing_accelerator` method.
 
-[Client.create_custom_routing_accelerator documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_accelerator)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_accelerator]
 
 ```python
 def create_custom_routing_accelerator(
@@ -212,7 +217,7 @@ def create_custom_routing_accelerator(
 
 Type annotations for `boto3.client("globalaccelerator").create_custom_routing_endpoint_group` method.
 
-[Client.create_custom_routing_endpoint_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_endpoint_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_endpoint_group]
 
 ```python
 def create_custom_routing_endpoint_group(
@@ -229,7 +234,7 @@ def create_custom_routing_endpoint_group(
 
 Type annotations for `boto3.client("globalaccelerator").create_custom_routing_listener` method.
 
-[Client.create_custom_routing_listener documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_listener)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_listener]
 
 ```python
 def create_custom_routing_listener(
@@ -245,7 +250,7 @@ def create_custom_routing_listener(
 
 Type annotations for `boto3.client("globalaccelerator").create_endpoint_group` method.
 
-[Client.create_endpoint_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_endpoint_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_endpoint_group]
 
 ```python
 def create_endpoint_group(
@@ -269,7 +274,7 @@ def create_endpoint_group(
 
 Type annotations for `boto3.client("globalaccelerator").create_listener` method.
 
-[Client.create_listener documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_listener)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_listener]
 
 ```python
 def create_listener(
@@ -287,7 +292,7 @@ def create_listener(
 
 Type annotations for `boto3.client("globalaccelerator").delete_accelerator` method.
 
-[Client.delete_accelerator documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_accelerator)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_accelerator]
 
 ```python
 def delete_accelerator(
@@ -301,7 +306,7 @@ def delete_accelerator(
 
 Type annotations for `boto3.client("globalaccelerator").delete_custom_routing_accelerator` method.
 
-[Client.delete_custom_routing_accelerator documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_accelerator)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_accelerator]
 
 ```python
 def delete_custom_routing_accelerator(
@@ -315,7 +320,7 @@ def delete_custom_routing_accelerator(
 
 Type annotations for `boto3.client("globalaccelerator").delete_custom_routing_endpoint_group` method.
 
-[Client.delete_custom_routing_endpoint_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_endpoint_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_endpoint_group]
 
 ```python
 def delete_custom_routing_endpoint_group(
@@ -329,7 +334,7 @@ def delete_custom_routing_endpoint_group(
 
 Type annotations for `boto3.client("globalaccelerator").delete_custom_routing_listener` method.
 
-[Client.delete_custom_routing_listener documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_listener)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_listener]
 
 ```python
 def delete_custom_routing_listener(
@@ -343,7 +348,7 @@ def delete_custom_routing_listener(
 
 Type annotations for `boto3.client("globalaccelerator").delete_endpoint_group` method.
 
-[Client.delete_endpoint_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_endpoint_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_endpoint_group]
 
 ```python
 def delete_endpoint_group(
@@ -357,7 +362,7 @@ def delete_endpoint_group(
 
 Type annotations for `boto3.client("globalaccelerator").delete_listener` method.
 
-[Client.delete_listener documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_listener)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_listener]
 
 ```python
 def delete_listener(
@@ -371,7 +376,7 @@ def delete_listener(
 
 Type annotations for `boto3.client("globalaccelerator").deny_custom_routing_traffic` method.
 
-[Client.deny_custom_routing_traffic documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.deny_custom_routing_traffic)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.deny_custom_routing_traffic]
 
 ```python
 def deny_custom_routing_traffic(
@@ -389,7 +394,7 @@ def deny_custom_routing_traffic(
 
 Type annotations for `boto3.client("globalaccelerator").deprovision_byoip_cidr` method.
 
-[Client.deprovision_byoip_cidr documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.deprovision_byoip_cidr)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.deprovision_byoip_cidr]
 
 ```python
 def deprovision_byoip_cidr(
@@ -403,7 +408,7 @@ def deprovision_byoip_cidr(
 
 Type annotations for `boto3.client("globalaccelerator").describe_accelerator` method.
 
-[Client.describe_accelerator documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_accelerator)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_accelerator]
 
 ```python
 def describe_accelerator(
@@ -417,7 +422,7 @@ def describe_accelerator(
 
 Type annotations for `boto3.client("globalaccelerator").describe_accelerator_attributes` method.
 
-[Client.describe_accelerator_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_accelerator_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_accelerator_attributes]
 
 ```python
 def describe_accelerator_attributes(
@@ -431,7 +436,7 @@ def describe_accelerator_attributes(
 
 Type annotations for `boto3.client("globalaccelerator").describe_custom_routing_accelerator` method.
 
-[Client.describe_custom_routing_accelerator documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_accelerator)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_accelerator]
 
 ```python
 def describe_custom_routing_accelerator(
@@ -445,7 +450,7 @@ def describe_custom_routing_accelerator(
 
 Type annotations for `boto3.client("globalaccelerator").describe_custom_routing_accelerator_attributes` method.
 
-[Client.describe_custom_routing_accelerator_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_accelerator_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_accelerator_attributes]
 
 ```python
 def describe_custom_routing_accelerator_attributes(
@@ -459,7 +464,7 @@ def describe_custom_routing_accelerator_attributes(
 
 Type annotations for `boto3.client("globalaccelerator").describe_custom_routing_endpoint_group` method.
 
-[Client.describe_custom_routing_endpoint_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_endpoint_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_endpoint_group]
 
 ```python
 def describe_custom_routing_endpoint_group(
@@ -473,7 +478,7 @@ def describe_custom_routing_endpoint_group(
 
 Type annotations for `boto3.client("globalaccelerator").describe_custom_routing_listener` method.
 
-[Client.describe_custom_routing_listener documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_listener)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_listener]
 
 ```python
 def describe_custom_routing_listener(
@@ -487,7 +492,7 @@ def describe_custom_routing_listener(
 
 Type annotations for `boto3.client("globalaccelerator").describe_endpoint_group` method.
 
-[Client.describe_endpoint_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_endpoint_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_endpoint_group]
 
 ```python
 def describe_endpoint_group(
@@ -501,7 +506,7 @@ def describe_endpoint_group(
 
 Type annotations for `boto3.client("globalaccelerator").describe_listener` method.
 
-[Client.describe_listener documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_listener)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_listener]
 
 ```python
 def describe_listener(
@@ -515,7 +520,7 @@ def describe_listener(
 
 Type annotations for `boto3.client("globalaccelerator").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -532,7 +537,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("globalaccelerator").list_accelerators` method.
 
-[Client.list_accelerators documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_accelerators)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_accelerators]
 
 ```python
 def list_accelerators(
@@ -547,7 +552,7 @@ def list_accelerators(
 
 Type annotations for `boto3.client("globalaccelerator").list_byoip_cidrs` method.
 
-[Client.list_byoip_cidrs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_byoip_cidrs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_byoip_cidrs]
 
 ```python
 def list_byoip_cidrs(
@@ -562,7 +567,7 @@ def list_byoip_cidrs(
 
 Type annotations for `boto3.client("globalaccelerator").list_custom_routing_accelerators` method.
 
-[Client.list_custom_routing_accelerators documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_accelerators)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_accelerators]
 
 ```python
 def list_custom_routing_accelerators(
@@ -577,7 +582,7 @@ def list_custom_routing_accelerators(
 
 Type annotations for `boto3.client("globalaccelerator").list_custom_routing_endpoint_groups` method.
 
-[Client.list_custom_routing_endpoint_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_endpoint_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_endpoint_groups]
 
 ```python
 def list_custom_routing_endpoint_groups(
@@ -593,7 +598,7 @@ def list_custom_routing_endpoint_groups(
 
 Type annotations for `boto3.client("globalaccelerator").list_custom_routing_listeners` method.
 
-[Client.list_custom_routing_listeners documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_listeners)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_listeners]
 
 ```python
 def list_custom_routing_listeners(
@@ -609,7 +614,7 @@ def list_custom_routing_listeners(
 
 Type annotations for `boto3.client("globalaccelerator").list_custom_routing_port_mappings` method.
 
-[Client.list_custom_routing_port_mappings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_port_mappings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_port_mappings]
 
 ```python
 def list_custom_routing_port_mappings(
@@ -626,7 +631,7 @@ def list_custom_routing_port_mappings(
 
 Type annotations for `boto3.client("globalaccelerator").list_custom_routing_port_mappings_by_destination` method.
 
-[Client.list_custom_routing_port_mappings_by_destination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_port_mappings_by_destination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_port_mappings_by_destination]
 
 ```python
 def list_custom_routing_port_mappings_by_destination(
@@ -643,7 +648,7 @@ def list_custom_routing_port_mappings_by_destination(
 
 Type annotations for `boto3.client("globalaccelerator").list_endpoint_groups` method.
 
-[Client.list_endpoint_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_endpoint_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_endpoint_groups]
 
 ```python
 def list_endpoint_groups(
@@ -659,7 +664,7 @@ def list_endpoint_groups(
 
 Type annotations for `boto3.client("globalaccelerator").list_listeners` method.
 
-[Client.list_listeners documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_listeners)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_listeners]
 
 ```python
 def list_listeners(
@@ -675,7 +680,7 @@ def list_listeners(
 
 Type annotations for `boto3.client("globalaccelerator").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -689,7 +694,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("globalaccelerator").provision_byoip_cidr` method.
 
-[Client.provision_byoip_cidr documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.provision_byoip_cidr)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.provision_byoip_cidr]
 
 ```python
 def provision_byoip_cidr(
@@ -704,7 +709,7 @@ def provision_byoip_cidr(
 
 Type annotations for `boto3.client("globalaccelerator").remove_custom_routing_endpoints` method.
 
-[Client.remove_custom_routing_endpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.remove_custom_routing_endpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.remove_custom_routing_endpoints]
 
 ```python
 def remove_custom_routing_endpoints(
@@ -719,7 +724,7 @@ def remove_custom_routing_endpoints(
 
 Type annotations for `boto3.client("globalaccelerator").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -734,7 +739,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("globalaccelerator").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -749,7 +754,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("globalaccelerator").update_accelerator` method.
 
-[Client.update_accelerator documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_accelerator)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_accelerator]
 
 ```python
 def update_accelerator(
@@ -766,7 +771,7 @@ def update_accelerator(
 
 Type annotations for `boto3.client("globalaccelerator").update_accelerator_attributes` method.
 
-[Client.update_accelerator_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_accelerator_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_accelerator_attributes]
 
 ```python
 def update_accelerator_attributes(
@@ -783,7 +788,7 @@ def update_accelerator_attributes(
 
 Type annotations for `boto3.client("globalaccelerator").update_custom_routing_accelerator` method.
 
-[Client.update_custom_routing_accelerator documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_accelerator)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_accelerator]
 
 ```python
 def update_custom_routing_accelerator(
@@ -800,7 +805,7 @@ def update_custom_routing_accelerator(
 
 Type annotations for `boto3.client("globalaccelerator").update_custom_routing_accelerator_attributes` method.
 
-[Client.update_custom_routing_accelerator_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_accelerator_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_accelerator_attributes]
 
 ```python
 def update_custom_routing_accelerator_attributes(
@@ -817,7 +822,7 @@ def update_custom_routing_accelerator_attributes(
 
 Type annotations for `boto3.client("globalaccelerator").update_custom_routing_listener` method.
 
-[Client.update_custom_routing_listener documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_listener)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_listener]
 
 ```python
 def update_custom_routing_listener(
@@ -832,7 +837,7 @@ def update_custom_routing_listener(
 
 Type annotations for `boto3.client("globalaccelerator").update_endpoint_group` method.
 
-[Client.update_endpoint_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_endpoint_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_endpoint_group]
 
 ```python
 def update_endpoint_group(
@@ -854,7 +859,7 @@ def update_endpoint_group(
 
 Type annotations for `boto3.client("globalaccelerator").update_listener` method.
 
-[Client.update_listener documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_listener)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_listener]
 
 ```python
 def update_listener(
@@ -871,7 +876,7 @@ def update_listener(
 
 Type annotations for `boto3.client("globalaccelerator").withdraw_byoip_cidr` method.
 
-[Client.withdraw_byoip_cidr documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.withdraw_byoip_cidr)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.withdraw_byoip_cidr]
 
 ```python
 def withdraw_byoip_cidr(

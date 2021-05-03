@@ -14,7 +14,7 @@ pip install mypy-boto3-cognito-sync
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## CognitoSyncClient
 
@@ -98,7 +98,7 @@ from mypy_boto3_cognito_sync.literals import BulkPublishStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

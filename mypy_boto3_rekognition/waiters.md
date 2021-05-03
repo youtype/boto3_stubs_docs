@@ -16,13 +16,13 @@ Type annotations for `boto3.client("rekognition").get_waiter("project_version_ru
 Can be used directly:
 
 ```python
-from mypy_boto3_rekognition.waiters import ProjectVersionRunningWaiter
+from mypy_boto3_rekognition.waiter import ProjectVersionRunningWaiter
 
 def get_project_version_running_waiter() -> ProjectVersionRunningWaiter:
     return boto3.client("rekognition").get_waiter("project_version_running")
 ```
 
-[Waiter.ProjectVersionRunning documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Waiter.ProjectVersionRunning)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Waiter.project_version_running)
 
 ```python
 class ProjectVersionRunningWaiter(Boto3Waiter):
@@ -43,13 +43,13 @@ Type annotations for `boto3.client("rekognition").get_waiter("project_version_tr
 Can be used directly:
 
 ```python
-from mypy_boto3_rekognition.waiters import ProjectVersionTrainingCompletedWaiter
+from mypy_boto3_rekognition.waiter import ProjectVersionTrainingCompletedWaiter
 
 def get_project_version_training_completed_waiter() -> ProjectVersionTrainingCompletedWaiter:
     return boto3.client("rekognition").get_waiter("project_version_training_completed")
 ```
 
-[Waiter.ProjectVersionTrainingCompleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Waiter.ProjectVersionTrainingCompleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Waiter.project_version_training_completed)
 
 ```python
 class ProjectVersionTrainingCompletedWaiter(Boto3Waiter):

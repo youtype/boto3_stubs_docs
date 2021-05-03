@@ -17,13 +17,13 @@ Type annotations for `boto3.client("acm-pca").get_waiter("audit_report_created")
 Can be used directly:
 
 ```python
-from mypy_boto3_acm_pca.waiters import AuditReportCreatedWaiter
+from mypy_boto3_acm_pca.waiter import AuditReportCreatedWaiter
 
 def get_audit_report_created_waiter() -> AuditReportCreatedWaiter:
     return boto3.client("acm-pca").get_waiter("audit_report_created")
 ```
 
-[Waiter.AuditReportCreated documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Waiter.AuditReportCreated)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Waiter.audit_report_created)
 
 ```python
 class AuditReportCreatedWaiter(Boto3Waiter):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("acm-pca").get_waiter("certificate_authority_
 Can be used directly:
 
 ```python
-from mypy_boto3_acm_pca.waiters import CertificateAuthorityCSRCreatedWaiter
+from mypy_boto3_acm_pca.waiter import CertificateAuthorityCSRCreatedWaiter
 
 def get_certificate_authority_csr_created_waiter() -> CertificateAuthorityCSRCreatedWaiter:
     return boto3.client("acm-pca").get_waiter("certificate_authority_csr_created")
 ```
 
-[Waiter.CertificateAuthorityCSRCreated documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Waiter.CertificateAuthorityCSRCreated)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Waiter.certificate_authority_csr_created)
 
 ```python
 class CertificateAuthorityCSRCreatedWaiter(Boto3Waiter):
@@ -66,13 +66,13 @@ Type annotations for `boto3.client("acm-pca").get_waiter("certificate_issued")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_acm_pca.waiters import CertificateIssuedWaiter
+from mypy_boto3_acm_pca.waiter import CertificateIssuedWaiter
 
 def get_certificate_issued_waiter() -> CertificateIssuedWaiter:
     return boto3.client("acm-pca").get_waiter("certificate_issued")
 ```
 
-[Waiter.CertificateIssued documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Waiter.CertificateIssued)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Waiter.certificate_issued)
 
 ```python
 class CertificateIssuedWaiter(Boto3Waiter):

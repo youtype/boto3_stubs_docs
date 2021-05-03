@@ -16,7 +16,7 @@ pip install mypy-boto3-route53
   - [Paginators](#paginators)
   - [Waiters](#waiters)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## Route53Client
 
@@ -248,7 +248,7 @@ from mypy_boto3_route53.literals import AccountLimitType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

@@ -1,11 +1,11 @@
-# Structures for boto3 ApiGatewayV2 module
+# Typed dictionaries for boto3 ApiGatewayV2 module
 
 > [Index](../README.md) > [ApiGatewayV2](./README.md) > Structures
 
 Auto-generated documentation for [ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2)
 type annotations stubs module [mypy_boto3_apigatewayv2](https://pypi.org/project/mypy-boto3-apigatewayv2/).
 
-- [Structures for boto3 ApiGatewayV2 module](#structures-for-boto3-apigatewayv2-module)
+- [Typed dictionaries for boto3 ApiGatewayV2 module](#typed-dictionaries-for-boto3-apigatewayv2-module)
   - [AccessLogSettingsTypeDef](#accesslogsettingstypedef)
   - [ApiMappingTypeDef](#apimappingtypedef)
   - [ApiTypeDef](#apitypedef)

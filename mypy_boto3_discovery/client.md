@@ -46,7 +46,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_discovery.client import ApplicationDiscoveryServiceClient
+
+def get_discovery_client() -> ApplicationDiscoveryServiceClient:
+    return boto3.client("discovery")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client)
 
 ## Exceptions
 
@@ -82,7 +87,7 @@ Exceptions:
 
 Type annotations for `boto3.client("discovery").associate_configuration_items_to_application` method.
 
-[Client.associate_configuration_items_to_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.associate_configuration_items_to_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.associate_configuration_items_to_application]
 
 ```python
 def associate_configuration_items_to_application(
@@ -97,7 +102,7 @@ def associate_configuration_items_to_application(
 
 Type annotations for `boto3.client("discovery").batch_delete_import_data` method.
 
-[Client.batch_delete_import_data documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.batch_delete_import_data)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.batch_delete_import_data]
 
 ```python
 def batch_delete_import_data(
@@ -111,7 +116,7 @@ def batch_delete_import_data(
 
 Type annotations for `boto3.client("discovery").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -125,7 +130,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("discovery").create_application` method.
 
-[Client.create_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.create_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.create_application]
 
 ```python
 def create_application(
@@ -140,7 +145,7 @@ def create_application(
 
 Type annotations for `boto3.client("discovery").create_tags` method.
 
-[Client.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.create_tags]
 
 ```python
 def create_tags(
@@ -155,7 +160,7 @@ def create_tags(
 
 Type annotations for `boto3.client("discovery").delete_applications` method.
 
-[Client.delete_applications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.delete_applications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.delete_applications]
 
 ```python
 def delete_applications(
@@ -169,7 +174,7 @@ def delete_applications(
 
 Type annotations for `boto3.client("discovery").delete_tags` method.
 
-[Client.delete_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.delete_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.delete_tags]
 
 ```python
 def delete_tags(
@@ -184,7 +189,7 @@ def delete_tags(
 
 Type annotations for `boto3.client("discovery").describe_agents` method.
 
-[Client.describe_agents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_agents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_agents]
 
 ```python
 def describe_agents(
@@ -201,7 +206,7 @@ def describe_agents(
 
 Type annotations for `boto3.client("discovery").describe_configurations` method.
 
-[Client.describe_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_configurations]
 
 ```python
 def describe_configurations(
@@ -215,7 +220,7 @@ def describe_configurations(
 
 Type annotations for `boto3.client("discovery").describe_continuous_exports` method.
 
-[Client.describe_continuous_exports documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_continuous_exports)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_continuous_exports]
 
 ```python
 def describe_continuous_exports(
@@ -231,7 +236,7 @@ def describe_continuous_exports(
 
 Type annotations for `boto3.client("discovery").describe_export_configurations` method.
 
-[Client.describe_export_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_export_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_export_configurations]
 
 ```python
 def describe_export_configurations(
@@ -247,7 +252,7 @@ def describe_export_configurations(
 
 Type annotations for `boto3.client("discovery").describe_export_tasks` method.
 
-[Client.describe_export_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_export_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_export_tasks]
 
 ```python
 def describe_export_tasks(
@@ -264,7 +269,7 @@ def describe_export_tasks(
 
 Type annotations for `boto3.client("discovery").describe_import_tasks` method.
 
-[Client.describe_import_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_import_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_import_tasks]
 
 ```python
 def describe_import_tasks(
@@ -280,7 +285,7 @@ def describe_import_tasks(
 
 Type annotations for `boto3.client("discovery").describe_tags` method.
 
-[Client.describe_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_tags]
 
 ```python
 def describe_tags(
@@ -296,7 +301,7 @@ def describe_tags(
 
 Type annotations for `boto3.client("discovery").disassociate_configuration_items_from_application` method.
 
-[Client.disassociate_configuration_items_from_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.disassociate_configuration_items_from_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.disassociate_configuration_items_from_application]
 
 ```python
 def disassociate_configuration_items_from_application(
@@ -311,7 +316,7 @@ def disassociate_configuration_items_from_application(
 
 Type annotations for `boto3.client("discovery").export_configurations` method.
 
-[Client.export_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.export_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.export_configurations]
 
 ```python
 def export_configurations(
@@ -324,7 +329,7 @@ def export_configurations(
 
 Type annotations for `boto3.client("discovery").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -341,7 +346,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("discovery").get_discovery_summary` method.
 
-[Client.get_discovery_summary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.get_discovery_summary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.get_discovery_summary]
 
 ```python
 def get_discovery_summary(
@@ -354,7 +359,7 @@ def get_discovery_summary(
 
 Type annotations for `boto3.client("discovery").list_configurations` method.
 
-[Client.list_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.list_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.list_configurations]
 
 ```python
 def list_configurations(
@@ -372,7 +377,7 @@ def list_configurations(
 
 Type annotations for `boto3.client("discovery").list_server_neighbors` method.
 
-[Client.list_server_neighbors documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.list_server_neighbors)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.list_server_neighbors]
 
 ```python
 def list_server_neighbors(
@@ -390,7 +395,7 @@ def list_server_neighbors(
 
 Type annotations for `boto3.client("discovery").start_continuous_export` method.
 
-[Client.start_continuous_export documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_continuous_export)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_continuous_export]
 
 ```python
 def start_continuous_export(
@@ -403,7 +408,7 @@ def start_continuous_export(
 
 Type annotations for `boto3.client("discovery").start_data_collection_by_agent_ids` method.
 
-[Client.start_data_collection_by_agent_ids documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_data_collection_by_agent_ids)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_data_collection_by_agent_ids]
 
 ```python
 def start_data_collection_by_agent_ids(
@@ -417,7 +422,7 @@ def start_data_collection_by_agent_ids(
 
 Type annotations for `boto3.client("discovery").start_export_task` method.
 
-[Client.start_export_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_export_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_export_task]
 
 ```python
 def start_export_task(
@@ -434,7 +439,7 @@ def start_export_task(
 
 Type annotations for `boto3.client("discovery").start_import_task` method.
 
-[Client.start_import_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_import_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_import_task]
 
 ```python
 def start_import_task(
@@ -450,7 +455,7 @@ def start_import_task(
 
 Type annotations for `boto3.client("discovery").stop_continuous_export` method.
 
-[Client.stop_continuous_export documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.stop_continuous_export)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.stop_continuous_export]
 
 ```python
 def stop_continuous_export(
@@ -464,7 +469,7 @@ def stop_continuous_export(
 
 Type annotations for `boto3.client("discovery").stop_data_collection_by_agent_ids` method.
 
-[Client.stop_data_collection_by_agent_ids documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.stop_data_collection_by_agent_ids)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.stop_data_collection_by_agent_ids]
 
 ```python
 def stop_data_collection_by_agent_ids(
@@ -478,7 +483,7 @@ def stop_data_collection_by_agent_ids(
 
 Type annotations for `boto3.client("discovery").update_application` method.
 
-[Client.update_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.update_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.update_application]
 
 ```python
 def update_application(

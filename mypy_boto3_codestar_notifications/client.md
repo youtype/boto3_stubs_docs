@@ -34,7 +34,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_codestar_notifications.client import CodeStarNotificationsClient
+
+def get_codestar-notifications_client() -> CodeStarNotificationsClient:
+    return boto3.client("codestar-notifications")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client)
 
 ## Exceptions
 
@@ -69,7 +74,7 @@ Exceptions:
 
 Type annotations for `boto3.client("codestar-notifications").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -83,7 +88,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("codestar-notifications").create_notification_rule` method.
 
-[Client.create_notification_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.create_notification_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.create_notification_rule]
 
 ```python
 def create_notification_rule(
@@ -104,7 +109,7 @@ def create_notification_rule(
 
 Type annotations for `boto3.client("codestar-notifications").delete_notification_rule` method.
 
-[Client.delete_notification_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.delete_notification_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.delete_notification_rule]
 
 ```python
 def delete_notification_rule(
@@ -118,7 +123,7 @@ def delete_notification_rule(
 
 Type annotations for `boto3.client("codestar-notifications").delete_target` method.
 
-[Client.delete_target documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.delete_target)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.delete_target]
 
 ```python
 def delete_target(
@@ -133,7 +138,7 @@ def delete_target(
 
 Type annotations for `boto3.client("codestar-notifications").describe_notification_rule` method.
 
-[Client.describe_notification_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.describe_notification_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.describe_notification_rule]
 
 ```python
 def describe_notification_rule(
@@ -147,7 +152,7 @@ def describe_notification_rule(
 
 Type annotations for `boto3.client("codestar-notifications").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -164,7 +169,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("codestar-notifications").list_event_types` method.
 
-[Client.list_event_types documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_event_types)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_event_types]
 
 ```python
 def list_event_types(
@@ -180,7 +185,7 @@ def list_event_types(
 
 Type annotations for `boto3.client("codestar-notifications").list_notification_rules` method.
 
-[Client.list_notification_rules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_notification_rules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_notification_rules]
 
 ```python
 def list_notification_rules(
@@ -196,7 +201,7 @@ def list_notification_rules(
 
 Type annotations for `boto3.client("codestar-notifications").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -210,7 +215,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("codestar-notifications").list_targets` method.
 
-[Client.list_targets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_targets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_targets]
 
 ```python
 def list_targets(
@@ -226,7 +231,7 @@ def list_targets(
 
 Type annotations for `boto3.client("codestar-notifications").subscribe` method.
 
-[Client.subscribe documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.subscribe)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.subscribe]
 
 ```python
 def subscribe(
@@ -242,7 +247,7 @@ def subscribe(
 
 Type annotations for `boto3.client("codestar-notifications").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -257,7 +262,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("codestar-notifications").unsubscribe` method.
 
-[Client.unsubscribe documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.unsubscribe)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.unsubscribe]
 
 ```python
 def unsubscribe(
@@ -272,7 +277,7 @@ def unsubscribe(
 
 Type annotations for `boto3.client("codestar-notifications").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -287,7 +292,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("codestar-notifications").update_notification_rule` method.
 
-[Client.update_notification_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.update_notification_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.update_notification_rule]
 
 ```python
 def update_notification_rule(

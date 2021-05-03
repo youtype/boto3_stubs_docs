@@ -1,11 +1,11 @@
-# Structures for boto3 CloudWatchLogs module
+# Typed dictionaries for boto3 CloudWatchLogs module
 
 > [Index](../README.md) > [CloudWatchLogs](./README.md) > Structures
 
 Auto-generated documentation for [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
 type annotations stubs module [mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
 
-- [Structures for boto3 CloudWatchLogs module](#structures-for-boto3-cloudwatchlogs-module)
+- [Typed dictionaries for boto3 CloudWatchLogs module](#typed-dictionaries-for-boto3-cloudwatchlogs-module)
   - [CreateExportTaskResponseTypeDef](#createexporttaskresponsetypedef)
   - [DeleteQueryDefinitionResponseTypeDef](#deletequerydefinitionresponsetypedef)
   - [DescribeDestinationsResponseTypeDef](#describedestinationsresponsetypedef)

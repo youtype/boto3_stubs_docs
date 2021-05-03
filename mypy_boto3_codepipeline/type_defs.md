@@ -1,11 +1,11 @@
-# Structures for boto3 CodePipeline module
+# Typed dictionaries for boto3 CodePipeline module
 
 > [Index](../README.md) > [CodePipeline](./README.md) > Structures
 
 Auto-generated documentation for [CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
 type annotations stubs module [mypy_boto3_codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
 
-- [Structures for boto3 CodePipeline module](#structures-for-boto3-codepipeline-module)
+- [Typed dictionaries for boto3 CodePipeline module](#typed-dictionaries-for-boto3-codepipeline-module)
   - [AWSSessionCredentialsTypeDef](#awssessioncredentialstypedef)
   - [AcknowledgeJobOutputTypeDef](#acknowledgejoboutputtypedef)
   - [AcknowledgeThirdPartyJobOutputTypeDef](#acknowledgethirdpartyjoboutputtypedef)
@@ -124,11 +124,11 @@ from mypy_boto3_codepipeline.type_defs import AcknowledgeJobOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `status`: `JobStatus`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## AcknowledgeThirdPartyJobOutputTypeDef
@@ -138,11 +138,11 @@ from mypy_boto3_codepipeline.type_defs import AcknowledgeThirdPartyJobOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `status`: `JobStatus`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ActionConfigurationPropertyTypeDef
@@ -277,13 +277,13 @@ from mypy_boto3_codepipeline.type_defs import ActionExecutionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `outputArtifacts`: `List["ArtifactDetailTypeDef"]`
 - `executionResult`: `"ActionExecutionResultTypeDef"`
 - `outputVariables`: `Dict[str, str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ActionExecutionResultTypeDef
@@ -654,12 +654,10 @@ from mypy_boto3_codepipeline.type_defs import CreateCustomActionTypeOutputTypeDe
 
 Required fields:
 - `actionType`: `"ActionTypeTypeDef"`
-
-
-
-Optional fields:
 - `tags`: `List["TagTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreatePipelineOutputTypeDef
@@ -669,12 +667,12 @@ from mypy_boto3_codepipeline.type_defs import CreatePipelineOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `pipeline`: `"PipelineDeclarationTypeDef"`
 - `tags`: `List["TagTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CurrentRevisionTypeDef
@@ -790,11 +788,11 @@ from mypy_boto3_codepipeline.type_defs import GetActionTypeOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `actionType`: `"ActionTypeDeclarationTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetJobDetailsOutputTypeDef
@@ -804,11 +802,11 @@ from mypy_boto3_codepipeline.type_defs import GetJobDetailsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `jobDetails`: `"JobDetailsTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetPipelineExecutionOutputTypeDef
@@ -818,11 +816,11 @@ from mypy_boto3_codepipeline.type_defs import GetPipelineExecutionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `pipelineExecution`: `"PipelineExecutionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetPipelineOutputTypeDef
@@ -832,12 +830,12 @@ from mypy_boto3_codepipeline.type_defs import GetPipelineOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `pipeline`: `"PipelineDeclarationTypeDef"`
 - `metadata`: `"PipelineMetadataTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetPipelineStateOutputTypeDef
@@ -847,15 +845,15 @@ from mypy_boto3_codepipeline.type_defs import GetPipelineStateOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `pipelineName`: `str`
 - `pipelineVersion`: `int`
 - `stageStates`: `List["StageStateTypeDef"]`
 - `created`: `datetime`
 - `updated`: `datetime`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetThirdPartyJobDetailsOutputTypeDef
@@ -865,11 +863,11 @@ from mypy_boto3_codepipeline.type_defs import GetThirdPartyJobDetailsOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `jobDetails`: `"ThirdPartyJobDetailsTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## InputArtifactTypeDef
@@ -970,12 +968,12 @@ from mypy_boto3_codepipeline.type_defs import ListActionExecutionsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `actionExecutionDetails`: `List["ActionExecutionDetailTypeDef"]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListActionTypesOutputTypeDef
@@ -987,12 +985,10 @@ from mypy_boto3_codepipeline.type_defs import ListActionTypesOutputTypeDef
 
 Required fields:
 - `actionTypes`: `List["ActionTypeTypeDef"]`
-
-
-
-Optional fields:
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListPipelineExecutionsOutputTypeDef
@@ -1002,12 +998,12 @@ from mypy_boto3_codepipeline.type_defs import ListPipelineExecutionsOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `pipelineExecutionSummaries`: `List["PipelineExecutionSummaryTypeDef"]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListPipelinesOutputTypeDef
@@ -1017,12 +1013,12 @@ from mypy_boto3_codepipeline.type_defs import ListPipelinesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `pipelines`: `List["PipelineSummaryTypeDef"]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagsForResourceOutputTypeDef
@@ -1032,12 +1028,12 @@ from mypy_boto3_codepipeline.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `tags`: `List["TagTypeDef"]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListWebhookItemTypeDef
@@ -1068,12 +1064,12 @@ from mypy_boto3_codepipeline.type_defs import ListWebhooksOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `webhooks`: `List["ListWebhookItemTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## OutputArtifactTypeDef
@@ -1216,11 +1212,11 @@ from mypy_boto3_codepipeline.type_defs import PollForJobsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `jobs`: `List["JobTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PollForThirdPartyJobsOutputTypeDef
@@ -1230,11 +1226,11 @@ from mypy_boto3_codepipeline.type_defs import PollForThirdPartyJobsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `jobs`: `List["ThirdPartyJobTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PutActionRevisionOutputTypeDef
@@ -1244,12 +1240,12 @@ from mypy_boto3_codepipeline.type_defs import PutActionRevisionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `newRevision`: `bool`
 - `pipelineExecutionId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PutApprovalResultOutputTypeDef
@@ -1259,11 +1255,11 @@ from mypy_boto3_codepipeline.type_defs import PutApprovalResultOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `approvedAt`: `datetime`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PutWebhookOutputTypeDef
@@ -1273,11 +1269,11 @@ from mypy_boto3_codepipeline.type_defs import PutWebhookOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `webhook`: `"ListWebhookItemTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ResponseMetadata
@@ -1304,11 +1300,11 @@ from mypy_boto3_codepipeline.type_defs import RetryStageExecutionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `pipelineExecutionId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## S3ArtifactLocationTypeDef
@@ -1425,11 +1421,11 @@ from mypy_boto3_codepipeline.type_defs import StartPipelineExecutionOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `pipelineExecutionId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## StopExecutionTriggerTypeDef
@@ -1452,11 +1448,11 @@ from mypy_boto3_codepipeline.type_defs import StopPipelineExecutionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `pipelineExecutionId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## TagTypeDef
@@ -1545,11 +1541,11 @@ from mypy_boto3_codepipeline.type_defs import UpdatePipelineOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `pipeline`: `"PipelineDeclarationTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## WebhookAuthConfigurationTypeDef

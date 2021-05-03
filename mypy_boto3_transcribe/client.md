@@ -47,7 +47,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_transcribe.client import TranscribeServiceClient
+
+def get_transcribe_client() -> TranscribeServiceClient:
+    return boto3.client("transcribe")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client)
 
 ## Exceptions
 
@@ -79,7 +84,7 @@ Exceptions:
 
 Type annotations for `boto3.client("transcribe").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -93,7 +98,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("transcribe").create_language_model` method.
 
-[Client.create_language_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_language_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_language_model]
 
 ```python
 def create_language_model(
@@ -110,7 +115,7 @@ def create_language_model(
 
 Type annotations for `boto3.client("transcribe").create_medical_vocabulary` method.
 
-[Client.create_medical_vocabulary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_medical_vocabulary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_medical_vocabulary]
 
 ```python
 def create_medical_vocabulary(
@@ -126,7 +131,7 @@ def create_medical_vocabulary(
 
 Type annotations for `boto3.client("transcribe").create_vocabulary` method.
 
-[Client.create_vocabulary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary]
 
 ```python
 def create_vocabulary(
@@ -143,7 +148,7 @@ def create_vocabulary(
 
 Type annotations for `boto3.client("transcribe").create_vocabulary_filter` method.
 
-[Client.create_vocabulary_filter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary_filter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary_filter]
 
 ```python
 def create_vocabulary_filter(
@@ -160,7 +165,7 @@ def create_vocabulary_filter(
 
 Type annotations for `boto3.client("transcribe").delete_language_model` method.
 
-[Client.delete_language_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_language_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_language_model]
 
 ```python
 def delete_language_model(
@@ -174,7 +179,7 @@ def delete_language_model(
 
 Type annotations for `boto3.client("transcribe").delete_medical_transcription_job` method.
 
-[Client.delete_medical_transcription_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_medical_transcription_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_medical_transcription_job]
 
 ```python
 def delete_medical_transcription_job(
@@ -188,7 +193,7 @@ def delete_medical_transcription_job(
 
 Type annotations for `boto3.client("transcribe").delete_medical_vocabulary` method.
 
-[Client.delete_medical_vocabulary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_medical_vocabulary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_medical_vocabulary]
 
 ```python
 def delete_medical_vocabulary(
@@ -202,7 +207,7 @@ def delete_medical_vocabulary(
 
 Type annotations for `boto3.client("transcribe").delete_transcription_job` method.
 
-[Client.delete_transcription_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_transcription_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_transcription_job]
 
 ```python
 def delete_transcription_job(
@@ -216,7 +221,7 @@ def delete_transcription_job(
 
 Type annotations for `boto3.client("transcribe").delete_vocabulary` method.
 
-[Client.delete_vocabulary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_vocabulary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_vocabulary]
 
 ```python
 def delete_vocabulary(
@@ -230,7 +235,7 @@ def delete_vocabulary(
 
 Type annotations for `boto3.client("transcribe").delete_vocabulary_filter` method.
 
-[Client.delete_vocabulary_filter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_vocabulary_filter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_vocabulary_filter]
 
 ```python
 def delete_vocabulary_filter(
@@ -244,7 +249,7 @@ def delete_vocabulary_filter(
 
 Type annotations for `boto3.client("transcribe").describe_language_model` method.
 
-[Client.describe_language_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.describe_language_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.describe_language_model]
 
 ```python
 def describe_language_model(
@@ -258,7 +263,7 @@ def describe_language_model(
 
 Type annotations for `boto3.client("transcribe").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -275,7 +280,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("transcribe").get_medical_transcription_job` method.
 
-[Client.get_medical_transcription_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_medical_transcription_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_medical_transcription_job]
 
 ```python
 def get_medical_transcription_job(
@@ -289,7 +294,7 @@ def get_medical_transcription_job(
 
 Type annotations for `boto3.client("transcribe").get_medical_vocabulary` method.
 
-[Client.get_medical_vocabulary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_medical_vocabulary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_medical_vocabulary]
 
 ```python
 def get_medical_vocabulary(
@@ -303,7 +308,7 @@ def get_medical_vocabulary(
 
 Type annotations for `boto3.client("transcribe").get_transcription_job` method.
 
-[Client.get_transcription_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_transcription_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_transcription_job]
 
 ```python
 def get_transcription_job(
@@ -317,7 +322,7 @@ def get_transcription_job(
 
 Type annotations for `boto3.client("transcribe").get_vocabulary` method.
 
-[Client.get_vocabulary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_vocabulary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_vocabulary]
 
 ```python
 def get_vocabulary(
@@ -331,7 +336,7 @@ def get_vocabulary(
 
 Type annotations for `boto3.client("transcribe").get_vocabulary_filter` method.
 
-[Client.get_vocabulary_filter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_vocabulary_filter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_vocabulary_filter]
 
 ```python
 def get_vocabulary_filter(
@@ -345,7 +350,7 @@ def get_vocabulary_filter(
 
 Type annotations for `boto3.client("transcribe").list_language_models` method.
 
-[Client.list_language_models documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_language_models)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_language_models]
 
 ```python
 def list_language_models(
@@ -362,7 +367,7 @@ def list_language_models(
 
 Type annotations for `boto3.client("transcribe").list_medical_transcription_jobs` method.
 
-[Client.list_medical_transcription_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_medical_transcription_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_medical_transcription_jobs]
 
 ```python
 def list_medical_transcription_jobs(
@@ -379,7 +384,7 @@ def list_medical_transcription_jobs(
 
 Type annotations for `boto3.client("transcribe").list_medical_vocabularies` method.
 
-[Client.list_medical_vocabularies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_medical_vocabularies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_medical_vocabularies]
 
 ```python
 def list_medical_vocabularies(
@@ -396,7 +401,7 @@ def list_medical_vocabularies(
 
 Type annotations for `boto3.client("transcribe").list_transcription_jobs` method.
 
-[Client.list_transcription_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_transcription_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_transcription_jobs]
 
 ```python
 def list_transcription_jobs(
@@ -413,7 +418,7 @@ def list_transcription_jobs(
 
 Type annotations for `boto3.client("transcribe").list_vocabularies` method.
 
-[Client.list_vocabularies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_vocabularies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_vocabularies]
 
 ```python
 def list_vocabularies(
@@ -430,7 +435,7 @@ def list_vocabularies(
 
 Type annotations for `boto3.client("transcribe").list_vocabulary_filters` method.
 
-[Client.list_vocabulary_filters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_vocabulary_filters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_vocabulary_filters]
 
 ```python
 def list_vocabulary_filters(
@@ -446,7 +451,7 @@ def list_vocabulary_filters(
 
 Type annotations for `boto3.client("transcribe").start_medical_transcription_job` method.
 
-[Client.start_medical_transcription_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_medical_transcription_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_medical_transcription_job]
 
 ```python
 def start_medical_transcription_job(
@@ -470,7 +475,7 @@ def start_medical_transcription_job(
 
 Type annotations for `boto3.client("transcribe").start_transcription_job` method.
 
-[Client.start_transcription_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_transcription_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_transcription_job]
 
 ```python
 def start_transcription_job(
@@ -497,7 +502,7 @@ def start_transcription_job(
 
 Type annotations for `boto3.client("transcribe").update_medical_vocabulary` method.
 
-[Client.update_medical_vocabulary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_medical_vocabulary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_medical_vocabulary]
 
 ```python
 def update_medical_vocabulary(
@@ -513,7 +518,7 @@ def update_medical_vocabulary(
 
 Type annotations for `boto3.client("transcribe").update_vocabulary` method.
 
-[Client.update_vocabulary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_vocabulary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_vocabulary]
 
 ```python
 def update_vocabulary(
@@ -530,7 +535,7 @@ def update_vocabulary(
 
 Type annotations for `boto3.client("transcribe").update_vocabulary_filter` method.
 
-[Client.update_vocabulary_filter documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_vocabulary_filter)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_vocabulary_filter]
 
 ```python
 def update_vocabulary_filter(

@@ -1,11 +1,11 @@
-# Structures for boto3 IoTEvents module
+# Typed dictionaries for boto3 IoTEvents module
 
 > [Index](../README.md) > [IoTEvents](./README.md) > Structures
 
 Auto-generated documentation for [IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents)
 type annotations stubs module [mypy_boto3_iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
 
-- [Structures for boto3 IoTEvents module](#structures-for-boto3-iotevents-module)
+- [Typed dictionaries for boto3 IoTEvents module](#typed-dictionaries-for-boto3-iotevents-module)
   - [ActionTypeDef](#actiontypedef)
   - [AnalysisResultLocationTypeDef](#analysisresultlocationtypedef)
   - [AnalysisResultTypeDef](#analysisresulttypedef)

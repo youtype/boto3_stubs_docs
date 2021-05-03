@@ -1,11 +1,11 @@
-# Structures for boto3 CodeDeploy module
+# Typed dictionaries for boto3 CodeDeploy module
 
 > [Index](../README.md) > [CodeDeploy](./README.md) > Structures
 
 Auto-generated documentation for [CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
 type annotations stubs module [mypy_boto3_codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
 
-- [Structures for boto3 CodeDeploy module](#structures-for-boto3-codedeploy-module)
+- [Typed dictionaries for boto3 CodeDeploy module](#typed-dictionaries-for-boto3-codedeploy-module)
   - [AlarmConfigurationTypeDef](#alarmconfigurationtypedef)
   - [AlarmTypeDef](#alarmtypedef)
   - [AppSpecContentTypeDef](#appspeccontenttypedef)
@@ -193,13 +193,13 @@ from mypy_boto3_codedeploy.type_defs import BatchGetApplicationRevisionsOutputTy
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `applicationName`: `str`
 - `errorMessage`: `str`
 - `revisions`: `List["RevisionInfoTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchGetApplicationsOutputTypeDef
@@ -209,11 +209,11 @@ from mypy_boto3_codedeploy.type_defs import BatchGetApplicationsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `applicationsInfo`: `List["ApplicationInfoTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchGetDeploymentGroupsOutputTypeDef
@@ -223,12 +223,12 @@ from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentGroupsOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `deploymentGroupsInfo`: `List["DeploymentGroupInfoTypeDef"]`
 - `errorMessage`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchGetDeploymentInstancesOutputTypeDef
@@ -238,12 +238,12 @@ from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentInstancesOutputTyp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `instancesSummary`: `List["InstanceSummaryTypeDef"]`
 - `errorMessage`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchGetDeploymentTargetsOutputTypeDef
@@ -253,11 +253,11 @@ from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentTargetsOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `deploymentTargets`: `List["DeploymentTargetTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchGetDeploymentsOutputTypeDef
@@ -267,11 +267,11 @@ from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `deploymentsInfo`: `List["DeploymentInfoTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchGetOnPremisesInstancesOutputTypeDef
@@ -281,11 +281,11 @@ from mypy_boto3_codedeploy.type_defs import BatchGetOnPremisesInstancesOutputTyp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `instanceInfos`: `List["InstanceInfoTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BlueGreenDeploymentConfigurationTypeDef
@@ -343,11 +343,11 @@ from mypy_boto3_codedeploy.type_defs import CreateApplicationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `applicationId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateDeploymentConfigOutputTypeDef
@@ -357,11 +357,11 @@ from mypy_boto3_codedeploy.type_defs import CreateDeploymentConfigOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `deploymentConfigId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateDeploymentGroupOutputTypeDef
@@ -371,11 +371,11 @@ from mypy_boto3_codedeploy.type_defs import CreateDeploymentGroupOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `deploymentGroupId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateDeploymentOutputTypeDef
@@ -385,11 +385,11 @@ from mypy_boto3_codedeploy.type_defs import CreateDeploymentOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `deploymentId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteDeploymentGroupOutputTypeDef
@@ -399,11 +399,11 @@ from mypy_boto3_codedeploy.type_defs import DeleteDeploymentGroupOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `hooksNotCleanedUp`: `List["AutoScalingGroupTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteGitHubAccountTokenOutputTypeDef
@@ -413,11 +413,11 @@ from mypy_boto3_codedeploy.type_defs import DeleteGitHubAccountTokenOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `tokenName`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeploymentConfigInfoTypeDef
@@ -724,11 +724,11 @@ from mypy_boto3_codedeploy.type_defs import GetApplicationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `application`: `"ApplicationInfoTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetApplicationRevisionOutputTypeDef
@@ -738,13 +738,13 @@ from mypy_boto3_codedeploy.type_defs import GetApplicationRevisionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `applicationName`: `str`
 - `revision`: `"RevisionLocationTypeDef"`
 - `revisionInfo`: `"GenericRevisionInfoTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetDeploymentConfigOutputTypeDef
@@ -754,11 +754,11 @@ from mypy_boto3_codedeploy.type_defs import GetDeploymentConfigOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `deploymentConfigInfo`: `"DeploymentConfigInfoTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetDeploymentGroupOutputTypeDef
@@ -768,11 +768,11 @@ from mypy_boto3_codedeploy.type_defs import GetDeploymentGroupOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `deploymentGroupInfo`: `"DeploymentGroupInfoTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetDeploymentInstanceOutputTypeDef
@@ -782,11 +782,11 @@ from mypy_boto3_codedeploy.type_defs import GetDeploymentInstanceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `instanceSummary`: `"InstanceSummaryTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetDeploymentOutputTypeDef
@@ -796,11 +796,11 @@ from mypy_boto3_codedeploy.type_defs import GetDeploymentOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `deploymentInfo`: `"DeploymentInfoTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetDeploymentTargetOutputTypeDef
@@ -810,11 +810,11 @@ from mypy_boto3_codedeploy.type_defs import GetDeploymentTargetOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `deploymentTarget`: `"DeploymentTargetTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetOnPremisesInstanceOutputTypeDef
@@ -824,11 +824,11 @@ from mypy_boto3_codedeploy.type_defs import GetOnPremisesInstanceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `instanceInfo`: `"InstanceInfoTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GitHubLocationTypeDef
@@ -990,12 +990,12 @@ from mypy_boto3_codedeploy.type_defs import ListApplicationRevisionsOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `revisions`: `List["RevisionLocationTypeDef"]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListApplicationsOutputTypeDef
@@ -1005,12 +1005,12 @@ from mypy_boto3_codedeploy.type_defs import ListApplicationsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `applications`: `List[str]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListDeploymentConfigsOutputTypeDef
@@ -1020,12 +1020,12 @@ from mypy_boto3_codedeploy.type_defs import ListDeploymentConfigsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `deploymentConfigsList`: `List[str]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListDeploymentGroupsOutputTypeDef
@@ -1035,13 +1035,13 @@ from mypy_boto3_codedeploy.type_defs import ListDeploymentGroupsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `applicationName`: `str`
 - `deploymentGroups`: `List[str]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListDeploymentInstancesOutputTypeDef
@@ -1051,12 +1051,12 @@ from mypy_boto3_codedeploy.type_defs import ListDeploymentInstancesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `instancesList`: `List[str]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListDeploymentTargetsOutputTypeDef
@@ -1066,12 +1066,12 @@ from mypy_boto3_codedeploy.type_defs import ListDeploymentTargetsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `targetIds`: `List[str]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListDeploymentsOutputTypeDef
@@ -1081,12 +1081,12 @@ from mypy_boto3_codedeploy.type_defs import ListDeploymentsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `deployments`: `List[str]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListGitHubAccountTokenNamesOutputTypeDef
@@ -1096,12 +1096,12 @@ from mypy_boto3_codedeploy.type_defs import ListGitHubAccountTokenNamesOutputTyp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `tokenNameList`: `List[str]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListOnPremisesInstancesOutputTypeDef
@@ -1111,12 +1111,12 @@ from mypy_boto3_codedeploy.type_defs import ListOnPremisesInstancesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `instanceNames`: `List[str]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagsForResourceOutputTypeDef
@@ -1126,12 +1126,12 @@ from mypy_boto3_codedeploy.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Tags`: `List["TagTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## LoadBalancerInfoTypeDef
@@ -1198,11 +1198,11 @@ from mypy_boto3_codedeploy.type_defs import PutLifecycleEventHookExecutionStatus
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `lifecycleEventHookExecutionId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## RawStringTypeDef
@@ -1320,12 +1320,12 @@ from mypy_boto3_codedeploy.type_defs import StopDeploymentOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `status`: `StopStatus`
 - `statusMessage`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## TagFilterTypeDef
@@ -1492,11 +1492,11 @@ from mypy_boto3_codedeploy.type_defs import UpdateDeploymentGroupOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `hooksNotCleanedUp`: `List["AutoScalingGroupTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## WaiterConfigTypeDef

@@ -62,7 +62,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_appsync.client import AppSyncClient
+
+def get_appsync_client() -> AppSyncClient:
+    return boto3.client("appsync")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client)
 
 ## Exceptions
 
@@ -100,7 +105,7 @@ Exceptions:
 
 Type annotations for `boto3.client("appsync").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -114,7 +119,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("appsync").create_api_cache` method.
 
-[Client.create_api_cache documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_api_cache)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_api_cache]
 
 ```python
 def create_api_cache(
@@ -133,7 +138,7 @@ def create_api_cache(
 
 Type annotations for `boto3.client("appsync").create_api_key` method.
 
-[Client.create_api_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_api_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_api_key]
 
 ```python
 def create_api_key(
@@ -149,7 +154,7 @@ def create_api_key(
 
 Type annotations for `boto3.client("appsync").create_data_source` method.
 
-[Client.create_data_source documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_data_source)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_data_source]
 
 ```python
 def create_data_source(
@@ -172,7 +177,7 @@ def create_data_source(
 
 Type annotations for `boto3.client("appsync").create_function` method.
 
-[Client.create_function documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_function)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_function]
 
 ```python
 def create_function(
@@ -193,7 +198,7 @@ def create_function(
 
 Type annotations for `boto3.client("appsync").create_graphql_api` method.
 
-[Client.create_graphql_api documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_graphql_api)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_graphql_api]
 
 ```python
 def create_graphql_api(
@@ -214,7 +219,7 @@ def create_graphql_api(
 
 Type annotations for `boto3.client("appsync").create_resolver` method.
 
-[Client.create_resolver documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_resolver)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_resolver]
 
 ```python
 def create_resolver(
@@ -237,7 +242,7 @@ def create_resolver(
 
 Type annotations for `boto3.client("appsync").create_type` method.
 
-[Client.create_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_type]
 
 ```python
 def create_type(
@@ -253,7 +258,7 @@ def create_type(
 
 Type annotations for `boto3.client("appsync").delete_api_cache` method.
 
-[Client.delete_api_cache documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_api_cache)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_api_cache]
 
 ```python
 def delete_api_cache(
@@ -267,7 +272,7 @@ def delete_api_cache(
 
 Type annotations for `boto3.client("appsync").delete_api_key` method.
 
-[Client.delete_api_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_api_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_api_key]
 
 ```python
 def delete_api_key(
@@ -282,7 +287,7 @@ def delete_api_key(
 
 Type annotations for `boto3.client("appsync").delete_data_source` method.
 
-[Client.delete_data_source documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_data_source)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_data_source]
 
 ```python
 def delete_data_source(
@@ -297,7 +302,7 @@ def delete_data_source(
 
 Type annotations for `boto3.client("appsync").delete_function` method.
 
-[Client.delete_function documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_function)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_function]
 
 ```python
 def delete_function(
@@ -312,7 +317,7 @@ def delete_function(
 
 Type annotations for `boto3.client("appsync").delete_graphql_api` method.
 
-[Client.delete_graphql_api documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_graphql_api)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_graphql_api]
 
 ```python
 def delete_graphql_api(
@@ -326,7 +331,7 @@ def delete_graphql_api(
 
 Type annotations for `boto3.client("appsync").delete_resolver` method.
 
-[Client.delete_resolver documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_resolver)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_resolver]
 
 ```python
 def delete_resolver(
@@ -342,7 +347,7 @@ def delete_resolver(
 
 Type annotations for `boto3.client("appsync").delete_type` method.
 
-[Client.delete_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_type]
 
 ```python
 def delete_type(
@@ -357,7 +362,7 @@ def delete_type(
 
 Type annotations for `boto3.client("appsync").flush_api_cache` method.
 
-[Client.flush_api_cache documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.flush_api_cache)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.flush_api_cache]
 
 ```python
 def flush_api_cache(
@@ -371,7 +376,7 @@ def flush_api_cache(
 
 Type annotations for `boto3.client("appsync").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -388,7 +393,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("appsync").get_api_cache` method.
 
-[Client.get_api_cache documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_api_cache)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_api_cache]
 
 ```python
 def get_api_cache(
@@ -402,7 +407,7 @@ def get_api_cache(
 
 Type annotations for `boto3.client("appsync").get_data_source` method.
 
-[Client.get_data_source documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_data_source)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_data_source]
 
 ```python
 def get_data_source(
@@ -417,7 +422,7 @@ def get_data_source(
 
 Type annotations for `boto3.client("appsync").get_function` method.
 
-[Client.get_function documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_function)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_function]
 
 ```python
 def get_function(
@@ -432,7 +437,7 @@ def get_function(
 
 Type annotations for `boto3.client("appsync").get_graphql_api` method.
 
-[Client.get_graphql_api documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_graphql_api)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_graphql_api]
 
 ```python
 def get_graphql_api(
@@ -446,7 +451,7 @@ def get_graphql_api(
 
 Type annotations for `boto3.client("appsync").get_introspection_schema` method.
 
-[Client.get_introspection_schema documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_introspection_schema)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_introspection_schema]
 
 ```python
 def get_introspection_schema(
@@ -462,7 +467,7 @@ def get_introspection_schema(
 
 Type annotations for `boto3.client("appsync").get_resolver` method.
 
-[Client.get_resolver documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_resolver)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_resolver]
 
 ```python
 def get_resolver(
@@ -478,7 +483,7 @@ def get_resolver(
 
 Type annotations for `boto3.client("appsync").get_schema_creation_status` method.
 
-[Client.get_schema_creation_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_schema_creation_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_schema_creation_status]
 
 ```python
 def get_schema_creation_status(
@@ -492,7 +497,7 @@ def get_schema_creation_status(
 
 Type annotations for `boto3.client("appsync").get_type` method.
 
-[Client.get_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_type]
 
 ```python
 def get_type(
@@ -508,7 +513,7 @@ def get_type(
 
 Type annotations for `boto3.client("appsync").list_api_keys` method.
 
-[Client.list_api_keys documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_api_keys)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_api_keys]
 
 ```python
 def list_api_keys(
@@ -524,7 +529,7 @@ def list_api_keys(
 
 Type annotations for `boto3.client("appsync").list_data_sources` method.
 
-[Client.list_data_sources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_data_sources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_data_sources]
 
 ```python
 def list_data_sources(
@@ -540,7 +545,7 @@ def list_data_sources(
 
 Type annotations for `boto3.client("appsync").list_functions` method.
 
-[Client.list_functions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_functions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_functions]
 
 ```python
 def list_functions(
@@ -556,7 +561,7 @@ def list_functions(
 
 Type annotations for `boto3.client("appsync").list_graphql_apis` method.
 
-[Client.list_graphql_apis documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_graphql_apis)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_graphql_apis]
 
 ```python
 def list_graphql_apis(
@@ -571,7 +576,7 @@ def list_graphql_apis(
 
 Type annotations for `boto3.client("appsync").list_resolvers` method.
 
-[Client.list_resolvers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_resolvers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_resolvers]
 
 ```python
 def list_resolvers(
@@ -588,7 +593,7 @@ def list_resolvers(
 
 Type annotations for `boto3.client("appsync").list_resolvers_by_function` method.
 
-[Client.list_resolvers_by_function documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_resolvers_by_function)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_resolvers_by_function]
 
 ```python
 def list_resolvers_by_function(
@@ -605,7 +610,7 @@ def list_resolvers_by_function(
 
 Type annotations for `boto3.client("appsync").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -619,7 +624,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("appsync").list_types` method.
 
-[Client.list_types documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_types)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_types]
 
 ```python
 def list_types(
@@ -636,7 +641,7 @@ def list_types(
 
 Type annotations for `boto3.client("appsync").start_schema_creation` method.
 
-[Client.start_schema_creation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.start_schema_creation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.start_schema_creation]
 
 ```python
 def start_schema_creation(
@@ -651,7 +656,7 @@ def start_schema_creation(
 
 Type annotations for `boto3.client("appsync").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -666,7 +671,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("appsync").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -681,7 +686,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("appsync").update_api_cache` method.
 
-[Client.update_api_cache documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_api_cache)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_api_cache]
 
 ```python
 def update_api_cache(
@@ -698,7 +703,7 @@ def update_api_cache(
 
 Type annotations for `boto3.client("appsync").update_api_key` method.
 
-[Client.update_api_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_api_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_api_key]
 
 ```python
 def update_api_key(
@@ -715,7 +720,7 @@ def update_api_key(
 
 Type annotations for `boto3.client("appsync").update_data_source` method.
 
-[Client.update_data_source documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_data_source)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_data_source]
 
 ```python
 def update_data_source(
@@ -738,7 +743,7 @@ def update_data_source(
 
 Type annotations for `boto3.client("appsync").update_function` method.
 
-[Client.update_function documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_function)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_function]
 
 ```python
 def update_function(
@@ -760,7 +765,7 @@ def update_function(
 
 Type annotations for `boto3.client("appsync").update_graphql_api` method.
 
-[Client.update_graphql_api documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_graphql_api)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_graphql_api]
 
 ```python
 def update_graphql_api(
@@ -781,7 +786,7 @@ def update_graphql_api(
 
 Type annotations for `boto3.client("appsync").update_resolver` method.
 
-[Client.update_resolver documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_resolver)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_resolver]
 
 ```python
 def update_resolver(
@@ -804,7 +809,7 @@ def update_resolver(
 
 Type annotations for `boto3.client("appsync").update_type` method.
 
-[Client.update_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_type]
 
 ```python
 def update_type(

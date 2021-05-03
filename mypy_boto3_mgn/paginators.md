@@ -18,13 +18,13 @@ Type annotations for `boto3.client("mgn").get_paginator("describe_job_log_items"
 Can be used directly:
 
 ```python
-from mypy_boto3_mgn.paginators import DescribeJobLogItemsPaginator
+from mypy_boto3_mgn.paginator import DescribeJobLogItemsPaginator
 
 def get_describe_job_log_items_paginator() -> DescribeJobLogItemsPaginator:
     return boto3.client("mgn").get_paginator("describe_job_log_items")
 ```
 
-[Paginator.DescribeJobLogItems documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.DescribeJobLogItems)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.DescribeJobLogItems)
 
 ```python
 class DescribeJobLogItemsPaginator(Boto3Paginator):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("mgn").get_paginator("describe_jobs")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_mgn.paginators import DescribeJobsPaginator
+from mypy_boto3_mgn.paginator import DescribeJobsPaginator
 
 def get_describe_jobs_paginator() -> DescribeJobsPaginator:
     return boto3.client("mgn").get_paginator("describe_jobs")
 ```
 
-[Paginator.DescribeJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.DescribeJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.DescribeJobs)
 
 ```python
 class DescribeJobsPaginator(Boto3Paginator):
@@ -66,13 +66,13 @@ Type annotations for `boto3.client("mgn").get_paginator("describe_replication_co
 Can be used directly:
 
 ```python
-from mypy_boto3_mgn.paginators import DescribeReplicationConfigurationTemplatesPaginator
+from mypy_boto3_mgn.paginator import DescribeReplicationConfigurationTemplatesPaginator
 
 def get_describe_replication_configuration_templates_paginator() -> DescribeReplicationConfigurationTemplatesPaginator:
     return boto3.client("mgn").get_paginator("describe_replication_configuration_templates")
 ```
 
-[Paginator.DescribeReplicationConfigurationTemplates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.DescribeReplicationConfigurationTemplates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.DescribeReplicationConfigurationTemplates)
 
 ```python
 class DescribeReplicationConfigurationTemplatesPaginator(Boto3Paginator):
@@ -90,13 +90,13 @@ Type annotations for `boto3.client("mgn").get_paginator("describe_source_servers
 Can be used directly:
 
 ```python
-from mypy_boto3_mgn.paginators import DescribeSourceServersPaginator
+from mypy_boto3_mgn.paginator import DescribeSourceServersPaginator
 
 def get_describe_source_servers_paginator() -> DescribeSourceServersPaginator:
     return boto3.client("mgn").get_paginator("describe_source_servers")
 ```
 
-[Paginator.DescribeSourceServers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.DescribeSourceServers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.DescribeSourceServers)
 
 ```python
 class DescribeSourceServersPaginator(Boto3Paginator):

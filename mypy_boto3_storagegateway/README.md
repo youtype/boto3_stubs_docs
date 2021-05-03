@@ -15,7 +15,7 @@ pip install mypy-boto3-storagegateway
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## StorageGatewayClient
 
@@ -202,7 +202,7 @@ from mypy_boto3_storagegateway.literals import ActiveDirectoryStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

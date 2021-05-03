@@ -21,7 +21,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_connect_contact_lens.client import ConnectContactLensClient
+
+def get_connect-contact-lens_client() -> ConnectContactLensClient:
+    return boto3.client("connect-contact-lens")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client)
 
 ## Exceptions
 
@@ -53,7 +58,7 @@ Exceptions:
 
 Type annotations for `boto3.client("connect-contact-lens").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -67,7 +72,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("connect-contact-lens").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -84,7 +89,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("connect-contact-lens").list_realtime_contact_analysis_segments` method.
 
-[Client.list_realtime_contact_analysis_segments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.list_realtime_contact_analysis_segments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.list_realtime_contact_analysis_segments]
 
 ```python
 def list_realtime_contact_analysis_segments(

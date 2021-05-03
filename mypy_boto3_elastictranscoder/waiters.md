@@ -15,13 +15,13 @@ Type annotations for `boto3.client("elastictranscoder").get_waiter("job_complete
 Can be used directly:
 
 ```python
-from mypy_boto3_elastictranscoder.waiters import JobCompleteWaiter
+from mypy_boto3_elastictranscoder.waiter import JobCompleteWaiter
 
 def get_job_complete_waiter() -> JobCompleteWaiter:
     return boto3.client("elastictranscoder").get_waiter("job_complete")
 ```
 
-[Waiter.JobComplete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Waiter.JobComplete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Waiter.job_complete)
 
 ```python
 class JobCompleteWaiter(Boto3Waiter):

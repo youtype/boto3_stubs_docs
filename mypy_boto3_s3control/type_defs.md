@@ -1,11 +1,11 @@
-# Structures for boto3 S3Control module
+# Typed dictionaries for boto3 S3Control module
 
 > [Index](../README.md) > [S3Control](./README.md) > Structures
 
 Auto-generated documentation for [S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
 type annotations stubs module [mypy_boto3_s3control](https://pypi.org/project/mypy-boto3-s3control/).
 
-- [Structures for boto3 S3Control module](#structures-for-boto3-s3control-module)
+- [Typed dictionaries for boto3 S3Control module](#typed-dictionaries-for-boto3-s3control-module)
   - [AbortIncompleteMultipartUploadTypeDef](#abortincompletemultipartuploadtypedef)
   - [AccessPointTypeDef](#accesspointtypedef)
   - [AccountLevelTypeDef](#accountleveltypedef)
@@ -454,11 +454,11 @@ from mypy_boto3_s3control.type_defs import GetPublicAccessBlockOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PublicAccessBlockConfiguration`: `"PublicAccessBlockConfigurationTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetStorageLensConfigurationResultTypeDef

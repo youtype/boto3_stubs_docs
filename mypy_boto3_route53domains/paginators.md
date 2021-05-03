@@ -17,13 +17,13 @@ Type annotations for `boto3.client("route53domains").get_paginator("list_domains
 Can be used directly:
 
 ```python
-from mypy_boto3_route53domains.paginators import ListDomainsPaginator
+from mypy_boto3_route53domains.paginator import ListDomainsPaginator
 
 def get_list_domains_paginator() -> ListDomainsPaginator:
     return boto3.client("route53domains").get_paginator("list_domains")
 ```
 
-[Paginator.ListDomains documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ListDomains)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ListDomains)
 
 ```python
 class ListDomainsPaginator(Boto3Paginator):
@@ -40,13 +40,13 @@ Type annotations for `boto3.client("route53domains").get_paginator("list_operati
 Can be used directly:
 
 ```python
-from mypy_boto3_route53domains.paginators import ListOperationsPaginator
+from mypy_boto3_route53domains.paginator import ListOperationsPaginator
 
 def get_list_operations_paginator() -> ListOperationsPaginator:
     return boto3.client("route53domains").get_paginator("list_operations")
 ```
 
-[Paginator.ListOperations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ListOperations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ListOperations)
 
 ```python
 class ListOperationsPaginator(Boto3Paginator):
@@ -64,13 +64,13 @@ Type annotations for `boto3.client("route53domains").get_paginator("view_billing
 Can be used directly:
 
 ```python
-from mypy_boto3_route53domains.paginators import ViewBillingPaginator
+from mypy_boto3_route53domains.paginator import ViewBillingPaginator
 
 def get_view_billing_paginator() -> ViewBillingPaginator:
     return boto3.client("route53domains").get_paginator("view_billing")
 ```
 
-[Paginator.ViewBilling documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ViewBilling)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ViewBilling)
 
 ```python
 class ViewBillingPaginator(Boto3Paginator):

@@ -14,7 +14,7 @@ pip install mypy-boto3-migrationhub-config
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## MigrationHubConfigClient
 
@@ -74,7 +74,7 @@ from mypy_boto3_migrationhub_config.literals import TargetType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

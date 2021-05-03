@@ -1,11 +1,11 @@
-# Structures for boto3 LakeFormation module
+# Typed dictionaries for boto3 LakeFormation module
 
 > [Index](../README.md) > [LakeFormation](./README.md) > Structures
 
 Auto-generated documentation for [LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
 type annotations stubs module [mypy_boto3_lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
 
-- [Structures for boto3 LakeFormation module](#structures-for-boto3-lakeformation-module)
+- [Typed dictionaries for boto3 LakeFormation module](#typed-dictionaries-for-boto3-lakeformation-module)
   - [BatchGrantPermissionsResponseTypeDef](#batchgrantpermissionsresponsetypedef)
   - [BatchPermissionsFailureEntryTypeDef](#batchpermissionsfailureentrytypedef)
   - [BatchPermissionsRequestEntryTypeDef](#batchpermissionsrequestentrytypedef)

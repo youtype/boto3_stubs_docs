@@ -15,7 +15,7 @@ pip install mypy-boto3-service-quotas
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ServiceQuotasClient
 
@@ -130,7 +130,7 @@ from mypy_boto3_service_quotas.literals import ErrorCode, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

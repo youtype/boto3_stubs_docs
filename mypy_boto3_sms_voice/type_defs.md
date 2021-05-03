@@ -1,11 +1,11 @@
-# Structures for boto3 SMSVoice module
+# Typed dictionaries for boto3 SMSVoice module
 
 > [Index](../README.md) > [SMSVoice](./README.md) > Structures
 
 Auto-generated documentation for [SMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice)
 type annotations stubs module [mypy_boto3_sms_voice](https://pypi.org/project/mypy-boto3-sms-voice/).
 
-- [Structures for boto3 SMSVoice module](#structures-for-boto3-smsvoice-module)
+- [Typed dictionaries for boto3 SMSVoice module](#typed-dictionaries-for-boto3-smsvoice-module)
   - [CallInstructionsMessageTypeTypeDef](#callinstructionsmessagetypetypedef)
   - [CloudWatchLogsDestinationTypeDef](#cloudwatchlogsdestinationtypedef)
   - [EventDestinationDefinitionTypeDef](#eventdestinationdefinitiontypedef)

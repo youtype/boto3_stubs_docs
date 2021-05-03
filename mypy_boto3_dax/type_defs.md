@@ -1,11 +1,11 @@
-# Structures for boto3 DAX module
+# Typed dictionaries for boto3 DAX module
 
 > [Index](../README.md) > [DAX](./README.md) > Structures
 
 Auto-generated documentation for [DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
 type annotations stubs module [mypy_boto3_dax](https://pypi.org/project/mypy-boto3-dax/).
 
-- [Structures for boto3 DAX module](#structures-for-boto3-dax-module)
+- [Typed dictionaries for boto3 DAX module](#typed-dictionaries-for-boto3-dax-module)
   - [ClusterTypeDef](#clustertypedef)
   - [CreateClusterResponseTypeDef](#createclusterresponsetypedef)
   - [CreateParameterGroupResponseTypeDef](#createparametergroupresponsetypedef)

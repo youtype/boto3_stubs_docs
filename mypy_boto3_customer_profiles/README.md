@@ -14,7 +14,7 @@ pip install mypy-boto3-customer-profiles
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## CustomerProfilesClient
 
@@ -113,7 +113,7 @@ from mypy_boto3_customer_profiles.literals import DataPullMode, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

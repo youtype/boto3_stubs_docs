@@ -16,7 +16,7 @@ pip install mypy-boto3-mediaconnect
   - [Paginators](#paginators)
   - [Waiters](#waiters)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## MediaConnectClient
 
@@ -153,7 +153,7 @@ from mypy_boto3_mediaconnect.literals import Algorithm, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

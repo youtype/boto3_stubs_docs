@@ -15,7 +15,7 @@ pip install mypy-boto3-iotfleethub
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## IoTFleetHubClient
 
@@ -95,7 +95,7 @@ from mypy_boto3_iotfleethub.literals import ApplicationState, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

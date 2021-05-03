@@ -23,13 +23,13 @@ Type annotations for `boto3.client("workdocs").get_paginator("describe_activitie
 Can be used directly:
 
 ```python
-from mypy_boto3_workdocs.paginators import DescribeActivitiesPaginator
+from mypy_boto3_workdocs.paginator import DescribeActivitiesPaginator
 
 def get_describe_activities_paginator() -> DescribeActivitiesPaginator:
     return boto3.client("workdocs").get_paginator("describe_activities")
 ```
 
-[Paginator.DescribeActivities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeActivities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeActivities)
 
 ```python
 class DescribeActivitiesPaginator(Boto3Paginator):
@@ -54,13 +54,13 @@ Type annotations for `boto3.client("workdocs").get_paginator("describe_comments"
 Can be used directly:
 
 ```python
-from mypy_boto3_workdocs.paginators import DescribeCommentsPaginator
+from mypy_boto3_workdocs.paginator import DescribeCommentsPaginator
 
 def get_describe_comments_paginator() -> DescribeCommentsPaginator:
     return boto3.client("workdocs").get_paginator("describe_comments")
 ```
 
-[Paginator.DescribeComments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeComments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeComments)
 
 ```python
 class DescribeCommentsPaginator(Boto3Paginator):
@@ -80,13 +80,13 @@ Type annotations for `boto3.client("workdocs").get_paginator("describe_document_
 Can be used directly:
 
 ```python
-from mypy_boto3_workdocs.paginators import DescribeDocumentVersionsPaginator
+from mypy_boto3_workdocs.paginator import DescribeDocumentVersionsPaginator
 
 def get_describe_document_versions_paginator() -> DescribeDocumentVersionsPaginator:
     return boto3.client("workdocs").get_paginator("describe_document_versions")
 ```
 
-[Paginator.DescribeDocumentVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeDocumentVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeDocumentVersions)
 
 ```python
 class DescribeDocumentVersionsPaginator(Boto3Paginator):
@@ -107,13 +107,13 @@ Type annotations for `boto3.client("workdocs").get_paginator("describe_folder_co
 Can be used directly:
 
 ```python
-from mypy_boto3_workdocs.paginators import DescribeFolderContentsPaginator
+from mypy_boto3_workdocs.paginator import DescribeFolderContentsPaginator
 
 def get_describe_folder_contents_paginator() -> DescribeFolderContentsPaginator:
     return boto3.client("workdocs").get_paginator("describe_folder_contents")
 ```
 
-[Paginator.DescribeFolderContents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeFolderContents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeFolderContents)
 
 ```python
 class DescribeFolderContentsPaginator(Boto3Paginator):
@@ -136,13 +136,13 @@ Type annotations for `boto3.client("workdocs").get_paginator("describe_groups")`
 Can be used directly:
 
 ```python
-from mypy_boto3_workdocs.paginators import DescribeGroupsPaginator
+from mypy_boto3_workdocs.paginator import DescribeGroupsPaginator
 
 def get_describe_groups_paginator() -> DescribeGroupsPaginator:
     return boto3.client("workdocs").get_paginator("describe_groups")
 ```
 
-[Paginator.DescribeGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeGroups)
 
 ```python
 class DescribeGroupsPaginator(Boto3Paginator):
@@ -162,13 +162,13 @@ Type annotations for `boto3.client("workdocs").get_paginator("describe_notificat
 Can be used directly:
 
 ```python
-from mypy_boto3_workdocs.paginators import DescribeNotificationSubscriptionsPaginator
+from mypy_boto3_workdocs.paginator import DescribeNotificationSubscriptionsPaginator
 
 def get_describe_notification_subscriptions_paginator() -> DescribeNotificationSubscriptionsPaginator:
     return boto3.client("workdocs").get_paginator("describe_notification_subscriptions")
 ```
 
-[Paginator.DescribeNotificationSubscriptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeNotificationSubscriptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeNotificationSubscriptions)
 
 ```python
 class DescribeNotificationSubscriptionsPaginator(Boto3Paginator):
@@ -186,13 +186,13 @@ Type annotations for `boto3.client("workdocs").get_paginator("describe_resource_
 Can be used directly:
 
 ```python
-from mypy_boto3_workdocs.paginators import DescribeResourcePermissionsPaginator
+from mypy_boto3_workdocs.paginator import DescribeResourcePermissionsPaginator
 
 def get_describe_resource_permissions_paginator() -> DescribeResourcePermissionsPaginator:
     return boto3.client("workdocs").get_paginator("describe_resource_permissions")
 ```
 
-[Paginator.DescribeResourcePermissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeResourcePermissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeResourcePermissions)
 
 ```python
 class DescribeResourcePermissionsPaginator(Boto3Paginator):
@@ -212,13 +212,13 @@ Type annotations for `boto3.client("workdocs").get_paginator("describe_root_fold
 Can be used directly:
 
 ```python
-from mypy_boto3_workdocs.paginators import DescribeRootFoldersPaginator
+from mypy_boto3_workdocs.paginator import DescribeRootFoldersPaginator
 
 def get_describe_root_folders_paginator() -> DescribeRootFoldersPaginator:
     return boto3.client("workdocs").get_paginator("describe_root_folders")
 ```
 
-[Paginator.DescribeRootFolders documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeRootFolders)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeRootFolders)
 
 ```python
 class DescribeRootFoldersPaginator(Boto3Paginator):
@@ -236,13 +236,13 @@ Type annotations for `boto3.client("workdocs").get_paginator("describe_users")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_workdocs.paginators import DescribeUsersPaginator
+from mypy_boto3_workdocs.paginator import DescribeUsersPaginator
 
 def get_describe_users_paginator() -> DescribeUsersPaginator:
     return boto3.client("workdocs").get_paginator("describe_users")
 ```
 
-[Paginator.DescribeUsers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeUsers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Paginator.DescribeUsers)
 
 ```python
 class DescribeUsersPaginator(Boto3Paginator):

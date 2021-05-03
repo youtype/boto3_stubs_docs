@@ -21,7 +21,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_forecastquery.client import ForecastQueryServiceClient
+
+def get_forecastquery_client() -> ForecastQueryServiceClient:
+    return boto3.client("forecastquery")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client)
 
 ## Exceptions
 
@@ -53,7 +58,7 @@ Exceptions:
 
 Type annotations for `boto3.client("forecastquery").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -67,7 +72,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("forecastquery").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -84,7 +89,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("forecastquery").query_forecast` method.
 
-[Client.query_forecast documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client.query_forecast)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client.query_forecast]
 
 ```python
 def query_forecast(

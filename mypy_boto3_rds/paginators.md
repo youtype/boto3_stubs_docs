@@ -50,13 +50,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_certificates")
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeCertificatesPaginator
+from mypy_boto3_rds.paginator import DescribeCertificatesPaginator
 
 def get_describe_certificates_paginator() -> DescribeCertificatesPaginator:
     return boto3.client("rds").get_paginator("describe_certificates")
 ```
 
-[Paginator.DescribeCertificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeCertificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeCertificates)
 
 ```python
 class DescribeCertificatesPaginator(Boto3Paginator):
@@ -75,13 +75,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_custom_availab
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeCustomAvailabilityZonesPaginator
+from mypy_boto3_rds.paginator import DescribeCustomAvailabilityZonesPaginator
 
 def get_describe_custom_availability_zones_paginator() -> DescribeCustomAvailabilityZonesPaginator:
     return boto3.client("rds").get_paginator("describe_custom_availability_zones")
 ```
 
-[Paginator.DescribeCustomAvailabilityZones documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeCustomAvailabilityZones)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeCustomAvailabilityZones)
 
 ```python
 class DescribeCustomAvailabilityZonesPaginator(Boto3Paginator):
@@ -100,13 +100,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_db_cluster_bac
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeDBClusterBacktracksPaginator
+from mypy_boto3_rds.paginator import DescribeDBClusterBacktracksPaginator
 
 def get_describe_db_cluster_backtracks_paginator() -> DescribeDBClusterBacktracksPaginator:
     return boto3.client("rds").get_paginator("describe_db_cluster_backtracks")
 ```
 
-[Paginator.DescribeDBClusterBacktracks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterBacktracks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterBacktracks)
 
 ```python
 class DescribeDBClusterBacktracksPaginator(Boto3Paginator):
@@ -126,13 +126,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_db_cluster_end
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeDBClusterEndpointsPaginator
+from mypy_boto3_rds.paginator import DescribeDBClusterEndpointsPaginator
 
 def get_describe_db_cluster_endpoints_paginator() -> DescribeDBClusterEndpointsPaginator:
     return boto3.client("rds").get_paginator("describe_db_cluster_endpoints")
 ```
 
-[Paginator.DescribeDBClusterEndpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterEndpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterEndpoints)
 
 ```python
 class DescribeDBClusterEndpointsPaginator(Boto3Paginator):
@@ -152,13 +152,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_db_cluster_par
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeDBClusterParameterGroupsPaginator
+from mypy_boto3_rds.paginator import DescribeDBClusterParameterGroupsPaginator
 
 def get_describe_db_cluster_parameter_groups_paginator() -> DescribeDBClusterParameterGroupsPaginator:
     return boto3.client("rds").get_paginator("describe_db_cluster_parameter_groups")
 ```
 
-[Paginator.DescribeDBClusterParameterGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterParameterGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterParameterGroups)
 
 ```python
 class DescribeDBClusterParameterGroupsPaginator(Boto3Paginator):
@@ -177,13 +177,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_db_cluster_par
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeDBClusterParametersPaginator
+from mypy_boto3_rds.paginator import DescribeDBClusterParametersPaginator
 
 def get_describe_db_cluster_parameters_paginator() -> DescribeDBClusterParametersPaginator:
     return boto3.client("rds").get_paginator("describe_db_cluster_parameters")
 ```
 
-[Paginator.DescribeDBClusterParameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterParameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterParameters)
 
 ```python
 class DescribeDBClusterParametersPaginator(Boto3Paginator):
@@ -203,13 +203,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_db_cluster_sna
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeDBClusterSnapshotsPaginator
+from mypy_boto3_rds.paginator import DescribeDBClusterSnapshotsPaginator
 
 def get_describe_db_cluster_snapshots_paginator() -> DescribeDBClusterSnapshotsPaginator:
     return boto3.client("rds").get_paginator("describe_db_cluster_snapshots")
 ```
 
-[Paginator.DescribeDBClusterSnapshots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterSnapshots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusterSnapshots)
 
 ```python
 class DescribeDBClusterSnapshotsPaginator(Boto3Paginator):
@@ -232,13 +232,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_db_clusters")`
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeDBClustersPaginator
+from mypy_boto3_rds.paginator import DescribeDBClustersPaginator
 
 def get_describe_db_clusters_paginator() -> DescribeDBClustersPaginator:
     return boto3.client("rds").get_paginator("describe_db_clusters")
 ```
 
-[Paginator.DescribeDBClusters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBClusters)
 
 ```python
 class DescribeDBClustersPaginator(Boto3Paginator):
@@ -258,13 +258,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_db_engine_vers
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeDBEngineVersionsPaginator
+from mypy_boto3_rds.paginator import DescribeDBEngineVersionsPaginator
 
 def get_describe_db_engine_versions_paginator() -> DescribeDBEngineVersionsPaginator:
     return boto3.client("rds").get_paginator("describe_db_engine_versions")
 ```
 
-[Paginator.DescribeDBEngineVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBEngineVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBEngineVersions)
 
 ```python
 class DescribeDBEngineVersionsPaginator(Boto3Paginator):
@@ -289,13 +289,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_db_instance_au
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeDBInstanceAutomatedBackupsPaginator
+from mypy_boto3_rds.paginator import DescribeDBInstanceAutomatedBackupsPaginator
 
 def get_describe_db_instance_automated_backups_paginator() -> DescribeDBInstanceAutomatedBackupsPaginator:
     return boto3.client("rds").get_paginator("describe_db_instance_automated_backups")
 ```
 
-[Paginator.DescribeDBInstanceAutomatedBackups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBInstanceAutomatedBackups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBInstanceAutomatedBackups)
 
 ```python
 class DescribeDBInstanceAutomatedBackupsPaginator(Boto3Paginator):
@@ -316,13 +316,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_db_instances")
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeDBInstancesPaginator
+from mypy_boto3_rds.paginator import DescribeDBInstancesPaginator
 
 def get_describe_db_instances_paginator() -> DescribeDBInstancesPaginator:
     return boto3.client("rds").get_paginator("describe_db_instances")
 ```
 
-[Paginator.DescribeDBInstances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBInstances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBInstances)
 
 ```python
 class DescribeDBInstancesPaginator(Boto3Paginator):
@@ -341,13 +341,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_db_log_files")
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeDBLogFilesPaginator
+from mypy_boto3_rds.paginator import DescribeDBLogFilesPaginator
 
 def get_describe_db_log_files_paginator() -> DescribeDBLogFilesPaginator:
     return boto3.client("rds").get_paginator("describe_db_log_files")
 ```
 
-[Paginator.DescribeDBLogFiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBLogFiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBLogFiles)
 
 ```python
 class DescribeDBLogFilesPaginator(Boto3Paginator):
@@ -369,13 +369,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_db_parameter_g
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeDBParameterGroupsPaginator
+from mypy_boto3_rds.paginator import DescribeDBParameterGroupsPaginator
 
 def get_describe_db_parameter_groups_paginator() -> DescribeDBParameterGroupsPaginator:
     return boto3.client("rds").get_paginator("describe_db_parameter_groups")
 ```
 
-[Paginator.DescribeDBParameterGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBParameterGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBParameterGroups)
 
 ```python
 class DescribeDBParameterGroupsPaginator(Boto3Paginator):
@@ -394,13 +394,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_db_parameters"
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeDBParametersPaginator
+from mypy_boto3_rds.paginator import DescribeDBParametersPaginator
 
 def get_describe_db_parameters_paginator() -> DescribeDBParametersPaginator:
     return boto3.client("rds").get_paginator("describe_db_parameters")
 ```
 
-[Paginator.DescribeDBParameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBParameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBParameters)
 
 ```python
 class DescribeDBParametersPaginator(Boto3Paginator):
@@ -420,13 +420,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_db_proxies")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeDBProxiesPaginator
+from mypy_boto3_rds.paginator import DescribeDBProxiesPaginator
 
 def get_describe_db_proxies_paginator() -> DescribeDBProxiesPaginator:
     return boto3.client("rds").get_paginator("describe_db_proxies")
 ```
 
-[Paginator.DescribeDBProxies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxies)
 
 ```python
 class DescribeDBProxiesPaginator(Boto3Paginator):
@@ -445,13 +445,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_db_proxy_endpo
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeDBProxyEndpointsPaginator
+from mypy_boto3_rds.paginator import DescribeDBProxyEndpointsPaginator
 
 def get_describe_db_proxy_endpoints_paginator() -> DescribeDBProxyEndpointsPaginator:
     return boto3.client("rds").get_paginator("describe_db_proxy_endpoints")
 ```
 
-[Paginator.DescribeDBProxyEndpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxyEndpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxyEndpoints)
 
 ```python
 class DescribeDBProxyEndpointsPaginator(Boto3Paginator):
@@ -471,13 +471,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_db_proxy_targe
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeDBProxyTargetGroupsPaginator
+from mypy_boto3_rds.paginator import DescribeDBProxyTargetGroupsPaginator
 
 def get_describe_db_proxy_target_groups_paginator() -> DescribeDBProxyTargetGroupsPaginator:
     return boto3.client("rds").get_paginator("describe_db_proxy_target_groups")
 ```
 
-[Paginator.DescribeDBProxyTargetGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxyTargetGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxyTargetGroups)
 
 ```python
 class DescribeDBProxyTargetGroupsPaginator(Boto3Paginator):
@@ -497,13 +497,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_db_proxy_targe
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeDBProxyTargetsPaginator
+from mypy_boto3_rds.paginator import DescribeDBProxyTargetsPaginator
 
 def get_describe_db_proxy_targets_paginator() -> DescribeDBProxyTargetsPaginator:
     return boto3.client("rds").get_paginator("describe_db_proxy_targets")
 ```
 
-[Paginator.DescribeDBProxyTargets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxyTargets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBProxyTargets)
 
 ```python
 class DescribeDBProxyTargetsPaginator(Boto3Paginator):
@@ -523,13 +523,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_db_security_gr
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeDBSecurityGroupsPaginator
+from mypy_boto3_rds.paginator import DescribeDBSecurityGroupsPaginator
 
 def get_describe_db_security_groups_paginator() -> DescribeDBSecurityGroupsPaginator:
     return boto3.client("rds").get_paginator("describe_db_security_groups")
 ```
 
-[Paginator.DescribeDBSecurityGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBSecurityGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBSecurityGroups)
 
 ```python
 class DescribeDBSecurityGroupsPaginator(Boto3Paginator):
@@ -548,13 +548,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_db_snapshots")
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeDBSnapshotsPaginator
+from mypy_boto3_rds.paginator import DescribeDBSnapshotsPaginator
 
 def get_describe_db_snapshots_paginator() -> DescribeDBSnapshotsPaginator:
     return boto3.client("rds").get_paginator("describe_db_snapshots")
 ```
 
-[Paginator.DescribeDBSnapshots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBSnapshots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBSnapshots)
 
 ```python
 class DescribeDBSnapshotsPaginator(Boto3Paginator):
@@ -578,13 +578,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_db_subnet_grou
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeDBSubnetGroupsPaginator
+from mypy_boto3_rds.paginator import DescribeDBSubnetGroupsPaginator
 
 def get_describe_db_subnet_groups_paginator() -> DescribeDBSubnetGroupsPaginator:
     return boto3.client("rds").get_paginator("describe_db_subnet_groups")
 ```
 
-[Paginator.DescribeDBSubnetGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBSubnetGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeDBSubnetGroups)
 
 ```python
 class DescribeDBSubnetGroupsPaginator(Boto3Paginator):
@@ -603,13 +603,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_engine_default
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeEngineDefaultClusterParametersPaginator
+from mypy_boto3_rds.paginator import DescribeEngineDefaultClusterParametersPaginator
 
 def get_describe_engine_default_cluster_parameters_paginator() -> DescribeEngineDefaultClusterParametersPaginator:
     return boto3.client("rds").get_paginator("describe_engine_default_cluster_parameters")
 ```
 
-[Paginator.DescribeEngineDefaultClusterParameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEngineDefaultClusterParameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEngineDefaultClusterParameters)
 
 ```python
 class DescribeEngineDefaultClusterParametersPaginator(Boto3Paginator):
@@ -628,13 +628,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_engine_default
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeEngineDefaultParametersPaginator
+from mypy_boto3_rds.paginator import DescribeEngineDefaultParametersPaginator
 
 def get_describe_engine_default_parameters_paginator() -> DescribeEngineDefaultParametersPaginator:
     return boto3.client("rds").get_paginator("describe_engine_default_parameters")
 ```
 
-[Paginator.DescribeEngineDefaultParameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEngineDefaultParameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEngineDefaultParameters)
 
 ```python
 class DescribeEngineDefaultParametersPaginator(Boto3Paginator):
@@ -653,13 +653,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_event_subscrip
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeEventSubscriptionsPaginator
+from mypy_boto3_rds.paginator import DescribeEventSubscriptionsPaginator
 
 def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPaginator:
     return boto3.client("rds").get_paginator("describe_event_subscriptions")
 ```
 
-[Paginator.DescribeEventSubscriptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEventSubscriptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEventSubscriptions)
 
 ```python
 class DescribeEventSubscriptionsPaginator(Boto3Paginator):
@@ -678,13 +678,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_events")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeEventsPaginator
+from mypy_boto3_rds.paginator import DescribeEventsPaginator
 
 def get_describe_events_paginator() -> DescribeEventsPaginator:
     return boto3.client("rds").get_paginator("describe_events")
 ```
 
-[Paginator.DescribeEvents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEvents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeEvents)
 
 ```python
 class DescribeEventsPaginator(Boto3Paginator):
@@ -708,13 +708,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_export_tasks")
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeExportTasksPaginator
+from mypy_boto3_rds.paginator import DescribeExportTasksPaginator
 
 def get_describe_export_tasks_paginator() -> DescribeExportTasksPaginator:
     return boto3.client("rds").get_paginator("describe_export_tasks")
 ```
 
-[Paginator.DescribeExportTasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeExportTasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeExportTasks)
 
 ```python
 class DescribeExportTasksPaginator(Boto3Paginator):
@@ -734,13 +734,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_global_cluster
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeGlobalClustersPaginator
+from mypy_boto3_rds.paginator import DescribeGlobalClustersPaginator
 
 def get_describe_global_clusters_paginator() -> DescribeGlobalClustersPaginator:
     return boto3.client("rds").get_paginator("describe_global_clusters")
 ```
 
-[Paginator.DescribeGlobalClusters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeGlobalClusters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeGlobalClusters)
 
 ```python
 class DescribeGlobalClustersPaginator(Boto3Paginator):
@@ -759,13 +759,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_installation_m
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeInstallationMediaPaginator
+from mypy_boto3_rds.paginator import DescribeInstallationMediaPaginator
 
 def get_describe_installation_media_paginator() -> DescribeInstallationMediaPaginator:
     return boto3.client("rds").get_paginator("describe_installation_media")
 ```
 
-[Paginator.DescribeInstallationMedia documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeInstallationMedia)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeInstallationMedia)
 
 ```python
 class DescribeInstallationMediaPaginator(Boto3Paginator):
@@ -784,13 +784,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_option_group_o
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeOptionGroupOptionsPaginator
+from mypy_boto3_rds.paginator import DescribeOptionGroupOptionsPaginator
 
 def get_describe_option_group_options_paginator() -> DescribeOptionGroupOptionsPaginator:
     return boto3.client("rds").get_paginator("describe_option_group_options")
 ```
 
-[Paginator.DescribeOptionGroupOptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeOptionGroupOptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeOptionGroupOptions)
 
 ```python
 class DescribeOptionGroupOptionsPaginator(Boto3Paginator):
@@ -810,13 +810,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_option_groups"
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeOptionGroupsPaginator
+from mypy_boto3_rds.paginator import DescribeOptionGroupsPaginator
 
 def get_describe_option_groups_paginator() -> DescribeOptionGroupsPaginator:
     return boto3.client("rds").get_paginator("describe_option_groups")
 ```
 
-[Paginator.DescribeOptionGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeOptionGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeOptionGroups)
 
 ```python
 class DescribeOptionGroupsPaginator(Boto3Paginator):
@@ -837,13 +837,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_orderable_db_i
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeOrderableDBInstanceOptionsPaginator
+from mypy_boto3_rds.paginator import DescribeOrderableDBInstanceOptionsPaginator
 
 def get_describe_orderable_db_instance_options_paginator() -> DescribeOrderableDBInstanceOptionsPaginator:
     return boto3.client("rds").get_paginator("describe_orderable_db_instance_options")
 ```
 
-[Paginator.DescribeOrderableDBInstanceOptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeOrderableDBInstanceOptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeOrderableDBInstanceOptions)
 
 ```python
 class DescribeOrderableDBInstanceOptionsPaginator(Boto3Paginator):
@@ -867,13 +867,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_pending_mainte
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribePendingMaintenanceActionsPaginator
+from mypy_boto3_rds.paginator import DescribePendingMaintenanceActionsPaginator
 
 def get_describe_pending_maintenance_actions_paginator() -> DescribePendingMaintenanceActionsPaginator:
     return boto3.client("rds").get_paginator("describe_pending_maintenance_actions")
 ```
 
-[Paginator.DescribePendingMaintenanceActions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribePendingMaintenanceActions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribePendingMaintenanceActions)
 
 ```python
 class DescribePendingMaintenanceActionsPaginator(Boto3Paginator):
@@ -892,13 +892,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_reserved_db_in
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeReservedDBInstancesPaginator
+from mypy_boto3_rds.paginator import DescribeReservedDBInstancesPaginator
 
 def get_describe_reserved_db_instances_paginator() -> DescribeReservedDBInstancesPaginator:
     return boto3.client("rds").get_paginator("describe_reserved_db_instances")
 ```
 
-[Paginator.DescribeReservedDBInstances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeReservedDBInstances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeReservedDBInstances)
 
 ```python
 class DescribeReservedDBInstancesPaginator(Boto3Paginator):
@@ -924,13 +924,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_reserved_db_in
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeReservedDBInstancesOfferingsPaginator
+from mypy_boto3_rds.paginator import DescribeReservedDBInstancesOfferingsPaginator
 
 def get_describe_reserved_db_instances_offerings_paginator() -> DescribeReservedDBInstancesOfferingsPaginator:
     return boto3.client("rds").get_paginator("describe_reserved_db_instances_offerings")
 ```
 
-[Paginator.DescribeReservedDBInstancesOfferings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeReservedDBInstancesOfferings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeReservedDBInstancesOfferings)
 
 ```python
 class DescribeReservedDBInstancesOfferingsPaginator(Boto3Paginator):
@@ -954,13 +954,13 @@ Type annotations for `boto3.client("rds").get_paginator("describe_source_regions
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeSourceRegionsPaginator
+from mypy_boto3_rds.paginator import DescribeSourceRegionsPaginator
 
 def get_describe_source_regions_paginator() -> DescribeSourceRegionsPaginator:
     return boto3.client("rds").get_paginator("describe_source_regions")
 ```
 
-[Paginator.DescribeSourceRegions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeSourceRegions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeSourceRegions)
 
 ```python
 class DescribeSourceRegionsPaginator(Boto3Paginator):
@@ -979,13 +979,13 @@ Type annotations for `boto3.client("rds").get_paginator("download_db_log_file_po
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DownloadDBLogFilePortionPaginator
+from mypy_boto3_rds.paginator import DownloadDBLogFilePortionPaginator
 
 def get_download_db_log_file_portion_paginator() -> DownloadDBLogFilePortionPaginator:
     return boto3.client("rds").get_paginator("download_db_log_file_portion")
 ```
 
-[Paginator.DownloadDBLogFilePortion documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DownloadDBLogFilePortion)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DownloadDBLogFilePortion)
 
 ```python
 class DownloadDBLogFilePortionPaginator(Boto3Paginator):

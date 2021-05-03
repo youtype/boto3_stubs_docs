@@ -1,11 +1,11 @@
-# Structures for boto3 QuickSight module
+# Typed dictionaries for boto3 QuickSight module
 
 > [Index](../README.md) > [QuickSight](./README.md) > Structures
 
 Auto-generated documentation for [QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
 type annotations stubs module [mypy_boto3_quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
 
-- [Structures for boto3 QuickSight module](#structures-for-boto3-quicksight-module)
+- [Typed dictionaries for boto3 QuickSight module](#typed-dictionaries-for-boto3-quicksight-module)
   - [AccountCustomizationTypeDef](#accountcustomizationtypedef)
   - [AccountSettingsTypeDef](#accountsettingstypedef)
   - [ActiveIAMPolicyAssignmentTypeDef](#activeiampolicyassignmenttypedef)

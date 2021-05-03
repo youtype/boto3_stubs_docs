@@ -1,11 +1,11 @@
-# Structures for boto3 Personalize module
+# Typed dictionaries for boto3 Personalize module
 
 > [Index](../README.md) > [Personalize](./README.md) > Structures
 
 Auto-generated documentation for [Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
 type annotations stubs module [mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
-- [Structures for boto3 Personalize module](#structures-for-boto3-personalize-module)
+- [Typed dictionaries for boto3 Personalize module](#typed-dictionaries-for-boto3-personalize-module)
   - [AlgorithmImageTypeDef](#algorithmimagetypedef)
   - [AlgorithmTypeDef](#algorithmtypedef)
   - [AutoMLConfigTypeDef](#automlconfigtypedef)
@@ -198,11 +198,9 @@ from mypy_boto3_personalize.type_defs import BatchInferenceJobOutputTypeDef
 
 Required fields:
 - `s3DataDestination`: `"S3DataConfigTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchInferenceJobSummaryTypeDef
@@ -516,11 +514,9 @@ from mypy_boto3_personalize.type_defs import DatasetExportJobOutputTypeDef
 
 Required fields:
 - `s3DataDestination`: `"S3DataConfigTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DatasetExportJobSummaryTypeDef

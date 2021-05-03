@@ -14,7 +14,7 @@ pip install mypy-boto3-sms-voice
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## SMSVoiceClient
 
@@ -79,7 +79,7 @@ from mypy_boto3_sms_voice.literals import EventType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

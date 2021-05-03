@@ -1,11 +1,11 @@
-# Structures for boto3 XRay module
+# Typed dictionaries for boto3 XRay module
 
 > [Index](../README.md) > [XRay](./README.md) > Structures
 
 Auto-generated documentation for [XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
 type annotations stubs module [mypy_boto3_xray](https://pypi.org/project/mypy-boto3-xray/).
 
-- [Structures for boto3 XRay module](#structures-for-boto3-xray-module)
+- [Typed dictionaries for boto3 XRay module](#typed-dictionaries-for-boto3-xray-module)
   - [AliasTypeDef](#aliastypedef)
   - [AnnotationValueTypeDef](#annotationvaluetypedef)
   - [AnomalousServiceTypeDef](#anomalousservicetypedef)

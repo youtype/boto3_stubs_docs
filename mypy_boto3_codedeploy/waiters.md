@@ -15,13 +15,13 @@ Type annotations for `boto3.client("codedeploy").get_waiter("deployment_successf
 Can be used directly:
 
 ```python
-from mypy_boto3_codedeploy.waiters import DeploymentSuccessfulWaiter
+from mypy_boto3_codedeploy.waiter import DeploymentSuccessfulWaiter
 
 def get_deployment_successful_waiter() -> DeploymentSuccessfulWaiter:
     return boto3.client("codedeploy").get_waiter("deployment_successful")
 ```
 
-[Waiter.DeploymentSuccessful documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Waiter.DeploymentSuccessful)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Waiter.deployment_successful)
 
 ```python
 class DeploymentSuccessfulWaiter(Boto3Waiter):

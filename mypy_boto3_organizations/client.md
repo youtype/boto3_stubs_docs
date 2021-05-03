@@ -72,7 +72,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_organizations.client import OrganizationsClient
+
+def get_organizations_client() -> OrganizationsClient:
+    return boto3.client("organizations")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client)
 
 ## Exceptions
 
@@ -143,7 +148,7 @@ Exceptions:
 
 Type annotations for `boto3.client("organizations").accept_handshake` method.
 
-[Client.accept_handshake documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.accept_handshake)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.accept_handshake]
 
 ```python
 def accept_handshake(
@@ -157,7 +162,7 @@ def accept_handshake(
 
 Type annotations for `boto3.client("organizations").attach_policy` method.
 
-[Client.attach_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.attach_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.attach_policy]
 
 ```python
 def attach_policy(
@@ -172,7 +177,7 @@ def attach_policy(
 
 Type annotations for `boto3.client("organizations").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -186,7 +191,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("organizations").cancel_handshake` method.
 
-[Client.cancel_handshake documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.cancel_handshake)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.cancel_handshake]
 
 ```python
 def cancel_handshake(
@@ -200,7 +205,7 @@ def cancel_handshake(
 
 Type annotations for `boto3.client("organizations").create_account` method.
 
-[Client.create_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_account]
 
 ```python
 def create_account(
@@ -218,7 +223,7 @@ def create_account(
 
 Type annotations for `boto3.client("organizations").create_gov_cloud_account` method.
 
-[Client.create_gov_cloud_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_gov_cloud_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_gov_cloud_account]
 
 ```python
 def create_gov_cloud_account(
@@ -236,7 +241,7 @@ def create_gov_cloud_account(
 
 Type annotations for `boto3.client("organizations").create_organization` method.
 
-[Client.create_organization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organization]
 
 ```python
 def create_organization(
@@ -250,7 +255,7 @@ def create_organization(
 
 Type annotations for `boto3.client("organizations").create_organizational_unit` method.
 
-[Client.create_organizational_unit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organizational_unit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organizational_unit]
 
 ```python
 def create_organizational_unit(
@@ -266,7 +271,7 @@ def create_organizational_unit(
 
 Type annotations for `boto3.client("organizations").create_policy` method.
 
-[Client.create_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_policy]
 
 ```python
 def create_policy(
@@ -284,7 +289,7 @@ def create_policy(
 
 Type annotations for `boto3.client("organizations").decline_handshake` method.
 
-[Client.decline_handshake documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.decline_handshake)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.decline_handshake]
 
 ```python
 def decline_handshake(
@@ -298,7 +303,7 @@ def decline_handshake(
 
 Type annotations for `boto3.client("organizations").delete_organization` method.
 
-[Client.delete_organization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_organization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_organization]
 
 ```python
 def delete_organization(
@@ -311,7 +316,7 @@ def delete_organization(
 
 Type annotations for `boto3.client("organizations").delete_organizational_unit` method.
 
-[Client.delete_organizational_unit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_organizational_unit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_organizational_unit]
 
 ```python
 def delete_organizational_unit(
@@ -325,7 +330,7 @@ def delete_organizational_unit(
 
 Type annotations for `boto3.client("organizations").delete_policy` method.
 
-[Client.delete_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_policy]
 
 ```python
 def delete_policy(
@@ -339,7 +344,7 @@ def delete_policy(
 
 Type annotations for `boto3.client("organizations").deregister_delegated_administrator` method.
 
-[Client.deregister_delegated_administrator documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.deregister_delegated_administrator)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.deregister_delegated_administrator]
 
 ```python
 def deregister_delegated_administrator(
@@ -354,7 +359,7 @@ def deregister_delegated_administrator(
 
 Type annotations for `boto3.client("organizations").describe_account` method.
 
-[Client.describe_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_account]
 
 ```python
 def describe_account(
@@ -368,7 +373,7 @@ def describe_account(
 
 Type annotations for `boto3.client("organizations").describe_create_account_status` method.
 
-[Client.describe_create_account_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_create_account_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_create_account_status]
 
 ```python
 def describe_create_account_status(
@@ -382,7 +387,7 @@ def describe_create_account_status(
 
 Type annotations for `boto3.client("organizations").describe_effective_policy` method.
 
-[Client.describe_effective_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_effective_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_effective_policy]
 
 ```python
 def describe_effective_policy(
@@ -397,7 +402,7 @@ def describe_effective_policy(
 
 Type annotations for `boto3.client("organizations").describe_handshake` method.
 
-[Client.describe_handshake documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_handshake)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_handshake]
 
 ```python
 def describe_handshake(
@@ -411,7 +416,7 @@ def describe_handshake(
 
 Type annotations for `boto3.client("organizations").describe_organization` method.
 
-[Client.describe_organization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_organization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_organization]
 
 ```python
 def describe_organization(
@@ -424,7 +429,7 @@ def describe_organization(
 
 Type annotations for `boto3.client("organizations").describe_organizational_unit` method.
 
-[Client.describe_organizational_unit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_organizational_unit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_organizational_unit]
 
 ```python
 def describe_organizational_unit(
@@ -438,7 +443,7 @@ def describe_organizational_unit(
 
 Type annotations for `boto3.client("organizations").describe_policy` method.
 
-[Client.describe_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_policy]
 
 ```python
 def describe_policy(
@@ -452,7 +457,7 @@ def describe_policy(
 
 Type annotations for `boto3.client("organizations").detach_policy` method.
 
-[Client.detach_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.detach_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.detach_policy]
 
 ```python
 def detach_policy(
@@ -467,7 +472,7 @@ def detach_policy(
 
 Type annotations for `boto3.client("organizations").disable_aws_service_access` method.
 
-[Client.disable_aws_service_access documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_aws_service_access)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_aws_service_access]
 
 ```python
 def disable_aws_service_access(
@@ -481,7 +486,7 @@ def disable_aws_service_access(
 
 Type annotations for `boto3.client("organizations").disable_policy_type` method.
 
-[Client.disable_policy_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_policy_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_policy_type]
 
 ```python
 def disable_policy_type(
@@ -496,7 +501,7 @@ def disable_policy_type(
 
 Type annotations for `boto3.client("organizations").enable_all_features` method.
 
-[Client.enable_all_features documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_all_features)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_all_features]
 
 ```python
 def enable_all_features(
@@ -509,7 +514,7 @@ def enable_all_features(
 
 Type annotations for `boto3.client("organizations").enable_aws_service_access` method.
 
-[Client.enable_aws_service_access documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_aws_service_access)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_aws_service_access]
 
 ```python
 def enable_aws_service_access(
@@ -523,7 +528,7 @@ def enable_aws_service_access(
 
 Type annotations for `boto3.client("organizations").enable_policy_type` method.
 
-[Client.enable_policy_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_policy_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_policy_type]
 
 ```python
 def enable_policy_type(
@@ -538,7 +543,7 @@ def enable_policy_type(
 
 Type annotations for `boto3.client("organizations").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -555,7 +560,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("organizations").invite_account_to_organization` method.
 
-[Client.invite_account_to_organization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.invite_account_to_organization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.invite_account_to_organization]
 
 ```python
 def invite_account_to_organization(
@@ -571,7 +576,7 @@ def invite_account_to_organization(
 
 Type annotations for `boto3.client("organizations").leave_organization` method.
 
-[Client.leave_organization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.leave_organization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.leave_organization]
 
 ```python
 def leave_organization(
@@ -584,7 +589,7 @@ def leave_organization(
 
 Type annotations for `boto3.client("organizations").list_accounts` method.
 
-[Client.list_accounts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts]
 
 ```python
 def list_accounts(
@@ -599,7 +604,7 @@ def list_accounts(
 
 Type annotations for `boto3.client("organizations").list_accounts_for_parent` method.
 
-[Client.list_accounts_for_parent documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts_for_parent)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts_for_parent]
 
 ```python
 def list_accounts_for_parent(
@@ -615,7 +620,7 @@ def list_accounts_for_parent(
 
 Type annotations for `boto3.client("organizations").list_aws_service_access_for_organization` method.
 
-[Client.list_aws_service_access_for_organization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_aws_service_access_for_organization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_aws_service_access_for_organization]
 
 ```python
 def list_aws_service_access_for_organization(
@@ -630,7 +635,7 @@ def list_aws_service_access_for_organization(
 
 Type annotations for `boto3.client("organizations").list_children` method.
 
-[Client.list_children documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_children)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_children]
 
 ```python
 def list_children(
@@ -647,7 +652,7 @@ def list_children(
 
 Type annotations for `boto3.client("organizations").list_create_account_status` method.
 
-[Client.list_create_account_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_create_account_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_create_account_status]
 
 ```python
 def list_create_account_status(
@@ -663,7 +668,7 @@ def list_create_account_status(
 
 Type annotations for `boto3.client("organizations").list_delegated_administrators` method.
 
-[Client.list_delegated_administrators documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_administrators)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_administrators]
 
 ```python
 def list_delegated_administrators(
@@ -679,7 +684,7 @@ def list_delegated_administrators(
 
 Type annotations for `boto3.client("organizations").list_delegated_services_for_account` method.
 
-[Client.list_delegated_services_for_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_services_for_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_services_for_account]
 
 ```python
 def list_delegated_services_for_account(
@@ -695,7 +700,7 @@ def list_delegated_services_for_account(
 
 Type annotations for `boto3.client("organizations").list_handshakes_for_account` method.
 
-[Client.list_handshakes_for_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_account]
 
 ```python
 def list_handshakes_for_account(
@@ -711,7 +716,7 @@ def list_handshakes_for_account(
 
 Type annotations for `boto3.client("organizations").list_handshakes_for_organization` method.
 
-[Client.list_handshakes_for_organization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_organization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_organization]
 
 ```python
 def list_handshakes_for_organization(
@@ -727,7 +732,7 @@ def list_handshakes_for_organization(
 
 Type annotations for `boto3.client("organizations").list_organizational_units_for_parent` method.
 
-[Client.list_organizational_units_for_parent documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_organizational_units_for_parent)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_organizational_units_for_parent]
 
 ```python
 def list_organizational_units_for_parent(
@@ -743,7 +748,7 @@ def list_organizational_units_for_parent(
 
 Type annotations for `boto3.client("organizations").list_parents` method.
 
-[Client.list_parents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_parents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_parents]
 
 ```python
 def list_parents(
@@ -759,7 +764,7 @@ def list_parents(
 
 Type annotations for `boto3.client("organizations").list_policies` method.
 
-[Client.list_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies]
 
 ```python
 def list_policies(
@@ -775,7 +780,7 @@ def list_policies(
 
 Type annotations for `boto3.client("organizations").list_policies_for_target` method.
 
-[Client.list_policies_for_target documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies_for_target)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies_for_target]
 
 ```python
 def list_policies_for_target(
@@ -792,7 +797,7 @@ def list_policies_for_target(
 
 Type annotations for `boto3.client("organizations").list_roots` method.
 
-[Client.list_roots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_roots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_roots]
 
 ```python
 def list_roots(
@@ -807,7 +812,7 @@ def list_roots(
 
 Type annotations for `boto3.client("organizations").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -822,7 +827,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("organizations").list_targets_for_policy` method.
 
-[Client.list_targets_for_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_targets_for_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_targets_for_policy]
 
 ```python
 def list_targets_for_policy(
@@ -838,7 +843,7 @@ def list_targets_for_policy(
 
 Type annotations for `boto3.client("organizations").move_account` method.
 
-[Client.move_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.move_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.move_account]
 
 ```python
 def move_account(
@@ -854,7 +859,7 @@ def move_account(
 
 Type annotations for `boto3.client("organizations").register_delegated_administrator` method.
 
-[Client.register_delegated_administrator documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.register_delegated_administrator)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.register_delegated_administrator]
 
 ```python
 def register_delegated_administrator(
@@ -869,7 +874,7 @@ def register_delegated_administrator(
 
 Type annotations for `boto3.client("organizations").remove_account_from_organization` method.
 
-[Client.remove_account_from_organization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.remove_account_from_organization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.remove_account_from_organization]
 
 ```python
 def remove_account_from_organization(
@@ -883,7 +888,7 @@ def remove_account_from_organization(
 
 Type annotations for `boto3.client("organizations").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -898,7 +903,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("organizations").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -913,7 +918,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("organizations").update_organizational_unit` method.
 
-[Client.update_organizational_unit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_organizational_unit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_organizational_unit]
 
 ```python
 def update_organizational_unit(
@@ -928,7 +933,7 @@ def update_organizational_unit(
 
 Type annotations for `boto3.client("organizations").update_policy` method.
 
-[Client.update_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_policy]
 
 ```python
 def update_policy(

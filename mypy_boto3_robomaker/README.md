@@ -15,7 +15,7 @@ pip install mypy-boto3-robomaker
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## RoboMakerClient
 
@@ -186,7 +186,7 @@ from mypy_boto3_robomaker.literals import Architecture, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

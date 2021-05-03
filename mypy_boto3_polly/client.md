@@ -30,7 +30,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_polly.client import PollyClient
+
+def get_polly_client() -> PollyClient:
+    return boto3.client("polly")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client)
 
 ## Exceptions
 
@@ -78,7 +83,7 @@ Exceptions:
 
 Type annotations for `boto3.client("polly").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -92,7 +97,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("polly").delete_lexicon` method.
 
-[Client.delete_lexicon documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.delete_lexicon)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.delete_lexicon]
 
 ```python
 def delete_lexicon(
@@ -106,7 +111,7 @@ def delete_lexicon(
 
 Type annotations for `boto3.client("polly").describe_voices` method.
 
-[Client.describe_voices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.describe_voices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.describe_voices]
 
 ```python
 def describe_voices(
@@ -123,7 +128,7 @@ def describe_voices(
 
 Type annotations for `boto3.client("polly").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -140,7 +145,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("polly").get_lexicon` method.
 
-[Client.get_lexicon documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_lexicon)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_lexicon]
 
 ```python
 def get_lexicon(
@@ -154,7 +159,7 @@ def get_lexicon(
 
 Type annotations for `boto3.client("polly").get_speech_synthesis_task` method.
 
-[Client.get_speech_synthesis_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_speech_synthesis_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_speech_synthesis_task]
 
 ```python
 def get_speech_synthesis_task(
@@ -168,7 +173,7 @@ def get_speech_synthesis_task(
 
 Type annotations for `boto3.client("polly").list_lexicons` method.
 
-[Client.list_lexicons documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_lexicons)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_lexicons]
 
 ```python
 def list_lexicons(
@@ -182,7 +187,7 @@ def list_lexicons(
 
 Type annotations for `boto3.client("polly").list_speech_synthesis_tasks` method.
 
-[Client.list_speech_synthesis_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_speech_synthesis_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_speech_synthesis_tasks]
 
 ```python
 def list_speech_synthesis_tasks(
@@ -198,7 +203,7 @@ def list_speech_synthesis_tasks(
 
 Type annotations for `boto3.client("polly").put_lexicon` method.
 
-[Client.put_lexicon documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.put_lexicon)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.put_lexicon]
 
 ```python
 def put_lexicon(
@@ -213,7 +218,7 @@ def put_lexicon(
 
 Type annotations for `boto3.client("polly").start_speech_synthesis_task` method.
 
-[Client.start_speech_synthesis_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.start_speech_synthesis_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.start_speech_synthesis_task]
 
 ```python
 def start_speech_synthesis_task(
@@ -238,7 +243,7 @@ def start_speech_synthesis_task(
 
 Type annotations for `boto3.client("polly").synthesize_speech` method.
 
-[Client.synthesize_speech documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.synthesize_speech)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.synthesize_speech]
 
 ```python
 def synthesize_speech(

@@ -15,7 +15,7 @@ pip install mypy-boto3-redshift-data
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## RedshiftDataAPIServiceClient
 
@@ -105,7 +105,7 @@ from mypy_boto3_redshift_data.literals import DescribeTablePaginatorName, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

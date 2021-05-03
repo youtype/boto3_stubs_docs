@@ -16,13 +16,13 @@ Type annotations for `boto3.client("sqs").get_paginator("list_dead_letter_source
 Can be used directly:
 
 ```python
-from mypy_boto3_sqs.paginators import ListDeadLetterSourceQueuesPaginator
+from mypy_boto3_sqs.paginator import ListDeadLetterSourceQueuesPaginator
 
 def get_list_dead_letter_source_queues_paginator() -> ListDeadLetterSourceQueuesPaginator:
     return boto3.client("sqs").get_paginator("list_dead_letter_source_queues")
 ```
 
-[Paginator.ListDeadLetterSourceQueues documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Paginator.ListDeadLetterSourceQueues)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Paginator.ListDeadLetterSourceQueues)
 
 ```python
 class ListDeadLetterSourceQueuesPaginator(Boto3Paginator):
@@ -40,13 +40,13 @@ Type annotations for `boto3.client("sqs").get_paginator("list_queues")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sqs.paginators import ListQueuesPaginator
+from mypy_boto3_sqs.paginator import ListQueuesPaginator
 
 def get_list_queues_paginator() -> ListQueuesPaginator:
     return boto3.client("sqs").get_paginator("list_queues")
 ```
 
-[Paginator.ListQueues documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Paginator.ListQueues)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Paginator.ListQueues)
 
 ```python
 class ListQueuesPaginator(Boto3Paginator):

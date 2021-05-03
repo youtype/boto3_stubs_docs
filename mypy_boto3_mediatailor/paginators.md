@@ -19,13 +19,13 @@ Type annotations for `boto3.client("mediatailor").get_paginator("get_channel_sch
 Can be used directly:
 
 ```python
-from mypy_boto3_mediatailor.paginators import GetChannelSchedulePaginator
+from mypy_boto3_mediatailor.paginator import GetChannelSchedulePaginator
 
 def get_get_channel_schedule_paginator() -> GetChannelSchedulePaginator:
     return boto3.client("mediatailor").get_paginator("get_channel_schedule")
 ```
 
-[Paginator.GetChannelSchedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.GetChannelSchedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.GetChannelSchedule)
 
 ```python
 class GetChannelSchedulePaginator(Boto3Paginator):
@@ -44,13 +44,13 @@ Type annotations for `boto3.client("mediatailor").get_paginator("list_channels")
 Can be used directly:
 
 ```python
-from mypy_boto3_mediatailor.paginators import ListChannelsPaginator
+from mypy_boto3_mediatailor.paginator import ListChannelsPaginator
 
 def get_list_channels_paginator() -> ListChannelsPaginator:
     return boto3.client("mediatailor").get_paginator("list_channels")
 ```
 
-[Paginator.ListChannels documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListChannels)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListChannels)
 
 ```python
 class ListChannelsPaginator(Boto3Paginator):
@@ -67,13 +67,13 @@ Type annotations for `boto3.client("mediatailor").get_paginator("list_playback_c
 Can be used directly:
 
 ```python
-from mypy_boto3_mediatailor.paginators import ListPlaybackConfigurationsPaginator
+from mypy_boto3_mediatailor.paginator import ListPlaybackConfigurationsPaginator
 
 def get_list_playback_configurations_paginator() -> ListPlaybackConfigurationsPaginator:
     return boto3.client("mediatailor").get_paginator("list_playback_configurations")
 ```
 
-[Paginator.ListPlaybackConfigurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListPlaybackConfigurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListPlaybackConfigurations)
 
 ```python
 class ListPlaybackConfigurationsPaginator(Boto3Paginator):
@@ -90,13 +90,13 @@ Type annotations for `boto3.client("mediatailor").get_paginator("list_source_loc
 Can be used directly:
 
 ```python
-from mypy_boto3_mediatailor.paginators import ListSourceLocationsPaginator
+from mypy_boto3_mediatailor.paginator import ListSourceLocationsPaginator
 
 def get_list_source_locations_paginator() -> ListSourceLocationsPaginator:
     return boto3.client("mediatailor").get_paginator("list_source_locations")
 ```
 
-[Paginator.ListSourceLocations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListSourceLocations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListSourceLocations)
 
 ```python
 class ListSourceLocationsPaginator(Boto3Paginator):
@@ -113,13 +113,13 @@ Type annotations for `boto3.client("mediatailor").get_paginator("list_vod_source
 Can be used directly:
 
 ```python
-from mypy_boto3_mediatailor.paginators import ListVodSourcesPaginator
+from mypy_boto3_mediatailor.paginator import ListVodSourcesPaginator
 
 def get_list_vod_sources_paginator() -> ListVodSourcesPaginator:
     return boto3.client("mediatailor").get_paginator("list_vod_sources")
 ```
 
-[Paginator.ListVodSources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListVodSources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListVodSources)
 
 ```python
 class ListVodSourcesPaginator(Boto3Paginator):

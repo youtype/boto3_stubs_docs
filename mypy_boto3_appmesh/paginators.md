@@ -22,13 +22,13 @@ Type annotations for `boto3.client("appmesh").get_paginator("list_gateway_routes
 Can be used directly:
 
 ```python
-from mypy_boto3_appmesh.paginators import ListGatewayRoutesPaginator
+from mypy_boto3_appmesh.paginator import ListGatewayRoutesPaginator
 
 def get_list_gateway_routes_paginator() -> ListGatewayRoutesPaginator:
     return boto3.client("appmesh").get_paginator("list_gateway_routes")
 ```
 
-[Paginator.ListGatewayRoutes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListGatewayRoutes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListGatewayRoutes)
 
 ```python
 class ListGatewayRoutesPaginator(Boto3Paginator):
@@ -48,13 +48,13 @@ Type annotations for `boto3.client("appmesh").get_paginator("list_meshes")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_appmesh.paginators import ListMeshesPaginator
+from mypy_boto3_appmesh.paginator import ListMeshesPaginator
 
 def get_list_meshes_paginator() -> ListMeshesPaginator:
     return boto3.client("appmesh").get_paginator("list_meshes")
 ```
 
-[Paginator.ListMeshes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListMeshes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListMeshes)
 
 ```python
 class ListMeshesPaginator(Boto3Paginator):
@@ -71,13 +71,13 @@ Type annotations for `boto3.client("appmesh").get_paginator("list_routes")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_appmesh.paginators import ListRoutesPaginator
+from mypy_boto3_appmesh.paginator import ListRoutesPaginator
 
 def get_list_routes_paginator() -> ListRoutesPaginator:
     return boto3.client("appmesh").get_paginator("list_routes")
 ```
 
-[Paginator.ListRoutes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListRoutes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListRoutes)
 
 ```python
 class ListRoutesPaginator(Boto3Paginator):
@@ -97,13 +97,13 @@ Type annotations for `boto3.client("appmesh").get_paginator("list_tags_for_resou
 Can be used directly:
 
 ```python
-from mypy_boto3_appmesh.paginators import ListTagsForResourcePaginator
+from mypy_boto3_appmesh.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("appmesh").get_paginator("list_tags_for_resource")
 ```
 
-[Paginator.ListTagsForResource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListTagsForResource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):
@@ -121,13 +121,13 @@ Type annotations for `boto3.client("appmesh").get_paginator("list_virtual_gatewa
 Can be used directly:
 
 ```python
-from mypy_boto3_appmesh.paginators import ListVirtualGatewaysPaginator
+from mypy_boto3_appmesh.paginator import ListVirtualGatewaysPaginator
 
 def get_list_virtual_gateways_paginator() -> ListVirtualGatewaysPaginator:
     return boto3.client("appmesh").get_paginator("list_virtual_gateways")
 ```
 
-[Paginator.ListVirtualGateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualGateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualGateways)
 
 ```python
 class ListVirtualGatewaysPaginator(Boto3Paginator):
@@ -146,13 +146,13 @@ Type annotations for `boto3.client("appmesh").get_paginator("list_virtual_nodes"
 Can be used directly:
 
 ```python
-from mypy_boto3_appmesh.paginators import ListVirtualNodesPaginator
+from mypy_boto3_appmesh.paginator import ListVirtualNodesPaginator
 
 def get_list_virtual_nodes_paginator() -> ListVirtualNodesPaginator:
     return boto3.client("appmesh").get_paginator("list_virtual_nodes")
 ```
 
-[Paginator.ListVirtualNodes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualNodes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualNodes)
 
 ```python
 class ListVirtualNodesPaginator(Boto3Paginator):
@@ -171,13 +171,13 @@ Type annotations for `boto3.client("appmesh").get_paginator("list_virtual_router
 Can be used directly:
 
 ```python
-from mypy_boto3_appmesh.paginators import ListVirtualRoutersPaginator
+from mypy_boto3_appmesh.paginator import ListVirtualRoutersPaginator
 
 def get_list_virtual_routers_paginator() -> ListVirtualRoutersPaginator:
     return boto3.client("appmesh").get_paginator("list_virtual_routers")
 ```
 
-[Paginator.ListVirtualRouters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualRouters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualRouters)
 
 ```python
 class ListVirtualRoutersPaginator(Boto3Paginator):
@@ -196,13 +196,13 @@ Type annotations for `boto3.client("appmesh").get_paginator("list_virtual_servic
 Can be used directly:
 
 ```python
-from mypy_boto3_appmesh.paginators import ListVirtualServicesPaginator
+from mypy_boto3_appmesh.paginator import ListVirtualServicesPaginator
 
 def get_list_virtual_services_paginator() -> ListVirtualServicesPaginator:
     return boto3.client("appmesh").get_paginator("list_virtual_services")
 ```
 
-[Paginator.ListVirtualServices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualServices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualServices)
 
 ```python
 class ListVirtualServicesPaginator(Boto3Paginator):

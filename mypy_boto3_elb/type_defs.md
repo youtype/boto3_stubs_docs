@@ -1,11 +1,11 @@
-# Structures for boto3 ElasticLoadBalancing module
+# Typed dictionaries for boto3 ElasticLoadBalancing module
 
 > [Index](../README.md) > [ElasticLoadBalancing](./README.md) > Structures
 
 Auto-generated documentation for [ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
 type annotations stubs module [mypy_boto3_elb](https://pypi.org/project/mypy-boto3-elb/).
 
-- [Structures for boto3 ElasticLoadBalancing module](#structures-for-boto3-elasticloadbalancing-module)
+- [Typed dictionaries for boto3 ElasticLoadBalancing module](#typed-dictionaries-for-boto3-elasticloadbalancing-module)
   - [AccessLogTypeDef](#accesslogtypedef)
   - [AddAvailabilityZonesOutputTypeDef](#addavailabilityzonesoutputtypedef)
   - [AdditionalAttributeTypeDef](#additionalattributetypedef)
@@ -78,11 +78,11 @@ from mypy_boto3_elb.type_defs import AddAvailabilityZonesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `AvailabilityZones`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## AdditionalAttributeTypeDef
@@ -120,11 +120,11 @@ from mypy_boto3_elb.type_defs import ApplySecurityGroupsToLoadBalancerOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `SecurityGroups`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## AttachLoadBalancerToSubnetsOutputTypeDef
@@ -134,11 +134,11 @@ from mypy_boto3_elb.type_defs import AttachLoadBalancerToSubnetsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Subnets`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BackendServerDescriptionTypeDef
@@ -162,11 +162,11 @@ from mypy_boto3_elb.type_defs import ConfigureHealthCheckOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `HealthCheck`: `"HealthCheckTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ConnectionDrainingTypeDef
@@ -205,11 +205,11 @@ from mypy_boto3_elb.type_defs import CreateAccessPointOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DNSName`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CrossZoneLoadBalancingTypeDef
@@ -232,11 +232,11 @@ from mypy_boto3_elb.type_defs import DeregisterEndPointsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Instances`: `List["InstanceTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeAccessPointsOutputTypeDef
@@ -246,12 +246,12 @@ from mypy_boto3_elb.type_defs import DescribeAccessPointsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `LoadBalancerDescriptions`: `List["LoadBalancerDescriptionTypeDef"]`
 - `NextMarker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeAccountLimitsOutputTypeDef
@@ -261,12 +261,12 @@ from mypy_boto3_elb.type_defs import DescribeAccountLimitsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Limits`: `List["LimitTypeDef"]`
 - `NextMarker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeEndPointStateOutputTypeDef
@@ -276,11 +276,11 @@ from mypy_boto3_elb.type_defs import DescribeEndPointStateOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `InstanceStates`: `List["InstanceStateTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeLoadBalancerAttributesOutputTypeDef
@@ -290,11 +290,11 @@ from mypy_boto3_elb.type_defs import DescribeLoadBalancerAttributesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `LoadBalancerAttributes`: `"LoadBalancerAttributesTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeLoadBalancerPoliciesOutputTypeDef
@@ -304,11 +304,11 @@ from mypy_boto3_elb.type_defs import DescribeLoadBalancerPoliciesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PolicyDescriptions`: `List["PolicyDescriptionTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeLoadBalancerPolicyTypesOutputTypeDef
@@ -318,11 +318,11 @@ from mypy_boto3_elb.type_defs import DescribeLoadBalancerPolicyTypesOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PolicyTypeDescriptions`: `List["PolicyTypeDescriptionTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeTagsOutputTypeDef
@@ -332,11 +332,11 @@ from mypy_boto3_elb.type_defs import DescribeTagsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TagDescriptions`: `List["TagDescriptionTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DetachLoadBalancerFromSubnetsOutputTypeDef
@@ -346,11 +346,11 @@ from mypy_boto3_elb.type_defs import DetachLoadBalancerFromSubnetsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Subnets`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## HealthCheckTypeDef
@@ -512,12 +512,12 @@ from mypy_boto3_elb.type_defs import ModifyLoadBalancerAttributesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `LoadBalancerName`: `str`
 - `LoadBalancerAttributes`: `"LoadBalancerAttributesTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PaginatorConfigTypeDef
@@ -632,11 +632,11 @@ from mypy_boto3_elb.type_defs import RegisterEndPointsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Instances`: `List["InstanceTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## RemoveAvailabilityZonesOutputTypeDef
@@ -646,11 +646,11 @@ from mypy_boto3_elb.type_defs import RemoveAvailabilityZonesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `AvailabilityZones`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ResponseMetadata

@@ -21,13 +21,13 @@ Type annotations for `boto3.client("kafka").get_paginator("list_cluster_operatio
 Can be used directly:
 
 ```python
-from mypy_boto3_kafka.paginators import ListClusterOperationsPaginator
+from mypy_boto3_kafka.paginator import ListClusterOperationsPaginator
 
 def get_list_cluster_operations_paginator() -> ListClusterOperationsPaginator:
     return boto3.client("kafka").get_paginator("list_cluster_operations")
 ```
 
-[Paginator.ListClusterOperations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Paginator.ListClusterOperations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Paginator.ListClusterOperations)
 
 ```python
 class ListClusterOperationsPaginator(Boto3Paginator):
@@ -45,13 +45,13 @@ Type annotations for `boto3.client("kafka").get_paginator("list_clusters")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_kafka.paginators import ListClustersPaginator
+from mypy_boto3_kafka.paginator import ListClustersPaginator
 
 def get_list_clusters_paginator() -> ListClustersPaginator:
     return boto3.client("kafka").get_paginator("list_clusters")
 ```
 
-[Paginator.ListClusters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Paginator.ListClusters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Paginator.ListClusters)
 
 ```python
 class ListClustersPaginator(Boto3Paginator):
@@ -69,13 +69,13 @@ Type annotations for `boto3.client("kafka").get_paginator("list_configuration_re
 Can be used directly:
 
 ```python
-from mypy_boto3_kafka.paginators import ListConfigurationRevisionsPaginator
+from mypy_boto3_kafka.paginator import ListConfigurationRevisionsPaginator
 
 def get_list_configuration_revisions_paginator() -> ListConfigurationRevisionsPaginator:
     return boto3.client("kafka").get_paginator("list_configuration_revisions")
 ```
 
-[Paginator.ListConfigurationRevisions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Paginator.ListConfigurationRevisions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Paginator.ListConfigurationRevisions)
 
 ```python
 class ListConfigurationRevisionsPaginator(Boto3Paginator):
@@ -93,13 +93,13 @@ Type annotations for `boto3.client("kafka").get_paginator("list_configurations")
 Can be used directly:
 
 ```python
-from mypy_boto3_kafka.paginators import ListConfigurationsPaginator
+from mypy_boto3_kafka.paginator import ListConfigurationsPaginator
 
 def get_list_configurations_paginator() -> ListConfigurationsPaginator:
     return boto3.client("kafka").get_paginator("list_configurations")
 ```
 
-[Paginator.ListConfigurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Paginator.ListConfigurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Paginator.ListConfigurations)
 
 ```python
 class ListConfigurationsPaginator(Boto3Paginator):
@@ -116,13 +116,13 @@ Type annotations for `boto3.client("kafka").get_paginator("list_kafka_versions")
 Can be used directly:
 
 ```python
-from mypy_boto3_kafka.paginators import ListKafkaVersionsPaginator
+from mypy_boto3_kafka.paginator import ListKafkaVersionsPaginator
 
 def get_list_kafka_versions_paginator() -> ListKafkaVersionsPaginator:
     return boto3.client("kafka").get_paginator("list_kafka_versions")
 ```
 
-[Paginator.ListKafkaVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Paginator.ListKafkaVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Paginator.ListKafkaVersions)
 
 ```python
 class ListKafkaVersionsPaginator(Boto3Paginator):
@@ -139,13 +139,13 @@ Type annotations for `boto3.client("kafka").get_paginator("list_nodes")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_kafka.paginators import ListNodesPaginator
+from mypy_boto3_kafka.paginator import ListNodesPaginator
 
 def get_list_nodes_paginator() -> ListNodesPaginator:
     return boto3.client("kafka").get_paginator("list_nodes")
 ```
 
-[Paginator.ListNodes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Paginator.ListNodes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Paginator.ListNodes)
 
 ```python
 class ListNodesPaginator(Boto3Paginator):
@@ -163,13 +163,13 @@ Type annotations for `boto3.client("kafka").get_paginator("list_scram_secrets")`
 Can be used directly:
 
 ```python
-from mypy_boto3_kafka.paginators import ListScramSecretsPaginator
+from mypy_boto3_kafka.paginator import ListScramSecretsPaginator
 
 def get_list_scram_secrets_paginator() -> ListScramSecretsPaginator:
     return boto3.client("kafka").get_paginator("list_scram_secrets")
 ```
 
-[Paginator.ListScramSecrets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Paginator.ListScramSecrets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Paginator.ListScramSecrets)
 
 ```python
 class ListScramSecretsPaginator(Boto3Paginator):

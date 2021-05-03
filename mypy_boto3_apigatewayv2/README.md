@@ -15,7 +15,7 @@ pip install mypy-boto3-apigatewayv2
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ApiGatewayV2Client
 
@@ -191,7 +191,7 @@ from mypy_boto3_apigatewayv2.literals import AuthorizationType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

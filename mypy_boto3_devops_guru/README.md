@@ -15,7 +15,7 @@ pip install mypy-boto3-devops-guru
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## DevopsGuruClient
 
@@ -132,7 +132,7 @@ from mypy_boto3_devops_guru.literals import AnomalySeverity, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

@@ -1,11 +1,11 @@
-# Structures for boto3 ResourceGroups module
+# Typed dictionaries for boto3 ResourceGroups module
 
 > [Index](../README.md) > [ResourceGroups](./README.md) > Structures
 
 Auto-generated documentation for [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
 type annotations stubs module [mypy_boto3_resource_groups](https://pypi.org/project/mypy-boto3-resource-groups/).
 
-- [Structures for boto3 ResourceGroups module](#structures-for-boto3-resourcegroups-module)
+- [Typed dictionaries for boto3 ResourceGroups module](#typed-dictionaries-for-boto3-resourcegroups-module)
   - [CreateGroupOutputTypeDef](#creategroupoutputtypedef)
   - [DeleteGroupOutputTypeDef](#deletegroupoutputtypedef)
   - [FailedResourceTypeDef](#failedresourcetypedef)
@@ -46,14 +46,14 @@ from mypy_boto3_resource_groups.type_defs import CreateGroupOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Group`: `"GroupTypeDef"`
 - `ResourceQuery`: `"ResourceQueryTypeDef"`
 - `Tags`: `Dict[str, str]`
 - `GroupConfiguration`: `"GroupConfigurationTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteGroupOutputTypeDef
@@ -63,11 +63,11 @@ from mypy_boto3_resource_groups.type_defs import DeleteGroupOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Group`: `"GroupTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## FailedResourceTypeDef
@@ -92,11 +92,11 @@ from mypy_boto3_resource_groups.type_defs import GetGroupConfigurationOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GroupConfiguration`: `"GroupConfigurationTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetGroupOutputTypeDef
@@ -106,11 +106,11 @@ from mypy_boto3_resource_groups.type_defs import GetGroupOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Group`: `"GroupTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetGroupQueryOutputTypeDef
@@ -120,11 +120,11 @@ from mypy_boto3_resource_groups.type_defs import GetGroupQueryOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GroupQuery`: `"GroupQueryTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetTagsOutputTypeDef
@@ -134,12 +134,12 @@ from mypy_boto3_resource_groups.type_defs import GetTagsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Arn`: `str`
 - `Tags`: `Dict[str, str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GroupConfigurationItemTypeDef
@@ -239,13 +239,13 @@ from mypy_boto3_resource_groups.type_defs import GroupResourcesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Succeeded`: `List[str]`
 - `Failed`: `List["FailedResourceTypeDef"]`
 - `Pending`: `List["PendingResourceTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GroupTypeDef
@@ -286,14 +286,14 @@ from mypy_boto3_resource_groups.type_defs import ListGroupResourcesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Resources`: `List["ListGroupResourcesItemTypeDef"]`
 - `ResourceIdentifiers`: `List["ResourceIdentifierTypeDef"]`
 - `NextToken`: `str`
 - `QueryErrors`: `List["QueryErrorTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListGroupsOutputTypeDef
@@ -303,13 +303,13 @@ from mypy_boto3_resource_groups.type_defs import ListGroupsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GroupIdentifiers`: `List["GroupIdentifierTypeDef"]`
 - `Groups`: `List["GroupTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PaginatorConfigTypeDef
@@ -433,13 +433,13 @@ from mypy_boto3_resource_groups.type_defs import SearchResourcesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ResourceIdentifiers`: `List["ResourceIdentifierTypeDef"]`
 - `NextToken`: `str`
 - `QueryErrors`: `List["QueryErrorTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## TagOutputTypeDef
@@ -449,12 +449,12 @@ from mypy_boto3_resource_groups.type_defs import TagOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Arn`: `str`
 - `Tags`: `Dict[str, str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UngroupResourcesOutputTypeDef
@@ -464,13 +464,13 @@ from mypy_boto3_resource_groups.type_defs import UngroupResourcesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Succeeded`: `List[str]`
 - `Failed`: `List["FailedResourceTypeDef"]`
 - `Pending`: `List["PendingResourceTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UntagOutputTypeDef
@@ -480,12 +480,12 @@ from mypy_boto3_resource_groups.type_defs import UntagOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Arn`: `str`
 - `Keys`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateGroupOutputTypeDef
@@ -495,11 +495,11 @@ from mypy_boto3_resource_groups.type_defs import UpdateGroupOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Group`: `"GroupTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateGroupQueryOutputTypeDef
@@ -509,9 +509,9 @@ from mypy_boto3_resource_groups.type_defs import UpdateGroupQueryOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GroupQuery`: `"GroupQueryTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 

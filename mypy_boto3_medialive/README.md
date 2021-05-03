@@ -16,7 +16,7 @@ pip install mypy-boto3-medialive
   - [Paginators](#paginators)
   - [Waiters](#waiters)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## MediaLiveClient
 
@@ -445,7 +445,7 @@ from mypy_boto3_medialive.literals import AacCodingMode, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

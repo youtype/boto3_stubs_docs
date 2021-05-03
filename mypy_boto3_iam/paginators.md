@@ -40,13 +40,13 @@ Type annotations for `boto3.client("iam").get_paginator("get_account_authorizati
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import GetAccountAuthorizationDetailsPaginator
+from mypy_boto3_iam.paginator import GetAccountAuthorizationDetailsPaginator
 
 def get_get_account_authorization_details_paginator() -> GetAccountAuthorizationDetailsPaginator:
     return boto3.client("iam").get_paginator("get_account_authorization_details")
 ```
 
-[Paginator.GetAccountAuthorizationDetails documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.GetAccountAuthorizationDetails)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.GetAccountAuthorizationDetails)
 
 ```python
 class GetAccountAuthorizationDetailsPaginator(Boto3Paginator):
@@ -64,13 +64,13 @@ Type annotations for `boto3.client("iam").get_paginator("get_group")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import GetGroupPaginator
+from mypy_boto3_iam.paginator import GetGroupPaginator
 
 def get_get_group_paginator() -> GetGroupPaginator:
     return boto3.client("iam").get_paginator("get_group")
 ```
 
-[Paginator.GetGroup documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.GetGroup)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.GetGroup)
 
 ```python
 class GetGroupPaginator(Boto3Paginator):
@@ -88,13 +88,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_access_keys")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListAccessKeysPaginator
+from mypy_boto3_iam.paginator import ListAccessKeysPaginator
 
 def get_list_access_keys_paginator() -> ListAccessKeysPaginator:
     return boto3.client("iam").get_paginator("list_access_keys")
 ```
 
-[Paginator.ListAccessKeys documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAccessKeys)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAccessKeys)
 
 ```python
 class ListAccessKeysPaginator(Boto3Paginator):
@@ -112,13 +112,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_account_aliases")`
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListAccountAliasesPaginator
+from mypy_boto3_iam.paginator import ListAccountAliasesPaginator
 
 def get_list_account_aliases_paginator() -> ListAccountAliasesPaginator:
     return boto3.client("iam").get_paginator("list_account_aliases")
 ```
 
-[Paginator.ListAccountAliases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAccountAliases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAccountAliases)
 
 ```python
 class ListAccountAliasesPaginator(Boto3Paginator):
@@ -135,13 +135,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_attached_group_pol
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListAttachedGroupPoliciesPaginator
+from mypy_boto3_iam.paginator import ListAttachedGroupPoliciesPaginator
 
 def get_list_attached_group_policies_paginator() -> ListAttachedGroupPoliciesPaginator:
     return boto3.client("iam").get_paginator("list_attached_group_policies")
 ```
 
-[Paginator.ListAttachedGroupPolicies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAttachedGroupPolicies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAttachedGroupPolicies)
 
 ```python
 class ListAttachedGroupPoliciesPaginator(Boto3Paginator):
@@ -160,13 +160,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_attached_role_poli
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListAttachedRolePoliciesPaginator
+from mypy_boto3_iam.paginator import ListAttachedRolePoliciesPaginator
 
 def get_list_attached_role_policies_paginator() -> ListAttachedRolePoliciesPaginator:
     return boto3.client("iam").get_paginator("list_attached_role_policies")
 ```
 
-[Paginator.ListAttachedRolePolicies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAttachedRolePolicies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAttachedRolePolicies)
 
 ```python
 class ListAttachedRolePoliciesPaginator(Boto3Paginator):
@@ -185,13 +185,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_attached_user_poli
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListAttachedUserPoliciesPaginator
+from mypy_boto3_iam.paginator import ListAttachedUserPoliciesPaginator
 
 def get_list_attached_user_policies_paginator() -> ListAttachedUserPoliciesPaginator:
     return boto3.client("iam").get_paginator("list_attached_user_policies")
 ```
 
-[Paginator.ListAttachedUserPolicies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAttachedUserPolicies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListAttachedUserPolicies)
 
 ```python
 class ListAttachedUserPoliciesPaginator(Boto3Paginator):
@@ -210,13 +210,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_entities_for_polic
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListEntitiesForPolicyPaginator
+from mypy_boto3_iam.paginator import ListEntitiesForPolicyPaginator
 
 def get_list_entities_for_policy_paginator() -> ListEntitiesForPolicyPaginator:
     return boto3.client("iam").get_paginator("list_entities_for_policy")
 ```
 
-[Paginator.ListEntitiesForPolicy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListEntitiesForPolicy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListEntitiesForPolicy)
 
 ```python
 class ListEntitiesForPolicyPaginator(Boto3Paginator):
@@ -237,13 +237,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_group_policies")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListGroupPoliciesPaginator
+from mypy_boto3_iam.paginator import ListGroupPoliciesPaginator
 
 def get_list_group_policies_paginator() -> ListGroupPoliciesPaginator:
     return boto3.client("iam").get_paginator("list_group_policies")
 ```
 
-[Paginator.ListGroupPolicies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListGroupPolicies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListGroupPolicies)
 
 ```python
 class ListGroupPoliciesPaginator(Boto3Paginator):
@@ -261,13 +261,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_groups")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListGroupsPaginator
+from mypy_boto3_iam.paginator import ListGroupsPaginator
 
 def get_list_groups_paginator() -> ListGroupsPaginator:
     return boto3.client("iam").get_paginator("list_groups")
 ```
 
-[Paginator.ListGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListGroups)
 
 ```python
 class ListGroupsPaginator(Boto3Paginator):
@@ -285,13 +285,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_groups_for_user")`
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListGroupsForUserPaginator
+from mypy_boto3_iam.paginator import ListGroupsForUserPaginator
 
 def get_list_groups_for_user_paginator() -> ListGroupsForUserPaginator:
     return boto3.client("iam").get_paginator("list_groups_for_user")
 ```
 
-[Paginator.ListGroupsForUser documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListGroupsForUser)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListGroupsForUser)
 
 ```python
 class ListGroupsForUserPaginator(Boto3Paginator):
@@ -309,13 +309,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_instance_profiles"
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListInstanceProfilesPaginator
+from mypy_boto3_iam.paginator import ListInstanceProfilesPaginator
 
 def get_list_instance_profiles_paginator() -> ListInstanceProfilesPaginator:
     return boto3.client("iam").get_paginator("list_instance_profiles")
 ```
 
-[Paginator.ListInstanceProfiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListInstanceProfiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListInstanceProfiles)
 
 ```python
 class ListInstanceProfilesPaginator(Boto3Paginator):
@@ -333,13 +333,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_instance_profiles_
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListInstanceProfilesForRolePaginator
+from mypy_boto3_iam.paginator import ListInstanceProfilesForRolePaginator
 
 def get_list_instance_profiles_for_role_paginator() -> ListInstanceProfilesForRolePaginator:
     return boto3.client("iam").get_paginator("list_instance_profiles_for_role")
 ```
 
-[Paginator.ListInstanceProfilesForRole documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListInstanceProfilesForRole)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListInstanceProfilesForRole)
 
 ```python
 class ListInstanceProfilesForRolePaginator(Boto3Paginator):
@@ -357,13 +357,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_mfa_devices")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListMFADevicesPaginator
+from mypy_boto3_iam.paginator import ListMFADevicesPaginator
 
 def get_list_mfa_devices_paginator() -> ListMFADevicesPaginator:
     return boto3.client("iam").get_paginator("list_mfa_devices")
 ```
 
-[Paginator.ListMFADevices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListMFADevices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListMFADevices)
 
 ```python
 class ListMFADevicesPaginator(Boto3Paginator):
@@ -381,13 +381,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_policies")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListPoliciesPaginator
+from mypy_boto3_iam.paginator import ListPoliciesPaginator
 
 def get_list_policies_paginator() -> ListPoliciesPaginator:
     return boto3.client("iam").get_paginator("list_policies")
 ```
 
-[Paginator.ListPolicies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListPolicies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListPolicies)
 
 ```python
 class ListPoliciesPaginator(Boto3Paginator):
@@ -408,13 +408,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_policy_versions")`
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListPolicyVersionsPaginator
+from mypy_boto3_iam.paginator import ListPolicyVersionsPaginator
 
 def get_list_policy_versions_paginator() -> ListPolicyVersionsPaginator:
     return boto3.client("iam").get_paginator("list_policy_versions")
 ```
 
-[Paginator.ListPolicyVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListPolicyVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListPolicyVersions)
 
 ```python
 class ListPolicyVersionsPaginator(Boto3Paginator):
@@ -432,13 +432,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_role_policies")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListRolePoliciesPaginator
+from mypy_boto3_iam.paginator import ListRolePoliciesPaginator
 
 def get_list_role_policies_paginator() -> ListRolePoliciesPaginator:
     return boto3.client("iam").get_paginator("list_role_policies")
 ```
 
-[Paginator.ListRolePolicies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListRolePolicies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListRolePolicies)
 
 ```python
 class ListRolePoliciesPaginator(Boto3Paginator):
@@ -456,13 +456,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_roles")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListRolesPaginator
+from mypy_boto3_iam.paginator import ListRolesPaginator
 
 def get_list_roles_paginator() -> ListRolesPaginator:
     return boto3.client("iam").get_paginator("list_roles")
 ```
 
-[Paginator.ListRoles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListRoles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListRoles)
 
 ```python
 class ListRolesPaginator(Boto3Paginator):
@@ -480,13 +480,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_ssh_public_keys")`
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListSSHPublicKeysPaginator
+from mypy_boto3_iam.paginator import ListSSHPublicKeysPaginator
 
 def get_list_ssh_public_keys_paginator() -> ListSSHPublicKeysPaginator:
     return boto3.client("iam").get_paginator("list_ssh_public_keys")
 ```
 
-[Paginator.ListSSHPublicKeys documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListSSHPublicKeys)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListSSHPublicKeys)
 
 ```python
 class ListSSHPublicKeysPaginator(Boto3Paginator):
@@ -504,13 +504,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_server_certificate
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListServerCertificatesPaginator
+from mypy_boto3_iam.paginator import ListServerCertificatesPaginator
 
 def get_list_server_certificates_paginator() -> ListServerCertificatesPaginator:
     return boto3.client("iam").get_paginator("list_server_certificates")
 ```
 
-[Paginator.ListServerCertificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListServerCertificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListServerCertificates)
 
 ```python
 class ListServerCertificatesPaginator(Boto3Paginator):
@@ -528,13 +528,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_signing_certificat
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListSigningCertificatesPaginator
+from mypy_boto3_iam.paginator import ListSigningCertificatesPaginator
 
 def get_list_signing_certificates_paginator() -> ListSigningCertificatesPaginator:
     return boto3.client("iam").get_paginator("list_signing_certificates")
 ```
 
-[Paginator.ListSigningCertificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListSigningCertificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListSigningCertificates)
 
 ```python
 class ListSigningCertificatesPaginator(Boto3Paginator):
@@ -552,13 +552,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_user_policies")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListUserPoliciesPaginator
+from mypy_boto3_iam.paginator import ListUserPoliciesPaginator
 
 def get_list_user_policies_paginator() -> ListUserPoliciesPaginator:
     return boto3.client("iam").get_paginator("list_user_policies")
 ```
 
-[Paginator.ListUserPolicies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListUserPolicies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListUserPolicies)
 
 ```python
 class ListUserPoliciesPaginator(Boto3Paginator):
@@ -576,13 +576,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_users")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListUsersPaginator
+from mypy_boto3_iam.paginator import ListUsersPaginator
 
 def get_list_users_paginator() -> ListUsersPaginator:
     return boto3.client("iam").get_paginator("list_users")
 ```
 
-[Paginator.ListUsers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListUsers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListUsers)
 
 ```python
 class ListUsersPaginator(Boto3Paginator):
@@ -600,13 +600,13 @@ Type annotations for `boto3.client("iam").get_paginator("list_virtual_mfa_device
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import ListVirtualMFADevicesPaginator
+from mypy_boto3_iam.paginator import ListVirtualMFADevicesPaginator
 
 def get_list_virtual_mfa_devices_paginator() -> ListVirtualMFADevicesPaginator:
     return boto3.client("iam").get_paginator("list_virtual_mfa_devices")
 ```
 
-[Paginator.ListVirtualMFADevices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListVirtualMFADevices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.ListVirtualMFADevices)
 
 ```python
 class ListVirtualMFADevicesPaginator(Boto3Paginator):
@@ -624,13 +624,13 @@ Type annotations for `boto3.client("iam").get_paginator("simulate_custom_policy"
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import SimulateCustomPolicyPaginator
+from mypy_boto3_iam.paginator import SimulateCustomPolicyPaginator
 
 def get_simulate_custom_policy_paginator() -> SimulateCustomPolicyPaginator:
     return boto3.client("iam").get_paginator("simulate_custom_policy")
 ```
 
-[Paginator.SimulateCustomPolicy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.SimulateCustomPolicy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.SimulateCustomPolicy)
 
 ```python
 class SimulateCustomPolicyPaginator(Boto3Paginator):
@@ -656,13 +656,13 @@ Type annotations for `boto3.client("iam").get_paginator("simulate_principal_poli
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.paginators import SimulatePrincipalPolicyPaginator
+from mypy_boto3_iam.paginator import SimulatePrincipalPolicyPaginator
 
 def get_simulate_principal_policy_paginator() -> SimulatePrincipalPolicyPaginator:
     return boto3.client("iam").get_paginator("simulate_principal_policy")
 ```
 
-[Paginator.SimulatePrincipalPolicy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.SimulatePrincipalPolicy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Paginator.SimulatePrincipalPolicy)
 
 ```python
 class SimulatePrincipalPolicyPaginator(Boto3Paginator):

@@ -1,11 +1,11 @@
-# Structures for boto3 Budgets module
+# Typed dictionaries for boto3 Budgets module
 
 > [Index](../README.md) > [Budgets](./README.md) > Structures
 
 Auto-generated documentation for [Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
 type annotations stubs module [mypy_boto3_budgets](https://pypi.org/project/mypy-boto3-budgets/).
 
-- [Structures for boto3 Budgets module](#structures-for-boto3-budgets-module)
+- [Typed dictionaries for boto3 Budgets module](#typed-dictionaries-for-boto3-budgets-module)
   - [ActionHistoryDetailsTypeDef](#actionhistorydetailstypedef)
   - [ActionHistoryTypeDef](#actionhistorytypedef)
   - [ActionThresholdTypeDef](#actionthresholdtypedef)

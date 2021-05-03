@@ -107,7 +107,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_config.client import ConfigServiceClient
+
+def get_config_client() -> ConfigServiceClient:
+    return boto3.client("config")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client)
 
 ## Exceptions
 
@@ -187,7 +192,7 @@ Exceptions:
 
 Type annotations for `boto3.client("config").batch_get_aggregate_resource_config` method.
 
-[Client.batch_get_aggregate_resource_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.batch_get_aggregate_resource_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.batch_get_aggregate_resource_config]
 
 ```python
 def batch_get_aggregate_resource_config(
@@ -202,7 +207,7 @@ def batch_get_aggregate_resource_config(
 
 Type annotations for `boto3.client("config").batch_get_resource_config` method.
 
-[Client.batch_get_resource_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.batch_get_resource_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.batch_get_resource_config]
 
 ```python
 def batch_get_resource_config(
@@ -216,7 +221,7 @@ def batch_get_resource_config(
 
 Type annotations for `boto3.client("config").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -230,7 +235,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("config").delete_aggregation_authorization` method.
 
-[Client.delete_aggregation_authorization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_aggregation_authorization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_aggregation_authorization]
 
 ```python
 def delete_aggregation_authorization(
@@ -245,7 +250,7 @@ def delete_aggregation_authorization(
 
 Type annotations for `boto3.client("config").delete_config_rule` method.
 
-[Client.delete_config_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_config_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_config_rule]
 
 ```python
 def delete_config_rule(
@@ -259,7 +264,7 @@ def delete_config_rule(
 
 Type annotations for `boto3.client("config").delete_configuration_aggregator` method.
 
-[Client.delete_configuration_aggregator documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_configuration_aggregator)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_configuration_aggregator]
 
 ```python
 def delete_configuration_aggregator(
@@ -273,7 +278,7 @@ def delete_configuration_aggregator(
 
 Type annotations for `boto3.client("config").delete_configuration_recorder` method.
 
-[Client.delete_configuration_recorder documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_configuration_recorder)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_configuration_recorder]
 
 ```python
 def delete_configuration_recorder(
@@ -287,7 +292,7 @@ def delete_configuration_recorder(
 
 Type annotations for `boto3.client("config").delete_conformance_pack` method.
 
-[Client.delete_conformance_pack documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_conformance_pack)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_conformance_pack]
 
 ```python
 def delete_conformance_pack(
@@ -301,7 +306,7 @@ def delete_conformance_pack(
 
 Type annotations for `boto3.client("config").delete_delivery_channel` method.
 
-[Client.delete_delivery_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_delivery_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_delivery_channel]
 
 ```python
 def delete_delivery_channel(
@@ -315,7 +320,7 @@ def delete_delivery_channel(
 
 Type annotations for `boto3.client("config").delete_evaluation_results` method.
 
-[Client.delete_evaluation_results documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_evaluation_results)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_evaluation_results]
 
 ```python
 def delete_evaluation_results(
@@ -329,7 +334,7 @@ def delete_evaluation_results(
 
 Type annotations for `boto3.client("config").delete_organization_config_rule` method.
 
-[Client.delete_organization_config_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_organization_config_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_organization_config_rule]
 
 ```python
 def delete_organization_config_rule(
@@ -343,7 +348,7 @@ def delete_organization_config_rule(
 
 Type annotations for `boto3.client("config").delete_organization_conformance_pack` method.
 
-[Client.delete_organization_conformance_pack documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_organization_conformance_pack)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_organization_conformance_pack]
 
 ```python
 def delete_organization_conformance_pack(
@@ -357,7 +362,7 @@ def delete_organization_conformance_pack(
 
 Type annotations for `boto3.client("config").delete_pending_aggregation_request` method.
 
-[Client.delete_pending_aggregation_request documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_pending_aggregation_request)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_pending_aggregation_request]
 
 ```python
 def delete_pending_aggregation_request(
@@ -372,7 +377,7 @@ def delete_pending_aggregation_request(
 
 Type annotations for `boto3.client("config").delete_remediation_configuration` method.
 
-[Client.delete_remediation_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_remediation_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_remediation_configuration]
 
 ```python
 def delete_remediation_configuration(
@@ -387,7 +392,7 @@ def delete_remediation_configuration(
 
 Type annotations for `boto3.client("config").delete_remediation_exceptions` method.
 
-[Client.delete_remediation_exceptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_remediation_exceptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_remediation_exceptions]
 
 ```python
 def delete_remediation_exceptions(
@@ -402,7 +407,7 @@ def delete_remediation_exceptions(
 
 Type annotations for `boto3.client("config").delete_resource_config` method.
 
-[Client.delete_resource_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_resource_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_resource_config]
 
 ```python
 def delete_resource_config(
@@ -417,7 +422,7 @@ def delete_resource_config(
 
 Type annotations for `boto3.client("config").delete_retention_configuration` method.
 
-[Client.delete_retention_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_retention_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_retention_configuration]
 
 ```python
 def delete_retention_configuration(
@@ -431,7 +436,7 @@ def delete_retention_configuration(
 
 Type annotations for `boto3.client("config").delete_stored_query` method.
 
-[Client.delete_stored_query documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_stored_query)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_stored_query]
 
 ```python
 def delete_stored_query(
@@ -445,7 +450,7 @@ def delete_stored_query(
 
 Type annotations for `boto3.client("config").deliver_config_snapshot` method.
 
-[Client.deliver_config_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.deliver_config_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.deliver_config_snapshot]
 
 ```python
 def deliver_config_snapshot(
@@ -459,7 +464,7 @@ def deliver_config_snapshot(
 
 Type annotations for `boto3.client("config").describe_aggregate_compliance_by_config_rules` method.
 
-[Client.describe_aggregate_compliance_by_config_rules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregate_compliance_by_config_rules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregate_compliance_by_config_rules]
 
 ```python
 def describe_aggregate_compliance_by_config_rules(
@@ -476,7 +481,7 @@ def describe_aggregate_compliance_by_config_rules(
 
 Type annotations for `boto3.client("config").describe_aggregate_compliance_by_conformance_packs` method.
 
-[Client.describe_aggregate_compliance_by_conformance_packs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregate_compliance_by_conformance_packs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregate_compliance_by_conformance_packs]
 
 ```python
 def describe_aggregate_compliance_by_conformance_packs(
@@ -493,7 +498,7 @@ def describe_aggregate_compliance_by_conformance_packs(
 
 Type annotations for `boto3.client("config").describe_aggregation_authorizations` method.
 
-[Client.describe_aggregation_authorizations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregation_authorizations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregation_authorizations]
 
 ```python
 def describe_aggregation_authorizations(
@@ -508,7 +513,7 @@ def describe_aggregation_authorizations(
 
 Type annotations for `boto3.client("config").describe_compliance_by_config_rule` method.
 
-[Client.describe_compliance_by_config_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_compliance_by_config_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_compliance_by_config_rule]
 
 ```python
 def describe_compliance_by_config_rule(
@@ -524,7 +529,7 @@ def describe_compliance_by_config_rule(
 
 Type annotations for `boto3.client("config").describe_compliance_by_resource` method.
 
-[Client.describe_compliance_by_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_compliance_by_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_compliance_by_resource]
 
 ```python
 def describe_compliance_by_resource(
@@ -542,7 +547,7 @@ def describe_compliance_by_resource(
 
 Type annotations for `boto3.client("config").describe_config_rule_evaluation_status` method.
 
-[Client.describe_config_rule_evaluation_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_config_rule_evaluation_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_config_rule_evaluation_status]
 
 ```python
 def describe_config_rule_evaluation_status(
@@ -558,7 +563,7 @@ def describe_config_rule_evaluation_status(
 
 Type annotations for `boto3.client("config").describe_config_rules` method.
 
-[Client.describe_config_rules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_config_rules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_config_rules]
 
 ```python
 def describe_config_rules(
@@ -573,7 +578,7 @@ def describe_config_rules(
 
 Type annotations for `boto3.client("config").describe_configuration_aggregator_sources_status` method.
 
-[Client.describe_configuration_aggregator_sources_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_aggregator_sources_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_aggregator_sources_status]
 
 ```python
 def describe_configuration_aggregator_sources_status(
@@ -590,7 +595,7 @@ def describe_configuration_aggregator_sources_status(
 
 Type annotations for `boto3.client("config").describe_configuration_aggregators` method.
 
-[Client.describe_configuration_aggregators documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_aggregators)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_aggregators]
 
 ```python
 def describe_configuration_aggregators(
@@ -606,7 +611,7 @@ def describe_configuration_aggregators(
 
 Type annotations for `boto3.client("config").describe_configuration_recorder_status` method.
 
-[Client.describe_configuration_recorder_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_recorder_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_recorder_status]
 
 ```python
 def describe_configuration_recorder_status(
@@ -620,7 +625,7 @@ def describe_configuration_recorder_status(
 
 Type annotations for `boto3.client("config").describe_configuration_recorders` method.
 
-[Client.describe_configuration_recorders documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_recorders)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_recorders]
 
 ```python
 def describe_configuration_recorders(
@@ -634,7 +639,7 @@ def describe_configuration_recorders(
 
 Type annotations for `boto3.client("config").describe_conformance_pack_compliance` method.
 
-[Client.describe_conformance_pack_compliance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_pack_compliance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_pack_compliance]
 
 ```python
 def describe_conformance_pack_compliance(
@@ -651,7 +656,7 @@ def describe_conformance_pack_compliance(
 
 Type annotations for `boto3.client("config").describe_conformance_pack_status` method.
 
-[Client.describe_conformance_pack_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_pack_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_pack_status]
 
 ```python
 def describe_conformance_pack_status(
@@ -667,7 +672,7 @@ def describe_conformance_pack_status(
 
 Type annotations for `boto3.client("config").describe_conformance_packs` method.
 
-[Client.describe_conformance_packs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_packs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_packs]
 
 ```python
 def describe_conformance_packs(
@@ -683,7 +688,7 @@ def describe_conformance_packs(
 
 Type annotations for `boto3.client("config").describe_delivery_channel_status` method.
 
-[Client.describe_delivery_channel_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_delivery_channel_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_delivery_channel_status]
 
 ```python
 def describe_delivery_channel_status(
@@ -697,7 +702,7 @@ def describe_delivery_channel_status(
 
 Type annotations for `boto3.client("config").describe_delivery_channels` method.
 
-[Client.describe_delivery_channels documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_delivery_channels)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_delivery_channels]
 
 ```python
 def describe_delivery_channels(
@@ -711,7 +716,7 @@ def describe_delivery_channels(
 
 Type annotations for `boto3.client("config").describe_organization_config_rule_statuses` method.
 
-[Client.describe_organization_config_rule_statuses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_config_rule_statuses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_config_rule_statuses]
 
 ```python
 def describe_organization_config_rule_statuses(
@@ -727,7 +732,7 @@ def describe_organization_config_rule_statuses(
 
 Type annotations for `boto3.client("config").describe_organization_config_rules` method.
 
-[Client.describe_organization_config_rules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_config_rules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_config_rules]
 
 ```python
 def describe_organization_config_rules(
@@ -743,7 +748,7 @@ def describe_organization_config_rules(
 
 Type annotations for `boto3.client("config").describe_organization_conformance_pack_statuses` method.
 
-[Client.describe_organization_conformance_pack_statuses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_conformance_pack_statuses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_conformance_pack_statuses]
 
 ```python
 def describe_organization_conformance_pack_statuses(
@@ -759,7 +764,7 @@ def describe_organization_conformance_pack_statuses(
 
 Type annotations for `boto3.client("config").describe_organization_conformance_packs` method.
 
-[Client.describe_organization_conformance_packs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_conformance_packs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_conformance_packs]
 
 ```python
 def describe_organization_conformance_packs(
@@ -775,7 +780,7 @@ def describe_organization_conformance_packs(
 
 Type annotations for `boto3.client("config").describe_pending_aggregation_requests` method.
 
-[Client.describe_pending_aggregation_requests documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_pending_aggregation_requests)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_pending_aggregation_requests]
 
 ```python
 def describe_pending_aggregation_requests(
@@ -790,7 +795,7 @@ def describe_pending_aggregation_requests(
 
 Type annotations for `boto3.client("config").describe_remediation_configurations` method.
 
-[Client.describe_remediation_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_configurations]
 
 ```python
 def describe_remediation_configurations(
@@ -804,7 +809,7 @@ def describe_remediation_configurations(
 
 Type annotations for `boto3.client("config").describe_remediation_exceptions` method.
 
-[Client.describe_remediation_exceptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_exceptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_exceptions]
 
 ```python
 def describe_remediation_exceptions(
@@ -821,7 +826,7 @@ def describe_remediation_exceptions(
 
 Type annotations for `boto3.client("config").describe_remediation_execution_status` method.
 
-[Client.describe_remediation_execution_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_execution_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_execution_status]
 
 ```python
 def describe_remediation_execution_status(
@@ -838,7 +843,7 @@ def describe_remediation_execution_status(
 
 Type annotations for `boto3.client("config").describe_retention_configurations` method.
 
-[Client.describe_retention_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_retention_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_retention_configurations]
 
 ```python
 def describe_retention_configurations(
@@ -853,7 +858,7 @@ def describe_retention_configurations(
 
 Type annotations for `boto3.client("config").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -870,7 +875,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("config").get_aggregate_compliance_details_by_config_rule` method.
 
-[Client.get_aggregate_compliance_details_by_config_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_compliance_details_by_config_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_compliance_details_by_config_rule]
 
 ```python
 def get_aggregate_compliance_details_by_config_rule(
@@ -890,7 +895,7 @@ def get_aggregate_compliance_details_by_config_rule(
 
 Type annotations for `boto3.client("config").get_aggregate_config_rule_compliance_summary` method.
 
-[Client.get_aggregate_config_rule_compliance_summary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_config_rule_compliance_summary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_config_rule_compliance_summary]
 
 ```python
 def get_aggregate_config_rule_compliance_summary(
@@ -908,7 +913,7 @@ def get_aggregate_config_rule_compliance_summary(
 
 Type annotations for `boto3.client("config").get_aggregate_conformance_pack_compliance_summary` method.
 
-[Client.get_aggregate_conformance_pack_compliance_summary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_conformance_pack_compliance_summary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_conformance_pack_compliance_summary]
 
 ```python
 def get_aggregate_conformance_pack_compliance_summary(
@@ -926,7 +931,7 @@ def get_aggregate_conformance_pack_compliance_summary(
 
 Type annotations for `boto3.client("config").get_aggregate_discovered_resource_counts` method.
 
-[Client.get_aggregate_discovered_resource_counts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_discovered_resource_counts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_discovered_resource_counts]
 
 ```python
 def get_aggregate_discovered_resource_counts(
@@ -944,7 +949,7 @@ def get_aggregate_discovered_resource_counts(
 
 Type annotations for `boto3.client("config").get_aggregate_resource_config` method.
 
-[Client.get_aggregate_resource_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_resource_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_resource_config]
 
 ```python
 def get_aggregate_resource_config(
@@ -959,7 +964,7 @@ def get_aggregate_resource_config(
 
 Type annotations for `boto3.client("config").get_compliance_details_by_config_rule` method.
 
-[Client.get_compliance_details_by_config_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_details_by_config_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_details_by_config_rule]
 
 ```python
 def get_compliance_details_by_config_rule(
@@ -976,7 +981,7 @@ def get_compliance_details_by_config_rule(
 
 Type annotations for `boto3.client("config").get_compliance_details_by_resource` method.
 
-[Client.get_compliance_details_by_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_details_by_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_details_by_resource]
 
 ```python
 def get_compliance_details_by_resource(
@@ -993,7 +998,7 @@ def get_compliance_details_by_resource(
 
 Type annotations for `boto3.client("config").get_compliance_summary_by_config_rule` method.
 
-[Client.get_compliance_summary_by_config_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_summary_by_config_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_summary_by_config_rule]
 
 ```python
 def get_compliance_summary_by_config_rule(
@@ -1006,7 +1011,7 @@ def get_compliance_summary_by_config_rule(
 
 Type annotations for `boto3.client("config").get_compliance_summary_by_resource_type` method.
 
-[Client.get_compliance_summary_by_resource_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_summary_by_resource_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_summary_by_resource_type]
 
 ```python
 def get_compliance_summary_by_resource_type(
@@ -1020,7 +1025,7 @@ def get_compliance_summary_by_resource_type(
 
 Type annotations for `boto3.client("config").get_conformance_pack_compliance_details` method.
 
-[Client.get_conformance_pack_compliance_details documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_conformance_pack_compliance_details)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_conformance_pack_compliance_details]
 
 ```python
 def get_conformance_pack_compliance_details(
@@ -1037,7 +1042,7 @@ def get_conformance_pack_compliance_details(
 
 Type annotations for `boto3.client("config").get_conformance_pack_compliance_summary` method.
 
-[Client.get_conformance_pack_compliance_summary documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_conformance_pack_compliance_summary)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_conformance_pack_compliance_summary]
 
 ```python
 def get_conformance_pack_compliance_summary(
@@ -1053,7 +1058,7 @@ def get_conformance_pack_compliance_summary(
 
 Type annotations for `boto3.client("config").get_discovered_resource_counts` method.
 
-[Client.get_discovered_resource_counts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_discovered_resource_counts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_discovered_resource_counts]
 
 ```python
 def get_discovered_resource_counts(
@@ -1069,7 +1074,7 @@ def get_discovered_resource_counts(
 
 Type annotations for `boto3.client("config").get_organization_config_rule_detailed_status` method.
 
-[Client.get_organization_config_rule_detailed_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_organization_config_rule_detailed_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_organization_config_rule_detailed_status]
 
 ```python
 def get_organization_config_rule_detailed_status(
@@ -1086,7 +1091,7 @@ def get_organization_config_rule_detailed_status(
 
 Type annotations for `boto3.client("config").get_organization_conformance_pack_detailed_status` method.
 
-[Client.get_organization_conformance_pack_detailed_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_organization_conformance_pack_detailed_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_organization_conformance_pack_detailed_status]
 
 ```python
 def get_organization_conformance_pack_detailed_status(
@@ -1103,7 +1108,7 @@ def get_organization_conformance_pack_detailed_status(
 
 Type annotations for `boto3.client("config").get_resource_config_history` method.
 
-[Client.get_resource_config_history documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_resource_config_history)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_resource_config_history]
 
 ```python
 def get_resource_config_history(
@@ -1123,7 +1128,7 @@ def get_resource_config_history(
 
 Type annotations for `boto3.client("config").get_stored_query` method.
 
-[Client.get_stored_query documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_stored_query)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_stored_query]
 
 ```python
 def get_stored_query(
@@ -1137,7 +1142,7 @@ def get_stored_query(
 
 Type annotations for `boto3.client("config").list_aggregate_discovered_resources` method.
 
-[Client.list_aggregate_discovered_resources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_aggregate_discovered_resources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_aggregate_discovered_resources]
 
 ```python
 def list_aggregate_discovered_resources(
@@ -1155,7 +1160,7 @@ def list_aggregate_discovered_resources(
 
 Type annotations for `boto3.client("config").list_discovered_resources` method.
 
-[Client.list_discovered_resources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_discovered_resources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_discovered_resources]
 
 ```python
 def list_discovered_resources(
@@ -1174,7 +1179,7 @@ def list_discovered_resources(
 
 Type annotations for `boto3.client("config").list_stored_queries` method.
 
-[Client.list_stored_queries documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_stored_queries)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_stored_queries]
 
 ```python
 def list_stored_queries(
@@ -1189,7 +1194,7 @@ def list_stored_queries(
 
 Type annotations for `boto3.client("config").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -1205,7 +1210,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("config").put_aggregation_authorization` method.
 
-[Client.put_aggregation_authorization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_aggregation_authorization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_aggregation_authorization]
 
 ```python
 def put_aggregation_authorization(
@@ -1221,7 +1226,7 @@ def put_aggregation_authorization(
 
 Type annotations for `boto3.client("config").put_config_rule` method.
 
-[Client.put_config_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_config_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_config_rule]
 
 ```python
 def put_config_rule(
@@ -1236,7 +1241,7 @@ def put_config_rule(
 
 Type annotations for `boto3.client("config").put_configuration_aggregator` method.
 
-[Client.put_configuration_aggregator documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_configuration_aggregator)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_configuration_aggregator]
 
 ```python
 def put_configuration_aggregator(
@@ -1253,7 +1258,7 @@ def put_configuration_aggregator(
 
 Type annotations for `boto3.client("config").put_configuration_recorder` method.
 
-[Client.put_configuration_recorder documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_configuration_recorder)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_configuration_recorder]
 
 ```python
 def put_configuration_recorder(
@@ -1267,7 +1272,7 @@ def put_configuration_recorder(
 
 Type annotations for `boto3.client("config").put_conformance_pack` method.
 
-[Client.put_conformance_pack documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_conformance_pack)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_conformance_pack]
 
 ```python
 def put_conformance_pack(
@@ -1286,7 +1291,7 @@ def put_conformance_pack(
 
 Type annotations for `boto3.client("config").put_delivery_channel` method.
 
-[Client.put_delivery_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_delivery_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_delivery_channel]
 
 ```python
 def put_delivery_channel(
@@ -1300,7 +1305,7 @@ def put_delivery_channel(
 
 Type annotations for `boto3.client("config").put_evaluations` method.
 
-[Client.put_evaluations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_evaluations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_evaluations]
 
 ```python
 def put_evaluations(
@@ -1316,7 +1321,7 @@ def put_evaluations(
 
 Type annotations for `boto3.client("config").put_external_evaluation` method.
 
-[Client.put_external_evaluation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_external_evaluation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_external_evaluation]
 
 ```python
 def put_external_evaluation(
@@ -1331,7 +1336,7 @@ def put_external_evaluation(
 
 Type annotations for `boto3.client("config").put_organization_config_rule` method.
 
-[Client.put_organization_config_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_config_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_config_rule]
 
 ```python
 def put_organization_config_rule(
@@ -1348,7 +1353,7 @@ def put_organization_config_rule(
 
 Type annotations for `boto3.client("config").put_organization_conformance_pack` method.
 
-[Client.put_organization_conformance_pack documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_conformance_pack)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_conformance_pack]
 
 ```python
 def put_organization_conformance_pack(
@@ -1368,7 +1373,7 @@ def put_organization_conformance_pack(
 
 Type annotations for `boto3.client("config").put_remediation_configurations` method.
 
-[Client.put_remediation_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_remediation_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_remediation_configurations]
 
 ```python
 def put_remediation_configurations(
@@ -1382,7 +1387,7 @@ def put_remediation_configurations(
 
 Type annotations for `boto3.client("config").put_remediation_exceptions` method.
 
-[Client.put_remediation_exceptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_remediation_exceptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_remediation_exceptions]
 
 ```python
 def put_remediation_exceptions(
@@ -1399,7 +1404,7 @@ def put_remediation_exceptions(
 
 Type annotations for `boto3.client("config").put_resource_config` method.
 
-[Client.put_resource_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_resource_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_resource_config]
 
 ```python
 def put_resource_config(
@@ -1418,7 +1423,7 @@ def put_resource_config(
 
 Type annotations for `boto3.client("config").put_retention_configuration` method.
 
-[Client.put_retention_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_retention_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_retention_configuration]
 
 ```python
 def put_retention_configuration(
@@ -1432,7 +1437,7 @@ def put_retention_configuration(
 
 Type annotations for `boto3.client("config").put_stored_query` method.
 
-[Client.put_stored_query documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_stored_query)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_stored_query]
 
 ```python
 def put_stored_query(
@@ -1447,7 +1452,7 @@ def put_stored_query(
 
 Type annotations for `boto3.client("config").select_aggregate_resource_config` method.
 
-[Client.select_aggregate_resource_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.select_aggregate_resource_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.select_aggregate_resource_config]
 
 ```python
 def select_aggregate_resource_config(
@@ -1465,7 +1470,7 @@ def select_aggregate_resource_config(
 
 Type annotations for `boto3.client("config").select_resource_config` method.
 
-[Client.select_resource_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.select_resource_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.select_resource_config]
 
 ```python
 def select_resource_config(
@@ -1481,7 +1486,7 @@ def select_resource_config(
 
 Type annotations for `boto3.client("config").start_config_rules_evaluation` method.
 
-[Client.start_config_rules_evaluation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_config_rules_evaluation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_config_rules_evaluation]
 
 ```python
 def start_config_rules_evaluation(
@@ -1495,7 +1500,7 @@ def start_config_rules_evaluation(
 
 Type annotations for `boto3.client("config").start_configuration_recorder` method.
 
-[Client.start_configuration_recorder documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_configuration_recorder)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_configuration_recorder]
 
 ```python
 def start_configuration_recorder(
@@ -1509,7 +1514,7 @@ def start_configuration_recorder(
 
 Type annotations for `boto3.client("config").start_remediation_execution` method.
 
-[Client.start_remediation_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_remediation_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_remediation_execution]
 
 ```python
 def start_remediation_execution(
@@ -1524,7 +1529,7 @@ def start_remediation_execution(
 
 Type annotations for `boto3.client("config").stop_configuration_recorder` method.
 
-[Client.stop_configuration_recorder documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.stop_configuration_recorder)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.stop_configuration_recorder]
 
 ```python
 def stop_configuration_recorder(
@@ -1538,7 +1543,7 @@ def stop_configuration_recorder(
 
 Type annotations for `boto3.client("config").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -1553,7 +1558,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("config").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.untag_resource]
 
 ```python
 def untag_resource(

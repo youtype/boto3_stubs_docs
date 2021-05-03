@@ -40,7 +40,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_lookoutvision.client import LookoutforVisionClient
+
+def get_lookoutvision_client() -> LookoutforVisionClient:
+    return boto3.client("lookoutvision")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client)
 
 ## Exceptions
 
@@ -74,7 +79,7 @@ Exceptions:
 
 Type annotations for `boto3.client("lookoutvision").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -88,7 +93,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("lookoutvision").create_dataset` method.
 
-[Client.create_dataset documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_dataset)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_dataset]
 
 ```python
 def create_dataset(
@@ -105,7 +110,7 @@ def create_dataset(
 
 Type annotations for `boto3.client("lookoutvision").create_model` method.
 
-[Client.create_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_model]
 
 ```python
 def create_model(
@@ -124,7 +129,7 @@ def create_model(
 
 Type annotations for `boto3.client("lookoutvision").create_project` method.
 
-[Client.create_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_project]
 
 ```python
 def create_project(
@@ -139,7 +144,7 @@ def create_project(
 
 Type annotations for `boto3.client("lookoutvision").delete_dataset` method.
 
-[Client.delete_dataset documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_dataset)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_dataset]
 
 ```python
 def delete_dataset(
@@ -155,7 +160,7 @@ def delete_dataset(
 
 Type annotations for `boto3.client("lookoutvision").delete_model` method.
 
-[Client.delete_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_model]
 
 ```python
 def delete_model(
@@ -171,7 +176,7 @@ def delete_model(
 
 Type annotations for `boto3.client("lookoutvision").delete_project` method.
 
-[Client.delete_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_project]
 
 ```python
 def delete_project(
@@ -186,7 +191,7 @@ def delete_project(
 
 Type annotations for `boto3.client("lookoutvision").describe_dataset` method.
 
-[Client.describe_dataset documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_dataset)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_dataset]
 
 ```python
 def describe_dataset(
@@ -201,7 +206,7 @@ def describe_dataset(
 
 Type annotations for `boto3.client("lookoutvision").describe_model` method.
 
-[Client.describe_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_model]
 
 ```python
 def describe_model(
@@ -216,7 +221,7 @@ def describe_model(
 
 Type annotations for `boto3.client("lookoutvision").describe_project` method.
 
-[Client.describe_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_project]
 
 ```python
 def describe_project(
@@ -230,7 +235,7 @@ def describe_project(
 
 Type annotations for `boto3.client("lookoutvision").detect_anomalies` method.
 
-[Client.detect_anomalies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.detect_anomalies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.detect_anomalies]
 
 ```python
 def detect_anomalies(
@@ -247,7 +252,7 @@ def detect_anomalies(
 
 Type annotations for `boto3.client("lookoutvision").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -264,7 +269,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("lookoutvision").list_dataset_entries` method.
 
-[Client.list_dataset_entries documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_dataset_entries)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_dataset_entries]
 
 ```python
 def list_dataset_entries(
@@ -286,7 +291,7 @@ def list_dataset_entries(
 
 Type annotations for `boto3.client("lookoutvision").list_models` method.
 
-[Client.list_models documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_models)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_models]
 
 ```python
 def list_models(
@@ -302,7 +307,7 @@ def list_models(
 
 Type annotations for `boto3.client("lookoutvision").list_projects` method.
 
-[Client.list_projects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_projects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_projects]
 
 ```python
 def list_projects(
@@ -317,7 +322,7 @@ def list_projects(
 
 Type annotations for `boto3.client("lookoutvision").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -331,7 +336,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("lookoutvision").start_model` method.
 
-[Client.start_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.start_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.start_model]
 
 ```python
 def start_model(
@@ -348,7 +353,7 @@ def start_model(
 
 Type annotations for `boto3.client("lookoutvision").stop_model` method.
 
-[Client.stop_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.stop_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.stop_model]
 
 ```python
 def stop_model(
@@ -364,7 +369,7 @@ def stop_model(
 
 Type annotations for `boto3.client("lookoutvision").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -379,7 +384,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("lookoutvision").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -394,7 +399,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("lookoutvision").update_dataset_entries` method.
 
-[Client.update_dataset_entries documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.update_dataset_entries)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.update_dataset_entries]
 
 ```python
 def update_dataset_entries(

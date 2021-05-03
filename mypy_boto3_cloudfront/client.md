@@ -105,7 +105,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_cloudfront.client import CloudFrontClient
+
+def get_cloudfront_client() -> CloudFrontClient:
+    return boto3.client("cloudfront")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client)
 
 ## Exceptions
 
@@ -253,7 +258,7 @@ Exceptions:
 
 Type annotations for `boto3.client("cloudfront").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -267,7 +272,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("cloudfront").create_cache_policy` method.
 
-[Client.create_cache_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_cache_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_cache_policy]
 
 ```python
 def create_cache_policy(
@@ -281,7 +286,7 @@ def create_cache_policy(
 
 Type annotations for `boto3.client("cloudfront").create_cloud_front_origin_access_identity` method.
 
-[Client.create_cloud_front_origin_access_identity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_cloud_front_origin_access_identity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_cloud_front_origin_access_identity]
 
 ```python
 def create_cloud_front_origin_access_identity(
@@ -295,7 +300,7 @@ def create_cloud_front_origin_access_identity(
 
 Type annotations for `boto3.client("cloudfront").create_distribution` method.
 
-[Client.create_distribution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_distribution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_distribution]
 
 ```python
 def create_distribution(
@@ -309,7 +314,7 @@ def create_distribution(
 
 Type annotations for `boto3.client("cloudfront").create_distribution_with_tags` method.
 
-[Client.create_distribution_with_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_distribution_with_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_distribution_with_tags]
 
 ```python
 def create_distribution_with_tags(
@@ -323,7 +328,7 @@ def create_distribution_with_tags(
 
 Type annotations for `boto3.client("cloudfront").create_field_level_encryption_config` method.
 
-[Client.create_field_level_encryption_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_config]
 
 ```python
 def create_field_level_encryption_config(
@@ -337,7 +342,7 @@ def create_field_level_encryption_config(
 
 Type annotations for `boto3.client("cloudfront").create_field_level_encryption_profile` method.
 
-[Client.create_field_level_encryption_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_profile]
 
 ```python
 def create_field_level_encryption_profile(
@@ -351,7 +356,7 @@ def create_field_level_encryption_profile(
 
 Type annotations for `boto3.client("cloudfront").create_function` method.
 
-[Client.create_function documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_function)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_function]
 
 ```python
 def create_function(
@@ -367,7 +372,7 @@ def create_function(
 
 Type annotations for `boto3.client("cloudfront").create_invalidation` method.
 
-[Client.create_invalidation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_invalidation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_invalidation]
 
 ```python
 def create_invalidation(
@@ -382,7 +387,7 @@ def create_invalidation(
 
 Type annotations for `boto3.client("cloudfront").create_key_group` method.
 
-[Client.create_key_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_key_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_key_group]
 
 ```python
 def create_key_group(
@@ -396,7 +401,7 @@ def create_key_group(
 
 Type annotations for `boto3.client("cloudfront").create_monitoring_subscription` method.
 
-[Client.create_monitoring_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_monitoring_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_monitoring_subscription]
 
 ```python
 def create_monitoring_subscription(
@@ -411,7 +416,7 @@ def create_monitoring_subscription(
 
 Type annotations for `boto3.client("cloudfront").create_origin_request_policy` method.
 
-[Client.create_origin_request_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_origin_request_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_origin_request_policy]
 
 ```python
 def create_origin_request_policy(
@@ -425,7 +430,7 @@ def create_origin_request_policy(
 
 Type annotations for `boto3.client("cloudfront").create_public_key` method.
 
-[Client.create_public_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_public_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_public_key]
 
 ```python
 def create_public_key(
@@ -439,7 +444,7 @@ def create_public_key(
 
 Type annotations for `boto3.client("cloudfront").create_realtime_log_config` method.
 
-[Client.create_realtime_log_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_realtime_log_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_realtime_log_config]
 
 ```python
 def create_realtime_log_config(
@@ -456,7 +461,7 @@ def create_realtime_log_config(
 
 Type annotations for `boto3.client("cloudfront").create_streaming_distribution` method.
 
-[Client.create_streaming_distribution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution]
 
 ```python
 def create_streaming_distribution(
@@ -470,7 +475,7 @@ def create_streaming_distribution(
 
 Type annotations for `boto3.client("cloudfront").create_streaming_distribution_with_tags` method.
 
-[Client.create_streaming_distribution_with_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution_with_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution_with_tags]
 
 ```python
 def create_streaming_distribution_with_tags(
@@ -484,7 +489,7 @@ def create_streaming_distribution_with_tags(
 
 Type annotations for `boto3.client("cloudfront").delete_cache_policy` method.
 
-[Client.delete_cache_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_cache_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_cache_policy]
 
 ```python
 def delete_cache_policy(
@@ -499,7 +504,7 @@ def delete_cache_policy(
 
 Type annotations for `boto3.client("cloudfront").delete_cloud_front_origin_access_identity` method.
 
-[Client.delete_cloud_front_origin_access_identity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_cloud_front_origin_access_identity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_cloud_front_origin_access_identity]
 
 ```python
 def delete_cloud_front_origin_access_identity(
@@ -514,7 +519,7 @@ def delete_cloud_front_origin_access_identity(
 
 Type annotations for `boto3.client("cloudfront").delete_distribution` method.
 
-[Client.delete_distribution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_distribution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_distribution]
 
 ```python
 def delete_distribution(
@@ -529,7 +534,7 @@ def delete_distribution(
 
 Type annotations for `boto3.client("cloudfront").delete_field_level_encryption_config` method.
 
-[Client.delete_field_level_encryption_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_config]
 
 ```python
 def delete_field_level_encryption_config(
@@ -544,7 +549,7 @@ def delete_field_level_encryption_config(
 
 Type annotations for `boto3.client("cloudfront").delete_field_level_encryption_profile` method.
 
-[Client.delete_field_level_encryption_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_profile]
 
 ```python
 def delete_field_level_encryption_profile(
@@ -559,7 +564,7 @@ def delete_field_level_encryption_profile(
 
 Type annotations for `boto3.client("cloudfront").delete_function` method.
 
-[Client.delete_function documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_function)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_function]
 
 ```python
 def delete_function(
@@ -574,7 +579,7 @@ def delete_function(
 
 Type annotations for `boto3.client("cloudfront").delete_key_group` method.
 
-[Client.delete_key_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_key_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_key_group]
 
 ```python
 def delete_key_group(
@@ -589,7 +594,7 @@ def delete_key_group(
 
 Type annotations for `boto3.client("cloudfront").delete_monitoring_subscription` method.
 
-[Client.delete_monitoring_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_monitoring_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_monitoring_subscription]
 
 ```python
 def delete_monitoring_subscription(
@@ -603,7 +608,7 @@ def delete_monitoring_subscription(
 
 Type annotations for `boto3.client("cloudfront").delete_origin_request_policy` method.
 
-[Client.delete_origin_request_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_origin_request_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_origin_request_policy]
 
 ```python
 def delete_origin_request_policy(
@@ -618,7 +623,7 @@ def delete_origin_request_policy(
 
 Type annotations for `boto3.client("cloudfront").delete_public_key` method.
 
-[Client.delete_public_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_public_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_public_key]
 
 ```python
 def delete_public_key(
@@ -633,7 +638,7 @@ def delete_public_key(
 
 Type annotations for `boto3.client("cloudfront").delete_realtime_log_config` method.
 
-[Client.delete_realtime_log_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_realtime_log_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_realtime_log_config]
 
 ```python
 def delete_realtime_log_config(
@@ -648,7 +653,7 @@ def delete_realtime_log_config(
 
 Type annotations for `boto3.client("cloudfront").delete_streaming_distribution` method.
 
-[Client.delete_streaming_distribution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_streaming_distribution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_streaming_distribution]
 
 ```python
 def delete_streaming_distribution(
@@ -663,7 +668,7 @@ def delete_streaming_distribution(
 
 Type annotations for `boto3.client("cloudfront").describe_function` method.
 
-[Client.describe_function documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.describe_function)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.describe_function]
 
 ```python
 def describe_function(
@@ -678,7 +683,7 @@ def describe_function(
 
 Type annotations for `boto3.client("cloudfront").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -695,7 +700,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("cloudfront").get_cache_policy` method.
 
-[Client.get_cache_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy]
 
 ```python
 def get_cache_policy(
@@ -709,7 +714,7 @@ def get_cache_policy(
 
 Type annotations for `boto3.client("cloudfront").get_cache_policy_config` method.
 
-[Client.get_cache_policy_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy_config]
 
 ```python
 def get_cache_policy_config(
@@ -723,7 +728,7 @@ def get_cache_policy_config(
 
 Type annotations for `boto3.client("cloudfront").get_cloud_front_origin_access_identity` method.
 
-[Client.get_cloud_front_origin_access_identity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity]
 
 ```python
 def get_cloud_front_origin_access_identity(
@@ -737,7 +742,7 @@ def get_cloud_front_origin_access_identity(
 
 Type annotations for `boto3.client("cloudfront").get_cloud_front_origin_access_identity_config` method.
 
-[Client.get_cloud_front_origin_access_identity_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity_config]
 
 ```python
 def get_cloud_front_origin_access_identity_config(
@@ -751,7 +756,7 @@ def get_cloud_front_origin_access_identity_config(
 
 Type annotations for `boto3.client("cloudfront").get_distribution` method.
 
-[Client.get_distribution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_distribution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_distribution]
 
 ```python
 def get_distribution(
@@ -765,7 +770,7 @@ def get_distribution(
 
 Type annotations for `boto3.client("cloudfront").get_distribution_config` method.
 
-[Client.get_distribution_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_distribution_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_distribution_config]
 
 ```python
 def get_distribution_config(
@@ -779,7 +784,7 @@ def get_distribution_config(
 
 Type annotations for `boto3.client("cloudfront").get_field_level_encryption` method.
 
-[Client.get_field_level_encryption documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption]
 
 ```python
 def get_field_level_encryption(
@@ -793,7 +798,7 @@ def get_field_level_encryption(
 
 Type annotations for `boto3.client("cloudfront").get_field_level_encryption_config` method.
 
-[Client.get_field_level_encryption_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_config]
 
 ```python
 def get_field_level_encryption_config(
@@ -807,7 +812,7 @@ def get_field_level_encryption_config(
 
 Type annotations for `boto3.client("cloudfront").get_field_level_encryption_profile` method.
 
-[Client.get_field_level_encryption_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile]
 
 ```python
 def get_field_level_encryption_profile(
@@ -821,7 +826,7 @@ def get_field_level_encryption_profile(
 
 Type annotations for `boto3.client("cloudfront").get_field_level_encryption_profile_config` method.
 
-[Client.get_field_level_encryption_profile_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile_config]
 
 ```python
 def get_field_level_encryption_profile_config(
@@ -835,7 +840,7 @@ def get_field_level_encryption_profile_config(
 
 Type annotations for `boto3.client("cloudfront").get_function` method.
 
-[Client.get_function documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_function)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_function]
 
 ```python
 def get_function(
@@ -850,7 +855,7 @@ def get_function(
 
 Type annotations for `boto3.client("cloudfront").get_invalidation` method.
 
-[Client.get_invalidation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_invalidation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_invalidation]
 
 ```python
 def get_invalidation(
@@ -865,7 +870,7 @@ def get_invalidation(
 
 Type annotations for `boto3.client("cloudfront").get_key_group` method.
 
-[Client.get_key_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_key_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_key_group]
 
 ```python
 def get_key_group(
@@ -879,7 +884,7 @@ def get_key_group(
 
 Type annotations for `boto3.client("cloudfront").get_key_group_config` method.
 
-[Client.get_key_group_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_key_group_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_key_group_config]
 
 ```python
 def get_key_group_config(
@@ -893,7 +898,7 @@ def get_key_group_config(
 
 Type annotations for `boto3.client("cloudfront").get_monitoring_subscription` method.
 
-[Client.get_monitoring_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_monitoring_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_monitoring_subscription]
 
 ```python
 def get_monitoring_subscription(
@@ -907,7 +912,7 @@ def get_monitoring_subscription(
 
 Type annotations for `boto3.client("cloudfront").get_origin_request_policy` method.
 
-[Client.get_origin_request_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy]
 
 ```python
 def get_origin_request_policy(
@@ -921,7 +926,7 @@ def get_origin_request_policy(
 
 Type annotations for `boto3.client("cloudfront").get_origin_request_policy_config` method.
 
-[Client.get_origin_request_policy_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy_config]
 
 ```python
 def get_origin_request_policy_config(
@@ -935,7 +940,7 @@ def get_origin_request_policy_config(
 
 Type annotations for `boto3.client("cloudfront").get_public_key` method.
 
-[Client.get_public_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_public_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_public_key]
 
 ```python
 def get_public_key(
@@ -949,7 +954,7 @@ def get_public_key(
 
 Type annotations for `boto3.client("cloudfront").get_public_key_config` method.
 
-[Client.get_public_key_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_public_key_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_public_key_config]
 
 ```python
 def get_public_key_config(
@@ -963,7 +968,7 @@ def get_public_key_config(
 
 Type annotations for `boto3.client("cloudfront").get_realtime_log_config` method.
 
-[Client.get_realtime_log_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_realtime_log_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_realtime_log_config]
 
 ```python
 def get_realtime_log_config(
@@ -978,7 +983,7 @@ def get_realtime_log_config(
 
 Type annotations for `boto3.client("cloudfront").get_streaming_distribution` method.
 
-[Client.get_streaming_distribution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution]
 
 ```python
 def get_streaming_distribution(
@@ -992,7 +997,7 @@ def get_streaming_distribution(
 
 Type annotations for `boto3.client("cloudfront").get_streaming_distribution_config` method.
 
-[Client.get_streaming_distribution_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution_config]
 
 ```python
 def get_streaming_distribution_config(
@@ -1006,7 +1011,7 @@ def get_streaming_distribution_config(
 
 Type annotations for `boto3.client("cloudfront").list_cache_policies` method.
 
-[Client.list_cache_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_cache_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_cache_policies]
 
 ```python
 def list_cache_policies(
@@ -1022,7 +1027,7 @@ def list_cache_policies(
 
 Type annotations for `boto3.client("cloudfront").list_cloud_front_origin_access_identities` method.
 
-[Client.list_cloud_front_origin_access_identities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_cloud_front_origin_access_identities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_cloud_front_origin_access_identities]
 
 ```python
 def list_cloud_front_origin_access_identities(
@@ -1037,7 +1042,7 @@ def list_cloud_front_origin_access_identities(
 
 Type annotations for `boto3.client("cloudfront").list_distributions` method.
 
-[Client.list_distributions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions]
 
 ```python
 def list_distributions(
@@ -1052,7 +1057,7 @@ def list_distributions(
 
 Type annotations for `boto3.client("cloudfront").list_distributions_by_cache_policy_id` method.
 
-[Client.list_distributions_by_cache_policy_id documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_cache_policy_id)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_cache_policy_id]
 
 ```python
 def list_distributions_by_cache_policy_id(
@@ -1068,7 +1073,7 @@ def list_distributions_by_cache_policy_id(
 
 Type annotations for `boto3.client("cloudfront").list_distributions_by_key_group` method.
 
-[Client.list_distributions_by_key_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_key_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_key_group]
 
 ```python
 def list_distributions_by_key_group(
@@ -1084,7 +1089,7 @@ def list_distributions_by_key_group(
 
 Type annotations for `boto3.client("cloudfront").list_distributions_by_origin_request_policy_id` method.
 
-[Client.list_distributions_by_origin_request_policy_id documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_origin_request_policy_id)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_origin_request_policy_id]
 
 ```python
 def list_distributions_by_origin_request_policy_id(
@@ -1100,7 +1105,7 @@ def list_distributions_by_origin_request_policy_id(
 
 Type annotations for `boto3.client("cloudfront").list_distributions_by_realtime_log_config` method.
 
-[Client.list_distributions_by_realtime_log_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_realtime_log_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_realtime_log_config]
 
 ```python
 def list_distributions_by_realtime_log_config(
@@ -1117,7 +1122,7 @@ def list_distributions_by_realtime_log_config(
 
 Type annotations for `boto3.client("cloudfront").list_distributions_by_web_acl_id` method.
 
-[Client.list_distributions_by_web_acl_id documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_web_acl_id)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_web_acl_id]
 
 ```python
 def list_distributions_by_web_acl_id(
@@ -1133,7 +1138,7 @@ def list_distributions_by_web_acl_id(
 
 Type annotations for `boto3.client("cloudfront").list_field_level_encryption_configs` method.
 
-[Client.list_field_level_encryption_configs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_configs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_configs]
 
 ```python
 def list_field_level_encryption_configs(
@@ -1148,7 +1153,7 @@ def list_field_level_encryption_configs(
 
 Type annotations for `boto3.client("cloudfront").list_field_level_encryption_profiles` method.
 
-[Client.list_field_level_encryption_profiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_profiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_profiles]
 
 ```python
 def list_field_level_encryption_profiles(
@@ -1163,7 +1168,7 @@ def list_field_level_encryption_profiles(
 
 Type annotations for `boto3.client("cloudfront").list_functions` method.
 
-[Client.list_functions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_functions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_functions]
 
 ```python
 def list_functions(
@@ -1179,7 +1184,7 @@ def list_functions(
 
 Type annotations for `boto3.client("cloudfront").list_invalidations` method.
 
-[Client.list_invalidations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_invalidations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_invalidations]
 
 ```python
 def list_invalidations(
@@ -1195,7 +1200,7 @@ def list_invalidations(
 
 Type annotations for `boto3.client("cloudfront").list_key_groups` method.
 
-[Client.list_key_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_key_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_key_groups]
 
 ```python
 def list_key_groups(
@@ -1210,7 +1215,7 @@ def list_key_groups(
 
 Type annotations for `boto3.client("cloudfront").list_origin_request_policies` method.
 
-[Client.list_origin_request_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_origin_request_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_origin_request_policies]
 
 ```python
 def list_origin_request_policies(
@@ -1226,7 +1231,7 @@ def list_origin_request_policies(
 
 Type annotations for `boto3.client("cloudfront").list_public_keys` method.
 
-[Client.list_public_keys documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_public_keys)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_public_keys]
 
 ```python
 def list_public_keys(
@@ -1241,7 +1246,7 @@ def list_public_keys(
 
 Type annotations for `boto3.client("cloudfront").list_realtime_log_configs` method.
 
-[Client.list_realtime_log_configs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_realtime_log_configs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_realtime_log_configs]
 
 ```python
 def list_realtime_log_configs(
@@ -1256,7 +1261,7 @@ def list_realtime_log_configs(
 
 Type annotations for `boto3.client("cloudfront").list_streaming_distributions` method.
 
-[Client.list_streaming_distributions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_streaming_distributions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_streaming_distributions]
 
 ```python
 def list_streaming_distributions(
@@ -1271,7 +1276,7 @@ def list_streaming_distributions(
 
 Type annotations for `boto3.client("cloudfront").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -1285,7 +1290,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("cloudfront").publish_function` method.
 
-[Client.publish_function documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.publish_function)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.publish_function]
 
 ```python
 def publish_function(
@@ -1300,7 +1305,7 @@ def publish_function(
 
 Type annotations for `boto3.client("cloudfront").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -1315,7 +1320,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("cloudfront").test_function` method.
 
-[Client.test_function documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.test_function)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.test_function]
 
 ```python
 def test_function(
@@ -1332,7 +1337,7 @@ def test_function(
 
 Type annotations for `boto3.client("cloudfront").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -1347,7 +1352,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("cloudfront").update_cache_policy` method.
 
-[Client.update_cache_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_cache_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_cache_policy]
 
 ```python
 def update_cache_policy(
@@ -1363,7 +1368,7 @@ def update_cache_policy(
 
 Type annotations for `boto3.client("cloudfront").update_cloud_front_origin_access_identity` method.
 
-[Client.update_cloud_front_origin_access_identity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_cloud_front_origin_access_identity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_cloud_front_origin_access_identity]
 
 ```python
 def update_cloud_front_origin_access_identity(
@@ -1379,7 +1384,7 @@ def update_cloud_front_origin_access_identity(
 
 Type annotations for `boto3.client("cloudfront").update_distribution` method.
 
-[Client.update_distribution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_distribution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_distribution]
 
 ```python
 def update_distribution(
@@ -1395,7 +1400,7 @@ def update_distribution(
 
 Type annotations for `boto3.client("cloudfront").update_field_level_encryption_config` method.
 
-[Client.update_field_level_encryption_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_config]
 
 ```python
 def update_field_level_encryption_config(
@@ -1411,7 +1416,7 @@ def update_field_level_encryption_config(
 
 Type annotations for `boto3.client("cloudfront").update_field_level_encryption_profile` method.
 
-[Client.update_field_level_encryption_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_profile]
 
 ```python
 def update_field_level_encryption_profile(
@@ -1427,7 +1432,7 @@ def update_field_level_encryption_profile(
 
 Type annotations for `boto3.client("cloudfront").update_function` method.
 
-[Client.update_function documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_function)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_function]
 
 ```python
 def update_function(
@@ -1444,7 +1449,7 @@ def update_function(
 
 Type annotations for `boto3.client("cloudfront").update_key_group` method.
 
-[Client.update_key_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_key_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_key_group]
 
 ```python
 def update_key_group(
@@ -1460,7 +1465,7 @@ def update_key_group(
 
 Type annotations for `boto3.client("cloudfront").update_origin_request_policy` method.
 
-[Client.update_origin_request_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_origin_request_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_origin_request_policy]
 
 ```python
 def update_origin_request_policy(
@@ -1476,7 +1481,7 @@ def update_origin_request_policy(
 
 Type annotations for `boto3.client("cloudfront").update_public_key` method.
 
-[Client.update_public_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_public_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_public_key]
 
 ```python
 def update_public_key(
@@ -1492,7 +1497,7 @@ def update_public_key(
 
 Type annotations for `boto3.client("cloudfront").update_realtime_log_config` method.
 
-[Client.update_realtime_log_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_realtime_log_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_realtime_log_config]
 
 ```python
 def update_realtime_log_config(
@@ -1510,7 +1515,7 @@ def update_realtime_log_config(
 
 Type annotations for `boto3.client("cloudfront").update_streaming_distribution` method.
 
-[Client.update_streaming_distribution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_streaming_distribution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_streaming_distribution]
 
 ```python
 def update_streaming_distribution(

@@ -1,11 +1,11 @@
-# Structures for boto3 Chime module
+# Typed dictionaries for boto3 Chime module
 
 > [Index](../README.md) > [Chime](./README.md) > Structures
 
 Auto-generated documentation for [Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
 type annotations stubs module [mypy_boto3_chime](https://pypi.org/project/mypy-boto3-chime/).
 
-- [Structures for boto3 Chime module](#structures-for-boto3-chime-module)
+- [Typed dictionaries for boto3 Chime module](#typed-dictionaries-for-boto3-chime-module)
   - [AccountSettingsTypeDef](#accountsettingstypedef)
   - [AccountTypeDef](#accounttypedef)
   - [AlexaForBusinessMetadataTypeDef](#alexaforbusinessmetadatatypedef)

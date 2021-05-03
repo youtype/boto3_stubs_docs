@@ -1,11 +1,11 @@
-# Structures for boto3 IoTAnalytics module
+# Typed dictionaries for boto3 IoTAnalytics module
 
 > [Index](../README.md) > [IoTAnalytics](./README.md) > Structures
 
 Auto-generated documentation for [IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
 type annotations stubs module [mypy_boto3_iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
 
-- [Structures for boto3 IoTAnalytics module](#structures-for-boto3-iotanalytics-module)
+- [Typed dictionaries for boto3 IoTAnalytics module](#typed-dictionaries-for-boto3-iotanalytics-module)
   - [AddAttributesActivityTypeDef](#addattributesactivitytypedef)
   - [BatchPutMessageErrorEntryTypeDef](#batchputmessageerrorentrytypedef)
   - [BatchPutMessageResponseTypeDef](#batchputmessageresponsetypedef)

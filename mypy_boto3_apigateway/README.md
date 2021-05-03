@@ -15,7 +15,7 @@ pip install mypy-boto3-apigateway
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## APIGatewayClient
 
@@ -260,7 +260,7 @@ from mypy_boto3_apigateway.literals import ApiKeySourceType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

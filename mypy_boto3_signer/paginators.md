@@ -17,13 +17,13 @@ Type annotations for `boto3.client("signer").get_paginator("list_signing_jobs")`
 Can be used directly:
 
 ```python
-from mypy_boto3_signer.paginators import ListSigningJobsPaginator
+from mypy_boto3_signer.paginator import ListSigningJobsPaginator
 
 def get_list_signing_jobs_paginator() -> ListSigningJobsPaginator:
     return boto3.client("signer").get_paginator("list_signing_jobs")
 ```
 
-[Paginator.ListSigningJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Paginator.ListSigningJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Paginator.ListSigningJobs)
 
 ```python
 class ListSigningJobsPaginator(Boto3Paginator):
@@ -47,13 +47,13 @@ Type annotations for `boto3.client("signer").get_paginator("list_signing_platfor
 Can be used directly:
 
 ```python
-from mypy_boto3_signer.paginators import ListSigningPlatformsPaginator
+from mypy_boto3_signer.paginator import ListSigningPlatformsPaginator
 
 def get_list_signing_platforms_paginator() -> ListSigningPlatformsPaginator:
     return boto3.client("signer").get_paginator("list_signing_platforms")
 ```
 
-[Paginator.ListSigningPlatforms documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Paginator.ListSigningPlatforms)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Paginator.ListSigningPlatforms)
 
 ```python
 class ListSigningPlatformsPaginator(Boto3Paginator):
@@ -73,13 +73,13 @@ Type annotations for `boto3.client("signer").get_paginator("list_signing_profile
 Can be used directly:
 
 ```python
-from mypy_boto3_signer.paginators import ListSigningProfilesPaginator
+from mypy_boto3_signer.paginator import ListSigningProfilesPaginator
 
 def get_list_signing_profiles_paginator() -> ListSigningProfilesPaginator:
     return boto3.client("signer").get_paginator("list_signing_profiles")
 ```
 
-[Paginator.ListSigningProfiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Paginator.ListSigningProfiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer.Paginator.ListSigningProfiles)
 
 ```python
 class ListSigningProfilesPaginator(Boto3Paginator):

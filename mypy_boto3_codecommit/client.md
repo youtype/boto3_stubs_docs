@@ -98,7 +98,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_codecommit.client import CodeCommitClient
+
+def get_codecommit_client() -> CodeCommitClient:
+    return boto3.client("codecommit")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client)
 
 ## Exceptions
 
@@ -310,7 +315,7 @@ Exceptions:
 
 Type annotations for `boto3.client("codecommit").associate_approval_rule_template_with_repository` method.
 
-[Client.associate_approval_rule_template_with_repository documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.associate_approval_rule_template_with_repository)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.associate_approval_rule_template_with_repository]
 
 ```python
 def associate_approval_rule_template_with_repository(
@@ -325,7 +330,7 @@ def associate_approval_rule_template_with_repository(
 
 Type annotations for `boto3.client("codecommit").batch_associate_approval_rule_template_with_repositories` method.
 
-[Client.batch_associate_approval_rule_template_with_repositories documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_associate_approval_rule_template_with_repositories)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_associate_approval_rule_template_with_repositories]
 
 ```python
 def batch_associate_approval_rule_template_with_repositories(
@@ -340,7 +345,7 @@ def batch_associate_approval_rule_template_with_repositories(
 
 Type annotations for `boto3.client("codecommit").batch_describe_merge_conflicts` method.
 
-[Client.batch_describe_merge_conflicts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_describe_merge_conflicts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_describe_merge_conflicts]
 
 ```python
 def batch_describe_merge_conflicts(
@@ -363,7 +368,7 @@ def batch_describe_merge_conflicts(
 
 Type annotations for `boto3.client("codecommit").batch_disassociate_approval_rule_template_from_repositories` method.
 
-[Client.batch_disassociate_approval_rule_template_from_repositories documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_disassociate_approval_rule_template_from_repositories)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_disassociate_approval_rule_template_from_repositories]
 
 ```python
 def batch_disassociate_approval_rule_template_from_repositories(
@@ -378,7 +383,7 @@ def batch_disassociate_approval_rule_template_from_repositories(
 
 Type annotations for `boto3.client("codecommit").batch_get_commits` method.
 
-[Client.batch_get_commits documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_get_commits)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_get_commits]
 
 ```python
 def batch_get_commits(
@@ -393,7 +398,7 @@ def batch_get_commits(
 
 Type annotations for `boto3.client("codecommit").batch_get_repositories` method.
 
-[Client.batch_get_repositories documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_get_repositories)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_get_repositories]
 
 ```python
 def batch_get_repositories(
@@ -407,7 +412,7 @@ def batch_get_repositories(
 
 Type annotations for `boto3.client("codecommit").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -421,7 +426,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("codecommit").create_approval_rule_template` method.
 
-[Client.create_approval_rule_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_approval_rule_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_approval_rule_template]
 
 ```python
 def create_approval_rule_template(
@@ -437,7 +442,7 @@ def create_approval_rule_template(
 
 Type annotations for `boto3.client("codecommit").create_branch` method.
 
-[Client.create_branch documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_branch)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_branch]
 
 ```python
 def create_branch(
@@ -453,7 +458,7 @@ def create_branch(
 
 Type annotations for `boto3.client("codecommit").create_commit` method.
 
-[Client.create_commit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_commit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_commit]
 
 ```python
 def create_commit(
@@ -476,7 +481,7 @@ def create_commit(
 
 Type annotations for `boto3.client("codecommit").create_pull_request` method.
 
-[Client.create_pull_request documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_pull_request)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_pull_request]
 
 ```python
 def create_pull_request(
@@ -493,7 +498,7 @@ def create_pull_request(
 
 Type annotations for `boto3.client("codecommit").create_pull_request_approval_rule` method.
 
-[Client.create_pull_request_approval_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_pull_request_approval_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_pull_request_approval_rule]
 
 ```python
 def create_pull_request_approval_rule(
@@ -509,7 +514,7 @@ def create_pull_request_approval_rule(
 
 Type annotations for `boto3.client("codecommit").create_repository` method.
 
-[Client.create_repository documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_repository)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_repository]
 
 ```python
 def create_repository(
@@ -525,7 +530,7 @@ def create_repository(
 
 Type annotations for `boto3.client("codecommit").create_unreferenced_merge_commit` method.
 
-[Client.create_unreferenced_merge_commit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_unreferenced_merge_commit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_unreferenced_merge_commit]
 
 ```python
 def create_unreferenced_merge_commit(
@@ -549,7 +554,7 @@ def create_unreferenced_merge_commit(
 
 Type annotations for `boto3.client("codecommit").delete_approval_rule_template` method.
 
-[Client.delete_approval_rule_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_approval_rule_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_approval_rule_template]
 
 ```python
 def delete_approval_rule_template(
@@ -563,7 +568,7 @@ def delete_approval_rule_template(
 
 Type annotations for `boto3.client("codecommit").delete_branch` method.
 
-[Client.delete_branch documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_branch)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_branch]
 
 ```python
 def delete_branch(
@@ -578,7 +583,7 @@ def delete_branch(
 
 Type annotations for `boto3.client("codecommit").delete_comment_content` method.
 
-[Client.delete_comment_content documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_comment_content)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_comment_content]
 
 ```python
 def delete_comment_content(
@@ -592,7 +597,7 @@ def delete_comment_content(
 
 Type annotations for `boto3.client("codecommit").delete_file` method.
 
-[Client.delete_file documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_file)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_file]
 
 ```python
 def delete_file(
@@ -613,7 +618,7 @@ def delete_file(
 
 Type annotations for `boto3.client("codecommit").delete_pull_request_approval_rule` method.
 
-[Client.delete_pull_request_approval_rule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_pull_request_approval_rule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_pull_request_approval_rule]
 
 ```python
 def delete_pull_request_approval_rule(
@@ -628,7 +633,7 @@ def delete_pull_request_approval_rule(
 
 Type annotations for `boto3.client("codecommit").delete_repository` method.
 
-[Client.delete_repository documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_repository)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_repository]
 
 ```python
 def delete_repository(
@@ -642,7 +647,7 @@ def delete_repository(
 
 Type annotations for `boto3.client("codecommit").describe_merge_conflicts` method.
 
-[Client.describe_merge_conflicts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.describe_merge_conflicts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.describe_merge_conflicts]
 
 ```python
 def describe_merge_conflicts(
@@ -664,7 +669,7 @@ def describe_merge_conflicts(
 
 Type annotations for `boto3.client("codecommit").describe_pull_request_events` method.
 
-[Client.describe_pull_request_events documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.describe_pull_request_events)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.describe_pull_request_events]
 
 ```python
 def describe_pull_request_events(
@@ -682,7 +687,7 @@ def describe_pull_request_events(
 
 Type annotations for `boto3.client("codecommit").disassociate_approval_rule_template_from_repository` method.
 
-[Client.disassociate_approval_rule_template_from_repository documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.disassociate_approval_rule_template_from_repository)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.disassociate_approval_rule_template_from_repository]
 
 ```python
 def disassociate_approval_rule_template_from_repository(
@@ -697,7 +702,7 @@ def disassociate_approval_rule_template_from_repository(
 
 Type annotations for `boto3.client("codecommit").evaluate_pull_request_approval_rules` method.
 
-[Client.evaluate_pull_request_approval_rules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.evaluate_pull_request_approval_rules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.evaluate_pull_request_approval_rules]
 
 ```python
 def evaluate_pull_request_approval_rules(
@@ -712,7 +717,7 @@ def evaluate_pull_request_approval_rules(
 
 Type annotations for `boto3.client("codecommit").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -729,7 +734,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("codecommit").get_approval_rule_template` method.
 
-[Client.get_approval_rule_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_approval_rule_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_approval_rule_template]
 
 ```python
 def get_approval_rule_template(
@@ -743,7 +748,7 @@ def get_approval_rule_template(
 
 Type annotations for `boto3.client("codecommit").get_blob` method.
 
-[Client.get_blob documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_blob)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_blob]
 
 ```python
 def get_blob(
@@ -758,7 +763,7 @@ def get_blob(
 
 Type annotations for `boto3.client("codecommit").get_branch` method.
 
-[Client.get_branch documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_branch)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_branch]
 
 ```python
 def get_branch(
@@ -773,7 +778,7 @@ def get_branch(
 
 Type annotations for `boto3.client("codecommit").get_comment` method.
 
-[Client.get_comment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comment]
 
 ```python
 def get_comment(
@@ -787,7 +792,7 @@ def get_comment(
 
 Type annotations for `boto3.client("codecommit").get_comment_reactions` method.
 
-[Client.get_comment_reactions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comment_reactions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comment_reactions]
 
 ```python
 def get_comment_reactions(
@@ -804,7 +809,7 @@ def get_comment_reactions(
 
 Type annotations for `boto3.client("codecommit").get_comments_for_compared_commit` method.
 
-[Client.get_comments_for_compared_commit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comments_for_compared_commit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comments_for_compared_commit]
 
 ```python
 def get_comments_for_compared_commit(
@@ -822,7 +827,7 @@ def get_comments_for_compared_commit(
 
 Type annotations for `boto3.client("codecommit").get_comments_for_pull_request` method.
 
-[Client.get_comments_for_pull_request documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comments_for_pull_request)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comments_for_pull_request]
 
 ```python
 def get_comments_for_pull_request(
@@ -841,7 +846,7 @@ def get_comments_for_pull_request(
 
 Type annotations for `boto3.client("codecommit").get_commit` method.
 
-[Client.get_commit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_commit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_commit]
 
 ```python
 def get_commit(
@@ -856,7 +861,7 @@ def get_commit(
 
 Type annotations for `boto3.client("codecommit").get_differences` method.
 
-[Client.get_differences documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_differences)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_differences]
 
 ```python
 def get_differences(
@@ -876,7 +881,7 @@ def get_differences(
 
 Type annotations for `boto3.client("codecommit").get_file` method.
 
-[Client.get_file documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_file)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_file]
 
 ```python
 def get_file(
@@ -892,7 +897,7 @@ def get_file(
 
 Type annotations for `boto3.client("codecommit").get_folder` method.
 
-[Client.get_folder documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_folder)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_folder]
 
 ```python
 def get_folder(
@@ -908,7 +913,7 @@ def get_folder(
 
 Type annotations for `boto3.client("codecommit").get_merge_commit` method.
 
-[Client.get_merge_commit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_commit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_commit]
 
 ```python
 def get_merge_commit(
@@ -926,7 +931,7 @@ def get_merge_commit(
 
 Type annotations for `boto3.client("codecommit").get_merge_conflicts` method.
 
-[Client.get_merge_conflicts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_conflicts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_conflicts]
 
 ```python
 def get_merge_conflicts(
@@ -947,7 +952,7 @@ def get_merge_conflicts(
 
 Type annotations for `boto3.client("codecommit").get_merge_options` method.
 
-[Client.get_merge_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_options]
 
 ```python
 def get_merge_options(
@@ -965,7 +970,7 @@ def get_merge_options(
 
 Type annotations for `boto3.client("codecommit").get_pull_request` method.
 
-[Client.get_pull_request documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request]
 
 ```python
 def get_pull_request(
@@ -979,7 +984,7 @@ def get_pull_request(
 
 Type annotations for `boto3.client("codecommit").get_pull_request_approval_states` method.
 
-[Client.get_pull_request_approval_states documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request_approval_states)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request_approval_states]
 
 ```python
 def get_pull_request_approval_states(
@@ -994,7 +999,7 @@ def get_pull_request_approval_states(
 
 Type annotations for `boto3.client("codecommit").get_pull_request_override_state` method.
 
-[Client.get_pull_request_override_state documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request_override_state)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request_override_state]
 
 ```python
 def get_pull_request_override_state(
@@ -1009,7 +1014,7 @@ def get_pull_request_override_state(
 
 Type annotations for `boto3.client("codecommit").get_repository` method.
 
-[Client.get_repository documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_repository)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_repository]
 
 ```python
 def get_repository(
@@ -1023,7 +1028,7 @@ def get_repository(
 
 Type annotations for `boto3.client("codecommit").get_repository_triggers` method.
 
-[Client.get_repository_triggers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_repository_triggers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_repository_triggers]
 
 ```python
 def get_repository_triggers(
@@ -1037,7 +1042,7 @@ def get_repository_triggers(
 
 Type annotations for `boto3.client("codecommit").list_approval_rule_templates` method.
 
-[Client.list_approval_rule_templates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_approval_rule_templates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_approval_rule_templates]
 
 ```python
 def list_approval_rule_templates(
@@ -1052,7 +1057,7 @@ def list_approval_rule_templates(
 
 Type annotations for `boto3.client("codecommit").list_associated_approval_rule_templates_for_repository` method.
 
-[Client.list_associated_approval_rule_templates_for_repository documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_associated_approval_rule_templates_for_repository)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_associated_approval_rule_templates_for_repository]
 
 ```python
 def list_associated_approval_rule_templates_for_repository(
@@ -1068,7 +1073,7 @@ def list_associated_approval_rule_templates_for_repository(
 
 Type annotations for `boto3.client("codecommit").list_branches` method.
 
-[Client.list_branches documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_branches)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_branches]
 
 ```python
 def list_branches(
@@ -1083,7 +1088,7 @@ def list_branches(
 
 Type annotations for `boto3.client("codecommit").list_pull_requests` method.
 
-[Client.list_pull_requests documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_pull_requests)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_pull_requests]
 
 ```python
 def list_pull_requests(
@@ -1101,7 +1106,7 @@ def list_pull_requests(
 
 Type annotations for `boto3.client("codecommit").list_repositories` method.
 
-[Client.list_repositories documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_repositories)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_repositories]
 
 ```python
 def list_repositories(
@@ -1117,7 +1122,7 @@ def list_repositories(
 
 Type annotations for `boto3.client("codecommit").list_repositories_for_approval_rule_template` method.
 
-[Client.list_repositories_for_approval_rule_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_repositories_for_approval_rule_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_repositories_for_approval_rule_template]
 
 ```python
 def list_repositories_for_approval_rule_template(
@@ -1133,7 +1138,7 @@ def list_repositories_for_approval_rule_template(
 
 Type annotations for `boto3.client("codecommit").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -1148,7 +1153,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("codecommit").merge_branches_by_fast_forward` method.
 
-[Client.merge_branches_by_fast_forward documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_fast_forward)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_fast_forward]
 
 ```python
 def merge_branches_by_fast_forward(
@@ -1165,7 +1170,7 @@ def merge_branches_by_fast_forward(
 
 Type annotations for `boto3.client("codecommit").merge_branches_by_squash` method.
 
-[Client.merge_branches_by_squash documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_squash)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_squash]
 
 ```python
 def merge_branches_by_squash(
@@ -1189,7 +1194,7 @@ def merge_branches_by_squash(
 
 Type annotations for `boto3.client("codecommit").merge_branches_by_three_way` method.
 
-[Client.merge_branches_by_three_way documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_three_way)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_three_way]
 
 ```python
 def merge_branches_by_three_way(
@@ -1213,7 +1218,7 @@ def merge_branches_by_three_way(
 
 Type annotations for `boto3.client("codecommit").merge_pull_request_by_fast_forward` method.
 
-[Client.merge_pull_request_by_fast_forward documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_fast_forward)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_fast_forward]
 
 ```python
 def merge_pull_request_by_fast_forward(
@@ -1229,7 +1234,7 @@ def merge_pull_request_by_fast_forward(
 
 Type annotations for `boto3.client("codecommit").merge_pull_request_by_squash` method.
 
-[Client.merge_pull_request_by_squash documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_squash)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_squash]
 
 ```python
 def merge_pull_request_by_squash(
@@ -1252,7 +1257,7 @@ def merge_pull_request_by_squash(
 
 Type annotations for `boto3.client("codecommit").merge_pull_request_by_three_way` method.
 
-[Client.merge_pull_request_by_three_way documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_three_way)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_three_way]
 
 ```python
 def merge_pull_request_by_three_way(
@@ -1275,7 +1280,7 @@ def merge_pull_request_by_three_way(
 
 Type annotations for `boto3.client("codecommit").override_pull_request_approval_rules` method.
 
-[Client.override_pull_request_approval_rules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.override_pull_request_approval_rules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.override_pull_request_approval_rules]
 
 ```python
 def override_pull_request_approval_rules(
@@ -1291,7 +1296,7 @@ def override_pull_request_approval_rules(
 
 Type annotations for `boto3.client("codecommit").post_comment_for_compared_commit` method.
 
-[Client.post_comment_for_compared_commit documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_for_compared_commit)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_for_compared_commit]
 
 ```python
 def post_comment_for_compared_commit(
@@ -1310,7 +1315,7 @@ def post_comment_for_compared_commit(
 
 Type annotations for `boto3.client("codecommit").post_comment_for_pull_request` method.
 
-[Client.post_comment_for_pull_request documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_for_pull_request)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_for_pull_request]
 
 ```python
 def post_comment_for_pull_request(
@@ -1330,7 +1335,7 @@ def post_comment_for_pull_request(
 
 Type annotations for `boto3.client("codecommit").post_comment_reply` method.
 
-[Client.post_comment_reply documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_reply)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_reply]
 
 ```python
 def post_comment_reply(
@@ -1346,7 +1351,7 @@ def post_comment_reply(
 
 Type annotations for `boto3.client("codecommit").put_comment_reaction` method.
 
-[Client.put_comment_reaction documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_comment_reaction)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_comment_reaction]
 
 ```python
 def put_comment_reaction(
@@ -1361,7 +1366,7 @@ def put_comment_reaction(
 
 Type annotations for `boto3.client("codecommit").put_file` method.
 
-[Client.put_file documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_file)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_file]
 
 ```python
 def put_file(
@@ -1383,7 +1388,7 @@ def put_file(
 
 Type annotations for `boto3.client("codecommit").put_repository_triggers` method.
 
-[Client.put_repository_triggers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_repository_triggers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_repository_triggers]
 
 ```python
 def put_repository_triggers(
@@ -1398,7 +1403,7 @@ def put_repository_triggers(
 
 Type annotations for `boto3.client("codecommit").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -1413,7 +1418,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("codecommit").test_repository_triggers` method.
 
-[Client.test_repository_triggers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.test_repository_triggers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.test_repository_triggers]
 
 ```python
 def test_repository_triggers(
@@ -1428,7 +1433,7 @@ def test_repository_triggers(
 
 Type annotations for `boto3.client("codecommit").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -1443,7 +1448,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("codecommit").update_approval_rule_template_content` method.
 
-[Client.update_approval_rule_template_content documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_content)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_content]
 
 ```python
 def update_approval_rule_template_content(
@@ -1459,7 +1464,7 @@ def update_approval_rule_template_content(
 
 Type annotations for `boto3.client("codecommit").update_approval_rule_template_description` method.
 
-[Client.update_approval_rule_template_description documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_description)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_description]
 
 ```python
 def update_approval_rule_template_description(
@@ -1474,7 +1479,7 @@ def update_approval_rule_template_description(
 
 Type annotations for `boto3.client("codecommit").update_approval_rule_template_name` method.
 
-[Client.update_approval_rule_template_name documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_name)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_name]
 
 ```python
 def update_approval_rule_template_name(
@@ -1489,7 +1494,7 @@ def update_approval_rule_template_name(
 
 Type annotations for `boto3.client("codecommit").update_comment` method.
 
-[Client.update_comment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_comment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_comment]
 
 ```python
 def update_comment(
@@ -1504,7 +1509,7 @@ def update_comment(
 
 Type annotations for `boto3.client("codecommit").update_default_branch` method.
 
-[Client.update_default_branch documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_default_branch)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_default_branch]
 
 ```python
 def update_default_branch(
@@ -1519,7 +1524,7 @@ def update_default_branch(
 
 Type annotations for `boto3.client("codecommit").update_pull_request_approval_rule_content` method.
 
-[Client.update_pull_request_approval_rule_content documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_approval_rule_content)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_approval_rule_content]
 
 ```python
 def update_pull_request_approval_rule_content(
@@ -1536,7 +1541,7 @@ def update_pull_request_approval_rule_content(
 
 Type annotations for `boto3.client("codecommit").update_pull_request_approval_state` method.
 
-[Client.update_pull_request_approval_state documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_approval_state)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_approval_state]
 
 ```python
 def update_pull_request_approval_state(
@@ -1552,7 +1557,7 @@ def update_pull_request_approval_state(
 
 Type annotations for `boto3.client("codecommit").update_pull_request_description` method.
 
-[Client.update_pull_request_description documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_description)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_description]
 
 ```python
 def update_pull_request_description(
@@ -1567,7 +1572,7 @@ def update_pull_request_description(
 
 Type annotations for `boto3.client("codecommit").update_pull_request_status` method.
 
-[Client.update_pull_request_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_status]
 
 ```python
 def update_pull_request_status(
@@ -1582,7 +1587,7 @@ def update_pull_request_status(
 
 Type annotations for `boto3.client("codecommit").update_pull_request_title` method.
 
-[Client.update_pull_request_title documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_title)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_title]
 
 ```python
 def update_pull_request_title(
@@ -1597,7 +1602,7 @@ def update_pull_request_title(
 
 Type annotations for `boto3.client("codecommit").update_repository_description` method.
 
-[Client.update_repository_description documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_repository_description)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_repository_description]
 
 ```python
 def update_repository_description(
@@ -1612,7 +1617,7 @@ def update_repository_description(
 
 Type annotations for `boto3.client("codecommit").update_repository_name` method.
 
-[Client.update_repository_name documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_repository_name)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_repository_name]
 
 ```python
 def update_repository_name(

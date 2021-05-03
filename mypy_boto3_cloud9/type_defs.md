@@ -1,11 +1,11 @@
-# Structures for boto3 Cloud9 module
+# Typed dictionaries for boto3 Cloud9 module
 
 > [Index](../README.md) > [Cloud9](./README.md) > Structures
 
 Auto-generated documentation for [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
 type annotations stubs module [mypy_boto3_cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
 
-- [Structures for boto3 Cloud9 module](#structures-for-boto3-cloud9-module)
+- [Typed dictionaries for boto3 Cloud9 module](#typed-dictionaries-for-boto3-cloud9-module)
   - [CreateEnvironmentEC2ResultTypeDef](#createenvironmentec2resulttypedef)
   - [CreateEnvironmentMembershipResultTypeDef](#createenvironmentmembershipresulttypedef)
   - [DescribeEnvironmentMembershipsResultTypeDef](#describeenvironmentmembershipsresulttypedef)

@@ -16,7 +16,7 @@ pip install mypy-boto3-emr
   - [Paginators](#paginators)
   - [Waiters](#waiters)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## EMRClient
 
@@ -207,7 +207,7 @@ from mypy_boto3_emr.literals import ActionOnFailure, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

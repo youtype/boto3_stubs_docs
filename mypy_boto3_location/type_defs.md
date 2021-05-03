@@ -1,11 +1,11 @@
-# Structures for boto3 LocationService module
+# Typed dictionaries for boto3 LocationService module
 
 > [Index](../README.md) > [LocationService](./README.md) > Structures
 
 Auto-generated documentation for [LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
 type annotations stubs module [mypy_boto3_location](https://pypi.org/project/mypy-boto3-location/).
 
-- [Structures for boto3 LocationService module](#structures-for-boto3-locationservice-module)
+- [Typed dictionaries for boto3 LocationService module](#typed-dictionaries-for-boto3-locationservice-module)
   - [BatchDeleteGeofenceErrorTypeDef](#batchdeletegeofenceerrortypedef)
   - [BatchDeleteGeofenceResponseTypeDef](#batchdeletegeofenceresponsetypedef)
   - [BatchEvaluateGeofencesErrorTypeDef](#batchevaluategeofenceserrortypedef)

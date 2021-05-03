@@ -18,13 +18,13 @@ Type annotations for `boto3.client("kms").get_paginator("list_aliases")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_kms.paginators import ListAliasesPaginator
+from mypy_boto3_kms.paginator import ListAliasesPaginator
 
 def get_list_aliases_paginator() -> ListAliasesPaginator:
     return boto3.client("kms").get_paginator("list_aliases")
 ```
 
-[Paginator.ListAliases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListAliases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListAliases)
 
 ```python
 class ListAliasesPaginator(Boto3Paginator):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("kms").get_paginator("list_grants")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_kms.paginators import ListGrantsPaginator
+from mypy_boto3_kms.paginator import ListGrantsPaginator
 
 def get_list_grants_paginator() -> ListGrantsPaginator:
     return boto3.client("kms").get_paginator("list_grants")
 ```
 
-[Paginator.ListGrants documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListGrants)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListGrants)
 
 ```python
 class ListGrantsPaginator(Boto3Paginator):
@@ -68,13 +68,13 @@ Type annotations for `boto3.client("kms").get_paginator("list_key_policies")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_kms.paginators import ListKeyPoliciesPaginator
+from mypy_boto3_kms.paginator import ListKeyPoliciesPaginator
 
 def get_list_key_policies_paginator() -> ListKeyPoliciesPaginator:
     return boto3.client("kms").get_paginator("list_key_policies")
 ```
 
-[Paginator.ListKeyPolicies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListKeyPolicies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListKeyPolicies)
 
 ```python
 class ListKeyPoliciesPaginator(Boto3Paginator):
@@ -92,13 +92,13 @@ Type annotations for `boto3.client("kms").get_paginator("list_keys")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_kms.paginators import ListKeysPaginator
+from mypy_boto3_kms.paginator import ListKeysPaginator
 
 def get_list_keys_paginator() -> ListKeysPaginator:
     return boto3.client("kms").get_paginator("list_keys")
 ```
 
-[Paginator.ListKeys documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListKeys)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListKeys)
 
 ```python
 class ListKeysPaginator(Boto3Paginator):

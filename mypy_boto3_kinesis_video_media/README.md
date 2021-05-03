@@ -14,7 +14,7 @@ pip install mypy-boto3-kinesis-video-media
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## KinesisVideoMediaClient
 
@@ -72,7 +72,7 @@ from mypy_boto3_kinesis_video_media.literals import StartSelectorType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

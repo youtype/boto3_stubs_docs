@@ -18,13 +18,13 @@ Type annotations for `boto3.client("cloudfront").get_paginator("list_cloud_front
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudfront.paginators import ListCloudFrontOriginAccessIdentitiesPaginator
+from mypy_boto3_cloudfront.paginator import ListCloudFrontOriginAccessIdentitiesPaginator
 
 def get_list_cloud_front_origin_access_identities_paginator() -> ListCloudFrontOriginAccessIdentitiesPaginator:
     return boto3.client("cloudfront").get_paginator("list_cloud_front_origin_access_identities")
 ```
 
-[Paginator.ListCloudFrontOriginAccessIdentities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Paginator.ListCloudFrontOriginAccessIdentities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Paginator.ListCloudFrontOriginAccessIdentities)
 
 ```python
 class ListCloudFrontOriginAccessIdentitiesPaginator(Boto3Paginator):
@@ -41,13 +41,13 @@ Type annotations for `boto3.client("cloudfront").get_paginator("list_distributio
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudfront.paginators import ListDistributionsPaginator
+from mypy_boto3_cloudfront.paginator import ListDistributionsPaginator
 
 def get_list_distributions_paginator() -> ListDistributionsPaginator:
     return boto3.client("cloudfront").get_paginator("list_distributions")
 ```
 
-[Paginator.ListDistributions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Paginator.ListDistributions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Paginator.ListDistributions)
 
 ```python
 class ListDistributionsPaginator(Boto3Paginator):
@@ -64,13 +64,13 @@ Type annotations for `boto3.client("cloudfront").get_paginator("list_invalidatio
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudfront.paginators import ListInvalidationsPaginator
+from mypy_boto3_cloudfront.paginator import ListInvalidationsPaginator
 
 def get_list_invalidations_paginator() -> ListInvalidationsPaginator:
     return boto3.client("cloudfront").get_paginator("list_invalidations")
 ```
 
-[Paginator.ListInvalidations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Paginator.ListInvalidations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Paginator.ListInvalidations)
 
 ```python
 class ListInvalidationsPaginator(Boto3Paginator):
@@ -88,13 +88,13 @@ Type annotations for `boto3.client("cloudfront").get_paginator("list_streaming_d
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudfront.paginators import ListStreamingDistributionsPaginator
+from mypy_boto3_cloudfront.paginator import ListStreamingDistributionsPaginator
 
 def get_list_streaming_distributions_paginator() -> ListStreamingDistributionsPaginator:
     return boto3.client("cloudfront").get_paginator("list_streaming_distributions")
 ```
 
-[Paginator.ListStreamingDistributions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Paginator.ListStreamingDistributions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Paginator.ListStreamingDistributions)
 
 ```python
 class ListStreamingDistributionsPaginator(Boto3Paginator):

@@ -15,7 +15,7 @@ pip install mypy-boto3-datapipeline
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## DataPipelineClient
 
@@ -110,7 +110,7 @@ from mypy_boto3_datapipeline.literals import DescribeObjectsPaginatorName, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

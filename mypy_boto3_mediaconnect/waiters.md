@@ -17,13 +17,13 @@ Type annotations for `boto3.client("mediaconnect").get_waiter("flow_active")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_mediaconnect.waiters import FlowActiveWaiter
+from mypy_boto3_mediaconnect.waiter import FlowActiveWaiter
 
 def get_flow_active_waiter() -> FlowActiveWaiter:
     return boto3.client("mediaconnect").get_waiter("flow_active")
 ```
 
-[Waiter.FlowActive documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Waiter.FlowActive)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Waiter.flow_active)
 
 ```python
 class FlowActiveWaiter(Boto3Waiter):
@@ -41,13 +41,13 @@ Type annotations for `boto3.client("mediaconnect").get_waiter("flow_deleted")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_mediaconnect.waiters import FlowDeletedWaiter
+from mypy_boto3_mediaconnect.waiter import FlowDeletedWaiter
 
 def get_flow_deleted_waiter() -> FlowDeletedWaiter:
     return boto3.client("mediaconnect").get_waiter("flow_deleted")
 ```
 
-[Waiter.FlowDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Waiter.FlowDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Waiter.flow_deleted)
 
 ```python
 class FlowDeletedWaiter(Boto3Waiter):
@@ -65,13 +65,13 @@ Type annotations for `boto3.client("mediaconnect").get_waiter("flow_standby")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_mediaconnect.waiters import FlowStandbyWaiter
+from mypy_boto3_mediaconnect.waiter import FlowStandbyWaiter
 
 def get_flow_standby_waiter() -> FlowStandbyWaiter:
     return boto3.client("mediaconnect").get_waiter("flow_standby")
 ```
 
-[Waiter.FlowStandby documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Waiter.FlowStandby)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Waiter.flow_standby)
 
 ```python
 class FlowStandbyWaiter(Boto3Waiter):

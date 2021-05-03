@@ -24,13 +24,13 @@ Type annotations for `boto3.client("iotthingsgraph").get_paginator("get_flow_tem
 Can be used directly:
 
 ```python
-from mypy_boto3_iotthingsgraph.paginators import GetFlowTemplateRevisionsPaginator
+from mypy_boto3_iotthingsgraph.paginator import GetFlowTemplateRevisionsPaginator
 
 def get_get_flow_template_revisions_paginator() -> GetFlowTemplateRevisionsPaginator:
     return boto3.client("iotthingsgraph").get_paginator("get_flow_template_revisions")
 ```
 
-[Paginator.GetFlowTemplateRevisions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.GetFlowTemplateRevisions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.GetFlowTemplateRevisions)
 
 ```python
 class GetFlowTemplateRevisionsPaginator(Boto3Paginator):
@@ -48,13 +48,13 @@ Type annotations for `boto3.client("iotthingsgraph").get_paginator("get_system_t
 Can be used directly:
 
 ```python
-from mypy_boto3_iotthingsgraph.paginators import GetSystemTemplateRevisionsPaginator
+from mypy_boto3_iotthingsgraph.paginator import GetSystemTemplateRevisionsPaginator
 
 def get_get_system_template_revisions_paginator() -> GetSystemTemplateRevisionsPaginator:
     return boto3.client("iotthingsgraph").get_paginator("get_system_template_revisions")
 ```
 
-[Paginator.GetSystemTemplateRevisions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.GetSystemTemplateRevisions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.GetSystemTemplateRevisions)
 
 ```python
 class GetSystemTemplateRevisionsPaginator(Boto3Paginator):
@@ -72,13 +72,13 @@ Type annotations for `boto3.client("iotthingsgraph").get_paginator("list_flow_ex
 Can be used directly:
 
 ```python
-from mypy_boto3_iotthingsgraph.paginators import ListFlowExecutionMessagesPaginator
+from mypy_boto3_iotthingsgraph.paginator import ListFlowExecutionMessagesPaginator
 
 def get_list_flow_execution_messages_paginator() -> ListFlowExecutionMessagesPaginator:
     return boto3.client("iotthingsgraph").get_paginator("list_flow_execution_messages")
 ```
 
-[Paginator.ListFlowExecutionMessages documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.ListFlowExecutionMessages)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.ListFlowExecutionMessages)
 
 ```python
 class ListFlowExecutionMessagesPaginator(Boto3Paginator):
@@ -96,13 +96,13 @@ Type annotations for `boto3.client("iotthingsgraph").get_paginator("list_tags_fo
 Can be used directly:
 
 ```python
-from mypy_boto3_iotthingsgraph.paginators import ListTagsForResourcePaginator
+from mypy_boto3_iotthingsgraph.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("iotthingsgraph").get_paginator("list_tags_for_resource")
 ```
 
-[Paginator.ListTagsForResource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.ListTagsForResource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):
@@ -120,13 +120,13 @@ Type annotations for `boto3.client("iotthingsgraph").get_paginator("search_entit
 Can be used directly:
 
 ```python
-from mypy_boto3_iotthingsgraph.paginators import SearchEntitiesPaginator
+from mypy_boto3_iotthingsgraph.paginator import SearchEntitiesPaginator
 
 def get_search_entities_paginator() -> SearchEntitiesPaginator:
     return boto3.client("iotthingsgraph").get_paginator("search_entities")
 ```
 
-[Paginator.SearchEntities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchEntities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchEntities)
 
 ```python
 class SearchEntitiesPaginator(Boto3Paginator):
@@ -146,13 +146,13 @@ Type annotations for `boto3.client("iotthingsgraph").get_paginator("search_flow_
 Can be used directly:
 
 ```python
-from mypy_boto3_iotthingsgraph.paginators import SearchFlowExecutionsPaginator
+from mypy_boto3_iotthingsgraph.paginator import SearchFlowExecutionsPaginator
 
 def get_search_flow_executions_paginator() -> SearchFlowExecutionsPaginator:
     return boto3.client("iotthingsgraph").get_paginator("search_flow_executions")
 ```
 
-[Paginator.SearchFlowExecutions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchFlowExecutions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchFlowExecutions)
 
 ```python
 class SearchFlowExecutionsPaginator(Boto3Paginator):
@@ -173,13 +173,13 @@ Type annotations for `boto3.client("iotthingsgraph").get_paginator("search_flow_
 Can be used directly:
 
 ```python
-from mypy_boto3_iotthingsgraph.paginators import SearchFlowTemplatesPaginator
+from mypy_boto3_iotthingsgraph.paginator import SearchFlowTemplatesPaginator
 
 def get_search_flow_templates_paginator() -> SearchFlowTemplatesPaginator:
     return boto3.client("iotthingsgraph").get_paginator("search_flow_templates")
 ```
 
-[Paginator.SearchFlowTemplates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchFlowTemplates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchFlowTemplates)
 
 ```python
 class SearchFlowTemplatesPaginator(Boto3Paginator):
@@ -197,13 +197,13 @@ Type annotations for `boto3.client("iotthingsgraph").get_paginator("search_syste
 Can be used directly:
 
 ```python
-from mypy_boto3_iotthingsgraph.paginators import SearchSystemInstancesPaginator
+from mypy_boto3_iotthingsgraph.paginator import SearchSystemInstancesPaginator
 
 def get_search_system_instances_paginator() -> SearchSystemInstancesPaginator:
     return boto3.client("iotthingsgraph").get_paginator("search_system_instances")
 ```
 
-[Paginator.SearchSystemInstances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchSystemInstances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchSystemInstances)
 
 ```python
 class SearchSystemInstancesPaginator(Boto3Paginator):
@@ -221,13 +221,13 @@ Type annotations for `boto3.client("iotthingsgraph").get_paginator("search_syste
 Can be used directly:
 
 ```python
-from mypy_boto3_iotthingsgraph.paginators import SearchSystemTemplatesPaginator
+from mypy_boto3_iotthingsgraph.paginator import SearchSystemTemplatesPaginator
 
 def get_search_system_templates_paginator() -> SearchSystemTemplatesPaginator:
     return boto3.client("iotthingsgraph").get_paginator("search_system_templates")
 ```
 
-[Paginator.SearchSystemTemplates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchSystemTemplates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchSystemTemplates)
 
 ```python
 class SearchSystemTemplatesPaginator(Boto3Paginator):
@@ -245,13 +245,13 @@ Type annotations for `boto3.client("iotthingsgraph").get_paginator("search_thing
 Can be used directly:
 
 ```python
-from mypy_boto3_iotthingsgraph.paginators import SearchThingsPaginator
+from mypy_boto3_iotthingsgraph.paginator import SearchThingsPaginator
 
 def get_search_things_paginator() -> SearchThingsPaginator:
     return boto3.client("iotthingsgraph").get_paginator("search_things")
 ```
 
-[Paginator.SearchThings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchThings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchThings)
 
 ```python
 class SearchThingsPaginator(Boto3Paginator):

@@ -1,11 +1,11 @@
-# Structures for boto3 SQS module
+# Typed dictionaries for boto3 SQS module
 
 > [Index](../README.md) > [SQS](./README.md) > Structures
 
 Auto-generated documentation for [SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
 type annotations stubs module [mypy_boto3_sqs](https://pypi.org/project/mypy-boto3-sqs/).
 
-- [Structures for boto3 SQS module](#structures-for-boto3-sqs-module)
+- [Typed dictionaries for boto3 SQS module](#typed-dictionaries-for-boto3-sqs-module)
   - [BatchResultErrorEntryTypeDef](#batchresulterrorentrytypedef)
   - [ChangeMessageVisibilityBatchRequestEntryTypeDef](#changemessagevisibilitybatchrequestentrytypedef)
   - [ChangeMessageVisibilityBatchResultEntryTypeDef](#changemessagevisibilitybatchresultentrytypedef)

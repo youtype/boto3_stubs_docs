@@ -14,7 +14,7 @@ pip install mypy-boto3-iot-jobs-data
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## IoTJobsDataPlaneClient
 
@@ -76,7 +76,7 @@ from mypy_boto3_iot_jobs_data.literals import JobExecutionStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

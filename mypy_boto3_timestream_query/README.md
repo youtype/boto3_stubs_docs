@@ -15,7 +15,7 @@ pip install mypy-boto3-timestream-query
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## TimestreamQueryClient
 
@@ -90,7 +90,7 @@ from mypy_boto3_timestream_query.literals import QueryPaginatorName, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

@@ -15,7 +15,7 @@ pip install mypy-boto3-fsx
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## FSxClient
 
@@ -145,7 +145,7 @@ from mypy_boto3_fsx.literals import AliasLifecycle, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

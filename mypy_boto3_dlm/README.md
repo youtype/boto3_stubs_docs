@@ -14,7 +14,7 @@ pip install mypy-boto3-dlm
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## DLMClient
 
@@ -86,7 +86,7 @@ from mypy_boto3_dlm.literals import EventSourceValues, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

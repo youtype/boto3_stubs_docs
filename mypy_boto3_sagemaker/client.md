@@ -255,7 +255,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_sagemaker.client import SageMakerClient
+
+def get_sagemaker_client() -> SageMakerClient:
+    return boto3.client("sagemaker")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client)
 
 ## Exceptions
 
@@ -286,7 +291,7 @@ Exceptions:
 
 Type annotations for `boto3.client("sagemaker").add_association` method.
 
-[Client.add_association documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.add_association)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.add_association]
 
 ```python
 def add_association(
@@ -302,7 +307,7 @@ def add_association(
 
 Type annotations for `boto3.client("sagemaker").add_tags` method.
 
-[Client.add_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.add_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.add_tags]
 
 ```python
 def add_tags(
@@ -317,7 +322,7 @@ def add_tags(
 
 Type annotations for `boto3.client("sagemaker").associate_trial_component` method.
 
-[Client.associate_trial_component documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.associate_trial_component)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.associate_trial_component]
 
 ```python
 def associate_trial_component(
@@ -332,7 +337,7 @@ def associate_trial_component(
 
 Type annotations for `boto3.client("sagemaker").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -346,7 +351,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("sagemaker").create_action` method.
 
-[Client.create_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_action]
 
 ```python
 def create_action(
@@ -367,7 +372,7 @@ def create_action(
 
 Type annotations for `boto3.client("sagemaker").create_algorithm` method.
 
-[Client.create_algorithm documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_algorithm)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_algorithm]
 
 ```python
 def create_algorithm(
@@ -387,7 +392,7 @@ def create_algorithm(
 
 Type annotations for `boto3.client("sagemaker").create_app` method.
 
-[Client.create_app documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_app)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_app]
 
 ```python
 def create_app(
@@ -406,7 +411,7 @@ def create_app(
 
 Type annotations for `boto3.client("sagemaker").create_app_image_config` method.
 
-[Client.create_app_image_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_app_image_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_app_image_config]
 
 ```python
 def create_app_image_config(
@@ -422,7 +427,7 @@ def create_app_image_config(
 
 Type annotations for `boto3.client("sagemaker").create_artifact` method.
 
-[Client.create_artifact documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_artifact)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_artifact]
 
 ```python
 def create_artifact(
@@ -441,7 +446,7 @@ def create_artifact(
 
 Type annotations for `boto3.client("sagemaker").create_auto_ml_job` method.
 
-[Client.create_auto_ml_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_auto_ml_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_auto_ml_job]
 
 ```python
 def create_auto_ml_job(
@@ -463,7 +468,7 @@ def create_auto_ml_job(
 
 Type annotations for `boto3.client("sagemaker").create_code_repository` method.
 
-[Client.create_code_repository documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_code_repository)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_code_repository]
 
 ```python
 def create_code_repository(
@@ -479,7 +484,7 @@ def create_code_repository(
 
 Type annotations for `boto3.client("sagemaker").create_compilation_job` method.
 
-[Client.create_compilation_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_compilation_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_compilation_job]
 
 ```python
 def create_compilation_job(
@@ -498,7 +503,7 @@ def create_compilation_job(
 
 Type annotations for `boto3.client("sagemaker").create_context` method.
 
-[Client.create_context documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_context)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_context]
 
 ```python
 def create_context(
@@ -517,7 +522,7 @@ def create_context(
 
 Type annotations for `boto3.client("sagemaker").create_data_quality_job_definition` method.
 
-[Client.create_data_quality_job_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_data_quality_job_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_data_quality_job_definition]
 
 ```python
 def create_data_quality_job_definition(
@@ -540,7 +545,7 @@ def create_data_quality_job_definition(
 
 Type annotations for `boto3.client("sagemaker").create_device_fleet` method.
 
-[Client.create_device_fleet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_device_fleet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_device_fleet]
 
 ```python
 def create_device_fleet(
@@ -558,7 +563,7 @@ def create_device_fleet(
 
 Type annotations for `boto3.client("sagemaker").create_domain` method.
 
-[Client.create_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_domain]
 
 ```python
 def create_domain(
@@ -580,7 +585,7 @@ def create_domain(
 
 Type annotations for `boto3.client("sagemaker").create_edge_packaging_job` method.
 
-[Client.create_edge_packaging_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_edge_packaging_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_edge_packaging_job]
 
 ```python
 def create_edge_packaging_job(
@@ -601,7 +606,7 @@ def create_edge_packaging_job(
 
 Type annotations for `boto3.client("sagemaker").create_endpoint` method.
 
-[Client.create_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_endpoint]
 
 ```python
 def create_endpoint(
@@ -617,7 +622,7 @@ def create_endpoint(
 
 Type annotations for `boto3.client("sagemaker").create_endpoint_config` method.
 
-[Client.create_endpoint_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_endpoint_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_endpoint_config]
 
 ```python
 def create_endpoint_config(
@@ -635,7 +640,7 @@ def create_endpoint_config(
 
 Type annotations for `boto3.client("sagemaker").create_experiment` method.
 
-[Client.create_experiment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_experiment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_experiment]
 
 ```python
 def create_experiment(
@@ -652,7 +657,7 @@ def create_experiment(
 
 Type annotations for `boto3.client("sagemaker").create_feature_group` method.
 
-[Client.create_feature_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_feature_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_feature_group]
 
 ```python
 def create_feature_group(
@@ -674,7 +679,7 @@ def create_feature_group(
 
 Type annotations for `boto3.client("sagemaker").create_flow_definition` method.
 
-[Client.create_flow_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_flow_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_flow_definition]
 
 ```python
 def create_flow_definition(
@@ -694,7 +699,7 @@ def create_flow_definition(
 
 Type annotations for `boto3.client("sagemaker").create_human_task_ui` method.
 
-[Client.create_human_task_ui documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_human_task_ui)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_human_task_ui]
 
 ```python
 def create_human_task_ui(
@@ -710,7 +715,7 @@ def create_human_task_ui(
 
 Type annotations for `boto3.client("sagemaker").create_hyper_parameter_tuning_job` method.
 
-[Client.create_hyper_parameter_tuning_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_hyper_parameter_tuning_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_hyper_parameter_tuning_job]
 
 ```python
 def create_hyper_parameter_tuning_job(
@@ -729,7 +734,7 @@ def create_hyper_parameter_tuning_job(
 
 Type annotations for `boto3.client("sagemaker").create_image` method.
 
-[Client.create_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_image]
 
 ```python
 def create_image(
@@ -747,7 +752,7 @@ def create_image(
 
 Type annotations for `boto3.client("sagemaker").create_image_version` method.
 
-[Client.create_image_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_image_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_image_version]
 
 ```python
 def create_image_version(
@@ -763,7 +768,7 @@ def create_image_version(
 
 Type annotations for `boto3.client("sagemaker").create_labeling_job` method.
 
-[Client.create_labeling_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_labeling_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_labeling_job]
 
 ```python
 def create_labeling_job(
@@ -786,7 +791,7 @@ def create_labeling_job(
 
 Type annotations for `boto3.client("sagemaker").create_model` method.
 
-[Client.create_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model]
 
 ```python
 def create_model(
@@ -807,7 +812,7 @@ def create_model(
 
 Type annotations for `boto3.client("sagemaker").create_model_bias_job_definition` method.
 
-[Client.create_model_bias_job_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_bias_job_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_bias_job_definition]
 
 ```python
 def create_model_bias_job_definition(
@@ -830,7 +835,7 @@ def create_model_bias_job_definition(
 
 Type annotations for `boto3.client("sagemaker").create_model_explainability_job_definition` method.
 
-[Client.create_model_explainability_job_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_explainability_job_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_explainability_job_definition]
 
 ```python
 def create_model_explainability_job_definition(
@@ -853,7 +858,7 @@ def create_model_explainability_job_definition(
 
 Type annotations for `boto3.client("sagemaker").create_model_package` method.
 
-[Client.create_model_package documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_package)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_package]
 
 ```python
 def create_model_package(
@@ -878,7 +883,7 @@ def create_model_package(
 
 Type annotations for `boto3.client("sagemaker").create_model_package_group` method.
 
-[Client.create_model_package_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_package_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_package_group]
 
 ```python
 def create_model_package_group(
@@ -894,7 +899,7 @@ def create_model_package_group(
 
 Type annotations for `boto3.client("sagemaker").create_model_quality_job_definition` method.
 
-[Client.create_model_quality_job_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_quality_job_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_quality_job_definition]
 
 ```python
 def create_model_quality_job_definition(
@@ -917,7 +922,7 @@ def create_model_quality_job_definition(
 
 Type annotations for `boto3.client("sagemaker").create_monitoring_schedule` method.
 
-[Client.create_monitoring_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_monitoring_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_monitoring_schedule]
 
 ```python
 def create_monitoring_schedule(
@@ -933,7 +938,7 @@ def create_monitoring_schedule(
 
 Type annotations for `boto3.client("sagemaker").create_notebook_instance` method.
 
-[Client.create_notebook_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_notebook_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_notebook_instance]
 
 ```python
 def create_notebook_instance(
@@ -960,7 +965,7 @@ def create_notebook_instance(
 
 Type annotations for `boto3.client("sagemaker").create_notebook_instance_lifecycle_config` method.
 
-[Client.create_notebook_instance_lifecycle_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_notebook_instance_lifecycle_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_notebook_instance_lifecycle_config]
 
 ```python
 def create_notebook_instance_lifecycle_config(
@@ -976,7 +981,7 @@ def create_notebook_instance_lifecycle_config(
 
 Type annotations for `boto3.client("sagemaker").create_pipeline` method.
 
-[Client.create_pipeline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_pipeline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_pipeline]
 
 ```python
 def create_pipeline(
@@ -996,7 +1001,7 @@ def create_pipeline(
 
 Type annotations for `boto3.client("sagemaker").create_presigned_domain_url` method.
 
-[Client.create_presigned_domain_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_presigned_domain_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_presigned_domain_url]
 
 ```python
 def create_presigned_domain_url(
@@ -1013,7 +1018,7 @@ def create_presigned_domain_url(
 
 Type annotations for `boto3.client("sagemaker").create_presigned_notebook_instance_url` method.
 
-[Client.create_presigned_notebook_instance_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_presigned_notebook_instance_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_presigned_notebook_instance_url]
 
 ```python
 def create_presigned_notebook_instance_url(
@@ -1028,7 +1033,7 @@ def create_presigned_notebook_instance_url(
 
 Type annotations for `boto3.client("sagemaker").create_processing_job` method.
 
-[Client.create_processing_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_processing_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_processing_job]
 
 ```python
 def create_processing_job(
@@ -1052,7 +1057,7 @@ def create_processing_job(
 
 Type annotations for `boto3.client("sagemaker").create_project` method.
 
-[Client.create_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_project]
 
 ```python
 def create_project(
@@ -1069,7 +1074,7 @@ def create_project(
 
 Type annotations for `boto3.client("sagemaker").create_training_job` method.
 
-[Client.create_training_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_training_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_training_job]
 
 ```python
 def create_training_job(
@@ -1103,7 +1108,7 @@ def create_training_job(
 
 Type annotations for `boto3.client("sagemaker").create_transform_job` method.
 
-[Client.create_transform_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_transform_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_transform_job]
 
 ```python
 def create_transform_job(
@@ -1129,7 +1134,7 @@ def create_transform_job(
 
 Type annotations for `boto3.client("sagemaker").create_trial` method.
 
-[Client.create_trial documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_trial)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_trial]
 
 ```python
 def create_trial(
@@ -1147,7 +1152,7 @@ def create_trial(
 
 Type annotations for `boto3.client("sagemaker").create_trial_component` method.
 
-[Client.create_trial_component documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_trial_component)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_trial_component]
 
 ```python
 def create_trial_component(
@@ -1170,7 +1175,7 @@ def create_trial_component(
 
 Type annotations for `boto3.client("sagemaker").create_user_profile` method.
 
-[Client.create_user_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_user_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_user_profile]
 
 ```python
 def create_user_profile(
@@ -1189,7 +1194,7 @@ def create_user_profile(
 
 Type annotations for `boto3.client("sagemaker").create_workforce` method.
 
-[Client.create_workforce documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_workforce)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_workforce]
 
 ```python
 def create_workforce(
@@ -1207,7 +1212,7 @@ def create_workforce(
 
 Type annotations for `boto3.client("sagemaker").create_workteam` method.
 
-[Client.create_workteam documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_workteam)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_workteam]
 
 ```python
 def create_workteam(
@@ -1226,7 +1231,7 @@ def create_workteam(
 
 Type annotations for `boto3.client("sagemaker").delete_action` method.
 
-[Client.delete_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_action]
 
 ```python
 def delete_action(
@@ -1240,7 +1245,7 @@ def delete_action(
 
 Type annotations for `boto3.client("sagemaker").delete_algorithm` method.
 
-[Client.delete_algorithm documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_algorithm)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_algorithm]
 
 ```python
 def delete_algorithm(
@@ -1254,7 +1259,7 @@ def delete_algorithm(
 
 Type annotations for `boto3.client("sagemaker").delete_app` method.
 
-[Client.delete_app documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_app)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_app]
 
 ```python
 def delete_app(
@@ -1271,7 +1276,7 @@ def delete_app(
 
 Type annotations for `boto3.client("sagemaker").delete_app_image_config` method.
 
-[Client.delete_app_image_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_app_image_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_app_image_config]
 
 ```python
 def delete_app_image_config(
@@ -1285,7 +1290,7 @@ def delete_app_image_config(
 
 Type annotations for `boto3.client("sagemaker").delete_artifact` method.
 
-[Client.delete_artifact documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_artifact)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_artifact]
 
 ```python
 def delete_artifact(
@@ -1300,7 +1305,7 @@ def delete_artifact(
 
 Type annotations for `boto3.client("sagemaker").delete_association` method.
 
-[Client.delete_association documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_association)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_association]
 
 ```python
 def delete_association(
@@ -1315,7 +1320,7 @@ def delete_association(
 
 Type annotations for `boto3.client("sagemaker").delete_code_repository` method.
 
-[Client.delete_code_repository documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_code_repository)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_code_repository]
 
 ```python
 def delete_code_repository(
@@ -1329,7 +1334,7 @@ def delete_code_repository(
 
 Type annotations for `boto3.client("sagemaker").delete_context` method.
 
-[Client.delete_context documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_context)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_context]
 
 ```python
 def delete_context(
@@ -1343,7 +1348,7 @@ def delete_context(
 
 Type annotations for `boto3.client("sagemaker").delete_data_quality_job_definition` method.
 
-[Client.delete_data_quality_job_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_data_quality_job_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_data_quality_job_definition]
 
 ```python
 def delete_data_quality_job_definition(
@@ -1357,7 +1362,7 @@ def delete_data_quality_job_definition(
 
 Type annotations for `boto3.client("sagemaker").delete_device_fleet` method.
 
-[Client.delete_device_fleet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_device_fleet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_device_fleet]
 
 ```python
 def delete_device_fleet(
@@ -1371,7 +1376,7 @@ def delete_device_fleet(
 
 Type annotations for `boto3.client("sagemaker").delete_domain` method.
 
-[Client.delete_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_domain]
 
 ```python
 def delete_domain(
@@ -1386,7 +1391,7 @@ def delete_domain(
 
 Type annotations for `boto3.client("sagemaker").delete_endpoint` method.
 
-[Client.delete_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_endpoint]
 
 ```python
 def delete_endpoint(
@@ -1400,7 +1405,7 @@ def delete_endpoint(
 
 Type annotations for `boto3.client("sagemaker").delete_endpoint_config` method.
 
-[Client.delete_endpoint_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_endpoint_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_endpoint_config]
 
 ```python
 def delete_endpoint_config(
@@ -1414,7 +1419,7 @@ def delete_endpoint_config(
 
 Type annotations for `boto3.client("sagemaker").delete_experiment` method.
 
-[Client.delete_experiment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_experiment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_experiment]
 
 ```python
 def delete_experiment(
@@ -1428,7 +1433,7 @@ def delete_experiment(
 
 Type annotations for `boto3.client("sagemaker").delete_feature_group` method.
 
-[Client.delete_feature_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_feature_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_feature_group]
 
 ```python
 def delete_feature_group(
@@ -1442,7 +1447,7 @@ def delete_feature_group(
 
 Type annotations for `boto3.client("sagemaker").delete_flow_definition` method.
 
-[Client.delete_flow_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_flow_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_flow_definition]
 
 ```python
 def delete_flow_definition(
@@ -1456,7 +1461,7 @@ def delete_flow_definition(
 
 Type annotations for `boto3.client("sagemaker").delete_human_task_ui` method.
 
-[Client.delete_human_task_ui documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_human_task_ui)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_human_task_ui]
 
 ```python
 def delete_human_task_ui(
@@ -1470,7 +1475,7 @@ def delete_human_task_ui(
 
 Type annotations for `boto3.client("sagemaker").delete_image` method.
 
-[Client.delete_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_image]
 
 ```python
 def delete_image(
@@ -1484,7 +1489,7 @@ def delete_image(
 
 Type annotations for `boto3.client("sagemaker").delete_image_version` method.
 
-[Client.delete_image_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_image_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_image_version]
 
 ```python
 def delete_image_version(
@@ -1499,7 +1504,7 @@ def delete_image_version(
 
 Type annotations for `boto3.client("sagemaker").delete_model` method.
 
-[Client.delete_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model]
 
 ```python
 def delete_model(
@@ -1513,7 +1518,7 @@ def delete_model(
 
 Type annotations for `boto3.client("sagemaker").delete_model_bias_job_definition` method.
 
-[Client.delete_model_bias_job_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_bias_job_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_bias_job_definition]
 
 ```python
 def delete_model_bias_job_definition(
@@ -1527,7 +1532,7 @@ def delete_model_bias_job_definition(
 
 Type annotations for `boto3.client("sagemaker").delete_model_explainability_job_definition` method.
 
-[Client.delete_model_explainability_job_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_explainability_job_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_explainability_job_definition]
 
 ```python
 def delete_model_explainability_job_definition(
@@ -1541,7 +1546,7 @@ def delete_model_explainability_job_definition(
 
 Type annotations for `boto3.client("sagemaker").delete_model_package` method.
 
-[Client.delete_model_package documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_package)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_package]
 
 ```python
 def delete_model_package(
@@ -1555,7 +1560,7 @@ def delete_model_package(
 
 Type annotations for `boto3.client("sagemaker").delete_model_package_group` method.
 
-[Client.delete_model_package_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_package_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_package_group]
 
 ```python
 def delete_model_package_group(
@@ -1569,7 +1574,7 @@ def delete_model_package_group(
 
 Type annotations for `boto3.client("sagemaker").delete_model_package_group_policy` method.
 
-[Client.delete_model_package_group_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_package_group_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_package_group_policy]
 
 ```python
 def delete_model_package_group_policy(
@@ -1583,7 +1588,7 @@ def delete_model_package_group_policy(
 
 Type annotations for `boto3.client("sagemaker").delete_model_quality_job_definition` method.
 
-[Client.delete_model_quality_job_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_quality_job_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_quality_job_definition]
 
 ```python
 def delete_model_quality_job_definition(
@@ -1597,7 +1602,7 @@ def delete_model_quality_job_definition(
 
 Type annotations for `boto3.client("sagemaker").delete_monitoring_schedule` method.
 
-[Client.delete_monitoring_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_monitoring_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_monitoring_schedule]
 
 ```python
 def delete_monitoring_schedule(
@@ -1611,7 +1616,7 @@ def delete_monitoring_schedule(
 
 Type annotations for `boto3.client("sagemaker").delete_notebook_instance` method.
 
-[Client.delete_notebook_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_notebook_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_notebook_instance]
 
 ```python
 def delete_notebook_instance(
@@ -1625,7 +1630,7 @@ def delete_notebook_instance(
 
 Type annotations for `boto3.client("sagemaker").delete_notebook_instance_lifecycle_config` method.
 
-[Client.delete_notebook_instance_lifecycle_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_notebook_instance_lifecycle_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_notebook_instance_lifecycle_config]
 
 ```python
 def delete_notebook_instance_lifecycle_config(
@@ -1639,7 +1644,7 @@ def delete_notebook_instance_lifecycle_config(
 
 Type annotations for `boto3.client("sagemaker").delete_pipeline` method.
 
-[Client.delete_pipeline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_pipeline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_pipeline]
 
 ```python
 def delete_pipeline(
@@ -1654,7 +1659,7 @@ def delete_pipeline(
 
 Type annotations for `boto3.client("sagemaker").delete_project` method.
 
-[Client.delete_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_project]
 
 ```python
 def delete_project(
@@ -1668,7 +1673,7 @@ def delete_project(
 
 Type annotations for `boto3.client("sagemaker").delete_tags` method.
 
-[Client.delete_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_tags]
 
 ```python
 def delete_tags(
@@ -1683,7 +1688,7 @@ def delete_tags(
 
 Type annotations for `boto3.client("sagemaker").delete_trial` method.
 
-[Client.delete_trial documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_trial)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_trial]
 
 ```python
 def delete_trial(
@@ -1697,7 +1702,7 @@ def delete_trial(
 
 Type annotations for `boto3.client("sagemaker").delete_trial_component` method.
 
-[Client.delete_trial_component documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_trial_component)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_trial_component]
 
 ```python
 def delete_trial_component(
@@ -1711,7 +1716,7 @@ def delete_trial_component(
 
 Type annotations for `boto3.client("sagemaker").delete_user_profile` method.
 
-[Client.delete_user_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_user_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_user_profile]
 
 ```python
 def delete_user_profile(
@@ -1726,7 +1731,7 @@ def delete_user_profile(
 
 Type annotations for `boto3.client("sagemaker").delete_workforce` method.
 
-[Client.delete_workforce documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_workforce)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_workforce]
 
 ```python
 def delete_workforce(
@@ -1740,7 +1745,7 @@ def delete_workforce(
 
 Type annotations for `boto3.client("sagemaker").delete_workteam` method.
 
-[Client.delete_workteam documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_workteam)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_workteam]
 
 ```python
 def delete_workteam(
@@ -1754,7 +1759,7 @@ def delete_workteam(
 
 Type annotations for `boto3.client("sagemaker").deregister_devices` method.
 
-[Client.deregister_devices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.deregister_devices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.deregister_devices]
 
 ```python
 def deregister_devices(
@@ -1769,7 +1774,7 @@ def deregister_devices(
 
 Type annotations for `boto3.client("sagemaker").describe_action` method.
 
-[Client.describe_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_action]
 
 ```python
 def describe_action(
@@ -1783,7 +1788,7 @@ def describe_action(
 
 Type annotations for `boto3.client("sagemaker").describe_algorithm` method.
 
-[Client.describe_algorithm documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_algorithm)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_algorithm]
 
 ```python
 def describe_algorithm(
@@ -1797,7 +1802,7 @@ def describe_algorithm(
 
 Type annotations for `boto3.client("sagemaker").describe_app` method.
 
-[Client.describe_app documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_app)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_app]
 
 ```python
 def describe_app(
@@ -1814,7 +1819,7 @@ def describe_app(
 
 Type annotations for `boto3.client("sagemaker").describe_app_image_config` method.
 
-[Client.describe_app_image_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_app_image_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_app_image_config]
 
 ```python
 def describe_app_image_config(
@@ -1828,7 +1833,7 @@ def describe_app_image_config(
 
 Type annotations for `boto3.client("sagemaker").describe_artifact` method.
 
-[Client.describe_artifact documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_artifact)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_artifact]
 
 ```python
 def describe_artifact(
@@ -1842,7 +1847,7 @@ def describe_artifact(
 
 Type annotations for `boto3.client("sagemaker").describe_auto_ml_job` method.
 
-[Client.describe_auto_ml_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_auto_ml_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_auto_ml_job]
 
 ```python
 def describe_auto_ml_job(
@@ -1856,7 +1861,7 @@ def describe_auto_ml_job(
 
 Type annotations for `boto3.client("sagemaker").describe_code_repository` method.
 
-[Client.describe_code_repository documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_code_repository)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_code_repository]
 
 ```python
 def describe_code_repository(
@@ -1870,7 +1875,7 @@ def describe_code_repository(
 
 Type annotations for `boto3.client("sagemaker").describe_compilation_job` method.
 
-[Client.describe_compilation_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_compilation_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_compilation_job]
 
 ```python
 def describe_compilation_job(
@@ -1884,7 +1889,7 @@ def describe_compilation_job(
 
 Type annotations for `boto3.client("sagemaker").describe_context` method.
 
-[Client.describe_context documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_context)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_context]
 
 ```python
 def describe_context(
@@ -1898,7 +1903,7 @@ def describe_context(
 
 Type annotations for `boto3.client("sagemaker").describe_data_quality_job_definition` method.
 
-[Client.describe_data_quality_job_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_data_quality_job_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_data_quality_job_definition]
 
 ```python
 def describe_data_quality_job_definition(
@@ -1912,7 +1917,7 @@ def describe_data_quality_job_definition(
 
 Type annotations for `boto3.client("sagemaker").describe_device` method.
 
-[Client.describe_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_device]
 
 ```python
 def describe_device(
@@ -1928,7 +1933,7 @@ def describe_device(
 
 Type annotations for `boto3.client("sagemaker").describe_device_fleet` method.
 
-[Client.describe_device_fleet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_device_fleet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_device_fleet]
 
 ```python
 def describe_device_fleet(
@@ -1942,7 +1947,7 @@ def describe_device_fleet(
 
 Type annotations for `boto3.client("sagemaker").describe_domain` method.
 
-[Client.describe_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_domain]
 
 ```python
 def describe_domain(
@@ -1956,7 +1961,7 @@ def describe_domain(
 
 Type annotations for `boto3.client("sagemaker").describe_edge_packaging_job` method.
 
-[Client.describe_edge_packaging_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_edge_packaging_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_edge_packaging_job]
 
 ```python
 def describe_edge_packaging_job(
@@ -1970,7 +1975,7 @@ def describe_edge_packaging_job(
 
 Type annotations for `boto3.client("sagemaker").describe_endpoint` method.
 
-[Client.describe_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_endpoint]
 
 ```python
 def describe_endpoint(
@@ -1984,7 +1989,7 @@ def describe_endpoint(
 
 Type annotations for `boto3.client("sagemaker").describe_endpoint_config` method.
 
-[Client.describe_endpoint_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_endpoint_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_endpoint_config]
 
 ```python
 def describe_endpoint_config(
@@ -1998,7 +2003,7 @@ def describe_endpoint_config(
 
 Type annotations for `boto3.client("sagemaker").describe_experiment` method.
 
-[Client.describe_experiment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_experiment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_experiment]
 
 ```python
 def describe_experiment(
@@ -2012,7 +2017,7 @@ def describe_experiment(
 
 Type annotations for `boto3.client("sagemaker").describe_feature_group` method.
 
-[Client.describe_feature_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_feature_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_feature_group]
 
 ```python
 def describe_feature_group(
@@ -2027,7 +2032,7 @@ def describe_feature_group(
 
 Type annotations for `boto3.client("sagemaker").describe_flow_definition` method.
 
-[Client.describe_flow_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_flow_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_flow_definition]
 
 ```python
 def describe_flow_definition(
@@ -2041,7 +2046,7 @@ def describe_flow_definition(
 
 Type annotations for `boto3.client("sagemaker").describe_human_task_ui` method.
 
-[Client.describe_human_task_ui documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_human_task_ui)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_human_task_ui]
 
 ```python
 def describe_human_task_ui(
@@ -2055,7 +2060,7 @@ def describe_human_task_ui(
 
 Type annotations for `boto3.client("sagemaker").describe_hyper_parameter_tuning_job` method.
 
-[Client.describe_hyper_parameter_tuning_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_hyper_parameter_tuning_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_hyper_parameter_tuning_job]
 
 ```python
 def describe_hyper_parameter_tuning_job(
@@ -2069,7 +2074,7 @@ def describe_hyper_parameter_tuning_job(
 
 Type annotations for `boto3.client("sagemaker").describe_image` method.
 
-[Client.describe_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_image]
 
 ```python
 def describe_image(
@@ -2083,7 +2088,7 @@ def describe_image(
 
 Type annotations for `boto3.client("sagemaker").describe_image_version` method.
 
-[Client.describe_image_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_image_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_image_version]
 
 ```python
 def describe_image_version(
@@ -2098,7 +2103,7 @@ def describe_image_version(
 
 Type annotations for `boto3.client("sagemaker").describe_labeling_job` method.
 
-[Client.describe_labeling_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_labeling_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_labeling_job]
 
 ```python
 def describe_labeling_job(
@@ -2112,7 +2117,7 @@ def describe_labeling_job(
 
 Type annotations for `boto3.client("sagemaker").describe_model` method.
 
-[Client.describe_model documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model]
 
 ```python
 def describe_model(
@@ -2126,7 +2131,7 @@ def describe_model(
 
 Type annotations for `boto3.client("sagemaker").describe_model_bias_job_definition` method.
 
-[Client.describe_model_bias_job_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_bias_job_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_bias_job_definition]
 
 ```python
 def describe_model_bias_job_definition(
@@ -2140,7 +2145,7 @@ def describe_model_bias_job_definition(
 
 Type annotations for `boto3.client("sagemaker").describe_model_explainability_job_definition` method.
 
-[Client.describe_model_explainability_job_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_explainability_job_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_explainability_job_definition]
 
 ```python
 def describe_model_explainability_job_definition(
@@ -2154,7 +2159,7 @@ def describe_model_explainability_job_definition(
 
 Type annotations for `boto3.client("sagemaker").describe_model_package` method.
 
-[Client.describe_model_package documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_package)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_package]
 
 ```python
 def describe_model_package(
@@ -2168,7 +2173,7 @@ def describe_model_package(
 
 Type annotations for `boto3.client("sagemaker").describe_model_package_group` method.
 
-[Client.describe_model_package_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_package_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_package_group]
 
 ```python
 def describe_model_package_group(
@@ -2182,7 +2187,7 @@ def describe_model_package_group(
 
 Type annotations for `boto3.client("sagemaker").describe_model_quality_job_definition` method.
 
-[Client.describe_model_quality_job_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_quality_job_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_quality_job_definition]
 
 ```python
 def describe_model_quality_job_definition(
@@ -2196,7 +2201,7 @@ def describe_model_quality_job_definition(
 
 Type annotations for `boto3.client("sagemaker").describe_monitoring_schedule` method.
 
-[Client.describe_monitoring_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_monitoring_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_monitoring_schedule]
 
 ```python
 def describe_monitoring_schedule(
@@ -2210,7 +2215,7 @@ def describe_monitoring_schedule(
 
 Type annotations for `boto3.client("sagemaker").describe_notebook_instance` method.
 
-[Client.describe_notebook_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_notebook_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_notebook_instance]
 
 ```python
 def describe_notebook_instance(
@@ -2224,7 +2229,7 @@ def describe_notebook_instance(
 
 Type annotations for `boto3.client("sagemaker").describe_notebook_instance_lifecycle_config` method.
 
-[Client.describe_notebook_instance_lifecycle_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_notebook_instance_lifecycle_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_notebook_instance_lifecycle_config]
 
 ```python
 def describe_notebook_instance_lifecycle_config(
@@ -2238,7 +2243,7 @@ def describe_notebook_instance_lifecycle_config(
 
 Type annotations for `boto3.client("sagemaker").describe_pipeline` method.
 
-[Client.describe_pipeline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_pipeline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_pipeline]
 
 ```python
 def describe_pipeline(
@@ -2252,7 +2257,7 @@ def describe_pipeline(
 
 Type annotations for `boto3.client("sagemaker").describe_pipeline_definition_for_execution` method.
 
-[Client.describe_pipeline_definition_for_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_pipeline_definition_for_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_pipeline_definition_for_execution]
 
 ```python
 def describe_pipeline_definition_for_execution(
@@ -2266,7 +2271,7 @@ def describe_pipeline_definition_for_execution(
 
 Type annotations for `boto3.client("sagemaker").describe_pipeline_execution` method.
 
-[Client.describe_pipeline_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_pipeline_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_pipeline_execution]
 
 ```python
 def describe_pipeline_execution(
@@ -2280,7 +2285,7 @@ def describe_pipeline_execution(
 
 Type annotations for `boto3.client("sagemaker").describe_processing_job` method.
 
-[Client.describe_processing_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_processing_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_processing_job]
 
 ```python
 def describe_processing_job(
@@ -2294,7 +2299,7 @@ def describe_processing_job(
 
 Type annotations for `boto3.client("sagemaker").describe_project` method.
 
-[Client.describe_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_project]
 
 ```python
 def describe_project(
@@ -2308,7 +2313,7 @@ def describe_project(
 
 Type annotations for `boto3.client("sagemaker").describe_subscribed_workteam` method.
 
-[Client.describe_subscribed_workteam documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_subscribed_workteam)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_subscribed_workteam]
 
 ```python
 def describe_subscribed_workteam(
@@ -2322,7 +2327,7 @@ def describe_subscribed_workteam(
 
 Type annotations for `boto3.client("sagemaker").describe_training_job` method.
 
-[Client.describe_training_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_training_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_training_job]
 
 ```python
 def describe_training_job(
@@ -2336,7 +2341,7 @@ def describe_training_job(
 
 Type annotations for `boto3.client("sagemaker").describe_transform_job` method.
 
-[Client.describe_transform_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_transform_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_transform_job]
 
 ```python
 def describe_transform_job(
@@ -2350,7 +2355,7 @@ def describe_transform_job(
 
 Type annotations for `boto3.client("sagemaker").describe_trial` method.
 
-[Client.describe_trial documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_trial)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_trial]
 
 ```python
 def describe_trial(
@@ -2364,7 +2369,7 @@ def describe_trial(
 
 Type annotations for `boto3.client("sagemaker").describe_trial_component` method.
 
-[Client.describe_trial_component documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_trial_component)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_trial_component]
 
 ```python
 def describe_trial_component(
@@ -2378,7 +2383,7 @@ def describe_trial_component(
 
 Type annotations for `boto3.client("sagemaker").describe_user_profile` method.
 
-[Client.describe_user_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_user_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_user_profile]
 
 ```python
 def describe_user_profile(
@@ -2393,7 +2398,7 @@ def describe_user_profile(
 
 Type annotations for `boto3.client("sagemaker").describe_workforce` method.
 
-[Client.describe_workforce documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_workforce)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_workforce]
 
 ```python
 def describe_workforce(
@@ -2407,7 +2412,7 @@ def describe_workforce(
 
 Type annotations for `boto3.client("sagemaker").describe_workteam` method.
 
-[Client.describe_workteam documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_workteam)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_workteam]
 
 ```python
 def describe_workteam(
@@ -2421,7 +2426,7 @@ def describe_workteam(
 
 Type annotations for `boto3.client("sagemaker").disable_sagemaker_servicecatalog_portfolio` method.
 
-[Client.disable_sagemaker_servicecatalog_portfolio documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.disable_sagemaker_servicecatalog_portfolio)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.disable_sagemaker_servicecatalog_portfolio]
 
 ```python
 def disable_sagemaker_servicecatalog_portfolio(
@@ -2434,7 +2439,7 @@ def disable_sagemaker_servicecatalog_portfolio(
 
 Type annotations for `boto3.client("sagemaker").disassociate_trial_component` method.
 
-[Client.disassociate_trial_component documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.disassociate_trial_component)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.disassociate_trial_component]
 
 ```python
 def disassociate_trial_component(
@@ -2449,7 +2454,7 @@ def disassociate_trial_component(
 
 Type annotations for `boto3.client("sagemaker").enable_sagemaker_servicecatalog_portfolio` method.
 
-[Client.enable_sagemaker_servicecatalog_portfolio documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.enable_sagemaker_servicecatalog_portfolio)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.enable_sagemaker_servicecatalog_portfolio]
 
 ```python
 def enable_sagemaker_servicecatalog_portfolio(
@@ -2462,7 +2467,7 @@ def enable_sagemaker_servicecatalog_portfolio(
 
 Type annotations for `boto3.client("sagemaker").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -2479,7 +2484,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("sagemaker").get_device_fleet_report` method.
 
-[Client.get_device_fleet_report documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_device_fleet_report)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_device_fleet_report]
 
 ```python
 def get_device_fleet_report(
@@ -2493,7 +2498,7 @@ def get_device_fleet_report(
 
 Type annotations for `boto3.client("sagemaker").get_model_package_group_policy` method.
 
-[Client.get_model_package_group_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_model_package_group_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_model_package_group_policy]
 
 ```python
 def get_model_package_group_policy(
@@ -2507,7 +2512,7 @@ def get_model_package_group_policy(
 
 Type annotations for `boto3.client("sagemaker").get_sagemaker_servicecatalog_portfolio_status` method.
 
-[Client.get_sagemaker_servicecatalog_portfolio_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_sagemaker_servicecatalog_portfolio_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_sagemaker_servicecatalog_portfolio_status]
 
 ```python
 def get_sagemaker_servicecatalog_portfolio_status(
@@ -2520,7 +2525,7 @@ def get_sagemaker_servicecatalog_portfolio_status(
 
 Type annotations for `boto3.client("sagemaker").get_search_suggestions` method.
 
-[Client.get_search_suggestions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_search_suggestions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_search_suggestions]
 
 ```python
 def get_search_suggestions(
@@ -2535,7 +2540,7 @@ def get_search_suggestions(
 
 Type annotations for `boto3.client("sagemaker").list_actions` method.
 
-[Client.list_actions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_actions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_actions]
 
 ```python
 def list_actions(
@@ -2556,7 +2561,7 @@ def list_actions(
 
 Type annotations for `boto3.client("sagemaker").list_algorithms` method.
 
-[Client.list_algorithms documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_algorithms)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_algorithms]
 
 ```python
 def list_algorithms(
@@ -2576,7 +2581,7 @@ def list_algorithms(
 
 Type annotations for `boto3.client("sagemaker").list_app_image_configs` method.
 
-[Client.list_app_image_configs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_app_image_configs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_app_image_configs]
 
 ```python
 def list_app_image_configs(
@@ -2598,7 +2603,7 @@ def list_app_image_configs(
 
 Type annotations for `boto3.client("sagemaker").list_apps` method.
 
-[Client.list_apps documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_apps)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_apps]
 
 ```python
 def list_apps(
@@ -2617,7 +2622,7 @@ def list_apps(
 
 Type annotations for `boto3.client("sagemaker").list_artifacts` method.
 
-[Client.list_artifacts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_artifacts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_artifacts]
 
 ```python
 def list_artifacts(
@@ -2638,7 +2643,7 @@ def list_artifacts(
 
 Type annotations for `boto3.client("sagemaker").list_associations` method.
 
-[Client.list_associations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_associations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_associations]
 
 ```python
 def list_associations(
@@ -2662,7 +2667,7 @@ def list_associations(
 
 Type annotations for `boto3.client("sagemaker").list_auto_ml_jobs` method.
 
-[Client.list_auto_ml_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_auto_ml_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_auto_ml_jobs]
 
 ```python
 def list_auto_ml_jobs(
@@ -2685,7 +2690,7 @@ def list_auto_ml_jobs(
 
 Type annotations for `boto3.client("sagemaker").list_candidates_for_auto_ml_job` method.
 
-[Client.list_candidates_for_auto_ml_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_candidates_for_auto_ml_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_candidates_for_auto_ml_job]
 
 ```python
 def list_candidates_for_auto_ml_job(
@@ -2705,7 +2710,7 @@ def list_candidates_for_auto_ml_job(
 
 Type annotations for `boto3.client("sagemaker").list_code_repositories` method.
 
-[Client.list_code_repositories documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_code_repositories)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_code_repositories]
 
 ```python
 def list_code_repositories(
@@ -2727,7 +2732,7 @@ def list_code_repositories(
 
 Type annotations for `boto3.client("sagemaker").list_compilation_jobs` method.
 
-[Client.list_compilation_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_compilation_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_compilation_jobs]
 
 ```python
 def list_compilation_jobs(
@@ -2750,7 +2755,7 @@ def list_compilation_jobs(
 
 Type annotations for `boto3.client("sagemaker").list_contexts` method.
 
-[Client.list_contexts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_contexts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_contexts]
 
 ```python
 def list_contexts(
@@ -2771,7 +2776,7 @@ def list_contexts(
 
 Type annotations for `boto3.client("sagemaker").list_data_quality_job_definitions` method.
 
-[Client.list_data_quality_job_definitions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_data_quality_job_definitions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_data_quality_job_definitions]
 
 ```python
 def list_data_quality_job_definitions(
@@ -2792,7 +2797,7 @@ def list_data_quality_job_definitions(
 
 Type annotations for `boto3.client("sagemaker").list_device_fleets` method.
 
-[Client.list_device_fleets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_device_fleets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_device_fleets]
 
 ```python
 def list_device_fleets(
@@ -2814,7 +2819,7 @@ def list_device_fleets(
 
 Type annotations for `boto3.client("sagemaker").list_devices` method.
 
-[Client.list_devices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_devices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_devices]
 
 ```python
 def list_devices(
@@ -2832,7 +2837,7 @@ def list_devices(
 
 Type annotations for `boto3.client("sagemaker").list_domains` method.
 
-[Client.list_domains documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_domains)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_domains]
 
 ```python
 def list_domains(
@@ -2847,7 +2852,7 @@ def list_domains(
 
 Type annotations for `boto3.client("sagemaker").list_edge_packaging_jobs` method.
 
-[Client.list_edge_packaging_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_edge_packaging_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_edge_packaging_jobs]
 
 ```python
 def list_edge_packaging_jobs(
@@ -2871,7 +2876,7 @@ def list_edge_packaging_jobs(
 
 Type annotations for `boto3.client("sagemaker").list_endpoint_configs` method.
 
-[Client.list_endpoint_configs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_endpoint_configs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_endpoint_configs]
 
 ```python
 def list_endpoint_configs(
@@ -2891,7 +2896,7 @@ def list_endpoint_configs(
 
 Type annotations for `boto3.client("sagemaker").list_endpoints` method.
 
-[Client.list_endpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_endpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_endpoints]
 
 ```python
 def list_endpoints(
@@ -2914,7 +2919,7 @@ def list_endpoints(
 
 Type annotations for `boto3.client("sagemaker").list_experiments` method.
 
-[Client.list_experiments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_experiments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_experiments]
 
 ```python
 def list_experiments(
@@ -2933,7 +2938,7 @@ def list_experiments(
 
 Type annotations for `boto3.client("sagemaker").list_feature_groups` method.
 
-[Client.list_feature_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_feature_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_feature_groups]
 
 ```python
 def list_feature_groups(
@@ -2955,7 +2960,7 @@ def list_feature_groups(
 
 Type annotations for `boto3.client("sagemaker").list_flow_definitions` method.
 
-[Client.list_flow_definitions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_flow_definitions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_flow_definitions]
 
 ```python
 def list_flow_definitions(
@@ -2973,7 +2978,7 @@ def list_flow_definitions(
 
 Type annotations for `boto3.client("sagemaker").list_human_task_uis` method.
 
-[Client.list_human_task_uis documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_human_task_uis)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_human_task_uis]
 
 ```python
 def list_human_task_uis(
@@ -2991,7 +2996,7 @@ def list_human_task_uis(
 
 Type annotations for `boto3.client("sagemaker").list_hyper_parameter_tuning_jobs` method.
 
-[Client.list_hyper_parameter_tuning_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_hyper_parameter_tuning_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_hyper_parameter_tuning_jobs]
 
 ```python
 def list_hyper_parameter_tuning_jobs(
@@ -3014,7 +3019,7 @@ def list_hyper_parameter_tuning_jobs(
 
 Type annotations for `boto3.client("sagemaker").list_image_versions` method.
 
-[Client.list_image_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_image_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_image_versions]
 
 ```python
 def list_image_versions(
@@ -3036,7 +3041,7 @@ def list_image_versions(
 
 Type annotations for `boto3.client("sagemaker").list_images` method.
 
-[Client.list_images documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_images)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_images]
 
 ```python
 def list_images(
@@ -3058,7 +3063,7 @@ def list_images(
 
 Type annotations for `boto3.client("sagemaker").list_labeling_jobs` method.
 
-[Client.list_labeling_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_labeling_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_labeling_jobs]
 
 ```python
 def list_labeling_jobs(
@@ -3081,7 +3086,7 @@ def list_labeling_jobs(
 
 Type annotations for `boto3.client("sagemaker").list_labeling_jobs_for_workteam` method.
 
-[Client.list_labeling_jobs_for_workteam documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_labeling_jobs_for_workteam)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_labeling_jobs_for_workteam]
 
 ```python
 def list_labeling_jobs_for_workteam(
@@ -3102,7 +3107,7 @@ def list_labeling_jobs_for_workteam(
 
 Type annotations for `boto3.client("sagemaker").list_model_bias_job_definitions` method.
 
-[Client.list_model_bias_job_definitions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_bias_job_definitions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_bias_job_definitions]
 
 ```python
 def list_model_bias_job_definitions(
@@ -3123,7 +3128,7 @@ def list_model_bias_job_definitions(
 
 Type annotations for `boto3.client("sagemaker").list_model_explainability_job_definitions` method.
 
-[Client.list_model_explainability_job_definitions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_explainability_job_definitions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_explainability_job_definitions]
 
 ```python
 def list_model_explainability_job_definitions(
@@ -3144,7 +3149,7 @@ def list_model_explainability_job_definitions(
 
 Type annotations for `boto3.client("sagemaker").list_model_package_groups` method.
 
-[Client.list_model_package_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_package_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_package_groups]
 
 ```python
 def list_model_package_groups(
@@ -3164,7 +3169,7 @@ def list_model_package_groups(
 
 Type annotations for `boto3.client("sagemaker").list_model_packages` method.
 
-[Client.list_model_packages documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_packages)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_packages]
 
 ```python
 def list_model_packages(
@@ -3187,7 +3192,7 @@ def list_model_packages(
 
 Type annotations for `boto3.client("sagemaker").list_model_quality_job_definitions` method.
 
-[Client.list_model_quality_job_definitions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_quality_job_definitions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_quality_job_definitions]
 
 ```python
 def list_model_quality_job_definitions(
@@ -3208,7 +3213,7 @@ def list_model_quality_job_definitions(
 
 Type annotations for `boto3.client("sagemaker").list_models` method.
 
-[Client.list_models documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_models)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_models]
 
 ```python
 def list_models(
@@ -3228,7 +3233,7 @@ def list_models(
 
 Type annotations for `boto3.client("sagemaker").list_monitoring_executions` method.
 
-[Client.list_monitoring_executions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_monitoring_executions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_monitoring_executions]
 
 ```python
 def list_monitoring_executions(
@@ -3256,7 +3261,7 @@ def list_monitoring_executions(
 
 Type annotations for `boto3.client("sagemaker").list_monitoring_schedules` method.
 
-[Client.list_monitoring_schedules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_monitoring_schedules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_monitoring_schedules]
 
 ```python
 def list_monitoring_schedules(
@@ -3282,7 +3287,7 @@ def list_monitoring_schedules(
 
 Type annotations for `boto3.client("sagemaker").list_notebook_instance_lifecycle_configs` method.
 
-[Client.list_notebook_instance_lifecycle_configs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_notebook_instance_lifecycle_configs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_notebook_instance_lifecycle_configs]
 
 ```python
 def list_notebook_instance_lifecycle_configs(
@@ -3304,7 +3309,7 @@ def list_notebook_instance_lifecycle_configs(
 
 Type annotations for `boto3.client("sagemaker").list_notebook_instances` method.
 
-[Client.list_notebook_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_notebook_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_notebook_instances]
 
 ```python
 def list_notebook_instances(
@@ -3330,7 +3335,7 @@ def list_notebook_instances(
 
 Type annotations for `boto3.client("sagemaker").list_pipeline_execution_steps` method.
 
-[Client.list_pipeline_execution_steps documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipeline_execution_steps)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipeline_execution_steps]
 
 ```python
 def list_pipeline_execution_steps(
@@ -3347,7 +3352,7 @@ def list_pipeline_execution_steps(
 
 Type annotations for `boto3.client("sagemaker").list_pipeline_executions` method.
 
-[Client.list_pipeline_executions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipeline_executions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipeline_executions]
 
 ```python
 def list_pipeline_executions(
@@ -3367,7 +3372,7 @@ def list_pipeline_executions(
 
 Type annotations for `boto3.client("sagemaker").list_pipeline_parameters_for_execution` method.
 
-[Client.list_pipeline_parameters_for_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipeline_parameters_for_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipeline_parameters_for_execution]
 
 ```python
 def list_pipeline_parameters_for_execution(
@@ -3383,7 +3388,7 @@ def list_pipeline_parameters_for_execution(
 
 Type annotations for `boto3.client("sagemaker").list_pipelines` method.
 
-[Client.list_pipelines documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipelines)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipelines]
 
 ```python
 def list_pipelines(
@@ -3403,7 +3408,7 @@ def list_pipelines(
 
 Type annotations for `boto3.client("sagemaker").list_processing_jobs` method.
 
-[Client.list_processing_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_processing_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_processing_jobs]
 
 ```python
 def list_processing_jobs(
@@ -3426,7 +3431,7 @@ def list_processing_jobs(
 
 Type annotations for `boto3.client("sagemaker").list_projects` method.
 
-[Client.list_projects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_projects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_projects]
 
 ```python
 def list_projects(
@@ -3446,7 +3451,7 @@ def list_projects(
 
 Type annotations for `boto3.client("sagemaker").list_subscribed_workteams` method.
 
-[Client.list_subscribed_workteams documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_subscribed_workteams)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_subscribed_workteams]
 
 ```python
 def list_subscribed_workteams(
@@ -3462,7 +3467,7 @@ def list_subscribed_workteams(
 
 Type annotations for `boto3.client("sagemaker").list_tags` method.
 
-[Client.list_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_tags]
 
 ```python
 def list_tags(
@@ -3478,7 +3483,7 @@ def list_tags(
 
 Type annotations for `boto3.client("sagemaker").list_training_jobs` method.
 
-[Client.list_training_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_training_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_training_jobs]
 
 ```python
 def list_training_jobs(
@@ -3501,7 +3506,7 @@ def list_training_jobs(
 
 Type annotations for `boto3.client("sagemaker").list_training_jobs_for_hyper_parameter_tuning_job` method.
 
-[Client.list_training_jobs_for_hyper_parameter_tuning_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_training_jobs_for_hyper_parameter_tuning_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_training_jobs_for_hyper_parameter_tuning_job]
 
 ```python
 def list_training_jobs_for_hyper_parameter_tuning_job(
@@ -3520,7 +3525,7 @@ def list_training_jobs_for_hyper_parameter_tuning_job(
 
 Type annotations for `boto3.client("sagemaker").list_transform_jobs` method.
 
-[Client.list_transform_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_transform_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_transform_jobs]
 
 ```python
 def list_transform_jobs(
@@ -3543,7 +3548,7 @@ def list_transform_jobs(
 
 Type annotations for `boto3.client("sagemaker").list_trial_components` method.
 
-[Client.list_trial_components documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_trial_components)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_trial_components]
 
 ```python
 def list_trial_components(
@@ -3565,7 +3570,7 @@ def list_trial_components(
 
 Type annotations for `boto3.client("sagemaker").list_trials` method.
 
-[Client.list_trials documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_trials)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_trials]
 
 ```python
 def list_trials(
@@ -3586,7 +3591,7 @@ def list_trials(
 
 Type annotations for `boto3.client("sagemaker").list_user_profiles` method.
 
-[Client.list_user_profiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_user_profiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_user_profiles]
 
 ```python
 def list_user_profiles(
@@ -3605,7 +3610,7 @@ def list_user_profiles(
 
 Type annotations for `boto3.client("sagemaker").list_workforces` method.
 
-[Client.list_workforces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_workforces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_workforces]
 
 ```python
 def list_workforces(
@@ -3623,7 +3628,7 @@ def list_workforces(
 
 Type annotations for `boto3.client("sagemaker").list_workteams` method.
 
-[Client.list_workteams documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_workteams)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_workteams]
 
 ```python
 def list_workteams(
@@ -3641,7 +3646,7 @@ def list_workteams(
 
 Type annotations for `boto3.client("sagemaker").put_model_package_group_policy` method.
 
-[Client.put_model_package_group_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.put_model_package_group_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.put_model_package_group_policy]
 
 ```python
 def put_model_package_group_policy(
@@ -3656,7 +3661,7 @@ def put_model_package_group_policy(
 
 Type annotations for `boto3.client("sagemaker").register_devices` method.
 
-[Client.register_devices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.register_devices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.register_devices]
 
 ```python
 def register_devices(
@@ -3672,7 +3677,7 @@ def register_devices(
 
 Type annotations for `boto3.client("sagemaker").render_ui_template` method.
 
-[Client.render_ui_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.render_ui_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.render_ui_template]
 
 ```python
 def render_ui_template(
@@ -3689,7 +3694,7 @@ def render_ui_template(
 
 Type annotations for `boto3.client("sagemaker").search` method.
 
-[Client.search documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.search)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.search]
 
 ```python
 def search(
@@ -3708,7 +3713,7 @@ def search(
 
 Type annotations for `boto3.client("sagemaker").start_monitoring_schedule` method.
 
-[Client.start_monitoring_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.start_monitoring_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.start_monitoring_schedule]
 
 ```python
 def start_monitoring_schedule(
@@ -3722,7 +3727,7 @@ def start_monitoring_schedule(
 
 Type annotations for `boto3.client("sagemaker").start_notebook_instance` method.
 
-[Client.start_notebook_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.start_notebook_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.start_notebook_instance]
 
 ```python
 def start_notebook_instance(
@@ -3736,7 +3741,7 @@ def start_notebook_instance(
 
 Type annotations for `boto3.client("sagemaker").start_pipeline_execution` method.
 
-[Client.start_pipeline_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.start_pipeline_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.start_pipeline_execution]
 
 ```python
 def start_pipeline_execution(
@@ -3754,7 +3759,7 @@ def start_pipeline_execution(
 
 Type annotations for `boto3.client("sagemaker").stop_auto_ml_job` method.
 
-[Client.stop_auto_ml_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_auto_ml_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_auto_ml_job]
 
 ```python
 def stop_auto_ml_job(
@@ -3768,7 +3773,7 @@ def stop_auto_ml_job(
 
 Type annotations for `boto3.client("sagemaker").stop_compilation_job` method.
 
-[Client.stop_compilation_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_compilation_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_compilation_job]
 
 ```python
 def stop_compilation_job(
@@ -3782,7 +3787,7 @@ def stop_compilation_job(
 
 Type annotations for `boto3.client("sagemaker").stop_edge_packaging_job` method.
 
-[Client.stop_edge_packaging_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_edge_packaging_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_edge_packaging_job]
 
 ```python
 def stop_edge_packaging_job(
@@ -3796,7 +3801,7 @@ def stop_edge_packaging_job(
 
 Type annotations for `boto3.client("sagemaker").stop_hyper_parameter_tuning_job` method.
 
-[Client.stop_hyper_parameter_tuning_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_hyper_parameter_tuning_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_hyper_parameter_tuning_job]
 
 ```python
 def stop_hyper_parameter_tuning_job(
@@ -3810,7 +3815,7 @@ def stop_hyper_parameter_tuning_job(
 
 Type annotations for `boto3.client("sagemaker").stop_labeling_job` method.
 
-[Client.stop_labeling_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_labeling_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_labeling_job]
 
 ```python
 def stop_labeling_job(
@@ -3824,7 +3829,7 @@ def stop_labeling_job(
 
 Type annotations for `boto3.client("sagemaker").stop_monitoring_schedule` method.
 
-[Client.stop_monitoring_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_monitoring_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_monitoring_schedule]
 
 ```python
 def stop_monitoring_schedule(
@@ -3838,7 +3843,7 @@ def stop_monitoring_schedule(
 
 Type annotations for `boto3.client("sagemaker").stop_notebook_instance` method.
 
-[Client.stop_notebook_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_notebook_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_notebook_instance]
 
 ```python
 def stop_notebook_instance(
@@ -3852,7 +3857,7 @@ def stop_notebook_instance(
 
 Type annotations for `boto3.client("sagemaker").stop_pipeline_execution` method.
 
-[Client.stop_pipeline_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_pipeline_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_pipeline_execution]
 
 ```python
 def stop_pipeline_execution(
@@ -3867,7 +3872,7 @@ def stop_pipeline_execution(
 
 Type annotations for `boto3.client("sagemaker").stop_processing_job` method.
 
-[Client.stop_processing_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_processing_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_processing_job]
 
 ```python
 def stop_processing_job(
@@ -3881,7 +3886,7 @@ def stop_processing_job(
 
 Type annotations for `boto3.client("sagemaker").stop_training_job` method.
 
-[Client.stop_training_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_training_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_training_job]
 
 ```python
 def stop_training_job(
@@ -3895,7 +3900,7 @@ def stop_training_job(
 
 Type annotations for `boto3.client("sagemaker").stop_transform_job` method.
 
-[Client.stop_transform_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_transform_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_transform_job]
 
 ```python
 def stop_transform_job(
@@ -3909,7 +3914,7 @@ def stop_transform_job(
 
 Type annotations for `boto3.client("sagemaker").update_action` method.
 
-[Client.update_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_action]
 
 ```python
 def update_action(
@@ -3927,7 +3932,7 @@ def update_action(
 
 Type annotations for `boto3.client("sagemaker").update_app_image_config` method.
 
-[Client.update_app_image_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_app_image_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_app_image_config]
 
 ```python
 def update_app_image_config(
@@ -3942,7 +3947,7 @@ def update_app_image_config(
 
 Type annotations for `boto3.client("sagemaker").update_artifact` method.
 
-[Client.update_artifact documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_artifact)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_artifact]
 
 ```python
 def update_artifact(
@@ -3959,7 +3964,7 @@ def update_artifact(
 
 Type annotations for `boto3.client("sagemaker").update_code_repository` method.
 
-[Client.update_code_repository documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_code_repository)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_code_repository]
 
 ```python
 def update_code_repository(
@@ -3974,7 +3979,7 @@ def update_code_repository(
 
 Type annotations for `boto3.client("sagemaker").update_context` method.
 
-[Client.update_context documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_context)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_context]
 
 ```python
 def update_context(
@@ -3991,7 +3996,7 @@ def update_context(
 
 Type annotations for `boto3.client("sagemaker").update_device_fleet` method.
 
-[Client.update_device_fleet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_device_fleet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_device_fleet]
 
 ```python
 def update_device_fleet(
@@ -4008,7 +4013,7 @@ def update_device_fleet(
 
 Type annotations for `boto3.client("sagemaker").update_devices` method.
 
-[Client.update_devices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_devices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_devices]
 
 ```python
 def update_devices(
@@ -4023,7 +4028,7 @@ def update_devices(
 
 Type annotations for `boto3.client("sagemaker").update_domain` method.
 
-[Client.update_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_domain]
 
 ```python
 def update_domain(
@@ -4038,7 +4043,7 @@ def update_domain(
 
 Type annotations for `boto3.client("sagemaker").update_endpoint` method.
 
-[Client.update_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_endpoint]
 
 ```python
 def update_endpoint(
@@ -4056,7 +4061,7 @@ def update_endpoint(
 
 Type annotations for `boto3.client("sagemaker").update_endpoint_weights_and_capacities` method.
 
-[Client.update_endpoint_weights_and_capacities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_endpoint_weights_and_capacities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_endpoint_weights_and_capacities]
 
 ```python
 def update_endpoint_weights_and_capacities(
@@ -4071,7 +4076,7 @@ def update_endpoint_weights_and_capacities(
 
 Type annotations for `boto3.client("sagemaker").update_experiment` method.
 
-[Client.update_experiment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_experiment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_experiment]
 
 ```python
 def update_experiment(
@@ -4087,7 +4092,7 @@ def update_experiment(
 
 Type annotations for `boto3.client("sagemaker").update_image` method.
 
-[Client.update_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_image]
 
 ```python
 def update_image(
@@ -4105,7 +4110,7 @@ def update_image(
 
 Type annotations for `boto3.client("sagemaker").update_model_package` method.
 
-[Client.update_model_package documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_model_package)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_model_package]
 
 ```python
 def update_model_package(
@@ -4121,7 +4126,7 @@ def update_model_package(
 
 Type annotations for `boto3.client("sagemaker").update_monitoring_schedule` method.
 
-[Client.update_monitoring_schedule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_monitoring_schedule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_monitoring_schedule]
 
 ```python
 def update_monitoring_schedule(
@@ -4136,7 +4141,7 @@ def update_monitoring_schedule(
 
 Type annotations for `boto3.client("sagemaker").update_notebook_instance` method.
 
-[Client.update_notebook_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_notebook_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_notebook_instance]
 
 ```python
 def update_notebook_instance(
@@ -4162,7 +4167,7 @@ def update_notebook_instance(
 
 Type annotations for `boto3.client("sagemaker").update_notebook_instance_lifecycle_config` method.
 
-[Client.update_notebook_instance_lifecycle_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_notebook_instance_lifecycle_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_notebook_instance_lifecycle_config]
 
 ```python
 def update_notebook_instance_lifecycle_config(
@@ -4178,7 +4183,7 @@ def update_notebook_instance_lifecycle_config(
 
 Type annotations for `boto3.client("sagemaker").update_pipeline` method.
 
-[Client.update_pipeline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_pipeline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_pipeline]
 
 ```python
 def update_pipeline(
@@ -4196,7 +4201,7 @@ def update_pipeline(
 
 Type annotations for `boto3.client("sagemaker").update_pipeline_execution` method.
 
-[Client.update_pipeline_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_pipeline_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_pipeline_execution]
 
 ```python
 def update_pipeline_execution(
@@ -4212,7 +4217,7 @@ def update_pipeline_execution(
 
 Type annotations for `boto3.client("sagemaker").update_training_job` method.
 
-[Client.update_training_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_training_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_training_job]
 
 ```python
 def update_training_job(
@@ -4228,7 +4233,7 @@ def update_training_job(
 
 Type annotations for `boto3.client("sagemaker").update_trial` method.
 
-[Client.update_trial documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_trial)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_trial]
 
 ```python
 def update_trial(
@@ -4243,7 +4248,7 @@ def update_trial(
 
 Type annotations for `boto3.client("sagemaker").update_trial_component` method.
 
-[Client.update_trial_component documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_trial_component)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_trial_component]
 
 ```python
 def update_trial_component(
@@ -4267,7 +4272,7 @@ def update_trial_component(
 
 Type annotations for `boto3.client("sagemaker").update_user_profile` method.
 
-[Client.update_user_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_user_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_user_profile]
 
 ```python
 def update_user_profile(
@@ -4283,7 +4288,7 @@ def update_user_profile(
 
 Type annotations for `boto3.client("sagemaker").update_workforce` method.
 
-[Client.update_workforce documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_workforce)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_workforce]
 
 ```python
 def update_workforce(
@@ -4299,7 +4304,7 @@ def update_workforce(
 
 Type annotations for `boto3.client("sagemaker").update_workteam` method.
 
-[Client.update_workteam documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_workteam)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_workteam]
 
 ```python
 def update_workteam(

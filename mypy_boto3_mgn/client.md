@@ -46,7 +46,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_mgn.client import mgnClient
+
+def get_mgn_client() -> mgnClient:
+    return boto3.client("mgn")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client)
 
 ## Exceptions
 
@@ -80,7 +85,7 @@ Exceptions:
 
 Type annotations for `boto3.client("mgn").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -94,7 +99,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("mgn").change_server_life_cycle_state` method.
 
-[Client.change_server_life_cycle_state documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.change_server_life_cycle_state)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.change_server_life_cycle_state]
 
 ```python
 def change_server_life_cycle_state(
@@ -109,7 +114,7 @@ def change_server_life_cycle_state(
 
 Type annotations for `boto3.client("mgn").create_replication_configuration_template` method.
 
-[Client.create_replication_configuration_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.create_replication_configuration_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.create_replication_configuration_template]
 
 ```python
 def create_replication_configuration_template(
@@ -135,7 +140,7 @@ def create_replication_configuration_template(
 
 Type annotations for `boto3.client("mgn").delete_job` method.
 
-[Client.delete_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_job]
 
 ```python
 def delete_job(
@@ -149,7 +154,7 @@ def delete_job(
 
 Type annotations for `boto3.client("mgn").delete_replication_configuration_template` method.
 
-[Client.delete_replication_configuration_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_replication_configuration_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_replication_configuration_template]
 
 ```python
 def delete_replication_configuration_template(
@@ -163,7 +168,7 @@ def delete_replication_configuration_template(
 
 Type annotations for `boto3.client("mgn").delete_source_server` method.
 
-[Client.delete_source_server documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_source_server)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_source_server]
 
 ```python
 def delete_source_server(
@@ -177,7 +182,7 @@ def delete_source_server(
 
 Type annotations for `boto3.client("mgn").describe_job_log_items` method.
 
-[Client.describe_job_log_items documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_job_log_items)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_job_log_items]
 
 ```python
 def describe_job_log_items(
@@ -193,7 +198,7 @@ def describe_job_log_items(
 
 Type annotations for `boto3.client("mgn").describe_jobs` method.
 
-[Client.describe_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_jobs]
 
 ```python
 def describe_jobs(
@@ -209,7 +214,7 @@ def describe_jobs(
 
 Type annotations for `boto3.client("mgn").describe_replication_configuration_templates` method.
 
-[Client.describe_replication_configuration_templates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_replication_configuration_templates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_replication_configuration_templates]
 
 ```python
 def describe_replication_configuration_templates(
@@ -225,7 +230,7 @@ def describe_replication_configuration_templates(
 
 Type annotations for `boto3.client("mgn").describe_source_servers` method.
 
-[Client.describe_source_servers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_source_servers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_source_servers]
 
 ```python
 def describe_source_servers(
@@ -241,7 +246,7 @@ def describe_source_servers(
 
 Type annotations for `boto3.client("mgn").disconnect_from_service` method.
 
-[Client.disconnect_from_service documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.disconnect_from_service)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.disconnect_from_service]
 
 ```python
 def disconnect_from_service(
@@ -255,7 +260,7 @@ def disconnect_from_service(
 
 Type annotations for `boto3.client("mgn").finalize_cutover` method.
 
-[Client.finalize_cutover documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.finalize_cutover)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.finalize_cutover]
 
 ```python
 def finalize_cutover(
@@ -269,7 +274,7 @@ def finalize_cutover(
 
 Type annotations for `boto3.client("mgn").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -286,7 +291,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("mgn").get_launch_configuration` method.
 
-[Client.get_launch_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.get_launch_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.get_launch_configuration]
 
 ```python
 def get_launch_configuration(
@@ -300,7 +305,7 @@ def get_launch_configuration(
 
 Type annotations for `boto3.client("mgn").get_replication_configuration` method.
 
-[Client.get_replication_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.get_replication_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.get_replication_configuration]
 
 ```python
 def get_replication_configuration(
@@ -314,7 +319,7 @@ def get_replication_configuration(
 
 Type annotations for `boto3.client("mgn").initialize_service` method.
 
-[Client.initialize_service documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.initialize_service)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.initialize_service]
 
 ```python
 def initialize_service(
@@ -327,7 +332,7 @@ def initialize_service(
 
 Type annotations for `boto3.client("mgn").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -341,7 +346,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("mgn").mark_as_archived` method.
 
-[Client.mark_as_archived documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.mark_as_archived)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.mark_as_archived]
 
 ```python
 def mark_as_archived(
@@ -355,7 +360,7 @@ def mark_as_archived(
 
 Type annotations for `boto3.client("mgn").retry_data_replication` method.
 
-[Client.retry_data_replication documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.retry_data_replication)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.retry_data_replication]
 
 ```python
 def retry_data_replication(
@@ -369,7 +374,7 @@ def retry_data_replication(
 
 Type annotations for `boto3.client("mgn").start_cutover` method.
 
-[Client.start_cutover documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.start_cutover)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.start_cutover]
 
 ```python
 def start_cutover(
@@ -384,7 +389,7 @@ def start_cutover(
 
 Type annotations for `boto3.client("mgn").start_test` method.
 
-[Client.start_test documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.start_test)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.start_test]
 
 ```python
 def start_test(
@@ -399,7 +404,7 @@ def start_test(
 
 Type annotations for `boto3.client("mgn").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -414,7 +419,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("mgn").terminate_target_instances` method.
 
-[Client.terminate_target_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.terminate_target_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.terminate_target_instances]
 
 ```python
 def terminate_target_instances(
@@ -429,7 +434,7 @@ def terminate_target_instances(
 
 Type annotations for `boto3.client("mgn").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -444,7 +449,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("mgn").update_launch_configuration` method.
 
-[Client.update_launch_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_launch_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_launch_configuration]
 
 ```python
 def update_launch_configuration(
@@ -464,7 +469,7 @@ def update_launch_configuration(
 
 Type annotations for `boto3.client("mgn").update_replication_configuration` method.
 
-[Client.update_replication_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_replication_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_replication_configuration]
 
 ```python
 def update_replication_configuration(
@@ -492,7 +497,7 @@ def update_replication_configuration(
 
 Type annotations for `boto3.client("mgn").update_replication_configuration_template` method.
 
-[Client.update_replication_configuration_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_replication_configuration_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_replication_configuration_template]
 
 ```python
 def update_replication_configuration_template(

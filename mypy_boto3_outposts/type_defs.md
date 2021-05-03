@@ -1,11 +1,11 @@
-# Structures for boto3 Outposts module
+# Typed dictionaries for boto3 Outposts module
 
 > [Index](../README.md) > [Outposts](./README.md) > Structures
 
 Auto-generated documentation for [Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
 type annotations stubs module [mypy_boto3_outposts](https://pypi.org/project/mypy-boto3-outposts/).
 
-- [Structures for boto3 Outposts module](#structures-for-boto3-outposts-module)
+- [Typed dictionaries for boto3 Outposts module](#typed-dictionaries-for-boto3-outposts-module)
   - [CreateOutpostOutputTypeDef](#createoutpostoutputtypedef)
   - [GetOutpostInstanceTypesOutputTypeDef](#getoutpostinstancetypesoutputtypedef)
   - [GetOutpostOutputTypeDef](#getoutpostoutputtypedef)
@@ -24,11 +24,11 @@ from mypy_boto3_outposts.type_defs import CreateOutpostOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Outpost`: `"OutpostTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetOutpostInstanceTypesOutputTypeDef
@@ -38,14 +38,14 @@ from mypy_boto3_outposts.type_defs import GetOutpostInstanceTypesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `InstanceTypes`: `List["InstanceTypeItemTypeDef"]`
 - `NextToken`: `str`
 - `OutpostId`: `str`
 - `OutpostArn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetOutpostOutputTypeDef
@@ -55,11 +55,11 @@ from mypy_boto3_outposts.type_defs import GetOutpostOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Outpost`: `"OutpostTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## InstanceTypeItemTypeDef
@@ -82,12 +82,12 @@ from mypy_boto3_outposts.type_defs import ListOutpostsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Outposts`: `List["OutpostTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListSitesOutputTypeDef
@@ -97,12 +97,12 @@ from mypy_boto3_outposts.type_defs import ListSitesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Sites`: `List["SiteTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagsForResourceResponseTypeDef

@@ -15,7 +15,7 @@ pip install mypy-boto3-servicediscovery
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ServiceDiscoveryClient
 
@@ -139,7 +139,7 @@ from mypy_boto3_servicediscovery.literals import CustomHealthStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

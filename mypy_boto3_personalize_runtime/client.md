@@ -22,7 +22,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_personalize_runtime.client import PersonalizeRuntimeClient
+
+def get_personalize-runtime_client() -> PersonalizeRuntimeClient:
+    return boto3.client("personalize-runtime")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client)
 
 ## Exceptions
 
@@ -51,7 +56,7 @@ Exceptions:
 
 Type annotations for `boto3.client("personalize-runtime").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -65,7 +70,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("personalize-runtime").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -82,7 +87,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("personalize-runtime").get_personalized_ranking` method.
 
-[Client.get_personalized_ranking documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.get_personalized_ranking)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.get_personalized_ranking]
 
 ```python
 def get_personalized_ranking(
@@ -101,7 +106,7 @@ def get_personalized_ranking(
 
 Type annotations for `boto3.client("personalize-runtime").get_recommendations` method.
 
-[Client.get_recommendations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.get_recommendations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.get_recommendations]
 
 ```python
 def get_recommendations(

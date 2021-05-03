@@ -15,13 +15,13 @@ Type annotations for `boto3.client("cognito-identity").get_paginator("list_ident
 Can be used directly:
 
 ```python
-from mypy_boto3_cognito_identity.paginators import ListIdentityPoolsPaginator
+from mypy_boto3_cognito_identity.paginator import ListIdentityPoolsPaginator
 
 def get_list_identity_pools_paginator() -> ListIdentityPoolsPaginator:
     return boto3.client("cognito-identity").get_paginator("list_identity_pools")
 ```
 
-[Paginator.ListIdentityPools documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Paginator.ListIdentityPools)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Paginator.ListIdentityPools)
 
 ```python
 class ListIdentityPoolsPaginator(Boto3Paginator):

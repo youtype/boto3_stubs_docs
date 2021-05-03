@@ -16,13 +16,13 @@ Type annotations for `boto3.client("neptune").get_waiter("db_instance_available"
 Can be used directly:
 
 ```python
-from mypy_boto3_neptune.waiters import DBInstanceAvailableWaiter
+from mypy_boto3_neptune.waiter import DBInstanceAvailableWaiter
 
 def get_db_instance_available_waiter() -> DBInstanceAvailableWaiter:
     return boto3.client("neptune").get_waiter("db_instance_available")
 ```
 
-[Waiter.DBInstanceAvailable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Waiter.DBInstanceAvailable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Waiter.db_instance_available)
 
 ```python
 class DBInstanceAvailableWaiter(Boto3Waiter):
@@ -43,13 +43,13 @@ Type annotations for `boto3.client("neptune").get_waiter("db_instance_deleted")`
 Can be used directly:
 
 ```python
-from mypy_boto3_neptune.waiters import DBInstanceDeletedWaiter
+from mypy_boto3_neptune.waiter import DBInstanceDeletedWaiter
 
 def get_db_instance_deleted_waiter() -> DBInstanceDeletedWaiter:
     return boto3.client("neptune").get_waiter("db_instance_deleted")
 ```
 
-[Waiter.DBInstanceDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Waiter.DBInstanceDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Waiter.db_instance_deleted)
 
 ```python
 class DBInstanceDeletedWaiter(Boto3Waiter):

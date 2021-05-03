@@ -1,11 +1,11 @@
-# Structures for boto3 Shield module
+# Typed dictionaries for boto3 Shield module
 
 > [Index](../README.md) > [Shield](./README.md) > Structures
 
 Auto-generated documentation for [Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
 type annotations stubs module [mypy_boto3_shield](https://pypi.org/project/mypy-boto3-shield/).
 
-- [Structures for boto3 Shield module](#structures-for-boto3-shield-module)
+- [Typed dictionaries for boto3 Shield module](#typed-dictionaries-for-boto3-shield-module)
   - [AttackDetailTypeDef](#attackdetailtypedef)
   - [AttackPropertyTypeDef](#attackpropertytypedef)
   - [AttackStatisticsDataItemTypeDef](#attackstatisticsdataitemtypedef)

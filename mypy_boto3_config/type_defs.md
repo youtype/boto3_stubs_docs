@@ -1,11 +1,11 @@
-# Structures for boto3 ConfigService module
+# Typed dictionaries for boto3 ConfigService module
 
 > [Index](../README.md) > [ConfigService](./README.md) > Structures
 
 Auto-generated documentation for [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
 type annotations stubs module [mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).
 
-- [Structures for boto3 ConfigService module](#structures-for-boto3-configservice-module)
+- [Typed dictionaries for boto3 ConfigService module](#typed-dictionaries-for-boto3-configservice-module)
   - [AccountAggregationSourceTypeDef](#accountaggregationsourcetypedef)
   - [AggregateComplianceByConfigRuleTypeDef](#aggregatecompliancebyconfigruletypedef)
   - [AggregateComplianceByConformancePackTypeDef](#aggregatecompliancebyconformancepacktypedef)

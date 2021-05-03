@@ -1,11 +1,11 @@
-# Structures for boto3 MQ module
+# Typed dictionaries for boto3 MQ module
 
 > [Index](../README.md) > [MQ](./README.md) > Structures
 
 Auto-generated documentation for [MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
 type annotations stubs module [mypy_boto3_mq](https://pypi.org/project/mypy-boto3-mq/).
 
-- [Structures for boto3 MQ module](#structures-for-boto3-mq-module)
+- [Typed dictionaries for boto3 MQ module](#typed-dictionaries-for-boto3-mq-module)
   - [AvailabilityZoneTypeDef](#availabilityzonetypedef)
   - [BrokerEngineTypeTypeDef](#brokerenginetypetypedef)
   - [BrokerInstanceOptionTypeDef](#brokerinstanceoptiontypedef)
@@ -421,9 +421,7 @@ from mypy_boto3_mq.type_defs import LdapServerMetadataOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Hosts`: `List[str]`
 - `RoleBase`: `str`
 - `RoleName`: `str`
@@ -435,6 +433,8 @@ Optional fields:
 - `UserSearchMatching`: `str`
 - `UserSearchSubtree`: `bool`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListBrokersResponseTypeDef

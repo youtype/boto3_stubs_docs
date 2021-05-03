@@ -120,7 +120,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_connect.client import ConnectClient
+
+def get_connect_client() -> ConnectClient:
+    return boto3.client("connect")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client)
 
 ## Exceptions
 
@@ -163,7 +168,7 @@ Exceptions:
 
 Type annotations for `boto3.client("connect").associate_approved_origin` method.
 
-[Client.associate_approved_origin documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_approved_origin)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_approved_origin]
 
 ```python
 def associate_approved_origin(
@@ -178,7 +183,7 @@ def associate_approved_origin(
 
 Type annotations for `boto3.client("connect").associate_instance_storage_config` method.
 
-[Client.associate_instance_storage_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_instance_storage_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_instance_storage_config]
 
 ```python
 def associate_instance_storage_config(
@@ -194,7 +199,7 @@ def associate_instance_storage_config(
 
 Type annotations for `boto3.client("connect").associate_lambda_function` method.
 
-[Client.associate_lambda_function documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_lambda_function)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_lambda_function]
 
 ```python
 def associate_lambda_function(
@@ -209,7 +214,7 @@ def associate_lambda_function(
 
 Type annotations for `boto3.client("connect").associate_lex_bot` method.
 
-[Client.associate_lex_bot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_lex_bot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_lex_bot]
 
 ```python
 def associate_lex_bot(
@@ -224,7 +229,7 @@ def associate_lex_bot(
 
 Type annotations for `boto3.client("connect").associate_queue_quick_connects` method.
 
-[Client.associate_queue_quick_connects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_queue_quick_connects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_queue_quick_connects]
 
 ```python
 def associate_queue_quick_connects(
@@ -240,7 +245,7 @@ def associate_queue_quick_connects(
 
 Type annotations for `boto3.client("connect").associate_routing_profile_queues` method.
 
-[Client.associate_routing_profile_queues documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_routing_profile_queues)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_routing_profile_queues]
 
 ```python
 def associate_routing_profile_queues(
@@ -256,7 +261,7 @@ def associate_routing_profile_queues(
 
 Type annotations for `boto3.client("connect").associate_security_key` method.
 
-[Client.associate_security_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_security_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_security_key]
 
 ```python
 def associate_security_key(
@@ -271,7 +276,7 @@ def associate_security_key(
 
 Type annotations for `boto3.client("connect").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -285,7 +290,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("connect").create_contact_flow` method.
 
-[Client.create_contact_flow documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_contact_flow)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_contact_flow]
 
 ```python
 def create_contact_flow(
@@ -304,7 +309,7 @@ def create_contact_flow(
 
 Type annotations for `boto3.client("connect").create_instance` method.
 
-[Client.create_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_instance]
 
 ```python
 def create_instance(
@@ -323,7 +328,7 @@ def create_instance(
 
 Type annotations for `boto3.client("connect").create_integration_association` method.
 
-[Client.create_integration_association documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_integration_association)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_integration_association]
 
 ```python
 def create_integration_association(
@@ -342,7 +347,7 @@ def create_integration_association(
 
 Type annotations for `boto3.client("connect").create_queue` method.
 
-[Client.create_queue documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_queue)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_queue]
 
 ```python
 def create_queue(
@@ -363,7 +368,7 @@ def create_queue(
 
 Type annotations for `boto3.client("connect").create_quick_connect` method.
 
-[Client.create_quick_connect documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_quick_connect)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_quick_connect]
 
 ```python
 def create_quick_connect(
@@ -381,7 +386,7 @@ def create_quick_connect(
 
 Type annotations for `boto3.client("connect").create_routing_profile` method.
 
-[Client.create_routing_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_routing_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_routing_profile]
 
 ```python
 def create_routing_profile(
@@ -401,7 +406,7 @@ def create_routing_profile(
 
 Type annotations for `boto3.client("connect").create_use_case` method.
 
-[Client.create_use_case documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_use_case)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_use_case]
 
 ```python
 def create_use_case(
@@ -417,7 +422,7 @@ def create_use_case(
 
 Type annotations for `boto3.client("connect").create_user` method.
 
-[Client.create_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_user]
 
 ```python
 def create_user(
@@ -440,7 +445,7 @@ def create_user(
 
 Type annotations for `boto3.client("connect").create_user_hierarchy_group` method.
 
-[Client.create_user_hierarchy_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_user_hierarchy_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_user_hierarchy_group]
 
 ```python
 def create_user_hierarchy_group(
@@ -456,7 +461,7 @@ def create_user_hierarchy_group(
 
 Type annotations for `boto3.client("connect").delete_instance` method.
 
-[Client.delete_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_instance]
 
 ```python
 def delete_instance(
@@ -470,7 +475,7 @@ def delete_instance(
 
 Type annotations for `boto3.client("connect").delete_integration_association` method.
 
-[Client.delete_integration_association documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_integration_association)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_integration_association]
 
 ```python
 def delete_integration_association(
@@ -485,7 +490,7 @@ def delete_integration_association(
 
 Type annotations for `boto3.client("connect").delete_quick_connect` method.
 
-[Client.delete_quick_connect documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_quick_connect)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_quick_connect]
 
 ```python
 def delete_quick_connect(
@@ -500,7 +505,7 @@ def delete_quick_connect(
 
 Type annotations for `boto3.client("connect").delete_use_case` method.
 
-[Client.delete_use_case documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_use_case)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_use_case]
 
 ```python
 def delete_use_case(
@@ -516,7 +521,7 @@ def delete_use_case(
 
 Type annotations for `boto3.client("connect").delete_user` method.
 
-[Client.delete_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_user]
 
 ```python
 def delete_user(
@@ -531,7 +536,7 @@ def delete_user(
 
 Type annotations for `boto3.client("connect").delete_user_hierarchy_group` method.
 
-[Client.delete_user_hierarchy_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_user_hierarchy_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_user_hierarchy_group]
 
 ```python
 def delete_user_hierarchy_group(
@@ -546,7 +551,7 @@ def delete_user_hierarchy_group(
 
 Type annotations for `boto3.client("connect").describe_contact_flow` method.
 
-[Client.describe_contact_flow documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_contact_flow)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_contact_flow]
 
 ```python
 def describe_contact_flow(
@@ -561,7 +566,7 @@ def describe_contact_flow(
 
 Type annotations for `boto3.client("connect").describe_hours_of_operation` method.
 
-[Client.describe_hours_of_operation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_hours_of_operation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_hours_of_operation]
 
 ```python
 def describe_hours_of_operation(
@@ -576,7 +581,7 @@ def describe_hours_of_operation(
 
 Type annotations for `boto3.client("connect").describe_instance` method.
 
-[Client.describe_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_instance]
 
 ```python
 def describe_instance(
@@ -590,7 +595,7 @@ def describe_instance(
 
 Type annotations for `boto3.client("connect").describe_instance_attribute` method.
 
-[Client.describe_instance_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_instance_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_instance_attribute]
 
 ```python
 def describe_instance_attribute(
@@ -605,7 +610,7 @@ def describe_instance_attribute(
 
 Type annotations for `boto3.client("connect").describe_instance_storage_config` method.
 
-[Client.describe_instance_storage_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_instance_storage_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_instance_storage_config]
 
 ```python
 def describe_instance_storage_config(
@@ -621,7 +626,7 @@ def describe_instance_storage_config(
 
 Type annotations for `boto3.client("connect").describe_queue` method.
 
-[Client.describe_queue documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_queue)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_queue]
 
 ```python
 def describe_queue(
@@ -636,7 +641,7 @@ def describe_queue(
 
 Type annotations for `boto3.client("connect").describe_quick_connect` method.
 
-[Client.describe_quick_connect documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_quick_connect)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_quick_connect]
 
 ```python
 def describe_quick_connect(
@@ -651,7 +656,7 @@ def describe_quick_connect(
 
 Type annotations for `boto3.client("connect").describe_routing_profile` method.
 
-[Client.describe_routing_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_routing_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_routing_profile]
 
 ```python
 def describe_routing_profile(
@@ -666,7 +671,7 @@ def describe_routing_profile(
 
 Type annotations for `boto3.client("connect").describe_user` method.
 
-[Client.describe_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_user]
 
 ```python
 def describe_user(
@@ -681,7 +686,7 @@ def describe_user(
 
 Type annotations for `boto3.client("connect").describe_user_hierarchy_group` method.
 
-[Client.describe_user_hierarchy_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_user_hierarchy_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_user_hierarchy_group]
 
 ```python
 def describe_user_hierarchy_group(
@@ -696,7 +701,7 @@ def describe_user_hierarchy_group(
 
 Type annotations for `boto3.client("connect").describe_user_hierarchy_structure` method.
 
-[Client.describe_user_hierarchy_structure documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_user_hierarchy_structure)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_user_hierarchy_structure]
 
 ```python
 def describe_user_hierarchy_structure(
@@ -710,7 +715,7 @@ def describe_user_hierarchy_structure(
 
 Type annotations for `boto3.client("connect").disassociate_approved_origin` method.
 
-[Client.disassociate_approved_origin documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_approved_origin)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_approved_origin]
 
 ```python
 def disassociate_approved_origin(
@@ -725,7 +730,7 @@ def disassociate_approved_origin(
 
 Type annotations for `boto3.client("connect").disassociate_instance_storage_config` method.
 
-[Client.disassociate_instance_storage_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_instance_storage_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_instance_storage_config]
 
 ```python
 def disassociate_instance_storage_config(
@@ -741,7 +746,7 @@ def disassociate_instance_storage_config(
 
 Type annotations for `boto3.client("connect").disassociate_lambda_function` method.
 
-[Client.disassociate_lambda_function documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_lambda_function)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_lambda_function]
 
 ```python
 def disassociate_lambda_function(
@@ -756,7 +761,7 @@ def disassociate_lambda_function(
 
 Type annotations for `boto3.client("connect").disassociate_lex_bot` method.
 
-[Client.disassociate_lex_bot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_lex_bot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_lex_bot]
 
 ```python
 def disassociate_lex_bot(
@@ -772,7 +777,7 @@ def disassociate_lex_bot(
 
 Type annotations for `boto3.client("connect").disassociate_queue_quick_connects` method.
 
-[Client.disassociate_queue_quick_connects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_queue_quick_connects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_queue_quick_connects]
 
 ```python
 def disassociate_queue_quick_connects(
@@ -788,7 +793,7 @@ def disassociate_queue_quick_connects(
 
 Type annotations for `boto3.client("connect").disassociate_routing_profile_queues` method.
 
-[Client.disassociate_routing_profile_queues documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_routing_profile_queues)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_routing_profile_queues]
 
 ```python
 def disassociate_routing_profile_queues(
@@ -804,7 +809,7 @@ def disassociate_routing_profile_queues(
 
 Type annotations for `boto3.client("connect").disassociate_security_key` method.
 
-[Client.disassociate_security_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_security_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_security_key]
 
 ```python
 def disassociate_security_key(
@@ -819,7 +824,7 @@ def disassociate_security_key(
 
 Type annotations for `boto3.client("connect").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -836,7 +841,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("connect").get_contact_attributes` method.
 
-[Client.get_contact_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_contact_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_contact_attributes]
 
 ```python
 def get_contact_attributes(
@@ -851,7 +856,7 @@ def get_contact_attributes(
 
 Type annotations for `boto3.client("connect").get_current_metric_data` method.
 
-[Client.get_current_metric_data documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_current_metric_data)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_current_metric_data]
 
 ```python
 def get_current_metric_data(
@@ -870,7 +875,7 @@ def get_current_metric_data(
 
 Type annotations for `boto3.client("connect").get_federation_token` method.
 
-[Client.get_federation_token documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_federation_token)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_federation_token]
 
 ```python
 def get_federation_token(
@@ -884,7 +889,7 @@ def get_federation_token(
 
 Type annotations for `boto3.client("connect").get_metric_data` method.
 
-[Client.get_metric_data documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_metric_data)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_metric_data]
 
 ```python
 def get_metric_data(
@@ -905,7 +910,7 @@ def get_metric_data(
 
 Type annotations for `boto3.client("connect").list_approved_origins` method.
 
-[Client.list_approved_origins documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_approved_origins)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_approved_origins]
 
 ```python
 def list_approved_origins(
@@ -921,7 +926,7 @@ def list_approved_origins(
 
 Type annotations for `boto3.client("connect").list_contact_flows` method.
 
-[Client.list_contact_flows documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_contact_flows)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_contact_flows]
 
 ```python
 def list_contact_flows(
@@ -938,7 +943,7 @@ def list_contact_flows(
 
 Type annotations for `boto3.client("connect").list_hours_of_operations` method.
 
-[Client.list_hours_of_operations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_hours_of_operations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_hours_of_operations]
 
 ```python
 def list_hours_of_operations(
@@ -954,7 +959,7 @@ def list_hours_of_operations(
 
 Type annotations for `boto3.client("connect").list_instance_attributes` method.
 
-[Client.list_instance_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_instance_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_instance_attributes]
 
 ```python
 def list_instance_attributes(
@@ -970,7 +975,7 @@ def list_instance_attributes(
 
 Type annotations for `boto3.client("connect").list_instance_storage_configs` method.
 
-[Client.list_instance_storage_configs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_instance_storage_configs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_instance_storage_configs]
 
 ```python
 def list_instance_storage_configs(
@@ -987,7 +992,7 @@ def list_instance_storage_configs(
 
 Type annotations for `boto3.client("connect").list_instances` method.
 
-[Client.list_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_instances]
 
 ```python
 def list_instances(
@@ -1002,7 +1007,7 @@ def list_instances(
 
 Type annotations for `boto3.client("connect").list_integration_associations` method.
 
-[Client.list_integration_associations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_integration_associations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_integration_associations]
 
 ```python
 def list_integration_associations(
@@ -1018,7 +1023,7 @@ def list_integration_associations(
 
 Type annotations for `boto3.client("connect").list_lambda_functions` method.
 
-[Client.list_lambda_functions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_lambda_functions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_lambda_functions]
 
 ```python
 def list_lambda_functions(
@@ -1034,7 +1039,7 @@ def list_lambda_functions(
 
 Type annotations for `boto3.client("connect").list_lex_bots` method.
 
-[Client.list_lex_bots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_lex_bots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_lex_bots]
 
 ```python
 def list_lex_bots(
@@ -1050,7 +1055,7 @@ def list_lex_bots(
 
 Type annotations for `boto3.client("connect").list_phone_numbers` method.
 
-[Client.list_phone_numbers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_phone_numbers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_phone_numbers]
 
 ```python
 def list_phone_numbers(
@@ -1068,7 +1073,7 @@ def list_phone_numbers(
 
 Type annotations for `boto3.client("connect").list_prompts` method.
 
-[Client.list_prompts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_prompts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_prompts]
 
 ```python
 def list_prompts(
@@ -1084,7 +1089,7 @@ def list_prompts(
 
 Type annotations for `boto3.client("connect").list_queue_quick_connects` method.
 
-[Client.list_queue_quick_connects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_queue_quick_connects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_queue_quick_connects]
 
 ```python
 def list_queue_quick_connects(
@@ -1101,7 +1106,7 @@ def list_queue_quick_connects(
 
 Type annotations for `boto3.client("connect").list_queues` method.
 
-[Client.list_queues documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_queues)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_queues]
 
 ```python
 def list_queues(
@@ -1118,7 +1123,7 @@ def list_queues(
 
 Type annotations for `boto3.client("connect").list_quick_connects` method.
 
-[Client.list_quick_connects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_quick_connects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_quick_connects]
 
 ```python
 def list_quick_connects(
@@ -1135,7 +1140,7 @@ def list_quick_connects(
 
 Type annotations for `boto3.client("connect").list_routing_profile_queues` method.
 
-[Client.list_routing_profile_queues documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_routing_profile_queues)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_routing_profile_queues]
 
 ```python
 def list_routing_profile_queues(
@@ -1152,7 +1157,7 @@ def list_routing_profile_queues(
 
 Type annotations for `boto3.client("connect").list_routing_profiles` method.
 
-[Client.list_routing_profiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_routing_profiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_routing_profiles]
 
 ```python
 def list_routing_profiles(
@@ -1168,7 +1173,7 @@ def list_routing_profiles(
 
 Type annotations for `boto3.client("connect").list_security_keys` method.
 
-[Client.list_security_keys documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_security_keys)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_security_keys]
 
 ```python
 def list_security_keys(
@@ -1184,7 +1189,7 @@ def list_security_keys(
 
 Type annotations for `boto3.client("connect").list_security_profiles` method.
 
-[Client.list_security_profiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_security_profiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_security_profiles]
 
 ```python
 def list_security_profiles(
@@ -1200,7 +1205,7 @@ def list_security_profiles(
 
 Type annotations for `boto3.client("connect").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -1214,7 +1219,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("connect").list_use_cases` method.
 
-[Client.list_use_cases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_use_cases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_use_cases]
 
 ```python
 def list_use_cases(
@@ -1231,7 +1236,7 @@ def list_use_cases(
 
 Type annotations for `boto3.client("connect").list_user_hierarchy_groups` method.
 
-[Client.list_user_hierarchy_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_user_hierarchy_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_user_hierarchy_groups]
 
 ```python
 def list_user_hierarchy_groups(
@@ -1247,7 +1252,7 @@ def list_user_hierarchy_groups(
 
 Type annotations for `boto3.client("connect").list_users` method.
 
-[Client.list_users documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_users)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_users]
 
 ```python
 def list_users(
@@ -1263,7 +1268,7 @@ def list_users(
 
 Type annotations for `boto3.client("connect").resume_contact_recording` method.
 
-[Client.resume_contact_recording documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.resume_contact_recording)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.resume_contact_recording]
 
 ```python
 def resume_contact_recording(
@@ -1279,7 +1284,7 @@ def resume_contact_recording(
 
 Type annotations for `boto3.client("connect").start_chat_contact` method.
 
-[Client.start_chat_contact documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_chat_contact)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_chat_contact]
 
 ```python
 def start_chat_contact(
@@ -1298,7 +1303,7 @@ def start_chat_contact(
 
 Type annotations for `boto3.client("connect").start_contact_recording` method.
 
-[Client.start_contact_recording documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_contact_recording)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_contact_recording]
 
 ```python
 def start_contact_recording(
@@ -1315,7 +1320,7 @@ def start_contact_recording(
 
 Type annotations for `boto3.client("connect").start_outbound_voice_contact` method.
 
-[Client.start_outbound_voice_contact documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_outbound_voice_contact)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_outbound_voice_contact]
 
 ```python
 def start_outbound_voice_contact(
@@ -1335,7 +1340,7 @@ def start_outbound_voice_contact(
 
 Type annotations for `boto3.client("connect").start_task_contact` method.
 
-[Client.start_task_contact documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_task_contact)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_task_contact]
 
 ```python
 def start_task_contact(
@@ -1356,7 +1361,7 @@ def start_task_contact(
 
 Type annotations for `boto3.client("connect").stop_contact` method.
 
-[Client.stop_contact documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.stop_contact)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.stop_contact]
 
 ```python
 def stop_contact(
@@ -1371,7 +1376,7 @@ def stop_contact(
 
 Type annotations for `boto3.client("connect").stop_contact_recording` method.
 
-[Client.stop_contact_recording documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.stop_contact_recording)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.stop_contact_recording]
 
 ```python
 def stop_contact_recording(
@@ -1387,7 +1392,7 @@ def stop_contact_recording(
 
 Type annotations for `boto3.client("connect").suspend_contact_recording` method.
 
-[Client.suspend_contact_recording documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.suspend_contact_recording)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.suspend_contact_recording]
 
 ```python
 def suspend_contact_recording(
@@ -1403,7 +1408,7 @@ def suspend_contact_recording(
 
 Type annotations for `boto3.client("connect").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -1418,7 +1423,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("connect").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -1433,7 +1438,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("connect").update_contact_attributes` method.
 
-[Client.update_contact_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_attributes]
 
 ```python
 def update_contact_attributes(
@@ -1449,7 +1454,7 @@ def update_contact_attributes(
 
 Type annotations for `boto3.client("connect").update_contact_flow_content` method.
 
-[Client.update_contact_flow_content documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_content)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_content]
 
 ```python
 def update_contact_flow_content(
@@ -1465,7 +1470,7 @@ def update_contact_flow_content(
 
 Type annotations for `boto3.client("connect").update_contact_flow_name` method.
 
-[Client.update_contact_flow_name documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_name)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_name]
 
 ```python
 def update_contact_flow_name(
@@ -1482,7 +1487,7 @@ def update_contact_flow_name(
 
 Type annotations for `boto3.client("connect").update_instance_attribute` method.
 
-[Client.update_instance_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_instance_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_instance_attribute]
 
 ```python
 def update_instance_attribute(
@@ -1498,7 +1503,7 @@ def update_instance_attribute(
 
 Type annotations for `boto3.client("connect").update_instance_storage_config` method.
 
-[Client.update_instance_storage_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_instance_storage_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_instance_storage_config]
 
 ```python
 def update_instance_storage_config(
@@ -1515,7 +1520,7 @@ def update_instance_storage_config(
 
 Type annotations for `boto3.client("connect").update_queue_hours_of_operation` method.
 
-[Client.update_queue_hours_of_operation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_hours_of_operation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_hours_of_operation]
 
 ```python
 def update_queue_hours_of_operation(
@@ -1531,7 +1536,7 @@ def update_queue_hours_of_operation(
 
 Type annotations for `boto3.client("connect").update_queue_max_contacts` method.
 
-[Client.update_queue_max_contacts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_max_contacts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_max_contacts]
 
 ```python
 def update_queue_max_contacts(
@@ -1547,7 +1552,7 @@ def update_queue_max_contacts(
 
 Type annotations for `boto3.client("connect").update_queue_name` method.
 
-[Client.update_queue_name documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_name)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_name]
 
 ```python
 def update_queue_name(
@@ -1564,7 +1569,7 @@ def update_queue_name(
 
 Type annotations for `boto3.client("connect").update_queue_outbound_caller_config` method.
 
-[Client.update_queue_outbound_caller_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_outbound_caller_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_outbound_caller_config]
 
 ```python
 def update_queue_outbound_caller_config(
@@ -1580,7 +1585,7 @@ def update_queue_outbound_caller_config(
 
 Type annotations for `boto3.client("connect").update_queue_status` method.
 
-[Client.update_queue_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_status]
 
 ```python
 def update_queue_status(
@@ -1596,7 +1601,7 @@ def update_queue_status(
 
 Type annotations for `boto3.client("connect").update_quick_connect_config` method.
 
-[Client.update_quick_connect_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_quick_connect_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_quick_connect_config]
 
 ```python
 def update_quick_connect_config(
@@ -1612,7 +1617,7 @@ def update_quick_connect_config(
 
 Type annotations for `boto3.client("connect").update_quick_connect_name` method.
 
-[Client.update_quick_connect_name documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_quick_connect_name)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_quick_connect_name]
 
 ```python
 def update_quick_connect_name(
@@ -1629,7 +1634,7 @@ def update_quick_connect_name(
 
 Type annotations for `boto3.client("connect").update_routing_profile_concurrency` method.
 
-[Client.update_routing_profile_concurrency documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_concurrency)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_concurrency]
 
 ```python
 def update_routing_profile_concurrency(
@@ -1645,7 +1650,7 @@ def update_routing_profile_concurrency(
 
 Type annotations for `boto3.client("connect").update_routing_profile_default_outbound_queue` method.
 
-[Client.update_routing_profile_default_outbound_queue documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_default_outbound_queue)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_default_outbound_queue]
 
 ```python
 def update_routing_profile_default_outbound_queue(
@@ -1661,7 +1666,7 @@ def update_routing_profile_default_outbound_queue(
 
 Type annotations for `boto3.client("connect").update_routing_profile_name` method.
 
-[Client.update_routing_profile_name documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_name)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_name]
 
 ```python
 def update_routing_profile_name(
@@ -1678,7 +1683,7 @@ def update_routing_profile_name(
 
 Type annotations for `boto3.client("connect").update_routing_profile_queues` method.
 
-[Client.update_routing_profile_queues documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_queues)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_queues]
 
 ```python
 def update_routing_profile_queues(
@@ -1694,7 +1699,7 @@ def update_routing_profile_queues(
 
 Type annotations for `boto3.client("connect").update_user_hierarchy` method.
 
-[Client.update_user_hierarchy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_hierarchy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_hierarchy]
 
 ```python
 def update_user_hierarchy(
@@ -1710,7 +1715,7 @@ def update_user_hierarchy(
 
 Type annotations for `boto3.client("connect").update_user_hierarchy_group_name` method.
 
-[Client.update_user_hierarchy_group_name documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_hierarchy_group_name)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_hierarchy_group_name]
 
 ```python
 def update_user_hierarchy_group_name(
@@ -1726,7 +1731,7 @@ def update_user_hierarchy_group_name(
 
 Type annotations for `boto3.client("connect").update_user_hierarchy_structure` method.
 
-[Client.update_user_hierarchy_structure documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_hierarchy_structure)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_hierarchy_structure]
 
 ```python
 def update_user_hierarchy_structure(
@@ -1741,7 +1746,7 @@ def update_user_hierarchy_structure(
 
 Type annotations for `boto3.client("connect").update_user_identity_info` method.
 
-[Client.update_user_identity_info documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_identity_info)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_identity_info]
 
 ```python
 def update_user_identity_info(
@@ -1757,7 +1762,7 @@ def update_user_identity_info(
 
 Type annotations for `boto3.client("connect").update_user_phone_config` method.
 
-[Client.update_user_phone_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_phone_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_phone_config]
 
 ```python
 def update_user_phone_config(
@@ -1773,7 +1778,7 @@ def update_user_phone_config(
 
 Type annotations for `boto3.client("connect").update_user_routing_profile` method.
 
-[Client.update_user_routing_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_routing_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_routing_profile]
 
 ```python
 def update_user_routing_profile(
@@ -1789,7 +1794,7 @@ def update_user_routing_profile(
 
 Type annotations for `boto3.client("connect").update_user_security_profiles` method.
 
-[Client.update_user_security_profiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_security_profiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_security_profiles]
 
 ```python
 def update_user_security_profiles(

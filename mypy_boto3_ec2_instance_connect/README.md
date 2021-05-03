@@ -13,7 +13,7 @@ pip install mypy-boto3-ec2-instance-connect
   - [EC2InstanceConnectClient](#ec2instanceconnectclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## EC2InstanceConnectClient
 
@@ -62,7 +62,7 @@ EC2InstanceConnectClient [exceptions](./client.md#exceptions)
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

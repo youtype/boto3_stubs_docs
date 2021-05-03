@@ -14,7 +14,7 @@ pip install mypy-boto3-iotdeviceadvisor
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## IoTDeviceAdvisorClient
 
@@ -83,7 +83,7 @@ from mypy_boto3_iotdeviceadvisor.literals import Status, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

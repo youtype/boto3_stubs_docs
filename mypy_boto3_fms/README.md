@@ -15,7 +15,7 @@ pip install mypy-boto3-fms
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## FMSClient
 
@@ -123,7 +123,7 @@ from mypy_boto3_fms.literals import AccountRoleStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

@@ -19,7 +19,7 @@ pip install mypy-boto3-dynamodb
   - [Paginators](#paginators)
   - [Waiters](#waiters)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## DynamoDBClient
 
@@ -260,7 +260,7 @@ from mypy_boto3_dynamodb.literals import AttributeAction, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

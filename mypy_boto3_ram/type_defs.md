@@ -1,11 +1,11 @@
-# Structures for boto3 RAM module
+# Typed dictionaries for boto3 RAM module
 
 > [Index](../README.md) > [RAM](./README.md) > Structures
 
 Auto-generated documentation for [RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
 type annotations stubs module [mypy_boto3_ram](https://pypi.org/project/mypy-boto3-ram/).
 
-- [Structures for boto3 RAM module](#structures-for-boto3-ram-module)
+- [Typed dictionaries for boto3 RAM module](#typed-dictionaries-for-boto3-ram-module)
   - [AcceptResourceShareInvitationResponseTypeDef](#acceptresourceshareinvitationresponsetypedef)
   - [AssociateResourceSharePermissionResponseTypeDef](#associateresourcesharepermissionresponsetypedef)
   - [AssociateResourceShareResponseTypeDef](#associateresourceshareresponsetypedef)

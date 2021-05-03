@@ -19,13 +19,13 @@ Type annotations for `boto3.client("ses").get_paginator("list_configuration_sets
 Can be used directly:
 
 ```python
-from mypy_boto3_ses.paginators import ListConfigurationSetsPaginator
+from mypy_boto3_ses.paginator import ListConfigurationSetsPaginator
 
 def get_list_configuration_sets_paginator() -> ListConfigurationSetsPaginator:
     return boto3.client("ses").get_paginator("list_configuration_sets")
 ```
 
-[Paginator.ListConfigurationSets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListConfigurationSets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListConfigurationSets)
 
 ```python
 class ListConfigurationSetsPaginator(Boto3Paginator):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("ses").get_paginator("list_custom_verificatio
 Can be used directly:
 
 ```python
-from mypy_boto3_ses.paginators import ListCustomVerificationEmailTemplatesPaginator
+from mypy_boto3_ses.paginator import ListCustomVerificationEmailTemplatesPaginator
 
 def get_list_custom_verification_email_templates_paginator() -> ListCustomVerificationEmailTemplatesPaginator:
     return boto3.client("ses").get_paginator("list_custom_verification_email_templates")
 ```
 
-[Paginator.ListCustomVerificationEmailTemplates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListCustomVerificationEmailTemplates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListCustomVerificationEmailTemplates)
 
 ```python
 class ListCustomVerificationEmailTemplatesPaginator(Boto3Paginator):
@@ -65,13 +65,13 @@ Type annotations for `boto3.client("ses").get_paginator("list_identities")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ses.paginators import ListIdentitiesPaginator
+from mypy_boto3_ses.paginator import ListIdentitiesPaginator
 
 def get_list_identities_paginator() -> ListIdentitiesPaginator:
     return boto3.client("ses").get_paginator("list_identities")
 ```
 
-[Paginator.ListIdentities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListIdentities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListIdentities)
 
 ```python
 class ListIdentitiesPaginator(Boto3Paginator):
@@ -89,13 +89,13 @@ Type annotations for `boto3.client("ses").get_paginator("list_receipt_rule_sets"
 Can be used directly:
 
 ```python
-from mypy_boto3_ses.paginators import ListReceiptRuleSetsPaginator
+from mypy_boto3_ses.paginator import ListReceiptRuleSetsPaginator
 
 def get_list_receipt_rule_sets_paginator() -> ListReceiptRuleSetsPaginator:
     return boto3.client("ses").get_paginator("list_receipt_rule_sets")
 ```
 
-[Paginator.ListReceiptRuleSets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListReceiptRuleSets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListReceiptRuleSets)
 
 ```python
 class ListReceiptRuleSetsPaginator(Boto3Paginator):
@@ -112,13 +112,13 @@ Type annotations for `boto3.client("ses").get_paginator("list_templates")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ses.paginators import ListTemplatesPaginator
+from mypy_boto3_ses.paginator import ListTemplatesPaginator
 
 def get_list_templates_paginator() -> ListTemplatesPaginator:
     return boto3.client("ses").get_paginator("list_templates")
 ```
 
-[Paginator.ListTemplates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListTemplates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Paginator.ListTemplates)
 
 ```python
 class ListTemplatesPaginator(Boto3Paginator):

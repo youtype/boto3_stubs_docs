@@ -45,7 +45,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_ram.client import RAMClient
+
+def get_ram_client() -> RAMClient:
+    return boto3.client("ram")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client)
 
 ## Exceptions
 
@@ -93,7 +98,7 @@ Exceptions:
 
 Type annotations for `boto3.client("ram").accept_resource_share_invitation` method.
 
-[Client.accept_resource_share_invitation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.accept_resource_share_invitation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.accept_resource_share_invitation]
 
 ```python
 def accept_resource_share_invitation(
@@ -108,7 +113,7 @@ def accept_resource_share_invitation(
 
 Type annotations for `boto3.client("ram").associate_resource_share` method.
 
-[Client.associate_resource_share documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.associate_resource_share)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.associate_resource_share]
 
 ```python
 def associate_resource_share(
@@ -125,7 +130,7 @@ def associate_resource_share(
 
 Type annotations for `boto3.client("ram").associate_resource_share_permission` method.
 
-[Client.associate_resource_share_permission documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.associate_resource_share_permission)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.associate_resource_share_permission]
 
 ```python
 def associate_resource_share_permission(
@@ -142,7 +147,7 @@ def associate_resource_share_permission(
 
 Type annotations for `boto3.client("ram").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -156,7 +161,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("ram").create_resource_share` method.
 
-[Client.create_resource_share documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.create_resource_share)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.create_resource_share]
 
 ```python
 def create_resource_share(
@@ -176,7 +181,7 @@ def create_resource_share(
 
 Type annotations for `boto3.client("ram").delete_resource_share` method.
 
-[Client.delete_resource_share documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.delete_resource_share)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.delete_resource_share]
 
 ```python
 def delete_resource_share(
@@ -191,7 +196,7 @@ def delete_resource_share(
 
 Type annotations for `boto3.client("ram").disassociate_resource_share` method.
 
-[Client.disassociate_resource_share documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.disassociate_resource_share)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.disassociate_resource_share]
 
 ```python
 def disassociate_resource_share(
@@ -208,7 +213,7 @@ def disassociate_resource_share(
 
 Type annotations for `boto3.client("ram").disassociate_resource_share_permission` method.
 
-[Client.disassociate_resource_share_permission documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.disassociate_resource_share_permission)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.disassociate_resource_share_permission]
 
 ```python
 def disassociate_resource_share_permission(
@@ -224,7 +229,7 @@ def disassociate_resource_share_permission(
 
 Type annotations for `boto3.client("ram").enable_sharing_with_aws_organization` method.
 
-[Client.enable_sharing_with_aws_organization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.enable_sharing_with_aws_organization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.enable_sharing_with_aws_organization]
 
 ```python
 def enable_sharing_with_aws_organization(
@@ -237,7 +242,7 @@ def enable_sharing_with_aws_organization(
 
 Type annotations for `boto3.client("ram").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -254,7 +259,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("ram").get_permission` method.
 
-[Client.get_permission documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_permission)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_permission]
 
 ```python
 def get_permission(
@@ -269,7 +274,7 @@ def get_permission(
 
 Type annotations for `boto3.client("ram").get_resource_policies` method.
 
-[Client.get_resource_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_policies]
 
 ```python
 def get_resource_policies(
@@ -286,7 +291,7 @@ def get_resource_policies(
 
 Type annotations for `boto3.client("ram").get_resource_share_associations` method.
 
-[Client.get_resource_share_associations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_share_associations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_share_associations]
 
 ```python
 def get_resource_share_associations(
@@ -306,7 +311,7 @@ def get_resource_share_associations(
 
 Type annotations for `boto3.client("ram").get_resource_share_invitations` method.
 
-[Client.get_resource_share_invitations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_share_invitations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_share_invitations]
 
 ```python
 def get_resource_share_invitations(
@@ -323,7 +328,7 @@ def get_resource_share_invitations(
 
 Type annotations for `boto3.client("ram").get_resource_shares` method.
 
-[Client.get_resource_shares documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_shares)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_shares]
 
 ```python
 def get_resource_shares(
@@ -343,7 +348,7 @@ def get_resource_shares(
 
 Type annotations for `boto3.client("ram").list_pending_invitation_resources` method.
 
-[Client.list_pending_invitation_resources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_pending_invitation_resources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_pending_invitation_resources]
 
 ```python
 def list_pending_invitation_resources(
@@ -359,7 +364,7 @@ def list_pending_invitation_resources(
 
 Type annotations for `boto3.client("ram").list_permissions` method.
 
-[Client.list_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_permissions]
 
 ```python
 def list_permissions(
@@ -375,7 +380,7 @@ def list_permissions(
 
 Type annotations for `boto3.client("ram").list_principals` method.
 
-[Client.list_principals documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_principals)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_principals]
 
 ```python
 def list_principals(
@@ -395,7 +400,7 @@ def list_principals(
 
 Type annotations for `boto3.client("ram").list_resource_share_permissions` method.
 
-[Client.list_resource_share_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resource_share_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resource_share_permissions]
 
 ```python
 def list_resource_share_permissions(
@@ -411,7 +416,7 @@ def list_resource_share_permissions(
 
 Type annotations for `boto3.client("ram").list_resource_types` method.
 
-[Client.list_resource_types documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resource_types)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resource_types]
 
 ```python
 def list_resource_types(
@@ -426,7 +431,7 @@ def list_resource_types(
 
 Type annotations for `boto3.client("ram").list_resources` method.
 
-[Client.list_resources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resources]
 
 ```python
 def list_resources(
@@ -446,7 +451,7 @@ def list_resources(
 
 Type annotations for `boto3.client("ram").promote_resource_share_created_from_policy` method.
 
-[Client.promote_resource_share_created_from_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.promote_resource_share_created_from_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.promote_resource_share_created_from_policy]
 
 ```python
 def promote_resource_share_created_from_policy(
@@ -460,7 +465,7 @@ def promote_resource_share_created_from_policy(
 
 Type annotations for `boto3.client("ram").reject_resource_share_invitation` method.
 
-[Client.reject_resource_share_invitation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.reject_resource_share_invitation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.reject_resource_share_invitation]
 
 ```python
 def reject_resource_share_invitation(
@@ -475,7 +480,7 @@ def reject_resource_share_invitation(
 
 Type annotations for `boto3.client("ram").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -490,7 +495,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("ram").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -505,7 +510,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("ram").update_resource_share` method.
 
-[Client.update_resource_share documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.update_resource_share)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.update_resource_share]
 
 ```python
 def update_resource_share(

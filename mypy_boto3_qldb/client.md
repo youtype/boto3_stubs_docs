@@ -39,7 +39,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_qldb.client import QLDBClient
+
+def get_qldb_client() -> QLDBClient:
+    return boto3.client("qldb")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client)
 
 ## Exceptions
 
@@ -72,7 +77,7 @@ Exceptions:
 
 Type annotations for `boto3.client("qldb").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -86,7 +91,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("qldb").cancel_journal_kinesis_stream` method.
 
-[Client.cancel_journal_kinesis_stream documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.cancel_journal_kinesis_stream)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.cancel_journal_kinesis_stream]
 
 ```python
 def cancel_journal_kinesis_stream(
@@ -101,7 +106,7 @@ def cancel_journal_kinesis_stream(
 
 Type annotations for `boto3.client("qldb").create_ledger` method.
 
-[Client.create_ledger documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.create_ledger)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.create_ledger]
 
 ```python
 def create_ledger(
@@ -118,7 +123,7 @@ def create_ledger(
 
 Type annotations for `boto3.client("qldb").delete_ledger` method.
 
-[Client.delete_ledger documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.delete_ledger)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.delete_ledger]
 
 ```python
 def delete_ledger(
@@ -132,7 +137,7 @@ def delete_ledger(
 
 Type annotations for `boto3.client("qldb").describe_journal_kinesis_stream` method.
 
-[Client.describe_journal_kinesis_stream documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.describe_journal_kinesis_stream)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.describe_journal_kinesis_stream]
 
 ```python
 def describe_journal_kinesis_stream(
@@ -147,7 +152,7 @@ def describe_journal_kinesis_stream(
 
 Type annotations for `boto3.client("qldb").describe_journal_s3_export` method.
 
-[Client.describe_journal_s3_export documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.describe_journal_s3_export)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.describe_journal_s3_export]
 
 ```python
 def describe_journal_s3_export(
@@ -162,7 +167,7 @@ def describe_journal_s3_export(
 
 Type annotations for `boto3.client("qldb").describe_ledger` method.
 
-[Client.describe_ledger documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.describe_ledger)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.describe_ledger]
 
 ```python
 def describe_ledger(
@@ -176,7 +181,7 @@ def describe_ledger(
 
 Type annotations for `boto3.client("qldb").export_journal_to_s3` method.
 
-[Client.export_journal_to_s3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.export_journal_to_s3)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.export_journal_to_s3]
 
 ```python
 def export_journal_to_s3(
@@ -194,7 +199,7 @@ def export_journal_to_s3(
 
 Type annotations for `boto3.client("qldb").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -211,7 +216,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("qldb").get_block` method.
 
-[Client.get_block documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.get_block)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.get_block]
 
 ```python
 def get_block(
@@ -227,7 +232,7 @@ def get_block(
 
 Type annotations for `boto3.client("qldb").get_digest` method.
 
-[Client.get_digest documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.get_digest)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.get_digest]
 
 ```python
 def get_digest(
@@ -241,7 +246,7 @@ def get_digest(
 
 Type annotations for `boto3.client("qldb").get_revision` method.
 
-[Client.get_revision documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.get_revision)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.get_revision]
 
 ```python
 def get_revision(
@@ -258,7 +263,7 @@ def get_revision(
 
 Type annotations for `boto3.client("qldb").list_journal_kinesis_streams_for_ledger` method.
 
-[Client.list_journal_kinesis_streams_for_ledger documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_journal_kinesis_streams_for_ledger)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_journal_kinesis_streams_for_ledger]
 
 ```python
 def list_journal_kinesis_streams_for_ledger(
@@ -274,7 +279,7 @@ def list_journal_kinesis_streams_for_ledger(
 
 Type annotations for `boto3.client("qldb").list_journal_s3_exports` method.
 
-[Client.list_journal_s3_exports documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_journal_s3_exports)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_journal_s3_exports]
 
 ```python
 def list_journal_s3_exports(
@@ -289,7 +294,7 @@ def list_journal_s3_exports(
 
 Type annotations for `boto3.client("qldb").list_journal_s3_exports_for_ledger` method.
 
-[Client.list_journal_s3_exports_for_ledger documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_journal_s3_exports_for_ledger)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_journal_s3_exports_for_ledger]
 
 ```python
 def list_journal_s3_exports_for_ledger(
@@ -305,7 +310,7 @@ def list_journal_s3_exports_for_ledger(
 
 Type annotations for `boto3.client("qldb").list_ledgers` method.
 
-[Client.list_ledgers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_ledgers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_ledgers]
 
 ```python
 def list_ledgers(
@@ -320,7 +325,7 @@ def list_ledgers(
 
 Type annotations for `boto3.client("qldb").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -334,7 +339,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("qldb").stream_journal_to_kinesis` method.
 
-[Client.stream_journal_to_kinesis documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.stream_journal_to_kinesis)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.stream_journal_to_kinesis]
 
 ```python
 def stream_journal_to_kinesis(
@@ -354,7 +359,7 @@ def stream_journal_to_kinesis(
 
 Type annotations for `boto3.client("qldb").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -369,7 +374,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("qldb").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -384,7 +389,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("qldb").update_ledger` method.
 
-[Client.update_ledger documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.update_ledger)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.update_ledger]
 
 ```python
 def update_ledger(

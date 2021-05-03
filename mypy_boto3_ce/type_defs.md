@@ -1,11 +1,11 @@
-# Structures for boto3 CostExplorer module
+# Typed dictionaries for boto3 CostExplorer module
 
 > [Index](../README.md) > [CostExplorer](./README.md) > Structures
 
 Auto-generated documentation for [CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
 type annotations stubs module [mypy_boto3_ce](https://pypi.org/project/mypy-boto3-ce/).
 
-- [Structures for boto3 CostExplorer module](#structures-for-boto3-costexplorer-module)
+- [Typed dictionaries for boto3 CostExplorer module](#typed-dictionaries-for-boto3-costexplorer-module)
   - [AnomalyDateIntervalTypeDef](#anomalydateintervaltypedef)
   - [AnomalyMonitorTypeDef](#anomalymonitortypedef)
   - [AnomalyScoreTypeDef](#anomalyscoretypedef)

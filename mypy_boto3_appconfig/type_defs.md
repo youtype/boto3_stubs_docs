@@ -1,11 +1,11 @@
-# Structures for boto3 AppConfig module
+# Typed dictionaries for boto3 AppConfig module
 
 > [Index](../README.md) > [AppConfig](./README.md) > Structures
 
 Auto-generated documentation for [AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
 type annotations stubs module [mypy_boto3_appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
 
-- [Structures for boto3 AppConfig module](#structures-for-boto3-appconfig-module)
+- [Typed dictionaries for boto3 AppConfig module](#typed-dictionaries-for-boto3-appconfig-module)
   - [ApplicationTypeDef](#applicationtypedef)
   - [ApplicationsTypeDef](#applicationstypedef)
   - [ConfigurationProfileSummaryTypeDef](#configurationprofilesummarytypedef)

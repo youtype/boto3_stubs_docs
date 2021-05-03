@@ -15,7 +15,7 @@ pip install mypy-boto3-codeartifact
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## CodeArtifactClient
 
@@ -138,7 +138,7 @@ from mypy_boto3_codeartifact.literals import DomainStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

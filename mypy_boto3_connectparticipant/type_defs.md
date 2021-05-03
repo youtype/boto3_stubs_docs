@@ -1,11 +1,11 @@
-# Structures for boto3 ConnectParticipant module
+# Typed dictionaries for boto3 ConnectParticipant module
 
 > [Index](../README.md) > [ConnectParticipant](./README.md) > Structures
 
 Auto-generated documentation for [ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
 type annotations stubs module [mypy_boto3_connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
 
-- [Structures for boto3 ConnectParticipant module](#structures-for-boto3-connectparticipant-module)
+- [Typed dictionaries for boto3 ConnectParticipant module](#typed-dictionaries-for-boto3-connectparticipant-module)
   - [AttachmentItemTypeDef](#attachmentitemtypedef)
   - [ConnectionCredentialsTypeDef](#connectioncredentialstypedef)
   - [CreateParticipantConnectionResponseTypeDef](#createparticipantconnectionresponsetypedef)

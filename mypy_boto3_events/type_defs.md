@@ -1,11 +1,11 @@
-# Structures for boto3 EventBridge module
+# Typed dictionaries for boto3 EventBridge module
 
 > [Index](../README.md) > [EventBridge](./README.md) > Structures
 
 Auto-generated documentation for [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
 type annotations stubs module [mypy_boto3_events](https://pypi.org/project/mypy-boto3-events/).
 
-- [Structures for boto3 EventBridge module](#structures-for-boto3-eventbridge-module)
+- [Typed dictionaries for boto3 EventBridge module](#typed-dictionaries-for-boto3-eventbridge-module)
   - [ApiDestinationTypeDef](#apidestinationtypedef)
   - [ArchiveTypeDef](#archivetypedef)
   - [AwsVpcConfigurationTypeDef](#awsvpcconfigurationtypedef)

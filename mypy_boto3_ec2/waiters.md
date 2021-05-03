@@ -46,13 +46,13 @@ Type annotations for `boto3.client("ec2").get_waiter("bundle_task_complete")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import BundleTaskCompleteWaiter
+from mypy_boto3_ec2.waiter import BundleTaskCompleteWaiter
 
 def get_bundle_task_complete_waiter() -> BundleTaskCompleteWaiter:
     return boto3.client("ec2").get_waiter("bundle_task_complete")
 ```
 
-[Waiter.BundleTaskComplete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.BundleTaskComplete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.bundle_task_complete)
 
 ```python
 class BundleTaskCompleteWaiter(Boto3Waiter):
@@ -72,13 +72,13 @@ Type annotations for `boto3.client("ec2").get_waiter("conversion_task_cancelled"
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import ConversionTaskCancelledWaiter
+from mypy_boto3_ec2.waiter import ConversionTaskCancelledWaiter
 
 def get_conversion_task_cancelled_waiter() -> ConversionTaskCancelledWaiter:
     return boto3.client("ec2").get_waiter("conversion_task_cancelled")
 ```
 
-[Waiter.ConversionTaskCancelled documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ConversionTaskCancelled)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.conversion_task_cancelled)
 
 ```python
 class ConversionTaskCancelledWaiter(Boto3Waiter):
@@ -97,13 +97,13 @@ Type annotations for `boto3.client("ec2").get_waiter("conversion_task_completed"
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import ConversionTaskCompletedWaiter
+from mypy_boto3_ec2.waiter import ConversionTaskCompletedWaiter
 
 def get_conversion_task_completed_waiter() -> ConversionTaskCompletedWaiter:
     return boto3.client("ec2").get_waiter("conversion_task_completed")
 ```
 
-[Waiter.ConversionTaskCompleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ConversionTaskCompleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.conversion_task_completed)
 
 ```python
 class ConversionTaskCompletedWaiter(Boto3Waiter):
@@ -122,13 +122,13 @@ Type annotations for `boto3.client("ec2").get_waiter("conversion_task_deleted")`
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import ConversionTaskDeletedWaiter
+from mypy_boto3_ec2.waiter import ConversionTaskDeletedWaiter
 
 def get_conversion_task_deleted_waiter() -> ConversionTaskDeletedWaiter:
     return boto3.client("ec2").get_waiter("conversion_task_deleted")
 ```
 
-[Waiter.ConversionTaskDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ConversionTaskDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.conversion_task_deleted)
 
 ```python
 class ConversionTaskDeletedWaiter(Boto3Waiter):
@@ -147,13 +147,13 @@ Type annotations for `boto3.client("ec2").get_waiter("customer_gateway_available
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import CustomerGatewayAvailableWaiter
+from mypy_boto3_ec2.waiter import CustomerGatewayAvailableWaiter
 
 def get_customer_gateway_available_waiter() -> CustomerGatewayAvailableWaiter:
     return boto3.client("ec2").get_waiter("customer_gateway_available")
 ```
 
-[Waiter.CustomerGatewayAvailable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.CustomerGatewayAvailable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.customer_gateway_available)
 
 ```python
 class CustomerGatewayAvailableWaiter(Boto3Waiter):
@@ -173,13 +173,13 @@ Type annotations for `boto3.client("ec2").get_waiter("export_task_cancelled")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import ExportTaskCancelledWaiter
+from mypy_boto3_ec2.waiter import ExportTaskCancelledWaiter
 
 def get_export_task_cancelled_waiter() -> ExportTaskCancelledWaiter:
     return boto3.client("ec2").get_waiter("export_task_cancelled")
 ```
 
-[Waiter.ExportTaskCancelled documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ExportTaskCancelled)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.export_task_cancelled)
 
 ```python
 class ExportTaskCancelledWaiter(Boto3Waiter):
@@ -198,13 +198,13 @@ Type annotations for `boto3.client("ec2").get_waiter("export_task_completed")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import ExportTaskCompletedWaiter
+from mypy_boto3_ec2.waiter import ExportTaskCompletedWaiter
 
 def get_export_task_completed_waiter() -> ExportTaskCompletedWaiter:
     return boto3.client("ec2").get_waiter("export_task_completed")
 ```
 
-[Waiter.ExportTaskCompleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ExportTaskCompleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.export_task_completed)
 
 ```python
 class ExportTaskCompletedWaiter(Boto3Waiter):
@@ -223,13 +223,13 @@ Type annotations for `boto3.client("ec2").get_waiter("image_available")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import ImageAvailableWaiter
+from mypy_boto3_ec2.waiter import ImageAvailableWaiter
 
 def get_image_available_waiter() -> ImageAvailableWaiter:
     return boto3.client("ec2").get_waiter("image_available")
 ```
 
-[Waiter.ImageAvailable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ImageAvailable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.image_available)
 
 ```python
 class ImageAvailableWaiter(Boto3Waiter):
@@ -251,13 +251,13 @@ Type annotations for `boto3.client("ec2").get_waiter("image_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import ImageExistsWaiter
+from mypy_boto3_ec2.waiter import ImageExistsWaiter
 
 def get_image_exists_waiter() -> ImageExistsWaiter:
     return boto3.client("ec2").get_waiter("image_exists")
 ```
 
-[Waiter.ImageExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ImageExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.image_exists)
 
 ```python
 class ImageExistsWaiter(Boto3Waiter):
@@ -279,13 +279,13 @@ Type annotations for `boto3.client("ec2").get_waiter("instance_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import InstanceExistsWaiter
+from mypy_boto3_ec2.waiter import InstanceExistsWaiter
 
 def get_instance_exists_waiter() -> InstanceExistsWaiter:
     return boto3.client("ec2").get_waiter("instance_exists")
 ```
 
-[Waiter.InstanceExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.InstanceExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_exists)
 
 ```python
 class InstanceExistsWaiter(Boto3Waiter):
@@ -307,13 +307,13 @@ Type annotations for `boto3.client("ec2").get_waiter("instance_running")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import InstanceRunningWaiter
+from mypy_boto3_ec2.waiter import InstanceRunningWaiter
 
 def get_instance_running_waiter() -> InstanceRunningWaiter:
     return boto3.client("ec2").get_waiter("instance_running")
 ```
 
-[Waiter.InstanceRunning documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.InstanceRunning)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_running)
 
 ```python
 class InstanceRunningWaiter(Boto3Waiter):
@@ -335,13 +335,13 @@ Type annotations for `boto3.client("ec2").get_waiter("instance_status_ok")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import InstanceStatusOkWaiter
+from mypy_boto3_ec2.waiter import InstanceStatusOkWaiter
 
 def get_instance_status_ok_waiter() -> InstanceStatusOkWaiter:
     return boto3.client("ec2").get_waiter("instance_status_ok")
 ```
 
-[Waiter.InstanceStatusOk documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.InstanceStatusOk)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_status_ok)
 
 ```python
 class InstanceStatusOkWaiter(Boto3Waiter):
@@ -364,13 +364,13 @@ Type annotations for `boto3.client("ec2").get_waiter("instance_stopped")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import InstanceStoppedWaiter
+from mypy_boto3_ec2.waiter import InstanceStoppedWaiter
 
 def get_instance_stopped_waiter() -> InstanceStoppedWaiter:
     return boto3.client("ec2").get_waiter("instance_stopped")
 ```
 
-[Waiter.InstanceStopped documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.InstanceStopped)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_stopped)
 
 ```python
 class InstanceStoppedWaiter(Boto3Waiter):
@@ -392,13 +392,13 @@ Type annotations for `boto3.client("ec2").get_waiter("instance_terminated")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import InstanceTerminatedWaiter
+from mypy_boto3_ec2.waiter import InstanceTerminatedWaiter
 
 def get_instance_terminated_waiter() -> InstanceTerminatedWaiter:
     return boto3.client("ec2").get_waiter("instance_terminated")
 ```
 
-[Waiter.InstanceTerminated documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.InstanceTerminated)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.instance_terminated)
 
 ```python
 class InstanceTerminatedWaiter(Boto3Waiter):
@@ -420,13 +420,13 @@ Type annotations for `boto3.client("ec2").get_waiter("key_pair_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import KeyPairExistsWaiter
+from mypy_boto3_ec2.waiter import KeyPairExistsWaiter
 
 def get_key_pair_exists_waiter() -> KeyPairExistsWaiter:
     return boto3.client("ec2").get_waiter("key_pair_exists")
 ```
 
-[Waiter.KeyPairExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.KeyPairExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.key_pair_exists)
 
 ```python
 class KeyPairExistsWaiter(Boto3Waiter):
@@ -447,13 +447,13 @@ Type annotations for `boto3.client("ec2").get_waiter("nat_gateway_available")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import NatGatewayAvailableWaiter
+from mypy_boto3_ec2.waiter import NatGatewayAvailableWaiter
 
 def get_nat_gateway_available_waiter() -> NatGatewayAvailableWaiter:
     return boto3.client("ec2").get_waiter("nat_gateway_available")
 ```
 
-[Waiter.NatGatewayAvailable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.NatGatewayAvailable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.nat_gateway_available)
 
 ```python
 class NatGatewayAvailableWaiter(Boto3Waiter):
@@ -475,13 +475,13 @@ Type annotations for `boto3.client("ec2").get_waiter("network_interface_availabl
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import NetworkInterfaceAvailableWaiter
+from mypy_boto3_ec2.waiter import NetworkInterfaceAvailableWaiter
 
 def get_network_interface_available_waiter() -> NetworkInterfaceAvailableWaiter:
     return boto3.client("ec2").get_waiter("network_interface_available")
 ```
 
-[Waiter.NetworkInterfaceAvailable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.NetworkInterfaceAvailable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.network_interface_available)
 
 ```python
 class NetworkInterfaceAvailableWaiter(Boto3Waiter):
@@ -503,13 +503,13 @@ Type annotations for `boto3.client("ec2").get_waiter("password_data_available")`
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import PasswordDataAvailableWaiter
+from mypy_boto3_ec2.waiter import PasswordDataAvailableWaiter
 
 def get_password_data_available_waiter() -> PasswordDataAvailableWaiter:
     return boto3.client("ec2").get_waiter("password_data_available")
 ```
 
-[Waiter.PasswordDataAvailable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.PasswordDataAvailable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.password_data_available)
 
 ```python
 class PasswordDataAvailableWaiter(Boto3Waiter):
@@ -528,13 +528,13 @@ Type annotations for `boto3.client("ec2").get_waiter("security_group_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import SecurityGroupExistsWaiter
+from mypy_boto3_ec2.waiter import SecurityGroupExistsWaiter
 
 def get_security_group_exists_waiter() -> SecurityGroupExistsWaiter:
     return boto3.client("ec2").get_waiter("security_group_exists")
 ```
 
-[Waiter.SecurityGroupExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.SecurityGroupExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.security_group_exists)
 
 ```python
 class SecurityGroupExistsWaiter(Boto3Waiter):
@@ -557,13 +557,13 @@ Type annotations for `boto3.client("ec2").get_waiter("snapshot_completed")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import SnapshotCompletedWaiter
+from mypy_boto3_ec2.waiter import SnapshotCompletedWaiter
 
 def get_snapshot_completed_waiter() -> SnapshotCompletedWaiter:
     return boto3.client("ec2").get_waiter("snapshot_completed")
 ```
 
-[Waiter.SnapshotCompleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.SnapshotCompleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.snapshot_completed)
 
 ```python
 class SnapshotCompletedWaiter(Boto3Waiter):
@@ -587,13 +587,13 @@ Type annotations for `boto3.client("ec2").get_waiter("spot_instance_request_fulf
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import SpotInstanceRequestFulfilledWaiter
+from mypy_boto3_ec2.waiter import SpotInstanceRequestFulfilledWaiter
 
 def get_spot_instance_request_fulfilled_waiter() -> SpotInstanceRequestFulfilledWaiter:
     return boto3.client("ec2").get_waiter("spot_instance_request_fulfilled")
 ```
 
-[Waiter.SpotInstanceRequestFulfilled documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.SpotInstanceRequestFulfilled)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.spot_instance_request_fulfilled)
 
 ```python
 class SpotInstanceRequestFulfilledWaiter(Boto3Waiter):
@@ -615,13 +615,13 @@ Type annotations for `boto3.client("ec2").get_waiter("subnet_available")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import SubnetAvailableWaiter
+from mypy_boto3_ec2.waiter import SubnetAvailableWaiter
 
 def get_subnet_available_waiter() -> SubnetAvailableWaiter:
     return boto3.client("ec2").get_waiter("subnet_available")
 ```
 
-[Waiter.SubnetAvailable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.SubnetAvailable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.subnet_available)
 
 ```python
 class SubnetAvailableWaiter(Boto3Waiter):
@@ -643,13 +643,13 @@ Type annotations for `boto3.client("ec2").get_waiter("system_status_ok")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import SystemStatusOkWaiter
+from mypy_boto3_ec2.waiter import SystemStatusOkWaiter
 
 def get_system_status_ok_waiter() -> SystemStatusOkWaiter:
     return boto3.client("ec2").get_waiter("system_status_ok")
 ```
 
-[Waiter.SystemStatusOk documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.SystemStatusOk)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.system_status_ok)
 
 ```python
 class SystemStatusOkWaiter(Boto3Waiter):
@@ -672,13 +672,13 @@ Type annotations for `boto3.client("ec2").get_waiter("volume_available")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import VolumeAvailableWaiter
+from mypy_boto3_ec2.waiter import VolumeAvailableWaiter
 
 def get_volume_available_waiter() -> VolumeAvailableWaiter:
     return boto3.client("ec2").get_waiter("volume_available")
 ```
 
-[Waiter.VolumeAvailable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VolumeAvailable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.volume_available)
 
 ```python
 class VolumeAvailableWaiter(Boto3Waiter):
@@ -700,13 +700,13 @@ Type annotations for `boto3.client("ec2").get_waiter("volume_deleted")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import VolumeDeletedWaiter
+from mypy_boto3_ec2.waiter import VolumeDeletedWaiter
 
 def get_volume_deleted_waiter() -> VolumeDeletedWaiter:
     return boto3.client("ec2").get_waiter("volume_deleted")
 ```
 
-[Waiter.VolumeDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VolumeDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.volume_deleted)
 
 ```python
 class VolumeDeletedWaiter(Boto3Waiter):
@@ -728,13 +728,13 @@ Type annotations for `boto3.client("ec2").get_waiter("volume_in_use")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import VolumeInUseWaiter
+from mypy_boto3_ec2.waiter import VolumeInUseWaiter
 
 def get_volume_in_use_waiter() -> VolumeInUseWaiter:
     return boto3.client("ec2").get_waiter("volume_in_use")
 ```
 
-[Waiter.VolumeInUse documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VolumeInUse)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.volume_in_use)
 
 ```python
 class VolumeInUseWaiter(Boto3Waiter):
@@ -756,13 +756,13 @@ Type annotations for `boto3.client("ec2").get_waiter("vpc_available")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import VpcAvailableWaiter
+from mypy_boto3_ec2.waiter import VpcAvailableWaiter
 
 def get_vpc_available_waiter() -> VpcAvailableWaiter:
     return boto3.client("ec2").get_waiter("vpc_available")
 ```
 
-[Waiter.VpcAvailable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VpcAvailable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpc_available)
 
 ```python
 class VpcAvailableWaiter(Boto3Waiter):
@@ -784,13 +784,13 @@ Type annotations for `boto3.client("ec2").get_waiter("vpc_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import VpcExistsWaiter
+from mypy_boto3_ec2.waiter import VpcExistsWaiter
 
 def get_vpc_exists_waiter() -> VpcExistsWaiter:
     return boto3.client("ec2").get_waiter("vpc_exists")
 ```
 
-[Waiter.VpcExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VpcExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpc_exists)
 
 ```python
 class VpcExistsWaiter(Boto3Waiter):
@@ -812,13 +812,13 @@ Type annotations for `boto3.client("ec2").get_waiter("vpc_peering_connection_del
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import VpcPeeringConnectionDeletedWaiter
+from mypy_boto3_ec2.waiter import VpcPeeringConnectionDeletedWaiter
 
 def get_vpc_peering_connection_deleted_waiter() -> VpcPeeringConnectionDeletedWaiter:
     return boto3.client("ec2").get_waiter("vpc_peering_connection_deleted")
 ```
 
-[Waiter.VpcPeeringConnectionDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VpcPeeringConnectionDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpc_peering_connection_deleted)
 
 ```python
 class VpcPeeringConnectionDeletedWaiter(Boto3Waiter):
@@ -840,13 +840,13 @@ Type annotations for `boto3.client("ec2").get_waiter("vpc_peering_connection_exi
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import VpcPeeringConnectionExistsWaiter
+from mypy_boto3_ec2.waiter import VpcPeeringConnectionExistsWaiter
 
 def get_vpc_peering_connection_exists_waiter() -> VpcPeeringConnectionExistsWaiter:
     return boto3.client("ec2").get_waiter("vpc_peering_connection_exists")
 ```
 
-[Waiter.VpcPeeringConnectionExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VpcPeeringConnectionExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpc_peering_connection_exists)
 
 ```python
 class VpcPeeringConnectionExistsWaiter(Boto3Waiter):
@@ -868,13 +868,13 @@ Type annotations for `boto3.client("ec2").get_waiter("vpn_connection_available")
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import VpnConnectionAvailableWaiter
+from mypy_boto3_ec2.waiter import VpnConnectionAvailableWaiter
 
 def get_vpn_connection_available_waiter() -> VpnConnectionAvailableWaiter:
     return boto3.client("ec2").get_waiter("vpn_connection_available")
 ```
 
-[Waiter.VpnConnectionAvailable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VpnConnectionAvailable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpn_connection_available)
 
 ```python
 class VpnConnectionAvailableWaiter(Boto3Waiter):
@@ -894,13 +894,13 @@ Type annotations for `boto3.client("ec2").get_waiter("vpn_connection_deleted")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import VpnConnectionDeletedWaiter
+from mypy_boto3_ec2.waiter import VpnConnectionDeletedWaiter
 
 def get_vpn_connection_deleted_waiter() -> VpnConnectionDeletedWaiter:
     return boto3.client("ec2").get_waiter("vpn_connection_deleted")
 ```
 
-[Waiter.VpnConnectionDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VpnConnectionDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.vpn_connection_deleted)
 
 ```python
 class VpnConnectionDeletedWaiter(Boto3Waiter):

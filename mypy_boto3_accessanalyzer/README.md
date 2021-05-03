@@ -15,7 +15,7 @@ pip install mypy-boto3-accessanalyzer
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## AccessAnalyzerClient
 
@@ -147,7 +147,7 @@ from mypy_boto3_accessanalyzer.literals import AccessPreviewStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

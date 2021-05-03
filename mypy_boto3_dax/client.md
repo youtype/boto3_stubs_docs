@@ -42,7 +42,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_dax.client import DAXClient
+
+def get_dax_client() -> DAXClient:
+    return boto3.client("dax")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client)
 
 ## Exceptions
 
@@ -95,7 +100,7 @@ Exceptions:
 
 Type annotations for `boto3.client("dax").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -109,7 +114,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("dax").create_cluster` method.
 
-[Client.create_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.create_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.create_cluster]
 
 ```python
 def create_cluster(
@@ -135,7 +140,7 @@ def create_cluster(
 
 Type annotations for `boto3.client("dax").create_parameter_group` method.
 
-[Client.create_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.create_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.create_parameter_group]
 
 ```python
 def create_parameter_group(
@@ -150,7 +155,7 @@ def create_parameter_group(
 
 Type annotations for `boto3.client("dax").create_subnet_group` method.
 
-[Client.create_subnet_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.create_subnet_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.create_subnet_group]
 
 ```python
 def create_subnet_group(
@@ -166,7 +171,7 @@ def create_subnet_group(
 
 Type annotations for `boto3.client("dax").decrease_replication_factor` method.
 
-[Client.decrease_replication_factor documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.decrease_replication_factor)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.decrease_replication_factor]
 
 ```python
 def decrease_replication_factor(
@@ -183,7 +188,7 @@ def decrease_replication_factor(
 
 Type annotations for `boto3.client("dax").delete_cluster` method.
 
-[Client.delete_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.delete_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.delete_cluster]
 
 ```python
 def delete_cluster(
@@ -197,7 +202,7 @@ def delete_cluster(
 
 Type annotations for `boto3.client("dax").delete_parameter_group` method.
 
-[Client.delete_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.delete_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.delete_parameter_group]
 
 ```python
 def delete_parameter_group(
@@ -211,7 +216,7 @@ def delete_parameter_group(
 
 Type annotations for `boto3.client("dax").delete_subnet_group` method.
 
-[Client.delete_subnet_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.delete_subnet_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.delete_subnet_group]
 
 ```python
 def delete_subnet_group(
@@ -225,7 +230,7 @@ def delete_subnet_group(
 
 Type annotations for `boto3.client("dax").describe_clusters` method.
 
-[Client.describe_clusters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_clusters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_clusters]
 
 ```python
 def describe_clusters(
@@ -241,7 +246,7 @@ def describe_clusters(
 
 Type annotations for `boto3.client("dax").describe_default_parameters` method.
 
-[Client.describe_default_parameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_default_parameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_default_parameters]
 
 ```python
 def describe_default_parameters(
@@ -256,7 +261,7 @@ def describe_default_parameters(
 
 Type annotations for `boto3.client("dax").describe_events` method.
 
-[Client.describe_events documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_events)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_events]
 
 ```python
 def describe_events(
@@ -276,7 +281,7 @@ def describe_events(
 
 Type annotations for `boto3.client("dax").describe_parameter_groups` method.
 
-[Client.describe_parameter_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_parameter_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_parameter_groups]
 
 ```python
 def describe_parameter_groups(
@@ -292,7 +297,7 @@ def describe_parameter_groups(
 
 Type annotations for `boto3.client("dax").describe_parameters` method.
 
-[Client.describe_parameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_parameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_parameters]
 
 ```python
 def describe_parameters(
@@ -309,7 +314,7 @@ def describe_parameters(
 
 Type annotations for `boto3.client("dax").describe_subnet_groups` method.
 
-[Client.describe_subnet_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_subnet_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_subnet_groups]
 
 ```python
 def describe_subnet_groups(
@@ -325,7 +330,7 @@ def describe_subnet_groups(
 
 Type annotations for `boto3.client("dax").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -342,7 +347,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("dax").increase_replication_factor` method.
 
-[Client.increase_replication_factor documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.increase_replication_factor)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.increase_replication_factor]
 
 ```python
 def increase_replication_factor(
@@ -358,7 +363,7 @@ def increase_replication_factor(
 
 Type annotations for `boto3.client("dax").list_tags` method.
 
-[Client.list_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.list_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.list_tags]
 
 ```python
 def list_tags(
@@ -373,7 +378,7 @@ def list_tags(
 
 Type annotations for `boto3.client("dax").reboot_node` method.
 
-[Client.reboot_node documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.reboot_node)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.reboot_node]
 
 ```python
 def reboot_node(
@@ -388,7 +393,7 @@ def reboot_node(
 
 Type annotations for `boto3.client("dax").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -403,7 +408,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("dax").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -418,7 +423,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("dax").update_cluster` method.
 
-[Client.update_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.update_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.update_cluster]
 
 ```python
 def update_cluster(
@@ -438,7 +443,7 @@ def update_cluster(
 
 Type annotations for `boto3.client("dax").update_parameter_group` method.
 
-[Client.update_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.update_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.update_parameter_group]
 
 ```python
 def update_parameter_group(
@@ -453,7 +458,7 @@ def update_parameter_group(
 
 Type annotations for `boto3.client("dax").update_subnet_group` method.
 
-[Client.update_subnet_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.update_subnet_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.update_subnet_group]
 
 ```python
 def update_subnet_group(

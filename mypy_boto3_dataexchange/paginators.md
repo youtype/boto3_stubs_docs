@@ -18,13 +18,13 @@ Type annotations for `boto3.client("dataexchange").get_paginator("list_data_set_
 Can be used directly:
 
 ```python
-from mypy_boto3_dataexchange.paginators import ListDataSetRevisionsPaginator
+from mypy_boto3_dataexchange.paginator import ListDataSetRevisionsPaginator
 
 def get_list_data_set_revisions_paginator() -> ListDataSetRevisionsPaginator:
     return boto3.client("dataexchange").get_paginator("list_data_set_revisions")
 ```
 
-[Paginator.ListDataSetRevisions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListDataSetRevisions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListDataSetRevisions)
 
 ```python
 class ListDataSetRevisionsPaginator(Boto3Paginator):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("dataexchange").get_paginator("list_data_sets
 Can be used directly:
 
 ```python
-from mypy_boto3_dataexchange.paginators import ListDataSetsPaginator
+from mypy_boto3_dataexchange.paginator import ListDataSetsPaginator
 
 def get_list_data_sets_paginator() -> ListDataSetsPaginator:
     return boto3.client("dataexchange").get_paginator("list_data_sets")
 ```
 
-[Paginator.ListDataSets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListDataSets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListDataSets)
 
 ```python
 class ListDataSetsPaginator(Boto3Paginator):
@@ -66,13 +66,13 @@ Type annotations for `boto3.client("dataexchange").get_paginator("list_jobs")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_dataexchange.paginators import ListJobsPaginator
+from mypy_boto3_dataexchange.paginator import ListJobsPaginator
 
 def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("dataexchange").get_paginator("list_jobs")
 ```
 
-[Paginator.ListJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListJobs)
 
 ```python
 class ListJobsPaginator(Boto3Paginator):
@@ -91,13 +91,13 @@ Type annotations for `boto3.client("dataexchange").get_paginator("list_revision_
 Can be used directly:
 
 ```python
-from mypy_boto3_dataexchange.paginators import ListRevisionAssetsPaginator
+from mypy_boto3_dataexchange.paginator import ListRevisionAssetsPaginator
 
 def get_list_revision_assets_paginator() -> ListRevisionAssetsPaginator:
     return boto3.client("dataexchange").get_paginator("list_revision_assets")
 ```
 
-[Paginator.ListRevisionAssets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListRevisionAssets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListRevisionAssets)
 
 ```python
 class ListRevisionAssetsPaginator(Boto3Paginator):

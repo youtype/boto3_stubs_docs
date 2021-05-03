@@ -1,11 +1,11 @@
-# Structures for boto3 Lambda module
+# Typed dictionaries for boto3 Lambda module
 
 > [Index](../README.md) > [Lambda](./README.md) > Structures
 
 Auto-generated documentation for [Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
 type annotations stubs module [mypy_boto3_lambda](https://pypi.org/project/mypy-boto3-lambda/).
 
-- [Structures for boto3 Lambda module](#structures-for-boto3-lambda-module)
+- [Typed dictionaries for boto3 Lambda module](#typed-dictionaries-for-boto3-lambda-module)
   - [AccountLimitTypeDef](#accountlimittypedef)
   - [AccountUsageTypeDef](#accountusagetypedef)
   - [AddLayerVersionPermissionResponseTypeDef](#addlayerversionpermissionresponsetypedef)
@@ -693,15 +693,15 @@ from mypy_boto3_lambda.type_defs import LayerVersionContentOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Location`: `str`
 - `CodeSha256`: `str`
 - `CodeSize`: `int`
 - `SigningProfileVersionArn`: `str`
 - `SigningJobArn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## LayerVersionsListItemTypeDef

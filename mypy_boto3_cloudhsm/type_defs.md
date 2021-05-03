@@ -1,11 +1,11 @@
-# Structures for boto3 CloudHSM module
+# Typed dictionaries for boto3 CloudHSM module
 
 > [Index](../README.md) > [CloudHSM](./README.md) > Structures
 
 Auto-generated documentation for [CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
 type annotations stubs module [mypy_boto3_cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
 
-- [Structures for boto3 CloudHSM module](#structures-for-boto3-cloudhsm-module)
+- [Typed dictionaries for boto3 CloudHSM module](#typed-dictionaries-for-boto3-cloudhsm-module)
   - [AddTagsToResourceResponseTypeDef](#addtagstoresourceresponsetypedef)
   - [CreateHapgResponseTypeDef](#createhapgresponsetypedef)
   - [CreateHsmResponseTypeDef](#createhsmresponsetypedef)

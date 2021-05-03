@@ -1,11 +1,11 @@
-# Structures for boto3 S3Outposts module
+# Typed dictionaries for boto3 S3Outposts module
 
 > [Index](../README.md) > [S3Outposts](./README.md) > Structures
 
 Auto-generated documentation for [S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)
 type annotations stubs module [mypy_boto3_s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
 
-- [Structures for boto3 S3Outposts module](#structures-for-boto3-s3outposts-module)
+- [Typed dictionaries for boto3 S3Outposts module](#typed-dictionaries-for-boto3-s3outposts-module)
   - [CreateEndpointResultTypeDef](#createendpointresulttypedef)
   - [EndpointTypeDef](#endpointtypedef)
   - [ListEndpointsResultTypeDef](#listendpointsresulttypedef)

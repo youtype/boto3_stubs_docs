@@ -1,11 +1,11 @@
-# Structures for boto3 AmplifyBackend module
+# Typed dictionaries for boto3 AmplifyBackend module
 
 > [Index](../README.md) > [AmplifyBackend](./README.md) > Structures
 
 Auto-generated documentation for [AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
 type annotations stubs module [mypy_boto3_amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
 
-- [Structures for boto3 AmplifyBackend module](#structures-for-boto3-amplifybackend-module)
+- [Typed dictionaries for boto3 AmplifyBackend module](#typed-dictionaries-for-boto3-amplifybackend-module)
   - [BackendAPIAppSyncAuthSettingsTypeDef](#backendapiappsyncauthsettingstypedef)
   - [BackendAPIAuthTypeTypeDef](#backendapiauthtypetypedef)
   - [BackendAPIConflictResolutionTypeDef](#backendapiconflictresolutiontypedef)

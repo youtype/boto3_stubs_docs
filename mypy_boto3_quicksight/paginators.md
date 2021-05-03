@@ -28,13 +28,13 @@ Type annotations for `boto3.client("quicksight").get_paginator("list_analyses")`
 Can be used directly:
 
 ```python
-from mypy_boto3_quicksight.paginators import ListAnalysesPaginator
+from mypy_boto3_quicksight.paginator import ListAnalysesPaginator
 
 def get_list_analyses_paginator() -> ListAnalysesPaginator:
     return boto3.client("quicksight").get_paginator("list_analyses")
 ```
 
-[Paginator.ListAnalyses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListAnalyses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListAnalyses)
 
 ```python
 class ListAnalysesPaginator(Boto3Paginator):
@@ -52,13 +52,13 @@ Type annotations for `boto3.client("quicksight").get_paginator("list_dashboard_v
 Can be used directly:
 
 ```python
-from mypy_boto3_quicksight.paginators import ListDashboardVersionsPaginator
+from mypy_boto3_quicksight.paginator import ListDashboardVersionsPaginator
 
 def get_list_dashboard_versions_paginator() -> ListDashboardVersionsPaginator:
     return boto3.client("quicksight").get_paginator("list_dashboard_versions")
 ```
 
-[Paginator.ListDashboardVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListDashboardVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListDashboardVersions)
 
 ```python
 class ListDashboardVersionsPaginator(Boto3Paginator):
@@ -77,13 +77,13 @@ Type annotations for `boto3.client("quicksight").get_paginator("list_dashboards"
 Can be used directly:
 
 ```python
-from mypy_boto3_quicksight.paginators import ListDashboardsPaginator
+from mypy_boto3_quicksight.paginator import ListDashboardsPaginator
 
 def get_list_dashboards_paginator() -> ListDashboardsPaginator:
     return boto3.client("quicksight").get_paginator("list_dashboards")
 ```
 
-[Paginator.ListDashboards documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListDashboards)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListDashboards)
 
 ```python
 class ListDashboardsPaginator(Boto3Paginator):
@@ -101,13 +101,13 @@ Type annotations for `boto3.client("quicksight").get_paginator("list_data_sets")
 Can be used directly:
 
 ```python
-from mypy_boto3_quicksight.paginators import ListDataSetsPaginator
+from mypy_boto3_quicksight.paginator import ListDataSetsPaginator
 
 def get_list_data_sets_paginator() -> ListDataSetsPaginator:
     return boto3.client("quicksight").get_paginator("list_data_sets")
 ```
 
-[Paginator.ListDataSets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListDataSets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListDataSets)
 
 ```python
 class ListDataSetsPaginator(Boto3Paginator):
@@ -125,13 +125,13 @@ Type annotations for `boto3.client("quicksight").get_paginator("list_data_source
 Can be used directly:
 
 ```python
-from mypy_boto3_quicksight.paginators import ListDataSourcesPaginator
+from mypy_boto3_quicksight.paginator import ListDataSourcesPaginator
 
 def get_list_data_sources_paginator() -> ListDataSourcesPaginator:
     return boto3.client("quicksight").get_paginator("list_data_sources")
 ```
 
-[Paginator.ListDataSources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListDataSources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListDataSources)
 
 ```python
 class ListDataSourcesPaginator(Boto3Paginator):
@@ -149,13 +149,13 @@ Type annotations for `boto3.client("quicksight").get_paginator("list_ingestions"
 Can be used directly:
 
 ```python
-from mypy_boto3_quicksight.paginators import ListIngestionsPaginator
+from mypy_boto3_quicksight.paginator import ListIngestionsPaginator
 
 def get_list_ingestions_paginator() -> ListIngestionsPaginator:
     return boto3.client("quicksight").get_paginator("list_ingestions")
 ```
 
-[Paginator.ListIngestions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListIngestions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListIngestions)
 
 ```python
 class ListIngestionsPaginator(Boto3Paginator):
@@ -174,13 +174,13 @@ Type annotations for `boto3.client("quicksight").get_paginator("list_namespaces"
 Can be used directly:
 
 ```python
-from mypy_boto3_quicksight.paginators import ListNamespacesPaginator
+from mypy_boto3_quicksight.paginator import ListNamespacesPaginator
 
 def get_list_namespaces_paginator() -> ListNamespacesPaginator:
     return boto3.client("quicksight").get_paginator("list_namespaces")
 ```
 
-[Paginator.ListNamespaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListNamespaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListNamespaces)
 
 ```python
 class ListNamespacesPaginator(Boto3Paginator):
@@ -198,13 +198,13 @@ Type annotations for `boto3.client("quicksight").get_paginator("list_template_al
 Can be used directly:
 
 ```python
-from mypy_boto3_quicksight.paginators import ListTemplateAliasesPaginator
+from mypy_boto3_quicksight.paginator import ListTemplateAliasesPaginator
 
 def get_list_template_aliases_paginator() -> ListTemplateAliasesPaginator:
     return boto3.client("quicksight").get_paginator("list_template_aliases")
 ```
 
-[Paginator.ListTemplateAliases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListTemplateAliases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListTemplateAliases)
 
 ```python
 class ListTemplateAliasesPaginator(Boto3Paginator):
@@ -223,13 +223,13 @@ Type annotations for `boto3.client("quicksight").get_paginator("list_template_ve
 Can be used directly:
 
 ```python
-from mypy_boto3_quicksight.paginators import ListTemplateVersionsPaginator
+from mypy_boto3_quicksight.paginator import ListTemplateVersionsPaginator
 
 def get_list_template_versions_paginator() -> ListTemplateVersionsPaginator:
     return boto3.client("quicksight").get_paginator("list_template_versions")
 ```
 
-[Paginator.ListTemplateVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListTemplateVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListTemplateVersions)
 
 ```python
 class ListTemplateVersionsPaginator(Boto3Paginator):
@@ -248,13 +248,13 @@ Type annotations for `boto3.client("quicksight").get_paginator("list_templates")
 Can be used directly:
 
 ```python
-from mypy_boto3_quicksight.paginators import ListTemplatesPaginator
+from mypy_boto3_quicksight.paginator import ListTemplatesPaginator
 
 def get_list_templates_paginator() -> ListTemplatesPaginator:
     return boto3.client("quicksight").get_paginator("list_templates")
 ```
 
-[Paginator.ListTemplates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListTemplates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListTemplates)
 
 ```python
 class ListTemplatesPaginator(Boto3Paginator):
@@ -272,13 +272,13 @@ Type annotations for `boto3.client("quicksight").get_paginator("list_theme_versi
 Can be used directly:
 
 ```python
-from mypy_boto3_quicksight.paginators import ListThemeVersionsPaginator
+from mypy_boto3_quicksight.paginator import ListThemeVersionsPaginator
 
 def get_list_theme_versions_paginator() -> ListThemeVersionsPaginator:
     return boto3.client("quicksight").get_paginator("list_theme_versions")
 ```
 
-[Paginator.ListThemeVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListThemeVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListThemeVersions)
 
 ```python
 class ListThemeVersionsPaginator(Boto3Paginator):
@@ -297,13 +297,13 @@ Type annotations for `boto3.client("quicksight").get_paginator("list_themes")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_quicksight.paginators import ListThemesPaginator
+from mypy_boto3_quicksight.paginator import ListThemesPaginator
 
 def get_list_themes_paginator() -> ListThemesPaginator:
     return boto3.client("quicksight").get_paginator("list_themes")
 ```
 
-[Paginator.ListThemes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListThemes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.ListThemes)
 
 ```python
 class ListThemesPaginator(Boto3Paginator):
@@ -322,13 +322,13 @@ Type annotations for `boto3.client("quicksight").get_paginator("search_analyses"
 Can be used directly:
 
 ```python
-from mypy_boto3_quicksight.paginators import SearchAnalysesPaginator
+from mypy_boto3_quicksight.paginator import SearchAnalysesPaginator
 
 def get_search_analyses_paginator() -> SearchAnalysesPaginator:
     return boto3.client("quicksight").get_paginator("search_analyses")
 ```
 
-[Paginator.SearchAnalyses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.SearchAnalyses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.SearchAnalyses)
 
 ```python
 class SearchAnalysesPaginator(Boto3Paginator):
@@ -347,13 +347,13 @@ Type annotations for `boto3.client("quicksight").get_paginator("search_dashboard
 Can be used directly:
 
 ```python
-from mypy_boto3_quicksight.paginators import SearchDashboardsPaginator
+from mypy_boto3_quicksight.paginator import SearchDashboardsPaginator
 
 def get_search_dashboards_paginator() -> SearchDashboardsPaginator:
     return boto3.client("quicksight").get_paginator("search_dashboards")
 ```
 
-[Paginator.SearchDashboards documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.SearchDashboards)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.SearchDashboards)
 
 ```python
 class SearchDashboardsPaginator(Boto3Paginator):

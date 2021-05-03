@@ -22,7 +22,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_marketplacecommerceanalytics.client import MarketplaceCommerceAnalyticsClient
+
+def get_marketplacecommerceanalytics_client() -> MarketplaceCommerceAnalyticsClient:
+    return boto3.client("marketplacecommerceanalytics")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client)
 
 ## Exceptions
 
@@ -50,7 +55,7 @@ Exceptions:
 
 Type annotations for `boto3.client("marketplacecommerceanalytics").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -64,7 +69,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("marketplacecommerceanalytics").generate_data_set` method.
 
-[Client.generate_data_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.generate_data_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.generate_data_set]
 
 ```python
 def generate_data_set(
@@ -84,7 +89,7 @@ def generate_data_set(
 
 Type annotations for `boto3.client("marketplacecommerceanalytics").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -101,7 +106,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("marketplacecommerceanalytics").start_support_data_export` method.
 
-[Client.start_support_data_export documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.start_support_data_export)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.start_support_data_export]
 
 ```python
 def start_support_data_export(

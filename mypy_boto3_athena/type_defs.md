@@ -1,11 +1,11 @@
-# Structures for boto3 Athena module
+# Typed dictionaries for boto3 Athena module
 
 > [Index](../README.md) > [Athena](./README.md) > Structures
 
 Auto-generated documentation for [Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
 type annotations stubs module [mypy_boto3_athena](https://pypi.org/project/mypy-boto3-athena/).
 
-- [Structures for boto3 Athena module](#structures-for-boto3-athena-module)
+- [Typed dictionaries for boto3 Athena module](#typed-dictionaries-for-boto3-athena-module)
   - [BatchGetNamedQueryOutputTypeDef](#batchgetnamedqueryoutputtypedef)
   - [BatchGetQueryExecutionOutputTypeDef](#batchgetqueryexecutionoutputtypedef)
   - [ColumnInfoTypeDef](#columninfotypedef)
@@ -65,12 +65,12 @@ from mypy_boto3_athena.type_defs import BatchGetNamedQueryOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NamedQueries`: `List["NamedQueryTypeDef"]`
 - `UnprocessedNamedQueryIds`: `List["UnprocessedNamedQueryIdTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchGetQueryExecutionOutputTypeDef
@@ -80,12 +80,12 @@ from mypy_boto3_athena.type_defs import BatchGetQueryExecutionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `QueryExecutions`: `List["QueryExecutionTypeDef"]`
 - `UnprocessedQueryExecutionIds`: `List["UnprocessedQueryExecutionIdTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ColumnInfoTypeDef
@@ -136,11 +136,11 @@ from mypy_boto3_athena.type_defs import CreateNamedQueryOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NamedQueryId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DataCatalogSummaryTypeDef
@@ -242,11 +242,11 @@ from mypy_boto3_athena.type_defs import GetDataCatalogOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DataCatalog`: `"DataCatalogTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetDatabaseOutputTypeDef
@@ -256,11 +256,11 @@ from mypy_boto3_athena.type_defs import GetDatabaseOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Database`: `"DatabaseTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetNamedQueryOutputTypeDef
@@ -270,11 +270,11 @@ from mypy_boto3_athena.type_defs import GetNamedQueryOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NamedQuery`: `"NamedQueryTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetPreparedStatementOutputTypeDef
@@ -284,11 +284,11 @@ from mypy_boto3_athena.type_defs import GetPreparedStatementOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PreparedStatement`: `"PreparedStatementTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetQueryExecutionOutputTypeDef
@@ -298,11 +298,11 @@ from mypy_boto3_athena.type_defs import GetQueryExecutionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `QueryExecution`: `"QueryExecutionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetQueryResultsOutputTypeDef
@@ -312,13 +312,13 @@ from mypy_boto3_athena.type_defs import GetQueryResultsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `UpdateCount`: `int`
 - `ResultSet`: `"ResultSetTypeDef"`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetTableMetadataOutputTypeDef
@@ -328,11 +328,11 @@ from mypy_boto3_athena.type_defs import GetTableMetadataOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TableMetadata`: `"TableMetadataTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetWorkGroupOutputTypeDef
@@ -342,11 +342,11 @@ from mypy_boto3_athena.type_defs import GetWorkGroupOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `WorkGroup`: `"WorkGroupTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListDataCatalogsOutputTypeDef
@@ -356,12 +356,12 @@ from mypy_boto3_athena.type_defs import ListDataCatalogsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DataCatalogsSummary`: `List["DataCatalogSummaryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListDatabasesOutputTypeDef
@@ -371,12 +371,12 @@ from mypy_boto3_athena.type_defs import ListDatabasesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DatabaseList`: `List["DatabaseTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListEngineVersionsOutputTypeDef
@@ -386,12 +386,12 @@ from mypy_boto3_athena.type_defs import ListEngineVersionsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `EngineVersions`: `List["EngineVersionTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListNamedQueriesOutputTypeDef
@@ -401,12 +401,12 @@ from mypy_boto3_athena.type_defs import ListNamedQueriesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NamedQueryIds`: `List[str]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListPreparedStatementsOutputTypeDef
@@ -416,12 +416,12 @@ from mypy_boto3_athena.type_defs import ListPreparedStatementsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `PreparedStatements`: `List["PreparedStatementSummaryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListQueryExecutionsOutputTypeDef
@@ -431,12 +431,12 @@ from mypy_boto3_athena.type_defs import ListQueryExecutionsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `QueryExecutionIds`: `List[str]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTableMetadataOutputTypeDef
@@ -446,12 +446,12 @@ from mypy_boto3_athena.type_defs import ListTableMetadataOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TableMetadataList`: `List["TableMetadataTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagsForResourceOutputTypeDef
@@ -461,12 +461,12 @@ from mypy_boto3_athena.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Tags`: `List["TagTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListWorkGroupsOutputTypeDef
@@ -476,12 +476,12 @@ from mypy_boto3_athena.type_defs import ListWorkGroupsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `WorkGroups`: `List["WorkGroupSummaryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## NamedQueryTypeDef
@@ -714,11 +714,11 @@ from mypy_boto3_athena.type_defs import StartQueryExecutionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `QueryExecutionId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## TableMetadataTypeDef

@@ -1,11 +1,11 @@
-# Structures for boto3 Batch module
+# Typed dictionaries for boto3 Batch module
 
 > [Index](../README.md) > [Batch](./README.md) > Structures
 
 Auto-generated documentation for [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
 type annotations stubs module [mypy_boto3_batch](https://pypi.org/project/mypy-boto3-batch/).
 
-- [Structures for boto3 Batch module](#structures-for-boto3-batch-module)
+- [Typed dictionaries for boto3 Batch module](#typed-dictionaries-for-boto3-batch-module)
   - [ArrayPropertiesDetailTypeDef](#arraypropertiesdetailtypedef)
   - [ArrayPropertiesSummaryTypeDef](#arraypropertiessummarytypedef)
   - [ArrayPropertiesTypeDef](#arraypropertiestypedef)

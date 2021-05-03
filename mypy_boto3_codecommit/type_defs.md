@@ -1,11 +1,11 @@
-# Structures for boto3 CodeCommit module
+# Typed dictionaries for boto3 CodeCommit module
 
 > [Index](../README.md) > [CodeCommit](./README.md) > Structures
 
 Auto-generated documentation for [CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
 type annotations stubs module [mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
 
-- [Structures for boto3 CodeCommit module](#structures-for-boto3-codecommit-module)
+- [Typed dictionaries for boto3 CodeCommit module](#typed-dictionaries-for-boto3-codecommit-module)
   - [ApprovalRuleEventMetadataTypeDef](#approvalruleeventmetadatatypedef)
   - [ApprovalRuleOverriddenEventMetadataTypeDef](#approvalruleoverriddeneventmetadatatypedef)
   - [ApprovalRuleTemplateTypeDef](#approvalruletemplatetypedef)
@@ -253,11 +253,9 @@ from mypy_boto3_codecommit.type_defs import BatchAssociateApprovalRuleTemplateWi
 Required fields:
 - `associatedRepositoryNames`: `List[str]`
 - `errors`: `List["BatchAssociateApprovalRuleTemplateWithRepositoriesErrorTypeDef"]`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchDescribeMergeConflictsErrorTypeDef
@@ -284,16 +282,14 @@ from mypy_boto3_codecommit.type_defs import BatchDescribeMergeConflictsOutputTyp
 
 Required fields:
 - `conflicts`: `List["ConflictTypeDef"]`
-- `destinationCommitId`: `str`
-- `sourceCommitId`: `str`
-
-
-
-Optional fields:
 - `nextToken`: `str`
 - `errors`: `List["BatchDescribeMergeConflictsErrorTypeDef"]`
+- `destinationCommitId`: `str`
+- `sourceCommitId`: `str`
 - `baseCommitId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchDisassociateApprovalRuleTemplateFromRepositoriesErrorTypeDef
@@ -321,11 +317,9 @@ from mypy_boto3_codecommit.type_defs import BatchDisassociateApprovalRuleTemplat
 Required fields:
 - `disassociatedRepositoryNames`: `List[str]`
 - `errors`: `List["BatchDisassociateApprovalRuleTemplateFromRepositoriesErrorTypeDef"]`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchGetCommitsErrorTypeDef
@@ -350,12 +344,12 @@ from mypy_boto3_codecommit.type_defs import BatchGetCommitsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `commits`: `List["CommitTypeDef"]`
 - `errors`: `List["BatchGetCommitsErrorTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchGetRepositoriesOutputTypeDef
@@ -365,12 +359,12 @@ from mypy_boto3_codecommit.type_defs import BatchGetRepositoriesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `repositories`: `List["RepositoryMetadataTypeDef"]`
 - `repositoriesNotFound`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BlobMetadataTypeDef
@@ -542,11 +536,9 @@ from mypy_boto3_codecommit.type_defs import CreateApprovalRuleTemplateOutputType
 
 Required fields:
 - `approvalRuleTemplate`: `"ApprovalRuleTemplateTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateCommitOutputTypeDef
@@ -556,15 +548,15 @@ from mypy_boto3_codecommit.type_defs import CreateCommitOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `commitId`: `str`
 - `treeId`: `str`
 - `filesAdded`: `List["FileMetadataTypeDef"]`
 - `filesUpdated`: `List["FileMetadataTypeDef"]`
 - `filesDeleted`: `List["FileMetadataTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreatePullRequestApprovalRuleOutputTypeDef
@@ -576,11 +568,9 @@ from mypy_boto3_codecommit.type_defs import CreatePullRequestApprovalRuleOutputT
 
 Required fields:
 - `approvalRule`: `"ApprovalRuleTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreatePullRequestOutputTypeDef
@@ -592,11 +582,9 @@ from mypy_boto3_codecommit.type_defs import CreatePullRequestOutputTypeDef
 
 Required fields:
 - `pullRequest`: `"PullRequestTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateRepositoryOutputTypeDef
@@ -606,11 +594,11 @@ from mypy_boto3_codecommit.type_defs import CreateRepositoryOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `repositoryMetadata`: `"RepositoryMetadataTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateUnreferencedMergeCommitOutputTypeDef
@@ -620,12 +608,12 @@ from mypy_boto3_codecommit.type_defs import CreateUnreferencedMergeCommitOutputT
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `commitId`: `str`
 - `treeId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteApprovalRuleTemplateOutputTypeDef
@@ -637,11 +625,9 @@ from mypy_boto3_codecommit.type_defs import DeleteApprovalRuleTemplateOutputType
 
 Required fields:
 - `approvalRuleTemplateId`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteBranchOutputTypeDef
@@ -651,11 +637,11 @@ from mypy_boto3_codecommit.type_defs import DeleteBranchOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `deletedBranch`: `"BranchInfoTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteCommentContentOutputTypeDef
@@ -665,11 +651,11 @@ from mypy_boto3_codecommit.type_defs import DeleteCommentContentOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `comment`: `"CommentTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteFileEntryTypeDef
@@ -697,11 +683,9 @@ Required fields:
 - `blobId`: `str`
 - `treeId`: `str`
 - `filePath`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeletePullRequestApprovalRuleOutputTypeDef
@@ -713,11 +697,9 @@ from mypy_boto3_codecommit.type_defs import DeletePullRequestApprovalRuleOutputT
 
 Required fields:
 - `approvalRuleId`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteRepositoryOutputTypeDef
@@ -727,11 +709,11 @@ from mypy_boto3_codecommit.type_defs import DeleteRepositoryOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `repositoryId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeMergeConflictsOutputTypeDef
@@ -744,15 +726,13 @@ from mypy_boto3_codecommit.type_defs import DescribeMergeConflictsOutputTypeDef
 Required fields:
 - `conflictMetadata`: `"ConflictMetadataTypeDef"`
 - `mergeHunks`: `List["MergeHunkTypeDef"]`
+- `nextToken`: `str`
 - `destinationCommitId`: `str`
 - `sourceCommitId`: `str`
-
-
-
-Optional fields:
-- `nextToken`: `str`
 - `baseCommitId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribePullRequestEventsOutputTypeDef
@@ -764,12 +744,10 @@ from mypy_boto3_codecommit.type_defs import DescribePullRequestEventsOutputTypeD
 
 Required fields:
 - `pullRequestEvents`: `List["PullRequestEventTypeDef"]`
-
-
-
-Optional fields:
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DifferenceTypeDef
@@ -796,11 +774,9 @@ from mypy_boto3_codecommit.type_defs import EvaluatePullRequestApprovalRulesOutp
 
 Required fields:
 - `evaluation`: `"EvaluationTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## EvaluationTypeDef
@@ -904,11 +880,9 @@ from mypy_boto3_codecommit.type_defs import GetApprovalRuleTemplateOutputTypeDef
 
 Required fields:
 - `approvalRuleTemplate`: `"ApprovalRuleTemplateTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBlobOutputTypeDef
@@ -920,11 +894,9 @@ from mypy_boto3_codecommit.type_defs import GetBlobOutputTypeDef
 
 Required fields:
 - `content`: `Union[bytes, IO[bytes]]`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetBranchOutputTypeDef
@@ -934,11 +906,11 @@ from mypy_boto3_codecommit.type_defs import GetBranchOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `branch`: `"BranchInfoTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetCommentOutputTypeDef
@@ -948,11 +920,11 @@ from mypy_boto3_codecommit.type_defs import GetCommentOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `comment`: `"CommentTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetCommentReactionsOutputTypeDef
@@ -964,12 +936,10 @@ from mypy_boto3_codecommit.type_defs import GetCommentReactionsOutputTypeDef
 
 Required fields:
 - `reactionsForComment`: `List["ReactionForCommentTypeDef"]`
-
-
-
-Optional fields:
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetCommentsForComparedCommitOutputTypeDef
@@ -979,12 +949,12 @@ from mypy_boto3_codecommit.type_defs import GetCommentsForComparedCommitOutputTy
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `commentsForComparedCommitData`: `List["CommentsForComparedCommitTypeDef"]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetCommentsForPullRequestOutputTypeDef
@@ -994,12 +964,12 @@ from mypy_boto3_codecommit.type_defs import GetCommentsForPullRequestOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `commentsForPullRequestData`: `List["CommentsForPullRequestTypeDef"]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetCommitOutputTypeDef
@@ -1011,11 +981,9 @@ from mypy_boto3_codecommit.type_defs import GetCommitOutputTypeDef
 
 Required fields:
 - `commit`: `"CommitTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetDifferencesOutputTypeDef
@@ -1025,12 +993,12 @@ from mypy_boto3_codecommit.type_defs import GetDifferencesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `differences`: `List["DifferenceTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetFileOutputTypeDef
@@ -1047,11 +1015,9 @@ Required fields:
 - `fileMode`: `FileModeTypeEnum`
 - `fileSize`: `int`
 - `fileContent`: `Union[bytes, IO[bytes]]`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetFolderOutputTypeDef
@@ -1064,16 +1030,14 @@ from mypy_boto3_codecommit.type_defs import GetFolderOutputTypeDef
 Required fields:
 - `commitId`: `str`
 - `folderPath`: `str`
-
-
-
-Optional fields:
 - `treeId`: `str`
 - `subFolders`: `List["FolderTypeDef"]`
 - `files`: `List["FileTypeDef"]`
 - `symbolicLinks`: `List["SymbolicLinkTypeDef"]`
 - `subModules`: `List["SubModuleTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetMergeCommitOutputTypeDef
@@ -1083,14 +1047,14 @@ from mypy_boto3_codecommit.type_defs import GetMergeCommitOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `sourceCommitId`: `str`
 - `destinationCommitId`: `str`
 - `baseCommitId`: `str`
 - `mergedCommitId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetMergeConflictsOutputTypeDef
@@ -1104,14 +1068,12 @@ Required fields:
 - `mergeable`: `bool`
 - `destinationCommitId`: `str`
 - `sourceCommitId`: `str`
-- `conflictMetadataList`: `List["ConflictMetadataTypeDef"]`
-
-
-
-Optional fields:
 - `baseCommitId`: `str`
+- `conflictMetadataList`: `List["ConflictMetadataTypeDef"]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetMergeOptionsOutputTypeDef
@@ -1126,11 +1088,9 @@ Required fields:
 - `sourceCommitId`: `str`
 - `destinationCommitId`: `str`
 - `baseCommitId`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetPullRequestApprovalStatesOutputTypeDef
@@ -1140,11 +1100,11 @@ from mypy_boto3_codecommit.type_defs import GetPullRequestApprovalStatesOutputTy
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `approvals`: `List["ApprovalTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetPullRequestOutputTypeDef
@@ -1156,11 +1116,9 @@ from mypy_boto3_codecommit.type_defs import GetPullRequestOutputTypeDef
 
 Required fields:
 - `pullRequest`: `"PullRequestTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetPullRequestOverrideStateOutputTypeDef
@@ -1170,12 +1128,12 @@ from mypy_boto3_codecommit.type_defs import GetPullRequestOverrideStateOutputTyp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `overridden`: `bool`
 - `overrider`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetRepositoryOutputTypeDef
@@ -1185,11 +1143,11 @@ from mypy_boto3_codecommit.type_defs import GetRepositoryOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `repositoryMetadata`: `"RepositoryMetadataTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetRepositoryTriggersOutputTypeDef
@@ -1199,12 +1157,12 @@ from mypy_boto3_codecommit.type_defs import GetRepositoryTriggersOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `configurationId`: `str`
 - `triggers`: `List["RepositoryTriggerTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## IsBinaryFileTypeDef
@@ -1229,12 +1187,12 @@ from mypy_boto3_codecommit.type_defs import ListApprovalRuleTemplatesOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `approvalRuleTemplateNames`: `List[str]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListAssociatedApprovalRuleTemplatesForRepositoryOutputTypeDef
@@ -1244,12 +1202,12 @@ from mypy_boto3_codecommit.type_defs import ListAssociatedApprovalRuleTemplatesF
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `approvalRuleTemplateNames`: `List[str]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListBranchesOutputTypeDef
@@ -1259,12 +1217,12 @@ from mypy_boto3_codecommit.type_defs import ListBranchesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `branches`: `List[str]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListPullRequestsOutputTypeDef
@@ -1276,12 +1234,10 @@ from mypy_boto3_codecommit.type_defs import ListPullRequestsOutputTypeDef
 
 Required fields:
 - `pullRequestIds`: `List[str]`
-
-
-
-Optional fields:
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListRepositoriesForApprovalRuleTemplateOutputTypeDef
@@ -1291,12 +1247,12 @@ from mypy_boto3_codecommit.type_defs import ListRepositoriesForApprovalRuleTempl
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `repositoryNames`: `List[str]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListRepositoriesOutputTypeDef
@@ -1306,12 +1262,12 @@ from mypy_boto3_codecommit.type_defs import ListRepositoriesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `repositories`: `List["RepositoryNameIdPairTypeDef"]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagsForResourceOutputTypeDef
@@ -1321,12 +1277,12 @@ from mypy_boto3_codecommit.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `tags`: `Dict[str, str]`
 - `nextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## LocationTypeDef
@@ -1351,12 +1307,12 @@ from mypy_boto3_codecommit.type_defs import MergeBranchesByFastForwardOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `commitId`: `str`
 - `treeId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## MergeBranchesBySquashOutputTypeDef
@@ -1366,12 +1322,12 @@ from mypy_boto3_codecommit.type_defs import MergeBranchesBySquashOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `commitId`: `str`
 - `treeId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## MergeBranchesByThreeWayOutputTypeDef
@@ -1381,12 +1337,12 @@ from mypy_boto3_codecommit.type_defs import MergeBranchesByThreeWayOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `commitId`: `str`
 - `treeId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## MergeHunkDetailTypeDef
@@ -1457,11 +1413,11 @@ from mypy_boto3_codecommit.type_defs import MergePullRequestByFastForwardOutputT
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `pullRequest`: `"PullRequestTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## MergePullRequestBySquashOutputTypeDef
@@ -1471,11 +1427,11 @@ from mypy_boto3_codecommit.type_defs import MergePullRequestBySquashOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `pullRequest`: `"PullRequestTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## MergePullRequestByThreeWayOutputTypeDef
@@ -1485,11 +1441,11 @@ from mypy_boto3_codecommit.type_defs import MergePullRequestByThreeWayOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `pullRequest`: `"PullRequestTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ObjectTypesTypeDef
@@ -1543,9 +1499,7 @@ from mypy_boto3_codecommit.type_defs import PostCommentForComparedCommitOutputTy
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `repositoryName`: `str`
 - `beforeCommitId`: `str`
 - `afterCommitId`: `str`
@@ -1556,6 +1510,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## PostCommentForPullRequestOutputTypeDef
 
 ```python
@@ -1563,9 +1519,7 @@ from mypy_boto3_codecommit.type_defs import PostCommentForPullRequestOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `repositoryName`: `str`
 - `pullRequestId`: `str`
 - `beforeCommitId`: `str`
@@ -1577,6 +1531,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## PostCommentReplyOutputTypeDef
 
 ```python
@@ -1584,11 +1540,11 @@ from mypy_boto3_codecommit.type_defs import PostCommentReplyOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `comment`: `"CommentTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PullRequestCreatedEventMetadataTypeDef
@@ -1745,11 +1701,9 @@ Required fields:
 - `commitId`: `str`
 - `blobId`: `str`
 - `treeId`: `str`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PutRepositoryTriggersOutputTypeDef
@@ -1759,11 +1713,11 @@ from mypy_boto3_codecommit.type_defs import PutRepositoryTriggersOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `configurationId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ReactionForCommentTypeDef
@@ -1985,12 +1939,12 @@ from mypy_boto3_codecommit.type_defs import TestRepositoryTriggersOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `successfulExecutions`: `List[str]`
 - `failedExecutions`: `List["RepositoryTriggerExecutionFailureTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateApprovalRuleTemplateContentOutputTypeDef
@@ -2002,11 +1956,9 @@ from mypy_boto3_codecommit.type_defs import UpdateApprovalRuleTemplateContentOut
 
 Required fields:
 - `approvalRuleTemplate`: `"ApprovalRuleTemplateTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateApprovalRuleTemplateDescriptionOutputTypeDef
@@ -2018,11 +1970,9 @@ from mypy_boto3_codecommit.type_defs import UpdateApprovalRuleTemplateDescriptio
 
 Required fields:
 - `approvalRuleTemplate`: `"ApprovalRuleTemplateTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateApprovalRuleTemplateNameOutputTypeDef
@@ -2034,11 +1984,9 @@ from mypy_boto3_codecommit.type_defs import UpdateApprovalRuleTemplateNameOutput
 
 Required fields:
 - `approvalRuleTemplate`: `"ApprovalRuleTemplateTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateCommentOutputTypeDef
@@ -2048,11 +1996,11 @@ from mypy_boto3_codecommit.type_defs import UpdateCommentOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `comment`: `"CommentTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdatePullRequestApprovalRuleContentOutputTypeDef
@@ -2064,11 +2012,9 @@ from mypy_boto3_codecommit.type_defs import UpdatePullRequestApprovalRuleContent
 
 Required fields:
 - `approvalRule`: `"ApprovalRuleTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdatePullRequestDescriptionOutputTypeDef
@@ -2080,11 +2026,9 @@ from mypy_boto3_codecommit.type_defs import UpdatePullRequestDescriptionOutputTy
 
 Required fields:
 - `pullRequest`: `"PullRequestTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdatePullRequestStatusOutputTypeDef
@@ -2096,11 +2040,9 @@ from mypy_boto3_codecommit.type_defs import UpdatePullRequestStatusOutputTypeDef
 
 Required fields:
 - `pullRequest`: `"PullRequestTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdatePullRequestTitleOutputTypeDef
@@ -2112,11 +2054,9 @@ from mypy_boto3_codecommit.type_defs import UpdatePullRequestTitleOutputTypeDef
 
 Required fields:
 - `pullRequest`: `"PullRequestTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UserInfoTypeDef

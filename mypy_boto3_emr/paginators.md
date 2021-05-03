@@ -24,13 +24,13 @@ Type annotations for `boto3.client("emr").get_paginator("list_bootstrap_actions"
 Can be used directly:
 
 ```python
-from mypy_boto3_emr.paginators import ListBootstrapActionsPaginator
+from mypy_boto3_emr.paginator import ListBootstrapActionsPaginator
 
 def get_list_bootstrap_actions_paginator() -> ListBootstrapActionsPaginator:
     return boto3.client("emr").get_paginator("list_bootstrap_actions")
 ```
 
-[Paginator.ListBootstrapActions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListBootstrapActions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListBootstrapActions)
 
 ```python
 class ListBootstrapActionsPaginator(Boto3Paginator):
@@ -48,13 +48,13 @@ Type annotations for `boto3.client("emr").get_paginator("list_clusters")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_emr.paginators import ListClustersPaginator
+from mypy_boto3_emr.paginator import ListClustersPaginator
 
 def get_list_clusters_paginator() -> ListClustersPaginator:
     return boto3.client("emr").get_paginator("list_clusters")
 ```
 
-[Paginator.ListClusters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListClusters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListClusters)
 
 ```python
 class ListClustersPaginator(Boto3Paginator):
@@ -74,13 +74,13 @@ Type annotations for `boto3.client("emr").get_paginator("list_instance_fleets")`
 Can be used directly:
 
 ```python
-from mypy_boto3_emr.paginators import ListInstanceFleetsPaginator
+from mypy_boto3_emr.paginator import ListInstanceFleetsPaginator
 
 def get_list_instance_fleets_paginator() -> ListInstanceFleetsPaginator:
     return boto3.client("emr").get_paginator("list_instance_fleets")
 ```
 
-[Paginator.ListInstanceFleets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListInstanceFleets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListInstanceFleets)
 
 ```python
 class ListInstanceFleetsPaginator(Boto3Paginator):
@@ -98,13 +98,13 @@ Type annotations for `boto3.client("emr").get_paginator("list_instance_groups")`
 Can be used directly:
 
 ```python
-from mypy_boto3_emr.paginators import ListInstanceGroupsPaginator
+from mypy_boto3_emr.paginator import ListInstanceGroupsPaginator
 
 def get_list_instance_groups_paginator() -> ListInstanceGroupsPaginator:
     return boto3.client("emr").get_paginator("list_instance_groups")
 ```
 
-[Paginator.ListInstanceGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListInstanceGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListInstanceGroups)
 
 ```python
 class ListInstanceGroupsPaginator(Boto3Paginator):
@@ -122,13 +122,13 @@ Type annotations for `boto3.client("emr").get_paginator("list_instances")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_emr.paginators import ListInstancesPaginator
+from mypy_boto3_emr.paginator import ListInstancesPaginator
 
 def get_list_instances_paginator() -> ListInstancesPaginator:
     return boto3.client("emr").get_paginator("list_instances")
 ```
 
-[Paginator.ListInstances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListInstances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListInstances)
 
 ```python
 class ListInstancesPaginator(Boto3Paginator):
@@ -151,13 +151,13 @@ Type annotations for `boto3.client("emr").get_paginator("list_notebook_execution
 Can be used directly:
 
 ```python
-from mypy_boto3_emr.paginators import ListNotebookExecutionsPaginator
+from mypy_boto3_emr.paginator import ListNotebookExecutionsPaginator
 
 def get_list_notebook_executions_paginator() -> ListNotebookExecutionsPaginator:
     return boto3.client("emr").get_paginator("list_notebook_executions")
 ```
 
-[Paginator.ListNotebookExecutions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListNotebookExecutions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListNotebookExecutions)
 
 ```python
 class ListNotebookExecutionsPaginator(Boto3Paginator):
@@ -178,13 +178,13 @@ Type annotations for `boto3.client("emr").get_paginator("list_security_configura
 Can be used directly:
 
 ```python
-from mypy_boto3_emr.paginators import ListSecurityConfigurationsPaginator
+from mypy_boto3_emr.paginator import ListSecurityConfigurationsPaginator
 
 def get_list_security_configurations_paginator() -> ListSecurityConfigurationsPaginator:
     return boto3.client("emr").get_paginator("list_security_configurations")
 ```
 
-[Paginator.ListSecurityConfigurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListSecurityConfigurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListSecurityConfigurations)
 
 ```python
 class ListSecurityConfigurationsPaginator(Boto3Paginator):
@@ -201,13 +201,13 @@ Type annotations for `boto3.client("emr").get_paginator("list_steps")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_emr.paginators import ListStepsPaginator
+from mypy_boto3_emr.paginator import ListStepsPaginator
 
 def get_list_steps_paginator() -> ListStepsPaginator:
     return boto3.client("emr").get_paginator("list_steps")
 ```
 
-[Paginator.ListSteps documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListSteps)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListSteps)
 
 ```python
 class ListStepsPaginator(Boto3Paginator):
@@ -227,13 +227,13 @@ Type annotations for `boto3.client("emr").get_paginator("list_studio_session_map
 Can be used directly:
 
 ```python
-from mypy_boto3_emr.paginators import ListStudioSessionMappingsPaginator
+from mypy_boto3_emr.paginator import ListStudioSessionMappingsPaginator
 
 def get_list_studio_session_mappings_paginator() -> ListStudioSessionMappingsPaginator:
     return boto3.client("emr").get_paginator("list_studio_session_mappings")
 ```
 
-[Paginator.ListStudioSessionMappings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListStudioSessionMappings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListStudioSessionMappings)
 
 ```python
 class ListStudioSessionMappingsPaginator(Boto3Paginator):
@@ -252,13 +252,13 @@ Type annotations for `boto3.client("emr").get_paginator("list_studios")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_emr.paginators import ListStudiosPaginator
+from mypy_boto3_emr.paginator import ListStudiosPaginator
 
 def get_list_studios_paginator() -> ListStudiosPaginator:
     return boto3.client("emr").get_paginator("list_studios")
 ```
 
-[Paginator.ListStudios documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListStudios)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListStudios)
 
 ```python
 class ListStudiosPaginator(Boto3Paginator):

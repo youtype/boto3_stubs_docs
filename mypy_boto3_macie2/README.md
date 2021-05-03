@@ -15,7 +15,7 @@ pip install mypy-boto3-macie2
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## Macie2Client
 
@@ -197,7 +197,7 @@ from mypy_boto3_macie2.literals import AdminStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

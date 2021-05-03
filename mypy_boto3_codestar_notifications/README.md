@@ -15,7 +15,7 @@ pip install mypy-boto3-codestar-notifications
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## CodeStarNotificationsClient
 
@@ -111,7 +111,7 @@ from mypy_boto3_codestar_notifications.literals import DetailType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

@@ -16,13 +16,13 @@ Type annotations for `boto3.client("glacier").get_waiter("vault_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_glacier.waiters import VaultExistsWaiter
+from mypy_boto3_glacier.waiter import VaultExistsWaiter
 
 def get_vault_exists_waiter() -> VaultExistsWaiter:
     return boto3.client("glacier").get_waiter("vault_exists")
 ```
 
-[Waiter.VaultExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Waiter.VaultExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Waiter.vault_exists)
 
 ```python
 class VaultExistsWaiter(Boto3Waiter):
@@ -41,13 +41,13 @@ Type annotations for `boto3.client("glacier").get_waiter("vault_not_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_glacier.waiters import VaultNotExistsWaiter
+from mypy_boto3_glacier.waiter import VaultNotExistsWaiter
 
 def get_vault_not_exists_waiter() -> VaultNotExistsWaiter:
     return boto3.client("glacier").get_waiter("vault_not_exists")
 ```
 
-[Waiter.VaultNotExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Waiter.VaultNotExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Waiter.vault_not_exists)
 
 ```python
 class VaultNotExistsWaiter(Boto3Waiter):

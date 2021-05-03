@@ -16,7 +16,7 @@ pip install mypy-boto3-redshift
   - [Paginators](#paginators)
   - [Waiters](#waiters)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## RedshiftClient
 
@@ -399,7 +399,7 @@ from mypy_boto3_redshift.literals import ActionType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

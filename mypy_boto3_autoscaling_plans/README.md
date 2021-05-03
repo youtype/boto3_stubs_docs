@@ -15,7 +15,7 @@ pip install mypy-boto3-autoscaling-plans
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## AutoScalingPlansClient
 
@@ -106,7 +106,7 @@ from mypy_boto3_autoscaling_plans.literals import DescribeScalingPlanResourcesPa
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

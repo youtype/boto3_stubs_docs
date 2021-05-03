@@ -41,13 +41,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_cluster_d
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeClusterDbRevisionsPaginator
+from mypy_boto3_redshift.paginator import DescribeClusterDbRevisionsPaginator
 
 def get_describe_cluster_db_revisions_paginator() -> DescribeClusterDbRevisionsPaginator:
     return boto3.client("redshift").get_paginator("describe_cluster_db_revisions")
 ```
 
-[Paginator.DescribeClusterDbRevisions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterDbRevisions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterDbRevisions)
 
 ```python
 class DescribeClusterDbRevisionsPaginator(Boto3Paginator):
@@ -65,13 +65,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_cluster_p
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeClusterParameterGroupsPaginator
+from mypy_boto3_redshift.paginator import DescribeClusterParameterGroupsPaginator
 
 def get_describe_cluster_parameter_groups_paginator() -> DescribeClusterParameterGroupsPaginator:
     return boto3.client("redshift").get_paginator("describe_cluster_parameter_groups")
 ```
 
-[Paginator.DescribeClusterParameterGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameterGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameterGroups)
 
 ```python
 class DescribeClusterParameterGroupsPaginator(Boto3Paginator):
@@ -91,13 +91,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_cluster_p
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeClusterParametersPaginator
+from mypy_boto3_redshift.paginator import DescribeClusterParametersPaginator
 
 def get_describe_cluster_parameters_paginator() -> DescribeClusterParametersPaginator:
     return boto3.client("redshift").get_paginator("describe_cluster_parameters")
 ```
 
-[Paginator.DescribeClusterParameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameters)
 
 ```python
 class DescribeClusterParametersPaginator(Boto3Paginator):
@@ -116,13 +116,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_cluster_s
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeClusterSecurityGroupsPaginator
+from mypy_boto3_redshift.paginator import DescribeClusterSecurityGroupsPaginator
 
 def get_describe_cluster_security_groups_paginator() -> DescribeClusterSecurityGroupsPaginator:
     return boto3.client("redshift").get_paginator("describe_cluster_security_groups")
 ```
 
-[Paginator.DescribeClusterSecurityGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSecurityGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSecurityGroups)
 
 ```python
 class DescribeClusterSecurityGroupsPaginator(Boto3Paginator):
@@ -142,13 +142,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_cluster_s
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeClusterSnapshotsPaginator
+from mypy_boto3_redshift.paginator import DescribeClusterSnapshotsPaginator
 
 def get_describe_cluster_snapshots_paginator() -> DescribeClusterSnapshotsPaginator:
     return boto3.client("redshift").get_paginator("describe_cluster_snapshots")
 ```
 
-[Paginator.DescribeClusterSnapshots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSnapshots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSnapshots)
 
 ```python
 class DescribeClusterSnapshotsPaginator(Boto3Paginator):
@@ -175,13 +175,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_cluster_s
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeClusterSubnetGroupsPaginator
+from mypy_boto3_redshift.paginator import DescribeClusterSubnetGroupsPaginator
 
 def get_describe_cluster_subnet_groups_paginator() -> DescribeClusterSubnetGroupsPaginator:
     return boto3.client("redshift").get_paginator("describe_cluster_subnet_groups")
 ```
 
-[Paginator.DescribeClusterSubnetGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSubnetGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSubnetGroups)
 
 ```python
 class DescribeClusterSubnetGroupsPaginator(Boto3Paginator):
@@ -201,13 +201,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_cluster_t
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeClusterTracksPaginator
+from mypy_boto3_redshift.paginator import DescribeClusterTracksPaginator
 
 def get_describe_cluster_tracks_paginator() -> DescribeClusterTracksPaginator:
     return boto3.client("redshift").get_paginator("describe_cluster_tracks")
 ```
 
-[Paginator.DescribeClusterTracks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterTracks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterTracks)
 
 ```python
 class DescribeClusterTracksPaginator(Boto3Paginator):
@@ -225,13 +225,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_cluster_v
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeClusterVersionsPaginator
+from mypy_boto3_redshift.paginator import DescribeClusterVersionsPaginator
 
 def get_describe_cluster_versions_paginator() -> DescribeClusterVersionsPaginator:
     return boto3.client("redshift").get_paginator("describe_cluster_versions")
 ```
 
-[Paginator.DescribeClusterVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterVersions)
 
 ```python
 class DescribeClusterVersionsPaginator(Boto3Paginator):
@@ -250,13 +250,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_clusters"
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeClustersPaginator
+from mypy_boto3_redshift.paginator import DescribeClustersPaginator
 
 def get_describe_clusters_paginator() -> DescribeClustersPaginator:
     return boto3.client("redshift").get_paginator("describe_clusters")
 ```
 
-[Paginator.DescribeClusters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusters)
 
 ```python
 class DescribeClustersPaginator(Boto3Paginator):
@@ -276,13 +276,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_default_c
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeDefaultClusterParametersPaginator
+from mypy_boto3_redshift.paginator import DescribeDefaultClusterParametersPaginator
 
 def get_describe_default_cluster_parameters_paginator() -> DescribeDefaultClusterParametersPaginator:
     return boto3.client("redshift").get_paginator("describe_default_cluster_parameters")
 ```
 
-[Paginator.DescribeDefaultClusterParameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeDefaultClusterParameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeDefaultClusterParameters)
 
 ```python
 class DescribeDefaultClusterParametersPaginator(Boto3Paginator):
@@ -300,13 +300,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_endpoint_
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeEndpointAccessPaginator
+from mypy_boto3_redshift.paginator import DescribeEndpointAccessPaginator
 
 def get_describe_endpoint_access_paginator() -> DescribeEndpointAccessPaginator:
     return boto3.client("redshift").get_paginator("describe_endpoint_access")
 ```
 
-[Paginator.DescribeEndpointAccess documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAccess)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAccess)
 
 ```python
 class DescribeEndpointAccessPaginator(Boto3Paginator):
@@ -327,13 +327,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_endpoint_
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeEndpointAuthorizationPaginator
+from mypy_boto3_redshift.paginator import DescribeEndpointAuthorizationPaginator
 
 def get_describe_endpoint_authorization_paginator() -> DescribeEndpointAuthorizationPaginator:
     return boto3.client("redshift").get_paginator("describe_endpoint_authorization")
 ```
 
-[Paginator.DescribeEndpointAuthorization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAuthorization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAuthorization)
 
 ```python
 class DescribeEndpointAuthorizationPaginator(Boto3Paginator):
@@ -353,13 +353,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_event_sub
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeEventSubscriptionsPaginator
+from mypy_boto3_redshift.paginator import DescribeEventSubscriptionsPaginator
 
 def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPaginator:
     return boto3.client("redshift").get_paginator("describe_event_subscriptions")
 ```
 
-[Paginator.DescribeEventSubscriptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEventSubscriptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEventSubscriptions)
 
 ```python
 class DescribeEventSubscriptionsPaginator(Boto3Paginator):
@@ -379,13 +379,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_events")`
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeEventsPaginator
+from mypy_boto3_redshift.paginator import DescribeEventsPaginator
 
 def get_describe_events_paginator() -> DescribeEventsPaginator:
     return boto3.client("redshift").get_paginator("describe_events")
 ```
 
-[Paginator.DescribeEvents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEvents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEvents)
 
 ```python
 class DescribeEventsPaginator(Boto3Paginator):
@@ -407,13 +407,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_hsm_clien
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeHsmClientCertificatesPaginator
+from mypy_boto3_redshift.paginator import DescribeHsmClientCertificatesPaginator
 
 def get_describe_hsm_client_certificates_paginator() -> DescribeHsmClientCertificatesPaginator:
     return boto3.client("redshift").get_paginator("describe_hsm_client_certificates")
 ```
 
-[Paginator.DescribeHsmClientCertificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeHsmClientCertificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeHsmClientCertificates)
 
 ```python
 class DescribeHsmClientCertificatesPaginator(Boto3Paginator):
@@ -433,13 +433,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_hsm_confi
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeHsmConfigurationsPaginator
+from mypy_boto3_redshift.paginator import DescribeHsmConfigurationsPaginator
 
 def get_describe_hsm_configurations_paginator() -> DescribeHsmConfigurationsPaginator:
     return boto3.client("redshift").get_paginator("describe_hsm_configurations")
 ```
 
-[Paginator.DescribeHsmConfigurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeHsmConfigurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeHsmConfigurations)
 
 ```python
 class DescribeHsmConfigurationsPaginator(Boto3Paginator):
@@ -459,13 +459,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_node_conf
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeNodeConfigurationOptionsPaginator
+from mypy_boto3_redshift.paginator import DescribeNodeConfigurationOptionsPaginator
 
 def get_describe_node_configuration_options_paginator() -> DescribeNodeConfigurationOptionsPaginator:
     return boto3.client("redshift").get_paginator("describe_node_configuration_options")
 ```
 
-[Paginator.DescribeNodeConfigurationOptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeNodeConfigurationOptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeNodeConfigurationOptions)
 
 ```python
 class DescribeNodeConfigurationOptionsPaginator(Boto3Paginator):
@@ -487,13 +487,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_orderable
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeOrderableClusterOptionsPaginator
+from mypy_boto3_redshift.paginator import DescribeOrderableClusterOptionsPaginator
 
 def get_describe_orderable_cluster_options_paginator() -> DescribeOrderableClusterOptionsPaginator:
     return boto3.client("redshift").get_paginator("describe_orderable_cluster_options")
 ```
 
-[Paginator.DescribeOrderableClusterOptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeOrderableClusterOptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeOrderableClusterOptions)
 
 ```python
 class DescribeOrderableClusterOptionsPaginator(Boto3Paginator):
@@ -512,13 +512,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_reserved_
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeReservedNodeOfferingsPaginator
+from mypy_boto3_redshift.paginator import DescribeReservedNodeOfferingsPaginator
 
 def get_describe_reserved_node_offerings_paginator() -> DescribeReservedNodeOfferingsPaginator:
     return boto3.client("redshift").get_paginator("describe_reserved_node_offerings")
 ```
 
-[Paginator.DescribeReservedNodeOfferings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodeOfferings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodeOfferings)
 
 ```python
 class DescribeReservedNodeOfferingsPaginator(Boto3Paginator):
@@ -536,13 +536,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_reserved_
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeReservedNodesPaginator
+from mypy_boto3_redshift.paginator import DescribeReservedNodesPaginator
 
 def get_describe_reserved_nodes_paginator() -> DescribeReservedNodesPaginator:
     return boto3.client("redshift").get_paginator("describe_reserved_nodes")
 ```
 
-[Paginator.DescribeReservedNodes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodes)
 
 ```python
 class DescribeReservedNodesPaginator(Boto3Paginator):
@@ -560,13 +560,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_scheduled
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeScheduledActionsPaginator
+from mypy_boto3_redshift.paginator import DescribeScheduledActionsPaginator
 
 def get_describe_scheduled_actions_paginator() -> DescribeScheduledActionsPaginator:
     return boto3.client("redshift").get_paginator("describe_scheduled_actions")
 ```
 
-[Paginator.DescribeScheduledActions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeScheduledActions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeScheduledActions)
 
 ```python
 class DescribeScheduledActionsPaginator(Boto3Paginator):
@@ -589,13 +589,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_snapshot_
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeSnapshotCopyGrantsPaginator
+from mypy_boto3_redshift.paginator import DescribeSnapshotCopyGrantsPaginator
 
 def get_describe_snapshot_copy_grants_paginator() -> DescribeSnapshotCopyGrantsPaginator:
     return boto3.client("redshift").get_paginator("describe_snapshot_copy_grants")
 ```
 
-[Paginator.DescribeSnapshotCopyGrants documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotCopyGrants)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotCopyGrants)
 
 ```python
 class DescribeSnapshotCopyGrantsPaginator(Boto3Paginator):
@@ -615,13 +615,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_snapshot_
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeSnapshotSchedulesPaginator
+from mypy_boto3_redshift.paginator import DescribeSnapshotSchedulesPaginator
 
 def get_describe_snapshot_schedules_paginator() -> DescribeSnapshotSchedulesPaginator:
     return boto3.client("redshift").get_paginator("describe_snapshot_schedules")
 ```
 
-[Paginator.DescribeSnapshotSchedules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotSchedules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotSchedules)
 
 ```python
 class DescribeSnapshotSchedulesPaginator(Boto3Paginator):
@@ -642,13 +642,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_table_res
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeTableRestoreStatusPaginator
+from mypy_boto3_redshift.paginator import DescribeTableRestoreStatusPaginator
 
 def get_describe_table_restore_status_paginator() -> DescribeTableRestoreStatusPaginator:
     return boto3.client("redshift").get_paginator("describe_table_restore_status")
 ```
 
-[Paginator.DescribeTableRestoreStatus documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeTableRestoreStatus)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeTableRestoreStatus)
 
 ```python
 class DescribeTableRestoreStatusPaginator(Boto3Paginator):
@@ -667,13 +667,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_tags")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeTagsPaginator
+from mypy_boto3_redshift.paginator import DescribeTagsPaginator
 
 def get_describe_tags_paginator() -> DescribeTagsPaginator:
     return boto3.client("redshift").get_paginator("describe_tags")
 ```
 
-[Paginator.DescribeTags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeTags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeTags)
 
 ```python
 class DescribeTagsPaginator(Boto3Paginator):
@@ -694,13 +694,13 @@ Type annotations for `boto3.client("redshift").get_paginator("describe_usage_lim
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import DescribeUsageLimitsPaginator
+from mypy_boto3_redshift.paginator import DescribeUsageLimitsPaginator
 
 def get_describe_usage_limits_paginator() -> DescribeUsageLimitsPaginator:
     return boto3.client("redshift").get_paginator("describe_usage_limits")
 ```
 
-[Paginator.DescribeUsageLimits documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeUsageLimits)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeUsageLimits)
 
 ```python
 class DescribeUsageLimitsPaginator(Boto3Paginator):
@@ -722,13 +722,13 @@ Type annotations for `boto3.client("redshift").get_paginator("get_reserved_node_
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift.paginators import GetReservedNodeExchangeOfferingsPaginator
+from mypy_boto3_redshift.paginator import GetReservedNodeExchangeOfferingsPaginator
 
 def get_get_reserved_node_exchange_offerings_paginator() -> GetReservedNodeExchangeOfferingsPaginator:
     return boto3.client("redshift").get_paginator("get_reserved_node_exchange_offerings")
 ```
 
-[Paginator.GetReservedNodeExchangeOfferings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.GetReservedNodeExchangeOfferings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.GetReservedNodeExchangeOfferings)
 
 ```python
 class GetReservedNodeExchangeOfferingsPaginator(Boto3Paginator):

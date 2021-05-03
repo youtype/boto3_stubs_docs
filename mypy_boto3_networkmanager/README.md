@@ -15,7 +15,7 @@ pip install mypy-boto3-networkmanager
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## NetworkManagerClient
 
@@ -147,7 +147,7 @@ from mypy_boto3_networkmanager.literals import ConnectionState, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

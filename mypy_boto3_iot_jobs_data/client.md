@@ -24,7 +24,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_iot_jobs_data.client import IoTJobsDataPlaneClient
+
+def get_iot-jobs-data_client() -> IoTJobsDataPlaneClient:
+    return boto3.client("iot-jobs-data")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client)
 
 ## Exceptions
 
@@ -58,7 +63,7 @@ Exceptions:
 
 Type annotations for `boto3.client("iot-jobs-data").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -72,7 +77,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("iot-jobs-data").describe_job_execution` method.
 
-[Client.describe_job_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.describe_job_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.describe_job_execution]
 
 ```python
 def describe_job_execution(
@@ -89,7 +94,7 @@ def describe_job_execution(
 
 Type annotations for `boto3.client("iot-jobs-data").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -106,7 +111,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("iot-jobs-data").get_pending_job_executions` method.
 
-[Client.get_pending_job_executions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.get_pending_job_executions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.get_pending_job_executions]
 
 ```python
 def get_pending_job_executions(
@@ -120,7 +125,7 @@ def get_pending_job_executions(
 
 Type annotations for `boto3.client("iot-jobs-data").start_next_pending_job_execution` method.
 
-[Client.start_next_pending_job_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.start_next_pending_job_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.start_next_pending_job_execution]
 
 ```python
 def start_next_pending_job_execution(
@@ -136,7 +141,7 @@ def start_next_pending_job_execution(
 
 Type annotations for `boto3.client("iot-jobs-data").update_job_execution` method.
 
-[Client.update_job_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.update_job_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.update_job_execution]
 
 ```python
 def update_job_execution(

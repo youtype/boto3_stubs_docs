@@ -1,11 +1,11 @@
-# Structures for boto3 AlexaForBusiness module
+# Typed dictionaries for boto3 AlexaForBusiness module
 
 > [Index](../README.md) > [AlexaForBusiness](./README.md) > Structures
 
 Auto-generated documentation for [AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
 type annotations stubs module [mypy_boto3_alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
 
-- [Structures for boto3 AlexaForBusiness module](#structures-for-boto3-alexaforbusiness-module)
+- [Typed dictionaries for boto3 AlexaForBusiness module](#typed-dictionaries-for-boto3-alexaforbusiness-module)
   - [AddressBookDataTypeDef](#addressbookdatatypedef)
   - [AddressBookTypeDef](#addressbooktypedef)
   - [AudioTypeDef](#audiotypedef)

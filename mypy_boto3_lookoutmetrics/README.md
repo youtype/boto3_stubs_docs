@@ -14,7 +14,7 @@ pip install mypy-boto3-lookoutmetrics
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## LookoutMetricsClient
 
@@ -104,7 +104,7 @@ from mypy_boto3_lookoutmetrics.literals import AggregationFunction, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

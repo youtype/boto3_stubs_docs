@@ -22,7 +22,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_marketplace_entitlement.client import MarketplaceEntitlementServiceClient
+
+def get_marketplace-entitlement_client() -> MarketplaceEntitlementServiceClient:
+    return boto3.client("marketplace-entitlement")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Client)
 
 ## Exceptions
 
@@ -52,7 +57,7 @@ Exceptions:
 
 Type annotations for `boto3.client("marketplace-entitlement").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -66,7 +71,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("marketplace-entitlement").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -83,7 +88,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("marketplace-entitlement").get_entitlements` method.
 
-[Client.get_entitlements documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Client.get_entitlements)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Client.get_entitlements]
 
 ```python
 def get_entitlements(

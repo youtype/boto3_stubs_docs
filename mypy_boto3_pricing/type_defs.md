@@ -1,11 +1,11 @@
-# Structures for boto3 Pricing module
+# Typed dictionaries for boto3 Pricing module
 
 > [Index](../README.md) > [Pricing](./README.md) > Structures
 
 Auto-generated documentation for [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
 type annotations stubs module [mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).
 
-- [Structures for boto3 Pricing module](#structures-for-boto3-pricing-module)
+- [Typed dictionaries for boto3 Pricing module](#typed-dictionaries-for-boto3-pricing-module)
   - [AttributeValueTypeDef](#attributevaluetypedef)
   - [DescribeServicesResponseTypeDef](#describeservicesresponsetypedef)
   - [FilterTypeDef](#filtertypedef)

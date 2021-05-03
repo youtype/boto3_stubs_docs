@@ -13,7 +13,7 @@ pip install mypy-boto3-sagemaker-runtime
   - [SageMakerRuntimeClient](#sagemakerruntimeclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## SageMakerRuntimeClient
 
@@ -56,7 +56,7 @@ SageMakerRuntimeClient [exceptions](./client.md#exceptions)
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

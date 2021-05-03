@@ -17,13 +17,13 @@ Type annotations for `boto3.client("pricing").get_paginator("describe_services")
 Can be used directly:
 
 ```python
-from mypy_boto3_pricing.paginators import DescribeServicesPaginator
+from mypy_boto3_pricing.paginator import DescribeServicesPaginator
 
 def get_describe_services_paginator() -> DescribeServicesPaginator:
     return boto3.client("pricing").get_paginator("describe_services")
 ```
 
-[Paginator.DescribeServices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Paginator.DescribeServices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Paginator.DescribeServices)
 
 ```python
 class DescribeServicesPaginator(Boto3Paginator):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("pricing").get_paginator("get_attribute_value
 Can be used directly:
 
 ```python
-from mypy_boto3_pricing.paginators import GetAttributeValuesPaginator
+from mypy_boto3_pricing.paginator import GetAttributeValuesPaginator
 
 def get_get_attribute_values_paginator() -> GetAttributeValuesPaginator:
     return boto3.client("pricing").get_paginator("get_attribute_values")
 ```
 
-[Paginator.GetAttributeValues documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Paginator.GetAttributeValues)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Paginator.GetAttributeValues)
 
 ```python
 class GetAttributeValuesPaginator(Boto3Paginator):
@@ -67,13 +67,13 @@ Type annotations for `boto3.client("pricing").get_paginator("get_products")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_pricing.paginators import GetProductsPaginator
+from mypy_boto3_pricing.paginator import GetProductsPaginator
 
 def get_get_products_paginator() -> GetProductsPaginator:
     return boto3.client("pricing").get_paginator("get_products")
 ```
 
-[Paginator.GetProducts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Paginator.GetProducts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Paginator.GetProducts)
 
 ```python
 class GetProductsPaginator(Boto3Paginator):

@@ -15,13 +15,13 @@ Type annotations for `boto3.client("acm").get_paginator("list_certificates")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_acm.paginators import ListCertificatesPaginator
+from mypy_boto3_acm.paginator import ListCertificatesPaginator
 
 def get_list_certificates_paginator() -> ListCertificatesPaginator:
     return boto3.client("acm").get_paginator("list_certificates")
 ```
 
-[Paginator.ListCertificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Paginator.ListCertificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Paginator.ListCertificates)
 
 ```python
 class ListCertificatesPaginator(Boto3Paginator):

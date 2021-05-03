@@ -18,13 +18,13 @@ Type annotations for `boto3.client("s3").get_waiter("bucket_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_s3.waiters import BucketExistsWaiter
+from mypy_boto3_s3.waiter import BucketExistsWaiter
 
 def get_bucket_exists_waiter() -> BucketExistsWaiter:
     return boto3.client("s3").get_waiter("bucket_exists")
 ```
 
-[Waiter.BucketExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.BucketExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.bucket_exists)
 
 ```python
 class BucketExistsWaiter(Boto3Waiter):
@@ -43,13 +43,13 @@ Type annotations for `boto3.client("s3").get_waiter("bucket_not_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_s3.waiters import BucketNotExistsWaiter
+from mypy_boto3_s3.waiter import BucketNotExistsWaiter
 
 def get_bucket_not_exists_waiter() -> BucketNotExistsWaiter:
     return boto3.client("s3").get_waiter("bucket_not_exists")
 ```
 
-[Waiter.BucketNotExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.BucketNotExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.bucket_not_exists)
 
 ```python
 class BucketNotExistsWaiter(Boto3Waiter):
@@ -68,13 +68,13 @@ Type annotations for `boto3.client("s3").get_waiter("object_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_s3.waiters import ObjectExistsWaiter
+from mypy_boto3_s3.waiter import ObjectExistsWaiter
 
 def get_object_exists_waiter() -> ObjectExistsWaiter:
     return boto3.client("s3").get_waiter("object_exists")
 ```
 
-[Waiter.ObjectExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.ObjectExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.object_exists)
 
 ```python
 class ObjectExistsWaiter(Boto3Waiter):
@@ -105,13 +105,13 @@ Type annotations for `boto3.client("s3").get_waiter("object_not_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_s3.waiters import ObjectNotExistsWaiter
+from mypy_boto3_s3.waiter import ObjectNotExistsWaiter
 
 def get_object_not_exists_waiter() -> ObjectNotExistsWaiter:
     return boto3.client("s3").get_waiter("object_not_exists")
 ```
 
-[Waiter.ObjectNotExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.ObjectNotExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.object_not_exists)
 
 ```python
 class ObjectNotExistsWaiter(Boto3Waiter):

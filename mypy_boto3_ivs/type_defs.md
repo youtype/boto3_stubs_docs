@@ -1,11 +1,11 @@
-# Structures for boto3 IVS module
+# Typed dictionaries for boto3 IVS module
 
 > [Index](../README.md) > [IVS](./README.md) > Structures
 
 Auto-generated documentation for [IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
 type annotations stubs module [mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
 
-- [Structures for boto3 IVS module](#structures-for-boto3-ivs-module)
+- [Typed dictionaries for boto3 IVS module](#typed-dictionaries-for-boto3-ivs-module)
   - [BatchErrorTypeDef](#batcherrortypedef)
   - [BatchGetChannelResponseTypeDef](#batchgetchannelresponsetypedef)
   - [BatchGetStreamKeyResponseTypeDef](#batchgetstreamkeyresponsetypedef)

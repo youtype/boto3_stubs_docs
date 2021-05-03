@@ -15,13 +15,13 @@ Type annotations for `boto3.client("sagemaker-a2i-runtime").get_paginator("list_
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker_a2i_runtime.paginators import ListHumanLoopsPaginator
+from mypy_boto3_sagemaker_a2i_runtime.paginator import ListHumanLoopsPaginator
 
 def get_list_human_loops_paginator() -> ListHumanLoopsPaginator:
     return boto3.client("sagemaker-a2i-runtime").get_paginator("list_human_loops")
 ```
 
-[Paginator.ListHumanLoops documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Paginator.ListHumanLoops)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Paginator.ListHumanLoops)
 
 ```python
 class ListHumanLoopsPaginator(Boto3Paginator):

@@ -1,11 +1,11 @@
-# Structures for boto3 MarketplaceEntitlementService module
+# Typed dictionaries for boto3 MarketplaceEntitlementService module
 
 > [Index](../README.md) > [MarketplaceEntitlementService](./README.md) > Structures
 
 Auto-generated documentation for [MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
 type annotations stubs module [mypy_boto3_marketplace_entitlement](https://pypi.org/project/mypy-boto3-marketplace-entitlement/).
 
-- [Structures for boto3 MarketplaceEntitlementService module](#structures-for-boto3-marketplaceentitlementservice-module)
+- [Typed dictionaries for boto3 MarketplaceEntitlementService module](#typed-dictionaries-for-boto3-marketplaceentitlementservice-module)
   - [EntitlementTypeDef](#entitlementtypedef)
   - [EntitlementValueTypeDef](#entitlementvaluetypedef)
   - [GetEntitlementsResultTypeDef](#getentitlementsresulttypedef)

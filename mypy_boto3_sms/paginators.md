@@ -19,13 +19,13 @@ Type annotations for `boto3.client("sms").get_paginator("get_connectors")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sms.paginators import GetConnectorsPaginator
+from mypy_boto3_sms.paginator import GetConnectorsPaginator
 
 def get_get_connectors_paginator() -> GetConnectorsPaginator:
     return boto3.client("sms").get_paginator("get_connectors")
 ```
 
-[Paginator.GetConnectors documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetConnectors)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetConnectors)
 
 ```python
 class GetConnectorsPaginator(Boto3Paginator):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("sms").get_paginator("get_replication_jobs")`
 Can be used directly:
 
 ```python
-from mypy_boto3_sms.paginators import GetReplicationJobsPaginator
+from mypy_boto3_sms.paginator import GetReplicationJobsPaginator
 
 def get_get_replication_jobs_paginator() -> GetReplicationJobsPaginator:
     return boto3.client("sms").get_paginator("get_replication_jobs")
 ```
 
-[Paginator.GetReplicationJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetReplicationJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetReplicationJobs)
 
 ```python
 class GetReplicationJobsPaginator(Boto3Paginator):
@@ -66,13 +66,13 @@ Type annotations for `boto3.client("sms").get_paginator("get_replication_runs")`
 Can be used directly:
 
 ```python
-from mypy_boto3_sms.paginators import GetReplicationRunsPaginator
+from mypy_boto3_sms.paginator import GetReplicationRunsPaginator
 
 def get_get_replication_runs_paginator() -> GetReplicationRunsPaginator:
     return boto3.client("sms").get_paginator("get_replication_runs")
 ```
 
-[Paginator.GetReplicationRuns documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetReplicationRuns)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetReplicationRuns)
 
 ```python
 class GetReplicationRunsPaginator(Boto3Paginator):
@@ -90,13 +90,13 @@ Type annotations for `boto3.client("sms").get_paginator("get_servers")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sms.paginators import GetServersPaginator
+from mypy_boto3_sms.paginator import GetServersPaginator
 
 def get_get_servers_paginator() -> GetServersPaginator:
     return boto3.client("sms").get_paginator("get_servers")
 ```
 
-[Paginator.GetServers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetServers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetServers)
 
 ```python
 class GetServersPaginator(Boto3Paginator):
@@ -114,13 +114,13 @@ Type annotations for `boto3.client("sms").get_paginator("list_apps")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sms.paginators import ListAppsPaginator
+from mypy_boto3_sms.paginator import ListAppsPaginator
 
 def get_list_apps_paginator() -> ListAppsPaginator:
     return boto3.client("sms").get_paginator("list_apps")
 ```
 
-[Paginator.ListApps documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.ListApps)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.ListApps)
 
 ```python
 class ListAppsPaginator(Boto3Paginator):

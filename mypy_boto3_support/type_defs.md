@@ -1,11 +1,11 @@
-# Structures for boto3 Support module
+# Typed dictionaries for boto3 Support module
 
 > [Index](../README.md) > [Support](./README.md) > Structures
 
 Auto-generated documentation for [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
 type annotations stubs module [mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
 
-- [Structures for boto3 Support module](#structures-for-boto3-support-module)
+- [Typed dictionaries for boto3 Support module](#typed-dictionaries-for-boto3-support-module)
   - [AddAttachmentsToSetResponseTypeDef](#addattachmentstosetresponsetypedef)
   - [AddCommunicationToCaseResponseTypeDef](#addcommunicationtocaseresponsetypedef)
   - [AttachmentDetailsTypeDef](#attachmentdetailstypedef)

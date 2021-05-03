@@ -15,13 +15,13 @@ Type annotations for `boto3.client("amp").get_paginator("list_workspaces")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_amp.paginators import ListWorkspacesPaginator
+from mypy_boto3_amp.paginator import ListWorkspacesPaginator
 
 def get_list_workspaces_paginator() -> ListWorkspacesPaginator:
     return boto3.client("amp").get_paginator("list_workspaces")
 ```
 
-[Paginator.ListWorkspaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Paginator.ListWorkspaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Paginator.ListWorkspaces)
 
 ```python
 class ListWorkspacesPaginator(Boto3Paginator):

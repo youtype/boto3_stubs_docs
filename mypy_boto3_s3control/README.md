@@ -15,7 +15,7 @@ pip install mypy-boto3-s3control
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## S3ControlClient
 
@@ -167,7 +167,7 @@ from mypy_boto3_s3control.literals import BucketCannedACL, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

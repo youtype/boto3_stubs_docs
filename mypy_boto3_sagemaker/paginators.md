@@ -67,13 +67,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_actions")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListActionsPaginator
+from mypy_boto3_sagemaker.paginator import ListActionsPaginator
 
 def get_list_actions_paginator() -> ListActionsPaginator:
     return boto3.client("sagemaker").get_paginator("list_actions")
 ```
 
-[Paginator.ListActions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListActions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListActions)
 
 ```python
 class ListActionsPaginator(Boto3Paginator):
@@ -96,13 +96,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_algorithms")
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListAlgorithmsPaginator
+from mypy_boto3_sagemaker.paginator import ListAlgorithmsPaginator
 
 def get_list_algorithms_paginator() -> ListAlgorithmsPaginator:
     return boto3.client("sagemaker").get_paginator("list_algorithms")
 ```
 
-[Paginator.ListAlgorithms documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListAlgorithms)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListAlgorithms)
 
 ```python
 class ListAlgorithmsPaginator(Boto3Paginator):
@@ -124,13 +124,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_app_image_co
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListAppImageConfigsPaginator
+from mypy_boto3_sagemaker.paginator import ListAppImageConfigsPaginator
 
 def get_list_app_image_configs_paginator() -> ListAppImageConfigsPaginator:
     return boto3.client("sagemaker").get_paginator("list_app_image_configs")
 ```
 
-[Paginator.ListAppImageConfigs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListAppImageConfigs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListAppImageConfigs)
 
 ```python
 class ListAppImageConfigsPaginator(Boto3Paginator):
@@ -154,13 +154,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_apps")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListAppsPaginator
+from mypy_boto3_sagemaker.paginator import ListAppsPaginator
 
 def get_list_apps_paginator() -> ListAppsPaginator:
     return boto3.client("sagemaker").get_paginator("list_apps")
 ```
 
-[Paginator.ListApps documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListApps)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListApps)
 
 ```python
 class ListAppsPaginator(Boto3Paginator):
@@ -181,13 +181,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_artifacts")`
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListArtifactsPaginator
+from mypy_boto3_sagemaker.paginator import ListArtifactsPaginator
 
 def get_list_artifacts_paginator() -> ListArtifactsPaginator:
     return boto3.client("sagemaker").get_paginator("list_artifacts")
 ```
 
-[Paginator.ListArtifacts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListArtifacts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListArtifacts)
 
 ```python
 class ListArtifactsPaginator(Boto3Paginator):
@@ -210,13 +210,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_associations
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListAssociationsPaginator
+from mypy_boto3_sagemaker.paginator import ListAssociationsPaginator
 
 def get_list_associations_paginator() -> ListAssociationsPaginator:
     return boto3.client("sagemaker").get_paginator("list_associations")
 ```
 
-[Paginator.ListAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListAssociations)
 
 ```python
 class ListAssociationsPaginator(Boto3Paginator):
@@ -242,13 +242,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_auto_ml_jobs
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListAutoMLJobsPaginator
+from mypy_boto3_sagemaker.paginator import ListAutoMLJobsPaginator
 
 def get_list_auto_ml_jobs_paginator() -> ListAutoMLJobsPaginator:
     return boto3.client("sagemaker").get_paginator("list_auto_ml_jobs")
 ```
 
-[Paginator.ListAutoMLJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListAutoMLJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListAutoMLJobs)
 
 ```python
 class ListAutoMLJobsPaginator(Boto3Paginator):
@@ -273,13 +273,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_candidates_f
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListCandidatesForAutoMLJobPaginator
+from mypy_boto3_sagemaker.paginator import ListCandidatesForAutoMLJobPaginator
 
 def get_list_candidates_for_auto_ml_job_paginator() -> ListCandidatesForAutoMLJobPaginator:
     return boto3.client("sagemaker").get_paginator("list_candidates_for_auto_ml_job")
 ```
 
-[Paginator.ListCandidatesForAutoMLJob documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListCandidatesForAutoMLJob)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListCandidatesForAutoMLJob)
 
 ```python
 class ListCandidatesForAutoMLJobPaginator(Boto3Paginator):
@@ -301,13 +301,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_code_reposit
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListCodeRepositoriesPaginator
+from mypy_boto3_sagemaker.paginator import ListCodeRepositoriesPaginator
 
 def get_list_code_repositories_paginator() -> ListCodeRepositoriesPaginator:
     return boto3.client("sagemaker").get_paginator("list_code_repositories")
 ```
 
-[Paginator.ListCodeRepositories documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListCodeRepositories)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListCodeRepositories)
 
 ```python
 class ListCodeRepositoriesPaginator(Boto3Paginator):
@@ -331,13 +331,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_compilation_
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListCompilationJobsPaginator
+from mypy_boto3_sagemaker.paginator import ListCompilationJobsPaginator
 
 def get_list_compilation_jobs_paginator() -> ListCompilationJobsPaginator:
     return boto3.client("sagemaker").get_paginator("list_compilation_jobs")
 ```
 
-[Paginator.ListCompilationJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListCompilationJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListCompilationJobs)
 
 ```python
 class ListCompilationJobsPaginator(Boto3Paginator):
@@ -362,13 +362,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_contexts")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListContextsPaginator
+from mypy_boto3_sagemaker.paginator import ListContextsPaginator
 
 def get_list_contexts_paginator() -> ListContextsPaginator:
     return boto3.client("sagemaker").get_paginator("list_contexts")
 ```
 
-[Paginator.ListContexts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListContexts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListContexts)
 
 ```python
 class ListContextsPaginator(Boto3Paginator):
@@ -391,13 +391,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_data_quality
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListDataQualityJobDefinitionsPaginator
+from mypy_boto3_sagemaker.paginator import ListDataQualityJobDefinitionsPaginator
 
 def get_list_data_quality_job_definitions_paginator() -> ListDataQualityJobDefinitionsPaginator:
     return boto3.client("sagemaker").get_paginator("list_data_quality_job_definitions")
 ```
 
-[Paginator.ListDataQualityJobDefinitions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListDataQualityJobDefinitions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListDataQualityJobDefinitions)
 
 ```python
 class ListDataQualityJobDefinitionsPaginator(Boto3Paginator):
@@ -420,13 +420,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_device_fleet
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListDeviceFleetsPaginator
+from mypy_boto3_sagemaker.paginator import ListDeviceFleetsPaginator
 
 def get_list_device_fleets_paginator() -> ListDeviceFleetsPaginator:
     return boto3.client("sagemaker").get_paginator("list_device_fleets")
 ```
 
-[Paginator.ListDeviceFleets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListDeviceFleets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListDeviceFleets)
 
 ```python
 class ListDeviceFleetsPaginator(Boto3Paginator):
@@ -450,13 +450,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_devices")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListDevicesPaginator
+from mypy_boto3_sagemaker.paginator import ListDevicesPaginator
 
 def get_list_devices_paginator() -> ListDevicesPaginator:
     return boto3.client("sagemaker").get_paginator("list_devices")
 ```
 
-[Paginator.ListDevices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListDevices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListDevices)
 
 ```python
 class ListDevicesPaginator(Boto3Paginator):
@@ -476,13 +476,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_domains")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListDomainsPaginator
+from mypy_boto3_sagemaker.paginator import ListDomainsPaginator
 
 def get_list_domains_paginator() -> ListDomainsPaginator:
     return boto3.client("sagemaker").get_paginator("list_domains")
 ```
 
-[Paginator.ListDomains documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListDomains)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListDomains)
 
 ```python
 class ListDomainsPaginator(Boto3Paginator):
@@ -499,13 +499,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_edge_packagi
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListEdgePackagingJobsPaginator
+from mypy_boto3_sagemaker.paginator import ListEdgePackagingJobsPaginator
 
 def get_list_edge_packaging_jobs_paginator() -> ListEdgePackagingJobsPaginator:
     return boto3.client("sagemaker").get_paginator("list_edge_packaging_jobs")
 ```
 
-[Paginator.ListEdgePackagingJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListEdgePackagingJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListEdgePackagingJobs)
 
 ```python
 class ListEdgePackagingJobsPaginator(Boto3Paginator):
@@ -531,13 +531,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_endpoint_con
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListEndpointConfigsPaginator
+from mypy_boto3_sagemaker.paginator import ListEndpointConfigsPaginator
 
 def get_list_endpoint_configs_paginator() -> ListEndpointConfigsPaginator:
     return boto3.client("sagemaker").get_paginator("list_endpoint_configs")
 ```
 
-[Paginator.ListEndpointConfigs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListEndpointConfigs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListEndpointConfigs)
 
 ```python
 class ListEndpointConfigsPaginator(Boto3Paginator):
@@ -559,13 +559,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_endpoints")`
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListEndpointsPaginator
+from mypy_boto3_sagemaker.paginator import ListEndpointsPaginator
 
 def get_list_endpoints_paginator() -> ListEndpointsPaginator:
     return boto3.client("sagemaker").get_paginator("list_endpoints")
 ```
 
-[Paginator.ListEndpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListEndpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListEndpoints)
 
 ```python
 class ListEndpointsPaginator(Boto3Paginator):
@@ -590,13 +590,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_experiments"
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListExperimentsPaginator
+from mypy_boto3_sagemaker.paginator import ListExperimentsPaginator
 
 def get_list_experiments_paginator() -> ListExperimentsPaginator:
     return boto3.client("sagemaker").get_paginator("list_experiments")
 ```
 
-[Paginator.ListExperiments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListExperiments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListExperiments)
 
 ```python
 class ListExperimentsPaginator(Boto3Paginator):
@@ -617,13 +617,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_feature_grou
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListFeatureGroupsPaginator
+from mypy_boto3_sagemaker.paginator import ListFeatureGroupsPaginator
 
 def get_list_feature_groups_paginator() -> ListFeatureGroupsPaginator:
     return boto3.client("sagemaker").get_paginator("list_feature_groups")
 ```
 
-[Paginator.ListFeatureGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListFeatureGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListFeatureGroups)
 
 ```python
 class ListFeatureGroupsPaginator(Boto3Paginator):
@@ -647,13 +647,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_flow_definit
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListFlowDefinitionsPaginator
+from mypy_boto3_sagemaker.paginator import ListFlowDefinitionsPaginator
 
 def get_list_flow_definitions_paginator() -> ListFlowDefinitionsPaginator:
     return boto3.client("sagemaker").get_paginator("list_flow_definitions")
 ```
 
-[Paginator.ListFlowDefinitions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListFlowDefinitions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListFlowDefinitions)
 
 ```python
 class ListFlowDefinitionsPaginator(Boto3Paginator):
@@ -673,13 +673,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_human_task_u
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListHumanTaskUisPaginator
+from mypy_boto3_sagemaker.paginator import ListHumanTaskUisPaginator
 
 def get_list_human_task_uis_paginator() -> ListHumanTaskUisPaginator:
     return boto3.client("sagemaker").get_paginator("list_human_task_uis")
 ```
 
-[Paginator.ListHumanTaskUis documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListHumanTaskUis)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListHumanTaskUis)
 
 ```python
 class ListHumanTaskUisPaginator(Boto3Paginator):
@@ -699,13 +699,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_hyper_parame
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListHyperParameterTuningJobsPaginator
+from mypy_boto3_sagemaker.paginator import ListHyperParameterTuningJobsPaginator
 
 def get_list_hyper_parameter_tuning_jobs_paginator() -> ListHyperParameterTuningJobsPaginator:
     return boto3.client("sagemaker").get_paginator("list_hyper_parameter_tuning_jobs")
 ```
 
-[Paginator.ListHyperParameterTuningJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListHyperParameterTuningJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListHyperParameterTuningJobs)
 
 ```python
 class ListHyperParameterTuningJobsPaginator(Boto3Paginator):
@@ -730,13 +730,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_image_versio
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListImageVersionsPaginator
+from mypy_boto3_sagemaker.paginator import ListImageVersionsPaginator
 
 def get_list_image_versions_paginator() -> ListImageVersionsPaginator:
     return boto3.client("sagemaker").get_paginator("list_image_versions")
 ```
 
-[Paginator.ListImageVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListImageVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListImageVersions)
 
 ```python
 class ListImageVersionsPaginator(Boto3Paginator):
@@ -760,13 +760,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_images")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListImagesPaginator
+from mypy_boto3_sagemaker.paginator import ListImagesPaginator
 
 def get_list_images_paginator() -> ListImagesPaginator:
     return boto3.client("sagemaker").get_paginator("list_images")
 ```
 
-[Paginator.ListImages documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListImages)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListImages)
 
 ```python
 class ListImagesPaginator(Boto3Paginator):
@@ -790,13 +790,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_labeling_job
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListLabelingJobsPaginator
+from mypy_boto3_sagemaker.paginator import ListLabelingJobsPaginator
 
 def get_list_labeling_jobs_paginator() -> ListLabelingJobsPaginator:
     return boto3.client("sagemaker").get_paginator("list_labeling_jobs")
 ```
 
-[Paginator.ListLabelingJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListLabelingJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListLabelingJobs)
 
 ```python
 class ListLabelingJobsPaginator(Boto3Paginator):
@@ -821,13 +821,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_labeling_job
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListLabelingJobsForWorkteamPaginator
+from mypy_boto3_sagemaker.paginator import ListLabelingJobsForWorkteamPaginator
 
 def get_list_labeling_jobs_for_workteam_paginator() -> ListLabelingJobsForWorkteamPaginator:
     return boto3.client("sagemaker").get_paginator("list_labeling_jobs_for_workteam")
 ```
 
-[Paginator.ListLabelingJobsForWorkteam documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListLabelingJobsForWorkteam)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListLabelingJobsForWorkteam)
 
 ```python
 class ListLabelingJobsForWorkteamPaginator(Boto3Paginator):
@@ -850,13 +850,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_model_bias_j
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListModelBiasJobDefinitionsPaginator
+from mypy_boto3_sagemaker.paginator import ListModelBiasJobDefinitionsPaginator
 
 def get_list_model_bias_job_definitions_paginator() -> ListModelBiasJobDefinitionsPaginator:
     return boto3.client("sagemaker").get_paginator("list_model_bias_job_definitions")
 ```
 
-[Paginator.ListModelBiasJobDefinitions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModelBiasJobDefinitions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModelBiasJobDefinitions)
 
 ```python
 class ListModelBiasJobDefinitionsPaginator(Boto3Paginator):
@@ -879,13 +879,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_model_explai
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListModelExplainabilityJobDefinitionsPaginator
+from mypy_boto3_sagemaker.paginator import ListModelExplainabilityJobDefinitionsPaginator
 
 def get_list_model_explainability_job_definitions_paginator() -> ListModelExplainabilityJobDefinitionsPaginator:
     return boto3.client("sagemaker").get_paginator("list_model_explainability_job_definitions")
 ```
 
-[Paginator.ListModelExplainabilityJobDefinitions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModelExplainabilityJobDefinitions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModelExplainabilityJobDefinitions)
 
 ```python
 class ListModelExplainabilityJobDefinitionsPaginator(Boto3Paginator):
@@ -908,13 +908,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_model_packag
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListModelPackageGroupsPaginator
+from mypy_boto3_sagemaker.paginator import ListModelPackageGroupsPaginator
 
 def get_list_model_package_groups_paginator() -> ListModelPackageGroupsPaginator:
     return boto3.client("sagemaker").get_paginator("list_model_package_groups")
 ```
 
-[Paginator.ListModelPackageGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModelPackageGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModelPackageGroups)
 
 ```python
 class ListModelPackageGroupsPaginator(Boto3Paginator):
@@ -936,13 +936,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_model_packag
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListModelPackagesPaginator
+from mypy_boto3_sagemaker.paginator import ListModelPackagesPaginator
 
 def get_list_model_packages_paginator() -> ListModelPackagesPaginator:
     return boto3.client("sagemaker").get_paginator("list_model_packages")
 ```
 
-[Paginator.ListModelPackages documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModelPackages)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModelPackages)
 
 ```python
 class ListModelPackagesPaginator(Boto3Paginator):
@@ -967,13 +967,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_model_qualit
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListModelQualityJobDefinitionsPaginator
+from mypy_boto3_sagemaker.paginator import ListModelQualityJobDefinitionsPaginator
 
 def get_list_model_quality_job_definitions_paginator() -> ListModelQualityJobDefinitionsPaginator:
     return boto3.client("sagemaker").get_paginator("list_model_quality_job_definitions")
 ```
 
-[Paginator.ListModelQualityJobDefinitions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModelQualityJobDefinitions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModelQualityJobDefinitions)
 
 ```python
 class ListModelQualityJobDefinitionsPaginator(Boto3Paginator):
@@ -996,13 +996,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_models")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListModelsPaginator
+from mypy_boto3_sagemaker.paginator import ListModelsPaginator
 
 def get_list_models_paginator() -> ListModelsPaginator:
     return boto3.client("sagemaker").get_paginator("list_models")
 ```
 
-[Paginator.ListModels documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModels)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModels)
 
 ```python
 class ListModelsPaginator(Boto3Paginator):
@@ -1024,13 +1024,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_monitoring_e
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListMonitoringExecutionsPaginator
+from mypy_boto3_sagemaker.paginator import ListMonitoringExecutionsPaginator
 
 def get_list_monitoring_executions_paginator() -> ListMonitoringExecutionsPaginator:
     return boto3.client("sagemaker").get_paginator("list_monitoring_executions")
 ```
 
-[Paginator.ListMonitoringExecutions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListMonitoringExecutions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListMonitoringExecutions)
 
 ```python
 class ListMonitoringExecutionsPaginator(Boto3Paginator):
@@ -1060,13 +1060,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_monitoring_s
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListMonitoringSchedulesPaginator
+from mypy_boto3_sagemaker.paginator import ListMonitoringSchedulesPaginator
 
 def get_list_monitoring_schedules_paginator() -> ListMonitoringSchedulesPaginator:
     return boto3.client("sagemaker").get_paginator("list_monitoring_schedules")
 ```
 
-[Paginator.ListMonitoringSchedules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListMonitoringSchedules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListMonitoringSchedules)
 
 ```python
 class ListMonitoringSchedulesPaginator(Boto3Paginator):
@@ -1094,13 +1094,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_notebook_ins
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListNotebookInstanceLifecycleConfigsPaginator
+from mypy_boto3_sagemaker.paginator import ListNotebookInstanceLifecycleConfigsPaginator
 
 def get_list_notebook_instance_lifecycle_configs_paginator() -> ListNotebookInstanceLifecycleConfigsPaginator:
     return boto3.client("sagemaker").get_paginator("list_notebook_instance_lifecycle_configs")
 ```
 
-[Paginator.ListNotebookInstanceLifecycleConfigs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListNotebookInstanceLifecycleConfigs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListNotebookInstanceLifecycleConfigs)
 
 ```python
 class ListNotebookInstanceLifecycleConfigsPaginator(Boto3Paginator):
@@ -1124,13 +1124,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_notebook_ins
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListNotebookInstancesPaginator
+from mypy_boto3_sagemaker.paginator import ListNotebookInstancesPaginator
 
 def get_list_notebook_instances_paginator() -> ListNotebookInstancesPaginator:
     return boto3.client("sagemaker").get_paginator("list_notebook_instances")
 ```
 
-[Paginator.ListNotebookInstances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListNotebookInstances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListNotebookInstances)
 
 ```python
 class ListNotebookInstancesPaginator(Boto3Paginator):
@@ -1158,13 +1158,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_pipeline_exe
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListPipelineExecutionStepsPaginator
+from mypy_boto3_sagemaker.paginator import ListPipelineExecutionStepsPaginator
 
 def get_list_pipeline_execution_steps_paginator() -> ListPipelineExecutionStepsPaginator:
     return boto3.client("sagemaker").get_paginator("list_pipeline_execution_steps")
 ```
 
-[Paginator.ListPipelineExecutionSteps documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListPipelineExecutionSteps)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListPipelineExecutionSteps)
 
 ```python
 class ListPipelineExecutionStepsPaginator(Boto3Paginator):
@@ -1183,13 +1183,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_pipeline_exe
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListPipelineExecutionsPaginator
+from mypy_boto3_sagemaker.paginator import ListPipelineExecutionsPaginator
 
 def get_list_pipeline_executions_paginator() -> ListPipelineExecutionsPaginator:
     return boto3.client("sagemaker").get_paginator("list_pipeline_executions")
 ```
 
-[Paginator.ListPipelineExecutions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListPipelineExecutions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListPipelineExecutions)
 
 ```python
 class ListPipelineExecutionsPaginator(Boto3Paginator):
@@ -1211,13 +1211,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_pipeline_par
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListPipelineParametersForExecutionPaginator
+from mypy_boto3_sagemaker.paginator import ListPipelineParametersForExecutionPaginator
 
 def get_list_pipeline_parameters_for_execution_paginator() -> ListPipelineParametersForExecutionPaginator:
     return boto3.client("sagemaker").get_paginator("list_pipeline_parameters_for_execution")
 ```
 
-[Paginator.ListPipelineParametersForExecution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListPipelineParametersForExecution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListPipelineParametersForExecution)
 
 ```python
 class ListPipelineParametersForExecutionPaginator(Boto3Paginator):
@@ -1235,13 +1235,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_pipelines")`
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListPipelinesPaginator
+from mypy_boto3_sagemaker.paginator import ListPipelinesPaginator
 
 def get_list_pipelines_paginator() -> ListPipelinesPaginator:
     return boto3.client("sagemaker").get_paginator("list_pipelines")
 ```
 
-[Paginator.ListPipelines documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListPipelines)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListPipelines)
 
 ```python
 class ListPipelinesPaginator(Boto3Paginator):
@@ -1263,13 +1263,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_processing_j
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListProcessingJobsPaginator
+from mypy_boto3_sagemaker.paginator import ListProcessingJobsPaginator
 
 def get_list_processing_jobs_paginator() -> ListProcessingJobsPaginator:
     return boto3.client("sagemaker").get_paginator("list_processing_jobs")
 ```
 
-[Paginator.ListProcessingJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListProcessingJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListProcessingJobs)
 
 ```python
 class ListProcessingJobsPaginator(Boto3Paginator):
@@ -1294,13 +1294,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_subscribed_w
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListSubscribedWorkteamsPaginator
+from mypy_boto3_sagemaker.paginator import ListSubscribedWorkteamsPaginator
 
 def get_list_subscribed_workteams_paginator() -> ListSubscribedWorkteamsPaginator:
     return boto3.client("sagemaker").get_paginator("list_subscribed_workteams")
 ```
 
-[Paginator.ListSubscribedWorkteams documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListSubscribedWorkteams)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListSubscribedWorkteams)
 
 ```python
 class ListSubscribedWorkteamsPaginator(Boto3Paginator):
@@ -1318,13 +1318,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_tags")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListTagsPaginator
+from mypy_boto3_sagemaker.paginator import ListTagsPaginator
 
 def get_list_tags_paginator() -> ListTagsPaginator:
     return boto3.client("sagemaker").get_paginator("list_tags")
 ```
 
-[Paginator.ListTags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListTags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListTags)
 
 ```python
 class ListTagsPaginator(Boto3Paginator):
@@ -1342,13 +1342,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_training_job
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListTrainingJobsPaginator
+from mypy_boto3_sagemaker.paginator import ListTrainingJobsPaginator
 
 def get_list_training_jobs_paginator() -> ListTrainingJobsPaginator:
     return boto3.client("sagemaker").get_paginator("list_training_jobs")
 ```
 
-[Paginator.ListTrainingJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListTrainingJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListTrainingJobs)
 
 ```python
 class ListTrainingJobsPaginator(Boto3Paginator):
@@ -1373,13 +1373,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_training_job
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListTrainingJobsForHyperParameterTuningJobPaginator
+from mypy_boto3_sagemaker.paginator import ListTrainingJobsForHyperParameterTuningJobPaginator
 
 def get_list_training_jobs_for_hyper_parameter_tuning_job_paginator() -> ListTrainingJobsForHyperParameterTuningJobPaginator:
     return boto3.client("sagemaker").get_paginator("list_training_jobs_for_hyper_parameter_tuning_job")
 ```
 
-[Paginator.ListTrainingJobsForHyperParameterTuningJob documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListTrainingJobsForHyperParameterTuningJob)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListTrainingJobsForHyperParameterTuningJob)
 
 ```python
 class ListTrainingJobsForHyperParameterTuningJobPaginator(Boto3Paginator):
@@ -1400,13 +1400,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_transform_jo
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListTransformJobsPaginator
+from mypy_boto3_sagemaker.paginator import ListTransformJobsPaginator
 
 def get_list_transform_jobs_paginator() -> ListTransformJobsPaginator:
     return boto3.client("sagemaker").get_paginator("list_transform_jobs")
 ```
 
-[Paginator.ListTransformJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListTransformJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListTransformJobs)
 
 ```python
 class ListTransformJobsPaginator(Boto3Paginator):
@@ -1431,13 +1431,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_trial_compon
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListTrialComponentsPaginator
+from mypy_boto3_sagemaker.paginator import ListTrialComponentsPaginator
 
 def get_list_trial_components_paginator() -> ListTrialComponentsPaginator:
     return boto3.client("sagemaker").get_paginator("list_trial_components")
 ```
 
-[Paginator.ListTrialComponents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListTrialComponents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListTrialComponents)
 
 ```python
 class ListTrialComponentsPaginator(Boto3Paginator):
@@ -1461,13 +1461,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_trials")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListTrialsPaginator
+from mypy_boto3_sagemaker.paginator import ListTrialsPaginator
 
 def get_list_trials_paginator() -> ListTrialsPaginator:
     return boto3.client("sagemaker").get_paginator("list_trials")
 ```
 
-[Paginator.ListTrials documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListTrials)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListTrials)
 
 ```python
 class ListTrialsPaginator(Boto3Paginator):
@@ -1490,13 +1490,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_user_profile
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListUserProfilesPaginator
+from mypy_boto3_sagemaker.paginator import ListUserProfilesPaginator
 
 def get_list_user_profiles_paginator() -> ListUserProfilesPaginator:
     return boto3.client("sagemaker").get_paginator("list_user_profiles")
 ```
 
-[Paginator.ListUserProfiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListUserProfiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListUserProfiles)
 
 ```python
 class ListUserProfilesPaginator(Boto3Paginator):
@@ -1517,13 +1517,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_workforces")
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListWorkforcesPaginator
+from mypy_boto3_sagemaker.paginator import ListWorkforcesPaginator
 
 def get_list_workforces_paginator() -> ListWorkforcesPaginator:
     return boto3.client("sagemaker").get_paginator("list_workforces")
 ```
 
-[Paginator.ListWorkforces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListWorkforces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListWorkforces)
 
 ```python
 class ListWorkforcesPaginator(Boto3Paginator):
@@ -1543,13 +1543,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("list_workteams")`
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import ListWorkteamsPaginator
+from mypy_boto3_sagemaker.paginator import ListWorkteamsPaginator
 
 def get_list_workteams_paginator() -> ListWorkteamsPaginator:
     return boto3.client("sagemaker").get_paginator("list_workteams")
 ```
 
-[Paginator.ListWorkteams documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListWorkteams)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListWorkteams)
 
 ```python
 class ListWorkteamsPaginator(Boto3Paginator):
@@ -1569,13 +1569,13 @@ Type annotations for `boto3.client("sagemaker").get_paginator("search")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker.paginators import SearchPaginator
+from mypy_boto3_sagemaker.paginator import SearchPaginator
 
 def get_search_paginator() -> SearchPaginator:
     return boto3.client("sagemaker").get_paginator("search")
 ```
 
-[Paginator.Search documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.Search)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.Search)
 
 ```python
 class SearchPaginator(Boto3Paginator):

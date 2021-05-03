@@ -146,8 +146,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_ec2.service_resource import EC2ServiceResource
+
+def get_ec2_resource() -> EC2ServiceResource:
+    return boto3.resource("ec2")
 ```
 
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource)
 
 
 ## Methods
@@ -156,7 +160,7 @@ from mypy_boto3_ec2.service_resource import EC2ServiceResource
 
 Type annotations for `boto3.resource("ec2").ClassicAddress` method.
 
-[ServiceResource.ClassicAddress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ClassicAddress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.ClassicAddress]
 
 Definition:
 
@@ -172,7 +176,7 @@ def ClassicAddress(
 
 Type annotations for `boto3.resource("ec2").DhcpOptions` method.
 
-[ServiceResource.DhcpOptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.DhcpOptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.DhcpOptions]
 
 Definition:
 
@@ -188,7 +192,7 @@ def DhcpOptions(
 
 Type annotations for `boto3.resource("ec2").Image` method.
 
-[ServiceResource.Image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.Image]
 
 Definition:
 
@@ -204,7 +208,7 @@ def Image(
 
 Type annotations for `boto3.resource("ec2").Instance` method.
 
-[ServiceResource.Instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.Instance]
 
 Definition:
 
@@ -220,7 +224,7 @@ def Instance(
 
 Type annotations for `boto3.resource("ec2").InternetGateway` method.
 
-[ServiceResource.InternetGateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.InternetGateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.InternetGateway]
 
 Definition:
 
@@ -236,7 +240,7 @@ def InternetGateway(
 
 Type annotations for `boto3.resource("ec2").KeyPair` method.
 
-[ServiceResource.KeyPair documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.KeyPair)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.KeyPair]
 
 Definition:
 
@@ -252,7 +256,7 @@ def KeyPair(
 
 Type annotations for `boto3.resource("ec2").NetworkAcl` method.
 
-[ServiceResource.NetworkAcl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.NetworkAcl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.NetworkAcl]
 
 Definition:
 
@@ -268,7 +272,7 @@ def NetworkAcl(
 
 Type annotations for `boto3.resource("ec2").NetworkInterface` method.
 
-[ServiceResource.NetworkInterface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.NetworkInterface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.NetworkInterface]
 
 Definition:
 
@@ -284,7 +288,7 @@ def NetworkInterface(
 
 Type annotations for `boto3.resource("ec2").NetworkInterfaceAssociation` method.
 
-[ServiceResource.NetworkInterfaceAssociation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.NetworkInterfaceAssociation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.NetworkInterfaceAssociation]
 
 Definition:
 
@@ -300,7 +304,7 @@ def NetworkInterfaceAssociation(
 
 Type annotations for `boto3.resource("ec2").PlacementGroup` method.
 
-[ServiceResource.PlacementGroup documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.PlacementGroup)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.PlacementGroup]
 
 Definition:
 
@@ -316,7 +320,7 @@ def PlacementGroup(
 
 Type annotations for `boto3.resource("ec2").Route` method.
 
-[ServiceResource.Route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.Route]
 
 Definition:
 
@@ -333,7 +337,7 @@ def Route(
 
 Type annotations for `boto3.resource("ec2").RouteTable` method.
 
-[ServiceResource.RouteTable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.RouteTable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.RouteTable]
 
 Definition:
 
@@ -349,7 +353,7 @@ def RouteTable(
 
 Type annotations for `boto3.resource("ec2").RouteTableAssociation` method.
 
-[ServiceResource.RouteTableAssociation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.RouteTableAssociation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.RouteTableAssociation]
 
 Definition:
 
@@ -365,7 +369,7 @@ def RouteTableAssociation(
 
 Type annotations for `boto3.resource("ec2").SecurityGroup` method.
 
-[ServiceResource.SecurityGroup documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.SecurityGroup)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.SecurityGroup]
 
 Definition:
 
@@ -381,7 +385,7 @@ def SecurityGroup(
 
 Type annotations for `boto3.resource("ec2").Snapshot` method.
 
-[ServiceResource.Snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.Snapshot]
 
 Definition:
 
@@ -397,7 +401,7 @@ def Snapshot(
 
 Type annotations for `boto3.resource("ec2").Subnet` method.
 
-[ServiceResource.Subnet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Subnet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.Subnet]
 
 Definition:
 
@@ -413,7 +417,7 @@ def Subnet(
 
 Type annotations for `boto3.resource("ec2").Tag` method.
 
-[ServiceResource.Tag documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Tag)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.Tag]
 
 Definition:
 
@@ -431,7 +435,7 @@ def Tag(
 
 Type annotations for `boto3.resource("ec2").Volume` method.
 
-[ServiceResource.Volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.Volume]
 
 Definition:
 
@@ -447,7 +451,7 @@ def Volume(
 
 Type annotations for `boto3.resource("ec2").Vpc` method.
 
-[ServiceResource.Vpc documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Vpc)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.Vpc]
 
 Definition:
 
@@ -463,7 +467,7 @@ def Vpc(
 
 Type annotations for `boto3.resource("ec2").VpcAddress` method.
 
-[ServiceResource.VpcAddress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.VpcAddress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.VpcAddress]
 
 Definition:
 
@@ -479,7 +483,7 @@ def VpcAddress(
 
 Type annotations for `boto3.resource("ec2").VpcPeeringConnection` method.
 
-[ServiceResource.VpcPeeringConnection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.VpcPeeringConnection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.VpcPeeringConnection]
 
 Definition:
 
@@ -495,7 +499,7 @@ def VpcPeeringConnection(
 
 Type annotations for `boto3.resource("ec2").create_dhcp_options` method.
 
-[ServiceResource.create_dhcp_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_dhcp_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_dhcp_options]
 
 Definition:
 
@@ -513,7 +517,7 @@ def create_dhcp_options(
 
 Type annotations for `boto3.resource("ec2").create_instances` method.
 
-[ServiceResource.create_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_instances]
 
 Definition:
 
@@ -565,7 +569,7 @@ def create_instances(
 
 Type annotations for `boto3.resource("ec2").create_internet_gateway` method.
 
-[ServiceResource.create_internet_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_internet_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_internet_gateway]
 
 Definition:
 
@@ -582,7 +586,7 @@ def create_internet_gateway(
 
 Type annotations for `boto3.resource("ec2").create_key_pair` method.
 
-[ServiceResource.create_key_pair documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_key_pair)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_key_pair]
 
 Definition:
 
@@ -600,7 +604,7 @@ def create_key_pair(
 
 Type annotations for `boto3.resource("ec2").create_network_acl` method.
 
-[ServiceResource.create_network_acl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_network_acl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_network_acl]
 
 Definition:
 
@@ -618,7 +622,7 @@ def create_network_acl(
 
 Type annotations for `boto3.resource("ec2").create_network_interface` method.
 
-[ServiceResource.create_network_interface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_network_interface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_network_interface]
 
 Definition:
 
@@ -644,7 +648,7 @@ def create_network_interface(
 
 Type annotations for `boto3.resource("ec2").create_placement_group` method.
 
-[ServiceResource.create_placement_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_placement_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_placement_group]
 
 Definition:
 
@@ -664,7 +668,7 @@ def create_placement_group(
 
 Type annotations for `boto3.resource("ec2").create_route_table` method.
 
-[ServiceResource.create_route_table documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_route_table)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_route_table]
 
 Definition:
 
@@ -682,7 +686,7 @@ def create_route_table(
 
 Type annotations for `boto3.resource("ec2").create_security_group` method.
 
-[ServiceResource.create_security_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_security_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_security_group]
 
 Definition:
 
@@ -702,7 +706,7 @@ def create_security_group(
 
 Type annotations for `boto3.resource("ec2").create_snapshot` method.
 
-[ServiceResource.create_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_snapshot]
 
 Definition:
 
@@ -722,7 +726,7 @@ def create_snapshot(
 
 Type annotations for `boto3.resource("ec2").create_subnet` method.
 
-[ServiceResource.create_subnet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_subnet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_subnet]
 
 Definition:
 
@@ -745,7 +749,7 @@ def create_subnet(
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[ServiceResource.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_tags]
 
 Definition:
 
@@ -763,7 +767,7 @@ def create_tags(
 
 Type annotations for `boto3.resource("ec2").create_volume` method.
 
-[ServiceResource.create_volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_volume]
 
 Definition:
 
@@ -790,7 +794,7 @@ def create_volume(
 
 Type annotations for `boto3.resource("ec2").create_vpc` method.
 
-[ServiceResource.create_vpc documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_vpc)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_vpc]
 
 Definition:
 
@@ -813,7 +817,7 @@ def create_vpc(
 
 Type annotations for `boto3.resource("ec2").create_vpc_peering_connection` method.
 
-[ServiceResource.create_vpc_peering_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_vpc_peering_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.create_vpc_peering_connection]
 
 Definition:
 
@@ -834,7 +838,7 @@ def create_vpc_peering_connection(
 
 Type annotations for `boto3.resource("ec2").disassociate_route_table` method.
 
-[ServiceResource.disassociate_route_table documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.disassociate_route_table)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.disassociate_route_table]
 
 Definition:
 
@@ -851,7 +855,7 @@ def disassociate_route_table(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[ServiceResource.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.get_available_subresources]
 
 Definition:
 
@@ -866,7 +870,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").import_key_pair` method.
 
-[ServiceResource.import_key_pair documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.import_key_pair)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.import_key_pair]
 
 Definition:
 
@@ -885,7 +889,7 @@ def import_key_pair(
 
 Type annotations for `boto3.resource("ec2").register_image` method.
 
-[ServiceResource.register_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.register_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.EC2ServiceResource.register_image]
 
 Definition:
 
@@ -930,7 +934,7 @@ def get_collection() -> ServiceResourceClassicAddressesCollection:
     )
 ```
 
-[ServiceResource.classic_addresses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.classic_addresses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceClassicAddressesCollection)
 
 Definition:
 
@@ -988,7 +992,7 @@ def get_collection() -> ServiceResourceDhcpOptionsSetsCollection:
     )
 ```
 
-[ServiceResource.dhcp_options_sets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.dhcp_options_sets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceDhcpOptionsSetsCollection)
 
 Definition:
 
@@ -1047,7 +1051,7 @@ def get_collection() -> ServiceResourceImagesCollection:
     )
 ```
 
-[ServiceResource.images documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.images)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceImagesCollection)
 
 Definition:
 
@@ -1106,7 +1110,7 @@ def get_collection() -> ServiceResourceInstancesCollection:
     )
 ```
 
-[ServiceResource.instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceInstancesCollection)
 
 Definition:
 
@@ -1210,7 +1214,7 @@ def get_collection() -> ServiceResourceInternetGatewaysCollection:
     )
 ```
 
-[ServiceResource.internet_gateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.internet_gateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceInternetGatewaysCollection)
 
 Definition:
 
@@ -1269,7 +1273,7 @@ def get_collection() -> ServiceResourceKeyPairsCollection:
     )
 ```
 
-[ServiceResource.key_pairs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.key_pairs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceKeyPairsCollection)
 
 Definition:
 
@@ -1327,7 +1331,7 @@ def get_collection() -> ServiceResourceNetworkAclsCollection:
     )
 ```
 
-[ServiceResource.network_acls documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.network_acls)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceNetworkAclsCollection)
 
 Definition:
 
@@ -1386,7 +1390,7 @@ def get_collection() -> ServiceResourceNetworkInterfacesCollection:
     )
 ```
 
-[ServiceResource.network_interfaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.network_interfaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceNetworkInterfacesCollection)
 
 Definition:
 
@@ -1445,7 +1449,7 @@ def get_collection() -> ServiceResourcePlacementGroupsCollection:
     )
 ```
 
-[ServiceResource.placement_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.placement_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourcePlacementGroupsCollection)
 
 Definition:
 
@@ -1503,7 +1507,7 @@ def get_collection() -> ServiceResourceRouteTablesCollection:
     )
 ```
 
-[ServiceResource.route_tables documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.route_tables)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceRouteTablesCollection)
 
 Definition:
 
@@ -1562,7 +1566,7 @@ def get_collection() -> ServiceResourceSecurityGroupsCollection:
     )
 ```
 
-[ServiceResource.security_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.security_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceSecurityGroupsCollection)
 
 Definition:
 
@@ -1622,7 +1626,7 @@ def get_collection() -> ServiceResourceSnapshotsCollection:
     )
 ```
 
-[ServiceResource.snapshots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.snapshots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceSnapshotsCollection)
 
 Definition:
 
@@ -1683,7 +1687,7 @@ def get_collection() -> ServiceResourceSubnetsCollection:
     )
 ```
 
-[ServiceResource.subnets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.subnets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceSubnetsCollection)
 
 Definition:
 
@@ -1742,7 +1746,7 @@ def get_collection() -> ServiceResourceVolumesCollection:
     )
 ```
 
-[ServiceResource.volumes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.volumes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceVolumesCollection)
 
 Definition:
 
@@ -1801,7 +1805,7 @@ def get_collection() -> ServiceResourceVpcAddressesCollection:
     )
 ```
 
-[ServiceResource.vpc_addresses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.vpc_addresses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceVpcAddressesCollection)
 
 Definition:
 
@@ -1859,7 +1863,7 @@ def get_collection() -> ServiceResourceVpcPeeringConnectionsCollection:
     )
 ```
 
-[ServiceResource.vpc_peering_connections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.vpc_peering_connections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceVpcPeeringConnectionsCollection)
 
 Definition:
 
@@ -1918,7 +1922,7 @@ def get_collection() -> ServiceResourceVpcsCollection:
     )
 ```
 
-[ServiceResource.vpcs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.vpcs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ServiceResourceVpcsCollection)
 
 Definition:
 
@@ -1978,7 +1982,7 @@ def get_resource() -> ClassicAddress:
     return boto3.resource("ec2").ClassicAddress(...)
 ```
 
-[ClassicAddress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ClassicAddress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.ClassicAddress)
 
 
 ### ClassicAddress attributes
@@ -2022,7 +2026,7 @@ def get_resource() -> ClassicAddress:
 
 Type annotations for `boto3.resource("ec2").associate` method.
 
-[ClassicAddress.associate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.associate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.associate]
 
 ```python
 def associate(
@@ -2041,7 +2045,7 @@ def associate(
 
 Type annotations for `boto3.resource("ec2").disassociate` method.
 
-[ClassicAddress.disassociate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.disassociate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.disassociate]
 
 ```python
 def disassociate(
@@ -2057,7 +2061,7 @@ def disassociate(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[ClassicAddress.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -2070,7 +2074,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[ClassicAddress.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.load]
 
 ```python
 def load(
@@ -2083,7 +2087,7 @@ def load(
 
 Type annotations for `boto3.resource("ec2").release` method.
 
-[ClassicAddress.release documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.release)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.release]
 
 ```python
 def release(
@@ -2100,7 +2104,7 @@ def release(
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[ClassicAddress.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ClassicAddress.reload]
 
 ```python
 def reload(
@@ -2127,7 +2131,7 @@ def get_resource() -> DhcpOptions:
     return boto3.resource("ec2").DhcpOptions(...)
 ```
 
-[DhcpOptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.DhcpOptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.DhcpOptions)
 
 
 ### DhcpOptions attributes
@@ -2153,7 +2157,7 @@ def get_resource() -> DhcpOptions:
 
 Type annotations for `boto3.resource("ec2").associate_with_vpc` method.
 
-[DhcpOptions.associate_with_vpc documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.associate_with_vpc)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.associate_with_vpc]
 
 ```python
 def associate_with_vpc(
@@ -2168,7 +2172,7 @@ def associate_with_vpc(
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[DhcpOptions.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.create_tags]
 
 ```python
 def create_tags(
@@ -2183,7 +2187,7 @@ def create_tags(
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[DhcpOptions.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.delete]
 
 ```python
 def delete(
@@ -2197,7 +2201,7 @@ def delete(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[DhcpOptions.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -2210,7 +2214,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[DhcpOptions.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.load]
 
 ```python
 def load(
@@ -2223,7 +2227,7 @@ def load(
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[DhcpOptions.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.reload]
 
 ```python
 def reload(
@@ -2250,7 +2254,7 @@ def get_resource() -> Image:
     return boto3.resource("ec2").Image(...)
 ```
 
-[Image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Image)
 
 
 ### Image attributes
@@ -2322,7 +2326,7 @@ def get_resource() -> Image:
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[Image.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.create_tags]
 
 ```python
 def create_tags(
@@ -2337,7 +2341,7 @@ def create_tags(
 
 Type annotations for `boto3.resource("ec2").deregister` method.
 
-[Image.deregister documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.deregister)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.deregister]
 
 ```python
 def deregister(
@@ -2351,7 +2355,7 @@ def deregister(
 
 Type annotations for `boto3.resource("ec2").describe_attribute` method.
 
-[Image.describe_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.describe_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.describe_attribute]
 
 ```python
 def describe_attribute(
@@ -2366,7 +2370,7 @@ def describe_attribute(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Image.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -2379,7 +2383,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Image.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.load]
 
 ```python
 def load(
@@ -2392,7 +2396,7 @@ def load(
 
 Type annotations for `boto3.resource("ec2").modify_attribute` method.
 
-[Image.modify_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.modify_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.modify_attribute]
 
 ```python
 def modify_attribute(
@@ -2414,7 +2418,7 @@ def modify_attribute(
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Image.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.reload]
 
 ```python
 def reload(
@@ -2427,7 +2431,7 @@ def reload(
 
 Type annotations for `boto3.resource("ec2").reset_attribute` method.
 
-[Image.reset_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.reset_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.reset_attribute]
 
 ```python
 def reset_attribute(
@@ -2442,7 +2446,7 @@ def reset_attribute(
 
 Type annotations for `boto3.resource("ec2").wait_until_exists` method.
 
-[Image.wait_until_exists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.wait_until_exists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.wait_until_exists]
 
 ```python
 def wait_until_exists(
@@ -2469,7 +2473,7 @@ def get_resource() -> Instance:
     return boto3.resource("ec2").Instance(...)
 ```
 
-[Instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Instance)
 
 
 ### Instance attributes
@@ -2603,7 +2607,7 @@ def get_resource() -> Instance:
 
 Type annotations for `boto3.resource("ec2").attach_classic_link_vpc` method.
 
-[Instance.attach_classic_link_vpc documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.attach_classic_link_vpc)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.attach_classic_link_vpc]
 
 ```python
 def attach_classic_link_vpc(
@@ -2619,7 +2623,7 @@ def attach_classic_link_vpc(
 
 Type annotations for `boto3.resource("ec2").attach_volume` method.
 
-[Instance.attach_volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.attach_volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.attach_volume]
 
 ```python
 def attach_volume(
@@ -2635,7 +2639,7 @@ def attach_volume(
 
 Type annotations for `boto3.resource("ec2").console_output` method.
 
-[Instance.console_output documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.console_output)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.console_output]
 
 ```python
 def console_output(
@@ -2650,7 +2654,7 @@ def console_output(
 
 Type annotations for `boto3.resource("ec2").create_image` method.
 
-[Instance.create_image documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.create_image)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.create_image]
 
 ```python
 def create_image(
@@ -2669,7 +2673,7 @@ def create_image(
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[Instance.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.create_tags]
 
 ```python
 def create_tags(
@@ -2684,7 +2688,7 @@ def create_tags(
 
 Type annotations for `boto3.resource("ec2").delete_tags` method.
 
-[Instance.delete_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.delete_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.delete_tags]
 
 ```python
 def delete_tags(
@@ -2699,7 +2703,7 @@ def delete_tags(
 
 Type annotations for `boto3.resource("ec2").describe_attribute` method.
 
-[Instance.describe_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.describe_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.describe_attribute]
 
 ```python
 def describe_attribute(
@@ -2714,7 +2718,7 @@ def describe_attribute(
 
 Type annotations for `boto3.resource("ec2").detach_classic_link_vpc` method.
 
-[Instance.detach_classic_link_vpc documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.detach_classic_link_vpc)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.detach_classic_link_vpc]
 
 ```python
 def detach_classic_link_vpc(
@@ -2729,7 +2733,7 @@ def detach_classic_link_vpc(
 
 Type annotations for `boto3.resource("ec2").detach_volume` method.
 
-[Instance.detach_volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.detach_volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.detach_volume]
 
 ```python
 def detach_volume(
@@ -2746,7 +2750,7 @@ def detach_volume(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Instance.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -2759,7 +2763,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Instance.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.load]
 
 ```python
 def load(
@@ -2772,7 +2776,7 @@ def load(
 
 Type annotations for `boto3.resource("ec2").modify_attribute` method.
 
-[Instance.modify_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.modify_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.modify_attribute]
 
 ```python
 def modify_attribute(
@@ -2800,7 +2804,7 @@ def modify_attribute(
 
 Type annotations for `boto3.resource("ec2").monitor` method.
 
-[Instance.monitor documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.monitor)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.monitor]
 
 ```python
 def monitor(
@@ -2814,7 +2818,7 @@ def monitor(
 
 Type annotations for `boto3.resource("ec2").password_data` method.
 
-[Instance.password_data documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.password_data)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.password_data]
 
 ```python
 def password_data(
@@ -2828,7 +2832,7 @@ def password_data(
 
 Type annotations for `boto3.resource("ec2").reboot` method.
 
-[Instance.reboot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reboot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reboot]
 
 ```python
 def reboot(
@@ -2842,7 +2846,7 @@ def reboot(
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Instance.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reload]
 
 ```python
 def reload(
@@ -2855,7 +2859,7 @@ def reload(
 
 Type annotations for `boto3.resource("ec2").report_status` method.
 
-[Instance.report_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.report_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.report_status]
 
 ```python
 def report_status(
@@ -2874,7 +2878,7 @@ def report_status(
 
 Type annotations for `boto3.resource("ec2").reset_attribute` method.
 
-[Instance.reset_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_attribute]
 
 ```python
 def reset_attribute(
@@ -2889,7 +2893,7 @@ def reset_attribute(
 
 Type annotations for `boto3.resource("ec2").reset_kernel` method.
 
-[Instance.reset_kernel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_kernel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_kernel]
 
 ```python
 def reset_kernel(
@@ -2904,7 +2908,7 @@ def reset_kernel(
 
 Type annotations for `boto3.resource("ec2").reset_ramdisk` method.
 
-[Instance.reset_ramdisk documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_ramdisk)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_ramdisk]
 
 ```python
 def reset_ramdisk(
@@ -2919,7 +2923,7 @@ def reset_ramdisk(
 
 Type annotations for `boto3.resource("ec2").reset_source_dest_check` method.
 
-[Instance.reset_source_dest_check documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_source_dest_check)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_source_dest_check]
 
 ```python
 def reset_source_dest_check(
@@ -2934,7 +2938,7 @@ def reset_source_dest_check(
 
 Type annotations for `boto3.resource("ec2").start` method.
 
-[Instance.start documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.start)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.start]
 
 ```python
 def start(
@@ -2949,7 +2953,7 @@ def start(
 
 Type annotations for `boto3.resource("ec2").stop` method.
 
-[Instance.stop documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.stop)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.stop]
 
 ```python
 def stop(
@@ -2965,7 +2969,7 @@ def stop(
 
 Type annotations for `boto3.resource("ec2").terminate` method.
 
-[Instance.terminate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.terminate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.terminate]
 
 ```python
 def terminate(
@@ -2979,7 +2983,7 @@ def terminate(
 
 Type annotations for `boto3.resource("ec2").unmonitor` method.
 
-[Instance.unmonitor documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.unmonitor)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.unmonitor]
 
 ```python
 def unmonitor(
@@ -2993,7 +2997,7 @@ def unmonitor(
 
 Type annotations for `boto3.resource("ec2").wait_until_exists` method.
 
-[Instance.wait_until_exists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.wait_until_exists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.wait_until_exists]
 
 ```python
 def wait_until_exists(
@@ -3006,7 +3010,7 @@ def wait_until_exists(
 
 Type annotations for `boto3.resource("ec2").wait_until_running` method.
 
-[Instance.wait_until_running documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.wait_until_running)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.wait_until_running]
 
 ```python
 def wait_until_running(
@@ -3019,7 +3023,7 @@ def wait_until_running(
 
 Type annotations for `boto3.resource("ec2").wait_until_stopped` method.
 
-[Instance.wait_until_stopped documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.wait_until_stopped)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.wait_until_stopped]
 
 ```python
 def wait_until_stopped(
@@ -3032,7 +3036,7 @@ def wait_until_stopped(
 
 Type annotations for `boto3.resource("ec2").wait_until_terminated` method.
 
-[Instance.wait_until_terminated documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.wait_until_terminated)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.wait_until_terminated]
 
 ```python
 def wait_until_terminated(
@@ -3061,7 +3065,7 @@ def get_collection() -> InstanceVolumesCollection:
     return resource.volumes
 ```
 
-[Instance.volumes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.volumes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.InstanceVolumesCollection)
 
 ```python
 class InstanceVolumesCollection(ResourceCollection):
@@ -3117,7 +3121,7 @@ def get_collection() -> InstanceVpcAddressesCollection:
     return resource.vpc_addresses
 ```
 
-[Instance.vpc_addresses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.vpc_addresses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.InstanceVpcAddressesCollection)
 
 ```python
 class InstanceVpcAddressesCollection(ResourceCollection):
@@ -3174,7 +3178,7 @@ def get_resource() -> InternetGateway:
     return boto3.resource("ec2").InternetGateway(...)
 ```
 
-[InternetGateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.InternetGateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.InternetGateway)
 
 
 ### InternetGateway attributes
@@ -3200,7 +3204,7 @@ def get_resource() -> InternetGateway:
 
 Type annotations for `boto3.resource("ec2").attach_to_vpc` method.
 
-[InternetGateway.attach_to_vpc documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.attach_to_vpc)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.attach_to_vpc]
 
 ```python
 def attach_to_vpc(
@@ -3215,7 +3219,7 @@ def attach_to_vpc(
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[InternetGateway.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.create_tags]
 
 ```python
 def create_tags(
@@ -3230,7 +3234,7 @@ def create_tags(
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[InternetGateway.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.delete]
 
 ```python
 def delete(
@@ -3244,7 +3248,7 @@ def delete(
 
 Type annotations for `boto3.resource("ec2").detach_from_vpc` method.
 
-[InternetGateway.detach_from_vpc documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.detach_from_vpc)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.detach_from_vpc]
 
 ```python
 def detach_from_vpc(
@@ -3259,7 +3263,7 @@ def detach_from_vpc(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[InternetGateway.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -3272,7 +3276,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[InternetGateway.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.load]
 
 ```python
 def load(
@@ -3285,7 +3289,7 @@ def load(
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[InternetGateway.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.reload]
 
 ```python
 def reload(
@@ -3312,7 +3316,7 @@ def get_resource() -> KeyPair:
     return boto3.resource("ec2").KeyPair(...)
 ```
 
-[KeyPair documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.KeyPair)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.KeyPair)
 
 
 ### KeyPair attributes
@@ -3340,7 +3344,7 @@ def get_resource() -> KeyPair:
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[KeyPair.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPair.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPair.delete]
 
 ```python
 def delete(
@@ -3355,7 +3359,7 @@ def delete(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[KeyPair.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPair.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPair.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -3382,7 +3386,7 @@ def get_resource() -> KeyPairInfo:
     return boto3.resource("ec2").KeyPairInfo(...)
 ```
 
-[KeyPairInfo documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.KeyPairInfo)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.KeyPairInfo)
 
 
 ### KeyPairInfo attributes
@@ -3408,7 +3412,7 @@ def get_resource() -> KeyPairInfo:
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[KeyPairInfo.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPairInfo.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPairInfo.delete]
 
 ```python
 def delete(
@@ -3423,7 +3427,7 @@ def delete(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[KeyPairInfo.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPairInfo.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPairInfo.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -3436,7 +3440,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[KeyPairInfo.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPairInfo.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPairInfo.load]
 
 ```python
 def load(
@@ -3449,7 +3453,7 @@ def load(
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[KeyPairInfo.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPairInfo.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPairInfo.reload]
 
 ```python
 def reload(
@@ -3476,7 +3480,7 @@ def get_resource() -> NetworkAcl:
     return boto3.resource("ec2").NetworkAcl(...)
 ```
 
-[NetworkAcl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.NetworkAcl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.NetworkAcl)
 
 
 ### NetworkAcl attributes
@@ -3510,7 +3514,7 @@ def get_resource() -> NetworkAcl:
 
 Type annotations for `boto3.resource("ec2").create_entry` method.
 
-[NetworkAcl.create_entry documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.create_entry)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.create_entry]
 
 ```python
 def create_entry(
@@ -3532,7 +3536,7 @@ def create_entry(
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[NetworkAcl.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.create_tags]
 
 ```python
 def create_tags(
@@ -3547,7 +3551,7 @@ def create_tags(
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[NetworkAcl.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.delete]
 
 ```python
 def delete(
@@ -3561,7 +3565,7 @@ def delete(
 
 Type annotations for `boto3.resource("ec2").delete_entry` method.
 
-[NetworkAcl.delete_entry documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.delete_entry)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.delete_entry]
 
 ```python
 def delete_entry(
@@ -3577,7 +3581,7 @@ def delete_entry(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[NetworkAcl.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -3590,7 +3594,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[NetworkAcl.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.load]
 
 ```python
 def load(
@@ -3603,7 +3607,7 @@ def load(
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[NetworkAcl.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.reload]
 
 ```python
 def reload(
@@ -3616,7 +3620,7 @@ def reload(
 
 Type annotations for `boto3.resource("ec2").replace_association` method.
 
-[NetworkAcl.replace_association documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.replace_association)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.replace_association]
 
 ```python
 def replace_association(
@@ -3631,7 +3635,7 @@ def replace_association(
 
 Type annotations for `boto3.resource("ec2").replace_entry` method.
 
-[NetworkAcl.replace_entry documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.replace_entry)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.replace_entry]
 
 ```python
 def replace_entry(
@@ -3667,7 +3671,7 @@ def get_resource() -> NetworkInterface:
     return boto3.resource("ec2").NetworkInterface(...)
 ```
 
-[NetworkInterface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.NetworkInterface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.NetworkInterface)
 
 
 ### NetworkInterface attributes
@@ -3733,7 +3737,7 @@ def get_resource() -> NetworkInterface:
 
 Type annotations for `boto3.resource("ec2").assign_private_ip_addresses` method.
 
-[NetworkInterface.assign_private_ip_addresses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.assign_private_ip_addresses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.assign_private_ip_addresses]
 
 ```python
 def assign_private_ip_addresses(
@@ -3749,7 +3753,7 @@ def assign_private_ip_addresses(
 
 Type annotations for `boto3.resource("ec2").attach` method.
 
-[NetworkInterface.attach documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.attach)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.attach]
 
 ```python
 def attach(
@@ -3766,7 +3770,7 @@ def attach(
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[NetworkInterface.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.create_tags]
 
 ```python
 def create_tags(
@@ -3781,7 +3785,7 @@ def create_tags(
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[NetworkInterface.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.delete]
 
 ```python
 def delete(
@@ -3795,7 +3799,7 @@ def delete(
 
 Type annotations for `boto3.resource("ec2").describe_attribute` method.
 
-[NetworkInterface.describe_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.describe_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.describe_attribute]
 
 ```python
 def describe_attribute(
@@ -3810,7 +3814,7 @@ def describe_attribute(
 
 Type annotations for `boto3.resource("ec2").detach` method.
 
-[NetworkInterface.detach documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.detach)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.detach]
 
 ```python
 def detach(
@@ -3826,7 +3830,7 @@ def detach(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[NetworkInterface.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -3839,7 +3843,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[NetworkInterface.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.load]
 
 ```python
 def load(
@@ -3852,7 +3856,7 @@ def load(
 
 Type annotations for `boto3.resource("ec2").modify_attribute` method.
 
-[NetworkInterface.modify_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.modify_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.modify_attribute]
 
 ```python
 def modify_attribute(
@@ -3870,7 +3874,7 @@ def modify_attribute(
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[NetworkInterface.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.reload]
 
 ```python
 def reload(
@@ -3883,7 +3887,7 @@ def reload(
 
 Type annotations for `boto3.resource("ec2").reset_attribute` method.
 
-[NetworkInterface.reset_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.reset_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.reset_attribute]
 
 ```python
 def reset_attribute(
@@ -3898,7 +3902,7 @@ def reset_attribute(
 
 Type annotations for `boto3.resource("ec2").unassign_private_ip_addresses` method.
 
-[NetworkInterface.unassign_private_ip_addresses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.unassign_private_ip_addresses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.unassign_private_ip_addresses]
 
 ```python
 def unassign_private_ip_addresses(
@@ -3926,7 +3930,7 @@ def get_resource() -> NetworkInterfaceAssociation:
     return boto3.resource("ec2").NetworkInterfaceAssociation(...)
 ```
 
-[NetworkInterfaceAssociation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.NetworkInterfaceAssociation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.NetworkInterfaceAssociation)
 
 
 ### NetworkInterfaceAssociation attributes
@@ -3954,7 +3958,7 @@ def get_resource() -> NetworkInterfaceAssociation:
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[NetworkInterfaceAssociation.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterfaceAssociation.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterfaceAssociation.delete]
 
 ```python
 def delete(
@@ -3969,7 +3973,7 @@ def delete(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[NetworkInterfaceAssociation.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterfaceAssociation.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterfaceAssociation.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -3982,7 +3986,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[NetworkInterfaceAssociation.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterfaceAssociation.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterfaceAssociation.load]
 
 ```python
 def load(
@@ -3995,7 +3999,7 @@ def load(
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[NetworkInterfaceAssociation.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterfaceAssociation.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterfaceAssociation.reload]
 
 ```python
 def reload(
@@ -4022,7 +4026,7 @@ def get_resource() -> PlacementGroup:
     return boto3.resource("ec2").PlacementGroup(...)
 ```
 
-[PlacementGroup documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.PlacementGroup)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.PlacementGroup)
 
 
 ### PlacementGroup attributes
@@ -4054,7 +4058,7 @@ def get_resource() -> PlacementGroup:
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[PlacementGroup.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.delete]
 
 ```python
 def delete(
@@ -4068,7 +4072,7 @@ def delete(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[PlacementGroup.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -4081,7 +4085,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[PlacementGroup.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.load]
 
 ```python
 def load(
@@ -4094,7 +4098,7 @@ def load(
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[PlacementGroup.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.reload]
 
 ```python
 def reload(
@@ -4123,7 +4127,7 @@ def get_collection() -> PlacementGroupInstancesCollection:
     return resource.instances
 ```
 
-[PlacementGroup.instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.PlacementGroupInstancesCollection)
 
 ```python
 class PlacementGroupInstancesCollection(ResourceCollection):
@@ -4226,7 +4230,7 @@ def get_resource() -> Route:
     return boto3.resource("ec2").Route(...)
 ```
 
-[Route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Route)
 
 
 ### Route attributes
@@ -4274,7 +4278,7 @@ def get_resource() -> Route:
 
 Type annotations for `boto3.resource("ec2").RouteTable` method.
 
-[Route.RouteTable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Route.RouteTable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Route.RouteTable]
 
 ```python
 def RouteTable(
@@ -4287,7 +4291,7 @@ def RouteTable(
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Route.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Route.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Route.delete]
 
 ```python
 def delete(
@@ -4303,7 +4307,7 @@ def delete(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Route.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Route.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Route.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -4316,7 +4320,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").replace` method.
 
-[Route.replace documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Route.replace)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Route.replace]
 
 ```python
 def replace(
@@ -4357,7 +4361,7 @@ def get_resource() -> RouteTable:
     return boto3.resource("ec2").RouteTable(...)
 ```
 
-[RouteTable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.RouteTable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.RouteTable)
 
 
 ### RouteTable attributes
@@ -4395,7 +4399,7 @@ def get_resource() -> RouteTable:
 
 Type annotations for `boto3.resource("ec2").associate_with_subnet` method.
 
-[RouteTable.associate_with_subnet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.associate_with_subnet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.associate_with_subnet]
 
 ```python
 def associate_with_subnet(
@@ -4411,7 +4415,7 @@ def associate_with_subnet(
 
 Type annotations for `boto3.resource("ec2").create_route` method.
 
-[RouteTable.create_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.create_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.create_route]
 
 ```python
 def create_route(
@@ -4438,7 +4442,7 @@ def create_route(
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[RouteTable.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.create_tags]
 
 ```python
 def create_tags(
@@ -4453,7 +4457,7 @@ def create_tags(
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[RouteTable.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.delete]
 
 ```python
 def delete(
@@ -4467,7 +4471,7 @@ def delete(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[RouteTable.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -4480,7 +4484,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[RouteTable.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.load]
 
 ```python
 def load(
@@ -4493,7 +4497,7 @@ def load(
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[RouteTable.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.reload]
 
 ```python
 def reload(
@@ -4520,7 +4524,7 @@ def get_resource() -> RouteTableAssociation:
     return boto3.resource("ec2").RouteTableAssociation(...)
 ```
 
-[RouteTableAssociation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.RouteTableAssociation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.RouteTableAssociation)
 
 
 ### RouteTableAssociation attributes
@@ -4554,7 +4558,7 @@ def get_resource() -> RouteTableAssociation:
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[RouteTableAssociation.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTableAssociation.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTableAssociation.delete]
 
 ```python
 def delete(
@@ -4568,7 +4572,7 @@ def delete(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[RouteTableAssociation.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTableAssociation.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTableAssociation.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -4581,7 +4585,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").replace_subnet` method.
 
-[RouteTableAssociation.replace_subnet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTableAssociation.replace_subnet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTableAssociation.replace_subnet]
 
 ```python
 def replace_subnet(
@@ -4610,7 +4614,7 @@ def get_resource() -> SecurityGroup:
     return boto3.resource("ec2").SecurityGroup(...)
 ```
 
-[SecurityGroup documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.SecurityGroup)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.SecurityGroup)
 
 
 ### SecurityGroup attributes
@@ -4644,7 +4648,7 @@ def get_resource() -> SecurityGroup:
 
 Type annotations for `boto3.resource("ec2").authorize_egress` method.
 
-[SecurityGroup.authorize_egress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.authorize_egress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.authorize_egress]
 
 ```python
 def authorize_egress(
@@ -4665,7 +4669,7 @@ def authorize_egress(
 
 Type annotations for `boto3.resource("ec2").authorize_ingress` method.
 
-[SecurityGroup.authorize_ingress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.authorize_ingress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.authorize_ingress]
 
 ```python
 def authorize_ingress(
@@ -4687,7 +4691,7 @@ def authorize_ingress(
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[SecurityGroup.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.create_tags]
 
 ```python
 def create_tags(
@@ -4702,7 +4706,7 @@ def create_tags(
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[SecurityGroup.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.delete]
 
 ```python
 def delete(
@@ -4717,7 +4721,7 @@ def delete(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[SecurityGroup.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -4730,7 +4734,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[SecurityGroup.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.load]
 
 ```python
 def load(
@@ -4743,7 +4747,7 @@ def load(
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[SecurityGroup.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.reload]
 
 ```python
 def reload(
@@ -4756,7 +4760,7 @@ def reload(
 
 Type annotations for `boto3.resource("ec2").revoke_egress` method.
 
-[SecurityGroup.revoke_egress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.revoke_egress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.revoke_egress]
 
 ```python
 def revoke_egress(
@@ -4777,7 +4781,7 @@ def revoke_egress(
 
 Type annotations for `boto3.resource("ec2").revoke_ingress` method.
 
-[SecurityGroup.revoke_ingress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.revoke_ingress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.revoke_ingress]
 
 ```python
 def revoke_ingress(
@@ -4813,7 +4817,7 @@ def get_resource() -> Snapshot:
     return boto3.resource("ec2").Snapshot(...)
 ```
 
-[Snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Snapshot)
 
 
 ### Snapshot attributes
@@ -4863,7 +4867,7 @@ def get_resource() -> Snapshot:
 
 Type annotations for `boto3.resource("ec2").copy` method.
 
-[Snapshot.copy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.copy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.copy]
 
 ```python
 def copy(
@@ -4885,7 +4889,7 @@ def copy(
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[Snapshot.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.create_tags]
 
 ```python
 def create_tags(
@@ -4900,7 +4904,7 @@ def create_tags(
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Snapshot.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.delete]
 
 ```python
 def delete(
@@ -4914,7 +4918,7 @@ def delete(
 
 Type annotations for `boto3.resource("ec2").describe_attribute` method.
 
-[Snapshot.describe_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.describe_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.describe_attribute]
 
 ```python
 def describe_attribute(
@@ -4929,7 +4933,7 @@ def describe_attribute(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Snapshot.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -4942,7 +4946,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Snapshot.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.load]
 
 ```python
 def load(
@@ -4955,7 +4959,7 @@ def load(
 
 Type annotations for `boto3.resource("ec2").modify_attribute` method.
 
-[Snapshot.modify_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.modify_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.modify_attribute]
 
 ```python
 def modify_attribute(
@@ -4974,7 +4978,7 @@ def modify_attribute(
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Snapshot.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.reload]
 
 ```python
 def reload(
@@ -4987,7 +4991,7 @@ def reload(
 
 Type annotations for `boto3.resource("ec2").reset_attribute` method.
 
-[Snapshot.reset_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.reset_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.reset_attribute]
 
 ```python
 def reset_attribute(
@@ -5002,7 +5006,7 @@ def reset_attribute(
 
 Type annotations for `boto3.resource("ec2").wait_until_completed` method.
 
-[Snapshot.wait_until_completed documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.wait_until_completed)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.wait_until_completed]
 
 ```python
 def wait_until_completed(
@@ -5029,7 +5033,7 @@ def get_resource() -> Subnet:
     return boto3.resource("ec2").Subnet(...)
 ```
 
-[Subnet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Subnet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Subnet)
 
 
 ### Subnet attributes
@@ -5087,7 +5091,7 @@ def get_resource() -> Subnet:
 
 Type annotations for `boto3.resource("ec2").create_instances` method.
 
-[Subnet.create_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.create_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.create_instances]
 
 ```python
 def create_instances(
@@ -5136,7 +5140,7 @@ def create_instances(
 
 Type annotations for `boto3.resource("ec2").create_network_interface` method.
 
-[Subnet.create_network_interface documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.create_network_interface)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.create_network_interface]
 
 ```python
 def create_network_interface(
@@ -5159,7 +5163,7 @@ def create_network_interface(
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[Subnet.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.create_tags]
 
 ```python
 def create_tags(
@@ -5174,7 +5178,7 @@ def create_tags(
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Subnet.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.delete]
 
 ```python
 def delete(
@@ -5188,7 +5192,7 @@ def delete(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Subnet.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -5201,7 +5205,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Subnet.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.load]
 
 ```python
 def load(
@@ -5214,7 +5218,7 @@ def load(
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Subnet.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.reload]
 
 ```python
 def reload(
@@ -5243,7 +5247,7 @@ def get_collection() -> SubnetInstancesCollection:
     return resource.instances
 ```
 
-[Subnet.instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.SubnetInstancesCollection)
 
 ```python
 class SubnetInstancesCollection(ResourceCollection):
@@ -5344,7 +5348,7 @@ def get_collection() -> SubnetNetworkInterfacesCollection:
     return resource.network_interfaces
 ```
 
-[Subnet.network_interfaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.network_interfaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.SubnetNetworkInterfacesCollection)
 
 ```python
 class SubnetNetworkInterfacesCollection(ResourceCollection):
@@ -5402,7 +5406,7 @@ def get_resource() -> Tag:
     return boto3.resource("ec2").Tag(...)
 ```
 
-[Tag documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Tag)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Tag)
 
 
 ### Tag attributes
@@ -5426,7 +5430,7 @@ def get_resource() -> Tag:
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Tag.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Tag.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Tag.delete]
 
 ```python
 def delete(
@@ -5440,7 +5444,7 @@ def delete(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Tag.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Tag.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Tag.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -5453,7 +5457,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Tag.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Tag.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Tag.load]
 
 ```python
 def load(
@@ -5466,7 +5470,7 @@ def load(
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Tag.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Tag.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Tag.reload]
 
 ```python
 def reload(
@@ -5493,7 +5497,7 @@ def get_resource() -> Volume:
     return boto3.resource("ec2").Volume(...)
 ```
 
-[Volume documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Volume)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Volume)
 
 
 ### Volume attributes
@@ -5545,7 +5549,7 @@ def get_resource() -> Volume:
 
 Type annotations for `boto3.resource("ec2").attach_to_instance` method.
 
-[Volume.attach_to_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.attach_to_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.attach_to_instance]
 
 ```python
 def attach_to_instance(
@@ -5561,7 +5565,7 @@ def attach_to_instance(
 
 Type annotations for `boto3.resource("ec2").create_snapshot` method.
 
-[Volume.create_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.create_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.create_snapshot]
 
 ```python
 def create_snapshot(
@@ -5578,7 +5582,7 @@ def create_snapshot(
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[Volume.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.create_tags]
 
 ```python
 def create_tags(
@@ -5593,7 +5597,7 @@ def create_tags(
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Volume.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.delete]
 
 ```python
 def delete(
@@ -5607,7 +5611,7 @@ def delete(
 
 Type annotations for `boto3.resource("ec2").describe_attribute` method.
 
-[Volume.describe_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.describe_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.describe_attribute]
 
 ```python
 def describe_attribute(
@@ -5622,7 +5626,7 @@ def describe_attribute(
 
 Type annotations for `boto3.resource("ec2").describe_status` method.
 
-[Volume.describe_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.describe_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.describe_status]
 
 ```python
 def describe_status(
@@ -5639,7 +5643,7 @@ def describe_status(
 
 Type annotations for `boto3.resource("ec2").detach_from_instance` method.
 
-[Volume.detach_from_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.detach_from_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.detach_from_instance]
 
 ```python
 def detach_from_instance(
@@ -5656,7 +5660,7 @@ def detach_from_instance(
 
 Type annotations for `boto3.resource("ec2").enable_io` method.
 
-[Volume.enable_io documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.enable_io)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.enable_io]
 
 ```python
 def enable_io(
@@ -5670,7 +5674,7 @@ def enable_io(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Volume.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -5683,7 +5687,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Volume.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.load]
 
 ```python
 def load(
@@ -5696,7 +5700,7 @@ def load(
 
 Type annotations for `boto3.resource("ec2").modify_attribute` method.
 
-[Volume.modify_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.modify_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.modify_attribute]
 
 ```python
 def modify_attribute(
@@ -5711,7 +5715,7 @@ def modify_attribute(
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Volume.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.reload]
 
 ```python
 def reload(
@@ -5740,7 +5744,7 @@ def get_collection() -> VolumeSnapshotsCollection:
     return resource.snapshots
 ```
 
-[Volume.snapshots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.snapshots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.VolumeSnapshotsCollection)
 
 ```python
 class VolumeSnapshotsCollection(ResourceCollection):
@@ -5800,7 +5804,7 @@ def get_resource() -> Vpc:
     return boto3.resource("ec2").Vpc(...)
 ```
 
-[Vpc documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Vpc)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.Vpc)
 
 
 ### Vpc attributes
@@ -5858,7 +5862,7 @@ def get_resource() -> Vpc:
 
 Type annotations for `boto3.resource("ec2").associate_dhcp_options` method.
 
-[Vpc.associate_dhcp_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.associate_dhcp_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.associate_dhcp_options]
 
 ```python
 def associate_dhcp_options(
@@ -5873,7 +5877,7 @@ def associate_dhcp_options(
 
 Type annotations for `boto3.resource("ec2").attach_classic_link_instance` method.
 
-[Vpc.attach_classic_link_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.attach_classic_link_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.attach_classic_link_instance]
 
 ```python
 def attach_classic_link_instance(
@@ -5889,7 +5893,7 @@ def attach_classic_link_instance(
 
 Type annotations for `boto3.resource("ec2").attach_internet_gateway` method.
 
-[Vpc.attach_internet_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.attach_internet_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.attach_internet_gateway]
 
 ```python
 def attach_internet_gateway(
@@ -5904,7 +5908,7 @@ def attach_internet_gateway(
 
 Type annotations for `boto3.resource("ec2").create_network_acl` method.
 
-[Vpc.create_network_acl documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_network_acl)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_network_acl]
 
 ```python
 def create_network_acl(
@@ -5919,7 +5923,7 @@ def create_network_acl(
 
 Type annotations for `boto3.resource("ec2").create_route_table` method.
 
-[Vpc.create_route_table documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_route_table)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_route_table]
 
 ```python
 def create_route_table(
@@ -5934,7 +5938,7 @@ def create_route_table(
 
 Type annotations for `boto3.resource("ec2").create_security_group` method.
 
-[Vpc.create_security_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_security_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_security_group]
 
 ```python
 def create_security_group(
@@ -5951,7 +5955,7 @@ def create_security_group(
 
 Type annotations for `boto3.resource("ec2").create_subnet` method.
 
-[Vpc.create_subnet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_subnet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_subnet]
 
 ```python
 def create_subnet(
@@ -5971,7 +5975,7 @@ def create_subnet(
 
 Type annotations for `boto3.resource("ec2").create_tags` method.
 
-[Vpc.create_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_tags]
 
 ```python
 def create_tags(
@@ -5986,7 +5990,7 @@ def create_tags(
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[Vpc.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.delete]
 
 ```python
 def delete(
@@ -6000,7 +6004,7 @@ def delete(
 
 Type annotations for `boto3.resource("ec2").describe_attribute` method.
 
-[Vpc.describe_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.describe_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.describe_attribute]
 
 ```python
 def describe_attribute(
@@ -6015,7 +6019,7 @@ def describe_attribute(
 
 Type annotations for `boto3.resource("ec2").detach_classic_link_instance` method.
 
-[Vpc.detach_classic_link_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.detach_classic_link_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.detach_classic_link_instance]
 
 ```python
 def detach_classic_link_instance(
@@ -6030,7 +6034,7 @@ def detach_classic_link_instance(
 
 Type annotations for `boto3.resource("ec2").detach_internet_gateway` method.
 
-[Vpc.detach_internet_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.detach_internet_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.detach_internet_gateway]
 
 ```python
 def detach_internet_gateway(
@@ -6045,7 +6049,7 @@ def detach_internet_gateway(
 
 Type annotations for `boto3.resource("ec2").disable_classic_link` method.
 
-[Vpc.disable_classic_link documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.disable_classic_link)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.disable_classic_link]
 
 ```python
 def disable_classic_link(
@@ -6059,7 +6063,7 @@ def disable_classic_link(
 
 Type annotations for `boto3.resource("ec2").enable_classic_link` method.
 
-[Vpc.enable_classic_link documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.enable_classic_link)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.enable_classic_link]
 
 ```python
 def enable_classic_link(
@@ -6073,7 +6077,7 @@ def enable_classic_link(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[Vpc.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -6086,7 +6090,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[Vpc.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.load]
 
 ```python
 def load(
@@ -6099,7 +6103,7 @@ def load(
 
 Type annotations for `boto3.resource("ec2").modify_attribute` method.
 
-[Vpc.modify_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.modify_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.modify_attribute]
 
 ```python
 def modify_attribute(
@@ -6114,7 +6118,7 @@ def modify_attribute(
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[Vpc.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.reload]
 
 ```python
 def reload(
@@ -6127,7 +6131,7 @@ def reload(
 
 Type annotations for `boto3.resource("ec2").request_vpc_peering_connection` method.
 
-[Vpc.request_vpc_peering_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.request_vpc_peering_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.request_vpc_peering_connection]
 
 ```python
 def request_vpc_peering_connection(
@@ -6145,7 +6149,7 @@ def request_vpc_peering_connection(
 
 Type annotations for `boto3.resource("ec2").wait_until_available` method.
 
-[Vpc.wait_until_available documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.wait_until_available)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.wait_until_available]
 
 ```python
 def wait_until_available(
@@ -6158,7 +6162,7 @@ def wait_until_available(
 
 Type annotations for `boto3.resource("ec2").wait_until_exists` method.
 
-[Vpc.wait_until_exists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.wait_until_exists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.wait_until_exists]
 
 ```python
 def wait_until_exists(
@@ -6187,7 +6191,7 @@ def get_collection() -> VpcAcceptedVpcPeeringConnectionsCollection:
     return resource.accepted_vpc_peering_connections
 ```
 
-[Vpc.accepted_vpc_peering_connections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.accepted_vpc_peering_connections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.VpcAcceptedVpcPeeringConnectionsCollection)
 
 ```python
 class VpcAcceptedVpcPeeringConnectionsCollection(ResourceCollection):
@@ -6243,7 +6247,7 @@ def get_collection() -> VpcInstancesCollection:
     return resource.instances
 ```
 
-[Vpc.instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.VpcInstancesCollection)
 
 ```python
 class VpcInstancesCollection(ResourceCollection):
@@ -6344,7 +6348,7 @@ def get_collection() -> VpcInternetGatewaysCollection:
     return resource.internet_gateways
 ```
 
-[Vpc.internet_gateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.internet_gateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.VpcInternetGatewaysCollection)
 
 ```python
 class VpcInternetGatewaysCollection(ResourceCollection):
@@ -6400,7 +6404,7 @@ def get_collection() -> VpcNetworkAclsCollection:
     return resource.network_acls
 ```
 
-[Vpc.network_acls documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.network_acls)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.VpcNetworkAclsCollection)
 
 ```python
 class VpcNetworkAclsCollection(ResourceCollection):
@@ -6456,7 +6460,7 @@ def get_collection() -> VpcNetworkInterfacesCollection:
     return resource.network_interfaces
 ```
 
-[Vpc.network_interfaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.network_interfaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.VpcNetworkInterfacesCollection)
 
 ```python
 class VpcNetworkInterfacesCollection(ResourceCollection):
@@ -6512,7 +6516,7 @@ def get_collection() -> VpcRequestedVpcPeeringConnectionsCollection:
     return resource.requested_vpc_peering_connections
 ```
 
-[Vpc.requested_vpc_peering_connections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.requested_vpc_peering_connections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.VpcRequestedVpcPeeringConnectionsCollection)
 
 ```python
 class VpcRequestedVpcPeeringConnectionsCollection(ResourceCollection):
@@ -6568,7 +6572,7 @@ def get_collection() -> VpcRouteTablesCollection:
     return resource.route_tables
 ```
 
-[Vpc.route_tables documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.route_tables)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.VpcRouteTablesCollection)
 
 ```python
 class VpcRouteTablesCollection(ResourceCollection):
@@ -6624,7 +6628,7 @@ def get_collection() -> VpcSecurityGroupsCollection:
     return resource.security_groups
 ```
 
-[Vpc.security_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.security_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.VpcSecurityGroupsCollection)
 
 ```python
 class VpcSecurityGroupsCollection(ResourceCollection):
@@ -6681,7 +6685,7 @@ def get_collection() -> VpcSubnetsCollection:
     return resource.subnets
 ```
 
-[Vpc.subnets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.subnets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.VpcSubnetsCollection)
 
 ```python
 class VpcSubnetsCollection(ResourceCollection):
@@ -6739,7 +6743,7 @@ def get_resource() -> VpcPeeringConnection:
     return boto3.resource("ec2").VpcPeeringConnection(...)
 ```
 
-[VpcPeeringConnection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.VpcPeeringConnection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.VpcPeeringConnection)
 
 
 ### VpcPeeringConnection attributes
@@ -6773,7 +6777,7 @@ def get_resource() -> VpcPeeringConnection:
 
 Type annotations for `boto3.resource("ec2").accept` method.
 
-[VpcPeeringConnection.accept documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.accept)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.accept]
 
 ```python
 def accept(
@@ -6787,7 +6791,7 @@ def accept(
 
 Type annotations for `boto3.resource("ec2").delete` method.
 
-[VpcPeeringConnection.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.delete]
 
 ```python
 def delete(
@@ -6801,7 +6805,7 @@ def delete(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[VpcPeeringConnection.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -6814,7 +6818,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[VpcPeeringConnection.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.load]
 
 ```python
 def load(
@@ -6827,7 +6831,7 @@ def load(
 
 Type annotations for `boto3.resource("ec2").reject` method.
 
-[VpcPeeringConnection.reject documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.reject)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.reject]
 
 ```python
 def reject(
@@ -6841,7 +6845,7 @@ def reject(
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[VpcPeeringConnection.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.reload]
 
 ```python
 def reload(
@@ -6854,7 +6858,7 @@ def reload(
 
 Type annotations for `boto3.resource("ec2").wait_until_exists` method.
 
-[VpcPeeringConnection.wait_until_exists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.wait_until_exists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.wait_until_exists]
 
 ```python
 def wait_until_exists(
@@ -6881,7 +6885,7 @@ def get_resource() -> VpcAddress:
     return boto3.resource("ec2").VpcAddress(...)
 ```
 
-[VpcAddress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.VpcAddress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.VpcAddress)
 
 
 ### VpcAddress attributes
@@ -6927,7 +6931,7 @@ def get_resource() -> VpcAddress:
 
 Type annotations for `boto3.resource("ec2").associate` method.
 
-[VpcAddress.associate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.associate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.associate]
 
 ```python
 def associate(
@@ -6946,7 +6950,7 @@ def associate(
 
 Type annotations for `boto3.resource("ec2").get_available_subresources` method.
 
-[VpcAddress.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -6959,7 +6963,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("ec2").load` method.
 
-[VpcAddress.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.load]
 
 ```python
 def load(
@@ -6972,7 +6976,7 @@ def load(
 
 Type annotations for `boto3.resource("ec2").release` method.
 
-[VpcAddress.release documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.release)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.release]
 
 ```python
 def release(
@@ -6989,7 +6993,7 @@ def release(
 
 Type annotations for `boto3.resource("ec2").reload` method.
 
-[VpcAddress.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcAddress.reload]
 
 ```python
 def reload(

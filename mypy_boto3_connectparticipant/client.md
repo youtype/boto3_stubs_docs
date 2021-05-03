@@ -28,7 +28,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_connectparticipant.client import ConnectParticipantClient
+
+def get_connectparticipant_client() -> ConnectParticipantClient:
+    return boto3.client("connectparticipant")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client)
 
 ## Exceptions
 
@@ -61,7 +66,7 @@ Exceptions:
 
 Type annotations for `boto3.client("connectparticipant").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -75,7 +80,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("connectparticipant").complete_attachment_upload` method.
 
-[Client.complete_attachment_upload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.complete_attachment_upload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.complete_attachment_upload]
 
 ```python
 def complete_attachment_upload(
@@ -91,7 +96,7 @@ def complete_attachment_upload(
 
 Type annotations for `boto3.client("connectparticipant").create_participant_connection` method.
 
-[Client.create_participant_connection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.create_participant_connection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.create_participant_connection]
 
 ```python
 def create_participant_connection(
@@ -106,7 +111,7 @@ def create_participant_connection(
 
 Type annotations for `boto3.client("connectparticipant").disconnect_participant` method.
 
-[Client.disconnect_participant documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.disconnect_participant)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.disconnect_participant]
 
 ```python
 def disconnect_participant(
@@ -121,7 +126,7 @@ def disconnect_participant(
 
 Type annotations for `boto3.client("connectparticipant").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -138,7 +143,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("connectparticipant").get_attachment` method.
 
-[Client.get_attachment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_attachment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_attachment]
 
 ```python
 def get_attachment(
@@ -153,7 +158,7 @@ def get_attachment(
 
 Type annotations for `boto3.client("connectparticipant").get_transcript` method.
 
-[Client.get_transcript documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_transcript)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_transcript]
 
 ```python
 def get_transcript(
@@ -173,7 +178,7 @@ def get_transcript(
 
 Type annotations for `boto3.client("connectparticipant").send_event` method.
 
-[Client.send_event documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_event)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_event]
 
 ```python
 def send_event(
@@ -190,7 +195,7 @@ def send_event(
 
 Type annotations for `boto3.client("connectparticipant").send_message` method.
 
-[Client.send_message documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_message)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_message]
 
 ```python
 def send_message(
@@ -207,7 +212,7 @@ def send_message(
 
 Type annotations for `boto3.client("connectparticipant").start_attachment_upload` method.
 
-[Client.start_attachment_upload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.start_attachment_upload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.start_attachment_upload]
 
 ```python
 def start_attachment_upload(

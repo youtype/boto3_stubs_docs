@@ -1,11 +1,11 @@
-# Structures for boto3 ApplicationAutoScaling module
+# Typed dictionaries for boto3 ApplicationAutoScaling module
 
 > [Index](../README.md) > [ApplicationAutoScaling](./README.md) > Structures
 
 Auto-generated documentation for [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
 type annotations stubs module [mypy_boto3_application_autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
 
-- [Structures for boto3 ApplicationAutoScaling module](#structures-for-boto3-applicationautoscaling-module)
+- [Typed dictionaries for boto3 ApplicationAutoScaling module](#typed-dictionaries-for-boto3-applicationautoscaling-module)
   - [AlarmTypeDef](#alarmtypedef)
   - [CustomizedMetricSpecificationTypeDef](#customizedmetricspecificationtypedef)
   - [DescribeScalableTargetsResponseTypeDef](#describescalabletargetsresponsetypedef)

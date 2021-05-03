@@ -1,11 +1,11 @@
-# Structures for boto3 EMR module
+# Typed dictionaries for boto3 EMR module
 
 > [Index](../README.md) > [EMR](./README.md) > Structures
 
 Auto-generated documentation for [EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
 type annotations stubs module [mypy_boto3_emr](https://pypi.org/project/mypy-boto3-emr/).
 
-- [Structures for boto3 EMR module](#structures-for-boto3-emr-module)
+- [Typed dictionaries for boto3 EMR module](#typed-dictionaries-for-boto3-emr-module)
   - [AddInstanceFleetOutputTypeDef](#addinstancefleetoutputtypedef)
   - [AddInstanceGroupsOutputTypeDef](#addinstancegroupsoutputtypedef)
   - [AddJobFlowStepsOutputTypeDef](#addjobflowstepsoutputtypedef)
@@ -134,13 +134,13 @@ from mypy_boto3_emr.type_defs import AddInstanceFleetOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ClusterId`: `str`
 - `InstanceFleetId`: `str`
 - `ClusterArn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## AddInstanceGroupsOutputTypeDef
@@ -150,13 +150,13 @@ from mypy_boto3_emr.type_defs import AddInstanceGroupsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `JobFlowId`: `str`
 - `InstanceGroupIds`: `List[str]`
 - `ClusterArn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## AddJobFlowStepsOutputTypeDef
@@ -166,11 +166,11 @@ from mypy_boto3_emr.type_defs import AddJobFlowStepsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `StepIds`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ApplicationTypeDef
@@ -325,11 +325,11 @@ from mypy_boto3_emr.type_defs import CancelStepsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `CancelStepsInfoList`: `List["CancelStepsInfoTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CloudWatchAlarmDefinitionTypeDef
@@ -518,11 +518,9 @@ from mypy_boto3_emr.type_defs import CreateSecurityConfigurationOutputTypeDef
 Required fields:
 - `Name`: `str`
 - `CreationDateTime`: `datetime`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateStudioOutputTypeDef
@@ -532,12 +530,12 @@ from mypy_boto3_emr.type_defs import CreateStudioOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `StudioId`: `str`
 - `Url`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeClusterOutputTypeDef
@@ -547,11 +545,11 @@ from mypy_boto3_emr.type_defs import DescribeClusterOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Cluster`: `"ClusterTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeJobFlowsOutputTypeDef
@@ -561,11 +559,11 @@ from mypy_boto3_emr.type_defs import DescribeJobFlowsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `JobFlows`: `List["JobFlowDetailTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeNotebookExecutionOutputTypeDef
@@ -575,11 +573,11 @@ from mypy_boto3_emr.type_defs import DescribeNotebookExecutionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NotebookExecution`: `"NotebookExecutionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeSecurityConfigurationOutputTypeDef
@@ -589,13 +587,13 @@ from mypy_boto3_emr.type_defs import DescribeSecurityConfigurationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Name`: `str`
 - `SecurityConfiguration`: `str`
 - `CreationDateTime`: `datetime`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeStepOutputTypeDef
@@ -605,11 +603,11 @@ from mypy_boto3_emr.type_defs import DescribeStepOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Step`: `"StepTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeStudioOutputTypeDef
@@ -619,11 +617,11 @@ from mypy_boto3_emr.type_defs import DescribeStudioOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Studio`: `"StudioTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## EbsBlockDeviceConfigTypeDef
@@ -749,11 +747,9 @@ from mypy_boto3_emr.type_defs import GetBlockPublicAccessConfigurationOutputType
 Required fields:
 - `BlockPublicAccessConfiguration`: `"BlockPublicAccessConfigurationTypeDef"`
 - `BlockPublicAccessConfigurationMetadata`: `"BlockPublicAccessConfigurationMetadataTypeDef"`
-
-
-
-Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetManagedScalingPolicyOutputTypeDef
@@ -763,11 +759,11 @@ from mypy_boto3_emr.type_defs import GetManagedScalingPolicyOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ManagedScalingPolicy`: `"ManagedScalingPolicyTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetStudioSessionMappingOutputTypeDef
@@ -777,11 +773,11 @@ from mypy_boto3_emr.type_defs import GetStudioSessionMappingOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `SessionMapping`: `"SessionMappingDetailTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## HadoopJarStepConfigTypeDef
@@ -1345,12 +1341,12 @@ from mypy_boto3_emr.type_defs import ListBootstrapActionsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BootstrapActions`: `List["CommandTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListClustersOutputTypeDef
@@ -1360,12 +1356,12 @@ from mypy_boto3_emr.type_defs import ListClustersOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Clusters`: `List["ClusterSummaryTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListInstanceFleetsOutputTypeDef
@@ -1375,12 +1371,12 @@ from mypy_boto3_emr.type_defs import ListInstanceFleetsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `InstanceFleets`: `List["InstanceFleetTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListInstanceGroupsOutputTypeDef
@@ -1390,12 +1386,12 @@ from mypy_boto3_emr.type_defs import ListInstanceGroupsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `InstanceGroups`: `List["InstanceGroupTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListInstancesOutputTypeDef
@@ -1405,12 +1401,12 @@ from mypy_boto3_emr.type_defs import ListInstancesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Instances`: `List["InstanceTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListNotebookExecutionsOutputTypeDef
@@ -1420,12 +1416,12 @@ from mypy_boto3_emr.type_defs import ListNotebookExecutionsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NotebookExecutions`: `List["NotebookExecutionSummaryTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListSecurityConfigurationsOutputTypeDef
@@ -1435,12 +1431,12 @@ from mypy_boto3_emr.type_defs import ListSecurityConfigurationsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `SecurityConfigurations`: `List["SecurityConfigurationSummaryTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListStepsOutputTypeDef
@@ -1450,12 +1446,12 @@ from mypy_boto3_emr.type_defs import ListStepsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Steps`: `List["StepSummaryTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListStudioSessionMappingsOutputTypeDef
@@ -1465,12 +1461,12 @@ from mypy_boto3_emr.type_defs import ListStudioSessionMappingsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `SessionMappings`: `List["SessionMappingSummaryTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListStudiosOutputTypeDef
@@ -1480,12 +1476,12 @@ from mypy_boto3_emr.type_defs import ListStudiosOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Studios`: `List["StudioSummaryTypeDef"]`
 - `Marker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ManagedScalingPolicyTypeDef
@@ -1522,11 +1518,11 @@ from mypy_boto3_emr.type_defs import ModifyClusterOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `StepConcurrencyLevel`: `int`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## NotebookExecutionSummaryTypeDef
@@ -1671,14 +1667,14 @@ from mypy_boto3_emr.type_defs import PutAutoScalingPolicyOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ClusterId`: `str`
 - `InstanceGroupId`: `str`
 - `AutoScalingPolicy`: `"AutoScalingPolicyDescriptionTypeDef"`
 - `ClusterArn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ResponseMetadata
@@ -1705,12 +1701,12 @@ from mypy_boto3_emr.type_defs import RunJobFlowOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `JobFlowId`: `str`
 - `ClusterArn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ScalingActionTypeDef
@@ -1897,11 +1893,11 @@ from mypy_boto3_emr.type_defs import StartNotebookExecutionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NotebookExecutionId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## StepConfigTypeDef

@@ -1,11 +1,11 @@
-# Structures for boto3 CostandUsageReportService module
+# Typed dictionaries for boto3 CostandUsageReportService module
 
 > [Index](../README.md) > [CostandUsageReportService](./README.md) > Structures
 
 Auto-generated documentation for [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
 type annotations stubs module [mypy_boto3_cur](https://pypi.org/project/mypy-boto3-cur/).
 
-- [Structures for boto3 CostandUsageReportService module](#structures-for-boto3-costandusagereportservice-module)
+- [Typed dictionaries for boto3 CostandUsageReportService module](#typed-dictionaries-for-boto3-costandusagereportservice-module)
   - [DeleteReportDefinitionResponseTypeDef](#deletereportdefinitionresponsetypedef)
   - [DescribeReportDefinitionsResponseTypeDef](#describereportdefinitionsresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)

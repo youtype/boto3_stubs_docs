@@ -78,7 +78,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_robomaker.client import RoboMakerClient
+
+def get_robomaker_client() -> RoboMakerClient:
+    return boto3.client("robomaker")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client)
 
 ## Exceptions
 
@@ -114,7 +119,7 @@ Exceptions:
 
 Type annotations for `boto3.client("robomaker").batch_delete_worlds` method.
 
-[Client.batch_delete_worlds documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.batch_delete_worlds)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.batch_delete_worlds]
 
 ```python
 def batch_delete_worlds(
@@ -128,7 +133,7 @@ def batch_delete_worlds(
 
 Type annotations for `boto3.client("robomaker").batch_describe_simulation_job` method.
 
-[Client.batch_describe_simulation_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.batch_describe_simulation_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.batch_describe_simulation_job]
 
 ```python
 def batch_describe_simulation_job(
@@ -142,7 +147,7 @@ def batch_describe_simulation_job(
 
 Type annotations for `boto3.client("robomaker").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -156,7 +161,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("robomaker").cancel_deployment_job` method.
 
-[Client.cancel_deployment_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_deployment_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_deployment_job]
 
 ```python
 def cancel_deployment_job(
@@ -170,7 +175,7 @@ def cancel_deployment_job(
 
 Type annotations for `boto3.client("robomaker").cancel_simulation_job` method.
 
-[Client.cancel_simulation_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job]
 
 ```python
 def cancel_simulation_job(
@@ -184,7 +189,7 @@ def cancel_simulation_job(
 
 Type annotations for `boto3.client("robomaker").cancel_simulation_job_batch` method.
 
-[Client.cancel_simulation_job_batch documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job_batch)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job_batch]
 
 ```python
 def cancel_simulation_job_batch(
@@ -198,7 +203,7 @@ def cancel_simulation_job_batch(
 
 Type annotations for `boto3.client("robomaker").cancel_world_export_job` method.
 
-[Client.cancel_world_export_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_world_export_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_world_export_job]
 
 ```python
 def cancel_world_export_job(
@@ -212,7 +217,7 @@ def cancel_world_export_job(
 
 Type annotations for `boto3.client("robomaker").cancel_world_generation_job` method.
 
-[Client.cancel_world_generation_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_world_generation_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_world_generation_job]
 
 ```python
 def cancel_world_generation_job(
@@ -226,7 +231,7 @@ def cancel_world_generation_job(
 
 Type annotations for `boto3.client("robomaker").create_deployment_job` method.
 
-[Client.create_deployment_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_deployment_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_deployment_job]
 
 ```python
 def create_deployment_job(
@@ -244,7 +249,7 @@ def create_deployment_job(
 
 Type annotations for `boto3.client("robomaker").create_fleet` method.
 
-[Client.create_fleet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_fleet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_fleet]
 
 ```python
 def create_fleet(
@@ -259,7 +264,7 @@ def create_fleet(
 
 Type annotations for `boto3.client("robomaker").create_robot` method.
 
-[Client.create_robot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot]
 
 ```python
 def create_robot(
@@ -276,7 +281,7 @@ def create_robot(
 
 Type annotations for `boto3.client("robomaker").create_robot_application` method.
 
-[Client.create_robot_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot_application]
 
 ```python
 def create_robot_application(
@@ -293,7 +298,7 @@ def create_robot_application(
 
 Type annotations for `boto3.client("robomaker").create_robot_application_version` method.
 
-[Client.create_robot_application_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot_application_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot_application_version]
 
 ```python
 def create_robot_application_version(
@@ -308,7 +313,7 @@ def create_robot_application_version(
 
 Type annotations for `boto3.client("robomaker").create_simulation_application` method.
 
-[Client.create_simulation_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application]
 
 ```python
 def create_simulation_application(
@@ -327,7 +332,7 @@ def create_simulation_application(
 
 Type annotations for `boto3.client("robomaker").create_simulation_application_version` method.
 
-[Client.create_simulation_application_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application_version]
 
 ```python
 def create_simulation_application_version(
@@ -342,7 +347,7 @@ def create_simulation_application_version(
 
 Type annotations for `boto3.client("robomaker").create_simulation_job` method.
 
-[Client.create_simulation_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_job]
 
 ```python
 def create_simulation_job(
@@ -367,7 +372,7 @@ def create_simulation_job(
 
 Type annotations for `boto3.client("robomaker").create_world_export_job` method.
 
-[Client.create_world_export_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_export_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_export_job]
 
 ```python
 def create_world_export_job(
@@ -385,7 +390,7 @@ def create_world_export_job(
 
 Type annotations for `boto3.client("robomaker").create_world_generation_job` method.
 
-[Client.create_world_generation_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_generation_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_generation_job]
 
 ```python
 def create_world_generation_job(
@@ -403,7 +408,7 @@ def create_world_generation_job(
 
 Type annotations for `boto3.client("robomaker").create_world_template` method.
 
-[Client.create_world_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_template]
 
 ```python
 def create_world_template(
@@ -421,7 +426,7 @@ def create_world_template(
 
 Type annotations for `boto3.client("robomaker").delete_fleet` method.
 
-[Client.delete_fleet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_fleet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_fleet]
 
 ```python
 def delete_fleet(
@@ -435,7 +440,7 @@ def delete_fleet(
 
 Type annotations for `boto3.client("robomaker").delete_robot` method.
 
-[Client.delete_robot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_robot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_robot]
 
 ```python
 def delete_robot(
@@ -449,7 +454,7 @@ def delete_robot(
 
 Type annotations for `boto3.client("robomaker").delete_robot_application` method.
 
-[Client.delete_robot_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_robot_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_robot_application]
 
 ```python
 def delete_robot_application(
@@ -464,7 +469,7 @@ def delete_robot_application(
 
 Type annotations for `boto3.client("robomaker").delete_simulation_application` method.
 
-[Client.delete_simulation_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_simulation_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_simulation_application]
 
 ```python
 def delete_simulation_application(
@@ -479,7 +484,7 @@ def delete_simulation_application(
 
 Type annotations for `boto3.client("robomaker").delete_world_template` method.
 
-[Client.delete_world_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_world_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_world_template]
 
 ```python
 def delete_world_template(
@@ -493,7 +498,7 @@ def delete_world_template(
 
 Type annotations for `boto3.client("robomaker").deregister_robot` method.
 
-[Client.deregister_robot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.deregister_robot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.deregister_robot]
 
 ```python
 def deregister_robot(
@@ -508,7 +513,7 @@ def deregister_robot(
 
 Type annotations for `boto3.client("robomaker").describe_deployment_job` method.
 
-[Client.describe_deployment_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_deployment_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_deployment_job]
 
 ```python
 def describe_deployment_job(
@@ -522,7 +527,7 @@ def describe_deployment_job(
 
 Type annotations for `boto3.client("robomaker").describe_fleet` method.
 
-[Client.describe_fleet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_fleet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_fleet]
 
 ```python
 def describe_fleet(
@@ -536,7 +541,7 @@ def describe_fleet(
 
 Type annotations for `boto3.client("robomaker").describe_robot` method.
 
-[Client.describe_robot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_robot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_robot]
 
 ```python
 def describe_robot(
@@ -550,7 +555,7 @@ def describe_robot(
 
 Type annotations for `boto3.client("robomaker").describe_robot_application` method.
 
-[Client.describe_robot_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_robot_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_robot_application]
 
 ```python
 def describe_robot_application(
@@ -565,7 +570,7 @@ def describe_robot_application(
 
 Type annotations for `boto3.client("robomaker").describe_simulation_application` method.
 
-[Client.describe_simulation_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_application]
 
 ```python
 def describe_simulation_application(
@@ -580,7 +585,7 @@ def describe_simulation_application(
 
 Type annotations for `boto3.client("robomaker").describe_simulation_job` method.
 
-[Client.describe_simulation_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job]
 
 ```python
 def describe_simulation_job(
@@ -594,7 +599,7 @@ def describe_simulation_job(
 
 Type annotations for `boto3.client("robomaker").describe_simulation_job_batch` method.
 
-[Client.describe_simulation_job_batch documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job_batch)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job_batch]
 
 ```python
 def describe_simulation_job_batch(
@@ -608,7 +613,7 @@ def describe_simulation_job_batch(
 
 Type annotations for `boto3.client("robomaker").describe_world` method.
 
-[Client.describe_world documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world]
 
 ```python
 def describe_world(
@@ -622,7 +627,7 @@ def describe_world(
 
 Type annotations for `boto3.client("robomaker").describe_world_export_job` method.
 
-[Client.describe_world_export_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_export_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_export_job]
 
 ```python
 def describe_world_export_job(
@@ -636,7 +641,7 @@ def describe_world_export_job(
 
 Type annotations for `boto3.client("robomaker").describe_world_generation_job` method.
 
-[Client.describe_world_generation_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_generation_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_generation_job]
 
 ```python
 def describe_world_generation_job(
@@ -650,7 +655,7 @@ def describe_world_generation_job(
 
 Type annotations for `boto3.client("robomaker").describe_world_template` method.
 
-[Client.describe_world_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_template]
 
 ```python
 def describe_world_template(
@@ -664,7 +669,7 @@ def describe_world_template(
 
 Type annotations for `boto3.client("robomaker").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -681,7 +686,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("robomaker").get_world_template_body` method.
 
-[Client.get_world_template_body documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.get_world_template_body)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.get_world_template_body]
 
 ```python
 def get_world_template_body(
@@ -696,7 +701,7 @@ def get_world_template_body(
 
 Type annotations for `boto3.client("robomaker").list_deployment_jobs` method.
 
-[Client.list_deployment_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_deployment_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_deployment_jobs]
 
 ```python
 def list_deployment_jobs(
@@ -712,7 +717,7 @@ def list_deployment_jobs(
 
 Type annotations for `boto3.client("robomaker").list_fleets` method.
 
-[Client.list_fleets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_fleets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_fleets]
 
 ```python
 def list_fleets(
@@ -728,7 +733,7 @@ def list_fleets(
 
 Type annotations for `boto3.client("robomaker").list_robot_applications` method.
 
-[Client.list_robot_applications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_robot_applications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_robot_applications]
 
 ```python
 def list_robot_applications(
@@ -745,7 +750,7 @@ def list_robot_applications(
 
 Type annotations for `boto3.client("robomaker").list_robots` method.
 
-[Client.list_robots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_robots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_robots]
 
 ```python
 def list_robots(
@@ -761,7 +766,7 @@ def list_robots(
 
 Type annotations for `boto3.client("robomaker").list_simulation_applications` method.
 
-[Client.list_simulation_applications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_applications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_applications]
 
 ```python
 def list_simulation_applications(
@@ -778,7 +783,7 @@ def list_simulation_applications(
 
 Type annotations for `boto3.client("robomaker").list_simulation_job_batches` method.
 
-[Client.list_simulation_job_batches documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_job_batches)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_job_batches]
 
 ```python
 def list_simulation_job_batches(
@@ -794,7 +799,7 @@ def list_simulation_job_batches(
 
 Type annotations for `boto3.client("robomaker").list_simulation_jobs` method.
 
-[Client.list_simulation_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_jobs]
 
 ```python
 def list_simulation_jobs(
@@ -810,7 +815,7 @@ def list_simulation_jobs(
 
 Type annotations for `boto3.client("robomaker").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -824,7 +829,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("robomaker").list_world_export_jobs` method.
 
-[Client.list_world_export_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_export_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_export_jobs]
 
 ```python
 def list_world_export_jobs(
@@ -840,7 +845,7 @@ def list_world_export_jobs(
 
 Type annotations for `boto3.client("robomaker").list_world_generation_jobs` method.
 
-[Client.list_world_generation_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_generation_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_generation_jobs]
 
 ```python
 def list_world_generation_jobs(
@@ -856,7 +861,7 @@ def list_world_generation_jobs(
 
 Type annotations for `boto3.client("robomaker").list_world_templates` method.
 
-[Client.list_world_templates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_templates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_templates]
 
 ```python
 def list_world_templates(
@@ -871,7 +876,7 @@ def list_world_templates(
 
 Type annotations for `boto3.client("robomaker").list_worlds` method.
 
-[Client.list_worlds documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_worlds)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_worlds]
 
 ```python
 def list_worlds(
@@ -887,7 +892,7 @@ def list_worlds(
 
 Type annotations for `boto3.client("robomaker").register_robot` method.
 
-[Client.register_robot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.register_robot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.register_robot]
 
 ```python
 def register_robot(
@@ -902,7 +907,7 @@ def register_robot(
 
 Type annotations for `boto3.client("robomaker").restart_simulation_job` method.
 
-[Client.restart_simulation_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.restart_simulation_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.restart_simulation_job]
 
 ```python
 def restart_simulation_job(
@@ -916,7 +921,7 @@ def restart_simulation_job(
 
 Type annotations for `boto3.client("robomaker").start_simulation_job_batch` method.
 
-[Client.start_simulation_job_batch documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.start_simulation_job_batch)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.start_simulation_job_batch]
 
 ```python
 def start_simulation_job_batch(
@@ -933,7 +938,7 @@ def start_simulation_job_batch(
 
 Type annotations for `boto3.client("robomaker").sync_deployment_job` method.
 
-[Client.sync_deployment_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.sync_deployment_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.sync_deployment_job]
 
 ```python
 def sync_deployment_job(
@@ -948,7 +953,7 @@ def sync_deployment_job(
 
 Type annotations for `boto3.client("robomaker").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -963,7 +968,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("robomaker").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -978,7 +983,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("robomaker").update_robot_application` method.
 
-[Client.update_robot_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_robot_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_robot_application]
 
 ```python
 def update_robot_application(
@@ -995,7 +1000,7 @@ def update_robot_application(
 
 Type annotations for `boto3.client("robomaker").update_simulation_application` method.
 
-[Client.update_simulation_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_simulation_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_simulation_application]
 
 ```python
 def update_simulation_application(
@@ -1014,7 +1019,7 @@ def update_simulation_application(
 
 Type annotations for `boto3.client("robomaker").update_world_template` method.
 
-[Client.update_world_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_world_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_world_template]
 
 ```python
 def update_world_template(

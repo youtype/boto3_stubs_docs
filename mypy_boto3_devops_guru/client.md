@@ -40,7 +40,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_devops_guru.client import DevopsGuruClient
+
+def get_devops-guru_client() -> DevopsGuruClient:
+    return boto3.client("devops-guru")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client)
 
 ## Exceptions
 
@@ -74,7 +79,7 @@ Exceptions:
 
 Type annotations for `boto3.client("devops-guru").add_notification_channel` method.
 
-[Client.add_notification_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.add_notification_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.add_notification_channel]
 
 ```python
 def add_notification_channel(
@@ -88,7 +93,7 @@ def add_notification_channel(
 
 Type annotations for `boto3.client("devops-guru").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -102,7 +107,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("devops-guru").describe_account_health` method.
 
-[Client.describe_account_health documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_account_health)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_account_health]
 
 ```python
 def describe_account_health(
@@ -115,7 +120,7 @@ def describe_account_health(
 
 Type annotations for `boto3.client("devops-guru").describe_account_overview` method.
 
-[Client.describe_account_overview documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_account_overview)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_account_overview]
 
 ```python
 def describe_account_overview(
@@ -130,7 +135,7 @@ def describe_account_overview(
 
 Type annotations for `boto3.client("devops-guru").describe_anomaly` method.
 
-[Client.describe_anomaly documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_anomaly)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_anomaly]
 
 ```python
 def describe_anomaly(
@@ -144,7 +149,7 @@ def describe_anomaly(
 
 Type annotations for `boto3.client("devops-guru").describe_feedback` method.
 
-[Client.describe_feedback documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_feedback)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_feedback]
 
 ```python
 def describe_feedback(
@@ -158,7 +163,7 @@ def describe_feedback(
 
 Type annotations for `boto3.client("devops-guru").describe_insight` method.
 
-[Client.describe_insight documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_insight)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_insight]
 
 ```python
 def describe_insight(
@@ -172,7 +177,7 @@ def describe_insight(
 
 Type annotations for `boto3.client("devops-guru").describe_resource_collection_health` method.
 
-[Client.describe_resource_collection_health documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_resource_collection_health)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_resource_collection_health]
 
 ```python
 def describe_resource_collection_health(
@@ -187,7 +192,7 @@ def describe_resource_collection_health(
 
 Type annotations for `boto3.client("devops-guru").describe_service_integration` method.
 
-[Client.describe_service_integration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_service_integration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_service_integration]
 
 ```python
 def describe_service_integration(
@@ -200,7 +205,7 @@ def describe_service_integration(
 
 Type annotations for `boto3.client("devops-guru").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -217,7 +222,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("devops-guru").get_resource_collection` method.
 
-[Client.get_resource_collection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.get_resource_collection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.get_resource_collection]
 
 ```python
 def get_resource_collection(
@@ -232,7 +237,7 @@ def get_resource_collection(
 
 Type annotations for `boto3.client("devops-guru").list_anomalies_for_insight` method.
 
-[Client.list_anomalies_for_insight documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_anomalies_for_insight)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_anomalies_for_insight]
 
 ```python
 def list_anomalies_for_insight(
@@ -249,7 +254,7 @@ def list_anomalies_for_insight(
 
 Type annotations for `boto3.client("devops-guru").list_events` method.
 
-[Client.list_events documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_events)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_events]
 
 ```python
 def list_events(
@@ -265,7 +270,7 @@ def list_events(
 
 Type annotations for `boto3.client("devops-guru").list_insights` method.
 
-[Client.list_insights documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_insights)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_insights]
 
 ```python
 def list_insights(
@@ -281,7 +286,7 @@ def list_insights(
 
 Type annotations for `boto3.client("devops-guru").list_notification_channels` method.
 
-[Client.list_notification_channels documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_notification_channels)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_notification_channels]
 
 ```python
 def list_notification_channels(
@@ -295,7 +300,7 @@ def list_notification_channels(
 
 Type annotations for `boto3.client("devops-guru").list_recommendations` method.
 
-[Client.list_recommendations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_recommendations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.list_recommendations]
 
 ```python
 def list_recommendations(
@@ -310,7 +315,7 @@ def list_recommendations(
 
 Type annotations for `boto3.client("devops-guru").put_feedback` method.
 
-[Client.put_feedback documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.put_feedback)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.put_feedback]
 
 ```python
 def put_feedback(
@@ -324,7 +329,7 @@ def put_feedback(
 
 Type annotations for `boto3.client("devops-guru").remove_notification_channel` method.
 
-[Client.remove_notification_channel documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.remove_notification_channel)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.remove_notification_channel]
 
 ```python
 def remove_notification_channel(
@@ -338,7 +343,7 @@ def remove_notification_channel(
 
 Type annotations for `boto3.client("devops-guru").search_insights` method.
 
-[Client.search_insights documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.search_insights)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.search_insights]
 
 ```python
 def search_insights(
@@ -356,7 +361,7 @@ def search_insights(
 
 Type annotations for `boto3.client("devops-guru").update_resource_collection` method.
 
-[Client.update_resource_collection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.update_resource_collection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.update_resource_collection]
 
 ```python
 def update_resource_collection(
@@ -371,7 +376,7 @@ def update_resource_collection(
 
 Type annotations for `boto3.client("devops-guru").update_service_integration` method.
 
-[Client.update_service_integration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.update_service_integration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.update_service_integration]
 
 ```python
 def update_service_integration(

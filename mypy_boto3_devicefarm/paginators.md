@@ -34,13 +34,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("get_offering_sta
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import GetOfferingStatusPaginator
+from mypy_boto3_devicefarm.paginator import GetOfferingStatusPaginator
 
 def get_get_offering_status_paginator() -> GetOfferingStatusPaginator:
     return boto3.client("devicefarm").get_paginator("get_offering_status")
 ```
 
-[Paginator.GetOfferingStatus documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.GetOfferingStatus)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.GetOfferingStatus)
 
 ```python
 class GetOfferingStatusPaginator(Boto3Paginator):
@@ -57,13 +57,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_artifacts")
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import ListArtifactsPaginator
+from mypy_boto3_devicefarm.paginator import ListArtifactsPaginator
 
 def get_list_artifacts_paginator() -> ListArtifactsPaginator:
     return boto3.client("devicefarm").get_paginator("list_artifacts")
 ```
 
-[Paginator.ListArtifacts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListArtifacts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListArtifacts)
 
 ```python
 class ListArtifactsPaginator(Boto3Paginator):
@@ -82,13 +82,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_device_inst
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import ListDeviceInstancesPaginator
+from mypy_boto3_devicefarm.paginator import ListDeviceInstancesPaginator
 
 def get_list_device_instances_paginator() -> ListDeviceInstancesPaginator:
     return boto3.client("devicefarm").get_paginator("list_device_instances")
 ```
 
-[Paginator.ListDeviceInstances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDeviceInstances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDeviceInstances)
 
 ```python
 class ListDeviceInstancesPaginator(Boto3Paginator):
@@ -105,13 +105,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_device_pool
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import ListDevicePoolsPaginator
+from mypy_boto3_devicefarm.paginator import ListDevicePoolsPaginator
 
 def get_list_device_pools_paginator() -> ListDevicePoolsPaginator:
     return boto3.client("devicefarm").get_paginator("list_device_pools")
 ```
 
-[Paginator.ListDevicePools documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDevicePools)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDevicePools)
 
 ```python
 class ListDevicePoolsPaginator(Boto3Paginator):
@@ -130,13 +130,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_devices")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import ListDevicesPaginator
+from mypy_boto3_devicefarm.paginator import ListDevicesPaginator
 
 def get_list_devices_paginator() -> ListDevicesPaginator:
     return boto3.client("devicefarm").get_paginator("list_devices")
 ```
 
-[Paginator.ListDevices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDevices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDevices)
 
 ```python
 class ListDevicesPaginator(Boto3Paginator):
@@ -155,13 +155,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_instance_pr
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import ListInstanceProfilesPaginator
+from mypy_boto3_devicefarm.paginator import ListInstanceProfilesPaginator
 
 def get_list_instance_profiles_paginator() -> ListInstanceProfilesPaginator:
     return boto3.client("devicefarm").get_paginator("list_instance_profiles")
 ```
 
-[Paginator.ListInstanceProfiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListInstanceProfiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListInstanceProfiles)
 
 ```python
 class ListInstanceProfilesPaginator(Boto3Paginator):
@@ -178,13 +178,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_jobs")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import ListJobsPaginator
+from mypy_boto3_devicefarm.paginator import ListJobsPaginator
 
 def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("devicefarm").get_paginator("list_jobs")
 ```
 
-[Paginator.ListJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListJobs)
 
 ```python
 class ListJobsPaginator(Boto3Paginator):
@@ -202,13 +202,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_network_pro
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import ListNetworkProfilesPaginator
+from mypy_boto3_devicefarm.paginator import ListNetworkProfilesPaginator
 
 def get_list_network_profiles_paginator() -> ListNetworkProfilesPaginator:
     return boto3.client("devicefarm").get_paginator("list_network_profiles")
 ```
 
-[Paginator.ListNetworkProfiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListNetworkProfiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListNetworkProfiles)
 
 ```python
 class ListNetworkProfilesPaginator(Boto3Paginator):
@@ -227,13 +227,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_offering_pr
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import ListOfferingPromotionsPaginator
+from mypy_boto3_devicefarm.paginator import ListOfferingPromotionsPaginator
 
 def get_list_offering_promotions_paginator() -> ListOfferingPromotionsPaginator:
     return boto3.client("devicefarm").get_paginator("list_offering_promotions")
 ```
 
-[Paginator.ListOfferingPromotions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferingPromotions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferingPromotions)
 
 ```python
 class ListOfferingPromotionsPaginator(Boto3Paginator):
@@ -250,13 +250,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_offering_tr
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import ListOfferingTransactionsPaginator
+from mypy_boto3_devicefarm.paginator import ListOfferingTransactionsPaginator
 
 def get_list_offering_transactions_paginator() -> ListOfferingTransactionsPaginator:
     return boto3.client("devicefarm").get_paginator("list_offering_transactions")
 ```
 
-[Paginator.ListOfferingTransactions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferingTransactions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferingTransactions)
 
 ```python
 class ListOfferingTransactionsPaginator(Boto3Paginator):
@@ -273,13 +273,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_offerings")
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import ListOfferingsPaginator
+from mypy_boto3_devicefarm.paginator import ListOfferingsPaginator
 
 def get_list_offerings_paginator() -> ListOfferingsPaginator:
     return boto3.client("devicefarm").get_paginator("list_offerings")
 ```
 
-[Paginator.ListOfferings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferings)
 
 ```python
 class ListOfferingsPaginator(Boto3Paginator):
@@ -296,13 +296,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_projects")`
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import ListProjectsPaginator
+from mypy_boto3_devicefarm.paginator import ListProjectsPaginator
 
 def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("devicefarm").get_paginator("list_projects")
 ```
 
-[Paginator.ListProjects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListProjects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListProjects)
 
 ```python
 class ListProjectsPaginator(Boto3Paginator):
@@ -320,13 +320,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_remote_acce
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import ListRemoteAccessSessionsPaginator
+from mypy_boto3_devicefarm.paginator import ListRemoteAccessSessionsPaginator
 
 def get_list_remote_access_sessions_paginator() -> ListRemoteAccessSessionsPaginator:
     return boto3.client("devicefarm").get_paginator("list_remote_access_sessions")
 ```
 
-[Paginator.ListRemoteAccessSessions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListRemoteAccessSessions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListRemoteAccessSessions)
 
 ```python
 class ListRemoteAccessSessionsPaginator(Boto3Paginator):
@@ -344,13 +344,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_runs")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import ListRunsPaginator
+from mypy_boto3_devicefarm.paginator import ListRunsPaginator
 
 def get_list_runs_paginator() -> ListRunsPaginator:
     return boto3.client("devicefarm").get_paginator("list_runs")
 ```
 
-[Paginator.ListRuns documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListRuns)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListRuns)
 
 ```python
 class ListRunsPaginator(Boto3Paginator):
@@ -368,13 +368,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_samples")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import ListSamplesPaginator
+from mypy_boto3_devicefarm.paginator import ListSamplesPaginator
 
 def get_list_samples_paginator() -> ListSamplesPaginator:
     return boto3.client("devicefarm").get_paginator("list_samples")
 ```
 
-[Paginator.ListSamples documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListSamples)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListSamples)
 
 ```python
 class ListSamplesPaginator(Boto3Paginator):
@@ -392,13 +392,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_suites")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import ListSuitesPaginator
+from mypy_boto3_devicefarm.paginator import ListSuitesPaginator
 
 def get_list_suites_paginator() -> ListSuitesPaginator:
     return boto3.client("devicefarm").get_paginator("list_suites")
 ```
 
-[Paginator.ListSuites documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListSuites)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListSuites)
 
 ```python
 class ListSuitesPaginator(Boto3Paginator):
@@ -416,13 +416,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_tests")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import ListTestsPaginator
+from mypy_boto3_devicefarm.paginator import ListTestsPaginator
 
 def get_list_tests_paginator() -> ListTestsPaginator:
     return boto3.client("devicefarm").get_paginator("list_tests")
 ```
 
-[Paginator.ListTests documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListTests)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListTests)
 
 ```python
 class ListTestsPaginator(Boto3Paginator):
@@ -440,13 +440,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_unique_prob
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import ListUniqueProblemsPaginator
+from mypy_boto3_devicefarm.paginator import ListUniqueProblemsPaginator
 
 def get_list_unique_problems_paginator() -> ListUniqueProblemsPaginator:
     return boto3.client("devicefarm").get_paginator("list_unique_problems")
 ```
 
-[Paginator.ListUniqueProblems documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListUniqueProblems)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListUniqueProblems)
 
 ```python
 class ListUniqueProblemsPaginator(Boto3Paginator):
@@ -464,13 +464,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_uploads")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import ListUploadsPaginator
+from mypy_boto3_devicefarm.paginator import ListUploadsPaginator
 
 def get_list_uploads_paginator() -> ListUploadsPaginator:
     return boto3.client("devicefarm").get_paginator("list_uploads")
 ```
 
-[Paginator.ListUploads documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListUploads)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListUploads)
 
 ```python
 class ListUploadsPaginator(Boto3Paginator):
@@ -489,13 +489,13 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_vpce_config
 Can be used directly:
 
 ```python
-from mypy_boto3_devicefarm.paginators import ListVPCEConfigurationsPaginator
+from mypy_boto3_devicefarm.paginator import ListVPCEConfigurationsPaginator
 
 def get_list_vpce_configurations_paginator() -> ListVPCEConfigurationsPaginator:
     return boto3.client("devicefarm").get_paginator("list_vpce_configurations")
 ```
 
-[Paginator.ListVPCEConfigurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListVPCEConfigurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListVPCEConfigurations)
 
 ```python
 class ListVPCEConfigurationsPaginator(Boto3Paginator):

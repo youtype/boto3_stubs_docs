@@ -13,7 +13,7 @@ pip install mypy-boto3-appintegrations
   - [AppIntegrationsServiceClient](#appintegrationsserviceclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## AppIntegrationsServiceClient
 
@@ -67,7 +67,7 @@ AppIntegrationsServiceClient [exceptions](./client.md#exceptions)
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

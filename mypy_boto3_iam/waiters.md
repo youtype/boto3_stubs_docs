@@ -18,13 +18,13 @@ Type annotations for `boto3.client("iam").get_waiter("instance_profile_exists")`
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.waiters import InstanceProfileExistsWaiter
+from mypy_boto3_iam.waiter import InstanceProfileExistsWaiter
 
 def get_instance_profile_exists_waiter() -> InstanceProfileExistsWaiter:
     return boto3.client("iam").get_waiter("instance_profile_exists")
 ```
 
-[Waiter.InstanceProfileExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Waiter.InstanceProfileExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Waiter.instance_profile_exists)
 
 ```python
 class InstanceProfileExistsWaiter(Boto3Waiter):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("iam").get_waiter("policy_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.waiters import PolicyExistsWaiter
+from mypy_boto3_iam.waiter import PolicyExistsWaiter
 
 def get_policy_exists_waiter() -> PolicyExistsWaiter:
     return boto3.client("iam").get_waiter("policy_exists")
 ```
 
-[Waiter.PolicyExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Waiter.PolicyExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Waiter.policy_exists)
 
 ```python
 class PolicyExistsWaiter(Boto3Waiter):
@@ -66,13 +66,13 @@ Type annotations for `boto3.client("iam").get_waiter("role_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.waiters import RoleExistsWaiter
+from mypy_boto3_iam.waiter import RoleExistsWaiter
 
 def get_role_exists_waiter() -> RoleExistsWaiter:
     return boto3.client("iam").get_waiter("role_exists")
 ```
 
-[Waiter.RoleExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Waiter.RoleExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Waiter.role_exists)
 
 ```python
 class RoleExistsWaiter(Boto3Waiter):
@@ -90,13 +90,13 @@ Type annotations for `boto3.client("iam").get_waiter("user_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iam.waiters import UserExistsWaiter
+from mypy_boto3_iam.waiter import UserExistsWaiter
 
 def get_user_exists_waiter() -> UserExistsWaiter:
     return boto3.client("iam").get_waiter("user_exists")
 ```
 
-[Waiter.UserExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Waiter.UserExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Waiter.user_exists)
 
 ```python
 class UserExistsWaiter(Boto3Waiter):

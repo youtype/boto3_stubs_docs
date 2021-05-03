@@ -1,11 +1,11 @@
-# Structures for boto3 SSOOIDC module
+# Typed dictionaries for boto3 SSOOIDC module
 
 > [Index](../README.md) > [SSOOIDC](./README.md) > Structures
 
 Auto-generated documentation for [SSOOIDC](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC)
 type annotations stubs module [mypy_boto3_sso_oidc](https://pypi.org/project/mypy-boto3-sso-oidc/).
 
-- [Structures for boto3 SSOOIDC module](#structures-for-boto3-ssooidc-module)
+- [Typed dictionaries for boto3 SSOOIDC module](#typed-dictionaries-for-boto3-ssooidc-module)
   - [CreateTokenResponseTypeDef](#createtokenresponsetypedef)
   - [RegisterClientResponseTypeDef](#registerclientresponsetypedef)
   - [StartDeviceAuthorizationResponseTypeDef](#startdeviceauthorizationresponsetypedef)

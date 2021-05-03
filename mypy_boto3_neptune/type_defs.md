@@ -1,11 +1,11 @@
-# Structures for boto3 Neptune module
+# Typed dictionaries for boto3 Neptune module
 
 > [Index](../README.md) > [Neptune](./README.md) > Structures
 
 Auto-generated documentation for [Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)
 type annotations stubs module [mypy_boto3_neptune](https://pypi.org/project/mypy-boto3-neptune/).
 
-- [Structures for boto3 Neptune module](#structures-for-boto3-neptune-module)
+- [Typed dictionaries for boto3 Neptune module](#typed-dictionaries-for-boto3-neptune-module)
   - [AddSourceIdentifierToSubscriptionResultTypeDef](#addsourceidentifiertosubscriptionresulttypedef)
   - [ApplyPendingMaintenanceActionResultTypeDef](#applypendingmaintenanceactionresulttypedef)
   - [AvailabilityZoneTypeDef](#availabilityzonetypedef)
@@ -219,9 +219,7 @@ from mypy_boto3_neptune.type_defs import CreateDBClusterEndpointOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DBClusterEndpointIdentifier`: `str`
 - `DBClusterIdentifier`: `str`
 - `DBClusterEndpointResourceIdentifier`: `str`
@@ -233,6 +231,8 @@ Optional fields:
 - `ExcludedMembers`: `List[str]`
 - `DBClusterEndpointArn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateDBClusterParameterGroupResultTypeDef
@@ -858,9 +858,7 @@ from mypy_boto3_neptune.type_defs import DeleteDBClusterEndpointOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DBClusterEndpointIdentifier`: `str`
 - `DBClusterIdentifier`: `str`
 - `DBClusterEndpointResourceIdentifier`: `str`
@@ -872,6 +870,8 @@ Optional fields:
 - `ExcludedMembers`: `List[str]`
 - `DBClusterEndpointArn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteDBClusterResultTypeDef
@@ -1167,9 +1167,7 @@ from mypy_boto3_neptune.type_defs import ModifyDBClusterEndpointOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `DBClusterEndpointIdentifier`: `str`
 - `DBClusterIdentifier`: `str`
 - `DBClusterEndpointResourceIdentifier`: `str`
@@ -1181,6 +1179,8 @@ Optional fields:
 - `ExcludedMembers`: `List[str]`
 - `DBClusterEndpointArn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ModifyDBClusterResultTypeDef

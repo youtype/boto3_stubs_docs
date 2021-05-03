@@ -32,7 +32,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_mwaa.client import MWAAClient
+
+def get_mwaa_client() -> MWAAClient:
+    return boto3.client("mwaa")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client)
 
 ## Exceptions
 
@@ -63,7 +68,7 @@ Exceptions:
 
 Type annotations for `boto3.client("mwaa").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -77,7 +82,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("mwaa").create_cli_token` method.
 
-[Client.create_cli_token documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_cli_token)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_cli_token]
 
 ```python
 def create_cli_token(
@@ -91,7 +96,7 @@ def create_cli_token(
 
 Type annotations for `boto3.client("mwaa").create_environment` method.
 
-[Client.create_environment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_environment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_environment]
 
 ```python
 def create_environment(
@@ -123,7 +128,7 @@ def create_environment(
 
 Type annotations for `boto3.client("mwaa").create_web_login_token` method.
 
-[Client.create_web_login_token documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_web_login_token)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_web_login_token]
 
 ```python
 def create_web_login_token(
@@ -137,7 +142,7 @@ def create_web_login_token(
 
 Type annotations for `boto3.client("mwaa").delete_environment` method.
 
-[Client.delete_environment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.delete_environment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.delete_environment]
 
 ```python
 def delete_environment(
@@ -151,7 +156,7 @@ def delete_environment(
 
 Type annotations for `boto3.client("mwaa").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -168,7 +173,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("mwaa").get_environment` method.
 
-[Client.get_environment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.get_environment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.get_environment]
 
 ```python
 def get_environment(
@@ -182,7 +187,7 @@ def get_environment(
 
 Type annotations for `boto3.client("mwaa").list_environments` method.
 
-[Client.list_environments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.list_environments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.list_environments]
 
 ```python
 def list_environments(
@@ -197,7 +202,7 @@ def list_environments(
 
 Type annotations for `boto3.client("mwaa").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -211,7 +216,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("mwaa").publish_metrics` method.
 
-[Client.publish_metrics documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.publish_metrics)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.publish_metrics]
 
 ```python
 def publish_metrics(
@@ -226,7 +231,7 @@ def publish_metrics(
 
 Type annotations for `boto3.client("mwaa").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -241,7 +246,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("mwaa").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -256,7 +261,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("mwaa").update_environment` method.
 
-[Client.update_environment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.update_environment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.update_environment]
 
 ```python
 def update_environment(

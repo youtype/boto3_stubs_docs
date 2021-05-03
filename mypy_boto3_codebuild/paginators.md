@@ -26,13 +26,13 @@ Type annotations for `boto3.client("codebuild").get_paginator("describe_code_cov
 Can be used directly:
 
 ```python
-from mypy_boto3_codebuild.paginators import DescribeCodeCoveragesPaginator
+from mypy_boto3_codebuild.paginator import DescribeCodeCoveragesPaginator
 
 def get_describe_code_coverages_paginator() -> DescribeCodeCoveragesPaginator:
     return boto3.client("codebuild").get_paginator("describe_code_coverages")
 ```
 
-[Paginator.DescribeCodeCoverages documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.DescribeCodeCoverages)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.DescribeCodeCoverages)
 
 ```python
 class DescribeCodeCoveragesPaginator(Boto3Paginator):
@@ -54,13 +54,13 @@ Type annotations for `boto3.client("codebuild").get_paginator("describe_test_cas
 Can be used directly:
 
 ```python
-from mypy_boto3_codebuild.paginators import DescribeTestCasesPaginator
+from mypy_boto3_codebuild.paginator import DescribeTestCasesPaginator
 
 def get_describe_test_cases_paginator() -> DescribeTestCasesPaginator:
     return boto3.client("codebuild").get_paginator("describe_test_cases")
 ```
 
-[Paginator.DescribeTestCases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.DescribeTestCases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.DescribeTestCases)
 
 ```python
 class DescribeTestCasesPaginator(Boto3Paginator):
@@ -79,13 +79,13 @@ Type annotations for `boto3.client("codebuild").get_paginator("list_build_batche
 Can be used directly:
 
 ```python
-from mypy_boto3_codebuild.paginators import ListBuildBatchesPaginator
+from mypy_boto3_codebuild.paginator import ListBuildBatchesPaginator
 
 def get_list_build_batches_paginator() -> ListBuildBatchesPaginator:
     return boto3.client("codebuild").get_paginator("list_build_batches")
 ```
 
-[Paginator.ListBuildBatches documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildBatches)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildBatches)
 
 ```python
 class ListBuildBatchesPaginator(Boto3Paginator):
@@ -104,13 +104,13 @@ Type annotations for `boto3.client("codebuild").get_paginator("list_build_batche
 Can be used directly:
 
 ```python
-from mypy_boto3_codebuild.paginators import ListBuildBatchesForProjectPaginator
+from mypy_boto3_codebuild.paginator import ListBuildBatchesForProjectPaginator
 
 def get_list_build_batches_for_project_paginator() -> ListBuildBatchesForProjectPaginator:
     return boto3.client("codebuild").get_paginator("list_build_batches_for_project")
 ```
 
-[Paginator.ListBuildBatchesForProject documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildBatchesForProject)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildBatchesForProject)
 
 ```python
 class ListBuildBatchesForProjectPaginator(Boto3Paginator):
@@ -130,13 +130,13 @@ Type annotations for `boto3.client("codebuild").get_paginator("list_builds")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_codebuild.paginators import ListBuildsPaginator
+from mypy_boto3_codebuild.paginator import ListBuildsPaginator
 
 def get_list_builds_paginator() -> ListBuildsPaginator:
     return boto3.client("codebuild").get_paginator("list_builds")
 ```
 
-[Paginator.ListBuilds documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuilds)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuilds)
 
 ```python
 class ListBuildsPaginator(Boto3Paginator):
@@ -154,13 +154,13 @@ Type annotations for `boto3.client("codebuild").get_paginator("list_builds_for_p
 Can be used directly:
 
 ```python
-from mypy_boto3_codebuild.paginators import ListBuildsForProjectPaginator
+from mypy_boto3_codebuild.paginator import ListBuildsForProjectPaginator
 
 def get_list_builds_for_project_paginator() -> ListBuildsForProjectPaginator:
     return boto3.client("codebuild").get_paginator("list_builds_for_project")
 ```
 
-[Paginator.ListBuildsForProject documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildsForProject)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildsForProject)
 
 ```python
 class ListBuildsForProjectPaginator(Boto3Paginator):
@@ -179,13 +179,13 @@ Type annotations for `boto3.client("codebuild").get_paginator("list_projects")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_codebuild.paginators import ListProjectsPaginator
+from mypy_boto3_codebuild.paginator import ListProjectsPaginator
 
 def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("codebuild").get_paginator("list_projects")
 ```
 
-[Paginator.ListProjects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListProjects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListProjects)
 
 ```python
 class ListProjectsPaginator(Boto3Paginator):
@@ -204,13 +204,13 @@ Type annotations for `boto3.client("codebuild").get_paginator("list_report_group
 Can be used directly:
 
 ```python
-from mypy_boto3_codebuild.paginators import ListReportGroupsPaginator
+from mypy_boto3_codebuild.paginator import ListReportGroupsPaginator
 
 def get_list_report_groups_paginator() -> ListReportGroupsPaginator:
     return boto3.client("codebuild").get_paginator("list_report_groups")
 ```
 
-[Paginator.ListReportGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReportGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReportGroups)
 
 ```python
 class ListReportGroupsPaginator(Boto3Paginator):
@@ -229,13 +229,13 @@ Type annotations for `boto3.client("codebuild").get_paginator("list_reports")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_codebuild.paginators import ListReportsPaginator
+from mypy_boto3_codebuild.paginator import ListReportsPaginator
 
 def get_list_reports_paginator() -> ListReportsPaginator:
     return boto3.client("codebuild").get_paginator("list_reports")
 ```
 
-[Paginator.ListReports documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReports)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReports)
 
 ```python
 class ListReportsPaginator(Boto3Paginator):
@@ -254,13 +254,13 @@ Type annotations for `boto3.client("codebuild").get_paginator("list_reports_for_
 Can be used directly:
 
 ```python
-from mypy_boto3_codebuild.paginators import ListReportsForReportGroupPaginator
+from mypy_boto3_codebuild.paginator import ListReportsForReportGroupPaginator
 
 def get_list_reports_for_report_group_paginator() -> ListReportsForReportGroupPaginator:
     return boto3.client("codebuild").get_paginator("list_reports_for_report_group")
 ```
 
-[Paginator.ListReportsForReportGroup documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReportsForReportGroup)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReportsForReportGroup)
 
 ```python
 class ListReportsForReportGroupPaginator(Boto3Paginator):
@@ -280,13 +280,13 @@ Type annotations for `boto3.client("codebuild").get_paginator("list_shared_proje
 Can be used directly:
 
 ```python
-from mypy_boto3_codebuild.paginators import ListSharedProjectsPaginator
+from mypy_boto3_codebuild.paginator import ListSharedProjectsPaginator
 
 def get_list_shared_projects_paginator() -> ListSharedProjectsPaginator:
     return boto3.client("codebuild").get_paginator("list_shared_projects")
 ```
 
-[Paginator.ListSharedProjects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListSharedProjects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListSharedProjects)
 
 ```python
 class ListSharedProjectsPaginator(Boto3Paginator):
@@ -305,13 +305,13 @@ Type annotations for `boto3.client("codebuild").get_paginator("list_shared_repor
 Can be used directly:
 
 ```python
-from mypy_boto3_codebuild.paginators import ListSharedReportGroupsPaginator
+from mypy_boto3_codebuild.paginator import ListSharedReportGroupsPaginator
 
 def get_list_shared_report_groups_paginator() -> ListSharedReportGroupsPaginator:
     return boto3.client("codebuild").get_paginator("list_shared_report_groups")
 ```
 
-[Paginator.ListSharedReportGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListSharedReportGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListSharedReportGroups)
 
 ```python
 class ListSharedReportGroupsPaginator(Boto3Paginator):

@@ -1,11 +1,11 @@
-# Structures for boto3 CloudTrail module
+# Typed dictionaries for boto3 CloudTrail module
 
 > [Index](../README.md) > [CloudTrail](./README.md) > Structures
 
 Auto-generated documentation for [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
 type annotations stubs module [mypy_boto3_cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
-- [Structures for boto3 CloudTrail module](#structures-for-boto3-cloudtrail-module)
+- [Typed dictionaries for boto3 CloudTrail module](#typed-dictionaries-for-boto3-cloudtrail-module)
   - [AdvancedEventSelectorTypeDef](#advancedeventselectortypedef)
   - [AdvancedFieldSelectorTypeDef](#advancedfieldselectortypedef)
   - [CreateTrailResponseTypeDef](#createtrailresponsetypedef)

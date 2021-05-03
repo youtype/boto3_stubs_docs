@@ -1,11 +1,11 @@
-# Structures for boto3 ElasticInference module
+# Typed dictionaries for boto3 ElasticInference module
 
 > [Index](../README.md) > [ElasticInference](./README.md) > Structures
 
 Auto-generated documentation for [ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
 type annotations stubs module [mypy_boto3_elastic_inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
 
-- [Structures for boto3 ElasticInference module](#structures-for-boto3-elasticinference-module)
+- [Typed dictionaries for boto3 ElasticInference module](#typed-dictionaries-for-boto3-elasticinference-module)
   - [AcceleratorTypeOfferingTypeDef](#acceleratortypeofferingtypedef)
   - [AcceleratorTypeTypeDef](#acceleratortypetypedef)
   - [DescribeAcceleratorOfferingsResponseTypeDef](#describeacceleratorofferingsresponsetypedef)

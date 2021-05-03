@@ -1,11 +1,11 @@
-# Structures for boto3 EKS module
+# Typed dictionaries for boto3 EKS module
 
 > [Index](../README.md) > [EKS](./README.md) > Structures
 
 Auto-generated documentation for [EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
 type annotations stubs module [mypy_boto3_eks](https://pypi.org/project/mypy-boto3-eks/).
 
-- [Structures for boto3 EKS module](#structures-for-boto3-eks-module)
+- [Typed dictionaries for boto3 EKS module](#typed-dictionaries-for-boto3-eks-module)
   - [AddonHealthTypeDef](#addonhealthtypedef)
   - [AddonInfoTypeDef](#addoninfotypedef)
   - [AddonIssueTypeDef](#addonissuetypedef)

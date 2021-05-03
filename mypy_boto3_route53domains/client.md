@@ -49,7 +49,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_route53domains.client import Route53DomainsClient
+
+def get_route53domains_client() -> Route53DomainsClient:
+    return boto3.client("route53domains")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client)
 
 ## Exceptions
 
@@ -82,7 +87,7 @@ Exceptions:
 
 Type annotations for `boto3.client("route53domains").accept_domain_transfer_from_another_aws_account` method.
 
-[Client.accept_domain_transfer_from_another_aws_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.accept_domain_transfer_from_another_aws_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.accept_domain_transfer_from_another_aws_account]
 
 ```python
 def accept_domain_transfer_from_another_aws_account(
@@ -97,7 +102,7 @@ def accept_domain_transfer_from_another_aws_account(
 
 Type annotations for `boto3.client("route53domains").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -111,7 +116,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("route53domains").cancel_domain_transfer_to_another_aws_account` method.
 
-[Client.cancel_domain_transfer_to_another_aws_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.cancel_domain_transfer_to_another_aws_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.cancel_domain_transfer_to_another_aws_account]
 
 ```python
 def cancel_domain_transfer_to_another_aws_account(
@@ -125,7 +130,7 @@ def cancel_domain_transfer_to_another_aws_account(
 
 Type annotations for `boto3.client("route53domains").check_domain_availability` method.
 
-[Client.check_domain_availability documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.check_domain_availability)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.check_domain_availability]
 
 ```python
 def check_domain_availability(
@@ -140,7 +145,7 @@ def check_domain_availability(
 
 Type annotations for `boto3.client("route53domains").check_domain_transferability` method.
 
-[Client.check_domain_transferability documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.check_domain_transferability)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.check_domain_transferability]
 
 ```python
 def check_domain_transferability(
@@ -155,7 +160,7 @@ def check_domain_transferability(
 
 Type annotations for `boto3.client("route53domains").delete_tags_for_domain` method.
 
-[Client.delete_tags_for_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.delete_tags_for_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.delete_tags_for_domain]
 
 ```python
 def delete_tags_for_domain(
@@ -170,7 +175,7 @@ def delete_tags_for_domain(
 
 Type annotations for `boto3.client("route53domains").disable_domain_auto_renew` method.
 
-[Client.disable_domain_auto_renew documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.disable_domain_auto_renew)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.disable_domain_auto_renew]
 
 ```python
 def disable_domain_auto_renew(
@@ -184,7 +189,7 @@ def disable_domain_auto_renew(
 
 Type annotations for `boto3.client("route53domains").disable_domain_transfer_lock` method.
 
-[Client.disable_domain_transfer_lock documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.disable_domain_transfer_lock)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.disable_domain_transfer_lock]
 
 ```python
 def disable_domain_transfer_lock(
@@ -198,7 +203,7 @@ def disable_domain_transfer_lock(
 
 Type annotations for `boto3.client("route53domains").enable_domain_auto_renew` method.
 
-[Client.enable_domain_auto_renew documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.enable_domain_auto_renew)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.enable_domain_auto_renew]
 
 ```python
 def enable_domain_auto_renew(
@@ -212,7 +217,7 @@ def enable_domain_auto_renew(
 
 Type annotations for `boto3.client("route53domains").enable_domain_transfer_lock` method.
 
-[Client.enable_domain_transfer_lock documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.enable_domain_transfer_lock)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.enable_domain_transfer_lock]
 
 ```python
 def enable_domain_transfer_lock(
@@ -226,7 +231,7 @@ def enable_domain_transfer_lock(
 
 Type annotations for `boto3.client("route53domains").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -243,7 +248,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("route53domains").get_contact_reachability_status` method.
 
-[Client.get_contact_reachability_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_contact_reachability_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_contact_reachability_status]
 
 ```python
 def get_contact_reachability_status(
@@ -257,7 +262,7 @@ def get_contact_reachability_status(
 
 Type annotations for `boto3.client("route53domains").get_domain_detail` method.
 
-[Client.get_domain_detail documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_domain_detail)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_domain_detail]
 
 ```python
 def get_domain_detail(
@@ -271,7 +276,7 @@ def get_domain_detail(
 
 Type annotations for `boto3.client("route53domains").get_domain_suggestions` method.
 
-[Client.get_domain_suggestions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_domain_suggestions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_domain_suggestions]
 
 ```python
 def get_domain_suggestions(
@@ -287,7 +292,7 @@ def get_domain_suggestions(
 
 Type annotations for `boto3.client("route53domains").get_operation_detail` method.
 
-[Client.get_operation_detail documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_operation_detail)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_operation_detail]
 
 ```python
 def get_operation_detail(
@@ -301,7 +306,7 @@ def get_operation_detail(
 
 Type annotations for `boto3.client("route53domains").list_domains` method.
 
-[Client.list_domains documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.list_domains)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.list_domains]
 
 ```python
 def list_domains(
@@ -316,7 +321,7 @@ def list_domains(
 
 Type annotations for `boto3.client("route53domains").list_operations` method.
 
-[Client.list_operations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.list_operations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.list_operations]
 
 ```python
 def list_operations(
@@ -332,7 +337,7 @@ def list_operations(
 
 Type annotations for `boto3.client("route53domains").list_tags_for_domain` method.
 
-[Client.list_tags_for_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.list_tags_for_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.list_tags_for_domain]
 
 ```python
 def list_tags_for_domain(
@@ -346,7 +351,7 @@ def list_tags_for_domain(
 
 Type annotations for `boto3.client("route53domains").register_domain` method.
 
-[Client.register_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.register_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.register_domain]
 
 ```python
 def register_domain(
@@ -369,7 +374,7 @@ def register_domain(
 
 Type annotations for `boto3.client("route53domains").reject_domain_transfer_from_another_aws_account` method.
 
-[Client.reject_domain_transfer_from_another_aws_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.reject_domain_transfer_from_another_aws_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.reject_domain_transfer_from_another_aws_account]
 
 ```python
 def reject_domain_transfer_from_another_aws_account(
@@ -383,7 +388,7 @@ def reject_domain_transfer_from_another_aws_account(
 
 Type annotations for `boto3.client("route53domains").renew_domain` method.
 
-[Client.renew_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.renew_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.renew_domain]
 
 ```python
 def renew_domain(
@@ -399,7 +404,7 @@ def renew_domain(
 
 Type annotations for `boto3.client("route53domains").resend_contact_reachability_email` method.
 
-[Client.resend_contact_reachability_email documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.resend_contact_reachability_email)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.resend_contact_reachability_email]
 
 ```python
 def resend_contact_reachability_email(
@@ -413,7 +418,7 @@ def resend_contact_reachability_email(
 
 Type annotations for `boto3.client("route53domains").retrieve_domain_auth_code` method.
 
-[Client.retrieve_domain_auth_code documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.retrieve_domain_auth_code)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.retrieve_domain_auth_code]
 
 ```python
 def retrieve_domain_auth_code(
@@ -427,7 +432,7 @@ def retrieve_domain_auth_code(
 
 Type annotations for `boto3.client("route53domains").transfer_domain` method.
 
-[Client.transfer_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.transfer_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.transfer_domain]
 
 ```python
 def transfer_domain(
@@ -452,7 +457,7 @@ def transfer_domain(
 
 Type annotations for `boto3.client("route53domains").transfer_domain_to_another_aws_account` method.
 
-[Client.transfer_domain_to_another_aws_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.transfer_domain_to_another_aws_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.transfer_domain_to_another_aws_account]
 
 ```python
 def transfer_domain_to_another_aws_account(
@@ -467,7 +472,7 @@ def transfer_domain_to_another_aws_account(
 
 Type annotations for `boto3.client("route53domains").update_domain_contact` method.
 
-[Client.update_domain_contact documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_domain_contact)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_domain_contact]
 
 ```python
 def update_domain_contact(
@@ -484,7 +489,7 @@ def update_domain_contact(
 
 Type annotations for `boto3.client("route53domains").update_domain_contact_privacy` method.
 
-[Client.update_domain_contact_privacy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_domain_contact_privacy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_domain_contact_privacy]
 
 ```python
 def update_domain_contact_privacy(
@@ -501,7 +506,7 @@ def update_domain_contact_privacy(
 
 Type annotations for `boto3.client("route53domains").update_domain_nameservers` method.
 
-[Client.update_domain_nameservers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_domain_nameservers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_domain_nameservers]
 
 ```python
 def update_domain_nameservers(
@@ -517,7 +522,7 @@ def update_domain_nameservers(
 
 Type annotations for `boto3.client("route53domains").update_tags_for_domain` method.
 
-[Client.update_tags_for_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_tags_for_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_tags_for_domain]
 
 ```python
 def update_tags_for_domain(
@@ -532,7 +537,7 @@ def update_tags_for_domain(
 
 Type annotations for `boto3.client("route53domains").view_billing` method.
 
-[Client.view_billing documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.view_billing)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.view_billing]
 
 ```python
 def view_billing(

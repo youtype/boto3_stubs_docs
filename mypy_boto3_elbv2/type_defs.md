@@ -1,11 +1,11 @@
-# Structures for boto3 ElasticLoadBalancingv2 module
+# Typed dictionaries for boto3 ElasticLoadBalancingv2 module
 
 > [Index](../README.md) > [ElasticLoadBalancingv2](./README.md) > Structures
 
 Auto-generated documentation for [ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
 type annotations stubs module [mypy_boto3_elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
 
-- [Structures for boto3 ElasticLoadBalancingv2 module](#structures-for-boto3-elasticloadbalancingv2-module)
+- [Typed dictionaries for boto3 ElasticLoadBalancingv2 module](#typed-dictionaries-for-boto3-elasticloadbalancingv2-module)
   - [ActionTypeDef](#actiontypedef)
   - [AddListenerCertificatesOutputTypeDef](#addlistenercertificatesoutputtypedef)
   - [AuthenticateCognitoActionConfigTypeDef](#authenticatecognitoactionconfigtypedef)
@@ -101,11 +101,11 @@ from mypy_boto3_elbv2.type_defs import AddListenerCertificatesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Certificates`: `List["CertificateTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## AuthenticateCognitoActionConfigTypeDef
@@ -207,11 +207,11 @@ from mypy_boto3_elbv2.type_defs import CreateListenerOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Listeners`: `List["ListenerTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateLoadBalancerOutputTypeDef
@@ -221,11 +221,11 @@ from mypy_boto3_elbv2.type_defs import CreateLoadBalancerOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `LoadBalancers`: `List["LoadBalancerTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateRuleOutputTypeDef
@@ -235,11 +235,11 @@ from mypy_boto3_elbv2.type_defs import CreateRuleOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Rules`: `List["RuleTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateTargetGroupOutputTypeDef
@@ -249,11 +249,11 @@ from mypy_boto3_elbv2.type_defs import CreateTargetGroupOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TargetGroups`: `List["TargetGroupTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeAccountLimitsOutputTypeDef
@@ -263,12 +263,12 @@ from mypy_boto3_elbv2.type_defs import DescribeAccountLimitsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Limits`: `List["LimitTypeDef"]`
 - `NextMarker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeListenerCertificatesOutputTypeDef
@@ -278,12 +278,12 @@ from mypy_boto3_elbv2.type_defs import DescribeListenerCertificatesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Certificates`: `List["CertificateTypeDef"]`
 - `NextMarker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeListenersOutputTypeDef
@@ -293,12 +293,12 @@ from mypy_boto3_elbv2.type_defs import DescribeListenersOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Listeners`: `List["ListenerTypeDef"]`
 - `NextMarker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeLoadBalancerAttributesOutputTypeDef
@@ -308,11 +308,11 @@ from mypy_boto3_elbv2.type_defs import DescribeLoadBalancerAttributesOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Attributes`: `List["LoadBalancerAttributeTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeLoadBalancersOutputTypeDef
@@ -322,12 +322,12 @@ from mypy_boto3_elbv2.type_defs import DescribeLoadBalancersOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `LoadBalancers`: `List["LoadBalancerTypeDef"]`
 - `NextMarker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeRulesOutputTypeDef
@@ -337,12 +337,12 @@ from mypy_boto3_elbv2.type_defs import DescribeRulesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Rules`: `List["RuleTypeDef"]`
 - `NextMarker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeSSLPoliciesOutputTypeDef
@@ -352,12 +352,12 @@ from mypy_boto3_elbv2.type_defs import DescribeSSLPoliciesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `SslPolicies`: `List["SslPolicyTypeDef"]`
 - `NextMarker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeTagsOutputTypeDef
@@ -367,11 +367,11 @@ from mypy_boto3_elbv2.type_defs import DescribeTagsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TagDescriptions`: `List["TagDescriptionTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeTargetGroupAttributesOutputTypeDef
@@ -381,11 +381,11 @@ from mypy_boto3_elbv2.type_defs import DescribeTargetGroupAttributesOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Attributes`: `List["TargetGroupAttributeTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeTargetGroupsOutputTypeDef
@@ -395,12 +395,12 @@ from mypy_boto3_elbv2.type_defs import DescribeTargetGroupsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TargetGroups`: `List["TargetGroupTypeDef"]`
 - `NextMarker`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeTargetHealthOutputTypeDef
@@ -410,11 +410,11 @@ from mypy_boto3_elbv2.type_defs import DescribeTargetHealthOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TargetHealthDescriptions`: `List["TargetHealthDescriptionTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## FixedResponseActionConfigTypeDef
@@ -612,11 +612,11 @@ from mypy_boto3_elbv2.type_defs import ModifyListenerOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Listeners`: `List["ListenerTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ModifyLoadBalancerAttributesOutputTypeDef
@@ -626,11 +626,11 @@ from mypy_boto3_elbv2.type_defs import ModifyLoadBalancerAttributesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Attributes`: `List["LoadBalancerAttributeTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ModifyRuleOutputTypeDef
@@ -640,11 +640,11 @@ from mypy_boto3_elbv2.type_defs import ModifyRuleOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Rules`: `List["RuleTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ModifyTargetGroupAttributesOutputTypeDef
@@ -654,11 +654,11 @@ from mypy_boto3_elbv2.type_defs import ModifyTargetGroupAttributesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Attributes`: `List["TargetGroupAttributeTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ModifyTargetGroupOutputTypeDef
@@ -668,11 +668,11 @@ from mypy_boto3_elbv2.type_defs import ModifyTargetGroupOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TargetGroups`: `List["TargetGroupTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PaginatorConfigTypeDef
@@ -825,11 +825,11 @@ from mypy_boto3_elbv2.type_defs import SetIpAddressTypeOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `IpAddressType`: `IpAddressType`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## SetRulePrioritiesOutputTypeDef
@@ -839,11 +839,11 @@ from mypy_boto3_elbv2.type_defs import SetRulePrioritiesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Rules`: `List["RuleTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## SetSecurityGroupsOutputTypeDef
@@ -853,11 +853,11 @@ from mypy_boto3_elbv2.type_defs import SetSecurityGroupsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `SecurityGroupIds`: `List[str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## SetSubnetsOutputTypeDef
@@ -867,12 +867,12 @@ from mypy_boto3_elbv2.type_defs import SetSubnetsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `AvailabilityZones`: `List["AvailabilityZoneTypeDef"]`
 - `IpAddressType`: `IpAddressType`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## SourceIpConditionConfigTypeDef

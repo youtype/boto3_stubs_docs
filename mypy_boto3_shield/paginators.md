@@ -16,13 +16,13 @@ Type annotations for `boto3.client("shield").get_paginator("list_attacks")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_shield.paginators import ListAttacksPaginator
+from mypy_boto3_shield.paginator import ListAttacksPaginator
 
 def get_list_attacks_paginator() -> ListAttacksPaginator:
     return boto3.client("shield").get_paginator("list_attacks")
 ```
 
-[Paginator.ListAttacks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Paginator.ListAttacks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Paginator.ListAttacks)
 
 ```python
 class ListAttacksPaginator(Boto3Paginator):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("shield").get_paginator("list_protections")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_shield.paginators import ListProtectionsPaginator
+from mypy_boto3_shield.paginator import ListProtectionsPaginator
 
 def get_list_protections_paginator() -> ListProtectionsPaginator:
     return boto3.client("shield").get_paginator("list_protections")
 ```
 
-[Paginator.ListProtections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Paginator.ListProtections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Paginator.ListProtections)
 
 ```python
 class ListProtectionsPaginator(Boto3Paginator):

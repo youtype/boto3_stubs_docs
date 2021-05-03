@@ -16,7 +16,7 @@ pip install mypy-boto3-sagemaker
   - [Paginators](#paginators)
   - [Waiters](#waiters)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## SageMakerClient
 
@@ -613,7 +613,7 @@ from mypy_boto3_sagemaker.literals import ActionStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

@@ -28,7 +28,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_dlm.client import DLMClient
+
+def get_dlm_client() -> DLMClient:
+    return boto3.client("dlm")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client)
 
 ## Exceptions
 
@@ -59,7 +64,7 @@ Exceptions:
 
 Type annotations for `boto3.client("dlm").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -73,7 +78,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("dlm").create_lifecycle_policy` method.
 
-[Client.create_lifecycle_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.create_lifecycle_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.create_lifecycle_policy]
 
 ```python
 def create_lifecycle_policy(
@@ -91,7 +96,7 @@ def create_lifecycle_policy(
 
 Type annotations for `boto3.client("dlm").delete_lifecycle_policy` method.
 
-[Client.delete_lifecycle_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.delete_lifecycle_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.delete_lifecycle_policy]
 
 ```python
 def delete_lifecycle_policy(
@@ -105,7 +110,7 @@ def delete_lifecycle_policy(
 
 Type annotations for `boto3.client("dlm").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -122,7 +127,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("dlm").get_lifecycle_policies` method.
 
-[Client.get_lifecycle_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.get_lifecycle_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.get_lifecycle_policies]
 
 ```python
 def get_lifecycle_policies(
@@ -140,7 +145,7 @@ def get_lifecycle_policies(
 
 Type annotations for `boto3.client("dlm").get_lifecycle_policy` method.
 
-[Client.get_lifecycle_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.get_lifecycle_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.get_lifecycle_policy]
 
 ```python
 def get_lifecycle_policy(
@@ -154,7 +159,7 @@ def get_lifecycle_policy(
 
 Type annotations for `boto3.client("dlm").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -168,7 +173,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("dlm").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -183,7 +188,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("dlm").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -198,7 +203,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("dlm").update_lifecycle_policy` method.
 
-[Client.update_lifecycle_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.update_lifecycle_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.update_lifecycle_policy]
 
 ```python
 def update_lifecycle_policy(

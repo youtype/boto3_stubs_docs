@@ -14,7 +14,7 @@ pip install mypy-boto3-rds-data
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## RDSDataServiceClient
 
@@ -78,7 +78,7 @@ from mypy_boto3_rds_data.literals import DecimalReturnType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

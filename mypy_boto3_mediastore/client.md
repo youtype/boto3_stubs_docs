@@ -42,7 +42,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_mediastore.client import MediaStoreClient
+
+def get_mediastore_client() -> MediaStoreClient:
+    return boto3.client("mediastore")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client)
 
 ## Exceptions
 
@@ -75,7 +80,7 @@ Exceptions:
 
 Type annotations for `boto3.client("mediastore").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -89,7 +94,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("mediastore").create_container` method.
 
-[Client.create_container documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.create_container)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.create_container]
 
 ```python
 def create_container(
@@ -104,7 +109,7 @@ def create_container(
 
 Type annotations for `boto3.client("mediastore").delete_container` method.
 
-[Client.delete_container documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_container)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_container]
 
 ```python
 def delete_container(
@@ -118,7 +123,7 @@ def delete_container(
 
 Type annotations for `boto3.client("mediastore").delete_container_policy` method.
 
-[Client.delete_container_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_container_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_container_policy]
 
 ```python
 def delete_container_policy(
@@ -132,7 +137,7 @@ def delete_container_policy(
 
 Type annotations for `boto3.client("mediastore").delete_cors_policy` method.
 
-[Client.delete_cors_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_cors_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_cors_policy]
 
 ```python
 def delete_cors_policy(
@@ -146,7 +151,7 @@ def delete_cors_policy(
 
 Type annotations for `boto3.client("mediastore").delete_lifecycle_policy` method.
 
-[Client.delete_lifecycle_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_lifecycle_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_lifecycle_policy]
 
 ```python
 def delete_lifecycle_policy(
@@ -160,7 +165,7 @@ def delete_lifecycle_policy(
 
 Type annotations for `boto3.client("mediastore").delete_metric_policy` method.
 
-[Client.delete_metric_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_metric_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_metric_policy]
 
 ```python
 def delete_metric_policy(
@@ -174,7 +179,7 @@ def delete_metric_policy(
 
 Type annotations for `boto3.client("mediastore").describe_container` method.
 
-[Client.describe_container documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.describe_container)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.describe_container]
 
 ```python
 def describe_container(
@@ -188,7 +193,7 @@ def describe_container(
 
 Type annotations for `boto3.client("mediastore").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -205,7 +210,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("mediastore").get_container_policy` method.
 
-[Client.get_container_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_container_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_container_policy]
 
 ```python
 def get_container_policy(
@@ -219,7 +224,7 @@ def get_container_policy(
 
 Type annotations for `boto3.client("mediastore").get_cors_policy` method.
 
-[Client.get_cors_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_cors_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_cors_policy]
 
 ```python
 def get_cors_policy(
@@ -233,7 +238,7 @@ def get_cors_policy(
 
 Type annotations for `boto3.client("mediastore").get_lifecycle_policy` method.
 
-[Client.get_lifecycle_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_lifecycle_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_lifecycle_policy]
 
 ```python
 def get_lifecycle_policy(
@@ -247,7 +252,7 @@ def get_lifecycle_policy(
 
 Type annotations for `boto3.client("mediastore").get_metric_policy` method.
 
-[Client.get_metric_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_metric_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_metric_policy]
 
 ```python
 def get_metric_policy(
@@ -261,7 +266,7 @@ def get_metric_policy(
 
 Type annotations for `boto3.client("mediastore").list_containers` method.
 
-[Client.list_containers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.list_containers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.list_containers]
 
 ```python
 def list_containers(
@@ -276,7 +281,7 @@ def list_containers(
 
 Type annotations for `boto3.client("mediastore").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -290,7 +295,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("mediastore").put_container_policy` method.
 
-[Client.put_container_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_container_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_container_policy]
 
 ```python
 def put_container_policy(
@@ -305,7 +310,7 @@ def put_container_policy(
 
 Type annotations for `boto3.client("mediastore").put_cors_policy` method.
 
-[Client.put_cors_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_cors_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_cors_policy]
 
 ```python
 def put_cors_policy(
@@ -320,7 +325,7 @@ def put_cors_policy(
 
 Type annotations for `boto3.client("mediastore").put_lifecycle_policy` method.
 
-[Client.put_lifecycle_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_lifecycle_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_lifecycle_policy]
 
 ```python
 def put_lifecycle_policy(
@@ -335,7 +340,7 @@ def put_lifecycle_policy(
 
 Type annotations for `boto3.client("mediastore").put_metric_policy` method.
 
-[Client.put_metric_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_metric_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_metric_policy]
 
 ```python
 def put_metric_policy(
@@ -350,7 +355,7 @@ def put_metric_policy(
 
 Type annotations for `boto3.client("mediastore").start_access_logging` method.
 
-[Client.start_access_logging documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.start_access_logging)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.start_access_logging]
 
 ```python
 def start_access_logging(
@@ -364,7 +369,7 @@ def start_access_logging(
 
 Type annotations for `boto3.client("mediastore").stop_access_logging` method.
 
-[Client.stop_access_logging documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.stop_access_logging)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.stop_access_logging]
 
 ```python
 def stop_access_logging(
@@ -378,7 +383,7 @@ def stop_access_logging(
 
 Type annotations for `boto3.client("mediastore").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -393,7 +398,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("mediastore").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.untag_resource]
 
 ```python
 def untag_resource(

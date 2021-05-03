@@ -1,11 +1,11 @@
-# Structures for boto3 RDSDataService module
+# Typed dictionaries for boto3 RDSDataService module
 
 > [Index](../README.md) > [RDSDataService](./README.md) > Structures
 
 Auto-generated documentation for [RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService)
 type annotations stubs module [mypy_boto3_rds_data](https://pypi.org/project/mypy-boto3-rds-data/).
 
-- [Structures for boto3 RDSDataService module](#structures-for-boto3-rdsdataservice-module)
+- [Typed dictionaries for boto3 RDSDataService module](#typed-dictionaries-for-boto3-rdsdataservice-module)
   - [ArrayValueTypeDef](#arrayvaluetypedef)
   - [BatchExecuteStatementResponseTypeDef](#batchexecutestatementresponsetypedef)
   - [BeginTransactionResponseTypeDef](#begintransactionresponsetypedef)

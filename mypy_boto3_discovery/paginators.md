@@ -20,13 +20,13 @@ Type annotations for `boto3.client("discovery").get_paginator("describe_agents")
 Can be used directly:
 
 ```python
-from mypy_boto3_discovery.paginators import DescribeAgentsPaginator
+from mypy_boto3_discovery.paginator import DescribeAgentsPaginator
 
 def get_describe_agents_paginator() -> DescribeAgentsPaginator:
     return boto3.client("discovery").get_paginator("describe_agents")
 ```
 
-[Paginator.DescribeAgents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeAgents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeAgents)
 
 ```python
 class DescribeAgentsPaginator(Boto3Paginator):
@@ -45,13 +45,13 @@ Type annotations for `boto3.client("discovery").get_paginator("describe_continuo
 Can be used directly:
 
 ```python
-from mypy_boto3_discovery.paginators import DescribeContinuousExportsPaginator
+from mypy_boto3_discovery.paginator import DescribeContinuousExportsPaginator
 
 def get_describe_continuous_exports_paginator() -> DescribeContinuousExportsPaginator:
     return boto3.client("discovery").get_paginator("describe_continuous_exports")
 ```
 
-[Paginator.DescribeContinuousExports documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeContinuousExports)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeContinuousExports)
 
 ```python
 class DescribeContinuousExportsPaginator(Boto3Paginator):
@@ -69,13 +69,13 @@ Type annotations for `boto3.client("discovery").get_paginator("describe_export_c
 Can be used directly:
 
 ```python
-from mypy_boto3_discovery.paginators import DescribeExportConfigurationsPaginator
+from mypy_boto3_discovery.paginator import DescribeExportConfigurationsPaginator
 
 def get_describe_export_configurations_paginator() -> DescribeExportConfigurationsPaginator:
     return boto3.client("discovery").get_paginator("describe_export_configurations")
 ```
 
-[Paginator.DescribeExportConfigurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeExportConfigurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeExportConfigurations)
 
 ```python
 class DescribeExportConfigurationsPaginator(Boto3Paginator):
@@ -93,13 +93,13 @@ Type annotations for `boto3.client("discovery").get_paginator("describe_export_t
 Can be used directly:
 
 ```python
-from mypy_boto3_discovery.paginators import DescribeExportTasksPaginator
+from mypy_boto3_discovery.paginator import DescribeExportTasksPaginator
 
 def get_describe_export_tasks_paginator() -> DescribeExportTasksPaginator:
     return boto3.client("discovery").get_paginator("describe_export_tasks")
 ```
 
-[Paginator.DescribeExportTasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeExportTasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeExportTasks)
 
 ```python
 class DescribeExportTasksPaginator(Boto3Paginator):
@@ -118,13 +118,13 @@ Type annotations for `boto3.client("discovery").get_paginator("describe_tags")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_discovery.paginators import DescribeTagsPaginator
+from mypy_boto3_discovery.paginator import DescribeTagsPaginator
 
 def get_describe_tags_paginator() -> DescribeTagsPaginator:
     return boto3.client("discovery").get_paginator("describe_tags")
 ```
 
-[Paginator.DescribeTags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeTags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.DescribeTags)
 
 ```python
 class DescribeTagsPaginator(Boto3Paginator):
@@ -142,13 +142,13 @@ Type annotations for `boto3.client("discovery").get_paginator("list_configuratio
 Can be used directly:
 
 ```python
-from mypy_boto3_discovery.paginators import ListConfigurationsPaginator
+from mypy_boto3_discovery.paginator import ListConfigurationsPaginator
 
 def get_list_configurations_paginator() -> ListConfigurationsPaginator:
     return boto3.client("discovery").get_paginator("list_configurations")
 ```
 
-[Paginator.ListConfigurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.ListConfigurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Paginator.ListConfigurations)
 
 ```python
 class ListConfigurationsPaginator(Boto3Paginator):

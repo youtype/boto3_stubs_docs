@@ -14,7 +14,7 @@ pip install mypy-boto3-timestream-write
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## TimestreamWriteClient
 
@@ -92,7 +92,7 @@ from mypy_boto3_timestream_write.literals import DimensionValueType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

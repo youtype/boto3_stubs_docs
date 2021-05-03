@@ -22,13 +22,13 @@ Type annotations for `boto3.client("devops-guru").get_paginator("describe_resour
 Can be used directly:
 
 ```python
-from mypy_boto3_devops_guru.paginators import DescribeResourceCollectionHealthPaginator
+from mypy_boto3_devops_guru.paginator import DescribeResourceCollectionHealthPaginator
 
 def get_describe_resource_collection_health_paginator() -> DescribeResourceCollectionHealthPaginator:
     return boto3.client("devops-guru").get_paginator("describe_resource_collection_health")
 ```
 
-[Paginator.DescribeResourceCollectionHealth documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.DescribeResourceCollectionHealth)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.DescribeResourceCollectionHealth)
 
 ```python
 class DescribeResourceCollectionHealthPaginator(Boto3Paginator):
@@ -46,13 +46,13 @@ Type annotations for `boto3.client("devops-guru").get_paginator("get_resource_co
 Can be used directly:
 
 ```python
-from mypy_boto3_devops_guru.paginators import GetResourceCollectionPaginator
+from mypy_boto3_devops_guru.paginator import GetResourceCollectionPaginator
 
 def get_get_resource_collection_paginator() -> GetResourceCollectionPaginator:
     return boto3.client("devops-guru").get_paginator("get_resource_collection")
 ```
 
-[Paginator.GetResourceCollection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.GetResourceCollection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.GetResourceCollection)
 
 ```python
 class GetResourceCollectionPaginator(Boto3Paginator):
@@ -70,13 +70,13 @@ Type annotations for `boto3.client("devops-guru").get_paginator("list_anomalies_
 Can be used directly:
 
 ```python
-from mypy_boto3_devops_guru.paginators import ListAnomaliesForInsightPaginator
+from mypy_boto3_devops_guru.paginator import ListAnomaliesForInsightPaginator
 
 def get_list_anomalies_for_insight_paginator() -> ListAnomaliesForInsightPaginator:
     return boto3.client("devops-guru").get_paginator("list_anomalies_for_insight")
 ```
 
-[Paginator.ListAnomaliesForInsight documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListAnomaliesForInsight)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListAnomaliesForInsight)
 
 ```python
 class ListAnomaliesForInsightPaginator(Boto3Paginator):
@@ -95,13 +95,13 @@ Type annotations for `boto3.client("devops-guru").get_paginator("list_events")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_devops_guru.paginators import ListEventsPaginator
+from mypy_boto3_devops_guru.paginator import ListEventsPaginator
 
 def get_list_events_paginator() -> ListEventsPaginator:
     return boto3.client("devops-guru").get_paginator("list_events")
 ```
 
-[Paginator.ListEvents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListEvents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListEvents)
 
 ```python
 class ListEventsPaginator(Boto3Paginator):
@@ -119,13 +119,13 @@ Type annotations for `boto3.client("devops-guru").get_paginator("list_insights")
 Can be used directly:
 
 ```python
-from mypy_boto3_devops_guru.paginators import ListInsightsPaginator
+from mypy_boto3_devops_guru.paginator import ListInsightsPaginator
 
 def get_list_insights_paginator() -> ListInsightsPaginator:
     return boto3.client("devops-guru").get_paginator("list_insights")
 ```
 
-[Paginator.ListInsights documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListInsights)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListInsights)
 
 ```python
 class ListInsightsPaginator(Boto3Paginator):
@@ -143,13 +143,13 @@ Type annotations for `boto3.client("devops-guru").get_paginator("list_notificati
 Can be used directly:
 
 ```python
-from mypy_boto3_devops_guru.paginators import ListNotificationChannelsPaginator
+from mypy_boto3_devops_guru.paginator import ListNotificationChannelsPaginator
 
 def get_list_notification_channels_paginator() -> ListNotificationChannelsPaginator:
     return boto3.client("devops-guru").get_paginator("list_notification_channels")
 ```
 
-[Paginator.ListNotificationChannels documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListNotificationChannels)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListNotificationChannels)
 
 ```python
 class ListNotificationChannelsPaginator(Boto3Paginator):
@@ -166,13 +166,13 @@ Type annotations for `boto3.client("devops-guru").get_paginator("list_recommenda
 Can be used directly:
 
 ```python
-from mypy_boto3_devops_guru.paginators import ListRecommendationsPaginator
+from mypy_boto3_devops_guru.paginator import ListRecommendationsPaginator
 
 def get_list_recommendations_paginator() -> ListRecommendationsPaginator:
     return boto3.client("devops-guru").get_paginator("list_recommendations")
 ```
 
-[Paginator.ListRecommendations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListRecommendations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.ListRecommendations)
 
 ```python
 class ListRecommendationsPaginator(Boto3Paginator):
@@ -190,13 +190,13 @@ Type annotations for `boto3.client("devops-guru").get_paginator("search_insights
 Can be used directly:
 
 ```python
-from mypy_boto3_devops_guru.paginators import SearchInsightsPaginator
+from mypy_boto3_devops_guru.paginator import SearchInsightsPaginator
 
 def get_search_insights_paginator() -> SearchInsightsPaginator:
     return boto3.client("devops-guru").get_paginator("search_insights")
 ```
 
-[Paginator.SearchInsights documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.SearchInsights)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.SearchInsights)
 
 ```python
 class SearchInsightsPaginator(Boto3Paginator):

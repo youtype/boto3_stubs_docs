@@ -160,7 +160,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_rds.client import RDSClient
+
+def get_rds_client() -> RDSClient:
+    return boto3.client("rds")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client)
 
 ## Exceptions
 
@@ -304,7 +309,7 @@ Exceptions:
 
 Type annotations for `boto3.client("rds").add_role_to_db_cluster` method.
 
-[Client.add_role_to_db_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_role_to_db_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_role_to_db_cluster]
 
 ```python
 def add_role_to_db_cluster(
@@ -320,7 +325,7 @@ def add_role_to_db_cluster(
 
 Type annotations for `boto3.client("rds").add_role_to_db_instance` method.
 
-[Client.add_role_to_db_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_role_to_db_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_role_to_db_instance]
 
 ```python
 def add_role_to_db_instance(
@@ -336,7 +341,7 @@ def add_role_to_db_instance(
 
 Type annotations for `boto3.client("rds").add_source_identifier_to_subscription` method.
 
-[Client.add_source_identifier_to_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_source_identifier_to_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_source_identifier_to_subscription]
 
 ```python
 def add_source_identifier_to_subscription(
@@ -351,7 +356,7 @@ def add_source_identifier_to_subscription(
 
 Type annotations for `boto3.client("rds").add_tags_to_resource` method.
 
-[Client.add_tags_to_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_tags_to_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_tags_to_resource]
 
 ```python
 def add_tags_to_resource(
@@ -366,7 +371,7 @@ def add_tags_to_resource(
 
 Type annotations for `boto3.client("rds").apply_pending_maintenance_action` method.
 
-[Client.apply_pending_maintenance_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.apply_pending_maintenance_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.apply_pending_maintenance_action]
 
 ```python
 def apply_pending_maintenance_action(
@@ -382,7 +387,7 @@ def apply_pending_maintenance_action(
 
 Type annotations for `boto3.client("rds").authorize_db_security_group_ingress` method.
 
-[Client.authorize_db_security_group_ingress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.authorize_db_security_group_ingress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.authorize_db_security_group_ingress]
 
 ```python
 def authorize_db_security_group_ingress(
@@ -400,7 +405,7 @@ def authorize_db_security_group_ingress(
 
 Type annotations for `boto3.client("rds").backtrack_db_cluster` method.
 
-[Client.backtrack_db_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.backtrack_db_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.backtrack_db_cluster]
 
 ```python
 def backtrack_db_cluster(
@@ -417,7 +422,7 @@ def backtrack_db_cluster(
 
 Type annotations for `boto3.client("rds").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -431,7 +436,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("rds").cancel_export_task` method.
 
-[Client.cancel_export_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.cancel_export_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.cancel_export_task]
 
 ```python
 def cancel_export_task(
@@ -445,7 +450,7 @@ def cancel_export_task(
 
 Type annotations for `boto3.client("rds").copy_db_cluster_parameter_group` method.
 
-[Client.copy_db_cluster_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_cluster_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_cluster_parameter_group]
 
 ```python
 def copy_db_cluster_parameter_group(
@@ -462,7 +467,7 @@ def copy_db_cluster_parameter_group(
 
 Type annotations for `boto3.client("rds").copy_db_cluster_snapshot` method.
 
-[Client.copy_db_cluster_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_cluster_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_cluster_snapshot]
 
 ```python
 def copy_db_cluster_snapshot(
@@ -482,7 +487,7 @@ def copy_db_cluster_snapshot(
 
 Type annotations for `boto3.client("rds").copy_db_parameter_group` method.
 
-[Client.copy_db_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_parameter_group]
 
 ```python
 def copy_db_parameter_group(
@@ -499,7 +504,7 @@ def copy_db_parameter_group(
 
 Type annotations for `boto3.client("rds").copy_db_snapshot` method.
 
-[Client.copy_db_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_snapshot]
 
 ```python
 def copy_db_snapshot(
@@ -521,7 +526,7 @@ def copy_db_snapshot(
 
 Type annotations for `boto3.client("rds").copy_option_group` method.
 
-[Client.copy_option_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_option_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_option_group]
 
 ```python
 def copy_option_group(
@@ -538,7 +543,7 @@ def copy_option_group(
 
 Type annotations for `boto3.client("rds").create_custom_availability_zone` method.
 
-[Client.create_custom_availability_zone documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_custom_availability_zone)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_custom_availability_zone]
 
 ```python
 def create_custom_availability_zone(
@@ -555,7 +560,7 @@ def create_custom_availability_zone(
 
 Type annotations for `boto3.client("rds").create_db_cluster` method.
 
-[Client.create_db_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster]
 
 ```python
 def create_db_cluster(
@@ -602,7 +607,7 @@ def create_db_cluster(
 
 Type annotations for `boto3.client("rds").create_db_cluster_endpoint` method.
 
-[Client.create_db_cluster_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster_endpoint]
 
 ```python
 def create_db_cluster_endpoint(
@@ -621,7 +626,7 @@ def create_db_cluster_endpoint(
 
 Type annotations for `boto3.client("rds").create_db_cluster_parameter_group` method.
 
-[Client.create_db_cluster_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster_parameter_group]
 
 ```python
 def create_db_cluster_parameter_group(
@@ -638,7 +643,7 @@ def create_db_cluster_parameter_group(
 
 Type annotations for `boto3.client("rds").create_db_cluster_snapshot` method.
 
-[Client.create_db_cluster_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster_snapshot]
 
 ```python
 def create_db_cluster_snapshot(
@@ -654,7 +659,7 @@ def create_db_cluster_snapshot(
 
 Type annotations for `boto3.client("rds").create_db_instance` method.
 
-[Client.create_db_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_instance]
 
 ```python
 def create_db_instance(
@@ -715,7 +720,7 @@ def create_db_instance(
 
 Type annotations for `boto3.client("rds").create_db_instance_read_replica` method.
 
-[Client.create_db_instance_read_replica documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_instance_read_replica)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_instance_read_replica]
 
 ```python
 def create_db_instance_read_replica(
@@ -761,7 +766,7 @@ def create_db_instance_read_replica(
 
 Type annotations for `boto3.client("rds").create_db_parameter_group` method.
 
-[Client.create_db_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_parameter_group]
 
 ```python
 def create_db_parameter_group(
@@ -778,7 +783,7 @@ def create_db_parameter_group(
 
 Type annotations for `boto3.client("rds").create_db_proxy` method.
 
-[Client.create_db_proxy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_proxy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_proxy]
 
 ```python
 def create_db_proxy(
@@ -801,7 +806,7 @@ def create_db_proxy(
 
 Type annotations for `boto3.client("rds").create_db_proxy_endpoint` method.
 
-[Client.create_db_proxy_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_proxy_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_proxy_endpoint]
 
 ```python
 def create_db_proxy_endpoint(
@@ -820,7 +825,7 @@ def create_db_proxy_endpoint(
 
 Type annotations for `boto3.client("rds").create_db_security_group` method.
 
-[Client.create_db_security_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_security_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_security_group]
 
 ```python
 def create_db_security_group(
@@ -836,7 +841,7 @@ def create_db_security_group(
 
 Type annotations for `boto3.client("rds").create_db_snapshot` method.
 
-[Client.create_db_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_snapshot]
 
 ```python
 def create_db_snapshot(
@@ -852,7 +857,7 @@ def create_db_snapshot(
 
 Type annotations for `boto3.client("rds").create_db_subnet_group` method.
 
-[Client.create_db_subnet_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_subnet_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_subnet_group]
 
 ```python
 def create_db_subnet_group(
@@ -869,7 +874,7 @@ def create_db_subnet_group(
 
 Type annotations for `boto3.client("rds").create_event_subscription` method.
 
-[Client.create_event_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_event_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_event_subscription]
 
 ```python
 def create_event_subscription(
@@ -889,7 +894,7 @@ def create_event_subscription(
 
 Type annotations for `boto3.client("rds").create_global_cluster` method.
 
-[Client.create_global_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_global_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_global_cluster]
 
 ```python
 def create_global_cluster(
@@ -909,7 +914,7 @@ def create_global_cluster(
 
 Type annotations for `boto3.client("rds").create_option_group` method.
 
-[Client.create_option_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_option_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_option_group]
 
 ```python
 def create_option_group(
@@ -927,7 +932,7 @@ def create_option_group(
 
 Type annotations for `boto3.client("rds").delete_custom_availability_zone` method.
 
-[Client.delete_custom_availability_zone documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_custom_availability_zone)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_custom_availability_zone]
 
 ```python
 def delete_custom_availability_zone(
@@ -941,7 +946,7 @@ def delete_custom_availability_zone(
 
 Type annotations for `boto3.client("rds").delete_db_cluster` method.
 
-[Client.delete_db_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster]
 
 ```python
 def delete_db_cluster(
@@ -957,7 +962,7 @@ def delete_db_cluster(
 
 Type annotations for `boto3.client("rds").delete_db_cluster_endpoint` method.
 
-[Client.delete_db_cluster_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_endpoint]
 
 ```python
 def delete_db_cluster_endpoint(
@@ -971,7 +976,7 @@ def delete_db_cluster_endpoint(
 
 Type annotations for `boto3.client("rds").delete_db_cluster_parameter_group` method.
 
-[Client.delete_db_cluster_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_parameter_group]
 
 ```python
 def delete_db_cluster_parameter_group(
@@ -985,7 +990,7 @@ def delete_db_cluster_parameter_group(
 
 Type annotations for `boto3.client("rds").delete_db_cluster_snapshot` method.
 
-[Client.delete_db_cluster_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_snapshot]
 
 ```python
 def delete_db_cluster_snapshot(
@@ -999,7 +1004,7 @@ def delete_db_cluster_snapshot(
 
 Type annotations for `boto3.client("rds").delete_db_instance` method.
 
-[Client.delete_db_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_instance]
 
 ```python
 def delete_db_instance(
@@ -1016,7 +1021,7 @@ def delete_db_instance(
 
 Type annotations for `boto3.client("rds").delete_db_instance_automated_backup` method.
 
-[Client.delete_db_instance_automated_backup documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_instance_automated_backup)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_instance_automated_backup]
 
 ```python
 def delete_db_instance_automated_backup(
@@ -1031,7 +1036,7 @@ def delete_db_instance_automated_backup(
 
 Type annotations for `boto3.client("rds").delete_db_parameter_group` method.
 
-[Client.delete_db_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_parameter_group]
 
 ```python
 def delete_db_parameter_group(
@@ -1045,7 +1050,7 @@ def delete_db_parameter_group(
 
 Type annotations for `boto3.client("rds").delete_db_proxy` method.
 
-[Client.delete_db_proxy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_proxy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_proxy]
 
 ```python
 def delete_db_proxy(
@@ -1059,7 +1064,7 @@ def delete_db_proxy(
 
 Type annotations for `boto3.client("rds").delete_db_proxy_endpoint` method.
 
-[Client.delete_db_proxy_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_proxy_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_proxy_endpoint]
 
 ```python
 def delete_db_proxy_endpoint(
@@ -1073,7 +1078,7 @@ def delete_db_proxy_endpoint(
 
 Type annotations for `boto3.client("rds").delete_db_security_group` method.
 
-[Client.delete_db_security_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_security_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_security_group]
 
 ```python
 def delete_db_security_group(
@@ -1087,7 +1092,7 @@ def delete_db_security_group(
 
 Type annotations for `boto3.client("rds").delete_db_snapshot` method.
 
-[Client.delete_db_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_snapshot]
 
 ```python
 def delete_db_snapshot(
@@ -1101,7 +1106,7 @@ def delete_db_snapshot(
 
 Type annotations for `boto3.client("rds").delete_db_subnet_group` method.
 
-[Client.delete_db_subnet_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_subnet_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_subnet_group]
 
 ```python
 def delete_db_subnet_group(
@@ -1115,7 +1120,7 @@ def delete_db_subnet_group(
 
 Type annotations for `boto3.client("rds").delete_event_subscription` method.
 
-[Client.delete_event_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_event_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_event_subscription]
 
 ```python
 def delete_event_subscription(
@@ -1129,7 +1134,7 @@ def delete_event_subscription(
 
 Type annotations for `boto3.client("rds").delete_global_cluster` method.
 
-[Client.delete_global_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_global_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_global_cluster]
 
 ```python
 def delete_global_cluster(
@@ -1143,7 +1148,7 @@ def delete_global_cluster(
 
 Type annotations for `boto3.client("rds").delete_installation_media` method.
 
-[Client.delete_installation_media documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_installation_media)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_installation_media]
 
 ```python
 def delete_installation_media(
@@ -1157,7 +1162,7 @@ def delete_installation_media(
 
 Type annotations for `boto3.client("rds").delete_option_group` method.
 
-[Client.delete_option_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_option_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_option_group]
 
 ```python
 def delete_option_group(
@@ -1171,7 +1176,7 @@ def delete_option_group(
 
 Type annotations for `boto3.client("rds").deregister_db_proxy_targets` method.
 
-[Client.deregister_db_proxy_targets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.deregister_db_proxy_targets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.deregister_db_proxy_targets]
 
 ```python
 def deregister_db_proxy_targets(
@@ -1188,7 +1193,7 @@ def deregister_db_proxy_targets(
 
 Type annotations for `boto3.client("rds").describe_account_attributes` method.
 
-[Client.describe_account_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_account_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_account_attributes]
 
 ```python
 def describe_account_attributes(
@@ -1201,7 +1206,7 @@ def describe_account_attributes(
 
 Type annotations for `boto3.client("rds").describe_certificates` method.
 
-[Client.describe_certificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_certificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_certificates]
 
 ```python
 def describe_certificates(
@@ -1218,7 +1223,7 @@ def describe_certificates(
 
 Type annotations for `boto3.client("rds").describe_custom_availability_zones` method.
 
-[Client.describe_custom_availability_zones documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_custom_availability_zones)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_custom_availability_zones]
 
 ```python
 def describe_custom_availability_zones(
@@ -1235,7 +1240,7 @@ def describe_custom_availability_zones(
 
 Type annotations for `boto3.client("rds").describe_db_cluster_backtracks` method.
 
-[Client.describe_db_cluster_backtracks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_backtracks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_backtracks]
 
 ```python
 def describe_db_cluster_backtracks(
@@ -1253,7 +1258,7 @@ def describe_db_cluster_backtracks(
 
 Type annotations for `boto3.client("rds").describe_db_cluster_endpoints` method.
 
-[Client.describe_db_cluster_endpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_endpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_endpoints]
 
 ```python
 def describe_db_cluster_endpoints(
@@ -1271,7 +1276,7 @@ def describe_db_cluster_endpoints(
 
 Type annotations for `boto3.client("rds").describe_db_cluster_parameter_groups` method.
 
-[Client.describe_db_cluster_parameter_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_parameter_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_parameter_groups]
 
 ```python
 def describe_db_cluster_parameter_groups(
@@ -1288,7 +1293,7 @@ def describe_db_cluster_parameter_groups(
 
 Type annotations for `boto3.client("rds").describe_db_cluster_parameters` method.
 
-[Client.describe_db_cluster_parameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_parameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_parameters]
 
 ```python
 def describe_db_cluster_parameters(
@@ -1306,7 +1311,7 @@ def describe_db_cluster_parameters(
 
 Type annotations for `boto3.client("rds").describe_db_cluster_snapshot_attributes` method.
 
-[Client.describe_db_cluster_snapshot_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_snapshot_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_snapshot_attributes]
 
 ```python
 def describe_db_cluster_snapshot_attributes(
@@ -1320,7 +1325,7 @@ def describe_db_cluster_snapshot_attributes(
 
 Type annotations for `boto3.client("rds").describe_db_cluster_snapshots` method.
 
-[Client.describe_db_cluster_snapshots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_snapshots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_snapshots]
 
 ```python
 def describe_db_cluster_snapshots(
@@ -1341,7 +1346,7 @@ def describe_db_cluster_snapshots(
 
 Type annotations for `boto3.client("rds").describe_db_clusters` method.
 
-[Client.describe_db_clusters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_clusters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_clusters]
 
 ```python
 def describe_db_clusters(
@@ -1359,7 +1364,7 @@ def describe_db_clusters(
 
 Type annotations for `boto3.client("rds").describe_db_engine_versions` method.
 
-[Client.describe_db_engine_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_engine_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_engine_versions]
 
 ```python
 def describe_db_engine_versions(
@@ -1382,7 +1387,7 @@ def describe_db_engine_versions(
 
 Type annotations for `boto3.client("rds").describe_db_instance_automated_backups` method.
 
-[Client.describe_db_instance_automated_backups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_instance_automated_backups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_instance_automated_backups]
 
 ```python
 def describe_db_instance_automated_backups(
@@ -1401,7 +1406,7 @@ def describe_db_instance_automated_backups(
 
 Type annotations for `boto3.client("rds").describe_db_instances` method.
 
-[Client.describe_db_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_instances]
 
 ```python
 def describe_db_instances(
@@ -1418,7 +1423,7 @@ def describe_db_instances(
 
 Type annotations for `boto3.client("rds").describe_db_log_files` method.
 
-[Client.describe_db_log_files documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_log_files)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_log_files]
 
 ```python
 def describe_db_log_files(
@@ -1438,7 +1443,7 @@ def describe_db_log_files(
 
 Type annotations for `boto3.client("rds").describe_db_parameter_groups` method.
 
-[Client.describe_db_parameter_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_parameter_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_parameter_groups]
 
 ```python
 def describe_db_parameter_groups(
@@ -1455,7 +1460,7 @@ def describe_db_parameter_groups(
 
 Type annotations for `boto3.client("rds").describe_db_parameters` method.
 
-[Client.describe_db_parameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_parameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_parameters]
 
 ```python
 def describe_db_parameters(
@@ -1473,7 +1478,7 @@ def describe_db_parameters(
 
 Type annotations for `boto3.client("rds").describe_db_proxies` method.
 
-[Client.describe_db_proxies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxies]
 
 ```python
 def describe_db_proxies(
@@ -1490,7 +1495,7 @@ def describe_db_proxies(
 
 Type annotations for `boto3.client("rds").describe_db_proxy_endpoints` method.
 
-[Client.describe_db_proxy_endpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxy_endpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxy_endpoints]
 
 ```python
 def describe_db_proxy_endpoints(
@@ -1508,7 +1513,7 @@ def describe_db_proxy_endpoints(
 
 Type annotations for `boto3.client("rds").describe_db_proxy_target_groups` method.
 
-[Client.describe_db_proxy_target_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxy_target_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxy_target_groups]
 
 ```python
 def describe_db_proxy_target_groups(
@@ -1526,7 +1531,7 @@ def describe_db_proxy_target_groups(
 
 Type annotations for `boto3.client("rds").describe_db_proxy_targets` method.
 
-[Client.describe_db_proxy_targets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxy_targets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxy_targets]
 
 ```python
 def describe_db_proxy_targets(
@@ -1544,7 +1549,7 @@ def describe_db_proxy_targets(
 
 Type annotations for `boto3.client("rds").describe_db_security_groups` method.
 
-[Client.describe_db_security_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_security_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_security_groups]
 
 ```python
 def describe_db_security_groups(
@@ -1561,7 +1566,7 @@ def describe_db_security_groups(
 
 Type annotations for `boto3.client("rds").describe_db_snapshot_attributes` method.
 
-[Client.describe_db_snapshot_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_snapshot_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_snapshot_attributes]
 
 ```python
 def describe_db_snapshot_attributes(
@@ -1575,7 +1580,7 @@ def describe_db_snapshot_attributes(
 
 Type annotations for `boto3.client("rds").describe_db_snapshots` method.
 
-[Client.describe_db_snapshots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_snapshots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_snapshots]
 
 ```python
 def describe_db_snapshots(
@@ -1597,7 +1602,7 @@ def describe_db_snapshots(
 
 Type annotations for `boto3.client("rds").describe_db_subnet_groups` method.
 
-[Client.describe_db_subnet_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_subnet_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_subnet_groups]
 
 ```python
 def describe_db_subnet_groups(
@@ -1614,7 +1619,7 @@ def describe_db_subnet_groups(
 
 Type annotations for `boto3.client("rds").describe_engine_default_cluster_parameters` method.
 
-[Client.describe_engine_default_cluster_parameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_engine_default_cluster_parameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_engine_default_cluster_parameters]
 
 ```python
 def describe_engine_default_cluster_parameters(
@@ -1631,7 +1636,7 @@ def describe_engine_default_cluster_parameters(
 
 Type annotations for `boto3.client("rds").describe_engine_default_parameters` method.
 
-[Client.describe_engine_default_parameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_engine_default_parameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_engine_default_parameters]
 
 ```python
 def describe_engine_default_parameters(
@@ -1648,7 +1653,7 @@ def describe_engine_default_parameters(
 
 Type annotations for `boto3.client("rds").describe_event_categories` method.
 
-[Client.describe_event_categories documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_event_categories)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_event_categories]
 
 ```python
 def describe_event_categories(
@@ -1663,7 +1668,7 @@ def describe_event_categories(
 
 Type annotations for `boto3.client("rds").describe_event_subscriptions` method.
 
-[Client.describe_event_subscriptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_event_subscriptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_event_subscriptions]
 
 ```python
 def describe_event_subscriptions(
@@ -1680,7 +1685,7 @@ def describe_event_subscriptions(
 
 Type annotations for `boto3.client("rds").describe_events` method.
 
-[Client.describe_events documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_events)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_events]
 
 ```python
 def describe_events(
@@ -1702,7 +1707,7 @@ def describe_events(
 
 Type annotations for `boto3.client("rds").describe_export_tasks` method.
 
-[Client.describe_export_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_export_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_export_tasks]
 
 ```python
 def describe_export_tasks(
@@ -1720,7 +1725,7 @@ def describe_export_tasks(
 
 Type annotations for `boto3.client("rds").describe_global_clusters` method.
 
-[Client.describe_global_clusters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_global_clusters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_global_clusters]
 
 ```python
 def describe_global_clusters(
@@ -1737,7 +1742,7 @@ def describe_global_clusters(
 
 Type annotations for `boto3.client("rds").describe_installation_media` method.
 
-[Client.describe_installation_media documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_installation_media)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_installation_media]
 
 ```python
 def describe_installation_media(
@@ -1754,7 +1759,7 @@ def describe_installation_media(
 
 Type annotations for `boto3.client("rds").describe_option_group_options` method.
 
-[Client.describe_option_group_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_option_group_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_option_group_options]
 
 ```python
 def describe_option_group_options(
@@ -1772,7 +1777,7 @@ def describe_option_group_options(
 
 Type annotations for `boto3.client("rds").describe_option_groups` method.
 
-[Client.describe_option_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_option_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_option_groups]
 
 ```python
 def describe_option_groups(
@@ -1791,7 +1796,7 @@ def describe_option_groups(
 
 Type annotations for `boto3.client("rds").describe_orderable_db_instance_options` method.
 
-[Client.describe_orderable_db_instance_options documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_orderable_db_instance_options)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_orderable_db_instance_options]
 
 ```python
 def describe_orderable_db_instance_options(
@@ -1813,7 +1818,7 @@ def describe_orderable_db_instance_options(
 
 Type annotations for `boto3.client("rds").describe_pending_maintenance_actions` method.
 
-[Client.describe_pending_maintenance_actions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_pending_maintenance_actions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_pending_maintenance_actions]
 
 ```python
 def describe_pending_maintenance_actions(
@@ -1830,7 +1835,7 @@ def describe_pending_maintenance_actions(
 
 Type annotations for `boto3.client("rds").describe_reserved_db_instances` method.
 
-[Client.describe_reserved_db_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_reserved_db_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_reserved_db_instances]
 
 ```python
 def describe_reserved_db_instances(
@@ -1854,7 +1859,7 @@ def describe_reserved_db_instances(
 
 Type annotations for `boto3.client("rds").describe_reserved_db_instances_offerings` method.
 
-[Client.describe_reserved_db_instances_offerings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_reserved_db_instances_offerings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_reserved_db_instances_offerings]
 
 ```python
 def describe_reserved_db_instances_offerings(
@@ -1876,7 +1881,7 @@ def describe_reserved_db_instances_offerings(
 
 Type annotations for `boto3.client("rds").describe_source_regions` method.
 
-[Client.describe_source_regions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_source_regions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_source_regions]
 
 ```python
 def describe_source_regions(
@@ -1893,7 +1898,7 @@ def describe_source_regions(
 
 Type annotations for `boto3.client("rds").describe_valid_db_instance_modifications` method.
 
-[Client.describe_valid_db_instance_modifications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_valid_db_instance_modifications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_valid_db_instance_modifications]
 
 ```python
 def describe_valid_db_instance_modifications(
@@ -1907,7 +1912,7 @@ def describe_valid_db_instance_modifications(
 
 Type annotations for `boto3.client("rds").download_db_log_file_portion` method.
 
-[Client.download_db_log_file_portion documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.download_db_log_file_portion)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.download_db_log_file_portion]
 
 ```python
 def download_db_log_file_portion(
@@ -1924,7 +1929,7 @@ def download_db_log_file_portion(
 
 Type annotations for `boto3.client("rds").failover_db_cluster` method.
 
-[Client.failover_db_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.failover_db_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.failover_db_cluster]
 
 ```python
 def failover_db_cluster(
@@ -1939,7 +1944,7 @@ def failover_db_cluster(
 
 Type annotations for `boto3.client("rds").failover_global_cluster` method.
 
-[Client.failover_global_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.failover_global_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.failover_global_cluster]
 
 ```python
 def failover_global_cluster(
@@ -1954,7 +1959,7 @@ def failover_global_cluster(
 
 Type annotations for `boto3.client("rds").generate_db_auth_token` method.
 
-[Client.generate_db_auth_token documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.generate_db_auth_token)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.generate_db_auth_token]
 
 ```python
 def generate_db_auth_token(
@@ -1971,7 +1976,7 @@ def generate_db_auth_token(
 
 Type annotations for `boto3.client("rds").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -1988,7 +1993,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("rds").import_installation_media` method.
 
-[Client.import_installation_media documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.import_installation_media)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.import_installation_media]
 
 ```python
 def import_installation_media(
@@ -2006,7 +2011,7 @@ def import_installation_media(
 
 Type annotations for `boto3.client("rds").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -2021,7 +2026,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("rds").modify_certificates` method.
 
-[Client.modify_certificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_certificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_certificates]
 
 ```python
 def modify_certificates(
@@ -2036,7 +2041,7 @@ def modify_certificates(
 
 Type annotations for `boto3.client("rds").modify_current_db_cluster_capacity` method.
 
-[Client.modify_current_db_cluster_capacity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_current_db_cluster_capacity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_current_db_cluster_capacity]
 
 ```python
 def modify_current_db_cluster_capacity(
@@ -2053,7 +2058,7 @@ def modify_current_db_cluster_capacity(
 
 Type annotations for `boto3.client("rds").modify_db_cluster` method.
 
-[Client.modify_db_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster]
 
 ```python
 def modify_db_cluster(
@@ -2090,7 +2095,7 @@ def modify_db_cluster(
 
 Type annotations for `boto3.client("rds").modify_db_cluster_endpoint` method.
 
-[Client.modify_db_cluster_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster_endpoint]
 
 ```python
 def modify_db_cluster_endpoint(
@@ -2107,7 +2112,7 @@ def modify_db_cluster_endpoint(
 
 Type annotations for `boto3.client("rds").modify_db_cluster_parameter_group` method.
 
-[Client.modify_db_cluster_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster_parameter_group]
 
 ```python
 def modify_db_cluster_parameter_group(
@@ -2122,7 +2127,7 @@ def modify_db_cluster_parameter_group(
 
 Type annotations for `boto3.client("rds").modify_db_cluster_snapshot_attribute` method.
 
-[Client.modify_db_cluster_snapshot_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster_snapshot_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster_snapshot_attribute]
 
 ```python
 def modify_db_cluster_snapshot_attribute(
@@ -2139,7 +2144,7 @@ def modify_db_cluster_snapshot_attribute(
 
 Type annotations for `boto3.client("rds").modify_db_instance` method.
 
-[Client.modify_db_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_instance]
 
 ```python
 def modify_db_instance(
@@ -2197,7 +2202,7 @@ def modify_db_instance(
 
 Type annotations for `boto3.client("rds").modify_db_parameter_group` method.
 
-[Client.modify_db_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_parameter_group]
 
 ```python
 def modify_db_parameter_group(
@@ -2212,7 +2217,7 @@ def modify_db_parameter_group(
 
 Type annotations for `boto3.client("rds").modify_db_proxy` method.
 
-[Client.modify_db_proxy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_proxy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_proxy]
 
 ```python
 def modify_db_proxy(
@@ -2233,7 +2238,7 @@ def modify_db_proxy(
 
 Type annotations for `boto3.client("rds").modify_db_proxy_endpoint` method.
 
-[Client.modify_db_proxy_endpoint documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_proxy_endpoint)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_proxy_endpoint]
 
 ```python
 def modify_db_proxy_endpoint(
@@ -2249,7 +2254,7 @@ def modify_db_proxy_endpoint(
 
 Type annotations for `boto3.client("rds").modify_db_proxy_target_group` method.
 
-[Client.modify_db_proxy_target_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_proxy_target_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_proxy_target_group]
 
 ```python
 def modify_db_proxy_target_group(
@@ -2266,7 +2271,7 @@ def modify_db_proxy_target_group(
 
 Type annotations for `boto3.client("rds").modify_db_snapshot` method.
 
-[Client.modify_db_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_snapshot]
 
 ```python
 def modify_db_snapshot(
@@ -2282,7 +2287,7 @@ def modify_db_snapshot(
 
 Type annotations for `boto3.client("rds").modify_db_snapshot_attribute` method.
 
-[Client.modify_db_snapshot_attribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_snapshot_attribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_snapshot_attribute]
 
 ```python
 def modify_db_snapshot_attribute(
@@ -2299,7 +2304,7 @@ def modify_db_snapshot_attribute(
 
 Type annotations for `boto3.client("rds").modify_db_subnet_group` method.
 
-[Client.modify_db_subnet_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_subnet_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_subnet_group]
 
 ```python
 def modify_db_subnet_group(
@@ -2315,7 +2320,7 @@ def modify_db_subnet_group(
 
 Type annotations for `boto3.client("rds").modify_event_subscription` method.
 
-[Client.modify_event_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_event_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_event_subscription]
 
 ```python
 def modify_event_subscription(
@@ -2333,7 +2338,7 @@ def modify_event_subscription(
 
 Type annotations for `boto3.client("rds").modify_global_cluster` method.
 
-[Client.modify_global_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_global_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_global_cluster]
 
 ```python
 def modify_global_cluster(
@@ -2351,7 +2356,7 @@ def modify_global_cluster(
 
 Type annotations for `boto3.client("rds").modify_option_group` method.
 
-[Client.modify_option_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_option_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_option_group]
 
 ```python
 def modify_option_group(
@@ -2368,7 +2373,7 @@ def modify_option_group(
 
 Type annotations for `boto3.client("rds").promote_read_replica` method.
 
-[Client.promote_read_replica documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.promote_read_replica)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.promote_read_replica]
 
 ```python
 def promote_read_replica(
@@ -2384,7 +2389,7 @@ def promote_read_replica(
 
 Type annotations for `boto3.client("rds").promote_read_replica_db_cluster` method.
 
-[Client.promote_read_replica_db_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.promote_read_replica_db_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.promote_read_replica_db_cluster]
 
 ```python
 def promote_read_replica_db_cluster(
@@ -2398,7 +2403,7 @@ def promote_read_replica_db_cluster(
 
 Type annotations for `boto3.client("rds").purchase_reserved_db_instances_offering` method.
 
-[Client.purchase_reserved_db_instances_offering documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.purchase_reserved_db_instances_offering)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.purchase_reserved_db_instances_offering]
 
 ```python
 def purchase_reserved_db_instances_offering(
@@ -2415,7 +2420,7 @@ def purchase_reserved_db_instances_offering(
 
 Type annotations for `boto3.client("rds").reboot_db_instance` method.
 
-[Client.reboot_db_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reboot_db_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reboot_db_instance]
 
 ```python
 def reboot_db_instance(
@@ -2430,7 +2435,7 @@ def reboot_db_instance(
 
 Type annotations for `boto3.client("rds").register_db_proxy_targets` method.
 
-[Client.register_db_proxy_targets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.register_db_proxy_targets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.register_db_proxy_targets]
 
 ```python
 def register_db_proxy_targets(
@@ -2447,7 +2452,7 @@ def register_db_proxy_targets(
 
 Type annotations for `boto3.client("rds").remove_from_global_cluster` method.
 
-[Client.remove_from_global_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_from_global_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_from_global_cluster]
 
 ```python
 def remove_from_global_cluster(
@@ -2462,7 +2467,7 @@ def remove_from_global_cluster(
 
 Type annotations for `boto3.client("rds").remove_role_from_db_cluster` method.
 
-[Client.remove_role_from_db_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_role_from_db_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_role_from_db_cluster]
 
 ```python
 def remove_role_from_db_cluster(
@@ -2478,7 +2483,7 @@ def remove_role_from_db_cluster(
 
 Type annotations for `boto3.client("rds").remove_role_from_db_instance` method.
 
-[Client.remove_role_from_db_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_role_from_db_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_role_from_db_instance]
 
 ```python
 def remove_role_from_db_instance(
@@ -2494,7 +2499,7 @@ def remove_role_from_db_instance(
 
 Type annotations for `boto3.client("rds").remove_source_identifier_from_subscription` method.
 
-[Client.remove_source_identifier_from_subscription documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_source_identifier_from_subscription)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_source_identifier_from_subscription]
 
 ```python
 def remove_source_identifier_from_subscription(
@@ -2509,7 +2514,7 @@ def remove_source_identifier_from_subscription(
 
 Type annotations for `boto3.client("rds").remove_tags_from_resource` method.
 
-[Client.remove_tags_from_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_tags_from_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_tags_from_resource]
 
 ```python
 def remove_tags_from_resource(
@@ -2524,7 +2529,7 @@ def remove_tags_from_resource(
 
 Type annotations for `boto3.client("rds").reset_db_cluster_parameter_group` method.
 
-[Client.reset_db_cluster_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reset_db_cluster_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reset_db_cluster_parameter_group]
 
 ```python
 def reset_db_cluster_parameter_group(
@@ -2540,7 +2545,7 @@ def reset_db_cluster_parameter_group(
 
 Type annotations for `boto3.client("rds").reset_db_parameter_group` method.
 
-[Client.reset_db_parameter_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reset_db_parameter_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reset_db_parameter_group]
 
 ```python
 def reset_db_parameter_group(
@@ -2556,7 +2561,7 @@ def reset_db_parameter_group(
 
 Type annotations for `boto3.client("rds").restore_db_cluster_from_s3` method.
 
-[Client.restore_db_cluster_from_s3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_cluster_from_s3)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_cluster_from_s3]
 
 ```python
 def restore_db_cluster_from_s3(
@@ -2600,7 +2605,7 @@ def restore_db_cluster_from_s3(
 
 Type annotations for `boto3.client("rds").restore_db_cluster_from_snapshot` method.
 
-[Client.restore_db_cluster_from_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_cluster_from_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_cluster_from_snapshot]
 
 ```python
 def restore_db_cluster_from_snapshot(
@@ -2635,7 +2640,7 @@ def restore_db_cluster_from_snapshot(
 
 Type annotations for `boto3.client("rds").restore_db_cluster_to_point_in_time` method.
 
-[Client.restore_db_cluster_to_point_in_time documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_cluster_to_point_in_time)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_cluster_to_point_in_time]
 
 ```python
 def restore_db_cluster_to_point_in_time(
@@ -2667,7 +2672,7 @@ def restore_db_cluster_to_point_in_time(
 
 Type annotations for `boto3.client("rds").restore_db_instance_from_db_snapshot` method.
 
-[Client.restore_db_instance_from_db_snapshot documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_instance_from_db_snapshot)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_instance_from_db_snapshot]
 
 ```python
 def restore_db_instance_from_db_snapshot(
@@ -2709,7 +2714,7 @@ def restore_db_instance_from_db_snapshot(
 
 Type annotations for `boto3.client("rds").restore_db_instance_from_s3` method.
 
-[Client.restore_db_instance_from_s3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_instance_from_s3)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_instance_from_s3]
 
 ```python
 def restore_db_instance_from_s3(
@@ -2766,7 +2771,7 @@ def restore_db_instance_from_s3(
 
 Type annotations for `boto3.client("rds").restore_db_instance_to_point_in_time` method.
 
-[Client.restore_db_instance_to_point_in_time documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_instance_to_point_in_time)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_instance_to_point_in_time]
 
 ```python
 def restore_db_instance_to_point_in_time(
@@ -2813,7 +2818,7 @@ def restore_db_instance_to_point_in_time(
 
 Type annotations for `boto3.client("rds").revoke_db_security_group_ingress` method.
 
-[Client.revoke_db_security_group_ingress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.revoke_db_security_group_ingress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.revoke_db_security_group_ingress]
 
 ```python
 def revoke_db_security_group_ingress(
@@ -2831,7 +2836,7 @@ def revoke_db_security_group_ingress(
 
 Type annotations for `boto3.client("rds").start_activity_stream` method.
 
-[Client.start_activity_stream documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_activity_stream)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_activity_stream]
 
 ```python
 def start_activity_stream(
@@ -2848,7 +2853,7 @@ def start_activity_stream(
 
 Type annotations for `boto3.client("rds").start_db_cluster` method.
 
-[Client.start_db_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_cluster]
 
 ```python
 def start_db_cluster(
@@ -2862,7 +2867,7 @@ def start_db_cluster(
 
 Type annotations for `boto3.client("rds").start_db_instance` method.
 
-[Client.start_db_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_instance]
 
 ```python
 def start_db_instance(
@@ -2876,7 +2881,7 @@ def start_db_instance(
 
 Type annotations for `boto3.client("rds").start_db_instance_automated_backups_replication` method.
 
-[Client.start_db_instance_automated_backups_replication documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_instance_automated_backups_replication)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_instance_automated_backups_replication]
 
 ```python
 def start_db_instance_automated_backups_replication(
@@ -2894,7 +2899,7 @@ def start_db_instance_automated_backups_replication(
 
 Type annotations for `boto3.client("rds").start_export_task` method.
 
-[Client.start_export_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_export_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_export_task]
 
 ```python
 def start_export_task(
@@ -2914,7 +2919,7 @@ def start_export_task(
 
 Type annotations for `boto3.client("rds").stop_activity_stream` method.
 
-[Client.stop_activity_stream documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_activity_stream)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_activity_stream]
 
 ```python
 def stop_activity_stream(
@@ -2929,7 +2934,7 @@ def stop_activity_stream(
 
 Type annotations for `boto3.client("rds").stop_db_cluster` method.
 
-[Client.stop_db_cluster documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_cluster)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_cluster]
 
 ```python
 def stop_db_cluster(
@@ -2943,7 +2948,7 @@ def stop_db_cluster(
 
 Type annotations for `boto3.client("rds").stop_db_instance` method.
 
-[Client.stop_db_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_instance]
 
 ```python
 def stop_db_instance(
@@ -2958,7 +2963,7 @@ def stop_db_instance(
 
 Type annotations for `boto3.client("rds").stop_db_instance_automated_backups_replication` method.
 
-[Client.stop_db_instance_automated_backups_replication documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_instance_automated_backups_replication)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_instance_automated_backups_replication]
 
 ```python
 def stop_db_instance_automated_backups_replication(

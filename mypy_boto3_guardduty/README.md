@@ -15,7 +15,7 @@ pip install mypy-boto3-guardduty
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## GuardDutyClient
 
@@ -170,7 +170,7 @@ from mypy_boto3_guardduty.literals import AdminStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

@@ -1,11 +1,11 @@
-# Structures for boto3 HealthLake module
+# Typed dictionaries for boto3 HealthLake module
 
 > [Index](../README.md) > [HealthLake](./README.md) > Structures
 
 Auto-generated documentation for [HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
 type annotations stubs module [mypy_boto3_healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
 
-- [Structures for boto3 HealthLake module](#structures-for-boto3-healthlake-module)
+- [Typed dictionaries for boto3 HealthLake module](#typed-dictionaries-for-boto3-healthlake-module)
   - [CreateFHIRDatastoreResponseTypeDef](#createfhirdatastoreresponsetypedef)
   - [DatastoreFilterTypeDef](#datastorefiltertypedef)
   - [DatastorePropertiesTypeDef](#datastorepropertiestypedef)

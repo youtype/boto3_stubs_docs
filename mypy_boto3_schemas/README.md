@@ -16,7 +16,7 @@ pip install mypy-boto3-schemas
   - [Paginators](#paginators)
   - [Waiters](#waiters)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## SchemasClient
 
@@ -148,7 +148,7 @@ from mypy_boto3_schemas.literals import CodeBindingExistsWaiterName, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

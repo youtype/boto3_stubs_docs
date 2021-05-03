@@ -22,7 +22,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_kinesis_video_signaling.client import KinesisVideoSignalingChannelsClient
+
+def get_kinesis-video-signaling_client() -> KinesisVideoSignalingChannelsClient:
+    return boto3.client("kinesis-video-signaling")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client)
 
 ## Exceptions
 
@@ -55,7 +60,7 @@ Exceptions:
 
 Type annotations for `boto3.client("kinesis-video-signaling").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -69,7 +74,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("kinesis-video-signaling").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -86,7 +91,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("kinesis-video-signaling").get_ice_server_config` method.
 
-[Client.get_ice_server_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.get_ice_server_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.get_ice_server_config]
 
 ```python
 def get_ice_server_config(
@@ -103,7 +108,7 @@ def get_ice_server_config(
 
 Type annotations for `boto3.client("kinesis-video-signaling").send_alexa_offer_to_master` method.
 
-[Client.send_alexa_offer_to_master documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.send_alexa_offer_to_master)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.send_alexa_offer_to_master]
 
 ```python
 def send_alexa_offer_to_master(

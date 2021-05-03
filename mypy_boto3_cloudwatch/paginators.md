@@ -19,13 +19,13 @@ Type annotations for `boto3.client("cloudwatch").get_paginator("describe_alarm_h
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudwatch.paginators import DescribeAlarmHistoryPaginator
+from mypy_boto3_cloudwatch.paginator import DescribeAlarmHistoryPaginator
 
 def get_describe_alarm_history_paginator() -> DescribeAlarmHistoryPaginator:
     return boto3.client("cloudwatch").get_paginator("describe_alarm_history")
 ```
 
-[Paginator.DescribeAlarmHistory documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.DescribeAlarmHistory)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.DescribeAlarmHistory)
 
 ```python
 class DescribeAlarmHistoryPaginator(Boto3Paginator):
@@ -48,13 +48,13 @@ Type annotations for `boto3.client("cloudwatch").get_paginator("describe_alarms"
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudwatch.paginators import DescribeAlarmsPaginator
+from mypy_boto3_cloudwatch.paginator import DescribeAlarmsPaginator
 
 def get_describe_alarms_paginator() -> DescribeAlarmsPaginator:
     return boto3.client("cloudwatch").get_paginator("describe_alarms")
 ```
 
-[Paginator.DescribeAlarms documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.DescribeAlarms)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.DescribeAlarms)
 
 ```python
 class DescribeAlarmsPaginator(Boto3Paginator):
@@ -78,13 +78,13 @@ Type annotations for `boto3.client("cloudwatch").get_paginator("get_metric_data"
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudwatch.paginators import GetMetricDataPaginator
+from mypy_boto3_cloudwatch.paginator import GetMetricDataPaginator
 
 def get_get_metric_data_paginator() -> GetMetricDataPaginator:
     return boto3.client("cloudwatch").get_paginator("get_metric_data")
 ```
 
-[Paginator.GetMetricData documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.GetMetricData)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.GetMetricData)
 
 ```python
 class GetMetricDataPaginator(Boto3Paginator):
@@ -106,13 +106,13 @@ Type annotations for `boto3.client("cloudwatch").get_paginator("list_dashboards"
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudwatch.paginators import ListDashboardsPaginator
+from mypy_boto3_cloudwatch.paginator import ListDashboardsPaginator
 
 def get_list_dashboards_paginator() -> ListDashboardsPaginator:
     return boto3.client("cloudwatch").get_paginator("list_dashboards")
 ```
 
-[Paginator.ListDashboards documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.ListDashboards)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.ListDashboards)
 
 ```python
 class ListDashboardsPaginator(Boto3Paginator):
@@ -130,13 +130,13 @@ Type annotations for `boto3.client("cloudwatch").get_paginator("list_metrics")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudwatch.paginators import ListMetricsPaginator
+from mypy_boto3_cloudwatch.paginator import ListMetricsPaginator
 
 def get_list_metrics_paginator() -> ListMetricsPaginator:
     return boto3.client("cloudwatch").get_paginator("list_metrics")
 ```
 
-[Paginator.ListMetrics documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.ListMetrics)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.ListMetrics)
 
 ```python
 class ListMetricsPaginator(Boto3Paginator):

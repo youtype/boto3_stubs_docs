@@ -16,7 +16,7 @@ pip install mypy-boto3-acm-pca
   - [Paginators](#paginators)
   - [Waiters](#waiters)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ACMPCAClient
 
@@ -160,7 +160,7 @@ from mypy_boto3_acm_pca.literals import AccessMethodType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

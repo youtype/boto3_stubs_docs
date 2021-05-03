@@ -1,11 +1,11 @@
-# Structures for boto3 ComputeOptimizer module
+# Typed dictionaries for boto3 ComputeOptimizer module
 
 > [Index](../README.md) > [ComputeOptimizer](./README.md) > Structures
 
 Auto-generated documentation for [ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
 type annotations stubs module [mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
-- [Structures for boto3 ComputeOptimizer module](#structures-for-boto3-computeoptimizer-module)
+- [Typed dictionaries for boto3 ComputeOptimizer module](#typed-dictionaries-for-boto3-computeoptimizer-module)
   - [AutoScalingGroupConfigurationTypeDef](#autoscalinggroupconfigurationtypedef)
   - [AutoScalingGroupRecommendationOptionTypeDef](#autoscalinggrouprecommendationoptiontypedef)
   - [AutoScalingGroupRecommendationTypeDef](#autoscalinggrouprecommendationtypedef)

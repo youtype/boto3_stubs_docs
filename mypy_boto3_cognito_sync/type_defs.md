@@ -1,11 +1,11 @@
-# Structures for boto3 CognitoSync module
+# Typed dictionaries for boto3 CognitoSync module
 
 > [Index](../README.md) > [CognitoSync](./README.md) > Structures
 
 Auto-generated documentation for [CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync)
 type annotations stubs module [mypy_boto3_cognito_sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
 
-- [Structures for boto3 CognitoSync module](#structures-for-boto3-cognitosync-module)
+- [Typed dictionaries for boto3 CognitoSync module](#typed-dictionaries-for-boto3-cognitosync-module)
   - [BulkPublishResponseTypeDef](#bulkpublishresponsetypedef)
   - [CognitoStreamsTypeDef](#cognitostreamstypedef)
   - [DatasetTypeDef](#datasettypedef)

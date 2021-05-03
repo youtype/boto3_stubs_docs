@@ -16,7 +16,7 @@ pip install mypy-boto3-dms
   - [Paginators](#paginators)
   - [Waiters](#waiters)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## DatabaseMigrationServiceClient
 
@@ -236,7 +236,7 @@ from mypy_boto3_dms.literals import AuthMechanismValue, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

@@ -1,11 +1,11 @@
-# Structures for boto3 ImportExport module
+# Typed dictionaries for boto3 ImportExport module
 
 > [Index](../README.md) > [ImportExport](./README.md) > Structures
 
 Auto-generated documentation for [ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
 type annotations stubs module [mypy_boto3_importexport](https://pypi.org/project/mypy-boto3-importexport/).
 
-- [Structures for boto3 ImportExport module](#structures-for-boto3-importexport-module)
+- [Typed dictionaries for boto3 ImportExport module](#typed-dictionaries-for-boto3-importexport-module)
   - [ArtifactTypeDef](#artifacttypedef)
   - [CancelJobOutputTypeDef](#canceljoboutputtypedef)
   - [CreateJobOutputTypeDef](#createjoboutputtypedef)
@@ -38,11 +38,11 @@ from mypy_boto3_importexport.type_defs import CancelJobOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Success`: `bool`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateJobOutputTypeDef
@@ -52,9 +52,7 @@ from mypy_boto3_importexport.type_defs import CreateJobOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `JobId`: `str`
 - `JobType`: `JobType`
 - `Signature`: `str`
@@ -64,6 +62,8 @@ Optional fields:
 - `ResponseMetadata`: `"ResponseMetadata"`
 
 
+
+
 ## GetShippingLabelOutputTypeDef
 
 ```python
@@ -71,12 +71,12 @@ from mypy_boto3_importexport.type_defs import GetShippingLabelOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ShippingLabelURL`: `str`
 - `Warning`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetStatusOutputTypeDef
@@ -86,9 +86,7 @@ from mypy_boto3_importexport.type_defs import GetStatusOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `JobId`: `str`
 - `JobType`: `JobType`
 - `LocationCode`: `str`
@@ -106,6 +104,8 @@ Optional fields:
 - `CreationDate`: `datetime`
 - `ArtifactList`: `List["ArtifactTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## JobTypeDef
@@ -131,12 +131,12 @@ from mypy_boto3_importexport.type_defs import ListJobsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Jobs`: `List["JobTypeDef"]`
 - `IsTruncated`: `bool`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PaginatorConfigTypeDef
@@ -178,11 +178,11 @@ from mypy_boto3_importexport.type_defs import UpdateJobOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Success`: `bool`
 - `WarningMessage`: `str`
 - `ArtifactList`: `List["ArtifactTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 

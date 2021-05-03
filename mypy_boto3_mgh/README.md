@@ -15,7 +15,7 @@ pip install mypy-boto3-mgh
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## MigrationHubClient
 
@@ -118,7 +118,7 @@ from mypy_boto3_mgh.literals import ApplicationStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

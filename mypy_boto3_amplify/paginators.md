@@ -18,13 +18,13 @@ Type annotations for `boto3.client("amplify").get_paginator("list_apps")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_amplify.paginators import ListAppsPaginator
+from mypy_boto3_amplify.paginator import ListAppsPaginator
 
 def get_list_apps_paginator() -> ListAppsPaginator:
     return boto3.client("amplify").get_paginator("list_apps")
 ```
 
-[Paginator.ListApps documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListApps)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListApps)
 
 ```python
 class ListAppsPaginator(Boto3Paginator):
@@ -41,13 +41,13 @@ Type annotations for `boto3.client("amplify").get_paginator("list_branches")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_amplify.paginators import ListBranchesPaginator
+from mypy_boto3_amplify.paginator import ListBranchesPaginator
 
 def get_list_branches_paginator() -> ListBranchesPaginator:
     return boto3.client("amplify").get_paginator("list_branches")
 ```
 
-[Paginator.ListBranches documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListBranches)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListBranches)
 
 ```python
 class ListBranchesPaginator(Boto3Paginator):
@@ -65,13 +65,13 @@ Type annotations for `boto3.client("amplify").get_paginator("list_domain_associa
 Can be used directly:
 
 ```python
-from mypy_boto3_amplify.paginators import ListDomainAssociationsPaginator
+from mypy_boto3_amplify.paginator import ListDomainAssociationsPaginator
 
 def get_list_domain_associations_paginator() -> ListDomainAssociationsPaginator:
     return boto3.client("amplify").get_paginator("list_domain_associations")
 ```
 
-[Paginator.ListDomainAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListDomainAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListDomainAssociations)
 
 ```python
 class ListDomainAssociationsPaginator(Boto3Paginator):
@@ -89,13 +89,13 @@ Type annotations for `boto3.client("amplify").get_paginator("list_jobs")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_amplify.paginators import ListJobsPaginator
+from mypy_boto3_amplify.paginator import ListJobsPaginator
 
 def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("amplify").get_paginator("list_jobs")
 ```
 
-[Paginator.ListJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Paginator.ListJobs)
 
 ```python
 class ListJobsPaginator(Boto3Paginator):

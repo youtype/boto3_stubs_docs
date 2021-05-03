@@ -58,7 +58,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_inspector.client import InspectorClient
+
+def get_inspector_client() -> InspectorClient:
+    return boto3.client("inspector")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client)
 
 ## Exceptions
 
@@ -96,7 +101,7 @@ Exceptions:
 
 Type annotations for `boto3.client("inspector").add_attributes_to_findings` method.
 
-[Client.add_attributes_to_findings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.add_attributes_to_findings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.add_attributes_to_findings]
 
 ```python
 def add_attributes_to_findings(
@@ -111,7 +116,7 @@ def add_attributes_to_findings(
 
 Type annotations for `boto3.client("inspector").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -125,7 +130,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("inspector").create_assessment_target` method.
 
-[Client.create_assessment_target documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_assessment_target)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_assessment_target]
 
 ```python
 def create_assessment_target(
@@ -140,7 +145,7 @@ def create_assessment_target(
 
 Type annotations for `boto3.client("inspector").create_assessment_template` method.
 
-[Client.create_assessment_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_assessment_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_assessment_template]
 
 ```python
 def create_assessment_template(
@@ -158,7 +163,7 @@ def create_assessment_template(
 
 Type annotations for `boto3.client("inspector").create_exclusions_preview` method.
 
-[Client.create_exclusions_preview documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_exclusions_preview)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_exclusions_preview]
 
 ```python
 def create_exclusions_preview(
@@ -172,7 +177,7 @@ def create_exclusions_preview(
 
 Type annotations for `boto3.client("inspector").create_resource_group` method.
 
-[Client.create_resource_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_resource_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_resource_group]
 
 ```python
 def create_resource_group(
@@ -186,7 +191,7 @@ def create_resource_group(
 
 Type annotations for `boto3.client("inspector").delete_assessment_run` method.
 
-[Client.delete_assessment_run documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_run)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_run]
 
 ```python
 def delete_assessment_run(
@@ -200,7 +205,7 @@ def delete_assessment_run(
 
 Type annotations for `boto3.client("inspector").delete_assessment_target` method.
 
-[Client.delete_assessment_target documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_target)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_target]
 
 ```python
 def delete_assessment_target(
@@ -214,7 +219,7 @@ def delete_assessment_target(
 
 Type annotations for `boto3.client("inspector").delete_assessment_template` method.
 
-[Client.delete_assessment_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_template]
 
 ```python
 def delete_assessment_template(
@@ -228,7 +233,7 @@ def delete_assessment_template(
 
 Type annotations for `boto3.client("inspector").describe_assessment_runs` method.
 
-[Client.describe_assessment_runs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_runs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_runs]
 
 ```python
 def describe_assessment_runs(
@@ -242,7 +247,7 @@ def describe_assessment_runs(
 
 Type annotations for `boto3.client("inspector").describe_assessment_targets` method.
 
-[Client.describe_assessment_targets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_targets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_targets]
 
 ```python
 def describe_assessment_targets(
@@ -256,7 +261,7 @@ def describe_assessment_targets(
 
 Type annotations for `boto3.client("inspector").describe_assessment_templates` method.
 
-[Client.describe_assessment_templates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_templates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_templates]
 
 ```python
 def describe_assessment_templates(
@@ -270,7 +275,7 @@ def describe_assessment_templates(
 
 Type annotations for `boto3.client("inspector").describe_cross_account_access_role` method.
 
-[Client.describe_cross_account_access_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_cross_account_access_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_cross_account_access_role]
 
 ```python
 def describe_cross_account_access_role(
@@ -283,7 +288,7 @@ def describe_cross_account_access_role(
 
 Type annotations for `boto3.client("inspector").describe_exclusions` method.
 
-[Client.describe_exclusions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_exclusions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_exclusions]
 
 ```python
 def describe_exclusions(
@@ -298,7 +303,7 @@ def describe_exclusions(
 
 Type annotations for `boto3.client("inspector").describe_findings` method.
 
-[Client.describe_findings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_findings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_findings]
 
 ```python
 def describe_findings(
@@ -313,7 +318,7 @@ def describe_findings(
 
 Type annotations for `boto3.client("inspector").describe_resource_groups` method.
 
-[Client.describe_resource_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_resource_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_resource_groups]
 
 ```python
 def describe_resource_groups(
@@ -327,7 +332,7 @@ def describe_resource_groups(
 
 Type annotations for `boto3.client("inspector").describe_rules_packages` method.
 
-[Client.describe_rules_packages documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_rules_packages)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_rules_packages]
 
 ```python
 def describe_rules_packages(
@@ -342,7 +347,7 @@ def describe_rules_packages(
 
 Type annotations for `boto3.client("inspector").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -359,7 +364,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("inspector").get_assessment_report` method.
 
-[Client.get_assessment_report documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_assessment_report)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_assessment_report]
 
 ```python
 def get_assessment_report(
@@ -375,7 +380,7 @@ def get_assessment_report(
 
 Type annotations for `boto3.client("inspector").get_exclusions_preview` method.
 
-[Client.get_exclusions_preview documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_exclusions_preview)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_exclusions_preview]
 
 ```python
 def get_exclusions_preview(
@@ -393,7 +398,7 @@ def get_exclusions_preview(
 
 Type annotations for `boto3.client("inspector").get_telemetry_metadata` method.
 
-[Client.get_telemetry_metadata documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_telemetry_metadata)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_telemetry_metadata]
 
 ```python
 def get_telemetry_metadata(
@@ -407,7 +412,7 @@ def get_telemetry_metadata(
 
 Type annotations for `boto3.client("inspector").list_assessment_run_agents` method.
 
-[Client.list_assessment_run_agents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_run_agents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_run_agents]
 
 ```python
 def list_assessment_run_agents(
@@ -424,7 +429,7 @@ def list_assessment_run_agents(
 
 Type annotations for `boto3.client("inspector").list_assessment_runs` method.
 
-[Client.list_assessment_runs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_runs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_runs]
 
 ```python
 def list_assessment_runs(
@@ -441,7 +446,7 @@ def list_assessment_runs(
 
 Type annotations for `boto3.client("inspector").list_assessment_targets` method.
 
-[Client.list_assessment_targets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_targets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_targets]
 
 ```python
 def list_assessment_targets(
@@ -457,7 +462,7 @@ def list_assessment_targets(
 
 Type annotations for `boto3.client("inspector").list_assessment_templates` method.
 
-[Client.list_assessment_templates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_templates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_templates]
 
 ```python
 def list_assessment_templates(
@@ -474,7 +479,7 @@ def list_assessment_templates(
 
 Type annotations for `boto3.client("inspector").list_event_subscriptions` method.
 
-[Client.list_event_subscriptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_event_subscriptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_event_subscriptions]
 
 ```python
 def list_event_subscriptions(
@@ -490,7 +495,7 @@ def list_event_subscriptions(
 
 Type annotations for `boto3.client("inspector").list_exclusions` method.
 
-[Client.list_exclusions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_exclusions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_exclusions]
 
 ```python
 def list_exclusions(
@@ -506,7 +511,7 @@ def list_exclusions(
 
 Type annotations for `boto3.client("inspector").list_findings` method.
 
-[Client.list_findings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_findings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_findings]
 
 ```python
 def list_findings(
@@ -523,7 +528,7 @@ def list_findings(
 
 Type annotations for `boto3.client("inspector").list_rules_packages` method.
 
-[Client.list_rules_packages documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_rules_packages)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_rules_packages]
 
 ```python
 def list_rules_packages(
@@ -538,7 +543,7 @@ def list_rules_packages(
 
 Type annotations for `boto3.client("inspector").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -552,7 +557,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("inspector").preview_agents` method.
 
-[Client.preview_agents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.preview_agents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.preview_agents]
 
 ```python
 def preview_agents(
@@ -568,7 +573,7 @@ def preview_agents(
 
 Type annotations for `boto3.client("inspector").register_cross_account_access_role` method.
 
-[Client.register_cross_account_access_role documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.register_cross_account_access_role)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.register_cross_account_access_role]
 
 ```python
 def register_cross_account_access_role(
@@ -582,7 +587,7 @@ def register_cross_account_access_role(
 
 Type annotations for `boto3.client("inspector").remove_attributes_from_findings` method.
 
-[Client.remove_attributes_from_findings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.remove_attributes_from_findings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.remove_attributes_from_findings]
 
 ```python
 def remove_attributes_from_findings(
@@ -597,7 +602,7 @@ def remove_attributes_from_findings(
 
 Type annotations for `boto3.client("inspector").set_tags_for_resource` method.
 
-[Client.set_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.set_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.set_tags_for_resource]
 
 ```python
 def set_tags_for_resource(
@@ -612,7 +617,7 @@ def set_tags_for_resource(
 
 Type annotations for `boto3.client("inspector").start_assessment_run` method.
 
-[Client.start_assessment_run documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.start_assessment_run)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.start_assessment_run]
 
 ```python
 def start_assessment_run(
@@ -627,7 +632,7 @@ def start_assessment_run(
 
 Type annotations for `boto3.client("inspector").stop_assessment_run` method.
 
-[Client.stop_assessment_run documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.stop_assessment_run)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.stop_assessment_run]
 
 ```python
 def stop_assessment_run(
@@ -642,7 +647,7 @@ def stop_assessment_run(
 
 Type annotations for `boto3.client("inspector").subscribe_to_event` method.
 
-[Client.subscribe_to_event documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.subscribe_to_event)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.subscribe_to_event]
 
 ```python
 def subscribe_to_event(
@@ -658,7 +663,7 @@ def subscribe_to_event(
 
 Type annotations for `boto3.client("inspector").unsubscribe_from_event` method.
 
-[Client.unsubscribe_from_event documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.unsubscribe_from_event)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.unsubscribe_from_event]
 
 ```python
 def unsubscribe_from_event(
@@ -674,7 +679,7 @@ def unsubscribe_from_event(
 
 Type annotations for `boto3.client("inspector").update_assessment_target` method.
 
-[Client.update_assessment_target documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.update_assessment_target)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.update_assessment_target]
 
 ```python
 def update_assessment_target(

@@ -1,11 +1,11 @@
-# Structures for boto3 EBS module
+# Typed dictionaries for boto3 EBS module
 
 > [Index](../README.md) > [EBS](./README.md) > Structures
 
 Auto-generated documentation for [EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
 type annotations stubs module [mypy_boto3_ebs](https://pypi.org/project/mypy-boto3-ebs/).
 
-- [Structures for boto3 EBS module](#structures-for-boto3-ebs-module)
+- [Typed dictionaries for boto3 EBS module](#typed-dictionaries-for-boto3-ebs-module)
   - [BlockTypeDef](#blocktypedef)
   - [ChangedBlockTypeDef](#changedblocktypedef)
   - [CompleteSnapshotResponseTypeDef](#completesnapshotresponsetypedef)

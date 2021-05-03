@@ -69,7 +69,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_codedeploy.client import CodeDeployClient
+
+def get_codedeploy_client() -> CodeDeployClient:
+    return boto3.client("codedeploy")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client)
 
 ## Exceptions
 
@@ -208,7 +213,7 @@ Exceptions:
 
 Type annotations for `boto3.client("codedeploy").add_tags_to_on_premises_instances` method.
 
-[Client.add_tags_to_on_premises_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.add_tags_to_on_premises_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.add_tags_to_on_premises_instances]
 
 ```python
 def add_tags_to_on_premises_instances(
@@ -223,7 +228,7 @@ def add_tags_to_on_premises_instances(
 
 Type annotations for `boto3.client("codedeploy").batch_get_application_revisions` method.
 
-[Client.batch_get_application_revisions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_application_revisions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_application_revisions]
 
 ```python
 def batch_get_application_revisions(
@@ -238,7 +243,7 @@ def batch_get_application_revisions(
 
 Type annotations for `boto3.client("codedeploy").batch_get_applications` method.
 
-[Client.batch_get_applications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_applications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_applications]
 
 ```python
 def batch_get_applications(
@@ -252,7 +257,7 @@ def batch_get_applications(
 
 Type annotations for `boto3.client("codedeploy").batch_get_deployment_groups` method.
 
-[Client.batch_get_deployment_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_groups]
 
 ```python
 def batch_get_deployment_groups(
@@ -267,7 +272,7 @@ def batch_get_deployment_groups(
 
 Type annotations for `boto3.client("codedeploy").batch_get_deployment_instances` method.
 
-[Client.batch_get_deployment_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_instances]
 
 ```python
 def batch_get_deployment_instances(
@@ -282,7 +287,7 @@ def batch_get_deployment_instances(
 
 Type annotations for `boto3.client("codedeploy").batch_get_deployment_targets` method.
 
-[Client.batch_get_deployment_targets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_targets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_targets]
 
 ```python
 def batch_get_deployment_targets(
@@ -297,7 +302,7 @@ def batch_get_deployment_targets(
 
 Type annotations for `boto3.client("codedeploy").batch_get_deployments` method.
 
-[Client.batch_get_deployments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployments]
 
 ```python
 def batch_get_deployments(
@@ -311,7 +316,7 @@ def batch_get_deployments(
 
 Type annotations for `boto3.client("codedeploy").batch_get_on_premises_instances` method.
 
-[Client.batch_get_on_premises_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_on_premises_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_on_premises_instances]
 
 ```python
 def batch_get_on_premises_instances(
@@ -325,7 +330,7 @@ def batch_get_on_premises_instances(
 
 Type annotations for `boto3.client("codedeploy").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -339,7 +344,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("codedeploy").continue_deployment` method.
 
-[Client.continue_deployment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.continue_deployment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.continue_deployment]
 
 ```python
 def continue_deployment(
@@ -354,7 +359,7 @@ def continue_deployment(
 
 Type annotations for `boto3.client("codedeploy").create_application` method.
 
-[Client.create_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_application]
 
 ```python
 def create_application(
@@ -370,7 +375,7 @@ def create_application(
 
 Type annotations for `boto3.client("codedeploy").create_deployment` method.
 
-[Client.create_deployment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment]
 
 ```python
 def create_deployment(
@@ -393,7 +398,7 @@ def create_deployment(
 
 Type annotations for `boto3.client("codedeploy").create_deployment_config` method.
 
-[Client.create_deployment_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment_config]
 
 ```python
 def create_deployment_config(
@@ -410,7 +415,7 @@ def create_deployment_config(
 
 Type annotations for `boto3.client("codedeploy").create_deployment_group` method.
 
-[Client.create_deployment_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment_group]
 
 ```python
 def create_deployment_group(
@@ -441,7 +446,7 @@ def create_deployment_group(
 
 Type annotations for `boto3.client("codedeploy").delete_application` method.
 
-[Client.delete_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_application]
 
 ```python
 def delete_application(
@@ -455,7 +460,7 @@ def delete_application(
 
 Type annotations for `boto3.client("codedeploy").delete_deployment_config` method.
 
-[Client.delete_deployment_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_deployment_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_deployment_config]
 
 ```python
 def delete_deployment_config(
@@ -469,7 +474,7 @@ def delete_deployment_config(
 
 Type annotations for `boto3.client("codedeploy").delete_deployment_group` method.
 
-[Client.delete_deployment_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_deployment_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_deployment_group]
 
 ```python
 def delete_deployment_group(
@@ -484,7 +489,7 @@ def delete_deployment_group(
 
 Type annotations for `boto3.client("codedeploy").delete_git_hub_account_token` method.
 
-[Client.delete_git_hub_account_token documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_git_hub_account_token)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_git_hub_account_token]
 
 ```python
 def delete_git_hub_account_token(
@@ -498,7 +503,7 @@ def delete_git_hub_account_token(
 
 Type annotations for `boto3.client("codedeploy").delete_resources_by_external_id` method.
 
-[Client.delete_resources_by_external_id documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_resources_by_external_id)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_resources_by_external_id]
 
 ```python
 def delete_resources_by_external_id(
@@ -512,7 +517,7 @@ def delete_resources_by_external_id(
 
 Type annotations for `boto3.client("codedeploy").deregister_on_premises_instance` method.
 
-[Client.deregister_on_premises_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.deregister_on_premises_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.deregister_on_premises_instance]
 
 ```python
 def deregister_on_premises_instance(
@@ -526,7 +531,7 @@ def deregister_on_premises_instance(
 
 Type annotations for `boto3.client("codedeploy").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -543,7 +548,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("codedeploy").get_application` method.
 
-[Client.get_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_application]
 
 ```python
 def get_application(
@@ -557,7 +562,7 @@ def get_application(
 
 Type annotations for `boto3.client("codedeploy").get_application_revision` method.
 
-[Client.get_application_revision documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_application_revision)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_application_revision]
 
 ```python
 def get_application_revision(
@@ -572,7 +577,7 @@ def get_application_revision(
 
 Type annotations for `boto3.client("codedeploy").get_deployment` method.
 
-[Client.get_deployment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment]
 
 ```python
 def get_deployment(
@@ -586,7 +591,7 @@ def get_deployment(
 
 Type annotations for `boto3.client("codedeploy").get_deployment_config` method.
 
-[Client.get_deployment_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_config]
 
 ```python
 def get_deployment_config(
@@ -600,7 +605,7 @@ def get_deployment_config(
 
 Type annotations for `boto3.client("codedeploy").get_deployment_group` method.
 
-[Client.get_deployment_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_group]
 
 ```python
 def get_deployment_group(
@@ -615,7 +620,7 @@ def get_deployment_group(
 
 Type annotations for `boto3.client("codedeploy").get_deployment_instance` method.
 
-[Client.get_deployment_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_instance]
 
 ```python
 def get_deployment_instance(
@@ -630,7 +635,7 @@ def get_deployment_instance(
 
 Type annotations for `boto3.client("codedeploy").get_deployment_target` method.
 
-[Client.get_deployment_target documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_target)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_target]
 
 ```python
 def get_deployment_target(
@@ -645,7 +650,7 @@ def get_deployment_target(
 
 Type annotations for `boto3.client("codedeploy").get_on_premises_instance` method.
 
-[Client.get_on_premises_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_on_premises_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_on_premises_instance]
 
 ```python
 def get_on_premises_instance(
@@ -659,7 +664,7 @@ def get_on_premises_instance(
 
 Type annotations for `boto3.client("codedeploy").list_application_revisions` method.
 
-[Client.list_application_revisions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_application_revisions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_application_revisions]
 
 ```python
 def list_application_revisions(
@@ -679,7 +684,7 @@ def list_application_revisions(
 
 Type annotations for `boto3.client("codedeploy").list_applications` method.
 
-[Client.list_applications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_applications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_applications]
 
 ```python
 def list_applications(
@@ -693,7 +698,7 @@ def list_applications(
 
 Type annotations for `boto3.client("codedeploy").list_deployment_configs` method.
 
-[Client.list_deployment_configs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_configs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_configs]
 
 ```python
 def list_deployment_configs(
@@ -707,7 +712,7 @@ def list_deployment_configs(
 
 Type annotations for `boto3.client("codedeploy").list_deployment_groups` method.
 
-[Client.list_deployment_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_groups]
 
 ```python
 def list_deployment_groups(
@@ -722,7 +727,7 @@ def list_deployment_groups(
 
 Type annotations for `boto3.client("codedeploy").list_deployment_instances` method.
 
-[Client.list_deployment_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_instances]
 
 ```python
 def list_deployment_instances(
@@ -739,7 +744,7 @@ def list_deployment_instances(
 
 Type annotations for `boto3.client("codedeploy").list_deployment_targets` method.
 
-[Client.list_deployment_targets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_targets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_targets]
 
 ```python
 def list_deployment_targets(
@@ -755,7 +760,7 @@ def list_deployment_targets(
 
 Type annotations for `boto3.client("codedeploy").list_deployments` method.
 
-[Client.list_deployments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployments]
 
 ```python
 def list_deployments(
@@ -774,7 +779,7 @@ def list_deployments(
 
 Type annotations for `boto3.client("codedeploy").list_git_hub_account_token_names` method.
 
-[Client.list_git_hub_account_token_names documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_git_hub_account_token_names)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_git_hub_account_token_names]
 
 ```python
 def list_git_hub_account_token_names(
@@ -788,7 +793,7 @@ def list_git_hub_account_token_names(
 
 Type annotations for `boto3.client("codedeploy").list_on_premises_instances` method.
 
-[Client.list_on_premises_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_on_premises_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_on_premises_instances]
 
 ```python
 def list_on_premises_instances(
@@ -804,7 +809,7 @@ def list_on_premises_instances(
 
 Type annotations for `boto3.client("codedeploy").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -819,7 +824,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("codedeploy").put_lifecycle_event_hook_execution_status` method.
 
-[Client.put_lifecycle_event_hook_execution_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.put_lifecycle_event_hook_execution_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.put_lifecycle_event_hook_execution_status]
 
 ```python
 def put_lifecycle_event_hook_execution_status(
@@ -835,7 +840,7 @@ def put_lifecycle_event_hook_execution_status(
 
 Type annotations for `boto3.client("codedeploy").register_application_revision` method.
 
-[Client.register_application_revision documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.register_application_revision)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.register_application_revision]
 
 ```python
 def register_application_revision(
@@ -851,7 +856,7 @@ def register_application_revision(
 
 Type annotations for `boto3.client("codedeploy").register_on_premises_instance` method.
 
-[Client.register_on_premises_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.register_on_premises_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.register_on_premises_instance]
 
 ```python
 def register_on_premises_instance(
@@ -867,7 +872,7 @@ def register_on_premises_instance(
 
 Type annotations for `boto3.client("codedeploy").remove_tags_from_on_premises_instances` method.
 
-[Client.remove_tags_from_on_premises_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.remove_tags_from_on_premises_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.remove_tags_from_on_premises_instances]
 
 ```python
 def remove_tags_from_on_premises_instances(
@@ -882,7 +887,7 @@ def remove_tags_from_on_premises_instances(
 
 Type annotations for `boto3.client("codedeploy").skip_wait_time_for_instance_termination` method.
 
-[Client.skip_wait_time_for_instance_termination documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.skip_wait_time_for_instance_termination)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.skip_wait_time_for_instance_termination]
 
 ```python
 def skip_wait_time_for_instance_termination(
@@ -896,7 +901,7 @@ def skip_wait_time_for_instance_termination(
 
 Type annotations for `boto3.client("codedeploy").stop_deployment` method.
 
-[Client.stop_deployment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.stop_deployment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.stop_deployment]
 
 ```python
 def stop_deployment(
@@ -911,7 +916,7 @@ def stop_deployment(
 
 Type annotations for `boto3.client("codedeploy").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -926,7 +931,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("codedeploy").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -941,7 +946,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("codedeploy").update_application` method.
 
-[Client.update_application documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.update_application)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.update_application]
 
 ```python
 def update_application(
@@ -956,7 +961,7 @@ def update_application(
 
 Type annotations for `boto3.client("codedeploy").update_deployment_group` method.
 
-[Client.update_deployment_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.update_deployment_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.update_deployment_group]
 
 ```python
 def update_deployment_group(

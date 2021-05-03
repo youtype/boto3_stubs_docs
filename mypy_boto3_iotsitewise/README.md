@@ -16,7 +16,7 @@ pip install mypy-boto3-iotsitewise
   - [Paginators](#paginators)
   - [Waiters](#waiters)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## IoTSiteWiseClient
 
@@ -223,7 +223,7 @@ from mypy_boto3_iotsitewise.literals import AggregateType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

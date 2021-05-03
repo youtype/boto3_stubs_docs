@@ -1,11 +1,11 @@
-# Structures for boto3 ECR module
+# Typed dictionaries for boto3 ECR module
 
 > [Index](../README.md) > [ECR](./README.md) > Structures
 
 Auto-generated documentation for [ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
 type annotations stubs module [mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
 
-- [Structures for boto3 ECR module](#structures-for-boto3-ecr-module)
+- [Typed dictionaries for boto3 ECR module](#typed-dictionaries-for-boto3-ecr-module)
   - [AttributeTypeDef](#attributetypedef)
   - [AuthorizationDataTypeDef](#authorizationdatatypedef)
   - [BatchCheckLayerAvailabilityResponseTypeDef](#batchchecklayeravailabilityresponsetypedef)

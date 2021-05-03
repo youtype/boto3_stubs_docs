@@ -19,13 +19,13 @@ Type annotations for `boto3.client("mediaconvert").get_paginator("describe_endpo
 Can be used directly:
 
 ```python
-from mypy_boto3_mediaconvert.paginators import DescribeEndpointsPaginator
+from mypy_boto3_mediaconvert.paginator import DescribeEndpointsPaginator
 
 def get_describe_endpoints_paginator() -> DescribeEndpointsPaginator:
     return boto3.client("mediaconvert").get_paginator("describe_endpoints")
 ```
 
-[Paginator.DescribeEndpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.DescribeEndpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.DescribeEndpoints)
 
 ```python
 class DescribeEndpointsPaginator(Boto3Paginator):
@@ -43,13 +43,13 @@ Type annotations for `boto3.client("mediaconvert").get_paginator("list_job_templ
 Can be used directly:
 
 ```python
-from mypy_boto3_mediaconvert.paginators import ListJobTemplatesPaginator
+from mypy_boto3_mediaconvert.paginator import ListJobTemplatesPaginator
 
 def get_list_job_templates_paginator() -> ListJobTemplatesPaginator:
     return boto3.client("mediaconvert").get_paginator("list_job_templates")
 ```
 
-[Paginator.ListJobTemplates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobTemplates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobTemplates)
 
 ```python
 class ListJobTemplatesPaginator(Boto3Paginator):
@@ -69,13 +69,13 @@ Type annotations for `boto3.client("mediaconvert").get_paginator("list_jobs")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_mediaconvert.paginators import ListJobsPaginator
+from mypy_boto3_mediaconvert.paginator import ListJobsPaginator
 
 def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("mediaconvert").get_paginator("list_jobs")
 ```
 
-[Paginator.ListJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobs)
 
 ```python
 class ListJobsPaginator(Boto3Paginator):
@@ -95,13 +95,13 @@ Type annotations for `boto3.client("mediaconvert").get_paginator("list_presets")
 Can be used directly:
 
 ```python
-from mypy_boto3_mediaconvert.paginators import ListPresetsPaginator
+from mypy_boto3_mediaconvert.paginator import ListPresetsPaginator
 
 def get_list_presets_paginator() -> ListPresetsPaginator:
     return boto3.client("mediaconvert").get_paginator("list_presets")
 ```
 
-[Paginator.ListPresets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListPresets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListPresets)
 
 ```python
 class ListPresetsPaginator(Boto3Paginator):
@@ -121,13 +121,13 @@ Type annotations for `boto3.client("mediaconvert").get_paginator("list_queues")`
 Can be used directly:
 
 ```python
-from mypy_boto3_mediaconvert.paginators import ListQueuesPaginator
+from mypy_boto3_mediaconvert.paginator import ListQueuesPaginator
 
 def get_list_queues_paginator() -> ListQueuesPaginator:
     return boto3.client("mediaconvert").get_paginator("list_queues")
 ```
 
-[Paginator.ListQueues documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListQueues)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListQueues)
 
 ```python
 class ListQueuesPaginator(Boto3Paginator):

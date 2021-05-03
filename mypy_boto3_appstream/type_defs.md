@@ -1,11 +1,11 @@
-# Structures for boto3 AppStream module
+# Typed dictionaries for boto3 AppStream module
 
 > [Index](../README.md) > [AppStream](./README.md) > Structures
 
 Auto-generated documentation for [AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
 type annotations stubs module [mypy_boto3_appstream](https://pypi.org/project/mypy-boto3-appstream/).
 
-- [Structures for boto3 AppStream module](#structures-for-boto3-appstream-module)
+- [Typed dictionaries for boto3 AppStream module](#typed-dictionaries-for-boto3-appstream-module)
   - [AccessEndpointTypeDef](#accessendpointtypedef)
   - [ApplicationSettingsResponseTypeDef](#applicationsettingsresponsetypedef)
   - [ApplicationSettingsTypeDef](#applicationsettingstypedef)

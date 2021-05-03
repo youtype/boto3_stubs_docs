@@ -1,11 +1,11 @@
-# Structures for boto3 IoT1ClickProjects module
+# Typed dictionaries for boto3 IoT1ClickProjects module
 
 > [Index](../README.md) > [IoT1ClickProjects](./README.md) > Structures
 
 Auto-generated documentation for [IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
 type annotations stubs module [mypy_boto3_iot1click_projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
 
-- [Structures for boto3 IoT1ClickProjects module](#structures-for-boto3-iot1clickprojects-module)
+- [Typed dictionaries for boto3 IoT1ClickProjects module](#typed-dictionaries-for-boto3-iot1clickprojects-module)
   - [DescribePlacementResponseTypeDef](#describeplacementresponsetypedef)
   - [DescribeProjectResponseTypeDef](#describeprojectresponsetypedef)
   - [DeviceTemplateTypeDef](#devicetemplatetypedef)

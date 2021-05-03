@@ -15,7 +15,7 @@ pip install mypy-boto3-lex-models
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## LexModelBuildingServiceClient
 
@@ -162,7 +162,7 @@ from mypy_boto3_lex_models.literals import ChannelStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

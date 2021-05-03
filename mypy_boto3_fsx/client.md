@@ -39,7 +39,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_fsx.client import FSxClient
+
+def get_fsx_client() -> FSxClient:
+    return boto3.client("fsx")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client)
 
 ## Exceptions
 
@@ -93,7 +98,7 @@ Exceptions:
 
 Type annotations for `boto3.client("fsx").associate_file_system_aliases` method.
 
-[Client.associate_file_system_aliases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.associate_file_system_aliases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.associate_file_system_aliases]
 
 ```python
 def associate_file_system_aliases(
@@ -109,7 +114,7 @@ def associate_file_system_aliases(
 
 Type annotations for `boto3.client("fsx").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -123,7 +128,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("fsx").cancel_data_repository_task` method.
 
-[Client.cancel_data_repository_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.cancel_data_repository_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.cancel_data_repository_task]
 
 ```python
 def cancel_data_repository_task(
@@ -137,7 +142,7 @@ def cancel_data_repository_task(
 
 Type annotations for `boto3.client("fsx").copy_backup` method.
 
-[Client.copy_backup documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.copy_backup)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.copy_backup]
 
 ```python
 def copy_backup(
@@ -156,7 +161,7 @@ def copy_backup(
 
 Type annotations for `boto3.client("fsx").create_backup` method.
 
-[Client.create_backup documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_backup)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_backup]
 
 ```python
 def create_backup(
@@ -172,7 +177,7 @@ def create_backup(
 
 Type annotations for `boto3.client("fsx").create_data_repository_task` method.
 
-[Client.create_data_repository_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_data_repository_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_data_repository_task]
 
 ```python
 def create_data_repository_task(
@@ -191,7 +196,7 @@ def create_data_repository_task(
 
 Type annotations for `boto3.client("fsx").create_file_system` method.
 
-[Client.create_file_system documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_file_system)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_file_system]
 
 ```python
 def create_file_system(
@@ -214,7 +219,7 @@ def create_file_system(
 
 Type annotations for `boto3.client("fsx").create_file_system_from_backup` method.
 
-[Client.create_file_system_from_backup documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_file_system_from_backup)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_file_system_from_backup]
 
 ```python
 def create_file_system_from_backup(
@@ -236,7 +241,7 @@ def create_file_system_from_backup(
 
 Type annotations for `boto3.client("fsx").delete_backup` method.
 
-[Client.delete_backup documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_backup)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_backup]
 
 ```python
 def delete_backup(
@@ -251,7 +256,7 @@ def delete_backup(
 
 Type annotations for `boto3.client("fsx").delete_file_system` method.
 
-[Client.delete_file_system documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_file_system)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_file_system]
 
 ```python
 def delete_file_system(
@@ -268,7 +273,7 @@ def delete_file_system(
 
 Type annotations for `boto3.client("fsx").describe_backups` method.
 
-[Client.describe_backups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_backups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_backups]
 
 ```python
 def describe_backups(
@@ -285,7 +290,7 @@ def describe_backups(
 
 Type annotations for `boto3.client("fsx").describe_data_repository_tasks` method.
 
-[Client.describe_data_repository_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_data_repository_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_data_repository_tasks]
 
 ```python
 def describe_data_repository_tasks(
@@ -302,7 +307,7 @@ def describe_data_repository_tasks(
 
 Type annotations for `boto3.client("fsx").describe_file_system_aliases` method.
 
-[Client.describe_file_system_aliases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_file_system_aliases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_file_system_aliases]
 
 ```python
 def describe_file_system_aliases(
@@ -319,7 +324,7 @@ def describe_file_system_aliases(
 
 Type annotations for `boto3.client("fsx").describe_file_systems` method.
 
-[Client.describe_file_systems documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_file_systems)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_file_systems]
 
 ```python
 def describe_file_systems(
@@ -335,7 +340,7 @@ def describe_file_systems(
 
 Type annotations for `boto3.client("fsx").disassociate_file_system_aliases` method.
 
-[Client.disassociate_file_system_aliases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.disassociate_file_system_aliases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.disassociate_file_system_aliases]
 
 ```python
 def disassociate_file_system_aliases(
@@ -351,7 +356,7 @@ def disassociate_file_system_aliases(
 
 Type annotations for `boto3.client("fsx").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -368,7 +373,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("fsx").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -384,7 +389,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("fsx").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -399,7 +404,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("fsx").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -414,7 +419,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("fsx").update_file_system` method.
 
-[Client.update_file_system documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_file_system)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_file_system]
 
 ```python
 def update_file_system(

@@ -16,13 +16,13 @@ Type annotations for `boto3.client("dynamodb").get_waiter("table_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_dynamodb.waiters import TableExistsWaiter
+from mypy_boto3_dynamodb.waiter import TableExistsWaiter
 
 def get_table_exists_waiter() -> TableExistsWaiter:
     return boto3.client("dynamodb").get_waiter("table_exists")
 ```
 
-[Waiter.TableExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Waiter.TableExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Waiter.table_exists)
 
 ```python
 class TableExistsWaiter(Boto3Waiter):
@@ -40,13 +40,13 @@ Type annotations for `boto3.client("dynamodb").get_waiter("table_not_exists")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_dynamodb.waiters import TableNotExistsWaiter
+from mypy_boto3_dynamodb.waiter import TableNotExistsWaiter
 
 def get_table_not_exists_waiter() -> TableNotExistsWaiter:
     return boto3.client("dynamodb").get_waiter("table_not_exists")
 ```
 
-[Waiter.TableNotExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Waiter.TableNotExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Waiter.table_not_exists)
 
 ```python
 class TableNotExistsWaiter(Boto3Waiter):

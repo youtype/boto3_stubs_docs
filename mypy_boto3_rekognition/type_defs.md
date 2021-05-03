@@ -1,11 +1,11 @@
-# Structures for boto3 Rekognition module
+# Typed dictionaries for boto3 Rekognition module
 
 > [Index](../README.md) > [Rekognition](./README.md) > Structures
 
 Auto-generated documentation for [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
 type annotations stubs module [mypy_boto3_rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
 
-- [Structures for boto3 Rekognition module](#structures-for-boto3-rekognition-module)
+- [Typed dictionaries for boto3 Rekognition module](#typed-dictionaries-for-boto3-rekognition-module)
   - [AgeRangeTypeDef](#agerangetypedef)
   - [AssetTypeDef](#assettypedef)
   - [AudioMetadataTypeDef](#audiometadatatypedef)
@@ -1030,13 +1030,13 @@ from mypy_boto3_rekognition.type_defs import HumanLoopActivationOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `HumanLoopArn`: `str`
 - `HumanLoopActivationReasons`: `List[str]`
 - `HumanLoopActivationConditionsEvaluationResults`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## HumanLoopConfigTypeDef
@@ -1884,11 +1884,11 @@ from mypy_boto3_rekognition.type_defs import StreamProcessorOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `KinesisDataStream`: `"KinesisDataStreamTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## StreamProcessorSettingsTypeDef

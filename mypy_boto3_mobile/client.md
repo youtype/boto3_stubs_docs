@@ -30,7 +30,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_mobile.client import MobileClient
+
+def get_mobile_client() -> MobileClient:
+    return boto3.client("mobile")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client)
 
 ## Exceptions
 
@@ -65,7 +70,7 @@ Exceptions:
 
 Type annotations for `boto3.client("mobile").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -79,7 +84,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("mobile").create_project` method.
 
-[Client.create_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.create_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.create_project]
 
 ```python
 def create_project(
@@ -96,7 +101,7 @@ def create_project(
 
 Type annotations for `boto3.client("mobile").delete_project` method.
 
-[Client.delete_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.delete_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.delete_project]
 
 ```python
 def delete_project(
@@ -110,7 +115,7 @@ def delete_project(
 
 Type annotations for `boto3.client("mobile").describe_bundle` method.
 
-[Client.describe_bundle documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.describe_bundle)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.describe_bundle]
 
 ```python
 def describe_bundle(
@@ -124,7 +129,7 @@ def describe_bundle(
 
 Type annotations for `boto3.client("mobile").describe_project` method.
 
-[Client.describe_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.describe_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.describe_project]
 
 ```python
 def describe_project(
@@ -139,7 +144,7 @@ def describe_project(
 
 Type annotations for `boto3.client("mobile").export_bundle` method.
 
-[Client.export_bundle documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.export_bundle)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.export_bundle]
 
 ```python
 def export_bundle(
@@ -155,7 +160,7 @@ def export_bundle(
 
 Type annotations for `boto3.client("mobile").export_project` method.
 
-[Client.export_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.export_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.export_project]
 
 ```python
 def export_project(
@@ -169,7 +174,7 @@ def export_project(
 
 Type annotations for `boto3.client("mobile").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -186,7 +191,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("mobile").list_bundles` method.
 
-[Client.list_bundles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.list_bundles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.list_bundles]
 
 ```python
 def list_bundles(
@@ -201,7 +206,7 @@ def list_bundles(
 
 Type annotations for `boto3.client("mobile").list_projects` method.
 
-[Client.list_projects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.list_projects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.list_projects]
 
 ```python
 def list_projects(
@@ -216,7 +221,7 @@ def list_projects(
 
 Type annotations for `boto3.client("mobile").update_project` method.
 
-[Client.update_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.update_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.update_project]
 
 ```python
 def update_project(

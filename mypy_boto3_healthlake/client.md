@@ -28,7 +28,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_healthlake.client import HealthLakeClient
+
+def get_healthlake_client() -> HealthLakeClient:
+    return boto3.client("healthlake")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client)
 
 ## Exceptions
 
@@ -61,7 +66,7 @@ Exceptions:
 
 Type annotations for `boto3.client("healthlake").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -75,7 +80,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("healthlake").create_fhir_datastore` method.
 
-[Client.create_fhir_datastore documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.create_fhir_datastore)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.create_fhir_datastore]
 
 ```python
 def create_fhir_datastore(
@@ -92,7 +97,7 @@ def create_fhir_datastore(
 
 Type annotations for `boto3.client("healthlake").delete_fhir_datastore` method.
 
-[Client.delete_fhir_datastore documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.delete_fhir_datastore)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.delete_fhir_datastore]
 
 ```python
 def delete_fhir_datastore(
@@ -106,7 +111,7 @@ def delete_fhir_datastore(
 
 Type annotations for `boto3.client("healthlake").describe_fhir_datastore` method.
 
-[Client.describe_fhir_datastore documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_datastore)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_datastore]
 
 ```python
 def describe_fhir_datastore(
@@ -120,7 +125,7 @@ def describe_fhir_datastore(
 
 Type annotations for `boto3.client("healthlake").describe_fhir_export_job` method.
 
-[Client.describe_fhir_export_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_export_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_export_job]
 
 ```python
 def describe_fhir_export_job(
@@ -135,7 +140,7 @@ def describe_fhir_export_job(
 
 Type annotations for `boto3.client("healthlake").describe_fhir_import_job` method.
 
-[Client.describe_fhir_import_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_import_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_import_job]
 
 ```python
 def describe_fhir_import_job(
@@ -150,7 +155,7 @@ def describe_fhir_import_job(
 
 Type annotations for `boto3.client("healthlake").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -167,7 +172,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("healthlake").list_fhir_datastores` method.
 
-[Client.list_fhir_datastores documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.list_fhir_datastores)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.list_fhir_datastores]
 
 ```python
 def list_fhir_datastores(
@@ -183,7 +188,7 @@ def list_fhir_datastores(
 
 Type annotations for `boto3.client("healthlake").start_fhir_export_job` method.
 
-[Client.start_fhir_export_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.start_fhir_export_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.start_fhir_export_job]
 
 ```python
 def start_fhir_export_job(
@@ -201,7 +206,7 @@ def start_fhir_export_job(
 
 Type annotations for `boto3.client("healthlake").start_fhir_import_job` method.
 
-[Client.start_fhir_import_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.start_fhir_import_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.start_fhir_import_job]
 
 ```python
 def start_fhir_import_job(

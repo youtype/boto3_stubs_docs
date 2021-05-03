@@ -41,7 +41,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_transfer.client import TransferClient
+
+def get_transfer_client() -> TransferClient:
+    return boto3.client("transfer")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client)
 
 ## Exceptions
 
@@ -77,7 +82,7 @@ Exceptions:
 
 Type annotations for `boto3.client("transfer").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -91,7 +96,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("transfer").create_server` method.
 
-[Client.create_server documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_server)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_server]
 
 ```python
 def create_server(
@@ -115,7 +120,7 @@ def create_server(
 
 Type annotations for `boto3.client("transfer").create_user` method.
 
-[Client.create_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_user]
 
 ```python
 def create_user(
@@ -138,7 +143,7 @@ def create_user(
 
 Type annotations for `boto3.client("transfer").delete_server` method.
 
-[Client.delete_server documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_server)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_server]
 
 ```python
 def delete_server(
@@ -152,7 +157,7 @@ def delete_server(
 
 Type annotations for `boto3.client("transfer").delete_ssh_public_key` method.
 
-[Client.delete_ssh_public_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_ssh_public_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_ssh_public_key]
 
 ```python
 def delete_ssh_public_key(
@@ -168,7 +173,7 @@ def delete_ssh_public_key(
 
 Type annotations for `boto3.client("transfer").delete_user` method.
 
-[Client.delete_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_user]
 
 ```python
 def delete_user(
@@ -183,7 +188,7 @@ def delete_user(
 
 Type annotations for `boto3.client("transfer").describe_security_policy` method.
 
-[Client.describe_security_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_security_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_security_policy]
 
 ```python
 def describe_security_policy(
@@ -197,7 +202,7 @@ def describe_security_policy(
 
 Type annotations for `boto3.client("transfer").describe_server` method.
 
-[Client.describe_server documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_server)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_server]
 
 ```python
 def describe_server(
@@ -211,7 +216,7 @@ def describe_server(
 
 Type annotations for `boto3.client("transfer").describe_user` method.
 
-[Client.describe_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_user]
 
 ```python
 def describe_user(
@@ -226,7 +231,7 @@ def describe_user(
 
 Type annotations for `boto3.client("transfer").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -243,7 +248,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("transfer").import_ssh_public_key` method.
 
-[Client.import_ssh_public_key documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.import_ssh_public_key)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.import_ssh_public_key]
 
 ```python
 def import_ssh_public_key(
@@ -259,7 +264,7 @@ def import_ssh_public_key(
 
 Type annotations for `boto3.client("transfer").list_security_policies` method.
 
-[Client.list_security_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_security_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_security_policies]
 
 ```python
 def list_security_policies(
@@ -274,7 +279,7 @@ def list_security_policies(
 
 Type annotations for `boto3.client("transfer").list_servers` method.
 
-[Client.list_servers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_servers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_servers]
 
 ```python
 def list_servers(
@@ -289,7 +294,7 @@ def list_servers(
 
 Type annotations for `boto3.client("transfer").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -305,7 +310,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("transfer").list_users` method.
 
-[Client.list_users documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_users)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_users]
 
 ```python
 def list_users(
@@ -321,7 +326,7 @@ def list_users(
 
 Type annotations for `boto3.client("transfer").start_server` method.
 
-[Client.start_server documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.start_server)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.start_server]
 
 ```python
 def start_server(
@@ -335,7 +340,7 @@ def start_server(
 
 Type annotations for `boto3.client("transfer").stop_server` method.
 
-[Client.stop_server documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.stop_server)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.stop_server]
 
 ```python
 def stop_server(
@@ -349,7 +354,7 @@ def stop_server(
 
 Type annotations for `boto3.client("transfer").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -364,7 +369,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("transfer").test_identity_provider` method.
 
-[Client.test_identity_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.test_identity_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.test_identity_provider]
 
 ```python
 def test_identity_provider(
@@ -382,7 +387,7 @@ def test_identity_provider(
 
 Type annotations for `boto3.client("transfer").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -397,7 +402,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("transfer").update_server` method.
 
-[Client.update_server documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_server)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_server]
 
 ```python
 def update_server(
@@ -419,7 +424,7 @@ def update_server(
 
 Type annotations for `boto3.client("transfer").update_user` method.
 
-[Client.update_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_user]
 
 ```python
 def update_user(

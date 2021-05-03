@@ -1,11 +1,11 @@
-# Structures for boto3 CodeStar module
+# Typed dictionaries for boto3 CodeStar module
 
 > [Index](../README.md) > [CodeStar](./README.md) > Structures
 
 Auto-generated documentation for [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
 type annotations stubs module [mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
 
-- [Structures for boto3 CodeStar module](#structures-for-boto3-codestar-module)
+- [Typed dictionaries for boto3 CodeStar module](#typed-dictionaries-for-boto3-codestar-module)
   - [AssociateTeamMemberResultTypeDef](#associateteammemberresulttypedef)
   - [CodeCommitCodeDestinationTypeDef](#codecommitcodedestinationtypedef)
   - [CodeDestinationTypeDef](#codedestinationtypedef)

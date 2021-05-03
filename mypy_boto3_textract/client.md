@@ -26,7 +26,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_textract.client import TextractClient
+
+def get_textract_client() -> TextractClient:
+    return boto3.client("textract")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client)
 
 ## Exceptions
 
@@ -67,7 +72,7 @@ Exceptions:
 
 Type annotations for `boto3.client("textract").analyze_document` method.
 
-[Client.analyze_document documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.analyze_document)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.analyze_document]
 
 ```python
 def analyze_document(
@@ -83,7 +88,7 @@ def analyze_document(
 
 Type annotations for `boto3.client("textract").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -97,7 +102,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("textract").detect_document_text` method.
 
-[Client.detect_document_text documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.detect_document_text)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.detect_document_text]
 
 ```python
 def detect_document_text(
@@ -111,7 +116,7 @@ def detect_document_text(
 
 Type annotations for `boto3.client("textract").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -128,7 +133,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("textract").get_document_analysis` method.
 
-[Client.get_document_analysis documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_document_analysis)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_document_analysis]
 
 ```python
 def get_document_analysis(
@@ -144,7 +149,7 @@ def get_document_analysis(
 
 Type annotations for `boto3.client("textract").get_document_text_detection` method.
 
-[Client.get_document_text_detection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_document_text_detection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_document_text_detection]
 
 ```python
 def get_document_text_detection(
@@ -160,7 +165,7 @@ def get_document_text_detection(
 
 Type annotations for `boto3.client("textract").start_document_analysis` method.
 
-[Client.start_document_analysis documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_document_analysis)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_document_analysis]
 
 ```python
 def start_document_analysis(
@@ -180,7 +185,7 @@ def start_document_analysis(
 
 Type annotations for `boto3.client("textract").start_document_text_detection` method.
 
-[Client.start_document_text_detection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_document_text_detection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_document_text_detection]
 
 ```python
 def start_document_text_detection(

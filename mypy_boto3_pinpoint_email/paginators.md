@@ -19,13 +19,13 @@ Type annotations for `boto3.client("pinpoint-email").get_paginator("get_dedicate
 Can be used directly:
 
 ```python
-from mypy_boto3_pinpoint_email.paginators import GetDedicatedIpsPaginator
+from mypy_boto3_pinpoint_email.paginator import GetDedicatedIpsPaginator
 
 def get_get_dedicated_ips_paginator() -> GetDedicatedIpsPaginator:
     return boto3.client("pinpoint-email").get_paginator("get_dedicated_ips")
 ```
 
-[Paginator.GetDedicatedIps documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.GetDedicatedIps)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.GetDedicatedIps)
 
 ```python
 class GetDedicatedIpsPaginator(Boto3Paginator):
@@ -43,13 +43,13 @@ Type annotations for `boto3.client("pinpoint-email").get_paginator("list_configu
 Can be used directly:
 
 ```python
-from mypy_boto3_pinpoint_email.paginators import ListConfigurationSetsPaginator
+from mypy_boto3_pinpoint_email.paginator import ListConfigurationSetsPaginator
 
 def get_list_configuration_sets_paginator() -> ListConfigurationSetsPaginator:
     return boto3.client("pinpoint-email").get_paginator("list_configuration_sets")
 ```
 
-[Paginator.ListConfigurationSets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListConfigurationSets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListConfigurationSets)
 
 ```python
 class ListConfigurationSetsPaginator(Boto3Paginator):
@@ -66,13 +66,13 @@ Type annotations for `boto3.client("pinpoint-email").get_paginator("list_dedicat
 Can be used directly:
 
 ```python
-from mypy_boto3_pinpoint_email.paginators import ListDedicatedIpPoolsPaginator
+from mypy_boto3_pinpoint_email.paginator import ListDedicatedIpPoolsPaginator
 
 def get_list_dedicated_ip_pools_paginator() -> ListDedicatedIpPoolsPaginator:
     return boto3.client("pinpoint-email").get_paginator("list_dedicated_ip_pools")
 ```
 
-[Paginator.ListDedicatedIpPools documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListDedicatedIpPools)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListDedicatedIpPools)
 
 ```python
 class ListDedicatedIpPoolsPaginator(Boto3Paginator):
@@ -89,13 +89,13 @@ Type annotations for `boto3.client("pinpoint-email").get_paginator("list_deliver
 Can be used directly:
 
 ```python
-from mypy_boto3_pinpoint_email.paginators import ListDeliverabilityTestReportsPaginator
+from mypy_boto3_pinpoint_email.paginator import ListDeliverabilityTestReportsPaginator
 
 def get_list_deliverability_test_reports_paginator() -> ListDeliverabilityTestReportsPaginator:
     return boto3.client("pinpoint-email").get_paginator("list_deliverability_test_reports")
 ```
 
-[Paginator.ListDeliverabilityTestReports documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListDeliverabilityTestReports)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListDeliverabilityTestReports)
 
 ```python
 class ListDeliverabilityTestReportsPaginator(Boto3Paginator):
@@ -112,13 +112,13 @@ Type annotations for `boto3.client("pinpoint-email").get_paginator("list_email_i
 Can be used directly:
 
 ```python
-from mypy_boto3_pinpoint_email.paginators import ListEmailIdentitiesPaginator
+from mypy_boto3_pinpoint_email.paginator import ListEmailIdentitiesPaginator
 
 def get_list_email_identities_paginator() -> ListEmailIdentitiesPaginator:
     return boto3.client("pinpoint-email").get_paginator("list_email_identities")
 ```
 
-[Paginator.ListEmailIdentities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListEmailIdentities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListEmailIdentities)
 
 ```python
 class ListEmailIdentitiesPaginator(Boto3Paginator):

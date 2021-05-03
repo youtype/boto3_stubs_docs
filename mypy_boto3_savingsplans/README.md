@@ -14,7 +14,7 @@ pip install mypy-boto3-savingsplans
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## SavingsPlansClient
 
@@ -90,7 +90,7 @@ from mypy_boto3_savingsplans.literals import CurrencyCode, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

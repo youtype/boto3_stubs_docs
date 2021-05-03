@@ -1,11 +1,11 @@
-# Structures for boto3 Macie module
+# Typed dictionaries for boto3 Macie module
 
 > [Index](../README.md) > [Macie](./README.md) > Structures
 
 Auto-generated documentation for [Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
 type annotations stubs module [mypy_boto3_macie](https://pypi.org/project/mypy-boto3-macie/).
 
-- [Structures for boto3 Macie module](#structures-for-boto3-macie-module)
+- [Typed dictionaries for boto3 Macie module](#typed-dictionaries-for-boto3-macie-module)
   - [AssociateS3ResourcesResultTypeDef](#associates3resourcesresulttypedef)
   - [ClassificationTypeTypeDef](#classificationtypetypedef)
   - [ClassificationTypeUpdateTypeDef](#classificationtypeupdatetypedef)

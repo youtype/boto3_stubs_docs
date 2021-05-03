@@ -24,7 +24,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_identitystore.client import IdentityStoreClient
+
+def get_identitystore_client() -> IdentityStoreClient:
+    return boto3.client("identitystore")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client)
 
 ## Exceptions
 
@@ -56,7 +61,7 @@ Exceptions:
 
 Type annotations for `boto3.client("identitystore").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -70,7 +75,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("identitystore").describe_group` method.
 
-[Client.describe_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.describe_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.describe_group]
 
 ```python
 def describe_group(
@@ -85,7 +90,7 @@ def describe_group(
 
 Type annotations for `boto3.client("identitystore").describe_user` method.
 
-[Client.describe_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.describe_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.describe_user]
 
 ```python
 def describe_user(
@@ -100,7 +105,7 @@ def describe_user(
 
 Type annotations for `boto3.client("identitystore").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -117,7 +122,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("identitystore").list_groups` method.
 
-[Client.list_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_groups]
 
 ```python
 def list_groups(
@@ -134,7 +139,7 @@ def list_groups(
 
 Type annotations for `boto3.client("identitystore").list_users` method.
 
-[Client.list_users documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_users)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_users]
 
 ```python
 def list_users(

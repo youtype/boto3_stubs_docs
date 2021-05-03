@@ -46,7 +46,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_groundstation.client import GroundStationClient
+
+def get_groundstation_client() -> GroundStationClient:
+    return boto3.client("groundstation")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client)
 
 ## Exceptions
 
@@ -77,7 +82,7 @@ Exceptions:
 
 Type annotations for `boto3.client("groundstation").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -91,7 +96,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("groundstation").cancel_contact` method.
 
-[Client.cancel_contact documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.cancel_contact)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.cancel_contact]
 
 ```python
 def cancel_contact(
@@ -105,7 +110,7 @@ def cancel_contact(
 
 Type annotations for `boto3.client("groundstation").create_config` method.
 
-[Client.create_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_config]
 
 ```python
 def create_config(
@@ -121,7 +126,7 @@ def create_config(
 
 Type annotations for `boto3.client("groundstation").create_dataflow_endpoint_group` method.
 
-[Client.create_dataflow_endpoint_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_dataflow_endpoint_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_dataflow_endpoint_group]
 
 ```python
 def create_dataflow_endpoint_group(
@@ -136,7 +141,7 @@ def create_dataflow_endpoint_group(
 
 Type annotations for `boto3.client("groundstation").create_mission_profile` method.
 
-[Client.create_mission_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_mission_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_mission_profile]
 
 ```python
 def create_mission_profile(
@@ -156,7 +161,7 @@ def create_mission_profile(
 
 Type annotations for `boto3.client("groundstation").delete_config` method.
 
-[Client.delete_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_config]
 
 ```python
 def delete_config(
@@ -171,7 +176,7 @@ def delete_config(
 
 Type annotations for `boto3.client("groundstation").delete_dataflow_endpoint_group` method.
 
-[Client.delete_dataflow_endpoint_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_dataflow_endpoint_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_dataflow_endpoint_group]
 
 ```python
 def delete_dataflow_endpoint_group(
@@ -185,7 +190,7 @@ def delete_dataflow_endpoint_group(
 
 Type annotations for `boto3.client("groundstation").delete_mission_profile` method.
 
-[Client.delete_mission_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_mission_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_mission_profile]
 
 ```python
 def delete_mission_profile(
@@ -199,7 +204,7 @@ def delete_mission_profile(
 
 Type annotations for `boto3.client("groundstation").describe_contact` method.
 
-[Client.describe_contact documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.describe_contact)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.describe_contact]
 
 ```python
 def describe_contact(
@@ -213,7 +218,7 @@ def describe_contact(
 
 Type annotations for `boto3.client("groundstation").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -230,7 +235,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("groundstation").get_config` method.
 
-[Client.get_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_config]
 
 ```python
 def get_config(
@@ -245,7 +250,7 @@ def get_config(
 
 Type annotations for `boto3.client("groundstation").get_dataflow_endpoint_group` method.
 
-[Client.get_dataflow_endpoint_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_dataflow_endpoint_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_dataflow_endpoint_group]
 
 ```python
 def get_dataflow_endpoint_group(
@@ -259,7 +264,7 @@ def get_dataflow_endpoint_group(
 
 Type annotations for `boto3.client("groundstation").get_minute_usage` method.
 
-[Client.get_minute_usage documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_minute_usage)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_minute_usage]
 
 ```python
 def get_minute_usage(
@@ -274,7 +279,7 @@ def get_minute_usage(
 
 Type annotations for `boto3.client("groundstation").get_mission_profile` method.
 
-[Client.get_mission_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_mission_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_mission_profile]
 
 ```python
 def get_mission_profile(
@@ -288,7 +293,7 @@ def get_mission_profile(
 
 Type annotations for `boto3.client("groundstation").get_satellite` method.
 
-[Client.get_satellite documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_satellite)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_satellite]
 
 ```python
 def get_satellite(
@@ -302,7 +307,7 @@ def get_satellite(
 
 Type annotations for `boto3.client("groundstation").list_configs` method.
 
-[Client.list_configs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_configs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_configs]
 
 ```python
 def list_configs(
@@ -317,7 +322,7 @@ def list_configs(
 
 Type annotations for `boto3.client("groundstation").list_contacts` method.
 
-[Client.list_contacts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_contacts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_contacts]
 
 ```python
 def list_contacts(
@@ -338,7 +343,7 @@ def list_contacts(
 
 Type annotations for `boto3.client("groundstation").list_dataflow_endpoint_groups` method.
 
-[Client.list_dataflow_endpoint_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_dataflow_endpoint_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_dataflow_endpoint_groups]
 
 ```python
 def list_dataflow_endpoint_groups(
@@ -353,7 +358,7 @@ def list_dataflow_endpoint_groups(
 
 Type annotations for `boto3.client("groundstation").list_ground_stations` method.
 
-[Client.list_ground_stations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_ground_stations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_ground_stations]
 
 ```python
 def list_ground_stations(
@@ -369,7 +374,7 @@ def list_ground_stations(
 
 Type annotations for `boto3.client("groundstation").list_mission_profiles` method.
 
-[Client.list_mission_profiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_mission_profiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_mission_profiles]
 
 ```python
 def list_mission_profiles(
@@ -384,7 +389,7 @@ def list_mission_profiles(
 
 Type annotations for `boto3.client("groundstation").list_satellites` method.
 
-[Client.list_satellites documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_satellites)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_satellites]
 
 ```python
 def list_satellites(
@@ -399,7 +404,7 @@ def list_satellites(
 
 Type annotations for `boto3.client("groundstation").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -413,7 +418,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("groundstation").reserve_contact` method.
 
-[Client.reserve_contact documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.reserve_contact)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.reserve_contact]
 
 ```python
 def reserve_contact(
@@ -432,7 +437,7 @@ def reserve_contact(
 
 Type annotations for `boto3.client("groundstation").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -447,7 +452,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("groundstation").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -462,7 +467,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("groundstation").update_config` method.
 
-[Client.update_config documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.update_config)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.update_config]
 
 ```python
 def update_config(
@@ -479,7 +484,7 @@ def update_config(
 
 Type annotations for `boto3.client("groundstation").update_mission_profile` method.
 
-[Client.update_mission_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.update_mission_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.update_mission_profile]
 
 ```python
 def update_mission_profile(

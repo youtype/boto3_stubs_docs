@@ -30,8 +30,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_cloudwatch.service_resource import CloudWatchServiceResource
+
+def get_cloudwatch_resource() -> CloudWatchServiceResource:
+    return boto3.resource("cloudwatch")
 ```
 
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource)
 
 
 ## Methods
@@ -40,7 +44,7 @@ from mypy_boto3_cloudwatch.service_resource import CloudWatchServiceResource
 
 Type annotations for `boto3.resource("cloudwatch").Alarm` method.
 
-[ServiceResource.Alarm documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.Alarm)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.CloudWatchServiceResource.Alarm]
 
 Definition:
 
@@ -56,7 +60,7 @@ def Alarm(
 
 Type annotations for `boto3.resource("cloudwatch").Metric` method.
 
-[ServiceResource.Metric documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.Metric)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.CloudWatchServiceResource.Metric]
 
 Definition:
 
@@ -73,7 +77,7 @@ def Metric(
 
 Type annotations for `boto3.resource("cloudwatch").get_available_subresources` method.
 
-[ServiceResource.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.CloudWatchServiceResource.get_available_subresources]
 
 Definition:
 
@@ -104,7 +108,7 @@ def get_collection() -> ServiceResourceAlarmsCollection:
     )
 ```
 
-[ServiceResource.alarms documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.alarms)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.ServiceResourceAlarmsCollection)
 
 Definition:
 
@@ -182,7 +186,7 @@ def get_collection() -> ServiceResourceMetricsCollection:
     )
 ```
 
-[ServiceResource.metrics documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.metrics)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.ServiceResourceMetricsCollection)
 
 Definition:
 
@@ -242,7 +246,7 @@ def get_resource() -> Alarm:
     return boto3.resource("cloudwatch").Alarm(...)
 ```
 
-[Alarm documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.Alarm)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.Alarm)
 
 
 ### Alarm attributes
@@ -316,7 +320,7 @@ def get_resource() -> Alarm:
 
 Type annotations for `boto3.resource("cloudwatch").delete` method.
 
-[Alarm.delete documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.delete)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.delete]
 
 ```python
 def delete(
@@ -329,7 +333,7 @@ def delete(
 
 Type annotations for `boto3.resource("cloudwatch").describe_history` method.
 
-[Alarm.describe_history documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.describe_history)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.describe_history]
 
 ```python
 def describe_history(
@@ -349,7 +353,7 @@ def describe_history(
 
 Type annotations for `boto3.resource("cloudwatch").disable_actions` method.
 
-[Alarm.disable_actions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.disable_actions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.disable_actions]
 
 ```python
 def disable_actions(
@@ -362,7 +366,7 @@ def disable_actions(
 
 Type annotations for `boto3.resource("cloudwatch").enable_actions` method.
 
-[Alarm.enable_actions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.enable_actions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.enable_actions]
 
 ```python
 def enable_actions(
@@ -375,7 +379,7 @@ def enable_actions(
 
 Type annotations for `boto3.resource("cloudwatch").get_available_subresources` method.
 
-[Alarm.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -388,7 +392,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("cloudwatch").load` method.
 
-[Alarm.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.load]
 
 ```python
 def load(
@@ -401,7 +405,7 @@ def load(
 
 Type annotations for `boto3.resource("cloudwatch").reload` method.
 
-[Alarm.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.reload]
 
 ```python
 def reload(
@@ -414,7 +418,7 @@ def reload(
 
 Type annotations for `boto3.resource("cloudwatch").set_state` method.
 
-[Alarm.set_state documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.set_state)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.set_state]
 
 ```python
 def set_state(
@@ -444,7 +448,7 @@ def get_resource() -> Metric:
     return boto3.resource("cloudwatch").Metric(...)
 ```
 
-[Metric documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.Metric)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.Metric)
 
 
 ### Metric attributes
@@ -470,7 +474,7 @@ def get_resource() -> Metric:
 
 Type annotations for `boto3.resource("cloudwatch").get_available_subresources` method.
 
-[Metric.get_available_subresources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.get_available_subresources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.get_available_subresources]
 
 ```python
 def get_available_subresources(
@@ -483,7 +487,7 @@ def get_available_subresources(
 
 Type annotations for `boto3.resource("cloudwatch").get_statistics` method.
 
-[Metric.get_statistics documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.get_statistics)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.get_statistics]
 
 ```python
 def get_statistics(
@@ -503,7 +507,7 @@ def get_statistics(
 
 Type annotations for `boto3.resource("cloudwatch").load` method.
 
-[Metric.load documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.load)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.load]
 
 ```python
 def load(
@@ -516,7 +520,7 @@ def load(
 
 Type annotations for `boto3.resource("cloudwatch").put_alarm` method.
 
-[Metric.put_alarm documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.put_alarm)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.put_alarm]
 
 ```python
 def put_alarm(
@@ -549,7 +553,7 @@ def put_alarm(
 
 Type annotations for `boto3.resource("cloudwatch").put_data` method.
 
-[Metric.put_data documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.put_data)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.put_data]
 
 ```python
 def put_data(
@@ -562,7 +566,7 @@ def put_data(
 
 Type annotations for `boto3.resource("cloudwatch").reload` method.
 
-[Metric.reload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.reload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.reload]
 
 ```python
 def reload(
@@ -591,7 +595,7 @@ def get_collection() -> MetricAlarmsCollection:
     return resource.alarms
 ```
 
-[Metric.alarms documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.alarms)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.MetricAlarmsCollection)
 
 ```python
 class MetricAlarmsCollection(ResourceCollection):

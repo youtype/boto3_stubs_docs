@@ -120,7 +120,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_quicksight.client import QuickSightClient
+
+def get_quicksight_client() -> QuickSightClient:
+    return boto3.client("quicksight")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client)
 
 ## Exceptions
 
@@ -165,7 +170,7 @@ Exceptions:
 
 Type annotations for `boto3.client("quicksight").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -179,7 +184,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("quicksight").cancel_ingestion` method.
 
-[Client.cancel_ingestion documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.cancel_ingestion)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.cancel_ingestion]
 
 ```python
 def cancel_ingestion(
@@ -195,7 +200,7 @@ def cancel_ingestion(
 
 Type annotations for `boto3.client("quicksight").create_account_customization` method.
 
-[Client.create_account_customization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_account_customization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_account_customization]
 
 ```python
 def create_account_customization(
@@ -212,7 +217,7 @@ def create_account_customization(
 
 Type annotations for `boto3.client("quicksight").create_analysis` method.
 
-[Client.create_analysis documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_analysis)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_analysis]
 
 ```python
 def create_analysis(
@@ -233,7 +238,7 @@ def create_analysis(
 
 Type annotations for `boto3.client("quicksight").create_dashboard` method.
 
-[Client.create_dashboard documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_dashboard)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_dashboard]
 
 ```python
 def create_dashboard(
@@ -256,7 +261,7 @@ def create_dashboard(
 
 Type annotations for `boto3.client("quicksight").create_data_set` method.
 
-[Client.create_data_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_data_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_data_set]
 
 ```python
 def create_data_set(
@@ -281,7 +286,7 @@ def create_data_set(
 
 Type annotations for `boto3.client("quicksight").create_data_source` method.
 
-[Client.create_data_source documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_data_source)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_data_source]
 
 ```python
 def create_data_source(
@@ -304,7 +309,7 @@ def create_data_source(
 
 Type annotations for `boto3.client("quicksight").create_group` method.
 
-[Client.create_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_group]
 
 ```python
 def create_group(
@@ -321,7 +326,7 @@ def create_group(
 
 Type annotations for `boto3.client("quicksight").create_group_membership` method.
 
-[Client.create_group_membership documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_group_membership)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_group_membership]
 
 ```python
 def create_group_membership(
@@ -338,7 +343,7 @@ def create_group_membership(
 
 Type annotations for `boto3.client("quicksight").create_iam_policy_assignment` method.
 
-[Client.create_iam_policy_assignment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_iam_policy_assignment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_iam_policy_assignment]
 
 ```python
 def create_iam_policy_assignment(
@@ -357,7 +362,7 @@ def create_iam_policy_assignment(
 
 Type annotations for `boto3.client("quicksight").create_ingestion` method.
 
-[Client.create_ingestion documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_ingestion)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_ingestion]
 
 ```python
 def create_ingestion(
@@ -373,7 +378,7 @@ def create_ingestion(
 
 Type annotations for `boto3.client("quicksight").create_namespace` method.
 
-[Client.create_namespace documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_namespace)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_namespace]
 
 ```python
 def create_namespace(
@@ -390,7 +395,7 @@ def create_namespace(
 
 Type annotations for `boto3.client("quicksight").create_template` method.
 
-[Client.create_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_template]
 
 ```python
 def create_template(
@@ -410,7 +415,7 @@ def create_template(
 
 Type annotations for `boto3.client("quicksight").create_template_alias` method.
 
-[Client.create_template_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_template_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_template_alias]
 
 ```python
 def create_template_alias(
@@ -427,7 +432,7 @@ def create_template_alias(
 
 Type annotations for `boto3.client("quicksight").create_theme` method.
 
-[Client.create_theme documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_theme)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_theme]
 
 ```python
 def create_theme(
@@ -448,7 +453,7 @@ def create_theme(
 
 Type annotations for `boto3.client("quicksight").create_theme_alias` method.
 
-[Client.create_theme_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_theme_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_theme_alias]
 
 ```python
 def create_theme_alias(
@@ -465,7 +470,7 @@ def create_theme_alias(
 
 Type annotations for `boto3.client("quicksight").delete_account_customization` method.
 
-[Client.delete_account_customization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_account_customization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_account_customization]
 
 ```python
 def delete_account_customization(
@@ -480,7 +485,7 @@ def delete_account_customization(
 
 Type annotations for `boto3.client("quicksight").delete_analysis` method.
 
-[Client.delete_analysis documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_analysis)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_analysis]
 
 ```python
 def delete_analysis(
@@ -497,7 +502,7 @@ def delete_analysis(
 
 Type annotations for `boto3.client("quicksight").delete_dashboard` method.
 
-[Client.delete_dashboard documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_dashboard)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_dashboard]
 
 ```python
 def delete_dashboard(
@@ -513,7 +518,7 @@ def delete_dashboard(
 
 Type annotations for `boto3.client("quicksight").delete_data_set` method.
 
-[Client.delete_data_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_data_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_data_set]
 
 ```python
 def delete_data_set(
@@ -528,7 +533,7 @@ def delete_data_set(
 
 Type annotations for `boto3.client("quicksight").delete_data_source` method.
 
-[Client.delete_data_source documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_data_source)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_data_source]
 
 ```python
 def delete_data_source(
@@ -543,7 +548,7 @@ def delete_data_source(
 
 Type annotations for `boto3.client("quicksight").delete_group` method.
 
-[Client.delete_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_group]
 
 ```python
 def delete_group(
@@ -559,7 +564,7 @@ def delete_group(
 
 Type annotations for `boto3.client("quicksight").delete_group_membership` method.
 
-[Client.delete_group_membership documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_group_membership)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_group_membership]
 
 ```python
 def delete_group_membership(
@@ -576,7 +581,7 @@ def delete_group_membership(
 
 Type annotations for `boto3.client("quicksight").delete_iam_policy_assignment` method.
 
-[Client.delete_iam_policy_assignment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_iam_policy_assignment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_iam_policy_assignment]
 
 ```python
 def delete_iam_policy_assignment(
@@ -592,7 +597,7 @@ def delete_iam_policy_assignment(
 
 Type annotations for `boto3.client("quicksight").delete_namespace` method.
 
-[Client.delete_namespace documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_namespace)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_namespace]
 
 ```python
 def delete_namespace(
@@ -607,7 +612,7 @@ def delete_namespace(
 
 Type annotations for `boto3.client("quicksight").delete_template` method.
 
-[Client.delete_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_template]
 
 ```python
 def delete_template(
@@ -623,7 +628,7 @@ def delete_template(
 
 Type annotations for `boto3.client("quicksight").delete_template_alias` method.
 
-[Client.delete_template_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_template_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_template_alias]
 
 ```python
 def delete_template_alias(
@@ -639,7 +644,7 @@ def delete_template_alias(
 
 Type annotations for `boto3.client("quicksight").delete_theme` method.
 
-[Client.delete_theme documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_theme)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_theme]
 
 ```python
 def delete_theme(
@@ -655,7 +660,7 @@ def delete_theme(
 
 Type annotations for `boto3.client("quicksight").delete_theme_alias` method.
 
-[Client.delete_theme_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_theme_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_theme_alias]
 
 ```python
 def delete_theme_alias(
@@ -671,7 +676,7 @@ def delete_theme_alias(
 
 Type annotations for `boto3.client("quicksight").delete_user` method.
 
-[Client.delete_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_user]
 
 ```python
 def delete_user(
@@ -687,7 +692,7 @@ def delete_user(
 
 Type annotations for `boto3.client("quicksight").delete_user_by_principal_id` method.
 
-[Client.delete_user_by_principal_id documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_user_by_principal_id)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_user_by_principal_id]
 
 ```python
 def delete_user_by_principal_id(
@@ -703,7 +708,7 @@ def delete_user_by_principal_id(
 
 Type annotations for `boto3.client("quicksight").describe_account_customization` method.
 
-[Client.describe_account_customization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_account_customization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_account_customization]
 
 ```python
 def describe_account_customization(
@@ -719,7 +724,7 @@ def describe_account_customization(
 
 Type annotations for `boto3.client("quicksight").describe_account_settings` method.
 
-[Client.describe_account_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_account_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_account_settings]
 
 ```python
 def describe_account_settings(
@@ -733,7 +738,7 @@ def describe_account_settings(
 
 Type annotations for `boto3.client("quicksight").describe_analysis` method.
 
-[Client.describe_analysis documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_analysis)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_analysis]
 
 ```python
 def describe_analysis(
@@ -748,7 +753,7 @@ def describe_analysis(
 
 Type annotations for `boto3.client("quicksight").describe_analysis_permissions` method.
 
-[Client.describe_analysis_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_analysis_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_analysis_permissions]
 
 ```python
 def describe_analysis_permissions(
@@ -763,7 +768,7 @@ def describe_analysis_permissions(
 
 Type annotations for `boto3.client("quicksight").describe_dashboard` method.
 
-[Client.describe_dashboard documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_dashboard)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_dashboard]
 
 ```python
 def describe_dashboard(
@@ -780,7 +785,7 @@ def describe_dashboard(
 
 Type annotations for `boto3.client("quicksight").describe_dashboard_permissions` method.
 
-[Client.describe_dashboard_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_dashboard_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_dashboard_permissions]
 
 ```python
 def describe_dashboard_permissions(
@@ -795,7 +800,7 @@ def describe_dashboard_permissions(
 
 Type annotations for `boto3.client("quicksight").describe_data_set` method.
 
-[Client.describe_data_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_set]
 
 ```python
 def describe_data_set(
@@ -810,7 +815,7 @@ def describe_data_set(
 
 Type annotations for `boto3.client("quicksight").describe_data_set_permissions` method.
 
-[Client.describe_data_set_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_set_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_set_permissions]
 
 ```python
 def describe_data_set_permissions(
@@ -825,7 +830,7 @@ def describe_data_set_permissions(
 
 Type annotations for `boto3.client("quicksight").describe_data_source` method.
 
-[Client.describe_data_source documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_source)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_source]
 
 ```python
 def describe_data_source(
@@ -840,7 +845,7 @@ def describe_data_source(
 
 Type annotations for `boto3.client("quicksight").describe_data_source_permissions` method.
 
-[Client.describe_data_source_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_source_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_source_permissions]
 
 ```python
 def describe_data_source_permissions(
@@ -855,7 +860,7 @@ def describe_data_source_permissions(
 
 Type annotations for `boto3.client("quicksight").describe_group` method.
 
-[Client.describe_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_group]
 
 ```python
 def describe_group(
@@ -871,7 +876,7 @@ def describe_group(
 
 Type annotations for `boto3.client("quicksight").describe_iam_policy_assignment` method.
 
-[Client.describe_iam_policy_assignment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_iam_policy_assignment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_iam_policy_assignment]
 
 ```python
 def describe_iam_policy_assignment(
@@ -887,7 +892,7 @@ def describe_iam_policy_assignment(
 
 Type annotations for `boto3.client("quicksight").describe_ingestion` method.
 
-[Client.describe_ingestion documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_ingestion)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_ingestion]
 
 ```python
 def describe_ingestion(
@@ -903,7 +908,7 @@ def describe_ingestion(
 
 Type annotations for `boto3.client("quicksight").describe_namespace` method.
 
-[Client.describe_namespace documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_namespace)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_namespace]
 
 ```python
 def describe_namespace(
@@ -918,7 +923,7 @@ def describe_namespace(
 
 Type annotations for `boto3.client("quicksight").describe_template` method.
 
-[Client.describe_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template]
 
 ```python
 def describe_template(
@@ -935,7 +940,7 @@ def describe_template(
 
 Type annotations for `boto3.client("quicksight").describe_template_alias` method.
 
-[Client.describe_template_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template_alias]
 
 ```python
 def describe_template_alias(
@@ -951,7 +956,7 @@ def describe_template_alias(
 
 Type annotations for `boto3.client("quicksight").describe_template_permissions` method.
 
-[Client.describe_template_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template_permissions]
 
 ```python
 def describe_template_permissions(
@@ -966,7 +971,7 @@ def describe_template_permissions(
 
 Type annotations for `boto3.client("quicksight").describe_theme` method.
 
-[Client.describe_theme documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_theme)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_theme]
 
 ```python
 def describe_theme(
@@ -983,7 +988,7 @@ def describe_theme(
 
 Type annotations for `boto3.client("quicksight").describe_theme_alias` method.
 
-[Client.describe_theme_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_theme_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_theme_alias]
 
 ```python
 def describe_theme_alias(
@@ -999,7 +1004,7 @@ def describe_theme_alias(
 
 Type annotations for `boto3.client("quicksight").describe_theme_permissions` method.
 
-[Client.describe_theme_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_theme_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_theme_permissions]
 
 ```python
 def describe_theme_permissions(
@@ -1014,7 +1019,7 @@ def describe_theme_permissions(
 
 Type annotations for `boto3.client("quicksight").describe_user` method.
 
-[Client.describe_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_user]
 
 ```python
 def describe_user(
@@ -1030,7 +1035,7 @@ def describe_user(
 
 Type annotations for `boto3.client("quicksight").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -1047,7 +1052,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("quicksight").get_dashboard_embed_url` method.
 
-[Client.get_dashboard_embed_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.get_dashboard_embed_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.get_dashboard_embed_url]
 
 ```python
 def get_dashboard_embed_url(
@@ -1070,7 +1075,7 @@ def get_dashboard_embed_url(
 
 Type annotations for `boto3.client("quicksight").get_session_embed_url` method.
 
-[Client.get_session_embed_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.get_session_embed_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.get_session_embed_url]
 
 ```python
 def get_session_embed_url(
@@ -1087,7 +1092,7 @@ def get_session_embed_url(
 
 Type annotations for `boto3.client("quicksight").list_analyses` method.
 
-[Client.list_analyses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_analyses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_analyses]
 
 ```python
 def list_analyses(
@@ -1103,7 +1108,7 @@ def list_analyses(
 
 Type annotations for `boto3.client("quicksight").list_dashboard_versions` method.
 
-[Client.list_dashboard_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_dashboard_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_dashboard_versions]
 
 ```python
 def list_dashboard_versions(
@@ -1120,7 +1125,7 @@ def list_dashboard_versions(
 
 Type annotations for `boto3.client("quicksight").list_dashboards` method.
 
-[Client.list_dashboards documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_dashboards)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_dashboards]
 
 ```python
 def list_dashboards(
@@ -1136,7 +1141,7 @@ def list_dashboards(
 
 Type annotations for `boto3.client("quicksight").list_data_sets` method.
 
-[Client.list_data_sets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_data_sets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_data_sets]
 
 ```python
 def list_data_sets(
@@ -1152,7 +1157,7 @@ def list_data_sets(
 
 Type annotations for `boto3.client("quicksight").list_data_sources` method.
 
-[Client.list_data_sources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_data_sources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_data_sources]
 
 ```python
 def list_data_sources(
@@ -1168,7 +1173,7 @@ def list_data_sources(
 
 Type annotations for `boto3.client("quicksight").list_group_memberships` method.
 
-[Client.list_group_memberships documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_group_memberships)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_group_memberships]
 
 ```python
 def list_group_memberships(
@@ -1186,7 +1191,7 @@ def list_group_memberships(
 
 Type annotations for `boto3.client("quicksight").list_groups` method.
 
-[Client.list_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_groups]
 
 ```python
 def list_groups(
@@ -1203,7 +1208,7 @@ def list_groups(
 
 Type annotations for `boto3.client("quicksight").list_iam_policy_assignments` method.
 
-[Client.list_iam_policy_assignments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_iam_policy_assignments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_iam_policy_assignments]
 
 ```python
 def list_iam_policy_assignments(
@@ -1221,7 +1226,7 @@ def list_iam_policy_assignments(
 
 Type annotations for `boto3.client("quicksight").list_iam_policy_assignments_for_user` method.
 
-[Client.list_iam_policy_assignments_for_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_iam_policy_assignments_for_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_iam_policy_assignments_for_user]
 
 ```python
 def list_iam_policy_assignments_for_user(
@@ -1239,7 +1244,7 @@ def list_iam_policy_assignments_for_user(
 
 Type annotations for `boto3.client("quicksight").list_ingestions` method.
 
-[Client.list_ingestions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_ingestions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_ingestions]
 
 ```python
 def list_ingestions(
@@ -1256,7 +1261,7 @@ def list_ingestions(
 
 Type annotations for `boto3.client("quicksight").list_namespaces` method.
 
-[Client.list_namespaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_namespaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_namespaces]
 
 ```python
 def list_namespaces(
@@ -1272,7 +1277,7 @@ def list_namespaces(
 
 Type annotations for `boto3.client("quicksight").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -1286,7 +1291,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("quicksight").list_template_aliases` method.
 
-[Client.list_template_aliases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_template_aliases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_template_aliases]
 
 ```python
 def list_template_aliases(
@@ -1303,7 +1308,7 @@ def list_template_aliases(
 
 Type annotations for `boto3.client("quicksight").list_template_versions` method.
 
-[Client.list_template_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_template_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_template_versions]
 
 ```python
 def list_template_versions(
@@ -1320,7 +1325,7 @@ def list_template_versions(
 
 Type annotations for `boto3.client("quicksight").list_templates` method.
 
-[Client.list_templates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_templates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_templates]
 
 ```python
 def list_templates(
@@ -1336,7 +1341,7 @@ def list_templates(
 
 Type annotations for `boto3.client("quicksight").list_theme_aliases` method.
 
-[Client.list_theme_aliases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_theme_aliases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_theme_aliases]
 
 ```python
 def list_theme_aliases(
@@ -1353,7 +1358,7 @@ def list_theme_aliases(
 
 Type annotations for `boto3.client("quicksight").list_theme_versions` method.
 
-[Client.list_theme_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_theme_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_theme_versions]
 
 ```python
 def list_theme_versions(
@@ -1370,7 +1375,7 @@ def list_theme_versions(
 
 Type annotations for `boto3.client("quicksight").list_themes` method.
 
-[Client.list_themes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_themes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_themes]
 
 ```python
 def list_themes(
@@ -1387,7 +1392,7 @@ def list_themes(
 
 Type annotations for `boto3.client("quicksight").list_user_groups` method.
 
-[Client.list_user_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_user_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_user_groups]
 
 ```python
 def list_user_groups(
@@ -1405,7 +1410,7 @@ def list_user_groups(
 
 Type annotations for `boto3.client("quicksight").list_users` method.
 
-[Client.list_users documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_users)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_users]
 
 ```python
 def list_users(
@@ -1422,7 +1427,7 @@ def list_users(
 
 Type annotations for `boto3.client("quicksight").register_user` method.
 
-[Client.register_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.register_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.register_user]
 
 ```python
 def register_user(
@@ -1444,7 +1449,7 @@ def register_user(
 
 Type annotations for `boto3.client("quicksight").restore_analysis` method.
 
-[Client.restore_analysis documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.restore_analysis)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.restore_analysis]
 
 ```python
 def restore_analysis(
@@ -1459,7 +1464,7 @@ def restore_analysis(
 
 Type annotations for `boto3.client("quicksight").search_analyses` method.
 
-[Client.search_analyses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_analyses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_analyses]
 
 ```python
 def search_analyses(
@@ -1476,7 +1481,7 @@ def search_analyses(
 
 Type annotations for `boto3.client("quicksight").search_dashboards` method.
 
-[Client.search_dashboards documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_dashboards)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_dashboards]
 
 ```python
 def search_dashboards(
@@ -1493,7 +1498,7 @@ def search_dashboards(
 
 Type annotations for `boto3.client("quicksight").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -1508,7 +1513,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("quicksight").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -1523,7 +1528,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("quicksight").update_account_customization` method.
 
-[Client.update_account_customization documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_account_customization)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_account_customization]
 
 ```python
 def update_account_customization(
@@ -1539,7 +1544,7 @@ def update_account_customization(
 
 Type annotations for `boto3.client("quicksight").update_account_settings` method.
 
-[Client.update_account_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_account_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_account_settings]
 
 ```python
 def update_account_settings(
@@ -1555,7 +1560,7 @@ def update_account_settings(
 
 Type annotations for `boto3.client("quicksight").update_analysis` method.
 
-[Client.update_analysis documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_analysis)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_analysis]
 
 ```python
 def update_analysis(
@@ -1574,7 +1579,7 @@ def update_analysis(
 
 Type annotations for `boto3.client("quicksight").update_analysis_permissions` method.
 
-[Client.update_analysis_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_analysis_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_analysis_permissions]
 
 ```python
 def update_analysis_permissions(
@@ -1591,7 +1596,7 @@ def update_analysis_permissions(
 
 Type annotations for `boto3.client("quicksight").update_dashboard` method.
 
-[Client.update_dashboard documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_dashboard)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_dashboard]
 
 ```python
 def update_dashboard(
@@ -1612,7 +1617,7 @@ def update_dashboard(
 
 Type annotations for `boto3.client("quicksight").update_dashboard_permissions` method.
 
-[Client.update_dashboard_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_dashboard_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_dashboard_permissions]
 
 ```python
 def update_dashboard_permissions(
@@ -1629,7 +1634,7 @@ def update_dashboard_permissions(
 
 Type annotations for `boto3.client("quicksight").update_dashboard_published_version` method.
 
-[Client.update_dashboard_published_version documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_dashboard_published_version)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_dashboard_published_version]
 
 ```python
 def update_dashboard_published_version(
@@ -1645,7 +1650,7 @@ def update_dashboard_published_version(
 
 Type annotations for `boto3.client("quicksight").update_data_set` method.
 
-[Client.update_data_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_set]
 
 ```python
 def update_data_set(
@@ -1668,7 +1673,7 @@ def update_data_set(
 
 Type annotations for `boto3.client("quicksight").update_data_set_permissions` method.
 
-[Client.update_data_set_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_set_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_set_permissions]
 
 ```python
 def update_data_set_permissions(
@@ -1685,7 +1690,7 @@ def update_data_set_permissions(
 
 Type annotations for `boto3.client("quicksight").update_data_source` method.
 
-[Client.update_data_source documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_source)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_source]
 
 ```python
 def update_data_source(
@@ -1705,7 +1710,7 @@ def update_data_source(
 
 Type annotations for `boto3.client("quicksight").update_data_source_permissions` method.
 
-[Client.update_data_source_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_source_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_source_permissions]
 
 ```python
 def update_data_source_permissions(
@@ -1722,7 +1727,7 @@ def update_data_source_permissions(
 
 Type annotations for `boto3.client("quicksight").update_group` method.
 
-[Client.update_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_group]
 
 ```python
 def update_group(
@@ -1739,7 +1744,7 @@ def update_group(
 
 Type annotations for `boto3.client("quicksight").update_iam_policy_assignment` method.
 
-[Client.update_iam_policy_assignment documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_iam_policy_assignment)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_iam_policy_assignment]
 
 ```python
 def update_iam_policy_assignment(
@@ -1758,7 +1763,7 @@ def update_iam_policy_assignment(
 
 Type annotations for `boto3.client("quicksight").update_template` method.
 
-[Client.update_template documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_template)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_template]
 
 ```python
 def update_template(
@@ -1776,7 +1781,7 @@ def update_template(
 
 Type annotations for `boto3.client("quicksight").update_template_alias` method.
 
-[Client.update_template_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_template_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_template_alias]
 
 ```python
 def update_template_alias(
@@ -1793,7 +1798,7 @@ def update_template_alias(
 
 Type annotations for `boto3.client("quicksight").update_template_permissions` method.
 
-[Client.update_template_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_template_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_template_permissions]
 
 ```python
 def update_template_permissions(
@@ -1810,7 +1815,7 @@ def update_template_permissions(
 
 Type annotations for `boto3.client("quicksight").update_theme` method.
 
-[Client.update_theme documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_theme)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_theme]
 
 ```python
 def update_theme(
@@ -1829,7 +1834,7 @@ def update_theme(
 
 Type annotations for `boto3.client("quicksight").update_theme_alias` method.
 
-[Client.update_theme_alias documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_theme_alias)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_theme_alias]
 
 ```python
 def update_theme_alias(
@@ -1846,7 +1851,7 @@ def update_theme_alias(
 
 Type annotations for `boto3.client("quicksight").update_theme_permissions` method.
 
-[Client.update_theme_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_theme_permissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_theme_permissions]
 
 ```python
 def update_theme_permissions(
@@ -1863,7 +1868,7 @@ def update_theme_permissions(
 
 Type annotations for `boto3.client("quicksight").update_user` method.
 
-[Client.update_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_user]
 
 ```python
 def update_user(

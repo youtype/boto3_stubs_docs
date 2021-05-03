@@ -60,7 +60,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_codepipeline.client import CodePipelineClient
+
+def get_codepipeline_client() -> CodePipelineClient:
+    return boto3.client("codepipeline")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client)
 
 ## Exceptions
 
@@ -124,7 +129,7 @@ Exceptions:
 
 Type annotations for `boto3.client("codepipeline").acknowledge_job` method.
 
-[Client.acknowledge_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_job]
 
 ```python
 def acknowledge_job(
@@ -139,7 +144,7 @@ def acknowledge_job(
 
 Type annotations for `boto3.client("codepipeline").acknowledge_third_party_job` method.
 
-[Client.acknowledge_third_party_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_third_party_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_third_party_job]
 
 ```python
 def acknowledge_third_party_job(
@@ -155,7 +160,7 @@ def acknowledge_third_party_job(
 
 Type annotations for `boto3.client("codepipeline").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -169,7 +174,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("codepipeline").create_custom_action_type` method.
 
-[Client.create_custom_action_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.create_custom_action_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.create_custom_action_type]
 
 ```python
 def create_custom_action_type(
@@ -190,7 +195,7 @@ def create_custom_action_type(
 
 Type annotations for `boto3.client("codepipeline").create_pipeline` method.
 
-[Client.create_pipeline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.create_pipeline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.create_pipeline]
 
 ```python
 def create_pipeline(
@@ -205,7 +210,7 @@ def create_pipeline(
 
 Type annotations for `boto3.client("codepipeline").delete_custom_action_type` method.
 
-[Client.delete_custom_action_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_custom_action_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_custom_action_type]
 
 ```python
 def delete_custom_action_type(
@@ -221,7 +226,7 @@ def delete_custom_action_type(
 
 Type annotations for `boto3.client("codepipeline").delete_pipeline` method.
 
-[Client.delete_pipeline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_pipeline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_pipeline]
 
 ```python
 def delete_pipeline(
@@ -235,7 +240,7 @@ def delete_pipeline(
 
 Type annotations for `boto3.client("codepipeline").delete_webhook` method.
 
-[Client.delete_webhook documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_webhook)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_webhook]
 
 ```python
 def delete_webhook(
@@ -249,7 +254,7 @@ def delete_webhook(
 
 Type annotations for `boto3.client("codepipeline").deregister_webhook_with_third_party` method.
 
-[Client.deregister_webhook_with_third_party documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.deregister_webhook_with_third_party)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.deregister_webhook_with_third_party]
 
 ```python
 def deregister_webhook_with_third_party(
@@ -263,7 +268,7 @@ def deregister_webhook_with_third_party(
 
 Type annotations for `boto3.client("codepipeline").disable_stage_transition` method.
 
-[Client.disable_stage_transition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.disable_stage_transition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.disable_stage_transition]
 
 ```python
 def disable_stage_transition(
@@ -280,7 +285,7 @@ def disable_stage_transition(
 
 Type annotations for `boto3.client("codepipeline").enable_stage_transition` method.
 
-[Client.enable_stage_transition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.enable_stage_transition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.enable_stage_transition]
 
 ```python
 def enable_stage_transition(
@@ -296,7 +301,7 @@ def enable_stage_transition(
 
 Type annotations for `boto3.client("codepipeline").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -313,7 +318,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("codepipeline").get_action_type` method.
 
-[Client.get_action_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_action_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_action_type]
 
 ```python
 def get_action_type(
@@ -330,7 +335,7 @@ def get_action_type(
 
 Type annotations for `boto3.client("codepipeline").get_job_details` method.
 
-[Client.get_job_details documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_job_details)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_job_details]
 
 ```python
 def get_job_details(
@@ -344,7 +349,7 @@ def get_job_details(
 
 Type annotations for `boto3.client("codepipeline").get_pipeline` method.
 
-[Client.get_pipeline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline]
 
 ```python
 def get_pipeline(
@@ -359,7 +364,7 @@ def get_pipeline(
 
 Type annotations for `boto3.client("codepipeline").get_pipeline_execution` method.
 
-[Client.get_pipeline_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_execution]
 
 ```python
 def get_pipeline_execution(
@@ -374,7 +379,7 @@ def get_pipeline_execution(
 
 Type annotations for `boto3.client("codepipeline").get_pipeline_state` method.
 
-[Client.get_pipeline_state documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_state)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_state]
 
 ```python
 def get_pipeline_state(
@@ -388,7 +393,7 @@ def get_pipeline_state(
 
 Type annotations for `boto3.client("codepipeline").get_third_party_job_details` method.
 
-[Client.get_third_party_job_details documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_third_party_job_details)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_third_party_job_details]
 
 ```python
 def get_third_party_job_details(
@@ -403,7 +408,7 @@ def get_third_party_job_details(
 
 Type annotations for `boto3.client("codepipeline").list_action_executions` method.
 
-[Client.list_action_executions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_action_executions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_action_executions]
 
 ```python
 def list_action_executions(
@@ -420,7 +425,7 @@ def list_action_executions(
 
 Type annotations for `boto3.client("codepipeline").list_action_types` method.
 
-[Client.list_action_types documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_action_types)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_action_types]
 
 ```python
 def list_action_types(
@@ -436,7 +441,7 @@ def list_action_types(
 
 Type annotations for `boto3.client("codepipeline").list_pipeline_executions` method.
 
-[Client.list_pipeline_executions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_pipeline_executions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_pipeline_executions]
 
 ```python
 def list_pipeline_executions(
@@ -452,7 +457,7 @@ def list_pipeline_executions(
 
 Type annotations for `boto3.client("codepipeline").list_pipelines` method.
 
-[Client.list_pipelines documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_pipelines)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_pipelines]
 
 ```python
 def list_pipelines(
@@ -467,7 +472,7 @@ def list_pipelines(
 
 Type annotations for `boto3.client("codepipeline").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -483,7 +488,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("codepipeline").list_webhooks` method.
 
-[Client.list_webhooks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_webhooks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_webhooks]
 
 ```python
 def list_webhooks(
@@ -498,7 +503,7 @@ def list_webhooks(
 
 Type annotations for `boto3.client("codepipeline").poll_for_jobs` method.
 
-[Client.poll_for_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.poll_for_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.poll_for_jobs]
 
 ```python
 def poll_for_jobs(
@@ -514,7 +519,7 @@ def poll_for_jobs(
 
 Type annotations for `boto3.client("codepipeline").poll_for_third_party_jobs` method.
 
-[Client.poll_for_third_party_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.poll_for_third_party_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.poll_for_third_party_jobs]
 
 ```python
 def poll_for_third_party_jobs(
@@ -529,7 +534,7 @@ def poll_for_third_party_jobs(
 
 Type annotations for `boto3.client("codepipeline").put_action_revision` method.
 
-[Client.put_action_revision documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_action_revision)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_action_revision]
 
 ```python
 def put_action_revision(
@@ -546,7 +551,7 @@ def put_action_revision(
 
 Type annotations for `boto3.client("codepipeline").put_approval_result` method.
 
-[Client.put_approval_result documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_approval_result)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_approval_result]
 
 ```python
 def put_approval_result(
@@ -564,7 +569,7 @@ def put_approval_result(
 
 Type annotations for `boto3.client("codepipeline").put_job_failure_result` method.
 
-[Client.put_job_failure_result documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_job_failure_result)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_job_failure_result]
 
 ```python
 def put_job_failure_result(
@@ -579,7 +584,7 @@ def put_job_failure_result(
 
 Type annotations for `boto3.client("codepipeline").put_job_success_result` method.
 
-[Client.put_job_success_result documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_job_success_result)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_job_success_result]
 
 ```python
 def put_job_success_result(
@@ -597,7 +602,7 @@ def put_job_success_result(
 
 Type annotations for `boto3.client("codepipeline").put_third_party_job_failure_result` method.
 
-[Client.put_third_party_job_failure_result documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_failure_result)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_failure_result]
 
 ```python
 def put_third_party_job_failure_result(
@@ -613,7 +618,7 @@ def put_third_party_job_failure_result(
 
 Type annotations for `boto3.client("codepipeline").put_third_party_job_success_result` method.
 
-[Client.put_third_party_job_success_result documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_success_result)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_success_result]
 
 ```python
 def put_third_party_job_success_result(
@@ -631,7 +636,7 @@ def put_third_party_job_success_result(
 
 Type annotations for `boto3.client("codepipeline").put_webhook` method.
 
-[Client.put_webhook documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_webhook)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_webhook]
 
 ```python
 def put_webhook(
@@ -646,7 +651,7 @@ def put_webhook(
 
 Type annotations for `boto3.client("codepipeline").register_webhook_with_third_party` method.
 
-[Client.register_webhook_with_third_party documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.register_webhook_with_third_party)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.register_webhook_with_third_party]
 
 ```python
 def register_webhook_with_third_party(
@@ -660,7 +665,7 @@ def register_webhook_with_third_party(
 
 Type annotations for `boto3.client("codepipeline").retry_stage_execution` method.
 
-[Client.retry_stage_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.retry_stage_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.retry_stage_execution]
 
 ```python
 def retry_stage_execution(
@@ -677,7 +682,7 @@ def retry_stage_execution(
 
 Type annotations for `boto3.client("codepipeline").start_pipeline_execution` method.
 
-[Client.start_pipeline_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.start_pipeline_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.start_pipeline_execution]
 
 ```python
 def start_pipeline_execution(
@@ -692,7 +697,7 @@ def start_pipeline_execution(
 
 Type annotations for `boto3.client("codepipeline").stop_pipeline_execution` method.
 
-[Client.stop_pipeline_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.stop_pipeline_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.stop_pipeline_execution]
 
 ```python
 def stop_pipeline_execution(
@@ -709,7 +714,7 @@ def stop_pipeline_execution(
 
 Type annotations for `boto3.client("codepipeline").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -724,7 +729,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("codepipeline").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -739,7 +744,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("codepipeline").update_action_type` method.
 
-[Client.update_action_type documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.update_action_type)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.update_action_type]
 
 ```python
 def update_action_type(
@@ -753,7 +758,7 @@ def update_action_type(
 
 Type annotations for `boto3.client("codepipeline").update_pipeline` method.
 
-[Client.update_pipeline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.update_pipeline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.update_pipeline]
 
 ```python
 def update_pipeline(

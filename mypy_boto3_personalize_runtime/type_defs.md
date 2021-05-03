@@ -1,11 +1,11 @@
-# Structures for boto3 PersonalizeRuntime module
+# Typed dictionaries for boto3 PersonalizeRuntime module
 
 > [Index](../README.md) > [PersonalizeRuntime](./README.md) > Structures
 
 Auto-generated documentation for [PersonalizeRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime)
 type annotations stubs module [mypy_boto3_personalize_runtime](https://pypi.org/project/mypy-boto3-personalize-runtime/).
 
-- [Structures for boto3 PersonalizeRuntime module](#structures-for-boto3-personalizeruntime-module)
+- [Typed dictionaries for boto3 PersonalizeRuntime module](#typed-dictionaries-for-boto3-personalizeruntime-module)
   - [GetPersonalizedRankingResponseTypeDef](#getpersonalizedrankingresponsetypedef)
   - [GetRecommendationsResponseTypeDef](#getrecommendationsresponsetypedef)
   - [PredictedItemTypeDef](#predicteditemtypedef)

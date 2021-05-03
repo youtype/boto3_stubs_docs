@@ -1,11 +1,11 @@
-# Structures for boto3 ECS module
+# Typed dictionaries for boto3 ECS module
 
 > [Index](../README.md) > [ECS](./README.md) > Structures
 
 Auto-generated documentation for [ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
 type annotations stubs module [mypy_boto3_ecs](https://pypi.org/project/mypy-boto3-ecs/).
 
-- [Structures for boto3 ECS module](#structures-for-boto3-ecs-module)
+- [Typed dictionaries for boto3 ECS module](#typed-dictionaries-for-boto3-ecs-module)
   - [AttachmentStateChangeTypeDef](#attachmentstatechangetypedef)
   - [AttachmentTypeDef](#attachmenttypedef)
   - [AttributeTypeDef](#attributetypedef)

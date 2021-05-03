@@ -30,7 +30,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_redshift_data.client import RedshiftDataAPIServiceClient
+
+def get_redshift-data_client() -> RedshiftDataAPIServiceClient:
+    return boto3.client("redshift-data")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client)
 
 ## Exceptions
 
@@ -62,7 +67,7 @@ Exceptions:
 
 Type annotations for `boto3.client("redshift-data").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -76,7 +81,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("redshift-data").cancel_statement` method.
 
-[Client.cancel_statement documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.cancel_statement)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.cancel_statement]
 
 ```python
 def cancel_statement(
@@ -90,7 +95,7 @@ def cancel_statement(
 
 Type annotations for `boto3.client("redshift-data").describe_statement` method.
 
-[Client.describe_statement documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_statement)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_statement]
 
 ```python
 def describe_statement(
@@ -104,7 +109,7 @@ def describe_statement(
 
 Type annotations for `boto3.client("redshift-data").describe_table` method.
 
-[Client.describe_table documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_table)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_table]
 
 ```python
 def describe_table(
@@ -126,7 +131,7 @@ def describe_table(
 
 Type annotations for `boto3.client("redshift-data").execute_statement` method.
 
-[Client.execute_statement documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.execute_statement)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.execute_statement]
 
 ```python
 def execute_statement(
@@ -146,7 +151,7 @@ def execute_statement(
 
 Type annotations for `boto3.client("redshift-data").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -163,7 +168,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("redshift-data").get_statement_result` method.
 
-[Client.get_statement_result documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.get_statement_result)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.get_statement_result]
 
 ```python
 def get_statement_result(
@@ -178,7 +183,7 @@ def get_statement_result(
 
 Type annotations for `boto3.client("redshift-data").list_databases` method.
 
-[Client.list_databases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_databases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_databases]
 
 ```python
 def list_databases(
@@ -197,7 +202,7 @@ def list_databases(
 
 Type annotations for `boto3.client("redshift-data").list_schemas` method.
 
-[Client.list_schemas documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_schemas)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_schemas]
 
 ```python
 def list_schemas(
@@ -218,7 +223,7 @@ def list_schemas(
 
 Type annotations for `boto3.client("redshift-data").list_statements` method.
 
-[Client.list_statements documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_statements)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_statements]
 
 ```python
 def list_statements(
@@ -236,7 +241,7 @@ def list_statements(
 
 Type annotations for `boto3.client("redshift-data").list_tables` method.
 
-[Client.list_tables documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_tables)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_tables]
 
 ```python
 def list_tables(

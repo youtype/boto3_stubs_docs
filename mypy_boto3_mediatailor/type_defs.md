@@ -1,11 +1,11 @@
-# Structures for boto3 MediaTailor module
+# Typed dictionaries for boto3 MediaTailor module
 
 > [Index](../README.md) > [MediaTailor](./README.md) > Structures
 
 Auto-generated documentation for [MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
 type annotations stubs module [mypy_boto3_mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
 
-- [Structures for boto3 MediaTailor module](#structures-for-boto3-mediatailor-module)
+- [Typed dictionaries for boto3 MediaTailor module](#typed-dictionaries-for-boto3-mediatailor-module)
   - [AccessConfigurationTypeDef](#accessconfigurationtypedef)
   - [AdBreakTypeDef](#adbreaktypedef)
   - [AdMarkerPassthroughTypeDef](#admarkerpassthroughtypedef)

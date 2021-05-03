@@ -15,7 +15,7 @@ pip install mypy-boto3-gamelift
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## GameLiftClient
 
@@ -267,7 +267,7 @@ from mypy_boto3_gamelift.literals import AcceptanceType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

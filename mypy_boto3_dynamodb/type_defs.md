@@ -1,11 +1,11 @@
-# Structures for boto3 DynamoDB module
+# Typed dictionaries for boto3 DynamoDB module
 
 > [Index](../README.md) > [DynamoDB](./README.md) > Structures
 
 Auto-generated documentation for [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
 type annotations stubs module [mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
-- [Structures for boto3 DynamoDB module](#structures-for-boto3-dynamodb-module)
+- [Typed dictionaries for boto3 DynamoDB module](#typed-dictionaries-for-boto3-dynamodb-module)
   - [ArchivalSummaryTypeDef](#archivalsummarytypedef)
   - [AttributeDefinitionTypeDef](#attributedefinitiontypedef)
   - [AttributeValueUpdateTypeDef](#attributevalueupdatetypedef)
@@ -357,11 +357,11 @@ from mypy_boto3_dynamodb.type_defs import BatchExecuteStatementOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Responses`: `List["BatchStatementResponseTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchGetItemOutputTypeDef
@@ -371,13 +371,13 @@ from mypy_boto3_dynamodb.type_defs import BatchGetItemOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Responses`: `Dict[str, List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]]]`
 - `UnprocessedKeys`: `Dict[str, "KeysAndAttributesTypeDef"]`
 - `ConsumedCapacity`: `List["ConsumedCapacityTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BatchStatementErrorTypeDef
@@ -433,13 +433,13 @@ from mypy_boto3_dynamodb.type_defs import BatchWriteItemOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `UnprocessedItems`: `Dict[str, List["WriteRequestTypeDef"]]`
 - `ItemCollectionMetrics`: `Dict[str, List["ItemCollectionMetricsTypeDef"]]`
 - `ConsumedCapacity`: `List["ConsumedCapacityTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## BillingModeSummaryTypeDef
@@ -564,11 +564,11 @@ from mypy_boto3_dynamodb.type_defs import CreateBackupOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupDetails`: `"BackupDetailsTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateGlobalSecondaryIndexActionTypeDef
@@ -596,11 +596,11 @@ from mypy_boto3_dynamodb.type_defs import CreateGlobalTableOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GlobalTableDescription`: `"GlobalTableDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateReplicaActionTypeDef
@@ -641,11 +641,11 @@ from mypy_boto3_dynamodb.type_defs import CreateTableOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TableDescription`: `"TableDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteBackupOutputTypeDef
@@ -655,11 +655,11 @@ from mypy_boto3_dynamodb.type_defs import DeleteBackupOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupDescription`: `"BackupDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteGlobalSecondaryIndexActionTypeDef
@@ -682,13 +682,13 @@ from mypy_boto3_dynamodb.type_defs import DeleteItemOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Attributes`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
 - `ConsumedCapacity`: `"ConsumedCapacityTypeDef"`
 - `ItemCollectionMetrics`: `"ItemCollectionMetricsTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteReplicaActionTypeDef
@@ -737,11 +737,11 @@ from mypy_boto3_dynamodb.type_defs import DeleteTableOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TableDescription`: `"TableDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DeleteTypeDef
@@ -771,11 +771,11 @@ from mypy_boto3_dynamodb.type_defs import DescribeBackupOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupDescription`: `"BackupDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeContinuousBackupsOutputTypeDef
@@ -785,11 +785,11 @@ from mypy_boto3_dynamodb.type_defs import DescribeContinuousBackupsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ContinuousBackupsDescription`: `"ContinuousBackupsDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeContributorInsightsOutputTypeDef
@@ -799,9 +799,7 @@ from mypy_boto3_dynamodb.type_defs import DescribeContributorInsightsOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TableName`: `str`
 - `IndexName`: `str`
 - `ContributorInsightsRuleList`: `List[str]`
@@ -809,6 +807,8 @@ Optional fields:
 - `LastUpdateDateTime`: `datetime`
 - `FailureException`: `"FailureExceptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeEndpointsResponseTypeDef
@@ -831,11 +831,11 @@ from mypy_boto3_dynamodb.type_defs import DescribeExportOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ExportDescription`: `"ExportDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeGlobalTableOutputTypeDef
@@ -845,11 +845,11 @@ from mypy_boto3_dynamodb.type_defs import DescribeGlobalTableOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GlobalTableDescription`: `"GlobalTableDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeGlobalTableSettingsOutputTypeDef
@@ -859,12 +859,12 @@ from mypy_boto3_dynamodb.type_defs import DescribeGlobalTableSettingsOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GlobalTableName`: `str`
 - `ReplicaSettings`: `List["ReplicaSettingsDescriptionTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeKinesisStreamingDestinationOutputTypeDef
@@ -874,12 +874,12 @@ from mypy_boto3_dynamodb.type_defs import DescribeKinesisStreamingDestinationOut
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TableName`: `str`
 - `KinesisDataStreamDestinations`: `List["KinesisDataStreamDestinationTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeLimitsOutputTypeDef
@@ -889,14 +889,14 @@ from mypy_boto3_dynamodb.type_defs import DescribeLimitsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `AccountMaxReadCapacityUnits`: `int`
 - `AccountMaxWriteCapacityUnits`: `int`
 - `TableMaxReadCapacityUnits`: `int`
 - `TableMaxWriteCapacityUnits`: `int`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeTableOutputTypeDef
@@ -906,11 +906,11 @@ from mypy_boto3_dynamodb.type_defs import DescribeTableOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Table`: `"TableDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeTableReplicaAutoScalingOutputTypeDef
@@ -920,11 +920,11 @@ from mypy_boto3_dynamodb.type_defs import DescribeTableReplicaAutoScalingOutputT
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TableAutoScalingDescription`: `"TableAutoScalingDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## DescribeTimeToLiveOutputTypeDef
@@ -934,11 +934,11 @@ from mypy_boto3_dynamodb.type_defs import DescribeTimeToLiveOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TimeToLiveDescription`: `"TimeToLiveDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## EndpointTypeDef
@@ -962,12 +962,12 @@ from mypy_boto3_dynamodb.type_defs import ExecuteStatementOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Items`: `List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ExecuteTransactionOutputTypeDef
@@ -977,11 +977,11 @@ from mypy_boto3_dynamodb.type_defs import ExecuteTransactionOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Responses`: `List["ItemResponseTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ExpectedAttributeValueTypeDef
@@ -1052,11 +1052,11 @@ from mypy_boto3_dynamodb.type_defs import ExportTableToPointInTimeOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ExportDescription`: `"ExportDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## FailureExceptionTypeDef
@@ -1080,12 +1080,12 @@ from mypy_boto3_dynamodb.type_defs import GetItemOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Item`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
 - `ConsumedCapacity`: `"ConsumedCapacityTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetTypeDef
@@ -1320,13 +1320,13 @@ from mypy_boto3_dynamodb.type_defs import KinesisStreamingDestinationOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TableName`: `str`
 - `StreamArn`: `str`
 - `DestinationStatus`: `DestinationStatus`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListBackupsOutputTypeDef
@@ -1336,12 +1336,12 @@ from mypy_boto3_dynamodb.type_defs import ListBackupsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `BackupSummaries`: `List["BackupSummaryTypeDef"]`
 - `LastEvaluatedBackupArn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListContributorInsightsOutputTypeDef
@@ -1351,12 +1351,12 @@ from mypy_boto3_dynamodb.type_defs import ListContributorInsightsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ContributorInsightsSummaries`: `List["ContributorInsightsSummaryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListExportsOutputTypeDef
@@ -1366,12 +1366,12 @@ from mypy_boto3_dynamodb.type_defs import ListExportsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ExportSummaries`: `List["ExportSummaryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListGlobalTablesOutputTypeDef
@@ -1381,12 +1381,12 @@ from mypy_boto3_dynamodb.type_defs import ListGlobalTablesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GlobalTables`: `List["GlobalTableTypeDef"]`
 - `LastEvaluatedGlobalTableName`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTablesOutputTypeDef
@@ -1396,12 +1396,12 @@ from mypy_boto3_dynamodb.type_defs import ListTablesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TableNames`: `List[str]`
 - `LastEvaluatedTableName`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagsOfResourceOutputTypeDef
@@ -1411,12 +1411,12 @@ from mypy_boto3_dynamodb.type_defs import ListTagsOfResourceOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Tags`: `List["TagTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## LocalSecondaryIndexDescriptionTypeDef
@@ -1591,13 +1591,13 @@ from mypy_boto3_dynamodb.type_defs import PutItemOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Attributes`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
 - `ConsumedCapacity`: `"ConsumedCapacityTypeDef"`
 - `ItemCollectionMetrics`: `"ItemCollectionMetricsTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## PutRequestTypeDef
@@ -1640,15 +1640,15 @@ from mypy_boto3_dynamodb.type_defs import QueryOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Items`: `List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]]`
 - `Count`: `int`
 - `ScannedCount`: `int`
 - `LastEvaluatedKey`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
 - `ConsumedCapacity`: `"ConsumedCapacityTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ReplicaAutoScalingDescriptionTypeDef
@@ -1926,11 +1926,11 @@ from mypy_boto3_dynamodb.type_defs import RestoreTableFromBackupOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TableDescription`: `"TableDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## RestoreTableToPointInTimeOutputTypeDef
@@ -1940,11 +1940,11 @@ from mypy_boto3_dynamodb.type_defs import RestoreTableToPointInTimeOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TableDescription`: `"TableDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## SSEDescriptionTypeDef
@@ -1985,15 +1985,15 @@ from mypy_boto3_dynamodb.type_defs import ScanOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Items`: `List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]]`
 - `Count`: `int`
 - `ScannedCount`: `int`
 - `LastEvaluatedKey`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
 - `ConsumedCapacity`: `"ConsumedCapacityTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## SourceTableDetailsTypeDef
@@ -2162,12 +2162,12 @@ from mypy_boto3_dynamodb.type_defs import TransactGetItemsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ConsumedCapacity`: `List["ConsumedCapacityTypeDef"]`
 - `Responses`: `List["ItemResponseTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## TransactWriteItemTypeDef
@@ -2193,12 +2193,12 @@ from mypy_boto3_dynamodb.type_defs import TransactWriteItemsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ConsumedCapacity`: `List["ConsumedCapacityTypeDef"]`
 - `ItemCollectionMetrics`: `Dict[str, List["ItemCollectionMetricsTypeDef"]]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateContinuousBackupsOutputTypeDef
@@ -2208,11 +2208,11 @@ from mypy_boto3_dynamodb.type_defs import UpdateContinuousBackupsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ContinuousBackupsDescription`: `"ContinuousBackupsDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateContributorInsightsOutputTypeDef
@@ -2222,13 +2222,13 @@ from mypy_boto3_dynamodb.type_defs import UpdateContributorInsightsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TableName`: `str`
 - `IndexName`: `str`
 - `ContributorInsightsStatus`: `ContributorInsightsStatus`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateGlobalSecondaryIndexActionTypeDef
@@ -2252,11 +2252,11 @@ from mypy_boto3_dynamodb.type_defs import UpdateGlobalTableOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GlobalTableDescription`: `"GlobalTableDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateGlobalTableSettingsOutputTypeDef
@@ -2266,12 +2266,12 @@ from mypy_boto3_dynamodb.type_defs import UpdateGlobalTableSettingsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `GlobalTableName`: `str`
 - `ReplicaSettings`: `List["ReplicaSettingsDescriptionTypeDef"]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateItemOutputTypeDef
@@ -2281,13 +2281,13 @@ from mypy_boto3_dynamodb.type_defs import UpdateItemOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Attributes`: `Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], List[Any], Dict[str, Any], None]]`
 - `ConsumedCapacity`: `"ConsumedCapacityTypeDef"`
 - `ItemCollectionMetrics`: `"ItemCollectionMetricsTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateReplicationGroupMemberActionTypeDef
@@ -2315,11 +2315,11 @@ from mypy_boto3_dynamodb.type_defs import UpdateTableOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TableDescription`: `"TableDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateTableReplicaAutoScalingOutputTypeDef
@@ -2329,11 +2329,11 @@ from mypy_boto3_dynamodb.type_defs import UpdateTableReplicaAutoScalingOutputTyp
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TableAutoScalingDescription`: `"TableAutoScalingDescriptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateTimeToLiveOutputTypeDef
@@ -2343,11 +2343,11 @@ from mypy_boto3_dynamodb.type_defs import UpdateTimeToLiveOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `TimeToLiveSpecification`: `"TimeToLiveSpecificationTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateTypeDef

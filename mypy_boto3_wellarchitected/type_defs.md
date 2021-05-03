@@ -1,11 +1,11 @@
-# Structures for boto3 WellArchitected module
+# Typed dictionaries for boto3 WellArchitected module
 
 > [Index](../README.md) > [WellArchitected](./README.md) > Structures
 
 Auto-generated documentation for [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
 type annotations stubs module [mypy_boto3_wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
 
-- [Structures for boto3 WellArchitected module](#structures-for-boto3-wellarchitected-module)
+- [Typed dictionaries for boto3 WellArchitected module](#typed-dictionaries-for-boto3-wellarchitected-module)
   - [AnswerSummaryTypeDef](#answersummarytypedef)
   - [AnswerTypeDef](#answertypedef)
   - [ChoiceTypeDef](#choicetypedef)
@@ -118,12 +118,12 @@ from mypy_boto3_wellarchitected.type_defs import CreateMilestoneOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `WorkloadId`: `str`
 - `MilestoneNumber`: `int`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateWorkloadOutputTypeDef
@@ -133,12 +133,12 @@ from mypy_boto3_wellarchitected.type_defs import CreateWorkloadOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `WorkloadId`: `str`
 - `WorkloadArn`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateWorkloadShareOutputTypeDef
@@ -148,12 +148,12 @@ from mypy_boto3_wellarchitected.type_defs import CreateWorkloadShareOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `WorkloadId`: `str`
 - `ShareId`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetAnswerOutputTypeDef
@@ -163,14 +163,14 @@ from mypy_boto3_wellarchitected.type_defs import GetAnswerOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `WorkloadId`: `str`
 - `MilestoneNumber`: `int`
 - `LensAlias`: `str`
 - `Answer`: `"AnswerTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetLensReviewOutputTypeDef
@@ -180,13 +180,13 @@ from mypy_boto3_wellarchitected.type_defs import GetLensReviewOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `WorkloadId`: `str`
 - `MilestoneNumber`: `int`
 - `LensReview`: `"LensReviewTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetLensReviewReportOutputTypeDef
@@ -196,13 +196,13 @@ from mypy_boto3_wellarchitected.type_defs import GetLensReviewReportOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `WorkloadId`: `str`
 - `MilestoneNumber`: `int`
 - `LensReviewReport`: `"LensReviewReportTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetLensVersionDifferenceOutputTypeDef
@@ -212,14 +212,14 @@ from mypy_boto3_wellarchitected.type_defs import GetLensVersionDifferenceOutputT
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `LensAlias`: `str`
 - `BaseLensVersion`: `str`
 - `LatestLensVersion`: `str`
 - `VersionDifferences`: `"VersionDifferencesTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetMilestoneOutputTypeDef
@@ -229,12 +229,12 @@ from mypy_boto3_wellarchitected.type_defs import GetMilestoneOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `WorkloadId`: `str`
 - `Milestone`: `"MilestoneTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## GetWorkloadOutputTypeDef
@@ -244,11 +244,11 @@ from mypy_boto3_wellarchitected.type_defs import GetWorkloadOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Workload`: `"WorkloadTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ImprovementSummaryTypeDef
@@ -361,15 +361,15 @@ from mypy_boto3_wellarchitected.type_defs import ListAnswersOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `WorkloadId`: `str`
 - `MilestoneNumber`: `int`
 - `LensAlias`: `str`
 - `AnswerSummaries`: `List["AnswerSummaryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListLensReviewImprovementsOutputTypeDef
@@ -379,15 +379,15 @@ from mypy_boto3_wellarchitected.type_defs import ListLensReviewImprovementsOutpu
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `WorkloadId`: `str`
 - `MilestoneNumber`: `int`
 - `LensAlias`: `str`
 - `ImprovementSummaries`: `List["ImprovementSummaryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListLensReviewsOutputTypeDef
@@ -397,14 +397,14 @@ from mypy_boto3_wellarchitected.type_defs import ListLensReviewsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `WorkloadId`: `str`
 - `MilestoneNumber`: `int`
 - `LensReviewSummaries`: `List["LensReviewSummaryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListLensesOutputTypeDef
@@ -414,12 +414,12 @@ from mypy_boto3_wellarchitected.type_defs import ListLensesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `LensSummaries`: `List["LensSummaryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListMilestonesOutputTypeDef
@@ -429,13 +429,13 @@ from mypy_boto3_wellarchitected.type_defs import ListMilestonesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `WorkloadId`: `str`
 - `MilestoneSummaries`: `List["MilestoneSummaryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListNotificationsOutputTypeDef
@@ -445,12 +445,12 @@ from mypy_boto3_wellarchitected.type_defs import ListNotificationsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `NotificationSummaries`: `List["NotificationSummaryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListShareInvitationsOutputTypeDef
@@ -460,12 +460,12 @@ from mypy_boto3_wellarchitected.type_defs import ListShareInvitationsOutputTypeD
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ShareInvitationSummaries`: `List["ShareInvitationSummaryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListTagsForResourceOutputTypeDef
@@ -475,11 +475,11 @@ from mypy_boto3_wellarchitected.type_defs import ListTagsForResourceOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Tags`: `Dict[str, str]`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListWorkloadSharesOutputTypeDef
@@ -489,13 +489,13 @@ from mypy_boto3_wellarchitected.type_defs import ListWorkloadSharesOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `WorkloadId`: `str`
 - `WorkloadShareSummaries`: `List["WorkloadShareSummaryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## ListWorkloadsOutputTypeDef
@@ -505,12 +505,12 @@ from mypy_boto3_wellarchitected.type_defs import ListWorkloadsOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `WorkloadSummaries`: `List["WorkloadSummaryTypeDef"]`
 - `NextToken`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## MilestoneSummaryTypeDef
@@ -661,13 +661,13 @@ from mypy_boto3_wellarchitected.type_defs import UpdateAnswerOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `WorkloadId`: `str`
 - `LensAlias`: `str`
 - `Answer`: `"AnswerTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateLensReviewOutputTypeDef
@@ -677,12 +677,12 @@ from mypy_boto3_wellarchitected.type_defs import UpdateLensReviewOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `WorkloadId`: `str`
 - `LensReview`: `"LensReviewTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateShareInvitationOutputTypeDef
@@ -692,11 +692,11 @@ from mypy_boto3_wellarchitected.type_defs import UpdateShareInvitationOutputType
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `ShareInvitation`: `"ShareInvitationTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateWorkloadOutputTypeDef
@@ -706,11 +706,11 @@ from mypy_boto3_wellarchitected.type_defs import UpdateWorkloadOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Workload`: `"WorkloadTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## UpdateWorkloadShareOutputTypeDef
@@ -720,12 +720,12 @@ from mypy_boto3_wellarchitected.type_defs import UpdateWorkloadShareOutputTypeDe
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `WorkloadId`: `str`
 - `WorkloadShare`: `"WorkloadShareTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## VersionDifferencesTypeDef

@@ -43,7 +43,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_dataexchange.client import DataExchangeClient
+
+def get_dataexchange_client() -> DataExchangeClient:
+    return boto3.client("dataexchange")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client)
 
 ## Exceptions
 
@@ -77,7 +82,7 @@ Exceptions:
 
 Type annotations for `boto3.client("dataexchange").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -91,7 +96,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("dataexchange").cancel_job` method.
 
-[Client.cancel_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.cancel_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.cancel_job]
 
 ```python
 def cancel_job(
@@ -105,7 +110,7 @@ def cancel_job(
 
 Type annotations for `boto3.client("dataexchange").create_data_set` method.
 
-[Client.create_data_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_data_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_data_set]
 
 ```python
 def create_data_set(
@@ -122,7 +127,7 @@ def create_data_set(
 
 Type annotations for `boto3.client("dataexchange").create_job` method.
 
-[Client.create_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_job]
 
 ```python
 def create_job(
@@ -137,7 +142,7 @@ def create_job(
 
 Type annotations for `boto3.client("dataexchange").create_revision` method.
 
-[Client.create_revision documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_revision)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_revision]
 
 ```python
 def create_revision(
@@ -153,7 +158,7 @@ def create_revision(
 
 Type annotations for `boto3.client("dataexchange").delete_asset` method.
 
-[Client.delete_asset documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_asset)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_asset]
 
 ```python
 def delete_asset(
@@ -169,7 +174,7 @@ def delete_asset(
 
 Type annotations for `boto3.client("dataexchange").delete_data_set` method.
 
-[Client.delete_data_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_data_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_data_set]
 
 ```python
 def delete_data_set(
@@ -183,7 +188,7 @@ def delete_data_set(
 
 Type annotations for `boto3.client("dataexchange").delete_revision` method.
 
-[Client.delete_revision documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_revision)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_revision]
 
 ```python
 def delete_revision(
@@ -198,7 +203,7 @@ def delete_revision(
 
 Type annotations for `boto3.client("dataexchange").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -215,7 +220,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("dataexchange").get_asset` method.
 
-[Client.get_asset documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_asset)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_asset]
 
 ```python
 def get_asset(
@@ -231,7 +236,7 @@ def get_asset(
 
 Type annotations for `boto3.client("dataexchange").get_data_set` method.
 
-[Client.get_data_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_data_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_data_set]
 
 ```python
 def get_data_set(
@@ -245,7 +250,7 @@ def get_data_set(
 
 Type annotations for `boto3.client("dataexchange").get_job` method.
 
-[Client.get_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_job]
 
 ```python
 def get_job(
@@ -259,7 +264,7 @@ def get_job(
 
 Type annotations for `boto3.client("dataexchange").get_revision` method.
 
-[Client.get_revision documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_revision)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_revision]
 
 ```python
 def get_revision(
@@ -274,7 +279,7 @@ def get_revision(
 
 Type annotations for `boto3.client("dataexchange").list_data_set_revisions` method.
 
-[Client.list_data_set_revisions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_data_set_revisions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_data_set_revisions]
 
 ```python
 def list_data_set_revisions(
@@ -290,7 +295,7 @@ def list_data_set_revisions(
 
 Type annotations for `boto3.client("dataexchange").list_data_sets` method.
 
-[Client.list_data_sets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_data_sets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_data_sets]
 
 ```python
 def list_data_sets(
@@ -306,7 +311,7 @@ def list_data_sets(
 
 Type annotations for `boto3.client("dataexchange").list_jobs` method.
 
-[Client.list_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_jobs]
 
 ```python
 def list_jobs(
@@ -323,7 +328,7 @@ def list_jobs(
 
 Type annotations for `boto3.client("dataexchange").list_revision_assets` method.
 
-[Client.list_revision_assets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_revision_assets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_revision_assets]
 
 ```python
 def list_revision_assets(
@@ -340,7 +345,7 @@ def list_revision_assets(
 
 Type annotations for `boto3.client("dataexchange").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -354,7 +359,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("dataexchange").start_job` method.
 
-[Client.start_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.start_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.start_job]
 
 ```python
 def start_job(
@@ -368,7 +373,7 @@ def start_job(
 
 Type annotations for `boto3.client("dataexchange").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -383,7 +388,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("dataexchange").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -398,7 +403,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("dataexchange").update_asset` method.
 
-[Client.update_asset documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_asset)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_asset]
 
 ```python
 def update_asset(
@@ -415,7 +420,7 @@ def update_asset(
 
 Type annotations for `boto3.client("dataexchange").update_data_set` method.
 
-[Client.update_data_set documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_data_set)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_data_set]
 
 ```python
 def update_data_set(
@@ -431,7 +436,7 @@ def update_data_set(
 
 Type annotations for `boto3.client("dataexchange").update_revision` method.
 
-[Client.update_revision documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_revision)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_revision]
 
 ```python
 def update_revision(

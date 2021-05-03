@@ -1,11 +1,11 @@
-# Structures for boto3 IoTEventsData module
+# Typed dictionaries for boto3 IoTEventsData module
 
 > [Index](../README.md) > [IoTEventsData](./README.md) > Structures
 
 Auto-generated documentation for [IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData)
 type annotations stubs module [mypy_boto3_iotevents_data](https://pypi.org/project/mypy-boto3-iotevents-data/).
 
-- [Structures for boto3 IoTEventsData module](#structures-for-boto3-ioteventsdata-module)
+- [Typed dictionaries for boto3 IoTEventsData module](#typed-dictionaries-for-boto3-ioteventsdata-module)
   - [BatchPutMessageErrorEntryTypeDef](#batchputmessageerrorentrytypedef)
   - [BatchPutMessageResponseTypeDef](#batchputmessageresponsetypedef)
   - [BatchUpdateDetectorErrorEntryTypeDef](#batchupdatedetectorerrorentrytypedef)

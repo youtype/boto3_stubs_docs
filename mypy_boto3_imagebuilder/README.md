@@ -14,7 +14,7 @@ pip install mypy-boto3-imagebuilder
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ImagebuilderClient
 
@@ -141,7 +141,7 @@ from mypy_boto3_imagebuilder.literals import ComponentFormat, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

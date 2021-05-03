@@ -21,13 +21,13 @@ Type annotations for `boto3.client("rds").get_waiter("db_cluster_snapshot_availa
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.waiters import DBClusterSnapshotAvailableWaiter
+from mypy_boto3_rds.waiter import DBClusterSnapshotAvailableWaiter
 
 def get_db_cluster_snapshot_available_waiter() -> DBClusterSnapshotAvailableWaiter:
     return boto3.client("rds").get_waiter("db_cluster_snapshot_available")
 ```
 
-[Waiter.DBClusterSnapshotAvailable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Waiter.DBClusterSnapshotAvailable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Waiter.db_cluster_snapshot_available)
 
 ```python
 class DBClusterSnapshotAvailableWaiter(Boto3Waiter):
@@ -52,13 +52,13 @@ Type annotations for `boto3.client("rds").get_waiter("db_cluster_snapshot_delete
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.waiters import DBClusterSnapshotDeletedWaiter
+from mypy_boto3_rds.waiter import DBClusterSnapshotDeletedWaiter
 
 def get_db_cluster_snapshot_deleted_waiter() -> DBClusterSnapshotDeletedWaiter:
     return boto3.client("rds").get_waiter("db_cluster_snapshot_deleted")
 ```
 
-[Waiter.DBClusterSnapshotDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Waiter.DBClusterSnapshotDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Waiter.db_cluster_snapshot_deleted)
 
 ```python
 class DBClusterSnapshotDeletedWaiter(Boto3Waiter):
@@ -83,13 +83,13 @@ Type annotations for `boto3.client("rds").get_waiter("db_instance_available")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.waiters import DBInstanceAvailableWaiter
+from mypy_boto3_rds.waiter import DBInstanceAvailableWaiter
 
 def get_db_instance_available_waiter() -> DBInstanceAvailableWaiter:
     return boto3.client("rds").get_waiter("db_instance_available")
 ```
 
-[Waiter.DBInstanceAvailable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Waiter.DBInstanceAvailable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Waiter.db_instance_available)
 
 ```python
 class DBInstanceAvailableWaiter(Boto3Waiter):
@@ -110,13 +110,13 @@ Type annotations for `boto3.client("rds").get_waiter("db_instance_deleted")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.waiters import DBInstanceDeletedWaiter
+from mypy_boto3_rds.waiter import DBInstanceDeletedWaiter
 
 def get_db_instance_deleted_waiter() -> DBInstanceDeletedWaiter:
     return boto3.client("rds").get_waiter("db_instance_deleted")
 ```
 
-[Waiter.DBInstanceDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Waiter.DBInstanceDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Waiter.db_instance_deleted)
 
 ```python
 class DBInstanceDeletedWaiter(Boto3Waiter):
@@ -137,13 +137,13 @@ Type annotations for `boto3.client("rds").get_waiter("db_snapshot_available")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.waiters import DBSnapshotAvailableWaiter
+from mypy_boto3_rds.waiter import DBSnapshotAvailableWaiter
 
 def get_db_snapshot_available_waiter() -> DBSnapshotAvailableWaiter:
     return boto3.client("rds").get_waiter("db_snapshot_available")
 ```
 
-[Waiter.DBSnapshotAvailable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Waiter.DBSnapshotAvailable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Waiter.db_snapshot_available)
 
 ```python
 class DBSnapshotAvailableWaiter(Boto3Waiter):
@@ -169,13 +169,13 @@ Type annotations for `boto3.client("rds").get_waiter("db_snapshot_completed")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.waiters import DBSnapshotCompletedWaiter
+from mypy_boto3_rds.waiter import DBSnapshotCompletedWaiter
 
 def get_db_snapshot_completed_waiter() -> DBSnapshotCompletedWaiter:
     return boto3.client("rds").get_waiter("db_snapshot_completed")
 ```
 
-[Waiter.DBSnapshotCompleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Waiter.DBSnapshotCompleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Waiter.db_snapshot_completed)
 
 ```python
 class DBSnapshotCompletedWaiter(Boto3Waiter):
@@ -201,13 +201,13 @@ Type annotations for `boto3.client("rds").get_waiter("db_snapshot_deleted")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.waiters import DBSnapshotDeletedWaiter
+from mypy_boto3_rds.waiter import DBSnapshotDeletedWaiter
 
 def get_db_snapshot_deleted_waiter() -> DBSnapshotDeletedWaiter:
     return boto3.client("rds").get_waiter("db_snapshot_deleted")
 ```
 
-[Waiter.DBSnapshotDeleted documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Waiter.DBSnapshotDeleted)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Waiter.db_snapshot_deleted)
 
 ```python
 class DBSnapshotDeletedWaiter(Boto3Waiter):

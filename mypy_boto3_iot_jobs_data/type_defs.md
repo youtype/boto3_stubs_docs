@@ -1,11 +1,11 @@
-# Structures for boto3 IoTJobsDataPlane module
+# Typed dictionaries for boto3 IoTJobsDataPlane module
 
 > [Index](../README.md) > [IoTJobsDataPlane](./README.md) > Structures
 
 Auto-generated documentation for [IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
 type annotations stubs module [mypy_boto3_iot_jobs_data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
 
-- [Structures for boto3 IoTJobsDataPlane module](#structures-for-boto3-iotjobsdataplane-module)
+- [Typed dictionaries for boto3 IoTJobsDataPlane module](#typed-dictionaries-for-boto3-iotjobsdataplane-module)
   - [DescribeJobExecutionResponseTypeDef](#describejobexecutionresponsetypedef)
   - [GetPendingJobExecutionsResponseTypeDef](#getpendingjobexecutionsresponsetypedef)
   - [JobExecutionStateTypeDef](#jobexecutionstatetypedef)

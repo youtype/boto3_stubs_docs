@@ -15,7 +15,7 @@ pip install mypy-boto3-mediapackage
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## MediaPackageClient
 
@@ -124,7 +124,7 @@ from mypy_boto3_mediapackage.literals import AdMarkers, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

@@ -1,11 +1,11 @@
-# Structures for boto3 SimpleDB module
+# Typed dictionaries for boto3 SimpleDB module
 
 > [Index](../README.md) > [SimpleDB](./README.md) > Structures
 
 Auto-generated documentation for [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
 type annotations stubs module [mypy_boto3_sdb](https://pypi.org/project/mypy-boto3-sdb/).
 
-- [Structures for boto3 SimpleDB module](#structures-for-boto3-simpledb-module)
+- [Typed dictionaries for boto3 SimpleDB module](#typed-dictionaries-for-boto3-simpledb-module)
   - [AttributeTypeDef](#attributetypedef)
   - [DeletableItemTypeDef](#deletableitemtypedef)
   - [DomainMetadataResultTypeDef](#domainmetadataresulttypedef)

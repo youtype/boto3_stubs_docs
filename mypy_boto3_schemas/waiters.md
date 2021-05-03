@@ -15,13 +15,13 @@ Type annotations for `boto3.client("schemas").get_waiter("code_binding_exists")`
 Can be used directly:
 
 ```python
-from mypy_boto3_schemas.waiters import CodeBindingExistsWaiter
+from mypy_boto3_schemas.waiter import CodeBindingExistsWaiter
 
 def get_code_binding_exists_waiter() -> CodeBindingExistsWaiter:
     return boto3.client("schemas").get_waiter("code_binding_exists")
 ```
 
-[Waiter.CodeBindingExists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Waiter.CodeBindingExists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Waiter.code_binding_exists)
 
 ```python
 class CodeBindingExistsWaiter(Boto3Waiter):

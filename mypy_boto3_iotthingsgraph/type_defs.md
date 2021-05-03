@@ -1,11 +1,11 @@
-# Structures for boto3 IoTThingsGraph module
+# Typed dictionaries for boto3 IoTThingsGraph module
 
 > [Index](../README.md) > [IoTThingsGraph](./README.md) > Structures
 
 Auto-generated documentation for [IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
 type annotations stubs module [mypy_boto3_iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
 
-- [Structures for boto3 IoTThingsGraph module](#structures-for-boto3-iotthingsgraph-module)
+- [Typed dictionaries for boto3 IoTThingsGraph module](#typed-dictionaries-for-boto3-iotthingsgraph-module)
   - [CreateFlowTemplateResponseTypeDef](#createflowtemplateresponsetypedef)
   - [CreateSystemInstanceResponseTypeDef](#createsysteminstanceresponsetypedef)
   - [CreateSystemTemplateResponseTypeDef](#createsystemtemplateresponsetypedef)

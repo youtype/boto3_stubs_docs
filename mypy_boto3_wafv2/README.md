@@ -14,7 +14,7 @@ pip install mypy-boto3-wafv2
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## WAFV2Client
 
@@ -128,7 +128,7 @@ from mypy_boto3_wafv2.literals import ActionValue, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

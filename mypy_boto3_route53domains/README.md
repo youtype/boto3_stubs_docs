@@ -15,7 +15,7 @@ pip install mypy-boto3-route53domains
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## Route53DomainsClient
 
@@ -126,7 +126,7 @@ from mypy_boto3_route53domains.literals import ContactType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

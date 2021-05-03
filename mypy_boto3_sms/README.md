@@ -15,7 +15,7 @@ pip install mypy-boto3-sms
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## SMSClient
 
@@ -154,7 +154,7 @@ from mypy_boto3_sms.literals import AppLaunchConfigurationStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

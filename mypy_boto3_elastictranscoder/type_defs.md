@@ -1,11 +1,11 @@
-# Structures for boto3 ElasticTranscoder module
+# Typed dictionaries for boto3 ElasticTranscoder module
 
 > [Index](../README.md) > [ElasticTranscoder](./README.md) > Structures
 
 Auto-generated documentation for [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
 type annotations stubs module [mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
 
-- [Structures for boto3 ElasticTranscoder module](#structures-for-boto3-elastictranscoder-module)
+- [Typed dictionaries for boto3 ElasticTranscoder module](#typed-dictionaries-for-boto3-elastictranscoder-module)
   - [ArtworkTypeDef](#artworktypedef)
   - [AudioCodecOptionsTypeDef](#audiocodecoptionstypedef)
   - [AudioParametersTypeDef](#audioparameterstypedef)
@@ -175,9 +175,7 @@ from mypy_boto3_elastictranscoder.type_defs import CreateJobOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Key`: `str`
 - `ThumbnailPattern`: `str`
 - `ThumbnailEncryption`: `"EncryptionTypeDef"`
@@ -190,6 +188,8 @@ Optional fields:
 - `Captions`: `"CaptionsTypeDef"`
 - `Encryption`: `"EncryptionTypeDef"`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## CreateJobPlaylistTypeDef
@@ -358,9 +358,7 @@ from mypy_boto3_elastictranscoder.type_defs import JobOutputTypeDef
 ```
 
 
-
-
-Optional fields:
+Required fields:
 - `Id`: `str`
 - `Key`: `str`
 - `ThumbnailPattern`: `str`
@@ -383,6 +381,8 @@ Optional fields:
 - `Encryption`: `"EncryptionTypeDef"`
 - `AppliedColorSpaceConversion`: `str`
 - `ResponseMetadata`: `"ResponseMetadata"`
+
+
 
 
 ## JobTypeDef

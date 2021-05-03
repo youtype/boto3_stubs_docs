@@ -27,13 +27,13 @@ Type annotations for `boto3.client("iotsitewise").get_paginator("get_asset_prope
 Can be used directly:
 
 ```python
-from mypy_boto3_iotsitewise.paginators import GetAssetPropertyAggregatesPaginator
+from mypy_boto3_iotsitewise.paginator import GetAssetPropertyAggregatesPaginator
 
 def get_get_asset_property_aggregates_paginator() -> GetAssetPropertyAggregatesPaginator:
     return boto3.client("iotsitewise").get_paginator("get_asset_property_aggregates")
 ```
 
-[Paginator.GetAssetPropertyAggregates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetAssetPropertyAggregates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetAssetPropertyAggregates)
 
 ```python
 class GetAssetPropertyAggregatesPaginator(Boto3Paginator):
@@ -59,13 +59,13 @@ Type annotations for `boto3.client("iotsitewise").get_paginator("get_asset_prope
 Can be used directly:
 
 ```python
-from mypy_boto3_iotsitewise.paginators import GetAssetPropertyValueHistoryPaginator
+from mypy_boto3_iotsitewise.paginator import GetAssetPropertyValueHistoryPaginator
 
 def get_get_asset_property_value_history_paginator() -> GetAssetPropertyValueHistoryPaginator:
     return boto3.client("iotsitewise").get_paginator("get_asset_property_value_history")
 ```
 
-[Paginator.GetAssetPropertyValueHistory documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetAssetPropertyValueHistory)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetAssetPropertyValueHistory)
 
 ```python
 class GetAssetPropertyValueHistoryPaginator(Boto3Paginator):
@@ -89,13 +89,13 @@ Type annotations for `boto3.client("iotsitewise").get_paginator("get_interpolate
 Can be used directly:
 
 ```python
-from mypy_boto3_iotsitewise.paginators import GetInterpolatedAssetPropertyValuesPaginator
+from mypy_boto3_iotsitewise.paginator import GetInterpolatedAssetPropertyValuesPaginator
 
 def get_get_interpolated_asset_property_values_paginator() -> GetInterpolatedAssetPropertyValuesPaginator:
     return boto3.client("iotsitewise").get_paginator("get_interpolated_asset_property_values")
 ```
 
-[Paginator.GetInterpolatedAssetPropertyValues documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetInterpolatedAssetPropertyValues)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetInterpolatedAssetPropertyValues)
 
 ```python
 class GetInterpolatedAssetPropertyValuesPaginator(Boto3Paginator):
@@ -122,13 +122,13 @@ Type annotations for `boto3.client("iotsitewise").get_paginator("list_access_pol
 Can be used directly:
 
 ```python
-from mypy_boto3_iotsitewise.paginators import ListAccessPoliciesPaginator
+from mypy_boto3_iotsitewise.paginator import ListAccessPoliciesPaginator
 
 def get_list_access_policies_paginator() -> ListAccessPoliciesPaginator:
     return boto3.client("iotsitewise").get_paginator("list_access_policies")
 ```
 
-[Paginator.ListAccessPolicies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAccessPolicies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAccessPolicies)
 
 ```python
 class ListAccessPoliciesPaginator(Boto3Paginator):
@@ -150,13 +150,13 @@ Type annotations for `boto3.client("iotsitewise").get_paginator("list_asset_mode
 Can be used directly:
 
 ```python
-from mypy_boto3_iotsitewise.paginators import ListAssetModelsPaginator
+from mypy_boto3_iotsitewise.paginator import ListAssetModelsPaginator
 
 def get_list_asset_models_paginator() -> ListAssetModelsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_asset_models")
 ```
 
-[Paginator.ListAssetModels documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssetModels)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssetModels)
 
 ```python
 class ListAssetModelsPaginator(Boto3Paginator):
@@ -173,13 +173,13 @@ Type annotations for `boto3.client("iotsitewise").get_paginator("list_asset_rela
 Can be used directly:
 
 ```python
-from mypy_boto3_iotsitewise.paginators import ListAssetRelationshipsPaginator
+from mypy_boto3_iotsitewise.paginator import ListAssetRelationshipsPaginator
 
 def get_list_asset_relationships_paginator() -> ListAssetRelationshipsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_asset_relationships")
 ```
 
-[Paginator.ListAssetRelationships documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssetRelationships)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssetRelationships)
 
 ```python
 class ListAssetRelationshipsPaginator(Boto3Paginator):
@@ -198,13 +198,13 @@ Type annotations for `boto3.client("iotsitewise").get_paginator("list_assets")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iotsitewise.paginators import ListAssetsPaginator
+from mypy_boto3_iotsitewise.paginator import ListAssetsPaginator
 
 def get_list_assets_paginator() -> ListAssetsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_assets")
 ```
 
-[Paginator.ListAssets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssets)
 
 ```python
 class ListAssetsPaginator(Boto3Paginator):
@@ -223,13 +223,13 @@ Type annotations for `boto3.client("iotsitewise").get_paginator("list_associated
 Can be used directly:
 
 ```python
-from mypy_boto3_iotsitewise.paginators import ListAssociatedAssetsPaginator
+from mypy_boto3_iotsitewise.paginator import ListAssociatedAssetsPaginator
 
 def get_list_associated_assets_paginator() -> ListAssociatedAssetsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_associated_assets")
 ```
 
-[Paginator.ListAssociatedAssets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssociatedAssets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssociatedAssets)
 
 ```python
 class ListAssociatedAssetsPaginator(Boto3Paginator):
@@ -249,13 +249,13 @@ Type annotations for `boto3.client("iotsitewise").get_paginator("list_dashboards
 Can be used directly:
 
 ```python
-from mypy_boto3_iotsitewise.paginators import ListDashboardsPaginator
+from mypy_boto3_iotsitewise.paginator import ListDashboardsPaginator
 
 def get_list_dashboards_paginator() -> ListDashboardsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_dashboards")
 ```
 
-[Paginator.ListDashboards documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListDashboards)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListDashboards)
 
 ```python
 class ListDashboardsPaginator(Boto3Paginator):
@@ -273,13 +273,13 @@ Type annotations for `boto3.client("iotsitewise").get_paginator("list_gateways")
 Can be used directly:
 
 ```python
-from mypy_boto3_iotsitewise.paginators import ListGatewaysPaginator
+from mypy_boto3_iotsitewise.paginator import ListGatewaysPaginator
 
 def get_list_gateways_paginator() -> ListGatewaysPaginator:
     return boto3.client("iotsitewise").get_paginator("list_gateways")
 ```
 
-[Paginator.ListGateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListGateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListGateways)
 
 ```python
 class ListGatewaysPaginator(Boto3Paginator):
@@ -296,13 +296,13 @@ Type annotations for `boto3.client("iotsitewise").get_paginator("list_portals")`
 Can be used directly:
 
 ```python
-from mypy_boto3_iotsitewise.paginators import ListPortalsPaginator
+from mypy_boto3_iotsitewise.paginator import ListPortalsPaginator
 
 def get_list_portals_paginator() -> ListPortalsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_portals")
 ```
 
-[Paginator.ListPortals documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListPortals)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListPortals)
 
 ```python
 class ListPortalsPaginator(Boto3Paginator):
@@ -319,13 +319,13 @@ Type annotations for `boto3.client("iotsitewise").get_paginator("list_project_as
 Can be used directly:
 
 ```python
-from mypy_boto3_iotsitewise.paginators import ListProjectAssetsPaginator
+from mypy_boto3_iotsitewise.paginator import ListProjectAssetsPaginator
 
 def get_list_project_assets_paginator() -> ListProjectAssetsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_project_assets")
 ```
 
-[Paginator.ListProjectAssets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListProjectAssets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListProjectAssets)
 
 ```python
 class ListProjectAssetsPaginator(Boto3Paginator):
@@ -343,13 +343,13 @@ Type annotations for `boto3.client("iotsitewise").get_paginator("list_projects")
 Can be used directly:
 
 ```python
-from mypy_boto3_iotsitewise.paginators import ListProjectsPaginator
+from mypy_boto3_iotsitewise.paginator import ListProjectsPaginator
 
 def get_list_projects_paginator() -> ListProjectsPaginator:
     return boto3.client("iotsitewise").get_paginator("list_projects")
 ```
 
-[Paginator.ListProjects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListProjects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListProjects)
 
 ```python
 class ListProjectsPaginator(Boto3Paginator):

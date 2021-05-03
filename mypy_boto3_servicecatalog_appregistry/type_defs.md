@@ -1,11 +1,11 @@
-# Structures for boto3 AppRegistry module
+# Typed dictionaries for boto3 AppRegistry module
 
 > [Index](../README.md) > [AppRegistry](./README.md) > Structures
 
 Auto-generated documentation for [AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
 type annotations stubs module [mypy_boto3_servicecatalog_appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
 
-- [Structures for boto3 AppRegistry module](#structures-for-boto3-appregistry-module)
+- [Typed dictionaries for boto3 AppRegistry module](#typed-dictionaries-for-boto3-appregistry-module)
   - [ApplicationSummaryTypeDef](#applicationsummarytypedef)
   - [ApplicationTypeDef](#applicationtypedef)
   - [AssociateAttributeGroupResponseTypeDef](#associateattributegroupresponsetypedef)

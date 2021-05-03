@@ -66,13 +66,13 @@ Type annotations for `boto3.client("iot").get_paginator("get_behavior_model_trai
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import GetBehaviorModelTrainingSummariesPaginator
+from mypy_boto3_iot.paginator import GetBehaviorModelTrainingSummariesPaginator
 
 def get_get_behavior_model_training_summaries_paginator() -> GetBehaviorModelTrainingSummariesPaginator:
     return boto3.client("iot").get_paginator("get_behavior_model_training_summaries")
 ```
 
-[Paginator.GetBehaviorModelTrainingSummaries documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.GetBehaviorModelTrainingSummaries)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.GetBehaviorModelTrainingSummaries)
 
 ```python
 class GetBehaviorModelTrainingSummariesPaginator(Boto3Paginator):
@@ -90,13 +90,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_active_violations"
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListActiveViolationsPaginator
+from mypy_boto3_iot.paginator import ListActiveViolationsPaginator
 
 def get_list_active_violations_paginator() -> ListActiveViolationsPaginator:
     return boto3.client("iot").get_paginator("list_active_violations")
 ```
 
-[Paginator.ListActiveViolations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListActiveViolations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListActiveViolations)
 
 ```python
 class ListActiveViolationsPaginator(Boto3Paginator):
@@ -117,13 +117,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_attached_policies"
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListAttachedPoliciesPaginator
+from mypy_boto3_iot.paginator import ListAttachedPoliciesPaginator
 
 def get_list_attached_policies_paginator() -> ListAttachedPoliciesPaginator:
     return boto3.client("iot").get_paginator("list_attached_policies")
 ```
 
-[Paginator.ListAttachedPolicies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAttachedPolicies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAttachedPolicies)
 
 ```python
 class ListAttachedPoliciesPaginator(Boto3Paginator):
@@ -142,13 +142,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_audit_findings")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListAuditFindingsPaginator
+from mypy_boto3_iot.paginator import ListAuditFindingsPaginator
 
 def get_list_audit_findings_paginator() -> ListAuditFindingsPaginator:
     return boto3.client("iot").get_paginator("list_audit_findings")
 ```
 
-[Paginator.ListAuditFindings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditFindings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditFindings)
 
 ```python
 class ListAuditFindingsPaginator(Boto3Paginator):
@@ -171,13 +171,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_audit_mitigation_a
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListAuditMitigationActionsExecutionsPaginator
+from mypy_boto3_iot.paginator import ListAuditMitigationActionsExecutionsPaginator
 
 def get_list_audit_mitigation_actions_executions_paginator() -> ListAuditMitigationActionsExecutionsPaginator:
     return boto3.client("iot").get_paginator("list_audit_mitigation_actions_executions")
 ```
 
-[Paginator.ListAuditMitigationActionsExecutions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditMitigationActionsExecutions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditMitigationActionsExecutions)
 
 ```python
 class ListAuditMitigationActionsExecutionsPaginator(Boto3Paginator):
@@ -197,13 +197,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_audit_mitigation_a
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListAuditMitigationActionsTasksPaginator
+from mypy_boto3_iot.paginator import ListAuditMitigationActionsTasksPaginator
 
 def get_list_audit_mitigation_actions_tasks_paginator() -> ListAuditMitigationActionsTasksPaginator:
     return boto3.client("iot").get_paginator("list_audit_mitigation_actions_tasks")
 ```
 
-[Paginator.ListAuditMitigationActionsTasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditMitigationActionsTasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditMitigationActionsTasks)
 
 ```python
 class ListAuditMitigationActionsTasksPaginator(Boto3Paginator):
@@ -225,13 +225,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_audit_suppressions
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListAuditSuppressionsPaginator
+from mypy_boto3_iot.paginator import ListAuditSuppressionsPaginator
 
 def get_list_audit_suppressions_paginator() -> ListAuditSuppressionsPaginator:
     return boto3.client("iot").get_paginator("list_audit_suppressions")
 ```
 
-[Paginator.ListAuditSuppressions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditSuppressions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditSuppressions)
 
 ```python
 class ListAuditSuppressionsPaginator(Boto3Paginator):
@@ -251,13 +251,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_audit_tasks")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListAuditTasksPaginator
+from mypy_boto3_iot.paginator import ListAuditTasksPaginator
 
 def get_list_audit_tasks_paginator() -> ListAuditTasksPaginator:
     return boto3.client("iot").get_paginator("list_audit_tasks")
 ```
 
-[Paginator.ListAuditTasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditTasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuditTasks)
 
 ```python
 class ListAuditTasksPaginator(Boto3Paginator):
@@ -278,13 +278,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_authorizers")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListAuthorizersPaginator
+from mypy_boto3_iot.paginator import ListAuthorizersPaginator
 
 def get_list_authorizers_paginator() -> ListAuthorizersPaginator:
     return boto3.client("iot").get_paginator("list_authorizers")
 ```
 
-[Paginator.ListAuthorizers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuthorizers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListAuthorizers)
 
 ```python
 class ListAuthorizersPaginator(Boto3Paginator):
@@ -303,13 +303,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_billing_groups")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListBillingGroupsPaginator
+from mypy_boto3_iot.paginator import ListBillingGroupsPaginator
 
 def get_list_billing_groups_paginator() -> ListBillingGroupsPaginator:
     return boto3.client("iot").get_paginator("list_billing_groups")
 ```
 
-[Paginator.ListBillingGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListBillingGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListBillingGroups)
 
 ```python
 class ListBillingGroupsPaginator(Boto3Paginator):
@@ -327,13 +327,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_ca_certificates")`
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListCACertificatesPaginator
+from mypy_boto3_iot.paginator import ListCACertificatesPaginator
 
 def get_list_ca_certificates_paginator() -> ListCACertificatesPaginator:
     return boto3.client("iot").get_paginator("list_ca_certificates")
 ```
 
-[Paginator.ListCACertificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCACertificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCACertificates)
 
 ```python
 class ListCACertificatesPaginator(Boto3Paginator):
@@ -351,13 +351,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_certificates")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListCertificatesPaginator
+from mypy_boto3_iot.paginator import ListCertificatesPaginator
 
 def get_list_certificates_paginator() -> ListCertificatesPaginator:
     return boto3.client("iot").get_paginator("list_certificates")
 ```
 
-[Paginator.ListCertificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCertificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCertificates)
 
 ```python
 class ListCertificatesPaginator(Boto3Paginator):
@@ -375,13 +375,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_certificates_by_ca
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListCertificatesByCAPaginator
+from mypy_boto3_iot.paginator import ListCertificatesByCAPaginator
 
 def get_list_certificates_by_ca_paginator() -> ListCertificatesByCAPaginator:
     return boto3.client("iot").get_paginator("list_certificates_by_ca")
 ```
 
-[Paginator.ListCertificatesByCA documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCertificatesByCA)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCertificatesByCA)
 
 ```python
 class ListCertificatesByCAPaginator(Boto3Paginator):
@@ -400,13 +400,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_custom_metrics")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListCustomMetricsPaginator
+from mypy_boto3_iot.paginator import ListCustomMetricsPaginator
 
 def get_list_custom_metrics_paginator() -> ListCustomMetricsPaginator:
     return boto3.client("iot").get_paginator("list_custom_metrics")
 ```
 
-[Paginator.ListCustomMetrics documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCustomMetrics)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListCustomMetrics)
 
 ```python
 class ListCustomMetricsPaginator(Boto3Paginator):
@@ -423,13 +423,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_detect_mitigation_
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListDetectMitigationActionsExecutionsPaginator
+from mypy_boto3_iot.paginator import ListDetectMitigationActionsExecutionsPaginator
 
 def get_list_detect_mitigation_actions_executions_paginator() -> ListDetectMitigationActionsExecutionsPaginator:
     return boto3.client("iot").get_paginator("list_detect_mitigation_actions_executions")
 ```
 
-[Paginator.ListDetectMitigationActionsExecutions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDetectMitigationActionsExecutions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDetectMitigationActionsExecutions)
 
 ```python
 class ListDetectMitigationActionsExecutionsPaginator(Boto3Paginator):
@@ -451,13 +451,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_detect_mitigation_
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListDetectMitigationActionsTasksPaginator
+from mypy_boto3_iot.paginator import ListDetectMitigationActionsTasksPaginator
 
 def get_list_detect_mitigation_actions_tasks_paginator() -> ListDetectMitigationActionsTasksPaginator:
     return boto3.client("iot").get_paginator("list_detect_mitigation_actions_tasks")
 ```
 
-[Paginator.ListDetectMitigationActionsTasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDetectMitigationActionsTasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDetectMitigationActionsTasks)
 
 ```python
 class ListDetectMitigationActionsTasksPaginator(Boto3Paginator):
@@ -476,13 +476,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_dimensions")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListDimensionsPaginator
+from mypy_boto3_iot.paginator import ListDimensionsPaginator
 
 def get_list_dimensions_paginator() -> ListDimensionsPaginator:
     return boto3.client("iot").get_paginator("list_dimensions")
 ```
 
-[Paginator.ListDimensions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDimensions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDimensions)
 
 ```python
 class ListDimensionsPaginator(Boto3Paginator):
@@ -499,13 +499,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_domain_configurati
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListDomainConfigurationsPaginator
+from mypy_boto3_iot.paginator import ListDomainConfigurationsPaginator
 
 def get_list_domain_configurations_paginator() -> ListDomainConfigurationsPaginator:
     return boto3.client("iot").get_paginator("list_domain_configurations")
 ```
 
-[Paginator.ListDomainConfigurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDomainConfigurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListDomainConfigurations)
 
 ```python
 class ListDomainConfigurationsPaginator(Boto3Paginator):
@@ -523,13 +523,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_indices")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListIndicesPaginator
+from mypy_boto3_iot.paginator import ListIndicesPaginator
 
 def get_list_indices_paginator() -> ListIndicesPaginator:
     return boto3.client("iot").get_paginator("list_indices")
 ```
 
-[Paginator.ListIndices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListIndices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListIndices)
 
 ```python
 class ListIndicesPaginator(Boto3Paginator):
@@ -546,13 +546,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_job_executions_for
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListJobExecutionsForJobPaginator
+from mypy_boto3_iot.paginator import ListJobExecutionsForJobPaginator
 
 def get_list_job_executions_for_job_paginator() -> ListJobExecutionsForJobPaginator:
     return boto3.client("iot").get_paginator("list_job_executions_for_job")
 ```
 
-[Paginator.ListJobExecutionsForJob documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListJobExecutionsForJob)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListJobExecutionsForJob)
 
 ```python
 class ListJobExecutionsForJobPaginator(Boto3Paginator):
@@ -571,13 +571,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_job_executions_for
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListJobExecutionsForThingPaginator
+from mypy_boto3_iot.paginator import ListJobExecutionsForThingPaginator
 
 def get_list_job_executions_for_thing_paginator() -> ListJobExecutionsForThingPaginator:
     return boto3.client("iot").get_paginator("list_job_executions_for_thing")
 ```
 
-[Paginator.ListJobExecutionsForThing documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListJobExecutionsForThing)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListJobExecutionsForThing)
 
 ```python
 class ListJobExecutionsForThingPaginator(Boto3Paginator):
@@ -597,13 +597,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_jobs")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListJobsPaginator
+from mypy_boto3_iot.paginator import ListJobsPaginator
 
 def get_list_jobs_paginator() -> ListJobsPaginator:
     return boto3.client("iot").get_paginator("list_jobs")
 ```
 
-[Paginator.ListJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListJobs)
 
 ```python
 class ListJobsPaginator(Boto3Paginator):
@@ -625,13 +625,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_mitigation_actions
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListMitigationActionsPaginator
+from mypy_boto3_iot.paginator import ListMitigationActionsPaginator
 
 def get_list_mitigation_actions_paginator() -> ListMitigationActionsPaginator:
     return boto3.client("iot").get_paginator("list_mitigation_actions")
 ```
 
-[Paginator.ListMitigationActions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListMitigationActions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListMitigationActions)
 
 ```python
 class ListMitigationActionsPaginator(Boto3Paginator):
@@ -649,13 +649,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_ota_updates")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListOTAUpdatesPaginator
+from mypy_boto3_iot.paginator import ListOTAUpdatesPaginator
 
 def get_list_ota_updates_paginator() -> ListOTAUpdatesPaginator:
     return boto3.client("iot").get_paginator("list_ota_updates")
 ```
 
-[Paginator.ListOTAUpdates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListOTAUpdates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListOTAUpdates)
 
 ```python
 class ListOTAUpdatesPaginator(Boto3Paginator):
@@ -673,13 +673,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_outgoing_certifica
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListOutgoingCertificatesPaginator
+from mypy_boto3_iot.paginator import ListOutgoingCertificatesPaginator
 
 def get_list_outgoing_certificates_paginator() -> ListOutgoingCertificatesPaginator:
     return boto3.client("iot").get_paginator("list_outgoing_certificates")
 ```
 
-[Paginator.ListOutgoingCertificates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListOutgoingCertificates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListOutgoingCertificates)
 
 ```python
 class ListOutgoingCertificatesPaginator(Boto3Paginator):
@@ -697,13 +697,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_policies")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListPoliciesPaginator
+from mypy_boto3_iot.paginator import ListPoliciesPaginator
 
 def get_list_policies_paginator() -> ListPoliciesPaginator:
     return boto3.client("iot").get_paginator("list_policies")
 ```
 
-[Paginator.ListPolicies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPolicies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPolicies)
 
 ```python
 class ListPoliciesPaginator(Boto3Paginator):
@@ -721,13 +721,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_policy_principals"
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListPolicyPrincipalsPaginator
+from mypy_boto3_iot.paginator import ListPolicyPrincipalsPaginator
 
 def get_list_policy_principals_paginator() -> ListPolicyPrincipalsPaginator:
     return boto3.client("iot").get_paginator("list_policy_principals")
 ```
 
-[Paginator.ListPolicyPrincipals documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPolicyPrincipals)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPolicyPrincipals)
 
 ```python
 class ListPolicyPrincipalsPaginator(Boto3Paginator):
@@ -746,13 +746,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_principal_policies
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListPrincipalPoliciesPaginator
+from mypy_boto3_iot.paginator import ListPrincipalPoliciesPaginator
 
 def get_list_principal_policies_paginator() -> ListPrincipalPoliciesPaginator:
     return boto3.client("iot").get_paginator("list_principal_policies")
 ```
 
-[Paginator.ListPrincipalPolicies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPrincipalPolicies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPrincipalPolicies)
 
 ```python
 class ListPrincipalPoliciesPaginator(Boto3Paginator):
@@ -771,13 +771,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_principal_things")
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListPrincipalThingsPaginator
+from mypy_boto3_iot.paginator import ListPrincipalThingsPaginator
 
 def get_list_principal_things_paginator() -> ListPrincipalThingsPaginator:
     return boto3.client("iot").get_paginator("list_principal_things")
 ```
 
-[Paginator.ListPrincipalThings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPrincipalThings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListPrincipalThings)
 
 ```python
 class ListPrincipalThingsPaginator(Boto3Paginator):
@@ -795,13 +795,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_provisioning_templ
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListProvisioningTemplateVersionsPaginator
+from mypy_boto3_iot.paginator import ListProvisioningTemplateVersionsPaginator
 
 def get_list_provisioning_template_versions_paginator() -> ListProvisioningTemplateVersionsPaginator:
     return boto3.client("iot").get_paginator("list_provisioning_template_versions")
 ```
 
-[Paginator.ListProvisioningTemplateVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListProvisioningTemplateVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListProvisioningTemplateVersions)
 
 ```python
 class ListProvisioningTemplateVersionsPaginator(Boto3Paginator):
@@ -819,13 +819,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_provisioning_templ
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListProvisioningTemplatesPaginator
+from mypy_boto3_iot.paginator import ListProvisioningTemplatesPaginator
 
 def get_list_provisioning_templates_paginator() -> ListProvisioningTemplatesPaginator:
     return boto3.client("iot").get_paginator("list_provisioning_templates")
 ```
 
-[Paginator.ListProvisioningTemplates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListProvisioningTemplates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListProvisioningTemplates)
 
 ```python
 class ListProvisioningTemplatesPaginator(Boto3Paginator):
@@ -842,13 +842,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_role_aliases")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListRoleAliasesPaginator
+from mypy_boto3_iot.paginator import ListRoleAliasesPaginator
 
 def get_list_role_aliases_paginator() -> ListRoleAliasesPaginator:
     return boto3.client("iot").get_paginator("list_role_aliases")
 ```
 
-[Paginator.ListRoleAliases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListRoleAliases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListRoleAliases)
 
 ```python
 class ListRoleAliasesPaginator(Boto3Paginator):
@@ -866,13 +866,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_scheduled_audits")
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListScheduledAuditsPaginator
+from mypy_boto3_iot.paginator import ListScheduledAuditsPaginator
 
 def get_list_scheduled_audits_paginator() -> ListScheduledAuditsPaginator:
     return boto3.client("iot").get_paginator("list_scheduled_audits")
 ```
 
-[Paginator.ListScheduledAudits documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListScheduledAudits)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListScheduledAudits)
 
 ```python
 class ListScheduledAuditsPaginator(Boto3Paginator):
@@ -889,13 +889,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_security_profiles"
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListSecurityProfilesPaginator
+from mypy_boto3_iot.paginator import ListSecurityProfilesPaginator
 
 def get_list_security_profiles_paginator() -> ListSecurityProfilesPaginator:
     return boto3.client("iot").get_paginator("list_security_profiles")
 ```
 
-[Paginator.ListSecurityProfiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListSecurityProfiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListSecurityProfiles)
 
 ```python
 class ListSecurityProfilesPaginator(Boto3Paginator):
@@ -914,13 +914,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_security_profiles_
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListSecurityProfilesForTargetPaginator
+from mypy_boto3_iot.paginator import ListSecurityProfilesForTargetPaginator
 
 def get_list_security_profiles_for_target_paginator() -> ListSecurityProfilesForTargetPaginator:
     return boto3.client("iot").get_paginator("list_security_profiles_for_target")
 ```
 
-[Paginator.ListSecurityProfilesForTarget documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListSecurityProfilesForTarget)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListSecurityProfilesForTarget)
 
 ```python
 class ListSecurityProfilesForTargetPaginator(Boto3Paginator):
@@ -939,13 +939,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_streams")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListStreamsPaginator
+from mypy_boto3_iot.paginator import ListStreamsPaginator
 
 def get_list_streams_paginator() -> ListStreamsPaginator:
     return boto3.client("iot").get_paginator("list_streams")
 ```
 
-[Paginator.ListStreams documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListStreams)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListStreams)
 
 ```python
 class ListStreamsPaginator(Boto3Paginator):
@@ -963,13 +963,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_tags_for_resource"
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListTagsForResourcePaginator
+from mypy_boto3_iot.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return boto3.client("iot").get_paginator("list_tags_for_resource")
 ```
 
-[Paginator.ListTagsForResource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTagsForResource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTagsForResource)
 
 ```python
 class ListTagsForResourcePaginator(Boto3Paginator):
@@ -987,13 +987,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_targets_for_policy
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListTargetsForPolicyPaginator
+from mypy_boto3_iot.paginator import ListTargetsForPolicyPaginator
 
 def get_list_targets_for_policy_paginator() -> ListTargetsForPolicyPaginator:
     return boto3.client("iot").get_paginator("list_targets_for_policy")
 ```
 
-[Paginator.ListTargetsForPolicy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTargetsForPolicy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTargetsForPolicy)
 
 ```python
 class ListTargetsForPolicyPaginator(Boto3Paginator):
@@ -1011,13 +1011,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_targets_for_securi
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListTargetsForSecurityProfilePaginator
+from mypy_boto3_iot.paginator import ListTargetsForSecurityProfilePaginator
 
 def get_list_targets_for_security_profile_paginator() -> ListTargetsForSecurityProfilePaginator:
     return boto3.client("iot").get_paginator("list_targets_for_security_profile")
 ```
 
-[Paginator.ListTargetsForSecurityProfile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTargetsForSecurityProfile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTargetsForSecurityProfile)
 
 ```python
 class ListTargetsForSecurityProfilePaginator(Boto3Paginator):
@@ -1035,13 +1035,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_thing_groups")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListThingGroupsPaginator
+from mypy_boto3_iot.paginator import ListThingGroupsPaginator
 
 def get_list_thing_groups_paginator() -> ListThingGroupsPaginator:
     return boto3.client("iot").get_paginator("list_thing_groups")
 ```
 
-[Paginator.ListThingGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingGroups)
 
 ```python
 class ListThingGroupsPaginator(Boto3Paginator):
@@ -1061,13 +1061,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_thing_groups_for_t
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListThingGroupsForThingPaginator
+from mypy_boto3_iot.paginator import ListThingGroupsForThingPaginator
 
 def get_list_thing_groups_for_thing_paginator() -> ListThingGroupsForThingPaginator:
     return boto3.client("iot").get_paginator("list_thing_groups_for_thing")
 ```
 
-[Paginator.ListThingGroupsForThing documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingGroupsForThing)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingGroupsForThing)
 
 ```python
 class ListThingGroupsForThingPaginator(Boto3Paginator):
@@ -1085,13 +1085,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_thing_principals")
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListThingPrincipalsPaginator
+from mypy_boto3_iot.paginator import ListThingPrincipalsPaginator
 
 def get_list_thing_principals_paginator() -> ListThingPrincipalsPaginator:
     return boto3.client("iot").get_paginator("list_thing_principals")
 ```
 
-[Paginator.ListThingPrincipals documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingPrincipals)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingPrincipals)
 
 ```python
 class ListThingPrincipalsPaginator(Boto3Paginator):
@@ -1109,13 +1109,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_thing_registration
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListThingRegistrationTaskReportsPaginator
+from mypy_boto3_iot.paginator import ListThingRegistrationTaskReportsPaginator
 
 def get_list_thing_registration_task_reports_paginator() -> ListThingRegistrationTaskReportsPaginator:
     return boto3.client("iot").get_paginator("list_thing_registration_task_reports")
 ```
 
-[Paginator.ListThingRegistrationTaskReports documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingRegistrationTaskReports)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingRegistrationTaskReports)
 
 ```python
 class ListThingRegistrationTaskReportsPaginator(Boto3Paginator):
@@ -1134,13 +1134,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_thing_registration
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListThingRegistrationTasksPaginator
+from mypy_boto3_iot.paginator import ListThingRegistrationTasksPaginator
 
 def get_list_thing_registration_tasks_paginator() -> ListThingRegistrationTasksPaginator:
     return boto3.client("iot").get_paginator("list_thing_registration_tasks")
 ```
 
-[Paginator.ListThingRegistrationTasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingRegistrationTasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingRegistrationTasks)
 
 ```python
 class ListThingRegistrationTasksPaginator(Boto3Paginator):
@@ -1158,13 +1158,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_thing_types")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListThingTypesPaginator
+from mypy_boto3_iot.paginator import ListThingTypesPaginator
 
 def get_list_thing_types_paginator() -> ListThingTypesPaginator:
     return boto3.client("iot").get_paginator("list_thing_types")
 ```
 
-[Paginator.ListThingTypes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingTypes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingTypes)
 
 ```python
 class ListThingTypesPaginator(Boto3Paginator):
@@ -1182,13 +1182,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_things")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListThingsPaginator
+from mypy_boto3_iot.paginator import ListThingsPaginator
 
 def get_list_things_paginator() -> ListThingsPaginator:
     return boto3.client("iot").get_paginator("list_things")
 ```
 
-[Paginator.ListThings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThings)
 
 ```python
 class ListThingsPaginator(Boto3Paginator):
@@ -1209,13 +1209,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_things_in_billing_
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListThingsInBillingGroupPaginator
+from mypy_boto3_iot.paginator import ListThingsInBillingGroupPaginator
 
 def get_list_things_in_billing_group_paginator() -> ListThingsInBillingGroupPaginator:
     return boto3.client("iot").get_paginator("list_things_in_billing_group")
 ```
 
-[Paginator.ListThingsInBillingGroup documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingsInBillingGroup)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingsInBillingGroup)
 
 ```python
 class ListThingsInBillingGroupPaginator(Boto3Paginator):
@@ -1233,13 +1233,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_things_in_thing_gr
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListThingsInThingGroupPaginator
+from mypy_boto3_iot.paginator import ListThingsInThingGroupPaginator
 
 def get_list_things_in_thing_group_paginator() -> ListThingsInThingGroupPaginator:
     return boto3.client("iot").get_paginator("list_things_in_thing_group")
 ```
 
-[Paginator.ListThingsInThingGroup documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingsInThingGroup)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListThingsInThingGroup)
 
 ```python
 class ListThingsInThingGroupPaginator(Boto3Paginator):
@@ -1258,13 +1258,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_topic_rule_destina
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListTopicRuleDestinationsPaginator
+from mypy_boto3_iot.paginator import ListTopicRuleDestinationsPaginator
 
 def get_list_topic_rule_destinations_paginator() -> ListTopicRuleDestinationsPaginator:
     return boto3.client("iot").get_paginator("list_topic_rule_destinations")
 ```
 
-[Paginator.ListTopicRuleDestinations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTopicRuleDestinations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTopicRuleDestinations)
 
 ```python
 class ListTopicRuleDestinationsPaginator(Boto3Paginator):
@@ -1281,13 +1281,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_topic_rules")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListTopicRulesPaginator
+from mypy_boto3_iot.paginator import ListTopicRulesPaginator
 
 def get_list_topic_rules_paginator() -> ListTopicRulesPaginator:
     return boto3.client("iot").get_paginator("list_topic_rules")
 ```
 
-[Paginator.ListTopicRules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTopicRules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListTopicRules)
 
 ```python
 class ListTopicRulesPaginator(Boto3Paginator):
@@ -1306,13 +1306,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_v2_logging_levels"
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListV2LoggingLevelsPaginator
+from mypy_boto3_iot.paginator import ListV2LoggingLevelsPaginator
 
 def get_list_v2_logging_levels_paginator() -> ListV2LoggingLevelsPaginator:
     return boto3.client("iot").get_paginator("list_v2_logging_levels")
 ```
 
-[Paginator.ListV2LoggingLevels documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListV2LoggingLevels)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListV2LoggingLevels)
 
 ```python
 class ListV2LoggingLevelsPaginator(Boto3Paginator):
@@ -1330,13 +1330,13 @@ Type annotations for `boto3.client("iot").get_paginator("list_violation_events")
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import ListViolationEventsPaginator
+from mypy_boto3_iot.paginator import ListViolationEventsPaginator
 
 def get_list_violation_events_paginator() -> ListViolationEventsPaginator:
     return boto3.client("iot").get_paginator("list_violation_events")
 ```
 
-[Paginator.ListViolationEvents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListViolationEvents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListViolationEvents)
 
 ```python
 class ListViolationEventsPaginator(Boto3Paginator):

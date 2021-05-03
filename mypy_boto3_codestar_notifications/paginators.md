@@ -17,13 +17,13 @@ Type annotations for `boto3.client("codestar-notifications").get_paginator("list
 Can be used directly:
 
 ```python
-from mypy_boto3_codestar_notifications.paginators import ListEventTypesPaginator
+from mypy_boto3_codestar_notifications.paginator import ListEventTypesPaginator
 
 def get_list_event_types_paginator() -> ListEventTypesPaginator:
     return boto3.client("codestar-notifications").get_paginator("list_event_types")
 ```
 
-[Paginator.ListEventTypes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Paginator.ListEventTypes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Paginator.ListEventTypes)
 
 ```python
 class ListEventTypesPaginator(Boto3Paginator):
@@ -41,13 +41,13 @@ Type annotations for `boto3.client("codestar-notifications").get_paginator("list
 Can be used directly:
 
 ```python
-from mypy_boto3_codestar_notifications.paginators import ListNotificationRulesPaginator
+from mypy_boto3_codestar_notifications.paginator import ListNotificationRulesPaginator
 
 def get_list_notification_rules_paginator() -> ListNotificationRulesPaginator:
     return boto3.client("codestar-notifications").get_paginator("list_notification_rules")
 ```
 
-[Paginator.ListNotificationRules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Paginator.ListNotificationRules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Paginator.ListNotificationRules)
 
 ```python
 class ListNotificationRulesPaginator(Boto3Paginator):
@@ -65,13 +65,13 @@ Type annotations for `boto3.client("codestar-notifications").get_paginator("list
 Can be used directly:
 
 ```python
-from mypy_boto3_codestar_notifications.paginators import ListTargetsPaginator
+from mypy_boto3_codestar_notifications.paginator import ListTargetsPaginator
 
 def get_list_targets_paginator() -> ListTargetsPaginator:
     return boto3.client("codestar-notifications").get_paginator("list_targets")
 ```
 
-[Paginator.ListTargets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Paginator.ListTargets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Paginator.ListTargets)
 
 ```python
 class ListTargetsPaginator(Boto3Paginator):

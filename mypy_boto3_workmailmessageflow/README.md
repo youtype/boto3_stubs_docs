@@ -13,7 +13,7 @@ pip install mypy-boto3-workmailmessageflow
   - [WorkMailMessageFlowClient](#workmailmessageflowclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## WorkMailMessageFlowClient
 
@@ -57,7 +57,7 @@ WorkMailMessageFlowClient [exceptions](./client.md#exceptions)
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

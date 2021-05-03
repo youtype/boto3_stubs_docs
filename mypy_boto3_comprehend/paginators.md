@@ -22,13 +22,13 @@ Type annotations for `boto3.client("comprehend").get_paginator("list_document_cl
 Can be used directly:
 
 ```python
-from mypy_boto3_comprehend.paginators import ListDocumentClassificationJobsPaginator
+from mypy_boto3_comprehend.paginator import ListDocumentClassificationJobsPaginator
 
 def get_list_document_classification_jobs_paginator() -> ListDocumentClassificationJobsPaginator:
     return boto3.client("comprehend").get_paginator("list_document_classification_jobs")
 ```
 
-[Paginator.ListDocumentClassificationJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListDocumentClassificationJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListDocumentClassificationJobs)
 
 ```python
 class ListDocumentClassificationJobsPaginator(Boto3Paginator):
@@ -46,13 +46,13 @@ Type annotations for `boto3.client("comprehend").get_paginator("list_document_cl
 Can be used directly:
 
 ```python
-from mypy_boto3_comprehend.paginators import ListDocumentClassifiersPaginator
+from mypy_boto3_comprehend.paginator import ListDocumentClassifiersPaginator
 
 def get_list_document_classifiers_paginator() -> ListDocumentClassifiersPaginator:
     return boto3.client("comprehend").get_paginator("list_document_classifiers")
 ```
 
-[Paginator.ListDocumentClassifiers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListDocumentClassifiers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListDocumentClassifiers)
 
 ```python
 class ListDocumentClassifiersPaginator(Boto3Paginator):
@@ -70,13 +70,13 @@ Type annotations for `boto3.client("comprehend").get_paginator("list_dominant_la
 Can be used directly:
 
 ```python
-from mypy_boto3_comprehend.paginators import ListDominantLanguageDetectionJobsPaginator
+from mypy_boto3_comprehend.paginator import ListDominantLanguageDetectionJobsPaginator
 
 def get_list_dominant_language_detection_jobs_paginator() -> ListDominantLanguageDetectionJobsPaginator:
     return boto3.client("comprehend").get_paginator("list_dominant_language_detection_jobs")
 ```
 
-[Paginator.ListDominantLanguageDetectionJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListDominantLanguageDetectionJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListDominantLanguageDetectionJobs)
 
 ```python
 class ListDominantLanguageDetectionJobsPaginator(Boto3Paginator):
@@ -94,13 +94,13 @@ Type annotations for `boto3.client("comprehend").get_paginator("list_entities_de
 Can be used directly:
 
 ```python
-from mypy_boto3_comprehend.paginators import ListEntitiesDetectionJobsPaginator
+from mypy_boto3_comprehend.paginator import ListEntitiesDetectionJobsPaginator
 
 def get_list_entities_detection_jobs_paginator() -> ListEntitiesDetectionJobsPaginator:
     return boto3.client("comprehend").get_paginator("list_entities_detection_jobs")
 ```
 
-[Paginator.ListEntitiesDetectionJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListEntitiesDetectionJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListEntitiesDetectionJobs)
 
 ```python
 class ListEntitiesDetectionJobsPaginator(Boto3Paginator):
@@ -118,13 +118,13 @@ Type annotations for `boto3.client("comprehend").get_paginator("list_entity_reco
 Can be used directly:
 
 ```python
-from mypy_boto3_comprehend.paginators import ListEntityRecognizersPaginator
+from mypy_boto3_comprehend.paginator import ListEntityRecognizersPaginator
 
 def get_list_entity_recognizers_paginator() -> ListEntityRecognizersPaginator:
     return boto3.client("comprehend").get_paginator("list_entity_recognizers")
 ```
 
-[Paginator.ListEntityRecognizers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListEntityRecognizers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListEntityRecognizers)
 
 ```python
 class ListEntityRecognizersPaginator(Boto3Paginator):
@@ -142,13 +142,13 @@ Type annotations for `boto3.client("comprehend").get_paginator("list_key_phrases
 Can be used directly:
 
 ```python
-from mypy_boto3_comprehend.paginators import ListKeyPhrasesDetectionJobsPaginator
+from mypy_boto3_comprehend.paginator import ListKeyPhrasesDetectionJobsPaginator
 
 def get_list_key_phrases_detection_jobs_paginator() -> ListKeyPhrasesDetectionJobsPaginator:
     return boto3.client("comprehend").get_paginator("list_key_phrases_detection_jobs")
 ```
 
-[Paginator.ListKeyPhrasesDetectionJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListKeyPhrasesDetectionJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListKeyPhrasesDetectionJobs)
 
 ```python
 class ListKeyPhrasesDetectionJobsPaginator(Boto3Paginator):
@@ -166,13 +166,13 @@ Type annotations for `boto3.client("comprehend").get_paginator("list_sentiment_d
 Can be used directly:
 
 ```python
-from mypy_boto3_comprehend.paginators import ListSentimentDetectionJobsPaginator
+from mypy_boto3_comprehend.paginator import ListSentimentDetectionJobsPaginator
 
 def get_list_sentiment_detection_jobs_paginator() -> ListSentimentDetectionJobsPaginator:
     return boto3.client("comprehend").get_paginator("list_sentiment_detection_jobs")
 ```
 
-[Paginator.ListSentimentDetectionJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListSentimentDetectionJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListSentimentDetectionJobs)
 
 ```python
 class ListSentimentDetectionJobsPaginator(Boto3Paginator):
@@ -190,13 +190,13 @@ Type annotations for `boto3.client("comprehend").get_paginator("list_topics_dete
 Can be used directly:
 
 ```python
-from mypy_boto3_comprehend.paginators import ListTopicsDetectionJobsPaginator
+from mypy_boto3_comprehend.paginator import ListTopicsDetectionJobsPaginator
 
 def get_list_topics_detection_jobs_paginator() -> ListTopicsDetectionJobsPaginator:
     return boto3.client("comprehend").get_paginator("list_topics_detection_jobs")
 ```
 
-[Paginator.ListTopicsDetectionJobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListTopicsDetectionJobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListTopicsDetectionJobs)
 
 ```python
 class ListTopicsDetectionJobsPaginator(Boto3Paginator):

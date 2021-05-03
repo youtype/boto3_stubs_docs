@@ -16,13 +16,13 @@ Type annotations for `boto3.client("chime").get_paginator("list_accounts")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_chime.paginators import ListAccountsPaginator
+from mypy_boto3_chime.paginator import ListAccountsPaginator
 
 def get_list_accounts_paginator() -> ListAccountsPaginator:
     return boto3.client("chime").get_paginator("list_accounts")
 ```
 
-[Paginator.ListAccounts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Paginator.ListAccounts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Paginator.ListAccounts)
 
 ```python
 class ListAccountsPaginator(Boto3Paginator):
@@ -41,13 +41,13 @@ Type annotations for `boto3.client("chime").get_paginator("list_users")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_chime.paginators import ListUsersPaginator
+from mypy_boto3_chime.paginator import ListUsersPaginator
 
 def get_list_users_paginator() -> ListUsersPaginator:
     return boto3.client("chime").get_paginator("list_users")
 ```
 
-[Paginator.ListUsers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Paginator.ListUsers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Paginator.ListUsers)
 
 ```python
 class ListUsersPaginator(Boto3Paginator):

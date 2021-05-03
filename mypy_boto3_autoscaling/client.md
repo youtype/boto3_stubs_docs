@@ -81,7 +81,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_autoscaling.client import AutoScalingClient
+
+def get_autoscaling_client() -> AutoScalingClient:
+    return boto3.client("autoscaling")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client)
 
 ## Exceptions
 
@@ -117,7 +122,7 @@ Exceptions:
 
 Type annotations for `boto3.client("autoscaling").attach_instances` method.
 
-[Client.attach_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_instances]
 
 ```python
 def attach_instances(
@@ -132,7 +137,7 @@ def attach_instances(
 
 Type annotations for `boto3.client("autoscaling").attach_load_balancer_target_groups` method.
 
-[Client.attach_load_balancer_target_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_load_balancer_target_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_load_balancer_target_groups]
 
 ```python
 def attach_load_balancer_target_groups(
@@ -147,7 +152,7 @@ def attach_load_balancer_target_groups(
 
 Type annotations for `boto3.client("autoscaling").attach_load_balancers` method.
 
-[Client.attach_load_balancers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_load_balancers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_load_balancers]
 
 ```python
 def attach_load_balancers(
@@ -162,7 +167,7 @@ def attach_load_balancers(
 
 Type annotations for `boto3.client("autoscaling").batch_delete_scheduled_action` method.
 
-[Client.batch_delete_scheduled_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.batch_delete_scheduled_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.batch_delete_scheduled_action]
 
 ```python
 def batch_delete_scheduled_action(
@@ -177,7 +182,7 @@ def batch_delete_scheduled_action(
 
 Type annotations for `boto3.client("autoscaling").batch_put_scheduled_update_group_action` method.
 
-[Client.batch_put_scheduled_update_group_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.batch_put_scheduled_update_group_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.batch_put_scheduled_update_group_action]
 
 ```python
 def batch_put_scheduled_update_group_action(
@@ -192,7 +197,7 @@ def batch_put_scheduled_update_group_action(
 
 Type annotations for `boto3.client("autoscaling").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -206,7 +211,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("autoscaling").cancel_instance_refresh` method.
 
-[Client.cancel_instance_refresh documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.cancel_instance_refresh)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.cancel_instance_refresh]
 
 ```python
 def cancel_instance_refresh(
@@ -220,7 +225,7 @@ def cancel_instance_refresh(
 
 Type annotations for `boto3.client("autoscaling").complete_lifecycle_action` method.
 
-[Client.complete_lifecycle_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.complete_lifecycle_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.complete_lifecycle_action]
 
 ```python
 def complete_lifecycle_action(
@@ -238,7 +243,7 @@ def complete_lifecycle_action(
 
 Type annotations for `boto3.client("autoscaling").create_auto_scaling_group` method.
 
-[Client.create_auto_scaling_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_auto_scaling_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_auto_scaling_group]
 
 ```python
 def create_auto_scaling_group(
@@ -274,7 +279,7 @@ def create_auto_scaling_group(
 
 Type annotations for `boto3.client("autoscaling").create_launch_configuration` method.
 
-[Client.create_launch_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_launch_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_launch_configuration]
 
 ```python
 def create_launch_configuration(
@@ -306,7 +311,7 @@ def create_launch_configuration(
 
 Type annotations for `boto3.client("autoscaling").create_or_update_tags` method.
 
-[Client.create_or_update_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_or_update_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_or_update_tags]
 
 ```python
 def create_or_update_tags(
@@ -320,7 +325,7 @@ def create_or_update_tags(
 
 Type annotations for `boto3.client("autoscaling").delete_auto_scaling_group` method.
 
-[Client.delete_auto_scaling_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_auto_scaling_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_auto_scaling_group]
 
 ```python
 def delete_auto_scaling_group(
@@ -335,7 +340,7 @@ def delete_auto_scaling_group(
 
 Type annotations for `boto3.client("autoscaling").delete_launch_configuration` method.
 
-[Client.delete_launch_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_launch_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_launch_configuration]
 
 ```python
 def delete_launch_configuration(
@@ -349,7 +354,7 @@ def delete_launch_configuration(
 
 Type annotations for `boto3.client("autoscaling").delete_lifecycle_hook` method.
 
-[Client.delete_lifecycle_hook documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_lifecycle_hook)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_lifecycle_hook]
 
 ```python
 def delete_lifecycle_hook(
@@ -364,7 +369,7 @@ def delete_lifecycle_hook(
 
 Type annotations for `boto3.client("autoscaling").delete_notification_configuration` method.
 
-[Client.delete_notification_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_notification_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_notification_configuration]
 
 ```python
 def delete_notification_configuration(
@@ -379,7 +384,7 @@ def delete_notification_configuration(
 
 Type annotations for `boto3.client("autoscaling").delete_policy` method.
 
-[Client.delete_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_policy]
 
 ```python
 def delete_policy(
@@ -394,7 +399,7 @@ def delete_policy(
 
 Type annotations for `boto3.client("autoscaling").delete_scheduled_action` method.
 
-[Client.delete_scheduled_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_scheduled_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_scheduled_action]
 
 ```python
 def delete_scheduled_action(
@@ -409,7 +414,7 @@ def delete_scheduled_action(
 
 Type annotations for `boto3.client("autoscaling").delete_tags` method.
 
-[Client.delete_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_tags]
 
 ```python
 def delete_tags(
@@ -423,7 +428,7 @@ def delete_tags(
 
 Type annotations for `boto3.client("autoscaling").delete_warm_pool` method.
 
-[Client.delete_warm_pool documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_warm_pool)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_warm_pool]
 
 ```python
 def delete_warm_pool(
@@ -438,7 +443,7 @@ def delete_warm_pool(
 
 Type annotations for `boto3.client("autoscaling").describe_account_limits` method.
 
-[Client.describe_account_limits documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_account_limits)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_account_limits]
 
 ```python
 def describe_account_limits(
@@ -451,7 +456,7 @@ def describe_account_limits(
 
 Type annotations for `boto3.client("autoscaling").describe_adjustment_types` method.
 
-[Client.describe_adjustment_types documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_adjustment_types)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_adjustment_types]
 
 ```python
 def describe_adjustment_types(
@@ -464,7 +469,7 @@ def describe_adjustment_types(
 
 Type annotations for `boto3.client("autoscaling").describe_auto_scaling_groups` method.
 
-[Client.describe_auto_scaling_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_groups]
 
 ```python
 def describe_auto_scaling_groups(
@@ -480,7 +485,7 @@ def describe_auto_scaling_groups(
 
 Type annotations for `boto3.client("autoscaling").describe_auto_scaling_instances` method.
 
-[Client.describe_auto_scaling_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_instances]
 
 ```python
 def describe_auto_scaling_instances(
@@ -496,7 +501,7 @@ def describe_auto_scaling_instances(
 
 Type annotations for `boto3.client("autoscaling").describe_auto_scaling_notification_types` method.
 
-[Client.describe_auto_scaling_notification_types documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_notification_types)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_notification_types]
 
 ```python
 def describe_auto_scaling_notification_types(
@@ -509,7 +514,7 @@ def describe_auto_scaling_notification_types(
 
 Type annotations for `boto3.client("autoscaling").describe_instance_refreshes` method.
 
-[Client.describe_instance_refreshes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_instance_refreshes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_instance_refreshes]
 
 ```python
 def describe_instance_refreshes(
@@ -526,7 +531,7 @@ def describe_instance_refreshes(
 
 Type annotations for `boto3.client("autoscaling").describe_launch_configurations` method.
 
-[Client.describe_launch_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_launch_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_launch_configurations]
 
 ```python
 def describe_launch_configurations(
@@ -542,7 +547,7 @@ def describe_launch_configurations(
 
 Type annotations for `boto3.client("autoscaling").describe_lifecycle_hook_types` method.
 
-[Client.describe_lifecycle_hook_types documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_lifecycle_hook_types)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_lifecycle_hook_types]
 
 ```python
 def describe_lifecycle_hook_types(
@@ -555,7 +560,7 @@ def describe_lifecycle_hook_types(
 
 Type annotations for `boto3.client("autoscaling").describe_lifecycle_hooks` method.
 
-[Client.describe_lifecycle_hooks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_lifecycle_hooks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_lifecycle_hooks]
 
 ```python
 def describe_lifecycle_hooks(
@@ -570,7 +575,7 @@ def describe_lifecycle_hooks(
 
 Type annotations for `boto3.client("autoscaling").describe_load_balancer_target_groups` method.
 
-[Client.describe_load_balancer_target_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_load_balancer_target_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_load_balancer_target_groups]
 
 ```python
 def describe_load_balancer_target_groups(
@@ -586,7 +591,7 @@ def describe_load_balancer_target_groups(
 
 Type annotations for `boto3.client("autoscaling").describe_load_balancers` method.
 
-[Client.describe_load_balancers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_load_balancers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_load_balancers]
 
 ```python
 def describe_load_balancers(
@@ -602,7 +607,7 @@ def describe_load_balancers(
 
 Type annotations for `boto3.client("autoscaling").describe_metric_collection_types` method.
 
-[Client.describe_metric_collection_types documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_metric_collection_types)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_metric_collection_types]
 
 ```python
 def describe_metric_collection_types(
@@ -615,7 +620,7 @@ def describe_metric_collection_types(
 
 Type annotations for `boto3.client("autoscaling").describe_notification_configurations` method.
 
-[Client.describe_notification_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_notification_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_notification_configurations]
 
 ```python
 def describe_notification_configurations(
@@ -631,7 +636,7 @@ def describe_notification_configurations(
 
 Type annotations for `boto3.client("autoscaling").describe_policies` method.
 
-[Client.describe_policies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_policies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_policies]
 
 ```python
 def describe_policies(
@@ -649,7 +654,7 @@ def describe_policies(
 
 Type annotations for `boto3.client("autoscaling").describe_scaling_activities` method.
 
-[Client.describe_scaling_activities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scaling_activities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scaling_activities]
 
 ```python
 def describe_scaling_activities(
@@ -667,7 +672,7 @@ def describe_scaling_activities(
 
 Type annotations for `boto3.client("autoscaling").describe_scaling_process_types` method.
 
-[Client.describe_scaling_process_types documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scaling_process_types)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scaling_process_types]
 
 ```python
 def describe_scaling_process_types(
@@ -680,7 +685,7 @@ def describe_scaling_process_types(
 
 Type annotations for `boto3.client("autoscaling").describe_scheduled_actions` method.
 
-[Client.describe_scheduled_actions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scheduled_actions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scheduled_actions]
 
 ```python
 def describe_scheduled_actions(
@@ -699,7 +704,7 @@ def describe_scheduled_actions(
 
 Type annotations for `boto3.client("autoscaling").describe_tags` method.
 
-[Client.describe_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_tags]
 
 ```python
 def describe_tags(
@@ -715,7 +720,7 @@ def describe_tags(
 
 Type annotations for `boto3.client("autoscaling").describe_termination_policy_types` method.
 
-[Client.describe_termination_policy_types documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_termination_policy_types)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_termination_policy_types]
 
 ```python
 def describe_termination_policy_types(
@@ -728,7 +733,7 @@ def describe_termination_policy_types(
 
 Type annotations for `boto3.client("autoscaling").describe_warm_pool` method.
 
-[Client.describe_warm_pool documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_warm_pool)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_warm_pool]
 
 ```python
 def describe_warm_pool(
@@ -744,7 +749,7 @@ def describe_warm_pool(
 
 Type annotations for `boto3.client("autoscaling").detach_instances` method.
 
-[Client.detach_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_instances]
 
 ```python
 def detach_instances(
@@ -760,7 +765,7 @@ def detach_instances(
 
 Type annotations for `boto3.client("autoscaling").detach_load_balancer_target_groups` method.
 
-[Client.detach_load_balancer_target_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_load_balancer_target_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_load_balancer_target_groups]
 
 ```python
 def detach_load_balancer_target_groups(
@@ -775,7 +780,7 @@ def detach_load_balancer_target_groups(
 
 Type annotations for `boto3.client("autoscaling").detach_load_balancers` method.
 
-[Client.detach_load_balancers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_load_balancers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_load_balancers]
 
 ```python
 def detach_load_balancers(
@@ -790,7 +795,7 @@ def detach_load_balancers(
 
 Type annotations for `boto3.client("autoscaling").disable_metrics_collection` method.
 
-[Client.disable_metrics_collection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.disable_metrics_collection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.disable_metrics_collection]
 
 ```python
 def disable_metrics_collection(
@@ -805,7 +810,7 @@ def disable_metrics_collection(
 
 Type annotations for `boto3.client("autoscaling").enable_metrics_collection` method.
 
-[Client.enable_metrics_collection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.enable_metrics_collection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.enable_metrics_collection]
 
 ```python
 def enable_metrics_collection(
@@ -821,7 +826,7 @@ def enable_metrics_collection(
 
 Type annotations for `boto3.client("autoscaling").enter_standby` method.
 
-[Client.enter_standby documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.enter_standby)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.enter_standby]
 
 ```python
 def enter_standby(
@@ -837,7 +842,7 @@ def enter_standby(
 
 Type annotations for `boto3.client("autoscaling").execute_policy` method.
 
-[Client.execute_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.execute_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.execute_policy]
 
 ```python
 def execute_policy(
@@ -855,7 +860,7 @@ def execute_policy(
 
 Type annotations for `boto3.client("autoscaling").exit_standby` method.
 
-[Client.exit_standby documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.exit_standby)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.exit_standby]
 
 ```python
 def exit_standby(
@@ -870,7 +875,7 @@ def exit_standby(
 
 Type annotations for `boto3.client("autoscaling").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -887,7 +892,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("autoscaling").put_lifecycle_hook` method.
 
-[Client.put_lifecycle_hook documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_lifecycle_hook)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_lifecycle_hook]
 
 ```python
 def put_lifecycle_hook(
@@ -908,7 +913,7 @@ def put_lifecycle_hook(
 
 Type annotations for `boto3.client("autoscaling").put_notification_configuration` method.
 
-[Client.put_notification_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_notification_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_notification_configuration]
 
 ```python
 def put_notification_configuration(
@@ -924,7 +929,7 @@ def put_notification_configuration(
 
 Type annotations for `boto3.client("autoscaling").put_scaling_policy` method.
 
-[Client.put_scaling_policy documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_scaling_policy)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_scaling_policy]
 
 ```python
 def put_scaling_policy(
@@ -950,7 +955,7 @@ def put_scaling_policy(
 
 Type annotations for `boto3.client("autoscaling").put_scheduled_update_group_action` method.
 
-[Client.put_scheduled_update_group_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_scheduled_update_group_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_scheduled_update_group_action]
 
 ```python
 def put_scheduled_update_group_action(
@@ -973,7 +978,7 @@ def put_scheduled_update_group_action(
 
 Type annotations for `boto3.client("autoscaling").put_warm_pool` method.
 
-[Client.put_warm_pool documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_warm_pool)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_warm_pool]
 
 ```python
 def put_warm_pool(
@@ -990,7 +995,7 @@ def put_warm_pool(
 
 Type annotations for `boto3.client("autoscaling").record_lifecycle_action_heartbeat` method.
 
-[Client.record_lifecycle_action_heartbeat documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.record_lifecycle_action_heartbeat)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.record_lifecycle_action_heartbeat]
 
 ```python
 def record_lifecycle_action_heartbeat(
@@ -1007,7 +1012,7 @@ def record_lifecycle_action_heartbeat(
 
 Type annotations for `boto3.client("autoscaling").resume_processes` method.
 
-[Client.resume_processes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.resume_processes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.resume_processes]
 
 ```python
 def resume_processes(
@@ -1022,7 +1027,7 @@ def resume_processes(
 
 Type annotations for `boto3.client("autoscaling").set_desired_capacity` method.
 
-[Client.set_desired_capacity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_desired_capacity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_desired_capacity]
 
 ```python
 def set_desired_capacity(
@@ -1038,7 +1043,7 @@ def set_desired_capacity(
 
 Type annotations for `boto3.client("autoscaling").set_instance_health` method.
 
-[Client.set_instance_health documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_instance_health)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_instance_health]
 
 ```python
 def set_instance_health(
@@ -1054,7 +1059,7 @@ def set_instance_health(
 
 Type annotations for `boto3.client("autoscaling").set_instance_protection` method.
 
-[Client.set_instance_protection documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_instance_protection)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_instance_protection]
 
 ```python
 def set_instance_protection(
@@ -1070,7 +1075,7 @@ def set_instance_protection(
 
 Type annotations for `boto3.client("autoscaling").start_instance_refresh` method.
 
-[Client.start_instance_refresh documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.start_instance_refresh)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.start_instance_refresh]
 
 ```python
 def start_instance_refresh(
@@ -1086,7 +1091,7 @@ def start_instance_refresh(
 
 Type annotations for `boto3.client("autoscaling").suspend_processes` method.
 
-[Client.suspend_processes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.suspend_processes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.suspend_processes]
 
 ```python
 def suspend_processes(
@@ -1101,7 +1106,7 @@ def suspend_processes(
 
 Type annotations for `boto3.client("autoscaling").terminate_instance_in_auto_scaling_group` method.
 
-[Client.terminate_instance_in_auto_scaling_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.terminate_instance_in_auto_scaling_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.terminate_instance_in_auto_scaling_group]
 
 ```python
 def terminate_instance_in_auto_scaling_group(
@@ -1116,7 +1121,7 @@ def terminate_instance_in_auto_scaling_group(
 
 Type annotations for `boto3.client("autoscaling").update_auto_scaling_group` method.
 
-[Client.update_auto_scaling_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.update_auto_scaling_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.update_auto_scaling_group]
 
 ```python
 def update_auto_scaling_group(

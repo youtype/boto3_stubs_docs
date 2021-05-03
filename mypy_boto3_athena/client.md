@@ -55,7 +55,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_athena.client import AthenaClient
+
+def get_athena_client() -> AthenaClient:
+    return boto3.client("athena")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client)
 
 ## Exceptions
 
@@ -87,7 +92,7 @@ Exceptions:
 
 Type annotations for `boto3.client("athena").batch_get_named_query` method.
 
-[Client.batch_get_named_query documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.batch_get_named_query)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.batch_get_named_query]
 
 ```python
 def batch_get_named_query(
@@ -101,7 +106,7 @@ def batch_get_named_query(
 
 Type annotations for `boto3.client("athena").batch_get_query_execution` method.
 
-[Client.batch_get_query_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.batch_get_query_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.batch_get_query_execution]
 
 ```python
 def batch_get_query_execution(
@@ -115,7 +120,7 @@ def batch_get_query_execution(
 
 Type annotations for `boto3.client("athena").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -129,7 +134,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("athena").create_data_catalog` method.
 
-[Client.create_data_catalog documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_data_catalog)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_data_catalog]
 
 ```python
 def create_data_catalog(
@@ -147,7 +152,7 @@ def create_data_catalog(
 
 Type annotations for `boto3.client("athena").create_named_query` method.
 
-[Client.create_named_query documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_named_query)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_named_query]
 
 ```python
 def create_named_query(
@@ -166,7 +171,7 @@ def create_named_query(
 
 Type annotations for `boto3.client("athena").create_prepared_statement` method.
 
-[Client.create_prepared_statement documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_prepared_statement)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_prepared_statement]
 
 ```python
 def create_prepared_statement(
@@ -183,7 +188,7 @@ def create_prepared_statement(
 
 Type annotations for `boto3.client("athena").create_work_group` method.
 
-[Client.create_work_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_work_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_work_group]
 
 ```python
 def create_work_group(
@@ -200,7 +205,7 @@ def create_work_group(
 
 Type annotations for `boto3.client("athena").delete_data_catalog` method.
 
-[Client.delete_data_catalog documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_data_catalog)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_data_catalog]
 
 ```python
 def delete_data_catalog(
@@ -214,7 +219,7 @@ def delete_data_catalog(
 
 Type annotations for `boto3.client("athena").delete_named_query` method.
 
-[Client.delete_named_query documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_named_query)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_named_query]
 
 ```python
 def delete_named_query(
@@ -228,7 +233,7 @@ def delete_named_query(
 
 Type annotations for `boto3.client("athena").delete_prepared_statement` method.
 
-[Client.delete_prepared_statement documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_prepared_statement)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_prepared_statement]
 
 ```python
 def delete_prepared_statement(
@@ -243,7 +248,7 @@ def delete_prepared_statement(
 
 Type annotations for `boto3.client("athena").delete_work_group` method.
 
-[Client.delete_work_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_work_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_work_group]
 
 ```python
 def delete_work_group(
@@ -258,7 +263,7 @@ def delete_work_group(
 
 Type annotations for `boto3.client("athena").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -275,7 +280,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("athena").get_data_catalog` method.
 
-[Client.get_data_catalog documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_data_catalog)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_data_catalog]
 
 ```python
 def get_data_catalog(
@@ -289,7 +294,7 @@ def get_data_catalog(
 
 Type annotations for `boto3.client("athena").get_database` method.
 
-[Client.get_database documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_database)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_database]
 
 ```python
 def get_database(
@@ -304,7 +309,7 @@ def get_database(
 
 Type annotations for `boto3.client("athena").get_named_query` method.
 
-[Client.get_named_query documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_named_query)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_named_query]
 
 ```python
 def get_named_query(
@@ -318,7 +323,7 @@ def get_named_query(
 
 Type annotations for `boto3.client("athena").get_prepared_statement` method.
 
-[Client.get_prepared_statement documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_prepared_statement)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_prepared_statement]
 
 ```python
 def get_prepared_statement(
@@ -333,7 +338,7 @@ def get_prepared_statement(
 
 Type annotations for `boto3.client("athena").get_query_execution` method.
 
-[Client.get_query_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_query_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_query_execution]
 
 ```python
 def get_query_execution(
@@ -347,7 +352,7 @@ def get_query_execution(
 
 Type annotations for `boto3.client("athena").get_query_results` method.
 
-[Client.get_query_results documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_query_results)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_query_results]
 
 ```python
 def get_query_results(
@@ -363,7 +368,7 @@ def get_query_results(
 
 Type annotations for `boto3.client("athena").get_table_metadata` method.
 
-[Client.get_table_metadata documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_table_metadata)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_table_metadata]
 
 ```python
 def get_table_metadata(
@@ -379,7 +384,7 @@ def get_table_metadata(
 
 Type annotations for `boto3.client("athena").get_work_group` method.
 
-[Client.get_work_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_work_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_work_group]
 
 ```python
 def get_work_group(
@@ -393,7 +398,7 @@ def get_work_group(
 
 Type annotations for `boto3.client("athena").list_data_catalogs` method.
 
-[Client.list_data_catalogs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_data_catalogs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_data_catalogs]
 
 ```python
 def list_data_catalogs(
@@ -408,7 +413,7 @@ def list_data_catalogs(
 
 Type annotations for `boto3.client("athena").list_databases` method.
 
-[Client.list_databases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_databases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_databases]
 
 ```python
 def list_databases(
@@ -424,7 +429,7 @@ def list_databases(
 
 Type annotations for `boto3.client("athena").list_engine_versions` method.
 
-[Client.list_engine_versions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_engine_versions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_engine_versions]
 
 ```python
 def list_engine_versions(
@@ -439,7 +444,7 @@ def list_engine_versions(
 
 Type annotations for `boto3.client("athena").list_named_queries` method.
 
-[Client.list_named_queries documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_named_queries)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_named_queries]
 
 ```python
 def list_named_queries(
@@ -455,7 +460,7 @@ def list_named_queries(
 
 Type annotations for `boto3.client("athena").list_prepared_statements` method.
 
-[Client.list_prepared_statements documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_prepared_statements)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_prepared_statements]
 
 ```python
 def list_prepared_statements(
@@ -471,7 +476,7 @@ def list_prepared_statements(
 
 Type annotations for `boto3.client("athena").list_query_executions` method.
 
-[Client.list_query_executions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_query_executions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_query_executions]
 
 ```python
 def list_query_executions(
@@ -487,7 +492,7 @@ def list_query_executions(
 
 Type annotations for `boto3.client("athena").list_table_metadata` method.
 
-[Client.list_table_metadata documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_table_metadata)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_table_metadata]
 
 ```python
 def list_table_metadata(
@@ -505,7 +510,7 @@ def list_table_metadata(
 
 Type annotations for `boto3.client("athena").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -521,7 +526,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("athena").list_work_groups` method.
 
-[Client.list_work_groups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_work_groups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_work_groups]
 
 ```python
 def list_work_groups(
@@ -536,7 +541,7 @@ def list_work_groups(
 
 Type annotations for `boto3.client("athena").start_query_execution` method.
 
-[Client.start_query_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.start_query_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.start_query_execution]
 
 ```python
 def start_query_execution(
@@ -554,7 +559,7 @@ def start_query_execution(
 
 Type annotations for `boto3.client("athena").stop_query_execution` method.
 
-[Client.stop_query_execution documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.stop_query_execution)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.stop_query_execution]
 
 ```python
 def stop_query_execution(
@@ -568,7 +573,7 @@ def stop_query_execution(
 
 Type annotations for `boto3.client("athena").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -583,7 +588,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("athena").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -598,7 +603,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("athena").update_data_catalog` method.
 
-[Client.update_data_catalog documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_data_catalog)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_data_catalog]
 
 ```python
 def update_data_catalog(
@@ -615,7 +620,7 @@ def update_data_catalog(
 
 Type annotations for `boto3.client("athena").update_prepared_statement` method.
 
-[Client.update_prepared_statement documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_prepared_statement)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_prepared_statement]
 
 ```python
 def update_prepared_statement(
@@ -632,7 +637,7 @@ def update_prepared_statement(
 
 Type annotations for `boto3.client("athena").update_work_group` method.
 
-[Client.update_work_group documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_work_group)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_work_group]
 
 ```python
 def update_work_group(

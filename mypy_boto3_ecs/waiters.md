@@ -18,13 +18,13 @@ Type annotations for `boto3.client("ecs").get_waiter("services_inactive")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ecs.waiters import ServicesInactiveWaiter
+from mypy_boto3_ecs.waiter import ServicesInactiveWaiter
 
 def get_services_inactive_waiter() -> ServicesInactiveWaiter:
     return boto3.client("ecs").get_waiter("services_inactive")
 ```
 
-[Waiter.ServicesInactive documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Waiter.ServicesInactive)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Waiter.services_inactive)
 
 ```python
 class ServicesInactiveWaiter(Boto3Waiter):
@@ -44,13 +44,13 @@ Type annotations for `boto3.client("ecs").get_waiter("services_stable")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ecs.waiters import ServicesStableWaiter
+from mypy_boto3_ecs.waiter import ServicesStableWaiter
 
 def get_services_stable_waiter() -> ServicesStableWaiter:
     return boto3.client("ecs").get_waiter("services_stable")
 ```
 
-[Waiter.ServicesStable documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Waiter.ServicesStable)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Waiter.services_stable)
 
 ```python
 class ServicesStableWaiter(Boto3Waiter):
@@ -70,13 +70,13 @@ Type annotations for `boto3.client("ecs").get_waiter("tasks_running")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ecs.waiters import TasksRunningWaiter
+from mypy_boto3_ecs.waiter import TasksRunningWaiter
 
 def get_tasks_running_waiter() -> TasksRunningWaiter:
     return boto3.client("ecs").get_waiter("tasks_running")
 ```
 
-[Waiter.TasksRunning documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Waiter.TasksRunning)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Waiter.tasks_running)
 
 ```python
 class TasksRunningWaiter(Boto3Waiter):
@@ -96,13 +96,13 @@ Type annotations for `boto3.client("ecs").get_waiter("tasks_stopped")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ecs.waiters import TasksStoppedWaiter
+from mypy_boto3_ecs.waiter import TasksStoppedWaiter
 
 def get_tasks_stopped_waiter() -> TasksStoppedWaiter:
     return boto3.client("ecs").get_waiter("tasks_stopped")
 ```
 
-[Waiter.TasksStopped documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Waiter.TasksStopped)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Waiter.tasks_stopped)
 
 ```python
 class TasksStoppedWaiter(Boto3Waiter):

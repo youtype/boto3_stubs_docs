@@ -114,13 +114,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_addresses_attr
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeAddressesAttributePaginator
+from mypy_boto3_ec2.paginator import DescribeAddressesAttributePaginator
 
 def get_describe_addresses_attribute_paginator() -> DescribeAddressesAttributePaginator:
     return boto3.client("ec2").get_paginator("describe_addresses_attribute")
 ```
 
-[Paginator.DescribeAddressesAttribute documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeAddressesAttribute)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeAddressesAttribute)
 
 ```python
 class DescribeAddressesAttributePaginator(Boto3Paginator):
@@ -140,13 +140,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_byoip_cidrs")`
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeByoipCidrsPaginator
+from mypy_boto3_ec2.paginator import DescribeByoipCidrsPaginator
 
 def get_describe_byoip_cidrs_paginator() -> DescribeByoipCidrsPaginator:
     return boto3.client("ec2").get_paginator("describe_byoip_cidrs")
 ```
 
-[Paginator.DescribeByoipCidrs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeByoipCidrs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeByoipCidrs)
 
 ```python
 class DescribeByoipCidrsPaginator(Boto3Paginator):
@@ -164,13 +164,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_capacity_reser
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeCapacityReservationsPaginator
+from mypy_boto3_ec2.paginator import DescribeCapacityReservationsPaginator
 
 def get_describe_capacity_reservations_paginator() -> DescribeCapacityReservationsPaginator:
     return boto3.client("ec2").get_paginator("describe_capacity_reservations")
 ```
 
-[Paginator.DescribeCapacityReservations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCapacityReservations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCapacityReservations)
 
 ```python
 class DescribeCapacityReservationsPaginator(Boto3Paginator):
@@ -190,13 +190,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_carrier_gatewa
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeCarrierGatewaysPaginator
+from mypy_boto3_ec2.paginator import DescribeCarrierGatewaysPaginator
 
 def get_describe_carrier_gateways_paginator() -> DescribeCarrierGatewaysPaginator:
     return boto3.client("ec2").get_paginator("describe_carrier_gateways")
 ```
 
-[Paginator.DescribeCarrierGateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCarrierGateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCarrierGateways)
 
 ```python
 class DescribeCarrierGatewaysPaginator(Boto3Paginator):
@@ -216,13 +216,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_classic_link_i
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeClassicLinkInstancesPaginator
+from mypy_boto3_ec2.paginator import DescribeClassicLinkInstancesPaginator
 
 def get_describe_classic_link_instances_paginator() -> DescribeClassicLinkInstancesPaginator:
     return boto3.client("ec2").get_paginator("describe_classic_link_instances")
 ```
 
-[Paginator.DescribeClassicLinkInstances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClassicLinkInstances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClassicLinkInstances)
 
 ```python
 class DescribeClassicLinkInstancesPaginator(Boto3Paginator):
@@ -242,13 +242,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_client_vpn_aut
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeClientVpnAuthorizationRulesPaginator
+from mypy_boto3_ec2.paginator import DescribeClientVpnAuthorizationRulesPaginator
 
 def get_describe_client_vpn_authorization_rules_paginator() -> DescribeClientVpnAuthorizationRulesPaginator:
     return boto3.client("ec2").get_paginator("describe_client_vpn_authorization_rules")
 ```
 
-[Paginator.DescribeClientVpnAuthorizationRules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnAuthorizationRules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnAuthorizationRules)
 
 ```python
 class DescribeClientVpnAuthorizationRulesPaginator(Boto3Paginator):
@@ -268,13 +268,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_client_vpn_con
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeClientVpnConnectionsPaginator
+from mypy_boto3_ec2.paginator import DescribeClientVpnConnectionsPaginator
 
 def get_describe_client_vpn_connections_paginator() -> DescribeClientVpnConnectionsPaginator:
     return boto3.client("ec2").get_paginator("describe_client_vpn_connections")
 ```
 
-[Paginator.DescribeClientVpnConnections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnConnections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnConnections)
 
 ```python
 class DescribeClientVpnConnectionsPaginator(Boto3Paginator):
@@ -294,13 +294,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_client_vpn_end
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeClientVpnEndpointsPaginator
+from mypy_boto3_ec2.paginator import DescribeClientVpnEndpointsPaginator
 
 def get_describe_client_vpn_endpoints_paginator() -> DescribeClientVpnEndpointsPaginator:
     return boto3.client("ec2").get_paginator("describe_client_vpn_endpoints")
 ```
 
-[Paginator.DescribeClientVpnEndpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnEndpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnEndpoints)
 
 ```python
 class DescribeClientVpnEndpointsPaginator(Boto3Paginator):
@@ -320,13 +320,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_client_vpn_rou
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeClientVpnRoutesPaginator
+from mypy_boto3_ec2.paginator import DescribeClientVpnRoutesPaginator
 
 def get_describe_client_vpn_routes_paginator() -> DescribeClientVpnRoutesPaginator:
     return boto3.client("ec2").get_paginator("describe_client_vpn_routes")
 ```
 
-[Paginator.DescribeClientVpnRoutes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnRoutes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnRoutes)
 
 ```python
 class DescribeClientVpnRoutesPaginator(Boto3Paginator):
@@ -346,13 +346,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_client_vpn_tar
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeClientVpnTargetNetworksPaginator
+from mypy_boto3_ec2.paginator import DescribeClientVpnTargetNetworksPaginator
 
 def get_describe_client_vpn_target_networks_paginator() -> DescribeClientVpnTargetNetworksPaginator:
     return boto3.client("ec2").get_paginator("describe_client_vpn_target_networks")
 ```
 
-[Paginator.DescribeClientVpnTargetNetworks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnTargetNetworks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnTargetNetworks)
 
 ```python
 class DescribeClientVpnTargetNetworksPaginator(Boto3Paginator):
@@ -373,13 +373,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_coip_pools")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeCoipPoolsPaginator
+from mypy_boto3_ec2.paginator import DescribeCoipPoolsPaginator
 
 def get_describe_coip_pools_paginator() -> DescribeCoipPoolsPaginator:
     return boto3.client("ec2").get_paginator("describe_coip_pools")
 ```
 
-[Paginator.DescribeCoipPools documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCoipPools)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCoipPools)
 
 ```python
 class DescribeCoipPoolsPaginator(Boto3Paginator):
@@ -399,13 +399,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_dhcp_options")
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeDhcpOptionsPaginator
+from mypy_boto3_ec2.paginator import DescribeDhcpOptionsPaginator
 
 def get_describe_dhcp_options_paginator() -> DescribeDhcpOptionsPaginator:
     return boto3.client("ec2").get_paginator("describe_dhcp_options")
 ```
 
-[Paginator.DescribeDhcpOptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeDhcpOptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeDhcpOptions)
 
 ```python
 class DescribeDhcpOptionsPaginator(Boto3Paginator):
@@ -425,13 +425,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_egress_only_in
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeEgressOnlyInternetGatewaysPaginator
+from mypy_boto3_ec2.paginator import DescribeEgressOnlyInternetGatewaysPaginator
 
 def get_describe_egress_only_internet_gateways_paginator() -> DescribeEgressOnlyInternetGatewaysPaginator:
     return boto3.client("ec2").get_paginator("describe_egress_only_internet_gateways")
 ```
 
-[Paginator.DescribeEgressOnlyInternetGateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeEgressOnlyInternetGateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeEgressOnlyInternetGateways)
 
 ```python
 class DescribeEgressOnlyInternetGatewaysPaginator(Boto3Paginator):
@@ -451,13 +451,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_export_image_t
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeExportImageTasksPaginator
+from mypy_boto3_ec2.paginator import DescribeExportImageTasksPaginator
 
 def get_describe_export_image_tasks_paginator() -> DescribeExportImageTasksPaginator:
     return boto3.client("ec2").get_paginator("describe_export_image_tasks")
 ```
 
-[Paginator.DescribeExportImageTasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeExportImageTasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeExportImageTasks)
 
 ```python
 class DescribeExportImageTasksPaginator(Boto3Paginator):
@@ -477,13 +477,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_fast_snapshot_
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeFastSnapshotRestoresPaginator
+from mypy_boto3_ec2.paginator import DescribeFastSnapshotRestoresPaginator
 
 def get_describe_fast_snapshot_restores_paginator() -> DescribeFastSnapshotRestoresPaginator:
     return boto3.client("ec2").get_paginator("describe_fast_snapshot_restores")
 ```
 
-[Paginator.DescribeFastSnapshotRestores documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFastSnapshotRestores)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFastSnapshotRestores)
 
 ```python
 class DescribeFastSnapshotRestoresPaginator(Boto3Paginator):
@@ -502,13 +502,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_fleets")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeFleetsPaginator
+from mypy_boto3_ec2.paginator import DescribeFleetsPaginator
 
 def get_describe_fleets_paginator() -> DescribeFleetsPaginator:
     return boto3.client("ec2").get_paginator("describe_fleets")
 ```
 
-[Paginator.DescribeFleets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFleets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFleets)
 
 ```python
 class DescribeFleetsPaginator(Boto3Paginator):
@@ -528,13 +528,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_flow_logs")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeFlowLogsPaginator
+from mypy_boto3_ec2.paginator import DescribeFlowLogsPaginator
 
 def get_describe_flow_logs_paginator() -> DescribeFlowLogsPaginator:
     return boto3.client("ec2").get_paginator("describe_flow_logs")
 ```
 
-[Paginator.DescribeFlowLogs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFlowLogs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFlowLogs)
 
 ```python
 class DescribeFlowLogsPaginator(Boto3Paginator):
@@ -554,13 +554,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_fpga_images")`
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeFpgaImagesPaginator
+from mypy_boto3_ec2.paginator import DescribeFpgaImagesPaginator
 
 def get_describe_fpga_images_paginator() -> DescribeFpgaImagesPaginator:
     return boto3.client("ec2").get_paginator("describe_fpga_images")
 ```
 
-[Paginator.DescribeFpgaImages documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFpgaImages)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFpgaImages)
 
 ```python
 class DescribeFpgaImagesPaginator(Boto3Paginator):
@@ -581,13 +581,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_host_reservati
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeHostReservationOfferingsPaginator
+from mypy_boto3_ec2.paginator import DescribeHostReservationOfferingsPaginator
 
 def get_describe_host_reservation_offerings_paginator() -> DescribeHostReservationOfferingsPaginator:
     return boto3.client("ec2").get_paginator("describe_host_reservation_offerings")
 ```
 
-[Paginator.DescribeHostReservationOfferings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeHostReservationOfferings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeHostReservationOfferings)
 
 ```python
 class DescribeHostReservationOfferingsPaginator(Boto3Paginator):
@@ -608,13 +608,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_host_reservati
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeHostReservationsPaginator
+from mypy_boto3_ec2.paginator import DescribeHostReservationsPaginator
 
 def get_describe_host_reservations_paginator() -> DescribeHostReservationsPaginator:
     return boto3.client("ec2").get_paginator("describe_host_reservations")
 ```
 
-[Paginator.DescribeHostReservations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeHostReservations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeHostReservations)
 
 ```python
 class DescribeHostReservationsPaginator(Boto3Paginator):
@@ -633,13 +633,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_hosts")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeHostsPaginator
+from mypy_boto3_ec2.paginator import DescribeHostsPaginator
 
 def get_describe_hosts_paginator() -> DescribeHostsPaginator:
     return boto3.client("ec2").get_paginator("describe_hosts")
 ```
 
-[Paginator.DescribeHosts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeHosts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeHosts)
 
 ```python
 class DescribeHostsPaginator(Boto3Paginator):
@@ -658,13 +658,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_iam_instance_p
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeIamInstanceProfileAssociationsPaginator
+from mypy_boto3_ec2.paginator import DescribeIamInstanceProfileAssociationsPaginator
 
 def get_describe_iam_instance_profile_associations_paginator() -> DescribeIamInstanceProfileAssociationsPaginator:
     return boto3.client("ec2").get_paginator("describe_iam_instance_profile_associations")
 ```
 
-[Paginator.DescribeIamInstanceProfileAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIamInstanceProfileAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIamInstanceProfileAssociations)
 
 ```python
 class DescribeIamInstanceProfileAssociationsPaginator(Boto3Paginator):
@@ -683,13 +683,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_import_image_t
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeImportImageTasksPaginator
+from mypy_boto3_ec2.paginator import DescribeImportImageTasksPaginator
 
 def get_describe_import_image_tasks_paginator() -> DescribeImportImageTasksPaginator:
     return boto3.client("ec2").get_paginator("describe_import_image_tasks")
 ```
 
-[Paginator.DescribeImportImageTasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeImportImageTasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeImportImageTasks)
 
 ```python
 class DescribeImportImageTasksPaginator(Boto3Paginator):
@@ -709,13 +709,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_import_snapsho
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeImportSnapshotTasksPaginator
+from mypy_boto3_ec2.paginator import DescribeImportSnapshotTasksPaginator
 
 def get_describe_import_snapshot_tasks_paginator() -> DescribeImportSnapshotTasksPaginator:
     return boto3.client("ec2").get_paginator("describe_import_snapshot_tasks")
 ```
 
-[Paginator.DescribeImportSnapshotTasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeImportSnapshotTasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeImportSnapshotTasks)
 
 ```python
 class DescribeImportSnapshotTasksPaginator(Boto3Paginator):
@@ -735,13 +735,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_instance_credi
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeInstanceCreditSpecificationsPaginator
+from mypy_boto3_ec2.paginator import DescribeInstanceCreditSpecificationsPaginator
 
 def get_describe_instance_credit_specifications_paginator() -> DescribeInstanceCreditSpecificationsPaginator:
     return boto3.client("ec2").get_paginator("describe_instance_credit_specifications")
 ```
 
-[Paginator.DescribeInstanceCreditSpecifications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceCreditSpecifications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceCreditSpecifications)
 
 ```python
 class DescribeInstanceCreditSpecificationsPaginator(Boto3Paginator):
@@ -761,13 +761,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_instance_statu
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeInstanceStatusPaginator
+from mypy_boto3_ec2.paginator import DescribeInstanceStatusPaginator
 
 def get_describe_instance_status_paginator() -> DescribeInstanceStatusPaginator:
     return boto3.client("ec2").get_paginator("describe_instance_status")
 ```
 
-[Paginator.DescribeInstanceStatus documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceStatus)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceStatus)
 
 ```python
 class DescribeInstanceStatusPaginator(Boto3Paginator):
@@ -788,13 +788,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_instance_type_
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeInstanceTypeOfferingsPaginator
+from mypy_boto3_ec2.paginator import DescribeInstanceTypeOfferingsPaginator
 
 def get_describe_instance_type_offerings_paginator() -> DescribeInstanceTypeOfferingsPaginator:
     return boto3.client("ec2").get_paginator("describe_instance_type_offerings")
 ```
 
-[Paginator.DescribeInstanceTypeOfferings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceTypeOfferings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceTypeOfferings)
 
 ```python
 class DescribeInstanceTypeOfferingsPaginator(Boto3Paginator):
@@ -814,13 +814,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_instance_types
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeInstanceTypesPaginator
+from mypy_boto3_ec2.paginator import DescribeInstanceTypesPaginator
 
 def get_describe_instance_types_paginator() -> DescribeInstanceTypesPaginator:
     return boto3.client("ec2").get_paginator("describe_instance_types")
 ```
 
-[Paginator.DescribeInstanceTypes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceTypes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceTypes)
 
 ```python
 class DescribeInstanceTypesPaginator(Boto3Paginator):
@@ -840,13 +840,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_instances")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeInstancesPaginator
+from mypy_boto3_ec2.paginator import DescribeInstancesPaginator
 
 def get_describe_instances_paginator() -> DescribeInstancesPaginator:
     return boto3.client("ec2").get_paginator("describe_instances")
 ```
 
-[Paginator.DescribeInstances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstances)
 
 ```python
 class DescribeInstancesPaginator(Boto3Paginator):
@@ -866,13 +866,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_internet_gatew
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeInternetGatewaysPaginator
+from mypy_boto3_ec2.paginator import DescribeInternetGatewaysPaginator
 
 def get_describe_internet_gateways_paginator() -> DescribeInternetGatewaysPaginator:
     return boto3.client("ec2").get_paginator("describe_internet_gateways")
 ```
 
-[Paginator.DescribeInternetGateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInternetGateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInternetGateways)
 
 ```python
 class DescribeInternetGatewaysPaginator(Boto3Paginator):
@@ -892,13 +892,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_ipv6_pools")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeIpv6PoolsPaginator
+from mypy_boto3_ec2.paginator import DescribeIpv6PoolsPaginator
 
 def get_describe_ipv6_pools_paginator() -> DescribeIpv6PoolsPaginator:
     return boto3.client("ec2").get_paginator("describe_ipv6_pools")
 ```
 
-[Paginator.DescribeIpv6Pools documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIpv6Pools)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIpv6Pools)
 
 ```python
 class DescribeIpv6PoolsPaginator(Boto3Paginator):
@@ -918,13 +918,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_launch_templat
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeLaunchTemplateVersionsPaginator
+from mypy_boto3_ec2.paginator import DescribeLaunchTemplateVersionsPaginator
 
 def get_describe_launch_template_versions_paginator() -> DescribeLaunchTemplateVersionsPaginator:
     return boto3.client("ec2").get_paginator("describe_launch_template_versions")
 ```
 
-[Paginator.DescribeLaunchTemplateVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLaunchTemplateVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLaunchTemplateVersions)
 
 ```python
 class DescribeLaunchTemplateVersionsPaginator(Boto3Paginator):
@@ -948,13 +948,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_launch_templat
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeLaunchTemplatesPaginator
+from mypy_boto3_ec2.paginator import DescribeLaunchTemplatesPaginator
 
 def get_describe_launch_templates_paginator() -> DescribeLaunchTemplatesPaginator:
     return boto3.client("ec2").get_paginator("describe_launch_templates")
 ```
 
-[Paginator.DescribeLaunchTemplates documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLaunchTemplates)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLaunchTemplates)
 
 ```python
 class DescribeLaunchTemplatesPaginator(Boto3Paginator):
@@ -975,13 +975,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_local_gateway_
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator
+from mypy_boto3_ec2.paginator import DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator
 
 def get_describe_local_gateway_route_table_virtual_interface_group_associations_paginator() -> DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator:
     return boto3.client("ec2").get_paginator("describe_local_gateway_route_table_virtual_interface_group_associations")
 ```
 
-[Paginator.DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations)
 
 ```python
 class DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator(Boto3Paginator):
@@ -1001,13 +1001,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_local_gateway_
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeLocalGatewayRouteTableVpcAssociationsPaginator
+from mypy_boto3_ec2.paginator import DescribeLocalGatewayRouteTableVpcAssociationsPaginator
 
 def get_describe_local_gateway_route_table_vpc_associations_paginator() -> DescribeLocalGatewayRouteTableVpcAssociationsPaginator:
     return boto3.client("ec2").get_paginator("describe_local_gateway_route_table_vpc_associations")
 ```
 
-[Paginator.DescribeLocalGatewayRouteTableVpcAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayRouteTableVpcAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayRouteTableVpcAssociations)
 
 ```python
 class DescribeLocalGatewayRouteTableVpcAssociationsPaginator(Boto3Paginator):
@@ -1027,13 +1027,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_local_gateway_
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeLocalGatewayRouteTablesPaginator
+from mypy_boto3_ec2.paginator import DescribeLocalGatewayRouteTablesPaginator
 
 def get_describe_local_gateway_route_tables_paginator() -> DescribeLocalGatewayRouteTablesPaginator:
     return boto3.client("ec2").get_paginator("describe_local_gateway_route_tables")
 ```
 
-[Paginator.DescribeLocalGatewayRouteTables documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayRouteTables)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayRouteTables)
 
 ```python
 class DescribeLocalGatewayRouteTablesPaginator(Boto3Paginator):
@@ -1053,13 +1053,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_local_gateway_
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeLocalGatewayVirtualInterfaceGroupsPaginator
+from mypy_boto3_ec2.paginator import DescribeLocalGatewayVirtualInterfaceGroupsPaginator
 
 def get_describe_local_gateway_virtual_interface_groups_paginator() -> DescribeLocalGatewayVirtualInterfaceGroupsPaginator:
     return boto3.client("ec2").get_paginator("describe_local_gateway_virtual_interface_groups")
 ```
 
-[Paginator.DescribeLocalGatewayVirtualInterfaceGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayVirtualInterfaceGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayVirtualInterfaceGroups)
 
 ```python
 class DescribeLocalGatewayVirtualInterfaceGroupsPaginator(Boto3Paginator):
@@ -1079,13 +1079,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_local_gateway_
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeLocalGatewayVirtualInterfacesPaginator
+from mypy_boto3_ec2.paginator import DescribeLocalGatewayVirtualInterfacesPaginator
 
 def get_describe_local_gateway_virtual_interfaces_paginator() -> DescribeLocalGatewayVirtualInterfacesPaginator:
     return boto3.client("ec2").get_paginator("describe_local_gateway_virtual_interfaces")
 ```
 
-[Paginator.DescribeLocalGatewayVirtualInterfaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayVirtualInterfaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayVirtualInterfaces)
 
 ```python
 class DescribeLocalGatewayVirtualInterfacesPaginator(Boto3Paginator):
@@ -1105,13 +1105,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_local_gateways
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeLocalGatewaysPaginator
+from mypy_boto3_ec2.paginator import DescribeLocalGatewaysPaginator
 
 def get_describe_local_gateways_paginator() -> DescribeLocalGatewaysPaginator:
     return boto3.client("ec2").get_paginator("describe_local_gateways")
 ```
 
-[Paginator.DescribeLocalGateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGateways)
 
 ```python
 class DescribeLocalGatewaysPaginator(Boto3Paginator):
@@ -1131,13 +1131,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_managed_prefix
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeManagedPrefixListsPaginator
+from mypy_boto3_ec2.paginator import DescribeManagedPrefixListsPaginator
 
 def get_describe_managed_prefix_lists_paginator() -> DescribeManagedPrefixListsPaginator:
     return boto3.client("ec2").get_paginator("describe_managed_prefix_lists")
 ```
 
-[Paginator.DescribeManagedPrefixLists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeManagedPrefixLists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeManagedPrefixLists)
 
 ```python
 class DescribeManagedPrefixListsPaginator(Boto3Paginator):
@@ -1157,13 +1157,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_moving_address
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeMovingAddressesPaginator
+from mypy_boto3_ec2.paginator import DescribeMovingAddressesPaginator
 
 def get_describe_moving_addresses_paginator() -> DescribeMovingAddressesPaginator:
     return boto3.client("ec2").get_paginator("describe_moving_addresses")
 ```
 
-[Paginator.DescribeMovingAddresses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeMovingAddresses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeMovingAddresses)
 
 ```python
 class DescribeMovingAddressesPaginator(Boto3Paginator):
@@ -1183,13 +1183,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_nat_gateways")
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeNatGatewaysPaginator
+from mypy_boto3_ec2.paginator import DescribeNatGatewaysPaginator
 
 def get_describe_nat_gateways_paginator() -> DescribeNatGatewaysPaginator:
     return boto3.client("ec2").get_paginator("describe_nat_gateways")
 ```
 
-[Paginator.DescribeNatGateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNatGateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNatGateways)
 
 ```python
 class DescribeNatGatewaysPaginator(Boto3Paginator):
@@ -1209,13 +1209,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_network_acls")
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeNetworkAclsPaginator
+from mypy_boto3_ec2.paginator import DescribeNetworkAclsPaginator
 
 def get_describe_network_acls_paginator() -> DescribeNetworkAclsPaginator:
     return boto3.client("ec2").get_paginator("describe_network_acls")
 ```
 
-[Paginator.DescribeNetworkAcls documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkAcls)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkAcls)
 
 ```python
 class DescribeNetworkAclsPaginator(Boto3Paginator):
@@ -1235,13 +1235,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_network_insigh
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeNetworkInsightsAnalysesPaginator
+from mypy_boto3_ec2.paginator import DescribeNetworkInsightsAnalysesPaginator
 
 def get_describe_network_insights_analyses_paginator() -> DescribeNetworkInsightsAnalysesPaginator:
     return boto3.client("ec2").get_paginator("describe_network_insights_analyses")
 ```
 
-[Paginator.DescribeNetworkInsightsAnalyses documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInsightsAnalyses)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInsightsAnalyses)
 
 ```python
 class DescribeNetworkInsightsAnalysesPaginator(Boto3Paginator):
@@ -1264,13 +1264,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_network_insigh
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeNetworkInsightsPathsPaginator
+from mypy_boto3_ec2.paginator import DescribeNetworkInsightsPathsPaginator
 
 def get_describe_network_insights_paths_paginator() -> DescribeNetworkInsightsPathsPaginator:
     return boto3.client("ec2").get_paginator("describe_network_insights_paths")
 ```
 
-[Paginator.DescribeNetworkInsightsPaths documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInsightsPaths)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInsightsPaths)
 
 ```python
 class DescribeNetworkInsightsPathsPaginator(Boto3Paginator):
@@ -1290,13 +1290,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_network_interf
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeNetworkInterfacePermissionsPaginator
+from mypy_boto3_ec2.paginator import DescribeNetworkInterfacePermissionsPaginator
 
 def get_describe_network_interface_permissions_paginator() -> DescribeNetworkInterfacePermissionsPaginator:
     return boto3.client("ec2").get_paginator("describe_network_interface_permissions")
 ```
 
-[Paginator.DescribeNetworkInterfacePermissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInterfacePermissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInterfacePermissions)
 
 ```python
 class DescribeNetworkInterfacePermissionsPaginator(Boto3Paginator):
@@ -1315,13 +1315,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_network_interf
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeNetworkInterfacesPaginator
+from mypy_boto3_ec2.paginator import DescribeNetworkInterfacesPaginator
 
 def get_describe_network_interfaces_paginator() -> DescribeNetworkInterfacesPaginator:
     return boto3.client("ec2").get_paginator("describe_network_interfaces")
 ```
 
-[Paginator.DescribeNetworkInterfaces documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInterfaces)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInterfaces)
 
 ```python
 class DescribeNetworkInterfacesPaginator(Boto3Paginator):
@@ -1341,13 +1341,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_prefix_lists")
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribePrefixListsPaginator
+from mypy_boto3_ec2.paginator import DescribePrefixListsPaginator
 
 def get_describe_prefix_lists_paginator() -> DescribePrefixListsPaginator:
     return boto3.client("ec2").get_paginator("describe_prefix_lists")
 ```
 
-[Paginator.DescribePrefixLists documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribePrefixLists)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribePrefixLists)
 
 ```python
 class DescribePrefixListsPaginator(Boto3Paginator):
@@ -1367,13 +1367,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_principal_id_f
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribePrincipalIdFormatPaginator
+from mypy_boto3_ec2.paginator import DescribePrincipalIdFormatPaginator
 
 def get_describe_principal_id_format_paginator() -> DescribePrincipalIdFormatPaginator:
     return boto3.client("ec2").get_paginator("describe_principal_id_format")
 ```
 
-[Paginator.DescribePrincipalIdFormat documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribePrincipalIdFormat)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribePrincipalIdFormat)
 
 ```python
 class DescribePrincipalIdFormatPaginator(Boto3Paginator):
@@ -1392,13 +1392,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_public_ipv4_po
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribePublicIpv4PoolsPaginator
+from mypy_boto3_ec2.paginator import DescribePublicIpv4PoolsPaginator
 
 def get_describe_public_ipv4_pools_paginator() -> DescribePublicIpv4PoolsPaginator:
     return boto3.client("ec2").get_paginator("describe_public_ipv4_pools")
 ```
 
-[Paginator.DescribePublicIpv4Pools documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribePublicIpv4Pools)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribePublicIpv4Pools)
 
 ```python
 class DescribePublicIpv4PoolsPaginator(Boto3Paginator):
@@ -1417,13 +1417,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_replace_root_v
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeReplaceRootVolumeTasksPaginator
+from mypy_boto3_ec2.paginator import DescribeReplaceRootVolumeTasksPaginator
 
 def get_describe_replace_root_volume_tasks_paginator() -> DescribeReplaceRootVolumeTasksPaginator:
     return boto3.client("ec2").get_paginator("describe_replace_root_volume_tasks")
 ```
 
-[Paginator.DescribeReplaceRootVolumeTasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeReplaceRootVolumeTasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeReplaceRootVolumeTasks)
 
 ```python
 class DescribeReplaceRootVolumeTasksPaginator(Boto3Paginator):
@@ -1443,13 +1443,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_reserved_insta
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeReservedInstancesModificationsPaginator
+from mypy_boto3_ec2.paginator import DescribeReservedInstancesModificationsPaginator
 
 def get_describe_reserved_instances_modifications_paginator() -> DescribeReservedInstancesModificationsPaginator:
     return boto3.client("ec2").get_paginator("describe_reserved_instances_modifications")
 ```
 
-[Paginator.DescribeReservedInstancesModifications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeReservedInstancesModifications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeReservedInstancesModifications)
 
 ```python
 class DescribeReservedInstancesModificationsPaginator(Boto3Paginator):
@@ -1468,13 +1468,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_reserved_insta
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeReservedInstancesOfferingsPaginator
+from mypy_boto3_ec2.paginator import DescribeReservedInstancesOfferingsPaginator
 
 def get_describe_reserved_instances_offerings_paginator() -> DescribeReservedInstancesOfferingsPaginator:
     return boto3.client("ec2").get_paginator("describe_reserved_instances_offerings")
 ```
 
-[Paginator.DescribeReservedInstancesOfferings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeReservedInstancesOfferings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeReservedInstancesOfferings)
 
 ```python
 class DescribeReservedInstancesOfferingsPaginator(Boto3Paginator):
@@ -1504,13 +1504,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_route_tables")
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeRouteTablesPaginator
+from mypy_boto3_ec2.paginator import DescribeRouteTablesPaginator
 
 def get_describe_route_tables_paginator() -> DescribeRouteTablesPaginator:
     return boto3.client("ec2").get_paginator("describe_route_tables")
 ```
 
-[Paginator.DescribeRouteTables documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeRouteTables)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeRouteTables)
 
 ```python
 class DescribeRouteTablesPaginator(Boto3Paginator):
@@ -1530,13 +1530,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_scheduled_inst
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeScheduledInstanceAvailabilityPaginator
+from mypy_boto3_ec2.paginator import DescribeScheduledInstanceAvailabilityPaginator
 
 def get_describe_scheduled_instance_availability_paginator() -> DescribeScheduledInstanceAvailabilityPaginator:
     return boto3.client("ec2").get_paginator("describe_scheduled_instance_availability")
 ```
 
-[Paginator.DescribeScheduledInstanceAvailability documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeScheduledInstanceAvailability)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeScheduledInstanceAvailability)
 
 ```python
 class DescribeScheduledInstanceAvailabilityPaginator(Boto3Paginator):
@@ -1559,13 +1559,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_scheduled_inst
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeScheduledInstancesPaginator
+from mypy_boto3_ec2.paginator import DescribeScheduledInstancesPaginator
 
 def get_describe_scheduled_instances_paginator() -> DescribeScheduledInstancesPaginator:
     return boto3.client("ec2").get_paginator("describe_scheduled_instances")
 ```
 
-[Paginator.DescribeScheduledInstances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeScheduledInstances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeScheduledInstances)
 
 ```python
 class DescribeScheduledInstancesPaginator(Boto3Paginator):
@@ -1586,13 +1586,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_security_group
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeSecurityGroupsPaginator
+from mypy_boto3_ec2.paginator import DescribeSecurityGroupsPaginator
 
 def get_describe_security_groups_paginator() -> DescribeSecurityGroupsPaginator:
     return boto3.client("ec2").get_paginator("describe_security_groups")
 ```
 
-[Paginator.DescribeSecurityGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSecurityGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSecurityGroups)
 
 ```python
 class DescribeSecurityGroupsPaginator(Boto3Paginator):
@@ -1613,13 +1613,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_snapshots")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeSnapshotsPaginator
+from mypy_boto3_ec2.paginator import DescribeSnapshotsPaginator
 
 def get_describe_snapshots_paginator() -> DescribeSnapshotsPaginator:
     return boto3.client("ec2").get_paginator("describe_snapshots")
 ```
 
-[Paginator.DescribeSnapshots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSnapshots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSnapshots)
 
 ```python
 class DescribeSnapshotsPaginator(Boto3Paginator):
@@ -1641,13 +1641,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_spot_fleet_ins
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeSpotFleetInstancesPaginator
+from mypy_boto3_ec2.paginator import DescribeSpotFleetInstancesPaginator
 
 def get_describe_spot_fleet_instances_paginator() -> DescribeSpotFleetInstancesPaginator:
     return boto3.client("ec2").get_paginator("describe_spot_fleet_instances")
 ```
 
-[Paginator.DescribeSpotFleetInstances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotFleetInstances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotFleetInstances)
 
 ```python
 class DescribeSpotFleetInstancesPaginator(Boto3Paginator):
@@ -1666,13 +1666,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_spot_fleet_req
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeSpotFleetRequestsPaginator
+from mypy_boto3_ec2.paginator import DescribeSpotFleetRequestsPaginator
 
 def get_describe_spot_fleet_requests_paginator() -> DescribeSpotFleetRequestsPaginator:
     return boto3.client("ec2").get_paginator("describe_spot_fleet_requests")
 ```
 
-[Paginator.DescribeSpotFleetRequests documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotFleetRequests)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotFleetRequests)
 
 ```python
 class DescribeSpotFleetRequestsPaginator(Boto3Paginator):
@@ -1691,13 +1691,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_spot_instance_
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeSpotInstanceRequestsPaginator
+from mypy_boto3_ec2.paginator import DescribeSpotInstanceRequestsPaginator
 
 def get_describe_spot_instance_requests_paginator() -> DescribeSpotInstanceRequestsPaginator:
     return boto3.client("ec2").get_paginator("describe_spot_instance_requests")
 ```
 
-[Paginator.DescribeSpotInstanceRequests documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotInstanceRequests)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotInstanceRequests)
 
 ```python
 class DescribeSpotInstanceRequestsPaginator(Boto3Paginator):
@@ -1717,13 +1717,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_spot_price_his
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeSpotPriceHistoryPaginator
+from mypy_boto3_ec2.paginator import DescribeSpotPriceHistoryPaginator
 
 def get_describe_spot_price_history_paginator() -> DescribeSpotPriceHistoryPaginator:
     return boto3.client("ec2").get_paginator("describe_spot_price_history")
 ```
 
-[Paginator.DescribeSpotPriceHistory documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotPriceHistory)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotPriceHistory)
 
 ```python
 class DescribeSpotPriceHistoryPaginator(Boto3Paginator):
@@ -1747,13 +1747,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_stale_security
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeStaleSecurityGroupsPaginator
+from mypy_boto3_ec2.paginator import DescribeStaleSecurityGroupsPaginator
 
 def get_describe_stale_security_groups_paginator() -> DescribeStaleSecurityGroupsPaginator:
     return boto3.client("ec2").get_paginator("describe_stale_security_groups")
 ```
 
-[Paginator.DescribeStaleSecurityGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeStaleSecurityGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeStaleSecurityGroups)
 
 ```python
 class DescribeStaleSecurityGroupsPaginator(Boto3Paginator):
@@ -1772,13 +1772,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_store_image_ta
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeStoreImageTasksPaginator
+from mypy_boto3_ec2.paginator import DescribeStoreImageTasksPaginator
 
 def get_describe_store_image_tasks_paginator() -> DescribeStoreImageTasksPaginator:
     return boto3.client("ec2").get_paginator("describe_store_image_tasks")
 ```
 
-[Paginator.DescribeStoreImageTasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeStoreImageTasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeStoreImageTasks)
 
 ```python
 class DescribeStoreImageTasksPaginator(Boto3Paginator):
@@ -1798,13 +1798,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_subnets")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeSubnetsPaginator
+from mypy_boto3_ec2.paginator import DescribeSubnetsPaginator
 
 def get_describe_subnets_paginator() -> DescribeSubnetsPaginator:
     return boto3.client("ec2").get_paginator("describe_subnets")
 ```
 
-[Paginator.DescribeSubnets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSubnets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSubnets)
 
 ```python
 class DescribeSubnetsPaginator(Boto3Paginator):
@@ -1824,13 +1824,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_tags")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeTagsPaginator
+from mypy_boto3_ec2.paginator import DescribeTagsPaginator
 
 def get_describe_tags_paginator() -> DescribeTagsPaginator:
     return boto3.client("ec2").get_paginator("describe_tags")
 ```
 
-[Paginator.DescribeTags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTags)
 
 ```python
 class DescribeTagsPaginator(Boto3Paginator):
@@ -1849,13 +1849,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_traffic_mirror
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeTrafficMirrorFiltersPaginator
+from mypy_boto3_ec2.paginator import DescribeTrafficMirrorFiltersPaginator
 
 def get_describe_traffic_mirror_filters_paginator() -> DescribeTrafficMirrorFiltersPaginator:
     return boto3.client("ec2").get_paginator("describe_traffic_mirror_filters")
 ```
 
-[Paginator.DescribeTrafficMirrorFilters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrafficMirrorFilters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrafficMirrorFilters)
 
 ```python
 class DescribeTrafficMirrorFiltersPaginator(Boto3Paginator):
@@ -1875,13 +1875,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_traffic_mirror
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeTrafficMirrorSessionsPaginator
+from mypy_boto3_ec2.paginator import DescribeTrafficMirrorSessionsPaginator
 
 def get_describe_traffic_mirror_sessions_paginator() -> DescribeTrafficMirrorSessionsPaginator:
     return boto3.client("ec2").get_paginator("describe_traffic_mirror_sessions")
 ```
 
-[Paginator.DescribeTrafficMirrorSessions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrafficMirrorSessions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrafficMirrorSessions)
 
 ```python
 class DescribeTrafficMirrorSessionsPaginator(Boto3Paginator):
@@ -1901,13 +1901,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_traffic_mirror
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeTrafficMirrorTargetsPaginator
+from mypy_boto3_ec2.paginator import DescribeTrafficMirrorTargetsPaginator
 
 def get_describe_traffic_mirror_targets_paginator() -> DescribeTrafficMirrorTargetsPaginator:
     return boto3.client("ec2").get_paginator("describe_traffic_mirror_targets")
 ```
 
-[Paginator.DescribeTrafficMirrorTargets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrafficMirrorTargets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrafficMirrorTargets)
 
 ```python
 class DescribeTrafficMirrorTargetsPaginator(Boto3Paginator):
@@ -1927,13 +1927,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_transit_gatewa
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeTransitGatewayAttachmentsPaginator
+from mypy_boto3_ec2.paginator import DescribeTransitGatewayAttachmentsPaginator
 
 def get_describe_transit_gateway_attachments_paginator() -> DescribeTransitGatewayAttachmentsPaginator:
     return boto3.client("ec2").get_paginator("describe_transit_gateway_attachments")
 ```
 
-[Paginator.DescribeTransitGatewayAttachments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayAttachments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayAttachments)
 
 ```python
 class DescribeTransitGatewayAttachmentsPaginator(Boto3Paginator):
@@ -1953,13 +1953,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_transit_gatewa
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeTransitGatewayConnectPeersPaginator
+from mypy_boto3_ec2.paginator import DescribeTransitGatewayConnectPeersPaginator
 
 def get_describe_transit_gateway_connect_peers_paginator() -> DescribeTransitGatewayConnectPeersPaginator:
     return boto3.client("ec2").get_paginator("describe_transit_gateway_connect_peers")
 ```
 
-[Paginator.DescribeTransitGatewayConnectPeers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayConnectPeers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayConnectPeers)
 
 ```python
 class DescribeTransitGatewayConnectPeersPaginator(Boto3Paginator):
@@ -1979,13 +1979,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_transit_gatewa
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeTransitGatewayConnectsPaginator
+from mypy_boto3_ec2.paginator import DescribeTransitGatewayConnectsPaginator
 
 def get_describe_transit_gateway_connects_paginator() -> DescribeTransitGatewayConnectsPaginator:
     return boto3.client("ec2").get_paginator("describe_transit_gateway_connects")
 ```
 
-[Paginator.DescribeTransitGatewayConnects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayConnects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayConnects)
 
 ```python
 class DescribeTransitGatewayConnectsPaginator(Boto3Paginator):
@@ -2005,13 +2005,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_transit_gatewa
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeTransitGatewayMulticastDomainsPaginator
+from mypy_boto3_ec2.paginator import DescribeTransitGatewayMulticastDomainsPaginator
 
 def get_describe_transit_gateway_multicast_domains_paginator() -> DescribeTransitGatewayMulticastDomainsPaginator:
     return boto3.client("ec2").get_paginator("describe_transit_gateway_multicast_domains")
 ```
 
-[Paginator.DescribeTransitGatewayMulticastDomains documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayMulticastDomains)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayMulticastDomains)
 
 ```python
 class DescribeTransitGatewayMulticastDomainsPaginator(Boto3Paginator):
@@ -2031,13 +2031,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_transit_gatewa
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeTransitGatewayPeeringAttachmentsPaginator
+from mypy_boto3_ec2.paginator import DescribeTransitGatewayPeeringAttachmentsPaginator
 
 def get_describe_transit_gateway_peering_attachments_paginator() -> DescribeTransitGatewayPeeringAttachmentsPaginator:
     return boto3.client("ec2").get_paginator("describe_transit_gateway_peering_attachments")
 ```
 
-[Paginator.DescribeTransitGatewayPeeringAttachments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayPeeringAttachments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayPeeringAttachments)
 
 ```python
 class DescribeTransitGatewayPeeringAttachmentsPaginator(Boto3Paginator):
@@ -2057,13 +2057,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_transit_gatewa
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeTransitGatewayRouteTablesPaginator
+from mypy_boto3_ec2.paginator import DescribeTransitGatewayRouteTablesPaginator
 
 def get_describe_transit_gateway_route_tables_paginator() -> DescribeTransitGatewayRouteTablesPaginator:
     return boto3.client("ec2").get_paginator("describe_transit_gateway_route_tables")
 ```
 
-[Paginator.DescribeTransitGatewayRouteTables documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayRouteTables)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayRouteTables)
 
 ```python
 class DescribeTransitGatewayRouteTablesPaginator(Boto3Paginator):
@@ -2083,13 +2083,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_transit_gatewa
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeTransitGatewayVpcAttachmentsPaginator
+from mypy_boto3_ec2.paginator import DescribeTransitGatewayVpcAttachmentsPaginator
 
 def get_describe_transit_gateway_vpc_attachments_paginator() -> DescribeTransitGatewayVpcAttachmentsPaginator:
     return boto3.client("ec2").get_paginator("describe_transit_gateway_vpc_attachments")
 ```
 
-[Paginator.DescribeTransitGatewayVpcAttachments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayVpcAttachments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayVpcAttachments)
 
 ```python
 class DescribeTransitGatewayVpcAttachmentsPaginator(Boto3Paginator):
@@ -2109,13 +2109,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_transit_gatewa
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeTransitGatewaysPaginator
+from mypy_boto3_ec2.paginator import DescribeTransitGatewaysPaginator
 
 def get_describe_transit_gateways_paginator() -> DescribeTransitGatewaysPaginator:
     return boto3.client("ec2").get_paginator("describe_transit_gateways")
 ```
 
-[Paginator.DescribeTransitGateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGateways)
 
 ```python
 class DescribeTransitGatewaysPaginator(Boto3Paginator):
@@ -2135,13 +2135,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_volume_status"
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeVolumeStatusPaginator
+from mypy_boto3_ec2.paginator import DescribeVolumeStatusPaginator
 
 def get_describe_volume_status_paginator() -> DescribeVolumeStatusPaginator:
     return boto3.client("ec2").get_paginator("describe_volume_status")
 ```
 
-[Paginator.DescribeVolumeStatus documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVolumeStatus)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVolumeStatus)
 
 ```python
 class DescribeVolumeStatusPaginator(Boto3Paginator):
@@ -2161,13 +2161,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_volumes")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeVolumesPaginator
+from mypy_boto3_ec2.paginator import DescribeVolumesPaginator
 
 def get_describe_volumes_paginator() -> DescribeVolumesPaginator:
     return boto3.client("ec2").get_paginator("describe_volumes")
 ```
 
-[Paginator.DescribeVolumes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVolumes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVolumes)
 
 ```python
 class DescribeVolumesPaginator(Boto3Paginator):
@@ -2187,13 +2187,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_volumes_modifi
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeVolumesModificationsPaginator
+from mypy_boto3_ec2.paginator import DescribeVolumesModificationsPaginator
 
 def get_describe_volumes_modifications_paginator() -> DescribeVolumesModificationsPaginator:
     return boto3.client("ec2").get_paginator("describe_volumes_modifications")
 ```
 
-[Paginator.DescribeVolumesModifications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVolumesModifications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVolumesModifications)
 
 ```python
 class DescribeVolumesModificationsPaginator(Boto3Paginator):
@@ -2213,13 +2213,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_vpc_classic_li
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeVpcClassicLinkDnsSupportPaginator
+from mypy_boto3_ec2.paginator import DescribeVpcClassicLinkDnsSupportPaginator
 
 def get_describe_vpc_classic_link_dns_support_paginator() -> DescribeVpcClassicLinkDnsSupportPaginator:
     return boto3.client("ec2").get_paginator("describe_vpc_classic_link_dns_support")
 ```
 
-[Paginator.DescribeVpcClassicLinkDnsSupport documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcClassicLinkDnsSupport)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcClassicLinkDnsSupport)
 
 ```python
 class DescribeVpcClassicLinkDnsSupportPaginator(Boto3Paginator):
@@ -2237,13 +2237,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_vpc_endpoint_c
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeVpcEndpointConnectionNotificationsPaginator
+from mypy_boto3_ec2.paginator import DescribeVpcEndpointConnectionNotificationsPaginator
 
 def get_describe_vpc_endpoint_connection_notifications_paginator() -> DescribeVpcEndpointConnectionNotificationsPaginator:
     return boto3.client("ec2").get_paginator("describe_vpc_endpoint_connection_notifications")
 ```
 
-[Paginator.DescribeVpcEndpointConnectionNotifications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointConnectionNotifications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointConnectionNotifications)
 
 ```python
 class DescribeVpcEndpointConnectionNotificationsPaginator(Boto3Paginator):
@@ -2263,13 +2263,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_vpc_endpoint_c
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeVpcEndpointConnectionsPaginator
+from mypy_boto3_ec2.paginator import DescribeVpcEndpointConnectionsPaginator
 
 def get_describe_vpc_endpoint_connections_paginator() -> DescribeVpcEndpointConnectionsPaginator:
     return boto3.client("ec2").get_paginator("describe_vpc_endpoint_connections")
 ```
 
-[Paginator.DescribeVpcEndpointConnections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointConnections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointConnections)
 
 ```python
 class DescribeVpcEndpointConnectionsPaginator(Boto3Paginator):
@@ -2288,13 +2288,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_vpc_endpoint_s
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeVpcEndpointServiceConfigurationsPaginator
+from mypy_boto3_ec2.paginator import DescribeVpcEndpointServiceConfigurationsPaginator
 
 def get_describe_vpc_endpoint_service_configurations_paginator() -> DescribeVpcEndpointServiceConfigurationsPaginator:
     return boto3.client("ec2").get_paginator("describe_vpc_endpoint_service_configurations")
 ```
 
-[Paginator.DescribeVpcEndpointServiceConfigurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointServiceConfigurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointServiceConfigurations)
 
 ```python
 class DescribeVpcEndpointServiceConfigurationsPaginator(Boto3Paginator):
@@ -2314,13 +2314,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_vpc_endpoint_s
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeVpcEndpointServicePermissionsPaginator
+from mypy_boto3_ec2.paginator import DescribeVpcEndpointServicePermissionsPaginator
 
 def get_describe_vpc_endpoint_service_permissions_paginator() -> DescribeVpcEndpointServicePermissionsPaginator:
     return boto3.client("ec2").get_paginator("describe_vpc_endpoint_service_permissions")
 ```
 
-[Paginator.DescribeVpcEndpointServicePermissions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointServicePermissions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointServicePermissions)
 
 ```python
 class DescribeVpcEndpointServicePermissionsPaginator(Boto3Paginator):
@@ -2340,13 +2340,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_vpc_endpoint_s
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeVpcEndpointServicesPaginator
+from mypy_boto3_ec2.paginator import DescribeVpcEndpointServicesPaginator
 
 def get_describe_vpc_endpoint_services_paginator() -> DescribeVpcEndpointServicesPaginator:
     return boto3.client("ec2").get_paginator("describe_vpc_endpoint_services")
 ```
 
-[Paginator.DescribeVpcEndpointServices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointServices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointServices)
 
 ```python
 class DescribeVpcEndpointServicesPaginator(Boto3Paginator):
@@ -2366,13 +2366,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_vpc_endpoints"
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeVpcEndpointsPaginator
+from mypy_boto3_ec2.paginator import DescribeVpcEndpointsPaginator
 
 def get_describe_vpc_endpoints_paginator() -> DescribeVpcEndpointsPaginator:
     return boto3.client("ec2").get_paginator("describe_vpc_endpoints")
 ```
 
-[Paginator.DescribeVpcEndpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpoints)
 
 ```python
 class DescribeVpcEndpointsPaginator(Boto3Paginator):
@@ -2392,13 +2392,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_vpc_peering_co
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeVpcPeeringConnectionsPaginator
+from mypy_boto3_ec2.paginator import DescribeVpcPeeringConnectionsPaginator
 
 def get_describe_vpc_peering_connections_paginator() -> DescribeVpcPeeringConnectionsPaginator:
     return boto3.client("ec2").get_paginator("describe_vpc_peering_connections")
 ```
 
-[Paginator.DescribeVpcPeeringConnections documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcPeeringConnections)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcPeeringConnections)
 
 ```python
 class DescribeVpcPeeringConnectionsPaginator(Boto3Paginator):
@@ -2418,13 +2418,13 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_vpcs")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeVpcsPaginator
+from mypy_boto3_ec2.paginator import DescribeVpcsPaginator
 
 def get_describe_vpcs_paginator() -> DescribeVpcsPaginator:
     return boto3.client("ec2").get_paginator("describe_vpcs")
 ```
 
-[Paginator.DescribeVpcs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcs)
 
 ```python
 class DescribeVpcsPaginator(Boto3Paginator):
@@ -2444,13 +2444,13 @@ Type annotations for `boto3.client("ec2").get_paginator("get_associated_ipv6_poo
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import GetAssociatedIpv6PoolCidrsPaginator
+from mypy_boto3_ec2.paginator import GetAssociatedIpv6PoolCidrsPaginator
 
 def get_get_associated_ipv6_pool_cidrs_paginator() -> GetAssociatedIpv6PoolCidrsPaginator:
     return boto3.client("ec2").get_paginator("get_associated_ipv6_pool_cidrs")
 ```
 
-[Paginator.GetAssociatedIpv6PoolCidrs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetAssociatedIpv6PoolCidrs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetAssociatedIpv6PoolCidrs)
 
 ```python
 class GetAssociatedIpv6PoolCidrsPaginator(Boto3Paginator):
@@ -2469,13 +2469,13 @@ Type annotations for `boto3.client("ec2").get_paginator("get_groups_for_capacity
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import GetGroupsForCapacityReservationPaginator
+from mypy_boto3_ec2.paginator import GetGroupsForCapacityReservationPaginator
 
 def get_get_groups_for_capacity_reservation_paginator() -> GetGroupsForCapacityReservationPaginator:
     return boto3.client("ec2").get_paginator("get_groups_for_capacity_reservation")
 ```
 
-[Paginator.GetGroupsForCapacityReservation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetGroupsForCapacityReservation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetGroupsForCapacityReservation)
 
 ```python
 class GetGroupsForCapacityReservationPaginator(Boto3Paginator):
@@ -2494,13 +2494,13 @@ Type annotations for `boto3.client("ec2").get_paginator("get_managed_prefix_list
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import GetManagedPrefixListAssociationsPaginator
+from mypy_boto3_ec2.paginator import GetManagedPrefixListAssociationsPaginator
 
 def get_get_managed_prefix_list_associations_paginator() -> GetManagedPrefixListAssociationsPaginator:
     return boto3.client("ec2").get_paginator("get_managed_prefix_list_associations")
 ```
 
-[Paginator.GetManagedPrefixListAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetManagedPrefixListAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetManagedPrefixListAssociations)
 
 ```python
 class GetManagedPrefixListAssociationsPaginator(Boto3Paginator):
@@ -2519,13 +2519,13 @@ Type annotations for `boto3.client("ec2").get_paginator("get_managed_prefix_list
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import GetManagedPrefixListEntriesPaginator
+from mypy_boto3_ec2.paginator import GetManagedPrefixListEntriesPaginator
 
 def get_get_managed_prefix_list_entries_paginator() -> GetManagedPrefixListEntriesPaginator:
     return boto3.client("ec2").get_paginator("get_managed_prefix_list_entries")
 ```
 
-[Paginator.GetManagedPrefixListEntries documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetManagedPrefixListEntries)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetManagedPrefixListEntries)
 
 ```python
 class GetManagedPrefixListEntriesPaginator(Boto3Paginator):
@@ -2545,13 +2545,13 @@ Type annotations for `boto3.client("ec2").get_paginator("get_transit_gateway_att
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import GetTransitGatewayAttachmentPropagationsPaginator
+from mypy_boto3_ec2.paginator import GetTransitGatewayAttachmentPropagationsPaginator
 
 def get_get_transit_gateway_attachment_propagations_paginator() -> GetTransitGatewayAttachmentPropagationsPaginator:
     return boto3.client("ec2").get_paginator("get_transit_gateway_attachment_propagations")
 ```
 
-[Paginator.GetTransitGatewayAttachmentPropagations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayAttachmentPropagations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayAttachmentPropagations)
 
 ```python
 class GetTransitGatewayAttachmentPropagationsPaginator(Boto3Paginator):
@@ -2571,13 +2571,13 @@ Type annotations for `boto3.client("ec2").get_paginator("get_transit_gateway_mul
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import GetTransitGatewayMulticastDomainAssociationsPaginator
+from mypy_boto3_ec2.paginator import GetTransitGatewayMulticastDomainAssociationsPaginator
 
 def get_get_transit_gateway_multicast_domain_associations_paginator() -> GetTransitGatewayMulticastDomainAssociationsPaginator:
     return boto3.client("ec2").get_paginator("get_transit_gateway_multicast_domain_associations")
 ```
 
-[Paginator.GetTransitGatewayMulticastDomainAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayMulticastDomainAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayMulticastDomainAssociations)
 
 ```python
 class GetTransitGatewayMulticastDomainAssociationsPaginator(Boto3Paginator):
@@ -2597,13 +2597,13 @@ Type annotations for `boto3.client("ec2").get_paginator("get_transit_gateway_pre
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import GetTransitGatewayPrefixListReferencesPaginator
+from mypy_boto3_ec2.paginator import GetTransitGatewayPrefixListReferencesPaginator
 
 def get_get_transit_gateway_prefix_list_references_paginator() -> GetTransitGatewayPrefixListReferencesPaginator:
     return boto3.client("ec2").get_paginator("get_transit_gateway_prefix_list_references")
 ```
 
-[Paginator.GetTransitGatewayPrefixListReferences documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayPrefixListReferences)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayPrefixListReferences)
 
 ```python
 class GetTransitGatewayPrefixListReferencesPaginator(Boto3Paginator):
@@ -2623,13 +2623,13 @@ Type annotations for `boto3.client("ec2").get_paginator("get_transit_gateway_rou
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import GetTransitGatewayRouteTableAssociationsPaginator
+from mypy_boto3_ec2.paginator import GetTransitGatewayRouteTableAssociationsPaginator
 
 def get_get_transit_gateway_route_table_associations_paginator() -> GetTransitGatewayRouteTableAssociationsPaginator:
     return boto3.client("ec2").get_paginator("get_transit_gateway_route_table_associations")
 ```
 
-[Paginator.GetTransitGatewayRouteTableAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayRouteTableAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayRouteTableAssociations)
 
 ```python
 class GetTransitGatewayRouteTableAssociationsPaginator(Boto3Paginator):
@@ -2649,13 +2649,13 @@ Type annotations for `boto3.client("ec2").get_paginator("get_transit_gateway_rou
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import GetTransitGatewayRouteTablePropagationsPaginator
+from mypy_boto3_ec2.paginator import GetTransitGatewayRouteTablePropagationsPaginator
 
 def get_get_transit_gateway_route_table_propagations_paginator() -> GetTransitGatewayRouteTablePropagationsPaginator:
     return boto3.client("ec2").get_paginator("get_transit_gateway_route_table_propagations")
 ```
 
-[Paginator.GetTransitGatewayRouteTablePropagations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayRouteTablePropagations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayRouteTablePropagations)
 
 ```python
 class GetTransitGatewayRouteTablePropagationsPaginator(Boto3Paginator):
@@ -2675,13 +2675,13 @@ Type annotations for `boto3.client("ec2").get_paginator("search_local_gateway_ro
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import SearchLocalGatewayRoutesPaginator
+from mypy_boto3_ec2.paginator import SearchLocalGatewayRoutesPaginator
 
 def get_search_local_gateway_routes_paginator() -> SearchLocalGatewayRoutesPaginator:
     return boto3.client("ec2").get_paginator("search_local_gateway_routes")
 ```
 
-[Paginator.SearchLocalGatewayRoutes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.SearchLocalGatewayRoutes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.SearchLocalGatewayRoutes)
 
 ```python
 class SearchLocalGatewayRoutesPaginator(Boto3Paginator):
@@ -2701,13 +2701,13 @@ Type annotations for `boto3.client("ec2").get_paginator("search_transit_gateway_
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import SearchTransitGatewayMulticastGroupsPaginator
+from mypy_boto3_ec2.paginator import SearchTransitGatewayMulticastGroupsPaginator
 
 def get_search_transit_gateway_multicast_groups_paginator() -> SearchTransitGatewayMulticastGroupsPaginator:
     return boto3.client("ec2").get_paginator("search_transit_gateway_multicast_groups")
 ```
 
-[Paginator.SearchTransitGatewayMulticastGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.SearchTransitGatewayMulticastGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.SearchTransitGatewayMulticastGroups)
 
 ```python
 class SearchTransitGatewayMulticastGroupsPaginator(Boto3Paginator):

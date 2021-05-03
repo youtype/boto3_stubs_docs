@@ -24,13 +24,13 @@ Type annotations for `boto3.client("appstream").get_paginator("describe_director
 Can be used directly:
 
 ```python
-from mypy_boto3_appstream.paginators import DescribeDirectoryConfigsPaginator
+from mypy_boto3_appstream.paginator import DescribeDirectoryConfigsPaginator
 
 def get_describe_directory_configs_paginator() -> DescribeDirectoryConfigsPaginator:
     return boto3.client("appstream").get_paginator("describe_directory_configs")
 ```
 
-[Paginator.DescribeDirectoryConfigs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeDirectoryConfigs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeDirectoryConfigs)
 
 ```python
 class DescribeDirectoryConfigsPaginator(Boto3Paginator):
@@ -48,13 +48,13 @@ Type annotations for `boto3.client("appstream").get_paginator("describe_fleets")
 Can be used directly:
 
 ```python
-from mypy_boto3_appstream.paginators import DescribeFleetsPaginator
+from mypy_boto3_appstream.paginator import DescribeFleetsPaginator
 
 def get_describe_fleets_paginator() -> DescribeFleetsPaginator:
     return boto3.client("appstream").get_paginator("describe_fleets")
 ```
 
-[Paginator.DescribeFleets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeFleets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeFleets)
 
 ```python
 class DescribeFleetsPaginator(Boto3Paginator):
@@ -72,13 +72,13 @@ Type annotations for `boto3.client("appstream").get_paginator("describe_image_bu
 Can be used directly:
 
 ```python
-from mypy_boto3_appstream.paginators import DescribeImageBuildersPaginator
+from mypy_boto3_appstream.paginator import DescribeImageBuildersPaginator
 
 def get_describe_image_builders_paginator() -> DescribeImageBuildersPaginator:
     return boto3.client("appstream").get_paginator("describe_image_builders")
 ```
 
-[Paginator.DescribeImageBuilders documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeImageBuilders)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeImageBuilders)
 
 ```python
 class DescribeImageBuildersPaginator(Boto3Paginator):
@@ -96,13 +96,13 @@ Type annotations for `boto3.client("appstream").get_paginator("describe_images")
 Can be used directly:
 
 ```python
-from mypy_boto3_appstream.paginators import DescribeImagesPaginator
+from mypy_boto3_appstream.paginator import DescribeImagesPaginator
 
 def get_describe_images_paginator() -> DescribeImagesPaginator:
     return boto3.client("appstream").get_paginator("describe_images")
 ```
 
-[Paginator.DescribeImages documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeImages)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeImages)
 
 ```python
 class DescribeImagesPaginator(Boto3Paginator):
@@ -122,13 +122,13 @@ Type annotations for `boto3.client("appstream").get_paginator("describe_sessions
 Can be used directly:
 
 ```python
-from mypy_boto3_appstream.paginators import DescribeSessionsPaginator
+from mypy_boto3_appstream.paginator import DescribeSessionsPaginator
 
 def get_describe_sessions_paginator() -> DescribeSessionsPaginator:
     return boto3.client("appstream").get_paginator("describe_sessions")
 ```
 
-[Paginator.DescribeSessions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeSessions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeSessions)
 
 ```python
 class DescribeSessionsPaginator(Boto3Paginator):
@@ -149,13 +149,13 @@ Type annotations for `boto3.client("appstream").get_paginator("describe_stacks")
 Can be used directly:
 
 ```python
-from mypy_boto3_appstream.paginators import DescribeStacksPaginator
+from mypy_boto3_appstream.paginator import DescribeStacksPaginator
 
 def get_describe_stacks_paginator() -> DescribeStacksPaginator:
     return boto3.client("appstream").get_paginator("describe_stacks")
 ```
 
-[Paginator.DescribeStacks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeStacks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeStacks)
 
 ```python
 class DescribeStacksPaginator(Boto3Paginator):
@@ -173,13 +173,13 @@ Type annotations for `boto3.client("appstream").get_paginator("describe_user_sta
 Can be used directly:
 
 ```python
-from mypy_boto3_appstream.paginators import DescribeUserStackAssociationsPaginator
+from mypy_boto3_appstream.paginator import DescribeUserStackAssociationsPaginator
 
 def get_describe_user_stack_associations_paginator() -> DescribeUserStackAssociationsPaginator:
     return boto3.client("appstream").get_paginator("describe_user_stack_associations")
 ```
 
-[Paginator.DescribeUserStackAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeUserStackAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeUserStackAssociations)
 
 ```python
 class DescribeUserStackAssociationsPaginator(Boto3Paginator):
@@ -199,13 +199,13 @@ Type annotations for `boto3.client("appstream").get_paginator("describe_users")`
 Can be used directly:
 
 ```python
-from mypy_boto3_appstream.paginators import DescribeUsersPaginator
+from mypy_boto3_appstream.paginator import DescribeUsersPaginator
 
 def get_describe_users_paginator() -> DescribeUsersPaginator:
     return boto3.client("appstream").get_paginator("describe_users")
 ```
 
-[Paginator.DescribeUsers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeUsers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeUsers)
 
 ```python
 class DescribeUsersPaginator(Boto3Paginator):
@@ -223,13 +223,13 @@ Type annotations for `boto3.client("appstream").get_paginator("list_associated_f
 Can be used directly:
 
 ```python
-from mypy_boto3_appstream.paginators import ListAssociatedFleetsPaginator
+from mypy_boto3_appstream.paginator import ListAssociatedFleetsPaginator
 
 def get_list_associated_fleets_paginator() -> ListAssociatedFleetsPaginator:
     return boto3.client("appstream").get_paginator("list_associated_fleets")
 ```
 
-[Paginator.ListAssociatedFleets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.ListAssociatedFleets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.ListAssociatedFleets)
 
 ```python
 class ListAssociatedFleetsPaginator(Boto3Paginator):
@@ -247,13 +247,13 @@ Type annotations for `boto3.client("appstream").get_paginator("list_associated_s
 Can be used directly:
 
 ```python
-from mypy_boto3_appstream.paginators import ListAssociatedStacksPaginator
+from mypy_boto3_appstream.paginator import ListAssociatedStacksPaginator
 
 def get_list_associated_stacks_paginator() -> ListAssociatedStacksPaginator:
     return boto3.client("appstream").get_paginator("list_associated_stacks")
 ```
 
-[Paginator.ListAssociatedStacks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.ListAssociatedStacks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.ListAssociatedStacks)
 
 ```python
 class ListAssociatedStacksPaginator(Boto3Paginator):

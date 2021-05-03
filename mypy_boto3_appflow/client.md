@@ -38,7 +38,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_appflow.client import AppflowClient
+
+def get_appflow_client() -> AppflowClient:
+    return boto3.client("appflow")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client)
 
 ## Exceptions
 
@@ -73,7 +78,7 @@ Exceptions:
 
 Type annotations for `boto3.client("appflow").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -87,7 +92,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("appflow").create_connector_profile` method.
 
-[Client.create_connector_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_connector_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_connector_profile]
 
 ```python
 def create_connector_profile(
@@ -105,7 +110,7 @@ def create_connector_profile(
 
 Type annotations for `boto3.client("appflow").create_flow` method.
 
-[Client.create_flow documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_flow)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_flow]
 
 ```python
 def create_flow(
@@ -126,7 +131,7 @@ def create_flow(
 
 Type annotations for `boto3.client("appflow").delete_connector_profile` method.
 
-[Client.delete_connector_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_connector_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_connector_profile]
 
 ```python
 def delete_connector_profile(
@@ -141,7 +146,7 @@ def delete_connector_profile(
 
 Type annotations for `boto3.client("appflow").delete_flow` method.
 
-[Client.delete_flow documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_flow)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_flow]
 
 ```python
 def delete_flow(
@@ -156,7 +161,7 @@ def delete_flow(
 
 Type annotations for `boto3.client("appflow").describe_connector_entity` method.
 
-[Client.describe_connector_entity documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_entity)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_entity]
 
 ```python
 def describe_connector_entity(
@@ -172,7 +177,7 @@ def describe_connector_entity(
 
 Type annotations for `boto3.client("appflow").describe_connector_profiles` method.
 
-[Client.describe_connector_profiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_profiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_profiles]
 
 ```python
 def describe_connector_profiles(
@@ -189,7 +194,7 @@ def describe_connector_profiles(
 
 Type annotations for `boto3.client("appflow").describe_connectors` method.
 
-[Client.describe_connectors documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connectors)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connectors]
 
 ```python
 def describe_connectors(
@@ -204,7 +209,7 @@ def describe_connectors(
 
 Type annotations for `boto3.client("appflow").describe_flow` method.
 
-[Client.describe_flow documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow]
 
 ```python
 def describe_flow(
@@ -218,7 +223,7 @@ def describe_flow(
 
 Type annotations for `boto3.client("appflow").describe_flow_execution_records` method.
 
-[Client.describe_flow_execution_records documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow_execution_records)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow_execution_records]
 
 ```python
 def describe_flow_execution_records(
@@ -234,7 +239,7 @@ def describe_flow_execution_records(
 
 Type annotations for `boto3.client("appflow").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -251,7 +256,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("appflow").list_connector_entities` method.
 
-[Client.list_connector_entities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_connector_entities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_connector_entities]
 
 ```python
 def list_connector_entities(
@@ -267,7 +272,7 @@ def list_connector_entities(
 
 Type annotations for `boto3.client("appflow").list_flows` method.
 
-[Client.list_flows documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_flows)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_flows]
 
 ```python
 def list_flows(
@@ -282,7 +287,7 @@ def list_flows(
 
 Type annotations for `boto3.client("appflow").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -296,7 +301,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("appflow").start_flow` method.
 
-[Client.start_flow documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.start_flow)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.start_flow]
 
 ```python
 def start_flow(
@@ -310,7 +315,7 @@ def start_flow(
 
 Type annotations for `boto3.client("appflow").stop_flow` method.
 
-[Client.stop_flow documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.stop_flow)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.stop_flow]
 
 ```python
 def stop_flow(
@@ -324,7 +329,7 @@ def stop_flow(
 
 Type annotations for `boto3.client("appflow").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -339,7 +344,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("appflow").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -354,7 +359,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("appflow").update_connector_profile` method.
 
-[Client.update_connector_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_connector_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_connector_profile]
 
 ```python
 def update_connector_profile(
@@ -370,7 +375,7 @@ def update_connector_profile(
 
 Type annotations for `boto3.client("appflow").update_flow` method.
 
-[Client.update_flow documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_flow)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_flow]
 
 ```python
 def update_flow(

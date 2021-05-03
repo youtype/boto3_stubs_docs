@@ -98,7 +98,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_devicefarm.client import DeviceFarmClient
+
+def get_devicefarm_client() -> DeviceFarmClient:
+    return boto3.client("devicefarm")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client)
 
 ## Exceptions
 
@@ -137,7 +142,7 @@ Exceptions:
 
 Type annotations for `boto3.client("devicefarm").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -151,7 +156,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("devicefarm").create_device_pool` method.
 
-[Client.create_device_pool documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_device_pool)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_device_pool]
 
 ```python
 def create_device_pool(
@@ -169,7 +174,7 @@ def create_device_pool(
 
 Type annotations for `boto3.client("devicefarm").create_instance_profile` method.
 
-[Client.create_instance_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_instance_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_instance_profile]
 
 ```python
 def create_instance_profile(
@@ -187,7 +192,7 @@ def create_instance_profile(
 
 Type annotations for `boto3.client("devicefarm").create_network_profile` method.
 
-[Client.create_network_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_network_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_network_profile]
 
 ```python
 def create_network_profile(
@@ -212,7 +217,7 @@ def create_network_profile(
 
 Type annotations for `boto3.client("devicefarm").create_project` method.
 
-[Client.create_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_project]
 
 ```python
 def create_project(
@@ -227,7 +232,7 @@ def create_project(
 
 Type annotations for `boto3.client("devicefarm").create_remote_access_session` method.
 
-[Client.create_remote_access_session documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_remote_access_session)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_remote_access_session]
 
 ```python
 def create_remote_access_session(
@@ -252,7 +257,7 @@ def create_remote_access_session(
 
 Type annotations for `boto3.client("devicefarm").create_test_grid_project` method.
 
-[Client.create_test_grid_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_test_grid_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_test_grid_project]
 
 ```python
 def create_test_grid_project(
@@ -267,7 +272,7 @@ def create_test_grid_project(
 
 Type annotations for `boto3.client("devicefarm").create_test_grid_url` method.
 
-[Client.create_test_grid_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_test_grid_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_test_grid_url]
 
 ```python
 def create_test_grid_url(
@@ -282,7 +287,7 @@ def create_test_grid_url(
 
 Type annotations for `boto3.client("devicefarm").create_upload` method.
 
-[Client.create_upload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_upload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_upload]
 
 ```python
 def create_upload(
@@ -299,7 +304,7 @@ def create_upload(
 
 Type annotations for `boto3.client("devicefarm").create_vpce_configuration` method.
 
-[Client.create_vpce_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_vpce_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_vpce_configuration]
 
 ```python
 def create_vpce_configuration(
@@ -316,7 +321,7 @@ def create_vpce_configuration(
 
 Type annotations for `boto3.client("devicefarm").delete_device_pool` method.
 
-[Client.delete_device_pool documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_device_pool)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_device_pool]
 
 ```python
 def delete_device_pool(
@@ -330,7 +335,7 @@ def delete_device_pool(
 
 Type annotations for `boto3.client("devicefarm").delete_instance_profile` method.
 
-[Client.delete_instance_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_instance_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_instance_profile]
 
 ```python
 def delete_instance_profile(
@@ -344,7 +349,7 @@ def delete_instance_profile(
 
 Type annotations for `boto3.client("devicefarm").delete_network_profile` method.
 
-[Client.delete_network_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_network_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_network_profile]
 
 ```python
 def delete_network_profile(
@@ -358,7 +363,7 @@ def delete_network_profile(
 
 Type annotations for `boto3.client("devicefarm").delete_project` method.
 
-[Client.delete_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_project]
 
 ```python
 def delete_project(
@@ -372,7 +377,7 @@ def delete_project(
 
 Type annotations for `boto3.client("devicefarm").delete_remote_access_session` method.
 
-[Client.delete_remote_access_session documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_remote_access_session)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_remote_access_session]
 
 ```python
 def delete_remote_access_session(
@@ -386,7 +391,7 @@ def delete_remote_access_session(
 
 Type annotations for `boto3.client("devicefarm").delete_run` method.
 
-[Client.delete_run documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_run)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_run]
 
 ```python
 def delete_run(
@@ -400,7 +405,7 @@ def delete_run(
 
 Type annotations for `boto3.client("devicefarm").delete_test_grid_project` method.
 
-[Client.delete_test_grid_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_test_grid_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_test_grid_project]
 
 ```python
 def delete_test_grid_project(
@@ -414,7 +419,7 @@ def delete_test_grid_project(
 
 Type annotations for `boto3.client("devicefarm").delete_upload` method.
 
-[Client.delete_upload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_upload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_upload]
 
 ```python
 def delete_upload(
@@ -428,7 +433,7 @@ def delete_upload(
 
 Type annotations for `boto3.client("devicefarm").delete_vpce_configuration` method.
 
-[Client.delete_vpce_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_vpce_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_vpce_configuration]
 
 ```python
 def delete_vpce_configuration(
@@ -442,7 +447,7 @@ def delete_vpce_configuration(
 
 Type annotations for `boto3.client("devicefarm").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -459,7 +464,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("devicefarm").get_account_settings` method.
 
-[Client.get_account_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_account_settings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_account_settings]
 
 ```python
 def get_account_settings(
@@ -472,7 +477,7 @@ def get_account_settings(
 
 Type annotations for `boto3.client("devicefarm").get_device` method.
 
-[Client.get_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device]
 
 ```python
 def get_device(
@@ -486,7 +491,7 @@ def get_device(
 
 Type annotations for `boto3.client("devicefarm").get_device_instance` method.
 
-[Client.get_device_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_instance]
 
 ```python
 def get_device_instance(
@@ -500,7 +505,7 @@ def get_device_instance(
 
 Type annotations for `boto3.client("devicefarm").get_device_pool` method.
 
-[Client.get_device_pool documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_pool)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_pool]
 
 ```python
 def get_device_pool(
@@ -514,7 +519,7 @@ def get_device_pool(
 
 Type annotations for `boto3.client("devicefarm").get_device_pool_compatibility` method.
 
-[Client.get_device_pool_compatibility documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_pool_compatibility)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_pool_compatibility]
 
 ```python
 def get_device_pool_compatibility(
@@ -532,7 +537,7 @@ def get_device_pool_compatibility(
 
 Type annotations for `boto3.client("devicefarm").get_instance_profile` method.
 
-[Client.get_instance_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_instance_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_instance_profile]
 
 ```python
 def get_instance_profile(
@@ -546,7 +551,7 @@ def get_instance_profile(
 
 Type annotations for `boto3.client("devicefarm").get_job` method.
 
-[Client.get_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_job]
 
 ```python
 def get_job(
@@ -560,7 +565,7 @@ def get_job(
 
 Type annotations for `boto3.client("devicefarm").get_network_profile` method.
 
-[Client.get_network_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_network_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_network_profile]
 
 ```python
 def get_network_profile(
@@ -574,7 +579,7 @@ def get_network_profile(
 
 Type annotations for `boto3.client("devicefarm").get_offering_status` method.
 
-[Client.get_offering_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_offering_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_offering_status]
 
 ```python
 def get_offering_status(
@@ -588,7 +593,7 @@ def get_offering_status(
 
 Type annotations for `boto3.client("devicefarm").get_project` method.
 
-[Client.get_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_project]
 
 ```python
 def get_project(
@@ -602,7 +607,7 @@ def get_project(
 
 Type annotations for `boto3.client("devicefarm").get_remote_access_session` method.
 
-[Client.get_remote_access_session documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_remote_access_session)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_remote_access_session]
 
 ```python
 def get_remote_access_session(
@@ -616,7 +621,7 @@ def get_remote_access_session(
 
 Type annotations for `boto3.client("devicefarm").get_run` method.
 
-[Client.get_run documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_run)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_run]
 
 ```python
 def get_run(
@@ -630,7 +635,7 @@ def get_run(
 
 Type annotations for `boto3.client("devicefarm").get_suite` method.
 
-[Client.get_suite documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_suite)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_suite]
 
 ```python
 def get_suite(
@@ -644,7 +649,7 @@ def get_suite(
 
 Type annotations for `boto3.client("devicefarm").get_test` method.
 
-[Client.get_test documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test]
 
 ```python
 def get_test(
@@ -658,7 +663,7 @@ def get_test(
 
 Type annotations for `boto3.client("devicefarm").get_test_grid_project` method.
 
-[Client.get_test_grid_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test_grid_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test_grid_project]
 
 ```python
 def get_test_grid_project(
@@ -672,7 +677,7 @@ def get_test_grid_project(
 
 Type annotations for `boto3.client("devicefarm").get_test_grid_session` method.
 
-[Client.get_test_grid_session documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test_grid_session)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test_grid_session]
 
 ```python
 def get_test_grid_session(
@@ -688,7 +693,7 @@ def get_test_grid_session(
 
 Type annotations for `boto3.client("devicefarm").get_upload` method.
 
-[Client.get_upload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_upload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_upload]
 
 ```python
 def get_upload(
@@ -702,7 +707,7 @@ def get_upload(
 
 Type annotations for `boto3.client("devicefarm").get_vpce_configuration` method.
 
-[Client.get_vpce_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_vpce_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_vpce_configuration]
 
 ```python
 def get_vpce_configuration(
@@ -716,7 +721,7 @@ def get_vpce_configuration(
 
 Type annotations for `boto3.client("devicefarm").install_to_remote_access_session` method.
 
-[Client.install_to_remote_access_session documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.install_to_remote_access_session)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.install_to_remote_access_session]
 
 ```python
 def install_to_remote_access_session(
@@ -731,7 +736,7 @@ def install_to_remote_access_session(
 
 Type annotations for `boto3.client("devicefarm").list_artifacts` method.
 
-[Client.list_artifacts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_artifacts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_artifacts]
 
 ```python
 def list_artifacts(
@@ -747,7 +752,7 @@ def list_artifacts(
 
 Type annotations for `boto3.client("devicefarm").list_device_instances` method.
 
-[Client.list_device_instances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_device_instances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_device_instances]
 
 ```python
 def list_device_instances(
@@ -762,7 +767,7 @@ def list_device_instances(
 
 Type annotations for `boto3.client("devicefarm").list_device_pools` method.
 
-[Client.list_device_pools documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_device_pools)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_device_pools]
 
 ```python
 def list_device_pools(
@@ -778,7 +783,7 @@ def list_device_pools(
 
 Type annotations for `boto3.client("devicefarm").list_devices` method.
 
-[Client.list_devices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_devices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_devices]
 
 ```python
 def list_devices(
@@ -794,7 +799,7 @@ def list_devices(
 
 Type annotations for `boto3.client("devicefarm").list_instance_profiles` method.
 
-[Client.list_instance_profiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_instance_profiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_instance_profiles]
 
 ```python
 def list_instance_profiles(
@@ -809,7 +814,7 @@ def list_instance_profiles(
 
 Type annotations for `boto3.client("devicefarm").list_jobs` method.
 
-[Client.list_jobs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_jobs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_jobs]
 
 ```python
 def list_jobs(
@@ -824,7 +829,7 @@ def list_jobs(
 
 Type annotations for `boto3.client("devicefarm").list_network_profiles` method.
 
-[Client.list_network_profiles documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_network_profiles)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_network_profiles]
 
 ```python
 def list_network_profiles(
@@ -840,7 +845,7 @@ def list_network_profiles(
 
 Type annotations for `boto3.client("devicefarm").list_offering_promotions` method.
 
-[Client.list_offering_promotions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offering_promotions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offering_promotions]
 
 ```python
 def list_offering_promotions(
@@ -854,7 +859,7 @@ def list_offering_promotions(
 
 Type annotations for `boto3.client("devicefarm").list_offering_transactions` method.
 
-[Client.list_offering_transactions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offering_transactions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offering_transactions]
 
 ```python
 def list_offering_transactions(
@@ -868,7 +873,7 @@ def list_offering_transactions(
 
 Type annotations for `boto3.client("devicefarm").list_offerings` method.
 
-[Client.list_offerings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offerings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offerings]
 
 ```python
 def list_offerings(
@@ -882,7 +887,7 @@ def list_offerings(
 
 Type annotations for `boto3.client("devicefarm").list_projects` method.
 
-[Client.list_projects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_projects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_projects]
 
 ```python
 def list_projects(
@@ -897,7 +902,7 @@ def list_projects(
 
 Type annotations for `boto3.client("devicefarm").list_remote_access_sessions` method.
 
-[Client.list_remote_access_sessions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_remote_access_sessions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_remote_access_sessions]
 
 ```python
 def list_remote_access_sessions(
@@ -912,7 +917,7 @@ def list_remote_access_sessions(
 
 Type annotations for `boto3.client("devicefarm").list_runs` method.
 
-[Client.list_runs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_runs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_runs]
 
 ```python
 def list_runs(
@@ -927,7 +932,7 @@ def list_runs(
 
 Type annotations for `boto3.client("devicefarm").list_samples` method.
 
-[Client.list_samples documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_samples)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_samples]
 
 ```python
 def list_samples(
@@ -942,7 +947,7 @@ def list_samples(
 
 Type annotations for `boto3.client("devicefarm").list_suites` method.
 
-[Client.list_suites documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_suites)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_suites]
 
 ```python
 def list_suites(
@@ -957,7 +962,7 @@ def list_suites(
 
 Type annotations for `boto3.client("devicefarm").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -971,7 +976,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("devicefarm").list_test_grid_projects` method.
 
-[Client.list_test_grid_projects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_projects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_projects]
 
 ```python
 def list_test_grid_projects(
@@ -986,7 +991,7 @@ def list_test_grid_projects(
 
 Type annotations for `boto3.client("devicefarm").list_test_grid_session_actions` method.
 
-[Client.list_test_grid_session_actions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_session_actions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_session_actions]
 
 ```python
 def list_test_grid_session_actions(
@@ -1002,7 +1007,7 @@ def list_test_grid_session_actions(
 
 Type annotations for `boto3.client("devicefarm").list_test_grid_session_artifacts` method.
 
-[Client.list_test_grid_session_artifacts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_session_artifacts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_session_artifacts]
 
 ```python
 def list_test_grid_session_artifacts(
@@ -1019,7 +1024,7 @@ def list_test_grid_session_artifacts(
 
 Type annotations for `boto3.client("devicefarm").list_test_grid_sessions` method.
 
-[Client.list_test_grid_sessions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_sessions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_sessions]
 
 ```python
 def list_test_grid_sessions(
@@ -1040,7 +1045,7 @@ def list_test_grid_sessions(
 
 Type annotations for `boto3.client("devicefarm").list_tests` method.
 
-[Client.list_tests documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_tests)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_tests]
 
 ```python
 def list_tests(
@@ -1055,7 +1060,7 @@ def list_tests(
 
 Type annotations for `boto3.client("devicefarm").list_unique_problems` method.
 
-[Client.list_unique_problems documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_unique_problems)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_unique_problems]
 
 ```python
 def list_unique_problems(
@@ -1070,7 +1075,7 @@ def list_unique_problems(
 
 Type annotations for `boto3.client("devicefarm").list_uploads` method.
 
-[Client.list_uploads documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_uploads)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_uploads]
 
 ```python
 def list_uploads(
@@ -1086,7 +1091,7 @@ def list_uploads(
 
 Type annotations for `boto3.client("devicefarm").list_vpce_configurations` method.
 
-[Client.list_vpce_configurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_vpce_configurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_vpce_configurations]
 
 ```python
 def list_vpce_configurations(
@@ -1101,7 +1106,7 @@ def list_vpce_configurations(
 
 Type annotations for `boto3.client("devicefarm").purchase_offering` method.
 
-[Client.purchase_offering documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.purchase_offering)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.purchase_offering]
 
 ```python
 def purchase_offering(
@@ -1117,7 +1122,7 @@ def purchase_offering(
 
 Type annotations for `boto3.client("devicefarm").renew_offering` method.
 
-[Client.renew_offering documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.renew_offering)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.renew_offering]
 
 ```python
 def renew_offering(
@@ -1132,7 +1137,7 @@ def renew_offering(
 
 Type annotations for `boto3.client("devicefarm").schedule_run` method.
 
-[Client.schedule_run documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.schedule_run)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.schedule_run]
 
 ```python
 def schedule_run(
@@ -1153,7 +1158,7 @@ def schedule_run(
 
 Type annotations for `boto3.client("devicefarm").stop_job` method.
 
-[Client.stop_job documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_job)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_job]
 
 ```python
 def stop_job(
@@ -1167,7 +1172,7 @@ def stop_job(
 
 Type annotations for `boto3.client("devicefarm").stop_remote_access_session` method.
 
-[Client.stop_remote_access_session documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_remote_access_session)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_remote_access_session]
 
 ```python
 def stop_remote_access_session(
@@ -1181,7 +1186,7 @@ def stop_remote_access_session(
 
 Type annotations for `boto3.client("devicefarm").stop_run` method.
 
-[Client.stop_run documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_run)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_run]
 
 ```python
 def stop_run(
@@ -1195,7 +1200,7 @@ def stop_run(
 
 Type annotations for `boto3.client("devicefarm").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -1210,7 +1215,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("devicefarm").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -1225,7 +1230,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("devicefarm").update_device_instance` method.
 
-[Client.update_device_instance documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_device_instance)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_device_instance]
 
 ```python
 def update_device_instance(
@@ -1241,7 +1246,7 @@ def update_device_instance(
 
 Type annotations for `boto3.client("devicefarm").update_device_pool` method.
 
-[Client.update_device_pool documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_device_pool)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_device_pool]
 
 ```python
 def update_device_pool(
@@ -1260,7 +1265,7 @@ def update_device_pool(
 
 Type annotations for `boto3.client("devicefarm").update_instance_profile` method.
 
-[Client.update_instance_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_instance_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_instance_profile]
 
 ```python
 def update_instance_profile(
@@ -1279,7 +1284,7 @@ def update_instance_profile(
 
 Type annotations for `boto3.client("devicefarm").update_network_profile` method.
 
-[Client.update_network_profile documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_network_profile)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_network_profile]
 
 ```python
 def update_network_profile(
@@ -1304,7 +1309,7 @@ def update_network_profile(
 
 Type annotations for `boto3.client("devicefarm").update_project` method.
 
-[Client.update_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_project]
 
 ```python
 def update_project(
@@ -1320,7 +1325,7 @@ def update_project(
 
 Type annotations for `boto3.client("devicefarm").update_test_grid_project` method.
 
-[Client.update_test_grid_project documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_test_grid_project)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_test_grid_project]
 
 ```python
 def update_test_grid_project(
@@ -1336,7 +1341,7 @@ def update_test_grid_project(
 
 Type annotations for `boto3.client("devicefarm").update_upload` method.
 
-[Client.update_upload documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_upload)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_upload]
 
 ```python
 def update_upload(
@@ -1353,7 +1358,7 @@ def update_upload(
 
 Type annotations for `boto3.client("devicefarm").update_vpce_configuration` method.
 
-[Client.update_vpce_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_vpce_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_vpce_configuration]
 
 ```python
 def update_vpce_configuration(

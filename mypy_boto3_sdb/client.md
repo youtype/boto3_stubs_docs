@@ -31,7 +31,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_sdb.client import SimpleDBClient
+
+def get_sdb_client() -> SimpleDBClient:
+    return boto3.client("sdb")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client)
 
 ## Exceptions
 
@@ -75,7 +80,7 @@ Exceptions:
 
 Type annotations for `boto3.client("sdb").batch_delete_attributes` method.
 
-[Client.batch_delete_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.batch_delete_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.batch_delete_attributes]
 
 ```python
 def batch_delete_attributes(
@@ -90,7 +95,7 @@ def batch_delete_attributes(
 
 Type annotations for `boto3.client("sdb").batch_put_attributes` method.
 
-[Client.batch_put_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.batch_put_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.batch_put_attributes]
 
 ```python
 def batch_put_attributes(
@@ -105,7 +110,7 @@ def batch_put_attributes(
 
 Type annotations for `boto3.client("sdb").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -119,7 +124,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("sdb").create_domain` method.
 
-[Client.create_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.create_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.create_domain]
 
 ```python
 def create_domain(
@@ -133,7 +138,7 @@ def create_domain(
 
 Type annotations for `boto3.client("sdb").delete_attributes` method.
 
-[Client.delete_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.delete_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.delete_attributes]
 
 ```python
 def delete_attributes(
@@ -150,7 +155,7 @@ def delete_attributes(
 
 Type annotations for `boto3.client("sdb").delete_domain` method.
 
-[Client.delete_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.delete_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.delete_domain]
 
 ```python
 def delete_domain(
@@ -164,7 +169,7 @@ def delete_domain(
 
 Type annotations for `boto3.client("sdb").domain_metadata` method.
 
-[Client.domain_metadata documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.domain_metadata)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.domain_metadata]
 
 ```python
 def domain_metadata(
@@ -178,7 +183,7 @@ def domain_metadata(
 
 Type annotations for `boto3.client("sdb").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -195,7 +200,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("sdb").get_attributes` method.
 
-[Client.get_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.get_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.get_attributes]
 
 ```python
 def get_attributes(
@@ -212,7 +217,7 @@ def get_attributes(
 
 Type annotations for `boto3.client("sdb").list_domains` method.
 
-[Client.list_domains documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.list_domains)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.list_domains]
 
 ```python
 def list_domains(
@@ -227,7 +232,7 @@ def list_domains(
 
 Type annotations for `boto3.client("sdb").put_attributes` method.
 
-[Client.put_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.put_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.put_attributes]
 
 ```python
 def put_attributes(
@@ -244,7 +249,7 @@ def put_attributes(
 
 Type annotations for `boto3.client("sdb").select` method.
 
-[Client.select documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.select)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.select]
 
 ```python
 def select(

@@ -17,13 +17,13 @@ Type annotations for `boto3.client("serverlessrepo").get_paginator("list_applica
 Can be used directly:
 
 ```python
-from mypy_boto3_serverlessrepo.paginators import ListApplicationDependenciesPaginator
+from mypy_boto3_serverlessrepo.paginator import ListApplicationDependenciesPaginator
 
 def get_list_application_dependencies_paginator() -> ListApplicationDependenciesPaginator:
     return boto3.client("serverlessrepo").get_paginator("list_application_dependencies")
 ```
 
-[Paginator.ListApplicationDependencies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplicationDependencies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplicationDependencies)
 
 ```python
 class ListApplicationDependenciesPaginator(Boto3Paginator):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("serverlessrepo").get_paginator("list_applica
 Can be used directly:
 
 ```python
-from mypy_boto3_serverlessrepo.paginators import ListApplicationVersionsPaginator
+from mypy_boto3_serverlessrepo.paginator import ListApplicationVersionsPaginator
 
 def get_list_application_versions_paginator() -> ListApplicationVersionsPaginator:
     return boto3.client("serverlessrepo").get_paginator("list_application_versions")
 ```
 
-[Paginator.ListApplicationVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplicationVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplicationVersions)
 
 ```python
 class ListApplicationVersionsPaginator(Boto3Paginator):
@@ -66,13 +66,13 @@ Type annotations for `boto3.client("serverlessrepo").get_paginator("list_applica
 Can be used directly:
 
 ```python
-from mypy_boto3_serverlessrepo.paginators import ListApplicationsPaginator
+from mypy_boto3_serverlessrepo.paginator import ListApplicationsPaginator
 
 def get_list_applications_paginator() -> ListApplicationsPaginator:
     return boto3.client("serverlessrepo").get_paginator("list_applications")
 ```
 
-[Paginator.ListApplications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplications)
 
 ```python
 class ListApplicationsPaginator(Boto3Paginator):

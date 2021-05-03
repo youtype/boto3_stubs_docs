@@ -15,13 +15,13 @@ Type annotations for `boto3.client("elastic-inference").get_paginator("describe_
 Can be used directly:
 
 ```python
-from mypy_boto3_elastic_inference.paginators import DescribeAcceleratorsPaginator
+from mypy_boto3_elastic_inference.paginator import DescribeAcceleratorsPaginator
 
 def get_describe_accelerators_paginator() -> DescribeAcceleratorsPaginator:
     return boto3.client("elastic-inference").get_paginator("describe_accelerators")
 ```
 
-[Paginator.DescribeAccelerators documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Paginator.DescribeAccelerators)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Paginator.DescribeAccelerators)
 
 ```python
 class DescribeAcceleratorsPaginator(Boto3Paginator):

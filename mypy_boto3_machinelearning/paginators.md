@@ -18,13 +18,13 @@ Type annotations for `boto3.client("machinelearning").get_paginator("describe_ba
 Can be used directly:
 
 ```python
-from mypy_boto3_machinelearning.paginators import DescribeBatchPredictionsPaginator
+from mypy_boto3_machinelearning.paginator import DescribeBatchPredictionsPaginator
 
 def get_describe_batch_predictions_paginator() -> DescribeBatchPredictionsPaginator:
     return boto3.client("machinelearning").get_paginator("describe_batch_predictions")
 ```
 
-[Paginator.DescribeBatchPredictions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeBatchPredictions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeBatchPredictions)
 
 ```python
 class DescribeBatchPredictionsPaginator(Boto3Paginator):
@@ -50,13 +50,13 @@ Type annotations for `boto3.client("machinelearning").get_paginator("describe_da
 Can be used directly:
 
 ```python
-from mypy_boto3_machinelearning.paginators import DescribeDataSourcesPaginator
+from mypy_boto3_machinelearning.paginator import DescribeDataSourcesPaginator
 
 def get_describe_data_sources_paginator() -> DescribeDataSourcesPaginator:
     return boto3.client("machinelearning").get_paginator("describe_data_sources")
 ```
 
-[Paginator.DescribeDataSources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeDataSources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeDataSources)
 
 ```python
 class DescribeDataSourcesPaginator(Boto3Paginator):
@@ -82,13 +82,13 @@ Type annotations for `boto3.client("machinelearning").get_paginator("describe_ev
 Can be used directly:
 
 ```python
-from mypy_boto3_machinelearning.paginators import DescribeEvaluationsPaginator
+from mypy_boto3_machinelearning.paginator import DescribeEvaluationsPaginator
 
 def get_describe_evaluations_paginator() -> DescribeEvaluationsPaginator:
     return boto3.client("machinelearning").get_paginator("describe_evaluations")
 ```
 
-[Paginator.DescribeEvaluations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeEvaluations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeEvaluations)
 
 ```python
 class DescribeEvaluationsPaginator(Boto3Paginator):
@@ -114,13 +114,13 @@ Type annotations for `boto3.client("machinelearning").get_paginator("describe_ml
 Can be used directly:
 
 ```python
-from mypy_boto3_machinelearning.paginators import DescribeMLModelsPaginator
+from mypy_boto3_machinelearning.paginator import DescribeMLModelsPaginator
 
 def get_describe_ml_models_paginator() -> DescribeMLModelsPaginator:
     return boto3.client("machinelearning").get_paginator("describe_ml_models")
 ```
 
-[Paginator.DescribeMLModels documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeMLModels)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeMLModels)
 
 ```python
 class DescribeMLModelsPaginator(Boto3Paginator):

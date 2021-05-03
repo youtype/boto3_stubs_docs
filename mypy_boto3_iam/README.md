@@ -19,7 +19,7 @@ pip install mypy-boto3-iam
   - [Paginators](#paginators)
   - [Waiters](#waiters)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## IAMClient
 
@@ -427,7 +427,7 @@ from mypy_boto3_iam.literals import AccessAdvisorUsageGranularityType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

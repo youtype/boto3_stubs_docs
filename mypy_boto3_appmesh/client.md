@@ -59,7 +59,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_appmesh.client import AppMeshClient
+
+def get_appmesh_client() -> AppMeshClient:
+    return boto3.client("appmesh")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client)
 
 ## Exceptions
 
@@ -96,7 +101,7 @@ Exceptions:
 
 Type annotations for `boto3.client("appmesh").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -110,7 +115,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("appmesh").create_gateway_route` method.
 
-[Client.create_gateway_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_gateway_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_gateway_route]
 
 ```python
 def create_gateway_route(
@@ -130,7 +135,7 @@ def create_gateway_route(
 
 Type annotations for `boto3.client("appmesh").create_mesh` method.
 
-[Client.create_mesh documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_mesh)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_mesh]
 
 ```python
 def create_mesh(
@@ -147,7 +152,7 @@ def create_mesh(
 
 Type annotations for `boto3.client("appmesh").create_route` method.
 
-[Client.create_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_route]
 
 ```python
 def create_route(
@@ -167,7 +172,7 @@ def create_route(
 
 Type annotations for `boto3.client("appmesh").create_virtual_gateway` method.
 
-[Client.create_virtual_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_gateway]
 
 ```python
 def create_virtual_gateway(
@@ -186,7 +191,7 @@ def create_virtual_gateway(
 
 Type annotations for `boto3.client("appmesh").create_virtual_node` method.
 
-[Client.create_virtual_node documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_node)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_node]
 
 ```python
 def create_virtual_node(
@@ -205,7 +210,7 @@ def create_virtual_node(
 
 Type annotations for `boto3.client("appmesh").create_virtual_router` method.
 
-[Client.create_virtual_router documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_router)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_router]
 
 ```python
 def create_virtual_router(
@@ -224,7 +229,7 @@ def create_virtual_router(
 
 Type annotations for `boto3.client("appmesh").create_virtual_service` method.
 
-[Client.create_virtual_service documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_service)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_service]
 
 ```python
 def create_virtual_service(
@@ -243,7 +248,7 @@ def create_virtual_service(
 
 Type annotations for `boto3.client("appmesh").delete_gateway_route` method.
 
-[Client.delete_gateway_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_gateway_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_gateway_route]
 
 ```python
 def delete_gateway_route(
@@ -260,7 +265,7 @@ def delete_gateway_route(
 
 Type annotations for `boto3.client("appmesh").delete_mesh` method.
 
-[Client.delete_mesh documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_mesh)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_mesh]
 
 ```python
 def delete_mesh(
@@ -274,7 +279,7 @@ def delete_mesh(
 
 Type annotations for `boto3.client("appmesh").delete_route` method.
 
-[Client.delete_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_route]
 
 ```python
 def delete_route(
@@ -291,7 +296,7 @@ def delete_route(
 
 Type annotations for `boto3.client("appmesh").delete_virtual_gateway` method.
 
-[Client.delete_virtual_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_gateway]
 
 ```python
 def delete_virtual_gateway(
@@ -307,7 +312,7 @@ def delete_virtual_gateway(
 
 Type annotations for `boto3.client("appmesh").delete_virtual_node` method.
 
-[Client.delete_virtual_node documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_node)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_node]
 
 ```python
 def delete_virtual_node(
@@ -323,7 +328,7 @@ def delete_virtual_node(
 
 Type annotations for `boto3.client("appmesh").delete_virtual_router` method.
 
-[Client.delete_virtual_router documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_router)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_router]
 
 ```python
 def delete_virtual_router(
@@ -339,7 +344,7 @@ def delete_virtual_router(
 
 Type annotations for `boto3.client("appmesh").delete_virtual_service` method.
 
-[Client.delete_virtual_service documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_service)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_service]
 
 ```python
 def delete_virtual_service(
@@ -355,7 +360,7 @@ def delete_virtual_service(
 
 Type annotations for `boto3.client("appmesh").describe_gateway_route` method.
 
-[Client.describe_gateway_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_gateway_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_gateway_route]
 
 ```python
 def describe_gateway_route(
@@ -372,7 +377,7 @@ def describe_gateway_route(
 
 Type annotations for `boto3.client("appmesh").describe_mesh` method.
 
-[Client.describe_mesh documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_mesh)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_mesh]
 
 ```python
 def describe_mesh(
@@ -387,7 +392,7 @@ def describe_mesh(
 
 Type annotations for `boto3.client("appmesh").describe_route` method.
 
-[Client.describe_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_route]
 
 ```python
 def describe_route(
@@ -404,7 +409,7 @@ def describe_route(
 
 Type annotations for `boto3.client("appmesh").describe_virtual_gateway` method.
 
-[Client.describe_virtual_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_gateway]
 
 ```python
 def describe_virtual_gateway(
@@ -420,7 +425,7 @@ def describe_virtual_gateway(
 
 Type annotations for `boto3.client("appmesh").describe_virtual_node` method.
 
-[Client.describe_virtual_node documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_node)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_node]
 
 ```python
 def describe_virtual_node(
@@ -436,7 +441,7 @@ def describe_virtual_node(
 
 Type annotations for `boto3.client("appmesh").describe_virtual_router` method.
 
-[Client.describe_virtual_router documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_router)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_router]
 
 ```python
 def describe_virtual_router(
@@ -452,7 +457,7 @@ def describe_virtual_router(
 
 Type annotations for `boto3.client("appmesh").describe_virtual_service` method.
 
-[Client.describe_virtual_service documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_service)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_service]
 
 ```python
 def describe_virtual_service(
@@ -468,7 +473,7 @@ def describe_virtual_service(
 
 Type annotations for `boto3.client("appmesh").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -485,7 +490,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("appmesh").list_gateway_routes` method.
 
-[Client.list_gateway_routes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_gateway_routes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_gateway_routes]
 
 ```python
 def list_gateway_routes(
@@ -503,7 +508,7 @@ def list_gateway_routes(
 
 Type annotations for `boto3.client("appmesh").list_meshes` method.
 
-[Client.list_meshes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_meshes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_meshes]
 
 ```python
 def list_meshes(
@@ -518,7 +523,7 @@ def list_meshes(
 
 Type annotations for `boto3.client("appmesh").list_routes` method.
 
-[Client.list_routes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_routes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_routes]
 
 ```python
 def list_routes(
@@ -536,7 +541,7 @@ def list_routes(
 
 Type annotations for `boto3.client("appmesh").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -552,7 +557,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("appmesh").list_virtual_gateways` method.
 
-[Client.list_virtual_gateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_gateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_gateways]
 
 ```python
 def list_virtual_gateways(
@@ -569,7 +574,7 @@ def list_virtual_gateways(
 
 Type annotations for `boto3.client("appmesh").list_virtual_nodes` method.
 
-[Client.list_virtual_nodes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_nodes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_nodes]
 
 ```python
 def list_virtual_nodes(
@@ -586,7 +591,7 @@ def list_virtual_nodes(
 
 Type annotations for `boto3.client("appmesh").list_virtual_routers` method.
 
-[Client.list_virtual_routers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_routers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_routers]
 
 ```python
 def list_virtual_routers(
@@ -603,7 +608,7 @@ def list_virtual_routers(
 
 Type annotations for `boto3.client("appmesh").list_virtual_services` method.
 
-[Client.list_virtual_services documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_services)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_services]
 
 ```python
 def list_virtual_services(
@@ -620,7 +625,7 @@ def list_virtual_services(
 
 Type annotations for `boto3.client("appmesh").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -635,7 +640,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("appmesh").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -650,7 +655,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("appmesh").update_gateway_route` method.
 
-[Client.update_gateway_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_gateway_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_gateway_route]
 
 ```python
 def update_gateway_route(
@@ -669,7 +674,7 @@ def update_gateway_route(
 
 Type annotations for `boto3.client("appmesh").update_mesh` method.
 
-[Client.update_mesh documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_mesh)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_mesh]
 
 ```python
 def update_mesh(
@@ -685,7 +690,7 @@ def update_mesh(
 
 Type annotations for `boto3.client("appmesh").update_route` method.
 
-[Client.update_route documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_route)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_route]
 
 ```python
 def update_route(
@@ -704,7 +709,7 @@ def update_route(
 
 Type annotations for `boto3.client("appmesh").update_virtual_gateway` method.
 
-[Client.update_virtual_gateway documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_gateway)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_gateway]
 
 ```python
 def update_virtual_gateway(
@@ -722,7 +727,7 @@ def update_virtual_gateway(
 
 Type annotations for `boto3.client("appmesh").update_virtual_node` method.
 
-[Client.update_virtual_node documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_node)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_node]
 
 ```python
 def update_virtual_node(
@@ -740,7 +745,7 @@ def update_virtual_node(
 
 Type annotations for `boto3.client("appmesh").update_virtual_router` method.
 
-[Client.update_virtual_router documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_router)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_router]
 
 ```python
 def update_virtual_router(
@@ -758,7 +763,7 @@ def update_virtual_router(
 
 Type annotations for `boto3.client("appmesh").update_virtual_service` method.
 
-[Client.update_virtual_service documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_service)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_service]
 
 ```python
 def update_virtual_service(

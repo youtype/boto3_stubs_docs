@@ -1,11 +1,11 @@
-# Structures for boto3 WAFRegional module
+# Typed dictionaries for boto3 WAFRegional module
 
 > [Index](../README.md) > [WAFRegional](./README.md) > Structures
 
 Auto-generated documentation for [WAFRegional](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional)
 type annotations stubs module [mypy_boto3_waf_regional](https://pypi.org/project/mypy-boto3-waf-regional/).
 
-- [Structures for boto3 WAFRegional module](#structures-for-boto3-wafregional-module)
+- [Typed dictionaries for boto3 WAFRegional module](#typed-dictionaries-for-boto3-wafregional-module)
   - [ActivatedRuleTypeDef](#activatedruletypedef)
   - [ByteMatchSetSummaryTypeDef](#bytematchsetsummarytypedef)
   - [ByteMatchSetTypeDef](#bytematchsettypedef)

@@ -53,7 +53,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_worklink.client import WorkLinkClient
+
+def get_worklink_client() -> WorkLinkClient:
+    return boto3.client("worklink")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client)
 
 ## Exceptions
 
@@ -86,7 +91,7 @@ Exceptions:
 
 Type annotations for `boto3.client("worklink").associate_domain` method.
 
-[Client.associate_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.associate_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.associate_domain]
 
 ```python
 def associate_domain(
@@ -103,7 +108,7 @@ def associate_domain(
 
 Type annotations for `boto3.client("worklink").associate_website_authorization_provider` method.
 
-[Client.associate_website_authorization_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.associate_website_authorization_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.associate_website_authorization_provider]
 
 ```python
 def associate_website_authorization_provider(
@@ -119,7 +124,7 @@ def associate_website_authorization_provider(
 
 Type annotations for `boto3.client("worklink").associate_website_certificate_authority` method.
 
-[Client.associate_website_certificate_authority documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.associate_website_certificate_authority)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.associate_website_certificate_authority]
 
 ```python
 def associate_website_certificate_authority(
@@ -135,7 +140,7 @@ def associate_website_certificate_authority(
 
 Type annotations for `boto3.client("worklink").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -149,7 +154,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("worklink").create_fleet` method.
 
-[Client.create_fleet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.create_fleet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.create_fleet]
 
 ```python
 def create_fleet(
@@ -166,7 +171,7 @@ def create_fleet(
 
 Type annotations for `boto3.client("worklink").delete_fleet` method.
 
-[Client.delete_fleet documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.delete_fleet)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.delete_fleet]
 
 ```python
 def delete_fleet(
@@ -180,7 +185,7 @@ def delete_fleet(
 
 Type annotations for `boto3.client("worklink").describe_audit_stream_configuration` method.
 
-[Client.describe_audit_stream_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_audit_stream_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_audit_stream_configuration]
 
 ```python
 def describe_audit_stream_configuration(
@@ -194,7 +199,7 @@ def describe_audit_stream_configuration(
 
 Type annotations for `boto3.client("worklink").describe_company_network_configuration` method.
 
-[Client.describe_company_network_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_company_network_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_company_network_configuration]
 
 ```python
 def describe_company_network_configuration(
@@ -208,7 +213,7 @@ def describe_company_network_configuration(
 
 Type annotations for `boto3.client("worklink").describe_device` method.
 
-[Client.describe_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_device]
 
 ```python
 def describe_device(
@@ -223,7 +228,7 @@ def describe_device(
 
 Type annotations for `boto3.client("worklink").describe_device_policy_configuration` method.
 
-[Client.describe_device_policy_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_device_policy_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_device_policy_configuration]
 
 ```python
 def describe_device_policy_configuration(
@@ -237,7 +242,7 @@ def describe_device_policy_configuration(
 
 Type annotations for `boto3.client("worklink").describe_domain` method.
 
-[Client.describe_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_domain]
 
 ```python
 def describe_domain(
@@ -252,7 +257,7 @@ def describe_domain(
 
 Type annotations for `boto3.client("worklink").describe_fleet_metadata` method.
 
-[Client.describe_fleet_metadata documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_fleet_metadata)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_fleet_metadata]
 
 ```python
 def describe_fleet_metadata(
@@ -266,7 +271,7 @@ def describe_fleet_metadata(
 
 Type annotations for `boto3.client("worklink").describe_identity_provider_configuration` method.
 
-[Client.describe_identity_provider_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_identity_provider_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_identity_provider_configuration]
 
 ```python
 def describe_identity_provider_configuration(
@@ -280,7 +285,7 @@ def describe_identity_provider_configuration(
 
 Type annotations for `boto3.client("worklink").describe_website_certificate_authority` method.
 
-[Client.describe_website_certificate_authority documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_website_certificate_authority)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_website_certificate_authority]
 
 ```python
 def describe_website_certificate_authority(
@@ -295,7 +300,7 @@ def describe_website_certificate_authority(
 
 Type annotations for `boto3.client("worklink").disassociate_domain` method.
 
-[Client.disassociate_domain documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.disassociate_domain)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.disassociate_domain]
 
 ```python
 def disassociate_domain(
@@ -310,7 +315,7 @@ def disassociate_domain(
 
 Type annotations for `boto3.client("worklink").disassociate_website_authorization_provider` method.
 
-[Client.disassociate_website_authorization_provider documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.disassociate_website_authorization_provider)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.disassociate_website_authorization_provider]
 
 ```python
 def disassociate_website_authorization_provider(
@@ -325,7 +330,7 @@ def disassociate_website_authorization_provider(
 
 Type annotations for `boto3.client("worklink").disassociate_website_certificate_authority` method.
 
-[Client.disassociate_website_certificate_authority documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.disassociate_website_certificate_authority)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.disassociate_website_certificate_authority]
 
 ```python
 def disassociate_website_certificate_authority(
@@ -340,7 +345,7 @@ def disassociate_website_certificate_authority(
 
 Type annotations for `boto3.client("worklink").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -357,7 +362,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("worklink").list_devices` method.
 
-[Client.list_devices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_devices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_devices]
 
 ```python
 def list_devices(
@@ -373,7 +378,7 @@ def list_devices(
 
 Type annotations for `boto3.client("worklink").list_domains` method.
 
-[Client.list_domains documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_domains)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_domains]
 
 ```python
 def list_domains(
@@ -389,7 +394,7 @@ def list_domains(
 
 Type annotations for `boto3.client("worklink").list_fleets` method.
 
-[Client.list_fleets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_fleets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_fleets]
 
 ```python
 def list_fleets(
@@ -404,7 +409,7 @@ def list_fleets(
 
 Type annotations for `boto3.client("worklink").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -418,7 +423,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("worklink").list_website_authorization_providers` method.
 
-[Client.list_website_authorization_providers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_website_authorization_providers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_website_authorization_providers]
 
 ```python
 def list_website_authorization_providers(
@@ -434,7 +439,7 @@ def list_website_authorization_providers(
 
 Type annotations for `boto3.client("worklink").list_website_certificate_authorities` method.
 
-[Client.list_website_certificate_authorities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_website_certificate_authorities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_website_certificate_authorities]
 
 ```python
 def list_website_certificate_authorities(
@@ -450,7 +455,7 @@ def list_website_certificate_authorities(
 
 Type annotations for `boto3.client("worklink").restore_domain_access` method.
 
-[Client.restore_domain_access documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.restore_domain_access)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.restore_domain_access]
 
 ```python
 def restore_domain_access(
@@ -465,7 +470,7 @@ def restore_domain_access(
 
 Type annotations for `boto3.client("worklink").revoke_domain_access` method.
 
-[Client.revoke_domain_access documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.revoke_domain_access)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.revoke_domain_access]
 
 ```python
 def revoke_domain_access(
@@ -480,7 +485,7 @@ def revoke_domain_access(
 
 Type annotations for `boto3.client("worklink").sign_out_user` method.
 
-[Client.sign_out_user documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.sign_out_user)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.sign_out_user]
 
 ```python
 def sign_out_user(
@@ -495,7 +500,7 @@ def sign_out_user(
 
 Type annotations for `boto3.client("worklink").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -510,7 +515,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("worklink").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -525,7 +530,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("worklink").update_audit_stream_configuration` method.
 
-[Client.update_audit_stream_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_audit_stream_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_audit_stream_configuration]
 
 ```python
 def update_audit_stream_configuration(
@@ -540,7 +545,7 @@ def update_audit_stream_configuration(
 
 Type annotations for `boto3.client("worklink").update_company_network_configuration` method.
 
-[Client.update_company_network_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_company_network_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_company_network_configuration]
 
 ```python
 def update_company_network_configuration(
@@ -557,7 +562,7 @@ def update_company_network_configuration(
 
 Type annotations for `boto3.client("worklink").update_device_policy_configuration` method.
 
-[Client.update_device_policy_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_device_policy_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_device_policy_configuration]
 
 ```python
 def update_device_policy_configuration(
@@ -572,7 +577,7 @@ def update_device_policy_configuration(
 
 Type annotations for `boto3.client("worklink").update_domain_metadata` method.
 
-[Client.update_domain_metadata documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_domain_metadata)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_domain_metadata]
 
 ```python
 def update_domain_metadata(
@@ -588,7 +593,7 @@ def update_domain_metadata(
 
 Type annotations for `boto3.client("worklink").update_fleet_metadata` method.
 
-[Client.update_fleet_metadata documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_fleet_metadata)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_fleet_metadata]
 
 ```python
 def update_fleet_metadata(
@@ -604,7 +609,7 @@ def update_fleet_metadata(
 
 Type annotations for `boto3.client("worklink").update_identity_provider_configuration` method.
 
-[Client.update_identity_provider_configuration documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_identity_provider_configuration)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_identity_provider_configuration]
 
 ```python
 def update_identity_provider_configuration(

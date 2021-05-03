@@ -38,7 +38,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_mgh.client import MigrationHubClient
+
+def get_mgh_client() -> MigrationHubClient:
+    return boto3.client("mgh")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client)
 
 ## Exceptions
 
@@ -75,7 +80,7 @@ Exceptions:
 
 Type annotations for `boto3.client("mgh").associate_created_artifact` method.
 
-[Client.associate_created_artifact documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.associate_created_artifact)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.associate_created_artifact]
 
 ```python
 def associate_created_artifact(
@@ -92,7 +97,7 @@ def associate_created_artifact(
 
 Type annotations for `boto3.client("mgh").associate_discovered_resource` method.
 
-[Client.associate_discovered_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.associate_discovered_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.associate_discovered_resource]
 
 ```python
 def associate_discovered_resource(
@@ -109,7 +114,7 @@ def associate_discovered_resource(
 
 Type annotations for `boto3.client("mgh").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -123,7 +128,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("mgh").create_progress_update_stream` method.
 
-[Client.create_progress_update_stream documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.create_progress_update_stream)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.create_progress_update_stream]
 
 ```python
 def create_progress_update_stream(
@@ -138,7 +143,7 @@ def create_progress_update_stream(
 
 Type annotations for `boto3.client("mgh").delete_progress_update_stream` method.
 
-[Client.delete_progress_update_stream documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.delete_progress_update_stream)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.delete_progress_update_stream]
 
 ```python
 def delete_progress_update_stream(
@@ -153,7 +158,7 @@ def delete_progress_update_stream(
 
 Type annotations for `boto3.client("mgh").describe_application_state` method.
 
-[Client.describe_application_state documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.describe_application_state)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.describe_application_state]
 
 ```python
 def describe_application_state(
@@ -167,7 +172,7 @@ def describe_application_state(
 
 Type annotations for `boto3.client("mgh").describe_migration_task` method.
 
-[Client.describe_migration_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.describe_migration_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.describe_migration_task]
 
 ```python
 def describe_migration_task(
@@ -182,7 +187,7 @@ def describe_migration_task(
 
 Type annotations for `boto3.client("mgh").disassociate_created_artifact` method.
 
-[Client.disassociate_created_artifact documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.disassociate_created_artifact)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.disassociate_created_artifact]
 
 ```python
 def disassociate_created_artifact(
@@ -199,7 +204,7 @@ def disassociate_created_artifact(
 
 Type annotations for `boto3.client("mgh").disassociate_discovered_resource` method.
 
-[Client.disassociate_discovered_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.disassociate_discovered_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.disassociate_discovered_resource]
 
 ```python
 def disassociate_discovered_resource(
@@ -216,7 +221,7 @@ def disassociate_discovered_resource(
 
 Type annotations for `boto3.client("mgh").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -233,7 +238,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("mgh").import_migration_task` method.
 
-[Client.import_migration_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.import_migration_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.import_migration_task]
 
 ```python
 def import_migration_task(
@@ -249,7 +254,7 @@ def import_migration_task(
 
 Type annotations for `boto3.client("mgh").list_application_states` method.
 
-[Client.list_application_states documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_application_states)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_application_states]
 
 ```python
 def list_application_states(
@@ -265,7 +270,7 @@ def list_application_states(
 
 Type annotations for `boto3.client("mgh").list_created_artifacts` method.
 
-[Client.list_created_artifacts documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_created_artifacts)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_created_artifacts]
 
 ```python
 def list_created_artifacts(
@@ -282,7 +287,7 @@ def list_created_artifacts(
 
 Type annotations for `boto3.client("mgh").list_discovered_resources` method.
 
-[Client.list_discovered_resources documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_discovered_resources)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_discovered_resources]
 
 ```python
 def list_discovered_resources(
@@ -299,7 +304,7 @@ def list_discovered_resources(
 
 Type annotations for `boto3.client("mgh").list_migration_tasks` method.
 
-[Client.list_migration_tasks documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_migration_tasks)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_migration_tasks]
 
 ```python
 def list_migration_tasks(
@@ -315,7 +320,7 @@ def list_migration_tasks(
 
 Type annotations for `boto3.client("mgh").list_progress_update_streams` method.
 
-[Client.list_progress_update_streams documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_progress_update_streams)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_progress_update_streams]
 
 ```python
 def list_progress_update_streams(
@@ -330,7 +335,7 @@ def list_progress_update_streams(
 
 Type annotations for `boto3.client("mgh").notify_application_state` method.
 
-[Client.notify_application_state documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.notify_application_state)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.notify_application_state]
 
 ```python
 def notify_application_state(
@@ -347,7 +352,7 @@ def notify_application_state(
 
 Type annotations for `boto3.client("mgh").notify_migration_task_state` method.
 
-[Client.notify_migration_task_state documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.notify_migration_task_state)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.notify_migration_task_state]
 
 ```python
 def notify_migration_task_state(
@@ -366,7 +371,7 @@ def notify_migration_task_state(
 
 Type annotations for `boto3.client("mgh").put_resource_attributes` method.
 
-[Client.put_resource_attributes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.put_resource_attributes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.put_resource_attributes]
 
 ```python
 def put_resource_attributes(

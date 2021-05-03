@@ -15,7 +15,7 @@ pip install mypy-boto3-mwaa
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## MWAAClient
 
@@ -100,7 +100,7 @@ from mypy_boto3_mwaa.literals import EnvironmentStatus, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

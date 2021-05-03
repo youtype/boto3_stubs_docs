@@ -20,13 +20,13 @@ Type annotations for `boto3.client("securityhub").get_paginator("get_enabled_sta
 Can be used directly:
 
 ```python
-from mypy_boto3_securityhub.paginators import GetEnabledStandardsPaginator
+from mypy_boto3_securityhub.paginator import GetEnabledStandardsPaginator
 
 def get_get_enabled_standards_paginator() -> GetEnabledStandardsPaginator:
     return boto3.client("securityhub").get_paginator("get_enabled_standards")
 ```
 
-[Paginator.GetEnabledStandards documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.GetEnabledStandards)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.GetEnabledStandards)
 
 ```python
 class GetEnabledStandardsPaginator(Boto3Paginator):
@@ -44,13 +44,13 @@ Type annotations for `boto3.client("securityhub").get_paginator("get_findings")`
 Can be used directly:
 
 ```python
-from mypy_boto3_securityhub.paginators import GetFindingsPaginator
+from mypy_boto3_securityhub.paginator import GetFindingsPaginator
 
 def get_get_findings_paginator() -> GetFindingsPaginator:
     return boto3.client("securityhub").get_paginator("get_findings")
 ```
 
-[Paginator.GetFindings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.GetFindings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.GetFindings)
 
 ```python
 class GetFindingsPaginator(Boto3Paginator):
@@ -69,13 +69,13 @@ Type annotations for `boto3.client("securityhub").get_paginator("get_insights")`
 Can be used directly:
 
 ```python
-from mypy_boto3_securityhub.paginators import GetInsightsPaginator
+from mypy_boto3_securityhub.paginator import GetInsightsPaginator
 
 def get_get_insights_paginator() -> GetInsightsPaginator:
     return boto3.client("securityhub").get_paginator("get_insights")
 ```
 
-[Paginator.GetInsights documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.GetInsights)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.GetInsights)
 
 ```python
 class GetInsightsPaginator(Boto3Paginator):
@@ -93,13 +93,13 @@ Type annotations for `boto3.client("securityhub").get_paginator("list_enabled_pr
 Can be used directly:
 
 ```python
-from mypy_boto3_securityhub.paginators import ListEnabledProductsForImportPaginator
+from mypy_boto3_securityhub.paginator import ListEnabledProductsForImportPaginator
 
 def get_list_enabled_products_for_import_paginator() -> ListEnabledProductsForImportPaginator:
     return boto3.client("securityhub").get_paginator("list_enabled_products_for_import")
 ```
 
-[Paginator.ListEnabledProductsForImport documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListEnabledProductsForImport)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListEnabledProductsForImport)
 
 ```python
 class ListEnabledProductsForImportPaginator(Boto3Paginator):
@@ -116,13 +116,13 @@ Type annotations for `boto3.client("securityhub").get_paginator("list_invitation
 Can be used directly:
 
 ```python
-from mypy_boto3_securityhub.paginators import ListInvitationsPaginator
+from mypy_boto3_securityhub.paginator import ListInvitationsPaginator
 
 def get_list_invitations_paginator() -> ListInvitationsPaginator:
     return boto3.client("securityhub").get_paginator("list_invitations")
 ```
 
-[Paginator.ListInvitations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListInvitations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListInvitations)
 
 ```python
 class ListInvitationsPaginator(Boto3Paginator):
@@ -139,13 +139,13 @@ Type annotations for `boto3.client("securityhub").get_paginator("list_members")`
 Can be used directly:
 
 ```python
-from mypy_boto3_securityhub.paginators import ListMembersPaginator
+from mypy_boto3_securityhub.paginator import ListMembersPaginator
 
 def get_list_members_paginator() -> ListMembersPaginator:
     return boto3.client("securityhub").get_paginator("list_members")
 ```
 
-[Paginator.ListMembers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListMembers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListMembers)
 
 ```python
 class ListMembersPaginator(Boto3Paginator):

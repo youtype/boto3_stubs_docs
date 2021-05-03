@@ -19,13 +19,13 @@ Type annotations for `boto3.client("es").get_paginator("describe_reserved_elasti
 Can be used directly:
 
 ```python
-from mypy_boto3_es.paginators import DescribeReservedElasticsearchInstanceOfferingsPaginator
+from mypy_boto3_es.paginator import DescribeReservedElasticsearchInstanceOfferingsPaginator
 
 def get_describe_reserved_elasticsearch_instance_offerings_paginator() -> DescribeReservedElasticsearchInstanceOfferingsPaginator:
     return boto3.client("es").get_paginator("describe_reserved_elasticsearch_instance_offerings")
 ```
 
-[Paginator.DescribeReservedElasticsearchInstanceOfferings documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.DescribeReservedElasticsearchInstanceOfferings)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.DescribeReservedElasticsearchInstanceOfferings)
 
 ```python
 class DescribeReservedElasticsearchInstanceOfferingsPaginator(Boto3Paginator):
@@ -43,13 +43,13 @@ Type annotations for `boto3.client("es").get_paginator("describe_reserved_elasti
 Can be used directly:
 
 ```python
-from mypy_boto3_es.paginators import DescribeReservedElasticsearchInstancesPaginator
+from mypy_boto3_es.paginator import DescribeReservedElasticsearchInstancesPaginator
 
 def get_describe_reserved_elasticsearch_instances_paginator() -> DescribeReservedElasticsearchInstancesPaginator:
     return boto3.client("es").get_paginator("describe_reserved_elasticsearch_instances")
 ```
 
-[Paginator.DescribeReservedElasticsearchInstances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.DescribeReservedElasticsearchInstances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.DescribeReservedElasticsearchInstances)
 
 ```python
 class DescribeReservedElasticsearchInstancesPaginator(Boto3Paginator):
@@ -67,13 +67,13 @@ Type annotations for `boto3.client("es").get_paginator("get_upgrade_history")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_es.paginators import GetUpgradeHistoryPaginator
+from mypy_boto3_es.paginator import GetUpgradeHistoryPaginator
 
 def get_get_upgrade_history_paginator() -> GetUpgradeHistoryPaginator:
     return boto3.client("es").get_paginator("get_upgrade_history")
 ```
 
-[Paginator.GetUpgradeHistory documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.GetUpgradeHistory)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.GetUpgradeHistory)
 
 ```python
 class GetUpgradeHistoryPaginator(Boto3Paginator):
@@ -91,13 +91,13 @@ Type annotations for `boto3.client("es").get_paginator("list_elasticsearch_insta
 Can be used directly:
 
 ```python
-from mypy_boto3_es.paginators import ListElasticsearchInstanceTypesPaginator
+from mypy_boto3_es.paginator import ListElasticsearchInstanceTypesPaginator
 
 def get_list_elasticsearch_instance_types_paginator() -> ListElasticsearchInstanceTypesPaginator:
     return boto3.client("es").get_paginator("list_elasticsearch_instance_types")
 ```
 
-[Paginator.ListElasticsearchInstanceTypes documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.ListElasticsearchInstanceTypes)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.ListElasticsearchInstanceTypes)
 
 ```python
 class ListElasticsearchInstanceTypesPaginator(Boto3Paginator):
@@ -116,13 +116,13 @@ Type annotations for `boto3.client("es").get_paginator("list_elasticsearch_versi
 Can be used directly:
 
 ```python
-from mypy_boto3_es.paginators import ListElasticsearchVersionsPaginator
+from mypy_boto3_es.paginator import ListElasticsearchVersionsPaginator
 
 def get_list_elasticsearch_versions_paginator() -> ListElasticsearchVersionsPaginator:
     return boto3.client("es").get_paginator("list_elasticsearch_versions")
 ```
 
-[Paginator.ListElasticsearchVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.ListElasticsearchVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.ListElasticsearchVersions)
 
 ```python
 class ListElasticsearchVersionsPaginator(Boto3Paginator):

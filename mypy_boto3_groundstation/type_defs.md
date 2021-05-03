@@ -1,11 +1,11 @@
-# Structures for boto3 GroundStation module
+# Typed dictionaries for boto3 GroundStation module
 
 > [Index](../README.md) > [GroundStation](./README.md) > Structures
 
 Auto-generated documentation for [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
 type annotations stubs module [mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
-- [Structures for boto3 GroundStation module](#structures-for-boto3-groundstation-module)
+- [Typed dictionaries for boto3 GroundStation module](#typed-dictionaries-for-boto3-groundstation-module)
   - [AntennaDemodDecodeDetailsTypeDef](#antennademoddecodedetailstypedef)
   - [AntennaDownlinkConfigTypeDef](#antennadownlinkconfigtypedef)
   - [AntennaDownlinkDemodDecodeConfigTypeDef](#antennadownlinkdemoddecodeconfigtypedef)

@@ -29,13 +29,13 @@ Type annotations for `boto3.client("neptune").get_paginator("describe_db_cluster
 Can be used directly:
 
 ```python
-from mypy_boto3_neptune.paginators import DescribeDBClusterEndpointsPaginator
+from mypy_boto3_neptune.paginator import DescribeDBClusterEndpointsPaginator
 
 def get_describe_db_cluster_endpoints_paginator() -> DescribeDBClusterEndpointsPaginator:
     return boto3.client("neptune").get_paginator("describe_db_cluster_endpoints")
 ```
 
-[Paginator.DescribeDBClusterEndpoints documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusterEndpoints)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusterEndpoints)
 
 ```python
 class DescribeDBClusterEndpointsPaginator(Boto3Paginator):
@@ -55,13 +55,13 @@ Type annotations for `boto3.client("neptune").get_paginator("describe_db_cluster
 Can be used directly:
 
 ```python
-from mypy_boto3_neptune.paginators import DescribeDBClusterParameterGroupsPaginator
+from mypy_boto3_neptune.paginator import DescribeDBClusterParameterGroupsPaginator
 
 def get_describe_db_cluster_parameter_groups_paginator() -> DescribeDBClusterParameterGroupsPaginator:
     return boto3.client("neptune").get_paginator("describe_db_cluster_parameter_groups")
 ```
 
-[Paginator.DescribeDBClusterParameterGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusterParameterGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusterParameterGroups)
 
 ```python
 class DescribeDBClusterParameterGroupsPaginator(Boto3Paginator):
@@ -80,13 +80,13 @@ Type annotations for `boto3.client("neptune").get_paginator("describe_db_cluster
 Can be used directly:
 
 ```python
-from mypy_boto3_neptune.paginators import DescribeDBClusterParametersPaginator
+from mypy_boto3_neptune.paginator import DescribeDBClusterParametersPaginator
 
 def get_describe_db_cluster_parameters_paginator() -> DescribeDBClusterParametersPaginator:
     return boto3.client("neptune").get_paginator("describe_db_cluster_parameters")
 ```
 
-[Paginator.DescribeDBClusterParameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusterParameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusterParameters)
 
 ```python
 class DescribeDBClusterParametersPaginator(Boto3Paginator):
@@ -106,13 +106,13 @@ Type annotations for `boto3.client("neptune").get_paginator("describe_db_cluster
 Can be used directly:
 
 ```python
-from mypy_boto3_neptune.paginators import DescribeDBClusterSnapshotsPaginator
+from mypy_boto3_neptune.paginator import DescribeDBClusterSnapshotsPaginator
 
 def get_describe_db_cluster_snapshots_paginator() -> DescribeDBClusterSnapshotsPaginator:
     return boto3.client("neptune").get_paginator("describe_db_cluster_snapshots")
 ```
 
-[Paginator.DescribeDBClusterSnapshots documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusterSnapshots)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusterSnapshots)
 
 ```python
 class DescribeDBClusterSnapshotsPaginator(Boto3Paginator):
@@ -135,13 +135,13 @@ Type annotations for `boto3.client("neptune").get_paginator("describe_db_cluster
 Can be used directly:
 
 ```python
-from mypy_boto3_neptune.paginators import DescribeDBClustersPaginator
+from mypy_boto3_neptune.paginator import DescribeDBClustersPaginator
 
 def get_describe_db_clusters_paginator() -> DescribeDBClustersPaginator:
     return boto3.client("neptune").get_paginator("describe_db_clusters")
 ```
 
-[Paginator.DescribeDBClusters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusters)
 
 ```python
 class DescribeDBClustersPaginator(Boto3Paginator):
@@ -160,13 +160,13 @@ Type annotations for `boto3.client("neptune").get_paginator("describe_db_engine_
 Can be used directly:
 
 ```python
-from mypy_boto3_neptune.paginators import DescribeDBEngineVersionsPaginator
+from mypy_boto3_neptune.paginator import DescribeDBEngineVersionsPaginator
 
 def get_describe_db_engine_versions_paginator() -> DescribeDBEngineVersionsPaginator:
     return boto3.client("neptune").get_paginator("describe_db_engine_versions")
 ```
 
-[Paginator.DescribeDBEngineVersions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBEngineVersions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBEngineVersions)
 
 ```python
 class DescribeDBEngineVersionsPaginator(Boto3Paginator):
@@ -190,13 +190,13 @@ Type annotations for `boto3.client("neptune").get_paginator("describe_db_instanc
 Can be used directly:
 
 ```python
-from mypy_boto3_neptune.paginators import DescribeDBInstancesPaginator
+from mypy_boto3_neptune.paginator import DescribeDBInstancesPaginator
 
 def get_describe_db_instances_paginator() -> DescribeDBInstancesPaginator:
     return boto3.client("neptune").get_paginator("describe_db_instances")
 ```
 
-[Paginator.DescribeDBInstances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBInstances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBInstances)
 
 ```python
 class DescribeDBInstancesPaginator(Boto3Paginator):
@@ -215,13 +215,13 @@ Type annotations for `boto3.client("neptune").get_paginator("describe_db_paramet
 Can be used directly:
 
 ```python
-from mypy_boto3_neptune.paginators import DescribeDBParameterGroupsPaginator
+from mypy_boto3_neptune.paginator import DescribeDBParameterGroupsPaginator
 
 def get_describe_db_parameter_groups_paginator() -> DescribeDBParameterGroupsPaginator:
     return boto3.client("neptune").get_paginator("describe_db_parameter_groups")
 ```
 
-[Paginator.DescribeDBParameterGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBParameterGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBParameterGroups)
 
 ```python
 class DescribeDBParameterGroupsPaginator(Boto3Paginator):
@@ -240,13 +240,13 @@ Type annotations for `boto3.client("neptune").get_paginator("describe_db_paramet
 Can be used directly:
 
 ```python
-from mypy_boto3_neptune.paginators import DescribeDBParametersPaginator
+from mypy_boto3_neptune.paginator import DescribeDBParametersPaginator
 
 def get_describe_db_parameters_paginator() -> DescribeDBParametersPaginator:
     return boto3.client("neptune").get_paginator("describe_db_parameters")
 ```
 
-[Paginator.DescribeDBParameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBParameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBParameters)
 
 ```python
 class DescribeDBParametersPaginator(Boto3Paginator):
@@ -266,13 +266,13 @@ Type annotations for `boto3.client("neptune").get_paginator("describe_db_subnet_
 Can be used directly:
 
 ```python
-from mypy_boto3_neptune.paginators import DescribeDBSubnetGroupsPaginator
+from mypy_boto3_neptune.paginator import DescribeDBSubnetGroupsPaginator
 
 def get_describe_db_subnet_groups_paginator() -> DescribeDBSubnetGroupsPaginator:
     return boto3.client("neptune").get_paginator("describe_db_subnet_groups")
 ```
 
-[Paginator.DescribeDBSubnetGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBSubnetGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBSubnetGroups)
 
 ```python
 class DescribeDBSubnetGroupsPaginator(Boto3Paginator):
@@ -291,13 +291,13 @@ Type annotations for `boto3.client("neptune").get_paginator("describe_engine_def
 Can be used directly:
 
 ```python
-from mypy_boto3_neptune.paginators import DescribeEngineDefaultParametersPaginator
+from mypy_boto3_neptune.paginator import DescribeEngineDefaultParametersPaginator
 
 def get_describe_engine_default_parameters_paginator() -> DescribeEngineDefaultParametersPaginator:
     return boto3.client("neptune").get_paginator("describe_engine_default_parameters")
 ```
 
-[Paginator.DescribeEngineDefaultParameters documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeEngineDefaultParameters)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeEngineDefaultParameters)
 
 ```python
 class DescribeEngineDefaultParametersPaginator(Boto3Paginator):
@@ -316,13 +316,13 @@ Type annotations for `boto3.client("neptune").get_paginator("describe_event_subs
 Can be used directly:
 
 ```python
-from mypy_boto3_neptune.paginators import DescribeEventSubscriptionsPaginator
+from mypy_boto3_neptune.paginator import DescribeEventSubscriptionsPaginator
 
 def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPaginator:
     return boto3.client("neptune").get_paginator("describe_event_subscriptions")
 ```
 
-[Paginator.DescribeEventSubscriptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeEventSubscriptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeEventSubscriptions)
 
 ```python
 class DescribeEventSubscriptionsPaginator(Boto3Paginator):
@@ -341,13 +341,13 @@ Type annotations for `boto3.client("neptune").get_paginator("describe_events")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_neptune.paginators import DescribeEventsPaginator
+from mypy_boto3_neptune.paginator import DescribeEventsPaginator
 
 def get_describe_events_paginator() -> DescribeEventsPaginator:
     return boto3.client("neptune").get_paginator("describe_events")
 ```
 
-[Paginator.DescribeEvents documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeEvents)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeEvents)
 
 ```python
 class DescribeEventsPaginator(Boto3Paginator):
@@ -371,13 +371,13 @@ Type annotations for `boto3.client("neptune").get_paginator("describe_orderable_
 Can be used directly:
 
 ```python
-from mypy_boto3_neptune.paginators import DescribeOrderableDBInstanceOptionsPaginator
+from mypy_boto3_neptune.paginator import DescribeOrderableDBInstanceOptionsPaginator
 
 def get_describe_orderable_db_instance_options_paginator() -> DescribeOrderableDBInstanceOptionsPaginator:
     return boto3.client("neptune").get_paginator("describe_orderable_db_instance_options")
 ```
 
-[Paginator.DescribeOrderableDBInstanceOptions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeOrderableDBInstanceOptions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeOrderableDBInstanceOptions)
 
 ```python
 class DescribeOrderableDBInstanceOptionsPaginator(Boto3Paginator):
@@ -400,13 +400,13 @@ Type annotations for `boto3.client("neptune").get_paginator("describe_pending_ma
 Can be used directly:
 
 ```python
-from mypy_boto3_neptune.paginators import DescribePendingMaintenanceActionsPaginator
+from mypy_boto3_neptune.paginator import DescribePendingMaintenanceActionsPaginator
 
 def get_describe_pending_maintenance_actions_paginator() -> DescribePendingMaintenanceActionsPaginator:
     return boto3.client("neptune").get_paginator("describe_pending_maintenance_actions")
 ```
 
-[Paginator.DescribePendingMaintenanceActions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribePendingMaintenanceActions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribePendingMaintenanceActions)
 
 ```python
 class DescribePendingMaintenanceActionsPaginator(Boto3Paginator):

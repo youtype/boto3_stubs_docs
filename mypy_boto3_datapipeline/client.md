@@ -40,7 +40,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_datapipeline.client import DataPipelineClient
+
+def get_datapipeline_client() -> DataPipelineClient:
+    return boto3.client("datapipeline")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client)
 
 ## Exceptions
 
@@ -72,7 +77,7 @@ Exceptions:
 
 Type annotations for `boto3.client("datapipeline").activate_pipeline` method.
 
-[Client.activate_pipeline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.activate_pipeline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.activate_pipeline]
 
 ```python
 def activate_pipeline(
@@ -88,7 +93,7 @@ def activate_pipeline(
 
 Type annotations for `boto3.client("datapipeline").add_tags` method.
 
-[Client.add_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.add_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.add_tags]
 
 ```python
 def add_tags(
@@ -103,7 +108,7 @@ def add_tags(
 
 Type annotations for `boto3.client("datapipeline").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -117,7 +122,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("datapipeline").create_pipeline` method.
 
-[Client.create_pipeline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.create_pipeline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.create_pipeline]
 
 ```python
 def create_pipeline(
@@ -134,7 +139,7 @@ def create_pipeline(
 
 Type annotations for `boto3.client("datapipeline").deactivate_pipeline` method.
 
-[Client.deactivate_pipeline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.deactivate_pipeline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.deactivate_pipeline]
 
 ```python
 def deactivate_pipeline(
@@ -149,7 +154,7 @@ def deactivate_pipeline(
 
 Type annotations for `boto3.client("datapipeline").delete_pipeline` method.
 
-[Client.delete_pipeline documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.delete_pipeline)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.delete_pipeline]
 
 ```python
 def delete_pipeline(
@@ -163,7 +168,7 @@ def delete_pipeline(
 
 Type annotations for `boto3.client("datapipeline").describe_objects` method.
 
-[Client.describe_objects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.describe_objects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.describe_objects]
 
 ```python
 def describe_objects(
@@ -180,7 +185,7 @@ def describe_objects(
 
 Type annotations for `boto3.client("datapipeline").describe_pipelines` method.
 
-[Client.describe_pipelines documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.describe_pipelines)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.describe_pipelines]
 
 ```python
 def describe_pipelines(
@@ -194,7 +199,7 @@ def describe_pipelines(
 
 Type annotations for `boto3.client("datapipeline").evaluate_expression` method.
 
-[Client.evaluate_expression documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.evaluate_expression)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.evaluate_expression]
 
 ```python
 def evaluate_expression(
@@ -210,7 +215,7 @@ def evaluate_expression(
 
 Type annotations for `boto3.client("datapipeline").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -227,7 +232,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("datapipeline").get_pipeline_definition` method.
 
-[Client.get_pipeline_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.get_pipeline_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.get_pipeline_definition]
 
 ```python
 def get_pipeline_definition(
@@ -242,7 +247,7 @@ def get_pipeline_definition(
 
 Type annotations for `boto3.client("datapipeline").list_pipelines` method.
 
-[Client.list_pipelines documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.list_pipelines)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.list_pipelines]
 
 ```python
 def list_pipelines(
@@ -256,7 +261,7 @@ def list_pipelines(
 
 Type annotations for `boto3.client("datapipeline").poll_for_task` method.
 
-[Client.poll_for_task documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.poll_for_task)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.poll_for_task]
 
 ```python
 def poll_for_task(
@@ -272,7 +277,7 @@ def poll_for_task(
 
 Type annotations for `boto3.client("datapipeline").put_pipeline_definition` method.
 
-[Client.put_pipeline_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.put_pipeline_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.put_pipeline_definition]
 
 ```python
 def put_pipeline_definition(
@@ -289,7 +294,7 @@ def put_pipeline_definition(
 
 Type annotations for `boto3.client("datapipeline").query_objects` method.
 
-[Client.query_objects documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.query_objects)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.query_objects]
 
 ```python
 def query_objects(
@@ -307,7 +312,7 @@ def query_objects(
 
 Type annotations for `boto3.client("datapipeline").remove_tags` method.
 
-[Client.remove_tags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.remove_tags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.remove_tags]
 
 ```python
 def remove_tags(
@@ -322,7 +327,7 @@ def remove_tags(
 
 Type annotations for `boto3.client("datapipeline").report_task_progress` method.
 
-[Client.report_task_progress documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.report_task_progress)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.report_task_progress]
 
 ```python
 def report_task_progress(
@@ -337,7 +342,7 @@ def report_task_progress(
 
 Type annotations for `boto3.client("datapipeline").report_task_runner_heartbeat` method.
 
-[Client.report_task_runner_heartbeat documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.report_task_runner_heartbeat)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.report_task_runner_heartbeat]
 
 ```python
 def report_task_runner_heartbeat(
@@ -353,7 +358,7 @@ def report_task_runner_heartbeat(
 
 Type annotations for `boto3.client("datapipeline").set_status` method.
 
-[Client.set_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.set_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.set_status]
 
 ```python
 def set_status(
@@ -369,7 +374,7 @@ def set_status(
 
 Type annotations for `boto3.client("datapipeline").set_task_status` method.
 
-[Client.set_task_status documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.set_task_status)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.set_task_status]
 
 ```python
 def set_task_status(
@@ -387,7 +392,7 @@ def set_task_status(
 
 Type annotations for `boto3.client("datapipeline").validate_pipeline_definition` method.
 
-[Client.validate_pipeline_definition documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.validate_pipeline_definition)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.validate_pipeline_definition]
 
 ```python
 def validate_pipeline_definition(

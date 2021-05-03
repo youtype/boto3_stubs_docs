@@ -1,11 +1,11 @@
-# Structures for boto3 KMS module
+# Typed dictionaries for boto3 KMS module
 
 > [Index](../README.md) > [KMS](./README.md) > Structures
 
 Auto-generated documentation for [KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
 type annotations stubs module [mypy_boto3_kms](https://pypi.org/project/mypy-boto3-kms/).
 
-- [Structures for boto3 KMS module](#structures-for-boto3-kms-module)
+- [Typed dictionaries for boto3 KMS module](#typed-dictionaries-for-boto3-kms-module)
   - [AliasListEntryTypeDef](#aliaslistentrytypedef)
   - [CancelKeyDeletionResponseTypeDef](#cancelkeydeletionresponsetypedef)
   - [CreateCustomKeyStoreResponseTypeDef](#createcustomkeystoreresponsetypedef)

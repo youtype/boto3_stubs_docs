@@ -17,13 +17,13 @@ Type annotations for `boto3.client("elb").get_waiter("any_instance_in_service")`
 Can be used directly:
 
 ```python
-from mypy_boto3_elb.waiters import AnyInstanceInServiceWaiter
+from mypy_boto3_elb.waiter import AnyInstanceInServiceWaiter
 
 def get_any_instance_in_service_waiter() -> AnyInstanceInServiceWaiter:
     return boto3.client("elb").get_waiter("any_instance_in_service")
 ```
 
-[Waiter.AnyInstanceInService documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.AnyInstanceInService)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.any_instance_in_service)
 
 ```python
 class AnyInstanceInServiceWaiter(Boto3Waiter):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("elb").get_waiter("instance_deregistered")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_elb.waiters import InstanceDeregisteredWaiter
+from mypy_boto3_elb.waiter import InstanceDeregisteredWaiter
 
 def get_instance_deregistered_waiter() -> InstanceDeregisteredWaiter:
     return boto3.client("elb").get_waiter("instance_deregistered")
 ```
 
-[Waiter.InstanceDeregistered documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.InstanceDeregistered)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.instance_deregistered)
 
 ```python
 class InstanceDeregisteredWaiter(Boto3Waiter):
@@ -67,13 +67,13 @@ Type annotations for `boto3.client("elb").get_waiter("instance_in_service")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_elb.waiters import InstanceInServiceWaiter
+from mypy_boto3_elb.waiter import InstanceInServiceWaiter
 
 def get_instance_in_service_waiter() -> InstanceInServiceWaiter:
     return boto3.client("elb").get_waiter("instance_in_service")
 ```
 
-[Waiter.InstanceInService documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.InstanceInService)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.instance_in_service)
 
 ```python
 class InstanceInServiceWaiter(Boto3Waiter):

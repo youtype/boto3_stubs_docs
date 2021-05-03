@@ -17,13 +17,13 @@ Type annotations for `boto3.client("events").get_paginator("list_rule_names_by_t
 Can be used directly:
 
 ```python
-from mypy_boto3_events.paginators import ListRuleNamesByTargetPaginator
+from mypy_boto3_events.paginator import ListRuleNamesByTargetPaginator
 
 def get_list_rule_names_by_target_paginator() -> ListRuleNamesByTargetPaginator:
     return boto3.client("events").get_paginator("list_rule_names_by_target")
 ```
 
-[Paginator.ListRuleNamesByTarget documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Paginator.ListRuleNamesByTarget)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Paginator.ListRuleNamesByTarget)
 
 ```python
 class ListRuleNamesByTargetPaginator(Boto3Paginator):
@@ -42,13 +42,13 @@ Type annotations for `boto3.client("events").get_paginator("list_rules")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_events.paginators import ListRulesPaginator
+from mypy_boto3_events.paginator import ListRulesPaginator
 
 def get_list_rules_paginator() -> ListRulesPaginator:
     return boto3.client("events").get_paginator("list_rules")
 ```
 
-[Paginator.ListRules documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Paginator.ListRules)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Paginator.ListRules)
 
 ```python
 class ListRulesPaginator(Boto3Paginator):
@@ -67,13 +67,13 @@ Type annotations for `boto3.client("events").get_paginator("list_targets_by_rule
 Can be used directly:
 
 ```python
-from mypy_boto3_events.paginators import ListTargetsByRulePaginator
+from mypy_boto3_events.paginator import ListTargetsByRulePaginator
 
 def get_list_targets_by_rule_paginator() -> ListTargetsByRulePaginator:
     return boto3.client("events").get_paginator("list_targets_by_rule")
 ```
 
-[Paginator.ListTargetsByRule documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Paginator.ListTargetsByRule)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Paginator.ListTargetsByRule)
 
 ```python
 class ListTargetsByRulePaginator(Boto3Paginator):

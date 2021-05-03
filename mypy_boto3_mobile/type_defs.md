@@ -1,11 +1,11 @@
-# Structures for boto3 Mobile module
+# Typed dictionaries for boto3 Mobile module
 
 > [Index](../README.md) > [Mobile](./README.md) > Structures
 
 Auto-generated documentation for [Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
 type annotations stubs module [mypy_boto3_mobile](https://pypi.org/project/mypy-boto3-mobile/).
 
-- [Structures for boto3 Mobile module](#structures-for-boto3-mobile-module)
+- [Typed dictionaries for boto3 Mobile module](#typed-dictionaries-for-boto3-mobile-module)
   - [BundleDetailsTypeDef](#bundledetailstypedef)
   - [CreateProjectResultTypeDef](#createprojectresulttypedef)
   - [DeleteProjectResultTypeDef](#deleteprojectresulttypedef)

@@ -15,13 +15,13 @@ Type annotations for `boto3.client("opsworkscm").get_waiter("node_associated")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_opsworkscm.waiters import NodeAssociatedWaiter
+from mypy_boto3_opsworkscm.waiter import NodeAssociatedWaiter
 
 def get_node_associated_waiter() -> NodeAssociatedWaiter:
     return boto3.client("opsworkscm").get_waiter("node_associated")
 ```
 
-[Waiter.NodeAssociated documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Waiter.NodeAssociated)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Waiter.node_associated)
 
 ```python
 class NodeAssociatedWaiter(Boto3Waiter):

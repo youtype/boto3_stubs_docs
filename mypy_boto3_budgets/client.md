@@ -43,7 +43,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_budgets.client import BudgetsClient
+
+def get_budgets_client() -> BudgetsClient:
+    return boto3.client("budgets")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client)
 
 ## Exceptions
 
@@ -79,7 +84,7 @@ Exceptions:
 
 Type annotations for `boto3.client("budgets").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -93,7 +98,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("budgets").create_budget` method.
 
-[Client.create_budget documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_budget)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_budget]
 
 ```python
 def create_budget(
@@ -109,7 +114,7 @@ def create_budget(
 
 Type annotations for `boto3.client("budgets").create_budget_action` method.
 
-[Client.create_budget_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_budget_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_budget_action]
 
 ```python
 def create_budget_action(
@@ -131,7 +136,7 @@ def create_budget_action(
 
 Type annotations for `boto3.client("budgets").create_notification` method.
 
-[Client.create_notification documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_notification)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_notification]
 
 ```python
 def create_notification(
@@ -148,7 +153,7 @@ def create_notification(
 
 Type annotations for `boto3.client("budgets").create_subscriber` method.
 
-[Client.create_subscriber documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_subscriber)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_subscriber]
 
 ```python
 def create_subscriber(
@@ -165,7 +170,7 @@ def create_subscriber(
 
 Type annotations for `boto3.client("budgets").delete_budget` method.
 
-[Client.delete_budget documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_budget)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_budget]
 
 ```python
 def delete_budget(
@@ -180,7 +185,7 @@ def delete_budget(
 
 Type annotations for `boto3.client("budgets").delete_budget_action` method.
 
-[Client.delete_budget_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_budget_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_budget_action]
 
 ```python
 def delete_budget_action(
@@ -196,7 +201,7 @@ def delete_budget_action(
 
 Type annotations for `boto3.client("budgets").delete_notification` method.
 
-[Client.delete_notification documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_notification)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_notification]
 
 ```python
 def delete_notification(
@@ -212,7 +217,7 @@ def delete_notification(
 
 Type annotations for `boto3.client("budgets").delete_subscriber` method.
 
-[Client.delete_subscriber documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_subscriber)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_subscriber]
 
 ```python
 def delete_subscriber(
@@ -229,7 +234,7 @@ def delete_subscriber(
 
 Type annotations for `boto3.client("budgets").describe_budget` method.
 
-[Client.describe_budget documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget]
 
 ```python
 def describe_budget(
@@ -244,7 +249,7 @@ def describe_budget(
 
 Type annotations for `boto3.client("budgets").describe_budget_action` method.
 
-[Client.describe_budget_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_action]
 
 ```python
 def describe_budget_action(
@@ -260,7 +265,7 @@ def describe_budget_action(
 
 Type annotations for `boto3.client("budgets").describe_budget_action_histories` method.
 
-[Client.describe_budget_action_histories documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_action_histories)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_action_histories]
 
 ```python
 def describe_budget_action_histories(
@@ -279,7 +284,7 @@ def describe_budget_action_histories(
 
 Type annotations for `boto3.client("budgets").describe_budget_actions_for_account` method.
 
-[Client.describe_budget_actions_for_account documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_account)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_account]
 
 ```python
 def describe_budget_actions_for_account(
@@ -295,7 +300,7 @@ def describe_budget_actions_for_account(
 
 Type annotations for `boto3.client("budgets").describe_budget_actions_for_budget` method.
 
-[Client.describe_budget_actions_for_budget documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_budget)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_budget]
 
 ```python
 def describe_budget_actions_for_budget(
@@ -312,7 +317,7 @@ def describe_budget_actions_for_budget(
 
 Type annotations for `boto3.client("budgets").describe_budget_performance_history` method.
 
-[Client.describe_budget_performance_history documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_performance_history)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_performance_history]
 
 ```python
 def describe_budget_performance_history(
@@ -330,7 +335,7 @@ def describe_budget_performance_history(
 
 Type annotations for `boto3.client("budgets").describe_budgets` method.
 
-[Client.describe_budgets documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budgets)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budgets]
 
 ```python
 def describe_budgets(
@@ -346,7 +351,7 @@ def describe_budgets(
 
 Type annotations for `boto3.client("budgets").describe_notifications_for_budget` method.
 
-[Client.describe_notifications_for_budget documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_notifications_for_budget)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_notifications_for_budget]
 
 ```python
 def describe_notifications_for_budget(
@@ -363,7 +368,7 @@ def describe_notifications_for_budget(
 
 Type annotations for `boto3.client("budgets").describe_subscribers_for_notification` method.
 
-[Client.describe_subscribers_for_notification documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_subscribers_for_notification)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_subscribers_for_notification]
 
 ```python
 def describe_subscribers_for_notification(
@@ -381,7 +386,7 @@ def describe_subscribers_for_notification(
 
 Type annotations for `boto3.client("budgets").execute_budget_action` method.
 
-[Client.execute_budget_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.execute_budget_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.execute_budget_action]
 
 ```python
 def execute_budget_action(
@@ -398,7 +403,7 @@ def execute_budget_action(
 
 Type annotations for `boto3.client("budgets").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -415,7 +420,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("budgets").update_budget` method.
 
-[Client.update_budget documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_budget)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_budget]
 
 ```python
 def update_budget(
@@ -430,7 +435,7 @@ def update_budget(
 
 Type annotations for `boto3.client("budgets").update_budget_action` method.
 
-[Client.update_budget_action documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_budget_action)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_budget_action]
 
 ```python
 def update_budget_action(
@@ -452,7 +457,7 @@ def update_budget_action(
 
 Type annotations for `boto3.client("budgets").update_notification` method.
 
-[Client.update_notification documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_notification)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_notification]
 
 ```python
 def update_notification(
@@ -469,7 +474,7 @@ def update_notification(
 
 Type annotations for `boto3.client("budgets").update_subscriber` method.
 
-[Client.update_subscriber documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_subscriber)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_subscriber]
 
 ```python
 def update_subscriber(

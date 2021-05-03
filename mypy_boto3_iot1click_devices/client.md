@@ -34,7 +34,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_iot1click_devices.client import IoT1ClickDevicesServiceClient
+
+def get_iot1click-devices_client() -> IoT1ClickDevicesServiceClient:
+    return boto3.client("iot1click-devices")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client)
 
 ## Exceptions
 
@@ -68,7 +73,7 @@ Exceptions:
 
 Type annotations for `boto3.client("iot1click-devices").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -82,7 +87,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("iot1click-devices").claim_devices_by_claim_code` method.
 
-[Client.claim_devices_by_claim_code documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.claim_devices_by_claim_code)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.claim_devices_by_claim_code]
 
 ```python
 def claim_devices_by_claim_code(
@@ -96,7 +101,7 @@ def claim_devices_by_claim_code(
 
 Type annotations for `boto3.client("iot1click-devices").describe_device` method.
 
-[Client.describe_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.describe_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.describe_device]
 
 ```python
 def describe_device(
@@ -110,7 +115,7 @@ def describe_device(
 
 Type annotations for `boto3.client("iot1click-devices").finalize_device_claim` method.
 
-[Client.finalize_device_claim documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.finalize_device_claim)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.finalize_device_claim]
 
 ```python
 def finalize_device_claim(
@@ -125,7 +130,7 @@ def finalize_device_claim(
 
 Type annotations for `boto3.client("iot1click-devices").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -142,7 +147,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("iot1click-devices").get_device_methods` method.
 
-[Client.get_device_methods documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.get_device_methods)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.get_device_methods]
 
 ```python
 def get_device_methods(
@@ -156,7 +161,7 @@ def get_device_methods(
 
 Type annotations for `boto3.client("iot1click-devices").initiate_device_claim` method.
 
-[Client.initiate_device_claim documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.initiate_device_claim)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.initiate_device_claim]
 
 ```python
 def initiate_device_claim(
@@ -170,7 +175,7 @@ def initiate_device_claim(
 
 Type annotations for `boto3.client("iot1click-devices").invoke_device_method` method.
 
-[Client.invoke_device_method documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.invoke_device_method)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.invoke_device_method]
 
 ```python
 def invoke_device_method(
@@ -186,7 +191,7 @@ def invoke_device_method(
 
 Type annotations for `boto3.client("iot1click-devices").list_device_events` method.
 
-[Client.list_device_events documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_device_events)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_device_events]
 
 ```python
 def list_device_events(
@@ -204,7 +209,7 @@ def list_device_events(
 
 Type annotations for `boto3.client("iot1click-devices").list_devices` method.
 
-[Client.list_devices documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_devices)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_devices]
 
 ```python
 def list_devices(
@@ -220,7 +225,7 @@ def list_devices(
 
 Type annotations for `boto3.client("iot1click-devices").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -234,7 +239,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("iot1click-devices").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -249,7 +254,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("iot1click-devices").unclaim_device` method.
 
-[Client.unclaim_device documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.unclaim_device)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.unclaim_device]
 
 ```python
 def unclaim_device(
@@ -263,7 +268,7 @@ def unclaim_device(
 
 Type annotations for `boto3.client("iot1click-devices").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.untag_resource]
 
 ```python
 def untag_resource(
@@ -278,7 +283,7 @@ def untag_resource(
 
 Type annotations for `boto3.client("iot1click-devices").update_device_state` method.
 
-[Client.update_device_state documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.update_device_state)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.update_device_state]
 
 ```python
 def update_device_state(

@@ -15,7 +15,7 @@ pip install mypy-boto3-groundstation
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## GroundStationClient
 
@@ -128,7 +128,7 @@ from mypy_boto3_groundstation.literals import AngleUnits, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

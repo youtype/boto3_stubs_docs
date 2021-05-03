@@ -16,13 +16,13 @@ Type annotations for `boto3.client("support").get_paginator("describe_cases")`.
 Can be used directly:
 
 ```python
-from mypy_boto3_support.paginators import DescribeCasesPaginator
+from mypy_boto3_support.paginator import DescribeCasesPaginator
 
 def get_describe_cases_paginator() -> DescribeCasesPaginator:
     return boto3.client("support").get_paginator("describe_cases")
 ```
 
-[Paginator.DescribeCases documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Paginator.DescribeCases)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Paginator.DescribeCases)
 
 ```python
 class DescribeCasesPaginator(Boto3Paginator):
@@ -46,13 +46,13 @@ Type annotations for `boto3.client("support").get_paginator("describe_communicat
 Can be used directly:
 
 ```python
-from mypy_boto3_support.paginators import DescribeCommunicationsPaginator
+from mypy_boto3_support.paginator import DescribeCommunicationsPaginator
 
 def get_describe_communications_paginator() -> DescribeCommunicationsPaginator:
     return boto3.client("support").get_paginator("describe_communications")
 ```
 
-[Paginator.DescribeCommunications documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Paginator.DescribeCommunications)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Paginator.DescribeCommunications)
 
 ```python
 class DescribeCommunicationsPaginator(Boto3Paginator):

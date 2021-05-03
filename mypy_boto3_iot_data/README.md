@@ -13,7 +13,7 @@ pip install mypy-boto3-iot-data
   - [IoTDataPlaneClient](#iotdataplaneclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## IoTDataPlaneClient
 
@@ -66,7 +66,7 @@ IoTDataPlaneClient [exceptions](./client.md#exceptions)
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

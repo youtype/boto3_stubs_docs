@@ -1,11 +1,11 @@
-# Structures for boto3 MigrationHubConfig module
+# Typed dictionaries for boto3 MigrationHubConfig module
 
 > [Index](../README.md) > [MigrationHubConfig](./README.md) > Structures
 
 Auto-generated documentation for [MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig)
 type annotations stubs module [mypy_boto3_migrationhub_config](https://pypi.org/project/mypy-boto3-migrationhub-config/).
 
-- [Structures for boto3 MigrationHubConfig module](#structures-for-boto3-migrationhubconfig-module)
+- [Typed dictionaries for boto3 MigrationHubConfig module](#typed-dictionaries-for-boto3-migrationhubconfig-module)
   - [CreateHomeRegionControlResultTypeDef](#createhomeregioncontrolresulttypedef)
   - [DescribeHomeRegionControlsResultTypeDef](#describehomeregioncontrolsresulttypedef)
   - [GetHomeRegionResultTypeDef](#gethomeregionresulttypedef)

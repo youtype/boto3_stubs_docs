@@ -24,13 +24,13 @@ Type annotations for `boto3.client("autoscaling").get_paginator("describe_auto_s
 Can be used directly:
 
 ```python
-from mypy_boto3_autoscaling.paginators import DescribeAutoScalingGroupsPaginator
+from mypy_boto3_autoscaling.paginator import DescribeAutoScalingGroupsPaginator
 
 def get_describe_auto_scaling_groups_paginator() -> DescribeAutoScalingGroupsPaginator:
     return boto3.client("autoscaling").get_paginator("describe_auto_scaling_groups")
 ```
 
-[Paginator.DescribeAutoScalingGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeAutoScalingGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeAutoScalingGroups)
 
 ```python
 class DescribeAutoScalingGroupsPaginator(Boto3Paginator):
@@ -48,13 +48,13 @@ Type annotations for `boto3.client("autoscaling").get_paginator("describe_auto_s
 Can be used directly:
 
 ```python
-from mypy_boto3_autoscaling.paginators import DescribeAutoScalingInstancesPaginator
+from mypy_boto3_autoscaling.paginator import DescribeAutoScalingInstancesPaginator
 
 def get_describe_auto_scaling_instances_paginator() -> DescribeAutoScalingInstancesPaginator:
     return boto3.client("autoscaling").get_paginator("describe_auto_scaling_instances")
 ```
 
-[Paginator.DescribeAutoScalingInstances documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeAutoScalingInstances)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeAutoScalingInstances)
 
 ```python
 class DescribeAutoScalingInstancesPaginator(Boto3Paginator):
@@ -72,13 +72,13 @@ Type annotations for `boto3.client("autoscaling").get_paginator("describe_launch
 Can be used directly:
 
 ```python
-from mypy_boto3_autoscaling.paginators import DescribeLaunchConfigurationsPaginator
+from mypy_boto3_autoscaling.paginator import DescribeLaunchConfigurationsPaginator
 
 def get_describe_launch_configurations_paginator() -> DescribeLaunchConfigurationsPaginator:
     return boto3.client("autoscaling").get_paginator("describe_launch_configurations")
 ```
 
-[Paginator.DescribeLaunchConfigurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeLaunchConfigurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeLaunchConfigurations)
 
 ```python
 class DescribeLaunchConfigurationsPaginator(Boto3Paginator):
@@ -96,13 +96,13 @@ Type annotations for `boto3.client("autoscaling").get_paginator("describe_load_b
 Can be used directly:
 
 ```python
-from mypy_boto3_autoscaling.paginators import DescribeLoadBalancerTargetGroupsPaginator
+from mypy_boto3_autoscaling.paginator import DescribeLoadBalancerTargetGroupsPaginator
 
 def get_describe_load_balancer_target_groups_paginator() -> DescribeLoadBalancerTargetGroupsPaginator:
     return boto3.client("autoscaling").get_paginator("describe_load_balancer_target_groups")
 ```
 
-[Paginator.DescribeLoadBalancerTargetGroups documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeLoadBalancerTargetGroups)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeLoadBalancerTargetGroups)
 
 ```python
 class DescribeLoadBalancerTargetGroupsPaginator(Boto3Paginator):
@@ -120,13 +120,13 @@ Type annotations for `boto3.client("autoscaling").get_paginator("describe_load_b
 Can be used directly:
 
 ```python
-from mypy_boto3_autoscaling.paginators import DescribeLoadBalancersPaginator
+from mypy_boto3_autoscaling.paginator import DescribeLoadBalancersPaginator
 
 def get_describe_load_balancers_paginator() -> DescribeLoadBalancersPaginator:
     return boto3.client("autoscaling").get_paginator("describe_load_balancers")
 ```
 
-[Paginator.DescribeLoadBalancers documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeLoadBalancers)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeLoadBalancers)
 
 ```python
 class DescribeLoadBalancersPaginator(Boto3Paginator):
@@ -144,13 +144,13 @@ Type annotations for `boto3.client("autoscaling").get_paginator("describe_notifi
 Can be used directly:
 
 ```python
-from mypy_boto3_autoscaling.paginators import DescribeNotificationConfigurationsPaginator
+from mypy_boto3_autoscaling.paginator import DescribeNotificationConfigurationsPaginator
 
 def get_describe_notification_configurations_paginator() -> DescribeNotificationConfigurationsPaginator:
     return boto3.client("autoscaling").get_paginator("describe_notification_configurations")
 ```
 
-[Paginator.DescribeNotificationConfigurations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeNotificationConfigurations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeNotificationConfigurations)
 
 ```python
 class DescribeNotificationConfigurationsPaginator(Boto3Paginator):
@@ -168,13 +168,13 @@ Type annotations for `boto3.client("autoscaling").get_paginator("describe_polici
 Can be used directly:
 
 ```python
-from mypy_boto3_autoscaling.paginators import DescribePoliciesPaginator
+from mypy_boto3_autoscaling.paginator import DescribePoliciesPaginator
 
 def get_describe_policies_paginator() -> DescribePoliciesPaginator:
     return boto3.client("autoscaling").get_paginator("describe_policies")
 ```
 
-[Paginator.DescribePolicies documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribePolicies)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribePolicies)
 
 ```python
 class DescribePoliciesPaginator(Boto3Paginator):
@@ -194,13 +194,13 @@ Type annotations for `boto3.client("autoscaling").get_paginator("describe_scalin
 Can be used directly:
 
 ```python
-from mypy_boto3_autoscaling.paginators import DescribeScalingActivitiesPaginator
+from mypy_boto3_autoscaling.paginator import DescribeScalingActivitiesPaginator
 
 def get_describe_scaling_activities_paginator() -> DescribeScalingActivitiesPaginator:
     return boto3.client("autoscaling").get_paginator("describe_scaling_activities")
 ```
 
-[Paginator.DescribeScalingActivities documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeScalingActivities)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeScalingActivities)
 
 ```python
 class DescribeScalingActivitiesPaginator(Boto3Paginator):
@@ -220,13 +220,13 @@ Type annotations for `boto3.client("autoscaling").get_paginator("describe_schedu
 Can be used directly:
 
 ```python
-from mypy_boto3_autoscaling.paginators import DescribeScheduledActionsPaginator
+from mypy_boto3_autoscaling.paginator import DescribeScheduledActionsPaginator
 
 def get_describe_scheduled_actions_paginator() -> DescribeScheduledActionsPaginator:
     return boto3.client("autoscaling").get_paginator("describe_scheduled_actions")
 ```
 
-[Paginator.DescribeScheduledActions documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeScheduledActions)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeScheduledActions)
 
 ```python
 class DescribeScheduledActionsPaginator(Boto3Paginator):
@@ -247,13 +247,13 @@ Type annotations for `boto3.client("autoscaling").get_paginator("describe_tags")
 Can be used directly:
 
 ```python
-from mypy_boto3_autoscaling.paginators import DescribeTagsPaginator
+from mypy_boto3_autoscaling.paginator import DescribeTagsPaginator
 
 def get_describe_tags_paginator() -> DescribeTagsPaginator:
     return boto3.client("autoscaling").get_paginator("describe_tags")
 ```
 
-[Paginator.DescribeTags documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeTags)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Paginator.DescribeTags)
 
 ```python
 class DescribeTagsPaginator(Boto3Paginator):

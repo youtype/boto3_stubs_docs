@@ -14,7 +14,7 @@ pip install mypy-boto3-connect-contact-lens
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## ConnectContactLensClient
 
@@ -71,7 +71,7 @@ from mypy_boto3_connect_contact_lens.literals import SentimentValue, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

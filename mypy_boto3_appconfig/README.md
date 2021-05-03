@@ -14,7 +14,7 @@ pip install mypy-boto3-appconfig
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
-  - [Structures](#structures)
+  - [Typed dictionaries](#typed-dictionaries)
 
 ## AppConfigClient
 
@@ -110,7 +110,7 @@ from mypy_boto3_appconfig.literals import DeploymentEventType, ...
 
 
 
-## Structures
+## Typed dictionaries
 
 
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.

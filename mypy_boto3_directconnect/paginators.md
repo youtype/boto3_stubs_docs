@@ -17,13 +17,13 @@ Type annotations for `boto3.client("directconnect").get_paginator("describe_dire
 Can be used directly:
 
 ```python
-from mypy_boto3_directconnect.paginators import DescribeDirectConnectGatewayAssociationsPaginator
+from mypy_boto3_directconnect.paginator import DescribeDirectConnectGatewayAssociationsPaginator
 
 def get_describe_direct_connect_gateway_associations_paginator() -> DescribeDirectConnectGatewayAssociationsPaginator:
     return boto3.client("directconnect").get_paginator("describe_direct_connect_gateway_associations")
 ```
 
-[Paginator.DescribeDirectConnectGatewayAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAssociations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAssociations)
 
 ```python
 class DescribeDirectConnectGatewayAssociationsPaginator(Boto3Paginator):
@@ -44,13 +44,13 @@ Type annotations for `boto3.client("directconnect").get_paginator("describe_dire
 Can be used directly:
 
 ```python
-from mypy_boto3_directconnect.paginators import DescribeDirectConnectGatewayAttachmentsPaginator
+from mypy_boto3_directconnect.paginator import DescribeDirectConnectGatewayAttachmentsPaginator
 
 def get_describe_direct_connect_gateway_attachments_paginator() -> DescribeDirectConnectGatewayAttachmentsPaginator:
     return boto3.client("directconnect").get_paginator("describe_direct_connect_gateway_attachments")
 ```
 
-[Paginator.DescribeDirectConnectGatewayAttachments documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAttachments)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAttachments)
 
 ```python
 class DescribeDirectConnectGatewayAttachmentsPaginator(Boto3Paginator):
@@ -69,13 +69,13 @@ Type annotations for `boto3.client("directconnect").get_paginator("describe_dire
 Can be used directly:
 
 ```python
-from mypy_boto3_directconnect.paginators import DescribeDirectConnectGatewaysPaginator
+from mypy_boto3_directconnect.paginator import DescribeDirectConnectGatewaysPaginator
 
 def get_describe_direct_connect_gateways_paginator() -> DescribeDirectConnectGatewaysPaginator:
     return boto3.client("directconnect").get_paginator("describe_direct_connect_gateways")
 ```
 
-[Paginator.DescribeDirectConnectGateways documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGateways)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGateways)
 
 ```python
 class DescribeDirectConnectGatewaysPaginator(Boto3Paginator):

@@ -35,7 +35,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_detective.client import DetectiveClient
+
+def get_detective_client() -> DetectiveClient:
+    return boto3.client("detective")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client)
 
 ## Exceptions
 
@@ -67,7 +72,7 @@ Exceptions:
 
 Type annotations for `boto3.client("detective").accept_invitation` method.
 
-[Client.accept_invitation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.accept_invitation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.accept_invitation]
 
 ```python
 def accept_invitation(
@@ -81,7 +86,7 @@ def accept_invitation(
 
 Type annotations for `boto3.client("detective").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -95,7 +100,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("detective").create_graph` method.
 
-[Client.create_graph documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.create_graph)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.create_graph]
 
 ```python
 def create_graph(
@@ -109,7 +114,7 @@ def create_graph(
 
 Type annotations for `boto3.client("detective").create_members` method.
 
-[Client.create_members documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.create_members)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.create_members]
 
 ```python
 def create_members(
@@ -126,7 +131,7 @@ def create_members(
 
 Type annotations for `boto3.client("detective").delete_graph` method.
 
-[Client.delete_graph documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.delete_graph)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.delete_graph]
 
 ```python
 def delete_graph(
@@ -140,7 +145,7 @@ def delete_graph(
 
 Type annotations for `boto3.client("detective").delete_members` method.
 
-[Client.delete_members documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.delete_members)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.delete_members]
 
 ```python
 def delete_members(
@@ -155,7 +160,7 @@ def delete_members(
 
 Type annotations for `boto3.client("detective").disassociate_membership` method.
 
-[Client.disassociate_membership documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.disassociate_membership)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.disassociate_membership]
 
 ```python
 def disassociate_membership(
@@ -169,7 +174,7 @@ def disassociate_membership(
 
 Type annotations for `boto3.client("detective").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -186,7 +191,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("detective").get_members` method.
 
-[Client.get_members documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.get_members)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.get_members]
 
 ```python
 def get_members(
@@ -201,7 +206,7 @@ def get_members(
 
 Type annotations for `boto3.client("detective").list_graphs` method.
 
-[Client.list_graphs documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_graphs)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_graphs]
 
 ```python
 def list_graphs(
@@ -216,7 +221,7 @@ def list_graphs(
 
 Type annotations for `boto3.client("detective").list_invitations` method.
 
-[Client.list_invitations documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_invitations)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_invitations]
 
 ```python
 def list_invitations(
@@ -231,7 +236,7 @@ def list_invitations(
 
 Type annotations for `boto3.client("detective").list_members` method.
 
-[Client.list_members documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_members)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_members]
 
 ```python
 def list_members(
@@ -247,7 +252,7 @@ def list_members(
 
 Type annotations for `boto3.client("detective").list_tags_for_resource` method.
 
-[Client.list_tags_for_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_tags_for_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_tags_for_resource]
 
 ```python
 def list_tags_for_resource(
@@ -261,7 +266,7 @@ def list_tags_for_resource(
 
 Type annotations for `boto3.client("detective").reject_invitation` method.
 
-[Client.reject_invitation documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.reject_invitation)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.reject_invitation]
 
 ```python
 def reject_invitation(
@@ -275,7 +280,7 @@ def reject_invitation(
 
 Type annotations for `boto3.client("detective").start_monitoring_member` method.
 
-[Client.start_monitoring_member documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.start_monitoring_member)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.start_monitoring_member]
 
 ```python
 def start_monitoring_member(
@@ -290,7 +295,7 @@ def start_monitoring_member(
 
 Type annotations for `boto3.client("detective").tag_resource` method.
 
-[Client.tag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.tag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.tag_resource]
 
 ```python
 def tag_resource(
@@ -305,7 +310,7 @@ def tag_resource(
 
 Type annotations for `boto3.client("detective").untag_resource` method.
 
-[Client.untag_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.untag_resource)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.untag_resource]
 
 ```python
 def untag_resource(

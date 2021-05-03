@@ -22,7 +22,12 @@ Can be used directly:
 
 ```python
 from mypy_boto3_pi.client import PIClient
+
+def get_pi_client() -> PIClient:
+    return boto3.client("pi")
 ```
+
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client)
 
 ## Exceptions
 
@@ -52,7 +57,7 @@ Exceptions:
 
 Type annotations for `boto3.client("pi").can_paginate` method.
 
-[Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.can_paginate)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.can_paginate]
 
 ```python
 def can_paginate(
@@ -66,7 +71,7 @@ def can_paginate(
 
 Type annotations for `boto3.client("pi").describe_dimension_keys` method.
 
-[Client.describe_dimension_keys documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.describe_dimension_keys)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.describe_dimension_keys]
 
 ```python
 def describe_dimension_keys(
@@ -90,7 +95,7 @@ def describe_dimension_keys(
 
 Type annotations for `boto3.client("pi").generate_presigned_url` method.
 
-[Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.generate_presigned_url)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.generate_presigned_url]
 
 ```python
 def generate_presigned_url(
@@ -107,7 +112,7 @@ def generate_presigned_url(
 
 Type annotations for `boto3.client("pi").get_resource_metrics` method.
 
-[Client.get_resource_metrics documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_resource_metrics)
+[Open boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_resource_metrics]
 
 ```python
 def get_resource_metrics(
